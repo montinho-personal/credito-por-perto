@@ -37,8 +37,14 @@ export function ArticleHeader({
             {author.name}
           </Link>
         </span>
-        <span>Publicado em {formatDateBR(fm.publishedAt)}</span>
-        {fm.updatedAt ? <span>Atualizado em {formatDateBR(fm.updatedAt)}</span> : null}
+        {fm.updatedAt ? (
+          <span className="font-medium text-brand-navy">
+            Atualizado em <time dateTime={fm.updatedAt}>{formatDateBR(fm.updatedAt)}</time>
+          </span>
+        ) : null}
+        <span>
+          Publicado em <time dateTime={fm.publishedAt}>{formatDateBR(fm.publishedAt)}</time>
+        </span>
         {reviewer ? (
           <span>
             Revisão editorial:{" "}

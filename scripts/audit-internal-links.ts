@@ -75,6 +75,75 @@ for (const { source, text } of linkSources) {
   }
 }
 
+/* Estratégia de linkagem: todo artigo publicado precisa de links internos
+   contextuais de saída e de pelo menos um link externo para fonte oficial
+   (docs/editorial.md, seção "Estratégia de linkagem"). */
+const OFFICIAL_DOMAINS = [
+  "bcb.gov.br",
+  "registrato.bcb.gov.br",
+  "planalto.gov.br",
+  "gov.br",
+  "caixa.gov.br",
+  "consumidor.gov.br",
+  "ibge.gov.br",
+  "cfc.org.br",
+];
+
+function externalLinks(text: string): string[] {
+  const links: string[] = [];
+  for (const match of text.matchAll(/\]\((https?:\/\/[^)\s]+)\)/g)) {
+    links.push(match[1]!);
+  }
+  for (const match of text.matchAll(/href="(https?:\/\/[^"]+)"/g)) {
+    links.push(match[1]!);
+  }
+  return links;
+}
+
+for (const article of getPublishedArticles()) {
+  const internal = extractLinks(article.content);
+  if (internal.length < 2) {
+    findings.push({
+      severity: "warning",
+      rule: "artigo-com-poucos-links-internos",
+      pages: [article.urlPath],
+      detail: `Apenas ${internal.length} link(s) interno(s) no corpo — a estratégia pede pelo menos 2.`,
+    });
+  }
+  const externals = externalLinks(article.content);
+  const officialExternals = externals.filter((url) =>
+    OFFICIAL_DOMAINS.some((domain) => new URL(url).hostname.endsWith(domain)),
+  );
+  if (officialExternals.length === 0) {
+    findings.push({
+      severity: "warning",
+      rule: "artigo-sem-link-externo-oficial",
+      pages: [article.urlPath],
+      detail:
+        "Nenhum link externo para fonte oficial no corpo do artigo — a estratégia pede pelo menos 1.",
+    });
+  }
+  for (const url of externals) {
+    const hostname = new URL(url).hostname;
+    if (!url.startsWith("https://")) {
+      findings.push({
+        severity: "critical",
+        rule: "link-externo-sem-https",
+        pages: [article.urlPath],
+        detail: `Link externo sem HTTPS: ${url}`,
+      });
+    }
+    if (!OFFICIAL_DOMAINS.some((domain) => hostname.endsWith(domain))) {
+      findings.push({
+        severity: "info",
+        rule: "link-externo-fora-da-lista-oficial",
+        pages: [article.urlPath],
+        detail: `Link externo para domínio não catalogado: ${hostname} — conferir na revisão.`,
+      });
+    }
+  }
+}
+
 /* Páginas órfãs: artigos publicados sem nenhum link interno recebido.
    Listagens automáticas (hubs, blog) linkam todos os artigos publicados,
    então consideramos órfã a página que também não recebe link contextual. */

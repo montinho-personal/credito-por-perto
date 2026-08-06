@@ -45,6 +45,36 @@ artificial, termos técnicos sempre explicados. Taxas e regras variáveis nunca
 apresentadas como universais — usar o componente `WhatCanChange` e registrar
 fonte + data.
 
+## Estratégia de linkagem
+
+Todo artigo publicado segue, e a auditoria `audit:links` verifica:
+
+**Interna (mínimo 2 links contextuais de saída):**
+- Artigo de apoio → página pilar da intenção (dono no query-ownership-map);
+- Pilar → apoios que aprofundam subtemas (âncoras descritivas, nunca
+  "clique aqui", nunca a mesma âncora repetida em massa);
+- Modalidade → calculadora; conceito de custo → CET; qualquer menção a
+  fraude → cluster de segurança;
+- Nenhum link para URL não publicada; padrão canônico com trailing slash.
+
+**Externa (mínimo 1 link para fonte oficial, inline no ponto da afirmação):**
+- A afirmação linka a fonte exata: lei citada → Planalto; serviço do BC
+  (Registrato, Encontre uma instituição, ranking) → página do serviço;
+  reclamação → consumidor.gov.br; FGTS → Caixa; MEI → Portal do Empreendedor;
+- Sempre HTTPS; domínios fora da lista oficial catalogada geram apontamento
+  para revisão; links externos abrem em nova aba com
+  `rel="noopener noreferrer external"`;
+- Link externo de autoridade é sinal E-E-A-T em conteúdo YMYL — a lista de
+  fontes ao final complementa, não substitui, o link inline.
+
+## Datas de atualização
+
+`updatedAt` é exibido com destaque no cabeçalho (com `<time datetime>`),
+emitido no JSON-LD (`dateModified`), no Open Graph (`modifiedTime`) e no
+`lastmod` do sitemap. As listagens (blog, hubs, home) ordenam por
+`updatedAt ?? publishedAt`, do mais recente para o mais antigo. A data só
+muda com revisão editorial real (ver docs/content-refresh-policy.md).
+
 ## Correções
 
 Ver /politica-de-correcoes/ (pública). Erros factuais são corrigidos com
