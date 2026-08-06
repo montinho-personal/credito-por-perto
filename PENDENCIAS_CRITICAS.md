@@ -6,11 +6,13 @@ Tudo o mais já está implementado ou automatizado.
 
 ## 1. Identidade legal (bloqueia lançamento público dos documentos legais)
 
-- [ ] Razão social ou nome do responsável pelo portal
-- [ ] CNPJ ou CPF (conforme o enquadramento)
-- [ ] Endereço comercial
-- [ ] E-mail oficial de contato (hoje há um placeholder: `contato@creditoporperto.com.br` em `src/lib/site.ts`)
-- [ ] Controlador de dados e, se houver, encarregado (DPO)
+- [x] Nome do responsável pelo portal: Renato de Camargo Nascimento
+- [x] CPF: 397.054.218-97 (dados em `LEGAL_OWNER`, `src/lib/site.ts`)
+- [x] E-mail oficial de contato: blink.renato@gmail.com
+- [x] Controlador de dados: o próprio responsável (sem encarregado/DPO por ora)
+- [ ] Endereço comercial (placeholder `[ENDEREÇO — a preencher]` na política de privacidade)
+- [ ] Confirmar se o CPF completo deve mesmo ficar público nas páginas legais
+      (alternativa: exibir mascarado, ex.: 397.***.***-97 — decisão do responsável)
 - [ ] **Revisão jurídica** dos templates: política de privacidade, cookies,
       termos de uso e aviso legal (todos exibem aviso público de "documento em
       elaboração" até isso acontecer — remover o `LegalTemplateNotice` após a revisão)

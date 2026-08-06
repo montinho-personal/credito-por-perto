@@ -2,7 +2,7 @@ import Link from "next/link";
 import type { Metadata } from "next";
 import { buildMetadata } from "@/lib/metadata/build";
 import { InstitutionalShell } from "@/components/layout/InstitutionalShell";
-import { CONTACT_EMAIL_PLACEHOLDER } from "@/lib/site";
+import { CONTACT_EMAIL } from "@/lib/site";
 
 export const metadata: Metadata = buildMetadata({
   title: "Contato",
@@ -41,7 +41,7 @@ export default function ContatoPage() {
       </ul>
       <h2>E-mail</h2>
       <p>
-        Escreva para <strong>{CONTACT_EMAIL_PLACEHOLDER}</strong>.
+        Escreva para <strong>{CONTACT_EMAIL}</strong>.
       </p>
       <h2>O que não conseguimos atender</h2>
       <p>

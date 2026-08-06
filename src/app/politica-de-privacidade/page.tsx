@@ -5,7 +5,7 @@ import {
   InstitutionalShell,
   LegalTemplateNotice,
 } from "@/components/layout/InstitutionalShell";
-import { CONTACT_EMAIL_PLACEHOLDER } from "@/lib/site";
+import { CONTACT_EMAIL, LEGAL_OWNER } from "@/lib/site";
 
 export const metadata: Metadata = buildMetadata({
   title: "Política de privacidade",
@@ -14,9 +14,8 @@ export const metadata: Metadata = buildMetadata({
   path: "/politica-de-privacidade/",
 });
 
-// TEMPLATE LEGAL — pendente de revisão jurídica e preenchimento com os dados
-// reais do controlador (razão social/nome, CNPJ/CPF, endereço, encarregado).
-// Ver PENDENCIAS_CRITICAS.md antes do lançamento.
+// TEMPLATE LEGAL — pendente de revisão jurídica; endereço do controlador
+// ainda não informado. Ver PENDENCIAS_CRITICAS.md antes do lançamento.
 export default function PoliticaDePrivacidadePage() {
   return (
     <InstitutionalShell
@@ -29,8 +28,10 @@ export default function PoliticaDePrivacidadePage() {
       <p>
         O Crédito Por Perto (www.creditoporperto.com.br) é um portal editorial
         de educação financeira. O controlador dos dados tratados neste site é{" "}
-        <strong>[RAZÃO SOCIAL / NOME DO RESPONSÁVEL — a preencher]</strong>,
-        inscrito no <strong>[CNPJ/CPF — a preencher]</strong>, com endereço em{" "}
+        <strong>{LEGAL_OWNER.name}</strong>, inscrito no CPF{" "}
+        <strong>{LEGAL_OWNER.cpf}</strong>, contato{" "}
+        <strong>{LEGAL_OWNER.email}</strong>
+        {". "}
         <strong>[ENDEREÇO — a preencher]</strong>.
       </p>
       <h2>O que coletamos — e o que não coletamos</h2>
@@ -75,8 +76,7 @@ export default function PoliticaDePrivacidadePage() {
         A LGPD garante a você confirmação de tratamento, acesso, correção,
         anonimização, portabilidade, eliminação e informação sobre
         compartilhamentos. Para exercer qualquer direito, escreva para{" "}
-        <strong>{CONTACT_EMAIL_PLACEHOLDER}</strong>. Responderemos no prazo
-        legal.
+        <strong>{CONTACT_EMAIL}</strong>. Responderemos no prazo legal.
       </p>
       <h2>Retenção e segurança</h2>
       <p>

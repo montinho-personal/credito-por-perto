@@ -15,8 +15,15 @@ export const SITE_DESCRIPTION =
 
 export const SITE_LOCALE = "pt-BR";
 
-/** E-mail público de contato — placeholder até o proprietário definir (ver PENDENCIAS_CRITICAS.md). */
-export const CONTACT_EMAIL_PLACEHOLDER = "contato@creditoporperto.com.br";
+/** E-mail público de contato, definido pelo proprietário. */
+export const CONTACT_EMAIL = "blink.renato@gmail.com";
+
+/** Responsável legal pelo portal (controlador dos dados). Endereço ainda pendente. */
+export const LEGAL_OWNER = {
+  name: "Renato de Camargo Nascimento",
+  cpf: "397.054.218-97",
+  email: "blink.renato@gmail.com",
+} as const;
 
 export const MAIN_NAV = [
   { label: "Empréstimos", href: "/emprestimos/" },

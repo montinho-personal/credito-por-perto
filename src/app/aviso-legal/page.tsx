@@ -5,6 +5,7 @@ import {
   InstitutionalShell,
   LegalTemplateNotice,
 } from "@/components/layout/InstitutionalShell";
+import { LEGAL_OWNER } from "@/lib/site";
 
 export const metadata: Metadata = buildMetadata({
   title: "Aviso legal",
@@ -22,6 +23,11 @@ export default function AvisoLegalPage() {
       path="/aviso-legal/"
     >
       <LegalTemplateNotice />
+      <h2>Responsável pelo portal</h2>
+      <p>
+        O Crédito Por Perto é mantido por <strong>{LEGAL_OWNER.name}</strong>{" "}
+        (CPF {LEGAL_OWNER.cpf}). Contato: <strong>{LEGAL_OWNER.email}</strong>.
+      </p>
       <h2>Conteúdo educativo</h2>
       <p>
         Todo o conteúdo do Crédito Por Perto tem finalidade informativa e
