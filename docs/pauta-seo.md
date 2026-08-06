@@ -1,0 +1,63 @@
+# Pauta SEO priorizada — análise de 06/08/2026
+
+Baseada em varredura real da SERP brasileira (queries e achados em
+`docs/analise-concorrentes.md`). Critérios de priorização para um site novo:
+
+1. **SERP conflitada**: os resultados são de bancos/fintechs que vendem o
+   produto ou advogados que caçam clientes — conteúdo neutro e honesto se
+   diferencia imediatamente;
+2. **Frescor regulatório**: mudanças de 2025/2026 (consignado CLT, FGTS)
+   derrubaram conteúdo antigo; quem explica a regra nova primeiro ganha;
+3. **Cauda longa de pergunta**: intenções específicas onde os grandes têm
+   páginas genéricas;
+4. **Efeito de cluster**: cada tema reforça a autoridade de um pilar já
+   publicado (consignado, negativado, juros, segurança).
+
+## Onda 1 — criar agora (maior oportunidade/esforço)
+
+| # | Tema / intenção-alvo | Cluster | Por que ganha |
+| --- | --- | --- | --- |
+| 1 | **Crédito do Trabalhador (novo consignado CLT, Lei nº 15.179)**: guia do trabalhador — margem, garantia de FGTS/multa, demissão, contratação pela CTPS Digital | consignado | Mudança regulatória recente; SERP dominada por blogs B2B de RH e fintechs; quase nenhum guia neutro para o trabalhador. Alto volume |
+| 2 | **Juros abusivos: como saber se seu empréstimo está acima da média** (referência STJ de 1,5× a média + como consultar a série de taxas do BC) | juros-e-cet | SERP dominada por escritórios de advocacia com viés de captação; explicador neutro com o passo a passo da consulta ao BC é lacuna clara. Alta intenção |
+| 3 | **Cartão de crédito consignado (e cartão benefício/RMC): como funciona e a armadilha da margem** | consignado | SERP vendedora ("vale a pena sim"); contraponto neutro sobre RMC, desconto mínimo automático e dificuldade de quitar é diferencial forte |
+| 4 | **Margem consignável: como consultar a sua (Meu INSS e CLT) e como calcular** + **calculadora de margem** no site | consignado + calculadoras | Intenção transacional-informacional gigante; ferramentas dominam — nossa calculadora + guia neutro compete; reforça o produto |
+| 5 | **Dívida caduca em 5 anos? O que muda de verdade no seu nome** (negativação sai, dívida continua) | negativado | Volume alto, nuance mal explicada na SERP; encaixa perfeito no cluster negativado |
+| 6 | **Pix parcelado é empréstimo: quanto custa e quando (não) usar** | juros-e-cet | Modalidade nova, comparativos rasos na SERP; nosso arquétipo de comparação com CET se aplica direto |
+
+## Onda 2 — sequência natural
+
+| # | Tema | Cluster | Nota |
+| --- | --- | --- | --- |
+| 7 | Golpe do consignado INSS: desconto que aparece sem contratar (como estornar, bloquear benefício) | segurança | SERP é só banco explicando superficialmente; nosso cluster de segurança tem autoridade própria |
+| 8 | "Empréstimo sem consulta" existe? | negativado/segurança | SERP tem lead-gen dizendo "é confiável"; resposta honesta se destaca e protege o leitor |
+| 9 | Como consultar a taxa média de juros no site do Banco Central (passo a passo) | juros-e-cet | Guia-ferramenta com E-E-A-T alto; apoia o tema 2 |
+| 10 | Saque-aniversário: aderir ou voltar para o saque-rescisão? (decisão separada da antecipação) | emprestimos | Nosso artigo cobre a antecipação; a decisão de adesão é intenção própria com volume |
+| 11 | Empréstimo para aposentado e pensionista INSS: guia completo | consignado | Segmento de altíssimo volume; SERP comercial |
+| 12 | Consignado do servidor público: margem, averbação e portabilidade | consignado | Segmento com regras próprias, pouco conteúdo neutro |
+
+## Onda 3 — cauda longa e manutenção
+
+13. RMC/RCC: o que é a "reserva de margem" que aparece no benefício e como cancelar;
+14. Empréstimo caiu na conta sem pedir: o que fazer (devolução, estorno, denúncia);
+15. Como sair do rotativo do cartão (troca de dívida aplicada);
+16. Refinanciamento de consignado: quando faz sentido (contraponto ao assédio);
+17. Empréstimo com garantia de celular: como funciona o bloqueio;
+18. Atualizar guia FGTS com os limites vigentes de parcelas antecipáveis (verificar na Caixa antes);
+19. Guias locais (Campinas, Barueri, Alphaville) — concluir verificação e publicar;
+20. **Página viva "taxas médias de empréstimo neste mês (dados do BC)"** — só assumir se houver rotina mensal de atualização; freshness recorrente é o que faz portais rankearem nessas consultas.
+
+## Anti-metas (não perseguir agora)
+
+- Head terms puros ("empréstimo", "empréstimo pessoal") — SERP de gigantes;
+  atacamos pela cauda e deixamos os pilares amadurecerem;
+- "Melhor empréstimo" / rankings de banco — exigem metodologia comparativa
+  com dados atualizados; sem isso, viola nossa política editorial;
+- Qualquer página que dependa de taxa numérica publicada sem rotina de
+  re-verificação com data.
+
+## Processo
+
+Cada tema segue o fluxo padrão: intenção no query-ownership-map → briefing →
+fontes primárias (BC, Planalto, gov.br, Caixa) → redação com arquétipo
+próprio → auditorias → revisão. Temas 1, 3, 4 e 18 tocam regras que mudam:
+registrar `sourceCheckedAt` e revisitar no ciclo trimestral.
