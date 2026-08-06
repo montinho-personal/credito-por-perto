@@ -1,0 +1,41 @@
+{
+  "proposedTitle": "O que é CET: o número que revela o custo real do empréstimo",
+  "primaryIntent": "o que é CET",
+  "secondaryIntents": [
+    "diferença entre CET e taxa de juros",
+    "como comparar CET de empréstimos"
+  ],
+  "targetReader": "Consumidor comparando propostas que só olha a taxa de juros",
+  "readerSituation": "Recebeu propostas com taxas iguais e não entende por que as parcelas diferem",
+  "centralQuestion": "O que o CET inclui e como usá-lo para comparar propostas?",
+  "uniqueAngle": "Abre com a comparação de duas propostas aparentemente iguais (mesma taxa, custos diferentes) e traz tabela própria 'perguntas que o CET responde melhor que a taxa'",
+  "originalContribution": [
+    "Exemplo numérico próprio (R$ 10.000, tarifa embutida de R$ 800) marcado como hipotético",
+    "Tabela comparativa taxa vs CET por pergunta",
+    "Seção de limites do CET (mora e antecipação ficam fora)"
+  ],
+  "primarySources": [
+    "Banco Central do Brasil — regulamentação do CET",
+    "Código de Defesa do Consumidor — vedação à venda casada"
+  ],
+  "supportingSources": [],
+  "contentArchetype": "explainer",
+  "proposedStructure": [
+    "Abertura: duas propostas iguais no anúncio",
+    "Definição",
+    "O que entra no CET",
+    "Como usar na prática",
+    "Exemplo numérico",
+    "Tabela taxa vs CET",
+    "Limites",
+    "FAQ"
+  ],
+  "uniqueExamples": ["Propostas A e B com mesma taxa e R$ 800 embutidos"],
+  "proposedVisuals": ["DefinitionBox", "ExampleBox", "tabela comparativa"],
+  "pagesThatMayCompete": ["/organizacao-financeira/como-comparar-propostas-de-credito/"],
+  "informationThatMustNotBeRepeated": [
+    "Método completo de comparação de propostas",
+    "Fórmulas de juros compostos (ficam em como-calcular-juros)"
+  ],
+  "publicationDecision": "create"
+}

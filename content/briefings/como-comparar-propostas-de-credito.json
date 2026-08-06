@@ -1,0 +1,42 @@
+{
+  "proposedTitle": "Como comparar propostas de crédito: o método dos cinco números",
+  "primaryIntent": "como comparar propostas de empréstimo",
+  "secondaryIntents": [
+    "o que pedir em uma proposta de crédito",
+    "comparar empréstimos de bancos diferentes"
+  ],
+  "targetReader": "Consumidor com duas ou mais ofertas em mãos",
+  "readerSituation": "Tende a comparar apenas parcela ou taxa anunciada",
+  "centralQuestion": "Que números pedir e como compará-los sem cair em pegadinhas?",
+  "uniqueAngle": "Método operacional próprio: 5 números nomeados + tabela em branco para preencher + 3 pegadinhas clássicas, com caixa de metodologia explicitando limites",
+  "originalContribution": [
+    "O método dos cinco números com tabela pronta",
+    "Métrica crua 'total a pagar ÷ líquido liberado'",
+    "Dois filtros pós-tabela (orçamento e segurança)"
+  ],
+  "primarySources": [
+    "Banco Central do Brasil — CET e ranking de reclamações"
+  ],
+  "supportingSources": [],
+  "contentArchetype": "comparison",
+  "proposedStructure": [
+    "Abertura: 5 números > discurso",
+    "Os cinco números",
+    "Tabela e regras de preenchimento",
+    "Três pegadinhas",
+    "Metodologia e limites",
+    "Filtros finais",
+    "FAQ"
+  ],
+  "uniqueExamples": ["Tabela de comparação em branco como ferramenta"],
+  "proposedVisuals": ["Tabela para preencher", "MethodologyBox"],
+  "pagesThatMayCompete": [
+    "/juros-e-cet/o-que-e-cet/",
+    "/organizacao-financeira/quando-vale-a-pena-fazer-emprestimo/"
+  ],
+  "informationThatMustNotBeRepeated": [
+    "Definição de CET (link)",
+    "Roteiro de decisão sobre contratar ou não (artigo próprio)"
+  ],
+  "publicationDecision": "create"
+}

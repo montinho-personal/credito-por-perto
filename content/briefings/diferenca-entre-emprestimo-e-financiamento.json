@@ -1,0 +1,37 @@
+{
+  "proposedTitle": "Empréstimo ou financiamento: a diferença que muda juros e riscos",
+  "primaryIntent": "diferença entre empréstimo e financiamento",
+  "secondaryIntents": [
+    "financiamento tem juros menores por quê",
+    "usar empréstimo para comprar carro"
+  ],
+  "targetReader": "Consumidor decidindo a rota de crédito para uma compra ou necessidade",
+  "readerSituation": "Confunde os dois termos e compara taxas de produtos estruturalmente diferentes",
+  "centralQuestion": "O que muda entre empréstimo e financiamento e como escolher a rota?",
+  "uniqueAngle": "Comparação centrada na consequência do atraso, com quadro comparativo próprio de 7 aspectos e a zona cinzenta do empréstimo com garantia",
+  "originalContribution": [
+    "Quadro comparativo de 7 aspectos",
+    "Seção sobre a fronteira borrada (empréstimo com garantia)",
+    "Árvore de decisão em 4 cenários"
+  ],
+  "primarySources": [
+    "Banco Central do Brasil — conceitos de operações de crédito"
+  ],
+  "supportingSources": [],
+  "contentArchetype": "comparison",
+  "proposedStructure": [
+    "Abertura: por que a confusão existe",
+    "Distinção em uma frase",
+    "Quadro comparativo",
+    "Zona cinzenta: garantia",
+    "Como decidir (4 cenários)",
+    "FAQ"
+  ],
+  "uniqueExamples": ["Cenários de decisão (comprar bem vs uso livre vs bem quitado)"],
+  "proposedVisuals": ["Tabela comparativa"],
+  "pagesThatMayCompete": ["/emprestimos/emprestimo-com-garantia/"],
+  "informationThatMustNotBeRepeated": [
+    "Mecânica da alienação fiduciária (fica no guia de garantia)"
+  ],
+  "publicationDecision": "create"
+}

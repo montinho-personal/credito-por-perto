@@ -1,0 +1,38 @@
+{
+  "proposedTitle": "Depósito antecipado para liberar empréstimo é golpe? Sim — entenda por quê",
+  "primaryIntent": "depósito antecipado para empréstimo é golpe",
+  "secondaryIntents": [
+    "taxa de liberação de empréstimo existe",
+    "IOF antecipado por Pix é normal"
+  ],
+  "targetReader": "Pessoa no meio de uma negociação suspeita, prestes a pagar",
+  "readerSituation": "Recebeu pedido de taxa antecipada e quer confirmação rápida",
+  "centralQuestion": "Pagamento antecipado é golpe? Por quê, sem exceções?",
+  "uniqueAngle": "Responde 'sim' na primeira frase e constrói o raciocínio econômico que torna a regra memorável (a instituição já tem o dinheiro; o fluxo invertido só faz sentido na fraude)",
+  "originalContribution": [
+    "Explicação da lógica operacional (custos descontados ou diluídos — nunca antecipados)",
+    "Lista dos apelidos do mesmo golpe (taxa de liberação, caução, IOF antecipado…)",
+    "Teste em dois passos que derruba a oferta fraudulenta"
+  ],
+  "primarySources": [
+    "Banco Central do Brasil — orientações sobre fraudes e CET"
+  ],
+  "supportingSources": [],
+  "contentArchetype": "explainer",
+  "proposedStructure": [
+    "Resposta direta na abertura",
+    "Por que a regra não tem exceção",
+    "Apelidos do golpe",
+    "Roteiro típico",
+    "Teste em dois passos",
+    "Já paguei: encaminhamento",
+    "FAQ"
+  ],
+  "uniqueExamples": ["Frase-teste: 'só aceito custos descontados do valor liberado'"],
+  "proposedVisuals": ["SafetyAlert"],
+  "pagesThatMayCompete": ["/credito-seguro/como-identificar-golpes-de-emprestimo/"],
+  "informationThatMustNotBeRepeated": [
+    "Plano completo pós-golpe (fica no guia geral de golpes; aqui apenas resumo com link)"
+  ],
+  "publicationDecision": "create"
+}

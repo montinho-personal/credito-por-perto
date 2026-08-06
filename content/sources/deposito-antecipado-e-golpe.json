@@ -1,0 +1,23 @@
+{
+  "articleSlug": "deposito-antecipado-e-golpe",
+  "claims": [
+    {
+      "claimId": "fraude-antecipado-alerta",
+      "claimText": "O Banco Central e órgãos de defesa do consumidor alertam que a exigência de depósito ou pagamento antecipado para liberação de empréstimo caracteriza fraude.",
+      "sourceOrganization": "Banco Central do Brasil",
+      "sourceTitle": "Alertas sobre golpes financeiros — cidadania financeira",
+      "sourceLocation": "https://www.bcb.gov.br",
+      "sourceType": "official",
+      "accessedAt": "2026-08-05"
+    },
+    {
+      "claimId": "cet-inclui-custos",
+      "claimText": "Custos legítimos de operações de crédito integram o CET informado na contratação, sendo descontados do valor liberado ou diluídos nas parcelas.",
+      "sourceOrganization": "Banco Central do Brasil",
+      "sourceTitle": "Custo Efetivo Total — orientações",
+      "sourceLocation": "https://www.bcb.gov.br",
+      "sourceType": "official",
+      "accessedAt": "2026-08-05"
+    }
+  ]
+}

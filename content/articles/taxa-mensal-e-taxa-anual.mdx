@@ -1,0 +1,64 @@
+---
+title: "Taxa mensal e taxa anual: por que 3% ao mês não é 36% ao ano"
+slug: "taxa-mensal-e-taxa-anual"
+description: "Multiplicar a taxa mensal por 12 subestima o custo real do crédito. Veja a conversão correta com juros compostos e uma tabela de equivalências para consulta."
+excerpt: "O erro de multiplicar por 12 faz empréstimos caros parecerem razoáveis. A conversão correta usa juros compostos — e a diferença cresce rápido."
+category: "juros-e-cet"
+cluster: "custos"
+tags: ["taxa-de-juros", "juros-compostos", "conversao"]
+authorId: "equipe-editorial"
+status: "published"
+publishedAt: "2026-08-05"
+sourceCheckedAt: "2026-08-05"
+contentType: "guide"
+---
+
+O erro é tão comum que merece um artigo próprio: **multiplicar a taxa mensal por 12 para achar a anual**. Parece lógico — e subestima o custo real do crédito, às vezes por muito. A conta certa usa juros compostos, porque é assim que os contratos funcionam: cada mês de juros incide sobre o saldo já acrescido dos juros anteriores.
+
+## A conversão correta
+
+```
+taxa anual = (1 + taxa mensal)¹² − 1
+```
+
+Com 3% ao mês: `(1,03)¹² − 1 = 0,4258`, ou seja, **42,58% ao ano** — quase 7 pontos percentuais acima dos "36%" da multiplicação simples.
+
+## Tabela de equivalências para consulta
+
+| Taxa mensal | Multiplicando por 12 (errado) | Equivalência composta (certo) |
+| --- | --- | --- |
+| 1% a.m. | 12% a.a. | 12,68% a.a. |
+| 2% a.m. | 24% a.a. | 26,82% a.a. |
+| 3% a.m. | 36% a.a. | 42,58% a.a. |
+| 4% a.m. | 48% a.a. | 60,10% a.a. |
+| 5% a.m. | 60% a.a. | 79,59% a.a. |
+| 8% a.m. | 96% a.a. | 151,82% a.a. |
+| 12% a.m. | 144% a.a. | 289,60% a.a. |
+
+Repare no padrão: quanto maior a taxa mensal, mais a multiplicação simples engana. Em taxas típicas de cartão ou cheque especial, o erro passa de dezenas de pontos percentuais.
+
+## No caminho inverso: da anual para a mensal
+
+```
+taxa mensal = (1 + taxa anual)^(1/12) − 1
+```
+
+Uma taxa de 42,58% ao ano equivale a 3% ao mês — e não a `42,58 ÷ 12 = 3,55%`. O mesmo cuidado vale ao comparar um produto anunciado em taxa anual com outro anunciado em mensal: converta os dois para a mesma base antes de comparar.
+
+## Onde isso pega no dia a dia
+
+- **Propostas anunciadas em bases diferentes:** uma instituição anuncia "2,9% a.m.", outra "41% a.a." — sem converter, não dá para saber qual é menor *(convertendo: 2,9% a.m. ≈ 40,9% a.a., praticamente empatadas)*;
+- **Percepção de "taxa pequena":** 12% ao mês soa administrável; 289,6% ao ano revela o tamanho real do buraco;
+- **Leitura do CET:** o CET é expresso em base anual (e mensal). Saber converter evita sustos e comparações erradas — veja [o que é CET](/juros-e-cet/o-que-e-cet/).
+
+A [calculadora de empréstimo](/calculadoras/emprestimo/) faz essa conversão automaticamente a partir da taxa mensal informada.
+
+## Perguntas frequentes
+
+### Por que os contratos usam juros compostos?
+
+É o padrão do sistema financeiro para operações de crédito: o saldo devedor é atualizado a cada período e os juros seguintes incidem sobre ele. Os exemplos e fórmulas deste portal seguem esse regime — explicado em detalhes em [como calcular juros de empréstimo](/juros-e-cet/como-calcular-juros-de-emprestimo/).
+
+### "12% ao ano" e "1% ao mês" são a mesma coisa?
+
+Não exatamente: 1% ao mês composto equivale a 12,68% ao ano. A diferença parece pequena nessa faixa, mas cresce rapidamente com a taxa.

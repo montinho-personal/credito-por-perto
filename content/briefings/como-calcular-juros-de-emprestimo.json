@@ -1,0 +1,39 @@
+{
+  "proposedTitle": "Como calcular juros de empréstimo: fórmulas, exemplo e passo a passo",
+  "primaryIntent": "como calcular juros de empréstimo",
+  "secondaryIntents": [
+    "fórmula da parcela sistema Price",
+    "como conferir parcela de proposta de empréstimo"
+  ],
+  "targetReader": "Pessoa que recebeu uma proposta e quer conferir os números",
+  "readerSituation": "Não sabe se a parcela ofertada condiz com a taxa informada",
+  "centralQuestion": "Como calcular e conferir a parcela de um empréstimo?",
+  "uniqueAngle": "Abre prometendo o resultado prático (conferir proposta) e entrega passo a passo numérico completo com mini tabela de amortização e roteiro de conferência",
+  "originalContribution": [
+    "Exemplo hipotético completo (R$ 3.000, 2% a.m., 10x) resolvido dígito a dígito",
+    "Roteiro de conferência que interpreta divergências (centavos vs custos embutidos)",
+    "Mini tabela de amortização do próprio exemplo"
+  ],
+  "primarySources": [
+    "Banco Central do Brasil — educação financeira (juros compostos e sistemas de amortização)"
+  ],
+  "supportingSources": [],
+  "contentArchetype": "calculator-support",
+  "proposedStructure": [
+    "Abertura: o que você vai conseguir fazer",
+    "Regime de juros compostos",
+    "Fórmula Price",
+    "Passo a passo com exemplo",
+    "Por que o começo paga mais juros (tabela)",
+    "Roteiro de conferência",
+    "FAQ"
+  ],
+  "uniqueExamples": ["R$ 3.000 a 2% a.m. em 10 parcelas, resolvido manualmente"],
+  "proposedVisuals": ["Bloco de código com fórmula", "tabela de amortização", "ChecklistBox"],
+  "pagesThatMayCompete": ["/calculadoras/emprestimo/", "/juros-e-cet/o-que-e-cet/"],
+  "informationThatMustNotBeRepeated": [
+    "Explicação do CET (link, não repetição)",
+    "Conversão mensal-anual detalhada (fica em taxa-mensal-e-taxa-anual)"
+  ],
+  "publicationDecision": "create"
+}

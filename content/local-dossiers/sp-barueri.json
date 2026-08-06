@@ -1,0 +1,35 @@
+{
+  "localityId": "sp-barueri",
+  "localityName": "Barueri",
+  "localityType": "municipality",
+  "stateCode": "sp",
+  "officialAdministrativeStatus": "Município do estado de São Paulo (código IBGE 3505708)",
+  "officialSources": [
+    {
+      "organization": "IBGE",
+      "documentTitle": "Cadastro de municípios — Barueri (SP)",
+      "sourceLocation": "https://www.ibge.gov.br",
+      "checkedAt": "2026-08-05",
+      "extractedFact": "Barueri é município do estado de São Paulo, código 3505708.",
+      "relevanceToReader": "Confirma a classificação administrativa correta da página local."
+    }
+  ],
+  "consumerProtectionResources": [],
+  "verifiedLocalPrograms": [],
+  "verifiedServiceInformation": [],
+  "uniqueLocalQuestions": [
+    "Onde o morador de Barueri registra reclamação de consumo presencialmente?",
+    "Quais programas públicos de crédito atendem MEIs de Barueri?",
+    "O que pertence ao guia de Barueri e o que pertence ao guia de Alphaville?"
+  ],
+  "localRisksOrWarnings": [],
+  "decisionImpact": [
+    "Atendimento local de defesa do consumidor facilita reclamações formais",
+    "Programas públicos vigentes podem substituir crédito caro"
+  ],
+  "pendingVerification": [
+    "Canais municipais de defesa do consumidor de Barueri (endereço, contatos, horários)",
+    "Programas de crédito público (municipais/estaduais) vigentes para moradores e MEIs",
+    "Informações de atendimento bancário/cooperativo verificáveis e relevantes à decisão"
+  ]
+}

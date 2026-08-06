@@ -1,0 +1,41 @@
+{
+  "articleSlug": "como-identificar-golpes-de-emprestimo",
+  "claims": [
+    {
+      "claimId": "med-pix",
+      "claimText": "O Pix conta com o Mecanismo Especial de Devolução (MED) para casos de fraude, acionado junto à instituição; a rapidez do registro influencia a chance de devolução.",
+      "sourceOrganization": "Banco Central do Brasil",
+      "sourceTitle": "Pix — Mecanismo Especial de Devolução",
+      "sourceLocation": "https://www.bcb.gov.br",
+      "sourceType": "official",
+      "accessedAt": "2026-08-05"
+    },
+    {
+      "claimId": "consumidor-gov",
+      "claimText": "A plataforma consumidor.gov.br permite registrar reclamações contra empresas, incluindo instituições financeiras.",
+      "sourceOrganization": "Ministério da Justiça e Segurança Pública",
+      "sourceTitle": "consumidor.gov.br",
+      "sourceLocation": "https://www.consumidor.gov.br",
+      "sourceType": "official",
+      "accessedAt": "2026-08-05"
+    },
+    {
+      "claimId": "reclamacao-bcb",
+      "claimText": "O Banco Central mantém canal de reclamações contra instituições autorizadas.",
+      "sourceOrganization": "Banco Central do Brasil",
+      "sourceTitle": "Reclamações contra instituições — canais de atendimento",
+      "sourceLocation": "https://www.bcb.gov.br",
+      "sourceType": "official",
+      "accessedAt": "2026-08-05"
+    },
+    {
+      "claimId": "registrato-monitor",
+      "claimText": "O Registrato permite verificar operações de crédito vinculadas ao CPF, útil para detectar contratos fraudulentos.",
+      "sourceOrganization": "Banco Central do Brasil",
+      "sourceTitle": "Registrato",
+      "sourceLocation": "https://registrato.bcb.gov.br",
+      "sourceType": "official",
+      "accessedAt": "2026-08-05"
+    }
+  ]
+}

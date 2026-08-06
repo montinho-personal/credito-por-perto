@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 64" role="img" aria-label="Crédito Por Perto">
+  <path d="M32 5c11.6 0 21 9.2 21 20.7 0 8.4-5.6 16.6-11.2 22.8A85 85 0 0 1 32 58.4a85 85 0 0 1-9.8-9.9C16.6 42.3 11 34.1 11 25.7 11 14.2 20.4 5 32 5Z" fill="#FDFBF7"/>
+  <path d="M22.5 28.5 29 35l13-15" fill="none" stroke="#0E7C6B" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="66" y="40" font-family="Georgia, 'Times New Roman', serif" font-size="26" font-weight="700" fill="#FDFBF7">Crédito <tspan fill="#2DB89E">Por Perto</tspan></text>
+</svg>

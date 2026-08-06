@@ -1,0 +1,36 @@
+{
+  "localityId": "sp-campinas",
+  "localityName": "Campinas",
+  "localityType": "municipality",
+  "stateCode": "sp",
+  "officialAdministrativeStatus": "Município do estado de São Paulo (código IBGE 3509502)",
+  "officialSources": [
+    {
+      "organization": "IBGE",
+      "documentTitle": "Cadastro de municípios — Campinas (SP)",
+      "sourceLocation": "https://www.ibge.gov.br",
+      "checkedAt": "2026-08-05",
+      "extractedFact": "Campinas é município do estado de São Paulo, código 3509502.",
+      "relevanceToReader": "Confirma a classificação administrativa correta da página local."
+    }
+  ],
+  "consumerProtectionResources": [],
+  "verifiedLocalPrograms": [],
+  "verifiedServiceInformation": [],
+  "uniqueLocalQuestions": [
+    "Onde fica e como atende o Procon de Campinas?",
+    "Há mutirões de renegociação ativos na cidade?",
+    "Quais programas municipais de microcrédito estão vigentes?"
+  ],
+  "localRisksOrWarnings": [],
+  "decisionImpact": [
+    "Canais locais de proteção reduzem o custo de reclamar e negociar",
+    "Programas públicos vigentes podem ser alternativa mais barata ao crédito privado"
+  ],
+  "pendingVerification": [
+    "Endereço, contatos e horário do Procon Campinas (fonte: prefeitura/procon municipal)",
+    "Programas municipais/estaduais de crédito vigentes (Banco do Povo Paulista e similares) com regras atuais",
+    "Mutirões de renegociação ativos na região",
+    "Cooperativas e atendimento bancário verificável relevante para a decisão do leitor"
+  ]
+}

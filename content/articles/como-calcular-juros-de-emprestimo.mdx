@@ -1,0 +1,88 @@
+---
+title: "Como calcular juros de empréstimo: fórmulas, exemplo e passo a passo"
+slug: "como-calcular-juros-de-emprestimo"
+description: "Aprenda a calcular a parcela pelo sistema Price, entender juros compostos e conferir se a proposta que você recebeu bate com a taxa informada."
+excerpt: "Ao final deste guia, você vai conseguir calcular a parcela de um empréstimo, conferir a proposta recebida e entender por que os primeiros meses pagam mais juros."
+category: "juros-e-cet"
+cluster: "custos"
+tags: ["juros-compostos", "sistema-price", "calculo", "amortizacao"]
+authorId: "equipe-editorial"
+status: "published"
+publishedAt: "2026-08-05"
+sourceCheckedAt: "2026-08-05"
+contentType: "guide"
+---
+
+Este guia serve para uma coisa concreta: ao final dele, você vai conseguir **conferir se a parcela de uma proposta bate com a taxa informada** — com uma fórmula, uma calculadora comum ou a nossa [calculadora de empréstimo](/calculadoras/emprestimo/), que faz tudo isso automaticamente e mostra a tabela mês a mês.
+
+## O regime dos empréstimos: juros compostos
+
+Empréstimos usam **juros compostos**: a cada mês, os juros incidem sobre o saldo devedor atual — que inclui os juros dos meses anteriores ainda não pagos. Isso tem duas consequências práticas:
+
+- Dobrar o prazo **não** dobra os juros: mais que dobra;
+- Uma taxa mensal "pequena" vira uma taxa anual grande — 3% ao mês equivale a 42,58% ao ano, não a 36%. Entenda essa conversão em [taxa mensal e taxa anual](/juros-e-cet/taxa-mensal-e-taxa-anual/).
+
+## A fórmula da parcela (sistema Price)
+
+O sistema mais usado em empréstimos pessoais é o **Price**: todas as parcelas são iguais. A fórmula:
+
+```
+parcela = valor × i ÷ (1 − (1 + i)⁻ⁿ)
+```
+
+Onde:
+
+- `valor` é o montante financiado (incluindo tarifas financiadas);
+- `i` é a taxa mensal em forma decimal (2% = 0,02);
+- `n` é o número de parcelas.
+
+## Passo a passo com um exemplo
+
+Empréstimo hipotético de **R$ 3.000**, a **2% ao mês**, em **10 parcelas**:
+
+1. Converta a taxa: `i = 0,02`;
+2. Calcule `(1 + i)⁻ⁿ` = `1,02⁻¹⁰` ≈ `0,82035`;
+3. Calcule o denominador: `1 − 0,82035 = 0,17965`;
+4. Calcule a parcela: `3000 × 0,02 ÷ 0,17965` ≈ **R$ 333,98**;
+5. Total pago: `333,98 × 10` ≈ **R$ 3.339,80** — cerca de R$ 339,80 de juros.
+
+## Por que o começo do contrato paga mais juros
+
+Em cada parcela, os juros são calculados sobre o saldo devedor. No primeiro mês do exemplo, os juros são `3000 × 0,02 = R$ 60`, e apenas `333,98 − 60 = R$ 273,98` amortizam a dívida. No último mês, o saldo é pequeno, os juros são centavos e quase toda a parcela amortiza. Essa progressão é a **tabela de amortização** — e explica por que quitar cedo economiza mais juros do que quitar no fim.
+
+| Mês | Juros | Amortização | Saldo após pagar |
+| --- | --- | --- | --- |
+| 1 | R$ 60,00 | R$ 273,98 | R$ 2.726,02 |
+| 2 | R$ 54,52 | R$ 279,46 | R$ 2.446,56 |
+| 10 | ≈ R$ 6,55 | ≈ R$ 327,43 | R$ 0,00 |
+
+*(Valores do exemplo hipotético, arredondados.)*
+
+## Conferindo uma proposta real
+
+<ChecklistBox
+  title="Roteiro de conferência"
+  items={[
+    "Anote o valor financiado (pergunte se tarifas e seguros foram somados a ele)",
+    "Anote a taxa mensal e o número de parcelas da proposta",
+    "Aplique a fórmula ou use a calculadora do portal",
+    "Se a parcela calculada for menor que a ofertada, há custos embutidos — peça o CET e o detalhamento",
+    "Compare o total a pagar entre propostas no mesmo prazo",
+  ]}
+/>
+
+Diferenças pequenas (centavos ou poucos reais) costumam vir de arredondamento e da forma de contagem de dias. Diferenças grandes indicam encargos somados ao financiamento — o que não é necessariamente irregular, mas precisa estar claro no contrato e no [CET](/juros-e-cet/o-que-e-cet/).
+
+## Perguntas frequentes
+
+### E o sistema SAC, onde entra?
+
+No SAC (Sistema de Amortização Constante), a amortização mensal é fixa e as parcelas começam maiores e diminuem. É mais comum em financiamento imobiliário que em empréstimo pessoal. A lógica dos juros sobre o saldo é a mesma.
+
+### Juros simples não valem para empréstimos?
+
+Na prática do mercado, não — empréstimos usam juros compostos. Juros simples aparecem em contextos pontuais (como certas multas) e em exercícios didáticos.
+
+### A calculadora substitui a proposta da instituição?
+
+Não. Ela estima o componente de juros; a proposta real inclui IOF, tarifas e seguros que variam por operação. Use a calculadora para conferir ordens de grandeza e detectar custos embutidos.

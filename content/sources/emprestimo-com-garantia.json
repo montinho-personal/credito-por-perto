@@ -1,0 +1,32 @@
+{
+  "articleSlug": "emprestimo-com-garantia",
+  "claims": [
+    {
+      "claimId": "alienacao-imovel",
+      "claimText": "A alienação fiduciária de imóveis transfere a propriedade resolúvel ao credor até a quitação e prevê rito extrajudicial de consolidação e leilão em caso de inadimplência, com notificação para purgação da mora.",
+      "sourceOrganization": "Planalto",
+      "sourceTitle": "Lei nº 9.514/1997 — alienação fiduciária de coisa imóvel",
+      "sourceLocation": "https://www.planalto.gov.br/ccivil_03/leis/l9514.htm",
+      "sourceType": "official",
+      "accessedAt": "2026-08-05"
+    },
+    {
+      "claimId": "alienacao-veiculo",
+      "claimText": "A alienação fiduciária de bens móveis (como veículos) permite a retomada do bem pelo credor em caso de inadimplência, conforme legislação específica.",
+      "sourceOrganization": "Planalto",
+      "sourceTitle": "Decreto-Lei nº 911/1969 — alienação fiduciária de bens móveis",
+      "sourceLocation": "https://www.planalto.gov.br/ccivil_03/decreto-lei/1965-1988/del0911.htm",
+      "sourceType": "official",
+      "accessedAt": "2026-08-05"
+    },
+    {
+      "claimId": "sobra-leilao",
+      "claimText": "Do valor apurado em leilão descontam-se dívida e despesas, devolvendo-se eventual saldo remanescente ao devedor.",
+      "sourceOrganization": "Planalto",
+      "sourceTitle": "Lei nº 9.514/1997, art. 27",
+      "sourceLocation": "https://www.planalto.gov.br/ccivil_03/leis/l9514.htm",
+      "sourceType": "official",
+      "accessedAt": "2026-08-05"
+    }
+  ]
+}

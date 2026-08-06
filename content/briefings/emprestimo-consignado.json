@@ -1,0 +1,43 @@
+{
+  "proposedTitle": "Empréstimo consignado: guia completo para decidir com segurança",
+  "primaryIntent": "empréstimo consignado como funciona",
+  "secondaryIntents": [
+    "margem consignável o que é",
+    "portabilidade ou refinanciamento de consignado",
+    "golpes do consignado INSS"
+  ],
+  "targetReader": "Aposentados, pensionistas, servidores e trabalhadores CLT avaliando consignado",
+  "readerSituation": "Recebe ofertas insistentes por telefone e não sabe distinguir portabilidade de refinanciamento nem avaliar a margem",
+  "centralQuestion": "Como o consignado funciona e quais decisões e golpes exigem atenção?",
+  "uniqueAngle": "Parte das duas características estruturais (desconto em folha + margem legal) e dedica seção própria à confusão portabilidade vs refinanciamento, principal fonte de prejuízo em ofertas por telefone",
+  "originalContribution": [
+    "Tabela própria de públicos e forma de desconto",
+    "Contraste direto portabilidade vs refinanciamento com pergunta a fazer ao vendedor",
+    "Lista de padrões de golpe específicos do consignado com canais de reclamação"
+  ],
+  "primarySources": [
+    "Lei nº 10.820/2003 (consignação em folha)",
+    "INSS / Meu INSS — canais oficiais do benefício",
+    "Banco Central do Brasil — portabilidade de crédito"
+  ],
+  "supportingSources": [],
+  "contentArchetype": "complete-guide",
+  "proposedStructure": [
+    "Abertura: as duas características que definem a modalidade",
+    "Por que juros menores",
+    "Quem pode contratar (tabela)",
+    "Margem consignável",
+    "Portabilidade vs refinanciamento",
+    "Golpes específicos",
+    "Checklist",
+    "FAQ"
+  ],
+  "uniqueExamples": ["Pergunta-teste ao vendedor: 'é portabilidade ou refinanciamento?'"],
+  "proposedVisuals": ["Tabela de públicos", "WhatCanChange", "SafetyAlert", "ChecklistBox"],
+  "pagesThatMayCompete": ["/emprestimos/emprestimo-pessoal/"],
+  "informationThatMustNotBeRepeated": [
+    "Explicação geral de CET",
+    "Golpes genéricos de empréstimo (ficam no guia de golpes)"
+  ],
+  "publicationDecision": "create"
+}

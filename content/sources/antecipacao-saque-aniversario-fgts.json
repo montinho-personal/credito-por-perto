@@ -1,0 +1,33 @@
+{
+  "articleSlug": "antecipacao-saque-aniversario-fgts",
+  "claims": [
+    {
+      "claimId": "saque-aniversario-mecanica",
+      "claimText": "O saque-aniversário libera anualmente uma parcela do saldo do FGTS e, em contrapartida, impede o saque do saldo total na demissão sem justa causa (permanece o direito à multa rescisória); o retorno à modalidade padrão obedece a carência.",
+      "sourceOrganization": "Caixa Econômica Federal",
+      "sourceTitle": "FGTS — modalidade saque-aniversário",
+      "sourceLocation": "https://www.caixa.gov.br",
+      "sourceType": "official",
+      "accessedAt": "2026-08-05",
+      "notes": "Percentuais por faixa e prazos de carência são definidos em norma e podem mudar; o artigo não cita números."
+    },
+    {
+      "claimId": "antecipacao-bloqueio",
+      "claimText": "Na antecipação do saque-aniversário, as parcelas anuais futuras são cedidas à instituição e o valor correspondente do saldo fica bloqueado como garantia até a quitação.",
+      "sourceOrganization": "Caixa Econômica Federal",
+      "sourceTitle": "FGTS — operações de antecipação do saque-aniversário",
+      "sourceLocation": "https://www.caixa.gov.br",
+      "sourceType": "official",
+      "accessedAt": "2026-08-05"
+    },
+    {
+      "claimId": "fgts-legislacao",
+      "claimText": "O FGTS e suas modalidades de saque são disciplinados pela Lei nº 8.036/1990 e alterações.",
+      "sourceOrganization": "Planalto",
+      "sourceTitle": "Lei nº 8.036/1990 — FGTS",
+      "sourceLocation": "https://www.planalto.gov.br/ccivil_03/leis/l8036consol.htm",
+      "sourceType": "official",
+      "accessedAt": "2026-08-05"
+    }
+  ]
+}

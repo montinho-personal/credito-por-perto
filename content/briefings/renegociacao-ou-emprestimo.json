@@ -1,0 +1,43 @@
+{
+  "proposedTitle": "Renegociação ou novo empréstimo: qual caminho para sair da dívida?",
+  "primaryIntent": "renegociar dívida ou fazer empréstimo",
+  "secondaryIntents": [
+    "como renegociar dívida com desconto",
+    "trocar dívida cara por barata"
+  ],
+  "targetReader": "Pessoa endividada decidindo entre acordo e crédito novo",
+  "readerSituation": "Pula direto para 'preciso de empréstimo' sem comparar rotas",
+  "centralQuestion": "Renegociar ou trocar de dívida — como escolher a rota mais barata?",
+  "uniqueAngle": "Estrutura de bifurcação: critérios de vitória de cada rota, tabela comparativa própria e o terceiro caminho (Lei do Superendividamento) quando nenhuma basta",
+  "originalContribution": [
+    "Critérios 'quando cada rota tende a ganhar'",
+    "Tabela comparativa de 5 itens para preencher",
+    "Regra de ouro do acordo cumprível e alerta da armadilha da troca"
+  ],
+  "primarySources": [
+    "Planalto — Lei nº 14.181/2021",
+    "Banco Central do Brasil — Registrato e portabilidade"
+  ],
+  "supportingSources": [],
+  "contentArchetype": "decision-guide",
+  "proposedStructure": [
+    "Abertura: a bifurcação",
+    "Quando renegociar ganha",
+    "Quando a troca ganha",
+    "Armadilha da troca",
+    "Tabela comparativa",
+    "Quando nenhuma basta (superendividamento)",
+    "FAQ"
+  ],
+  "uniqueExamples": ["Tabela de 5 itens acordo vs crédito novo"],
+  "proposedVisuals": ["WarningBox", "tabela comparativa"],
+  "pagesThatMayCompete": [
+    "/organizacao-financeira/quando-vale-a-pena-fazer-emprestimo/",
+    "/emprestimos/emprestimo-para-negativado/"
+  ],
+  "informationThatMustNotBeRepeated": [
+    "Método dos cinco números (link)",
+    "Triagem de ofertas para negativados (artigo próprio)"
+  ],
+  "publicationDecision": "create"
+}

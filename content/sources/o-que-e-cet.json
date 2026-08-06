@@ -1,0 +1,32 @@
+{
+  "articleSlug": "o-que-e-cet",
+  "claims": [
+    {
+      "claimId": "cet-definicao-obrigacao",
+      "claimText": "O CET expressa o custo total da operação de crédito (juros, tributos, tarifas, seguros e demais encargos) e deve ser informado previamente à contratação por pessoas físicas.",
+      "sourceOrganization": "Banco Central do Brasil",
+      "sourceTitle": "Custo Efetivo Total — regulamentação e orientações ao cidadão",
+      "sourceLocation": "https://www.bcb.gov.br",
+      "sourceType": "official",
+      "accessedAt": "2026-08-05"
+    },
+    {
+      "claimId": "venda-casada-vedada",
+      "claimText": "Condicionar o fornecimento de um produto (crédito) à contratação de outro (seguro) caracteriza venda casada, vedada pelo CDC.",
+      "sourceOrganization": "Planalto — Código de Defesa do Consumidor",
+      "sourceTitle": "Lei nº 8.078/1990, art. 39, I",
+      "sourceLocation": "https://www.planalto.gov.br/ccivil_03/leis/l8078compilado.htm",
+      "sourceType": "official",
+      "accessedAt": "2026-08-05"
+    },
+    {
+      "claimId": "iof-componente",
+      "claimText": "O IOF incide sobre operações de crédito e compõe o CET.",
+      "sourceOrganization": "Receita Federal",
+      "sourceTitle": "IOF — Imposto sobre Operações Financeiras",
+      "sourceLocation": "https://www.gov.br/receitafederal",
+      "sourceType": "official",
+      "accessedAt": "2026-08-05"
+    }
+  ]
+}

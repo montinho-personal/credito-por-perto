@@ -1,0 +1,23 @@
+{
+  "articleSlug": "como-comparar-propostas-de-credito",
+  "claims": [
+    {
+      "claimId": "cet-previo",
+      "claimText": "O CET deve ser informado previamente à contratação de operações de crédito com pessoas físicas.",
+      "sourceOrganization": "Banco Central do Brasil",
+      "sourceTitle": "Custo Efetivo Total — regulamentação",
+      "sourceLocation": "https://www.bcb.gov.br",
+      "sourceType": "official",
+      "accessedAt": "2026-08-05"
+    },
+    {
+      "claimId": "ranking-termometro",
+      "claimText": "O ranking de reclamações do Banco Central e a plataforma consumidor.gov.br permitem avaliar o histórico de reclamações das instituições.",
+      "sourceOrganization": "Banco Central do Brasil",
+      "sourceTitle": "Ranking de reclamações",
+      "sourceLocation": "https://www.bcb.gov.br/estabilidadefinanceira/rankingreclamacoes",
+      "sourceType": "official",
+      "accessedAt": "2026-08-05"
+    }
+  ]
+}

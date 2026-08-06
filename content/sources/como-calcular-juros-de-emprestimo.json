@@ -1,0 +1,24 @@
+{
+  "articleSlug": "como-calcular-juros-de-emprestimo",
+  "claims": [
+    {
+      "claimId": "juros-compostos-regime",
+      "claimText": "Operações de crédito no Brasil utilizam capitalização composta; o Banco Central mantém material educativo sobre juros e sistemas de amortização.",
+      "sourceOrganization": "Banco Central do Brasil",
+      "sourceTitle": "Cidadania financeira — material educativo sobre juros",
+      "sourceLocation": "https://www.bcb.gov.br",
+      "sourceType": "official",
+      "accessedAt": "2026-08-05"
+    },
+    {
+      "claimId": "price-parcelas-fixas",
+      "claimText": "O sistema Price caracteriza-se por parcelas constantes, com parcela de juros decrescente e amortização crescente ao longo do contrato.",
+      "sourceOrganization": "Banco Central do Brasil",
+      "sourceTitle": "Sistemas de amortização — material educativo",
+      "sourceLocation": "https://www.bcb.gov.br",
+      "sourceType": "official",
+      "accessedAt": "2026-08-05",
+      "notes": "Cálculos do exemplo verificados com a implementação testada em src/lib/calculators/loan.ts."
+    }
+  ]
+}

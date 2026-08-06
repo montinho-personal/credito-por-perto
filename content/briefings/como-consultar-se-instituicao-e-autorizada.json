@@ -1,0 +1,40 @@
+{
+  "proposedTitle": "Como consultar se uma instituição de empréstimo é autorizada",
+  "primaryIntent": "como saber se financeira é autorizada pelo Banco Central",
+  "secondaryIntents": [
+    "consultar CNPJ de financeira",
+    "correspondente bancário é confiável"
+  ],
+  "targetReader": "Consumidor prestes a negociar com empresa desconhecida",
+  "readerSituation": "Recebeu oferta de 'financeira' que não conhece",
+  "centralQuestion": "Como verificar autorização e interpretar o resultado da consulta?",
+  "uniqueAngle": "How-to seco com tabela de interpretação de resultados (encontrada/nome parecido/não encontrada) e o caso específico dos correspondentes",
+  "originalContribution": [
+    "Tabela de interpretação de 4 cenários de resultado",
+    "Regra própria para correspondentes ('autorizado em nome de quem?')",
+    "Lista de checagens complementares ordenada por custo-benefício"
+  ],
+  "primarySources": [
+    "Banco Central do Brasil — Encontre uma instituição",
+    "Banco Central do Brasil — ranking de reclamações",
+    "consumidor.gov.br"
+  ],
+  "supportingSources": [],
+  "contentArchetype": "checklist",
+  "proposedStructure": [
+    "Abertura direta: a checagem de 2 minutos",
+    "Passo a passo numerado",
+    "Tabela de interpretação",
+    "Checagens complementares",
+    "Aviso sobre correspondentes",
+    "FAQ"
+  ],
+  "uniqueExamples": ["Cenário 'nome parecido, CNPJ diferente' como alerta máximo"],
+  "proposedVisuals": ["Tabela de interpretação", "WarningBox"],
+  "pagesThatMayCompete": ["/credito-seguro/como-identificar-golpes-de-emprestimo/"],
+  "informationThatMustNotBeRepeated": [
+    "Roteiros de golpe (ficam no guia geral)",
+    "Método de comparação de propostas"
+  ],
+  "publicationDecision": "create"
+}

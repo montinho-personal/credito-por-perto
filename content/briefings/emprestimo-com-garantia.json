@@ -1,0 +1,40 @@
+{
+  "proposedTitle": "Empréstimo com garantia de imóvel ou veículo: juros menores, risco maior",
+  "primaryIntent": "empréstimo com garantia de imóvel como funciona",
+  "secondaryIntents": [
+    "home equity vale a pena",
+    "empréstimo com garantia de veículo riscos",
+    "o que acontece se atrasar empréstimo com garantia"
+  ],
+  "targetReader": "Proprietário de imóvel ou veículo atraído pelos juros baixos da modalidade",
+  "readerSituation": "Compara só a taxa e subestima o risco de perda do bem",
+  "centralQuestion": "Quando o desconto no juro compensa (e quando não compensa) colocar um bem em risco?",
+  "uniqueAngle": "Estrutura invertida: começa pelas situações em que a modalidade deve ser evitada, depois explica a mecânica da alienação fiduciária e o rito do atraso passo a passo",
+  "originalContribution": [
+    "Filtro de exclusão logo na abertura (renda instável, bem essencial)",
+    "Rito do atraso em 3 passos com a consequência prática explicitada",
+    "ProsCons e checklist específicos da modalidade"
+  ],
+  "primarySources": [
+    "Planalto — Lei nº 9.514/1997 (alienação fiduciária de imóveis)",
+    "Planalto — Decreto-Lei nº 911/1969 e legislação de alienação fiduciária de móveis"
+  ],
+  "supportingSources": [],
+  "contentArchetype": "decision-guide",
+  "proposedStructure": [
+    "Abertura: quando evitar (filtro)",
+    "Por que os juros são baixos (alienação fiduciária)",
+    "O que acontece no atraso (rito)",
+    "Custos além dos juros",
+    "Prós e contras",
+    "Checklist",
+    "FAQ"
+  ],
+  "uniqueExamples": ["Pergunta-filtro: 'você pode perder esse bem?'"],
+  "proposedVisuals": ["ProsCons", "ChecklistBox"],
+  "pagesThatMayCompete": ["/emprestimos/antecipacao-saque-aniversario-fgts/"],
+  "informationThatMustNotBeRepeated": [
+    "Método de comparação pelo CET (fica em como-comparar-propostas-de-credito)"
+  ],
+  "publicationDecision": "create"
+}

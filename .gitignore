@@ -1,0 +1,46 @@
+# dependencies
+/node_modules
+.pnp
+.pnp.*
+
+# next.js
+/.next/
+/out/
+next-env.d.ts
+
+# production
+/build
+
+# misc
+.DS_Store
+*.pem
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# env files — nunca comitar segredos
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# vercel
+.vercel
+
+# typescript
+*.tsbuildinfo
+
+# relatórios gerados pelas auditorias (regeneráveis)
+/reports/*.json
+/reports/*.html
+!reports/.gitkeep
+
+# índice de busca gerado
+/public/search-index.json
+
+# testes
+/coverage

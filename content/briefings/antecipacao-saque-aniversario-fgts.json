@@ -1,0 +1,39 @@
+{
+  "proposedTitle": "Antecipação do saque-aniversário do FGTS: como funciona e o que fica preso",
+  "primaryIntent": "antecipação saque-aniversário FGTS como funciona",
+  "secondaryIntents": [
+    "antecipar FGTS vale a pena",
+    "o que acontece com FGTS na demissão com saque-aniversário"
+  ],
+  "targetReader": "Trabalhador CLT com saldo de FGTS avaliando antecipar",
+  "readerSituation": "Atraído por 'dinheiro rápido sem parcela mensal', sem enxergar o custo e o bloqueio",
+  "centralQuestion": "O que a antecipação realmente compromete e como enxergar seu custo?",
+  "uniqueAngle": "Desmonta o mal-entendido central ('não é empréstimo sem parcelas') e ensina a calcular o preço real pedindo dois números por escrito",
+  "originalContribution": [
+    "Mecânica em 3 passos com destaque à consequência da adesão na demissão",
+    "Método próprio de enxergar o custo (valor líquido vs soma dos saques cedidos)",
+    "Aviso específico sobre adesão 'automática' embutida em fluxos de venda"
+  ],
+  "primarySources": [
+    "Caixa Econômica Federal — FGTS e saque-aniversário",
+    "Gov.br — regras do FGTS"
+  ],
+  "supportingSources": [],
+  "contentArchetype": "explainer",
+  "proposedStructure": [
+    "Abertura: desmontando o mal-entendido",
+    "Mecânica em 3 passos",
+    "Onde está o custo invisível",
+    "Como enxergar o custo real",
+    "Quando faz/não faz sentido",
+    "O que pode mudar",
+    "FAQ"
+  ],
+  "uniqueExamples": ["Pedido de dois números por escrito para revelar o custo"],
+  "proposedVisuals": ["ExampleBox", "WhatCanChange", "WarningBox"],
+  "pagesThatMayCompete": ["/emprestimos/emprestimo-com-garantia/"],
+  "informationThatMustNotBeRepeated": [
+    "Comparação genérica de modalidades (fica no hub de empréstimos)"
+  ],
+  "publicationDecision": "create"
+}

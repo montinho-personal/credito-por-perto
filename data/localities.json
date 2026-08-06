@@ -1,0 +1,45 @@
+{
+  "comment": "Localidades com guia criado ou planejado. localityType segue a divisão administrativa oficial: Alphaville NÃO é município — é uma região/bairro planejado que abrange áreas de Barueri e Santana de Parnaíba (SP).",
+  "localities": [
+    {
+      "id": "sp",
+      "name": "São Paulo",
+      "localityType": "state",
+      "stateCode": "sp",
+      "ibgeCode": "35"
+    },
+    {
+      "id": "sp-campinas",
+      "name": "Campinas",
+      "localityType": "municipality",
+      "stateCode": "sp",
+      "citySlug": "campinas",
+      "ibgeCode": "3509502"
+    },
+    {
+      "id": "sp-barueri",
+      "name": "Barueri",
+      "localityType": "municipality",
+      "stateCode": "sp",
+      "citySlug": "barueri",
+      "ibgeCode": "3505708"
+    },
+    {
+      "id": "sp-santana-de-parnaiba",
+      "name": "Santana de Parnaíba",
+      "localityType": "municipality",
+      "stateCode": "sp",
+      "citySlug": "santana-de-parnaiba",
+      "ibgeCode": "3547304"
+    },
+    {
+      "id": "sp-barueri-alphaville",
+      "name": "Alphaville",
+      "localityType": "region",
+      "stateCode": "sp",
+      "citySlug": "barueri",
+      "districtSlug": "alphaville",
+      "municipalitiesInvolved": ["sp-barueri", "sp-santana-de-parnaiba"]
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "articleSlug": "diferenca-entre-emprestimo-e-financiamento",
+  "claims": [
+    {
+      "claimId": "credito-vinculado",
+      "claimText": "Financiamentos são operações de crédito com destinação específica, em geral com o bem financiado em garantia; empréstimos pessoais não têm destinação obrigatória.",
+      "sourceOrganization": "Banco Central do Brasil",
+      "sourceTitle": "Cidadania financeira — tipos de operações de crédito",
+      "sourceLocation": "https://www.bcb.gov.br",
+      "sourceType": "official",
+      "accessedAt": "2026-08-05"
+    },
+    {
+      "claimId": "consorcio-estrutura",
+      "claimText": "Consórcios não cobram juros, mas taxa de administração, e a contemplação ocorre por sorteio ou lance; são regulados pelo Banco Central.",
+      "sourceOrganization": "Banco Central do Brasil",
+      "sourceTitle": "Consórcios — regulação e orientações",
+      "sourceLocation": "https://www.bcb.gov.br",
+      "sourceType": "official",
+      "accessedAt": "2026-08-05"
+    }
+  ]
+}

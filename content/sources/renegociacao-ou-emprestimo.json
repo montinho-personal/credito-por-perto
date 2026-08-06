@@ -1,0 +1,32 @@
+{
+  "articleSlug": "renegociacao-ou-emprestimo",
+  "claims": [
+    {
+      "claimId": "superendividamento-processo",
+      "claimText": "A Lei nº 14.181/2021 institui processo de repactuação de dívidas em bloco para consumidores superendividados, com preservação do mínimo existencial, acessível gratuitamente via Procon e Defensoria.",
+      "sourceOrganization": "Planalto",
+      "sourceTitle": "Lei nº 14.181/2021",
+      "sourceLocation": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2021/lei/l14181.htm",
+      "sourceType": "official",
+      "accessedAt": "2026-08-05"
+    },
+    {
+      "claimId": "portabilidade-direito-reneg",
+      "claimText": "A portabilidade de operações de crédito é regulamentada e não pode ser impedida pela instituição de origem.",
+      "sourceOrganization": "Banco Central do Brasil",
+      "sourceTitle": "Portabilidade de crédito",
+      "sourceLocation": "https://www.bcb.gov.br",
+      "sourceType": "official",
+      "accessedAt": "2026-08-05"
+    },
+    {
+      "claimId": "registrato-valor-divida",
+      "claimText": "O Registrato permite consultar operações de crédito ativas vinculadas ao CPF.",
+      "sourceOrganization": "Banco Central do Brasil",
+      "sourceTitle": "Registrato",
+      "sourceLocation": "https://registrato.bcb.gov.br",
+      "sourceType": "official",
+      "accessedAt": "2026-08-05"
+    }
+  ]
+}

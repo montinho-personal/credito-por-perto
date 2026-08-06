@@ -1,0 +1,81 @@
+{
+  "como funciona empréstimo pessoal": {
+    "canonicalOwner": "/emprestimos/emprestimo-pessoal/",
+    "supportingPages": []
+  },
+  "empréstimo consignado como funciona": {
+    "canonicalOwner": "/emprestimos/emprestimo-consignado/",
+    "supportingPages": []
+  },
+  "empréstimo para negativado": {
+    "canonicalOwner": "/emprestimos/emprestimo-para-negativado/",
+    "supportingPages": ["/organizacao-financeira/renegociacao-ou-emprestimo/"]
+  },
+  "antecipação saque-aniversário FGTS como funciona": {
+    "canonicalOwner": "/emprestimos/antecipacao-saque-aniversario-fgts/",
+    "supportingPages": []
+  },
+  "empréstimo com garantia de imóvel como funciona": {
+    "canonicalOwner": "/emprestimos/emprestimo-com-garantia/",
+    "supportingPages": ["/emprestimos/diferenca-entre-emprestimo-e-financiamento/"]
+  },
+  "diferença entre empréstimo e financiamento": {
+    "canonicalOwner": "/emprestimos/diferenca-entre-emprestimo-e-financiamento/",
+    "supportingPages": []
+  },
+  "o que é CET": {
+    "canonicalOwner": "/juros-e-cet/o-que-e-cet/",
+    "supportingPages": ["/organizacao-financeira/como-comparar-propostas-de-credito/"]
+  },
+  "como calcular juros de empréstimo": {
+    "canonicalOwner": "/juros-e-cet/como-calcular-juros-de-emprestimo/",
+    "supportingPages": ["/calculadoras/emprestimo/", "/juros-e-cet/taxa-mensal-e-taxa-anual/"]
+  },
+  "converter taxa mensal para anual": {
+    "canonicalOwner": "/juros-e-cet/taxa-mensal-e-taxa-anual/",
+    "supportingPages": []
+  },
+  "como identificar golpe de empréstimo": {
+    "canonicalOwner": "/credito-seguro/como-identificar-golpes-de-emprestimo/",
+    "supportingPages": [
+      "/credito-seguro/deposito-antecipado-e-golpe/",
+      "/credito-seguro/como-consultar-se-instituicao-e-autorizada/"
+    ]
+  },
+  "depósito antecipado para empréstimo é golpe": {
+    "canonicalOwner": "/credito-seguro/deposito-antecipado-e-golpe/",
+    "supportingPages": []
+  },
+  "como saber se financeira é autorizada pelo Banco Central": {
+    "canonicalOwner": "/credito-seguro/como-consultar-se-instituicao-e-autorizada/",
+    "supportingPages": []
+  },
+  "quando vale a pena fazer empréstimo": {
+    "canonicalOwner": "/organizacao-financeira/quando-vale-a-pena-fazer-emprestimo/",
+    "supportingPages": []
+  },
+  "como comparar propostas de empréstimo": {
+    "canonicalOwner": "/organizacao-financeira/como-comparar-propostas-de-credito/",
+    "supportingPages": []
+  },
+  "renegociar dívida ou fazer empréstimo": {
+    "canonicalOwner": "/organizacao-financeira/renegociacao-ou-emprestimo/",
+    "supportingPages": []
+  },
+  "simulador de parcelas de empréstimo": {
+    "canonicalOwner": "/calculadoras/emprestimo/",
+    "supportingPages": ["/juros-e-cet/como-calcular-juros-de-emprestimo/"]
+  },
+  "empréstimos em campinas": {
+    "canonicalOwner": "/emprestimos/sp/campinas/",
+    "supportingPages": []
+  },
+  "empréstimos em barueri": {
+    "canonicalOwner": "/emprestimos/sp/barueri/",
+    "supportingPages": []
+  },
+  "empréstimos em alphaville": {
+    "canonicalOwner": "/emprestimos/sp/barueri/alphaville/",
+    "supportingPages": ["/emprestimos/sp/barueri/"]
+  }
+}

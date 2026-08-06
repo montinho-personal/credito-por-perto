@@ -1,0 +1,41 @@
+{
+  "articleSlug": "emprestimo-para-negativado",
+  "claims": [
+    {
+      "claimId": "registrato-gratuito",
+      "claimText": "O Registrato, do Banco Central, permite consultar gratuitamente dívidas e relacionamentos bancários vinculados ao CPF.",
+      "sourceOrganization": "Banco Central do Brasil",
+      "sourceTitle": "Registrato — extrato do relacionamento com o sistema financeiro",
+      "sourceLocation": "https://registrato.bcb.gov.br",
+      "sourceType": "official",
+      "accessedAt": "2026-08-05"
+    },
+    {
+      "claimId": "superendividamento-lei",
+      "claimText": "A Lei nº 14.181/2021 prevê processo de repactuação de dívidas do consumidor superendividado, com preservação do mínimo existencial.",
+      "sourceOrganization": "Planalto",
+      "sourceTitle": "Lei nº 14.181/2021 — prevenção e tratamento do superendividamento",
+      "sourceLocation": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2021/lei/l14181.htm",
+      "sourceType": "official",
+      "accessedAt": "2026-08-05"
+    },
+    {
+      "claimId": "baixa-negativacao",
+      "claimText": "Após quitação ou acordo, cabe ao credor providenciar a baixa da negativação; o CDC disciplina os cadastros de consumidores.",
+      "sourceOrganization": "Planalto — Código de Defesa do Consumidor",
+      "sourceTitle": "Lei nº 8.078/1990, art. 43",
+      "sourceLocation": "https://www.planalto.gov.br/ccivil_03/leis/l8078compilado.htm",
+      "sourceType": "official",
+      "accessedAt": "2026-08-05"
+    },
+    {
+      "claimId": "instituicao-autorizada-neg",
+      "claimText": "A autorização de instituições para operar pode ser consultada no Banco Central.",
+      "sourceOrganization": "Banco Central do Brasil",
+      "sourceTitle": "Encontre uma instituição",
+      "sourceLocation": "https://www.bcb.gov.br/estabilidadefinanceira/encontreinstituicao",
+      "sourceType": "official",
+      "accessedAt": "2026-08-05"
+    }
+  ]
+}

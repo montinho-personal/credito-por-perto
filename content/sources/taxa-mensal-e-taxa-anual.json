@@ -1,0 +1,15 @@
+{
+  "articleSlug": "taxa-mensal-e-taxa-anual",
+  "claims": [
+    {
+      "claimId": "equivalencia-composta",
+      "claimText": "A equivalência entre taxas de períodos diferentes em regime composto segue (1 + i_mensal)^12 − 1; valores da tabela calculados com essa fórmula.",
+      "sourceOrganization": "Banco Central do Brasil",
+      "sourceTitle": "Cidadania financeira — juros e capitalização composta",
+      "sourceLocation": "https://www.bcb.gov.br",
+      "sourceType": "official",
+      "accessedAt": "2026-08-05",
+      "notes": "Valores conferidos com a função monthlyToAnnualRate testada em src/lib/calculators/loan.ts."
+    }
+  ]
+}

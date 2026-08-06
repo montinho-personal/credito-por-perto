@@ -1,0 +1,42 @@
+{
+  "articleSlug": "emprestimo-consignado",
+  "claims": [
+    {
+      "claimId": "consignacao-lei",
+      "claimText": "O desconto de parcelas de empréstimo em folha de pagamento e benefícios é disciplinado por lei, com limite de comprometimento (margem consignável).",
+      "sourceOrganization": "Planalto",
+      "sourceTitle": "Lei nº 10.820/2003 — consignação em folha de pagamento",
+      "sourceLocation": "https://www.planalto.gov.br/ccivil_03/leis/2003/l10.820.htm",
+      "sourceType": "official",
+      "accessedAt": "2026-08-05",
+      "notes": "Percentuais e divisão da margem são alterados ao longo do tempo por normas posteriores; o artigo orienta confirmar o valor vigente e não cita percentual."
+    },
+    {
+      "claimId": "portabilidade-direito",
+      "claimText": "A portabilidade de operações de crédito entre instituições é regulamentada e mantém o saldo devedor, alterando as condições.",
+      "sourceOrganization": "Banco Central do Brasil",
+      "sourceTitle": "Portabilidade de crédito — regras e orientações",
+      "sourceLocation": "https://www.bcb.gov.br",
+      "sourceType": "official",
+      "accessedAt": "2026-08-05"
+    },
+    {
+      "claimId": "bloqueio-consignado-inss",
+      "claimText": "O INSS oferece bloqueio e desbloqueio da contratação de consignado no benefício pelos canais oficiais (Meu INSS/135).",
+      "sourceOrganization": "INSS",
+      "sourceTitle": "Meu INSS — bloqueio de empréstimo consignado",
+      "sourceLocation": "https://www.gov.br/inss",
+      "sourceType": "official",
+      "accessedAt": "2026-08-05"
+    },
+    {
+      "claimId": "arrependimento-7-dias",
+      "claimText": "Contratações realizadas fora do estabelecimento comercial têm prazo de arrependimento de 7 dias.",
+      "sourceOrganization": "Planalto — Código de Defesa do Consumidor",
+      "sourceTitle": "Lei nº 8.078/1990, art. 49",
+      "sourceLocation": "https://www.planalto.gov.br/ccivil_03/leis/l8078compilado.htm",
+      "sourceType": "official",
+      "accessedAt": "2026-08-05"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "articleSlug": "como-consultar-se-instituicao-e-autorizada",
+  "claims": [
+    {
+      "claimId": "encontre-instituicao",
+      "claimText": "O Banco Central disponibiliza consulta pública das instituições autorizadas a funcionar ('Encontre uma instituição').",
+      "sourceOrganization": "Banco Central do Brasil",
+      "sourceTitle": "Encontre uma instituição",
+      "sourceLocation": "https://www.bcb.gov.br/estabilidadefinanceira/encontreinstituicao",
+      "sourceType": "official",
+      "accessedAt": "2026-08-05"
+    },
+    {
+      "claimId": "correspondentes-regra",
+      "claimText": "Correspondentes bancários atuam em nome de instituições autorizadas, conforme regulamentação do CMN/Banco Central.",
+      "sourceOrganization": "Banco Central do Brasil",
+      "sourceTitle": "Correspondentes no país — regulamentação",
+      "sourceLocation": "https://www.bcb.gov.br",
+      "sourceType": "official",
+      "accessedAt": "2026-08-05"
+    },
+    {
+      "claimId": "ranking-reclamacoes",
+      "claimText": "O Banco Central publica periodicamente ranking de reclamações contra instituições.",
+      "sourceOrganization": "Banco Central do Brasil",
+      "sourceTitle": "Ranking de reclamações",
+      "sourceLocation": "https://www.bcb.gov.br/estabilidadefinanceira/rankingreclamacoes",
+      "sourceType": "official",
+      "accessedAt": "2026-08-05"
+    }
+  ]
+}

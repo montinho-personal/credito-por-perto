@@ -1,0 +1,37 @@
+{
+  "proposedTitle": "Taxa mensal e taxa anual: por que 3% ao mês não é 36% ao ano",
+  "primaryIntent": "converter taxa mensal para anual",
+  "secondaryIntents": [
+    "3% ao mês é quanto ao ano",
+    "diferença entre taxa mensal e anual"
+  ],
+  "targetReader": "Consumidor comparando propostas anunciadas em bases diferentes",
+  "readerSituation": "Multiplica a taxa por 12 e subestima o custo",
+  "centralQuestion": "Como converter corretamente taxas mensais e anuais?",
+  "uniqueAngle": "Artigo inteiro construído sobre o erro comum (multiplicar por 12), com tabela de equivalências própria mostrando como o erro cresce com a taxa",
+  "originalContribution": [
+    "Tabela de equivalências errado vs certo em 7 faixas de taxa",
+    "Exemplo de propostas em bases diferentes 'praticamente empatadas'",
+    "Fórmulas nos dois sentidos (mensal→anual e anual→mensal)"
+  ],
+  "primarySources": [
+    "Banco Central do Brasil — educação financeira sobre juros"
+  ],
+  "supportingSources": [],
+  "contentArchetype": "explainer",
+  "proposedStructure": [
+    "Abertura: o erro comum",
+    "Fórmula correta",
+    "Tabela de equivalências",
+    "Caminho inverso",
+    "Onde isso pega no dia a dia",
+    "FAQ"
+  ],
+  "uniqueExamples": ["Comparação 2,9% a.m. vs 41% a.a."],
+  "proposedVisuals": ["Tabela de equivalências", "blocos de fórmula"],
+  "pagesThatMayCompete": ["/juros-e-cet/como-calcular-juros-de-emprestimo/"],
+  "informationThatMustNotBeRepeated": [
+    "Fórmula da parcela Price (fica em como-calcular-juros)"
+  ],
+  "publicationDecision": "create"
+}

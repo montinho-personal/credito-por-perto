@@ -1,0 +1,45 @@
+{
+  "proposedTitle": "Empréstimo pessoal: como funciona, quanto custa e o que comparar",
+  "primaryIntent": "como funciona empréstimo pessoal",
+  "secondaryIntents": [
+    "quanto custa um empréstimo pessoal",
+    "o que comparar antes de pedir empréstimo pessoal"
+  ],
+  "targetReader": "Pessoa avaliando pedir o primeiro empréstimo pessoal ou comparando propostas",
+  "readerSituation": "Recebeu ofertas ou precisa de um valor e não sabe avaliar o custo real",
+  "centralQuestion": "Como o empréstimo pessoal funciona e como saber se uma proposta é cara?",
+  "uniqueAngle": "Custo antes de vantagem: o guia parte do que define o preço da parcela (juros, prazo, IOF, tarifas) e ensina a comparar pelo CET, com exemplo numérico próprio do efeito do prazo",
+  "originalContribution": [
+    "Exemplo numérico próprio do efeito do prazo (12 vs 24 parcelas) claramente marcado como hipotético",
+    "Checklist 'Antes de contratar' específico da modalidade",
+    "Bloco 'O que pode mudar' listando o que depende de perfil e momento"
+  ],
+  "primarySources": [
+    "Banco Central do Brasil — Custo Efetivo Total e cidadania financeira",
+    "Banco Central do Brasil — consulta de instituições autorizadas"
+  ],
+  "supportingSources": [],
+  "contentArchetype": "complete-guide",
+  "proposedStructure": [
+    "Abertura: mesmas condições, totais diferentes",
+    "Como funciona na prática",
+    "O que define o custo",
+    "Exemplo do efeito do prazo",
+    "O que a instituição avalia",
+    "Como comparar",
+    "Quando não vale a pena",
+    "Alerta de golpe",
+    "FAQ"
+  ],
+  "uniqueExamples": ["R$ 5.000 a 3% a.m. em 12 vs 24 parcelas (hipotético)"],
+  "proposedVisuals": ["QuickSummary", "ExampleBox", "ChecklistBox", "WhatCanChange"],
+  "pagesThatMayCompete": [
+    "/organizacao-financeira/como-comparar-propostas-de-credito/",
+    "/juros-e-cet/o-que-e-cet/"
+  ],
+  "informationThatMustNotBeRepeated": [
+    "Explicação completa do CET (fica em /juros-e-cet/o-que-e-cet/)",
+    "Método completo de comparação (fica em como-comparar-propostas-de-credito)"
+  ],
+  "publicationDecision": "create"
+}

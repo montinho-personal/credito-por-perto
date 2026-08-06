@@ -1,0 +1,40 @@
+{
+  "proposedTitle": "Como identificar golpes de empréstimo: sinais, roteiros e o que fazer",
+  "primaryIntent": "como identificar golpe de empréstimo",
+  "secondaryIntents": [
+    "golpe do empréstimo consignado",
+    "caí em golpe de empréstimo o que fazer"
+  ],
+  "targetReader": "Consumidor abordado por oferta suspeita ou vítima recente",
+  "readerSituation": "Pressionado por urgência artificial, sem saber checar a oferta",
+  "centralQuestion": "Como reconhecer golpes de empréstimo e o que fazer se já caiu?",
+  "uniqueAngle": "Abre pelo sinal universal (pagamento antecipado) e organiza as fraudes em cinco roteiros nomeados, cada um com a checagem que o desmonta; inclui plano de ação pós-golpe com MED",
+  "originalContribution": [
+    "Taxonomia própria de 5 roteiros com contramedida específica em cada um",
+    "Plano de ação pós-golpe em 6 passos ordenados por urgência",
+    "Alerta sobre o 'golpe em cima do golpe'"
+  ],
+  "primarySources": [
+    "Banco Central do Brasil — Pix/MED e canais de reclamação",
+    "consumidor.gov.br",
+    "Banco Central do Brasil — consulta de instituições autorizadas"
+  ],
+  "supportingSources": [],
+  "contentArchetype": "fraud-alert",
+  "proposedStructure": [
+    "Abertura: o sinal universal",
+    "5 roteiros nomeados",
+    "Checklist de checagens",
+    "Plano pós-golpe",
+    "Alerta golpe-sobre-golpe",
+    "FAQ"
+  ],
+  "uniqueExamples": ["Teste 'a oferta sobrevive à checagem?'"],
+  "proposedVisuals": ["ChecklistBox", "SafetyAlert"],
+  "pagesThatMayCompete": ["/credito-seguro/deposito-antecipado-e-golpe/"],
+  "informationThatMustNotBeRepeated": [
+    "Aprofundamento do depósito antecipado (artigo dedicado)",
+    "Passo a passo de consulta de instituição (artigo dedicado)"
+  ],
+  "publicationDecision": "create"
+}

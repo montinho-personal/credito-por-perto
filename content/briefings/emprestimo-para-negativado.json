@@ -1,0 +1,45 @@
+{
+  "proposedTitle": "Empréstimo para negativado: o que existe de verdade e o que é cilada",
+  "primaryIntent": "empréstimo para negativado",
+  "secondaryIntents": [
+    "empréstimo para negativado existe",
+    "como limpar o nome",
+    "alternativas ao empréstimo para negativado"
+  ],
+  "targetReader": "Pessoa com CPF negativado precisando de crédito",
+  "readerSituation": "Vulnerabilidade financeira, exposta a promessas de aprovação garantida",
+  "centralQuestion": "O que realmente existe para negativados e como não cair em golpe ou armadilha?",
+  "uniqueAngle": "Triagem em três camadas: o que existe de verdade / o que é armadilha legal / o que é golpe puro — começando pela desconstrução da promessa 'garantido sem consulta'",
+  "originalContribution": [
+    "Classificação própria em três camadas (real, armadilha, golpe)",
+    "Rota de alternativas antes do crédito novo (renegociação, Registrato, Lei do Superendividamento)",
+    "Checklist condicional 'se decidir contratar mesmo assim'"
+  ],
+  "primarySources": [
+    "Banco Central do Brasil — Registrato",
+    "Planalto — Lei nº 14.181/2021 (superendividamento)",
+    "Banco Central do Brasil — consulta de instituições autorizadas"
+  ],
+  "supportingSources": [],
+  "contentArchetype": "decision-guide",
+  "proposedStructure": [
+    "Abertura: 'garantido sem consulta' não existe",
+    "O que existe de verdade",
+    "Armadilhas legais",
+    "Golpes puros",
+    "Alternativas antes do crédito",
+    "Checklist condicional",
+    "FAQ"
+  ],
+  "uniqueExamples": ["Três camadas de triagem aplicadas a ofertas típicas"],
+  "proposedVisuals": ["SafetyAlert", "ChecklistBox"],
+  "pagesThatMayCompete": [
+    "/credito-seguro/como-identificar-golpes-de-emprestimo/",
+    "/organizacao-financeira/renegociacao-ou-emprestimo/"
+  ],
+  "informationThatMustNotBeRepeated": [
+    "Detalhamento do golpe do depósito antecipado (fica no artigo dedicado)",
+    "Passo a passo de renegociação (fica em renegociacao-ou-emprestimo)"
+  ],
+  "publicationDecision": "create"
+}

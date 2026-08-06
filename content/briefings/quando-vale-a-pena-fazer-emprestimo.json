@@ -1,0 +1,39 @@
+{
+  "proposedTitle": "Quando vale a pena fazer um empréstimo (e quando ele piora tudo)",
+  "primaryIntent": "quando vale a pena fazer empréstimo",
+  "secondaryIntents": [
+    "empréstimo para pagar dívidas vale a pena",
+    "quanto da renda comprometer com parcelas"
+  ],
+  "targetReader": "Pessoa em dúvida se deve contratar crédito",
+  "readerSituation": "Pressão financeira ou desejo de consumo, sem critério de decisão",
+  "centralQuestion": "Como decidir se um empréstimo resolve ou piora a situação?",
+  "uniqueAngle": "Inverte a ordem: abre pelos cenários em que piora (os mais comuns), traz roteiro de 6 perguntas para responder por escrito e exemplo de duas pessoas com o mesmo empréstimo e desfechos opostos",
+  "originalContribution": [
+    "Roteiro de 6 perguntas com regra de decisão (2 respostas ruins = adiar)",
+    "Exemplo Ana/Bruno: mesma operação, realidades opostas",
+    "Distinção 'aprovação da instituição não é atestado de saúde da dívida'"
+  ],
+  "primarySources": [
+    "Planalto — Lei nº 14.181/2021 (superendividamento)"
+  ],
+  "supportingSources": [],
+  "contentArchetype": "decision-guide",
+  "proposedStructure": [
+    "Abertura: quando piora",
+    "Quando faz sentido",
+    "Roteiro de perguntas",
+    "A conta no orçamento",
+    "Exemplo comparado",
+    "Se decidir contratar",
+    "FAQ"
+  ],
+  "uniqueExamples": ["Ana e Bruno com o mesmo contrato de R$ 4.000"],
+  "proposedVisuals": ["ChecklistBox", "ExampleBox"],
+  "pagesThatMayCompete": ["/organizacao-financeira/renegociacao-ou-emprestimo/"],
+  "informationThatMustNotBeRepeated": [
+    "Passo a passo de renegociação",
+    "Comparação de propostas (artigo próprio)"
+  ],
+  "publicationDecision": "create"
+}

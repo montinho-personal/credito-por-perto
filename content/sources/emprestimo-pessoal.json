@@ -1,0 +1,42 @@
+{
+  "articleSlug": "emprestimo-pessoal",
+  "claims": [
+    {
+      "claimId": "cet-obrigatorio",
+      "claimText": "As instituições são obrigadas a informar o Custo Efetivo Total (CET) antes da contratação de operações de crédito a pessoas físicas.",
+      "sourceOrganization": "Banco Central do Brasil",
+      "sourceTitle": "Custo Efetivo Total (CET) — informações de cidadania financeira",
+      "sourceLocation": "https://www.bcb.gov.br",
+      "sourceType": "official",
+      "accessedAt": "2026-08-05",
+      "notes": "Regulamentação do CMN/BCB sobre transparência do CET em operações de crédito."
+    },
+    {
+      "claimId": "iof-credito",
+      "claimText": "O IOF é um imposto federal que incide sobre operações de crédito e compõe o custo do empréstimo.",
+      "sourceOrganization": "Receita Federal",
+      "sourceTitle": "IOF — Imposto sobre Operações Financeiras",
+      "sourceLocation": "https://www.gov.br/receitafederal",
+      "sourceType": "official",
+      "accessedAt": "2026-08-05"
+    },
+    {
+      "claimId": "liquidacao-antecipada",
+      "claimText": "A liquidação antecipada de dívida é direito do consumidor, com redução proporcional dos juros.",
+      "sourceOrganization": "Planalto — Código de Defesa do Consumidor",
+      "sourceTitle": "Lei nº 8.078/1990, art. 52, §2º",
+      "sourceLocation": "https://www.planalto.gov.br/ccivil_03/leis/l8078compilado.htm",
+      "sourceType": "official",
+      "accessedAt": "2026-08-05"
+    },
+    {
+      "claimId": "instituicao-autorizada",
+      "claimText": "É possível consultar se uma instituição é autorizada a operar no sistema do Banco Central.",
+      "sourceOrganization": "Banco Central do Brasil",
+      "sourceTitle": "Encontre uma instituição — consulta de instituições autorizadas",
+      "sourceLocation": "https://www.bcb.gov.br/estabilidadefinanceira/encontreinstituicao",
+      "sourceType": "official",
+      "accessedAt": "2026-08-05"
+    }
+  ]
+}
