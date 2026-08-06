@@ -1,0 +1,41 @@
+{
+  "proposedTitle": "Pix parcelado é empréstimo: quanto custa e quando (não) usar",
+  "primaryIntent": "pix parcelado como funciona e quanto custa",
+  "secondaryIntents": [
+    "pix parcelado vale a pena",
+    "pix parcelado tem juros"
+  ],
+  "targetReader": "Usuário de banco digital que vê o botão e não percebe que é crédito",
+  "readerSituation": "Modalidade nova, comparativos rasos na SERP; risco de virar hábito de déficit",
+  "centralQuestion": "O que o Pix parcelado é de verdade, quanto custa e contra o que compará-lo?",
+  "uniqueAngle": "Reenquadra como 'empréstimo de um toque', separa as duas modalidades em tabela e troca a comparação errada (parcelado × à vista) pela certa (parcelado × suas alternativas de crédito)",
+  "originalContribution": [
+    "Tabela das duas modalidades (via conta × via cartão)",
+    "Escada de comparação com 4 alternativas",
+    "Exemplo numérico próprio (R$ 1.000 em 12x a 3% vs 10% de desconto à vista)",
+    "Conceito de 'empilhar parcelinhas' como dívida invisível"
+  ],
+  "primarySources": [
+    "Banco Central do Brasil — Pix e operações de crédito",
+    "Idec — orientações sobre Pix parcelado (fonte secundária reconhecida)"
+  ],
+  "supportingSources": ["Idec"],
+  "contentArchetype": "comparison",
+  "proposedStructure": [
+    "Abertura: a natureza real do botão",
+    "Tabela das duas modalidades",
+    "Quanto custa (escada de comparação)",
+    "Exemplo numérico",
+    "Quando faz sentido / quando é armadilha",
+    "Alerta de golpe na novidade",
+    "FAQ"
+  ],
+  "uniqueExamples": ["R$ 1.000 em 12x a 3% a.m. = R$ 205,55 de juros (hipotético)"],
+  "proposedVisuals": ["Tabela comparativa", "ExampleBox", "WarningBox"],
+  "pagesThatMayCompete": ["/juros-e-cet/o-que-e-cet/", "/emprestimos/emprestimo-pessoal/"],
+  "informationThatMustNotBeRepeated": [
+    "Explicação do CET (link)",
+    "Roteiro de decisão de crédito (link)"
+  ],
+  "publicationDecision": "create"
+}

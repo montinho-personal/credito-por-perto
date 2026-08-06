@@ -1,0 +1,32 @@
+{
+  "articleSlug": "divida-caducada-nome-limpo",
+  "claims": [
+    {
+      "claimId": "registro-5-anos",
+      "claimText": "Cadastros negativos de consumo não podem conter informações negativas referentes a período superior a 5 anos (CDC, art. 43, §1º).",
+      "sourceOrganization": "Planalto — Código de Defesa do Consumidor",
+      "sourceTitle": "Lei nº 8.078/1990, art. 43, §1º",
+      "sourceLocation": "https://www.planalto.gov.br/ccivil_03/leis/l8078compilado.htm",
+      "sourceType": "official",
+      "accessedAt": "2026-08-06"
+    },
+    {
+      "claimId": "prescricao-206",
+      "claimText": "A pretensão de cobrança de dívidas líquidas constantes de instrumento público ou particular prescreve, em regra, em 5 anos (Código Civil, art. 206, §5º, I); a prescrição atinge a exigibilidade judicial, não a existência da dívida.",
+      "sourceOrganization": "Planalto — Código Civil",
+      "sourceTitle": "Lei nº 10.406/2002, art. 206",
+      "sourceLocation": "https://www.planalto.gov.br/ccivil_03/leis/2002/l10406compilada.htm",
+      "sourceType": "official",
+      "accessedAt": "2026-08-06"
+    },
+    {
+      "claimId": "cobranca-limites-cdc",
+      "claimText": "A cobrança extrajudicial permanece lícita dentro dos limites do CDC (sem constrangimento ou ameaça, art. 42).",
+      "sourceOrganization": "Planalto — Código de Defesa do Consumidor",
+      "sourceTitle": "Lei nº 8.078/1990, art. 42",
+      "sourceLocation": "https://www.planalto.gov.br/ccivil_03/leis/l8078compilado.htm",
+      "sourceType": "official",
+      "accessedAt": "2026-08-06"
+    }
+  ]
+}

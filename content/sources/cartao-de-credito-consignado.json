@@ -1,0 +1,42 @@
+{
+  "articleSlug": "cartao-de-credito-consignado",
+  "claims": [
+    {
+      "claimId": "rmc-fatia-propria",
+      "claimText": "O cartão de crédito consignado e o cartão consignado de benefício têm fatias próprias de margem (reserva de margem), separadas da margem do empréstimo consignado, definidas em lei e normas.",
+      "sourceOrganization": "Planalto",
+      "sourceTitle": "Lei nº 10.820/2003 — margens de consignação (com alterações)",
+      "sourceLocation": "https://www.planalto.gov.br/ccivil_03/leis/2003/l10.820.htm",
+      "sourceType": "official",
+      "accessedAt": "2026-08-06",
+      "notes": "Percentuais específicos mudam por norma; o artigo cita '5%' como típico e remete à verificação da regra vigente."
+    },
+    {
+      "claimId": "minimo-em-folha",
+      "claimText": "No cartão consignado, o valor descontado em folha/benefício corresponde ao pagamento mínimo da fatura; o restante compõe saldo rotativo com juros.",
+      "sourceOrganization": "Banco Central do Brasil",
+      "sourceTitle": "Cartão de crédito consignado — características da modalidade",
+      "sourceLocation": "https://www.bcb.gov.br",
+      "sourceType": "official",
+      "accessedAt": "2026-08-06"
+    },
+    {
+      "claimId": "extrato-meuinss",
+      "claimText": "O extrato de empréstimos consignados e reservas de margem (RMC/RCC) do benefício pode ser consultado no Meu INSS.",
+      "sourceOrganization": "INSS",
+      "sourceTitle": "Meu INSS — extrato de empréstimos consignados",
+      "sourceLocation": "https://www.gov.br/inss",
+      "sourceType": "official",
+      "accessedAt": "2026-08-06"
+    },
+    {
+      "claimId": "reclamacao-canais",
+      "claimText": "Contratações não reconhecidas podem ser contestadas na instituição e nos canais oficiais (consumidor.gov.br, Banco Central, Procon/Defensoria).",
+      "sourceOrganization": "Ministério da Justiça / Banco Central do Brasil",
+      "sourceTitle": "consumidor.gov.br e canais de reclamação do BC",
+      "sourceLocation": "https://www.consumidor.gov.br",
+      "sourceType": "official",
+      "accessedAt": "2026-08-06"
+    }
+  ]
+}

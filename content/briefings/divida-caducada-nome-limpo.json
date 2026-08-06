@@ -1,0 +1,44 @@
+{
+  "proposedTitle": "Dívida caduca em 5 anos? O que sai do seu nome e o que continua",
+  "primaryIntent": "dívida caduca em 5 anos",
+  "secondaryIntents": [
+    "dívida caducada precisa pagar",
+    "nome limpa sozinho depois de 5 anos"
+  ],
+  "targetReader": "Pessoa negativada avaliando esperar o prazo ou negociar",
+  "readerSituation": "O mito mistura negativação, prescrição e existência da dívida; SERP explica pela metade",
+  "centralQuestion": "O que realmente muda aos 5 anos e vale a pena esperar caducar?",
+  "uniqueAngle": "Separa o mito em três institutos com tabela própria (negativação × prescrição × dívida), quantifica os riscos de esperar e trata a decisão 'pagar ou não' sem moralismo",
+  "originalContribution": [
+    "Tabela dos três institutos com base legal",
+    "Lista dos 4 riscos de 'esperar caducar' de propósito",
+    "Raciocínio de decisão sobre dívida prescrita (incl. cautela com confissão de dívida)",
+    "Alerta do golpe da dívida fantasma"
+  ],
+  "primarySources": [
+    "Planalto — CDC art. 43 (registro máximo de 5 anos)",
+    "Planalto — Código Civil art. 206 (prazos de prescrição)"
+  ],
+  "supportingSources": [],
+  "contentArchetype": "explainer",
+  "proposedStructure": [
+    "Abertura: três coisas num só mito",
+    "Tabela dos três institutos",
+    "O que muda de verdade",
+    "Riscos de esperar",
+    "Pagar ou não (raciocínio)",
+    "Golpe da dívida fantasma",
+    "FAQ"
+  ],
+  "uniqueExamples": ["'Nome limpo por decurso de prazo não é histórico bom'"],
+  "proposedVisuals": ["Tabela comparativa", "WarningBox"],
+  "pagesThatMayCompete": [
+    "/emprestimos/emprestimo-para-negativado/",
+    "/organizacao-financeira/renegociacao-ou-emprestimo/"
+  ],
+  "informationThatMustNotBeRepeated": [
+    "Processo de renegociação (link)",
+    "Triagem de crédito para negativado (link)"
+  ],
+  "publicationDecision": "create"
+}

@@ -33,6 +33,11 @@ export default function CalculadorasPage() {
           description="Estime a parcela mensal, o total pago e o total de juros pelo sistema Price, com tabela de amortização mês a mês."
           href="/calculadoras/emprestimo/"
         />
+        <CategoryCard
+          title="Calculadora de margem consignável"
+          description="Veja quanto da sua margem está comprometido e quanto resta para um novo consignado — INSS e CLT."
+          href="/calculadoras/margem-consignavel/"
+        />
       </div>
     </div>
   );

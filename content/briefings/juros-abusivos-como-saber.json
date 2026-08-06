@@ -1,0 +1,41 @@
+{
+  "proposedTitle": "Juros abusivos: como saber se seu empréstimo está acima da média",
+  "primaryIntent": "como saber se os juros do meu empréstimo são abusivos",
+  "secondaryIntents": [
+    "taxa média de juros Banco Central consultar",
+    "revisão de contrato bancário vale a pena"
+  ],
+  "targetReader": "Pessoa pagando parcela alta, bombardeada por anúncios de 'revisional'",
+  "readerSituation": "SERP dominada por escritórios de advocacia com viés de captação; falta explicador neutro com a conta e as nuances do STJ",
+  "centralQuestion": "Como comparar minha taxa com a média oficial e o que a Justiça realmente considera abusivo?",
+  "uniqueAngle": "Empodera o leitor com o passo a passo da consulta às séries do BC e desfaz os dois mitos da 'revisional' (1,5x não é gatilho automático; correção não é anulação), oferecendo os caminhos extrajudiciais primeiro",
+  "originalContribution": [
+    "Passo a passo de comparação com a média da época da contratação",
+    "As duas nuances do STJ que os anúncios omitem",
+    "Escada de caminhos: renegociar → portabilidade → reclamação → Justiça",
+    "Alerta sobre a indústria da revisional"
+  ],
+  "primarySources": [
+    "Banco Central do Brasil — taxas de juros por instituição (série oficial)",
+    "STJ — notícia oficial sobre abusividade não automática (2023)"
+  ],
+  "supportingSources": [],
+  "contentArchetype": "decision-guide",
+  "proposedStructure": [
+    "Abertura: da desconfiança ao dado",
+    "Passo 1: taxa real do contrato",
+    "Passo 2: consulta à média do BC",
+    "O que o STJ considera (sem mito)",
+    "Três caminhos antes do processo",
+    "Alerta revisional",
+    "FAQ"
+  ],
+  "uniqueExamples": ["Comparação com a média DA ÉPOCA como regra de justiça da análise"],
+  "proposedVisuals": ["WarningBox"],
+  "pagesThatMayCompete": ["/juros-e-cet/o-que-e-cet/", "/juros-e-cet/taxa-mensal-e-taxa-anual/"],
+  "informationThatMustNotBeRepeated": [
+    "Fórmulas de cálculo (link para como-calcular-juros)",
+    "Mecânica da portabilidade (link)"
+  ],
+  "publicationDecision": "create"
+}

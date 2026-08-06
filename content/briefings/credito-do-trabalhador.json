@@ -1,0 +1,44 @@
+{
+  "proposedTitle": "Crédito do Trabalhador: como funciona o novo consignado CLT",
+  "primaryIntent": "crédito do trabalhador como funciona",
+  "secondaryIntents": [
+    "consignado CLT novas regras",
+    "consignado pela carteira de trabalho digital",
+    "FGTS como garantia de consignado"
+  ],
+  "targetReader": "Trabalhador CLT (incl. doméstico e rural) recebendo ofertas do novo consignado",
+  "readerSituation": "SERP dominada por conteúdo B2B de RH e fintechs; quase nada explica as regras do ponto de vista do trabalhador",
+  "centralQuestion": "Como o novo consignado funciona, o que a garantia de FGTS compromete e o que olhar antes de contratar?",
+  "uniqueAngle": "Guia do contratante (não do vendedor): tabela antes/depois, alerta específico sobre a garantia de FGTS como 'reserva de demissão' e a cláusula de demissão como a mais importante do contrato",
+  "originalContribution": [
+    "Tabela antes/depois da Lei 15.179/2025",
+    "Enquadramento da garantia FGTS como troca de proteção por taxa",
+    "Alerta de golpe já adaptado ao programa novo"
+  ],
+  "primarySources": [
+    "Planalto — Lei nº 15.179/2025",
+    "Gov.br — Carteira de Trabalho Digital / Ministério do Trabalho e Emprego",
+    "Planalto — Lei nº 10.820/2003 (base do consignado privado)"
+  ],
+  "supportingSources": ["Senado Notícias — entrada em vigor da lei"],
+  "contentArchetype": "explainer",
+  "proposedStructure": [
+    "Abertura: o fim da dependência do convênio",
+    "Tabela antes/depois",
+    "Quem pode contratar",
+    "Como funciona a contratação",
+    "Margem 35%",
+    "FGTS como garantia (leia duas vezes)",
+    "Demissão",
+    "O que pode mudar",
+    "Golpe atualizado",
+    "FAQ"
+  ],
+  "uniqueExamples": ["FGTS enquadrado como 'o dinheiro que amorteceria a queda'"],
+  "proposedVisuals": ["Tabela antes/depois", "WhatCanChange", "SafetyAlert"],
+  "pagesThatMayCompete": ["/emprestimos/emprestimo-consignado/"],
+  "informationThatMustNotBeRepeated": [
+    "Fundamentos gerais do consignado (margem como conceito, portabilidade×refinanciamento) — ficam no guia geral do consignado, que vira página de apoio para INSS/servidores"
+  ],
+  "publicationDecision": "create"
+}

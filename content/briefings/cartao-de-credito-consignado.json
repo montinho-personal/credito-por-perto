@@ -1,0 +1,43 @@
+{
+  "proposedTitle": "Cartão de crédito consignado: a margem presa que ninguém explica",
+  "primaryIntent": "cartão de crédito consignado como funciona",
+  "secondaryIntents": [
+    "o que é RMC no benefício",
+    "como cancelar cartão consignado",
+    "desconto de cartão consignado não reconhecido"
+  ],
+  "targetReader": "Aposentado/pensionista/servidor com RMC no extrato ou recebendo oferta do cartão",
+  "readerSituation": "SERP vendedora ('vale a pena sim'); milhões têm desconto que não entendem",
+  "centralQuestion": "Como o cartão consignado realmente funciona, como identificar um no extrato e como sair?",
+  "uniqueAngle": "Parte da sigla misteriosa no extrato (RMC) e da mecânica desconto-mínimo + rolagem que faz a dívida durar; inclui rota de saída completa (identificar → quitação → cancelar → reclamar)",
+  "originalContribution": [
+    "Explicação da mecânica em 4 passos (reserva → uso/saque → mínimo em folha → rolagem)",
+    "Seção 'onde ele engana mesmo sendo legal'",
+    "Rota de saída em 4 cenários",
+    "As 3 perguntas por escrito antes de aceitar"
+  ],
+  "primarySources": [
+    "Planalto — Lei nº 10.820/2003 (margens e cartão consignado)",
+    "INSS / Meu INSS — extrato de empréstimos e reservas",
+    "Banco Central do Brasil — canais de reclamação e Registrato"
+  ],
+  "supportingSources": [],
+  "contentArchetype": "explainer",
+  "proposedStructure": [
+    "Abertura: a sigla RMC no extrato",
+    "Mecânica real em 4 passos",
+    "Onde engana sendo legal",
+    "Como identificar no extrato",
+    "Como cancelar/sair",
+    "Perguntas antes de aceitar",
+    "FAQ"
+  ],
+  "uniqueExamples": ["'Dívida que amortiza e termina vence dívida que rola'"],
+  "proposedVisuals": ["WarningBox"],
+  "pagesThatMayCompete": ["/emprestimos/emprestimo-consignado/", "/emprestimos/margem-consignavel/"],
+  "informationThatMustNotBeRepeated": [
+    "Mecânica geral do consignado comum (link)",
+    "Consulta de margem passo a passo (fica no artigo de margem)"
+  ],
+  "publicationDecision": "create"
+}

@@ -1,0 +1,33 @@
+{
+  "articleSlug": "pix-parcelado",
+  "claims": [
+    {
+      "claimId": "natureza-credito",
+      "claimText": "O Pix parcelado é uma operação de crédito ofertada pelas instituições sobre a infraestrutura do Pix: o destinatário recebe à vista e o pagador contrata financiamento com juros e IOF, nas modalidades via conta (crédito pessoal) ou via cartão.",
+      "sourceOrganization": "Banco Central do Brasil",
+      "sourceTitle": "Pix — produtos e serviços das instituições sobre o arranjo",
+      "sourceLocation": "https://www.bcb.gov.br",
+      "sourceType": "official",
+      "accessedAt": "2026-08-06"
+    },
+    {
+      "claimId": "idec-orientacao",
+      "claimText": "O Idec orienta que o Pix parcelado é modalidade de empréstimo, sempre com juros, e recomenda comparação de custos antes do uso.",
+      "sourceOrganization": "Idec — Instituto de Defesa de Consumidores",
+      "sourceTitle": "Pix parcelado: como funciona essa nova forma de pagamento?",
+      "sourceLocation": "https://idec.org.br/dicas-e-direitos/pix-parcelado-como-funciona-essa-nova-forma-de-pagamento",
+      "sourceType": "journalistic",
+      "accessedAt": "2026-08-06"
+    },
+    {
+      "claimId": "cet-previo-pix",
+      "claimText": "Como operação de crédito a pessoa física, o Pix parcelado está sujeito à informação prévia do CET.",
+      "sourceOrganization": "Banco Central do Brasil",
+      "sourceTitle": "Custo Efetivo Total — regulamentação",
+      "sourceLocation": "https://www.bcb.gov.br",
+      "sourceType": "official",
+      "accessedAt": "2026-08-06",
+      "notes": "Exemplo numérico do artigo verificado com a implementação testada de src/lib/calculators/loan.ts."
+    }
+  ]
+}

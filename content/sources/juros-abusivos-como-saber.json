@@ -1,0 +1,41 @@
+{
+  "articleSlug": "juros-abusivos-como-saber",
+  "claims": [
+    {
+      "claimId": "series-taxas-bc",
+      "claimText": "O Banco Central publica as taxas de juros médias praticadas por instituição e modalidade, com histórico consultável.",
+      "sourceOrganization": "Banco Central do Brasil",
+      "sourceTitle": "Taxas de juros por instituição financeira",
+      "sourceLocation": "https://www.bcb.gov.br/estatisticas/txjuros",
+      "sourceType": "official",
+      "accessedAt": "2026-08-06"
+    },
+    {
+      "claimId": "stj-referencia-1-5",
+      "claimText": "A jurisprudência do STJ usa como referência de abusividade a taxa superior a uma vez e meia a média de mercado da mesma modalidade à época da contratação, com redução ao patamar de referência quando reconhecida a abusividade.",
+      "sourceOrganization": "Superior Tribunal de Justiça",
+      "sourceTitle": "Jurisprudência sobre juros remuneratórios e taxa média de mercado",
+      "sourceLocation": "https://www.stj.jus.br",
+      "sourceType": "official",
+      "accessedAt": "2026-08-06"
+    },
+    {
+      "claimId": "stj-nao-automatico",
+      "claimText": "O STJ decidiu que taxa de juros acima de patamar predefinido não é, por si só, abusiva — a análise considera as circunstâncias do caso concreto.",
+      "sourceOrganization": "Superior Tribunal de Justiça",
+      "sourceTitle": "Notícia oficial: contrato de mútuo com juros acima de níveis predefinidos, por si só, não é abusivo (Terceira Turma, 2023)",
+      "sourceLocation": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2023/24032023-Para-Terceira-Turma--contrato-de-mutuo-com-juros-acima-de-niveis-predefinidos--por-si-so--nao-e-abusivo.aspx",
+      "sourceType": "official",
+      "accessedAt": "2026-08-06"
+    },
+    {
+      "claimId": "sem-teto-geral",
+      "claimText": "Não há teto geral de juros em lei para instituições financeiras autorizadas; o controle se dá por transparência (CET), concorrência e revisão judicial de abusividade, com exceções regulamentadas em modalidades específicas.",
+      "sourceOrganization": "Banco Central do Brasil",
+      "sourceTitle": "Cidadania financeira — formação das taxas de juros",
+      "sourceLocation": "https://www.bcb.gov.br",
+      "sourceType": "official",
+      "accessedAt": "2026-08-06"
+    }
+  ]
+}

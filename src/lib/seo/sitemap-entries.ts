@@ -16,6 +16,7 @@ export const STATIC_INDEXABLE_PATHS = [
   "/organizacao-financeira/",
   "/calculadoras/",
   "/calculadoras/emprestimo/",
+  "/calculadoras/margem-consignavel/",
   "/emprestimos/guias-locais/",
   "/artigos/",
   "/glossario/",

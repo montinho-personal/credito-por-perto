@@ -1,0 +1,48 @@
+{
+  "proposedTitle": "Margem consignável: como consultar a sua e calcular quanto resta",
+  "primaryIntent": "como consultar margem consignável",
+  "secondaryIntents": [
+    "quanto de margem consignável eu tenho",
+    "margem consignável INSS e CLT percentuais"
+  ],
+  "targetReader": "Aposentado, pensionista ou CLT abordado com 'margem liberada'",
+  "readerSituation": "SERP dominada por simuladores de fintechs; o leitor não sabe o canal oficial nem as fatias",
+  "centralQuestion": "Onde consultar a margem verdadeira, como as fatias se dividem e o que fazer com margem presa?",
+  "uniqueAngle": "Regra de ouro ('quem diz sua margem é o canal oficial, nunca o vendedor') + passo a passo por perfil + integração com a calculadora própria do portal + os 3 casos de margem presa",
+  "originalContribution": [
+    "Tabela de fatias por perfil com data de verificação",
+    "Passo a passo Meu INSS / CTPS Digital / SouGov",
+    "Exemplo numérico próprio (R$ 2.000, parcela de R$ 450)",
+    "Taxonomia dos 3 casos de margem presa",
+    "Calculadora de margem consignável integrada"
+  ],
+  "primarySources": [
+    "Planalto — Lei nº 10.820/2003 e Lei nº 15.179/2025",
+    "INSS — Meu INSS (extrato de consignados)",
+    "Gov.br — Carteira de Trabalho Digital"
+  ],
+  "supportingSources": [],
+  "contentArchetype": "calculator-support",
+  "proposedStructure": [
+    "Abertura: regra de ouro",
+    "Definição",
+    "Tabela de fatias por perfil",
+    "Onde consultar (3 perfis)",
+    "Como calcular + calculadora",
+    "Exemplo",
+    "Margem presa (3 casos)",
+    "Aviso margem ≠ orçamento",
+    "FAQ"
+  ],
+  "uniqueExamples": ["R$ 2.000 líquidos, parcela ativa de R$ 450 → R$ 250 de margem"],
+  "proposedVisuals": ["DefinitionBox", "Tabela de fatias", "ExampleBox", "WarningBox"],
+  "pagesThatMayCompete": [
+    "/emprestimos/emprestimo-consignado/",
+    "/emprestimos/credito-do-trabalhador/"
+  ],
+  "informationThatMustNotBeRepeated": [
+    "Mecânica do cartão consignado (link)",
+    "Regras do Crédito do Trabalhador (link)"
+  ],
+  "publicationDecision": "create"
+}

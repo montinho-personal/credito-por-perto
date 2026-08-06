@@ -90,6 +90,30 @@
     "canonicalOwner": "/emprestimos/documentos-para-emprestimo/",
     "supportingPages": []
   },
+  "crédito do trabalhador como funciona": {
+    "canonicalOwner": "/emprestimos/credito-do-trabalhador/",
+    "supportingPages": ["/emprestimos/emprestimo-consignado/", "/emprestimos/margem-consignavel/"]
+  },
+  "como saber se os juros do meu empréstimo são abusivos": {
+    "canonicalOwner": "/juros-e-cet/juros-abusivos-como-saber/",
+    "supportingPages": ["/juros-e-cet/o-que-e-cet/", "/emprestimos/portabilidade-de-credito/"]
+  },
+  "cartão de crédito consignado como funciona": {
+    "canonicalOwner": "/emprestimos/cartao-de-credito-consignado/",
+    "supportingPages": ["/emprestimos/margem-consignavel/"]
+  },
+  "como consultar margem consignável": {
+    "canonicalOwner": "/emprestimos/margem-consignavel/",
+    "supportingPages": ["/calculadoras/margem-consignavel/", "/emprestimos/emprestimo-consignado/"]
+  },
+  "dívida caduca em 5 anos": {
+    "canonicalOwner": "/organizacao-financeira/divida-caducada-nome-limpo/",
+    "supportingPages": ["/emprestimos/emprestimo-para-negativado/"]
+  },
+  "pix parcelado como funciona e quanto custa": {
+    "canonicalOwner": "/juros-e-cet/pix-parcelado/",
+    "supportingPages": ["/juros-e-cet/o-que-e-cet/"]
+  },
   "empréstimos em campinas": {
     "canonicalOwner": "/emprestimos/sp/campinas/",
     "supportingPages": []

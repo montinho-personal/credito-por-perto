@@ -1,0 +1,42 @@
+{
+  "articleSlug": "margem-consignavel",
+  "claims": [
+    {
+      "claimId": "fatias-inss",
+      "claimText": "Para benefícios do INSS, os percentuais vigentes na data da verificação são 35% para empréstimo, 5% para cartão de crédito consignado e 5% para cartão consignado de benefício (total 45%).",
+      "sourceOrganization": "Planalto / INSS",
+      "sourceTitle": "Lei nº 10.820/2003 (com alterações) e normas do INSS sobre consignações",
+      "sourceLocation": "https://www.planalto.gov.br/ccivil_03/leis/2003/l10.820.htm",
+      "sourceType": "official",
+      "accessedAt": "2026-08-06",
+      "notes": "Percentuais alterados por leis/normas ao longo do tempo; artigo e calculadora trazem data de verificação e orientam confirmar no canal oficial."
+    },
+    {
+      "claimId": "fatia-clt",
+      "claimText": "No consignado do trabalhador CLT, o limite de comprometimento é de 35% da remuneração disponível, com fatia adicional prevista para cartão nos termos da lei.",
+      "sourceOrganization": "Planalto",
+      "sourceTitle": "Lei nº 10.820/2003, alterada pela Lei nº 15.179/2025",
+      "sourceLocation": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/lei/l15179.htm",
+      "sourceType": "official",
+      "accessedAt": "2026-08-06"
+    },
+    {
+      "claimId": "consulta-meuinss",
+      "claimText": "A margem disponível e os contratos ativos do benefício constam do Extrato de Empréstimo no Meu INSS.",
+      "sourceOrganization": "INSS",
+      "sourceTitle": "Meu INSS — Extrato de Empréstimo (consignados)",
+      "sourceLocation": "https://www.gov.br/inss",
+      "sourceType": "official",
+      "accessedAt": "2026-08-06"
+    },
+    {
+      "claimId": "consulta-ctps",
+      "claimText": "Para o trabalhador CLT, margem e propostas do Crédito do Trabalhador são consultadas na Carteira de Trabalho Digital.",
+      "sourceOrganization": "Gov.br — Ministério do Trabalho e Emprego",
+      "sourceTitle": "Carteira de Trabalho Digital — Crédito do Trabalhador",
+      "sourceLocation": "https://www.gov.br/trabalho-e-emprego",
+      "sourceType": "official",
+      "accessedAt": "2026-08-06"
+    }
+  ]
+}
