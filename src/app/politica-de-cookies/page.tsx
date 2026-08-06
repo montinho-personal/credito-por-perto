@@ -9,7 +9,7 @@ import {
 export const metadata: Metadata = buildMetadata({
   title: "Política de cookies",
   description:
-    "Quais cookies o Crédito Por Perto utiliza hoje, quais poderão ser utilizados com analytics e publicidade, e como gerenciar suas preferências.",
+    "Quais cookies o Crédito por Perto utiliza hoje, quais poderão ser utilizados com analytics e publicidade, e como gerenciar suas preferências.",
   path: "/politica-de-cookies/",
 });
 
@@ -19,7 +19,7 @@ export default function PoliticaDeCookiesPage() {
   return (
     <InstitutionalShell
       title="Política de cookies"
-      description="Uso de cookies no Crédito Por Perto."
+      description="Uso de cookies no Crédito por Perto."
       path="/politica-de-cookies/"
     >
       <LegalTemplateNotice />

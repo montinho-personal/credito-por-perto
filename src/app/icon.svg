@@ -1,5 +1,19 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-  <rect width="64" height="64" rx="14" fill="#10263F"/>
-  <path d="M32 9c9.9 0 18 7.9 18 17.7 0 7.2-4.8 14.2-9.6 19.5A73 73 0 0 1 32 54.6a73 73 0 0 1-8.4-8.4C18.8 40.9 14 33.9 14 26.7 14 16.9 22.1 9 32 9Z" fill="#FDFBF7"/>
-  <path d="M24 28l5.5 5.5L43 20" fill="none" stroke="#0E7C6B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"
+     role="img" aria-labelledby="title desc">
+  <title id="title">Favicon Crédito por Perto</title>
+  <desc id="desc">Identidade visual vetorial da marca Crédito por Perto.</desc>
+  
+  
+<rect width="64" height="64" rx="13" fill="#FFFFFF"/>
+
+    <g transform="translate(4 3) scale(0.32)">
+      <path d="M119 43 A58 58 0 1 0 119 125"
+            fill="none" stroke="#0D3B66" stroke-width="28" stroke-linecap="butt"/>
+      <path fill="#E0A21A" fill-rule="evenodd"
+            d="M68 46H103C128 46 148 65 148 88C148 112 128 131 103 131H94V160L68 138V46Z
+               M94 68V109H103C115 109 125 100 125 88C125 77 115 68 103 68H94Z"/>
+    </g>
+    
+
 </svg>

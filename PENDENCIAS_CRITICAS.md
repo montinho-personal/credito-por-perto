@@ -19,7 +19,7 @@ Tudo o mais já está implementado ou automatizado.
 ## 2. Autoria e revisão editorial
 
 - [ ] Decidir se haverá autores/revisores identificados por nome real
-      (hoje a autoria é honesta e coletiva: "Equipe Editorial do Crédito Por Perto")
+      (hoje a autoria é honesta e coletiva: "Equipe Editorial do Crédito por Perto")
 - [ ] Se houver revisor financeiro certificado, cadastrar com credencial real
       em `content/authors/` — **nunca** inventar especialista
 - [ ] Aprovação editorial final do proprietário sobre os 15 artigos publicados

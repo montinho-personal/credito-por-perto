@@ -1,4 +1,4 @@
-# Crédito Por Perto
+# Crédito por Perto
 
 Portal editorial independente sobre empréstimos, crédito, juros e segurança
 financeira. **Crédito explicado. Decisões mais seguras.**

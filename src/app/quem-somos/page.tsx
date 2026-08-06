@@ -7,7 +7,7 @@ import { getAllAuthors } from "@/lib/content/authors";
 export const metadata: Metadata = buildMetadata({
   title: "Quem somos: equipe, autoria e responsabilidade editorial",
   description:
-    "Quem produz o Crédito Por Perto, como a equipe editorial trabalha, quando usamos IA e qual é a responsabilidade por trás de cada conteúdo publicado.",
+    "Quem produz o Crédito por Perto, como a equipe editorial trabalha, quando usamos IA e qual é a responsabilidade por trás de cada conteúdo publicado.",
   path: "/quem-somos/",
 });
 
@@ -16,7 +16,7 @@ export default function QuemSomosPage() {
   return (
     <InstitutionalShell
       title="Quem somos"
-      description="Equipe, autoria e responsabilidade editorial do Crédito Por Perto."
+      description="Equipe, autoria e responsabilidade editorial do Crédito por Perto."
       path="/quem-somos/"
       intro="Transparência sobre quem escreve, como revisamos e onde estão os limites do nosso conteúdo."
     >

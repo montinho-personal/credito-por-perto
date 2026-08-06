@@ -15,7 +15,7 @@ export function organizationJsonLd() {
     name: SITE_NAME,
     url: `${SITE_URL}/`,
     description: SITE_DESCRIPTION,
-    logo: `${SITE_URL}/brand/logo-symbol.svg`,
+    logo: `${SITE_URL}/brand/credito-por-perto-icon.svg`,
   };
 }
 

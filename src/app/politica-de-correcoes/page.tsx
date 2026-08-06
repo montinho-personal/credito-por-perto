@@ -6,7 +6,7 @@ import { InstitutionalShell } from "@/components/layout/InstitutionalShell";
 export const metadata: Metadata = buildMetadata({
   title: "Política de correções",
   description:
-    "Como o Crédito Por Perto trata erros: como reportar, prazos de análise, o que é corrigido com registro público e o que conta como atualização relevante.",
+    "Como o Crédito por Perto trata erros: como reportar, prazos de análise, o que é corrigido com registro público e o que conta como atualização relevante.",
   path: "/politica-de-correcoes/",
 });
 

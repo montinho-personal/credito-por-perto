@@ -33,7 +33,7 @@ Definidos em `src/lib/validation/frontmatter.ts` (`EDITORIAL_STATES`). Regras:
 ## Autoria
 
 Identificação honesta: enquanto não houver especialistas cadastrados, a
-autoria é "Equipe Editorial do Crédito Por Perto" (`isTeam: true`), com a
+autoria é "Equipe Editorial do Crédito por Perto" (`isTeam: true`), com a
 limitação declarada publicamente em /quem-somos/. **Nunca**: inventar nome,
 credencial ou "revisado por especialista" sem especialista real.
 

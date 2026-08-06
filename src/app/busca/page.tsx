@@ -4,9 +4,9 @@ import { Breadcrumbs } from "@/components/layout/Breadcrumbs";
 import { SearchClient } from "@/components/search/SearchClient";
 
 export const metadata: Metadata = buildMetadata({
-  title: "Busca no Crédito Por Perto",
+  title: "Busca no Crédito por Perto",
   description:
-    "Encontre guias sobre empréstimos, juros, CET, segurança contra golpes e organização financeira no Crédito Por Perto.",
+    "Encontre guias sobre empréstimos, juros, CET, segurança contra golpes e organização financeira no Crédito por Perto.",
   path: "/busca/",
   noindex: true,
 });

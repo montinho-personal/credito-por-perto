@@ -10,7 +10,7 @@ import { LEGAL_OWNER } from "@/lib/site";
 export const metadata: Metadata = buildMetadata({
   title: "Aviso legal",
   description:
-    "Aviso legal do Crédito Por Perto: portal educativo que não concede crédito, não solicita depósitos e não garante condições de empréstimo.",
+    "Aviso legal do Crédito por Perto: portal educativo que não concede crédito, não solicita depósitos e não garante condições de empréstimo.",
   path: "/aviso-legal/",
 });
 
@@ -25,19 +25,19 @@ export default function AvisoLegalPage() {
       <LegalTemplateNotice />
       <h2>Responsável pelo portal</h2>
       <p>
-        O Crédito Por Perto é mantido por <strong>{LEGAL_OWNER.name}</strong>{" "}
+        O Crédito por Perto é mantido por <strong>{LEGAL_OWNER.name}</strong>{" "}
         (CPF {LEGAL_OWNER.cpfMasked}), {LEGAL_OWNER.address}. Contato:{" "}
         <strong>{LEGAL_OWNER.email}</strong>.
       </p>
       <h2>Conteúdo educativo</h2>
       <p>
-        Todo o conteúdo do Crédito Por Perto tem finalidade informativa e
+        Todo o conteúdo do Crédito por Perto tem finalidade informativa e
         educacional. Ele não constitui consultoria financeira, jurídica ou
         contábil, nem recomendação individual de contratação de crédito.
       </p>
       <h2>O portal não concede crédito</h2>
       <p>
-        O Crédito Por Perto não é instituição autorizada pelo Banco Central, não
+        O Crédito por Perto não é instituição autorizada pelo Banco Central, não
         opera como correspondente bancário, não recebe propostas, não analisa
         crédito e não solicita qualquer pagamento, depósito ou dado bancário de
         leitores. Se alguém pedir dinheiro ou dados em nome do portal para

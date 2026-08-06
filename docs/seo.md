@@ -14,7 +14,7 @@
 
 `buildMetadata` (`src/lib/metadata/build.ts`) gera título, descrição,
 canonical absoluta, robots, Open Graph e Twitter Cards. Título raiz com
-template `%s | Crédito Por Perto`. Unicidade de título/descrição é testada
+template `%s | Crédito por Perto`. Unicidade de título/descrição é testada
 (`tests/content-rules.test.ts`) e auditada (`audit:metadata`).
 
 ## Dados estruturados (JSON-LD)

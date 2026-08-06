@@ -14,7 +14,7 @@ export default function EmprestimosPage() {
   return (
     <CategoryHub
       category="emprestimos"
-      intro="Antes de contratar qualquer empréstimo, vale entender como a modalidade funciona, o que encarece a parcela e quais cuidados evitar. Os guias abaixo explicam cada modalidade sem promessa de aprovação — porque o Crédito Por Perto não concede crédito, apenas explica."
+      intro="Antes de contratar qualquer empréstimo, vale entender como a modalidade funciona, o que encarece a parcela e quais cuidados evitar. Os guias abaixo explicam cada modalidade sem promessa de aprovação — porque o Crédito por Perto não concede crédito, apenas explica."
     >
       <div className="mt-6 flex flex-wrap gap-3">
         <Link

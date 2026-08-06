@@ -57,7 +57,7 @@ function StateIndexPage({ code }: { code: string }) {
         Empréstimos em {state.name}: guias por cidade
       </h1>
       <p className="mt-3 max-w-2xl text-lg leading-relaxed text-brand-muted">
-        Cada guia local do Crédito Por Perto só é publicado depois de
+        Cada guia local do Crédito por Perto só é publicado depois de
         verificação com fontes oficiais: canais de proteção ao consumidor da
         cidade, atendimento disponível e cuidados específicos da região.
       </p>

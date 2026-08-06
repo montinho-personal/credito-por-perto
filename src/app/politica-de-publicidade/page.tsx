@@ -6,7 +6,7 @@ import { InstitutionalShell } from "@/components/layout/InstitutionalShell";
 export const metadata: Metadata = buildMetadata({
   title: "Política de publicidade",
   description:
-    "Regras que a publicidade deve seguir no Crédito Por Perto: identificação clara, separação do conteúdo editorial e páginas onde anúncios nunca aparecem.",
+    "Regras que a publicidade deve seguir no Crédito por Perto: identificação clara, separação do conteúdo editorial e páginas onde anúncios nunca aparecem.",
   path: "/politica-de-publicidade/",
 });
 

@@ -10,7 +10,7 @@ import { FOOTER_NAV } from "@/lib/site";
 export const metadata: Metadata = buildMetadata({
   title: "Mapa do site",
   description:
-    "Todas as seções e páginas publicadas do Crédito Por Perto organizadas em um só lugar: guias, calculadoras, páginas locais e institucionais.",
+    "Todas as seções e páginas publicadas do Crédito por Perto organizadas em um só lugar: guias, calculadoras, páginas locais e institucionais.",
   path: "/mapa-do-site/",
 });
 

@@ -6,7 +6,7 @@ import { InstitutionalShell } from "@/components/layout/InstitutionalShell";
 export const metadata: Metadata = buildMetadata({
   title: "Política editorial",
   description:
-    "Os princípios que orientam o conteúdo do Crédito Por Perto: independência, precisão, fontes oficiais, linguagem responsável e correção transparente de erros.",
+    "Os princípios que orientam o conteúdo do Crédito por Perto: independência, precisão, fontes oficiais, linguagem responsável e correção transparente de erros.",
   path: "/politica-editorial/",
 });
 
@@ -14,7 +14,7 @@ export default function PoliticaEditorialPage() {
   return (
     <InstitutionalShell
       title="Política editorial"
-      description="Princípios editoriais do Crédito Por Perto."
+      description="Princípios editoriais do Crédito por Perto."
       path="/politica-editorial/"
       intro="Estes princípios valem para todo conteúdo publicado no portal — e você pode nos cobrar por eles."
     >
@@ -48,7 +48,7 @@ export default function PoliticaEditorialPage() {
       </p>
       <h2>O que o portal não é</h2>
       <p>
-        O Crédito Por Perto não é banco, financeira ou correspondente bancário.
+        O Crédito por Perto não é banco, financeira ou correspondente bancário.
         Não concedemos crédito, não recebemos propostas e não temos acesso a
         análises de crédito. Conteúdo educativo não substitui orientação
         financeira individual.

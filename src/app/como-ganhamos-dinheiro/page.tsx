@@ -6,7 +6,7 @@ import { InstitutionalShell } from "@/components/layout/InstitutionalShell";
 export const metadata: Metadata = buildMetadata({
   title: "Como ganhamos dinheiro",
   description:
-    "Transparência sobre a monetização do Crédito Por Perto: publicidade programática futura, o que ela influencia (nada no editorial) e como identificá-la.",
+    "Transparência sobre a monetização do Crédito por Perto: publicidade programática futura, o que ela influencia (nada no editorial) e como identificá-la.",
   path: "/como-ganhamos-dinheiro/",
 });
 
@@ -20,7 +20,7 @@ export default function ComoGanhamosDinheiroPage() {
     >
       <h2>Situação atual</h2>
       <p>
-        Neste momento, o Crédito Por Perto não exibe publicidade e não possui
+        Neste momento, o Crédito por Perto não exibe publicidade e não possui
         parcerias comerciais. O portal está em fase de construção do acervo
         editorial.
       </p>

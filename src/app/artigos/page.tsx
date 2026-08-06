@@ -7,7 +7,7 @@ import { Breadcrumbs } from "@/components/layout/Breadcrumbs";
 export const metadata: Metadata = buildMetadata({
   title: "Blog: todos os guias e artigos sobre crédito",
   description:
-    "Todos os conteúdos publicados pelo Crédito Por Perto, do mais recente ao mais antigo: modalidades de empréstimo, juros, CET, segurança e organização financeira.",
+    "Todos os conteúdos publicados pelo Crédito por Perto, do mais recente ao mais antigo: modalidades de empréstimo, juros, CET, segurança e organização financeira.",
   path: "/artigos/",
 });
 

@@ -1,20 +1,25 @@
 @import "tailwindcss";
 
 /*
- * Tokens semânticos da identidade Crédito Por Perto.
+ * Tokens semânticos da identidade Crédito por Perto.
  * Nunca use valores hexadecimais soltos nos componentes — use os tokens.
  */
 @theme {
-  --color-brand-navy: #10263f;
-  --color-brand-navy-soft: #1b3a5c;
-  --color-brand-teal: #0e7c6b;
-  --color-brand-teal-dark: #0a5a4e;
-  --color-brand-teal-soft: #e3f2ee;
-  --color-brand-surface: #fdfbf7;
-  --color-brand-surface-soft: #f4f1ea;
-  --color-brand-text: #1d2b3a;
-  --color-brand-muted: #52657a;
-  --color-brand-border: #e3dfd5;
+  /* Paleta oficial da marca (docs/brand/): azul confiança + dourado proximidade */
+  --color-brand-navy: #0d3b66;
+  --color-brand-navy-soft: #14528c;
+  /* Tokens de ação (links, botões) apontam para o azul da marca */
+  --color-brand-teal: #14528c;
+  --color-brand-teal-dark: #0d3b66;
+  --color-brand-teal-soft: #eaf1f8;
+  --color-brand-gold: #e0a21a;
+  --color-brand-gold-dark: #8a6100;
+  --color-brand-gold-soft: #fbf1d8;
+  --color-brand-surface: #ffffff;
+  --color-brand-surface-soft: #f4f4f4;
+  --color-brand-text: #1a1a1a;
+  --color-brand-muted: #5a6472;
+  --color-brand-border: #e2e5e9;
   --color-brand-warning: #92400e;
   --color-brand-warning-soft: #fdf3e3;
   --color-brand-danger: #b42318;

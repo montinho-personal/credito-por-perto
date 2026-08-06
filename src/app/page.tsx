@@ -62,7 +62,7 @@ export default function HomePage() {
       {/* Hero */}
       <section className="border-b border-brand-border bg-brand-navy">
         <div className="mx-auto max-w-6xl px-4 py-16 md:py-20">
-          <p className="text-sm font-semibold uppercase tracking-widest text-brand-teal-soft">
+          <p className="text-sm font-semibold uppercase tracking-widest text-brand-gold">
             Portal editorial independente
           </p>
           <h1 className="mt-3 max-w-2xl font-serif text-4xl font-bold leading-tight text-white md:text-5xl">
@@ -75,7 +75,7 @@ export default function HomePage() {
           <div className="mt-8 flex flex-wrap gap-3">
             <Link
               href="/emprestimos/"
-              className="rounded-lg bg-brand-teal px-6 py-3 font-semibold text-white hover:bg-brand-teal-dark"
+              className="rounded-lg bg-brand-gold px-6 py-3 font-semibold text-brand-navy hover:opacity-90"
             >
               Explorar os guias
             </Link>

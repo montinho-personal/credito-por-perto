@@ -4,22 +4,22 @@ import { buildMetadata } from "@/lib/metadata/build";
 import { InstitutionalShell } from "@/components/layout/InstitutionalShell";
 
 export const metadata: Metadata = buildMetadata({
-  title: "Sobre o Crédito Por Perto",
+  title: "Sobre o Crédito por Perto",
   description:
-    "O que é o Crédito Por Perto, por que ele existe e o que você encontra (e não encontra) aqui: educação sobre crédito, sem concessão de empréstimos.",
+    "O que é o Crédito por Perto, por que ele existe e o que você encontra (e não encontra) aqui: educação sobre crédito, sem concessão de empréstimos.",
   path: "/sobre/",
 });
 
 export default function SobrePage() {
   return (
     <InstitutionalShell
-      title="Sobre o Crédito Por Perto"
-      description="O que é o Crédito Por Perto e por que ele existe."
+      title="Sobre o Crédito por Perto"
+      description="O que é o Crédito por Perto e por que ele existe."
       path="/sobre/"
       intro="Ajudamos o consumidor a entender o crédito antes de assumir uma dívida."
     >
       <p>
-        O Crédito Por Perto é um portal editorial independente sobre
+        O Crédito por Perto é um portal editorial independente sobre
         empréstimos, juros e uso consciente do crédito no Brasil. Nascemos de
         uma constatação simples: a maioria das pessoas só descobre quanto um
         empréstimo realmente custa depois de assinar o contrato.

@@ -4,7 +4,7 @@
  */
 export const SITE_URL = "https://www.creditoporperto.com.br";
 
-export const SITE_NAME = "Crédito Por Perto";
+export const SITE_NAME = "Crédito por Perto";
 
 export const SITE_TAGLINE = "Crédito explicado. Decisões mais seguras.";
 
@@ -41,7 +41,7 @@ export const MAIN_NAV = [
 
 export const FOOTER_NAV = {
   institucional: [
-    { label: "Sobre o Crédito Por Perto", href: "/sobre/" },
+    { label: "Sobre o Crédito por Perto", href: "/sobre/" },
     { label: "Quem somos", href: "/quem-somos/" },
     { label: "Política editorial", href: "/politica-editorial/" },
     { label: "Metodologia", href: "/metodologia/" },

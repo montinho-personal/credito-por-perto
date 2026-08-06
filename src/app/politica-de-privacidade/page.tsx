@@ -10,7 +10,7 @@ import { CONTACT_EMAIL, LEGAL_OWNER } from "@/lib/site";
 export const metadata: Metadata = buildMetadata({
   title: "Política de privacidade",
   description:
-    "Como o Crédito Por Perto trata dados pessoais: o que coletamos (muito pouco), para quê, com que base legal e como exercer seus direitos previstos na LGPD.",
+    "Como o Crédito por Perto trata dados pessoais: o que coletamos (muito pouco), para quê, com que base legal e como exercer seus direitos previstos na LGPD.",
   path: "/politica-de-privacidade/",
 });
 
@@ -20,13 +20,13 @@ export default function PoliticaDePrivacidadePage() {
   return (
     <InstitutionalShell
       title="Política de privacidade"
-      description="Tratamento de dados pessoais no Crédito Por Perto."
+      description="Tratamento de dados pessoais no Crédito por Perto."
       path="/politica-de-privacidade/"
     >
       <LegalTemplateNotice />
       <h2>Quem somos</h2>
       <p>
-        O Crédito Por Perto (www.creditoporperto.com.br) é um portal editorial
+        O Crédito por Perto (www.creditoporperto.com.br) é um portal editorial
         de educação financeira. O controlador dos dados tratados neste site é{" "}
         <strong>{LEGAL_OWNER.name}</strong> (CPF {LEGAL_OWNER.cpfMasked}), com
         endereço em {LEGAL_OWNER.address}. Contato:{" "}

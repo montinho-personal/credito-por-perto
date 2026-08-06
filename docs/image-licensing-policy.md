@@ -25,8 +25,9 @@ de terceiros. Nenhum registro de licença externa é necessário hoje.
 
 | arquivo | origem | licença | comprovante/URL | data |
 | --- | --- | --- | --- | --- |
-| public/brand/*.svg | criação própria | © Crédito Por Perto | — | 2026-08-05 |
-| src/app/icon.svg | criação própria | © Crédito Por Perto | — | 2026-08-05 |
+| public/brand/credito-por-perto-*.svg | identidade oficial fornecida pelo proprietário | © Crédito por Perto | docs/brand/INSTRUCOES-PARA-O-CLAUDE.md | 2026-08-06 |
+| src/app/icon.svg | favicon da identidade oficial | © Crédito por Perto | docs/brand/ | 2026-08-06 |
+| docs/brand/* | manual e pré-visualizações da marca (não publicados) | © Crédito por Perto | — | 2026-08-06 |
 
 A auditoria de aprovação editorial exige que todo ativo tenha linha nesta
 tabela ("nenhum ativo sem registro de licença ou origem").

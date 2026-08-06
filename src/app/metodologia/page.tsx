@@ -5,7 +5,7 @@ import { InstitutionalShell } from "@/components/layout/InstitutionalShell";
 export const metadata: Metadata = buildMetadata({
   title: "Metodologia de produção e revisão",
   description:
-    "O passo a passo que cada conteúdo do Crédito Por Perto percorre: pesquisa de fontes, briefing, redação, checagem factual, auditorias e revisão editorial.",
+    "O passo a passo que cada conteúdo do Crédito por Perto percorre: pesquisa de fontes, briefing, redação, checagem factual, auditorias e revisão editorial.",
   path: "/metodologia/",
 });
 

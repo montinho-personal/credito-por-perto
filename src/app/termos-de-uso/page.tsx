@@ -10,7 +10,7 @@ import { LEGAL_OWNER } from "@/lib/site";
 export const metadata: Metadata = buildMetadata({
   title: "Termos de uso",
   description:
-    "Condições de uso do Crédito Por Perto: natureza educativa do conteúdo, propriedade intelectual, limitações de responsabilidade e regras de utilização.",
+    "Condições de uso do Crédito por Perto: natureza educativa do conteúdo, propriedade intelectual, limitações de responsabilidade e regras de utilização.",
   path: "/termos-de-uso/",
 });
 
@@ -26,7 +26,7 @@ export default function TermosDeUsoPage() {
       <LegalTemplateNotice />
       <h2>1. Natureza do serviço</h2>
       <p>
-        O Crédito Por Perto é um portal de conteúdo educativo sobre crédito e
+        O Crédito por Perto é um portal de conteúdo educativo sobre crédito e
         finanças pessoais, mantido por {LEGAL_OWNER.name} (CPF{" "}
         {LEGAL_OWNER.cpfMasked}). O portal <strong>não é</strong> instituição
         financeira, correspondente bancário ou intermediador de crédito, e

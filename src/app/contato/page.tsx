@@ -7,7 +7,7 @@ import { CONTACT_EMAIL } from "@/lib/site";
 export const metadata: Metadata = buildMetadata({
   title: "Contato",
   description:
-    "Fale com a equipe do Crédito Por Perto: correções, sugestões de pauta, dúvidas sobre o portal e solicitações relacionadas a dados pessoais.",
+    "Fale com a equipe do Crédito por Perto: correções, sugestões de pauta, dúvidas sobre o portal e solicitações relacionadas a dados pessoais.",
   path: "/contato/",
 });
 
