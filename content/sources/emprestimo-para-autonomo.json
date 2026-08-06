@@ -1,0 +1,32 @@
+{
+  "articleSlug": "emprestimo-para-autonomo",
+  "claims": [
+    {
+      "claimId": "consignado-exige-vinculo",
+      "claimText": "O consignado pressupõe desconto em folha de pagamento ou benefício (Lei nº 10.820/2003); renda exclusivamente autônoma não dá acesso à modalidade clássica.",
+      "sourceOrganization": "Planalto",
+      "sourceTitle": "Lei nº 10.820/2003 — consignação em folha",
+      "sourceLocation": "https://www.planalto.gov.br/ccivil_03/leis/2003/l10.820.htm",
+      "sourceType": "official",
+      "accessedAt": "2026-08-06"
+    },
+    {
+      "claimId": "open-finance-consentimento",
+      "claimText": "O open finance permite ao cliente autorizar o compartilhamento do seu histórico bancário com outra instituição, o que pode subsidiar análise de crédito.",
+      "sourceOrganization": "Banco Central do Brasil",
+      "sourceTitle": "Open Finance — compartilhamento de dados mediante consentimento",
+      "sourceLocation": "https://www.bcb.gov.br",
+      "sourceType": "official",
+      "accessedAt": "2026-08-06"
+    },
+    {
+      "claimId": "decore-contador",
+      "claimText": "A DECORE é declaração comprobatória de rendimentos emitida por profissional contábil, regulamentada pelo Conselho Federal de Contabilidade.",
+      "sourceOrganization": "Conselho Federal de Contabilidade",
+      "sourceTitle": "DECORE — Declaração Comprobatória de Percepção de Rendimentos",
+      "sourceLocation": "https://cfc.org.br",
+      "sourceType": "official",
+      "accessedAt": "2026-08-06"
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "proposedTitle": "Análise de crédito: o que acontece depois que você pede um empréstimo",
+  "primaryIntent": "como funciona a análise de crédito",
+  "secondaryIntents": [
+    "empréstimo reduz o score",
+    "muitas simulações afetam o score",
+    "por que meu empréstimo foi negado"
+  ],
+  "targetReader": "Pessoa que vai pedir crédito ou acabou de receber um 'não'",
+  "readerSituation": "Vê a análise como caixa-preta e acredita em mitos sobre score",
+  "centralQuestion": "Que etapas a análise percorre, o que pesa de verdade e o que é mito de score?",
+  "uniqueAngle": "Narra o intervalo entre 'solicitar' e 'aprovado' em 5 etapas ordenadas, absorve as dúvidas de score como seção de respostas diretas (evitando 3 páginas rasas separadas) e fecha com direitos do consumidor na análise",
+  "originalContribution": [
+    "Linha do tempo de 5 etapas da análise",
+    "Seção 'score sem mitologia' com 3 respostas diretas",
+    "Checklist 'melhore sua foto' pré-solicitação",
+    "Reenquadramento do 'não' como foto atual, não veredicto"
+  ],
+  "primarySources": [
+    "Planalto — Lei nº 12.414/2011 (Cadastro Positivo)",
+    "Planalto — CDC art. 43",
+    "Banco Central do Brasil — Registrato"
+  ],
+  "supportingSources": [],
+  "contentArchetype": "explainer",
+  "proposedStructure": [
+    "Abertura: o intervalo 'em análise'",
+    "5 etapas",
+    "O que pesa de verdade",
+    "Score sem mitologia (3 perguntas)",
+    "Direitos na análise",
+    "Checklist pré-solicitação",
+    "Se veio o não"
+  ],
+  "uniqueExamples": ["'Sim caro' como resposta tão comum quanto o 'não'"],
+  "proposedVisuals": ["ChecklistBox"],
+  "pagesThatMayCompete": ["/emprestimos/emprestimo-pessoal/"],
+  "informationThatMustNotBeRepeated": [
+    "Comprovação de renda por perfil (links para autônomo/MEI)",
+    "Decisão de contratar (link para quando-vale-a-pena)"
+  ],
+  "publicationDecision": "create"
+}

@@ -18,11 +18,16 @@ export const SITE_LOCALE = "pt-BR";
 /** E-mail público de contato, definido pelo proprietário. */
 export const CONTACT_EMAIL = "blink.renato@gmail.com";
 
-/** Responsável legal pelo portal (controlador dos dados). Endereço ainda pendente. */
+/**
+ * Responsável legal pelo portal (controlador dos dados).
+ * Por decisão do responsável, o CPF é exibido publicamente de forma mascarada;
+ * o número completo fica registrado apenas fora do repositório.
+ */
 export const LEGAL_OWNER = {
   name: "Renato de Camargo Nascimento",
-  cpf: "397.054.218-97",
+  cpfMasked: "397.***.***-97",
   email: "blink.renato@gmail.com",
+  address: "Avenida Cauaxi, 258 — Alphaville, Barueri/SP, CEP 06454-020",
 } as const;
 
 export const MAIN_NAV = [

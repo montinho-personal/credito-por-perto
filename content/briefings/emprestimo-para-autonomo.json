@@ -1,0 +1,38 @@
+{
+  "proposedTitle": "Empréstimo para autônomo: como comprovar renda sem holerite",
+  "primaryIntent": "empréstimo para autônomo",
+  "secondaryIntents": [
+    "como comprovar renda sendo autônomo",
+    "autônomo consegue consignado"
+  ],
+  "targetReader": "Trabalhador autônomo sem holerite buscando crédito",
+  "readerSituation": "Tem renda real mas não consegue comprová-la no formato que os bancos pedem",
+  "centralQuestion": "Como o autônomo comprova renda e quais caminhos pesam menos o vínculo CLT?",
+  "uniqueAngle": "Reenquadra o problema ('não é ganhar pouco, é provar quanto ganha') e ordena os caminhos do mais amigável ao mais hostil ao perfil, com regras práticas de organização bancária",
+  "originalContribution": [
+    "Lista de comprovações aceitas com dicas práticas (concentrar conta, guardar histórico)",
+    "Ranking de 5 caminhos por hostilidade ao perfil autônomo",
+    "Regra do pior mês aplicada à renda variável"
+  ],
+  "primarySources": [
+    "Banco Central do Brasil — cidadania financeira e open finance"
+  ],
+  "supportingSources": [],
+  "contentArchetype": "decision-guide",
+  "proposedStructure": [
+    "Abertura: o problema é a comprovação",
+    "O que funciona como comprovação",
+    "Ranking de caminhos",
+    "O que pode mudar",
+    "Cuidados do perfil",
+    "FAQ"
+  ],
+  "uniqueExamples": ["Renda pulverizada em três bancos vira renda invisível"],
+  "proposedVisuals": ["WhatCanChange"],
+  "pagesThatMayCompete": ["/emprestimos/emprestimo-para-mei/", "/emprestimos/emprestimo-pessoal/"],
+  "informationThatMustNotBeRepeated": [
+    "Linhas PJ e comparação PF vs PJ (ficam no guia do MEI)",
+    "Explicação de modalidades (links para os guias próprios)"
+  ],
+  "publicationDecision": "create"
+}

@@ -1,0 +1,40 @@
+{
+  "proposedTitle": "Empréstimo para MEI: crédito como pessoa física ou pelo CNPJ?",
+  "primaryIntent": "empréstimo para MEI",
+  "secondaryIntents": [
+    "MEI consegue crédito pelo CNPJ",
+    "microcrédito para MEI"
+  ],
+  "targetReader": "Microempreendedor individual precisando de crédito pessoal ou para o negócio",
+  "readerSituation": "Não sabe se pede como PF ou PJ e mistura finanças pessoais com as da empresa",
+  "centralQuestion": "Quando o MEI deve usar o CPF e quando deve usar o CNPJ para crédito?",
+  "uniqueAngle": "Estrutura inteira em torno da escolha PF vs PJ ('dois CPFs financeiros'), com tabela comparativa própria, regra de bolso e os dois erros que travam a análise",
+  "originalContribution": [
+    "Tabela PF vs PJ em 5 aspectos",
+    "Regra de bolso 'dinheiro para o negócio, porta do negócio'",
+    "Checklist do que destrava a análise PJ (conta separada, DASN, notas, tempo)"
+  ],
+  "primarySources": [
+    "Gov.br — portal do Empreendedor (MEI, DASN-SIMEI)",
+    "Banco Central do Brasil — microcrédito produtivo orientado"
+  ],
+  "supportingSources": ["Sebrae — orientações a MEIs"],
+  "contentArchetype": "decision-guide",
+  "proposedStructure": [
+    "Abertura: os dois CPFs financeiros",
+    "Tabela PF vs PJ",
+    "O que destrava a análise PJ",
+    "Microcrédito e programas públicos",
+    "Dois erros que travam",
+    "Cuidados",
+    "FAQ"
+  ],
+  "uniqueExamples": ["Faturamento ≠ renda (retirada) na análise PF"],
+  "proposedVisuals": ["Tabela comparativa", "WarningBox"],
+  "pagesThatMayCompete": ["/emprestimos/emprestimo-para-autonomo/"],
+  "informationThatMustNotBeRepeated": [
+    "Comprovação de renda PF sem holerite (fica no guia do autônomo)",
+    "Roteiros de golpe (links)"
+  ],
+  "publicationDecision": "create"
+}

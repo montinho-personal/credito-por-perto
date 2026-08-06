@@ -14,8 +14,8 @@ export const metadata: Metadata = buildMetadata({
   path: "/politica-de-privacidade/",
 });
 
-// TEMPLATE LEGAL — pendente de revisão jurídica; endereço do controlador
-// ainda não informado. Ver PENDENCIAS_CRITICAS.md antes do lançamento.
+// TEMPLATE LEGAL — pendente apenas de revisão jurídica.
+// Ver PENDENCIAS_CRITICAS.md antes do lançamento.
 export default function PoliticaDePrivacidadePage() {
   return (
     <InstitutionalShell
@@ -28,11 +28,9 @@ export default function PoliticaDePrivacidadePage() {
       <p>
         O Crédito Por Perto (www.creditoporperto.com.br) é um portal editorial
         de educação financeira. O controlador dos dados tratados neste site é{" "}
-        <strong>{LEGAL_OWNER.name}</strong>, inscrito no CPF{" "}
-        <strong>{LEGAL_OWNER.cpf}</strong>, contato{" "}
-        <strong>{LEGAL_OWNER.email}</strong>
-        {". "}
-        <strong>[ENDEREÇO — a preencher]</strong>.
+        <strong>{LEGAL_OWNER.name}</strong> (CPF {LEGAL_OWNER.cpfMasked}), com
+        endereço em {LEGAL_OWNER.address}. Contato:{" "}
+        <strong>{LEGAL_OWNER.email}</strong>.
       </p>
       <h2>O que coletamos — e o que não coletamos</h2>
       <p>

@@ -1,0 +1,37 @@
+{
+  "proposedTitle": "Portabilidade de crédito: como levar sua dívida para juros menores",
+  "primaryIntent": "portabilidade de crédito como funciona",
+  "secondaryIntents": [
+    "portabilidade de empréstimo vale a pena",
+    "diferença entre portabilidade e refinanciamento"
+  ],
+  "targetReader": "Pessoa com contrato ativo pagando juros altos",
+  "readerSituation": "Não sabe que pode transferir a dívida ou confunde portabilidade com refinanciamento em ofertas por telefone",
+  "centralQuestion": "Como funciona a portabilidade, quando compensa e como não cair na falsa portabilidade?",
+  "uniqueAngle": "Enquadra a portabilidade como direito ('o contrato não é prisão'), deriva três consequências práticas da definição e arma o leitor com as três perguntas que desmascaram o refinanciamento disfarçado",
+  "originalContribution": [
+    "Três consequências práticas da definição (sem dinheiro novo, dívida não cresce, prazo não estica)",
+    "Passo a passo de 5 etapas incluindo o uso da contraproposta de retenção",
+    "Teste das três perguntas contra a falsa portabilidade"
+  ],
+  "primarySources": [
+    "Banco Central do Brasil — regulamentação da portabilidade de crédito"
+  ],
+  "supportingSources": [],
+  "contentArchetype": "explainer",
+  "proposedStructure": [
+    "Abertura: portabilidade como direito",
+    "Definição e três consequências",
+    "Passo a passo",
+    "Quando compensa",
+    "Pegadinha da falsa portabilidade",
+    "FAQ"
+  ],
+  "uniqueExamples": ["Três perguntas-teste: saldo aumenta? entra dinheiro? prazo estica?"],
+  "proposedVisuals": ["DefinitionBox", "WarningBox"],
+  "pagesThatMayCompete": ["/emprestimos/emprestimo-consignado/"],
+  "informationThatMustNotBeRepeated": [
+    "O contraste portabilidade vs refinanciamento do guia do consignado é resumido aqui e aprofundado no contexto próprio; este artigo é o dono da intenção e o consignado vira página de apoio"
+  ],
+  "publicationDecision": "create"
+}

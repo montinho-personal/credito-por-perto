@@ -27,7 +27,8 @@ export default function TermosDeUsoPage() {
       <h2>1. Natureza do serviço</h2>
       <p>
         O Crédito Por Perto é um portal de conteúdo educativo sobre crédito e
-        finanças pessoais, mantido por {LEGAL_OWNER.name} (CPF {LEGAL_OWNER.cpf}). O portal <strong>não é</strong> instituição
+        finanças pessoais, mantido por {LEGAL_OWNER.name} (CPF{" "}
+        {LEGAL_OWNER.cpfMasked}). O portal <strong>não é</strong> instituição
         financeira, correspondente bancário ou intermediador de crédito, e
         nenhuma informação publicada constitui oferta, recomendação individual
         ou garantia de condições de empréstimo.

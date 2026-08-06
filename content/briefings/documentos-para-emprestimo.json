@@ -1,0 +1,42 @@
+{
+  "proposedTitle": "Documentos para empréstimo: o que podem pedir — e o que nunca entregue",
+  "primaryIntent": "quais documentos são pedidos em empréstimo",
+  "secondaryIntents": [
+    "é seguro mandar RG para empréstimo",
+    "banco pede senha para liberar empréstimo"
+  ],
+  "targetReader": "Pessoa contratando o primeiro crédito ou abordada por 'consultor'",
+  "readerSituation": "Não sabe distinguir pedido legítimo de coleta fraudulenta de dados",
+  "centralQuestion": "O que é normal pedirem na contratação e o que nunca deve ser entregue?",
+  "uniqueAngle": "Estrutura de duas listas opostas (legítima vs vermelha) unificadas por uma lógica memorável: documento comprova; senha, código e dinheiro movimentam",
+  "originalContribution": [
+    "Tabela de documentos legítimos com o que cada um comprova",
+    "Lista vermelha de 6 itens que encerram a negociação",
+    "Dica da marca d'água datada sobre o documento",
+    "Distinção canal oficial vs WhatsApp de 'consultor'"
+  ],
+  "primarySources": [
+    "Banco Central do Brasil — segurança e prevenção a fraudes",
+    "Banco Central do Brasil — open finance"
+  ],
+  "supportingSources": [],
+  "contentArchetype": "checklist",
+  "proposedStructure": [
+    "Abertura: duas listas com pesos opostos",
+    "Lista 1: documentos legítimos (tabela)",
+    "Lista 2: lista vermelha",
+    "Como enviar com segurança",
+    "FAQ"
+  ],
+  "uniqueExamples": ["Lógica 'comprova vs movimenta'"],
+  "proposedVisuals": ["Tabela de documentos"],
+  "pagesThatMayCompete": [
+    "/credito-seguro/como-identificar-golpes-de-emprestimo/",
+    "/emprestimos/emprestimo-pessoal/"
+  ],
+  "informationThatMustNotBeRepeated": [
+    "Roteiros completos de golpe (links)",
+    "Comprovação de renda por perfil (links para autônomo/MEI)"
+  ],
+  "publicationDecision": "create"
+}

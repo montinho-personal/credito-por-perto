@@ -1,0 +1,32 @@
+{
+  "articleSlug": "portabilidade-de-credito",
+  "claims": [
+    {
+      "claimId": "portabilidade-direito",
+      "claimText": "A portabilidade de operações de crédito é regulamentada pelo CMN/Banco Central; a instituição credora original não pode impedir a transferência.",
+      "sourceOrganization": "Banco Central do Brasil",
+      "sourceTitle": "Portabilidade de crédito — regulamentação e orientações ao cidadão",
+      "sourceLocation": "https://www.bcb.gov.br",
+      "sourceType": "official",
+      "accessedAt": "2026-08-06"
+    },
+    {
+      "claimId": "portabilidade-saldo-prazo",
+      "claimText": "Na portabilidade, o valor da operação no destino corresponde ao saldo devedor e o prazo não pode ser superior ao remanescente; a quitação é feita entre as instituições.",
+      "sourceOrganization": "Banco Central do Brasil",
+      "sourceTitle": "Regras de portabilidade de operações de crédito",
+      "sourceLocation": "https://www.bcb.gov.br",
+      "sourceType": "official",
+      "accessedAt": "2026-08-06"
+    },
+    {
+      "claimId": "fornecimento-saldo",
+      "claimText": "A instituição credora deve fornecer ao cliente as informações da operação (saldo devedor atualizado, taxa, prazo) para fins de portabilidade.",
+      "sourceOrganization": "Banco Central do Brasil",
+      "sourceTitle": "Portabilidade — deveres de informação",
+      "sourceLocation": "https://www.bcb.gov.br",
+      "sourceType": "official",
+      "accessedAt": "2026-08-06"
+    }
+  ]
+}

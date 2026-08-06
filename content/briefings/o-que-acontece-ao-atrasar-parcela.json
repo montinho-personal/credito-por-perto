@@ -1,0 +1,41 @@
+{
+  "proposedTitle": "Atrasou a parcela do empréstimo? O que acontece e o que fazer agora",
+  "primaryIntent": "o que acontece ao atrasar parcela de empréstimo",
+  "secondaryIntents": [
+    "quantos dias de atraso negativam o nome",
+    "multa por atraso de empréstimo quanto é"
+  ],
+  "targetReader": "Pessoa com parcela atrasada ou prestes a atrasar",
+  "readerSituation": "Ansiedade e paralisia; tende ao silêncio, que agrava o problema",
+  "centralQuestion": "O que acontece em cada fase do atraso e como reduzir o estrago?",
+  "uniqueAngle": "Linha do tempo em 4 fases (dias → semanas → negativação → prolongado) com a mensagem central 'o pior movimento é o silêncio' e plano de ação ordenado",
+  "originalContribution": [
+    "Linha do tempo em 4 fases com o que incide em cada uma",
+    "Plano de 5 ações em ordem, começando por medir o problema",
+    "Critério de priorização entre dívidas (garantia e essenciais primeiro)"
+  ],
+  "primarySources": [
+    "Planalto — CDC art. 52 §1º (multa moratória 2%), art. 42 (cobrança), art. 43 (comunicação prévia)",
+    "Planalto — Lei nº 9.514/1997 (rito da garantia imobiliária)"
+  ],
+  "supportingSources": [],
+  "contentArchetype": "explainer",
+  "proposedStructure": [
+    "Abertura: o pior movimento é o silêncio",
+    "Linha do tempo em 4 fases",
+    "O que fazer em ordem",
+    "Alerta: atraso atrai golpista",
+    "FAQ"
+  ],
+  "uniqueExamples": ["Distinção 'mês ruim' vs 'parcela não cabe mais' como bifurcação da estratégia"],
+  "proposedVisuals": ["WarningBox"],
+  "pagesThatMayCompete": [
+    "/organizacao-financeira/renegociacao-ou-emprestimo/",
+    "/emprestimos/emprestimo-para-negativado/"
+  ],
+  "informationThatMustNotBeRepeated": [
+    "Rito completo da execução de garantia (fica no guia de garantia)",
+    "Processo de renegociação (link)"
+  ],
+  "publicationDecision": "create"
+}

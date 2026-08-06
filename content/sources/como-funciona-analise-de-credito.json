@@ -1,0 +1,32 @@
+{
+  "articleSlug": "como-funciona-analise-de-credito",
+  "claims": [
+    {
+      "claimId": "cadastro-positivo-lei",
+      "claimText": "O Cadastro Positivo (histórico positivo de pagamento) é disciplinado pela Lei nº 12.414/2011, com direito de consulta e de cancelamento do cadastro pelo consumidor.",
+      "sourceOrganization": "Planalto",
+      "sourceTitle": "Lei nº 12.414/2011 — Cadastro Positivo",
+      "sourceLocation": "https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2011/lei/l12414.htm",
+      "sourceType": "official",
+      "accessedAt": "2026-08-06"
+    },
+    {
+      "claimId": "cdc-acesso-cadastros",
+      "claimText": "O consumidor tem acesso às informações existentes sobre ele em cadastros e bancos de dados de consumo (CDC, art. 43); a LGPD reforça acesso e correção.",
+      "sourceOrganization": "Planalto — Código de Defesa do Consumidor",
+      "sourceTitle": "Lei nº 8.078/1990, art. 43; Lei nº 13.709/2018 (LGPD)",
+      "sourceLocation": "https://www.planalto.gov.br/ccivil_03/leis/l8078compilado.htm",
+      "sourceType": "official",
+      "accessedAt": "2026-08-06"
+    },
+    {
+      "claimId": "registrato-operacoes",
+      "claimText": "O Registrato, do Banco Central, permite consultar gratuitamente as operações de crédito vinculadas ao CPF.",
+      "sourceOrganization": "Banco Central do Brasil",
+      "sourceTitle": "Registrato — extrato de operações de crédito (SCR)",
+      "sourceLocation": "https://registrato.bcb.gov.br",
+      "sourceType": "official",
+      "accessedAt": "2026-08-06"
+    }
+  ]
+}

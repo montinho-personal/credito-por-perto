@@ -26,7 +26,8 @@ export default function AvisoLegalPage() {
       <h2>Responsável pelo portal</h2>
       <p>
         O Crédito Por Perto é mantido por <strong>{LEGAL_OWNER.name}</strong>{" "}
-        (CPF {LEGAL_OWNER.cpf}). Contato: <strong>{LEGAL_OWNER.email}</strong>.
+        (CPF {LEGAL_OWNER.cpfMasked}), {LEGAL_OWNER.address}. Contato:{" "}
+        <strong>{LEGAL_OWNER.email}</strong>.
       </p>
       <h2>Conteúdo educativo</h2>
       <p>

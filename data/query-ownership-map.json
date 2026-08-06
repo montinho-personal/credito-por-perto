@@ -66,6 +66,30 @@
     "canonicalOwner": "/calculadoras/emprestimo/",
     "supportingPages": ["/juros-e-cet/como-calcular-juros-de-emprestimo/"]
   },
+  "portabilidade de crédito como funciona": {
+    "canonicalOwner": "/emprestimos/portabilidade-de-credito/",
+    "supportingPages": ["/emprestimos/emprestimo-consignado/"]
+  },
+  "empréstimo para autônomo": {
+    "canonicalOwner": "/emprestimos/emprestimo-para-autonomo/",
+    "supportingPages": ["/emprestimos/emprestimo-para-mei/"]
+  },
+  "empréstimo para MEI": {
+    "canonicalOwner": "/emprestimos/emprestimo-para-mei/",
+    "supportingPages": ["/emprestimos/emprestimo-para-autonomo/"]
+  },
+  "como funciona a análise de crédito": {
+    "canonicalOwner": "/emprestimos/como-funciona-analise-de-credito/",
+    "supportingPages": ["/emprestimos/emprestimo-pessoal/"]
+  },
+  "o que acontece ao atrasar parcela de empréstimo": {
+    "canonicalOwner": "/organizacao-financeira/o-que-acontece-ao-atrasar-parcela/",
+    "supportingPages": ["/organizacao-financeira/renegociacao-ou-emprestimo/"]
+  },
+  "quais documentos são pedidos em empréstimo": {
+    "canonicalOwner": "/emprestimos/documentos-para-emprestimo/",
+    "supportingPages": []
+  },
   "empréstimos em campinas": {
     "canonicalOwner": "/emprestimos/sp/campinas/",
     "supportingPages": []

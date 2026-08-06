@@ -1,0 +1,50 @@
+{
+  "articleSlug": "o-que-acontece-ao-atrasar-parcela",
+  "claims": [
+    {
+      "claimId": "multa-2-porcento",
+      "claimText": "Em contratos de consumo, a multa moratória por atraso é limitada a 2% do valor da prestação (CDC, art. 52, §1º).",
+      "sourceOrganization": "Planalto — Código de Defesa do Consumidor",
+      "sourceTitle": "Lei nº 8.078/1990, art. 52, §1º",
+      "sourceLocation": "https://www.planalto.gov.br/ccivil_03/leis/l8078compilado.htm",
+      "sourceType": "official",
+      "accessedAt": "2026-08-06"
+    },
+    {
+      "claimId": "cobranca-limites",
+      "claimText": "Na cobrança de dívidas, o consumidor não pode ser exposto a ridículo nem submetido a constrangimento ou ameaça (CDC, art. 42).",
+      "sourceOrganization": "Planalto — Código de Defesa do Consumidor",
+      "sourceTitle": "Lei nº 8.078/1990, art. 42",
+      "sourceLocation": "https://www.planalto.gov.br/ccivil_03/leis/l8078compilado.htm",
+      "sourceType": "official",
+      "accessedAt": "2026-08-06"
+    },
+    {
+      "claimId": "comunicacao-previa-negativacao",
+      "claimText": "A abertura de cadastro negativo exige comunicação prévia por escrito ao consumidor (CDC, art. 43, §2º).",
+      "sourceOrganization": "Planalto — Código de Defesa do Consumidor",
+      "sourceTitle": "Lei nº 8.078/1990, art. 43, §2º",
+      "sourceLocation": "https://www.planalto.gov.br/ccivil_03/leis/l8078compilado.htm",
+      "sourceType": "official",
+      "accessedAt": "2026-08-06"
+    },
+    {
+      "claimId": "garantia-rito",
+      "claimText": "No crédito com garantia de imóvel, o atraso persistente ativa o rito de consolidação da propriedade e leilão previsto na Lei nº 9.514/1997.",
+      "sourceOrganization": "Planalto",
+      "sourceTitle": "Lei nº 9.514/1997",
+      "sourceLocation": "https://www.planalto.gov.br/ccivil_03/leis/l9514.htm",
+      "sourceType": "official",
+      "accessedAt": "2026-08-06"
+    },
+    {
+      "claimId": "superendividamento-minimo",
+      "claimText": "A Lei nº 14.181/2021 prevê repactuação de dívidas com preservação do mínimo existencial.",
+      "sourceOrganization": "Planalto",
+      "sourceTitle": "Lei nº 14.181/2021",
+      "sourceLocation": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2021/lei/l14181.htm",
+      "sourceType": "official",
+      "accessedAt": "2026-08-06"
+    }
+  ]
+}

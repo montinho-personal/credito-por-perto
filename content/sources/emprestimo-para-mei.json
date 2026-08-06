@@ -1,0 +1,33 @@
+{
+  "articleSlug": "emprestimo-para-mei",
+  "claims": [
+    {
+      "claimId": "dasn-obrigatoria",
+      "claimText": "O MEI deve entregar a Declaração Anual do Simples Nacional (DASN-SIMEI); a omissão gera irregularidade do CNPJ.",
+      "sourceOrganization": "Gov.br — Portal do Empreendedor",
+      "sourceTitle": "Declaração Anual de Faturamento do MEI (DASN-SIMEI)",
+      "sourceLocation": "https://www.gov.br/empresas-e-negocios/pt-br/empreendedor",
+      "sourceType": "official",
+      "accessedAt": "2026-08-06"
+    },
+    {
+      "claimId": "microcredito-produtivo",
+      "claimText": "O microcrédito produtivo orientado é modalidade regulamentada voltada a empreendedores de pequeno porte, ofertada por instituições autorizadas e entidades de microcrédito.",
+      "sourceOrganization": "Banco Central do Brasil",
+      "sourceTitle": "Microcrédito — regulamentação e orientações",
+      "sourceLocation": "https://www.bcb.gov.br",
+      "sourceType": "official",
+      "accessedAt": "2026-08-06"
+    },
+    {
+      "claimId": "programas-vigencia",
+      "claimText": "Programas públicos de crédito para pequenos negócios (como linhas com garantia da União) têm regras e vigência variáveis, devendo ser confirmados nos canais oficiais.",
+      "sourceOrganization": "Gov.br",
+      "sourceTitle": "Programas de crédito para pequenos negócios — canais oficiais",
+      "sourceLocation": "https://www.gov.br",
+      "sourceType": "official",
+      "accessedAt": "2026-08-06",
+      "notes": "O artigo deliberadamente não nomeia programas com condições específicas para evitar afirmações que expiram."
+    }
+  ]
+}

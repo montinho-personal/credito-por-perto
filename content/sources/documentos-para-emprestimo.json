@@ -1,0 +1,32 @@
+{
+  "articleSlug": "documentos-para-emprestimo",
+  "claims": [
+    {
+      "claimId": "fraude-senha-codigo",
+      "claimText": "Instituições financeiras e o Banco Central orientam que funcionários legítimos nunca solicitam senhas, códigos de autenticação ou o cartão físico do cliente.",
+      "sourceOrganization": "Banco Central do Brasil",
+      "sourceTitle": "Orientações de segurança e prevenção a fraudes",
+      "sourceLocation": "https://www.bcb.gov.br",
+      "sourceType": "official",
+      "accessedAt": "2026-08-06"
+    },
+    {
+      "claimId": "open-finance-dispensa",
+      "claimText": "Mediante consentimento do cliente, o open finance permite compartilhar dados financeiros entre instituições, podendo substituir parte da documentação tradicional.",
+      "sourceOrganization": "Banco Central do Brasil",
+      "sourceTitle": "Open Finance — compartilhamento consentido de dados",
+      "sourceLocation": "https://www.bcb.gov.br",
+      "sourceType": "official",
+      "accessedAt": "2026-08-06"
+    },
+    {
+      "claimId": "registrato-conferencia",
+      "claimText": "O Registrato permite conferir as operações de crédito registradas no CPF, útil para detectar contratos não reconhecidos.",
+      "sourceOrganization": "Banco Central do Brasil",
+      "sourceTitle": "Registrato",
+      "sourceLocation": "https://registrato.bcb.gov.br",
+      "sourceType": "official",
+      "accessedAt": "2026-08-06"
+    }
+  ]
+}
