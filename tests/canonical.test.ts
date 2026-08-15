@@ -33,8 +33,8 @@ describe("isValidCanonical", () => {
   });
 
   it("rejeita http, sem www, sem trailing slash, com query ou domínio externo", () => {
-    expect(isValidCanonical("http://www.creditoporperto.com.br/x/")).toBe(false);
-    expect(isValidCanonical("https://creditoporperto.com.br/x/")).toBe(false);
+    expect(isValidCanonical("http://www.creditoporperto.com/x/")).toBe(false);
+    expect(isValidCanonical("https://creditoporperto.com/x/")).toBe(false);
     expect(isValidCanonical(`${SITE_URL}/pagina`)).toBe(false);
     expect(isValidCanonical(`${SITE_URL}/pagina/?utm=1`)).toBe(false);
     expect(isValidCanonical("https://www.exemplo.com/pagina/")).toBe(false);

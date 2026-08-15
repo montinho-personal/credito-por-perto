@@ -68,8 +68,8 @@ const nextConfig: NextConfig = {
       // Domínio sem www redireciona permanentemente para o domínio canônico.
       {
         source: "/:path*",
-        has: [{ type: "host", value: "creditoporperto.com.br" }],
-        destination: "https://www.creditoporperto.com.br/:path*",
+        has: [{ type: "host", value: "creditoporperto.com" }],
+        destination: "https://www.creditoporperto.com/:path*",
         permanent: true,
       },
     ];

@@ -5,7 +5,7 @@
 Toda página indexável e independente tem canonical **autorreferencial**,
 presente no HTML inicial (Metadata API, nunca alterada por JS), com:
 
-- URL absoluta em `https://www.creditoporperto.com.br`;
+- URL absoluta em `https://www.creditoporperto.com`;
 - HTTPS, `www`, trailing slash (padrão único do projeto);
 - destino 200, indexável, nunca redirect/404/soft-404/noindex/bloqueada;
 - coerência total com sitemap, links internos e redirects.

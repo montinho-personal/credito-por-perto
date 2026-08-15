@@ -2,7 +2,7 @@
 
 ## Domínio canônico
 
-`https://www.creditoporperto.com.br` — HTTPS, com `www`, trailing slash.
+`https://www.creditoporperto.com` — HTTPS, com `www`, trailing slash.
 
 - HTTP→HTTPS: automático no Vercel;
 - apex→www: redirect 308 em `next.config.ts` (host match) + configuração de

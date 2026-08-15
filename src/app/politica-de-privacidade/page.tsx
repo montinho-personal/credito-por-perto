@@ -26,7 +26,7 @@ export default function PoliticaDePrivacidadePage() {
       <LegalTemplateNotice />
       <h2>Quem somos</h2>
       <p>
-        O Crédito por Perto (www.creditoporperto.com.br) é um portal editorial
+        O Crédito por Perto (www.creditoporperto.com) é um portal editorial
         de educação financeira. O controlador dos dados tratados neste site é{" "}
         <strong>{LEGAL_OWNER.name}</strong> (CPF {LEGAL_OWNER.cpfMasked}), com
         endereço em {LEGAL_OWNER.address}. Contato:{" "}

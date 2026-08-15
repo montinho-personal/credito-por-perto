@@ -2,7 +2,7 @@
  * Configuração central do portal. Tudo que depende do domínio canônico,
  * nome da marca ou navegação principal sai daqui.
  */
-export const SITE_URL = "https://www.creditoporperto.com.br";
+export const SITE_URL = "https://www.creditoporperto.com";
 
 export const SITE_NAME = "Crédito por Perto";
 

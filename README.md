@@ -3,7 +3,7 @@
 Portal editorial independente sobre empréstimos, crédito, juros e segurança
 financeira. **Crédito explicado. Decisões mais seguras.**
 
-- Domínio canônico: `https://www.creditoporperto.com.br`
+- Domínio canônico: `https://www.creditoporperto.com`
 - Stack: Next.js (App Router) · TypeScript estrito · Tailwind CSS v4 · MDX · Zod
 - Hospedagem alvo: Vercel
 

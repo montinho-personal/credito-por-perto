@@ -37,9 +37,12 @@ Tudo o mais já está implementado ou automatizado.
 
 ## 4. Infraestrutura
 
-- [ ] Conta/projeto no Vercel e autorização para deploy de produção
-- [ ] Configuração de DNS do domínio `creditoporperto.com.br`
-      (apex → redirect para `www`, conforme `docs/publicacao-vercel.md`)
+- [x] Conta/projeto no Vercel e autorização para deploy de produção
+- [x] Domínio `creditoporperto.com` comprado via Vercel (15/08/2026) — DNS
+      gerenciado pelo próprio Vercel
+- [ ] Conectar `www.creditoporperto.com` (principal) e `creditoporperto.com`
+      (redirect) ao projeto em Settings → Domains, conforme
+      `docs/publicacao-vercel.md`
 
 ## 5. Guias locais (bloqueiam publicação dos guias, não do site)
 
