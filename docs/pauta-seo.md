@@ -46,6 +46,51 @@ Baseada em varredura real da SERP brasileira (queries e achados em
 19. Guias locais (Campinas, Barueri, Alphaville) — concluir verificação e publicar;
 20. **Página viva "taxas médias de empréstimo neste mês (dados do BC)"** — só assumir se houver rotina mensal de atualização; freshness recorrente é o que faz portais rankearem nessas consultas.
 
+## Trilha Local — "Empréstimo em [cidade]" (paralela às ondas)
+
+Decisão do proprietário (16/08/2026): expandir o SEO local cidade a cidade.
+A trilha corre em paralelo às ondas editoriais, com ~2 guias/semana.
+
+### Por que ganhamos (e por que os outros perdem)
+
+A SERP de "empréstimo em [cidade média]" quase nunca tem uma página local de
+verdade — só agregadores genéricos, Google Maps e lead-gen. Quem publica um
+guia local **real** compete pela 1ª posição com facilidade. O risco é o
+atalho: páginas-modelo trocando só o nome da cidade são *doorway pages*,
+penalizadas pelo Google (spam policy) e bloqueadas pela nossa auditoria
+(`audit:originality`, teste de troca de localidade). Escala sim; template não.
+
+### Critérios de priorização (nesta ordem)
+
+1. **SERP fraca**: nenhuma página local dedicada rankeando — só genéricos;
+2. **Porte médio** (30 mil–300 mil hab.): volume existe, concorrência não.
+   Capitais e cidades grandes ficam para quando o site tiver autoridade;
+3. **Proximidade do QG** (Barueri): verificação em campo viável e E-E-A-T
+   real — o endereço do portal é da região;
+4. **Efeito cluster estadual**: concentrar em SP até `/emprestimos/sp/`
+   virar hub forte antes de abrir outro estado.
+
+### Ordem de produção
+
+| Lote | Cidades (em ordem) | Racional |
+| --- | --- | --- |
+| **L1 — corredor oeste da Grande SP** | Barueri*, região de Alphaville*, Santana de Parnaíba, Carapicuíba, Jandira, Itapevi, Cotia | QG do portal; drafts (*) já existem, faltando só verificação de campo; SERPs muito fracas |
+| **L2 — Grande SP, porte médio** | Santa Isabel, Franco da Rocha, Caieiras, Mairiporã, Vargem Grande Paulista, Embu das Artes, Taboão da Serra | Volume razoável, concorrência quase nula; verificável a distância por fontes oficiais |
+| **L3 — interior de SP** | Salto, Indaiatuba, Itu, Atibaia, Bragança Paulista, Itatiba, Vinhedo | Cidades com "rua financeira" própria; Campinas (draft existente) publica aqui como âncora do lote |
+| **L4 — expansão por estado** | Cidades médias de MG, PR, SC, GO (definir por SERP na hora) | Só após SP consolidado; cada estado abre com 3–5 cidades e o índice `/emprestimos/[uf]/` |
+| Osasco, Campinas, capitais | Ao final de cada lote regional | Grandes demais para um site novo; entram quando o cluster local já rankeia |
+
+### O que cada guia precisa ter (para passar na auditoria e rankear)
+
+- Dossiê `LocalEvidence` com fontes oficiais datadas: Procon/atendimento ao
+  consumidor do município, agências e cooperativas que atuam na cidade,
+  canais da prefeitura, particularidades locais verificáveis;
+- Resposta que só serve para aquela cidade (teste: trocando o nome da
+  cidade, o texto quebra?);
+- Publicação apenas com `lastVerifiedAt`; sem verificação → draft + noindex;
+- Interlink com os pilares nacionais (consignado, golpes, CET) e com o
+  índice estadual.
+
 ## Anti-metas (não perseguir agora)
 
 - Head terms puros ("empréstimo", "empréstimo pessoal") — SERP de gigantes;
