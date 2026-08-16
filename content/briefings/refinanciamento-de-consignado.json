@@ -1,0 +1,44 @@
+{
+  "proposedTitle": "Refinanciamento de consignado: quando faz sentido (e quando é armadilha)",
+  "primaryIntent": "refinanciamento de empréstimo consignado vale a pena como funciona",
+  "secondaryIntents": [
+    "refin consignado com troco o que é",
+    "diferença entre refinanciamento e portabilidade do consignado"
+  ],
+  "targetReader": "Aposentado, servidor ou CLT com consignado ativo recebendo ligações de 'troco' e 'redução de parcela'",
+  "readerSituation": "SERP dominada por quem vende o refin; o assédio telefônico empurra a operação sem mostrar o custo total",
+  "centralQuestion": "Refinanciar meu consignado (pegar 'troco', esticar prazo) compensa quando, exatamente — e como faço a conta?",
+  "uniqueAngle": "Desmonta o produto em suas duas peças (dinheiro novo + prazo novo), entrega a conta de 3 números que decide qualquer proposta (saldo devedor atual × total a pagar novo × alternativas) e posiciona a portabilidade como o concorrente que o vendedor nunca menciona",
+  "originalContribution": [
+    "A anatomia do refin: troco = empréstimo novo embutido, prazo novo = juros recomeçando",
+    "A conta de 3 números antes de aceitar",
+    "Tabela refin × portabilidade × contrato novo",
+    "Sinais de assédio: quando a oferta serve ao vendedor, não a você"
+  ],
+  "primarySources": [
+    "Planalto — Lei nº 10.820/2003",
+    "Banco Central — taxas médias por modalidade"
+  ],
+  "supportingSources": [],
+  "contentArchetype": "guide",
+  "proposedStructure": [
+    "Resposta direta: o que o refin realmente é",
+    "As duas peças do produto",
+    "A conta de 3 números",
+    "Refin × portabilidade × contrato novo (tabela)",
+    "Quando tende a valer / quando é armadilha",
+    "Assédio: como reagir",
+    "FAQ"
+  ],
+  "uniqueExamples": [],
+  "proposedVisuals": ["Tabela comparativa", "ChecklistBox", "WarningBox"],
+  "pagesThatMayCompete": [
+    "/emprestimos/emprestimo-consignado/",
+    "/emprestimos/portabilidade-de-credito/"
+  ],
+  "informationThatMustNotBeRepeated": [
+    "Mecânica geral do consignado (link ao pilar)",
+    "Passo a passo da portabilidade (link ao dono da intenção)"
+  ],
+  "publicationDecision": "create"
+}

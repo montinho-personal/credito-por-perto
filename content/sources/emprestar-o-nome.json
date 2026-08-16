@@ -1,0 +1,33 @@
+{
+  "articleSlug": "emprestar-o-nome",
+  "claims": [
+    {
+      "claimId": "divida-no-cpf-do-contratante",
+      "claimText": "A operação de crédito é registrada no CPF de quem assina o contrato: é esse CPF que aparece no SCR do Banco Central (consultável no Registrato), que tem a renda comprometida na análise e que é negativado em caso de atraso.",
+      "sourceOrganization": "Banco Central do Brasil",
+      "sourceTitle": "Registrato — Extrato do SCR (empréstimos e financiamentos)",
+      "sourceLocation": "https://registrato.bcb.gov.br",
+      "sourceType": "official",
+      "accessedAt": "2026-08-16"
+    },
+    {
+      "claimId": "obrigacao-contratual",
+      "claimText": "Perante o credor, a obrigação de pagar é integralmente de quem contratou; acordos paralelos entre particulares valem entre eles (Código Civil, teoria geral dos contratos) e podem ser formalizados por instrumento particular, mas não vinculam a instituição financeira.",
+      "sourceOrganization": "Presidência da República — Planalto",
+      "sourceTitle": "Código Civil (Lei nº 10.406/2002) — obrigações e contratos",
+      "sourceLocation": "https://www.planalto.gov.br/ccivil_03/leis/2002/l10406compilada.htm",
+      "sourceType": "official",
+      "accessedAt": "2026-08-16"
+    },
+    {
+      "claimId": "fraude-quando-ha-engano",
+      "claimText": "Contratar crédito com informações falsas ou para ocultar o real beneficiário pode caracterizar fraude perante a instituição; a orientação editorial é não afirmar tipificação penal em casos concretos e recomendar orientação jurídica.",
+      "sourceOrganization": "Presidência da República — Planalto",
+      "sourceTitle": "Legislação penal e consumerista aplicável (referência geral)",
+      "sourceLocation": "https://www.planalto.gov.br",
+      "sourceType": "official",
+      "accessedAt": "2026-08-16",
+      "notes": "O artigo trata o tema como risco e remete a orientação profissional, sem tese jurídica própria."
+    }
+  ]
+}

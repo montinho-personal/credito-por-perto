@@ -1,0 +1,43 @@
+{
+  "proposedTitle": "Emprestar o nome para empréstimo: o risco que ninguém te conta",
+  "primaryIntent": "emprestar o nome para empréstimo é seguro quais os riscos",
+  "secondaryIntents": [
+    "fiz empréstimo para outra pessoa e ela não paga o que fazer",
+    "emprestar nome é crime?"
+  ],
+  "targetReader": "Pessoa pressionada por parente/amigo a contratar crédito 'no nome dela' — ou que já emprestou e o outro parou de pagar",
+  "readerSituation": "Situação extremamente comum, carregada de culpa e pressão afetiva; SERP mistura conteúdo raso e juridiquês; ninguém entrega o mapa completo (antes, durante e depois)",
+  "centralQuestion": "O que exatamente eu assumo ao contratar crédito para outra pessoa usar — e o que faço se já emprestei e o combinado quebrou?",
+  "uniqueAngle": "Trata o tema em três tempos: ANTES (o que a lei enxerga: a dívida é 100% sua, o combinado verbal vale zero para o banco), DURANTE (como formalizar se decidir ajudar mesmo assim) e DEPOIS (o plano de dano quando o outro parou de pagar) — com o roteiro de dizer 'não' sem quebrar a relação",
+  "originalContribution": [
+    "O contraste combinado × contrato: para o banco existe só você",
+    "As 4 formas de ajudar sem emprestar o nome",
+    "Modelo mental do 'empréstimo espelho': contrato particular entre as partes",
+    "Plano de dano em 4 passos para quem já emprestou e o outro sumiu"
+  ],
+  "primarySources": [
+    "Banco Central — Registrato/SCR (a operação nasce no CPF do contratante)",
+    "Planalto — Código Civil (obrigações contratuais)"
+  ],
+  "supportingSources": [],
+  "contentArchetype": "guide",
+  "proposedStructure": [
+    "Resposta direta: o que você realmente assume",
+    "Por que o combinado verbal vale zero",
+    "As 4 formas de ajudar sem emprestar o nome",
+    "Se for ajudar mesmo assim: como formalizar",
+    "Já emprestei e não pagam: plano de dano",
+    "FAQ"
+  ],
+  "uniqueExamples": [],
+  "proposedVisuals": ["WarningBox", "ChecklistBox"],
+  "pagesThatMayCompete": [
+    "/organizacao-financeira/quando-vale-a-pena-fazer-emprestimo/",
+    "/organizacao-financeira/o-que-acontece-ao-atrasar-parcela/"
+  ],
+  "informationThatMustNotBeRepeated": [
+    "Roteiro geral de decisão de crédito (link)",
+    "Consequências detalhadas do atraso (link)"
+  ],
+  "publicationDecision": "create"
+}

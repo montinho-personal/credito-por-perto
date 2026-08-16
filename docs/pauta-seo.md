@@ -40,8 +40,8 @@ Baseada em varredura real da SERP brasileira (queries e achados em
 13. ~~RMC/RCC: reserva de margem e como cancelar~~ — publicado em 16/08/2026;
 14. ~~Empréstimo caiu na conta sem pedir~~ — publicado em 16/08/2026;
 15. ~~Como sair do rotativo do cartão~~ — publicado em 16/08/2026;
-16. Refinanciamento de consignado: quando faz sentido (contraponto ao assédio);
-17. Empréstimo com garantia de celular: como funciona o bloqueio;
+16. ~~Refinanciamento de consignado~~ — publicado em 16/08/2026;
+17. ~~Empréstimo com garantia de celular~~ — publicado em 16/08/2026 (+ novo: emprestar o nome, mesma data);
 18. Atualizar guia FGTS com os limites vigentes de parcelas antecipáveis (verificar na Caixa antes);
 19. Guias locais — Barueri e Alphaville publicados em 16/08/2026; falta Campinas (draft, âncora do L3);
 20. **Página viva "taxas médias de empréstimo neste mês (dados do BC)"** — só assumir se houver rotina mensal de atualização; freshness recorrente é o que faz portais rankearem nessas consultas.

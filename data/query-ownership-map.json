@@ -226,5 +226,24 @@
     "supportingPages": [
       "/organizacao-financeira/renegociacao-ou-emprestimo/"
     ]
+  },
+  "refinanciamento de empréstimo consignado vale a pena como funciona": {
+    "canonicalOwner": "/emprestimos/refinanciamento-de-consignado/",
+    "supportingPages": [
+      "/emprestimos/portabilidade-de-credito/",
+      "/emprestimos/emprestimo-consignado/"
+    ]
+  },
+  "empréstimo com garantia de celular como funciona bloqueio": {
+    "canonicalOwner": "/emprestimos/emprestimo-com-garantia-de-celular/",
+    "supportingPages": [
+      "/emprestimos/emprestimo-com-garantia/"
+    ]
+  },
+  "emprestar o nome para empréstimo é seguro quais os riscos": {
+    "canonicalOwner": "/organizacao-financeira/emprestar-o-nome/",
+    "supportingPages": [
+      "/organizacao-financeira/quando-vale-a-pena-fazer-emprestimo/"
+    ]
   }
 }

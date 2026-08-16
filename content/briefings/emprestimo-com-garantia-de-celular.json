@@ -1,0 +1,44 @@
+{
+  "proposedTitle": "Empréstimo com garantia de celular: como funciona o bloqueio do aparelho",
+  "primaryIntent": "empréstimo com garantia de celular como funciona bloqueio",
+  "secondaryIntents": [
+    "empréstimo usando o celular como garantia é seguro",
+    "app pode bloquear meu celular por dívida?"
+  ],
+  "targetReader": "Pessoa com pouco acesso a crédito avaliando fintechs que aceitam o celular como garantia",
+  "readerSituation": "Modalidade nova, exclusiva do Brasil, com SERP dominada pelas próprias fintechs e blogs afiliados; ninguém explica o mecanismo de bloqueio e sua controvérsia jurídica",
+  "centralQuestion": "Como o celular vira garantia na prática, o que o app instalado pode fazer com meu aparelho e quais os riscos reais?",
+  "uniqueAngle": "Explica a mecânica em camadas — alienação fiduciária do aparelho + aplicativo com poder de restrição — e traz o que as vendas omitem: a controvérsia jurídica do bloqueio remoto, o que verificar antes e as alternativas na mesma faixa de valor",
+  "originalContribution": [
+    "A mecânica em 2 camadas (jurídica × tecnológica)",
+    "O que o contrato autoriza o app a fazer — e a controvérsia do bloqueio",
+    "Checklist de verificação antes de instalar qualquer app de credor",
+    "Comparação honesta com alternativas na mesma faixa de valor"
+  ],
+  "primarySources": [
+    "Planalto — Código Civil (propriedade fiduciária de bens móveis, arts. 1.361 e seguintes)",
+    "Banco Central — Encontre uma instituição"
+  ],
+  "supportingSources": ["TechTudo — cobertura jornalística da modalidade e da controvérsia do bloqueio"],
+  "contentArchetype": "guide",
+  "proposedStructure": [
+    "Resposta direta: o que é a modalidade",
+    "Camada jurídica: alienação fiduciária do aparelho",
+    "Camada tecnológica: o app e o que ele pode restringir",
+    "A controvérsia do bloqueio remoto",
+    "Antes de contratar: verificações",
+    "Alternativas na mesma faixa",
+    "FAQ"
+  ],
+  "uniqueExamples": [],
+  "proposedVisuals": ["Tabela de camadas", "ChecklistBox", "WarningBox"],
+  "pagesThatMayCompete": [
+    "/emprestimos/emprestimo-com-garantia/",
+    "/emprestimos/emprestimo-para-negativado/"
+  ],
+  "informationThatMustNotBeRepeated": [
+    "Mecânica geral do empréstimo com garantia (link ao pilar)",
+    "Alternativas completas para negativado (link)"
+  ],
+  "publicationDecision": "create"
+}

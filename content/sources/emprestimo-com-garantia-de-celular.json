@@ -1,0 +1,33 @@
+{
+  "articleSlug": "emprestimo-com-garantia-de-celular",
+  "claims": [
+    {
+      "claimId": "propriedade-fiduciaria",
+      "claimText": "A garantia sobre bem móvel (como um celular) usa o instituto da propriedade fiduciária previsto no Código Civil (arts. 1.361 e seguintes): o credor detém a propriedade resolúvel do bem até a quitação, e o devedor mantém a posse e o uso.",
+      "sourceOrganization": "Presidência da República — Planalto",
+      "sourceTitle": "Código Civil (Lei nº 10.406/2002), arts. 1.361–1.368",
+      "sourceLocation": "https://www.planalto.gov.br/ccivil_03/leis/2002/l10406compilada.htm",
+      "sourceType": "official",
+      "accessedAt": "2026-08-16"
+    },
+    {
+      "claimId": "mecanica-app-restricao",
+      "claimText": "Na modalidade oferecida por fintechs brasileiras, o tomador instala um aplicativo do credor que, em caso de inadimplência, pode restringir funções não essenciais do aparelho; a cobertura jornalística registra contestações judiciais ao bloqueio remoto e a ausência de regulamentação específica do mecanismo.",
+      "sourceOrganization": "TechTudo (Grupo Globo)",
+      "sourceTitle": "Empréstimo com garantia de celular vale a pena? O que você precisa saber",
+      "sourceLocation": "https://www.techtudo.com.br/guia/2026/02/emprestimo-com-celular-tudo-o-que-voce-precisa-saber-antes-de-cair-nessa-edapps.ghtml",
+      "sourceType": "journalistic",
+      "accessedAt": "2026-08-16",
+      "notes": "Controvérsia jurídica apresentada como tal no artigo, sem afirmação de tese própria."
+    },
+    {
+      "claimId": "instituicao-autorizada",
+      "claimText": "A concessão de crédito ao público exige instituição autorizada pelo Banco Central (diretamente ou como correspondente identificado), consultável nos canais oficiais do BC.",
+      "sourceOrganization": "Banco Central do Brasil",
+      "sourceTitle": "Encontre uma instituição",
+      "sourceLocation": "https://www.bcb.gov.br/meubc/encontreinstituicao",
+      "sourceType": "official",
+      "accessedAt": "2026-08-16"
+    }
+  ]
+}
