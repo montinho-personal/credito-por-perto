@@ -7,6 +7,7 @@ export type SearchSource =
   | "header"
   | "home"
   | "busca-page"
+  | "guias-locais"
   | "404"
   | "atalho";
 

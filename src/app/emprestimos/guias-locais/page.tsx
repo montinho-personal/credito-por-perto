@@ -5,6 +5,7 @@ import { getPublishedLocalGuides, getAllLocalGuides } from "@/lib/content/local"
 import { getStateByCode } from "@/lib/local-seo/states";
 import { LocalGuideCard } from "@/components/ui/cards";
 import { Breadcrumbs } from "@/components/layout/Breadcrumbs";
+import { SearchBox } from "@/components/search/SearchTrigger";
 
 export const metadata: Metadata = buildMetadata({
   title: "Guias locais de empréstimos: informação verificada por cidade",
@@ -39,6 +40,13 @@ export default function GuiasLocaisPage() {
         verificadas e cuidados específicos — nunca um texto genérico com o nome
         da cidade trocado.
       </p>
+
+      <div className="mt-6">
+        <SearchBox
+          source="guias-locais"
+          placeholder="Digite sua cidade — ex.: Barueri, Cotia, Santa Isabel…"
+        />
+      </div>
 
       <section aria-labelledby="publicados" className="mt-10">
         <h2 id="publicados" className="font-serif text-2xl font-bold text-brand-navy">
