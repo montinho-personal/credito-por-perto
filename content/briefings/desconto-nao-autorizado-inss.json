@@ -1,0 +1,46 @@
+{
+  "proposedTitle": "Desconto de empréstimo no INSS que você não fez: como cancelar e bloquear",
+  "primaryIntent": "desconto de empréstimo não autorizado no benefício do INSS o que fazer",
+  "secondaryIntents": [
+    "como bloquear benefício do INSS para empréstimo",
+    "mensalidade associativa INSS como excluir",
+    "restituição de desconto indevido INSS"
+  ],
+  "targetReader": "Aposentado/pensionista (ou familiar que o ajuda) que encontrou desconto estranho no extrato do benefício",
+  "readerSituation": "SERP dominada por bancos explicando superficialmente e advogados captando causa; falta um roteiro neutro e completo dos canais oficiais",
+  "centralQuestion": "Descobri um desconto que não autorizei no meu benefício: como identificar o tipo, cancelar, ser ressarcido e impedir que aconteça de novo?",
+  "uniqueAngle": "Separa os dois tipos de desconto indevido (consignado não reconhecido × mensalidade associativa), que têm caminhos de contestação diferentes — confusão que a SERP não resolve — e fecha com o bloqueio preventivo do benefício",
+  "originalContribution": [
+    "Fluxo de decisão: identificar o tipo de desconto antes de contestar",
+    "Tabela comparando os dois caminhos (consignado × associativo)",
+    "Roteiro de prevenção com o bloqueio do benefício no Meu INSS",
+    "Orientação sobre prova e prazo sem promessa jurídica"
+  ],
+  "primarySources": [
+    "INSS — orientação oficial sobre descontos não autorizados (gov.br)",
+    "Agência Gov — restituição de descontos indevidos",
+    "Meu INSS — serviços de extrato e bloqueio"
+  ],
+  "supportingSources": ["Consumidor.gov.br"],
+  "contentArchetype": "guide",
+  "proposedStructure": [
+    "Resposta direta: os 3 passos imediatos",
+    "Passo 1: identificar o tipo de desconto no extrato",
+    "Caminho A: consignado que você não contratou",
+    "Caminho B: mensalidade associativa",
+    "Como pedir o dinheiro de volta",
+    "Prevenção: bloqueio do benefício",
+    "FAQ"
+  ],
+  "uniqueExamples": [],
+  "proposedVisuals": ["Tabela dos dois caminhos", "ChecklistBox de prevenção", "SafetyAlert"],
+  "pagesThatMayCompete": [
+    "/credito-seguro/como-identificar-golpes-de-emprestimo/",
+    "/emprestimos/emprestimo-consignado/"
+  ],
+  "informationThatMustNotBeRepeated": [
+    "Como funciona o consignado em si (link ao pilar)",
+    "Golpes de oferta de empréstimo (link ao guia de golpes)"
+  ],
+  "publicationDecision": "create"
+}

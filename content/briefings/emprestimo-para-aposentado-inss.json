@@ -1,0 +1,47 @@
+{
+  "proposedTitle": "Empréstimo para aposentado e pensionista do INSS: guia completo",
+  "primaryIntent": "empréstimo para aposentado e pensionista do INSS como funciona",
+  "secondaryIntents": [
+    "consignado INSS margem quanto posso pegar",
+    "aposentado consegue empréstimo pessoal comum?"
+  ],
+  "targetReader": "Aposentado/pensionista do INSS (ou familiar) avaliando crédito — segmento de altíssimo volume e SERP totalmente comercial",
+  "readerSituation": "SERP dominada por bancos e fintechs vendendo; nenhum guia neutro que organize modalidades, margem, teto e proteção contra assédio",
+  "centralQuestion": "Quais são minhas opções reais de crédito como beneficiário do INSS, quanto cabe na margem e como contratar sem cair em armadilha?",
+  "uniqueAngle": "Guia do beneficiário, não do produto: organiza as opções por custo provável (consignado → pessoal → cartões), explica a margem 35/5/5 com exemplo e calculadora própria, e dedica seção inteira à defesa contra o assédio comercial — o problema número 1 do segmento",
+  "originalContribution": [
+    "Escada de modalidades por custo para o beneficiário",
+    "Margem explicada com exemplo numérico validado pela calculadora do site",
+    "Seção anti-assédio: regras práticas para não contratar sob pressão",
+    "Fluxo seguro de contratação em 5 passos (com bloqueio/desbloqueio do benefício)"
+  ],
+  "primarySources": [
+    "Planalto — Lei nº 10.820/2003",
+    "INSS/gov.br — consignado e canais oficiais",
+    "Banco Central — taxas por modalidade"
+  ],
+  "supportingSources": [],
+  "contentArchetype": "guide",
+  "proposedStructure": [
+    "Resposta direta: a escada de opções",
+    "Consignado INSS: margem 35/5/5 com exemplo",
+    "Teto de juros e como conferir a taxa",
+    "As alternativas fora do consignado",
+    "Contratação segura em 5 passos",
+    "Defesa contra o assédio",
+    "FAQ"
+  ],
+  "uniqueExamples": ["Benefício de R$ 2.000: margem de R$ 700 para empréstimo (exemplo alinhado ao artigo de margem)"],
+  "proposedVisuals": ["Tabela de modalidades", "ChecklistBox", "WhatCanChange"],
+  "pagesThatMayCompete": [
+    "/emprestimos/emprestimo-consignado/",
+    "/emprestimos/margem-consignavel/",
+    "/credito-seguro/desconto-nao-autorizado-inss/"
+  ],
+  "informationThatMustNotBeRepeated": [
+    "Mecânica geral do consignado (link ao pilar)",
+    "Passo a passo de consulta da margem (link ao dono da intenção)",
+    "Contestação de desconto indevido (link)"
+  ],
+  "publicationDecision": "create"
+}

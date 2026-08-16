@@ -1,0 +1,42 @@
+{
+  "proposedTitle": "Saque-aniversário do FGTS: vale a pena aderir? E como voltar atrás",
+  "primaryIntent": "saque-aniversário vale a pena aderir ou voltar para o saque-rescisão",
+  "secondaryIntents": [
+    "como voltar para o saque-rescisão prazo",
+    "o que perco ao aderir ao saque-aniversário"
+  ],
+  "targetReader": "Trabalhador CLT decidindo se adere ao saque-aniversário — ou arrependido, querendo voltar",
+  "readerSituation": "As regras mudaram com a MP 1.331/2025 e ajustes de 2026; a SERP mistura conteúdo desatualizado com blogs de fintechs interessadas na antecipação",
+  "centralQuestion": "O que ganho e o que perco ao aderir, como desfaço a escolha e o que mudou nas regras recentes?",
+  "uniqueAngle": "Trata a adesão como decisão de seguro (troca liquidez anual pela proteção da demissão), separa a decisão de aderir da decisão de antecipar — que é empréstimo e tem artigo próprio — e traz o custo real de voltar atrás (25 meses de carência)",
+  "originalContribution": [
+    "Enquadramento 'liquidez anual × colchão de demissão'",
+    "Tabela aderir × permanecer no saque-rescisão",
+    "Custo de reversão explicado com exemplo de datas (25 meses)",
+    "Resumo do que a MP 1.331/2025 e ajustes posteriores mudaram, com fontes oficiais"
+  ],
+  "primarySources": [
+    "Caixa Econômica Federal — Saque-Aniversário e FAQ",
+    "Ministério do Trabalho e Emprego — novas regras (gov.br)",
+    "FGTS.gov.br — página da MP 1.331/2025"
+  ],
+  "supportingSources": [],
+  "contentArchetype": "comparison",
+  "proposedStructure": [
+    "Resposta direta: a troca que você faz",
+    "Tabela das duas sistemáticas",
+    "O que mudou nas regras recentes",
+    "Como aderir / como voltar (e a carência de 25 meses)",
+    "Para quem tende a valer / não valer",
+    "FAQ"
+  ],
+  "uniqueExamples": ["Exemplo de datas da carência de retorno (pedido em ago/2026 → efetivação em set/2028)"],
+  "proposedVisuals": ["Tabela comparativa", "WhatCanChange"],
+  "pagesThatMayCompete": [
+    "/emprestimos/antecipacao-saque-aniversario-fgts/"
+  ],
+  "informationThatMustNotBeRepeated": [
+    "Mecânica e custos da antecipação do saque-aniversário (link ao dono da intenção)"
+  ],
+  "publicationDecision": "create"
+}

@@ -9,7 +9,9 @@
   },
   "empréstimo para negativado": {
     "canonicalOwner": "/emprestimos/emprestimo-para-negativado/",
-    "supportingPages": ["/organizacao-financeira/renegociacao-ou-emprestimo/"]
+    "supportingPages": [
+      "/organizacao-financeira/renegociacao-ou-emprestimo/"
+    ]
   },
   "antecipação saque-aniversário FGTS como funciona": {
     "canonicalOwner": "/emprestimos/antecipacao-saque-aniversario-fgts/",
@@ -17,7 +19,9 @@
   },
   "empréstimo com garantia de imóvel como funciona": {
     "canonicalOwner": "/emprestimos/emprestimo-com-garantia/",
-    "supportingPages": ["/emprestimos/diferenca-entre-emprestimo-e-financiamento/"]
+    "supportingPages": [
+      "/emprestimos/diferenca-entre-emprestimo-e-financiamento/"
+    ]
   },
   "diferença entre empréstimo e financiamento": {
     "canonicalOwner": "/emprestimos/diferenca-entre-emprestimo-e-financiamento/",
@@ -25,11 +29,16 @@
   },
   "o que é CET": {
     "canonicalOwner": "/juros-e-cet/o-que-e-cet/",
-    "supportingPages": ["/organizacao-financeira/como-comparar-propostas-de-credito/"]
+    "supportingPages": [
+      "/organizacao-financeira/como-comparar-propostas-de-credito/"
+    ]
   },
   "como calcular juros de empréstimo": {
     "canonicalOwner": "/juros-e-cet/como-calcular-juros-de-emprestimo/",
-    "supportingPages": ["/calculadoras/emprestimo/", "/juros-e-cet/taxa-mensal-e-taxa-anual/"]
+    "supportingPages": [
+      "/calculadoras/emprestimo/",
+      "/juros-e-cet/taxa-mensal-e-taxa-anual/"
+    ]
   },
   "converter taxa mensal para anual": {
     "canonicalOwner": "/juros-e-cet/taxa-mensal-e-taxa-anual/",
@@ -64,27 +73,39 @@
   },
   "simulador de parcelas de empréstimo": {
     "canonicalOwner": "/calculadoras/emprestimo/",
-    "supportingPages": ["/juros-e-cet/como-calcular-juros-de-emprestimo/"]
+    "supportingPages": [
+      "/juros-e-cet/como-calcular-juros-de-emprestimo/"
+    ]
   },
   "portabilidade de crédito como funciona": {
     "canonicalOwner": "/emprestimos/portabilidade-de-credito/",
-    "supportingPages": ["/emprestimos/emprestimo-consignado/"]
+    "supportingPages": [
+      "/emprestimos/emprestimo-consignado/"
+    ]
   },
   "empréstimo para autônomo": {
     "canonicalOwner": "/emprestimos/emprestimo-para-autonomo/",
-    "supportingPages": ["/emprestimos/emprestimo-para-mei/"]
+    "supportingPages": [
+      "/emprestimos/emprestimo-para-mei/"
+    ]
   },
   "empréstimo para MEI": {
     "canonicalOwner": "/emprestimos/emprestimo-para-mei/",
-    "supportingPages": ["/emprestimos/emprestimo-para-autonomo/"]
+    "supportingPages": [
+      "/emprestimos/emprestimo-para-autonomo/"
+    ]
   },
   "como funciona a análise de crédito": {
     "canonicalOwner": "/emprestimos/como-funciona-analise-de-credito/",
-    "supportingPages": ["/emprestimos/emprestimo-pessoal/"]
+    "supportingPages": [
+      "/emprestimos/emprestimo-pessoal/"
+    ]
   },
   "o que acontece ao atrasar parcela de empréstimo": {
     "canonicalOwner": "/organizacao-financeira/o-que-acontece-ao-atrasar-parcela/",
-    "supportingPages": ["/organizacao-financeira/renegociacao-ou-emprestimo/"]
+    "supportingPages": [
+      "/organizacao-financeira/renegociacao-ou-emprestimo/"
+    ]
   },
   "quais documentos são pedidos em empréstimo": {
     "canonicalOwner": "/emprestimos/documentos-para-emprestimo/",
@@ -92,27 +113,42 @@
   },
   "crédito do trabalhador como funciona": {
     "canonicalOwner": "/emprestimos/credito-do-trabalhador/",
-    "supportingPages": ["/emprestimos/emprestimo-consignado/", "/emprestimos/margem-consignavel/"]
+    "supportingPages": [
+      "/emprestimos/emprestimo-consignado/",
+      "/emprestimos/margem-consignavel/"
+    ]
   },
   "como saber se os juros do meu empréstimo são abusivos": {
     "canonicalOwner": "/juros-e-cet/juros-abusivos-como-saber/",
-    "supportingPages": ["/juros-e-cet/o-que-e-cet/", "/emprestimos/portabilidade-de-credito/"]
+    "supportingPages": [
+      "/juros-e-cet/o-que-e-cet/",
+      "/emprestimos/portabilidade-de-credito/"
+    ]
   },
   "cartão de crédito consignado como funciona": {
     "canonicalOwner": "/emprestimos/cartao-de-credito-consignado/",
-    "supportingPages": ["/emprestimos/margem-consignavel/"]
+    "supportingPages": [
+      "/emprestimos/margem-consignavel/"
+    ]
   },
   "como consultar margem consignável": {
     "canonicalOwner": "/emprestimos/margem-consignavel/",
-    "supportingPages": ["/calculadoras/margem-consignavel/", "/emprestimos/emprestimo-consignado/"]
+    "supportingPages": [
+      "/calculadoras/margem-consignavel/",
+      "/emprestimos/emprestimo-consignado/"
+    ]
   },
   "dívida caduca em 5 anos": {
     "canonicalOwner": "/organizacao-financeira/divida-caducada-nome-limpo/",
-    "supportingPages": ["/emprestimos/emprestimo-para-negativado/"]
+    "supportingPages": [
+      "/emprestimos/emprestimo-para-negativado/"
+    ]
   },
   "pix parcelado como funciona e quanto custa": {
     "canonicalOwner": "/juros-e-cet/pix-parcelado/",
-    "supportingPages": ["/juros-e-cet/o-que-e-cet/"]
+    "supportingPages": [
+      "/juros-e-cet/o-que-e-cet/"
+    ]
   },
   "empréstimos em campinas": {
     "canonicalOwner": "/emprestimos/sp/campinas/",
@@ -124,6 +160,46 @@
   },
   "empréstimos em alphaville": {
     "canonicalOwner": "/emprestimos/sp/barueri/alphaville/",
-    "supportingPages": ["/emprestimos/sp/barueri/"]
+    "supportingPages": [
+      "/emprestimos/sp/barueri/"
+    ]
+  },
+  "desconto de empréstimo não autorizado no benefício do INSS o que fazer": {
+    "canonicalOwner": "/credito-seguro/desconto-nao-autorizado-inss/",
+    "supportingPages": [
+      "/credito-seguro/como-identificar-golpes-de-emprestimo/"
+    ]
+  },
+  "empréstimo sem consulta ao CPF existe é confiável": {
+    "canonicalOwner": "/credito-seguro/emprestimo-sem-consulta/",
+    "supportingPages": [
+      "/emprestimos/emprestimo-para-negativado/"
+    ]
+  },
+  "como consultar taxa média de juros no site do Banco Central": {
+    "canonicalOwner": "/juros-e-cet/como-consultar-taxa-media-do-bc/",
+    "supportingPages": [
+      "/juros-e-cet/juros-abusivos-como-saber/"
+    ]
+  },
+  "saque-aniversário vale a pena aderir ou voltar para o saque-rescisão": {
+    "canonicalOwner": "/emprestimos/saque-aniversario-vale-a-pena/",
+    "supportingPages": [
+      "/emprestimos/antecipacao-saque-aniversario-fgts/"
+    ]
+  },
+  "empréstimo para aposentado e pensionista do INSS como funciona": {
+    "canonicalOwner": "/emprestimos/emprestimo-para-aposentado-inss/",
+    "supportingPages": [
+      "/emprestimos/emprestimo-consignado/",
+      "/emprestimos/margem-consignavel/"
+    ]
+  },
+  "empréstimo consignado para servidor público como funciona margem": {
+    "canonicalOwner": "/emprestimos/consignado-servidor-publico/",
+    "supportingPages": [
+      "/emprestimos/emprestimo-consignado/",
+      "/emprestimos/portabilidade-de-credito/"
+    ]
   }
 }

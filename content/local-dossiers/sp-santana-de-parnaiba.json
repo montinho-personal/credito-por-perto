@@ -1,0 +1,89 @@
+{
+  "localityId": "sp-santana-de-parnaiba",
+  "localityName": "Santana de Parnaíba",
+  "localityType": "municipality",
+  "stateCode": "sp",
+  "officialAdministrativeStatus": "Município do estado de São Paulo (código IBGE 3547304)",
+  "officialSources": [
+    {
+      "organization": "IBGE",
+      "documentTitle": "Cidades e Estados — Santana de Parnaíba (SP)",
+      "sourceLocation": "https://www.ibge.gov.br/cidades-e-estados/sp/santana-de-parnaiba.html",
+      "checkedAt": "2026-08-16",
+      "extractedFact": "Santana de Parnaíba é município do estado de São Paulo, código 3547304.",
+      "relevanceToReader": "Confirma a classificação administrativa correta da página local."
+    },
+    {
+      "organization": "Procon-SP",
+      "documentTitle": "Municípios conveniados — Santana de Parnaíba",
+      "sourceLocation": "https://www.procon.sp.gov.br/santana-de-parnaiba/",
+      "checkedAt": "2026-08-16",
+      "extractedFact": "Santana de Parnaíba possui atendimento municipal de defesa do consumidor (Procon), com sede na Rua XV de Novembro, 625 — Centro.",
+      "relevanceToReader": "É o canal presencial da cidade para reclamar de contrato de crédito, cobrança indevida ou oferta enganosa."
+    },
+    {
+      "organization": "Prefeitura de Santana de Parnaíba",
+      "documentTitle": "Plataforma de Serviços Digitais — Procon (Secretaria de Emprego e Desenvolvimento Econômico)",
+      "sourceLocation": "https://prefeitura.santanadeparnaiba.sp.gov.br/Plataforma/semedes/procon",
+      "checkedAt": "2026-08-16",
+      "extractedFact": "O Procon municipal é vinculado à Secretaria de Emprego e Desenvolvimento Econômico e divulga canal de atendimento também por WhatsApp.",
+      "relevanceToReader": "O morador consegue abrir reclamação sem ir presencialmente ao Centro."
+    },
+    {
+      "organization": "Prefeitura de Santana de Parnaíba",
+      "documentTitle": "Banco do Povo Paulista em Santana de Parnaíba",
+      "sourceLocation": "https://www.santanadeparnaiba.sp.gov.br/banco-povo.html",
+      "checkedAt": "2026-08-16",
+      "extractedFact": "O município participa do Banco do Povo Paulista (microcrédito do Governo do Estado em parceria com a prefeitura), com atendimento divulgado no PAT do Centro (Rua XV de Novembro, 625) e no Espaço Empresário Empreendedor (Rua Netuno, 49).",
+      "relevanceToReader": "Empreendedores da cidade têm uma linha pública de microcrédito como alternativa ao crédito comercial mais caro."
+    }
+  ],
+  "consumerProtectionResources": [
+    {
+      "organization": "Procon Santana de Parnaíba",
+      "service": "Atendimento presencial ao consumidor na Rua XV de Novembro, 625 — Centro, e canal de WhatsApp divulgado pela prefeitura",
+      "officialSource": "https://www.procon.sp.gov.br/santana-de-parnaiba/",
+      "checkedAt": "2026-08-16"
+    },
+    {
+      "organization": "Consumidor.gov.br (plataforma federal)",
+      "service": "Reclamação on-line contra bancos e financeiras, com resposta monitorada — disponível a moradores de qualquer município",
+      "officialSource": "https://www.consumidor.gov.br",
+      "checkedAt": "2026-08-16"
+    }
+  ],
+  "verifiedLocalPrograms": [
+    {
+      "name": "Banco do Povo Paulista",
+      "responsibleEntity": "Governo do Estado de São Paulo em parceria com a Prefeitura de Santana de Parnaíba (Secretaria de Emprego e Desenvolvimento Econômico)",
+      "eligibilitySummary": "Microcrédito produtivo para empreendedores formais e informais que atuam no município; condições, limites e taxas são definidos pelo programa estadual e devem ser confirmados no atendimento local antes de contratar.",
+      "officialSource": "https://www.bancodopovo.sp.gov.br",
+      "checkedAt": "2026-08-16"
+    }
+  ],
+  "verifiedServiceInformation": [
+    {
+      "institution": "Prefeitura de Santana de Parnaíba — PAT Centro",
+      "information": "O atendimento do Banco do Povo Paulista é divulgado no PAT do Centro (Rua XV de Novembro, 625) e no Espaço Empresário Empreendedor (Rua Netuno, 49).",
+      "officialSource": "https://www.santanadeparnaiba.sp.gov.br/banco-povo.html",
+      "checkedAt": "2026-08-16"
+    }
+  ],
+  "uniqueLocalQuestions": [
+    "Onde o morador de Santana de Parnaíba registra reclamação de consumo presencialmente?",
+    "Existe linha de microcrédito público para quem empreende na cidade?",
+    "Parte de Alphaville fica em Santana de Parnaíba — a qual município recorrer em cada caso?"
+  ],
+  "localRisksOrWarnings": [
+    "Ofertas de crédito por telefone/WhatsApp em nome de instituições conhecidas exigem confirmação nos canais oficiais antes de qualquer pagamento — o golpe do depósito antecipado é o mais comum no país."
+  ],
+  "decisionImpact": [
+    "O Procon municipal dá ao morador um caminho formal e gratuito quando a negociação direta com a instituição falha",
+    "O Banco do Povo Paulista pode substituir crédito comercial caro para empreendedores elegíveis"
+  ],
+  "pendingVerification": [
+    "Horários de funcionamento e telefones atuais do Procon municipal (confirmar por telefone antes de publicar horário específico)",
+    "Condições vigentes (limites e taxas) do Banco do Povo Paulista no atendimento local",
+    "Cooperativas de crédito com atuação verificável no município"
+  ]
+}

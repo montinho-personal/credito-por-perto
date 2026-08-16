@@ -25,7 +25,12 @@ destaque — escrever pensando nisso, sem enrolação de "no mundo de hoje…".
 - Um assunto por seção; parágrafos de 2–4 linhas; listas e tabelas quando o
   conteúdo é comparável;
 - Tabela comparativa escaneável em todo artigo de decisão (modalidade A × B);
-- FAQ curto no final com as perguntas de cauda longa que não viraram H2.
+- **FAQ obrigatório** em todo artigo (regra do proprietário, 16/08/2026):
+  seção final "Perguntas frequentes" com as dúvidas de cauda longa que não
+  viraram H2 — respostas diretas de 2–4 frases, cada uma completa em si
+  (o Google recorta FAQs individualmente);
+- Completude: o leitor não deve precisar de outra busca para agir. Antes de
+  fechar, perguntar: "que dúvida ainda faria o leitor voltar ao Google?"
 
 ## 4. A língua do leitor, os termos da autoridade
 

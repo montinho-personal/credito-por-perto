@@ -22,11 +22,19 @@ Definidos em `src/lib/validation/frontmatter.ts` (`EDITORIAL_STATES`). Regras:
    ângulo próprio, contribuição original, estrutura proposta, páginas que podem
    competir, o que não repetir. Obrigatório antes da redação;
 3. **Pesquisa**: hierarquia de fontes (`docs/source-hierarchy.md`);
-4. **Redação** em MDX, com estrutura ditada pela intenção — não por molde;
+4. **Redação** em MDX, com estrutura ditada pela intenção — não por molde.
+   Regras fixas (decisão do proprietário, 16/08/2026): o artigo deve ser
+   **completo** (esgotar as dúvidas da intenção), terminar com **seção de
+   FAQ** cobrindo as perguntas de cauda longa, e aplicar a **linkagem
+   semântica** interna/externa descrita abaixo — âncora descritiva no ponto
+   exato da afirmação, nunca genérica;
 5. **Registro de fontes** (`content/sources/<slug>.json`, tipo `SourceLedger`):
    cada afirmação importante com fonte, tipo e data de consulta;
-6. **Auditorias**: `pnpm audit:all` (originalidade, canibalização, metadados,
-   fontes, links) — críticos bloqueiam;
+6. **Auditorias — sempre, sem exceção**: `pnpm audit:all` antes de qualquer
+   publicação ou atualização. Inclui verificação de plágio/similaridade
+   entre páginas (`audit:originality`), canônicas
+   (`audit:canonical`) e canibalização. Críticos bloqueiam o build e o CI
+   roda tudo de novo a cada push;
 7. **Revisão editorial humana** → `published` com `sourceCheckedAt`;
 8. **Monitoramento e atualização** (`docs/content-refresh-policy.md`).
 

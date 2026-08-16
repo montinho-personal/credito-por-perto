@@ -1,0 +1,66 @@
+{
+  "localityId": "sp-santa-isabel",
+  "localityName": "Santa Isabel",
+  "localityType": "municipality",
+  "stateCode": "sp",
+  "officialAdministrativeStatus": "Município do estado de São Paulo (código IBGE 3546801)",
+  "officialSources": [
+    {
+      "organization": "IBGE",
+      "documentTitle": "Cidades e Estados — Santa Isabel (SP)",
+      "sourceLocation": "https://www.ibge.gov.br/cidades-e-estados/sp/santa-isabel.html",
+      "checkedAt": "2026-08-16",
+      "extractedFact": "Santa Isabel é município do estado de São Paulo, código 3546801.",
+      "relevanceToReader": "Confirma a classificação administrativa correta da página local."
+    },
+    {
+      "organization": "Procon-SP",
+      "documentTitle": "Municípios conveniados — Santa Isabel",
+      "sourceLocation": "https://www.procon.sp.gov.br/santa-isabel/",
+      "checkedAt": "2026-08-16",
+      "extractedFact": "Santa Isabel possui Procon municipal na Avenida Manoel Ferraz de Campos Sales, 175 — sala 1, Centro, com atendimento presencial e telefônico em dias úteis e e-mail institucional (procon@santaisabel.sp.gov.br).",
+      "relevanceToReader": "É o canal da cidade para reclamar de contrato de crédito, cobrança indevida ou oferta enganosa sem precisar se deslocar a outro município."
+    },
+    {
+      "organization": "Prefeitura de Santa Isabel",
+      "documentTitle": "Portal da Prefeitura — Procon reformulado intensifica ações na cidade",
+      "sourceLocation": "https://portal.santaisabel.sp.gov.br/depois-de-reformulado-procon-intensifica-acoes-na-cidade/",
+      "checkedAt": "2026-08-16",
+      "extractedFact": "A prefeitura mantém e divulga o Procon municipal como serviço ativo de defesa do consumidor.",
+      "relevanceToReader": "Confirma, em fonte municipal, que o atendimento local está em operação."
+    }
+  ],
+  "consumerProtectionResources": [
+    {
+      "organization": "Procon Santa Isabel",
+      "service": "Atendimento presencial e telefônico ao consumidor na Avenida Manoel Ferraz de Campos Sales, 175 — sala 1, Centro, e recebimento de reclamações por e-mail institucional",
+      "officialSource": "https://www.procon.sp.gov.br/santa-isabel/",
+      "checkedAt": "2026-08-16"
+    },
+    {
+      "organization": "Consumidor.gov.br (plataforma federal)",
+      "service": "Reclamação on-line contra bancos e financeiras, com resposta monitorada — disponível a moradores de qualquer município",
+      "officialSource": "https://www.consumidor.gov.br",
+      "checkedAt": "2026-08-16"
+    }
+  ],
+  "verifiedLocalPrograms": [],
+  "verifiedServiceInformation": [],
+  "uniqueLocalQuestions": [
+    "Onde o morador de Santa Isabel registra reclamação de consumo sem sair da cidade?",
+    "Como contratar com segurança morando em cidade sem agência de todos os bancos?",
+    "Correspondentes bancários e ofertas de balcão no comércio local: como conferir quem é autorizado?"
+  ],
+  "localRisksOrWarnings": [
+    "Em cidades de menor porte, parte das ofertas de crédito chega por correspondentes bancários e por abordagem direta (telefone/WhatsApp); a checagem da instituição autorizada junto ao Banco Central é o filtro essencial antes de assinar."
+  ],
+  "decisionImpact": [
+    "O Procon municipal evita que o morador dependa só dos canais nacionais quando a instituição não resolve",
+    "Saber verificar correspondentes e instituições autorizadas protege quem tem menos opções presenciais na cidade"
+  ],
+  "pendingVerification": [
+    "Horários e telefone atuais do Procon municipal (confirmar antes de publicar horário específico)",
+    "Participação do município no Banco do Povo Paulista e endereço de atendimento, se houver",
+    "Quais instituições financeiras mantêm agência ou posto de atendimento na cidade"
+  ]
+}

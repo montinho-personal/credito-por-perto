@@ -1,0 +1,23 @@
+{
+  "articleSlug": "como-consultar-taxa-media-do-bc",
+  "claims": [
+    {
+      "claimId": "pagina-oficial-txjuros",
+      "claimText": "O Banco Central publica as taxas de juros praticadas pelas instituições, por modalidade de crédito, na página pública 'Taxas de juros de operações de crédito'.",
+      "sourceOrganization": "Banco Central do Brasil",
+      "sourceTitle": "Taxas de juros de operações de crédito",
+      "sourceLocation": "https://www.bcb.gov.br/estatisticas/txjuros",
+      "sourceType": "official",
+      "accessedAt": "2026-08-16"
+    },
+    {
+      "claimId": "metodologia-medias",
+      "claimText": "As taxas por instituição divulgadas pelo BC são médias das operações contratadas nos cinco dias úteis do período de referência, ponderadas pelos valores concedidos.",
+      "sourceOrganization": "Banco Central do Brasil — Portal de Dados Abertos",
+      "sourceTitle": "Taxas de juros de operações de crédito por instituição financeira — documentação",
+      "sourceLocation": "https://dadosabertos.bcb.gov.br/dataset/taxas-de-juros-de-operacoes-de-credito",
+      "sourceType": "official",
+      "accessedAt": "2026-08-16"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "articleSlug": "emprestimo-sem-consulta",
+  "claims": [
+    {
+      "claimId": "scr-registro",
+      "claimText": "As operações de crédito concedidas por instituições autorizadas são registradas no Sistema de Informações de Créditos (SCR) do Banco Central, consultável gratuitamente pelo cidadão no Registrato.",
+      "sourceOrganization": "Banco Central do Brasil",
+      "sourceTitle": "Registrato — Extrato do SCR (empréstimos e financiamentos)",
+      "sourceLocation": "https://registrato.bcb.gov.br",
+      "sourceType": "official",
+      "accessedAt": "2026-08-16"
+    },
+    {
+      "claimId": "usura-crime",
+      "claimText": "Cobrar juros acima dos limites legais fora do sistema financeiro autorizado (agiotagem) configura crime de usura, previsto na Lei nº 1.521/1951 (crimes contra a economia popular).",
+      "sourceOrganization": "Presidência da República — Planalto",
+      "sourceTitle": "Lei nº 1.521, de 26 de dezembro de 1951",
+      "sourceLocation": "https://www.planalto.gov.br/ccivil_03/leis/l1521.htm",
+      "sourceType": "official",
+      "accessedAt": "2026-08-16"
+    },
+    {
+      "claimId": "instituicao-autorizada",
+      "claimText": "Somente instituições autorizadas pelo Banco Central podem conceder empréstimos ao público; a autorização é consultável nos canais oficiais do BC.",
+      "sourceOrganization": "Banco Central do Brasil",
+      "sourceTitle": "Encontre uma instituição — consulta de instituições autorizadas",
+      "sourceLocation": "https://www.bcb.gov.br/meubc/encontreinstituicao",
+      "sourceType": "official",
+      "accessedAt": "2026-08-16"
+    }
+  ]
+}

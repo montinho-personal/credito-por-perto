@@ -33,6 +33,14 @@
       "ibgeCode": "3547304"
     },
     {
+      "id": "sp-santa-isabel",
+      "name": "Santa Isabel",
+      "localityType": "municipality",
+      "stateCode": "sp",
+      "citySlug": "santa-isabel",
+      "ibgeCode": "3546801"
+    },
+    {
       "id": "sp-barueri-alphaville",
       "name": "Alphaville",
       "localityType": "region",

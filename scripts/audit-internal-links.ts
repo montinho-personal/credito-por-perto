@@ -86,6 +86,9 @@ const OFFICIAL_DOMAINS = [
   "caixa.gov.br",
   "consumidor.gov.br",
   "ibge.gov.br",
+  "sp.gov.br",
+  "procon.sp.gov.br",
+  "bancodopovo.sp.gov.br",
   "cfc.org.br",
 ];
 

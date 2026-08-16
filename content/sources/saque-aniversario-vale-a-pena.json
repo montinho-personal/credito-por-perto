@@ -1,0 +1,41 @@
+{
+  "articleSlug": "saque-aniversario-vale-a-pena",
+  "claims": [
+    {
+      "claimId": "troca-fundamental",
+      "claimText": "Quem opta pelo saque-aniversário saca uma parcela do saldo por ano e, se demitido sem justa causa, não saca o saldo total da conta — recebe a multa rescisória de 40%, permanecendo o saldo nas demais hipóteses legais de movimentação.",
+      "sourceOrganization": "Caixa Econômica Federal",
+      "sourceTitle": "Saque-Aniversário do FGTS",
+      "sourceLocation": "https://www.caixa.gov.br/beneficios-trabalhador/fgts/saque-FGTS/Paginas/default.aspx",
+      "sourceType": "official",
+      "accessedAt": "2026-08-16"
+    },
+    {
+      "claimId": "carencia-retorno-25-meses",
+      "claimText": "O retorno ao saque-rescisão pode ser solicitado a qualquer momento, mas a mudança só é efetivada 25 meses após a solicitação.",
+      "sourceOrganization": "Caixa Econômica Federal",
+      "sourceTitle": "Perguntas frequentes — Saque-Aniversário / Antecipação",
+      "sourceLocation": "https://www.caixa.gov.br/voce/credito-financiamento/emprestimo/antecipacao-saque-aniversario-FGTS/perguntas-frequentes/Paginas/default.aspx",
+      "sourceType": "official",
+      "accessedAt": "2026-08-16"
+    },
+    {
+      "claimId": "mp-1331-liberacao-retidos",
+      "claimText": "A MP nº 1.331/2025 liberou saldos retidos de trabalhadores no saque-aniversário com contrato rescindido entre 01/01/2020 e 23/12/2025, com regras operacionais divulgadas pela Caixa e pelo FGTS.",
+      "sourceOrganization": "FGTS / Caixa Econômica Federal",
+      "sourceTitle": "Saque MP 1.331/2025",
+      "sourceLocation": "https://www.fgts.gov.br/Paginas/subpaginas/saque-mp-1331-2025.aspx",
+      "sourceType": "official",
+      "accessedAt": "2026-08-16"
+    },
+    {
+      "claimId": "novas-regras-antecipacao",
+      "claimText": "A partir de novembro de 2025, novas regras passaram a limitar a antecipação do saque-aniversário: carência de 90 dias após a adesão para a primeira operação, uma operação de alienação por período de 12 meses e antecipação de até 5 parcelas anuais.",
+      "sourceOrganization": "Ministério do Trabalho e Emprego",
+      "sourceTitle": "FGTS terá novas regras para o saque-aniversário a partir de novembro",
+      "sourceLocation": "https://www.gov.br/trabalho-e-emprego/pt-br/noticias-e-conteudo/2025/outubro/fgts-tera-novas-regras-para-o-saque-aniversario-a-partir-de-novembro",
+      "sourceType": "official",
+      "accessedAt": "2026-08-16"
+    }
+  ]
+}

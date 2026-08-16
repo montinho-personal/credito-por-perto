@@ -1,0 +1,43 @@
+{
+  "proposedTitle": "Taxa média de juros: como consultar no Banco Central (passo a passo)",
+  "primaryIntent": "como consultar taxa média de juros no site do Banco Central",
+  "secondaryIntents": [
+    "taxa de juros por banco consulta",
+    "onde ver a taxa média do consignado / crédito pessoal"
+  ],
+  "targetReader": "Quem recebeu uma proposta (ou já tem contrato) e quer saber se a taxa está dentro do mercado",
+  "readerSituation": "A ferramenta oficial existe, é gratuita e quase ninguém ensina a usá-la de ponta a ponta; guias existentes param na home do BC",
+  "centralQuestion": "Onde encontro a taxa média oficial da minha modalidade e como comparo com a minha proposta do jeito certo?",
+  "uniqueAngle": "Guia-ferramenta: caminho de cliques na página oficial de taxas do BC, os 3 erros clássicos de comparação (modalidade errada, taxa mensal × anual, taxa × CET) e o que fazer com o resultado",
+  "originalContribution": [
+    "Passo a passo objetivo da consulta em bcb.gov.br/estatisticas/txjuros",
+    "Os 3 erros que invalidam a comparação",
+    "Régua de interpretação do resultado (dentro da faixa, acima, muito acima)",
+    "Ponte para o artigo de juros abusivos, que é o dono da intenção jurídica"
+  ],
+  "primarySources": [
+    "Banco Central do Brasil — Taxas de juros de operações de crédito (txjuros)",
+    "Portal de Dados Abertos do BC — metodologia das médias"
+  ],
+  "supportingSources": [],
+  "contentArchetype": "guide",
+  "proposedStructure": [
+    "Resposta direta: onde fica e o que mostra",
+    "Passo a passo da consulta",
+    "Como interpretar a média (metodologia em 1 parágrafo)",
+    "Os 3 erros de comparação",
+    "O que fazer com o resultado",
+    "FAQ"
+  ],
+  "uniqueExamples": [],
+  "proposedVisuals": ["Lista numerada de passos", "WarningBox de erros"],
+  "pagesThatMayCompete": [
+    "/juros-e-cet/juros-abusivos-como-saber/",
+    "/juros-e-cet/taxa-mensal-e-taxa-anual/"
+  ],
+  "informationThatMustNotBeRepeated": [
+    "Tese do que caracteriza juros abusivos (link ao dono da intenção)",
+    "Conversão mensal↔anual em detalhe (link)"
+  ],
+  "publicationDecision": "create"
+}

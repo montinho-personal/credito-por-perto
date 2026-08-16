@@ -1,0 +1,43 @@
+{
+  "articleSlug": "emprestimo-para-aposentado-inss",
+  "claims": [
+    {
+      "claimId": "base-legal-consignado",
+      "claimText": "O desconto de empréstimo em benefícios do INSS é autorizado pela Lei nº 10.820/2003, que disciplina a consignação em folha e os limites de comprometimento.",
+      "sourceOrganization": "Presidência da República — Planalto",
+      "sourceTitle": "Lei nº 10.820, de 17 de dezembro de 2003",
+      "sourceLocation": "https://www.planalto.gov.br/ccivil_03/leis/2003/l10.820.htm",
+      "sourceType": "official",
+      "accessedAt": "2026-08-16"
+    },
+    {
+      "claimId": "margem-vigente",
+      "claimText": "A margem consignável do beneficiário do INSS na data de verificação é de 35% para empréstimo, 5% para cartão consignado e 5% para cartão benefício (45% no total), conforme regras vigentes registradas em MARGIN_RULES no código do site (verificadas em 06/08/2026).",
+      "sourceOrganization": "INSS / legislação do consignado",
+      "sourceTitle": "Percentuais vigentes do consignado INSS",
+      "sourceLocation": "https://www.gov.br/inss/pt-br",
+      "sourceType": "official",
+      "accessedAt": "2026-08-16",
+      "notes": "Percentuais voláteis: manter sincronizados com src/lib/calculators/margin.ts e revisar no ciclo trimestral."
+    },
+    {
+      "claimId": "teto-juros-existe",
+      "claimText": "O consignado INSS possui teto de juros definido periodicamente pelo Conselho Nacional de Previdência Social (CNPS); o valor vigente deve ser consultado nos canais oficiais, pois muda ao longo do tempo.",
+      "sourceOrganization": "Governo Federal — INSS/CNPS",
+      "sourceTitle": "Teto de juros do consignado INSS",
+      "sourceLocation": "https://www.gov.br/inss/pt-br",
+      "sourceType": "official",
+      "accessedAt": "2026-08-16",
+      "notes": "Artigo não publica o número do teto — apenas informa a existência e onde conferir."
+    },
+    {
+      "claimId": "taxas-medias-bc",
+      "claimText": "As taxas médias praticadas por instituição na modalidade 'crédito consignado INSS' são públicas na página de taxas de juros do Banco Central.",
+      "sourceOrganization": "Banco Central do Brasil",
+      "sourceTitle": "Taxas de juros de operações de crédito",
+      "sourceLocation": "https://www.bcb.gov.br/estatisticas/txjuros",
+      "sourceType": "official",
+      "accessedAt": "2026-08-16"
+    }
+  ]
+}

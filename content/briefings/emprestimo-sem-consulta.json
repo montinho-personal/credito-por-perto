@@ -1,0 +1,43 @@
+{
+  "proposedTitle": "\"Empréstimo sem consulta\" existe? O que essa promessa esconde",
+  "primaryIntent": "empréstimo sem consulta ao CPF existe é confiável",
+  "secondaryIntents": [
+    "empréstimo sem análise de crédito",
+    "empréstimo aprovado na hora sem consulta é golpe"
+  ],
+  "targetReader": "Pessoa negativada ou com score baixo que viu anúncio prometendo empréstimo sem consulta e quer saber se é real",
+  "readerSituation": "SERP cheia de lead-gen dizendo 'é confiável sim' para capturar cadastro; resposta honesta protege o leitor e se diferencia",
+  "centralQuestion": "Alguém empresta sem consultar meu CPF? Se a promessa aparece, o que está por trás?",
+  "uniqueAngle": "Responde 'não, e é bom que seja assim' explicando por que análise de risco é inevitável em operação legal — e decodifica os 4 modelos reais por trás do anúncio (isca de golpe, lead-gen, juros extremos, garantia), com as alternativas legítimas para negativados",
+  "originalContribution": [
+    "Taxonomia dos 4 modelos por trás do anúncio 'sem consulta'",
+    "Explicação do papel do SCR: toda operação legal é registrada no Banco Central",
+    "Ponte honesta para as alternativas reais de quem está negativado",
+    "Critério prático: quem não pergunta nada sobre você não pretende receber — pretende cobrar de outro jeito"
+  ],
+  "primarySources": [
+    "Banco Central do Brasil — Registrato/SCR",
+    "Planalto — Lei nº 1.521/1951 (crime de usura)"
+  ],
+  "supportingSources": ["Consumidor.gov.br"],
+  "contentArchetype": "guide",
+  "proposedStructure": [
+    "Resposta direta",
+    "Por que operação legal sempre envolve análise (SCR)",
+    "Os 4 modelos por trás do anúncio",
+    "Como reconhecer o golpe antes de perder dinheiro",
+    "As alternativas reais para negativados",
+    "FAQ"
+  ],
+  "uniqueExamples": [],
+  "proposedVisuals": ["Tabela dos 4 modelos", "WarningBox"],
+  "pagesThatMayCompete": [
+    "/emprestimos/emprestimo-para-negativado/",
+    "/credito-seguro/deposito-antecipado-e-golpe/"
+  ],
+  "informationThatMustNotBeRepeated": [
+    "Alternativas detalhadas para negativado (link ao pilar)",
+    "Anatomia do golpe do depósito antecipado (link)"
+  ],
+  "publicationDecision": "create"
+}

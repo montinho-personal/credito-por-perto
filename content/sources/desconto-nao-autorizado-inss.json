@@ -1,0 +1,51 @@
+{
+  "articleSlug": "desconto-nao-autorizado-inss",
+  "claims": [
+    {
+      "claimId": "orientacao-oficial-inss",
+      "claimText": "O INSS orienta oficialmente o beneficiário que encontra desconto não autorizado a identificar o tipo de desconto e contestar pelos canais oficiais (Meu INSS e Central 135).",
+      "sourceOrganization": "INSS — Instituto Nacional do Seguro Social",
+      "sourceTitle": "Tem um desconto no meu pagamento, mas não autorizei. Como agir?",
+      "sourceLocation": "https://www.gov.br/inss/pt-br/noticias/tem-um-desconto-no-meu-pagamento-mas-nao-autorizei-como-agir",
+      "sourceType": "official",
+      "accessedAt": "2026-08-16"
+    },
+    {
+      "claimId": "mensalidade-associativa-contestacao",
+      "claimText": "Mensalidades associativas não autorizadas podem ser contestadas pelo Meu INSS (serviço de exclusão de mensalidade associativa), pela Central 135 e em canais conveniados, com pedido de restituição.",
+      "sourceOrganization": "Agência Gov (EBC)",
+      "sourceTitle": "Confira como pedir a restituição de descontos indevidos no benefício do INSS",
+      "sourceLocation": "https://agenciagov.ebc.com.br/noticias/202505/confira-como-pedir-a-restituicao-dos-descontos-indevidos-nos-beneficios-do-inss",
+      "sourceType": "official",
+      "accessedAt": "2026-08-16"
+    },
+    {
+      "claimId": "bloqueio-beneficio",
+      "claimText": "O Meu INSS oferece a função de bloquear e desbloquear o benefício para empréstimo consignado, impedindo que novas operações sejam averbadas sem autorização do titular.",
+      "sourceOrganization": "Governo Federal — Meu INSS",
+      "sourceTitle": "Bloquear/Desbloquear Benefício para Empréstimo Consignado",
+      "sourceLocation": "https://meu.inss.gov.br",
+      "sourceType": "official",
+      "accessedAt": "2026-08-16"
+    },
+    {
+      "claimId": "consumidor-gov-consignado",
+      "claimText": "Reclamações de empréstimo consignado não autorizado podem ser registradas na plataforma consumidor.gov.br, mantida pela Secretaria Nacional do Consumidor, além da contestação direta na instituição.",
+      "sourceOrganization": "Senacon — consumidor.gov.br",
+      "sourceTitle": "Plataforma consumidor.gov.br",
+      "sourceLocation": "https://www.consumidor.gov.br",
+      "sourceType": "official",
+      "accessedAt": "2026-08-16"
+    },
+    {
+      "claimId": "endurecimento-2026",
+      "claimText": "Após os casos de descontos indevidos em grande escala, o INSS endureceu as regras de segurança para novas averbações de consignado, com autorização prévia do titular; os detalhes operacionais vêm mudando ao longo de 2025/2026.",
+      "sourceOrganization": "INSS — Instituto Nacional do Seguro Social",
+      "sourceTitle": "Notícias e orientações oficiais sobre segurança do consignado",
+      "sourceLocation": "https://www.gov.br/inss/pt-br",
+      "sourceType": "official",
+      "accessedAt": "2026-08-16",
+      "notes": "Regras operacionais em transição — artigo evita detalhar procedimento volátil e remete ao Meu INSS."
+    }
+  ]
+}

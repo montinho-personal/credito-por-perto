@@ -1,0 +1,42 @@
+{
+  "articleSlug": "consignado-servidor-publico",
+  "claims": [
+    {
+      "claimId": "regras-por-ente",
+      "claimText": "As regras de consignação em folha do servidor público são definidas por cada ente federativo: a União disciplina o SIAPE (consulta via SouGov.br), e estados e municípios mantêm normas e sistemas próprios.",
+      "sourceOrganization": "Governo Federal — Portal do Servidor",
+      "sourceTitle": "FAQ SouGov.br — Consignações",
+      "sourceLocation": "https://www.gov.br/servidor/pt-br/acesso-a-informacao/faq/sou-gov.br/consignacoes/1-como-consulto-minha-margem-consignavel-no-aplicativo-sou-gov-br",
+      "sourceType": "official",
+      "accessedAt": "2026-08-16"
+    },
+    {
+      "claimId": "margem-federal-transicao",
+      "claimText": "Os limites de margem consignável do servidor federal estão em transição por força de alterações normativas recentes (MP nº 1.355/2026), com redução gradual dos percentuais globais; os valores vigentes por período são publicados no FAQ oficial do Portal do Servidor.",
+      "sourceOrganization": "Governo Federal — Portal do Servidor",
+      "sourceTitle": "Margem consignável: regras e limites a partir de 2026",
+      "sourceLocation": "https://www.gov.br/servidor/pt-br/acesso-a-informacao/faq/sou-gov.br/consignacoes/margem-consignavel-regras-e-limites-a-partir-de-2026",
+      "sourceType": "official",
+      "accessedAt": "2026-08-16",
+      "notes": "Números em transição — artigo remete à fonte oficial em vez de fixar percentuais que expiram."
+    },
+    {
+      "claimId": "base-remuneracao-liquida",
+      "claimText": "A margem do servidor federal é calculada sobre a remuneração após os descontos obrigatórios, descontando-se as parcelas de consignações já ativas.",
+      "sourceOrganization": "Governo Federal — Portal do Servidor",
+      "sourceTitle": "FAQ SouGov.br — Consignações (base de cálculo)",
+      "sourceLocation": "https://www.gov.br/servidor/pt-br/acesso-a-informacao/faq/sou-gov.br/consignacoes",
+      "sourceType": "official",
+      "accessedAt": "2026-08-16"
+    },
+    {
+      "claimId": "taxas-medias-bc-servidor",
+      "claimText": "As taxas médias praticadas por instituição na modalidade de consignado público são públicas na página de taxas de juros do Banco Central.",
+      "sourceOrganization": "Banco Central do Brasil",
+      "sourceTitle": "Taxas de juros de operações de crédito",
+      "sourceLocation": "https://www.bcb.gov.br/estatisticas/txjuros",
+      "sourceType": "official",
+      "accessedAt": "2026-08-16"
+    }
+  ]
+}

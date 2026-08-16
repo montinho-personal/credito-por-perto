@@ -1,0 +1,47 @@
+{
+  "proposedTitle": "Consignado do servidor público: margem, averbação e portabilidade",
+  "primaryIntent": "empréstimo consignado para servidor público como funciona margem",
+  "secondaryIntents": [
+    "consultar margem consignável servidor SouGov/SIAPE",
+    "averbação de consignado o que é",
+    "portabilidade de consignado servidor"
+  ],
+  "targetReader": "Servidor público (federal, estadual ou municipal) avaliando consignado ou querendo entender margem/averbação",
+  "readerSituation": "Segmento com regras próprias por ente federativo; SERP só tem banco vendendo e nenhum guia explica que 'servidor' não é uma categoria única",
+  "centralQuestion": "Como funciona o consignado no meu vínculo, onde consulto minha margem e como uso a concorrência (portabilidade) a meu favor?",
+  "uniqueAngle": "Primeiro guia que começa pela pergunta certa — 'de qual ente você é servidor?' — porque margem, sistema de consulta e regras mudam por ente; explica averbação como o coração da operação e trata limites federais como valores em transição, apontando a fonte oficial em vez de congelar número",
+  "originalContribution": [
+    "Mapa por ente: federal (SouGov/SIAPE) × estadual × municipal",
+    "Averbação explicada de ponta a ponta (reserva de margem → desconto em folha)",
+    "Estratégia de concorrência: leilão de taxa entre consignatárias + portabilidade",
+    "Alerta sobre margens federais em transição (MP 1.355/2026) com fonte oficial viva"
+  ],
+  "primarySources": [
+    "Portal do Servidor (gov.br) — FAQ de margem consignável e SouGov",
+    "Planalto — Lei nº 10.820/2003 (regime geral da consignação privada, referência)",
+    "Banco Central — taxas médias por modalidade"
+  ],
+  "supportingSources": [],
+  "contentArchetype": "guide",
+  "proposedStructure": [
+    "Resposta direta: a pergunta que muda tudo (qual ente)",
+    "Margem: como funciona e onde consultar por vínculo",
+    "Averbação de ponta a ponta",
+    "Como pagar menos: concorrência e portabilidade",
+    "Cuidados específicos do segmento",
+    "FAQ"
+  ],
+  "uniqueExamples": [],
+  "proposedVisuals": ["Tabela por ente", "WhatCanChange", "ChecklistBox"],
+  "pagesThatMayCompete": [
+    "/emprestimos/emprestimo-consignado/",
+    "/emprestimos/margem-consignavel/",
+    "/emprestimos/portabilidade-de-credito/"
+  ],
+  "informationThatMustNotBeRepeated": [
+    "Mecânica geral do consignado (link ao pilar)",
+    "Cálculo genérico de margem (link)",
+    "Passo a passo completo de portabilidade (link)"
+  ],
+  "publicationDecision": "create"
+}
