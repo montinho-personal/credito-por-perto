@@ -1,0 +1,43 @@
+{
+  "proposedTitle": "App de empréstimo é confiável? O teste em 5 passos antes de instalar",
+  "primaryIntent": "como saber se um app de empréstimo é confiável",
+  "secondaryIntents": [
+    "aplicativo de empréstimo seguro lista de golpes",
+    "app pediu depósito para liberar empréstimo é golpe?"
+  ],
+  "targetReader": "Quem viu anúncio de app prometendo crédito rápido e quer saber se pode instalar sem cair em golpe",
+  "readerSituation": "SERP dominada por listicles de afiliados ('10 melhores apps') que ganham comissão; ninguém entrega um método de verificação neutro",
+  "centralQuestion": "Antes de instalar e entregar meus dados: como verificar, em minutos, se este app específico é de uma operação legítima?",
+  "uniqueAngle": "Em vez de lista de apps (que envelhece e vira propaganda), entrega o MÉTODO: teste de 5 passos que o leitor aplica a qualquer app, hoje ou daqui a 5 anos — autorização no BC, rastro da empresa, permissões, loja oficial e a regra de ouro do pagamento antecipado",
+  "originalContribution": [
+    "O teste dos 5 passos aplicável a qualquer app",
+    "Tabela de permissões: o que um app de crédito precisa × o que é sinal de alerta",
+    "Os 4 disfarces de app golpista (clone, fantasma, coletor de dados, agiota digital)",
+    "O que fazer se já instalou e entregou dados"
+  ],
+  "primarySources": [
+    "Banco Central — Encontre uma instituição",
+    "Consumidor.gov.br"
+  ],
+  "supportingSources": [],
+  "contentArchetype": "guide",
+  "proposedStructure": [
+    "Resposta direta: confiável se passa no teste",
+    "O teste dos 5 passos",
+    "Permissões: o que é normal × alerta",
+    "Os 4 disfarces do app golpista",
+    "Já instalei e entreguei dados: o que fazer",
+    "FAQ"
+  ],
+  "uniqueExamples": [],
+  "proposedVisuals": ["ChecklistBox", "Tabela de permissões", "SafetyAlert"],
+  "pagesThatMayCompete": [
+    "/credito-seguro/como-consultar-se-instituicao-e-autorizada/",
+    "/credito-seguro/como-identificar-golpes-de-emprestimo/"
+  ],
+  "informationThatMustNotBeRepeated": [
+    "Passo a passo detalhado da consulta ao BC (link ao dono da intenção)",
+    "Panorama geral de golpes (link)"
+  ],
+  "publicationDecision": "create"
+}

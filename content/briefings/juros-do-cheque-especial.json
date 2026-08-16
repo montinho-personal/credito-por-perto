@@ -1,0 +1,43 @@
+{
+  "proposedTitle": "Cheque especial: o teto de 8% ao mês e por que ainda é caríssimo",
+  "primaryIntent": "juros do cheque especial teto como funciona quanto custa",
+  "secondaryIntents": [
+    "cheque especial tem limite de juros por lei?",
+    "como sair do cheque especial"
+  ],
+  "targetReader": "Quem vive entrando no limite da conta e não percebe que está pagando um dos juros mais altos permitidos",
+  "readerSituation": "SERP mistura notícias de 2020 (quando o teto nasceu) com conteúdo raso; ninguém traduz o 8% ao mês em custo anual nem entrega o plano de saída",
+  "centralQuestion": "Quanto o cheque especial realmente custa com o teto de 8%, quando (não) usar e como sair do ciclo do limite?",
+  "uniqueAngle": "Traduz o teto em número que assusta na medida certa (8% a.m. ≈ 152% a.a., validado pela calculadora do site), explica a Resolução 4.765 sem juridiquês (incluindo a tarifa de 0,25% que quase ninguém conhece) e fecha com o plano de saída do ciclo do limite — espelho do plano do rotativo",
+  "originalContribution": [
+    "A conversão honesta: 8% a.m. = ~152% a.a. (número validado por teste)",
+    "A tarifa de 0,25% sobre limite disponível acima de R$ 500 — o custo de TER, não de usar",
+    "Escada do custo: onde o cheque especial se encaixa entre as dívidas",
+    "Plano de saída do ciclo do limite em 3 movimentos"
+  ],
+  "primarySources": [
+    "Banco Central/CMN — Resolução nº 4.765/2019",
+    "Governo Federal — notícia oficial da vigência (gov.br)"
+  ],
+  "supportingSources": [],
+  "contentArchetype": "guide",
+  "proposedStructure": [
+    "Resposta direta: existe teto, e ele é altíssimo",
+    "A regra da Resolução 4.765 traduzida",
+    "Quanto custa de verdade (conversão anual)",
+    "Quando o cheque especial (não) faz sentido",
+    "O plano de saída do ciclo do limite",
+    "FAQ"
+  ],
+  "uniqueExamples": ["8% a.m. ≈ 151,8% a.a. (conversão validada pela implementação testada da calculadora)"],
+  "proposedVisuals": ["Tabela escada de custo", "WarningBox"],
+  "pagesThatMayCompete": [
+    "/organizacao-financeira/como-sair-do-rotativo/",
+    "/juros-e-cet/taxa-mensal-e-taxa-anual/"
+  ],
+  "informationThatMustNotBeRepeated": [
+    "Plano detalhado do rotativo (link — estrutura análoga, dívida diferente)",
+    "Matemática da conversão mensal→anual (link)"
+  ],
+  "publicationDecision": "create"
+}

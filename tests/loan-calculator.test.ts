@@ -80,6 +80,10 @@ describe("conversão de taxas", () => {
     expect(monthlyToAnnualRate(1)).toBeCloseTo(12.6825, 3);
   });
 
+  it("8% a.m. (teto do cheque especial) equivale a ~151,8% a.a. (valor citado no artigo)", () => {
+    expect(monthlyToAnnualRate(8)).toBeCloseTo(151.817, 2);
+  });
+
   it("12% a.m. equivale a 289,6% a.a. (tabela do artigo)", () => {
     expect(monthlyToAnnualRate(12)).toBeCloseTo(289.598, 1);
   });

@@ -1,0 +1,42 @@
+{
+  "articleSlug": "juros-do-cheque-especial",
+  "claims": [
+    {
+      "claimId": "teto-8-por-cento",
+      "claimText": "Desde 06/01/2020, a Resolução CMN nº 4.765/2019 limita a 8% ao mês os juros do cheque especial de pessoas físicas.",
+      "sourceOrganization": "Banco Central do Brasil / CMN",
+      "sourceTitle": "Resolução nº 4.765, de 27 de novembro de 2019",
+      "sourceLocation": "https://normativos.bcb.gov.br/Lists/Normativos/Attachments/50875/Res_4765_v2_P.pdf",
+      "sourceType": "official",
+      "accessedAt": "2026-08-16"
+    },
+    {
+      "claimId": "vigencia-oficial",
+      "claimText": "A vigência da limitação a partir de janeiro de 2020 foi divulgada oficialmente pelo Governo Federal.",
+      "sourceOrganization": "Governo Federal",
+      "sourceTitle": "Já está valendo a limitação de juros para cheque especial",
+      "sourceLocation": "https://www.gov.br/pt-br/noticias/financas-impostos-e-gestao-publica/2020/01/ja-esta-valendo-a-limitacao-de-juros-para-cheque-especial",
+      "sourceType": "official",
+      "accessedAt": "2026-08-16"
+    },
+    {
+      "claimId": "tarifa-limite",
+      "claimText": "A mesma resolução permitiu tarifa de até 0,25% sobre a parcela do limite disponibilizado que exceda R$ 500,00.",
+      "sourceOrganization": "Banco Central do Brasil / CMN",
+      "sourceTitle": "Resolução nº 4.765/2019 — tarifa sobre limite disponibilizado",
+      "sourceLocation": "https://normativos.bcb.gov.br/Lists/Normativos/Attachments/50875/Res_4765_v2_P.pdf",
+      "sourceType": "official",
+      "accessedAt": "2026-08-16"
+    },
+    {
+      "claimId": "conversao-anual",
+      "claimText": "8% ao mês equivalem a aproximadamente 151,8% ao ano em juros compostos ((1,08)^12 − 1).",
+      "sourceOrganization": "Cálculo próprio",
+      "sourceTitle": "Conversão validada pela implementação testada de src/lib/calculators/loan.ts (monthlyToAnnualRate)",
+      "sourceLocation": "https://www.creditoporperto.com/calculadoras/emprestimo/",
+      "sourceType": "official",
+      "accessedAt": "2026-08-16",
+      "notes": "Caso de teste adicionado em tests/loan-calculator.test.ts."
+    }
+  ]
+}

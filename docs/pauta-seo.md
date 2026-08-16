@@ -46,6 +46,15 @@ Baseada em varredura real da SERP brasileira (queries e achados em
 19. Guias locais — Barueri e Alphaville publicados em 16/08/2026; falta Campinas (draft, âncora do L3);
 20. **Página viva "taxas médias de empréstimo neste mês (dados do BC)"** — só assumir se houver rotina mensal de atualização; freshness recorrente é o que faz portais rankearem nessas consultas.
 
+## Onda 4 — verificada em SERP em 16/08/2026
+
+21. ~~App de empréstimo é confiável? (método, não lista)~~ — publicado em 16/08/2026;
+22. ~~Juros do cheque especial: teto de 8% e plano de saída~~ — publicado em 16/08/2026;
+23. ~~Antecipação do 13º no banco (sazonal — publicado antes do pico do 2º semestre)~~ — publicado em 16/08/2026;
+24. Golpe da falsa central do banco (candidato seguinte, cluster segurança);
+25. "Dinheiro urgente hoje": opções reais e ciladas (cauda longa de alto risco/alto volume);
+26. Reavaliar com dados do Search Console (~30 dias após indexação): reforçar o que mostrar impressões.
+
 ## Trilha Local — "Empréstimo em [cidade]" (paralela às ondas)
 
 Decisão do proprietário (16/08/2026): expandir o SEO local cidade a cidade.

@@ -1,0 +1,32 @@
+{
+  "articleSlug": "app-de-emprestimo-e-confiavel",
+  "claims": [
+    {
+      "claimId": "autorizacao-obrigatoria",
+      "claimText": "Todo app que concede empréstimo opera por uma instituição autorizada pelo Banco Central (diretamente ou como correspondente identificado); a autorização é consultável gratuitamente no Encontre uma instituição.",
+      "sourceOrganization": "Banco Central do Brasil",
+      "sourceTitle": "Encontre uma instituição",
+      "sourceLocation": "https://www.bcb.gov.br/meubc/encontreinstituicao",
+      "sourceType": "official",
+      "accessedAt": "2026-08-16"
+    },
+    {
+      "claimId": "canal-reclamacao",
+      "claimText": "Reclamações contra apps/instituições de crédito podem ser registradas no consumidor.gov.br, e o histórico público de reclamações da empresa é consultável na própria plataforma.",
+      "sourceOrganization": "Senacon — consumidor.gov.br",
+      "sourceTitle": "Plataforma consumidor.gov.br",
+      "sourceLocation": "https://www.consumidor.gov.br",
+      "sourceType": "official",
+      "accessedAt": "2026-08-16"
+    },
+    {
+      "claimId": "registrato-rastro",
+      "claimText": "Operações reais de crédito aparecem no extrato do SCR (Registrato) do Banco Central; monitorá-lo permite detectar contratos abertos indevidamente no CPF após vazamento de dados.",
+      "sourceOrganization": "Banco Central do Brasil",
+      "sourceTitle": "Registrato — Extrato do SCR",
+      "sourceLocation": "https://registrato.bcb.gov.br",
+      "sourceType": "official",
+      "accessedAt": "2026-08-16"
+    }
+  ]
+}

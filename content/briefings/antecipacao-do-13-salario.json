@@ -1,0 +1,44 @@
+{
+  "proposedTitle": "Antecipar o 13º no banco: quanto custa receber antes o que é seu",
+  "primaryIntent": "antecipação do 13º salário no banco como funciona vale a pena",
+  "secondaryIntents": [
+    "antecipar 13º INSS pelo banco compensa?",
+    "quando cai o 13º e quanto custa antecipar"
+  ],
+  "targetReader": "CLT ou aposentado que viu a oferta de 'antecipe seu 13º' no app do banco e quer saber o custo real",
+  "readerSituation": "Oferta sazonal massiva (2º semestre); SERP dominada pelos próprios bancos; ninguém faz a conta na perspectiva do tomador nem alerta o beneficiário do INSS que muitas vezes já recebe o 13º antecipado pelo calendário oficial",
+  "centralQuestion": "Antecipar o 13º é empréstimo? Quanto custa de verdade, quando faz sentido e qual a pegadinha para quem é do INSS?",
+  "uniqueAngle": "Reenquadra como 'empréstimo-ponte quitado pelo seu próprio dinheiro': você paga juros para mover uma data. Entrega a conta certa (custo ÷ meses de antecipação), o alerta do INSS (o governo tem antecipado o pagamento por calendário oficial — antecipar no banco pode ser pagar por quase nada) e a régua contra alternativas",
+  "originalContribution": [
+    "Modelo mental: juros para mover uma data — custo por mês antecipado",
+    "O alerta INSS: calendário oficial × produto bancário",
+    "Tabela: antecipação do 13º × consignado × pessoal para a mesma necessidade",
+    "Armadilha da renovação anual (o 13º que nunca chega inteiro)"
+  ],
+  "primarySources": [
+    "Planalto — CLT/legislação do 13º (Lei nº 4.090/1962)",
+    "gov.br/INSS — calendário de pagamento de benefícios"
+  ],
+  "supportingSources": ["C6 Bank (blog) — mecânica comercial do produto, como fonte de mercado"],
+  "contentArchetype": "comparison",
+  "proposedStructure": [
+    "Resposta direta: é empréstimo, e a garantia é seu próprio 13º",
+    "Como funciona a operação",
+    "A conta certa: custo por mês antecipado",
+    "O alerta para quem é do INSS",
+    "Alternativas na mesma necessidade",
+    "A armadilha da renovação anual",
+    "FAQ"
+  ],
+  "uniqueExamples": ["Custo dividido pelos meses de antecipação como métrica de decisão"],
+  "proposedVisuals": ["Tabela comparativa", "WhatCanChange", "WarningBox"],
+  "pagesThatMayCompete": [
+    "/emprestimos/antecipacao-saque-aniversario-fgts/",
+    "/emprestimos/emprestimo-pessoal/"
+  ],
+  "informationThatMustNotBeRepeated": [
+    "Mecânica da antecipação do FGTS (produto irmão — link)",
+    "Comparação genérica de propostas (link)"
+  ],
+  "publicationDecision": "create"
+}

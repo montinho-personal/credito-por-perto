@@ -1,0 +1,34 @@
+{
+  "articleSlug": "antecipacao-do-13-salario",
+  "claims": [
+    {
+      "claimId": "direito-13",
+      "claimText": "O 13º salário (gratificação natalina) é direito do trabalhador instituído pela Lei nº 4.090/1962, pago tradicionalmente em duas parcelas até o fim do ano.",
+      "sourceOrganization": "Presidência da República — Planalto",
+      "sourceTitle": "Lei nº 4.090, de 13 de julho de 1962",
+      "sourceLocation": "https://www.planalto.gov.br/ccivil_03/leis/l4090.htm",
+      "sourceType": "official",
+      "accessedAt": "2026-08-16"
+    },
+    {
+      "claimId": "produto-bancario",
+      "claimText": "A antecipação do 13º oferecida por bancos é uma operação de crédito de curto prazo: o banco adianta um valor referenciado no 13º esperado e a dívida é quitada (com juros e IOF) quando o 13º é creditado.",
+      "sourceOrganization": "C6 Bank (blog institucional)",
+      "sourceTitle": "Antecipar o 13º Salário: como funciona",
+      "sourceLocation": "https://www.c6bank.com.br/blog/antecipar-decimo-terceiro-salario",
+      "sourceType": "journalistic",
+      "accessedAt": "2026-08-16",
+      "notes": "Fonte de mercado para a mecânica comercial; custos concretos variam por instituição e são tratados como variáveis no artigo."
+    },
+    {
+      "claimId": "inss-calendario-antecipado",
+      "claimText": "Nos últimos anos o Governo Federal tem antecipado, por ato próprio a cada ano, o pagamento do 13º de aposentados e pensionistas do INSS para o primeiro semestre; o calendário vigente é divulgado nos canais oficiais do INSS.",
+      "sourceOrganization": "Governo Federal — INSS",
+      "sourceTitle": "Calendário de pagamento de benefícios e comunicados oficiais",
+      "sourceLocation": "https://www.gov.br/inss/pt-br",
+      "sourceType": "official",
+      "accessedAt": "2026-08-16",
+      "notes": "Antecipação por decreto é decisão anual — o artigo não afirma calendário específico e remete ao canal oficial (WhatCanChange)."
+    }
+  ]
+}
