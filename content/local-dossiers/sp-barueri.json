@@ -12,24 +12,62 @@
       "checkedAt": "2026-08-05",
       "extractedFact": "Barueri é município do estado de São Paulo, código 3505708.",
       "relevanceToReader": "Confirma a classificação administrativa correta da página local."
+    },
+    {
+      "organization": "Prefeitura de Barueri",
+      "documentTitle": "Procon Barueri — portal do cidadão",
+      "sourceLocation": "https://portal.barueri.sp.gov.br/cidadao/procon-barueri",
+      "checkedAt": "2026-08-16",
+      "extractedFact": "O Procon de Barueri funciona no prédio do Ganha Tempo, na Avenida Henriqueta Mendes Guerra, 550 — Centro, com atendimento em dias úteis e agendamento on-line pelo portal da prefeitura.",
+      "relevanceToReader": "Canal presencial da cidade para reclamações de crédito e consumo, com agendamento que evita fila."
+    },
+    {
+      "organization": "Procon-SP",
+      "documentTitle": "Municípios conveniados — Barueri",
+      "sourceLocation": "https://www.procon.sp.gov.br/barueri/",
+      "checkedAt": "2026-08-16",
+      "extractedFact": "Barueri integra a rede de Procons municipais conveniados ao Procon-SP.",
+      "relevanceToReader": "Confirma o vínculo institucional do atendimento local."
     }
   ],
-  "consumerProtectionResources": [],
-  "verifiedLocalPrograms": [],
-  "verifiedServiceInformation": [],
-  "uniqueLocalQuestions": [
-    "Onde o morador de Barueri registra reclamação de consumo presencialmente?",
-    "Quais programas públicos de crédito atendem MEIs de Barueri?",
-    "O que pertence ao guia de Barueri e o que pertence ao guia de Alphaville?"
+  "consumerProtectionResources": [
+    {
+      "organization": "Procon Barueri",
+      "service": "Atendimento presencial no Ganha Tempo (Avenida Henriqueta Mendes Guerra, 550 — Centro), com agendamento on-line pelo portal da prefeitura",
+      "officialSource": "https://portal.barueri.sp.gov.br/cidadao/procon-barueri",
+      "checkedAt": "2026-08-16"
+    },
+    {
+      "organization": "Consumidor.gov.br (plataforma federal)",
+      "service": "Reclamação on-line contra bancos e financeiras, com resposta monitorada — disponível a moradores de qualquer município",
+      "officialSource": "https://www.consumidor.gov.br",
+      "checkedAt": "2026-08-16"
+    }
   ],
-  "localRisksOrWarnings": [],
+  "verifiedLocalPrograms": [],
+  "verifiedServiceInformation": [
+    {
+      "institution": "Prefeitura de Barueri — Ganha Tempo",
+      "information": "O Ganha Tempo de Barueri (Avenida Henriqueta Mendes Guerra, 550 — Centro) concentra serviços públicos, incluindo o Procon, com agendamento on-line.",
+      "officialSource": "https://portal.barueri.sp.gov.br/cidadao/procon-barueri",
+      "checkedAt": "2026-08-16"
+    }
+  ],
+  "uniqueLocalQuestions": [
+    "Onde o morador de Barueri registra reclamação de consumo presencialmente e como agenda?",
+    "Como o polo de empregos local (Centro, Tamboré, Alphaville empresarial) muda o acesso ao consignado CLT?",
+    "O que pertence ao guia de Barueri e o que pertence ao guia da região de Alphaville?"
+  ],
+  "localRisksOrWarnings": [
+    "Polos de emprego concentram oferta agressiva de crédito a trabalhadores registrados; confirmar a instituição autorizada no Banco Central antes de qualquer contratação é o filtro essencial."
+  ],
   "decisionImpact": [
-    "Atendimento local de defesa do consumidor facilita reclamações formais",
-    "Programas públicos vigentes podem substituir crédito caro"
+    "O agendamento on-line do Procon evita deslocamento perdido ao Ganha Tempo",
+    "Trabalhadores CLT do polo local têm no desconto em folha a porta de crédito mais barata"
   ],
   "pendingVerification": [
-    "Canais municipais de defesa do consumidor de Barueri (endereço, contatos, horários)",
-    "Programas de crédito público (municipais/estaduais) vigentes para moradores e MEIs",
-    "Informações de atendimento bancário/cooperativo verificáveis e relevantes à decisão"
+    "Horários vigentes do Procon no Ganha Tempo (confirmar no agendamento)",
+    "Programas municipais/estaduais de crédito (ex.: Banco do Povo) ativos na cidade",
+    "Lista nominal de agências bancárias no município via dados abertos do BC (Informes_Agencias)"
   ]
 }

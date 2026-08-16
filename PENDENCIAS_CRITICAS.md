@@ -50,10 +50,12 @@ Tudo o mais já está implementado ou automatizado.
 
 ## 5. Guias locais (bloqueiam publicação dos guias, não do site)
 
-- [ ] Verificação de campo das informações locais de Campinas, Barueri e
-      região de Alphaville (listas de pendência em `content/local-dossiers/*.json`,
-      campo `pendingVerification`). Os três guias permanecem `draft` + `noindex`
-      até a checagem — o pipeline bloqueia a publicação sem dossiê completo.
+- [x] Barueri e região de Alphaville: verificados em fontes oficiais
+      (16/08/2026) e publicados
+- [ ] Campinas: guia segue `draft` + `noindex` até verificação (âncora do
+      lote L3); pendências no dossiê (`pendingVerification`)
+- [ ] Itens residuais dos dossiês publicados (horários/telefones, programas
+      municipais, lista de agências via dados abertos do BC)
 
 ## 6. Ativos e licenças
 

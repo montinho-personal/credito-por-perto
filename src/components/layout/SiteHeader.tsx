@@ -2,6 +2,7 @@ import Link from "next/link";
 import { MAIN_NAV } from "@/lib/site";
 import { Logo } from "@/components/layout/Logo";
 import { MobileNavigation } from "@/components/layout/MobileNavigation";
+import { SearchTrigger } from "@/components/search/SearchTrigger";
 
 export function SiteHeader() {
   return (
@@ -20,29 +21,18 @@ export function SiteHeader() {
                 </Link>
               </li>
             ))}
-            <li>
-              <Link
-                href="/busca/"
-                className="ml-1 flex h-10 w-10 items-center justify-center rounded-lg border border-brand-border text-brand-muted hover:text-brand-navy"
-                aria-label="Buscar no site"
-              >
-                <svg
-                  viewBox="0 0 24 24"
-                  className="h-5 w-5"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  aria-hidden="true"
-                >
-                  <circle cx="11" cy="11" r="7" />
-                  <path d="m20 20-3.5-3.5" />
-                </svg>
-              </Link>
+            <li className="ml-1">
+              <SearchTrigger source="header" />
             </li>
           </ul>
         </nav>
-        <MobileNavigation />
+        <div className="flex items-center gap-2 md:hidden">
+          <SearchTrigger
+            source="header"
+            className="flex h-11 w-11 items-center justify-center rounded-lg border border-brand-border text-brand-navy focus-visible:outline focus-visible:outline-2 focus-visible:outline-brand-navy"
+          />
+          <MobileNavigation />
+        </div>
       </div>
     </header>
   );

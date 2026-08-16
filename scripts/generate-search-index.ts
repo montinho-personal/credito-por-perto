@@ -1,49 +1,16 @@
 /**
- * Gera public/search-index.json com o conteúdo publicado, para a busca
- * client-side de /busca/ (nada é enviado ao servidor).
+ * Gera public/search-index.json com os documentos da busca client-side.
+ * Roda no build (pnpm search:index) — novos artigos e guias publicados
+ * entram automaticamente. Nada é enviado a servidor em tempo de busca.
  */
 import fs from "node:fs";
 import path from "node:path";
-import { getPublishedArticles } from "../src/lib/content/articles";
-import { getPublishedLocalGuides } from "../src/lib/content/local";
-import { CATEGORIES } from "../src/lib/content/categories";
+import { buildSearchDocs } from "../src/lib/search/build-docs";
 
-interface SearchEntry {
-  title: string;
-  description: string;
-  url: string;
-  section: string;
-}
-
-const entries: SearchEntry[] = [
-  ...getPublishedArticles().map((article) => ({
-    title: article.frontmatter.title,
-    description: article.frontmatter.description,
-    url: article.urlPath,
-    section: CATEGORIES[article.frontmatter.category].label,
-  })),
-  ...getPublishedLocalGuides().map((guide) => ({
-    title: guide.frontmatter.title,
-    description: guide.frontmatter.description,
-    url: guide.urlPath,
-    section: "Guias locais",
-  })),
-  {
-    title: "Calculadora de empréstimo",
-    description:
-      "Estime parcela, total pago e juros pelo sistema Price, com tabela de amortização.",
-    url: "/calculadoras/emprestimo/",
-    section: "Calculadoras",
-  },
-  {
-    title: "Glossário de crédito",
-    description:
-      "CET, IOF, amortização, margem consignável e outros termos explicados em linguagem simples.",
-    url: "/glossario/",
-    section: "Glossário",
-  },
-];
-
+const docs = buildSearchDocs();
 const outPath = path.join(process.cwd(), "public", "search-index.json");
-fs.writeFileSync(outPath, JSON.stringify(entries, null, 2));
-console.log(`Índice de busca gerado com ${entries.length} entradas em ${outPath}`);
+fs.writeFileSync(outPath, JSON.stringify(docs));
+const sizeKb = Math.round(fs.statSync(outPath).size / 1024);
+console.log(
+  `Índice de busca: ${docs.length} documentos, ${sizeKb} KB em ${outPath}`,
+);

@@ -1,0 +1,72 @@
+{
+  "localityId": "sp-cotia",
+  "localityName": "Cotia",
+  "localityType": "municipality",
+  "stateCode": "sp",
+  "officialAdministrativeStatus": "Município do estado de São Paulo (código IBGE 3513009)",
+  "officialSources": [
+    {
+      "organization": "IBGE",
+      "documentTitle": "Cidades e Estados — Cotia (SP)",
+      "sourceLocation": "https://www.ibge.gov.br/cidades-e-estados/sp/cotia.html",
+      "checkedAt": "2026-08-16",
+      "extractedFact": "Cotia é município do estado de São Paulo, código 3513009.",
+      "relevanceToReader": "Confirma a classificação administrativa correta da página local."
+    },
+    {
+      "organization": "Prefeitura de Cotia",
+      "documentTitle": "Procon-SP Cotia — página oficial",
+      "sourceLocation": "https://cotia.sp.gov.br/proconsp-cotia/",
+      "checkedAt": "2026-08-16",
+      "extractedFact": "O Procon de Cotia atende na Rua Jorge Caixe, 306 — Portão, com e-mail procon@cotia.sp.gov.br, e mantém um segundo posto de atendimento em Caucaia do Alto (Rua Manoel Carlos Ferraz de Almeida, 38 — 1º andar).",
+      "relevanceToReader": "A cidade é extensa: saber que existem dois postos (sede e Caucaia do Alto) evita deslocamentos longos desnecessários."
+    },
+    {
+      "organization": "Procon-SP",
+      "documentTitle": "Municípios conveniados — Cotia",
+      "sourceLocation": "https://www.procon.sp.gov.br/cotia/",
+      "checkedAt": "2026-08-16",
+      "extractedFact": "Cotia integra a rede de Procons municipais conveniados ao Procon-SP.",
+      "relevanceToReader": "Confirma o vínculo institucional do atendimento local."
+    }
+  ],
+  "consumerProtectionResources": [
+    {
+      "organization": "Procon Cotia — sede",
+      "service": "Atendimento presencial na Rua Jorge Caixe, 306 — Portão, e recebimento de reclamações pelo e-mail procon@cotia.sp.gov.br",
+      "officialSource": "https://cotia.sp.gov.br/proconsp-cotia/",
+      "checkedAt": "2026-08-16"
+    },
+    {
+      "organization": "Procon Cotia — posto Caucaia do Alto",
+      "service": "Posto de atendimento na Rua Manoel Carlos Ferraz de Almeida, 38 — 1º andar, para moradores do distrito",
+      "officialSource": "https://cotia.sp.gov.br/proconsp-cotia/",
+      "checkedAt": "2026-08-16"
+    },
+    {
+      "organization": "Consumidor.gov.br (plataforma federal)",
+      "service": "Reclamação on-line contra bancos e financeiras, com resposta monitorada — disponível a moradores de qualquer município",
+      "officialSource": "https://www.consumidor.gov.br",
+      "checkedAt": "2026-08-16"
+    }
+  ],
+  "verifiedLocalPrograms": [],
+  "verifiedServiceInformation": [],
+  "uniqueLocalQuestions": [
+    "Moro em Caucaia do Alto: preciso ir até o centro de Cotia para reclamar no Procon?",
+    "Como a extensão territorial da cidade (bairros e distritos afastados) muda o acesso a crédito presencial?",
+    "Como conferir as ofertas de crédito do comércio da Raposo Tavares e da região central?"
+  ],
+  "localRisksOrWarnings": [
+    "Em municípios extensos, moradores de bairros afastados dependem mais de correspondentes e canais digitais; a checagem da instituição autorizada no Banco Central é o filtro essencial antes de assinar."
+  ],
+  "decisionImpact": [
+    "Os dois postos do Procon (sede e Caucaia do Alto) reduzem o custo de reclamar formalmente",
+    "A contratação digital iguala o acesso de quem mora longe do centro"
+  ],
+  "pendingVerification": [
+    "Horários vigentes e telefones dos dois postos do Procon",
+    "Programas municipais/estaduais de crédito (ex.: Banco do Povo) ativos na cidade",
+    "Lista nominal de agências bancárias no município via dados abertos do BC (Informes_Agencias)"
+  ]
+}

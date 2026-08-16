@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Suspense } from "react";
 import { buildMetadata } from "@/lib/metadata/build";
 import { Breadcrumbs } from "@/components/layout/Breadcrumbs";
 import { SearchClient } from "@/components/search/SearchClient";
@@ -28,7 +29,9 @@ export default function BuscaPage() {
         publicados — nada do que você digita é enviado ao servidor.
       </p>
       <div className="mt-6">
-        <SearchClient />
+        <Suspense>
+          <SearchClient />
+        </Suspense>
       </div>
     </div>
   );

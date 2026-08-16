@@ -3,25 +3,64 @@
   "localityName": "Alphaville",
   "localityType": "region",
   "stateCode": "sp",
-  "officialAdministrativeStatus": "Região/bairros planejados SEM status de município, abrangendo áreas dos municípios de Barueri (3505708) e Santana de Parnaíba (3547304), SP — classificação a confirmar em fontes oficiais antes da publicação",
+  "officialAdministrativeStatus": "Região planejada SEM status de município, abrangendo áreas dos municípios de Barueri (3505708) e Santana de Parnaíba (3547304), SP",
   "municipalitiesInvolved": ["sp-barueri", "sp-santana-de-parnaiba"],
-  "officialSources": [],
-  "consumerProtectionResources": [],
+  "officialSources": [
+    {
+      "organization": "IBGE",
+      "documentTitle": "Cadastro de municípios — Barueri (3505708) e Santana de Parnaíba (3547304)",
+      "sourceLocation": "https://www.ibge.gov.br",
+      "checkedAt": "2026-08-16",
+      "extractedFact": "Alphaville não consta como município: os municípios são Barueri e Santana de Parnaíba, e a região planejada se distribui entre os dois territórios.",
+      "relevanceToReader": "Define a resposta central do guia: o órgão competente depende do município do endereço."
+    },
+    {
+      "organization": "Prefeitura de Barueri",
+      "documentTitle": "Procon Barueri — portal do cidadão",
+      "sourceLocation": "https://portal.barueri.sp.gov.br/cidadao/procon-barueri",
+      "checkedAt": "2026-08-16",
+      "extractedFact": "Endereços de Alphaville situados em Barueri são atendidos pelo Procon de Barueri, no Ganha Tempo (Avenida Henriqueta Mendes Guerra, 550 — Centro), com agendamento on-line.",
+      "relevanceToReader": "Metade da resposta de jurisdição do guia."
+    },
+    {
+      "organization": "Procon-SP",
+      "documentTitle": "Municípios conveniados — Santana de Parnaíba",
+      "sourceLocation": "https://www.procon.sp.gov.br/santana-de-parnaiba/",
+      "checkedAt": "2026-08-16",
+      "extractedFact": "Endereços de Alphaville situados em Santana de Parnaíba são atendidos pelo Procon de Santana de Parnaíba (Rua XV de Novembro, 625 — Centro).",
+      "relevanceToReader": "A outra metade da resposta de jurisdição do guia."
+    }
+  ],
+  "consumerProtectionResources": [
+    {
+      "organization": "Procon Barueri (para endereços barueriences de Alphaville)",
+      "service": "Atendimento no Ganha Tempo de Barueri (Avenida Henriqueta Mendes Guerra, 550 — Centro), com agendamento on-line",
+      "officialSource": "https://portal.barueri.sp.gov.br/cidadao/procon-barueri",
+      "checkedAt": "2026-08-16"
+    },
+    {
+      "organization": "Procon Santana de Parnaíba (para endereços parnaibanos de Alphaville)",
+      "service": "Atendimento na Rua XV de Novembro, 625 — Centro, com canal de WhatsApp divulgado pela prefeitura",
+      "officialSource": "https://www.procon.sp.gov.br/santana-de-parnaiba/",
+      "checkedAt": "2026-08-16"
+    }
+  ],
   "verifiedLocalPrograms": [],
   "verifiedServiceInformation": [],
   "uniqueLocalQuestions": [
     "Meu endereço em Alphaville pertence a Barueri ou a Santana de Parnaíba?",
     "A qual Procon recorro em um problema com instituição financeira?",
-    "Golpes direcionados à região têm registro em fonte oficial?"
+    "IPTU/comprovante de endereço de qual município uso na contratação de crédito?"
   ],
-  "localRisksOrWarnings": [],
+  "localRisksOrWarnings": [
+    "Regiões de alta renda são alvo preferencial de golpes sofisticados (falsos gerentes, falsas oportunidades de crédito e investimento); confirmação por canal oficial antes de qualquer movimentação é o filtro essencial."
+  ],
   "decisionImpact": [
-    "Saber o município do endereço define o órgão competente para reclamações",
+    "Saber o município do endereço define o Procon competente e evita deslocamento errado",
     "Evita duplicação com os guias municipais de Barueri e Santana de Parnaíba"
   ],
   "pendingVerification": [
-    "Confirmação da divisão administrativa da região (fontes: IBGE e prefeituras de Barueri e Santana de Parnaíba)",
-    "Canais de proteção ao consumidor de cada município envolvido",
-    "Decisão editorial final: manter guia próprio da região OU consolidar nos guias municipais, conforme a intenção de busca se confirme distinta"
+    "Programas públicos de crédito acessíveis a moradores e MEIs da região, por município",
+    "Lista nominal de agências bancárias na região via dados abertos do BC (Informes_Agencias)"
   ]
 }

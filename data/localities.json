@@ -33,6 +33,14 @@
       "ibgeCode": "3547304"
     },
     {
+      "id": "sp-cotia",
+      "name": "Cotia",
+      "localityType": "municipality",
+      "stateCode": "sp",
+      "citySlug": "cotia",
+      "ibgeCode": "3513009"
+    },
+    {
       "id": "sp-carapicuiba",
       "name": "Carapicuíba",
       "localityType": "municipality",

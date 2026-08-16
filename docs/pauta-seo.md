@@ -43,7 +43,7 @@ Baseada em varredura real da SERP brasileira (queries e achados em
 16. Refinanciamento de consignado: quando faz sentido (contraponto ao assédio);
 17. Empréstimo com garantia de celular: como funciona o bloqueio;
 18. Atualizar guia FGTS com os limites vigentes de parcelas antecipáveis (verificar na Caixa antes);
-19. Guias locais (Campinas, Barueri, Alphaville) — concluir verificação e publicar;
+19. Guias locais — Barueri e Alphaville publicados em 16/08/2026; falta Campinas (draft, âncora do L3);
 20. **Página viva "taxas médias de empréstimo neste mês (dados do BC)"** — só assumir se houver rotina mensal de atualização; freshness recorrente é o que faz portais rankearem nessas consultas.
 
 ## Trilha Local — "Empréstimo em [cidade]" (paralela às ondas)
@@ -74,7 +74,7 @@ penalizadas pelo Google (spam policy) e bloqueadas pela nossa auditoria
 
 | Lote | Cidades (em ordem) | Racional |
 | --- | --- | --- |
-| **L1 — corredor oeste da Grande SP** | Barueri*, região de Alphaville*, ~~Santana de Parnaíba~~ ✔, ~~Carapicuíba~~ ✔, ~~Jandira~~ ✔, ~~Itapevi~~ ✔, Cotia | QG do portal; drafts (*) já existem, faltando só verificação de campo; SERPs muito fracas |
+| **L1 — corredor oeste da Grande SP** | ~~Barueri~~ ✔, ~~região de Alphaville~~ ✔, ~~Santana de Parnaíba~~ ✔, ~~Carapicuíba~~ ✔, ~~Jandira~~ ✔, ~~Itapevi~~ ✔, ~~Cotia~~ ✔ — **lote concluído (16/08/2026)** | QG do portal; drafts (*) já existem, faltando só verificação de campo; SERPs muito fracas |
 | **L2 — Grande SP, porte médio** | Santa Isabel, Franco da Rocha, Caieiras, Mairiporã, Vargem Grande Paulista, Embu das Artes, Taboão da Serra | Volume razoável, concorrência quase nula; verificável a distância por fontes oficiais |
 | **L3 — interior de SP** | Salto, Indaiatuba, Itu, Atibaia, Bragança Paulista, Itatiba, Vinhedo | Cidades com "rua financeira" própria; Campinas (draft existente) publica aqui como âncora do lote |
 | **L4 — expansão por estado** | Cidades médias de MG, PR, SC, GO (definir por SERP na hora) | Só após SP consolidado; cada estado abre com 3–5 cidades e o índice `/emprestimos/[uf]/` |

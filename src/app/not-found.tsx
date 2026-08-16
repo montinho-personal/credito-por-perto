@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { SearchBox } from "@/components/search/SearchTrigger";
 
 export default function NotFound() {
   return (
@@ -11,8 +12,11 @@ export default function NotFound() {
       </h1>
       <p className="mx-auto mt-4 max-w-xl text-lg leading-relaxed text-brand-muted">
         O conteúdo pode ter sido movido ou o endereço digitado está incorreto.
-        Estes caminhos costumam resolver:
+        Busque o assunto que você procurava:
       </p>
+      <div className="mx-auto mt-6 flex max-w-xl justify-center text-left">
+        <SearchBox source="404" placeholder="Busque por assunto, cidade ou dúvida…" />
+      </div>
       <div className="mt-8 flex flex-wrap justify-center gap-3">
         <Link
           href="/"
@@ -25,12 +29,6 @@ export default function NotFound() {
           className="rounded-lg border border-brand-border px-5 py-2.5 font-semibold text-brand-navy hover:bg-brand-surface-soft"
         >
           Guias de empréstimos
-        </Link>
-        <Link
-          href="/busca/"
-          className="rounded-lg border border-brand-border px-5 py-2.5 font-semibold text-brand-navy hover:bg-brand-surface-soft"
-        >
-          Buscar no site
         </Link>
       </div>
     </div>

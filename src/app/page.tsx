@@ -6,6 +6,7 @@ import { getRecentArticles, getFeaturedArticles } from "@/lib/content/articles";
 import { getPublishedLocalGuides } from "@/lib/content/local";
 import { ArticleCard, CategoryCard, LocalGuideCard } from "@/components/ui/cards";
 import { SafetyAlert } from "@/components/content/boxes";
+import { SearchBox } from "@/components/search/SearchTrigger";
 
 export const metadata: Metadata = buildMetadata({
   title: `${SITE_NAME} | Guia de Empréstimos e Crédito`,
@@ -85,6 +86,9 @@ export default function HomePage() {
             >
               Calcular parcelas
             </Link>
+          </div>
+          <div className="mt-8">
+            <SearchBox source="home" chips />
           </div>
         </div>
       </section>
