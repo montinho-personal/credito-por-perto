@@ -33,6 +33,30 @@
       "ibgeCode": "3547304"
     },
     {
+      "id": "sp-franco-da-rocha",
+      "name": "Franco da Rocha",
+      "localityType": "municipality",
+      "stateCode": "sp",
+      "citySlug": "franco-da-rocha",
+      "ibgeCode": "3516408"
+    },
+    {
+      "id": "sp-caieiras",
+      "name": "Caieiras",
+      "localityType": "municipality",
+      "stateCode": "sp",
+      "citySlug": "caieiras",
+      "ibgeCode": "3509007"
+    },
+    {
+      "id": "sp-mairipora",
+      "name": "Mairiporã",
+      "localityType": "municipality",
+      "stateCode": "sp",
+      "citySlug": "mairipora",
+      "ibgeCode": "3528502"
+    },
+    {
       "id": "sp-cotia",
       "name": "Cotia",
       "localityType": "municipality",

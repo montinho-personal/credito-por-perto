@@ -1,0 +1,43 @@
+{
+  "proposedTitle": "Preciso de dinheiro urgente: as opções reais (e as ciladas que esperam por você)",
+  "primaryIntent": "preciso de dinheiro urgente hoje o que fazer opções",
+  "secondaryIntents": [
+    "empréstimo que cai na hora é confiável?",
+    "onde conseguir dinheiro rápido sem cair em golpe"
+  ],
+  "targetReader": "Pessoa em aperto real — conta vencendo, emergência — digitando no Google em estado de estresse",
+  "readerSituation": "A SERP dessa intenção é a mais predatória do nicho: lead-gen, apps duvidosos e promessas de 'na hora'; a pessoa em urgência é o alvo perfeito de tudo que o portal alerta",
+  "centralQuestion": "Preciso de dinheiro hoje: quais caminhos legítimos são realmente rápidos, em que ordem tentar, e como não piorar tudo na pressa?",
+  "uniqueAngle": "Escrito para ser lido em estado de urgência: triagem de 2 minutos (a urgência é real ou é cobrança agressiva?), a escada das opções rápidas legítimas EM ORDEM (o que cai hoje × amanhã × esta semana) e o pacto anti-cilada — porque a pressa é exatamente o estado que os golpes exploram",
+  "originalContribution": [
+    "Triagem de 2 minutos antes de qualquer contratação",
+    "A escada do 'cai quando': hoje × 24-48h × esta semana",
+    "O pacto anti-cilada de 3 itens para decidir sob estresse",
+    "A saída que ninguém oferece: adiar/renegociar a conta em vez de financiá-la"
+  ],
+  "primarySources": [
+    "Banco Central — canais e serviços do cidadão",
+    "Consumidor.gov.br"
+  ],
+  "supportingSources": [],
+  "contentArchetype": "guide",
+  "proposedStructure": [
+    "Resposta direta: a ordem das opções rápidas",
+    "Triagem de 2 minutos",
+    "A escada do 'cai quando'",
+    "O pacto anti-cilada",
+    "Depois do incêndio: impedir a próxima urgência",
+    "FAQ"
+  ],
+  "uniqueExamples": [],
+  "proposedVisuals": ["Tabela da escada", "WarningBox", "ChecklistBox"],
+  "pagesThatMayCompete": [
+    "/organizacao-financeira/quando-vale-a-pena-fazer-emprestimo/",
+    "/credito-seguro/emprestimo-sem-consulta/"
+  ],
+  "informationThatMustNotBeRepeated": [
+    "Roteiro completo de decisão (link)",
+    "Detalhe de cada modalidade (links)"
+  ],
+  "publicationDecision": "create"
+}

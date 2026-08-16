@@ -51,8 +51,8 @@ Baseada em varredura real da SERP brasileira (queries e achados em
 21. ~~App de empréstimo é confiável? (método, não lista)~~ — publicado em 16/08/2026;
 22. ~~Juros do cheque especial: teto de 8% e plano de saída~~ — publicado em 16/08/2026;
 23. ~~Antecipação do 13º no banco (sazonal — publicado antes do pico do 2º semestre)~~ — publicado em 16/08/2026;
-24. Golpe da falsa central do banco (candidato seguinte, cluster segurança);
-25. "Dinheiro urgente hoje": opções reais e ciladas (cauda longa de alto risco/alto volume);
+24. ~~Golpe da falsa central do banco~~ — publicado em 16/08/2026;
+25. ~~"Dinheiro urgente hoje"~~ — publicado em 16/08/2026;
 26. Reavaliar com dados do Search Console (~30 dias após indexação): reforçar o que mostrar impressões.
 
 ## Trilha Local — "Empréstimo em [cidade]" (paralela às ondas)
@@ -84,7 +84,7 @@ penalizadas pelo Google (spam policy) e bloqueadas pela nossa auditoria
 | Lote | Cidades (em ordem) | Racional |
 | --- | --- | --- |
 | **L1 — corredor oeste da Grande SP** | ~~Barueri~~ ✔, ~~região de Alphaville~~ ✔, ~~Santana de Parnaíba~~ ✔, ~~Carapicuíba~~ ✔, ~~Jandira~~ ✔, ~~Itapevi~~ ✔, ~~Cotia~~ ✔ — **lote concluído (16/08/2026)** | QG do portal; drafts (*) já existem, faltando só verificação de campo; SERPs muito fracas |
-| **L2 — Grande SP, porte médio** | Santa Isabel, Franco da Rocha, Caieiras, Mairiporã, Vargem Grande Paulista, Embu das Artes, Taboão da Serra | Volume razoável, concorrência quase nula; verificável a distância por fontes oficiais |
+| **L2 — Grande SP, porte médio** | ~~Santa Isabel~~ ✔, ~~Franco da Rocha~~ ✔, ~~Caieiras~~ ✔, ~~Mairiporã~~ ✔, Vargem Grande Paulista, Embu das Artes, Taboão da Serra | Volume razoável, concorrência quase nula; verificável a distância por fontes oficiais |
 | **L3 — interior de SP** | Salto, Indaiatuba, Itu, Atibaia, Bragança Paulista, Itatiba, Vinhedo | Cidades com "rua financeira" própria; Campinas (draft existente) publica aqui como âncora do lote |
 | **L4 — expansão por estado** | Cidades médias de MG, PR, SC, GO (definir por SERP na hora) | Só após SP consolidado; cada estado abre com 3–5 cidades e o índice `/emprestimos/[uf]/` |
 | Osasco, Campinas, capitais | Ao final de cada lote regional | Grandes demais para um site novo; entram quando o cluster local já rankeia |

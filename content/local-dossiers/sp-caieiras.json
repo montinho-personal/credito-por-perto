@@ -1,0 +1,58 @@
+{
+  "localityId": "sp-caieiras",
+  "localityName": "Caieiras",
+  "localityType": "municipality",
+  "stateCode": "sp",
+  "officialAdministrativeStatus": "Município do estado de São Paulo (código IBGE 3509007)",
+  "officialSources": [
+    {
+      "organization": "IBGE",
+      "documentTitle": "Cidades e Estados — Caieiras (SP)",
+      "sourceLocation": "https://cidades.ibge.gov.br/brasil/sp/caieiras",
+      "checkedAt": "2026-08-16",
+      "extractedFact": "Caieiras é município do estado de São Paulo, código 3509007, na região norte da Grande São Paulo.",
+      "relevanceToReader": "Confirma a classificação administrativa correta da página local."
+    },
+    {
+      "organization": "Procon-SP",
+      "documentTitle": "Municípios conveniados — Caieiras",
+      "sourceLocation": "https://www.procon.sp.gov.br/caieiras/",
+      "checkedAt": "2026-08-16",
+      "extractedFact": "O Procon de Caieiras atende na Avenida Professor Carvalho Pinto, 207 — região do complexo administrativo municipal, em dias úteis, com horários reduzidos em parte dos dias.",
+      "relevanceToReader": "Canal presencial da cidade para reclamações de crédito e consumo, no mesmo endereço da administração municipal."
+    }
+  ],
+  "consumerProtectionResources": [
+    {
+      "organization": "Procon Caieiras",
+      "service": "Atendimento presencial na Avenida Professor Carvalho Pinto, 207 (região do complexo administrativo municipal), em dias úteis — confirmar horários por telefone, pois variam por dia da semana",
+      "officialSource": "https://www.procon.sp.gov.br/caieiras/",
+      "checkedAt": "2026-08-16"
+    },
+    {
+      "organization": "Consumidor.gov.br (plataforma federal)",
+      "service": "Reclamação on-line contra bancos e financeiras, com resposta monitorada — disponível a moradores de qualquer município",
+      "officialSource": "https://www.consumidor.gov.br",
+      "checkedAt": "2026-08-16"
+    }
+  ],
+  "verifiedLocalPrograms": [],
+  "verifiedServiceInformation": [],
+  "uniqueLocalQuestions": [
+    "Onde o morador de Caieiras registra reclamação de consumo presencialmente?",
+    "Como o perfil de cidade compacta entre a serra e a capital afeta o acesso a crédito presencial?",
+    "Trabalhadores da indústria local e de SP: onde entra o consignado CLT?"
+  ],
+  "localRisksOrWarnings": [
+    "Em cidades de porte médio, parte da oferta de crédito chega por correspondentes e abordagem direta; confirmar a instituição autorizada no Banco Central antes de assinar é o filtro essencial."
+  ],
+  "decisionImpact": [
+    "O Procon no complexo administrativo permite resolver a reclamação junto a outros serviços municipais",
+    "A contratação digital amplia a concorrência para além das opções do centro"
+  ],
+  "pendingVerification": [
+    "Horários vigentes por dia da semana e telefones do Procon municipal",
+    "Programas municipais/estaduais de crédito (ex.: Banco do Povo) ativos na cidade",
+    "Lista nominal de agências bancárias no município via dados abertos do BC (Informes_Agencias)"
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "articleSlug": "golpe-da-falsa-central",
+  "claims": [
+    {
+      "claimId": "med-pix",
+      "claimText": "Vítimas de fraude via Pix podem acionar, pelo próprio banco, o Mecanismo Especial de Devolução (MED) do Banco Central, que bloqueia valores na conta de destino quando acionado rapidamente.",
+      "sourceOrganization": "Banco Central do Brasil",
+      "sourceTitle": "Pix — Mecanismo Especial de Devolução",
+      "sourceLocation": "https://www.bcb.gov.br",
+      "sourceType": "official",
+      "accessedAt": "2026-08-16"
+    },
+    {
+      "claimId": "praticas-banco",
+      "claimText": "Instituições financeiras orientam publicamente que não solicitam senha, token, transferência para 'conta segura' nem recolhimento de cartão por telefone — orientação consolidada nas campanhas antifraude do setor (Febraban) e nos canais oficiais dos bancos.",
+      "sourceOrganization": "Febraban (Federação Brasileira de Bancos)",
+      "sourceTitle": "Campanhas antifraude — orientações ao cliente",
+      "sourceLocation": "https://portal.febraban.org.br",
+      "sourceType": "journalistic",
+      "accessedAt": "2026-08-16",
+      "notes": "Referência institucional do setor; a regra é apresentada como orientação consolidada, não como norma legal."
+    },
+    {
+      "claimId": "canais-denuncia",
+      "claimText": "Fraudes envolvendo instituições financeiras podem ser formalizadas no consumidor.gov.br e nos canais de reclamação do Banco Central, além do boletim de ocorrência.",
+      "sourceOrganization": "Senacon / Banco Central do Brasil",
+      "sourceTitle": "consumidor.gov.br e Meu BC — Reclamações",
+      "sourceLocation": "https://www.consumidor.gov.br",
+      "sourceType": "official",
+      "accessedAt": "2026-08-16"
+    }
+  ]
+}

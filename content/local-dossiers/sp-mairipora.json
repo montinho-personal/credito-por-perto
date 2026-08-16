@@ -1,0 +1,73 @@
+{
+  "localityId": "sp-mairipora",
+  "localityName": "Mairiporã",
+  "localityType": "municipality",
+  "stateCode": "sp",
+  "officialAdministrativeStatus": "Município do estado de São Paulo (código IBGE 3528502)",
+  "officialSources": [
+    {
+      "organization": "IBGE",
+      "documentTitle": "Cidades e Estados — Mairiporã (SP)",
+      "sourceLocation": "https://cidades.ibge.gov.br/brasil/sp/mairipora",
+      "checkedAt": "2026-08-16",
+      "extractedFact": "Mairiporã é município do estado de São Paulo, código 3528502, de território extenso na região da Serra da Cantareira.",
+      "relevanceToReader": "Confirma a classificação administrativa e o traço territorial que afeta o acesso a serviços."
+    },
+    {
+      "organization": "Prefeitura de Mairiporã",
+      "documentTitle": "Procon — página oficial",
+      "sourceLocation": "https://www.mairipora.sp.gov.br/procon/",
+      "checkedAt": "2026-08-16",
+      "extractedFact": "O Procon de Mairiporã atende na Avenida Tibiriçá, 374 — Centro (na Central Agiliza), com atendimento ao público de segunda a quarta-feira e audiências de conciliação às quintas e sextas; recebe reclamações pelo e-mail procon@mairipora.sp.gov.br.",
+      "relevanceToReader": "O calendário (atendimento seg–qua; audiências qui–sex) evita deslocamento perdido, relevante numa cidade extensa."
+    },
+    {
+      "organization": "Procon-SP",
+      "documentTitle": "Municípios conveniados — Mairiporã",
+      "sourceLocation": "https://www.procon.sp.gov.br/mairipora/",
+      "checkedAt": "2026-08-16",
+      "extractedFact": "Mairiporã integra a rede de Procons municipais conveniados ao Procon-SP.",
+      "relevanceToReader": "Confirma o vínculo institucional do atendimento local."
+    }
+  ],
+  "consumerProtectionResources": [
+    {
+      "organization": "Procon Mairiporã",
+      "service": "Atendimento presencial na Central Agiliza (Avenida Tibiriçá, 374 — Centro) de segunda a quarta; quintas e sextas reservadas a audiências; reclamações também pelo e-mail procon@mairipora.sp.gov.br",
+      "officialSource": "https://www.mairipora.sp.gov.br/procon/",
+      "checkedAt": "2026-08-16"
+    },
+    {
+      "organization": "Consumidor.gov.br (plataforma federal)",
+      "service": "Reclamação on-line contra bancos e financeiras, com resposta monitorada — disponível a moradores de qualquer município",
+      "officialSource": "https://www.consumidor.gov.br",
+      "checkedAt": "2026-08-16"
+    }
+  ],
+  "verifiedLocalPrograms": [],
+  "verifiedServiceInformation": [
+    {
+      "institution": "Prefeitura de Mairiporã — Central Agiliza",
+      "information": "A Central Agiliza (Avenida Tibiriçá, 374 — Centro) concentra atendimentos públicos municipais, incluindo o Procon.",
+      "officialSource": "https://www.mairipora.sp.gov.br/procon/",
+      "checkedAt": "2026-08-16"
+    }
+  ],
+  "uniqueLocalQuestions": [
+    "Em quais dias o Procon de Mairiporã atende ao público (e em quais só há audiências)?",
+    "Como quem mora nos bairros e condomínios da serra resolve crédito sem descer ao Centro?",
+    "Ofertas de crédito em cidade de território extenso: como conferir quem é autorizado?"
+  ],
+  "localRisksOrWarnings": [
+    "Territórios extensos com atendimento concentrado no Centro aumentam a dependência de canais digitais e correspondentes; a checagem da instituição autorizada no Banco Central é o filtro essencial antes de assinar."
+  ],
+  "decisionImpact": [
+    "Conhecer o calendário do Procon (seg–qua) evita a viagem perdida até o Centro",
+    "Os canais digitais igualam o acesso de quem mora afastado do Centro"
+  ],
+  "pendingVerification": [
+    "Horários vigentes do atendimento na Central Agiliza",
+    "Programas municipais/estaduais de crédito (ex.: Banco do Povo) ativos na cidade",
+    "Lista nominal de agências bancárias no município via dados abertos do BC (Informes_Agencias)"
+  ]
+}

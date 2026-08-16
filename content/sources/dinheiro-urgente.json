@@ -1,0 +1,23 @@
+{
+  "articleSlug": "dinheiro-urgente",
+  "claims": [
+    {
+      "claimId": "instituicao-autorizada",
+      "claimText": "Crédito legítimo, mesmo o de liberação rápida, vem de instituição autorizada pelo Banco Central, consultável no Encontre uma instituição.",
+      "sourceOrganization": "Banco Central do Brasil",
+      "sourceTitle": "Encontre uma instituição",
+      "sourceLocation": "https://www.bcb.gov.br/meubc/encontreinstituicao",
+      "sourceType": "official",
+      "accessedAt": "2026-08-16"
+    },
+    {
+      "claimId": "renegociacao-canal",
+      "claimText": "Contas e dívidas podem ser renegociadas diretamente com o credor, inclusive por canais formais como o consumidor.gov.br, frequentemente com custo menor que o de um crédito de urgência.",
+      "sourceOrganization": "Senacon — consumidor.gov.br",
+      "sourceTitle": "Plataforma consumidor.gov.br",
+      "sourceLocation": "https://www.consumidor.gov.br",
+      "sourceType": "official",
+      "accessedAt": "2026-08-16"
+    }
+  ]
+}

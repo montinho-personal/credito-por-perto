@@ -1,0 +1,66 @@
+{
+  "localityId": "sp-franco-da-rocha",
+  "localityName": "Franco da Rocha",
+  "localityType": "municipality",
+  "stateCode": "sp",
+  "officialAdministrativeStatus": "Município do estado de São Paulo (código IBGE 3516408)",
+  "officialSources": [
+    {
+      "organization": "IBGE",
+      "documentTitle": "Cidades e Estados — Franco da Rocha (SP)",
+      "sourceLocation": "https://cidades.ibge.gov.br/brasil/sp/franco-da-rocha",
+      "checkedAt": "2026-08-16",
+      "extractedFact": "Franco da Rocha é município do estado de São Paulo, código 3516408, na região norte da Grande São Paulo.",
+      "relevanceToReader": "Confirma a classificação administrativa correta da página local."
+    },
+    {
+      "organization": "Prefeitura de Franco da Rocha",
+      "documentTitle": "Procon — carta de serviços",
+      "sourceLocation": "https://www.francodarocha.sp.gov.br/servicos/procon/",
+      "checkedAt": "2026-08-16",
+      "extractedFact": "O Procon municipal atende na Avenida dos Expedicionários, 77 — Centro (junto ao estacionamento do Shopping Franco da Rocha), pela manhã, mediante distribuição de senhas.",
+      "relevanceToReader": "Canal presencial da cidade para reclamações de crédito e consumo; o detalhe das senhas matinais evita viagem perdida."
+    },
+    {
+      "organization": "Procon-SP",
+      "documentTitle": "Municípios conveniados — Franco da Rocha",
+      "sourceLocation": "https://www.procon.sp.gov.br/franco-da-rocha/",
+      "checkedAt": "2026-08-16",
+      "extractedFact": "Franco da Rocha integra a rede de Procons municipais conveniados ao Procon-SP.",
+      "relevanceToReader": "Confirma o vínculo institucional do atendimento local."
+    }
+  ],
+  "consumerProtectionResources": [
+    {
+      "organization": "Procon Franco da Rocha",
+      "service": "Atendimento presencial na Avenida dos Expedicionários, 77 — Centro (região do Shopping Franco da Rocha), pela manhã, com distribuição de senhas",
+      "officialSource": "https://www.francodarocha.sp.gov.br/servicos/procon/",
+      "checkedAt": "2026-08-16"
+    },
+    {
+      "organization": "Consumidor.gov.br (plataforma federal)",
+      "service": "Reclamação on-line contra bancos e financeiras, com resposta monitorada — disponível a moradores de qualquer município",
+      "officialSource": "https://www.consumidor.gov.br",
+      "checkedAt": "2026-08-16"
+    }
+  ],
+  "verifiedLocalPrograms": [],
+  "verifiedServiceInformation": [],
+  "uniqueLocalQuestions": [
+    "Onde e em que horário o morador de Franco da Rocha consegue senha para o Procon?",
+    "Como o papel de polo da região norte (comércio e serviços que atendem cidades vizinhas) afeta a oferta de crédito?",
+    "Quem trabalha em São Paulo e mora no eixo da Linha 7 contrata consignado onde?"
+  ],
+  "localRisksOrWarnings": [
+    "Polos regionais de comércio concentram correspondentes e ofertas de balcão; confirmar a instituição autorizada no Banco Central antes de entregar documentos é o filtro essencial."
+  ],
+  "decisionImpact": [
+    "Saber do atendimento matinal com senhas do Procon evita deslocamento perdido",
+    "A comparação digital amplia as opções de quem depende do comércio central"
+  ],
+  "pendingVerification": [
+    "Horários vigentes e regras de senha do Procon municipal",
+    "Programas municipais/estaduais de crédito (ex.: Banco do Povo) ativos na cidade",
+    "Lista nominal de agências bancárias no município via dados abertos do BC (Informes_Agencias)"
+  ]
+}

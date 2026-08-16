@@ -1,0 +1,43 @@
+{
+  "proposedTitle": "Golpe da falsa central do banco: o roteiro da ligação que rouba você",
+  "primaryIntent": "golpe da falsa central do banco como funciona o que fazer",
+  "secondaryIntents": [
+    "banco liga pedindo senha ou transferência é golpe?",
+    "golpe do motoboy do cartão como funciona"
+  ],
+  "targetReader": "Qualquer correntista — especialmente quem já recebeu 'ligação do banco' sobre compra suspeita ou conta invadida",
+  "readerSituation": "Golpe de maior crescimento no país; SERP tem avisos institucionais dos bancos (autodefensivos) e notícias de casos, mas falta o roteiro desmontado passo a passo com as regras de ouro",
+  "centralQuestion": "Como reconhecer a falsa central no primeiro minuto da ligação e o que fazer durante e depois?",
+  "uniqueAngle": "Desmonta a engenharia social cena a cena (o gancho do medo → a 'verificação' → a 'solução' que é o roubo) e entrega as 3 regras que desarmam qualquer variação — inclusive as com número de telefone clonado (spoofing) e a versão do motoboy que busca o cartão",
+  "originalContribution": [
+    "O roteiro em 3 cenas com a psicologia de cada uma",
+    "As 3 regras de ouro que valem para qualquer variação",
+    "A lista do que banco NUNCA faz por telefone",
+    "Protocolo de reação durante e depois da ligação (incluindo MED do Pix)"
+  ],
+  "primarySources": [
+    "Banco Central — orientações de segurança e MED",
+    "Consumidor.gov.br"
+  ],
+  "supportingSources": ["Febraban — campanhas antifraude (referência institucional)"],
+  "contentArchetype": "safety",
+  "proposedStructure": [
+    "Resposta direta: a regra que desarma tudo",
+    "O roteiro em 3 cenas",
+    "O que banco nunca faz por telefone",
+    "As variações (spoofing, motoboy, falso Pix de teste)",
+    "Durante e depois: protocolo de reação",
+    "FAQ"
+  ],
+  "uniqueExamples": [],
+  "proposedVisuals": ["SafetyAlert", "ChecklistBox"],
+  "pagesThatMayCompete": [
+    "/credito-seguro/como-identificar-golpes-de-emprestimo/",
+    "/credito-seguro/deposito-antecipado-e-golpe/"
+  ],
+  "informationThatMustNotBeRepeated": [
+    "Panorama geral dos golpes de EMPRÉSTIMO (link — este artigo cobre a fraude de conta/cartão)",
+    "Teste de apps (link)"
+  ],
+  "publicationDecision": "create"
+}
