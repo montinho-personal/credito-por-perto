@@ -1,0 +1,47 @@
+{
+  "proposedTitle": "Guia completo do empréstimo: da decisão à assinatura (e ao que vem depois)",
+  "primaryIntent": "como fazer empréstimo guia completo passo a passo",
+  "secondaryIntents": [
+    "o que saber antes de pedir um empréstimo",
+    "qual empréstimo escolher para meu caso"
+  ],
+  "targetReader": "Quem está no começo da jornada — sabe que precisa (ou acha que precisa) de crédito e não sabe por onde começar",
+  "readerSituation": "Buscas amplas caem em páginas de produto de banco ou artigos rasos; não existe um mapa neutro da jornada inteira",
+  "centralQuestion": "Do zero: como decidir se devo pegar empréstimo, qual tipo, quanto, onde, como contratar com segurança e o que fazer depois?",
+  "uniqueAngle": "Página cornerstone: cobre a jornada completa em 6 etapas e funciona como mapa — cada etapa resolve o essencial aqui e aprofunda nos guias especializados do site; é o hub que distribui o leitor, não um resumo raso de tudo",
+  "originalContribution": [
+    "A jornada em 6 etapas com critério de saída de cada uma",
+    "Mapa completo de modalidades em uma tabela única com o guia de cada uma",
+    "Régua dos 4 números que definem qualquer proposta (valor, parcela, CET, total a pagar)",
+    "Seção 'por perfil' conectando os guias de segmento (negativado, MEI, aposentado, servidor, CLT)"
+  ],
+  "primarySources": [
+    "Banco Central — CET, taxas médias e instituições autorizadas",
+    "Planalto — Código de Defesa do Consumidor"
+  ],
+  "supportingSources": [],
+  "contentArchetype": "guide",
+  "proposedStructure": [
+    "Etapa 0: o empréstimo é a resposta certa?",
+    "Etapa 1: escolha a modalidade (mapa completo)",
+    "Etapa 2: descubra quanto cabe no seu orçamento",
+    "Etapa 3: compare propostas como profissional",
+    "Etapa 4: contrate com segurança",
+    "Etapa 5: depois de assinar",
+    "Guias por perfil",
+    "FAQ"
+  ],
+  "uniqueExamples": [],
+  "proposedVisuals": ["Tabela de modalidades", "ChecklistBox por etapa", "KeyTakeaways"],
+  "pagesThatMayCompete": [
+    "/emprestimos/emprestimo-pessoal/",
+    "/organizacao-financeira/quando-vale-a-pena-fazer-emprestimo/",
+    "/emprestimos/como-comparar-propostas-de-credito/"
+  ],
+  "informationThatMustNotBeRepeated": [
+    "Detalhamento de cada modalidade (links aos pilares)",
+    "Passo a passo interno de comparação (link)",
+    "Anatomia de golpes (links ao cluster de segurança)"
+  ],
+  "publicationDecision": "create"
+}

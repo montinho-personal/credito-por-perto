@@ -1,0 +1,41 @@
+{
+  "articleSlug": "guia-completo-de-emprestimo",
+  "claims": [
+    {
+      "claimId": "cet-obrigatorio",
+      "claimText": "As instituições são obrigadas a informar o Custo Efetivo Total (CET) das operações de crédito a pessoas físicas antes da contratação, conforme regulamentação do CMN/Banco Central.",
+      "sourceOrganization": "Banco Central do Brasil",
+      "sourceTitle": "Custo Efetivo Total (CET) — regulamentação",
+      "sourceLocation": "https://www.bcb.gov.br",
+      "sourceType": "official",
+      "accessedAt": "2026-08-16"
+    },
+    {
+      "claimId": "autorizacao-bc",
+      "claimText": "Somente instituições autorizadas pelo Banco Central podem conceder empréstimos ao público, e a autorização pode ser consultada gratuitamente nos canais do BC.",
+      "sourceOrganization": "Banco Central do Brasil",
+      "sourceTitle": "Encontre uma instituição",
+      "sourceLocation": "https://www.bcb.gov.br/meubc/encontreinstituicao",
+      "sourceType": "official",
+      "accessedAt": "2026-08-16"
+    },
+    {
+      "claimId": "arrependimento-cdc",
+      "claimText": "Contratações realizadas fora do estabelecimento comercial (telefone, internet) têm prazo de arrependimento de 7 dias, previsto no art. 49 do Código de Defesa do Consumidor.",
+      "sourceOrganization": "Presidência da República — Planalto",
+      "sourceTitle": "Lei nº 8.078/1990 (Código de Defesa do Consumidor), art. 49",
+      "sourceLocation": "https://www.planalto.gov.br/ccivil_03/leis/l8078compilado.htm",
+      "sourceType": "official",
+      "accessedAt": "2026-08-16"
+    },
+    {
+      "claimId": "taxas-medias-publicas",
+      "claimText": "As taxas médias por modalidade e instituição são públicas na página de taxas de juros do Banco Central.",
+      "sourceOrganization": "Banco Central do Brasil",
+      "sourceTitle": "Taxas de juros de operações de crédito",
+      "sourceLocation": "https://www.bcb.gov.br/estatisticas/txjuros",
+      "sourceType": "official",
+      "accessedAt": "2026-08-16"
+    }
+  ]
+}

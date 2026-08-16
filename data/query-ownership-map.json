@@ -201,5 +201,12 @@
       "/emprestimos/emprestimo-consignado/",
       "/emprestimos/portabilidade-de-credito/"
     ]
+  },
+  "como fazer empréstimo guia completo passo a passo": {
+    "canonicalOwner": "/emprestimos/guia-completo-de-emprestimo/",
+    "supportingPages": [
+      "/organizacao-financeira/quando-vale-a-pena-fazer-emprestimo/",
+      "/organizacao-financeira/como-comparar-propostas-de-credito/"
+    ]
   }
 }

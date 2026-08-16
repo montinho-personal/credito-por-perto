@@ -21,6 +21,37 @@ Uma única URL canônica por localidade; variações
 A divisão administrativa é validada contra `data/localities.json` (códigos
 IBGE) — bairro, região ou condomínio **nunca** é tratado como município.
 
+### Decisão de arquitetura: hierárquica, não plana (16/08/2026)
+
+Avaliada a alternativa plana (`/emprestimo-em-cidade-uf/`), a decisão é
+**manter a hierarquia `/emprestimos/[uf]/[cidade]/`**, por quatro razões:
+
+1. Palavra-chave na URL é fator de ranking marginal no Google atual; a
+   arquitetura de hubs, não — o índice `/emprestimos/sp/` acumula
+   autoridade do cluster e escala a linkagem interna por estado;
+2. Nomes de cidade se repetem entre estados (a versão plana precisaria de
+   sufixo `-uf` de qualquer forma, perdendo a suposta limpeza);
+3. A hierarquia suporta subdivisões reais (caso Alphaville:
+   `/sp/barueri/alphaville/`), impossíveis no formato plano;
+4. As páginas já estão publicadas e indexáveis — migrar agora custaria
+   redirects e reprocessamento sem ganho mensurável.
+
+## Seção de instituições e características locais (padrão desde 16/08/2026)
+
+Cada guia municipal traz a seção **"O perfil financeiro da cidade"**, com:
+
+- **Características reais e decisão-relevantes** (onde ficam os serviços,
+  como a oferta de crédito chega na cidade) — nunca enfeite demográfico
+  (população, gentílico, DDD), que é o padrão das doorway pages;
+- **Presença bancária**: lista nominal de agências somente com fonte
+  oficial datada — preferencialmente os dados abertos do BC
+  (`Informes_Agencias`) — registrada no dossiê e revalidada no ciclo
+  trimestral. Sem dado verificado, a seção publica o **método** de
+  consulta (localizador do banco + Encontre uma instituição do BC) e a
+  lista fica em `pendingVerification`;
+- **Nunca**: ranking de bancos, recomendação, taxa por instituição —
+  fato datado, não avaliação.
+
 ### Caso Alphaville
 
 Alphaville **não é município**: é uma região planejada que abrange áreas de

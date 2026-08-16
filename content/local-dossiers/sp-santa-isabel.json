@@ -61,6 +61,7 @@
   "pendingVerification": [
     "Horários e telefone atuais do Procon municipal (confirmar antes de publicar horário específico)",
     "Participação do município no Banco do Povo Paulista e endereço de atendimento, se houver",
-    "Quais instituições financeiras mantêm agência ou posto de atendimento na cidade"
+    "Quais instituições financeiras mantêm agência ou posto de atendimento na cidade",
+    "Lista nominal de agências bancárias no município via dados abertos do BC (Informes_Agencias) — popular a seção do guia quando os dados forem verificados (API indisponível no ambiente de redação)"
   ]
 }

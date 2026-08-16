@@ -84,6 +84,7 @@
   "pendingVerification": [
     "Horários de funcionamento e telefones atuais do Procon municipal (confirmar por telefone antes de publicar horário específico)",
     "Condições vigentes (limites e taxas) do Banco do Povo Paulista no atendimento local",
-    "Cooperativas de crédito com atuação verificável no município"
+    "Cooperativas de crédito com atuação verificável no município",
+    "Lista nominal de agências bancárias no município via dados abertos do BC (Informes_Agencias) — popular a seção do guia quando os dados forem verificados (API indisponível no ambiente de redação)"
   ]
 }

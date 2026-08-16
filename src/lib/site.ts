@@ -58,6 +58,7 @@ export const FOOTER_NAV = {
     { label: "Acessibilidade", href: "/acessibilidade/" },
   ],
   conteudo: [
+    { label: "Guia completo do empréstimo", href: "/emprestimos/guia-completo-de-emprestimo/" },
     { label: "Empréstimo pessoal", href: "/emprestimos/emprestimo-pessoal/" },
     { label: "Empréstimo consignado", href: "/emprestimos/emprestimo-consignado/" },
     { label: "O que é CET", href: "/juros-e-cet/o-que-e-cet/" },
