@@ -1,0 +1,44 @@
+{
+  "proposedTitle": "RMC e RCC no benefício: que reserva é essa e como cancelar",
+  "primaryIntent": "o que é RMC RCC reserva de margem no benefício e como cancelar",
+  "secondaryIntents": [
+    "desconto RMC apareceu no benefício o que fazer",
+    "cancelar cartão consignado quitar saldo"
+  ],
+  "targetReader": "Beneficiário do INSS (ou familiar) que viu a sigla RMC/RCC no extrato e quer entender e se livrar",
+  "readerSituation": "SERP dividida entre bancos vendendo o cartão e advogados caçando ação revisional; falta o explicador neutro do caminho administrativo",
+  "centralQuestion": "O que significa RMC/RCC no meu extrato, por que ocupa minha margem e qual o caminho real para cancelar?",
+  "uniqueAngle": "Traduz a sigla como o rastro do cartão consignado na margem, separa os dois cenários (contratei sabendo × apareceu sem eu entender) e entrega o fluxo administrativo completo de cancelamento — quitação do saldo, cancelamento formal e liberação da margem — antes de falar em Justiça",
+  "originalContribution": [
+    "Tradução direta: RMC/RCC = fatia da margem reservada pelo cartão consignado/benefício",
+    "Fluxo de cancelamento em 4 passos com o detalhe que trava todo mundo (o saldo devedor)",
+    "Cenário 'não reconheço': ponte com o fluxo de desconto não autorizado",
+    "Critério honesto de quando procurar a Justiça (e quando não precisa)"
+  ],
+  "primarySources": [
+    "Planalto — Lei nº 10.820/2003",
+    "INSS/gov.br — canais oficiais",
+    "Consumidor.gov.br"
+  ],
+  "supportingSources": [],
+  "contentArchetype": "guide",
+  "proposedStructure": [
+    "Resposta direta: o que a sigla significa",
+    "De onde vem: o cartão que reserva margem",
+    "Cenário 1: contratei e quero sair (fluxo de cancelamento)",
+    "Cenário 2: não reconheço (contestação)",
+    "Depois do cancelamento: margem liberada",
+    "FAQ"
+  ],
+  "uniqueExamples": [],
+  "proposedVisuals": ["Tabela RMC × RCC", "ChecklistBox do cancelamento"],
+  "pagesThatMayCompete": [
+    "/emprestimos/cartao-de-credito-consignado/",
+    "/credito-seguro/desconto-nao-autorizado-inss/"
+  ],
+  "informationThatMustNotBeRepeated": [
+    "A armadilha comercial do cartão consignado em si (link ao pilar)",
+    "Fluxo completo de contestação de desconto não autorizado (link)"
+  ],
+  "publicationDecision": "create"
+}

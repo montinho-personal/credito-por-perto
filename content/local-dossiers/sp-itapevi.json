@@ -1,0 +1,65 @@
+{
+  "localityId": "sp-itapevi",
+  "localityName": "Itapevi",
+  "localityType": "municipality",
+  "stateCode": "sp",
+  "officialAdministrativeStatus": "Município do estado de São Paulo (código IBGE 3522505)",
+  "officialSources": [
+    {
+      "organization": "IBGE",
+      "documentTitle": "Cidades e Estados — Itapevi (SP)",
+      "sourceLocation": "https://www.ibge.gov.br/cidades-e-estados/sp/itapevi.html",
+      "checkedAt": "2026-08-16",
+      "extractedFact": "Itapevi é município do estado de São Paulo, código 3522505.",
+      "relevanceToReader": "Confirma a classificação administrativa correta da página local."
+    },
+    {
+      "organization": "Prefeitura de Itapevi — Agência Itapevi de Notícias",
+      "documentTitle": "Resolve Fácil realiza atendimento com agendamento",
+      "sourceLocation": "https://noticias.itapevi.sp.gov.br/resolve-facil-reune-uma-serie-de-atendimentos-em-um-unico-local/",
+      "checkedAt": "2026-08-16",
+      "extractedFact": "O atendimento presencial do Procon de Itapevi é feito no Resolve Fácil (Rua José Michelotti, 347 — Cidade Saúde), em dias úteis, com agendamento on-line pela prefeitura; reclamações também são recebidas pelo e-mail procon@itapevi.sp.gov.br.",
+      "relevanceToReader": "A cidade centraliza os serviços públicos, incluindo defesa do consumidor, em um único polo com agendamento — muda o jeito de acessar o atendimento."
+    }
+  ],
+  "consumerProtectionResources": [
+    {
+      "organization": "Procon Itapevi",
+      "service": "Atendimento presencial no Resolve Fácil (Rua José Michelotti, 347 — Cidade Saúde), com agendamento on-line, e recebimento de reclamações pelo e-mail procon@itapevi.sp.gov.br",
+      "officialSource": "https://noticias.itapevi.sp.gov.br/resolve-facil-reune-uma-serie-de-atendimentos-em-um-unico-local/",
+      "checkedAt": "2026-08-16"
+    },
+    {
+      "organization": "Consumidor.gov.br (plataforma federal)",
+      "service": "Reclamação on-line contra bancos e financeiras, com resposta monitorada — disponível a moradores de qualquer município",
+      "officialSource": "https://www.consumidor.gov.br",
+      "checkedAt": "2026-08-16"
+    }
+  ],
+  "verifiedLocalPrograms": [],
+  "verifiedServiceInformation": [
+    {
+      "institution": "Prefeitura de Itapevi — Resolve Fácil",
+      "information": "O Resolve Fácil (Rua José Michelotti, 347 — Cidade Saúde) reúne diversos atendimentos públicos municipais em um único local, com agendamento pelo site da prefeitura.",
+      "officialSource": "https://noticias.itapevi.sp.gov.br/resolve-facil-reune-uma-serie-de-atendimentos-em-um-unico-local/",
+      "checkedAt": "2026-08-16"
+    }
+  ],
+  "uniqueLocalQuestions": [
+    "Como agendar o atendimento do Procon de Itapevi no Resolve Fácil?",
+    "Trabalhadores CLT do polo industrial e logístico: como funciona o consignado do Crédito do Trabalhador?",
+    "Como conferir quem é autorizado entre as ofertas de crédito que circulam no comércio e nos bairros?"
+  ],
+  "localRisksOrWarnings": [
+    "Ofertas de crédito por telefone/WhatsApp dirigidas a trabalhadores registrados exigem confirmação da instituição nos canais oficiais antes de qualquer contratação."
+  ],
+  "decisionImpact": [
+    "O agendamento on-line do Resolve Fácil evita fila e deslocamento perdido para reclamar",
+    "O consignado CLT dá aos trabalhadores do polo local acesso a juros menores que o crédito pessoal comum"
+  ],
+  "pendingVerification": [
+    "Horários vigentes do Resolve Fácil e regras atuais de agendamento do Procon",
+    "Programas municipais/estaduais de crédito (ex.: Banco do Povo) ativos na cidade",
+    "Lista nominal de agências bancárias no município via dados abertos do BC (Informes_Agencias)"
+  ]
+}

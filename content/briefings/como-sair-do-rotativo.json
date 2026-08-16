@@ -1,0 +1,44 @@
+{
+  "proposedTitle": "Como sair do rotativo do cartão: o plano em 4 movimentos",
+  "primaryIntent": "como sair do rotativo do cartão de crédito",
+  "secondaryIntents": [
+    "rotativo do cartão até quando pode cobrar juros teto 100%",
+    "vale a pena empréstimo para quitar cartão"
+  ],
+  "targetReader": "Quem pagou o mínimo da fatura (uma ou várias vezes) e viu a dívida crescer",
+  "readerSituation": "SERP cheia de conteúdo de banco ('parcele com a gente') e matérias que explicam o problema sem entregar o plano de saída completo",
+  "centralQuestion": "Estou no rotativo: quais são minhas saídas na ordem certa, quanto cada uma custa e quais direitos me protegem?",
+  "uniqueAngle": "Plano de saída em 4 movimentos ordenados (estancar → converter a dívida → cortar a causa → blindar), com os dois direitos que o leitor não conhece: o rotativo só dura até a fatura seguinte (parcelamento obrigatório) e o teto de 100% sobre juros e encargos desde 2024",
+  "originalContribution": [
+    "O plano dos 4 movimentos na ordem certa",
+    "Os dois direitos recentes explicados (30 dias / teto de 100%) com fonte oficial",
+    "Escada de conversão da dívida: parcelamento do emissor × portabilidade × crédito mais barato",
+    "Armadilha do 'pagar o mínimo para manter o limite'"
+  ],
+  "primarySources": [
+    "Agência Gov / Banco Central — regulamentação da Lei nº 14.690/2023 (teto de 100%, portabilidade do rotativo)",
+    "Banco Central/CMN — regra do rotativo até a fatura seguinte (Resolução nº 4.549/2017)"
+  ],
+  "supportingSources": [],
+  "contentArchetype": "guide",
+  "proposedStructure": [
+    "Resposta direta: por que o rotativo é o pior juro do país e o plano resumido",
+    "Seus dois direitos no rotativo",
+    "Movimento 1: estancar (parar de usar o cartão)",
+    "Movimento 2: converter a dívida (a escada)",
+    "Movimento 3: cortar a causa",
+    "Movimento 4: blindar o orçamento",
+    "FAQ"
+  ],
+  "uniqueExamples": [],
+  "proposedVisuals": ["Tabela da escada de conversão", "WhatCanChange"],
+  "pagesThatMayCompete": [
+    "/organizacao-financeira/renegociacao-ou-emprestimo/",
+    "/juros-e-cet/pix-parcelado/"
+  ],
+  "informationThatMustNotBeRepeated": [
+    "Roteiro geral de renegociação (link)",
+    "Explicação do CET (link)"
+  ],
+  "publicationDecision": "create"
+}

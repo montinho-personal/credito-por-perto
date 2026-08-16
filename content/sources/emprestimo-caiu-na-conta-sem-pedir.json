@@ -1,0 +1,33 @@
+{
+  "articleSlug": "emprestimo-caiu-na-conta-sem-pedir",
+  "claims": [
+    {
+      "claimId": "fornecimento-nao-solicitado",
+      "claimText": "O Código de Defesa do Consumidor veda o fornecimento de produto ou serviço sem solicitação prévia (art. 39, III), o que inclui a contratação de crédito não solicitada.",
+      "sourceOrganization": "Presidência da República — Planalto",
+      "sourceTitle": "Lei nº 8.078/1990 (Código de Defesa do Consumidor), art. 39",
+      "sourceLocation": "https://www.planalto.gov.br/ccivil_03/leis/l8078compilado.htm",
+      "sourceType": "official",
+      "accessedAt": "2026-08-16"
+    },
+    {
+      "claimId": "canal-reclamacao",
+      "claimText": "Reclamações formais contra instituições financeiras por operações não solicitadas podem ser registradas no consumidor.gov.br e, quanto a descumprimento de normas, no canal de atendimento do Banco Central.",
+      "sourceOrganization": "Senacon / Banco Central do Brasil",
+      "sourceTitle": "consumidor.gov.br e Meu BC — Reclamações",
+      "sourceLocation": "https://www.consumidor.gov.br",
+      "sourceType": "official",
+      "accessedAt": "2026-08-16"
+    },
+    {
+      "claimId": "devolucao-formal",
+      "claimText": "A devolução de valores creditados sem contratação deve ser feita pelos canais formais da instituição identificada na transferência (com protocolo), nunca por chaves Pix ou contas indicadas por terceiros que entrem em contato.",
+      "sourceOrganization": "Banco Central do Brasil",
+      "sourceTitle": "Orientações de segurança do Pix e canais oficiais",
+      "sourceLocation": "https://www.bcb.gov.br",
+      "sourceType": "official",
+      "accessedAt": "2026-08-16",
+      "notes": "Padrão de golpe do 'depósito engano' amplamente documentado; a orientação de devolver só por canal formal decorre das regras de segurança do BC."
+    }
+  ]
+}

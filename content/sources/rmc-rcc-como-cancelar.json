@@ -1,0 +1,33 @@
+{
+  "articleSlug": "rmc-rcc-como-cancelar",
+  "claims": [
+    {
+      "claimId": "base-legal-margens",
+      "claimText": "A reserva de margem para cartão consignado (RMC) e cartão benefício (RCC) decorre da Lei nº 10.820/2003 e das normas do consignado, que destinam fatias específicas da margem a essas modalidades (5% + 5% na regra vigente do INSS).",
+      "sourceOrganization": "Presidência da República — Planalto",
+      "sourceTitle": "Lei nº 10.820, de 17 de dezembro de 2003",
+      "sourceLocation": "https://www.planalto.gov.br/ccivil_03/leis/2003/l10.820.htm",
+      "sourceType": "official",
+      "accessedAt": "2026-08-16",
+      "notes": "Percentuais sincronizados com MARGIN_RULES (verificados em 06/08/2026)."
+    },
+    {
+      "claimId": "cancelamento-direito",
+      "claimText": "O consumidor pode pedir o cancelamento do cartão consignado à instituição emissora; a liberação da reserva de margem ocorre após a quitação do saldo devedor, e reclamações sobre recusa ou demora podem ser registradas no consumidor.gov.br.",
+      "sourceOrganization": "Senacon — consumidor.gov.br",
+      "sourceTitle": "Plataforma consumidor.gov.br",
+      "sourceLocation": "https://www.consumidor.gov.br",
+      "sourceType": "official",
+      "accessedAt": "2026-08-16"
+    },
+    {
+      "claimId": "extrato-meu-inss",
+      "claimText": "O beneficiário consulta as reservas de margem e os descontos ativos no extrato de empréstimos consignados do Meu INSS.",
+      "sourceOrganization": "Governo Federal — Meu INSS",
+      "sourceTitle": "Extrato de empréstimos consignados",
+      "sourceLocation": "https://meu.inss.gov.br",
+      "sourceType": "official",
+      "accessedAt": "2026-08-16"
+    }
+  ]
+}

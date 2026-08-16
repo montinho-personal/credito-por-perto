@@ -1,0 +1,44 @@
+{
+  "proposedTitle": "Empréstimo caiu na conta sem você pedir: o que fazer (e o que não fazer)",
+  "primaryIntent": "empréstimo caiu na conta sem eu pedir o que fazer",
+  "secondaryIntents": [
+    "dinheiro apareceu na conta posso gastar",
+    "como devolver empréstimo não solicitado"
+  ],
+  "targetReader": "Pessoa (frequentemente aposentado) que encontrou um depósito inesperado seguido de desconto — ou uma ligação de cobrança",
+  "readerSituation": "SERP mistura notícias de casos com conteúdo raso; ninguém entrega o protocolo completo do que fazer nas primeiras 48h",
+  "centralQuestion": "Um valor caiu na minha conta sem contratação: posso usar? Como devolvo? Como cancelo o contrato que criaram no meu nome?",
+  "uniqueAngle": "Protocolo das primeiras 48 horas: não gastar, documentar, identificar a origem, devolver pelo canal formal e cancelar a averbação — mais a distinção crucial entre os 3 cenários (venda agressiva real, fraude com seus dados, e o golpe do 'depósito engano' de quadrilha)",
+  "originalContribution": [
+    "Protocolo 48h em passos numerados",
+    "Taxonomia dos 3 cenários com o risco específico de cada um",
+    "O alerta contra a 'solução' de gastar o dinheiro",
+    "Cenário quadrilha: quando o depósito é isca de engenharia social"
+  ],
+  "primarySources": [
+    "Planalto — Código de Defesa do Consumidor (art. 39)",
+    "Consumidor.gov.br",
+    "Banco Central — canais do cidadão"
+  ],
+  "supportingSources": [],
+  "contentArchetype": "guide",
+  "proposedStructure": [
+    "Resposta direta: os 3 primeiros passos",
+    "Os 3 cenários possíveis",
+    "Protocolo completo de devolução e cancelamento",
+    "Se já descontaram parcelas",
+    "Prevenção",
+    "FAQ"
+  ],
+  "uniqueExamples": [],
+  "proposedVisuals": ["SafetyAlert", "ChecklistBox do protocolo"],
+  "pagesThatMayCompete": [
+    "/credito-seguro/desconto-nao-autorizado-inss/",
+    "/credito-seguro/como-identificar-golpes-de-emprestimo/"
+  ],
+  "informationThatMustNotBeRepeated": [
+    "Fluxo de contestação de desconto no INSS (link)",
+    "Panorama geral de golpes (link)"
+  ],
+  "publicationDecision": "create"
+}

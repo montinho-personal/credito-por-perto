@@ -33,6 +33,30 @@
       "ibgeCode": "3547304"
     },
     {
+      "id": "sp-carapicuiba",
+      "name": "Carapicuíba",
+      "localityType": "municipality",
+      "stateCode": "sp",
+      "citySlug": "carapicuiba",
+      "ibgeCode": "3510609"
+    },
+    {
+      "id": "sp-jandira",
+      "name": "Jandira",
+      "localityType": "municipality",
+      "stateCode": "sp",
+      "citySlug": "jandira",
+      "ibgeCode": "3525003"
+    },
+    {
+      "id": "sp-itapevi",
+      "name": "Itapevi",
+      "localityType": "municipality",
+      "stateCode": "sp",
+      "citySlug": "itapevi",
+      "ibgeCode": "3522505"
+    },
+    {
       "id": "sp-santa-isabel",
       "name": "Santa Isabel",
       "localityType": "municipality",

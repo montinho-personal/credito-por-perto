@@ -208,5 +208,23 @@
       "/organizacao-financeira/quando-vale-a-pena-fazer-emprestimo/",
       "/organizacao-financeira/como-comparar-propostas-de-credito/"
     ]
+  },
+  "o que é RMC RCC reserva de margem no benefício e como cancelar": {
+    "canonicalOwner": "/emprestimos/rmc-rcc-como-cancelar/",
+    "supportingPages": [
+      "/emprestimos/cartao-de-credito-consignado/"
+    ]
+  },
+  "empréstimo caiu na conta sem eu pedir o que fazer": {
+    "canonicalOwner": "/credito-seguro/emprestimo-caiu-na-conta-sem-pedir/",
+    "supportingPages": [
+      "/credito-seguro/desconto-nao-autorizado-inss/"
+    ]
+  },
+  "como sair do rotativo do cartão de crédito": {
+    "canonicalOwner": "/organizacao-financeira/como-sair-do-rotativo/",
+    "supportingPages": [
+      "/organizacao-financeira/renegociacao-ou-emprestimo/"
+    ]
   }
 }

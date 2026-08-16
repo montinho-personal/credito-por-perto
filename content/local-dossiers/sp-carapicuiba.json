@@ -1,0 +1,73 @@
+{
+  "localityId": "sp-carapicuiba",
+  "localityName": "Carapicuíba",
+  "localityType": "municipality",
+  "stateCode": "sp",
+  "officialAdministrativeStatus": "Município do estado de São Paulo (código IBGE 3510609)",
+  "officialSources": [
+    {
+      "organization": "IBGE",
+      "documentTitle": "Cidades e Estados — Carapicuíba (SP)",
+      "sourceLocation": "https://cidades.ibge.gov.br/brasil/sp/carapicuiba",
+      "checkedAt": "2026-08-16",
+      "extractedFact": "Carapicuíba é município do estado de São Paulo, código 3510609, um dos mais populosos da região oeste da Grande São Paulo.",
+      "relevanceToReader": "Confirma a classificação administrativa e o porte da cidade."
+    },
+    {
+      "organization": "Prefeitura de Carapicuíba",
+      "documentTitle": "Procon — Defesa do Consumidor (carta de serviços)",
+      "sourceLocation": "https://www.carapicuiba.sp.gov.br/servico/view/47/procon-defesa-do-consumidor",
+      "checkedAt": "2026-08-16",
+      "extractedFact": "O Procon municipal atende no Ganha Tempo de Carapicuíba (Rua Ernestina Vieira, 149), em dias úteis em horário estendido.",
+      "relevanceToReader": "É o canal presencial da cidade para reclamações de crédito e consumo, dentro do polo de serviços municipal."
+    },
+    {
+      "organization": "Procon-SP",
+      "documentTitle": "Municípios conveniados — Carapicuíba",
+      "sourceLocation": "https://www.procon.sp.gov.br/carapicuiba/",
+      "checkedAt": "2026-08-16",
+      "extractedFact": "Carapicuíba integra a rede de Procons municipais conveniados ao Procon-SP.",
+      "relevanceToReader": "Confirma o vínculo institucional do atendimento local."
+    }
+  ],
+  "consumerProtectionResources": [
+    {
+      "organization": "Procon Carapicuíba",
+      "service": "Atendimento presencial no Ganha Tempo (Rua Ernestina Vieira, 149), o polo municipal que concentra serviços públicos da cidade",
+      "officialSource": "https://www.carapicuiba.sp.gov.br/servico/view/47/procon-defesa-do-consumidor",
+      "checkedAt": "2026-08-16"
+    },
+    {
+      "organization": "Consumidor.gov.br (plataforma federal)",
+      "service": "Reclamação on-line contra bancos e financeiras, com resposta monitorada — disponível a moradores de qualquer município",
+      "officialSource": "https://www.consumidor.gov.br",
+      "checkedAt": "2026-08-16"
+    }
+  ],
+  "verifiedLocalPrograms": [],
+  "verifiedServiceInformation": [
+    {
+      "institution": "Prefeitura de Carapicuíba — Ganha Tempo",
+      "information": "O Ganha Tempo (Rua Ernestina Vieira, 149) concentra serviços públicos municipais, incluindo o atendimento do Procon.",
+      "officialSource": "https://www.carapicuiba.sp.gov.br/servico/view/47/procon-defesa-do-consumidor",
+      "checkedAt": "2026-08-16"
+    }
+  ],
+  "uniqueLocalQuestions": [
+    "Onde o morador de Carapicuíba resolve reclamação de consumo presencialmente?",
+    "Como o perfil de cidade-dormitório (trabalho em SP/Barueri/Osasco) muda as opções de crédito do morador?",
+    "Consignado CLT para quem trabalha em outra cidade: onde se contrata?"
+  ],
+  "localRisksOrWarnings": [
+    "Cidades populosas de perfil dormitório concentram oferta agressiva de crédito por telefone/WhatsApp; a checagem de instituição autorizada no Banco Central é o filtro essencial."
+  ],
+  "decisionImpact": [
+    "O Procon dentro do Ganha Tempo facilita resolver reclamação junto com outros serviços, em um único deslocamento",
+    "O consignado CLT independe da cidade do empregador — direito que muitos moradores desconhecem"
+  ],
+  "pendingVerification": [
+    "Horários vigentes e regras de senha do atendimento do Procon no Ganha Tempo",
+    "Programas municipais/estaduais de crédito (ex.: Banco do Povo) ativos na cidade",
+    "Lista nominal de agências bancárias no município via dados abertos do BC (Informes_Agencias)"
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "articleSlug": "como-sair-do-rotativo",
+  "claims": [
+    {
+      "claimId": "teto-100-por-cento",
+      "claimText": "Desde 03/01/2024, por força da Lei nº 14.690/2023 regulamentada pelo CMN (Resolução nº 5.112/2023), os juros e encargos do rotativo e do parcelamento de fatura não podem exceder 100% do valor original da dívida (o IOF fica fora do limite).",
+      "sourceOrganization": "Agência Gov (EBC) / Banco Central do Brasil",
+      "sourceTitle": "BC e Conselho Monetário regulam medidas da Lei 14.690/2023, incluindo a portabilidade do crédito rotativo",
+      "sourceLocation": "https://agenciagov.ebc.com.br/noticias/202312/bc-regula-medidas-decorrentes-da-lei-14-690-2023-incluindo-a-portabilidade-do-credito-rotativo",
+      "sourceType": "official",
+      "accessedAt": "2026-08-16"
+    },
+    {
+      "claimId": "rotativo-30-dias",
+      "claimText": "Desde 2017 (Resolução CMN nº 4.549), o saldo devedor da fatura só pode permanecer no rotativo até o vencimento da fatura seguinte; a partir daí a instituição deve oferecer parcelamento em condições mais vantajosas que as do rotativo.",
+      "sourceOrganization": "Banco Central do Brasil / CMN",
+      "sourceTitle": "Resolução CMN nº 4.549/2017 — crédito rotativo",
+      "sourceLocation": "https://www.bcb.gov.br",
+      "sourceType": "official",
+      "accessedAt": "2026-08-16"
+    },
+    {
+      "claimId": "portabilidade-rotativo",
+      "claimText": "A regulamentação da Lei nº 14.690/2023 também previu a portabilidade da dívida do rotativo/parcelamento de fatura para outra instituição em condições mais vantajosas.",
+      "sourceOrganization": "Agência Gov (EBC) / Banco Central do Brasil",
+      "sourceTitle": "Portabilidade do crédito rotativo — regulamentação",
+      "sourceLocation": "https://agenciagov.ebc.com.br/noticias/202312/bc-regula-medidas-decorrentes-da-lei-14-690-2023-incluindo-a-portabilidade-do-credito-rotativo",
+      "sourceType": "official",
+      "accessedAt": "2026-08-16"
+    },
+    {
+      "claimId": "taxas-medias-rotativo",
+      "claimText": "As taxas médias do rotativo por instituição são públicas na página de taxas de juros do Banco Central, na modalidade específica de cartão de crédito rotativo.",
+      "sourceOrganization": "Banco Central do Brasil",
+      "sourceTitle": "Taxas de juros de operações de crédito",
+      "sourceLocation": "https://www.bcb.gov.br/estatisticas/txjuros",
+      "sourceType": "official",
+      "accessedAt": "2026-08-16"
+    }
+  ]
+}

@@ -37,9 +37,9 @@ Baseada em varredura real da SERP brasileira (queries e achados em
 
 ## Onda 3 — cauda longa e manutenção
 
-13. RMC/RCC: o que é a "reserva de margem" que aparece no benefício e como cancelar;
-14. Empréstimo caiu na conta sem pedir: o que fazer (devolução, estorno, denúncia);
-15. Como sair do rotativo do cartão (troca de dívida aplicada);
+13. ~~RMC/RCC: reserva de margem e como cancelar~~ — publicado em 16/08/2026;
+14. ~~Empréstimo caiu na conta sem pedir~~ — publicado em 16/08/2026;
+15. ~~Como sair do rotativo do cartão~~ — publicado em 16/08/2026;
 16. Refinanciamento de consignado: quando faz sentido (contraponto ao assédio);
 17. Empréstimo com garantia de celular: como funciona o bloqueio;
 18. Atualizar guia FGTS com os limites vigentes de parcelas antecipáveis (verificar na Caixa antes);
@@ -74,7 +74,7 @@ penalizadas pelo Google (spam policy) e bloqueadas pela nossa auditoria
 
 | Lote | Cidades (em ordem) | Racional |
 | --- | --- | --- |
-| **L1 — corredor oeste da Grande SP** | Barueri*, região de Alphaville*, Santana de Parnaíba, Carapicuíba, Jandira, Itapevi, Cotia | QG do portal; drafts (*) já existem, faltando só verificação de campo; SERPs muito fracas |
+| **L1 — corredor oeste da Grande SP** | Barueri*, região de Alphaville*, ~~Santana de Parnaíba~~ ✔, ~~Carapicuíba~~ ✔, ~~Jandira~~ ✔, ~~Itapevi~~ ✔, Cotia | QG do portal; drafts (*) já existem, faltando só verificação de campo; SERPs muito fracas |
 | **L2 — Grande SP, porte médio** | Santa Isabel, Franco da Rocha, Caieiras, Mairiporã, Vargem Grande Paulista, Embu das Artes, Taboão da Serra | Volume razoável, concorrência quase nula; verificável a distância por fontes oficiais |
 | **L3 — interior de SP** | Salto, Indaiatuba, Itu, Atibaia, Bragança Paulista, Itatiba, Vinhedo | Cidades com "rua financeira" própria; Campinas (draft existente) publica aqui como âncora do lote |
 | **L4 — expansão por estado** | Cidades médias de MG, PR, SC, GO (definir por SERP na hora) | Só após SP consolidado; cada estado abre com 3–5 cidades e o índice `/emprestimos/[uf]/` |

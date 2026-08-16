@@ -1,0 +1,58 @@
+{
+  "localityId": "sp-jandira",
+  "localityName": "Jandira",
+  "localityType": "municipality",
+  "stateCode": "sp",
+  "officialAdministrativeStatus": "Município do estado de São Paulo (código IBGE 3525003)",
+  "officialSources": [
+    {
+      "organization": "IBGE",
+      "documentTitle": "Cidades e Estados — Jandira (SP)",
+      "sourceLocation": "https://www.ibge.gov.br/cidades-e-estados/sp/jandira.html",
+      "checkedAt": "2026-08-16",
+      "extractedFact": "Jandira é município do estado de São Paulo, código 3525003, com cerca de 118 mil habitantes no Censo 2022.",
+      "relevanceToReader": "Confirma a classificação administrativa e o porte da cidade."
+    },
+    {
+      "organization": "Procon-SP",
+      "documentTitle": "Municípios conveniados — Jandira",
+      "sourceLocation": "https://www.procon.sp.gov.br/jandira/",
+      "checkedAt": "2026-08-16",
+      "extractedFact": "O Procon de Jandira atende na Via Expressa Mauri Sebastião Barufi, 1570 — Vila Mercedes, de segunda a quinta em horário comercial, com sextas-feiras reservadas a audiências.",
+      "relevanceToReader": "Canal presencial da cidade para reclamações de crédito e consumo — com a particularidade do calendário de atendimento."
+    }
+  ],
+  "consumerProtectionResources": [
+    {
+      "organization": "Procon Jandira",
+      "service": "Atendimento presencial na Via Expressa Mauri Sebastião Barufi, 1570 — Vila Mercedes, de segunda a quinta (sextas reservadas a audiências de conciliação)",
+      "officialSource": "https://www.procon.sp.gov.br/jandira/",
+      "checkedAt": "2026-08-16"
+    },
+    {
+      "organization": "Consumidor.gov.br (plataforma federal)",
+      "service": "Reclamação on-line contra bancos e financeiras, com resposta monitorada — disponível a moradores de qualquer município",
+      "officialSource": "https://www.consumidor.gov.br",
+      "checkedAt": "2026-08-16"
+    }
+  ],
+  "verifiedLocalPrograms": [],
+  "verifiedServiceInformation": [],
+  "uniqueLocalQuestions": [
+    "Onde e em quais dias o morador de Jandira consegue atendimento do Procon?",
+    "Como comparar as ofertas de crédito do comércio do Centro com as dos canais digitais?",
+    "Quem trabalha registrado fora da cidade pode usar o consignado CLT?"
+  ],
+  "localRisksOrWarnings": [
+    "Em cidades de porte médio, parte relevante da oferta de crédito chega por correspondentes e abordagem direta; confirmar a instituição autorizada no Banco Central antes de entregar documentos é o filtro essencial."
+  ],
+  "decisionImpact": [
+    "Saber que as sextas são reservadas a audiências evita deslocamento perdido ao Procon",
+    "A comparação digital amplia as opções de quem tem poucas agências na cidade"
+  ],
+  "pendingVerification": [
+    "Horários vigentes e telefone atual do Procon municipal",
+    "Programas municipais/estaduais de crédito (ex.: Banco do Povo) ativos na cidade",
+    "Lista nominal de agências bancárias no município via dados abertos do BC (Informes_Agencias)"
+  ]
+}
