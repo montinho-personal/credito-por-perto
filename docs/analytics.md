@@ -12,8 +12,10 @@ Três camadas, independentes entre si:
 
 ## 2. Google Analytics 4 (opcional, com consentimento)
 
-- Desativado por padrão: sem `NEXT_PUBLIC_GA4_MEASUREMENT_ID` real
-  (formato `G-…`), nem o banner de consentimento aparece.
+- Propriedade criada em 16/08/2026; o ID real está como padrão em
+  `src/components/analytics/AnalyticsGate.tsx` (IDs de métrica são públicos
+  por natureza). `NEXT_PUBLIC_GA4_MEASUREMENT_ID`, se definida, tem
+  precedência.
 - Com o ID configurado, o visitante vê o banner (LGPD); o script do GA4 só
   carrega após o "Aceitar". A escolha fica em `localStorage`
   (`cpp-consent-analytics`) e vale para as próximas visitas.

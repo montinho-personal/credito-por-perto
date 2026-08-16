@@ -30,8 +30,9 @@ Tudo o mais já está implementado ou automatizado.
 
 - [ ] ID do Google AdSense (`NEXT_PUBLIC_ADSENSE_CLIENT`) + IDs de slots — só
       após conta aprovada; enquanto isso `NEXT_PUBLIC_ADSENSE_ENABLED=false`
-- [ ] ID do Google Analytics 4 (`NEXT_PUBLIC_GA4_MEASUREMENT_ID`) — opcional;
-      código e banner de consentimento prontos, ver `docs/analytics.md`
+- [x] ID do Google Analytics 4 — propriedade criada pelo proprietário
+      (16/08/2026), ID configurado no código com banner de consentimento;
+      ver `docs/analytics.md`
 - [ ] Ativar Vercel Web Analytics no painel (projeto → Analytics → Enable)
 - [ ] ID do Google Tag Manager (`NEXT_PUBLIC_GTM_ID`) — opcional
 - [ ] Código de verificação do Search Console (`NEXT_PUBLIC_GSC_VERIFICATION`)
