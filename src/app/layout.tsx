@@ -37,6 +37,13 @@ export const metadata: Metadata = {
       "application/rss+xml": `${SITE_URL}/feed.xml`,
     },
   },
+  verification: {
+    // Token público de verificação do Search Console (fornecido pelo
+    // proprietário em 16/08/2026); a env var, se definida, tem precedência.
+    google:
+      process.env.NEXT_PUBLIC_GSC_VERIFICATION ??
+      "k9BnbFalRbgB2DdkWjCBzVzz09uBDHxoC5O96t4k1lU",
+  },
 };
 
 export const viewport: Viewport = {
