@@ -1,0 +1,81 @@
+{
+  "localityId": "sp-taboao-da-serra",
+  "localityName": "Taboão da Serra",
+  "localityType": "municipality",
+  "stateCode": "sp",
+  "officialAdministrativeStatus": "Município do estado de São Paulo (código IBGE 3552809)",
+  "officialSources": [
+    {
+      "organization": "IBGE",
+      "documentTitle": "Cidades e Estados — Taboão da Serra (SP)",
+      "sourceLocation": "https://www.ibge.gov.br/cidades-e-estados/sp/taboao-da-serra.html",
+      "checkedAt": "2026-08-16",
+      "extractedFact": "Taboão da Serra é município do estado de São Paulo, código 3552809, conurbado com a capital.",
+      "relevanceToReader": "Confirma a classificação administrativa e o traço de cidade-fronteira com São Paulo."
+    },
+    {
+      "organization": "Prefeitura de Taboão da Serra",
+      "documentTitle": "Notícias oficiais — Procon e complexo de serviços da Estrada Kizaemon Takeuti",
+      "sourceLocation": "https://www.ts.sp.gov.br/portal/noticias/0/3/1395/procon-de-taboao-da-serra-recebe-viaturas-e-equipamentos-do-procon-sp-para-reforcar-atendimentos/",
+      "checkedAt": "2026-08-16",
+      "extractedFact": "O Procon de Taboão da Serra atende presencialmente, sem agendamento, na Estrada Kizaemon Takeuti, 1.987 — complexo que reúne também a Casa do Empreendedor (com Banco do Povo e Sebrae Aqui) e o Emprega Taboão.",
+      "relevanceToReader": "Um único endereço concentra defesa do consumidor, microcrédito público e apoio ao empreendedor — atalho valioso para o leitor."
+    },
+    {
+      "organization": "Procon-SP",
+      "documentTitle": "Municípios conveniados — Taboão da Serra",
+      "sourceLocation": "https://www.procon.sp.gov.br/taboao-da-serra/",
+      "checkedAt": "2026-08-16",
+      "extractedFact": "Taboão da Serra integra a rede de Procons municipais conveniados ao Procon-SP.",
+      "relevanceToReader": "Confirma o vínculo institucional do atendimento local."
+    }
+  ],
+  "consumerProtectionResources": [
+    {
+      "organization": "Procon Taboão da Serra",
+      "service": "Atendimento presencial sem agendamento na Estrada Kizaemon Takeuti, 1.987, no complexo municipal de serviços",
+      "officialSource": "https://www.ts.sp.gov.br/portal/noticias/0/3/1395/procon-de-taboao-da-serra-recebe-viaturas-e-equipamentos-do-procon-sp-para-reforcar-atendimentos/",
+      "checkedAt": "2026-08-16"
+    },
+    {
+      "organization": "Consumidor.gov.br (plataforma federal)",
+      "service": "Reclamação on-line contra bancos e financeiras, com resposta monitorada — disponível a moradores de qualquer município",
+      "officialSource": "https://www.consumidor.gov.br",
+      "checkedAt": "2026-08-16"
+    }
+  ],
+  "verifiedLocalPrograms": [
+    {
+      "name": "Banco do Povo (na Casa do Empreendedor)",
+      "responsibleEntity": "Programa estadual de microcrédito em parceria com a Prefeitura de Taboão da Serra, com atendimento na Casa do Empreendedor (Estrada Kizaemon Takeuti, 1.987)",
+      "eligibilitySummary": "Microcrédito produtivo para empreendedores formais e informais do município; condições, limites e taxas são definidos pelo programa estadual e devem ser confirmados no atendimento local antes de contratar.",
+      "officialSource": "https://www.ts.sp.gov.br/portal/noticias/0/3/1395/procon-de-taboao-da-serra-recebe-viaturas-e-equipamentos-do-procon-sp-para-reforcar-atendimentos/",
+      "checkedAt": "2026-08-16"
+    }
+  ],
+  "verifiedServiceInformation": [
+    {
+      "institution": "Prefeitura de Taboão da Serra — complexo Kizaemon Takeuti",
+      "information": "A Estrada Kizaemon Takeuti, 1.987 concentra Procon, Casa do Empreendedor (Banco do Povo e Sebrae Aqui) e Emprega Taboão.",
+      "officialSource": "https://www.ts.sp.gov.br/portal/noticias/0/3/1395/procon-de-taboao-da-serra-recebe-viaturas-e-equipamentos-do-procon-sp-para-reforcar-atendimentos/",
+      "checkedAt": "2026-08-16"
+    }
+  ],
+  "uniqueLocalQuestions": [
+    "Onde o morador de Taboão da Serra resolve Procon, microcrédito e emprego num único endereço?",
+    "Quem trabalha na capital e mora em Taboão contrata crédito onde?",
+    "Empreendedores do comércio local: o que o Banco do Povo da Casa do Empreendedor oferece?"
+  ],
+  "localRisksOrWarnings": [
+    "Cidades densas conurbadas com a capital concentram oferta agressiva de crédito de balcão e por telefone; a checagem da instituição autorizada no Banco Central é o filtro essencial."
+  ],
+  "decisionImpact": [
+    "O complexo único (Procon + Banco do Povo + Sebrae) reduz a barreira de acesso a soluções legítimas",
+    "O microcrédito público pode substituir crédito comercial caro para empreendedores elegíveis"
+  ],
+  "pendingVerification": [
+    "Horários vigentes do Procon e da Casa do Empreendedor no complexo",
+    "Condições vigentes (limites e taxas) do Banco do Povo no atendimento local",
+    "Lista nominal de agências bancárias no município via dados abertos do BC (Informes_Agencias)"
+  ]
+}

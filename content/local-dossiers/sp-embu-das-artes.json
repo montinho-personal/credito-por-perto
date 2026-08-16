@@ -1,0 +1,72 @@
+{
+  "localityId": "sp-embu-das-artes",
+  "localityName": "Embu das Artes",
+  "localityType": "municipality",
+  "stateCode": "sp",
+  "officialAdministrativeStatus": "Município (Estância Turística) do estado de São Paulo (código IBGE 3515004)",
+  "officialSources": [
+    {
+      "organization": "IBGE",
+      "documentTitle": "Cidades e Estados — Embu das Artes (SP)",
+      "sourceLocation": "https://www.ibge.gov.br/cidades-e-estados/sp/embu-das-artes.html",
+      "checkedAt": "2026-08-16",
+      "extractedFact": "Embu das Artes é município do estado de São Paulo, código 3515004, com estatuto de Estância Turística.",
+      "relevanceToReader": "Confirma a classificação administrativa e o perfil turístico que molda a economia local."
+    },
+    {
+      "organization": "Prefeitura da Estância Turística de Embu das Artes",
+      "documentTitle": "Procon — endereços e contatos",
+      "sourceLocation": "https://cidadeembudasartes.sp.gov.br/enderecos-e-contatos-2/",
+      "checkedAt": "2026-08-16",
+      "extractedFact": "O Procon de Embu das Artes atende no prédio do Poupatempo (Avenida Rotary, 3483 — Parque Industrial Ramos de Freitas), por ordem de chegada em dias úteis, com assistente virtual por WhatsApp, e mantém unidade no Centro (Avenida Elias Yazbek, 1515).",
+      "relevanceToReader": "Dois pontos de atendimento e canal por WhatsApp — o morador escolhe o caminho mais próximo."
+    },
+    {
+      "organization": "Procon-SP",
+      "documentTitle": "Municípios conveniados — Embu das Artes",
+      "sourceLocation": "https://www.procon.sp.gov.br/embu-das-artes/",
+      "checkedAt": "2026-08-16",
+      "extractedFact": "Embu das Artes integra a rede de Procons municipais conveniados ao Procon-SP.",
+      "relevanceToReader": "Confirma o vínculo institucional do atendimento local."
+    }
+  ],
+  "consumerProtectionResources": [
+    {
+      "organization": "Procon Embu das Artes — Poupatempo",
+      "service": "Atendimento presencial por ordem de chegada no prédio do Poupatempo (Avenida Rotary, 3483 — Parque Industrial Ramos de Freitas), em dias úteis, e assistente virtual por WhatsApp",
+      "officialSource": "https://cidadeembudasartes.sp.gov.br/enderecos-e-contatos-2/",
+      "checkedAt": "2026-08-16"
+    },
+    {
+      "organization": "Procon Embu das Artes — unidade Centro",
+      "service": "Unidade de atendimento na Avenida Elias Yazbek, 1515 — Centro",
+      "officialSource": "https://cidadeembudasartes.sp.gov.br/enderecos-e-contatos-2/",
+      "checkedAt": "2026-08-16"
+    },
+    {
+      "organization": "Consumidor.gov.br (plataforma federal)",
+      "service": "Reclamação on-line contra bancos e financeiras, com resposta monitorada — disponível a moradores de qualquer município",
+      "officialSource": "https://www.consumidor.gov.br",
+      "checkedAt": "2026-08-16"
+    }
+  ],
+  "verifiedLocalPrograms": [],
+  "verifiedServiceInformation": [],
+  "uniqueLocalQuestions": [
+    "Em qual dos dois endereços do Procon de Embu das Artes é melhor buscar atendimento?",
+    "Artesãos e MEIs da feira e do turismo: quais caminhos de crédito servem ao trabalho por conta própria?",
+    "Como conferir as ofertas de crédito do comércio no eixo da Régis Bittencourt?"
+  ],
+  "localRisksOrWarnings": [
+    "Economia com forte presença de autônomos e MEIs atrai oferta de crédito informal; a checagem da instituição autorizada no Banco Central é o filtro essencial antes de qualquer contratação."
+  ],
+  "decisionImpact": [
+    "Dois pontos de Procon + WhatsApp reduzem o custo de formalizar reclamação",
+    "Autônomos e MEIs têm caminhos próprios de comprovação que evitam o crédito caro 'sem consulta'"
+  ],
+  "pendingVerification": [
+    "Horários vigentes e telefones das duas unidades do Procon",
+    "Programas municipais/estaduais de crédito (ex.: Banco do Povo) ativos na cidade",
+    "Lista nominal de agências bancárias no município via dados abertos do BC (Informes_Agencias)"
+  ]
+}

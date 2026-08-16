@@ -33,6 +33,22 @@
       "ibgeCode": "3547304"
     },
     {
+      "id": "sp-embu-das-artes",
+      "name": "Embu das Artes",
+      "localityType": "municipality",
+      "stateCode": "sp",
+      "citySlug": "embu-das-artes",
+      "ibgeCode": "3515004"
+    },
+    {
+      "id": "sp-taboao-da-serra",
+      "name": "Taboão da Serra",
+      "localityType": "municipality",
+      "stateCode": "sp",
+      "citySlug": "taboao-da-serra",
+      "ibgeCode": "3552809"
+    },
+    {
       "id": "sp-franco-da-rocha",
       "name": "Franco da Rocha",
       "localityType": "municipality",
