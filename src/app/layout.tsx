@@ -3,7 +3,9 @@ import { Inter, Source_Serif_4 } from "next/font/google";
 import { SITE_NAME, SITE_DESCRIPTION, SITE_URL } from "@/lib/site";
 import { SiteHeader } from "@/components/layout/SiteHeader";
 import { SiteFooter } from "@/components/layout/SiteFooter";
+import { Analytics } from "@vercel/analytics/next";
 import { AdsenseScript } from "@/components/ads/AdsenseScript";
+import { AnalyticsGate } from "@/components/analytics/AnalyticsGate";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { organizationJsonLd, webSiteJsonLd } from "@/lib/schema/jsonld";
 import "@/styles/globals.css";
@@ -63,6 +65,8 @@ export default function RootLayout({
         </main>
         <SiteFooter />
         <AdsenseScript />
+        <AnalyticsGate />
+        <Analytics />
       </body>
     </html>
   );
