@@ -1,18 +1,34 @@
 import type { Metadata } from "next";
 import { buildMetadata } from "@/lib/metadata/build";
 import { getRecentArticles } from "@/lib/content/articles";
-import { ArticleCard } from "@/components/ui/cards";
+import { getArticleThemes } from "@/lib/content/themes";
+import { CATEGORIES } from "@/lib/content/categories";
+import { formatDateBR } from "@/components/content/sources";
 import { Breadcrumbs } from "@/components/layout/Breadcrumbs";
+import {
+  ArticlesExplorer,
+  type ExplorerItem,
+} from "@/components/articles/ArticlesExplorer";
 
 export const metadata: Metadata = buildMetadata({
   title: "Blog: todos os guias e artigos sobre crédito",
   description:
-    "Todos os conteúdos publicados pelo Crédito por Perto, do mais recente ao mais antigo: modalidades de empréstimo, juros, CET, segurança e organização financeira.",
+    "Todos os conteúdos publicados pelo Crédito por Perto, filtráveis por tema: consignado, FGTS, juros e CET, golpes, dívidas e mais — do mais recente ao mais antigo.",
   path: "/artigos/",
 });
 
 export default function ArtigosPage() {
-  const articles = getRecentArticles(500);
+  const items: ExplorerItem[] = getRecentArticles(500).map((article) => ({
+    url: article.urlPath,
+    title: article.frontmatter.title,
+    description: article.frontmatter.description,
+    sectionLabel: CATEGORIES[article.frontmatter.category].label,
+    updatedLabel: formatDateBR(
+      article.frontmatter.updatedAt ?? article.frontmatter.publishedAt,
+    ),
+    themes: getArticleThemes(article.frontmatter),
+  }));
+
   return (
     <div className="mx-auto max-w-6xl px-4 py-8">
       <Breadcrumbs
@@ -25,14 +41,11 @@ export default function ArtigosPage() {
         Todos os conteúdos
       </h1>
       <p className="mt-3 max-w-2xl text-lg text-brand-muted">
-        Guias e artigos em ordem de atualização. Cada conteúdo indica autoria,
-        datas e fontes consultadas.
+        Guias e artigos em ordem de atualização. Filtre por tema para chegar
+        direto ao assunto — cada conteúdo indica autoria, datas e fontes
+        consultadas.
       </p>
-      <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-        {articles.map((article) => (
-          <ArticleCard key={article.urlPath} article={article} />
-        ))}
-      </div>
+      <ArticlesExplorer items={items} />
     </div>
   );
 }
