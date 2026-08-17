@@ -1,5 +1,23 @@
 # Playbook de copywriting — padrão "primeira posição"
 
+## 0. A régua da leveza (regra do proprietário, 16/08/2026 — vale acima de tudo)
+
+O leitor comum precisa entender **sem esforço**. Auditado por
+`pnpm audit:readability` (média ≤ 22 palavras/frase; ≤ 15% de frases com
+30+ palavras; ≤ 1,2 travessões/100 palavras).
+
+- **Frases curtas.** Uma ideia por frase. Ponto final é seu melhor amigo.
+  Se a frase pede vírgula dupla ou travessão para caber, quebre em duas;
+- **Travessão é exceção**, não tempero. Nada de comentário dentro de
+  comentário. Reescreva o aparte como frase própria;
+- **Conversa, não palestra.** Escreva como quem explica por áudio de
+  WhatsApp para um amigo: "você", verbos concretos, zero pompa;
+- **Exemplo antes da regra.** Primeiro a cena ("você pega R$ 1.000..."),
+  depois o conceito. Analogia do dia a dia para todo conceito difícil;
+- **Parágrafos que respiram**: 2 a 3 frases. Assunto novo, parágrafo novo;
+- **Teste do áudio**: leia em voz alta. Onde faltar fôlego, falta ponto
+  final.
+
 Vale para **todo** artigo do portal (nacional e local). O objetivo é sempre o
 mesmo: ser o resultado que o Google escolhe como resposta e o texto que o
 leitor termina de ler.
