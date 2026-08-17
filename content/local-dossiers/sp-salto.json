@@ -1,0 +1,66 @@
+{
+  "localityId": "sp-salto",
+  "localityName": "Salto",
+  "localityType": "municipality",
+  "stateCode": "sp",
+  "officialAdministrativeStatus": "Município (Estância Turística) do estado de São Paulo (código IBGE 3545209)",
+  "officialSources": [
+    {
+      "organization": "IBGE",
+      "documentTitle": "Cidades e Estados — Salto (SP)",
+      "sourceLocation": "https://www.ibge.gov.br/cidades-e-estados/sp/salto.html",
+      "checkedAt": "2026-08-16",
+      "extractedFact": "Salto é município do estado de São Paulo, código 3545209, com estatuto de Estância Turística, conurbado com Itu.",
+      "relevanceToReader": "Confirma a classificação administrativa e o traço de conurbação que molda a vida financeira local."
+    },
+    {
+      "organization": "Prefeitura da Estância Turística de Salto",
+      "documentTitle": "Procon — serviços para o cidadão",
+      "sourceLocation": "https://salto.sp.gov.br/servicos-para-o-cidadao/procon/",
+      "checkedAt": "2026-08-16",
+      "extractedFact": "O Procon de Salto atende na Rua Itapiru, 983 — Bela Vista, de segunda a quinta das 8h às 17h e sexta das 9h30 às 17h, com e-mail procon@salto.sp.gov.br.",
+      "relevanceToReader": "Horário amplo (raro na região) e canal de e-mail — o morador formaliza reclamação com facilidade."
+    },
+    {
+      "organization": "Procon-SP",
+      "documentTitle": "Municípios conveniados — Salto",
+      "sourceLocation": "https://www.procon.sp.gov.br/salto/",
+      "checkedAt": "2026-08-16",
+      "extractedFact": "Salto integra a rede de Procons municipais conveniados ao Procon-SP.",
+      "relevanceToReader": "Confirma o vínculo institucional do atendimento local."
+    }
+  ],
+  "consumerProtectionResources": [
+    {
+      "organization": "Procon Salto",
+      "service": "Atendimento presencial na Rua Itapiru, 983 — Bela Vista, de segunda a quinta (8h–17h) e sexta (9h30–17h), e recebimento de reclamações pelo e-mail procon@salto.sp.gov.br",
+      "officialSource": "https://salto.sp.gov.br/servicos-para-o-cidadao/procon/",
+      "checkedAt": "2026-08-16"
+    },
+    {
+      "organization": "Consumidor.gov.br (plataforma federal)",
+      "service": "Reclamação on-line contra bancos e financeiras, com resposta monitorada — disponível a moradores de qualquer município",
+      "officialSource": "https://www.consumidor.gov.br",
+      "checkedAt": "2026-08-16"
+    }
+  ],
+  "verifiedLocalPrograms": [],
+  "verifiedServiceInformation": [],
+  "uniqueLocalQuestions": [
+    "Onde e em quais horários o morador de Salto consegue atendimento do Procon?",
+    "Vida financeira dividida entre Salto, Itu e Indaiatuba: onde contratar e onde reclamar?",
+    "Trabalhadores da indústria local: como usar o consignado CLT a favor?"
+  ],
+  "localRisksOrWarnings": [
+    "Cidades conurbadas concentram oferta de crédito dos dois lados da divisa; confirmar a instituição autorizada no Banco Central antes de assinar é o filtro essencial."
+  ],
+  "decisionImpact": [
+    "O horário amplo do Procon (até 17h) facilita formalizar reclamação sem faltar ao trabalho",
+    "A comparação digital amplia as opções para além do comércio do centro"
+  ],
+  "pendingVerification": [
+    "Horários vigentes e telefone do Procon municipal",
+    "Programas municipais/estaduais de crédito (ex.: Banco do Povo) ativos na cidade",
+    "Lista nominal de agências bancárias no município via dados abertos do BC (Informes_Agencias)"
+  ]
+}

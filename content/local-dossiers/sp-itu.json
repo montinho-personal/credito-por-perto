@@ -1,0 +1,66 @@
+{
+  "localityId": "sp-itu",
+  "localityName": "Itu",
+  "localityType": "municipality",
+  "stateCode": "sp",
+  "officialAdministrativeStatus": "Município (Estância Turística) do estado de São Paulo (código IBGE 3523909)",
+  "officialSources": [
+    {
+      "organization": "IBGE",
+      "documentTitle": "Cidades e Estados — Itu (SP)",
+      "sourceLocation": "https://www.ibge.gov.br/cidades-e-estados/sp/itu.html",
+      "checkedAt": "2026-08-16",
+      "extractedFact": "Itu é município do estado de São Paulo, código 3523909, com estatuto de Estância Turística e papel de polo regional histórico.",
+      "relevanceToReader": "Confirma a classificação administrativa e o perfil de polo regional."
+    },
+    {
+      "organization": "Prefeitura da Estância Turística de Itu",
+      "documentTitle": "Procon — comunicados oficiais",
+      "sourceLocation": "https://itu.sp.gov.br/tag/procon/",
+      "checkedAt": "2026-08-16",
+      "extractedFact": "O Procon de Itu atende na Rodovia Waldomiro Corrêa de Camargo, nº 14 — Cidade Nova, de segunda a sexta, das 9h às 15h.",
+      "relevanceToReader": "Endereço e janela de atendimento (9h–15h) — mais curta que o horário comercial; evita viagem perdida."
+    },
+    {
+      "organization": "Procon-SP",
+      "documentTitle": "Municípios conveniados — Itu",
+      "sourceLocation": "https://www.procon.sp.gov.br/itu/",
+      "checkedAt": "2026-08-16",
+      "extractedFact": "Itu integra a rede de Procons municipais conveniados ao Procon-SP.",
+      "relevanceToReader": "Confirma o vínculo institucional do atendimento local."
+    }
+  ],
+  "consumerProtectionResources": [
+    {
+      "organization": "Procon Itu",
+      "service": "Atendimento presencial na Rodovia Waldomiro Corrêa de Camargo, nº 14 — Cidade Nova, de segunda a sexta, das 9h às 15h",
+      "officialSource": "https://itu.sp.gov.br/tag/procon/",
+      "checkedAt": "2026-08-16"
+    },
+    {
+      "organization": "Consumidor.gov.br (plataforma federal)",
+      "service": "Reclamação on-line contra bancos e financeiras, com resposta monitorada — disponível a moradores de qualquer município",
+      "officialSource": "https://www.consumidor.gov.br",
+      "checkedAt": "2026-08-16"
+    }
+  ],
+  "verifiedLocalPrograms": [],
+  "verifiedServiceInformation": [],
+  "uniqueLocalQuestions": [
+    "Onde e em qual janela de horário o Procon de Itu atende?",
+    "Centro histórico e comércio tradicional: como conferir correspondentes e balcões de crédito?",
+    "Moradores da região que resolvem a vida em Itu: quais canais valem para quem é de fora?"
+  ],
+  "localRisksOrWarnings": [
+    "Polos regionais de comércio tradicional concentram balcões e correspondentes de crédito; a checagem da instituição autorizada no Banco Central antes de assinar é o filtro essencial."
+  ],
+  "decisionImpact": [
+    "Conhecer a janela 9h–15h do Procon evita deslocamento perdido",
+    "A comparação pelo CET protege quem negocia no comércio tradicional"
+  ],
+  "pendingVerification": [
+    "Horários e telefones vigentes do Procon municipal",
+    "Programas municipais/estaduais de crédito (ex.: Banco do Povo) ativos na cidade",
+    "Lista nominal de agências bancárias no município via dados abertos do BC (Informes_Agencias)"
+  ]
+}

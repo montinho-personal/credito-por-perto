@@ -85,7 +85,7 @@ penalizadas pelo Google (spam policy) e bloqueadas pela nossa auditoria
 | --- | --- | --- |
 | **L1 — corredor oeste da Grande SP** | ~~Barueri~~ ✔, ~~região de Alphaville~~ ✔, ~~Santana de Parnaíba~~ ✔, ~~Carapicuíba~~ ✔, ~~Jandira~~ ✔, ~~Itapevi~~ ✔, ~~Cotia~~ ✔ — **lote concluído (16/08/2026)** | QG do portal; drafts (*) já existem, faltando só verificação de campo; SERPs muito fracas |
 | **L2 — Grande SP, porte médio** | ~~Santa Isabel~~ ✔, ~~Franco da Rocha~~ ✔, ~~Caieiras~~ ✔, ~~Mairiporã~~ ✔, ~~Embu das Artes~~ ✔, ~~Taboão da Serra~~ ✔; Vargem Grande Paulista pendente (Procon sem fonte oficial on-line — verificar por telefone/151 antes de publicar) | Volume razoável, concorrência quase nula; verificável a distância por fontes oficiais |
-| **L3 — interior de SP** | Salto, Indaiatuba, Itu, Atibaia, Bragança Paulista, Itatiba, Vinhedo | Cidades com "rua financeira" própria; Campinas (draft existente) publica aqui como âncora do lote |
+| **L3 — interior de SP** | ~~Salto~~ ✔, ~~Indaiatuba~~ ✔, ~~Itu~~ ✔, Atibaia, Bragança Paulista, Itatiba, Vinhedo | Cidades com "rua financeira" própria; Campinas (draft existente) publica aqui como âncora do lote |
 | **L4 — expansão por estado** | Cidades médias de MG, PR, SC, GO (definir por SERP na hora) | Só após SP consolidado; cada estado abre com 3–5 cidades e o índice `/emprestimos/[uf]/` |
 | Osasco, Campinas, capitais | Ao final de cada lote regional | Grandes demais para um site novo; entram quando o cluster local já rankeia |
 

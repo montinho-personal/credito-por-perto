@@ -33,6 +33,30 @@
       "ibgeCode": "3547304"
     },
     {
+      "id": "sp-salto",
+      "name": "Salto",
+      "localityType": "municipality",
+      "stateCode": "sp",
+      "citySlug": "salto",
+      "ibgeCode": "3545209"
+    },
+    {
+      "id": "sp-indaiatuba",
+      "name": "Indaiatuba",
+      "localityType": "municipality",
+      "stateCode": "sp",
+      "citySlug": "indaiatuba",
+      "ibgeCode": "3520509"
+    },
+    {
+      "id": "sp-itu",
+      "name": "Itu",
+      "localityType": "municipality",
+      "stateCode": "sp",
+      "citySlug": "itu",
+      "ibgeCode": "3523909"
+    },
+    {
       "id": "sp-embu-das-artes",
       "name": "Embu das Artes",
       "localityType": "municipality",

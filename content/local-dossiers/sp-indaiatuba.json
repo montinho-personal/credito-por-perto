@@ -1,0 +1,66 @@
+{
+  "localityId": "sp-indaiatuba",
+  "localityName": "Indaiatuba",
+  "localityType": "municipality",
+  "stateCode": "sp",
+  "officialAdministrativeStatus": "Município do estado de São Paulo (código IBGE 3520509)",
+  "officialSources": [
+    {
+      "organization": "IBGE",
+      "documentTitle": "Cidades e Estados — Indaiatuba (SP)",
+      "sourceLocation": "https://www.ibge.gov.br/cidades-e-estados/sp/indaiatuba.html",
+      "checkedAt": "2026-08-16",
+      "extractedFact": "Indaiatuba é município do estado de São Paulo, código 3520509, na região metropolitana de Campinas.",
+      "relevanceToReader": "Confirma a classificação administrativa correta da página local."
+    },
+    {
+      "organization": "Procon-SP",
+      "documentTitle": "Municípios conveniados — Indaiatuba",
+      "sourceLocation": "https://www.procon.sp.gov.br/indaiatuba/",
+      "checkedAt": "2026-08-16",
+      "extractedFact": "O cadastro do Procon-SP registra o Procon de Indaiatuba na Rua 24 de Maio, 1670 — Vila Furlan (Ponto Cidadão).",
+      "relevanceToReader": "Endereço de referência do atendimento municipal de defesa do consumidor."
+    },
+    {
+      "organization": "Prefeitura de Indaiatuba",
+      "documentTitle": "Notícias oficiais — mudanças de endereço do Procon",
+      "sourceLocation": "https://www.indaiatuba.sp.gov.br/comunicacao/imprensa/noticias/16072/",
+      "checkedAt": "2026-08-16",
+      "extractedFact": "A prefeitura noticiou mais de uma mudança de sede do Procon nos últimos anos (incluindo endereço na Av. Francisco de Paula Leite, 2263 — Jardim Kyoto II).",
+      "relevanceToReader": "Como a sede já mudou mais de uma vez, o morador deve confirmar o endereço vigente por telefone antes do deslocamento."
+    }
+  ],
+  "consumerProtectionResources": [
+    {
+      "organization": "Procon Indaiatuba",
+      "service": "Atendimento presencial (endereço de referência no cadastro do Procon-SP: Rua 24 de Maio, 1670 — Vila Furlan, no Ponto Cidadão); a sede já mudou mais de uma vez — confirmar endereço e horário vigentes por telefone antes de ir",
+      "officialSource": "https://www.procon.sp.gov.br/indaiatuba/",
+      "checkedAt": "2026-08-16"
+    },
+    {
+      "organization": "Consumidor.gov.br (plataforma federal)",
+      "service": "Reclamação on-line contra bancos e financeiras, com resposta monitorada — disponível a moradores de qualquer município",
+      "officialSource": "https://www.consumidor.gov.br",
+      "checkedAt": "2026-08-16"
+    }
+  ],
+  "verifiedLocalPrograms": [],
+  "verifiedServiceInformation": [],
+  "uniqueLocalQuestions": [
+    "Qual é o endereço vigente do Procon de Indaiatuba (histórico de mudanças de sede)?",
+    "Numa cidade de renda alta e serviços fortes, como usar a concorrência bancária a favor?",
+    "Trabalhadores do polo industrial: consignado CLT e portabilidade na prática"
+  ],
+  "localRisksOrWarnings": [
+    "Cidades de renda mais alta atraem golpes sofisticados (falso gerente, falsas oportunidades); a confirmação por canal oficial antes de qualquer movimentação é o filtro essencial."
+  ],
+  "decisionImpact": [
+    "Confirmar a sede vigente do Procon evita deslocamento perdido",
+    "A concorrência bancária local forte melhora propostas para quem compara e usa portabilidade"
+  ],
+  "pendingVerification": [
+    "Endereço e horários vigentes do Procon (histórico de mudanças de sede)",
+    "Programas municipais/estaduais de crédito (ex.: Banco do Povo) ativos na cidade",
+    "Lista nominal de agências bancárias no município via dados abertos do BC (Informes_Agencias)"
+  ]
+}
