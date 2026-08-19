@@ -1,0 +1,96 @@
+{
+  "localityId": "sp-atibaia",
+  "localityName": "Atibaia",
+  "localityType": "municipality",
+  "stateCode": "sp",
+  "officialAdministrativeStatus": "Município (Estância de Atibaia) do estado de São Paulo (código IBGE 3504107)",
+  "officialSources": [
+    {
+      "organization": "IBGE",
+      "documentTitle": "Cidades e Estados — Atibaia (SP)",
+      "sourceLocation": "https://www.ibge.gov.br/cidades-e-estados/sp/atibaia.html",
+      "checkedAt": "2026-08-19",
+      "extractedFact": "Atibaia é município do estado de São Paulo, código 3504107, com 158.647 habitantes no Censo 2022.",
+      "relevanceToReader": "Confirma porte e classificação administrativa da cidade."
+    },
+    {
+      "organization": "Prefeitura de Atibaia",
+      "documentTitle": "Notícias oficiais — Procon de Atibaia",
+      "sourceLocation": "https://www.atibaia.sp.gov.br/noticias/procuradoria-geral/procon-de-atibaia-realiza-acao-de-orientacao-na-semana-do-consumidor",
+      "checkedAt": "2026-08-19",
+      "extractedFact": "O Procon de Atibaia atende na Rua Bruno Sargiani, nº 31, de segunda a sexta, das 9h às 16h, pelos telefones (11) 4414-2360, 4414-2366, 4414-2367, 4414-2368 e 4414-2370, e on-line pelo protocolo digital Atibaia Sem Papel (atibaia.1doc.com.br/atendimento).",
+      "relevanceToReader": "Endereço, horário, telefones e canal digital do órgão de defesa do consumidor."
+    },
+    {
+      "organization": "Prefeitura de Atibaia",
+      "documentTitle": "Facilita — central de serviços no Centro de Atibaia",
+      "sourceLocation": "https://www.atibaia.sp.gov.br/servicos/facilita",
+      "checkedAt": "2026-08-19",
+      "extractedFact": "O Facilita, na Rua Castro Fafe, nº 295 — Centro, reúne a Secretaria de Desenvolvimento Econômico e o Banco do Povo, com atendimento de segunda a sexta, das 9h às 16h.",
+      "relevanceToReader": "Onde fica o balcão do microcrédito público municipal."
+    },
+    {
+      "organization": "Prefeitura de Atibaia",
+      "documentTitle": "Carta de Serviços — Banco do Povo",
+      "sourceLocation": "https://cartadeservicos.atibaia.sp.gov.br/externa/servicos/260",
+      "checkedAt": "2026-08-19",
+      "extractedFact": "O Banco do Povo em Atibaia oferece microcrédito para estruturação, reforma, estoque e capital de giro de pequenos negócios, com atendimento na sede da SEDEC (Rua Castro Fafe, 295, térreo — Centro) e WhatsApp (11) 95059-9517.",
+      "relevanceToReader": "Alternativa pública de crédito produtivo antes das linhas comerciais."
+    },
+    {
+      "organization": "Prefeitura de Atibaia",
+      "documentTitle": "Convênio com a Desenvolve SP para crédito a empreendedores",
+      "sourceLocation": "https://www.atibaia.sp.gov.br/noticias/desenvolvimento-economico/prefeitura-de-atibaia-firma-convenio-com-a-desenvolve-sp-e-amplia-acesso-ao-credito-para-empreendedores-no-municipio",
+      "checkedAt": "2026-08-19",
+      "extractedFact": "A prefeitura firmou convênio com a Desenvolve SP (agência de fomento do estado) para ampliar o acesso a crédito de empreendedores do município.",
+      "relevanceToReader": "Segunda porta pública de crédito para quem empreende na cidade."
+    }
+  ],
+  "consumerProtectionResources": [
+    {
+      "organization": "Procon Atibaia",
+      "service": "Atendimento presencial na Rua Bruno Sargiani, nº 31, de segunda a sexta, das 9h às 16h; telefones (11) 4414-2360 / 2366 / 2367 / 2368 / 2370; protocolo digital pelo Atibaia Sem Papel",
+      "officialSource": "https://www.atibaia.sp.gov.br/noticias/procuradoria-geral/procon-de-atibaia-realiza-acao-de-orientacao-na-semana-do-consumidor",
+      "checkedAt": "2026-08-19"
+    },
+    {
+      "organization": "Consumidor.gov.br (plataforma federal)",
+      "service": "Reclamação on-line contra bancos e financeiras, com resposta monitorada — disponível a moradores de qualquer município",
+      "officialSource": "https://www.consumidor.gov.br",
+      "checkedAt": "2026-08-19"
+    }
+  ],
+  "verifiedLocalPrograms": [
+    {
+      "program": "Banco do Povo (microcrédito produtivo)",
+      "detail": "Atendimento no Facilita — Rua Castro Fafe, 295, térreo, Centro; seg–sex 9h–16h; WhatsApp (11) 95059-9517",
+      "officialSource": "https://cartadeservicos.atibaia.sp.gov.br/externa/servicos/260",
+      "checkedAt": "2026-08-19"
+    },
+    {
+      "program": "Convênio Desenvolve SP",
+      "detail": "Linhas da agência de fomento estadual para empreendedores do município, via Secretaria de Desenvolvimento Econômico",
+      "officialSource": "https://www.atibaia.sp.gov.br/noticias/desenvolvimento-economico/prefeitura-de-atibaia-firma-convenio-com-a-desenvolve-sp-e-amplia-acesso-ao-credito-para-empreendedores-no-municipio",
+      "checkedAt": "2026-08-19"
+    }
+  ],
+  "verifiedServiceInformation": [],
+  "uniqueLocalQuestions": [
+    "Onde fica o Procon de Atibaia e como abrir reclamação sem sair de casa (Atibaia Sem Papel)?",
+    "Quem vive do turismo e de eventos, com renda sazonal, dimensiona parcela como?",
+    "Onde pedir microcrédito público (Banco do Povo no Facilita) antes de recorrer a financeira?"
+  ],
+  "localRisksOrWarnings": [
+    "Economia turística concentra trabalhadores por conta própria e renda sazonal; parcela dimensionada pelo mês fraco é regra local, não detalhe.",
+    "Cidades de porte médio com comércio aquecido atraem correspondentes e ofertas de balcão; a checagem no Banco Central antes de assinar continua sendo o filtro."
+  ],
+  "decisionImpact": [
+    "O Atibaia Sem Papel permite registrar reclamação no Procon sem deslocamento",
+    "O Banco do Povo no Facilita pode custar menos que crédito comercial para o pequeno negócio"
+  ],
+  "pendingVerification": [
+    "Confirmação telefônica dos horários vigentes do Procon e do Facilita",
+    "Condições atuais das linhas do convênio Desenvolve SP",
+    "Lista nominal de agências bancárias no município via dados abertos do BC (Informes_Agencias)"
+  ]
+}

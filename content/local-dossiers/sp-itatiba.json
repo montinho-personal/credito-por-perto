@@ -1,0 +1,74 @@
+{
+  "localityId": "sp-itatiba",
+  "localityName": "Itatiba",
+  "localityType": "municipality",
+  "stateCode": "sp",
+  "officialAdministrativeStatus": "Município do estado de São Paulo (código IBGE 3523404)",
+  "officialSources": [
+    {
+      "organization": "Prefeitura de Itatiba",
+      "documentTitle": "Itatiba tem população de 122.424 pessoas, diz Censo 2022",
+      "sourceLocation": "https://www.itatiba.sp.gov.br/secretarias/desenvolvimento-economico-e-habitacao/noticias/itatiba-tem-populacao-de-122424-pessoas-diz-censo-2022",
+      "checkedAt": "2026-08-19",
+      "extractedFact": "Itatiba tem 122.424 habitantes segundo o Censo 2022 do IBGE (código do município 3523404).",
+      "relevanceToReader": "Confirma o porte médio da cidade."
+    },
+    {
+      "organization": "Prefeitura de Itatiba",
+      "documentTitle": "PROCON — Proteção e Defesa do Consumidor",
+      "sourceLocation": "https://itatiba.sp.gov.br/procon-protecao-e-defesa-do-consumidor",
+      "checkedAt": "2026-08-19",
+      "extractedFact": "O Procon de Itatiba atende na Av. Nair Soares de Macedo Fattori, 200 — Vila Santa Clara (junto à Secretaria de Ação Social, Trabalho e Renda, ao lado da rodoviária), das 8h às 11h e das 13h às 16h, telefone (11) 4524-3334 (ramais 202/204), e-mail procon@procon.itatiba.sp.gov.br.",
+      "relevanceToReader": "Endereço, horários em duas janelas e contatos do órgão local."
+    },
+    {
+      "organization": "Prefeitura de Itatiba",
+      "documentTitle": "Banco do Povo — serviço ao cidadão",
+      "sourceLocation": "https://www.itatiba.sp.gov.br/cidadao/banco-do-povo",
+      "checkedAt": "2026-08-19",
+      "extractedFact": "O posto do Banco do Povo de Itatiba funciona na Av. Nair Soares de Macedo Fattori, 200 — Vila Santa Clara, das 8h às 11h e das 12h às 16h, telefone (11) 4524-3334 — o mesmo endereço que abriga o Procon.",
+      "relevanceToReader": "Microcrédito público e defesa do consumidor no mesmo endereço, ao lado da rodoviária."
+    }
+  ],
+  "consumerProtectionResources": [
+    {
+      "organization": "Procon Itatiba",
+      "service": "Atendimento na Av. Nair Soares de Macedo Fattori, 200 — Vila Santa Clara, das 8h às 11h e das 13h às 16h; telefone (11) 4524-3334, ramais 202/204; e-mail procon@procon.itatiba.sp.gov.br",
+      "officialSource": "https://itatiba.sp.gov.br/procon-protecao-e-defesa-do-consumidor",
+      "checkedAt": "2026-08-19"
+    },
+    {
+      "organization": "Consumidor.gov.br (plataforma federal)",
+      "service": "Reclamação on-line contra bancos e financeiras, com resposta monitorada — disponível a moradores de qualquer município",
+      "officialSource": "https://www.consumidor.gov.br",
+      "checkedAt": "2026-08-19"
+    }
+  ],
+  "verifiedLocalPrograms": [
+    {
+      "program": "Banco do Povo (microcrédito produtivo)",
+      "detail": "Av. Nair Soares de Macedo Fattori, 200 — Vila Santa Clara; das 8h às 11h e das 12h às 16h; telefone (11) 4524-3334",
+      "officialSource": "https://www.itatiba.sp.gov.br/cidadao/banco-do-povo",
+      "checkedAt": "2026-08-19"
+    }
+  ],
+  "verifiedServiceInformation": [],
+  "uniqueLocalQuestions": [
+    "Procon e Banco do Povo funcionam no mesmo endereço em Itatiba — como aproveitar a mesma viagem?",
+    "Quem trabalha na indústria moveleira (CLT) contrata consignado por onde?",
+    "As duas janelas de horário do Procon (8h–11h e 13h–16h) mudam o planejamento da visita?"
+  ],
+  "localRisksOrWarnings": [
+    "Cidade industrial com forte comércio de móveis; crediário e financiamento de loja pedem a mesma comparação pelo CET que qualquer empréstimo.",
+    "O intervalo do meio-dia interrompe o atendimento do Procon; chegar 11h30 significa esperar até 13h."
+  ],
+  "decisionImpact": [
+    "Uma única ida à Av. Nair Soares de Macedo Fattori, 200 resolve Procon e Banco do Povo",
+    "CLTs da indústria local têm acesso ao consignado do Crédito do Trabalhador pela CTPS Digital"
+  ],
+  "pendingVerification": [
+    "Confirmação telefônica dos horários vigentes de Procon e Banco do Povo",
+    "Condições atuais das linhas do Banco do Povo no município",
+    "Lista nominal de agências bancárias no município via dados abertos do BC (Informes_Agencias)"
+  ]
+}

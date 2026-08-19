@@ -143,7 +143,42 @@
       "stateCode": "sp",
       "citySlug": "barueri",
       "districtSlug": "alphaville",
-      "municipalitiesInvolved": ["sp-barueri", "sp-santana-de-parnaiba"]
+      "municipalitiesInvolved": [
+        "sp-barueri",
+        "sp-santana-de-parnaiba"
+      ]
+    },
+    {
+      "id": "sp-atibaia",
+      "name": "Atibaia",
+      "localityType": "municipality",
+      "stateCode": "sp",
+      "citySlug": "atibaia",
+      "ibgeCode": "3504107"
+    },
+    {
+      "id": "sp-braganca-paulista",
+      "name": "Bragança Paulista",
+      "localityType": "municipality",
+      "stateCode": "sp",
+      "citySlug": "braganca-paulista",
+      "ibgeCode": "3507605"
+    },
+    {
+      "id": "sp-itatiba",
+      "name": "Itatiba",
+      "localityType": "municipality",
+      "stateCode": "sp",
+      "citySlug": "itatiba",
+      "ibgeCode": "3523404"
+    },
+    {
+      "id": "sp-vinhedo",
+      "name": "Vinhedo",
+      "localityType": "municipality",
+      "stateCode": "sp",
+      "citySlug": "vinhedo",
+      "ibgeCode": "3556701"
     }
   ]
 }

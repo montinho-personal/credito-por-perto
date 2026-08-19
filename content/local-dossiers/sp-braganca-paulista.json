@@ -1,0 +1,74 @@
+{
+  "localityId": "sp-braganca-paulista",
+  "localityName": "Bragança Paulista",
+  "localityType": "municipality",
+  "stateCode": "sp",
+  "officialAdministrativeStatus": "Município do estado de São Paulo (código IBGE 3507605), polo da região bragantina",
+  "officialSources": [
+    {
+      "organization": "Prefeitura de Bragança Paulista",
+      "documentTitle": "Bragança Paulista tem 176.811 habitantes de acordo com o Censo 2022",
+      "sourceLocation": "https://www.braganca.sp.gov.br/assuntos/governo-desenv-economico-e-inovacao/braganca-paulista-tem-176811-habitantes-de-acordo-com-o-censo-2022",
+      "checkedAt": "2026-08-19",
+      "extractedFact": "Bragança Paulista tem 176.811 habitantes segundo o Censo 2022 do IBGE (código do município 3507605).",
+      "relevanceToReader": "Confirma o porte de polo regional da cidade."
+    },
+    {
+      "organization": "Prefeitura de Bragança Paulista",
+      "documentTitle": "Procon Municipal — serviço oficial",
+      "sourceLocation": "https://braganca.sp.gov.br/servicos/procon/procon-municipal",
+      "checkedAt": "2026-08-19",
+      "extractedFact": "O Procon Municipal atende na Rua Coronel Teófilo Leme, 1240 — Centro, telefone (11) 4034-7049, e-mail consumidor.procon@braganca.sp.gov.br, de segunda a quinta, das 9h às 12h e das 13h às 16h; às sextas não há atendimento ao público porque o órgão realiza audiências de conciliação no Núcleo de Prática Jurídica da Universidade São Francisco. O atendimento presencial é agendado por telefone ou na recepção da Central Agiliza.",
+      "relevanceToReader": "Endereço, contatos e a regra da sexta-feira sem atendimento — detalhe que evita viagem perdida."
+    },
+    {
+      "organization": "Prefeitura de Bragança Paulista",
+      "documentTitle": "Banco do Povo — Secretaria de Governo, Desenvolvimento Econômico e Inovação",
+      "sourceLocation": "https://www.braganca.sp.gov.br/secretarias/governo-desenv-economico-e-inovacao/banco-do-povo",
+      "checkedAt": "2026-08-19",
+      "extractedFact": "O município mantém posto do Banco do Povo (microcrédito produtivo do programa estadual) vinculado à Secretaria de Governo, Desenvolvimento Econômico e Inovação.",
+      "relevanceToReader": "Existe porta pública de microcrédito na cidade antes das linhas comerciais."
+    }
+  ],
+  "consumerProtectionResources": [
+    {
+      "organization": "Procon Bragança Paulista",
+      "service": "Atendimento na Rua Coronel Teófilo Leme, 1240 — Centro; telefone (11) 4034-7049; e-mail consumidor.procon@braganca.sp.gov.br; segunda a quinta, 9h–12h e 13h–16h, com agendamento; sextas reservadas a audiências de conciliação",
+      "officialSource": "https://braganca.sp.gov.br/servicos/procon/procon-municipal",
+      "checkedAt": "2026-08-19"
+    },
+    {
+      "organization": "Consumidor.gov.br (plataforma federal)",
+      "service": "Reclamação on-line contra bancos e financeiras, com resposta monitorada — disponível a moradores de qualquer município",
+      "officialSource": "https://www.consumidor.gov.br",
+      "checkedAt": "2026-08-19"
+    }
+  ],
+  "verifiedLocalPrograms": [
+    {
+      "program": "Banco do Povo (microcrédito produtivo)",
+      "detail": "Posto municipal vinculado à Secretaria de Governo, Desenvolvimento Econômico e Inovação",
+      "officialSource": "https://www.braganca.sp.gov.br/secretarias/governo-desenv-economico-e-inovacao/banco-do-povo",
+      "checkedAt": "2026-08-19"
+    }
+  ],
+  "verifiedServiceInformation": [],
+  "uniqueLocalQuestions": [
+    "Por que o Procon de Bragança não atende ao público às sextas-feiras?",
+    "Moradores das cidades menores da região bragantina que compram crédito em Bragança reclamam onde?",
+    "Onde fica o posto do Banco do Povo para microcrédito de pequeno negócio?"
+  ],
+  "localRisksOrWarnings": [
+    "Polo regional concentra balcões de crédito e correspondentes que atendem toda a região bragantina; conferir a instituição autorizada no Banco Central antes de assinar é o filtro essencial.",
+    "O atendimento do Procon é agendado; chegar sem agendamento pode significar viagem perdida."
+  ],
+  "decisionImpact": [
+    "Saber que sexta não tem atendimento ao público no Procon evita deslocamento inútil",
+    "As audiências de conciliação locais são caminho real de acordo em conflito com banco ou financeira"
+  ],
+  "pendingVerification": [
+    "Endereço e horário vigentes do posto do Banco do Povo",
+    "Confirmação telefônica do fluxo de agendamento via Central Agiliza",
+    "Lista nominal de agências bancárias no município via dados abertos do BC (Informes_Agencias)"
+  ]
+}
