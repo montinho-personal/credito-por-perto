@@ -1,9 +1,10 @@
-import Image from "next/image";
+import { ZoomableImage } from "@/components/content/ZoomableImage";
 
 /**
  * Imagem editorial dentro do corpo do artigo. Regra do proprietário
  * (21/08/2026): toda imagem tem `alt` descritivo obrigatório (auditado por
  * audit:metadata) e entra no ponto do texto em que agrega — nunca solta.
+ * O clique amplia a imagem em tela cheia (ZoomableImage).
  */
 export function ArticleImage({
   src,
@@ -22,13 +23,12 @@ export function ArticleImage({
 }) {
   return (
     <figure className="my-8">
-      <Image
+      <ZoomableImage
         src={src}
         alt={alt}
         width={width}
         height={height}
         priority={priority}
-        sizes="(max-width: 768px) 100vw, 768px"
         className="w-full rounded-xl border border-brand-border"
       />
       {caption ? (

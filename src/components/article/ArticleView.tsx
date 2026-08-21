@@ -1,5 +1,4 @@
 import { notFound } from "next/navigation";
-import Image from "next/image";
 import { MDXRemote } from "next-mdx-remote/rsc";
 import remarkGfm from "remark-gfm";
 import type { Metadata } from "next";
@@ -21,6 +20,7 @@ import {
   TableOfContents,
 } from "@/components/article/ArticleShell";
 import { SourceList } from "@/components/content/sources";
+import { ZoomableImage } from "@/components/content/ZoomableImage";
 import { AdSlot } from "@/components/ads/AdSlot";
 
 /**
@@ -89,15 +89,14 @@ export function ArticleView({
         <ArticleHeader article={article} author={author} reviewer={reviewer} />
       </div>
       {fm.featuredImage && fm.imageAlt ? (
-        <Image
-          src={fm.featuredImage}
-          alt={fm.imageAlt}
-          width={1600}
-          height={900}
-          priority
-          sizes="(max-width: 768px) 100vw, 768px"
-          className="mt-6 w-full rounded-xl border border-brand-border"
-        />
+        <div className="mt-6">
+          <ZoomableImage
+            src={fm.featuredImage}
+            alt={fm.imageAlt}
+            priority
+            className="w-full rounded-xl border border-brand-border"
+          />
+        </div>
       ) : null}
       {fm.status !== "published" ? (
         <p className="mt-6 rounded-lg border border-brand-warning/40 bg-brand-warning-soft p-4 text-sm font-medium text-brand-warning">
