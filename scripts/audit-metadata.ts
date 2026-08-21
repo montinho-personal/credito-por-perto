@@ -133,6 +133,45 @@ for (const article of getAllArticles()) {
   }
 }
 
+/* Mídia: alt obrigatório em toda imagem; título obrigatório em todo vídeo
+   (regra do proprietário, 21/08/2026). */
+const mediaDocs = [
+  ...getAllArticles().map((a) => ({ page: a.urlPath, body: a.content })),
+  ...getAllLocalGuides().map((g) => ({ page: g.urlPath, body: g.content })),
+];
+for (const doc of mediaDocs) {
+  for (const tag of doc.body.match(/<ArticleImage[\s\S]*?\/>/g) ?? []) {
+    if (!/alt="[^"]{10,}"/.test(tag)) {
+      findings.push({
+        severity: "critical",
+        rule: "imagem-sem-alt",
+        pages: [doc.page],
+        detail:
+          "ArticleImage sem alt descritivo (mínimo 10 caracteres). Alt é obrigatório em toda imagem.",
+      });
+    }
+  }
+  for (const tag of doc.body.match(/<VideoEmbed[\s\S]*?\/>/g) ?? []) {
+    if (!/title="[^"]{10,}"/.test(tag)) {
+      findings.push({
+        severity: "critical",
+        rule: "video-sem-titulo",
+        pages: [doc.page],
+        detail: "VideoEmbed sem title descritivo (mínimo 10 caracteres).",
+      });
+    }
+  }
+  if (/!\[\]\(/.test(doc.body) || /<img[\s>]/.test(doc.body)) {
+    findings.push({
+      severity: "critical",
+      rule: "imagem-fora-do-padrao",
+      pages: [doc.page],
+      detail:
+        "Imagem markdown sem alt ou <img> cru no corpo. Use o componente ArticleImage, com alt.",
+    });
+  }
+}
+
 const report = buildReport("metadados", findings);
 writeJsonReport("metadata-report.json", report);
 finishAudit(report);

@@ -11,6 +11,9 @@ interface PageMetadataInput {
   publishedTime?: string;
   modifiedTime?: string;
   authors?: string[];
+  /** URL absoluta da imagem de destaque (Open Graph / Twitter Card) */
+  image?: string;
+  imageAlt?: string;
 }
 
 /**
@@ -42,11 +45,24 @@ export function buildMetadata(input: PageMetadataInput): Metadata {
             authors: input.authors,
           }
         : {}),
+      ...(input.image
+        ? {
+            images: [
+              {
+                url: input.image,
+                width: 1600,
+                height: 900,
+                alt: input.imageAlt,
+              },
+            ],
+          }
+        : {}),
     },
     twitter: {
       card: "summary_large_image",
       title: input.title,
       description: input.description,
+      ...(input.image ? { images: [input.image] } : {}),
     },
   };
 }

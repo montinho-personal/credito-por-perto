@@ -14,6 +14,8 @@ import {
   WhatCanChange,
 } from "@/components/content/boxes";
 import { OfficialSourceLink } from "@/components/content/sources";
+import { ArticleImage } from "@/components/content/ArticleImage";
+import { VideoEmbed } from "@/components/content/VideoEmbed";
 
 function textFromChildren(children: ReactNode): string {
   if (typeof children === "string") return children;
@@ -84,4 +86,6 @@ export const mdxComponents = {
   WhatCanChange,
   MethodologyBox,
   OfficialSourceLink,
+  ArticleImage,
+  VideoEmbed,
 };

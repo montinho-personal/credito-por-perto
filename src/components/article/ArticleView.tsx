@@ -1,4 +1,5 @@
 import { notFound } from "next/navigation";
+import Image from "next/image";
 import { MDXRemote } from "next-mdx-remote/rsc";
 import remarkGfm from "remark-gfm";
 import type { Metadata } from "next";
@@ -7,6 +8,7 @@ import { getAuthor } from "@/lib/content/authors";
 import { getSourceLedger } from "@/lib/content/ledgers";
 import { CATEGORIES, type CategoryId } from "@/lib/content/categories";
 import { buildMetadata } from "@/lib/metadata/build";
+import { SITE_URL } from "@/lib/site";
 import { articleJsonLd } from "@/lib/schema/jsonld";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { Breadcrumbs } from "@/components/layout/Breadcrumbs";
@@ -47,6 +49,8 @@ export function articleMetadata(
     publishedTime: fm.publishedAt,
     modifiedTime: fm.updatedAt,
     authors: [getAuthor(fm.authorId)?.name ?? ""],
+    image: fm.featuredImage ? `${SITE_URL}${fm.featuredImage}` : undefined,
+    imageAlt: fm.imageAlt,
   });
 }
 
@@ -84,6 +88,17 @@ export function ArticleView({
       <div className="mt-6">
         <ArticleHeader article={article} author={author} reviewer={reviewer} />
       </div>
+      {fm.featuredImage && fm.imageAlt ? (
+        <Image
+          src={fm.featuredImage}
+          alt={fm.imageAlt}
+          width={1600}
+          height={900}
+          priority
+          sizes="(max-width: 768px) 100vw, 768px"
+          className="mt-6 w-full rounded-xl border border-brand-border"
+        />
+      ) : null}
       {fm.status !== "published" ? (
         <p className="mt-6 rounded-lg border border-brand-warning/40 bg-brand-warning-soft p-4 text-sm font-medium text-brand-warning">
           Rascunho em elaboração — este conteúdo ainda não passou por todas as

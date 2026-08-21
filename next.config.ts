@@ -29,7 +29,9 @@ const securityHeaders = [
       "img-src 'self' data: https:",
       "font-src 'self' data:",
       "connect-src 'self' https://www.google-analytics.com https://pagead2.googlesyndication.com https://ep1.adtrafficquality.google",
-      "frame-src https://googleads.g.doubleclick.net https://tpc.googlesyndication.com https://www.google.com",
+      // youtube-nocookie: player de vídeo em modo de privacidade avançada,
+      // carregado somente após clique do leitor (VideoEmbed).
+      "frame-src https://googleads.g.doubleclick.net https://tpc.googlesyndication.com https://www.google.com https://www.youtube-nocookie.com",
       "frame-ancestors 'none'",
       "base-uri 'self'",
       "form-action 'self'",

@@ -22,6 +22,26 @@ Vale para **todo** artigo do portal (nacional e local). O objetivo é sempre o
 mesmo: ser o resultado que o Google escolhe como resposta e o texto que o
 leitor termina de ler.
 
+## 0.1 Mídia nos artigos (regra do proprietário, 21/08/2026)
+
+- **Alt obrigatório em toda imagem** (capa via `imageAlt`; corpo via
+  `ArticleImage`, prop `alt`). O alt descreve o conteúdo da imagem para quem
+  não a vê — inclusive os números de um infográfico. Auditado por
+  `audit:metadata` (crítico, quebra o build);
+- **Posição semântica**: a imagem entra no ponto do texto que ela ilustra
+  (o gráfico do prazo vive na seção do prazo), nunca decorativa ou solta.
+  A capa (`featuredImage`) abre o artigo e vira a prévia no Google/WhatsApp;
+- **Números em imagem = números no texto**: todo valor exibido num
+  infográfico confere com o exemplo do artigo e, quando possível, ganha um
+  teste que o verifica (`tests/`). Divergência entre imagem e texto é erro
+  editorial;
+- **Vídeo**: sempre via `VideoEmbed` (clique-para-carregar; nada sai para o
+  YouTube antes do clique — LGPD). Só vídeo educativo de canal relevante e
+  reputado no tema (Serasa Ensina, BC te Explica…), com `title` descritivo,
+  incorporado onde complementa a seção;
+- **Arquivos**: `public/images/articles/`, nome em slug, WebP ≤ 1600px
+  (na prática ~50–100 KB). Original pesado não entra no repositório.
+
 ## 1. Título (SERP é a primeira dobra)
 
 - A intenção exata do leitor nas primeiras palavras, do jeito que ele busca

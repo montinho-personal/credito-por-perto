@@ -19,6 +19,14 @@ describe("pricePayment", () => {
   it("com 1 parcela, cobra principal + um mês de juros", () => {
     expect(pricePayment(1000, 0.05, 1)).toBeCloseTo(1050, 6);
   });
+
+  it("confere o infográfico do efeito do prazo (R$ 5.000, 4,5% a.m.)", () => {
+    // Números publicados no artigo de empréstimo pessoal (imagem + exemplo).
+    expect(pricePayment(5000, 0.045, 12)).toBeCloseTo(548.33, 2);
+    expect(pricePayment(5000, 0.045, 24)).toBeCloseTo(344.94, 2);
+    const totalDiff = pricePayment(5000, 0.045, 24) * 24 - pricePayment(5000, 0.045, 12) * 12;
+    expect(totalDiff).toBeCloseTo(1698.47, 1);
+  });
 });
 
 describe("calculateLoan", () => {

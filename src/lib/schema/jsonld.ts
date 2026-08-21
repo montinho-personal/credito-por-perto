@@ -42,6 +42,7 @@ export function articleJsonLd(article: Article, author: Author) {
     mainEntityOfPage: article.canonical,
     datePublished: fm.publishedAt,
     ...(fm.updatedAt ? { dateModified: fm.updatedAt } : {}),
+    ...(fm.featuredImage ? { image: [`${SITE_URL}${fm.featuredImage}`] } : {}),
     author: author.isTeam
       ? {
           "@type": "Organization",
