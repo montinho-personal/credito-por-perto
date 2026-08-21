@@ -9,8 +9,10 @@ tags: ["juros-compostos", "sistema-price", "calculo", "amortizacao"]
 authorId: "equipe-editorial"
 status: "published"
 publishedAt: "2026-08-05"
-updatedAt: "2026-08-06"
+updatedAt: "2026-08-21"
 sourceCheckedAt: "2026-08-06"
+featuredImage: "/images/articles/como-calcular-juros-capa.webp"
+imageAlt: "Como calcular juros de empréstimo: fórmulas, exemplo e passo a passo — calculadora e o fluxo dados, cálculo e resultado"
 contentType: "guide"
 ---
 
@@ -47,6 +49,14 @@ Empréstimo hipotético de **R$ 3.000**, a **2% ao mês**, em **10 parcelas**:
 4. Calcule a parcela: `3000 × 0,02 ÷ 0,17965` ≈ **R$ 333,98**;
 5. Total pago: `333,98 × 10` ≈ **R$ 3.339,80** — cerca de R$ 339,80 de juros.
 
+O mesmo cálculo, resumido num quadro para guardar:
+
+<ArticleImage
+  src="/images/articles/exemplo-calculo-parcela.webp"
+  alt="Exemplo prático de cálculo de parcela pelo sistema Price: empréstimo de R$ 3.000 a 2% ao mês em 10 parcelas resulta em parcela de R$ 333,98; a fórmula é Parcela = PV × i ÷ (1 − (1 + i)⁻ⁿ), em que PV é o valor emprestado, i a taxa mensal e n o número de parcelas — simulação ilustrativa"
+  caption="O exemplo completo do artigo em um quadro: R$ 3.000, 2% ao mês, 10 parcelas — parcela de R$ 333,98 (simulação ilustrativa)."
+/>
+
 ## Por que o começo do contrato paga mais juros
 
 Em cada parcela, os juros são calculados sobre o saldo devedor. No primeiro mês do exemplo, os juros são `3000 × 0,02 = R$ 60`, e apenas `333,98 − 60 = R$ 273,98` amortizam a dívida. No último mês, o saldo é pequeno, os juros são centavos e quase toda a parcela amortiza. Essa progressão é a **tabela de amortização** — e explica por que quitar cedo economiza mais juros do que quitar no fim.
@@ -60,6 +70,14 @@ Em cada parcela, os juros são calculados sobre o saldo devedor. No primeiro mê
 *(Valores do exemplo hipotético, arredondados.)*
 
 ## Conferindo uma proposta real
+
+Antes do roteiro, vale entender o outro lado da mesa: como o banco chega à taxa que ele te oferece. O Banco Central explica em vídeo, na série oficial sobre juros:
+
+<VideoEmbed
+  videoId="LW6ho5i1ROU"
+  title="Juros no Brasil: como o banco define os juros do seu empréstimo?"
+  channel="Banco Central do Brasil"
+/>
 
 <ChecklistBox
   title="Roteiro de conferência"
