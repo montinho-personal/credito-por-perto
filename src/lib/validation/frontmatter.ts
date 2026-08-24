@@ -63,6 +63,9 @@ export const articleFrontmatterSchema = z
     sourceCheckedAt: isoDate.optional(),
     featuredImage: z.string().optional(),
     imageAlt: z.string().optional(),
+    /** Dimensões reais da capa quando fogem do padrão 1600×900 */
+    imageWidth: z.number().int().positive().optional(),
+    imageHeight: z.number().int().positive().optional(),
     featured: z.boolean().optional(),
     noindex: z.boolean().optional(),
     canonical: z.string().optional(),

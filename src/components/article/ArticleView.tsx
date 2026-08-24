@@ -51,6 +51,8 @@ export function articleMetadata(
     authors: [getAuthor(fm.authorId)?.name ?? ""],
     image: fm.featuredImage ? `${SITE_URL}${fm.featuredImage}` : undefined,
     imageAlt: fm.imageAlt,
+    imageWidth: fm.imageWidth,
+    imageHeight: fm.imageHeight,
   });
 }
 
@@ -93,6 +95,8 @@ export function ArticleView({
           <ZoomableImage
             src={fm.featuredImage}
             alt={fm.imageAlt}
+            width={fm.imageWidth ?? 1600}
+            height={fm.imageHeight ?? 900}
             priority
             className="w-full rounded-xl border border-brand-border"
           />

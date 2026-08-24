@@ -14,6 +14,8 @@ interface PageMetadataInput {
   /** URL absoluta da imagem de destaque (Open Graph / Twitter Card) */
   image?: string;
   imageAlt?: string;
+  imageWidth?: number;
+  imageHeight?: number;
 }
 
 /**
@@ -50,8 +52,8 @@ export function buildMetadata(input: PageMetadataInput): Metadata {
             images: [
               {
                 url: input.image,
-                width: 1600,
-                height: 900,
+                width: input.imageWidth ?? 1600,
+                height: input.imageHeight ?? 900,
                 alt: input.imageAlt,
               },
             ],
