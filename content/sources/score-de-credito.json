@@ -1,0 +1,32 @@
+{
+  "articleSlug": "score-de-credito",
+  "claims": [
+    {
+      "claimId": "cadastro-positivo-lei",
+      "claimText": "O Cadastro Positivo é disciplinado pela Lei nº 12.414/2011; com a Lei Complementar nº 166/2019, a inclusão dos consumidores passou a ser automática, com direito de solicitar a saída (opt-out) a qualquer momento.",
+      "sourceOrganization": "Presidência da República",
+      "sourceTitle": "Lei nº 12.414/2011 e Lei Complementar nº 166/2019",
+      "sourceLocation": "https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2011/lei/l12414.htm",
+      "sourceType": "official",
+      "accessedAt": "2026-08-24"
+    },
+    {
+      "claimId": "sem-formula-publica",
+      "claimText": "Não existe fórmula pública de cálculo do score: cada birô calcula sua pontuação com metodologia própria, a partir do histórico registrado; o consumidor tem direito de acessar gratuitamente as informações mantidas sobre ele.",
+      "sourceOrganization": "Presidência da República",
+      "sourceTitle": "Lei nº 12.414/2011 (direitos do cadastrado) e Lei nº 8.078/1990, art. 43",
+      "sourceLocation": "https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2011/lei/l12414.htm",
+      "sourceType": "official",
+      "accessedAt": "2026-08-24"
+    },
+    {
+      "claimId": "registrato-gratuito",
+      "claimText": "O Registrato, do Banco Central, permite consultar gratuitamente as próprias operações de crédito registradas no sistema financeiro.",
+      "sourceOrganization": "Banco Central do Brasil",
+      "sourceTitle": "Registrato — Extrato do Registro de Informações no Banco Central",
+      "sourceLocation": "https://registrato.bcb.gov.br",
+      "sourceType": "official",
+      "accessedAt": "2026-08-24"
+    }
+  ]
+}

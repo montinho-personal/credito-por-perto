@@ -1,0 +1,48 @@
+{
+  "proposedTitle": "Score de crédito: o que ele é — e o que ele não decide sozinho",
+  "primaryIntent": "o que é score de crédito e como funciona",
+  "secondaryIntents": [
+    "como aumentar o score de graça",
+    "consultar score é gratuito"
+  ],
+  "targetReader": "Quem acompanha o número no aplicativo do birô e acredita que ele decide sozinho a aprovação do crédito",
+  "readerSituation": "SERP dominada por conteúdo de birô com promessas de 'aumentar score rápido' e por serviços pagos inúteis; falta uma explicação neutra do que o número é e do peso real que tem",
+  "centralQuestion": "O que o score mede, quem o calcula, quanto ele pesa de verdade — e o que muda o número sem pagar nada?",
+  "uniqueAngle": "Posiciona o score como UM insumo da análise (não o juiz), explica o Cadastro Positivo como a engrenagem por trás, e lista o que move o número pelo único caminho que existe: comportamento ao longo do tempo",
+  "originalContribution": [
+    "Mapa de quem calcula (birôs) × quem decide (instituições) — papéis que a SERP mistura",
+    "O Cadastro Positivo explicado como a fonte de dados do score (Lei 12.414/2011, inclusão automática com direito de saída)",
+    "Lista do que tende a mover o número (sem fórmula pública, sinalizado como tendência)",
+    "Tabela golpe × caminho real ('pagar para subir score' × comportamento no tempo)"
+  ],
+  "primarySources": [
+    "Lei nº 12.414/2011 (Cadastro Positivo)",
+    "Banco Central do Brasil — Registrato (consulta gratuita às próprias operações)"
+  ],
+  "supportingSources": [
+    "Birôs de crédito — canais gratuitos de consulta ao próprio score"
+  ],
+  "contentArchetype": "guide",
+  "proposedStructure": [
+    "Abertura: o número que virou obsessão",
+    "O que o score é (e quem o calcula)",
+    "De onde vêm os dados: o Cadastro Positivo",
+    "Quanto o score pesa de verdade na aprovação",
+    "O que move o número (e em quanto tempo)",
+    "O que não funciona: pagar para subir score",
+    "Como consultar de graça",
+    "FAQ"
+  ],
+  "uniqueExamples": [],
+  "proposedVisuals": ["Tabela golpe × caminho real", "WarningBox"],
+  "pagesThatMayCompete": [
+    "/emprestimos/como-funciona-analise-de-credito/",
+    "/emprestimos/emprestimo-para-negativado/"
+  ],
+  "informationThatMustNotBeRepeated": [
+    "Etapas completas da análise de crédito (link para o guia da análise)",
+    "Mitos de score já respondidos na análise (linkar, não duplicar): simulações derrubam score, negado com score alto",
+    "Roteiro de golpes (link)"
+  ],
+  "publicationDecision": "create"
+}

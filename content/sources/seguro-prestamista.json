@@ -1,0 +1,33 @@
+{
+  "articleSlug": "seguro-prestamista",
+  "claims": [
+    {
+      "claimId": "venda-casada-vedada",
+      "claimText": "Condicionar a concessão do crédito à contratação de um seguro configura venda casada, prática vedada pelo art. 39, I, do Código de Defesa do Consumidor.",
+      "sourceOrganization": "Presidência da República",
+      "sourceTitle": "Lei nº 8.078/1990 (Código de Defesa do Consumidor), art. 39, I",
+      "sourceLocation": "https://www.planalto.gov.br/ccivil_03/leis/l8078compilado.htm",
+      "sourceType": "official",
+      "accessedAt": "2026-08-24"
+    },
+    {
+      "claimId": "seguro-entra-no-cet",
+      "claimText": "Quando contratado junto com a operação, o seguro compõe o Custo Efetivo Total (CET), que a instituição é obrigada a informar antes da contratação.",
+      "sourceOrganization": "Banco Central do Brasil",
+      "sourceTitle": "Custo Efetivo Total — regulamentação",
+      "sourceLocation": "https://www.bcb.gov.br",
+      "sourceType": "official",
+      "accessedAt": "2026-08-24"
+    },
+    {
+      "claimId": "susep-regula",
+      "claimText": "Seguros, incluindo o prestamista, são regulados e fiscalizados pela Susep — Superintendência de Seguros Privados; coberturas, exclusões e regras de cancelamento constam da apólice de cada produto.",
+      "sourceOrganization": "Susep",
+      "sourceTitle": "Superintendência de Seguros Privados — atribuições",
+      "sourceLocation": "https://www.gov.br/susep/",
+      "sourceType": "official",
+      "accessedAt": "2026-08-24",
+      "notes": "O artigo não afirma percentuais de devolução nem prazos de cancelamento — remete à apólice e à Susep."
+    }
+  ]
+}

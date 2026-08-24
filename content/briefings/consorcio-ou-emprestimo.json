@@ -1,0 +1,48 @@
+{
+  "proposedTitle": "Consórcio ou empréstimo: a diferença que o vendedor não explica",
+  "primaryIntent": "consórcio ou empréstimo qual vale mais a pena",
+  "secondaryIntents": [
+    "consórcio tem juros",
+    "consórcio vale a pena para comprar carro ou imóvel"
+  ],
+  "targetReader": "Quem foi abordado por vendedor de consórcio (ou viu anúncio 'sem juros') enquanto pesquisava crédito",
+  "readerSituation": "O 'sem juros' do consórcio soa imbatível ao lado dos juros do empréstimo; a variável escondida — o tempo até a contemplação — raramente é explicada no balcão",
+  "centralQuestion": "Quando o consórcio realmente substitui um empréstimo — e quando a espera pela contemplação o desqualifica?",
+  "uniqueAngle": "Reduz a escolha a uma pergunta única (você precisa do dinheiro agora ou está programando uma compra?) e traduz o 'sem juros' em custos reais: taxa de administração, fundo de reserva e o tempo sem o bem",
+  "originalContribution": [
+    "Quadro comparativo consórcio × empréstimo em 7 critérios (custo, quando recebe, análise, atraso, saída)",
+    "A pergunta única que decide (urgência × compra programada)",
+    "Tradução do 'sem juros' em custo real (taxa de administração + fundo de reserva sobre o valor total)",
+    "Alerta contra a 'carta contemplada' vendida com pagamento antecipado"
+  ],
+  "primarySources": [
+    "Lei nº 11.795/2008 (Lei do Consórcio)",
+    "Banco Central do Brasil — consórcios (autorização e fiscalização de administradoras; BC te Explica #35)"
+  ],
+  "supportingSources": [],
+  "contentArchetype": "comparison",
+  "proposedStructure": [
+    "Abertura: o 'sem juros' e a variável escondida (tempo)",
+    "Como o consórcio funciona de verdade (grupo, fundo comum, contemplação)",
+    "O que o 'sem juros' custa (taxa de administração + fundo de reserva)",
+    "Quadro comparativo consórcio × empréstimo",
+    "A pergunta única que decide",
+    "Alerta: carta contemplada e administradora não autorizada",
+    "Vídeo do Banco Central",
+    "FAQ"
+  ],
+  "uniqueExamples": [
+    "Carta de R$ 60.000 com taxa de administração de 18% no prazo = R$ 10.800 de custo, sem garantia de data (hipotético, sinalizado)"
+  ],
+  "proposedVisuals": ["Tabela comparativa", "WarningBox", "VideoEmbed (BC te Explica #35)"],
+  "pagesThatMayCompete": [
+    "/emprestimos/diferenca-entre-emprestimo-e-financiamento/",
+    "/organizacao-financeira/quando-vale-a-pena-fazer-emprestimo/"
+  ],
+  "informationThatMustNotBeRepeated": [
+    "Explicação do CET (link para o guia)",
+    "Diferença empréstimo × financiamento (link)",
+    "Roteiro de decisão de crédito (link para quando-vale-a-pena)"
+  ],
+  "publicationDecision": "create"
+}

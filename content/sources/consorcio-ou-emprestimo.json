@@ -1,0 +1,33 @@
+{
+  "articleSlug": "consorcio-ou-emprestimo",
+  "claims": [
+    {
+      "claimId": "lei-consorcio",
+      "claimText": "O consórcio é regido pela Lei nº 11.795/2008: grupo de pessoas que contribui para um fundo comum, administrado por uma administradora, com contemplação por sorteio ou lance dando acesso à carta de crédito.",
+      "sourceOrganization": "Presidência da República",
+      "sourceTitle": "Lei nº 11.795, de 8 de outubro de 2008 (Lei do Consórcio)",
+      "sourceLocation": "https://www.planalto.gov.br/ccivil_03/_ato2007-2010/2008/lei/l11795.htm",
+      "sourceType": "official",
+      "accessedAt": "2026-08-24"
+    },
+    {
+      "claimId": "bc-autoriza-administradoras",
+      "claimText": "As administradoras de consórcio são autorizadas e fiscalizadas pelo Banco Central, que mantém consulta pública às instituições autorizadas.",
+      "sourceOrganization": "Banco Central do Brasil",
+      "sourceTitle": "Consórcios — administradoras autorizadas e fiscalização",
+      "sourceLocation": "https://www.bcb.gov.br/estabilidadefinanceira/consorcios",
+      "sourceType": "official",
+      "accessedAt": "2026-08-24"
+    },
+    {
+      "claimId": "custos-consorcio",
+      "claimText": "O consórcio não cobra juros, mas cobra taxa de administração e pode cobrar fundo de reserva e seguro, conforme o contrato do grupo; a contemplação ocorre por sorteio ou lance, sem data garantida para quem não é contemplado.",
+      "sourceOrganization": "Banco Central do Brasil",
+      "sourceTitle": "BC te Explica #35 — Consórcio: como não entrar numa furada?",
+      "sourceLocation": "https://www.youtube.com/watch?v=JG7PU6etqNQ",
+      "sourceType": "official",
+      "accessedAt": "2026-08-24",
+      "notes": "Vídeo oficial do canal do Banco Central do Brasil (jan/2022), confirmado em duas buscas independentes. Exemplo numérico do artigo é hipotético e sinalizado como tal."
+    }
+  ]
+}

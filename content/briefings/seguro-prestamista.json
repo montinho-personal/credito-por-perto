@@ -1,0 +1,47 @@
+{
+  "proposedTitle": "Seguro prestamista: o que é, quando ajuda e quando é venda casada",
+  "primaryIntent": "seguro prestamista o que é e é obrigatório",
+  "secondaryIntents": [
+    "posso recusar o seguro prestamista",
+    "seguro prestamista encarece o empréstimo"
+  ],
+  "targetReader": "Quem viu um 'seguro' embutido na simulação ou no contrato de empréstimo e não sabe se pode tirar",
+  "readerSituation": "O prestamista aparece pré-marcado em simulações e balcões; o leitor não sabe que a contratação é facultativa nem que o custo entra no CET",
+  "centralQuestion": "O seguro prestamista é obrigatório, o que ele cobre de verdade e como decidir se vale o custo?",
+  "uniqueAngle": "Trata o prestamista como item de preço (entra no CET) e como direito (recusável; venda casada é vedada), com o roteiro de 3 perguntas para decidir — em vez do tom binário 'seguro é bom/é golpe'",
+  "originalContribution": [
+    "As duas simulações (com e sem seguro) como direito prático do consumidor",
+    "Roteiro de 3 perguntas para decidir se o seguro compensa no seu caso",
+    "Separação entre o produto legítimo e a prática ilegal (venda casada, CDC art. 39)",
+    "O que fazer se o seguro entrou sem pedido (SAC, consumidor.gov.br, Procon)"
+  ],
+  "primarySources": [
+    "Código de Defesa do Consumidor (Lei nº 8.078/1990), art. 39 — vedação à venda casada",
+    "Banco Central do Brasil — regulamentação do CET (seguros contratados na operação compõem o custo)",
+    "Susep — órgão regulador dos seguros"
+  ],
+  "supportingSources": [],
+  "contentArchetype": "guide",
+  "proposedStructure": [
+    "Abertura: o item que aparece sem ser pedido",
+    "O que o prestamista é (e o que cobre, conforme a apólice)",
+    "O que ele custa: o efeito no CET e nas parcelas",
+    "É obrigatório? O direito de recusar e a venda casada",
+    "As 3 perguntas para decidir",
+    "Entrou sem você pedir: o roteiro de reclamação",
+    "FAQ"
+  ],
+  "uniqueExamples": [
+    "Simulação dupla hipotética: mesmo empréstimo com e sem prestamista, diferença de CET sinalizada como exemplo ilustrativo"
+  ],
+  "proposedVisuals": ["WarningBox (venda casada)", "ExampleBox (simulação dupla)"],
+  "pagesThatMayCompete": [
+    "/juros-e-cet/o-que-e-cet/",
+    "/emprestimos/emprestimo-pessoal/"
+  ],
+  "informationThatMustNotBeRepeated": [
+    "Componentes completos do CET (link para o guia)",
+    "Roteiro geral de contratação do empréstimo pessoal (link)"
+  ],
+  "publicationDecision": "create"
+}

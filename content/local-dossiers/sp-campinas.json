@@ -3,34 +3,88 @@
   "localityName": "Campinas",
   "localityType": "municipality",
   "stateCode": "sp",
-  "officialAdministrativeStatus": "Município do estado de São Paulo (código IBGE 3509502)",
+  "officialAdministrativeStatus": "Município do estado de São Paulo (código IBGE 3509502), sede da Região Metropolitana de Campinas",
   "officialSources": [
     {
+      "organization": "Procon Campinas (site oficial)",
+      "documentTitle": "Atendimento — canais, postos e agendamento",
+      "sourceLocation": "https://procon.campinas.sp.gov.br/atendimento",
+      "checkedAt": "2026-08-24",
+      "extractedFact": "O Procon Campinas atende pelo telefone 151 (exclusivo para quem está em Campinas), de segunda a sexta das 8h às 20h e sábado das 8h às 14h; de fora da cidade, (19) 3734-2000. O atendimento presencial é agendado pelo Portal do Cidadão (cidadao.campinas.sp.gov.br) ou pelo 151.",
+      "relevanceToReader": "O órgão tem estrutura própria de metrópole: telefone dedicado com horário estendido e agendamento on-line."
+    },
+    {
+      "organization": "Procon Campinas (site oficial)",
+      "documentTitle": "Postos de atendimento",
+      "sourceLocation": "https://procon.campinas.sp.gov.br/atendimento-consumidor",
+      "checkedAt": "2026-08-24",
+      "extractedFact": "Postos de atendimento: Poupatempo Centro (Av. Francisco Glicério, 935, 1º andar; seg–sex 8h–18h, sáb 7h–13h), Poupatempo Campinas Shopping (Rua Jacy Teixeira de Camargo, 940, Jardim do Lago; seg–sex 9h–19h, sáb 8h–14h), Agiliza Barão Geraldo (Rua Luiz Vicentim, 195; seg–sex 8h–16h), Horto Shopping Ouro Verde (Rua Armando Frederico Renganeshi, 61, Jardim Cristina; seg–sex 9h–16h) e Sede Administrativa (Rua Maria Monteiro, 1028, Cambuí; seg–sex 9h–17h, para vista de processos e protocolos).",
+      "relevanceToReader": "Cinco endereços em regiões diferentes da cidade; o leitor escolhe o mais próximo."
+    },
+    {
+      "organization": "Prefeitura de Campinas",
+      "documentTitle": "Banco do Povo tem unidade em Campinas com crédito mais barato para microempreendedores",
+      "sourceLocation": "https://campinas.sp.gov.br/noticias/voce-sabia-banco-do-povo-tem-unidade-em-campinas-com-credito-mais-barato-para-microempreendedores-121935",
+      "checkedAt": "2026-08-24",
+      "extractedFact": "A unidade do Banco do Povo Paulista em Campinas funciona no CPAT — Centro Público de Apoio ao Trabalhador (Av. Campos Sales, 427, Centro), com atendimento das 10h às 15h. Entre os requisitos das linhas está a participação em capacitação promovida com o Sebrae.",
+      "relevanceToReader": "Porta pública de microcrédito produtivo para os mais de 120 mil MEIs da cidade."
+    },
+    {
+      "organization": "InvesteSP (agência estadual)",
+      "documentTitle": "Banco do Povo retoma liberação de linha de crédito para Campinas",
+      "sourceLocation": "https://www.investe.sp.gov.br/noticia/banco-do-povo-retoma-liberacao-de-linha-de-credito-para-campinas/",
+      "checkedAt": "2026-08-24",
+      "extractedFact": "O programa estadual mantém linhas de microcrédito específicas para empreendedores de Campinas, operadas a partir do CPAT.",
+      "relevanceToReader": "Confirmação estadual da operação local do programa."
+    },
+    {
       "organization": "IBGE",
-      "documentTitle": "Cadastro de municípios — Campinas (SP)",
-      "sourceLocation": "https://www.ibge.gov.br",
-      "checkedAt": "2026-08-05",
-      "extractedFact": "Campinas é município do estado de São Paulo, código 3509502.",
-      "relevanceToReader": "Confirma a classificação administrativa correta da página local."
+      "documentTitle": "Cidades e Estados — Campinas (SP)",
+      "sourceLocation": "https://www.ibge.gov.br/cidades-e-estados/sp/campinas.html",
+      "checkedAt": "2026-08-24",
+      "extractedFact": "Campinas é o polo da Região Metropolitana de Campinas, com mais de 1,1 milhão de habitantes (Censo 2022), código do município 3509502.",
+      "relevanceToReader": "Porte de metrópole: a maior concentração de agências, financeiras e correspondentes do interior paulista."
     }
   ],
-  "consumerProtectionResources": [],
-  "verifiedLocalPrograms": [],
+  "consumerProtectionResources": [
+    {
+      "organization": "Procon Campinas",
+      "service": "Telefone 151 (em Campinas; seg–sex 8h–20h, sáb 8h–14h) ou (19) 3734-2000; atendimento presencial com agendamento pelo Portal do Cidadão em cinco postos (Poupatempo Centro e Campinas Shopping, Agiliza Barão Geraldo, Horto Shopping Ouro Verde e sede no Cambuí)",
+      "officialSource": "https://procon.campinas.sp.gov.br/atendimento",
+      "checkedAt": "2026-08-24"
+    },
+    {
+      "organization": "Consumidor.gov.br (plataforma federal)",
+      "service": "Reclamação on-line contra bancos e financeiras, com resposta monitorada — disponível a moradores de qualquer município",
+      "officialSource": "https://www.consumidor.gov.br",
+      "checkedAt": "2026-08-24"
+    }
+  ],
+  "verifiedLocalPrograms": [
+    {
+      "program": "Banco do Povo Paulista (microcrédito produtivo)",
+      "detail": "Unidade no CPAT — Av. Campos Sales, 427, Centro; atendimento das 10h às 15h; capacitação com o Sebrae entre os requisitos",
+      "officialSource": "https://campinas.sp.gov.br/noticias/voce-sabia-banco-do-povo-tem-unidade-em-campinas-com-credito-mais-barato-para-microempreendedores-121935",
+      "checkedAt": "2026-08-24"
+    }
+  ],
   "verifiedServiceInformation": [],
   "uniqueLocalQuestions": [
-    "Onde fica e como atende o Procon de Campinas?",
-    "Há mutirões de renegociação ativos na cidade?",
-    "Quais programas municipais de microcrédito estão vigentes?"
+    "Como usar o 151 e o agendamento on-line do Procon Campinas (e qual dos cinco postos escolher)?",
+    "Onde fica o microcrédito público (Banco do Povo no CPAT) e o que ele exige?",
+    "Moro numa cidade vizinha e resolvo a vida em Campinas: onde reclamo?"
   ],
-  "localRisksOrWarnings": [],
+  "localRisksOrWarnings": [
+    "Metrópole financeira do interior concentra o maior volume de balcões, correspondentes e ofertas de rua da região; o filtro da instituição autorizada no Banco Central é ainda mais necessário.",
+    "Mutirões de renegociação acontecem periodicamente; as datas são anunciadas nos canais oficiais do Procon Campinas — desconfie de 'mutirões' divulgados só por WhatsApp."
+  ],
   "decisionImpact": [
-    "Canais locais de proteção reduzem o custo de reclamar e negociar",
-    "Programas públicos vigentes podem ser alternativa mais barata ao crédito privado"
+    "O 151 com horário estendido e o agendamento on-line resolvem a maioria dos casos sem deslocamento",
+    "A comparação pelo CET protege em qualquer balcão da metrópole"
   ],
   "pendingVerification": [
-    "Endereço, contatos e horário do Procon Campinas (fonte: prefeitura/procon municipal)",
-    "Programas municipais/estaduais de crédito vigentes (Banco do Povo Paulista e similares) com regras atuais",
-    "Mutirões de renegociação ativos na região",
-    "Cooperativas e atendimento bancário verificável relevante para a decisão do leitor"
+    "Confirmação telefônica dos horários vigentes dos postos do Procon",
+    "Condições atuais das linhas do Banco do Povo no CPAT",
+    "Lista nominal de agências bancárias no município via dados abertos do BC (Informes_Agencias)"
   ]
 }

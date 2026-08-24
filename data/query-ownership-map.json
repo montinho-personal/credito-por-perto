@@ -275,5 +275,24 @@
     "supportingPages": [
       "/organizacao-financeira/quando-vale-a-pena-fazer-emprestimo/"
     ]
+  },
+  "consórcio ou empréstimo qual vale mais a pena": {
+    "canonicalOwner": "/emprestimos/consorcio-ou-emprestimo/",
+    "supportingPages": [
+      "/emprestimos/diferenca-entre-emprestimo-e-financiamento/",
+      "/organizacao-financeira/quando-vale-a-pena-fazer-emprestimo/"
+    ]
+  },
+  "seguro prestamista o que é e é obrigatório": {
+    "canonicalOwner": "/juros-e-cet/seguro-prestamista/",
+    "supportingPages": [
+      "/juros-e-cet/o-que-e-cet/"
+    ]
+  },
+  "o que é score de crédito e como funciona": {
+    "canonicalOwner": "/organizacao-financeira/score-de-credito/",
+    "supportingPages": [
+      "/emprestimos/como-funciona-analise-de-credito/"
+    ]
   }
 }
