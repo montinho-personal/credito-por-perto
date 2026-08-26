@@ -59,7 +59,10 @@ Baseada em varredura real da SERP brasileira (queries e achados em
 
 27. ~~Consórcio ou empréstimo (comparison, cluster conceitos)~~ — publicado em 24/08/2026, com vídeo oficial do BC (BC te Explica #35);
 28. ~~Seguro prestamista: facultativo, CET e venda casada~~ — publicado em 24/08/2026;
-29. ~~Score de crédito: o que é e o que não decide sozinho~~ — publicado em 24/08/2026 (complementa a análise de crédito sem duplicá-la).
+29. ~~Score de crédito: o que é e o que não decide sozinho~~ — publicado em 24/08/2026 (complementa a análise de crédito sem duplicá-la);
+30. ~~Lei do Superendividamento: repactuação em bloco~~ — publicado em 25/08/2026 (Bloco 10; era o link-fantasma mais citado do site);
+31. ~~Quitação antecipada: desconto proporcional por direito~~ — publicado em 25/08/2026 (Bloco 10);
+32. ~~Registrato: o extrato oficial do CPF~~ — publicado em 25/08/2026 (Bloco 10; hub que 14 páginas já referenciavam externamente).
 
 ## Trilha Local — "Empréstimo em [cidade]" (paralela às ondas)
 
@@ -92,6 +95,7 @@ penalizadas pelo Google (spam policy) e bloqueadas pela nossa auditoria
 | **L1 — corredor oeste da Grande SP** | ~~Barueri~~ ✔, ~~região de Alphaville~~ ✔, ~~Santana de Parnaíba~~ ✔, ~~Carapicuíba~~ ✔, ~~Jandira~~ ✔, ~~Itapevi~~ ✔, ~~Cotia~~ ✔ — **lote concluído (16/08/2026)** | QG do portal; drafts (*) já existem, faltando só verificação de campo; SERPs muito fracas |
 | **L2 — Grande SP, porte médio** | ~~Santa Isabel~~ ✔, ~~Franco da Rocha~~ ✔, ~~Caieiras~~ ✔, ~~Mairiporã~~ ✔, ~~Embu das Artes~~ ✔, ~~Taboão da Serra~~ ✔; Vargem Grande Paulista pendente (Procon sem fonte oficial on-line — verificar por telefone/151 antes de publicar) | Volume razoável, concorrência quase nula; verificável a distância por fontes oficiais |
 | **L3 — interior de SP** | ~~Salto~~ ✔, ~~Indaiatuba~~ ✔, ~~Itu~~ ✔, ~~Atibaia~~ ✔, ~~Bragança Paulista~~ ✔, ~~Itatiba~~ ✔, ~~Vinhedo~~ ✔, ~~Campinas (âncora)~~ ✔ — **lote concluído (24/08/2026)** | Cidades com "rua financeira" própria; Campinas publicada como âncora e hub da RMC |
+| **L3.5 — densificação da RMC** | ~~Valinhos~~ ✔, ~~Paulínia~~ ✔ (25/08/2026); próximas candidatas: Sumaré, Hortolândia, Americana, Jundiaí | Reforça o hub de Campinas recém-publicado; cidades médias com SERP fraca e verificação on-line viável |
 | **L4 — expansão por estado** | Cidades médias de MG, PR, SC, GO (definir por SERP na hora) | Só após SP consolidado; cada estado abre com 3–5 cidades e o índice `/emprestimos/[uf]/` |
 | Osasco, capitais | Ao final de cada lote regional | Grandes demais para um site novo; entram quando o cluster local já rankeia (~~Campinas~~ ✔ publicada em 24/08/2026 como âncora do L3) |
 

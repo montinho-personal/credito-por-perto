@@ -1,0 +1,46 @@
+{
+  "proposedTitle": "Lei do Superendividamento: a saída legal de quem não consegue mais pagar",
+  "primaryIntent": "lei do superendividamento como funciona repactuação de dívidas",
+  "secondaryIntents": [
+    "repactuação de dívidas no Procon como pedir",
+    "mínimo existencial o que é"
+  ],
+  "targetReader": "Quem deve mais do que consegue pagar e já rodou por renegociações soltas sem sair do lugar",
+  "readerSituation": "As dívidas somadas não cabem na renda; o leitor não sabe que existe um processo legal que reúne todos os credores de uma vez e preserva o mínimo para viver",
+  "centralQuestion": "Quando as dívidas somadas não cabem na renda, o que a Lei 14.181/2021 oferece de concreto e por onde se começa?",
+  "uniqueAngle": "Trata a lei como ferramenta de processo (todos os credores numa mesa, plano de até 5 anos, mínimo existencial preservado) e não como 'perdão de dívida' — desfazendo as duas distorções da SERP: o milagre e o ceticismo",
+  "originalContribution": [
+    "O teste de enquadramento: renegociação pontual × superendividamento estrutural",
+    "O mapa do processo em fases (conciliação em bloco → plano de até 5 anos → fase judicial se falhar)",
+    "Lista do que a lei NÃO faz (não perdoa dívida, não cobre crédito com garantia real nem impostos)",
+    "Portas de entrada gratuitas: Procon, Defensoria, Justiça — sem intermediário pago"
+  ],
+  "primarySources": [
+    "Lei nº 14.181/2021 (alterações no CDC)",
+    "Decreto nº 11.150/2022, alterado pelo Decreto nº 11.567/2023 (mínimo existencial)"
+  ],
+  "supportingSources": [
+    "Materiais orientativos de tribunais estaduais sobre a aplicação da lei"
+  ],
+  "contentArchetype": "guide",
+  "proposedStructure": [
+    "Abertura: quando renegociar uma dívida por vez parou de funcionar",
+    "O que a lei criou de concreto (repactuação em bloco)",
+    "O mínimo existencial: o piso que a repactuação preserva",
+    "O que a lei não faz",
+    "Por onde começar (Procon, Defensoria, Justiça)",
+    "Como se preparar para a audiência (lista de credores, renda, despesas)",
+    "FAQ"
+  ],
+  "uniqueExamples": [],
+  "proposedVisuals": ["ChecklistBox (preparação)", "WarningBox (intermediários pagos)"],
+  "pagesThatMayCompete": [
+    "/organizacao-financeira/renegociacao-ou-emprestimo/",
+    "/organizacao-financeira/o-que-acontece-ao-atrasar-parcela/"
+  ],
+  "informationThatMustNotBeRepeated": [
+    "Táticas de renegociação individual (link para renegociação)",
+    "Linha do tempo do atraso (link)"
+  ],
+  "publicationDecision": "create"
+}

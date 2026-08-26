@@ -1,0 +1,66 @@
+{
+  "localityId": "sp-paulinia",
+  "localityName": "Paulínia",
+  "localityType": "municipality",
+  "stateCode": "sp",
+  "officialAdministrativeStatus": "Município do estado de São Paulo, integrante da Região Metropolitana de Campinas",
+  "officialSources": [
+    {
+      "organization": "Prefeitura de Paulínia",
+      "documentTitle": "Procon — Secretaria de Cidadania e Justiça",
+      "sourceLocation": "https://www.paulinia.sp.gov.br/procon",
+      "checkedAt": "2026-08-25",
+      "extractedFact": "O Procon Paulínia funciona na Av. Presidente Getúlio Vargas, 451, Nova Paulínia, telefone (19) 3874-1966, vinculado à Secretaria de Cidadania e Justiça, com janelas de atendimento ao público em horários específicos do dia.",
+      "relevanceToReader": "Endereço e telefone oficiais; o atendimento presencial tem janelas reduzidas, o que torna a ligação prévia importante."
+    },
+    {
+      "organization": "Procon-SP (página municipal)",
+      "documentTitle": "Paulínia — Procon municipal conveniado",
+      "sourceLocation": "https://www.procon.sp.gov.br/paulinia/",
+      "checkedAt": "2026-08-25",
+      "extractedFact": "O Procon estadual lista o posto municipal de Paulínia na Av. Presidente Getúlio Vargas, 451, com o telefone (19) 3874-1966.",
+      "relevanceToReader": "Confirmação estadual do endereço e telefone do posto municipal."
+    },
+    {
+      "organization": "IBGE",
+      "documentTitle": "Cidades e Estados — Paulínia (SP), Censo 2022",
+      "sourceLocation": "https://cidades.ibge.gov.br/brasil/sp/paulinia",
+      "checkedAt": "2026-08-25",
+      "extractedFact": "Paulínia registrou 110.537 habitantes no Censo 2022 e integra a Região Metropolitana de Campinas.",
+      "relevanceToReader": "Cidade de porte médio com forte massa salarial industrial (polo petroquímico)."
+    }
+  ],
+  "consumerProtectionResources": [
+    {
+      "organization": "Procon Paulínia",
+      "service": "Atendimento na Av. Presidente Getúlio Vargas, 451, Nova Paulínia; telefone (19) 3874-1966; janelas de atendimento presencial em horários específicos — ligue antes de ir",
+      "officialSource": "https://www.paulinia.sp.gov.br/procon",
+      "checkedAt": "2026-08-25"
+    },
+    {
+      "organization": "Consumidor.gov.br (plataforma federal)",
+      "service": "Reclamação on-line contra bancos e financeiras, com resposta monitorada — disponível a moradores de qualquer município",
+      "officialSource": "https://www.consumidor.gov.br",
+      "checkedAt": "2026-08-25"
+    }
+  ],
+  "verifiedLocalPrograms": [],
+  "verifiedServiceInformation": [],
+  "uniqueLocalQuestions": [
+    "Quais os horários reais de atendimento do Procon Paulínia (as janelas são curtas)?",
+    "Trabalho no polo industrial com salário alto: por que recebo tantas ofertas de consignado privado?",
+    "Não achei microcrédito público na cidade — onde busco?"
+  ],
+  "localRisksOrWarnings": [
+    "A massa salarial do polo petroquímico atrai assédio comercial de consignado privado e refinanciamento — a margem é do trabalhador, não do vendedor.",
+    "Não localizamos unidade do Banco do Povo Paulista em Paulínia em fonte oficial; desconfie de intermediários que 'agilizam microcrédito público' na cidade."
+  ],
+  "decisionImpact": [
+    "As janelas curtas do Procon tornam o consumidor.gov.br o primeiro canal prático da cidade",
+    "Salário alto não muda a régua: CET por escrito antes de assinar, em qualquer balcão"
+  ],
+  "pendingVerification": [
+    "Grade completa e vigente das janelas de atendimento presencial do Procon",
+    "Existência de programa municipal de microcrédito ou unidade do Banco do Povo (não confirmada em fonte oficial)"
+  ]
+}

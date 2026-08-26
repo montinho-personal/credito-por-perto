@@ -1,0 +1,33 @@
+{
+  "articleSlug": "lei-do-superendividamento",
+  "claims": [
+    {
+      "claimId": "lei-repactuacao",
+      "claimText": "A Lei nº 14.181/2021 incluiu no CDC o tratamento do superendividamento: o consumidor pode requerer processo de repactuação reunindo todos os credores, com audiência conciliatória e plano de pagamento de até 5 anos; recusas injustificadas podem levar à fase judicial com plano compulsório.",
+      "sourceOrganization": "Presidência da República",
+      "sourceTitle": "Lei nº 14.181, de 1º de julho de 2021",
+      "sourceLocation": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2021/lei/l14181.htm",
+      "sourceType": "official",
+      "accessedAt": "2026-08-25"
+    },
+    {
+      "claimId": "minimo-existencial",
+      "claimText": "O mínimo existencial para fins de prevenção e repactuação foi regulamentado pelo Decreto nº 11.150/2022, alterado pelo Decreto nº 11.567/2023, que fixou o valor em R$ 600 de renda mensal; o parâmetro é criticado e discutido judicialmente, e pode mudar.",
+      "sourceOrganization": "Presidência da República",
+      "sourceTitle": "Decreto nº 11.150/2022 e Decreto nº 11.567/2023",
+      "sourceLocation": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2022/decreto/D11150.htm",
+      "sourceType": "official",
+      "accessedAt": "2026-08-25",
+      "notes": "O artigo apresenta o valor como parâmetro regulamentar vigente e sinaliza a controvérsia, sem prometer resultado."
+    },
+    {
+      "claimId": "exclusoes",
+      "claimText": "Ficam fora do processo de repactuação, entre outras, as dívidas com garantia real, os financiamentos imobiliários, o crédito rural e as dívidas contraídas com má-fé (luxo, fraude), conforme o recorte legal do CDC alterado.",
+      "sourceOrganization": "Presidência da República",
+      "sourceTitle": "Lei nº 14.181/2021 — alterações ao art. 54-A do CDC",
+      "sourceLocation": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2021/lei/l14181.htm",
+      "sourceType": "official",
+      "accessedAt": "2026-08-25"
+    }
+  ]
+}

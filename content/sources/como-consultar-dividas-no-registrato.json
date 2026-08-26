@@ -1,0 +1,32 @@
+{
+  "articleSlug": "como-consultar-dividas-no-registrato",
+  "claims": [
+    {
+      "claimId": "registrato-gratuito-relatorios",
+      "claimText": "O Registrato é o sistema gratuito do Banco Central que emite relatórios sobre o CPF/CNPJ do titular: empréstimos e financiamentos (SCR), contas e relacionamentos em bancos (CCS), chaves Pix, câmbio e transferências internacionais e cheques sem fundo.",
+      "sourceOrganization": "Banco Central do Brasil",
+      "sourceTitle": "Registrato — Extrato do Registro de Informações no Banco Central",
+      "sourceLocation": "https://registrato.bcb.gov.br",
+      "sourceType": "official",
+      "accessedAt": "2026-08-25"
+    },
+    {
+      "claimId": "acesso-govbr",
+      "claimText": "O acesso ao Registrato é feito com conta gov.br de nível prata ou ouro, do próprio titular, sem custo.",
+      "sourceOrganization": "Portal gov.br",
+      "sourceTitle": "Emitir relatórios do Registrato (serviços gov.br)",
+      "sourceLocation": "https://www.gov.br/pt-br/servicos/emitir-relatorio-de-chaves-pix",
+      "sourceType": "official",
+      "accessedAt": "2026-08-25"
+    },
+    {
+      "claimId": "scr-conteudo",
+      "claimText": "O relatório de empréstimos e financiamentos reflete o SCR — Sistema de Informações de Créditos do Banco Central, com as operações de crédito reportadas pelas instituições, saldos e situação de pagamento.",
+      "sourceOrganization": "Banco Central do Brasil",
+      "sourceTitle": "SCR — Sistema de Informações de Créditos",
+      "sourceLocation": "https://www.bcb.gov.br/estabilidadefinanceira/scr",
+      "sourceType": "official",
+      "accessedAt": "2026-08-25"
+    }
+  ]
+}

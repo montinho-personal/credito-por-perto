@@ -1,0 +1,32 @@
+{
+  "articleSlug": "quitacao-antecipada-de-emprestimo",
+  "claims": [
+    {
+      "claimId": "cdc-reducao-proporcional",
+      "claimText": "O art. 52, §2º, do CDC assegura ao consumidor a liquidação antecipada do débito, total ou parcial, com redução proporcional dos juros e demais acréscimos.",
+      "sourceOrganization": "Presidência da República",
+      "sourceTitle": "Lei nº 8.078/1990 (Código de Defesa do Consumidor), art. 52, §2º",
+      "sourceLocation": "https://www.planalto.gov.br/ccivil_03/leis/l8078compilado.htm",
+      "sourceType": "official",
+      "accessedAt": "2026-08-25"
+    },
+    {
+      "claimId": "tarifa-vedada",
+      "claimText": "A Resolução CMN nº 3.516/2007 veda a cobrança de tarifa pela liquidação antecipada em contratos de crédito e arrendamento mercantil celebrados a partir de sua vigência (10/12/2007) com pessoas físicas e micro/pequenas empresas; em contratos prefixados, o valor presente é calculado com a taxa pactuada no contrato.",
+      "sourceOrganization": "Banco Central do Brasil / Conselho Monetário Nacional",
+      "sourceTitle": "Resolução CMN nº 3.516, de 6 de dezembro de 2007",
+      "sourceLocation": "https://www.bcb.gov.br/pre/normativos/res/2007/pdf/res_3516_v2_l.pdf",
+      "sourceType": "official",
+      "accessedAt": "2026-08-25"
+    },
+    {
+      "claimId": "stj-contratos-antigos",
+      "claimText": "Para contratos assinados antes de dezembro de 2007, o STJ admitiu a cobrança de tarifa de quitação antecipada prevista em contrato — o corte temporal da vedação é a vigência da Resolução 3.516/2007.",
+      "sourceOrganization": "Superior Tribunal de Justiça",
+      "sourceTitle": "Notícia oficial STJ — tarifa de quitação antecipada em contratos anteriores a dez/2007",
+      "sourceLocation": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias-antigas/2017/2017-03-06_09-16_Banco-pode-cobrar-por-quitacao-antecipada-em-contrato-assinado-antes-de-dezembro-de-2007.aspx",
+      "sourceType": "official",
+      "accessedAt": "2026-08-25"
+    }
+  ]
+}

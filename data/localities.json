@@ -179,6 +179,22 @@
       "stateCode": "sp",
       "citySlug": "vinhedo",
       "ibgeCode": "3556701"
+    },
+    {
+      "id": "sp-valinhos",
+      "name": "Valinhos",
+      "localityType": "municipality",
+      "stateCode": "sp",
+      "citySlug": "valinhos",
+      "ibgeCode": "3556206"
+    },
+    {
+      "id": "sp-paulinia",
+      "name": "Paulínia",
+      "localityType": "municipality",
+      "stateCode": "sp",
+      "citySlug": "paulinia",
+      "ibgeCode": "3536505"
     }
   ]
 }

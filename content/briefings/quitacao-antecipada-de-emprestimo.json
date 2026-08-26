@@ -1,0 +1,46 @@
+{
+  "proposedTitle": "Quitação antecipada: o desconto que é seu por direito (e como pedir)",
+  "primaryIntent": "quitação antecipada de empréstimo tem desconto",
+  "secondaryIntents": [
+    "antecipar parcelas do empréstimo vale a pena",
+    "banco pode cobrar taxa para quitar antecipado"
+  ],
+  "targetReader": "Quem recebeu um dinheiro (13º, restituição, venda) e quer saber se vale usar para adiantar ou quitar o empréstimo",
+  "readerSituation": "O leitor não sabe que a redução proporcional dos juros é direito de lei, que tarifa de quitação é vedada nos contratos atuais e que existe ordem inteligente para amortizar",
+  "centralQuestion": "Antecipar ou quitar um empréstimo dá desconto de verdade, quanto, e como se pede isso ao banco?",
+  "uniqueAngle": "Transforma o direito abstrato em roteiro operacional: pedir o saldo devedor atualizado com desconto, conferir a conta, escolher qual dívida amortizar primeiro (a de maior CET) e decidir entre reduzir prazo ou parcela",
+  "originalContribution": [
+    "O roteiro do pedido (boleto de quitação com desconto proporcional, por escrito)",
+    "A ordem de amortização: sempre a dívida de maior CET primeiro",
+    "Reduzir prazo × reduzir parcela: qual escolher e por quê",
+    "O teste 'quitar ou investir': comparar CET da dívida com rendimento líquido realista"
+  ],
+  "primarySources": [
+    "Código de Defesa do Consumidor, art. 52, §2º (liquidação antecipada com redução proporcional de juros)",
+    "Resolução CMN nº 3.516/2007 (veda tarifa por liquidação antecipada nos contratos a partir de 10/12/2007)"
+  ],
+  "supportingSources": [],
+  "contentArchetype": "guide",
+  "proposedStructure": [
+    "Abertura: o dinheiro extra e a dúvida clássica",
+    "O direito: redução proporcional de juros e tarifa vedada",
+    "Como pedir na prática (saldo devedor com desconto)",
+    "Amortização parcial: prazo ou parcela?",
+    "Qual dívida atacar primeiro",
+    "Quando NÃO vale antecipar",
+    "FAQ"
+  ],
+  "uniqueExamples": [
+    "Exemplo hipotético sinalizado: antecipar parcelas finais rende pouco desconto; antecipar cedo rende mais (juros decrescentes na Price)"
+  ],
+  "proposedVisuals": ["ChecklistBox (roteiro do pedido)", "ExampleBox"],
+  "pagesThatMayCompete": [
+    "/juros-e-cet/como-calcular-juros-de-emprestimo/",
+    "/emprestimos/portabilidade-de-credito/"
+  ],
+  "informationThatMustNotBeRepeated": [
+    "Mecânica de juros compostos e amortização (link para como calcular juros)",
+    "Portabilidade como alternativa (link)"
+  ],
+  "publicationDecision": "create"
+}

@@ -294,5 +294,23 @@
     "supportingPages": [
       "/emprestimos/como-funciona-analise-de-credito/"
     ]
+  },
+  "lei do superendividamento como funciona repactuação de dívidas": {
+    "canonicalOwner": "/organizacao-financeira/lei-do-superendividamento/",
+    "supportingPages": [
+      "/organizacao-financeira/renegociacao-ou-emprestimo/"
+    ]
+  },
+  "quitação antecipada de empréstimo tem desconto": {
+    "canonicalOwner": "/juros-e-cet/quitacao-antecipada-de-emprestimo/",
+    "supportingPages": [
+      "/juros-e-cet/como-calcular-juros-de-emprestimo/"
+    ]
+  },
+  "como consultar minhas dívidas no Registrato do Banco Central": {
+    "canonicalOwner": "/credito-seguro/como-consultar-dividas-no-registrato/",
+    "supportingPages": [
+      "/credito-seguro/emprestimo-caiu-na-conta-sem-pedir/"
+    ]
   }
 }

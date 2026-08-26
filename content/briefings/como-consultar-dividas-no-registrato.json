@@ -1,0 +1,44 @@
+{
+  "proposedTitle": "Registrato: o extrato oficial (e gratuito) de tudo que existe no seu CPF",
+  "primaryIntent": "como consultar minhas dívidas no Registrato do Banco Central",
+  "secondaryIntents": [
+    "registrato é gratuito e seguro",
+    "como saber se abriram empréstimo no meu nome"
+  ],
+  "targetReader": "Quem quer enxergar todas as operações de crédito, contas e chaves Pix no próprio CPF — por organização ou por suspeita de fraude",
+  "readerSituation": "A SERP mistura tutoriais desatualizados e sites que cobram por consulta gratuita; o leitor não sabe o que cada relatório mostra nem o que fazer com o que encontrar",
+  "centralQuestion": "O que o Registrato mostra, como acessar de graça e o que fazer quando aparece algo que você não reconhece?",
+  "uniqueAngle": "Apresenta o Registrato como o 'raio-X oficial' que os birôs não substituem (dados direto do BC), com mapa relatório a relatório e o protocolo de reação para cada achado estranho",
+  "originalContribution": [
+    "Mapa dos relatórios: empréstimos (SCR), contas (CCS), chaves Pix, câmbio, cheques sem fundo",
+    "A diferença Registrato × birôs (Serasa/SPC) em uma tabela",
+    "O protocolo do achado estranho: empréstimo desconhecido, conta desconhecida, chave Pix desconhecida",
+    "Rotina de verificação sugerida (a cada poucos meses e após qualquer suspeita de vazamento)"
+  ],
+  "primarySources": [
+    "Banco Central do Brasil — Registrato (registrato.bcb.gov.br)",
+    "Portal gov.br — acesso com conta nível prata ou ouro"
+  ],
+  "supportingSources": [],
+  "contentArchetype": "guide",
+  "proposedStructure": [
+    "Abertura: o extrato que quase ninguém conhece",
+    "O que cada relatório mostra",
+    "Como acessar (gov.br prata/ouro, de graça)",
+    "Registrato × birôs: o que cada um enxerga",
+    "Achou algo estranho? O protocolo por tipo de achado",
+    "Rotina de verificação",
+    "FAQ"
+  ],
+  "uniqueExamples": [],
+  "proposedVisuals": ["Tabela de relatórios", "Tabela Registrato × birôs", "ChecklistBox (protocolo)"],
+  "pagesThatMayCompete": [
+    "/credito-seguro/emprestimo-caiu-na-conta-sem-pedir/",
+    "/credito-seguro/como-consultar-se-instituicao-e-autorizada/"
+  ],
+  "informationThatMustNotBeRepeated": [
+    "Protocolo completo do crédito não solicitado (link)",
+    "Explicação do score e birôs (link para o guia do score)"
+  ],
+  "publicationDecision": "create"
+}
