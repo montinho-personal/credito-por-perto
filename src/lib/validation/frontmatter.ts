@@ -129,9 +129,21 @@ export const localGuideFrontmatterSchema = z
     noindex: z.boolean().optional(),
     /** ID do dossiê local em content/local-dossiers/ — obrigatório para publicar */
     dossierId: z.string().optional(),
+    featuredImage: z.string().optional(),
+    imageAlt: z.string().optional(),
+    /** Dimensões reais da capa quando fogem do padrão 1600×900 */
+    imageWidth: z.number().int().positive().optional(),
+    imageHeight: z.number().int().positive().optional(),
   })
   .strict()
   .superRefine((data, ctx) => {
+    if (data.featuredImage && !data.imageAlt) {
+      ctx.addIssue({
+        code: "custom",
+        message: "featuredImage exige imageAlt",
+        path: ["imageAlt"],
+      });
+    }
     if (data.status === "published") {
       if (!data.dossierId) {
         ctx.addIssue({

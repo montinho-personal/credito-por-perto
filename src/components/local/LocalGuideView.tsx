@@ -12,7 +12,9 @@ import {
 import { getAuthor } from "@/lib/content/authors";
 import { getStateByCode } from "@/lib/local-seo/states";
 import { buildMetadata } from "@/lib/metadata/build";
+import { SITE_URL } from "@/lib/site";
 import { webPageJsonLd } from "@/lib/schema/jsonld";
+import { ZoomableImage } from "@/components/content/ZoomableImage";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { Breadcrumbs } from "@/components/layout/Breadcrumbs";
 import { mdxComponents } from "@/components/content/mdx-components";
@@ -34,6 +36,10 @@ export function localGuideMetadata(urlPath: string): Metadata {
     description: fm.description,
     path: guide.urlPath,
     noindex: !isLocalGuideIndexable(guide),
+    image: fm.featuredImage ? `${SITE_URL}${fm.featuredImage}` : undefined,
+    imageAlt: fm.imageAlt,
+    imageWidth: fm.imageWidth,
+    imageHeight: fm.imageHeight,
   });
 }
 
@@ -71,7 +77,9 @@ export function LocalGuideView({ urlPath }: { urlPath: string }) {
 
   return (
     <article className="mx-auto max-w-3xl px-4 py-8">
-      <JsonLd data={webPageJsonLd(fm.title, fm.description, guide.urlPath)} />
+      <JsonLd
+        data={webPageJsonLd(fm.title, fm.description, guide.urlPath, fm.featuredImage)}
+      />
       <Breadcrumbs items={breadcrumbs} />
       <header className="mt-6 border-b border-brand-border pb-6">
         <p className="text-sm font-semibold uppercase tracking-wide text-brand-teal-dark">
@@ -98,6 +106,19 @@ export function LocalGuideView({ urlPath }: { urlPath: string }) {
           </div>
         ) : null}
       </header>
+
+      {fm.featuredImage && fm.imageAlt ? (
+        <div className="mt-6">
+          <ZoomableImage
+            src={fm.featuredImage}
+            alt={fm.imageAlt}
+            width={fm.imageWidth ?? 1600}
+            height={fm.imageHeight ?? 900}
+            priority
+            className="w-full rounded-xl border border-brand-border"
+          />
+        </div>
+      ) : null}
 
       {fm.status !== "published" ? (
         <p className="mt-6 rounded-lg border border-brand-warning/40 bg-brand-warning-soft p-4 text-sm font-medium text-brand-warning">

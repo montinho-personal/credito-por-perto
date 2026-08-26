@@ -76,7 +76,12 @@ export function breadcrumbJsonLd(items: BreadcrumbItem[]) {
   };
 }
 
-export function webPageJsonLd(title: string, description: string, path: string) {
+export function webPageJsonLd(
+  title: string,
+  description: string,
+  path: string,
+  image?: string,
+) {
   return {
     "@context": "https://schema.org",
     "@type": "WebPage",
@@ -85,5 +90,6 @@ export function webPageJsonLd(title: string, description: string, path: string) 
     url: `${SITE_URL}${path}`,
     inLanguage: "pt-BR",
     isPartOf: { "@id": `${SITE_URL}/#website` },
+    ...(image ? { image: [`${SITE_URL}${image}`] } : {}),
   };
 }
