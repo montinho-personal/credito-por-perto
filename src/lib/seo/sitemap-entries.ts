@@ -19,6 +19,7 @@ export const STATIC_INDEXABLE_PATHS = [
   "/calculadoras/comparador-de-propostas/",
   "/calculadoras/trocar-divida/",
   "/calculadoras/parcela-no-orcamento/",
+  "/calculadoras/conversor-de-taxas/",
   "/calculadoras/minha-taxa-esta-cara/",
   "/calculadoras/sinais-de-golpe/",
   "/calculadoras/emprestimo/",

@@ -71,6 +71,12 @@ export default function CalculadorasPage() {
           cta="Calcular parcelas"
         />
         <CategoryCard
+          title="Conversor de taxas: mensal ↔ anual"
+          description="3% ao mês são 36% ao ano? Não exatamente. Converta taxas nos dois sentidos por equivalência composta, em segundos."
+          href="/calculadoras/conversor-de-taxas/"
+          cta="Converter taxa"
+        />
+        <CategoryCard
           title="Calculadora de margem consignável"
           description="Veja quanto da sua margem está comprometido e quanto resta para um novo consignado — INSS e CLT."
           href="/calculadoras/margem-consignavel/"

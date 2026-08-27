@@ -109,6 +109,27 @@ export function buildSearchDocs(): SearchDoc[] {
       content: "",
     },
     {
+      id: "/calculadoras/conversor-de-taxas/",
+      url: "/calculadoras/conversor-de-taxas/",
+      title: "Conversor de taxa mensal para anual",
+      description:
+        "Converta uma taxa de juros mensal em anual (ou anual em mensal) por equivalência composta — e veja por que 3% ao mês não são 36% ao ano.",
+      section: "Calculadoras",
+      type: "calculadora",
+      tags: ["taxa-de-juros", "juros-compostos", "conversao"],
+      keywords: [
+        "taxa mensal para anual",
+        "converter taxa mensal para anual",
+        "juros mensal para anual",
+        "3 ao mes quanto ao ano",
+        "4 ao mes quanto ao ano",
+        "taxa equivalente",
+        "taxa anual para mensal",
+      ],
+      headings: [],
+      content: "",
+    },
+    {
       id: "/calculadoras/parcela-no-orcamento/",
       url: "/calculadoras/parcela-no-orcamento/",
       title: "Quanto de parcela cabe no meu orçamento?",

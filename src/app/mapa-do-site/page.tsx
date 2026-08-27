@@ -36,6 +36,7 @@ export default function MapaDoSitePage() {
         <li><Link href="/calculadoras/comparador-de-propostas/">Comparador de propostas de crédito</Link></li>
         <li><Link href="/calculadoras/trocar-divida/">Vale a pena trocar esta dívida?</Link></li>
         <li><Link href="/calculadoras/parcela-no-orcamento/">Quanto de parcela cabe no meu orçamento?</Link></li>
+        <li><Link href="/calculadoras/conversor-de-taxas/">Conversor de taxas: mensal ↔ anual</Link></li>
         <li><Link href="/calculadoras/minha-taxa-esta-cara/">Minha taxa está cara?</Link></li>
         <li><Link href="/calculadoras/sinais-de-golpe/">Essa proposta tem sinais de golpe?</Link></li>
         <li><Link href="/calculadoras/emprestimo/">Calculadora de empréstimo</Link></li>

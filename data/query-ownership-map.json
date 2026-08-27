@@ -353,5 +353,12 @@
       "/organizacao-financeira/quando-vale-a-pena-fazer-emprestimo/",
       "/emprestimos/guia-completo-de-emprestimo/"
     ]
+  },
+  "calculadora conversor de taxa de juros mensal para anual": {
+    "canonicalOwner": "/calculadoras/conversor-de-taxas/",
+    "supportingPages": [
+      "/juros-e-cet/taxa-mensal-e-taxa-anual/",
+      "/juros-e-cet/como-calcular-juros-de-emprestimo/"
+    ]
   }
 }
