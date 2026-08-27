@@ -89,6 +89,24 @@ export function buildSearchDocs(): SearchDoc[] {
 
   docs.push(
     {
+      id: "/calculadoras/comparador-de-propostas/",
+      url: "/calculadoras/comparador-de-propostas/",
+      title: "Comparador de propostas de crédito",
+      description:
+        "Compare até 3 propostas lado a lado: parcela, prazo, CET e total pago — sem cadastro e sem indicar banco.",
+      section: "Calculadoras",
+      type: "calculadora",
+      tags: ["comparador", "propostas", "cet", "parcela", "total pago"],
+      keywords: [
+        "comparar emprestimos",
+        "comparar propostas de credito",
+        "qual emprestimo e mais barato",
+        "comparar cet",
+      ],
+      headings: [],
+      content: "",
+    },
+    {
       id: "/calculadoras/emprestimo/",
       url: "/calculadoras/emprestimo/",
       title: "Calculadora de empréstimo",

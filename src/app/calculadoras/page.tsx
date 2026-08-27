@@ -29,6 +29,11 @@ export default function CalculadorasPage() {
       </p>
       <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
         <CategoryCard
+          title="Comparador de propostas de crédito"
+          description="Coloque até 3 propostas lado a lado e veja parcela, prazo, CET e total pago — parcela menor nem sempre é crédito mais barato."
+          href="/calculadoras/comparador-de-propostas/"
+        />
+        <CategoryCard
           title="Calculadora de empréstimo"
           description="Estime a parcela mensal, o total pago e o total de juros pelo sistema Price, com tabela de amortização mês a mês."
           href="/calculadoras/emprestimo/"

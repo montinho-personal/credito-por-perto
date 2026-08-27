@@ -312,5 +312,11 @@
     "supportingPages": [
       "/credito-seguro/emprestimo-caiu-na-conta-sem-pedir/"
     ]
+  },
+  "comparar propostas de empréstimo lado a lado qual é mais barata": {
+    "canonicalOwner": "/calculadoras/comparador-de-propostas/",
+    "supportingPages": [
+      "/organizacao-financeira/como-comparar-propostas-de-credito/"
+    ]
   }
 }

@@ -63,7 +63,9 @@ export default function CalculadoraEmprestimoPage() {
           captura integralmente: IOF, tarifas, seguros e o efeito deles no{" "}
           <Link href="/juros-e-cet/o-que-e-cet/">Custo Efetivo Total (CET)</Link>
           . Ao comparar propostas reais, peça sempre o CET e o valor total a
-          pagar — a taxa de juros sozinha não conta a história completa. Veja
+          pagar — a taxa de juros sozinha não conta a história completa. Tem
+          duas propostas em mãos? Coloque os números lado a lado no{" "}
+          <Link href="/calculadoras/comparador-de-propostas/">comparador de propostas</Link>. Veja
           também <Link href="/juros-e-cet/como-calcular-juros-de-emprestimo/">como calcular juros de empréstimo</Link>{" "}
           e <Link href="/organizacao-financeira/como-comparar-propostas-de-credito/">como comparar propostas de crédito</Link>.
         </p>
