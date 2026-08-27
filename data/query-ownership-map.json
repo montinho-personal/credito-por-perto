@@ -332,5 +332,12 @@
       "/credito-seguro/como-identificar-golpes-de-emprestimo/",
       "/credito-seguro/deposito-antecipado-e-golpe/"
     ]
+  },
+  "consultar instituição financeira por nome ou CNPJ no Banco Central": {
+    "canonicalOwner": "/calculadoras/consultar-instituicao/",
+    "supportingPages": [
+      "/credito-seguro/como-consultar-se-instituicao-e-autorizada/",
+      "/credito-seguro/emprestimo-sem-consulta/"
+    ]
   }
 }

@@ -164,6 +164,7 @@ export const FRAUD_QUESTIONS: readonly FraudQuestion[] = [
     recommendedAction:
       "Faça a consulta gratuita no Banco Central e procure os canais oficiais da instituição por conta própria — nunca pelo número que enviou a proposta.",
     links: [
+      { label: "Verificar agora por nome ou CNPJ", href: "/calculadoras/consultar-instituicao/" },
       { label: "Como consultar se a instituição é autorizada", href: "/credito-seguro/como-consultar-se-instituicao-e-autorizada/" },
       { label: "Consultar no Banco Central", href: "https://www.bcb.gov.br/meubc/encontreinstituicao", external: true },
     ],

@@ -89,6 +89,26 @@ export function buildSearchDocs(): SearchDoc[] {
 
   docs.push(
     {
+      id: "/calculadoras/consultar-instituicao/",
+      url: "/calculadoras/consultar-instituicao/",
+      title: "Essa instituição aparece no Banco Central?",
+      description:
+        "Pesquise uma instituição financeira por nome ou CNPJ nos dados oficiais do Banco Central — grátis, sem cadastro e sem salvar o que você digita.",
+      section: "Calculadoras",
+      type: "calculadora",
+      tags: ["banco-central", "instituicao-autorizada", "seguranca", "cnpj"],
+      keywords: [
+        "consultar financeira banco central",
+        "essa financeira existe",
+        "financeira autorizada banco central",
+        "consultar cnpj financeira",
+        "verificar instituicao financeira",
+        "banco e verdadeiro",
+      ],
+      headings: [],
+      content: "",
+    },
+    {
       id: "/calculadoras/sinais-de-golpe/",
       url: "/calculadoras/sinais-de-golpe/",
       title: "Essa proposta tem sinais de golpe?",

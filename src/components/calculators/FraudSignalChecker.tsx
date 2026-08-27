@@ -318,7 +318,14 @@ export function FraudSignalChecker() {
               </h3>
               <ul className="mt-2 list-disc space-y-1.5 pl-5 text-sm leading-relaxed text-brand-text">
                 <li>
-                  <strong>Verifique a instituição no Banco Central</strong> — consulta gratuita no{" "}
+                  <strong>Verifique a instituição no Banco Central</strong> —{" "}
+                  <Link
+                    href="/calculadoras/consultar-instituicao/"
+                    className="font-semibold underline"
+                  >
+                    consulte agora por nome ou CNPJ
+                  </Link>{" "}
+                  ou vá direto ao{" "}
                   <a
                     href="https://www.bcb.gov.br/meubc/encontreinstituicao"
                     target="_blank"
@@ -327,15 +334,8 @@ export function FraudSignalChecker() {
                     className="font-semibold underline"
                   >
                     Encontre uma instituição
-                  </a>{" "}
-                  (
-                  <Link
-                    href="/credito-seguro/como-consultar-se-instituicao-e-autorizada/"
-                    className="underline"
-                  >
-                    passo a passo aqui
-                  </Link>
-                  ). Lembre: encontrar a instituição no BC não confirma que quem falou com você a
+                  </a>
+                  . Lembre: encontrar a instituição no BC não confirma que quem falou com você a
                   representa;
                 </li>
                 <li>

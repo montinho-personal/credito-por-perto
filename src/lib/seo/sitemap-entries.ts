@@ -15,6 +15,7 @@ export const STATIC_INDEXABLE_PATHS = [
   "/credito-seguro/",
   "/organizacao-financeira/",
   "/calculadoras/",
+  "/calculadoras/consultar-instituicao/",
   "/calculadoras/comparador-de-propostas/",
   "/calculadoras/minha-taxa-esta-cara/",
   "/calculadoras/sinais-de-golpe/",
