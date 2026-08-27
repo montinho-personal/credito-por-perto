@@ -70,7 +70,11 @@ export default function TrocarDividaPage() {
           É quanto custa encerrar a dívida hoje, de uma vez. A instituição é obrigada a informar
           esse valor — peça o &ldquo;saldo para quitação antecipada&rdquo; no aplicativo ou
           atendimento, ou o documento descritivo do seu contrato, que reúne saldo devedor, taxa,
-          prazo e parcelas.
+          prazo e parcelas. Com o saldo em mãos, a{" "}
+          <Link href="/calculadoras/quitacao-antecipada/">
+            calculadora de quitação antecipada
+          </Link>{" "}
+          mostra a diferença entre quitar hoje e continuar pagando as parcelas.
         </p>
 
         <h2 id="saldo-menor">Por que o saldo para quitar pode ser menor que a soma das parcelas?</h2>

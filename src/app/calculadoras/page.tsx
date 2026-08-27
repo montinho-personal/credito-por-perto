@@ -53,6 +53,12 @@ export default function CalculadorasPage() {
           cta="Comparar dívidas"
         />
         <CategoryCard
+          title="Calculadora de quitação antecipada"
+          description="Compare o saldo para quitação com a soma das parcelas que ainda faltam e veja a diferença em reais — sem prometer desconto."
+          href="/calculadoras/quitacao-antecipada/"
+          cta="Calcular diferença"
+        />
+        <CategoryCard
           title="Radar de taxas de crédito"
           description="Os juros estão subindo ou caindo? Acompanhe as taxas médias das principais modalidades com dados oficiais e histórico do Banco Central."
           href="/taxas/"

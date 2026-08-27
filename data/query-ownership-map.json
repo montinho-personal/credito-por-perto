@@ -367,5 +367,12 @@
       "/juros-e-cet/taxa-mensal-e-taxa-anual/",
       "/juros-e-cet/como-calcular-juros-de-emprestimo/"
     ]
+  },
+  "calculadora quitação antecipada quanto muda quitando hoje": {
+    "canonicalOwner": "/calculadoras/quitacao-antecipada/",
+    "supportingPages": [
+      "/juros-e-cet/quitacao-antecipada-de-emprestimo/",
+      "/emprestimos/portabilidade-de-credito/"
+    ]
   }
 }

@@ -190,6 +190,27 @@ export function buildSearchDocs(): SearchDoc[] {
       content: "",
     },
     {
+      id: "/calculadoras/quitacao-antecipada/",
+      url: "/calculadoras/quitacao-antecipada/",
+      title: "Calculadora de quitação antecipada",
+      description:
+        "Compare o saldo para quitação com a soma das parcelas que ainda faltam e veja a diferença em reais — sem cadastro e sem enviar seus valores.",
+      section: "Calculadoras",
+      type: "calculadora",
+      tags: ["quitacao-antecipada", "saldo-devedor", "divida", "juros"],
+      keywords: [
+        "calculadora quitacao antecipada",
+        "quitar emprestimo antecipado",
+        "desconto para quitar emprestimo",
+        "saldo para quitacao",
+        "quanto custa quitar emprestimo hoje",
+        "antecipar parcelas do emprestimo",
+        "saldo devedor para quitacao",
+      ],
+      headings: [],
+      content: "",
+    },
+    {
       id: "/calculadoras/sinais-de-golpe/",
       url: "/calculadoras/sinais-de-golpe/",
       title: "Essa proposta tem sinais de golpe?",
