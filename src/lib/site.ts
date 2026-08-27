@@ -66,6 +66,7 @@ export const FOOTER_NAV = {
     { label: "Minha taxa está cara?", href: "/calculadoras/minha-taxa-esta-cara/" },
     { label: "Calculadora de empréstimo", href: "/calculadoras/emprestimo/" },
     { label: "Golpes de empréstimo", href: "/credito-seguro/como-identificar-golpes-de-emprestimo/" },
+    { label: "Sinais de golpe (verificação)", href: "/calculadoras/sinais-de-golpe/" },
     { label: "Glossário de crédito", href: "/glossario/" },
     { label: "Mapa do site", href: "/mapa-do-site/" },
   ],

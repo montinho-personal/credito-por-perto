@@ -89,6 +89,25 @@ export function buildSearchDocs(): SearchDoc[] {
 
   docs.push(
     {
+      id: "/calculadoras/sinais-de-golpe/",
+      url: "/calculadoras/sinais-de-golpe/",
+      title: "Essa proposta tem sinais de golpe?",
+      description:
+        "Responda perguntas rápidas e veja sinais de alerta antes de enviar dinheiro ou dados — sem cadastro e sem coleta de respostas.",
+      section: "Calculadoras",
+      type: "calculadora",
+      tags: ["golpe", "fraude", "seguranca", "pix", "whatsapp"],
+      keywords: [
+        "emprestimo e golpe",
+        "pediram pix para liberar emprestimo",
+        "taxa para liberar emprestimo",
+        "golpe emprestimo whatsapp",
+        "financeira falsa",
+      ],
+      headings: [],
+      content: "",
+    },
+    {
       id: "/calculadoras/minha-taxa-esta-cara/",
       url: "/calculadoras/minha-taxa-esta-cara/",
       title: "Minha taxa está cara?",

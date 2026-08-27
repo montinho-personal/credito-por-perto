@@ -213,6 +213,10 @@ export default function HomePage() {
                 className="font-semibold underline"
               >
                 Veja como se proteger
+              </Link>{" "}
+              — ou{" "}
+              <Link href="/calculadoras/sinais-de-golpe/" className="font-semibold underline">
+                verifique os sinais da proposta que você recebeu
               </Link>
               .
             </p>

@@ -34,6 +34,7 @@ export default function MapaDoSitePage() {
         <li><Link href="/calculadoras/">Calculadoras</Link></li>
         <li><Link href="/calculadoras/comparador-de-propostas/">Comparador de propostas de crédito</Link></li>
         <li><Link href="/calculadoras/minha-taxa-esta-cara/">Minha taxa está cara?</Link></li>
+        <li><Link href="/calculadoras/sinais-de-golpe/">Essa proposta tem sinais de golpe?</Link></li>
         <li><Link href="/calculadoras/emprestimo/">Calculadora de empréstimo</Link></li>
         <li><Link href="/emprestimos/guias-locais/">Guias locais</Link></li>
         <li><Link href="/artigos/">Blog</Link></li>

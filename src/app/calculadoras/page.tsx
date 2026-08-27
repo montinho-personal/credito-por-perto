@@ -35,6 +35,12 @@ export default function CalculadorasPage() {
           cta="Comparar propostas"
         />
         <CategoryCard
+          title="Essa proposta tem sinais de golpe?"
+          description="Pediram Pix para liberar? Responda perguntas rápidas e veja os sinais de alerta antes de enviar dinheiro ou dados."
+          href="/calculadoras/sinais-de-golpe/"
+          cta="Verificar sinais"
+        />
+        <CategoryCard
           title="Minha taxa está cara?"
           description="Informe a taxa da sua proposta e veja como ela se compara à média oficial do Banco Central para a mesma modalidade."
           href="/calculadoras/minha-taxa-esta-cara/"
