@@ -68,6 +68,54 @@ interface SgsRow {
   valor: string; // "6,32"
 }
 
+/**
+ * Busca linhas cruas de uma série no SGS, com resiliência à mudança da API
+ * de março/2025 (filtros obrigatórios/limites de volume):
+ * 1) tenta o endpoint `ultimos/N`;
+ * 2) se a API recusar (ex.: HTTP 400), tenta a consulta por período de
+ *    datas (janela de `monthsWindow` meses, sempre < 10 anos).
+ * Loga o status e o início do corpo em cada recusa, para diagnóstico.
+ * Compartilhada com o Radar de Taxas. Retorna null se ambas falharem.
+ */
+export async function fetchSgsRows(
+  seriesCode: number,
+  points: number,
+  monthsWindow: number,
+): Promise<unknown | null> {
+  const headers = {
+    Accept: "application/json",
+    "User-Agent":
+      "Mozilla/5.0 (compatible; CreditoPorPerto/1.0; +https://www.creditoporperto.com)",
+  };
+  const fmt = (d: Date) =>
+    `${String(d.getDate()).padStart(2, "0")}/${String(d.getMonth() + 1).padStart(2, "0")}/${d.getFullYear()}`;
+  const end = new Date();
+  const start = new Date(end);
+  start.setMonth(start.getMonth() - monthsWindow);
+  const urls = [
+    `${SGS_BASE}/bcdata.sgs.${seriesCode}/dados/ultimos/${points}?formato=json`,
+    `${SGS_BASE}/bcdata.sgs.${seriesCode}/dados?formato=json&dataInicial=${fmt(start)}&dataFinal=${fmt(end)}`,
+  ];
+  for (const url of urls) {
+    try {
+      const response = await fetch(url, {
+        next: { revalidate: REVALIDATE_SECONDS },
+        headers,
+      });
+      if (response.ok) return (await response.json()) as unknown;
+      const body = (await response.text()).replace(/\s+/g, " ").slice(0, 200);
+      console.warn(
+        `[sgs] série ${seriesCode}: HTTP ${response.status} em ${url.includes("/ultimos/") ? "ultimos" : "periodo"} — ${body}`,
+      );
+    } catch (error) {
+      console.warn(
+        `[sgs] série ${seriesCode}: ${error instanceof Error ? error.message : "erro de rede"}`,
+      );
+    }
+  }
+  return null;
+}
+
 function parseSgsRow(row: SgsRow): RatePoint | null {
   const dateMatch = /^(\d{2})\/(\d{2})\/(\d{4})$/.exec(row.data ?? "");
   if (!dateMatch) return null;
@@ -97,19 +145,14 @@ function validateSeriesPayload(
 }
 
 async function fetchSeries(series: BcbSeries): Promise<SeriesData | null> {
-  const url = `${SGS_BASE}/bcdata.sgs.${series.monthlySeries}/dados/ultimos/${POINTS}?formato=json`;
   try {
-    const response = await fetch(url, {
-      next: { revalidate: REVALIDATE_SECONDS },
-      headers: { Accept: "application/json" },
-    });
-    if (!response.ok) {
+    const rows = await fetchSgsRows(series.monthlySeries, POINTS, 16);
+    if (rows === null) {
       console.warn(
-        `[bcb-rates] série ${series.monthlySeries} (${series.internalId}): HTTP ${response.status}`,
+        `[bcb-rates] série ${series.monthlySeries} (${series.internalId}): indisponível nas duas formas de consulta`,
       );
       return null;
     }
-    const rows = (await response.json()) as unknown;
     const points = validateSeriesPayload(series, rows);
     if (!points) {
       console.warn(

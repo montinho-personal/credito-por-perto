@@ -19,6 +19,7 @@
 
 import { BCB_SERIES_REGISTRY, type BcbSeries } from "./series-registry";
 import {
+  fetchSgsRows,
   parseSgsRow,
   type RatePoint,
 } from "./rates-service";
@@ -45,13 +46,8 @@ export interface RadarResult {
   fetchedAt: string;
 }
 
-const SGS_BASE =
-  process.env.VERCEL_ENV === "production"
-    ? "https://api.bcb.gov.br/dados/serie"
-    : (process.env.BCB_SGS_BASE_URL ?? "https://api.bcb.gov.br/dados/serie");
 /** 61 pontos = 5 anos de histórico + margem para mês ainda não fechado */
 const POINTS = 61;
-const REVALIDATE_SECONDS = 60 * 60 * 24;
 
 /** Fator de anomalia extrema (não substituir dado bom por dado corrompido). */
 const EXTREME_ANOMALY_FACTOR = 5;
@@ -84,17 +80,14 @@ export function validateRadarPayload(
 }
 
 async function fetchRadarSeries(series: BcbSeries): Promise<RadarSeries | null> {
-  const url = `${SGS_BASE}/bcdata.sgs.${series.monthlySeries}/dados/ultimos/${POINTS}?formato=json`;
   try {
-    const response = await fetch(url, {
-      next: { revalidate: REVALIDATE_SECONDS },
-      headers: { Accept: "application/json" },
-    });
-    if (!response.ok) {
-      console.warn(`[radar] série ${series.monthlySeries} (${series.internalId}): HTTP ${response.status}`);
+    const rows = await fetchSgsRows(series.monthlySeries, POINTS, 63);
+    if (rows === null) {
+      console.warn(
+        `[radar] série ${series.monthlySeries} (${series.internalId}): indisponível nas duas formas de consulta`,
+      );
       return null;
     }
-    const rows = (await response.json()) as unknown;
     const points = validateRadarPayload(series, rows);
     if (!points) {
       console.warn(
