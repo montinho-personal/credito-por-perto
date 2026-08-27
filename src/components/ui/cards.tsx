@@ -30,10 +30,13 @@ export function CategoryCard({
   title,
   description,
   href,
+  cta,
 }: {
   title: string;
   description: string;
   href: string;
+  /** Rótulo da ação — use um verbo quando o destino for uma ferramenta */
+  cta?: string;
 }) {
   return (
     <Link
@@ -45,7 +48,7 @@ export function CategoryCard({
         {description}
       </p>
       <p className="mt-3 text-sm font-semibold text-brand-teal-dark">
-        Ver conteúdo →
+        {cta ?? "Ver conteúdo"} →
       </p>
     </Link>
   );

@@ -81,10 +81,10 @@ export default function HomePage() {
               Explorar os guias
             </Link>
             <Link
-              href="/calculadoras/emprestimo/"
+              href="/calculadoras/comparador-de-propostas/"
               className="rounded-lg border border-white/30 px-6 py-3 font-semibold text-white hover:bg-white/10"
             >
-              Calcular parcelas
+              Comparar propostas
             </Link>
           </div>
           <div className="mt-8">
@@ -148,29 +148,53 @@ export default function HomePage() {
           </section>
         ) : null}
 
-        {/* Calculadora */}
+        {/* Ferramentas */}
         <section
           aria-labelledby="calculadoras"
           className="mt-14 rounded-2xl border border-brand-border bg-brand-surface-soft p-8"
         >
           <div className="md:flex md:items-center md:justify-between md:gap-8">
             <div>
-              <h2 id="calculadoras" className="font-serif text-2xl font-bold text-brand-navy">
-                Calculadora de empréstimo
+              <p className="text-sm font-semibold uppercase tracking-wide text-brand-teal-dark">
+                Ferramenta gratuita
+              </p>
+              <h2
+                id="calculadoras"
+                className="mt-1 font-serif text-2xl font-bold text-brand-navy"
+              >
+                Tem duas propostas na mão? Compare lado a lado.
               </h2>
               <p className="mt-2 max-w-xl text-brand-muted">
-                Simule o valor aproximado da parcela, o total pago e o total de
-                juros antes de conversar com qualquer instituição. Sem cadastro,
-                sem CPF: os cálculos acontecem no seu navegador.
+                <strong>Parcela menor nem sempre é crédito mais barato.</strong>{" "}
+                Coloque parcela, prazo, CET e total pago na mesma régua e veja
+                onde está a diferença. Sem cadastro, sem informar banco: os
+                cálculos acontecem no seu navegador.
               </p>
             </div>
             <Link
-              href="/calculadoras/emprestimo/"
+              href="/calculadoras/comparador-de-propostas/"
               className="mt-4 inline-block shrink-0 rounded-lg bg-brand-teal-dark px-6 py-3 font-semibold text-white hover:bg-brand-teal md:mt-0"
             >
-              Usar a calculadora
+              Comparar propostas
             </Link>
           </div>
+          <p className="mt-5 border-t border-brand-border pt-4 text-sm text-brand-muted">
+            Ainda não tem uma proposta em mãos? Estime a parcela na{" "}
+            <Link
+              href="/calculadoras/emprestimo/"
+              className="font-semibold text-brand-navy underline"
+            >
+              calculadora de empréstimo
+            </Link>{" "}
+            ou veja quanto cabe na{" "}
+            <Link
+              href="/calculadoras/margem-consignavel/"
+              className="font-semibold text-brand-navy underline"
+            >
+              calculadora de margem consignável
+            </Link>
+            .
+          </p>
         </section>
 
         {/* Segurança */}

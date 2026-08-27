@@ -32,6 +32,7 @@ export default function MapaDoSitePage() {
           </li>
         ))}
         <li><Link href="/calculadoras/">Calculadoras</Link></li>
+        <li><Link href="/calculadoras/comparador-de-propostas/">Comparador de propostas de crédito</Link></li>
         <li><Link href="/calculadoras/emprestimo/">Calculadora de empréstimo</Link></li>
         <li><Link href="/emprestimos/guias-locais/">Guias locais</Link></li>
         <li><Link href="/artigos/">Blog</Link></li>

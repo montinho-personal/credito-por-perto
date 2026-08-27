@@ -32,16 +32,19 @@ export default function CalculadorasPage() {
           title="Comparador de propostas de crédito"
           description="Coloque até 3 propostas lado a lado e veja parcela, prazo, CET e total pago — parcela menor nem sempre é crédito mais barato."
           href="/calculadoras/comparador-de-propostas/"
+          cta="Comparar propostas"
         />
         <CategoryCard
           title="Calculadora de empréstimo"
           description="Estime a parcela mensal, o total pago e o total de juros pelo sistema Price, com tabela de amortização mês a mês."
           href="/calculadoras/emprestimo/"
+          cta="Calcular parcelas"
         />
         <CategoryCard
           title="Calculadora de margem consignável"
           description="Veja quanto da sua margem está comprometido e quanto resta para um novo consignado — INSS e CLT."
           href="/calculadoras/margem-consignavel/"
+          cta="Calcular margem"
         />
       </div>
     </div>
