@@ -53,6 +53,12 @@ export default function CalculadorasPage() {
           cta="Comparar dívidas"
         />
         <CategoryCard
+          title="Radar de taxas de crédito"
+          description="Os juros estão subindo ou caindo? Acompanhe as taxas médias das principais modalidades com dados oficiais e histórico do Banco Central."
+          href="/taxas/"
+          cta="Ver taxas"
+        />
+        <CategoryCard
           title="Minha taxa está cara?"
           description="Informe a taxa da sua proposta e veja como ela se compara à média oficial do Banco Central para a mesma modalidade."
           href="/calculadoras/minha-taxa-esta-cara/"

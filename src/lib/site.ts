@@ -62,6 +62,7 @@ export const FOOTER_NAV = {
     { label: "Empréstimo pessoal", href: "/emprestimos/emprestimo-pessoal/" },
     { label: "Empréstimo consignado", href: "/emprestimos/emprestimo-consignado/" },
     { label: "O que é CET", href: "/juros-e-cet/o-que-e-cet/" },
+    { label: "Radar de taxas do BC", href: "/taxas/" },
     { label: "Consultar instituição no BC", href: "/calculadoras/consultar-instituicao/" },
     { label: "Comparador de propostas", href: "/calculadoras/comparador-de-propostas/" },
     { label: "Trocar dívida vale a pena?", href: "/calculadoras/trocar-divida/" },

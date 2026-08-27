@@ -14,10 +14,7 @@
  *   séries); taxa anual do usuário é convertida para a equivalente mensal
  *   composta antes de comparar, com a fórmula documentada na metodologia.
  *
- * EXCLUÍDAS DA V1 (e por quê):
- * - Cartão de crédito ROTATIVO: só confirmamos a série ANUAL (SGS 22022);
- *   sem o código mensal confirmado, não comparamos — entra quando o código
- *   for verificado na fonte.
+ * EXCLUÍDAS (e por quê):
  * - Cartão de crédito TOTAL (SGS 25479): mistura rotativo e parcelado;
  *   menos útil para a pergunta do usuário do que o parcelado isolado.
  * - Financiamento imobiliário: recursos DIRECIONADOS, outra família
@@ -146,6 +143,20 @@ export const BCB_SERIES_REGISTRY: readonly BcbSeries[] = [
       "https://dadosabertos.bcb.gov.br/dataset/25478-taxa-media-mensal-de-juros-das-operacoes-de-credito-com-recursos-livres---pessoas-fisicas---c",
     relatedGuidePath: "/organizacao-financeira/como-sair-do-rotativo/",
     sanity: { min: 2, max: 25 },
+  },
+  {
+    internalId: "cartao-rotativo",
+    displayName: "Cartão de crédito rotativo",
+    officialName:
+      "Taxa média mensal de juros — Pessoas físicas — Cartão de crédito rotativo",
+    monthlySeries: 25477,
+    unit: "% a.m.",
+    periodicity: "mensal",
+    methodology: METHODOLOGY,
+    sourceUrl:
+      "https://dadosabertos.bcb.gov.br/dataset/25477-taxa-media-mensal-de-juros-das-operacoes-de-credito-com-recursos-livres---pessoas-fisicas---c",
+    relatedGuidePath: "/organizacao-financeira/como-sair-do-rotativo/",
+    sanity: { min: 5, max: 40 },
   },
   {
     internalId: "veiculos",

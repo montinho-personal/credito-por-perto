@@ -31,6 +31,7 @@ export default function MapaDoSitePage() {
             <Link href={cat.basePath}>{cat.label}</Link>
           </li>
         ))}
+        <li><Link href="/taxas/">Radar de taxas de crédito</Link></li>
         <li><Link href="/calculadoras/">Calculadoras</Link></li>
         <li><Link href="/calculadoras/consultar-instituicao/">Essa instituição aparece no Banco Central?</Link></li>
         <li><Link href="/calculadoras/comparador-de-propostas/">Comparador de propostas de crédito</Link></li>

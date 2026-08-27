@@ -67,7 +67,9 @@ export default async function MinhaTaxaEstaCaraPage() {
           Comparando com a referência certa. O Banco Central publica, todo mês, a{" "}
           <strong>taxa média das novas operações</strong> de cada modalidade de crédito, ponderada
           pelo valor concedido. É essa média que a ferramenta usa: você informa sua taxa, escolhe a
-          modalidade equivalente e vê a diferença em pontos percentuais. Uma taxa só começa a fazer
+          modalidade equivalente e vê a diferença em pontos percentuais. A evolução dessas
+          médias, com histórico e variação mês a mês, está no{" "}
+          <Link href="/taxas/">Radar de taxas de crédito</Link>. Uma taxa só começa a fazer
           sentido quando você sabe com o que está comparando.
         </p>
 

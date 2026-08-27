@@ -354,6 +354,13 @@
       "/emprestimos/guia-completo-de-emprestimo/"
     ]
   },
+  "acompanhar taxas médias de juros de crédito do Banco Central": {
+    "canonicalOwner": "/taxas/",
+    "supportingPages": [
+      "/juros-e-cet/como-consultar-taxa-media-do-bc/",
+      "/juros-e-cet/juros-abusivos-como-saber/"
+    ]
+  },
   "calculadora conversor de taxa de juros mensal para anual": {
     "canonicalOwner": "/calculadoras/conversor-de-taxas/",
     "supportingPages": [

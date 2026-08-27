@@ -89,6 +89,26 @@ export function buildSearchDocs(): SearchDoc[] {
 
   docs.push(
     {
+      id: "/taxas/",
+      url: "/taxas/",
+      title: "Radar de taxas de crédito",
+      description:
+        "Acompanhe as taxas médias de empréstimo, consignado, cartão, cheque especial e veículos com dados oficiais e histórico do Banco Central.",
+      section: "Ferramentas",
+      type: "calculadora",
+      tags: ["taxa-de-juros", "banco-central", "radar", "historico"],
+      keywords: [
+        "taxa media de juros banco central",
+        "juros emprestimo hoje",
+        "juros estao subindo ou caindo",
+        "taxa consignado inss",
+        "juros cartao rotativo",
+        "historico juros emprestimo",
+      ],
+      headings: [],
+      content: "",
+    },
+    {
       id: "/calculadoras/consultar-instituicao/",
       url: "/calculadoras/consultar-instituicao/",
       title: "Essa instituição aparece no Banco Central?",
