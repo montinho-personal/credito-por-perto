@@ -318,5 +318,12 @@
     "supportingPages": [
       "/organizacao-financeira/como-comparar-propostas-de-credito/"
     ]
+  },
+  "minha taxa de juros está alta comparar com o Banco Central": {
+    "canonicalOwner": "/calculadoras/minha-taxa-esta-cara/",
+    "supportingPages": [
+      "/juros-e-cet/como-consultar-taxa-media-do-bc/",
+      "/juros-e-cet/juros-abusivos-como-saber/"
+    ]
   }
 }

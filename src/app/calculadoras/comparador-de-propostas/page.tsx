@@ -173,6 +173,10 @@ export default function ComparadorDePropostasPage() {
             partir de valor, taxa e prazo;
           </li>
           <li>
+            <Link href="/calculadoras/minha-taxa-esta-cara/">Minha taxa está cara?</Link> — coloque
+            a taxa da proposta em contexto, comparando com a média oficial do Banco Central;
+          </li>
+          <li>
             <Link href="/juros-e-cet/como-consultar-taxa-media-do-bc/">
               Consultar a taxa média do Banco Central
             </Link>{" "}

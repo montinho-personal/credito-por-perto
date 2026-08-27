@@ -35,6 +35,12 @@ export default function CalculadorasPage() {
           cta="Comparar propostas"
         />
         <CategoryCard
+          title="Minha taxa está cara?"
+          description="Informe a taxa da sua proposta e veja como ela se compara à média oficial do Banco Central para a mesma modalidade."
+          href="/calculadoras/minha-taxa-esta-cara/"
+          cta="Comparar minha taxa"
+        />
+        <CategoryCard
           title="Calculadora de empréstimo"
           description="Estime a parcela mensal, o total pago e o total de juros pelo sistema Price, com tabela de amortização mês a mês."
           href="/calculadoras/emprestimo/"

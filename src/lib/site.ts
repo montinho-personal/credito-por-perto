@@ -63,6 +63,7 @@ export const FOOTER_NAV = {
     { label: "Empréstimo consignado", href: "/emprestimos/emprestimo-consignado/" },
     { label: "O que é CET", href: "/juros-e-cet/o-que-e-cet/" },
     { label: "Comparador de propostas", href: "/calculadoras/comparador-de-propostas/" },
+    { label: "Minha taxa está cara?", href: "/calculadoras/minha-taxa-esta-cara/" },
     { label: "Calculadora de empréstimo", href: "/calculadoras/emprestimo/" },
     { label: "Golpes de empréstimo", href: "/credito-seguro/como-identificar-golpes-de-emprestimo/" },
     { label: "Glossário de crédito", href: "/glossario/" },

@@ -89,6 +89,24 @@ export function buildSearchDocs(): SearchDoc[] {
 
   docs.push(
     {
+      id: "/calculadoras/minha-taxa-esta-cara/",
+      url: "/calculadoras/minha-taxa-esta-cara/",
+      title: "Minha taxa está cara?",
+      description:
+        "Compare a taxa da sua proposta com a média oficial do Banco Central para a mesma modalidade — sem cadastro e sem indicar banco.",
+      section: "Calculadoras",
+      type: "calculadora",
+      tags: ["taxa", "juros", "banco central", "media", "comparar"],
+      keywords: [
+        "minha taxa esta alta",
+        "juros de 4 ao mes e muito",
+        "taxa media banco central",
+        "comparar taxa de juros",
+      ],
+      headings: [],
+      content: "",
+    },
+    {
       id: "/calculadoras/comparador-de-propostas/",
       url: "/calculadoras/comparador-de-propostas/",
       title: "Comparador de propostas de crédito",
