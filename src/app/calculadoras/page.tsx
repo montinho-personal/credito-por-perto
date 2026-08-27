@@ -59,6 +59,12 @@ export default function CalculadorasPage() {
           cta="Comparar minha taxa"
         />
         <CategoryCard
+          title="Quanto de parcela cabe no meu orçamento?"
+          description="Informe renda, despesas e dívidas e veja quanto sobra antes e depois da nova parcela — a folga importa mais que o percentual da renda."
+          href="/calculadoras/parcela-no-orcamento/"
+          cta="Calcular impacto"
+        />
+        <CategoryCard
           title="Calculadora de empréstimo"
           description="Estime a parcela mensal, o total pago e o total de juros pelo sistema Price, com tabela de amortização mês a mês."
           href="/calculadoras/emprestimo/"

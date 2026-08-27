@@ -109,6 +109,26 @@ export function buildSearchDocs(): SearchDoc[] {
       content: "",
     },
     {
+      id: "/calculadoras/parcela-no-orcamento/",
+      url: "/calculadoras/parcela-no-orcamento/",
+      title: "Quanto de parcela cabe no meu orçamento?",
+      description:
+        "Informe renda, despesas e dívidas e veja quanto sobra antes e depois de uma nova parcela — sem regra fixa de percentual e sem recomendação.",
+      section: "Calculadoras",
+      type: "calculadora",
+      tags: ["orcamento", "parcela", "comprometimento-de-renda", "planejamento"],
+      keywords: [
+        "quanto posso pagar de parcela",
+        "parcela cabe no orcamento",
+        "quanto posso comprometer da renda",
+        "quanto posso pagar de emprestimo por mes",
+        "calculadora comprometimento de renda",
+        "qual parcela cabe no meu salario",
+      ],
+      headings: [],
+      content: "",
+    },
+    {
       id: "/calculadoras/trocar-divida/",
       url: "/calculadoras/trocar-divida/",
       title: "Vale a pena trocar esta dívida?",

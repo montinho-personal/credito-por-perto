@@ -346,5 +346,12 @@
       "/emprestimos/portabilidade-de-credito/",
       "/organizacao-financeira/renegociacao-ou-emprestimo/"
     ]
+  },
+  "quanto posso pagar de parcela por mês cabe no orçamento": {
+    "canonicalOwner": "/calculadoras/parcela-no-orcamento/",
+    "supportingPages": [
+      "/organizacao-financeira/quando-vale-a-pena-fazer-emprestimo/",
+      "/emprestimos/guia-completo-de-emprestimo/"
+    ]
   }
 }

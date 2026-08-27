@@ -132,7 +132,12 @@ export default function TrocarDividaPage() {
           Depende do que você precisa. Se o orçamento do mês não fecha, alongar pode ser a
           diferença entre pagar e atrasar — um alívio com preço conhecido. O problema é alongar
           <em> sem perceber</em> que o total aumentou. A ferramenta existe para esse número não
-          passar despercebido: se a troca custa mais caro no total, você decide sabendo.
+          passar despercebido: se a troca custa mais caro no total, você decide sabendo. E para
+          ver o que a nova parcela faz com o seu mês, use{" "}
+          <Link href="/calculadoras/parcela-no-orcamento/">
+            quanto de parcela cabe no meu orçamento?
+          </Link>
+
         </p>
 
         <h2 id="pagamento-antecipado">O que fazer se pedirem pagamento antecipado?</h2>
