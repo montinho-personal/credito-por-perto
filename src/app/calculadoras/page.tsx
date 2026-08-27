@@ -47,6 +47,12 @@ export default function CalculadorasPage() {
           cta="Verificar sinais"
         />
         <CategoryCard
+          title="Vale a pena trocar esta dívida?"
+          description="Compare a dívida atual com a nova proposta e veja o que muda na parcela, no prazo e no total — parcela menor não é dívida mais barata."
+          href="/calculadoras/trocar-divida/"
+          cta="Comparar dívidas"
+        />
+        <CategoryCard
           title="Minha taxa está cara?"
           description="Informe a taxa da sua proposta e veja como ela se compara à média oficial do Banco Central para a mesma modalidade."
           href="/calculadoras/minha-taxa-esta-cara/"

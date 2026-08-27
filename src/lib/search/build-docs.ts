@@ -109,6 +109,26 @@ export function buildSearchDocs(): SearchDoc[] {
       content: "",
     },
     {
+      id: "/calculadoras/trocar-divida/",
+      url: "/calculadoras/trocar-divida/",
+      title: "Vale a pena trocar esta dívida?",
+      description:
+        "Compare a dívida atual com uma nova condição — portabilidade, renegociação ou novo empréstimo — e veja o que muda na parcela, no prazo e no total.",
+      section: "Calculadoras",
+      type: "calculadora",
+      tags: ["portabilidade", "renegociacao", "quitacao", "divida"],
+      keywords: [
+        "vale a pena trocar divida",
+        "emprestimo para quitar divida",
+        "emprestimo para pagar cartao",
+        "portabilidade de emprestimo vale a pena",
+        "refinanciar divida",
+        "trocar divida cara por barata",
+      ],
+      headings: [],
+      content: "",
+    },
+    {
       id: "/calculadoras/sinais-de-golpe/",
       url: "/calculadoras/sinais-de-golpe/",
       title: "Essa proposta tem sinais de golpe?",
