@@ -1,0 +1,247 @@
+{
+  "comment": "Fonte ÚNICA de verdade das ferramentas do site. Antes deste arquivo, os metadados viviam duplicados em src/lib/site.ts (rodapé), src/lib/search/build-docs.ts (busca) e src/app/calculadoras/page.tsx (hub) — e já tinham divergido: a margem consignável estava fora do rodapé. Hub, rodapé, busca, callouts nos artigos e auditoria de cobertura leem daqui. Ferramenta nova entra AQUI primeiro; o resto se atualiza sozinho.",
+  "schemaVersion": 1,
+  "situations": [
+    {
+      "id": "antes-de-contratar",
+      "label": "Vou contratar um crédito",
+      "lead": "Antes de assinar: conferir quem é a instituição, comparar propostas e ver se a parcela cabe."
+    },
+    {
+      "id": "ja-tenho-divida",
+      "label": "Já tenho a dívida",
+      "lead": "Com o contrato correndo: organizar, antecipar, trocar por outra ou entender o custo real."
+    },
+    {
+      "id": "entender-numeros",
+      "label": "Quero entender os números",
+      "lead": "Traduzir taxa, prazo e juros para uma conta que você consegue conferir."
+    },
+    {
+      "id": "desconfiei",
+      "label": "Desconfiei de algo",
+      "lead": "Proposta estranha, cobrança que não reconheço, alguém pedindo dinheiro adiantado."
+    }
+  ],
+  "tools": [
+    {
+      "id": "consultar-instituicao",
+      "name": "Consulta de instituição no Banco Central",
+      "shortName": "Consultar instituição",
+      "route": "/calculadoras/consultar-instituicao/",
+      "cta": "Consultar instituição",
+      "situation": "desconfiei",
+      "question": "Essa empresa aparece no Banco Central?",
+      "whenItHelps": "Pesquise por nome ou CNPJ nos dados oficiais do BC antes de continuar a conversa — registro é o primeiro passo, o contato é o segundo.",
+      "calloutLead": "Antes de entregar documento ou dinheiro, confira o nome ou o CNPJ nos dados oficiais do Banco Central.",
+      "triggerTerms": [
+        "instituição autorizada",
+        "autorizada pelo banco central",
+        "financeira autorizada",
+        "cnpj da empresa",
+        "empresa é confiável",
+        "checar o cnpj"
+      ]
+    },
+    {
+      "id": "sinais-de-golpe",
+      "name": "Verificação de sinais de golpe",
+      "shortName": "Sinais de golpe",
+      "route": "/calculadoras/sinais-de-golpe/",
+      "cta": "Verificar sinais",
+      "situation": "desconfiei",
+      "question": "Essa proposta tem sinais de golpe?",
+      "whenItHelps": "Pediram Pix para liberar o dinheiro? Responda perguntas rápidas e veja os sinais de alerta antes de enviar valores ou dados.",
+      "calloutLead": "Se alguma parte da conversa te deixou desconfortável, passe a proposta pela verificação de sinais.",
+      "triggerTerms": [
+        "pix adiantado",
+        "taxa antecipada",
+        "depósito antecipado",
+        "falsa central",
+        "pagar para receber",
+        "liberar o dinheiro"
+      ]
+    },
+    {
+      "id": "comparador-de-propostas",
+      "name": "Comparador de propostas de crédito",
+      "shortName": "Comparador de propostas",
+      "route": "/calculadoras/comparador-de-propostas/",
+      "cta": "Comparar propostas",
+      "situation": "antes-de-contratar",
+      "question": "Qual dessas propostas custa menos no total?",
+      "whenItHelps": "Coloque até 3 propostas lado a lado e veja parcela, prazo, CET e total pago — parcela menor nem sempre é crédito mais barato.",
+      "calloutLead": "Tem mais de uma proposta na mão? Coloque lado a lado antes de escolher pela parcela.",
+      "triggerTerms": [
+        "comparar propostas",
+        "duas propostas",
+        "qual proposta",
+        "cet",
+        "custo efetivo total"
+      ]
+    },
+    {
+      "id": "parcela-no-orcamento",
+      "name": "Quanto de parcela cabe no meu orçamento?",
+      "shortName": "Parcela no orçamento",
+      "route": "/calculadoras/parcela-no-orcamento/",
+      "cta": "Calcular impacto",
+      "situation": "antes-de-contratar",
+      "question": "Essa parcela cabe no meu mês?",
+      "whenItHelps": "Informe renda, despesas e dívidas e veja quanto sobra antes e depois da nova parcela — a folga importa mais que o percentual da renda.",
+      "calloutLead": "Antes de aceitar o prazo que o vendedor sugerir, veja quanto sobra no seu mês com a parcela dentro.",
+      "triggerTerms": [
+        "cabe no orçamento",
+        "comprometer a renda",
+        "quanto sobra",
+        "orçamento apertado",
+        "renda mensal"
+      ]
+    },
+    {
+      "id": "margem-consignavel",
+      "name": "Calculadora de margem consignável",
+      "shortName": "Margem consignável",
+      "route": "/calculadoras/margem-consignavel/",
+      "cta": "Calcular margem",
+      "situation": "antes-de-contratar",
+      "question": "Quanto da minha margem ainda está livre?",
+      "whenItHelps": "Veja quanto da margem já está comprometido e quanto resta para um novo consignado — INSS e CLT.",
+      "calloutLead": "Consignado tem teto de desconto em folha. Veja quanto da sua margem já está ocupado.",
+      "triggerTerms": [
+        "margem consignável",
+        "desconto em folha",
+        "consignado",
+        "rmc",
+        "rcc",
+        "cartão consignado"
+      ]
+    },
+    {
+      "id": "emprestimo",
+      "name": "Calculadora de empréstimo",
+      "shortName": "Calculadora de empréstimo",
+      "route": "/calculadoras/emprestimo/",
+      "cta": "Calcular parcelas",
+      "situation": "entender-numeros",
+      "question": "Quanto fica a parcela e quanto pago de juros?",
+      "whenItHelps": "Estime a parcela mensal, o total pago e o total de juros pelo sistema Price, com tabela de amortização mês a mês.",
+      "calloutLead": "Para ver a conta por trás da parcela — e quanto do total é juro — simule com os seus números.",
+      "triggerTerms": [
+        "valor da parcela",
+        "quanto vou pagar",
+        "tabela price",
+        "amortização",
+        "total de juros"
+      ]
+    },
+    {
+      "id": "conversor-de-taxas",
+      "name": "Conversor de taxas: mensal ↔ anual",
+      "shortName": "Conversor de taxas",
+      "route": "/calculadoras/conversor-de-taxas/",
+      "cta": "Converter taxa",
+      "situation": "entender-numeros",
+      "question": "3% ao mês dá quanto ao ano?",
+      "whenItHelps": "Converta taxas nos dois sentidos por equivalência composta — nunca multiplicando por 12.",
+      "calloutLead": "Taxa ao mês e taxa ao ano não se convertem multiplicando por 12. Faça a conversão correta em segundos.",
+      "triggerTerms": [
+        "taxa ao mês",
+        "taxa ao ano",
+        "ao mês equivale",
+        "juros compostos",
+        "taxa equivalente"
+      ]
+    },
+    {
+      "id": "minha-taxa-esta-cara",
+      "name": "Minha taxa está cara?",
+      "shortName": "Minha taxa está cara?",
+      "route": "/calculadoras/minha-taxa-esta-cara/",
+      "cta": "Comparar minha taxa",
+      "situation": "entender-numeros",
+      "question": "A taxa que me ofereceram está acima da média?",
+      "whenItHelps": "Informe a taxa da sua proposta e veja como ela se compara à média oficial do Banco Central para a mesma modalidade.",
+      "calloutLead": "Compare a taxa que te ofereceram com a média oficial do Banco Central para a mesma modalidade.",
+      "triggerTerms": [
+        "taxa média",
+        "juros abusivos",
+        "taxa está cara",
+        "acima da média",
+        "média do banco central"
+      ]
+    },
+    {
+      "id": "radar-de-taxas",
+      "name": "Radar de taxas de crédito",
+      "shortName": "Radar de taxas",
+      "route": "/taxas/",
+      "cta": "Ver taxas",
+      "situation": "entender-numeros",
+      "question": "Os juros estão subindo ou caindo?",
+      "whenItHelps": "Acompanhe as taxas médias das principais modalidades com dados oficiais e histórico do Banco Central.",
+      "calloutLead": "Para ver como as taxas médias da modalidade vêm se comportando, com dados oficiais do Banco Central.",
+      "triggerTerms": [
+        "taxa média do mercado",
+        "histórico de taxas",
+        "selic",
+        "juros do mercado"
+      ]
+    },
+    {
+      "id": "plano-para-sair-das-dividas",
+      "name": "Plano para sair das dívidas",
+      "shortName": "Plano para sair das dívidas",
+      "route": "/calculadoras/plano-para-sair-das-dividas/",
+      "cta": "Montar meu plano",
+      "situation": "ja-tenho-divida",
+      "question": "Tenho várias dívidas — por onde começo?",
+      "whenItHelps": "Organize todas as dívidas, veja quais merecem atenção primeiro e compare avalanche com bola de neve.",
+      "calloutLead": "Com mais de uma dívida na mesa, organizar todas em um lugar só costuma valer mais que decidir de cabeça.",
+      "triggerTerms": [
+        "várias dívidas",
+        "por onde começar",
+        "bola de neve",
+        "avalanche",
+        "superendividamento",
+        "sair das dívidas"
+      ]
+    },
+    {
+      "id": "trocar-divida",
+      "name": "Vale a pena trocar esta dívida?",
+      "shortName": "Trocar dívida",
+      "route": "/calculadoras/trocar-divida/",
+      "cta": "Comparar dívidas",
+      "situation": "ja-tenho-divida",
+      "question": "Trocar esta dívida por outra melhora ou piora?",
+      "whenItHelps": "Compare a dívida atual com a nova proposta e veja o que muda na parcela, no prazo e no total.",
+      "calloutLead": "Antes de trocar uma dívida por outra, compare as duas inteiras — não só as parcelas.",
+      "triggerTerms": [
+        "trocar dívida",
+        "portabilidade",
+        "refinanciamento",
+        "quitar com outro empréstimo",
+        "renegociar com novo contrato"
+      ]
+    },
+    {
+      "id": "quitacao-antecipada",
+      "name": "Calculadora de quitação antecipada",
+      "shortName": "Quitação antecipada",
+      "route": "/calculadoras/quitacao-antecipada/",
+      "cta": "Calcular diferença",
+      "situation": "ja-tenho-divida",
+      "question": "Quitar agora sai mais barato que seguir pagando?",
+      "whenItHelps": "Compare o saldo para quitação com a soma das parcelas que ainda faltam e veja a diferença em reais.",
+      "calloutLead": "Sobrou um dinheiro? Compare o saldo de quitação com a soma das parcelas que ainda faltam.",
+      "triggerTerms": [
+        "quitar antecipado",
+        "quitação antecipada",
+        "antecipar parcelas",
+        "amortizar",
+        "saldo devedor"
+      ]
+    }
+  ]
+}

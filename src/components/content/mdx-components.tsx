@@ -16,6 +16,7 @@ import {
 import { OfficialSourceLink } from "@/components/content/sources";
 import { ArticleImage } from "@/components/content/ArticleImage";
 import { VideoEmbed } from "@/components/content/VideoEmbed";
+import { ToolCallout } from "@/components/content/ToolCallout";
 
 function textFromChildren(children: ReactNode): string {
   if (typeof children === "string") return children;
@@ -88,4 +89,5 @@ export const mdxComponents = {
   OfficialSourceLink,
   ArticleImage,
   VideoEmbed,
+  ToolCallout,
 };

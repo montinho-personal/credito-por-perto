@@ -93,3 +93,23 @@ export function webPageJsonLd(
     ...(image ? { image: [`${SITE_URL}${image}`] } : {}),
   };
 }
+
+/**
+ * Lista ordenada de páginas internas — usada no hub de ferramentas.
+ * Descreve o que a página realmente mostra: uma lista, sem nota nem
+ * classificação, coerente com a regra de não usar AggregateRating.
+ */
+export function itemListJsonLd(items: Array<{ name: string; path: string }>) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    itemListOrder: "https://schema.org/ItemListUnordered",
+    numberOfItems: items.length,
+    itemListElement: items.map((item, index) => ({
+      "@type": "ListItem",
+      position: index + 1,
+      name: item.name,
+      url: `${SITE_URL}${item.path}`,
+    })),
+  };
+}

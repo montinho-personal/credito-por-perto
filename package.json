@@ -16,11 +16,12 @@
     "audit:cannibalization": "tsx scripts/audit-cannibalization.ts",
     "audit:local": "tsx scripts/audit-local-pages.ts",
     "audit:mapa": "tsx scripts/audit-financial-map.ts",
+    "audit:ferramentas": "tsx scripts/audit-tool-coverage.ts",
     "audit:links": "tsx scripts/audit-internal-links.ts",
     "audit:metadata": "tsx scripts/audit-metadata.ts",
     "audit:sources": "tsx scripts/audit-sources.ts",
     "audit:readability": "tsx scripts/audit-readability.ts",
-    "audit:all": "pnpm audit:originality && pnpm audit:canonical && pnpm audit:cannibalization && pnpm audit:local && pnpm audit:mapa && pnpm audit:links && pnpm audit:metadata && pnpm audit:sources && pnpm audit:readability",
+    "audit:all": "pnpm audit:originality && pnpm audit:canonical && pnpm audit:cannibalization && pnpm audit:local && pnpm audit:mapa && pnpm audit:ferramentas && pnpm audit:links && pnpm audit:metadata && pnpm audit:sources && pnpm audit:readability",
     "search:index": "tsx scripts/generate-search-index.ts"
   },
   "dependencies": {

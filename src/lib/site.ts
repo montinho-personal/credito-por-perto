@@ -72,6 +72,8 @@ export const FOOTER_NAV = {
     { label: "Conversor de taxas", href: "/calculadoras/conversor-de-taxas/" },
     { label: "Minha taxa está cara?", href: "/calculadoras/minha-taxa-esta-cara/" },
     { label: "Calculadora de empréstimo", href: "/calculadoras/emprestimo/" },
+    { label: "Margem consignável", href: "/calculadoras/margem-consignavel/" },
+    { label: "Todas as ferramentas", href: "/calculadoras/" },
     { label: "Golpes de empréstimo", href: "/credito-seguro/como-identificar-golpes-de-emprestimo/" },
     { label: "Sinais de golpe (verificação)", href: "/calculadoras/sinais-de-golpe/" },
     { label: "Glossário de crédito", href: "/glossario/" },

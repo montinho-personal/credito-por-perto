@@ -75,6 +75,54 @@ Todo artigo publicado segue, e a auditoria `audit:links` verifica:
 - Link externo de autoridade é sinal E-E-A-T em conteúdo YMYL — a lista de
   fontes ao final complementa, não substitui, o link inline.
 
+## Ferramentas nas páginas (regra dos dois sentidos)
+
+O leitor não vem aqui para ler: vem para decidir. Sempre que existir uma
+ferramenta que responda à pergunta que a página levanta, ela precisa estar
+oferecida **no ponto do texto em que a pergunta aparece** — não empilhada no
+rodapé, não no fim de tudo.
+
+A regra vale nos dois sentidos, e a auditoria `audit:ferramentas` verifica os
+dois:
+
+1. **Artigo novo → tem ferramenta que ajuda?** Antes de publicar, rode a
+   auditoria. Ela cruza o texto com os `triggerTerms` de cada ferramenta e
+   aponta as candidatas. Página publicada sem nenhuma ferramenta, tendo
+   acionado termos, vira aviso.
+2. **Ferramenta nova → onde ela se encaixa?** Ao criar uma ferramenta, ela
+   entra em `data/tool-registry.json` com seus `triggerTerms`. A auditoria
+   passa a apontar todos os artigos existentes em que ela caberia, e cobra um
+   mínimo de **4 portas de entrada** — ferramenta oferecida em duas páginas
+   está publicada, mas escondida.
+
+**Os avisos são pista, não veredito.** A auditoria diz onde a ferramenta
+caberia; quem decide se cabe de verdade é o editorial. Forçar link em todo
+casamento de termo produz exatamente o entulho que o leitor não quer — um
+artigo pode legitimamente não ter ferramenta que sirva, e isso é uma decisão
+válida.
+
+### Como oferecer
+
+- **`<ToolCallout id="..." />`** para a chamada em bloco, no ponto de decisão.
+  O nome, a rota e o CTA vêm do registry: renomear ou mover uma ferramenta não
+  deixa link quebrado para trás. O `note` opcional adapta a frase ao contexto
+  daquele artigo;
+- **link em prosa** (`[texto](/calculadoras/.../)`) quando a menção é de
+  passagem e um bloco quebraria a leitura.
+
+Nunca prometa resultado na chamada ("descubra se você é aprovado"). A chamada
+diz que **pergunta** a ferramenta responde, não que decisão o leitor deve
+tomar.
+
+### Fonte única
+
+`data/tool-registry.json` é a única fonte de verdade. Hub (`/calculadoras/`),
+rodapé, índice de busca, callouts e auditoria leem dali. Antes disso, a mesma
+lista vivia escrita à mão em três arquivos e já tinha divergido — a
+calculadora de margem consignável estava no hub e na busca, mas fora do
+rodapé, e nada checava. Há teste garantindo que as três superfícies citem
+todas as ferramentas.
+
 ## Datas de atualização
 
 `updatedAt` é exibido com destaque no cabeçalho (com `<time datetime>`),
