@@ -7,10 +7,25 @@
  */
 import { getPublishedArticles } from "@/lib/content/articles";
 import { getPublishedLocalGuides } from "@/lib/content/local";
+import { buildCityFinancialMap } from "@/lib/local/city-map";
 import { CATEGORIES } from "@/lib/content/categories";
 import type { SearchDoc } from "./types";
 
 const CONTENT_MAX_CHARS = 2400;
+
+/**
+ * Nomes e formas de acesso dos recursos do Mapa Financeiro daquela cidade,
+ * em texto corrido, para que a busca enxergue "Procon", "Ganha Tempo",
+ * "Poupatempo" e afins dentro da página local.
+ */
+function financialMapText(dossierId: string | undefined): string {
+  if (!dossierId) return "";
+  const map = buildCityFinancialMap(dossierId, new Date().toISOString().slice(0, 10));
+  if (!map) return "";
+  return map.resources
+    .map((r) => `${r.name} ${r.operator} ${r.howToAccess}`)
+    .join(" ");
+}
 
 /** Extrai H2/H3 do MDX. */
 function extractHeadings(mdx: string): string[] {
@@ -78,8 +93,22 @@ export function buildSearchDocs(): SearchDoc[] {
         `emprestimo ${fm.localityName}`,
         `credito ${fm.localityName}`,
       ],
-      headings: extractHeadings(guide.content),
-      content: toPlainText(guide.content),
+      /*
+       * O Mapa Financeiro é montado fora do MDX, então nem os nomes dos
+       * órgãos nem o título da seção entravam no índice: quem buscasse
+       * "procon cotia" não achava a página que tem exatamente isso. Aqui as
+       * duas camadas são costuradas de volta.
+       */
+      headings: [
+        ...extractHeadings(guide.content),
+        `Onde pedir ajuda em ${fm.localityName}`,
+      ],
+      content: [
+        toPlainText(guide.content),
+        financialMapText(fm.dossierId),
+      ]
+        .filter(Boolean)
+        .join(" "),
       city: fm.localityName,
       state: stateName,
       stateCode: fm.stateCode,

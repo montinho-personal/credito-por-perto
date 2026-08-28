@@ -66,8 +66,24 @@ export function ArticleHeader({
   );
 }
 
-export function TableOfContents({ content }: { content: string }) {
-  const headings = extractHeadings(content).filter((h) => h.depth === 2);
+/**
+ * Índice do conteúdo.
+ *
+ * `extraHeadings` existe para seções que a página monta fora do MDX — hoje o
+ * Mapa Financeiro dos guias locais. Sem isso, a seção mais útil da página
+ * ficava fora do índice e só era encontrada por quem rolasse até o fim.
+ */
+export function TableOfContents({
+  content,
+  extraHeadings = [],
+}: {
+  content: string;
+  extraHeadings?: Array<{ id: string; text: string }>;
+}) {
+  const headings = [
+    ...extractHeadings(content).filter((h) => h.depth === 2),
+    ...extraHeadings.map((h) => ({ ...h, depth: 2 })),
+  ];
   if (headings.length < 3) return null;
   return (
     <nav

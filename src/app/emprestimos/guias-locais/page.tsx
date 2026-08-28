@@ -34,12 +34,31 @@ export default function GuiasLocaisPage() {
       <h1 className="mt-6 font-serif text-3xl font-bold text-brand-navy md:text-4xl">
         Guias de empréstimos por localidade
       </h1>
-      <p className="mt-3 max-w-2xl text-lg leading-relaxed text-brand-muted">
+      <p className="mt-3 max-w-3xl text-lg leading-relaxed text-brand-muted">
         Um guia local só entra no ar quando traz valor real para quem mora na
         região: canais oficiais de proteção ao consumidor, formas de atendimento
         verificadas e cuidados específicos — nunca um texto genérico com o nome
         da cidade trocado.
       </p>
+
+      <div className="mt-5 max-w-3xl rounded-2xl border border-brand-teal/30 bg-brand-teal-soft/40 p-5">
+        <h2 className="font-serif text-lg font-bold text-brand-navy">
+          Cada guia traz o Mapa Financeiro da cidade
+        </h2>
+        <p className="mt-2 leading-relaxed text-brand-text">
+          Na seção <strong>&ldquo;Onde pedir ajuda em [cidade]&rdquo;</strong>,
+          você encontra os serviços públicos e gratuitos que atendem quem mora
+          ali quando o assunto é dívida, cobrança ou contrato de crédito: Procon
+          municipal, programas de renegociação, Defensoria e canais federais.
+          Cada um com <strong>fonte oficial e data de verificação</strong>, e
+          com uma etiqueta dizendo se o serviço fica na cidade, no estado ou
+          vale para o país inteiro.
+        </p>
+        <p className="mt-2 text-sm leading-relaxed text-brand-muted">
+          Nenhuma empresa aparece nessa lista: não há banco, financeira,
+          correspondente, ranking nem ordem de preferência.
+        </p>
+      </div>
 
       <div className="mt-6">
         <SearchBox

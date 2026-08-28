@@ -131,7 +131,14 @@ export function LocalGuideView({ urlPath }: { urlPath: string }) {
         </p>
       ) : null}
 
-      <TableOfContents content={guide.content} />
+      <TableOfContents
+        content={guide.content}
+        extraHeadings={
+          financialMap && financialMap.resources.length > 0
+            ? [{ id: "mapa-financeiro", text: `Onde pedir ajuda em ${fm.localityName}` }]
+            : []
+        }
+      />
 
       <div className="article-body">
         <MDXRemote

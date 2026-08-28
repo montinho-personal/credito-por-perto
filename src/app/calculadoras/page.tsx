@@ -121,6 +121,41 @@ export default function CalculadorasPage() {
         </section>
       ))}
 
+      {/*
+        O Mapa Financeiro não é uma calculadora e não tem URL própria: vive
+        dentro de cada guia local, para não competir com a página que já tem
+        histórico. A consequência foi ficar invisível — quem procurava por ele
+        aqui não achava. Esta porta resolve isso sem criar URL concorrente.
+      */}
+      <section
+        aria-labelledby="ajuda-na-cidade"
+        className="mt-12 rounded-2xl border border-brand-border bg-brand-surface-soft p-6"
+      >
+        <p className="text-xs font-semibold uppercase tracking-wide text-brand-teal-dark">
+          Não é calculadora — é atendimento
+        </p>
+        <h2
+          id="ajuda-na-cidade"
+          className="mt-2 font-serif text-2xl font-bold text-brand-navy"
+        >
+          Onde pedir ajuda na sua cidade
+        </h2>
+        <p className="mt-2 max-w-3xl leading-relaxed text-brand-muted">
+          Cada guia local traz o <strong>Mapa Financeiro da cidade</strong>: os
+          serviços públicos e gratuitos que atendem quem mora ali quando o
+          assunto é dívida, cobrança ou contrato de crédito — Procon municipal,
+          programas de renegociação, Defensoria e canais federais, com fonte
+          oficial e data de verificação em cada um. Não há empresa, nem ranking,
+          nem ordem de preferência.
+        </p>
+        <Link
+          href="/emprestimos/guias-locais/"
+          className="mt-4 inline-flex items-center gap-1 rounded-lg bg-brand-navy px-4 py-2 text-sm font-semibold text-white transition hover:bg-brand-navy/90"
+        >
+          Ver os guias por cidade <span aria-hidden="true">→</span>
+        </Link>
+      </section>
+
       <section aria-labelledby="como-usamos" className="article-body mt-14 border-t border-brand-border pt-8">
         <h2 id="como-usamos">O que estas ferramentas fazem — e o que não fazem</h2>
         <p>
