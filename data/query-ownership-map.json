@@ -368,6 +368,26 @@
       "/juros-e-cet/como-calcular-juros-de-emprestimo/"
     ]
   },
+  "quais tarifas bancárias o banco não pode cobrar": {
+    "canonicalOwner": "/organizacao-financeira/tarifas-bancarias-gratuitas/",
+    "supportingPages": [
+      "/juros-e-cet/o-que-e-cet/"
+    ]
+  },
+  "como fazer um orçamento pessoal que funciona": {
+    "canonicalOwner": "/organizacao-financeira/como-fazer-orcamento-pessoal/",
+    "supportingPages": [
+      "/calculadoras/parcela-no-orcamento/",
+      "/organizacao-financeira/reserva-de-emergencia/"
+    ]
+  },
+  "quanto guardar de reserva de emergência": {
+    "canonicalOwner": "/organizacao-financeira/reserva-de-emergencia/",
+    "supportingPages": [
+      "/organizacao-financeira/como-fazer-orcamento-pessoal/",
+      "/organizacao-financeira/qual-divida-pagar-primeiro/"
+    ]
+  },
   "como sair das dívidas por onde começar": {
     "canonicalOwner": "/organizacao-financeira/como-sair-das-dividas/",
     "supportingPages": [

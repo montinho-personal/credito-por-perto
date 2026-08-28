@@ -1,0 +1,33 @@
+{
+  "articleSlug": "como-fazer-orcamento-pessoal",
+  "claims": [
+    {
+      "claimId": "poupar-antes-de-gastar",
+      "claimText": "O material oficial de educação financeira do Banco Central orienta que, ao receber a renda, a parcela destinada à poupança seja separada antes do pagamento das despesas, tratando esse valor como um compromisso consigo mesmo, em vez de esperar sobrar ao fim do mês.",
+      "sourceOrganization": "Banco Central do Brasil",
+      "sourceTitle": "Caderno de Educação Financeira — Gestão de Finanças Pessoais (Cuidando do seu dinheiro)",
+      "sourceLocation": "https://www.bcb.gov.br/content/cidadaniafinanceira/documentos_cidadania/Cuidando_do_seu_dinheiro_Gestao_de_Financas_Pessoais/caderno_cidadania_financeira.pdf",
+      "sourceType": "official",
+      "accessedAt": "2026-08-28"
+    },
+    {
+      "claimId": "orcamento-receitas-maiores-que-despesas",
+      "claimText": "O mesmo material do Banco Central apresenta o orçamento como instrumento para manter as receitas maiores que as despesas, objetivo básico da gestão de finanças pessoais.",
+      "sourceOrganization": "Banco Central do Brasil",
+      "sourceTitle": "Caderno de Educação Financeira — Gestão de Finanças Pessoais; Série Cidadania Financeira — Orçamento Pessoal",
+      "sourceLocation": "https://www.bcb.gov.br/content/cidadaniafinanceira/documentos_cidadania/Folhetos_Serie_II_Financas_Pessoais/folder_serie_II_orcamento_pessoal.pdf",
+      "sourceType": "official",
+      "accessedAt": "2026-08-28"
+    },
+    {
+      "claimId": "superendividamento-encaminhamento",
+      "claimText": "Quando as dívidas somadas não cabem na renda mesmo após negociação, a Lei nº 14.181/2021 prevê processo de repactuação reunindo os credores, com atendimento gratuito em Procons e Defensoria Pública.",
+      "sourceOrganization": "Presidência da República",
+      "sourceTitle": "Lei nº 14.181, de 1º de julho de 2021",
+      "sourceLocation": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2021/lei/l14181.htm",
+      "sourceType": "official",
+      "accessedAt": "2026-08-28",
+      "notes": "Usado apenas como encaminhamento no bloco de orçamento negativo."
+    }
+  ]
+}

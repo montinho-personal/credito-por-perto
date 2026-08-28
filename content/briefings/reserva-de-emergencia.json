@@ -1,0 +1,47 @@
+{
+  "proposedTitle": "Reserva de emergência: quanto guardar, onde deixar e quando usar",
+  "primaryIntent": "quanto guardar de reserva de emergência",
+  "secondaryIntents": [
+    "como montar reserva de emergência do zero",
+    "reserva de emergência ou quitar dívida primeiro"
+  ],
+  "targetReader": "Quem não tem reserva, recorre ao cartão ou ao crédito quando surge um imprevisto e quer começar sem paralisar diante do número ideal",
+  "readerSituation": "O leitor ouviu que precisa de seis meses de despesas, considerou impossível e desistiu — continuando exposto ao crédito caro no próximo imprevisto",
+  "centralQuestion": "Quanto de reserva a minha situação exige, como começar do zero e o que fazer quando existe dívida cara em aberto?",
+  "uniqueAngle": "Posiciona a reserva como SUBSTITUTA do crédito caro, dimensionada pela instabilidade da renda e não por um número universal — e enfrenta o dilema reserva × dívida cara sem dar veredito",
+  "originalContribution": [
+    "Dimensionamento por situação de renda em vez do 'seis meses' universal, calculado sobre despesas e não sobre salário",
+    "Os três degraus de construção (emergência pequena, um mês de essenciais, faixa da situação)",
+    "Critérios de escolha do destino do dinheiro (liquidez, baixa oscilação, acesso simples) sem indicar produto de investimento",
+    "O ciclo de quitar o rotativo três vezes no ano por ausência de colchão mínimo"
+  ],
+  "primarySources": [
+    "Caderno de Educação Financeira do Banco Central — Gestão de Finanças Pessoais (separar a poupança antes das despesas)"
+  ],
+  "supportingSources": [],
+  "contentArchetype": "guide",
+  "proposedStructure": [
+    "Abertura: onde nasce a dívida cara",
+    "Quanto guardar depende da instabilidade (tabela por situação de renda)",
+    "Critérios para escolher onde deixar",
+    "Como começar do zero, em degraus",
+    "Reserva ou quitar dívida cara",
+    "O que é emergência e o que não é",
+    "FAQ"
+  ],
+  "uniqueExamples": [
+    "Tabela de referência por situação de renda (estável, formal, autônomo, renda única com dependentes)"
+  ],
+  "proposedVisuals": ["tabela por situação de renda", "WarningBox (reserva não é investimento longo)"],
+  "pagesThatMayCompete": [
+    "/organizacao-financeira/como-fazer-orcamento-pessoal/",
+    "/emprestimos/saque-aniversario-vale-a-pena/",
+    "/organizacao-financeira/qual-divida-pagar-primeiro/"
+  ],
+  "informationThatMustNotBeRepeated": [
+    "Método de montagem do orçamento e cálculo da folga (link para como fazer orçamento pessoal)",
+    "Ordenação de dívidas por avalanche e bola de neve (link para qual dívida pagar primeiro)",
+    "Regras do saque-aniversário do FGTS (link para o guia específico)"
+  ],
+  "publicationDecision": "create"
+}

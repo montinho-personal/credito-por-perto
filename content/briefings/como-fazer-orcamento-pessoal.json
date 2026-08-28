@@ -1,0 +1,48 @@
+{
+  "proposedTitle": "Como fazer um orçamento pessoal que sobrevive ao mês real",
+  "primaryIntent": "como fazer um orçamento pessoal que funciona",
+  "secondaryIntents": [
+    "como organizar o dinheiro do mês",
+    "orçamento com renda variável"
+  ],
+  "targetReader": "Quem já tentou orçamento, abandonou na terceira semana e quer um método que aguente o mês real",
+  "readerSituation": "O leitor lista apenas as despesas fixas, esquece os gastos anuais e por isso o orçamento quebra sempre que uma conta grande chega",
+  "centralQuestion": "Como montar um orçamento que descreve o mês real e responde quanto sobra de verdade?",
+  "uniqueAngle": "Introduz a camada de despesas INVISÍVEIS (anuais divididas por 12) como a causa estrutural de orçamentos que quebram, e orienta renda variável pelo pior mês em vez da média",
+  "originalContribution": [
+    "As três camadas de despesa (fixa, variável, invisível) com a divisão por 12 dos gastos anuais",
+    "A regra do pior mês para renda variável, em vez da média",
+    "A folga como número único que responde às três perguntas de crédito, dívida e poupança",
+    "Regras prontas (50-30-20) tratadas como régua de comparação, nunca como diagnóstico"
+  ],
+  "primarySources": [
+    "Caderno de Educação Financeira do Banco Central — Gestão de Finanças Pessoais (separar a poupança assim que a renda entra)"
+  ],
+  "supportingSources": [],
+  "contentArchetype": "guide",
+  "proposedStructure": [
+    "Abertura: por que o orçamento quebra na terceira semana",
+    "Etapa 1 — quanto entra de verdade",
+    "Etapa 2 — quanto sai, em três camadas",
+    "Etapa 3 — a sobra é o número que importa",
+    "Etapa 4 — dar destino à sobra",
+    "Quando a conta dá negativo",
+    "Regras prontas como referência, não veredito",
+    "FAQ"
+  ],
+  "uniqueExamples": [
+    "Camada invisível: R$ 3.600 anuais de IPVA, seguro, IPTU e material escolar = R$ 300 por mês no orçamento"
+  ],
+  "proposedVisuals": ["QuickSummary (4 etapas)", "ExampleBox (camada invisível)", "WarningBox (crédito não conserta déficit)"],
+  "pagesThatMayCompete": [
+    "/calculadoras/parcela-no-orcamento/",
+    "/organizacao-financeira/reserva-de-emergencia/",
+    "/organizacao-financeira/quando-vale-a-pena-fazer-emprestimo/"
+  ],
+  "informationThatMustNotBeRepeated": [
+    "O cálculo de quanto de parcela cabe na folga (é a ferramenta — link, não repetir)",
+    "Dimensionamento e função da reserva (link para reserva de emergência)",
+    "Critérios de decisão sobre contratar crédito (link para quando vale a pena)"
+  ],
+  "publicationDecision": "create"
+}

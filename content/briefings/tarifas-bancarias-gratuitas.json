@@ -1,0 +1,47 @@
+{
+  "proposedTitle": "Tarifas bancárias: os serviços que o banco é obrigado a oferecer de graça",
+  "primaryIntent": "quais tarifas bancárias o banco não pode cobrar",
+  "secondaryIntents": [
+    "serviços bancários essenciais gratuitos",
+    "como parar de pagar cesta de serviços"
+  ],
+  "targetReader": "Quem paga cesta de serviços todo mês e não sabe que existe um conjunto de serviços essenciais gratuito por norma",
+  "readerSituation": "O leitor vê a tarifa no extrato, acha que é obrigatória e nunca pediu a migração para os serviços essenciais",
+  "centralQuestion": "O que o banco é obrigado a oferecer sem tarifa, o que ele pode cobrar e como parar de pagar pelo que não se usa?",
+  "uniqueAngle": "Transforma a Resolução CMN 3.919/2010 em roteiro operacional de migração, e separa com clareza tarifa de juros — mostrando que as duas se encontram no CET",
+  "originalContribution": [
+    "Tabela dos serviços essenciais gratuitos da conta de depósitos à vista em linguagem direta",
+    "A conta prática para decidir entre pacote e serviços essenciais (eventos usados × tarifa avulsa vs mensalidade)",
+    "Roteiro de migração com protocolo e escalonamento de reclamação",
+    "A regra do Pix para pessoa física com as exceções de finalidade comercial"
+  ],
+  "primarySources": [
+    "Resolução CMN nº 3.919/2010 (serviços essenciais gratuitos e regras de tarifas)",
+    "Regras do Banco Central sobre gratuidade do Pix para pessoa física e exceções de finalidade comercial"
+  ],
+  "supportingSources": [],
+  "contentArchetype": "guide",
+  "proposedStructure": [
+    "Abertura: a cesta que sai sem barulho",
+    "O que é gratuito por norma (tabela)",
+    "Pix: a regra para pessoa física e as exceções",
+    "Cesta de serviços: quando faz sentido pagar",
+    "Como parar de pagar o que não se usa (checklist)",
+    "Tarifa não é juro, mas as duas entram no CET",
+    "FAQ"
+  ],
+  "uniqueExamples": [
+    "Comparação eventos usados × tarifa avulsa contra a mensalidade do pacote"
+  ],
+  "proposedVisuals": ["tabela de serviços essenciais", "KeyTakeaways", "ChecklistBox", "WhatCanChange"],
+  "pagesThatMayCompete": [
+    "/juros-e-cet/o-que-e-cet/",
+    "/organizacao-financeira/como-fazer-orcamento-pessoal/"
+  ],
+  "informationThatMustNotBeRepeated": [
+    "Composição e leitura do CET (link para o guia de CET)",
+    "Roteiro de escalonamento de reclamação em detalhe (link para como negociar dívidas)",
+    "Verificação de autorização de instituição (link para a ferramenta de consulta)"
+  ],
+  "publicationDecision": "create"
+}

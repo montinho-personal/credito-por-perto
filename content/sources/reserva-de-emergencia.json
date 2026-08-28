@@ -1,0 +1,34 @@
+{
+  "articleSlug": "reserva-de-emergencia",
+  "claims": [
+    {
+      "claimId": "separar-antes-de-gastar",
+      "claimText": "O material oficial de educação financeira do Banco Central orienta separar a parcela destinada à poupança assim que a renda é recebida, antes do pagamento das despesas — método aplicado neste artigo à construção da reserva em degraus.",
+      "sourceOrganization": "Banco Central do Brasil",
+      "sourceTitle": "Caderno de Educação Financeira — Gestão de Finanças Pessoais (Cuidando do seu dinheiro)",
+      "sourceLocation": "https://www.bcb.gov.br/content/cidadaniafinanceira/documentos_cidadania/Cuidando_do_seu_dinheiro_Gestao_de_Financas_Pessoais/caderno_cidadania_financeira.pdf",
+      "sourceType": "official",
+      "accessedAt": "2026-08-28"
+    },
+    {
+      "claimId": "dispersao-custo-credito-emergencia",
+      "claimText": "As modalidades de crédito acionadas em emergências sem reserva — rotativo do cartão e cheque especial — estão entre as de maior taxa média de juros a pessoas físicas, muito acima das modalidades com garantia ou consignadas.",
+      "sourceOrganization": "Banco Central do Brasil",
+      "sourceTitle": "Séries temporais de taxas médias de juros por modalidade (SGS), apresentadas no radar de taxas do site",
+      "sourceLocation": "https://www.bcb.gov.br/estatisticas/txjuros",
+      "sourceType": "official",
+      "accessedAt": "2026-08-28",
+      "notes": "O artigo NÃO fixa percentuais: remete ao radar interno (/taxas/), que exibe o dado oficial com mês de referência."
+    },
+    {
+      "claimId": "fgts-acesso-condicionado",
+      "claimText": "O saldo do FGTS só pode ser sacado nas hipóteses previstas em lei, e a adesão à sistemática do saque-aniversário altera o acesso ao saldo em caso de demissão sem justa causa — razão pela qual o FGTS não substitui integralmente uma reserva de emergência.",
+      "sourceOrganization": "Caixa Econômica Federal / Presidência da República",
+      "sourceTitle": "Regras de saque do FGTS e sistemática do saque-aniversário (Lei nº 8.036/1990 e alterações)",
+      "sourceLocation": "https://www.planalto.gov.br/ccivil_03/leis/l8036consol.htm",
+      "sourceType": "official",
+      "accessedAt": "2026-08-28",
+      "notes": "Tema detalhado nos artigos de FGTS do site; aqui é usado apenas na FAQ, como encaminhamento."
+    }
+  ]
+}

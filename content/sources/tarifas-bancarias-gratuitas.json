@@ -1,0 +1,35 @@
+{
+  "articleSlug": "tarifas-bancarias-gratuitas",
+  "claims": [
+    {
+      "claimId": "servicos-essenciais-gratuitos",
+      "claimText": "A Resolução CMN nº 3.919/2010 consolidou as regras de cobrança de tarifas e estabelece serviços essenciais de fornecimento obrigatório e gratuito nas contas de depósitos à vista e de poupança. Na conta de depósitos à vista incluem-se, entre outros: fornecimento de cartão de débito; fornecimento de segunda via do cartão de débito, exceto quando a substituição decorrer de perda, roubo, danificação ou outro motivo não imputável à instituição; até quatro saques por mês; até duas transferências entre contas da própria instituição por mês; e até dois extratos por mês com a movimentação do período.",
+      "sourceOrganization": "Conselho Monetário Nacional / Banco Central do Brasil",
+      "sourceTitle": "Resolução CMN nº 3.919, de 25 de novembro de 2010",
+      "sourceLocation": "https://www.bcb.gov.br/pre/normativos/res/2010/pdf/res_3919_v4_p.pdf",
+      "sourceType": "official",
+      "accessedAt": "2026-08-28",
+      "notes": "O artigo enumera apenas os itens confirmados e remete o leitor à tabela completa da própria resolução, sem afirmar a lista integral de memória."
+    },
+    {
+      "claimId": "gratuidade-pix-pf",
+      "claimText": "Para pessoa física, a regra geral é a vedação de cobrança de tarifa no envio e no recebimento de Pix com finalidade de transferência. Há exceções previstas, entre elas o Pix realizado em canal de atendimento presencial e o recebimento com finalidade comercial — como recebimento acima de determinado volume mensal de transações, recebimento por QR Code dinâmico ou em conta definida contratualmente como de uso empresarial.",
+      "sourceOrganization": "Banco Central do Brasil",
+      "sourceTitle": "Regulamentação do Pix — regras de tarifação para pessoa física",
+      "sourceLocation": "https://www.bcb.gov.br/estabilidadefinanceira/pix",
+      "sourceType": "official",
+      "accessedAt": "2026-08-28",
+      "notes": "O artigo descreve as exceções de forma qualitativa, sem fixar o número exato de transações, por ser parâmetro sujeito a alteração — sinalizado em WhatCanChange."
+    },
+    {
+      "claimId": "tarifa-no-cet",
+      "claimText": "Tarifas cobradas em operações de crédito devem estar refletidas no Custo Efetivo Total (CET), que reúne juros, tarifas, tributos e demais encargos numa taxa única e comparável entre propostas.",
+      "sourceOrganization": "Banco Central do Brasil",
+      "sourceTitle": "Custo Efetivo Total (CET) — informação obrigatória nas operações de crédito a pessoas físicas",
+      "sourceLocation": "https://www.bcb.gov.br/estabilidadefinanceira/custoefetivototal",
+      "sourceType": "official",
+      "accessedAt": "2026-08-28",
+      "notes": "Conceito já documentado no artigo /juros-e-cet/o-que-e-cet/; aqui é usado como encaminhamento."
+    }
+  ]
+}
