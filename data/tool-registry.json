@@ -1,5 +1,5 @@
 {
-  "comment": "Fonte ÚNICA de verdade das ferramentas do site. Antes deste arquivo, os metadados viviam duplicados em src/lib/site.ts (rodapé), src/lib/search/build-docs.ts (busca) e src/app/calculadoras/page.tsx (hub) — e já tinham divergido: a margem consignável estava fora do rodapé. Hub, rodapé, busca, callouts nos artigos e auditoria de cobertura leem daqui. Ferramenta nova entra AQUI primeiro; o resto se atualiza sozinho.",
+  "comment": "Fonte ÚNICA de verdade das ferramentas do site. Antes deste arquivo, os metadados viviam duplicados em src/lib/site.ts (rodapé), src/lib/search/build-docs.ts (busca) e src/app/calculadoras/page.tsx (hub) — e já tinham divergido: a margem consignável estava fora do rodapé. Hub, rodapé, busca, callouts nos artigos e auditoria de cobertura leem daqui. Ferramenta nova entra AQUI primeiro; o resto se atualiza sozinho. `inFooter` marca a seleção que aparece no rodapé — o rodapé não lista as doze (viraria entulho), lista uma seleção e aponta para o hub, que tem todas.",
   "schemaVersion": 1,
   "situations": [
     {
@@ -41,7 +41,8 @@
         "cnpj da empresa",
         "empresa é confiável",
         "checar o cnpj"
-      ]
+      ],
+      "inFooter": true
     },
     {
       "id": "sinais-de-golpe",
@@ -78,7 +79,8 @@
         "qual proposta",
         "cet",
         "custo efetivo total"
-      ]
+      ],
+      "inFooter": true
     },
     {
       "id": "parcela-no-orcamento",
@@ -96,7 +98,8 @@
         "quanto sobra",
         "orçamento apertado",
         "renda mensal"
-      ]
+      ],
+      "inFooter": true
     },
     {
       "id": "margem-consignavel",
@@ -133,7 +136,8 @@
         "tabela price",
         "amortização",
         "total de juros"
-      ]
+      ],
+      "inFooter": true
     },
     {
       "id": "conversor-de-taxas",
@@ -169,7 +173,8 @@
         "taxa está cara",
         "acima da média",
         "média do banco central"
-      ]
+      ],
+      "inFooter": true
     },
     {
       "id": "radar-de-taxas",
@@ -205,7 +210,8 @@
         "avalanche",
         "superendividamento",
         "sair das dívidas"
-      ]
+      ],
+      "inFooter": true
     },
     {
       "id": "trocar-divida",

@@ -119,15 +119,21 @@ for (const page of pages) {
 
 const SURFACES = [
   { file: "src/app/calculadoras/page.tsx", name: "hub /calculadoras/" },
-  { file: "src/lib/site.ts", name: "rodapé" },
+  { file: "src/components/layout/SiteFooter.tsx", name: "rodapé" },
   { file: "src/lib/search/build-docs.ts", name: "índice de busca" },
 ];
 
 for (const surface of SURFACES) {
   const source = fs.readFileSync(path.join(process.cwd(), surface.file), "utf8");
-  /* O hub é gerado a partir do registry: se ele o importa, cobre tudo. */
-  const generated = source.includes("@/lib/tools/registry");
-  if (generated) continue;
+  /*
+   * Superfície gerada a partir do registry não pode ficar desatualizada, por
+   * construção. O rodapé entrou nesse grupo: ele já listou as doze
+   * ferramentas à mão, e essa coluna de vinte itens era a maior fonte de
+   * poluição visual do site. Hoje mostra a seleção `inFooter` e aponta para o
+   * hub — por isso a exigência mudou de "lista todas" para "leva a todas",
+   * checada logo abaixo.
+   */
+  if (source.includes("@/lib/tools/registry")) continue;
   for (const tool of tools) {
     if (!source.includes(tool.route)) {
       findings.push({
@@ -138,6 +144,29 @@ for (const surface of SURFACES) {
       });
     }
   }
+}
+
+/* O rodapé precisa levar ao hub: é ele que garante o acesso às doze. */
+const footerSource = fs.readFileSync(
+  path.join(process.cwd(), "src/components/layout/SiteFooter.tsx"),
+  "utf8",
+);
+if (!footerSource.includes('"/calculadoras/"')) {
+  findings.push({
+    severity: "critical",
+    rule: "rodape-sem-link-para-o-hub",
+    pages: ["src/components/layout/SiteFooter.tsx"],
+    detail:
+      "O rodapé mostra só a seleção de ferramentas e não aponta para /calculadoras/ — as demais ficariam inacessíveis a partir dele.",
+  });
+}
+if (tools.filter((t) => t.inFooter).length === 0) {
+  findings.push({
+    severity: "warning",
+    rule: "rodape-sem-ferramenta-em-destaque",
+    pages: ["data/tool-registry.json"],
+    detail: "Nenhuma ferramenta marcada com inFooter — a coluna do rodapé fica vazia.",
+  });
 }
 
 /* ------------------------------------------------------------------ *

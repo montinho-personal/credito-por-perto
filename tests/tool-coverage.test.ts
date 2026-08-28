@@ -8,6 +8,7 @@ import {
   getToolSituations,
   getToolsBySituation,
 } from "@/lib/tools/registry";
+import { FOOTER_NAV } from "@/lib/site";
 import { getAllArticles } from "@/lib/content/articles";
 import { getAllLocalGuides } from "@/lib/content/local";
 
@@ -81,10 +82,31 @@ describe("as superfícies obrigatórias listam todas as ferramentas", () => {
     expect(hub).not.toMatch(/href="\/calculadoras\/[a-z-]+\//);
   });
 
-  it("o rodapé cita todas as ferramentas — foi assim que a margem sumiu", () => {
-    const site = read("src/lib/site.ts");
-    for (const tool of tools) {
-      expect(site, tool.id).toContain(tool.route);
+  /*
+   * O rodapé já listou as doze ferramentas à mão, e essa coluna de vinte
+   * itens era a maior fonte de poluição visual do site. A exigência mudou de
+   * "lista todas" para "leva a todas": ele mostra a seleção `inFooter`,
+   * montada a partir do registry, e aponta para o hub.
+   */
+  it("o rodapé é montado a partir do registry, sem lista paralela", () => {
+    const footer = read("src/components/layout/SiteFooter.tsx");
+    expect(footer).toContain("@/lib/tools/registry");
+    expect(footer).not.toMatch(/href="\/calculadoras\/[a-z-]+\//);
+  });
+
+  it("o rodapé leva ao hub, que dá acesso a todas as ferramentas", () => {
+    expect(read("src/components/layout/SiteFooter.tsx")).toContain('"/calculadoras/"');
+  });
+
+  it("a seleção do rodapé existe e é enxuta o bastante para uma coluna", () => {
+    const selecionadas = tools.filter((t) => t.inFooter);
+    expect(selecionadas.length).toBeGreaterThanOrEqual(4);
+    expect(selecionadas.length).toBeLessThanOrEqual(7);
+  });
+
+  it("nenhuma coluna do rodapé volta a virar parede de texto", () => {
+    for (const [nome, links] of Object.entries(FOOTER_NAV)) {
+      expect(links.length, `coluna "${nome}" com ${links.length} itens`).toBeLessThanOrEqual(7);
     }
   });
 

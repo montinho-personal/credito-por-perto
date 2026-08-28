@@ -45,6 +45,12 @@ export interface Tool {
    * a auditoria aponta, quem decide é o editorial.
    */
   triggerTerms: string[];
+  /**
+   * Aparece na seleção do rodapé. O rodapé não lista as doze: uma coluna com
+   * doze itens é o que deixava o rodapé três vezes mais alto que as outras
+   * colunas. Ele mostra uma seleção e aponta para o hub, que tem todas.
+   */
+  inFooter?: boolean;
 }
 
 interface RegistryFile {
@@ -101,4 +107,9 @@ export function getToolsBySituation(): ToolGroup[] {
 /** Todas as rotas de ferramenta — usada por auditorias e testes. */
 export function getToolRoutes(): string[] {
   return getTools().map((t) => t.route);
+}
+
+/** Seleção do rodapé, na ordem do registry. */
+export function getFooterTools(): Tool[] {
+  return getTools().filter((t) => t.inFooter === true);
 }

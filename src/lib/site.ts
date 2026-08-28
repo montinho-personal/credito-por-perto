@@ -39,44 +39,51 @@ export const MAIN_NAV = [
   { label: "Blog", href: "/artigos/" },
 ] as const;
 
+/**
+ * Navegação do rodapé.
+ *
+ * A coluna "conteúdo" já teve vinte itens: os pilares editoriais, as doze
+ * ferramentas, o glossário e o mapa do site, tudo junto. Ela ficava três
+ * vezes mais alta que as vizinhas e o rodapé passava de 900px no desktop e de
+ * 1700px no celular — a poluição vinha daí, não do número de colunas.
+ *
+ * Agora cada coluna tem uma natureza só e cabe em seis itens: dá para varrer
+ * com o olho sem ler. As ferramentas ganharam coluna própria, montada a
+ * partir do registry (`inFooter`), com link para o hub que tem todas. Rótulos
+ * são substantivos curtos e consistentes — sem perguntas misturadas com
+ * nomes, e sem parênteses desambiguadores, que só eram necessários enquanto
+ * ferramenta e artigo dividiam a mesma lista.
+ */
 export const FOOTER_NAV = {
+  conteudo: [
+    { label: "Guia do empréstimo", href: "/emprestimos/guia-completo-de-emprestimo/" },
+    { label: "Empréstimo pessoal", href: "/emprestimos/emprestimo-pessoal/" },
+    { label: "Empréstimo consignado", href: "/emprestimos/emprestimo-consignado/" },
+    { label: "O que é CET", href: "/juros-e-cet/o-que-e-cet/" },
+    { label: "Golpes de empréstimo", href: "/credito-seguro/como-identificar-golpes-de-emprestimo/" },
+    { label: "Guias por cidade", href: "/emprestimos/guias-locais/" },
+    { label: "Todos os artigos", href: "/artigos/" },
+  ],
   institucional: [
-    { label: "Sobre o Crédito por Perto", href: "/sobre/" },
+    { label: "Sobre o portal", href: "/sobre/" },
     { label: "Quem somos", href: "/quem-somos/" },
     { label: "Política editorial", href: "/politica-editorial/" },
     { label: "Metodologia", href: "/metodologia/" },
-    { label: "Como ganhamos dinheiro", href: "/como-ganhamos-dinheiro/" },
     { label: "Política de correções", href: "/politica-de-correcoes/" },
     { label: "Contato", href: "/contato/" },
   ],
   legal: [
-    { label: "Política de privacidade", href: "/politica-de-privacidade/" },
-    { label: "Política de cookies", href: "/politica-de-cookies/" },
-    { label: "Política de publicidade", href: "/politica-de-publicidade/" },
+    { label: "Privacidade", href: "/politica-de-privacidade/" },
+    { label: "Cookies", href: "/politica-de-cookies/" },
+    { label: "Publicidade", href: "/politica-de-publicidade/" },
     { label: "Termos de uso", href: "/termos-de-uso/" },
     { label: "Aviso legal", href: "/aviso-legal/" },
     { label: "Acessibilidade", href: "/acessibilidade/" },
   ],
-  conteudo: [
-    { label: "Guia completo do empréstimo", href: "/emprestimos/guia-completo-de-emprestimo/" },
-    { label: "Empréstimo pessoal", href: "/emprestimos/emprestimo-pessoal/" },
-    { label: "Empréstimo consignado", href: "/emprestimos/emprestimo-consignado/" },
-    { label: "O que é CET", href: "/juros-e-cet/o-que-e-cet/" },
-    { label: "Radar de taxas do BC", href: "/taxas/" },
-    { label: "Consultar instituição no BC", href: "/calculadoras/consultar-instituicao/" },
-    { label: "Comparador de propostas", href: "/calculadoras/comparador-de-propostas/" },
-    { label: "Trocar dívida vale a pena?", href: "/calculadoras/trocar-divida/" },
-    { label: "Plano para sair das dívidas", href: "/calculadoras/plano-para-sair-das-dividas/" },
-    { label: "Quitação antecipada (calculadora)", href: "/calculadoras/quitacao-antecipada/" },
-    { label: "Parcela no orçamento", href: "/calculadoras/parcela-no-orcamento/" },
-    { label: "Conversor de taxas", href: "/calculadoras/conversor-de-taxas/" },
-    { label: "Minha taxa está cara?", href: "/calculadoras/minha-taxa-esta-cara/" },
-    { label: "Calculadora de empréstimo", href: "/calculadoras/emprestimo/" },
-    { label: "Margem consignável", href: "/calculadoras/margem-consignavel/" },
-    { label: "Todas as ferramentas", href: "/calculadoras/" },
-    { label: "Golpes de empréstimo", href: "/credito-seguro/como-identificar-golpes-de-emprestimo/" },
-    { label: "Sinais de golpe (verificação)", href: "/calculadoras/sinais-de-golpe/" },
-    { label: "Glossário de crédito", href: "/glossario/" },
+  /** Barra inferior: utilidades de navegação, não seções de conteúdo. */
+  utilidades: [
     { label: "Mapa do site", href: "/mapa-do-site/" },
+    { label: "Glossário", href: "/glossario/" },
+    { label: "Busca", href: "/busca/" },
   ],
 } as const;
