@@ -18,7 +18,10 @@ Tudo o mais já está implementado ou automatizado.
 
 ## Link externo pendente — artigo de comprometimento de renda
 
-- [ ] **AGUARDA URL DO PROPRIETÁRIO.** O artigo
+- [x] **RESOLVIDO em 28/08/2026.** URL confirmada pelo proprietário e link
+      inserido: https://www.alphadl.com.br/quanto-custa-comprar-uma-casa-de-3-milhoes-em-alphaville
+      (artigo sobre custos de compra na região, encaixe melhor na seção do que o
+      guia de financiamento originalmente previsto). Histórico: o artigo
       `/organizacao-financeira/quanto-da-renda-comprometer-financiamento-imovel/`
       (publicado em 28/08/2026) foi ao ar **sem** o link externo previsto para o
       artigo "Financiamento de imóvel em Alphaville: SFH, SFI, FGTS e custos".
