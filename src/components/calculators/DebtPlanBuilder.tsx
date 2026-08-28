@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useMemo, useState } from "react";
+import { useMemo, useRef, useState } from "react";
 import {
   attentionLabel,
   buildDebtPlan,
@@ -181,6 +181,22 @@ export function DebtPlanBuilder() {
   const [result, setResult] = useState<DebtPlanResult | null>(null);
   const [copied, setCopied] = useState(false);
   const [started, setStarted] = useState(false);
+  const resultRef = useRef<HTMLDivElement | null>(null);
+
+  /**
+   * O resultado nasce abaixo do botão: sem levar a tela até ele, no celular
+   * parece que nada aconteceu. Rola depois que o React pinta o conteúdo.
+   */
+  function revealResult() {
+    const node = resultRef.current;
+    if (!node) return;
+    const reduced =
+      typeof window.matchMedia === "function" &&
+      window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    window.setTimeout(() => {
+      node.scrollIntoView({ behavior: reduced ? "auto" : "smooth", block: "start" });
+    }, 0);
+  }
 
   const runningTotals = useMemo(() => {
     const balance = debts.reduce((s, d) => s + toCents(d.balance), 0);
@@ -239,6 +255,7 @@ export function DebtPlanBuilder() {
     setErrors(problems);
     if (problems.length > 0) {
       setResult(null);
+      revealResult();
       return;
     }
 
@@ -279,6 +296,7 @@ export function DebtPlanBuilder() {
     });
     setResult(r);
     setCopied(false);
+    revealResult();
     gtag("event", "debt_plan_complete");
   }
 
@@ -545,7 +563,7 @@ export function DebtPlanBuilder() {
       </div>
 
       {/* RESULTADO */}
-      <div aria-live="polite" className="mt-6">
+      <div ref={resultRef} aria-live="polite" className="mt-6 scroll-mt-24">
         {errors.length > 0 ? (
           <ul className="list-disc rounded-xl border border-brand-warning/40 bg-brand-warning-soft p-4 pl-8 text-sm text-brand-text">
             {errors.map((e) => (
