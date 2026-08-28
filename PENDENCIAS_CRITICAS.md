@@ -16,6 +16,28 @@ Tudo o mais já está implementado ou automatizado.
       termos de uso e aviso legal (todos exibem aviso público de "documento em
       elaboração" até isso acontecer — remover o `LegalTemplateNotice` após a revisão)
 
+## Link externo pendente — artigo de comprometimento de renda
+
+- [ ] **AGUARDA URL DO PROPRIETÁRIO.** O artigo
+      `/organizacao-financeira/quanto-da-renda-comprometer-financiamento-imovel/`
+      (publicado em 28/08/2026) foi ao ar **sem** o link externo previsto para o
+      artigo "Financiamento de imóvel em Alphaville: SFH, SFI, FGTS e custos".
+      Motivo: não foi possível confirmar a URL canônica — o domínio
+      `www.alphadl.com.br` está bloqueado pelo proxy de egress do ambiente de
+      desenvolvimento e o artigo não aparece indexado nas buscas. Não se inventa
+      URL.
+- **Onde entra:** seção `## E se o imóvel estiver numa região de alto custo?`,
+  último parágrafo, que hoje termina em "Vale procurar material especializado na
+  região específica antes de fechar os números."
+- **Como inserir:** uma única ocorrência, âncora natural do tipo "financiamento
+  imobiliário em Alphaville" ou "custos do financiamento de imóvel em
+  Alphaville". Proibido: "parceiro", "recomendamos", banner, logo, CTA
+  comercial, link no rodapé, múltiplos links ou menção a estratégia de links.
+  O link se justifica só por aprofundar custos regionais fora do escopo
+  nacional do guia.
+- **Depois de inserir:** bumpar `updatedAt`, rodar `pnpm audit:all`, `pnpm build`
+  e publicar.
+
 ## 2. Autoria e revisão editorial
 
 - [ ] Decidir se haverá autores/revisores identificados por nome real
