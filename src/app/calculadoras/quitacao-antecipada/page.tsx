@@ -36,7 +36,7 @@ export default function QuitacaoAntecipadaPage() {
           Calculadora de quitação antecipada
         </h1>
         <p className="mt-3 text-lg leading-relaxed text-brand-muted">
-          Compare o saldo para quitação com as parcelas que ainda faltam.{" "}
+          Compare as parcelas que faltam com o valor para quitar hoje — ou simule o efeito de antecipar uma parte.{" "}
           <strong>
             Somar as parcelas mostra o que ainda sairia do seu bolso; o saldo de quitação mostra
             quanto custa encerrar a dívida hoje
@@ -94,10 +94,13 @@ export default function QuitacaoAntecipadaPage() {
           <a href="https://www.bcb.gov.br/pre/normativos/res/2007/pdf/res_3516_v2_l.pdf" rel="noopener noreferrer" target="_blank">
             Resolução CMN nº 3.516/2007
           </a>{" "}
-          determina que esse cálculo use a taxa de juros pactuada no contrato e{" "}
           <strong>proíbe tarifa pela quitação antecipada</strong> em contratos firmados a partir
-          de 10/12/2007. Se o saldo vier <em>igual</em> à soma das parcelas, a redução
-          proporcional pode não ter sido aplicada — vale contestar.
+          de 10/12/2007, e essa vedação segue vigente. Os artigos daquela resolução que traziam a
+          fórmula do valor presente, porém, foram revogados em 02/05/2022 pela Resolução CMN nº
+          5.004/2022 — não existe hoje uma fórmula única imposta por norma, e o cálculo segue as
+          condições do contrato. Por isso o número oficial é o da instituição. Se o saldo vier{" "}
+          <em>igual</em> à soma das parcelas, a redução proporcional pode não ter sido aplicada —
+          vale pedir o demonstrativo e contestar.
         </p>
 
         <h2 id="banco-obrigado">A instituição é obrigada a informar o saldo?</h2>
@@ -167,7 +170,18 @@ export default function QuitacaoAntecipadaPage() {
           52, §2º (liquidação antecipada com redução proporcional) e Resolução CMN nº 3.516/2007
           (cálculo pela taxa do contrato; vedação de tarifa). Encontrou algo errado? Veja a{" "}
           <Link href="/politica-de-correcoes/">política de correções</Link>. Metodologia revisada
-          em 27/08/2026.
+          em 28/08/2026.
+        </p>
+        <p>
+          Na <strong>amortização parcial</strong>, a comparação de simulações oficiais usa apenas
+          aritmética verificável: total = parcela × prazo, em cada opção informada. A simulação
+          com os seus dados roda o cronograma mês a mês — Price com parcela constante, SAC com
+          amortização constante — e só é feita quando o sistema é declarado. Uma observação
+          importante sobre normas: os artigos da Resolução CMN nº 3.516/2007 que traziam a fórmula
+          de cálculo do valor presente foram <strong>revogados em 02/05/2022</strong> pela
+          Resolução CMN nº 5.004/2022. Não existe hoje uma fórmula normativa única a reproduzir, e
+          por isso não apresentamos nenhum cálculo como sendo &ldquo;a fórmula do Banco
+          Central&rdquo;.
         </p>
       </section>
     </div>

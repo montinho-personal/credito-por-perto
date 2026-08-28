@@ -12,12 +12,13 @@
     },
     {
       "claimId": "tarifa-vedada",
-      "claimText": "A Resolução CMN nº 3.516/2007 veda a cobrança de tarifa pela liquidação antecipada em contratos de crédito e arrendamento mercantil celebrados a partir de sua vigência (10/12/2007) com pessoas físicas e micro/pequenas empresas; em contratos prefixados, o valor presente é calculado com a taxa pactuada no contrato.",
+      "claimText": "A Resolução CMN nº 3.516/2007 veda a cobrança de tarifa pela liquidação antecipada em contratos de crédito e arrendamento mercantil celebrados a partir de sua vigência (10/12/2007) com pessoas físicas e micro/pequenas empresas — vedação que segue vigente. Os artigos 2º e 3º da mesma resolução, que tratavam do cálculo do valor presente para amortização/liquidação antecipada em operações prefixadas, foram REVOGADOS com efeitos a partir de 02/05/2022 pela Resolução CMN nº 5.004/2022. Não há, portanto, fórmula normativa única em vigor a ser reproduzida.",
       "sourceOrganization": "Banco Central do Brasil / Conselho Monetário Nacional",
       "sourceTitle": "Resolução CMN nº 3.516, de 6 de dezembro de 2007",
       "sourceLocation": "https://www.bcb.gov.br/pre/normativos/res/2007/pdf/res_3516_v2_l.pdf",
       "sourceType": "official",
-      "accessedAt": "2026-08-25"
+      "accessedAt": "2026-08-28",
+      "notes": "CORREÇÃO 28/08/2026: a versão anterior deste conteúdo afirmava que o cálculo do valor presente usaria a taxa pactuada no contrato, o que vinha do art. 2º — revogado desde 02/05/2022. Texto corrigido no artigo, na página da ferramenta e no comentário do motor."
     },
     {
       "claimId": "stj-contratos-antigos",
@@ -27,6 +28,16 @@
       "sourceLocation": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias-antigas/2017/2017-03-06_09-16_Banco-pode-cobrar-por-quitacao-antecipada-em-contrato-assinado-antes-de-dezembro-de-2007.aspx",
       "sourceType": "official",
       "accessedAt": "2026-08-25"
+    },
+    {
+      "claimId": "res-5004-revogacao",
+      "claimText": "A Resolução CMN nº 5.004, de 24 de março de 2022, dispõe sobre requisitos na oferta, contratação e prestação de serviços em operações de crédito e arrendamento mercantil, e revogou os artigos 2º e 3º da Resolução CMN nº 3.516/2007 com efeitos a partir de 02/05/2022.",
+      "sourceOrganization": "Conselho Monetário Nacional / Banco Central do Brasil",
+      "sourceTitle": "Resolução CMN nº 5.004, de 24 de março de 2022",
+      "sourceLocation": "https://normativos.bcb.gov.br/Lists/Normativos/Attachments/48006/Res_3516_v3_L.pdf",
+      "sourceType": "official",
+      "accessedAt": "2026-08-28",
+      "notes": "A versão consolidada v3 da Res. 3.516 no repositório de normativos do BC registra a revogação dos arts. 2º e 3º."
     }
   ]
 }

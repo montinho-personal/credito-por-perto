@@ -11,7 +11,17 @@ import {
 import {
   formatCentsBRL,
   parseBRLToCents,
+  parsePercentBR,
 } from "@/lib/calculators/proposal-comparison";
+import {
+  comparePayoffOptions,
+  isQuoteOutdated,
+  simulatePartialAmortization,
+  type AmortizationSystem,
+  type OfficialComparison,
+  type PartialAmortizationResult,
+  type RateUnit,
+} from "@/lib/calculators/partial-amortization";
 
 /* Eventos de uso — NUNCA saldo, parcela, quantidade ou taxa. */
 interface GtagWindow extends Window {
@@ -123,6 +133,22 @@ export function EarlyPayoffCalculator() {
   const [rate, setRate] = useState("");
   const [errors, setErrors] = useState<string[]>([]);
   const [result, setResult] = useState<EarlyPayoffResult | null>(null);
+  /* Modo 1 — validade do saldo informado pela instituição */
+  const [validUntil, setValidUntil] = useState("");
+  /* Modo 2 — amortização parcial */
+  const [subMode, setSubMode] = useState<"oficial" | "simular">("oficial");
+  const [optTermMonths, setOptTermMonths] = useState("");
+  const [optTermPayment, setOptTermPayment] = useState("");
+  const [optPayMonths, setOptPayMonths] = useState("");
+  const [optPayPayment, setOptPayPayment] = useState("");
+  const [comparison, setComparison] = useState<OfficialComparison | null>(null);
+  const [pBalance, setPBalance] = useState("");
+  const [pMonths, setPMonths] = useState("");
+  const [pRate, setPRate] = useState("");
+  const [pRateUnit, setPRateUnit] = useState<RateUnit>("mensal");
+  const [pSystem, setPSystem] = useState<AmortizationSystem>("nao-sei");
+  const [pExtra, setPExtra] = useState("");
+  const [partial, setPartial] = useState<PartialAmortizationResult | null>(null);
   const startedRef = useRef(false);
 
   const ineligible = modality === "consorcio" || modality === "rotativo-cheque";
@@ -176,6 +202,31 @@ export function EarlyPayoffCalculator() {
     gtag("event", "early_payoff_complete");
   }
 
+  function compareOfficial() {
+    const n = (v: string) => (v.trim() === "" ? 0 : Number(v.trim()));
+    const c = comparePayoffOptions(
+      { months: n(optTermMonths), paymentCents: toCents(optTermPayment) ?? 0 },
+      { months: n(optPayMonths), paymentCents: toCents(optPayPayment) ?? 0 },
+    );
+    setComparison(c);
+    reveal();
+    gtag("event", "early_payoff_scenario_compare");
+  }
+
+  function runPartial() {
+    const r = simulatePartialAmortization({
+      balanceCents: toCents(pBalance) ?? 0,
+      remainingMonths: pMonths.trim() === "" ? 0 : Number(pMonths.trim()),
+      rateValue: pRate.trim() === "" ? null : parsePercentBR(pRate),
+      rateUnit: pRateUnit,
+      system: pSystem,
+      extraPaymentCents: toCents(pExtra) ?? 0,
+    });
+    setPartial(r);
+    reveal();
+    gtag("event", "early_payoff_partial_mode");
+  }
+
   function clearAll() {
     setHasBalance("");
     setModality("");
@@ -188,6 +239,12 @@ export function EarlyPayoffCalculator() {
     setRate("");
     setErrors([]);
     setResult(null);
+    setValidUntil("");
+    setOptTermMonths(""); setOptTermPayment(""); setOptPayMonths(""); setOptPayPayment("");
+    setComparison(null);
+    setPBalance(""); setPMonths(""); setPRate(""); setPExtra("");
+    setPSystem("nao-sei");
+    setPartial(null);
   }
 
   return (
@@ -267,8 +324,8 @@ export function EarlyPayoffCalculator() {
               <div className="mt-1 flex flex-wrap gap-2">
                 {(
                   [
-                    ["full", "Quitar tudo"],
-                    ["partial", "Antecipar algumas parcelas"],
+                    ["full", "Quero quitar tudo agora"],
+                    ["partial", "Quero amortizar uma parte"],
                   ] as const
                 ).map(([value, label]) => (
                   <label
@@ -296,20 +353,138 @@ export function EarlyPayoffCalculator() {
             </fieldset>
 
             {goal === "partial" ? (
-              <div className="rounded-xl border border-brand-border bg-white p-4 text-sm leading-relaxed text-brand-text">
-                <p className="font-bold text-brand-navy">
-                  A antecipação de parcelas específicas ainda não está nesta calculadora.
-                </p>
-                <p className="mt-1">
-                  Ela depende do sistema de amortização e do demonstrativo do seu contrato — a
-                  conta certa é a da instituição. O que já podemos adiantar: na amortização
-                  parcial você escolhe entre reduzir prazo ou reduzir parcela, e a escolha muda o
-                  resultado. O guia completo está em{" "}
-                  <Link href="/juros-e-cet/quitacao-antecipada-de-emprestimo/" className="font-semibold underline">
-                    quitação antecipada: como pedir
-                  </Link>
-                  .
-                </p>
+              <div className="space-y-4">
+                <div className="rounded-xl border border-brand-border bg-white p-4 text-sm leading-relaxed text-brand-text">
+                  <p className="font-bold text-brand-navy">
+                    Amortizar uma parte: dois caminhos, com confiabilidades diferentes.
+                  </p>
+                  <p className="mt-1">
+                    O efeito de uma amortização extraordinária depende do contrato e da
+                    instituição. O caminho mais confiável é comparar as duas simulações que{" "}
+                    <strong>ela</strong> calculou. A simulação com os seus dados é educacional e só
+                    roda quando você sabe o sistema de amortização.
+                  </p>
+                </div>
+
+                <fieldset>
+                  <legend className="text-sm font-semibold text-brand-navy">Como quer seguir?</legend>
+                  <div className="mt-1 flex flex-wrap gap-2">
+                    {(
+                      [
+                        ["oficial", "Comparar simulações da instituição"],
+                        ["simular", "Simular com meus dados"],
+                      ] as const
+                    ).map(([value, label]) => (
+                      <label
+                        key={value}
+                        className={`cursor-pointer rounded-lg border px-3 py-2 text-sm ${
+                          subMode === value
+                            ? "border-brand-teal bg-white font-semibold text-brand-navy"
+                            : "border-brand-border bg-white text-brand-text"
+                        }`}
+                      >
+                        <input
+                          type="radio"
+                          name="submode"
+                          className="sr-only"
+                          checked={subMode === value}
+                          onChange={() => setSubMode(value)}
+                        />
+                        {label}
+                      </label>
+                    ))}
+                  </div>
+                </fieldset>
+
+                {subMode === "oficial" ? (
+                  <div className="space-y-4">
+                    <p className="text-sm leading-relaxed text-brand-text">
+                      Peça à instituição as duas simulações usando o mesmo valor de amortização e
+                      preencha abaixo. Assim os números comparados são os do seu contrato.
+                    </p>
+                    <div className="rounded-xl border border-brand-border bg-white p-4">
+                      <p className="font-semibold text-brand-navy">Opção A — reduzir o prazo</p>
+                      <div className="mt-2 grid gap-3 sm:grid-cols-2">
+                        <Field id="opt-term-months" label="Novo prazo (pagamentos)" value={optTermMonths}
+                          onChange={setOptTermMonths} numeric placeholder="18" />
+                        <Field id="opt-term-payment" label="Valor da parcela (R$)" value={optTermPayment}
+                          onChange={setOptTermPayment} placeholder="850,00" />
+                      </div>
+                    </div>
+                    <div className="rounded-xl border border-brand-border bg-white p-4">
+                      <p className="font-semibold text-brand-navy">Opção B — reduzir a parcela</p>
+                      <div className="mt-2 grid gap-3 sm:grid-cols-2">
+                        <Field id="opt-pay-months" label="Prazo (pagamentos)" value={optPayMonths}
+                          onChange={setOptPayMonths} numeric placeholder="24" />
+                        <Field id="opt-pay-payment" label="Nova parcela (R$)" value={optPayPayment}
+                          onChange={setOptPayPayment} placeholder="680,00" />
+                      </div>
+                    </div>
+                    <div className="flex flex-wrap gap-3">
+                      <button type="button" onClick={compareOfficial}
+                        className="rounded-xl bg-brand-navy px-6 py-3.5 font-semibold text-white hover:bg-brand-navy/90">
+                        Comparar as duas opções
+                      </button>
+                      <button type="button" onClick={clearAll}
+                        className="rounded-xl border border-brand-border bg-white px-5 py-3.5 font-medium text-brand-navy hover:bg-brand-surface-soft">
+                        Limpar simulação
+                      </button>
+                    </div>
+                  </div>
+                ) : (
+                  <div className="space-y-4">
+                    <div className="grid gap-3 sm:grid-cols-2">
+                      <Field id="p-balance" label="Saldo devedor atual (R$)"
+                        hint="Quanto ainda está em aberto, segundo a instituição."
+                        value={pBalance} onChange={setPBalance} placeholder="20.000,00" />
+                      <Field id="p-months" label="Parcelas que ainda faltam" value={pMonths}
+                        onChange={setPMonths} numeric placeholder="24" />
+                      <Field id="p-rate" label="Taxa de juros do contrato" value={pRate}
+                        onChange={setPRate} placeholder="1,50" />
+                      <div>
+                        <label htmlFor="p-rate-unit" className="block text-sm font-semibold text-brand-navy">
+                          Unidade da taxa
+                        </label>
+                        <select id="p-rate-unit" value={pRateUnit}
+                          onChange={(e) => setPRateUnit(e.target.value as RateUnit)}
+                          className="mt-1 w-full rounded-xl border border-brand-border bg-white px-4 py-3 text-base">
+                          <option value="mensal">% ao mês</option>
+                          <option value="anual">% ao ano</option>
+                          <option value="sem-juros">Sem juros (0%)</option>
+                        </select>
+                      </div>
+                      <div>
+                        <label htmlFor="p-system" className="block text-sm font-semibold text-brand-navy">
+                          Sistema de amortização
+                        </label>
+                        <p className="mt-0.5 text-xs text-brand-muted">
+                          Está no contrato. Se não souber, não tem problema — a ferramenta avisa o
+                          que dá para fazer.
+                        </p>
+                        <select id="p-system" value={pSystem}
+                          onChange={(e) => setPSystem(e.target.value as AmortizationSystem)}
+                          className="mt-1 w-full rounded-xl border border-brand-border bg-white px-4 py-3 text-base">
+                          <option value="nao-sei">Não sei</option>
+                          <option value="price">Price (parcela fixa)</option>
+                          <option value="sac">SAC (parcela decrescente)</option>
+                          <option value="outro">Outro</option>
+                        </select>
+                      </div>
+                      <Field id="p-extra" label="Quanto pretende antecipar? (R$)" value={pExtra}
+                        onChange={setPExtra} placeholder="5.000,00" />
+                    </div>
+                    <div className="flex flex-wrap gap-3">
+                      <button type="button" onClick={runPartial}
+                        className="rounded-xl bg-brand-navy px-6 py-3.5 font-semibold text-white hover:bg-brand-navy/90">
+                        Simular amortização
+                      </button>
+                      <button type="button" onClick={clearAll}
+                        className="rounded-xl border border-brand-border bg-white px-5 py-3.5 font-medium text-brand-navy hover:bg-brand-surface-soft">
+                        Limpar simulação
+                      </button>
+                    </div>
+                  </div>
+                )}
               </div>
             ) : (
               <>
@@ -378,6 +553,14 @@ export function EarlyPayoffCalculator() {
                       value={payoff}
                       onChange={(v) => setPayoff(v)}
                       placeholder="12.100,00"
+                    />
+                    <Field
+                      id="valid-until"
+                      label="Esse valor vale até que data? (opcional)"
+                      hint="Use o formato AAAA-MM-DD. O saldo de quitação costuma valer só para uma data."
+                      value={validUntil}
+                      onChange={setValidUntil}
+                      placeholder="2026-09-05"
                     />
                     <fieldset>
                       <legend className="text-sm font-semibold text-brand-navy">
@@ -489,9 +672,132 @@ export function EarlyPayoffCalculator() {
           </ul>
         ) : null}
 
+        {comparison && comparison.status === "compared" ? (
+          <div className="rounded-xl border border-brand-border bg-white p-4">
+            <h2 className="font-serif text-xl font-bold text-brand-navy">
+              As duas opções da instituição, lado a lado
+            </h2>
+            <div className="mt-3 grid gap-3 sm:grid-cols-2">
+              <div className="rounded-xl border border-brand-border p-4">
+                <p className="text-xs font-bold uppercase tracking-wide text-brand-muted">Reduzir o prazo</p>
+                <p className="mt-1 font-serif text-xl font-bold text-brand-navy">
+                  {formatCentsBRL(comparison.reduceTerm!.totalCents)}
+                </p>
+                <p className="mt-0.5 text-xs text-brand-muted">
+                  {comparison.reduceTerm!.months} pagamentos de {formatCentsBRL(comparison.reduceTerm!.paymentCents)}
+                </p>
+              </div>
+              <div className="rounded-xl border border-brand-border p-4">
+                <p className="text-xs font-bold uppercase tracking-wide text-brand-muted">Reduzir a parcela</p>
+                <p className="mt-1 font-serif text-xl font-bold text-brand-navy">
+                  {formatCentsBRL(comparison.reducePayment!.totalCents)}
+                </p>
+                <p className="mt-0.5 text-xs text-brand-muted">
+                  {comparison.reducePayment!.months} pagamentos de {formatCentsBRL(comparison.reducePayment!.paymentCents)}
+                </p>
+              </div>
+            </div>
+            <ul className="mt-3 space-y-1.5 text-sm leading-relaxed text-brand-text">
+              {comparison.sentences.map((s) => (<li key={s}>• {s}</li>))}
+            </ul>
+            <p className="mt-3 text-xs leading-relaxed text-brand-muted">
+              Totais calculados como parcela × prazo, com os números que a instituição informou.
+              Esta ferramenta não escolhe por você.
+            </p>
+          </div>
+        ) : null}
+
+        {comparison && comparison.status === "incomplete" ? (
+          <div className="rounded-xl border border-brand-warning/40 bg-brand-warning-soft p-4 text-sm leading-relaxed text-brand-text">
+            {comparison.sentences.map((s) => (<p key={s}>{s}</p>))}
+          </div>
+        ) : null}
+
+        {partial && partial.status === "simulated" ? (
+          <div className="rounded-xl border border-brand-border bg-white p-4">
+            <h2 className="font-serif text-xl font-bold text-brand-navy">
+              Simulação estimada da amortização
+            </h2>
+            <p className="mt-1 text-sm text-brand-text">
+              Saldo depois do aporte: <strong>{formatCentsBRL(partial.balanceAfterCents!)}</strong>.
+            </p>
+            <div className="mt-3 grid gap-3 sm:grid-cols-2">
+              <div className="rounded-xl border border-brand-border p-4">
+                <p className="text-xs font-bold uppercase tracking-wide text-brand-muted">Reduzindo o prazo</p>
+                <p className="mt-1 font-serif text-lg font-bold text-brand-navy">
+                  {partial.reduceTerm!.months} pagamentos
+                </p>
+                <p className="mt-0.5 text-xs text-brand-muted">
+                  primeira parcela {formatCentsBRL(partial.reduceTerm!.firstPaymentCents)} · juros estimados{" "}
+                  {formatCentsBRL(partial.reduceTerm!.totalInterestCents)}
+                </p>
+              </div>
+              <div className="rounded-xl border border-brand-border p-4">
+                <p className="text-xs font-bold uppercase tracking-wide text-brand-muted">Reduzindo a parcela</p>
+                <p className="mt-1 font-serif text-lg font-bold text-brand-navy">
+                  {partial.reducePayment!.months} pagamentos
+                </p>
+                <p className="mt-0.5 text-xs text-brand-muted">
+                  primeira parcela {formatCentsBRL(partial.reducePayment!.firstPaymentCents)} · juros estimados{" "}
+                  {formatCentsBRL(partial.reducePayment!.totalInterestCents)}
+                </p>
+              </div>
+            </div>
+            <p className="mt-3 text-sm leading-relaxed text-brand-text">
+              Menos tempo pagando ou menos compromisso por mês são objetivos diferentes. A
+              ferramenta mostra os dois cenários; a escolha é sua — e o número oficial é o da
+              instituição.
+            </p>
+            <details className="mt-3 text-sm">
+              <summary className="cursor-pointer font-medium text-brand-teal-dark">
+                Hipóteses desta simulação
+              </summary>
+              <ul className="mt-2 list-disc space-y-1 pl-5 text-brand-text">
+                {partial.assumptions.map((a) => (<li key={a}>{a}</li>))}
+              </ul>
+            </details>
+          </div>
+        ) : null}
+
+        {partial && partial.status === "blocked" ? (
+          <div className="rounded-xl border border-brand-warning/40 bg-brand-warning-soft p-4 text-sm leading-relaxed text-brand-text">
+            <p className="font-bold text-brand-navy">Não vamos estimar isso com os dados atuais.</p>
+            <ul className="mt-2 list-disc space-y-1 pl-5">
+              {partial.warnings.includes("system-unknown") ? (
+                <li>
+                  Sem saber se o contrato é Price ou SAC, qualquer projeção seria chute. Peça à
+                  instituição as duas simulações — reduzir prazo e reduzir parcela — usando o
+                  mesmo valor de amortização, e volte na opção “Comparar simulações da instituição”.
+                </li>
+              ) : null}
+              {partial.warnings.includes("extra-exceeds-balance") ? (
+                <li>O valor que você quer antecipar é maior que o saldo informado. Confira os números.</li>
+              ) : null}
+              {partial.warnings.includes("extra-equals-balance") ? (
+                <li>
+                  O valor iguala o saldo: isso é quitação total, não amortização parcial. Use o modo
+                  “Quitar tudo agora” com o valor oficial de quitação.
+                </li>
+              ) : null}
+              {partial.warnings.includes("missing-rate") ? (<li>Informe a taxa de juros do contrato.</li>) : null}
+              {partial.warnings.includes("missing-balance") ? (<li>Informe o saldo devedor atual.</li>) : null}
+              {partial.warnings.includes("missing-term") ? (<li>Informe quantas parcelas ainda faltam.</li>) : null}
+              {partial.warnings.includes("payment-below-interest") ? (
+                <li>Com esses números, a parcela não cobriria os juros — confira taxa e prazo.</li>
+              ) : null}
+            </ul>
+          </div>
+        ) : null}
+
         {result ? (
           <div>
             <h2 className="font-serif text-2xl font-bold text-brand-navy">O que muda ao quitar hoje?</h2>
+            {validUntil.trim() !== "" && isQuoteOutdated(validUntil.trim(), new Date().toISOString().slice(0, 10)) ? (
+              <p className="mt-2 rounded-lg border border-brand-warning/40 bg-brand-warning-soft p-3 text-sm text-brand-text">
+                O valor informado tinha validade até {validUntil.trim()} e pode estar desatualizado.
+                Peça o saldo de quitação novamente antes de pagar.
+              </p>
+            ) : null}
 
             {result.futureTotalCents !== null && result.differenceCents !== null ? (
               <>
@@ -571,6 +877,13 @@ export function EarlyPayoffCalculator() {
             ) : null}
 
             <div className="mt-4 flex flex-wrap gap-4 text-sm">
+              <Link
+                href="/calculadoras/plano-para-sair-das-dividas/"
+                onClick={() => gtag("event", "early_payoff_debt_plan_click")}
+                className="text-brand-teal-dark underline"
+              >
+                Tem outras dívidas? Veja a ordem de ataque no seu plano
+              </Link>
               <Link
                 href="/calculadoras/trocar-divida/"
                 onClick={() => gtag("event", "early_payoff_debt_switch_click")}

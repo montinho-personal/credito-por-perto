@@ -921,6 +921,13 @@ export function DebtPlanBuilder() {
                   {copied ? "Plano copiado ✓" : "Copiar plano"}
                 </button>
                 <Link
+                  href="/calculadoras/quitacao-antecipada/"
+                  onClick={() => gtag("event", "debt_plan_early_payoff_click")}
+                  className="font-semibold text-brand-teal-dark underline"
+                >
+                  Tem dinheiro extra para a dívida priorizada? Simule a quitação →
+                </Link>
+                <Link
                   href="/calculadoras/trocar-divida/"
                   onClick={() => gtag("event", "debt_plan_debt_switch_click")}
                   className="font-semibold text-brand-teal-dark underline"

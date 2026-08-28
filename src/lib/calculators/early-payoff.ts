@@ -8,7 +8,10 @@
  * - inventar/reconstruir o saldo oficial de quitação (parcela × restantes
  *   NÃO é saldo de quitação — a liquidação antecipada reduz
  *   proporcionalmente juros e demais acréscimos, CDC art. 52 §2º e
- *   Res. CMN 3.516/2007);
+ *   Res. CMN 3.516/2007, cujo art. 1º — vedação de tarifa — segue vigente;
+ *   os arts. 2º e 3º, que traziam a fórmula do valor presente, foram
+ *   revogados em 02/05/2022 pela Res. CMN 5.004/2022, então NÃO existe
+ *   fórmula normativa única a reproduzir aqui);
  * - chamar a diferença de "juros economizados" (pode haver outros
  *   componentes) ou de "desconto do banco" (não é promoção);
  * - multiplicar parcela × quantidade quando as parcelas não são fixas;
