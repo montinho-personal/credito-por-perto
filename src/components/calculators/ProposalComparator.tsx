@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useId, useRef, useState } from "react";
+import { useRevealResult } from "./use-reveal-result";
 import {
   buildSummaryText,
   compareProposals,
@@ -669,7 +670,7 @@ export function ProposalComparator() {
   const [exampleLoaded, setExampleLoaded] = useState(false);
   const startedRef = useRef(false);
   const scamTrackedRef = useRef(false);
-  const resultRef = useRef<HTMLDivElement>(null);
+  const { ref: resultRef, reveal } = useRevealResult();
 
   function updateProposal(index: number, patch: Partial<ProposalFormState>) {
     if (!startedRef.current) {
@@ -730,10 +731,7 @@ export function ProposalComparator() {
         scamTrackedRef.current = true;
         trackCompareScamWarningView();
       }
-      requestAnimationFrame(() => {
-        const heading = resultRef.current?.querySelector<HTMLElement>("#resultado-comparacao");
-        heading?.focus({ preventScroll: false });
-      });
+      reveal();
     } catch (error) {
       setErrors([error instanceof Error ? error.message : "Não foi possível comparar. Revise os valores."]);
       setResult(null);
@@ -832,7 +830,7 @@ export function ProposalComparator() {
         </div>
       </form>
 
-      <div ref={resultRef} aria-live="polite">
+      <div ref={resultRef} aria-live="polite" className="scroll-mt-24">
         {result ? (
           <ComparisonResultView result={result} onCopy={copySummary} copied={copied} />
         ) : null}

@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useRef, useState } from "react";
+import { useRevealResult } from "./use-reveal-result";
 import {
   computeBudgetImpact,
   type BudgetImpactResult,
@@ -127,6 +128,8 @@ export function BudgetImpactSimulator() {
   const [scenario, setScenario] = useState<string>("");
   const startedRef = useRef(false);
 
+  const { ref: resultRef, reveal } = useRevealResult();
+
   function set<K extends keyof FormState>(key: K, value: FormState[K]) {
     if (!startedRef.current) {
       startedRef.current = true;
@@ -168,6 +171,7 @@ export function BudgetImpactSimulator() {
       setConfirmZeroExpenses(true);
       setErrors(["Você informou R$ 0,00 de despesas mensais. Se estiver correto, toque em Calcular novamente para confirmar."]);
       setComputed(null);
+      reveal();
       return;
     }
 
@@ -175,6 +179,7 @@ export function BudgetImpactSimulator() {
     setConfirmZeroExpenses(false);
     if (problems.length > 0) {
       setComputed(null);
+      reveal();
       return;
     }
 
@@ -182,6 +187,7 @@ export function BudgetImpactSimulator() {
     const result = computeBudgetImpact(base);
     setComputed({ result, base, installmentLabel: formatCentsBRL(installment!) });
     setScenario("");
+    reveal();
     gtag("event", "budget_tool_complete");
   }
 
@@ -365,7 +371,7 @@ export function BudgetImpactSimulator() {
         </button>
       </div>
 
-      <div aria-live="polite" className="mt-6">
+      <div ref={resultRef} aria-live="polite" className="mt-6 scroll-mt-24">
         {errors.length > 0 ? (
           <ul className="list-disc rounded-xl border border-brand-warning/40 bg-brand-warning-soft p-4 pl-8 text-sm text-brand-text">
             {errors.map((e) => (

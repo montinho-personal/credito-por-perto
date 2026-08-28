@@ -9,6 +9,7 @@ import {
   type MarginResult,
 } from "@/lib/calculators/margin";
 import { formatBRL } from "@/lib/calculators/loan";
+import { useRevealResult } from "./use-reveal-result";
 
 export function MarginCalculator() {
   const formId = useId();
@@ -17,6 +18,8 @@ export function MarginCalculator() {
   const [payments, setPayments] = useState("0");
   const [result, setResult] = useState<MarginResult | null>(null);
   const [errors, setErrors] = useState<string[]>([]);
+
+  const { ref: resultRef, reveal } = useRevealResult();
 
   function handleSubmit(event: React.FormEvent) {
     event.preventDefault();
@@ -29,10 +32,12 @@ export function MarginCalculator() {
     if (validationErrors.length > 0) {
       setErrors(validationErrors);
       setResult(null);
+      reveal();
       return;
     }
     setErrors([]);
     setResult(calculateMargin(input));
+    reveal();
   }
 
   const rule = MARGIN_RULES[profile];
@@ -140,7 +145,7 @@ export function MarginCalculator() {
       </form>
 
       {result ? (
-        <div className="mt-6 border-t border-brand-border pt-6" aria-live="polite">
+        <div ref={resultRef} className="mt-6 scroll-mt-24 border-t border-brand-border pt-6" aria-live="polite">
           <h2 className="font-serif text-xl font-bold text-brand-navy">
             Estimativa de margem
           </h2>

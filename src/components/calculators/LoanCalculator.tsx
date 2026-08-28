@@ -1,6 +1,7 @@
 "use client";
 
 import { useId, useState } from "react";
+import { useRevealResult } from "./use-reveal-result";
 import {
   calculateLoan,
   formatBRL,
@@ -63,6 +64,8 @@ export function LoanCalculator() {
   const [errors, setErrors] = useState<string[]>([]);
   const [showSchedule, setShowSchedule] = useState(false);
 
+  const { ref: resultRef, reveal } = useRevealResult();
+
   function handleSubmit(event: React.FormEvent) {
     event.preventDefault();
     const input = {
@@ -75,10 +78,12 @@ export function LoanCalculator() {
     if (validationErrors.length > 0) {
       setErrors(validationErrors);
       setResult(null);
+      reveal();
       return;
     }
     setErrors([]);
     setResult(calculateLoan(input));
+    reveal();
   }
 
   const annualRate = Number(rate) >= 0 ? monthlyToAnnualRate(Number(rate)) : 0;
@@ -153,7 +158,7 @@ export function LoanCalculator() {
       </form>
 
       {result ? (
-        <div className="mt-6 border-t border-brand-border pt-6" aria-live="polite">
+        <div ref={resultRef} className="mt-6 scroll-mt-24 border-t border-brand-border pt-6" aria-live="polite">
           <h2 className="font-serif text-xl font-bold text-brand-navy">
             Resultado estimado
           </h2>

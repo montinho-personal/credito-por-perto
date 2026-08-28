@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useRef, useState } from "react";
+import { useRevealResult } from "./use-reveal-result";
 import {
   buildPlainSummary,
   compareDebtSwitch,
@@ -242,6 +243,8 @@ export function DebtSwitchComparator() {
   const [errors, setErrors] = useState<string[]>([]);
   const startedRef = useRef(false);
 
+  const { ref: resultRef, reveal } = useRevealResult();
+
   function set<K extends keyof FormState>(key: K, value: FormState[K]) {
     if (!startedRef.current) {
       startedRef.current = true;
@@ -269,6 +272,7 @@ export function DebtSwitchComparator() {
       problems.push("Informe quanto dinheiro extra a nova operação libera.");
 
     setErrors(problems);
+    reveal();
     if (problems.length > 0) {
       setResult(null);
       return;
@@ -305,6 +309,7 @@ export function DebtSwitchComparator() {
 
     const r = compareDebtSwitch(current, offer, SWITCH_TYPE_MAP[form.switchType] ?? "unknown");
     setResult(r);
+    reveal();
     gtag("event", "debt_switch_complete");
     if (r.completeness === "partial") gtag("event", "debt_switch_partial_result");
     if (r.warnings.includes("upfront-payment-alert")) gtag("event", "debt_switch_fraud_warning");
@@ -598,7 +603,7 @@ export function DebtSwitchComparator() {
         </button>
       </div>
 
-      <div aria-live="polite" className="mt-6">
+      <div ref={resultRef} aria-live="polite" className="mt-6 scroll-mt-24">
         {errors.length > 0 ? (
           <ul className="list-disc rounded-xl border border-brand-warning/40 bg-brand-warning-soft p-4 pl-8 text-sm text-brand-text">
             {errors.map((e) => (

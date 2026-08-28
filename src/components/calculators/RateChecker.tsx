@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useMemo, useRef, useState } from "react";
 import type { BcbRatesResult, SeriesData } from "@/lib/bcb/rates-service";
 import { formatRefMonth } from "@/lib/bcb/rates-service";
+import { useRevealResult } from "./use-reveal-result";
 import {
   compareRate,
   formatRateBR,
@@ -134,7 +135,7 @@ export function RateChecker({ rates }: { rates: BcbRatesResult }) {
   const [error, setError] = useState<string | null>(null);
   const [confirmedHigh, setConfirmedHigh] = useState(false);
   const startedRef = useRef(false);
-  const resultRef = useRef<HTMLDivElement>(null);
+  const { ref: resultRef, reveal } = useRevealResult();
 
   const byId = useMemo(
     () => new Map(rates.series.map((s) => [s.internalId, s])),
@@ -201,11 +202,13 @@ export function RateChecker({ rates }: { rates: BcbRatesResult }) {
       setError(null);
       // A UI mostra o bloco explicativo de CET; nada a calcular.
       gtag("event", "rate_compare_cet_informed");
+      reveal();
       return;
     }
     const parsed = parseRateBR(rateText);
     if (parsed === null) {
       setError("Informe a taxa como número — por exemplo, 4,20.");
+      reveal();
       return;
     }
     try {
@@ -219,6 +222,7 @@ export function RateChecker({ rates }: { rates: BcbRatesResult }) {
           `Você informou ${formatRateBR(parsed)} ${unit === "monthly" ? "ao mês" : "ao ano"}. Confirme se o número e a unidade estão corretos e toque em Comparar de novo para prosseguir.`,
         );
         setConfirmedHigh(true);
+        reveal();
         return;
       }
       setResult(comparison);
@@ -227,13 +231,10 @@ export function RateChecker({ rates }: { rates: BcbRatesResult }) {
         unit,
         outcome: comparison.classification,
       });
-      requestAnimationFrame(() => {
-        resultRef.current
-          ?.querySelector<HTMLElement>("#resultado-taxa")
-          ?.focus({ preventScroll: false });
-      });
+      reveal();
     } catch (err) {
       setError(err instanceof Error ? err.message : "Não foi possível comparar.");
+      reveal();
     }
   }
 
@@ -434,7 +435,7 @@ export function RateChecker({ rates }: { rates: BcbRatesResult }) {
         </div>
       </form>
 
-      <div ref={resultRef} aria-live="polite">
+      <div ref={resultRef} aria-live="polite" className="scroll-mt-24">
         {rateKind === "cet" && series ? (
           <div className="mt-6 rounded-xl border border-brand-border bg-white p-5 text-sm leading-relaxed">
             <p className="font-bold text-brand-navy">CET e taxa de juros não são a mesma coisa.</p>

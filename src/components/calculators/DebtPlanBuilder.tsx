@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useMemo, useRef, useState } from "react";
+import { useMemo, useState } from "react";
 import {
   attentionLabel,
   buildDebtPlan,
@@ -16,6 +16,7 @@ import {
   type UrgentFlag,
 } from "@/lib/calculators/debt-plan";
 import { formatCentsBRL, parseBRLToCents, parsePercentBR } from "@/lib/calculators/proposal-comparison";
+import { useRevealResult } from "./use-reveal-result";
 
 /* Eventos de uso — NUNCA saldo, taxa, atraso, pagamento ou apelido. */
 interface GtagWindow extends Window {
@@ -181,22 +182,7 @@ export function DebtPlanBuilder() {
   const [result, setResult] = useState<DebtPlanResult | null>(null);
   const [copied, setCopied] = useState(false);
   const [started, setStarted] = useState(false);
-  const resultRef = useRef<HTMLDivElement | null>(null);
-
-  /**
-   * O resultado nasce abaixo do botão: sem levar a tela até ele, no celular
-   * parece que nada aconteceu. Rola depois que o React pinta o conteúdo.
-   */
-  function revealResult() {
-    const node = resultRef.current;
-    if (!node) return;
-    const reduced =
-      typeof window.matchMedia === "function" &&
-      window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-    window.setTimeout(() => {
-      node.scrollIntoView({ behavior: reduced ? "auto" : "smooth", block: "start" });
-    }, 0);
-  }
+  const { ref: resultRef, reveal } = useRevealResult();
 
   const runningTotals = useMemo(() => {
     const balance = debts.reduce((s, d) => s + toCents(d.balance), 0);
@@ -255,7 +241,7 @@ export function DebtPlanBuilder() {
     setErrors(problems);
     if (problems.length > 0) {
       setResult(null);
-      revealResult();
+      reveal();
       return;
     }
 
@@ -296,7 +282,7 @@ export function DebtPlanBuilder() {
     });
     setResult(r);
     setCopied(false);
-    revealResult();
+    reveal();
     gtag("event", "debt_plan_complete");
   }
 

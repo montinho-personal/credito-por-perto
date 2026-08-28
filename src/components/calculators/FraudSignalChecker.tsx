@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useRef, useState } from "react";
+import { useRevealResult } from "./use-reveal-result";
 import {
   EMERGENCY_FLOW,
   FRAUD_QUESTIONS,
@@ -61,7 +62,7 @@ export function FraudSignalChecker() {
   const [stage, setStage] = useState<Stage>({ kind: "triage" });
   const [answers, setAnswers] = useState<AnswerMap>({});
   const startedRef = useRef(false);
-  const liveRef = useRef<HTMLDivElement>(null);
+  const { ref: liveRef, reveal } = useRevealResult();
 
   function start() {
     if (!startedRef.current) {
@@ -77,9 +78,7 @@ export function FraudSignalChecker() {
     } else {
       setStage({ kind: "result" });
       gtag("event", "fraud_check_complete");
-      requestAnimationFrame(() => {
-        liveRef.current?.querySelector<HTMLElement>("#resultado-sinais")?.focus();
-      });
+      reveal();
     }
   }
 
@@ -116,7 +115,7 @@ export function FraudSignalChecker() {
         verificação acontece no seu navegador.
       </p>
 
-      <div ref={liveRef} aria-live="polite" className="mt-4">
+      <div ref={liveRef} aria-live="polite" className="mt-4 scroll-mt-24">
         {stage.kind === "triage" ? (
           <fieldset>
             <legend className="font-serif text-xl font-bold text-brand-navy">

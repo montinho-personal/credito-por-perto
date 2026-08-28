@@ -1,7 +1,8 @@
 "use client";
 
 import Link from "next/link";
-import { useEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
+import { useRevealResult } from "./use-reveal-result";
 import {
   isValidCnpj,
   looksLikeCnpj,
@@ -209,7 +210,9 @@ export function InstitutionChecker() {
 
   const isCnpjInput = looksLikeCnpj(query);
 
-  async function runSearch(term: string) {
+  const { ref: resultRef, reveal } = useRevealResult();
+
+  const runSearch = useCallback(async (term: string) => {
     const trimmed = term.trim();
     if (trimmed.length < 3) return;
     if (!startedRef.current) {
@@ -221,11 +224,13 @@ export function InstitutionChecker() {
       if (digits.length < 14) {
         setSelected(null);
         setView({ kind: "incomplete-cnpj" });
+        reveal();
         return;
       }
       if (!isValidCnpj(digits)) {
         setSelected(null);
         setView({ kind: "invalid-cnpj" });
+        reveal();
         return;
       }
     }
@@ -238,20 +243,24 @@ export function InstitutionChecker() {
       if (response.status === 503) {
         gtag("event", "institution_check_unavailable");
         setView({ kind: "unavailable" });
+        reveal();
         return;
       }
       const data = (await response.json()) as ApiOk | { status: string };
       if (seq !== requestSeq.current) return;
       if (data.status === "invalid_cnpj") {
         setView({ kind: "invalid-cnpj" });
+        reveal();
         return;
       }
       if (data.status === "incomplete_cnpj") {
         setView({ kind: "incomplete-cnpj" });
+        reveal();
         return;
       }
       if (data.status !== "ok") {
         setView({ kind: "unavailable" });
+        reveal();
         return;
       }
       const ok = data as ApiOk;
@@ -268,13 +277,14 @@ export function InstitutionChecker() {
       gtag("event", "institution_check_result");
       if (ok.matches.length > 1) gtag("event", "institution_check_multiple_results");
       setView({ kind: "results", data: ok });
+      reveal();
       if (ok.matches.length === 1 && ok.matches[0] && ok.matches[0].quality === "exact") {
         setSelected(ok.matches[0]);
       }
     } catch {
       if (seq === requestSeq.current) setView({ kind: "unavailable" });
     }
-  }
+  }, [reveal]);
 
   // Busca automática com debounce; o botão dispara imediatamente.
   useEffect(() => {
@@ -287,8 +297,7 @@ export function InstitutionChecker() {
     return () => {
       if (debounceRef.current) clearTimeout(debounceRef.current);
     };
-     
-  }, [query]);
+  }, [query, runSearch]);
 
   const results = view.kind === "results" ? view.data : null;
 
@@ -332,7 +341,7 @@ export function InstitutionChecker() {
         </div>
       </form>
 
-      <div aria-live="polite" className="mt-4">
+      <div ref={resultRef} aria-live="polite" className="mt-4 scroll-mt-24">
         {view.kind === "loading" ? (
           <p className="text-sm text-brand-muted">Consultando a base oficial…</p>
         ) : null}
