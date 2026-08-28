@@ -36,6 +36,7 @@ export default function MapaDoSitePage() {
         <li><Link href="/calculadoras/consultar-instituicao/">Essa instituição aparece no Banco Central?</Link></li>
         <li><Link href="/calculadoras/comparador-de-propostas/">Comparador de propostas de crédito</Link></li>
         <li><Link href="/calculadoras/trocar-divida/">Vale a pena trocar esta dívida?</Link></li>
+        <li><Link href="/calculadoras/plano-para-sair-das-dividas/">Plano para sair das dívidas</Link></li>
         <li><Link href="/calculadoras/quitacao-antecipada/">Calculadora de quitação antecipada</Link></li>
         <li><Link href="/calculadoras/parcela-no-orcamento/">Quanto de parcela cabe no meu orçamento?</Link></li>
         <li><Link href="/calculadoras/conversor-de-taxas/">Conversor de taxas: mensal ↔ anual</Link></li>

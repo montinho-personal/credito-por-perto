@@ -66,6 +66,7 @@ export const FOOTER_NAV = {
     { label: "Consultar instituição no BC", href: "/calculadoras/consultar-instituicao/" },
     { label: "Comparador de propostas", href: "/calculadoras/comparador-de-propostas/" },
     { label: "Trocar dívida vale a pena?", href: "/calculadoras/trocar-divida/" },
+    { label: "Plano para sair das dívidas", href: "/calculadoras/plano-para-sair-das-dividas/" },
     { label: "Quitação antecipada (calculadora)", href: "/calculadoras/quitacao-antecipada/" },
     { label: "Parcela no orçamento", href: "/calculadoras/parcela-no-orcamento/" },
     { label: "Conversor de taxas", href: "/calculadoras/conversor-de-taxas/" },

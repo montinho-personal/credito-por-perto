@@ -190,6 +190,28 @@ export function buildSearchDocs(): SearchDoc[] {
       content: "",
     },
     {
+      id: "/calculadoras/plano-para-sair-das-dividas/",
+      url: "/calculadoras/plano-para-sair-das-dividas/",
+      title: "Plano para sair das dívidas",
+      description:
+        "Organize várias dívidas, compare os métodos avalanche e bola de neve e veja qual delas cada estratégia priorizaria — sem cadastro.",
+      section: "Calculadoras",
+      type: "calculadora",
+      tags: ["divida", "avalanche", "bola-de-neve", "planejamento", "organizacao"],
+      keywords: [
+        "plano para sair das dividas",
+        "calculadora para sair das dividas",
+        "qual divida pagar primeiro",
+        "metodo avalanche",
+        "metodo bola de neve",
+        "como organizar minhas dividas",
+        "como pagar varias dividas",
+        "organizador de dividas",
+      ],
+      headings: [],
+      content: "",
+    },
+    {
       id: "/calculadoras/quitacao-antecipada/",
       url: "/calculadoras/quitacao-antecipada/",
       title: "Calculadora de quitação antecipada",

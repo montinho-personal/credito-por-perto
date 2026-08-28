@@ -53,6 +53,12 @@ export default function CalculadorasPage() {
           cta="Comparar dívidas"
         />
         <CategoryCard
+          title="Plano para sair das dívidas"
+          description="Tem várias dívidas e não sabe por onde começar? Organize todas, veja quais merecem atenção e compare avalanche e bola de neve."
+          href="/calculadoras/plano-para-sair-das-dividas/"
+          cta="Montar meu plano"
+        />
+        <CategoryCard
           title="Calculadora de quitação antecipada"
           description="Compare o saldo para quitação com a soma das parcelas que ainda faltam e veja a diferença em reais — sem prometer desconto."
           href="/calculadoras/quitacao-antecipada/"

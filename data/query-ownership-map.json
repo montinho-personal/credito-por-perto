@@ -416,5 +416,13 @@
       "/juros-e-cet/quitacao-antecipada-de-emprestimo/",
       "/emprestimos/portabilidade-de-credito/"
     ]
+  },
+  "calculadora para organizar dívidas e montar plano de pagamento": {
+    "canonicalOwner": "/calculadoras/plano-para-sair-das-dividas/",
+    "supportingPages": [
+      "/organizacao-financeira/qual-divida-pagar-primeiro/",
+      "/organizacao-financeira/como-sair-das-dividas/",
+      "/organizacao-financeira/como-negociar-dividas/"
+    ]
   }
 }
