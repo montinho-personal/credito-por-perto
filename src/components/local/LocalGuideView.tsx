@@ -6,7 +6,6 @@ import type { Metadata } from "next";
 import {
   getLocalGuideByPath,
   getLocalDossier,
-  isLocalGuideIndexable,
   type LocalGuide,
 } from "@/lib/content/local";
 import { getAuthor } from "@/lib/content/authors";
@@ -20,6 +19,9 @@ import { Breadcrumbs } from "@/components/layout/Breadcrumbs";
 import { mdxComponents } from "@/components/content/mdx-components";
 import { TableOfContents, EditorialDisclosure, AuthorBox } from "@/components/article/ArticleShell";
 import { formatDateBR, LastVerifiedBadge, OfficialSourceLink } from "@/components/content/sources";
+import { CityFinancialMapSection } from "@/components/local/CityFinancialMap";
+import { buildCityFinancialMap } from "@/lib/local/city-map";
+import { GATE_TODAY, isGuideIndexable } from "@/lib/local/guide-indexability";
 
 function isGuideVisible(guide: LocalGuide): boolean {
   if (guide.frontmatter.status === "published") return true;
@@ -35,7 +37,7 @@ export function localGuideMetadata(urlPath: string): Metadata {
     title: fm.title,
     description: fm.description,
     path: guide.urlPath,
-    noindex: !isLocalGuideIndexable(guide),
+    noindex: !isGuideIndexable(guide),
     image: fm.featuredImage ? `${SITE_URL}${fm.featuredImage}` : undefined,
     imageAlt: fm.imageAlt,
     imageWidth: fm.imageWidth,
@@ -51,6 +53,7 @@ export function LocalGuideView({ urlPath }: { urlPath: string }) {
   const fm = guide.frontmatter;
   const author = getAuthor(fm.authorId);
   const dossier = fm.dossierId ? getLocalDossier(fm.dossierId) : undefined;
+  const financialMap = fm.dossierId ? buildCityFinancialMap(fm.dossierId, GATE_TODAY) : null;
   const state = getStateByCode(fm.stateCode);
 
   const breadcrumbs = [
@@ -142,30 +145,7 @@ export function LocalGuideView({ urlPath }: { urlPath: string }) {
         />
       </div>
 
-      {dossier && dossier.consumerProtectionResources.length > 0 ? (
-        <section aria-labelledby="protecao" className="mt-10">
-          <h2 id="protecao" className="font-serif text-xl font-bold text-brand-navy">
-            Canais de proteção ao consumidor
-          </h2>
-          <ul className="mt-3 space-y-2 text-sm leading-relaxed">
-            {dossier.consumerProtectionResources.map((resource) => (
-              <li key={`${resource.organization}-${resource.service}`}>
-                <span className="font-medium text-brand-navy">
-                  {resource.organization}
-                </span>
-                {" — "}
-                {resource.service}.{" "}
-                <OfficialSourceLink href={resource.officialSource}>
-                  Canal oficial
-                </OfficialSourceLink>{" "}
-                <span className="text-brand-muted">
-                  (verificado em {formatDateBR(resource.checkedAt)})
-                </span>
-              </li>
-            ))}
-          </ul>
-        </section>
-      ) : null}
+      {financialMap ? <CityFinancialMapSection map={financialMap} /> : null}
 
       {dossier && dossier.officialSources.length > 0 ? (
         <section aria-labelledby="fontes-locais" className="mt-10 border-t border-brand-border pt-6">

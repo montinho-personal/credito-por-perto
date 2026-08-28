@@ -1,5 +1,6 @@
 import { getPublishedArticles } from "@/lib/content/articles";
-import { getPublishedLocalGuides, getAllLocalGuides } from "@/lib/content/local";
+import { getAllLocalGuides } from "@/lib/content/local";
+import { getIndexableLocalGuides } from "@/lib/local/guide-indexability";
 import { canonicalUrl } from "@/lib/seo/canonical";
 
 export interface SitemapEntry {
@@ -64,7 +65,9 @@ export function getSitemapEntries(): SitemapEntry[] {
     });
   }
 
-  for (const guide of getPublishedLocalGuides()) {
+  // Sitemap só lista o que o Indexability Gate aprova: incluir uma URL
+  // marcada noindex é mandar sinais contraditórios ao buscador.
+  for (const guide of getIndexableLocalGuides()) {
     entries.push({
       url: guide.canonical,
       lastModified: guide.frontmatter.updatedAt ?? guide.frontmatter.publishedAt,
@@ -73,7 +76,7 @@ export function getSitemapEntries(): SitemapEntry[] {
 
   // Índices de estado entram apenas quando têm ao menos um guia publicado.
   const publishedStates = new Set(
-    getPublishedLocalGuides().map((g) => g.frontmatter.stateCode),
+    getIndexableLocalGuides().map((g) => g.frontmatter.stateCode),
   );
   const allStatesWithGuides = new Set(
     getAllLocalGuides().map((g) => g.frontmatter.stateCode),

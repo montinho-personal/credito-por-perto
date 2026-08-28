@@ -101,10 +101,16 @@ export interface LocalDossier {
     officialSource: string;
     checkedAt: string;
   }>;
+  /**
+   * Programas públicos com atendimento vinculado ao município. O tipo já
+   * divergiu do formato real dos arquivos (`name`/`responsibleEntity` contra
+   * `program`/`detail`) sem ninguém notar, porque este campo não era
+   * renderizado em lugar nenhum. Agora ele alimenta o mapa financeiro, e o
+   * formato dos 23 dossiês foi unificado no que segue.
+   */
   verifiedLocalPrograms: Array<{
-    name: string;
-    responsibleEntity: string;
-    eligibilitySummary: string;
+    program: string;
+    detail: string;
     officialSource: string;
     checkedAt: string;
   }>;

@@ -44,15 +44,7 @@
       "checkedAt": "2026-08-16"
     }
   ],
-  "verifiedLocalPrograms": [
-    {
-      "name": "Banco do Povo (na Casa do Empreendedor)",
-      "responsibleEntity": "Programa estadual de microcrédito em parceria com a Prefeitura de Taboão da Serra, com atendimento na Casa do Empreendedor (Estrada Kizaemon Takeuti, 1.987)",
-      "eligibilitySummary": "Microcrédito produtivo para empreendedores formais e informais do município; condições, limites e taxas são definidos pelo programa estadual e devem ser confirmados no atendimento local antes de contratar.",
-      "officialSource": "https://www.ts.sp.gov.br/portal/noticias/0/3/1395/procon-de-taboao-da-serra-recebe-viaturas-e-equipamentos-do-procon-sp-para-reforcar-atendimentos/",
-      "checkedAt": "2026-08-16"
-    }
-  ],
+  "verifiedLocalPrograms": [],
   "verifiedServiceInformation": [
     {
       "institution": "Prefeitura de Taboão da Serra — complexo Kizaemon Takeuti",
@@ -76,6 +68,7 @@
   "pendingVerification": [
     "Horários vigentes do Procon e da Casa do Empreendedor no complexo",
     "Condições vigentes (limites e taxas) do Banco do Povo no atendimento local",
-    "Lista nominal de agências bancárias no município via dados abertos do BC (Informes_Agencias)"
+    "Lista nominal de agências bancárias no município via dados abertos do BC (Informes_Agencias)",
+    "Posto do Banco do Povo na Casa do Empreendedor — a fonte registrada é uma notícia sobre o Procon e não sustenta a informação do programa; confirmar na carta de serviços da prefeitura antes de publicar."
   ]
 }

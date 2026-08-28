@@ -52,15 +52,7 @@
       "checkedAt": "2026-08-16"
     }
   ],
-  "verifiedLocalPrograms": [
-    {
-      "name": "Banco do Povo Paulista",
-      "responsibleEntity": "Governo do Estado de São Paulo em parceria com a Prefeitura de Santana de Parnaíba (Secretaria de Emprego e Desenvolvimento Econômico)",
-      "eligibilitySummary": "Microcrédito produtivo para empreendedores formais e informais que atuam no município; condições, limites e taxas são definidos pelo programa estadual e devem ser confirmados no atendimento local antes de contratar.",
-      "officialSource": "https://www.bancodopovo.sp.gov.br",
-      "checkedAt": "2026-08-16"
-    }
-  ],
+  "verifiedLocalPrograms": [],
   "verifiedServiceInformation": [
     {
       "institution": "Prefeitura de Santana de Parnaíba — PAT Centro",
@@ -85,6 +77,7 @@
     "Horários de funcionamento e telefones atuais do Procon municipal (confirmar por telefone antes de publicar horário específico)",
     "Condições vigentes (limites e taxas) do Banco do Povo Paulista no atendimento local",
     "Cooperativas de crédito com atuação verificável no município",
-    "Lista nominal de agências bancárias no município via dados abertos do BC (Informes_Agencias) — popular a seção do guia quando os dados forem verificados (API indisponível no ambiente de redação)"
+    "Lista nominal de agências bancárias no município via dados abertos do BC (Informes_Agencias) — popular a seção do guia quando os dados forem verificados (API indisponível no ambiente de redação)",
+    "Posto do Banco do Povo Paulista no município — a fonte consultada é a página estadual do programa e não confirma o atendimento em Santana de Parnaíba; confirmar na carta de serviços da prefeitura antes de publicar."
   ]
 }
