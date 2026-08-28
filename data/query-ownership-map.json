@@ -368,6 +368,28 @@
       "/juros-e-cet/como-calcular-juros-de-emprestimo/"
     ]
   },
+  "como sair das dívidas por onde começar": {
+    "canonicalOwner": "/organizacao-financeira/como-sair-das-dividas/",
+    "supportingPages": [
+      "/organizacao-financeira/qual-divida-pagar-primeiro/",
+      "/organizacao-financeira/como-negociar-dividas/",
+      "/credito-seguro/como-consultar-dividas-no-registrato/"
+    ]
+  },
+  "qual dívida pagar primeiro quando tenho várias": {
+    "canonicalOwner": "/organizacao-financeira/qual-divida-pagar-primeiro/",
+    "supportingPages": [
+      "/organizacao-financeira/como-sair-das-dividas/",
+      "/taxas/"
+    ]
+  },
+  "como negociar dívidas com desconto": {
+    "canonicalOwner": "/organizacao-financeira/como-negociar-dividas/",
+    "supportingPages": [
+      "/organizacao-financeira/renegociacao-ou-emprestimo/",
+      "/organizacao-financeira/lei-do-superendividamento/"
+    ]
+  },
   "calculadora quitação antecipada quanto muda quitando hoje": {
     "canonicalOwner": "/calculadoras/quitacao-antecipada/",
     "supportingPages": [

@@ -1,0 +1,53 @@
+{
+  "proposedTitle": "Como negociar dívidas: a preparação que muda a proposta do outro lado",
+  "primaryIntent": "como negociar dívidas com desconto",
+  "secondaryIntents": [
+    "como negociar dívida com o banco",
+    "onde reclamar quando a negociação não avança"
+  ],
+  "targetReader": "Quem tem dívida atrasada e vai procurar (ou está sendo procurado pelo) credor para fechar um acordo",
+  "readerSituation": "O leitor entra na conversa sem saber quanto cabe no orçamento, aceita a primeira proposta, paga sem documento escrito e às vezes cai em boleto de terceiro",
+  "centralQuestion": "Como chegar preparado para negociar uma dívida e o que exigir antes de pagar qualquer valor?",
+  "uniqueAngle": "Trata negociação como preparação, não como conversa: define os quatro números que precedem qualquer contato, ordena os canais oficiais em degraus e transforma o momento do pagamento numa checklist verificável",
+  "originalContribution": [
+    "Os quatro números pré-negociação, com destaque para o limite real do orçamento como trava contra acordo impagável",
+    "A escada de canais em cinco degraus (credor → ouvidoria → Consumidor.gov.br → Procon → repactuação), com o que esperar de cada um",
+    "Checklist do que exigir por escrito antes de pagar, incluindo conferência de CNPJ do boleto e titularidade da chave Pix",
+    "A separação entre desconto em negociação (liberalidade, sem percentual garantido) e redução proporcional de juros na quitação antecipada (direito legal)"
+  ],
+  "primarySources": [
+    "Consumidor.gov.br — plataforma da Secretaria Nacional do Consumidor (Ministério da Justiça), com prazo de resposta das empresas",
+    "Medida Provisória nº 1.355/2026 — Novo Desenrola Brasil, prazos e frentes do programa",
+    "Código de Defesa do Consumidor, art. 42 (vedação de constrangimento e ameaça na cobrança)"
+  ],
+  "supportingSources": [
+    "Lei nº 14.181/2021 (repactuação por superendividamento)"
+  ],
+  "contentArchetype": "guide",
+  "proposedStructure": [
+    "Abertura: negociar não é pedir favor",
+    "Os quatro números antes da conversa",
+    "O que costuma mudar a proposta (prática de mercado, sem promessa)",
+    "Os canais em cinco degraus",
+    "Programa federal com prazo (Novo Desenrola, datado)",
+    "O que exigir por escrito antes de pagar",
+    "Três armadilhas",
+    "FAQ"
+  ],
+  "uniqueExamples": [
+    "Tabela dos cinco degraus de canais com o que esperar de cada um"
+  ],
+  "proposedVisuals": ["WarningBox (acordo impagável)", "tabela de canais", "ChecklistBox (antes de pagar)", "WhatCanChange (prazos do programa)"],
+  "pagesThatMayCompete": [
+    "/organizacao-financeira/renegociacao-ou-emprestimo/",
+    "/organizacao-financeira/lei-do-superendividamento/",
+    "/organizacao-financeira/como-sair-das-dividas/"
+  ],
+  "informationThatMustNotBeRepeated": [
+    "A decisão entre renegociar e contratar um empréstimo novo (link para renegociação ou empréstimo)",
+    "Mecânica do processo de repactuação e mínimo existencial (link para lei do superendividamento)",
+    "Plano geral de saída das dívidas (link para como sair das dívidas)",
+    "Regras de prescrição e cadastro (link para dívida caducada)"
+  ],
+  "publicationDecision": "create"
+}

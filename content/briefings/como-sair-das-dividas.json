@@ -1,0 +1,51 @@
+{
+  "proposedTitle": "Como sair das dívidas: o plano em 5 passos que começa antes de pagar",
+  "primaryIntent": "como sair das dívidas por onde começar",
+  "secondaryIntents": [
+    "estou endividado o que fazer",
+    "como organizar minhas dívidas"
+  ],
+  "targetReader": "Quem tem várias dívidas em aberto, sente que não sai do lugar e não sabe qual é o primeiro movimento",
+  "readerSituation": "O leitor paga a dívida que cobra mais alto, distribui dinheiro entre todas ou pega crédito novo sem tratar a causa — e continua no mesmo ponto meses depois",
+  "centralQuestion": "Qual é a sequência de passos que realmente tira alguém das dívidas, e por onde começar quando tudo parece urgente?",
+  "uniqueAngle": "Trata a saída das dívidas como problema de ordem e não de disciplina: os dois primeiros passos não envolvem pagar nada, e o passo de estancar vem antes de qualquer pagamento — o oposto do impulso natural",
+  "originalContribution": [
+    "A separação explícita entre dívida URGENTE (risco de perder bem, folha, essencial, fiador) e dívida CARA (custo mensal), tratadas como dois eixos independentes",
+    "O alerta de que o Registrato não cobre dívidas não bancárias — e que planos montados só com ele nascem incompletos",
+    "A sequência estancar → ordenar → mudar o preço, com as três alavancas de preço separadas (negociar, trocar, quitar)",
+    "O corte honesto de escopo: quando o método não basta e o caso é de superendividamento"
+  ],
+  "primarySources": [
+    "Lei nº 14.181/2021 (superendividamento, repactuação com plano de pagamento)",
+    "Registrato do Banco Central (extrato de operações de crédito reportadas ao BC)"
+  ],
+  "supportingSources": [],
+  "contentArchetype": "guide",
+  "proposedStructure": [
+    "Abertura: o impulso de pagar quem grita mais alto",
+    "Passo 1 — Levantar tudo (Registrato + extratos)",
+    "Passo 2 — Separar o urgente do caro (risco × custo)",
+    "Passo 3 — Estancar antes de tapar",
+    "Passo 4 — Escolher a ordem de ataque",
+    "Passo 5 — Mudar o preço da dívida",
+    "Quando o plano não basta (superendividamento)",
+    "O que não funciona",
+    "FAQ"
+  ],
+  "uniqueExamples": [
+    "Tabela risco × custo aplicada às modalidades brasileiras (garantia, consignado, essencial, fiador vs rotativo e cheque especial)"
+  ],
+  "proposedVisuals": ["QuickSummary (os 5 passos)", "WarningBox (limite do Registrato)", "tabela risco × custo"],
+  "pagesThatMayCompete": [
+    "/organizacao-financeira/qual-divida-pagar-primeiro/",
+    "/organizacao-financeira/lei-do-superendividamento/",
+    "/organizacao-financeira/como-sair-do-rotativo/"
+  ],
+  "informationThatMustNotBeRepeated": [
+    "Detalhamento dos métodos avalanche e bola de neve (link para qual dívida pagar primeiro)",
+    "Roteiro de negociação e canais oficiais (link para como negociar dívidas)",
+    "Mecânica da Lei 14.181 e mínimo existencial (link para lei do superendividamento)",
+    "Plano de 4 movimentos do rotativo (link para como sair do rotativo)"
+  ],
+  "publicationDecision": "create"
+}

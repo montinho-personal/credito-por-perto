@@ -1,0 +1,52 @@
+{
+  "proposedTitle": "Qual dívida pagar primeiro? Avalanche, bola de neve e o critério anterior aos dois",
+  "primaryIntent": "qual dívida pagar primeiro quando tenho várias",
+  "secondaryIntents": [
+    "método avalanche ou bola de neve qual usar",
+    "como pagar várias dívidas ao mesmo tempo"
+  ],
+  "targetReader": "Quem tem mais de uma dívida, consegue destinar alguma sobra mensal e precisa decidir onde colocar esse dinheiro",
+  "readerSituation": "O leitor conhece de ouvir falar os métodos avalanche e bola de neve, mas não sabe qual se aplica ao caso dele — e não considerou o risco de perder um bem dado em garantia",
+  "centralQuestion": "Com várias dívidas e dinheiro curto, qual delas recebe o reforço primeiro?",
+  "uniqueAngle": "Coloca um critério de RISCO antes dos dois métodos clássicos: avalanche e bola de neve ordenam por custo e por tamanho, mas nenhum enxerga o que o devedor perde se não pagar (bem alienado, folha, serviço essencial, fiador)",
+  "originalContribution": [
+    "O critério de consequência anterior aos dois métodos, com as bases legais da retomada de bem (DL 911/1969 e Lei 9.514/1997)",
+    "Exemplo hipotético com o custo mensal exato de cada dívida (saldo × taxa), mostrando que a menor dívida pode ser a mais barata de manter",
+    "O argumento de que a vantagem da avalanche cresce com a dispersão de taxas — e por que isso favorece o método no mercado brasileiro",
+    "O alerta técnico de comparar taxas na mesma base (mensal × anual) antes de ordenar a lista"
+  ],
+  "primarySources": [
+    "Decreto-Lei nº 911/1969 (alienação fiduciária de bem móvel e busca e apreensão)",
+    "Lei nº 9.514/1997 (alienação fiduciária de imóvel, consolidação da propriedade e leilão)"
+  ],
+  "supportingSources": [
+    "Séries de taxas médias de juros por modalidade do Banco Central (via radar interno de taxas)"
+  ],
+  "contentArchetype": "comparison",
+  "proposedStructure": [
+    "Abertura: a ordem muda o resultado",
+    "Antes do método: o que você perde se não pagar",
+    "Método avalanche",
+    "Método bola de neve",
+    "Tabela comparativa",
+    "Exemplo hipotético com custo mensal por dívida",
+    "Por que a avalanche rende mais quando as taxas são dispersas",
+    "Comparar taxas na mesma base",
+    "Quatro erros comuns",
+    "FAQ"
+  ],
+  "uniqueExamples": [
+    "Três dívidas hipotéticas (rotativo R$ 2.000 a 15% a.m., pessoal R$ 5.000 a 5% a.m., carnê R$ 800 a 3% a.m.) com o juro mensal de cada uma calculado"
+  ],
+  "proposedVisuals": ["tabela avalanche × bola de neve", "ExampleBox (custo mensal por dívida)", "WhatCanChange"],
+  "pagesThatMayCompete": [
+    "/organizacao-financeira/como-sair-das-dividas/",
+    "/juros-e-cet/quitacao-antecipada-de-emprestimo/"
+  ],
+  "informationThatMustNotBeRepeated": [
+    "Plano completo de saída das dívidas e diagnóstico da causa (link para como sair das dívidas)",
+    "Roteiro de negociação com credores (link para como negociar dívidas)",
+    "Direito à redução proporcional de juros na quitação antecipada (link para o guia de quitação)"
+  ],
+  "publicationDecision": "create"
+}

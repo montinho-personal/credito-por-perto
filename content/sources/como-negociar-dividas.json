@@ -1,0 +1,51 @@
+{
+  "articleSlug": "como-negociar-dividas",
+  "claims": [
+    {
+      "claimId": "consumidor-gov-prazo",
+      "claimText": "O Consumidor.gov.br é serviço público gratuito da Secretaria Nacional do Consumidor (Senacon/Ministério da Justiça), exige conta gov.br e reúne empresas que se comprometem a receber, analisar e responder às reclamações, com prazo de até 10 dias para resposta da empresa.",
+      "sourceOrganization": "Secretaria Nacional do Consumidor — Ministério da Justiça e Segurança Pública",
+      "sourceTitle": "Consumidor.gov.br — Conheça o serviço",
+      "sourceLocation": "https://www.consumidor.gov.br/pages/conteudo/publico/1",
+      "sourceType": "official",
+      "accessedAt": "2026-08-28"
+    },
+    {
+      "claimId": "novo-desenrola-mp-prazo",
+      "claimText": "O Novo Desenrola Brasil foi instituído pela Medida Provisória nº 1.355/2026, lançada em 4 de maio de 2026, com frentes distintas (famílias, Fies, rural e empresas) e adesão feita diretamente junto às instituições credoras. Em 1º de agosto de 2026 o prazo foi prorrogado para 31 de agosto de 2026, restrita a prorrogação às instituições financeiras com volume mínimo de operações com garantia do Fundo Garantidor de Operações. No Desenrola Fies, as solicitações correm entre 13 de maio e 31 de agosto de 2026 pelos canais do Banco do Brasil ou da Caixa.",
+      "sourceOrganization": "Ministério da Fazenda / Ministério da Educação / Casa Civil",
+      "sourceTitle": "Novo Desenrola Brasil — páginas oficiais do programa e comunicados de prorrogação",
+      "sourceLocation": "https://www.gov.br/fazenda/pt-br/acesso-a-informacao/acoes-e-programas/novo-desenrola-brasil",
+      "sourceType": "official",
+      "accessedAt": "2026-08-28",
+      "notes": "FATO COM PRAZO CURTO: a janela de adesão encerra em 31/08/2026 e pode ser novamente prorrogada. Revisar o bloco do artigo a partir de 01/09/2026 — a redação foi construída para envelhecer como fato datado, não como promessa. Critérios de elegibilidade e percentuais de desconto NÃO foram afirmados no artigo por não terem sido confirmados em fonte oficial primária."
+    },
+    {
+      "claimId": "cdc-42-cobranca",
+      "claimText": "O consumidor inadimplente não será exposto a ridículo, nem submetido a qualquer tipo de constrangimento ou ameaça na cobrança de débitos (CDC, art. 42).",
+      "sourceOrganization": "Presidência da República",
+      "sourceTitle": "Lei nº 8.078/1990 (Código de Defesa do Consumidor), art. 42",
+      "sourceLocation": "https://www.planalto.gov.br/ccivil_03/leis/l8078compilado.htm",
+      "sourceType": "official",
+      "accessedAt": "2026-08-28"
+    },
+    {
+      "claimId": "cdc-52-quitacao-antecipada",
+      "claimText": "É assegurada ao consumidor a liquidação antecipada do débito, total ou parcial, mediante redução proporcional dos juros e demais acréscimos (CDC, art. 52, §2º) — direito distinto do desconto negociado, que é liberalidade do credor.",
+      "sourceOrganization": "Presidência da República",
+      "sourceTitle": "Lei nº 8.078/1990 (Código de Defesa do Consumidor), art. 52, §2º",
+      "sourceLocation": "https://www.planalto.gov.br/ccivil_03/leis/l8078compilado.htm",
+      "sourceType": "official",
+      "accessedAt": "2026-08-28"
+    },
+    {
+      "claimId": "superendividamento-canais",
+      "claimText": "A Lei nº 14.181/2021 permite ao consumidor superendividado requerer processo de repactuação reunindo todos os credores, com plano de pagamento; o atendimento por Procons e Defensoria Pública é gratuito.",
+      "sourceOrganization": "Presidência da República",
+      "sourceTitle": "Lei nº 14.181, de 1º de julho de 2021",
+      "sourceLocation": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2021/lei/l14181.htm",
+      "sourceType": "official",
+      "accessedAt": "2026-08-28"
+    }
+  ]
+}

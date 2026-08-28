@@ -1,0 +1,44 @@
+{
+  "articleSlug": "qual-divida-pagar-primeiro",
+  "claims": [
+    {
+      "claimId": "alienacao-fiduciaria-movel",
+      "claimText": "Na alienação fiduciária em garantia de bem móvel, o credor fiduciário tem a propriedade resolúvel do bem e, comprovada a mora do devedor, pode promover a busca e apreensão do veículo nos termos do Decreto-Lei nº 911/1969.",
+      "sourceOrganization": "Presidência da República",
+      "sourceTitle": "Decreto-Lei nº 911, de 1º de outubro de 1969",
+      "sourceLocation": "https://www.planalto.gov.br/ccivil_03/decreto-lei/1965-1988/del0911.htm",
+      "sourceType": "official",
+      "accessedAt": "2026-08-28",
+      "notes": "O artigo cita o risco de retomada de forma genérica, sem detalhar rito processual. Procedimentos extrajudiciais foram alterados por normas posteriores (Lei nº 14.711/2023 e regulamentação), o que está sinalizado no bloco WhatCanChange."
+    },
+    {
+      "claimId": "alienacao-fiduciaria-imovel",
+      "claimText": "Na alienação fiduciária de bem imóvel regida pela Lei nº 9.514/1997, o inadimplemento pode levar à consolidação da propriedade em nome do credor fiduciário e à realização de leilão do imóvel.",
+      "sourceOrganization": "Presidência da República",
+      "sourceTitle": "Lei nº 9.514, de 20 de novembro de 1997",
+      "sourceLocation": "https://www.planalto.gov.br/ccivil_03/leis/l9514.htm",
+      "sourceType": "official",
+      "accessedAt": "2026-08-28"
+    },
+    {
+      "claimId": "dispersao-taxas-modalidades",
+      "claimText": "As taxas médias de juros variam muito entre modalidades de crédito à pessoa física, com o rotativo do cartão e o cheque especial em patamares muito superiores aos do consignado.",
+      "sourceOrganization": "Banco Central do Brasil",
+      "sourceTitle": "Séries temporais de taxas médias de juros por modalidade (SGS) — apresentadas no radar de taxas do site",
+      "sourceLocation": "https://www.bcb.gov.br/estatisticas/txjuros",
+      "sourceType": "official",
+      "accessedAt": "2026-08-28",
+      "notes": "O artigo NÃO fixa percentuais: remete ao radar interno (/taxas/), que exibe o dado oficial com mês de referência. As taxas do exemplo são declaradas hipotéticas."
+    },
+    {
+      "claimId": "quitacao-reducao-proporcional",
+      "claimText": "A liquidação antecipada do débito, total ou parcial, assegura ao consumidor a redução proporcional dos juros e demais acréscimos (CDC, art. 52, §2º).",
+      "sourceOrganization": "Presidência da República",
+      "sourceTitle": "Lei nº 8.078/1990 (Código de Defesa do Consumidor), art. 52, §2º",
+      "sourceLocation": "https://www.planalto.gov.br/ccivil_03/leis/l8078compilado.htm",
+      "sourceType": "official",
+      "accessedAt": "2026-08-28",
+      "notes": "Citado apenas na FAQ, com link para o guia de quitação antecipada."
+    }
+  ]
+}

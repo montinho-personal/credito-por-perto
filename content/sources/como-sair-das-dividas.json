@@ -1,0 +1,35 @@
+{
+  "articleSlug": "como-sair-das-dividas",
+  "claims": [
+    {
+      "claimId": "superendividamento-repactuacao",
+      "claimText": "A Lei nº 14.181/2021 incluiu no CDC o tratamento do superendividamento, permitindo processo de repactuação que reúne os credores com plano de pagamento; dívidas com garantia real e as contraídas de má-fé ficam fora do recorte legal.",
+      "sourceOrganization": "Presidência da República",
+      "sourceTitle": "Lei nº 14.181, de 1º de julho de 2021",
+      "sourceLocation": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2021/lei/l14181.htm",
+      "sourceType": "official",
+      "accessedAt": "2026-08-28",
+      "notes": "Claim já verificado no artigo /organizacao-financeira/lei-do-superendividamento/; aqui é usado apenas como encaminhamento, sem detalhar o processo."
+    },
+    {
+      "claimId": "registrato-escopo",
+      "claimText": "O Registrato, do Banco Central, apresenta ao próprio titular as operações de crédito que as instituições do sistema financeiro reportam sobre o seu CPF; dívidas de comércio, serviços e contas de consumo não integram esse extrato.",
+      "sourceOrganization": "Banco Central do Brasil",
+      "sourceTitle": "Registrato — Extrato do Registro de Informações no Banco Central",
+      "sourceLocation": "https://registrato.bcb.gov.br",
+      "sourceType": "official",
+      "accessedAt": "2026-08-28",
+      "notes": "Escopo do sistema financeiro já documentado no artigo /credito-seguro/como-consultar-dividas-no-registrato/."
+    },
+    {
+      "claimId": "prescricao-e-cadastro",
+      "claimText": "Cadastros negativos não podem manter informações por período superior a 5 anos (CDC, art. 43, §1º), e a prescrição da pretensão de cobrança atinge a exigibilidade judicial, não a existência da dívida (Código Civil, art. 206, §5º, I).",
+      "sourceOrganization": "Presidência da República",
+      "sourceTitle": "Lei nº 8.078/1990, art. 43, §1º e Lei nº 10.406/2002, art. 206",
+      "sourceLocation": "https://www.planalto.gov.br/ccivil_03/leis/l8078compilado.htm",
+      "sourceType": "official",
+      "accessedAt": "2026-08-28",
+      "notes": "Mencionado apenas na FAQ, com link para o artigo que detalha o tema."
+    }
+  ]
+}
