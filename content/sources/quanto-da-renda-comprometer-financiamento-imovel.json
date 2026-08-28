@@ -1,0 +1,53 @@
+{
+  "articleSlug": "quanto-da-renda-comprometer-financiamento-imovel",
+  "claims": [
+    {
+      "claimId": "pcr-30-por-cento-origem",
+      "claimText": "A Lei nº 8.692/1993 instituiu o Plano de Comprometimento da Renda (PCR) no âmbito do Sistema Financeiro da Habitação, estabelecendo que os contratos celebrados conforme esse plano teriam percentual de no máximo trinta por cento da renda bruta do mutuário destinado ao pagamento dos encargos mensais, e definindo encargo mensal como amortização e juros acrescidos dos seguros estipulados em contrato.",
+      "sourceOrganization": "Presidência da República",
+      "sourceTitle": "Lei nº 8.692, de 28 de julho de 1993 (texto compilado)",
+      "sourceLocation": "https://www.planalto.gov.br/ccivil_03/leis/l8692compilado.htm",
+      "sourceType": "official",
+      "accessedAt": "2026-08-28"
+    },
+    {
+      "claimId": "pcr-artigos-revogados",
+      "claimText": "Os artigos 1º a 9º da Lei nº 8.692/1993 — que tratavam do Plano de Comprometimento da Renda e do teto de 30% — foram revogados pela Medida Provisória nº 2.223, de 4 de setembro de 2001. Portanto o percentual não constitui, hoje, regra geral em vigor para todo financiamento habitacional.",
+      "sourceOrganization": "Presidência da República / Câmara dos Deputados",
+      "sourceTitle": "Medida Provisória nº 2.223, de 4 de setembro de 2001",
+      "sourceLocation": "https://www2.camara.leg.br/legin/fed/medpro/2001/medidaprovisoria-2223-4-setembro-2001-396078-norma-pe.html",
+      "sourceType": "official",
+      "accessedAt": "2026-08-28",
+      "notes": "CLAIM CENTRAL DO ARTIGO. Corrige o mito de que o limite de 30% seria imposição legal vigente. A MP revogou os arts. 1º a 9º, 11 a 15, 18 e 26 da Lei 8.692/1993."
+    },
+    {
+      "claimId": "caixa-criterio-30-renda-bruta",
+      "claimText": "A Caixa Econômica Federal informa, em seus canais de habitação, que a parcela do financiamento pode comprometer até 30% da renda familiar bruta, e que o valor máximo financiado depende da capacidade de pagamento dos proponentes.",
+      "sourceOrganization": "Caixa Econômica Federal",
+      "sourceTitle": "Financiamento de imóveis — condições e perguntas frequentes",
+      "sourceLocation": "https://www.caixa.gov.br/voce/habitacao/financiamento-de-imoveis/Paginas/default.aspx",
+      "sourceType": "official",
+      "accessedAt": "2026-08-28",
+      "notes": "Apresentado no artigo como CRITÉRIO DE INSTITUIÇÃO, não como limite legal. Sinalizado em WhatCanChange que critérios variam por instituição e produto e mudam com o tempo."
+    },
+    {
+      "claimId": "alienacao-fiduciaria-imovel",
+      "claimText": "No financiamento com alienação fiduciária de bem imóvel, regido pela Lei nº 9.514/1997, o inadimplemento pode levar à consolidação da propriedade em nome do credor fiduciário e à realização de leilão do imóvel.",
+      "sourceOrganization": "Presidência da República",
+      "sourceTitle": "Lei nº 9.514, de 20 de novembro de 1997",
+      "sourceLocation": "https://www.planalto.gov.br/ccivil_03/leis/l9514.htm",
+      "sourceType": "official",
+      "accessedAt": "2026-08-28"
+    },
+    {
+      "claimId": "quitacao-antecipada-imobiliario",
+      "claimText": "A liquidação antecipada, total ou parcial, com redução proporcional de juros e demais acréscimos é direito do consumidor (CDC, art. 52, §2º); no financiamento imobiliário o cálculo depende do sistema de amortização e da atualização do saldo, cabendo à instituição informar o valor oficial.",
+      "sourceOrganization": "Presidência da República",
+      "sourceTitle": "Lei nº 8.078/1990 (Código de Defesa do Consumidor), art. 52, §2º",
+      "sourceLocation": "https://www.planalto.gov.br/ccivil_03/leis/l8078compilado.htm",
+      "sourceType": "official",
+      "accessedAt": "2026-08-28",
+      "notes": "Citado apenas na FAQ, com link para o guia de quitação antecipada."
+    }
+  ]
+}

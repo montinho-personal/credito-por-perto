@@ -1,0 +1,60 @@
+{
+  "proposedTitle": "Quanto da renda comprometer com o financiamento de um imóvel?",
+  "primaryIntent": "quanto da renda comprometer com financiamento imobiliário",
+  "secondaryIntents": [
+    "comprometimento de renda no financiamento imobiliário como calcular",
+    "o banco aprovou mas a parcela cabe no orçamento"
+  ],
+  "targetReader": "Quem está simulando um financiamento imobiliário e tenta descobrir qual parcela realmente consegue sustentar por décadas",
+  "readerSituation": "O leitor ouviu que pode comprometer 30% da renda, acredita que isso é uma regra legal e faz a conta só com a parcela — ignorando a diferença entre renda bruta e líquida e todos os custos de morar que não entram na simulação",
+  "centralQuestion": "Como saber se a parcela de um financiamento imobiliário realmente cabe no orçamento?",
+  "uniqueAngle": "Separa TRÊS percentuais que o mercado confunde: o critério de aprovação da instituição, o percentual histórico-regulatório (hoje revogado) e o limite prudente do orçamento familiar — e demonstra que os três raramente coincidem",
+  "originalContribution": [
+    "A correção de um mito difundido: o teto de 30% do Plano de Comprometimento da Renda (Lei 8.692/1993) teve os artigos revogados pela MP 2.223/2001, logo não é regra geral em vigor — hoje é critério comercial de cada instituição",
+    "A definição legal de 'encargo mensal' (amortização + juros + seguros) usada para mostrar o que a parcela NÃO cobre: condomínio, IPTU, manutenção e contas",
+    "Tabela de contraste entre o que a instituição avalia e o que o orçamento precisa considerar",
+    "Exemplo hipotético com duas famílias de mesma renda e mesma parcela de 30% chegando a sobras muito diferentes",
+    "O teste de estresse simples: o que aconteceria com a parcela se a renda caísse 20% por seis meses"
+  ],
+  "primarySources": [
+    "Lei nº 8.692/1993 (Plano de Comprometimento da Renda no SFH) e a revogação dos arts. 1º a 9º pela MP nº 2.223/2001",
+    "Caixa Econômica Federal — critério informado de até 30% da renda familiar bruta em habitação",
+    "Lei nº 9.514/1997 (alienação fiduciária de imóvel, consolidação da propriedade e leilão)"
+  ],
+  "supportingSources": [],
+  "contentArchetype": "guide",
+  "proposedStructure": [
+    "Abertura: aprovado não é o mesmo que cabe",
+    "Existe um limite de renda para financiar?",
+    "De onde vem o 30% que todo mundo repete (e por que não é lei hoje)",
+    "O que significa comprometimento de renda",
+    "Renda bruta ou líquida?",
+    "Por que aprovado não significa que cabe",
+    "A parcela é só uma parte do custo de morar",
+    "Exemplo hipotético com duas famílias",
+    "Quanta folga deveria sobrar",
+    "Entrada maior reduz o risco?",
+    "Prazo maior ajuda ou atrapalha?",
+    "O CET entra na decisão",
+    "Checklist antes de financiar",
+    "Região de alto custo",
+    "FAQ"
+  ],
+  "uniqueExamples": [
+    "Duas famílias hipotéticas com renda bruta de R$ 10.000 e parcela de R$ 3.000 (30%): uma fica com 55% da renda líquida na moradia, a outra com 63% somando a dívida que já tinha"
+  ],
+  "proposedVisuals": ["QuickSummary", "tabela instituição × orçamento", "ExampleBox com tabela comparativa", "ChecklistBox", "WhatCanChange"],
+  "pagesThatMayCompete": [
+    "/calculadoras/parcela-no-orcamento/",
+    "/organizacao-financeira/como-fazer-orcamento-pessoal/",
+    "/juros-e-cet/o-que-e-cet/",
+    "/emprestimos/diferenca-entre-emprestimo-e-financiamento/"
+  ],
+  "informationThatMustNotBeRepeated": [
+    "O cálculo da folga com os números do leitor — é a ferramenta parcela no orçamento (link, não duplicar)",
+    "O método completo de montagem do orçamento (link para como fazer um orçamento pessoal)",
+    "A composição e a leitura do CET (resumo curto + link para o guia de CET)",
+    "A distinção conceitual entre empréstimo e financiamento (link para o guia próprio)"
+  ],
+  "publicationDecision": "create"
+}
