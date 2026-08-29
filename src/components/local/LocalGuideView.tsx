@@ -21,6 +21,7 @@ import { TableOfContents, EditorialDisclosure, AuthorBox } from "@/components/ar
 import { formatDateBR, LastVerifiedBadge, OfficialSourceLink } from "@/components/content/sources";
 import { CityFinancialMapSection } from "@/components/local/CityFinancialMap";
 import { buildCityFinancialMap } from "@/lib/local/city-map";
+import { LocalJourneyBridge } from "@/components/journeys/LocalJourneyBridge";
 import { GATE_TODAY, isGuideIndexable } from "@/lib/local/guide-indexability";
 
 function isGuideVisible(guide: LocalGuide): boolean {
@@ -153,6 +154,10 @@ export function LocalGuideView({ urlPath }: { urlPath: string }) {
       </div>
 
       {financialMap ? <CityFinancialMapSection map={financialMap} /> : null}
+
+      {/* A ponte vem depois do mapa da cidade, e não antes: primeiro a página
+          cumpre a promessa local, só então oferece o caminho da decisão. */}
+      <LocalJourneyBridge localityName={fm.localityName} />
 
       {dossier && dossier.officialSources.length > 0 ? (
         <section aria-labelledby="fontes-locais" className="mt-10 border-t border-brand-border pt-6">

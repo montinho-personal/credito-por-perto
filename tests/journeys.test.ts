@@ -3,6 +3,7 @@ import {
   getJourneys,
   getHomeJourneys,
   getJourneyFamilies,
+  getLocalBridgeJourneys,
   journeyAnchor,
   journeyPath,
   resolveJourneySteps,
@@ -78,6 +79,19 @@ describe("registry de jornadas", () => {
     expect(home.length).toBeGreaterThan(0);
     expect(home.length).toBeLessThan(journeys.length);
     const orders = home.map((j) => j.homeOrder);
+    expect(orders).toEqual([...orders].sort((a, b) => (a ?? 0) - (b ?? 0)));
+  });
+
+  it("oferece nas páginas locais só o que a página local não resolve", () => {
+    const bridge = getLocalBridgeJourneys();
+    expect(bridge.length).toBeGreaterThan(0);
+    /* Quatro é o teto: o bloco se repete em toda cidade e a política local
+       proíbe página que só troca o nome do município. */
+    expect(bridge.length).toBeLessThanOrEqual(4);
+    /* "Preciso de ajuda na minha cidade" é a página em que a pessoa está. */
+    expect(bridge.map((j) => j.id)).not.toContain("ajuda-local");
+    expect(bridge.some((j) => j.family === "ajuda")).toBe(false);
+    const orders = bridge.map((j) => j.localBridgeOrder);
     expect(orders).toEqual([...orders].sort((a, b) => (a ?? 0) - (b ?? 0)));
   });
 

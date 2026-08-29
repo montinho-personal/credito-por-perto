@@ -81,6 +81,18 @@ export interface Journey {
    * entrada e continuam a um clique, pelo "ver todos os caminhos".
    */
   homeOrder?: number;
+  /**
+   * Posição na ponte das páginas locais. Ausente = não aparece lá.
+   *
+   * A página local responde *onde resolver na minha cidade*. Quem chega nela
+   * já teve essa pergunta atendida, e o que sobra é a decisão em si — por
+   * isso a ponte oferece só as quatro situações que a página NÃO resolve.
+   *
+   * `ajuda-local` fica deliberadamente de fora: oferecer "preciso de ajuda na
+   * minha cidade" para quem está lendo o guia da própria cidade é devolver a
+   * pessoa ao ponto de partida.
+   */
+  localBridgeOrder?: number;
 }
 
 interface JourneyRegistryFile {
@@ -115,6 +127,13 @@ export function getHomeJourneys(): Journey[] {
   return getJourneys()
     .filter((j) => typeof j.homeOrder === "number")
     .sort((a, b) => (a.homeOrder ?? 0) - (b.homeOrder ?? 0));
+}
+
+/** Situações oferecidas ao fim de um guia local, na ordem declarada. */
+export function getLocalBridgeJourneys(): Journey[] {
+  return getJourneys()
+    .filter((j) => typeof j.localBridgeOrder === "number")
+    .sort((a, b) => (a.localBridgeOrder ?? 0) - (b.localBridgeOrder ?? 0));
 }
 
 /** Âncora da jornada dentro da Central. Não é URL própria — ver docs. */

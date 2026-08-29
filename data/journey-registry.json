@@ -87,7 +87,8 @@
           "path": "/organizacao-financeira/como-comparar-propostas-de-credito/"
         }
       ],
-      "homeOrder": 1
+      "homeOrder": 1,
+      "localBridgeOrder": 1
     },
     {
       "id": "recebi-proposta",
@@ -149,7 +150,8 @@
           "path": "/credito-seguro/como-consultar-se-instituicao-e-autorizada/"
         }
       ],
-      "homeOrder": 2
+      "homeOrder": 2,
+      "localBridgeOrder": 2
     },
     {
       "id": "tenho-uma-divida",
@@ -275,7 +277,8 @@
           "path": "/organizacao-financeira/lei-do-superendividamento/"
         }
       ],
-      "homeOrder": 3
+      "homeOrder": 3,
+      "localBridgeOrder": 3
     },
     {
       "id": "recebi-acordo",
@@ -425,7 +428,8 @@
           "path": "/credito-seguro/golpe-da-falsa-central/"
         }
       ],
-      "homeOrder": 6
+      "homeOrder": 6,
+      "localBridgeOrder": 4
     },
     {
       "id": "vou-comprar",

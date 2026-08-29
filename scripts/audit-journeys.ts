@@ -19,6 +19,7 @@ import {
   getJourneys,
   getHomeJourneys,
   getJourneyFamilies,
+  getLocalBridgeJourneys,
   resolveJourneySteps,
 } from "../src/lib/journeys/registry";
 import { walkPrimaryPath, toolsWithoutJourney } from "../src/lib/journeys/next-step";
@@ -280,6 +281,72 @@ if (homeJourneys.length === 0) {
     rule: "home-com-todas-as-situacoes",
     pages: ["/"],
     detail: `A home mostra ${homeJourneys.length} de ${journeys.length} situações. O bloco da home existe para reduzir a parede de opções, não para reproduzi-la.`,
+  });
+}
+
+/* ========================================================================== *
+ * 4b. A ponte das páginas locais
+ * ========================================================================== */
+
+/**
+ * O bloco da ponte é o único texto que se repete nas 24 (e futuras) páginas
+ * locais, e a política local proíbe página que só troca o nome do município.
+ * A folga é grande — os guias estão hoje em 0,15 de similaridade máxima
+ * contra um limite de 0,45 —, mas ela some por acúmulo: primeiro alguém
+ * acrescenta uma situação, depois um parágrafo. Estes limites transformam
+ * esse acúmulo em erro visível em vez de descoberta tardia.
+ */
+const MAX_BRIDGE_JOURNEYS = 4;
+
+const bridge = getLocalBridgeJourneys();
+if (bridge.length === 0) {
+  findings.push({
+    severity: "warning",
+    rule: "paginas-locais-sem-ponte",
+    pages: ["/emprestimos/sp/campinas/"],
+    detail:
+      "Nenhuma jornada marcada com localBridgeOrder — as páginas locais terminam sem caminho para a decisão.",
+  });
+} else if (bridge.length > MAX_BRIDGE_JOURNEYS) {
+  findings.push({
+    severity: "critical",
+    rule: "ponte-local-grande-demais",
+    pages: ["/emprestimos/sp/campinas/"],
+    detail: `A ponte oferece ${bridge.length} situações (máximo ${MAX_BRIDGE_JOURNEYS}). Repetir a Central inteira num guia local devolve a parede de opções que ela existe para desfazer — e engorda o texto que se repete em todas as cidades.`,
+  });
+}
+
+if (bridge.some((j) => j.family === "ajuda")) {
+  findings.push({
+    severity: "critical",
+    rule: "ponte-local-oferece-ajuda-local",
+    pages: ["/emprestimos/sp/campinas/"],
+    detail:
+      'A ponte oferece "preciso de ajuda na minha cidade" para quem já está lendo o guia da própria cidade — devolve a pessoa ao ponto de partida.',
+  });
+}
+
+const bridgeSource = readFile("src/components/journeys/LocalJourneyBridge.tsx");
+const bridgeCopy = bridgeSource
+  .replace(/\/\*[\s\S]*?\*\/|\/\/.*$/gm, "")
+  .replace(/className="[^"]*"/g, "");
+/* Teto de texto compartilhado, medido sem comentários nem classes: é o que
+   de fato entra no corpo repetido de toda página local. */
+if (bridgeCopy.length > 2600) {
+  findings.push({
+    severity: "warning",
+    rule: "ponte-local-verbosa",
+    pages: ["/emprestimos/sp/campinas/"],
+    detail: `O componente da ponte cresceu para ${bridgeCopy.length} caracteres de marcação e copy. Ele se repete em toda página local — mantenha-o curto.`,
+  });
+}
+
+if (!readFile("src/components/local/LocalGuideView.tsx").includes("LocalJourneyBridge")) {
+  findings.push({
+    severity: "warning",
+    rule: "guia-local-sem-ponte",
+    pages: ["/emprestimos/sp/campinas/"],
+    detail: "O template dos guias locais não renderiza a ponte para a Central.",
   });
 }
 
