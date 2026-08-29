@@ -1,5 +1,6 @@
 import { getPublishedArticles } from "@/lib/content/articles";
 import { getAllLocalGuides } from "@/lib/content/local";
+import { getToolRoutes } from "@/lib/tools/registry";
 import { getIndexableLocalGuides } from "@/lib/local/guide-indexability";
 import { canonicalUrl } from "@/lib/seo/canonical";
 
@@ -9,25 +10,19 @@ export interface SitemapEntry {
 }
 
 /** Páginas estáticas indexáveis (a busca fica fora: é noindex). */
+/**
+ * As rotas das ferramentas vêm do registry, não de uma cópia escrita à mão.
+ * A lista manual já deixou uma ferramenta nova fora do sitemap — e o efeito é
+ * silencioso: a página existe, é linkada, mas não é anunciada ao buscador.
+ */
 export const STATIC_INDEXABLE_PATHS = [
   "/",
   "/emprestimos/",
   "/juros-e-cet/",
   "/credito-seguro/",
   "/organizacao-financeira/",
-  "/taxas/",
   "/calculadoras/",
-  "/calculadoras/consultar-instituicao/",
-  "/calculadoras/comparador-de-propostas/",
-  "/calculadoras/trocar-divida/",
-  "/calculadoras/quitacao-antecipada/",
-  "/calculadoras/plano-para-sair-das-dividas/",
-  "/calculadoras/parcela-no-orcamento/",
-  "/calculadoras/conversor-de-taxas/",
-  "/calculadoras/minha-taxa-esta-cara/",
-  "/calculadoras/sinais-de-golpe/",
-  "/calculadoras/emprestimo/",
-  "/calculadoras/margem-consignavel/",
+  ...getToolRoutes(),
   "/emprestimos/guias-locais/",
   "/artigos/",
   "/glossario/",

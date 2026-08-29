@@ -219,6 +219,28 @@ export function buildSearchDocs(): SearchDoc[] {
       content: "",
     },
     {
+      id: "/calculadoras/renegociacao-de-dividas/",
+      url: "/calculadoras/renegociacao-de-dividas/",
+      title: "Calculadora de renegociação de dívidas",
+      description:
+        "Compare propostas de acordo — à vista, com entrada ou parceladas — e veja entrada, parcela, prazo e total de cada uma, sem cadastro.",
+      section: "Calculadoras",
+      type: "calculadora",
+      tags: ["renegociacao", "acordo", "divida", "desconto", "parcelamento"],
+      keywords: [
+        "calculadora renegociacao de divida",
+        "calcular acordo de divida",
+        "acordo de divida vale a pena",
+        "divida a vista ou parcelada",
+        "calcular desconto de divida",
+        "proposta de acordo divida",
+        "renegociacao com entrada e parcelas",
+        "como saber se o acordo e bom",
+      ],
+      headings: [],
+      content: "",
+    },
+    {
       id: "/calculadoras/plano-para-sair-das-dividas/",
       url: "/calculadoras/plano-para-sair-das-dividas/",
       title: "Plano para sair das dívidas",

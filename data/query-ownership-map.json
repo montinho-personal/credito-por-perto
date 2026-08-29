@@ -407,7 +407,8 @@
     "canonicalOwner": "/organizacao-financeira/como-negociar-dividas/",
     "supportingPages": [
       "/organizacao-financeira/renegociacao-ou-emprestimo/",
-      "/organizacao-financeira/lei-do-superendividamento/"
+      "/organizacao-financeira/lei-do-superendividamento/",
+      "/calculadoras/renegociacao-de-dividas/"
     ]
   },
   "calculadora quitação antecipada quanto muda quitando hoje": {
@@ -431,6 +432,14 @@
       "/calculadoras/parcela-no-orcamento/",
       "/organizacao-financeira/como-fazer-orcamento-pessoal/",
       "/emprestimos/diferenca-entre-emprestimo-e-financiamento/"
+    ]
+  },
+  "calculadora de renegociação de dívida comparar proposta de acordo": {
+    "canonicalOwner": "/calculadoras/renegociacao-de-dividas/",
+    "supportingPages": [
+      "/organizacao-financeira/como-negociar-dividas/",
+      "/organizacao-financeira/renegociacao-ou-emprestimo/",
+      "/organizacao-financeira/lei-do-superendividamento/"
     ]
   }
 }

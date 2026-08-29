@@ -136,8 +136,7 @@
         "tabela price",
         "amortização",
         "total de juros"
-      ],
-      "inFooter": true
+      ]
     },
     {
       "id": "conversor-de-taxas",
@@ -192,6 +191,26 @@
         "selic",
         "juros do mercado"
       ]
+    },
+    {
+      "id": "renegociacao-de-dividas",
+      "name": "Calculadora de renegociação de dívidas",
+      "shortName": "Renegociação de dívidas",
+      "route": "/calculadoras/renegociacao-de-dividas/",
+      "cta": "Comparar acordo",
+      "situation": "ja-tenho-divida",
+      "question": "Quanto esse acordo custa no total?",
+      "whenItHelps": "Compare propostas de acordo — à vista, com entrada ou parceladas — e veja entrada, parcela, prazo e total de cada uma. Desconto anunciado não é o total pago.",
+      "calloutLead": "Recebeu uma proposta de acordo? Some entrada, parcelas e custos antes de decidir pelo desconto anunciado.",
+      "triggerTerms": [
+        "renegocia",
+        "acordo de dívida",
+        "proposta de acordo",
+        "desconto para quitar",
+        "à vista ou parcelado",
+        "quitar com desconto"
+      ],
+      "inFooter": true
     },
     {
       "id": "plano-para-sair-das-dividas",
