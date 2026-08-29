@@ -64,6 +64,49 @@ Baseada em varredura real da SERP brasileira (queries e achados em
 31. ~~Quitação antecipada: desconto proporcional por direito~~ — publicado em 25/08/2026 (Bloco 10);
 32. ~~Registrato: o extrato oficial do CPF~~ — publicado em 25/08/2026 (Bloco 10; hub que 14 páginas já referenciavam externamente).
 
+## Onda 6 — radar do proprietário (28/08/2026)
+
+Lista trazida pelo proprietário e cruzada com a cobertura existente antes de
+produzir. Todos publicados:
+
+33. ~~Como sair das dívidas (pilar do cluster dívidas)~~;
+34. ~~Qual dívida pagar primeiro — avalanche × bola de neve~~;
+35. ~~Como negociar dívidas~~ — **contém bloco datado do Novo Desenrola com
+    janela até 31/08/2026; revisar em fonte oficial a partir de 01/09/2026**;
+36. ~~Tarifas bancárias gratuitas~~;
+37. ~~Como fazer um orçamento pessoal~~;
+38. ~~Reserva de emergência~~;
+39. ~~Quanto da renda comprometer com financiamento imobiliário~~.
+
+## Onda 7 — Bloco 12 (29/08/2026)
+
+Priorização por **medição de lacuna no próprio corpus**, não por volume
+estimado: contamos menções de conceito em todos os artigos e comparamos com
+as páginas existentes.
+
+40. ~~IOF no empréstimo~~ — citado em 12 artigos e nunca explicado; era o
+    fantasma mais caro do site, e reforça o cluster juros-e-cet;
+41. ~~Fatura do cartão: fechamento, vencimento, limite~~ — "fatura" aparecia
+    em 11 artigos sem pilar de funcionamento. Fronteira explícita com
+    `como-sair-do-rotativo`, que continua dono da intenção de dívida;
+42. ~~Financiamento de veículo~~ — território em zero absoluto, SERP dominada
+    por captação jurídica.
+
+### Territórios ainda em zero (candidatos da próxima onda)
+
+Medidos em 29/08/2026, sem nenhuma menção no corpus:
+
+- **Fiador e avalista** (3 menções, sem página) — `emprestar-o-nome` cobre o
+  empréstimo, não a fiança de aluguel;
+- **Dívida de pessoa falecida / inventário**;
+- **Penhora e protesto** — consequências de dívida, SERP de advogado;
+- **Limite do cartão: como é definido e como aumentar sem cilada** — parte
+  já coberta pelo pilar de fatura, verificar o que sobra;
+- **Portabilidade de salário**.
+
+Esses quatro primeiros formam um bloco coeso de "consequências", com SERP
+fraca e encaixe direto no cluster de dívidas.
+
 ## Trilha Local — "Empréstimo em [cidade]" (paralela às ondas)
 
 Decisão do proprietário (16/08/2026): expandir o SEO local cidade a cidade.
@@ -89,6 +132,24 @@ penalizadas pelo Google (spam policy) e bloqueadas pela nossa auditoria
    virar hub forte antes de abrir outro estado.
 
 ### Ordem de produção
+
+### Aprofundamento antes de expandir (29/08/2026)
+
+Auditoria do Indexability Gate mostrou que **14 dos 23 guias tinham um único
+recurso local** — só o Procon municipal —, passando no gate pelo mínimo. A
+queda de uma fonte os tiraria do índice. Aprofundar valeu mais que abrir
+cidades novas, que entrariam com a mesma fragilidade.
+
+Onze cidades ganharam o Banco do Povo Paulista como segundo recurso, com
+gradiente de confiança da fonte: página de serviço da prefeitura entra
+verificada; notícia oficial entra com pendência de reconfirmação; notícia
+antiga (Franco da Rocha, 2017) não entra. Restam **3 cidades com um único
+recurso**: Franco da Rocha, Jandira e Mairiporã.
+
+Encerrada também a pendência "lista nominal de agências bancárias", que
+aparecia em 21 dossiês: ela precede o Mapa Financeiro e contraria a política
+dele — a seção não lista banco, financeira nem correspondente, sob pena de
+virar diretório comercial.
 
 | Lote | Cidades (em ordem) | Racional |
 | --- | --- | --- |

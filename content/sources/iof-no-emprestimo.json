@@ -1,0 +1,45 @@
+{
+  "articleSlug": "iof-no-emprestimo",
+  "claims": [
+    {
+      "claimId": "regulamento-iof",
+      "claimText": "O IOF é regulamentado pelo Decreto nº 6.306, de 14 de dezembro de 2007, que dispõe sobre o Imposto sobre Operações de Crédito, Câmbio e Seguro, ou relativas a Títulos ou Valores Mobiliários. O texto já sofreu diversas alterações desde a publicação original.",
+      "sourceOrganization": "Presidência da República",
+      "sourceTitle": "Decreto nº 6.306, de 14 de dezembro de 2007 (texto compilado)",
+      "sourceLocation": "https://www.planalto.gov.br/ccivil_03/_ato2007-2010/2007/decreto/d6306compilado.htm",
+      "sourceType": "official",
+      "accessedAt": "2026-08-29",
+      "notes": "Fonte primária do regulamento. O artigo cita o texto compilado justamente porque a norma é alterada com frequência."
+    },
+    {
+      "claimId": "aliquotas-credito-pf",
+      "claimText": "Nas operações de crédito com mutuário pessoa física, o IOF incide à alíquota diária de 0,0082% sobre o principal, acrescida da alíquota adicional de 0,38%. A alíquota diária é limitada a 365 dias, ainda que a operação seja de pagamento parcelado com prazo maior, o que resulta em teto de 3,00% para essa parcela do imposto.",
+      "sourceOrganization": "Presidência da República",
+      "sourceTitle": "Decreto nº 6.306/2007, com a redação dada pelo Decreto nº 12.466/2025",
+      "sourceLocation": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/decreto/d12466.htm",
+      "sourceType": "official",
+      "accessedAt": "2026-08-29",
+      "notes": "Alíquotas verificadas em 29/08/2026. O artigo registra explicitamente que qualquer número de IOF publicado tem validade de data, porque a alteração se dá por decreto."
+    },
+    {
+      "claimId": "vigencia-decreto-12466",
+      "claimText": "O Decreto nº 12.466, de 22 de maio de 2025, alterou o Decreto nº 6.306/2007 nas disposições sobre operações de crédito, com vigência a partir de 23 de maio de 2025 — o dia seguinte à publicação.",
+      "sourceOrganization": "Presidência da República",
+      "sourceTitle": "Decreto nº 12.466, de 22 de maio de 2025",
+      "sourceLocation": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/decreto/d12466.htm",
+      "sourceType": "official",
+      "accessedAt": "2026-08-29",
+      "notes": "Usado para sustentar a afirmação de que a mudança de alíquota do IOF pode ter efeito quase imediato, ao contrário de tributos sujeitos à anterioridade anual."
+    },
+    {
+      "claimId": "iof-no-cet",
+      "claimText": "O Custo Efetivo Total reúne, em um único percentual, todos os encargos e despesas da operação de crédito — incluindo juros, tarifas, tributos e seguros quando houver. O IOF é, portanto, um dos componentes já refletidos no CET informado ao cliente.",
+      "sourceOrganization": "Banco Central do Brasil",
+      "sourceTitle": "Custo Efetivo Total (CET) — informação ao cidadão",
+      "sourceLocation": "https://www.bcb.gov.br/meubc/faqs/p/o-que-e-custo-efetivo-total-cet",
+      "sourceType": "official",
+      "accessedAt": "2026-08-29",
+      "notes": "Sustenta a afirmação central de que o IOF não é cobrança adicional fora da parcela, e que a comparação por CET já o inclui."
+    }
+  ]
+}

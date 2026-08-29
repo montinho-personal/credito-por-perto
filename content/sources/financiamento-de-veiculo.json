@@ -1,0 +1,45 @@
+{
+  "articleSlug": "financiamento-de-veiculo",
+  "claims": [
+    {
+      "claimId": "alienacao-fiduciaria-regime",
+      "claimText": "A alienação fiduciária em garantia de bens móveis é regida pelo Decreto-Lei nº 911, de 1º de outubro de 1969, que também disciplina o procedimento de busca e apreensão em caso de inadimplemento ou mora nas obrigações contratuais garantidas por essa forma.",
+      "sourceOrganization": "Presidência da República",
+      "sourceTitle": "Decreto-Lei nº 911, de 1º de outubro de 1969",
+      "sourceLocation": "https://www.planalto.gov.br/ccivil_03/decreto-lei/1965-1988/del0911.htm",
+      "sourceType": "official",
+      "accessedAt": "2026-08-29",
+      "notes": "Fonte primária do regime jurídico e do procedimento descrito no artigo."
+    },
+    {
+      "claimId": "cinco-dias-integralidade",
+      "claimText": "Nos contratos firmados na vigência da Lei nº 10.931/2004, compete ao devedor, no prazo de cinco dias após a execução da liminar na ação de busca e apreensão, pagar a integralidade da dívida — entendida como os valores apresentados e comprovados pelo credor na inicial —, sob pena de consolidação da propriedade do bem móvel objeto de alienação fiduciária.",
+      "sourceOrganization": "Superior Tribunal de Justiça",
+      "sourceTitle": "Entendimento do STJ sobre purgação da mora em busca e apreensão de bem alienado fiduciariamente",
+      "sourceLocation": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias-antigas/2015/2015-03-27_08-00_Reformado-acordao-que-admitiu-purgacao-da-mora-em-leasing-de-veiculo.aspx",
+      "sourceType": "official",
+      "accessedAt": "2026-08-29",
+      "notes": "Sustenta o ponto central do artigo: não basta pagar as parcelas vencidas — é a dívida integral apresentada pelo credor."
+    },
+    {
+      "claimId": "prazo-dias-corridos",
+      "claimText": "O prazo de cinco dias para o devedor fiduciante quitar a dívida após a apreensão do bem é contado em dias corridos, por ser disciplinado pela legislação de direito material, e não pela regra geral de contagem em dias úteis do CPC/2015.",
+      "sourceOrganization": "Superior Tribunal de Justiça",
+      "sourceTitle": "Prazo para devedor fiduciante quitar dívida após apreensão do bem deve ser contado em dias corridos",
+      "sourceLocation": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/07072020-Prazo-para-devedor-fiduciante-quitar-divida-apos-apreensao-do-bem-deve-ser-contado-em-dias-corridos.aspx",
+      "sourceType": "official",
+      "accessedAt": "2026-08-29",
+      "notes": "Detalhe decisivo na prática: cinco dias corridos encurtam bastante a janela real quando caem em fim de semana ou feriado."
+    },
+    {
+      "claimId": "venda-e-saldo-apurado",
+      "claimText": "Em caso de inadimplemento ou mora, o proprietário fiduciário ou credor poderá vender a coisa a terceiros, independentemente de leilão, hasta pública, avaliação prévia ou qualquer outra medida judicial ou extrajudicial, salvo disposição expressa em contrário, devendo aplicar o preço da venda no pagamento de seu crédito e das despesas decorrentes e entregar ao devedor o saldo apurado, se houver, com a devida prestação de contas.",
+      "sourceOrganization": "Presidência da República",
+      "sourceTitle": "Decreto-Lei nº 911/1969, com a redação dada pela Lei nº 13.043/2014",
+      "sourceLocation": "https://www.planalto.gov.br/ccivil_03/decreto-lei/1965-1988/del0911.htm",
+      "sourceType": "official",
+      "accessedAt": "2026-08-29",
+      "notes": "Base da afirmação de que a apreensão corta nos dois sentidos — sobra devolvida, falta remanescente."
+    }
+  ]
+}

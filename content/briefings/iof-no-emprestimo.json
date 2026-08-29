@@ -1,0 +1,46 @@
+{
+  "proposedTitle": "IOF no empréstimo: o imposto que já está dentro da sua parcela",
+  "primaryIntent": "o que é IOF no empréstimo e quanto custa",
+  "secondaryIntents": [
+    "IOF de crédito alíquota pessoa física",
+    "IOF entra no CET",
+    "empréstimo sem IOF existe"
+  ],
+  "targetReader": "Quem viu a linha do IOF no contrato ou percebeu que recebeu menos do que contratou e quer entender se aquilo é cobrança legítima",
+  "readerSituation": "O leitor encontra a sigla em todo contrato de crédito, nunca teve ela explicada, e não sabe se é imposto, tarifa do banco ou algo negociável",
+  "centralQuestion": "Quanto o IOF acrescenta ao empréstimo, onde ele já está embutido e o que pode mudar de um mês para o outro?",
+  "uniqueAngle": "Separa as duas alíquotas que quase todo conteúdo mistura — a diária, que cresce com o prazo e tem teto de 365 dias, e a adicional fixa — e explica o fato que a concorrência ignora: IOF muda por decreto do Executivo, com vigência quase imediata, o que dá validade de data a qualquer número publicado",
+  "originalContribution": [
+    "A separação explícita entre alíquota diária (com teto) e alíquota adicional, com o efeito prático do teto de 365 dias",
+    "O alerta contra somar 'juros + IOF' como custo único, explicando por que o CET já faz essa unificação corretamente",
+    "A explicação de que IOF muda por decreto e não obedece à anterioridade anual, com as três consequências práticas para o leitor",
+    "A resposta à pergunta real de quem contrata: por que o valor liberado veio menor que o contratado"
+  ],
+  "primarySources": [
+    "Decreto nº 6.306/2007 (regulamento do IOF), texto compilado",
+    "Decreto nº 12.466/2025 (alteração das alíquotas de crédito, vigência em 23/05/2025)"
+  ],
+  "supportingSources": [],
+  "contentArchetype": "guide",
+  "proposedStructure": [
+    "Abertura: a linha do contrato que ninguém lê",
+    "O que é o IOF, em uma frase",
+    "As duas alíquotas — diária com teto e adicional fixa",
+    "Ele já está na parcela e no CET",
+    "Onde o IOF pesa mais por modalidade",
+    "Existe empréstimo sem IOF?",
+    "IOF muda por decreto — e o que isso significa na prática",
+    "Perguntas frequentes"
+  ],
+  "internalLinks": [
+    "/juros-e-cet/o-que-e-cet/",
+    "/juros-e-cet/pix-parcelado/",
+    "/juros-e-cet/quitacao-antecipada-de-emprestimo/"
+  ],
+  "toolIntegrations": ["comparador-de-propostas", "consultar-instituicao"],
+  "risks": [
+    "Publicar alíquota sem data: mitigado com data de verificação explícita e seção sobre mudança por decreto",
+    "Somar juros e IOF como se fossem a mesma natureza: tratado em WarningBox dedicado",
+    "Afirmar restituição de IOF em quitação antecipada sem base: a FAQ remete ao contrato e ao demonstrativo em vez de generalizar"
+  ]
+}

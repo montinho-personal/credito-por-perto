@@ -1,0 +1,52 @@
+{
+  "proposedTitle": "Financiamento de veículo: o carro é a garantia, e isso muda tudo",
+  "primaryIntent": "como funciona financiamento de veículo e o que acontece se atrasar",
+  "secondaryIntents": [
+    "busca e apreensão de veículo financiado como funciona",
+    "alienação fiduciária o que é",
+    "entregar o carro quita a dívida"
+  ],
+  "targetReader": "Quem vai financiar um carro, ou já financiou e está atrasando, e não entende o que a alienação fiduciária significa na prática",
+  "readerSituation": "O leitor viu a parcela na concessionária, assinou sem ler a cláusula de garantia, e só descobre o mecanismo quando o atraso acontece",
+  "centralQuestion": "O que a garantia do próprio carro muda no custo e, principalmente, no que acontece quando o pagamento atrasa?",
+  "uniqueAngle": "SERP dominada por escritórios de advocacia captando cliente. Este é o explicador neutro do procedimento, com os dois pontos que quase nenhum conteúdo traz: os cinco dias correm em dias corridos, e o que se paga para reaver o carro é a dívida INTEIRA, não as parcelas vencidas",
+  "originalContribution": [
+    "O passo a passo do procedimento do Decreto-Lei 911/1969, da mora à consolidação, em linguagem de leitor",
+    "O alerta sobre 'integralidade da dívida' — o erro mais caro de quem junta o valor das parcelas atrasadas e vai ao banco",
+    "A explicação de que a apreensão corta nos dois sentidos: sobra é devolvida ao devedor, falta continua cobrável",
+    "A fronteira explícita entre financiamento de veículo e empréstimo com garantia de veículo, que o mercado confunde"
+  ],
+  "primarySources": [
+    "Decreto-Lei nº 911/1969 (alienação fiduciária de bens móveis e procedimento de busca e apreensão)",
+    "STJ — contagem do prazo de cinco dias em dias corridos e purgação pela integralidade da dívida"
+  ],
+  "supportingSources": [],
+  "contentArchetype": "guide",
+  "proposedStructure": [
+    "Abertura: a cláusula que ninguém lê",
+    "Por que a taxa é menor — propriedade fiduciária",
+    "O procedimento em cinco passos: mora, liminar, os cinco dias, consolidação, o que sobra",
+    "O que fazer no primeiro atraso",
+    "Financiamento não é empréstimo com garantia de veículo",
+    "O que olhar antes de assinar",
+    "Perguntas frequentes"
+  ],
+  "internalLinks": [
+    "/emprestimos/emprestimo-com-garantia/",
+    "/emprestimos/consorcio-ou-emprestimo/",
+    "/organizacao-financeira/como-comparar-propostas-de-credito/",
+    "/juros-e-cet/seguro-prestamista/",
+    "/organizacao-financeira/emprestar-o-nome/",
+    "/juros-e-cet/quitacao-antecipada-de-emprestimo/"
+  ],
+  "toolIntegrations": [
+    "comparador-de-propostas",
+    "renegociacao-de-dividas",
+    "parcela-no-orcamento"
+  ],
+  "risks": [
+    "Fixar número de parcelas atrasadas que autoriza a ação: evitado — a FAQ diz explicitamente que não existe número em lei",
+    "Tom de captação jurídica: evitado — o artigo explica procedimento e não sugere ação judicial nem indica advogado",
+    "Afirmar que entregar o carro encerra a dívida: tratado com a regra do saldo apurado nos dois sentidos"
+  ]
+}

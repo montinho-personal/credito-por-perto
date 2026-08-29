@@ -30,7 +30,8 @@
   "o que é CET": {
     "canonicalOwner": "/juros-e-cet/o-que-e-cet/",
     "supportingPages": [
-      "/organizacao-financeira/como-comparar-propostas-de-credito/"
+      "/organizacao-financeira/como-comparar-propostas-de-credito/",
+      "/juros-e-cet/iof-no-emprestimo/"
     ]
   },
   "como calcular juros de empréstimo": {
@@ -447,6 +448,28 @@
     "supportingPages": [
       "/juros-e-cet/pix-parcelado/",
       "/organizacao-financeira/como-fazer-orcamento-pessoal/"
+    ]
+  },
+  "o que é IOF no empréstimo e quanto custa": {
+    "canonicalOwner": "/juros-e-cet/iof-no-emprestimo/",
+    "supportingPages": [
+      "/juros-e-cet/o-que-e-cet/",
+      "/juros-e-cet/pix-parcelado/"
+    ]
+  },
+  "como funciona a fatura do cartão de crédito fechamento vencimento e limite": {
+    "canonicalOwner": "/organizacao-financeira/fatura-do-cartao-como-funciona/",
+    "supportingPages": [
+      "/organizacao-financeira/como-sair-do-rotativo/",
+      "/organizacao-financeira/tarifas-bancarias-gratuitas/"
+    ]
+  },
+  "como funciona financiamento de veículo e o que acontece se atrasar": {
+    "canonicalOwner": "/emprestimos/financiamento-de-veiculo/",
+    "supportingPages": [
+      "/emprestimos/emprestimo-com-garantia/",
+      "/emprestimos/consorcio-ou-emprestimo/",
+      "/emprestimos/diferenca-entre-emprestimo-e-financiamento/"
     ]
   }
 }

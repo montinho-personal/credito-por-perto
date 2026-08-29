@@ -1,0 +1,25 @@
+{
+  "articleSlug": "fatura-do-cartao-como-funciona",
+  "claims": [
+    {
+      "claimId": "direito-informacao-e-contestacao",
+      "claimText": "O Código de Defesa do Consumidor assegura ao consumidor informação clara e adequada sobre os produtos e serviços, com especificação correta de características e preço, e trata da cobrança de dívidas de consumo. Esses dispositivos sustentam o direito de exigir detalhamento da cobrança e de contestar lançamento não reconhecido na fatura.",
+      "sourceOrganization": "Presidência da República",
+      "sourceTitle": "Lei nº 8.078, de 11 de setembro de 1990 — Código de Defesa do Consumidor (texto compilado)",
+      "sourceLocation": "https://www.planalto.gov.br/ccivil_03/leis/l8078compilado.htm",
+      "sourceType": "official",
+      "accessedAt": "2026-08-29",
+      "notes": "O artigo descreve o procedimento de contestação de forma qualitativa e não fixa prazo normativo de análise, que varia conforme o arranjo de pagamento e o contrato."
+    },
+    {
+      "claimId": "canal-oficial-reclamacao",
+      "claimText": "A plataforma consumidor.gov.br é o serviço público federal de solução alternativa de conflitos de consumo, com resposta monitorada das empresas cadastradas, e funciona como escalonamento após o atendimento e a ouvidoria da própria instituição.",
+      "sourceOrganization": "Secretaria Nacional do Consumidor — Ministério da Justiça e Segurança Pública",
+      "sourceTitle": "Consumidor.gov.br",
+      "sourceLocation": "https://www.consumidor.gov.br",
+      "sourceType": "official",
+      "accessedAt": "2026-08-29",
+      "notes": "Citado como último degrau do roteiro de contestação, depois de SAC e ouvidoria."
+    }
+  ]
+}

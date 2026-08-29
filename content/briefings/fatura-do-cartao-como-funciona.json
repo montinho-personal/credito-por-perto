@@ -1,0 +1,47 @@
+{
+  "proposedTitle": "Fatura do cartão: fechamento, vencimento, limite e compra que você não fez",
+  "primaryIntent": "como funciona a fatura do cartão de crédito fechamento vencimento e limite",
+  "secondaryIntents": [
+    "por que meu limite não voltou depois de pagar",
+    "diferença entre fechamento e vencimento do cartão",
+    "compra que não reconheço na fatura o que fazer"
+  ],
+  "targetReader": "Quem usa cartão, não está endividado, mas não entende por que a compra caiu numa fatura e não em outra, nem por que o limite disponível some",
+  "readerSituation": "O leitor recebe a fatura, estranha o valor ou o limite, e não encontra explicação de funcionamento — só conteúdo sobre dívida",
+  "centralQuestion": "Como a fatura se forma, como o limite é consumido e o que fazer quando aparece cobrança não reconhecida?",
+  "uniqueAngle": "Pilar de FUNCIONAMENTO do cartão, deliberadamente separado do pilar de DÍVIDA (como-sair-do-rotativo). Explica o calendário fechamento/vencimento e, principalmente, o mal-entendido do limite: parcelamento consome limite de uma vez, não mês a mês",
+  "originalContribution": [
+    "A explicação de que parcelar consome limite integralmente na hora, e não parcela a parcela — origem da dúvida 'meu limite não voltou'",
+    "O enquadramento de 'aumento de limite não é aumento de dinheiro, é aumento de quanto você pode dever'",
+    "A leitura da fatura como soma de compromissos de origens diferentes que apenas venceram no mesmo dia",
+    "Checklist de contestação com a regra de não pagar primeiro para discutir depois"
+  ],
+  "primarySources": [
+    "Código de Defesa do Consumidor (Lei nº 8.078/1990) — informação clara e adequada sobre cobrança e direito de contestação"
+  ],
+  "supportingSources": [],
+  "contentArchetype": "guide",
+  "proposedStructure": [
+    "Abertura: as três dúvidas da fatura",
+    "As duas datas: fechamento e vencimento",
+    "Por que o limite não voltou inteiro",
+    "A fatura como extrato de compromissos de origens diferentes",
+    "Pagou menos que o total: a mudança de natureza",
+    "Compra não reconhecida: checklist de contestação",
+    "Anuidade",
+    "Perguntas frequentes"
+  ],
+  "internalLinks": [
+    "/organizacao-financeira/como-sair-do-rotativo/",
+    "/organizacao-financeira/tarifas-bancarias-gratuitas/",
+    "/calculadoras/trocar-divida/",
+    "/calculadoras/sinais-de-golpe/"
+  ],
+  "toolIntegrations": ["parcela-no-orcamento", "sinais-de-golpe"],
+  "antiCannibalization": "O teto de 100% da Lei 14.690/2023, o pagamento mínimo e o plano de saída do rotativo permanecem em /organizacao-financeira/como-sair-do-rotativo/, que é o dono dessa intenção. Este artigo só menciona a entrada no rotativo como mudança de natureza e remete para lá.",
+  "risks": [
+    "Duplicar o artigo do rotativo: mitigado pela fronteira explícita funcionamento × dívida",
+    "Afirmar prazo legal de contestação sem base: o checklist descreve o procedimento sem fixar prazo normativo",
+    "Transformar o calendário de fechamento em técnica para gastar mais: enquadrado como informação de planejamento"
+  ]
+}
