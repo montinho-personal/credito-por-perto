@@ -1,6 +1,7 @@
 import { notFound } from "next/navigation";
 import { MDXRemote } from "next-mdx-remote/rsc";
 import remarkGfm from "remark-gfm";
+import { remarkFaqAccordion } from "@/lib/content/remark-faq-accordion";
 import type { Metadata } from "next";
 import { getArticle, getRelatedArticles } from "@/lib/content/articles";
 import { getAuthor } from "@/lib/content/authors";
@@ -119,7 +120,7 @@ export function ArticleView({
             // são necessárias para props como items={[...]}. Chamadas
             // perigosas continuam bloqueadas (blockDangerousJS padrão).
             blockJS: false,
-            mdxOptions: { remarkPlugins: [remarkGfm] },
+            mdxOptions: { remarkPlugins: [remarkGfm, remarkFaqAccordion] },
           }}
         />
       </div>

@@ -136,3 +136,46 @@ muda com revisão editorial real (ver docs/content-refresh-policy.md).
 Ver /politica-de-correcoes/ (pública). Erros factuais são corrigidos com
 atualização de `updatedAt` e, quando substanciais, nota de correção. Ajustes
 cosméticos não alteram datas.
+
+## FAQ em acordeão (29/08/2026)
+
+Toda seção `## Perguntas frequentes` seguida de perguntas em `###` é renderizada
+como acordeão: só as perguntas aparecem, e a resposta abre ao clique.
+
+**Para quem escreve, nada muda.** Continue escrevendo o mesmo Markdown:
+
+```md
+## Perguntas frequentes
+
+### A pergunta, como o leitor a faria?
+
+A resposta, em um ou mais parágrafos.
+```
+
+A transformação acontece na renderização (`src/lib/content/remark-faq-accordion.ts`),
+não no arquivo. Trocar `###` por componente em 87 arquivos transformaria conteúdo
+em marcação e faria a próxima FAQ nascer com o formato errado.
+
+### O que o acordeão preserva
+
+- **O conteúdo continua no HTML.** `<details>` fechado é conteúdo presente, não
+  removido: indexável e encontrável pela busca do navegador (Ctrl+F);
+- **A hierarquia de títulos.** Cada pergunta continua sendo um `<h3>` com o
+  mesmo id de antes, agora dentro do `<summary>` — o HTML permite heading ali;
+- **As âncoras.** `/pagina/#a-pergunta` continua funcionando e abre a pergunta;
+- **O funcionamento sem JavaScript.** `<details>` é nativo, acessível por
+  teclado e por leitor de tela sem script.
+
+### Regras editoriais que continuam valendo
+
+- Mínimo de duas perguntas por seção (verificado em `tests/faq-accordion.test.ts`);
+- perguntas escritas como o leitor as faria, não como o produto as nomearia;
+- duas perguntas não podem gerar o mesmo id na mesma página.
+
+### O que NÃO é FAQ
+
+As páginas de ferramenta (`/calculadoras/*`, `/taxas/`) têm seções de conteúdo
+em formato de pergunta — "Como saber se minha taxa está alta?" — como `<h2>`.
+Elas são o corpo editorial da página, não um bloco de dúvidas no fim, e por
+isso continuam abertas. Escondê-las atrás de um clique enterraria a substância
+que sustenta aquelas páginas.

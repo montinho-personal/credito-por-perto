@@ -2,6 +2,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { MDXRemote } from "next-mdx-remote/rsc";
 import remarkGfm from "remark-gfm";
+import { remarkFaqAccordion } from "@/lib/content/remark-faq-accordion";
 import type { Metadata } from "next";
 import {
   getLocalGuideByPath,
@@ -148,7 +149,7 @@ export function LocalGuideView({ urlPath }: { urlPath: string }) {
           options={{
             // Conteúdo de primeira parte; ver nota em ArticleView.
             blockJS: false,
-            mdxOptions: { remarkPlugins: [remarkGfm] },
+            mdxOptions: { remarkPlugins: [remarkGfm, remarkFaqAccordion] },
           }}
         />
       </div>
