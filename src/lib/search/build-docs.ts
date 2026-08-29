@@ -158,6 +158,28 @@ export function buildSearchDocs(): SearchDoc[] {
       content: "",
     },
     {
+      id: "/calculadoras/a-vista-ou-parcelado/",
+      url: "/calculadoras/a-vista-ou-parcelado/",
+      title: "À vista ou parcelado?",
+      description:
+        "Compare o preço à vista com as parcelas e veja quanto cada opção custa até o fim, com o desconto à vista calculado sobre a base certa.",
+      section: "Calculadoras",
+      type: "calculadora",
+      tags: ["a-vista", "parcelado", "desconto", "consumo", "cartao"],
+      keywords: [
+        "a vista ou parcelado",
+        "vale a pena pagar a vista",
+        "comprar a vista ou parcelado",
+        "parcelado sem juros vale a pena",
+        "desconto a vista quanto compensa",
+        "quanto custa parcelar a compra",
+        "diferenca preco a vista e parcelado",
+        "pix ou cartao parcelado",
+      ],
+      headings: [],
+      content: "",
+    },
+    {
       id: "/calculadoras/conversor-de-taxas/",
       url: "/calculadoras/conversor-de-taxas/",
       title: "Conversor de taxa mensal para anual",

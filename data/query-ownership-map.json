@@ -441,5 +441,12 @@
       "/organizacao-financeira/renegociacao-ou-emprestimo/",
       "/organizacao-financeira/lei-do-superendividamento/"
     ]
+  },
+  "calculadora à vista ou parcelado comparar preço da compra": {
+    "canonicalOwner": "/calculadoras/a-vista-ou-parcelado/",
+    "supportingPages": [
+      "/juros-e-cet/pix-parcelado/",
+      "/organizacao-financeira/como-fazer-orcamento-pessoal/"
+    ]
   }
 }

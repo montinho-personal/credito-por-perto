@@ -139,6 +139,26 @@
       ]
     },
     {
+      "id": "a-vista-ou-parcelado",
+      "name": "À vista ou parcelado?",
+      "shortName": "À vista ou parcelado?",
+      "route": "/calculadoras/a-vista-ou-parcelado/",
+      "cta": "Comparar",
+      "situation": "entender-numeros",
+      "question": "À vista ou parcelado: quanto muda?",
+      "whenItHelps": "Compare o preço à vista com as parcelas e veja o total até o fim de cada opção. A parcela pode diminuir enquanto o total aumenta.",
+      "calloutLead": "Antes de escolher a forma de pagamento, compare o preço até o fim das duas opções.",
+      "triggerTerms": [
+        "à vista ou parcelado",
+        "pagar à vista",
+        "parcelado sem juros",
+        "desconto à vista",
+        "forma de pagamento",
+        "parcelar a compra"
+      ],
+      "inFooter": true
+    },
+    {
       "id": "conversor-de-taxas",
       "name": "Conversor de taxas: mensal ↔ anual",
       "shortName": "Conversor de taxas",
@@ -172,8 +192,7 @@
         "taxa está cara",
         "acima da média",
         "média do banco central"
-      ],
-      "inFooter": true
+      ]
     },
     {
       "id": "radar-de-taxas",
