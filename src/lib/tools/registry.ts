@@ -46,6 +46,17 @@ export interface Tool {
    */
   triggerTerms: string[];
   /**
+   * Próximos passos quando a pessoa chega à ferramenta SEM contexto de
+   * jornada — por busca orgânica, por link de artigo, pelo rodapé. No máximo
+   * dois, em ordem de utilidade: o primeiro vira o botão, o segundo vira uma
+   * linha de texto. Despejar as treze aqui transformaria o resultado num menu
+   * e enterraria a informação que a pessoa veio buscar.
+   *
+   * Não é sequência obrigatória nem funil: o motor remove da lista o que já
+   * foi usado, e uma ferramenta sem próximo passo útil simplesmente encerra.
+   */
+  defaultNextSteps: string[];
+  /**
    * Aparece na seleção do rodapé. O rodapé não lista as doze: uma coluna com
    * doze itens é o que deixava o rodapé três vezes mais alto que as outras
    * colunas. Ele mostra uma seleção e aponta para o hub, que tem todas.

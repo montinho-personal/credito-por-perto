@@ -5,6 +5,7 @@ import { webPageJsonLd } from "@/lib/schema/jsonld";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { Breadcrumbs } from "@/components/layout/Breadcrumbs";
 import { EarlyPayoffCalculator } from "@/components/calculators/EarlyPayoffCalculator";
+import { ToolNextSteps } from "@/components/journeys/ToolNextSteps";
 
 export const metadata: Metadata = buildMetadata({
   title: "Calculadora de Quitação Antecipada — compare saldo e parcelas",
@@ -49,6 +50,9 @@ export default function QuitacaoAntecipadaPage() {
       <div className="mt-8">
         <EarlyPayoffCalculator />
       </div>
+
+      <ToolNextSteps toolId="quitacao-antecipada" />
+
 
       <section aria-labelledby="perguntas-quitacao" className="article-body mt-12">
         <h2 id="perguntas-quitacao">O que é quitação antecipada?</h2>

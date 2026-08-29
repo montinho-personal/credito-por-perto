@@ -89,6 +89,19 @@ export function SiteFooter() {
               Ferramentas
             </h2>
             <ul className="mt-4 space-y-2.5">
+              {/* A Central encabeça a coluna, e não a de conteúdo: quem chega
+                  ao rodapé sem saber o nome da conta que procura precisa da
+                  porta pela situação antes da lista de nomes técnicos. Ela
+                  entra aqui em vez de virar o oitavo item de "Conteúdo" —
+                  sete por coluna é o limite que mantém o rodapé varrível. */}
+              <li>
+                <Link
+                  href="/decisoes-financeiras/"
+                  className="text-sm font-medium leading-snug text-brand-gold transition-colors hover:text-white"
+                >
+                  Central de decisões
+                </Link>
+              </li>
               {tools.map((tool) => (
                 <li key={tool.id}>
                   <Link

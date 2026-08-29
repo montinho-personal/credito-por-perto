@@ -15,6 +15,7 @@ import {
   MOVEMENT_ARROW,
   MOVEMENT_LABEL,
 } from "@/lib/bcb/radar-insights";
+import { ToolNextSteps } from "@/components/journeys/ToolNextSteps";
 
 /** Revalidação diária: as séries do BC são mensais. */
 export const revalidate = 86400;
@@ -194,6 +195,9 @@ export default async function TaxasPage() {
           </div>
         </>
       )}
+
+      <ToolNextSteps toolId="radar-de-taxas" />
+
 
       <section aria-labelledby="perguntas-radar" className="article-body mt-12">
         <h2 id="perguntas-radar">O que são as taxas médias do Banco Central?</h2>

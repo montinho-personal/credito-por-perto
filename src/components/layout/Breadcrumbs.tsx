@@ -21,7 +21,12 @@ export function Breadcrumbs({ items }: { items: BreadcrumbItem[] }) {
                   {item.name}
                 </span>
               ) : (
-                <Link href={item.path} className="hover:text-brand-teal-dark hover:underline">
+                /* py-1 leva o alvo de toque a 24px (WCAG 2.2, 2.5.8) sem
+                   mudar a altura visual da trilha, que já tem gap próprio. */
+                <Link
+                  href={item.path}
+                  className="inline-block py-1 hover:text-brand-teal-dark hover:underline"
+                >
                   {item.name}
                 </Link>
               )}

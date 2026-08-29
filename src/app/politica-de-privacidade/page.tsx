@@ -54,6 +54,41 @@ export default function PoliticaDePrivacidadePage() {
           mensagem apenas para responder.
         </li>
       </ul>
+      <h2>O caminho que você escolhe na Central de Decisões</h2>
+      <p>
+        Na{" "}
+        <Link href="/decisoes-financeiras/">Central de Decisões Financeiras</Link>{" "}
+        você escolhe uma situação (&ldquo;estou com várias dívidas&rdquo;,
+        &ldquo;recebi uma proposta&rdquo;) para chegar às ferramentas certas.
+        Para que o próximo passo faça sentido de uma página para outra, o
+        navegador guarda <strong>apenas identificadores de navegação</strong>:
+        o código do caminho escolhido e o das etapas já abertas. Por exemplo:{" "}
+        <code>varias-dividas</code>.
+      </p>
+      <ul>
+        <li>
+          Nunca ficam guardados renda, saldo, taxa, prazo, valor de parcela,
+          nome de instituição ou qualquer número que você tenha digitado;
+        </li>
+        <li>
+          Esses identificadores ficam no <strong>armazenamento de sessão</strong>{" "}
+          do seu navegador — somem sozinhos quando você fecha a aba —, não são
+          enviados a nenhum servidor e não são usados para criar perfil, nota
+          ou classificação de pessoa;
+        </li>
+        <li>
+          Você pode apagá-los quando quiser, pelo botão{" "}
+          <strong>&ldquo;apagar meu progresso&rdquo;</strong>, presente sempre
+          que houver um caminho em curso.
+        </li>
+      </ul>
+      <p>
+        Quando a análise de audiência está ativa e você consentiu, medimos que
+        um caminho foi escolhido e que uma ferramenta foi aberta — informação
+        agregada de navegação, do mesmo tipo que o endereço de uma página
+        visitada. Não enviamos nenhum valor digitado, e a situação escolhida
+        não vira característica permanente associada a você.
+      </p>
       <h2>Cookies e ferramentas de terceiros</h2>
       <p>
         Enquanto ferramentas de análise de audiência e publicidade não estiverem

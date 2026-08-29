@@ -5,6 +5,7 @@ import { webPageJsonLd } from "@/lib/schema/jsonld";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { Breadcrumbs } from "@/components/layout/Breadcrumbs";
 import { DebtSwitchComparator } from "@/components/calculators/DebtSwitchComparator";
+import { ToolNextSteps } from "@/components/journeys/ToolNextSteps";
 
 export const metadata: Metadata = buildMetadata({
   title: "Vale a pena trocar esta dívida? Compare antes de decidir",
@@ -46,6 +47,9 @@ export default function TrocarDividaPage() {
       <div className="mt-8">
         <DebtSwitchComparator />
       </div>
+
+      <ToolNextSteps toolId="trocar-divida" />
+
 
       <section aria-labelledby="perguntas-troca" className="article-body mt-12">
         <h2 id="perguntas-troca">Quando trocar uma dívida pode reduzir o custo?</h2>

@@ -5,6 +5,7 @@ import { webPageJsonLd } from "@/lib/schema/jsonld";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { Breadcrumbs } from "@/components/layout/Breadcrumbs";
 import { FraudSignalChecker } from "@/components/calculators/FraudSignalChecker";
+import { ToolNextSteps } from "@/components/journeys/ToolNextSteps";
 
 export const metadata: Metadata = buildMetadata({
   title: "Golpe de empréstimo: verifique os sinais antes de pagar",
@@ -46,6 +47,9 @@ export default function SinaisDeGolpePage() {
       <div className="mt-8">
         <FraudSignalChecker />
       </div>
+
+      <ToolNextSteps toolId="sinais-de-golpe" />
+
 
       <section aria-labelledby="perguntas-golpe" className="article-body mt-12">
         <h2 id="perguntas-golpe">Como funciona a verificação?</h2>

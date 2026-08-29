@@ -10,6 +10,7 @@ import {
   formatRatePercent,
   monthlyReferenceTable,
 } from "@/lib/calculators/rate-converter";
+import { ToolNextSteps } from "@/components/journeys/ToolNextSteps";
 
 export const metadata: Metadata = buildMetadata({
   title: "Conversor de taxa mensal para anual (e anual para mensal)",
@@ -105,6 +106,9 @@ export default function ConversorDeTaxasPage() {
           </div>
         </details>
       </section>
+
+      <ToolNextSteps toolId="conversor-de-taxas" />
+
 
       <section aria-labelledby="perguntas-conversor" className="article-body mt-12">
         <h2 id="perguntas-conversor">Como transformar taxa mensal em anual?</h2>

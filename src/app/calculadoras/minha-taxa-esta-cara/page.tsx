@@ -9,6 +9,7 @@ import { getBcbRates, formatRefMonth } from "@/lib/bcb/rates-service";
 import {
   CLASSIFICATION_THRESHOLDS,
 } from "@/lib/calculators/rate-comparison";
+import { ToolNextSteps } from "@/components/journeys/ToolNextSteps";
 
 /** Revalidação diária: as séries do BC são mensais. */
 export const revalidate = 86400;
@@ -60,6 +61,9 @@ export default async function MinhaTaxaEstaCaraPage() {
       <div className="mt-8">
         <RateChecker rates={rates} />
       </div>
+
+      <ToolNextSteps toolId="minha-taxa-esta-cara" />
+
 
       <section aria-labelledby="perguntas-taxa" className="article-body mt-12">
         <h2 id="perguntas-taxa">Como saber se minha taxa está alta?</h2>

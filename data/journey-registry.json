@@ -1,0 +1,571 @@
+{
+  "comment": "FinancialJourneyRegistry — a camada de situações sobre as ferramentas. O leitor escolhe o que está acontecendo com ele; o registry diz por onde começar e o que vem depois. Nenhum passo é obrigatório e nenhuma jornada emite veredito. Toolids apontam para data/tool-registry.json — rota nunca é escrita à mão aqui.",
+  "families": [
+    {
+      "id": "credito",
+      "label": "Crédito"
+    },
+    {
+      "id": "dividas",
+      "label": "Dívidas"
+    },
+    {
+      "id": "seguranca",
+      "label": "Segurança"
+    },
+    {
+      "id": "compras",
+      "label": "Compras"
+    },
+    {
+      "id": "referencia",
+      "label": "Referência"
+    },
+    {
+      "id": "ajuda",
+      "label": "Ajuda"
+    }
+  ],
+  "journeys": [
+    {
+      "id": "quero-credito",
+      "family": "credito",
+      "moment": "Estou pensando em pegar crédito",
+      "momentCopy": "Antes de olhar só para a parcela, veja quanto cabe no orçamento e como estão as taxas.",
+      "momentCta": "Começar por aqui",
+      "title": "Estou pensando em pegar crédito",
+      "shortTitle": "Quero pegar crédito",
+      "entryQuestion": "Por onde começar antes de contratar?",
+      "openingCopy": "Ainda dá tempo de decidir com calma. A ordem que costuma evitar arrependimento é esta: primeiro quanto cabe no seu mês, depois quanto isso custa no mercado, e só então comparar quem oferece.",
+      "completionMessage": "Você já sabe quanto cabe no seu mês e como a oferta se compara ao mercado. A decisão continua sendo sua — e nada aqui aprova ou nega crédito.",
+      "analyticsId": "quero_credito",
+      "steps": [
+        {
+          "id": "orcamento",
+          "title": "Quanto cabe na sua vida?",
+          "toolId": "parcela-no-orcamento",
+          "whyThisStep": "A parcela que cabe no melhor mês costuma não caber no pior. Começar pelo orçamento evita escolher o crédito pelo valor que o vendedor mostra.",
+          "optional": false
+        },
+        {
+          "id": "estimar-parcela",
+          "title": "Ainda não tem proposta? Estime a parcela",
+          "toolId": "emprestimo",
+          "whyThisStep": "Serve para ter uma ordem de grandeza antes de falar com qualquer instituição — não substitui a proposta formal.",
+          "optional": true
+        },
+        {
+          "id": "margem",
+          "title": "Se for consignado, qual é a sua margem?",
+          "toolId": "margem-consignavel",
+          "condition": "Vale só para quem tem desconto em folha (CLT, INSS ou servidor)",
+          "whyThisStep": "A margem é um teto legal, não uma meta. Saber o seu evita descobrir depois que o contracheque já estava comprometido.",
+          "optional": true
+        },
+        {
+          "id": "mercado",
+          "title": "Como estão as taxas hoje?",
+          "toolId": "radar-de-taxas",
+          "whyThisStep": "Os dados oficiais do Banco Central dão a régua: sem eles, qualquer taxa parece razoável.",
+          "optional": true
+        },
+        {
+          "id": "comparar",
+          "title": "Tem mais de uma proposta?",
+          "toolId": "comparador-de-propostas",
+          "whyThisStep": "Duas propostas só se comparam pelo CET e pelo total pago — a parcela sozinha esconde o prazo.",
+          "optional": true
+        }
+      ],
+      "relatedContent": [
+        {
+          "label": "Quando vale a pena fazer um empréstimo",
+          "path": "/organizacao-financeira/quando-vale-a-pena-fazer-emprestimo/"
+        },
+        {
+          "label": "Como comparar propostas de crédito",
+          "path": "/organizacao-financeira/como-comparar-propostas-de-credito/"
+        }
+      ],
+      "homeOrder": 1
+    },
+    {
+      "id": "recebi-proposta",
+      "family": "credito",
+      "moment": "Recebi uma proposta de empréstimo",
+      "momentCopy": "Vamos olhar instituição, taxa, custo e impacto no seu orçamento — nessa ordem.",
+      "momentCta": "Analisar minha proposta",
+      "title": "Recebi uma proposta de empréstimo",
+      "shortTitle": "Recebi uma proposta",
+      "entryQuestion": "O que conferir antes de assinar?",
+      "openingCopy": "Antes de olhar só para a parcela, vale conferir quatro coisas. Elas não decidem por você — só evitam que a decisão seja tomada com metade da informação.",
+      "completionMessage": "Você conferiu instituição, taxa, custo total e impacto no orçamento. Isso não é uma aprovação: é o conjunto mínimo de informação para decidir com clareza.",
+      "analyticsId": "recebi_proposta",
+      "steps": [
+        {
+          "id": "quem-oferece",
+          "title": "Quem está oferecendo?",
+          "toolId": "consultar-instituicao",
+          "whyThisStep": "Instituição que não aparece nos dados oficiais do Banco Central muda a natureza da conversa — antes de discutir taxa, confira o registro.",
+          "optional": false
+        },
+        {
+          "id": "nivel-da-taxa",
+          "title": "A taxa está em que nível?",
+          "toolId": "minha-taxa-esta-cara",
+          "whyThisStep": "Comparar com a média oficial da mesma modalidade transforma um número solto em informação.",
+          "optional": false
+        },
+        {
+          "id": "quanto-custa",
+          "title": "Tem mais de uma proposta na mesa?",
+          "toolId": "comparador-de-propostas",
+          "whyThisStep": "Com duas ou mais ofertas, o CET e o total pago mostram onde está a diferença real.",
+          "optional": true
+        },
+        {
+          "id": "cabe",
+          "title": "Essa parcela cabe no seu mês?",
+          "toolId": "parcela-no-orcamento",
+          "whyThisStep": "É a pergunta que a simulação do vendedor não faz. Ela decide mais do que a taxa.",
+          "optional": false
+        },
+        {
+          "id": "algo-estranho",
+          "title": "Alguma coisa na abordagem pareceu estranha?",
+          "toolId": "sinais-de-golpe",
+          "condition": "Só se a proposta veio por ligação, WhatsApp ou pedido de pagamento antecipado",
+          "whyThisStep": "Pressa, pagamento antecipado e canal informal são os três sinais que aparecem antes do prejuízo.",
+          "optional": true
+        }
+      ],
+      "relatedContent": [
+        {
+          "label": "O que é CET e por que ele compara propostas",
+          "path": "/juros-e-cet/o-que-e-cet/"
+        },
+        {
+          "label": "Como consultar se a instituição é autorizada",
+          "path": "/credito-seguro/como-consultar-se-instituicao-e-autorizada/"
+        }
+      ],
+      "homeOrder": 2
+    },
+    {
+      "id": "tenho-uma-divida",
+      "family": "dividas",
+      "moment": "Já tenho uma dívida",
+      "momentCopy": "Veja se a taxa está alta, se dá para antecipar e se uma condição nova melhora mesmo a dívida.",
+      "momentCta": "Analisar minha dívida",
+      "title": "Já tenho uma dívida e quero entender minhas opções",
+      "shortTitle": "Tenho uma dívida",
+      "entryQuestion": "O que fazer com a dívida que já existe?",
+      "openingCopy": "Antes de trocar, renegociar ou antecipar, vale entender a dívida atual. Trocar uma dívida sem saber quanto ela custa hoje costuma sair mais caro do que ficar como está.",
+      "completionMessage": "Agora você tem uma visão mais organizada das opções para essa dívida. Cada caminho tem custo próprio — o saldo oficial é sempre o da instituição.",
+      "analyticsId": "tenho_uma_divida",
+      "steps": [
+        {
+          "id": "taxa-atual",
+          "title": "A taxa que você paga está alta?",
+          "toolId": "minha-taxa-esta-cara",
+          "whyThisStep": "Sem essa referência, qualquer proposta de troca parece boa.",
+          "optional": false
+        },
+        {
+          "id": "antecipar",
+          "title": "Tem dinheiro para antecipar parcelas?",
+          "toolId": "quitacao-antecipada",
+          "whyThisStep": "Antecipar reduz juros e encargos ainda não incorridos — quanto mais cedo, mais rende.",
+          "optional": true
+        },
+        {
+          "id": "trocar",
+          "title": "Ofereceram outro crédito para substituir esta dívida?",
+          "toolId": "trocar-divida",
+          "whyThisStep": "Trocar só ajuda se a segunda dívida custar menos que o saldo da primeira, no total.",
+          "optional": true
+        },
+        {
+          "id": "acordo",
+          "title": "O credor ofereceu um acordo?",
+          "toolId": "renegociacao-de-dividas",
+          "whyThisStep": "Acordo é outra conta: entrada, parcelas e total pago até o fim.",
+          "optional": true
+        }
+      ],
+      "relatedContent": [
+        {
+          "label": "Quitação antecipada de empréstimo",
+          "path": "/juros-e-cet/quitacao-antecipada-de-emprestimo/"
+        },
+        {
+          "label": "Renegociação ou empréstimo novo?",
+          "path": "/organizacao-financeira/renegociacao-ou-emprestimo/"
+        }
+      ]
+    },
+    {
+      "id": "varias-dividas",
+      "family": "dividas",
+      "moment": "Estou com várias dívidas",
+      "momentCopy": "Organize tudo primeiro. Depois veja qual dívida cada estratégia prioriza.",
+      "momentCta": "Montar meu plano",
+      "title": "Estou com várias dívidas e não sei por onde começar",
+      "shortTitle": "Várias dívidas",
+      "entryQuestion": "Por onde começar quando são muitas?",
+      "openingCopy": "Não comece tentando resolver tudo ao mesmo tempo. Primeiro organize: quase sempre a sensação de impossível vem de não enxergar o conjunto, não do tamanho da soma.",
+      "completionMessage": "Agora você tem uma visão mais organizada das opções. Isso não resolve as dívidas, mas troca a pergunta \"por onde começo?\" por uma lista com ordem.",
+      "analyticsId": "varias_dividas",
+      "steps": [
+        {
+          "id": "organizar",
+          "title": "Primeiro, coloque tudo numa lista só",
+          "toolId": "plano-para-sair-das-dividas",
+          "whyThisStep": "Duas estratégias conhecidas priorizam de formas diferentes. Ver as duas lado a lado é mais útil que escolher no escuro.",
+          "optional": false
+        },
+        {
+          "id": "taxa-alta",
+          "title": "Alguma delas tem taxa muito acima da média?",
+          "toolId": "minha-taxa-esta-cara",
+          "whyThisStep": "É o filtro que costuma mudar a ordem de ataque.",
+          "optional": true
+        },
+        {
+          "id": "acordo",
+          "title": "Recebeu proposta de acordo para alguma?",
+          "toolId": "renegociacao-de-dividas",
+          "whyThisStep": "O desconto anunciado compara-se ao saldo que você informou, não necessariamente ao valor original.",
+          "optional": true
+        },
+        {
+          "id": "antecipar",
+          "title": "Sobrou dinheiro para antecipar alguma parcela?",
+          "toolId": "quitacao-antecipada",
+          "whyThisStep": "Antecipar na dívida certa rende mais do que dividir o valor entre todas.",
+          "optional": true
+        },
+        {
+          "id": "trocar",
+          "title": "Ofereceram um crédito para juntar tudo?",
+          "toolId": "trocar-divida",
+          "whyThisStep": "Juntar dívidas só ajuda quando o total pago cai — e nem sempre cai.",
+          "optional": true
+        },
+        {
+          "id": "ajuda-oficial",
+          "title": "Precisa de atendimento público na sua cidade?",
+          "linkPath": "/emprestimos/guias-locais/",
+          "linkLabel": "Ver os guias por cidade",
+          "whyThisStep": "Procon municipal, mutirões de renegociação e canais oficiais atendem de graça — e o Procon competente é o da sua moradia.",
+          "optional": true
+        }
+      ],
+      "relatedContent": [
+        {
+          "label": "Como sair das dívidas",
+          "path": "/organizacao-financeira/como-sair-das-dividas/"
+        },
+        {
+          "label": "Qual dívida pagar primeiro",
+          "path": "/organizacao-financeira/qual-divida-pagar-primeiro/"
+        },
+        {
+          "label": "Lei do superendividamento",
+          "path": "/organizacao-financeira/lei-do-superendividamento/"
+        }
+      ],
+      "homeOrder": 3
+    },
+    {
+      "id": "recebi-acordo",
+      "family": "dividas",
+      "moment": "Recebi uma proposta de renegociação",
+      "momentCopy": "Compare entrada, parcelas, prazo e quanto você realmente pagaria até o final.",
+      "momentCta": "Analisar o acordo",
+      "title": "Recebi uma proposta de renegociação",
+      "shortTitle": "Recebi um acordo",
+      "entryQuestion": "Como ler a proposta de acordo?",
+      "openingCopy": "O número que mais aparece na proposta é o desconto. O número que decide é outro: quanto sai do seu bolso até a última parcela.",
+      "completionMessage": "Você já tem os números do acordo em ordem. O que a ferramenta mostra é aritmética da proposta — as condições contratuais continuam sendo as do documento que o credor enviar por escrito.",
+      "analyticsId": "recebi_acordo",
+      "steps": [
+        {
+          "id": "somar-acordo",
+          "title": "Quanto o acordo soma até o fim?",
+          "toolId": "renegociacao-de-dividas",
+          "whyThisStep": "Entrada mais parcelas é o total real. O percentual anunciado compara-se ao saldo apresentado, não ao valor originalmente emprestado.",
+          "optional": false
+        },
+        {
+          "id": "cabe",
+          "title": "A parcela escolhida cabe no mês?",
+          "toolId": "parcela-no-orcamento",
+          "whyThisStep": "Acordo que não cabe volta a atrasar — e o segundo atraso costuma custar mais que o primeiro.",
+          "optional": false
+        },
+        {
+          "id": "outras",
+          "title": "Existem outras dívidas além desta?",
+          "toolId": "plano-para-sair-das-dividas",
+          "whyThisStep": "Fechar um acordo caro para a dívida errada atrasa as outras.",
+          "optional": true
+        },
+        {
+          "id": "canal",
+          "title": "O contato ou o meio de pagamento pareceu estranho?",
+          "toolId": "sinais-de-golpe",
+          "condition": "Só se pediram pagamento fora dos canais oficiais do credor",
+          "whyThisStep": "Falso acordo é um dos golpes mais comuns com quem está endividado, justamente porque a proposta chega quando ela é esperada.",
+          "optional": true
+        }
+      ],
+      "relatedContent": [
+        {
+          "label": "Como negociar dívidas",
+          "path": "/organizacao-financeira/como-negociar-dividas/"
+        },
+        {
+          "label": "O que acontece ao atrasar uma parcela",
+          "path": "/organizacao-financeira/o-que-acontece-ao-atrasar-parcela/"
+        }
+      ],
+      "homeOrder": 4
+    },
+    {
+      "id": "quero-quitar",
+      "family": "dividas",
+      "moment": "Quero quitar uma dívida antes do prazo",
+      "momentCopy": "Compare as parcelas restantes com o valor para quitar ou amortizar agora.",
+      "momentCta": "Simular quitação",
+      "title": "Quero quitar uma dívida antes do prazo",
+      "shortTitle": "Quero quitar",
+      "entryQuestion": "Vale antecipar ou é melhor esperar?",
+      "openingCopy": "Antecipar dá direito a redução proporcional dos juros e encargos ainda não incorridos. Quanto isso representa depende de quanto falta — e é isso que a conta mostra.",
+      "completionMessage": "Você já sabe o que a antecipação representa nessa dívida. O valor oficial de quitação é sempre o que a instituição informar por escrito.",
+      "analyticsId": "quero_quitar",
+      "steps": [
+        {
+          "id": "simular",
+          "title": "Quanto a antecipação economiza?",
+          "toolId": "quitacao-antecipada",
+          "whyThisStep": "Compara o que falta pagar em parcelas com o desembolso de quitar ou amortizar agora.",
+          "optional": false
+        },
+        {
+          "id": "prioridade",
+          "title": "Tem mais de uma dívida disputando esse dinheiro?",
+          "toolId": "plano-para-sair-das-dividas",
+          "whyThisStep": "Antecipar na dívida mais cara costuma render mais que antecipar na mais próxima do fim.",
+          "optional": true
+        },
+        {
+          "id": "trocar",
+          "title": "Estão oferecendo um crédito novo para quitar esta?",
+          "toolId": "trocar-divida",
+          "whyThisStep": "Quitar com dinheiro emprestado não é quitar: é trocar de credor. A conta é outra.",
+          "optional": true
+        }
+      ],
+      "relatedContent": [
+        {
+          "label": "Quitação antecipada de empréstimo",
+          "path": "/juros-e-cet/quitacao-antecipada-de-emprestimo/"
+        },
+        {
+          "label": "Portabilidade de crédito",
+          "path": "/emprestimos/portabilidade-de-credito/"
+        }
+      ],
+      "homeOrder": 5
+    },
+    {
+      "id": "suspeita-de-golpe",
+      "family": "seguranca",
+      "moment": "Estou desconfiado de uma oferta",
+      "momentCopy": "Confira os sinais de atenção e verifique a instituição antes de pagar qualquer coisa.",
+      "momentCta": "Verificar agora",
+      "title": "Estou desconfiado de uma oferta",
+      "shortTitle": "Acho que é golpe",
+      "entryQuestion": "Isso pode ser golpe?",
+      "openingCopy": "Pare antes de pagar. Nenhuma das perguntas abaixo depende de você entregar documento, dado ou dinheiro — e é justamente isso que a pressa do outro lado tenta atropelar.",
+      "completionMessage": "Você já tem os dois checks que importam antes de qualquer pagamento. Se algo continuar estranho, não pague: registre nos canais oficiais.",
+      "analyticsId": "suspeita_de_golpe",
+      "steps": [
+        {
+          "id": "sinais",
+          "title": "Quais sinais de alerta essa oferta tem?",
+          "toolId": "sinais-de-golpe",
+          "whyThisStep": "Pagamento antecipado para liberar dinheiro é o sinal mais direto — e o mais comum.",
+          "optional": false
+        },
+        {
+          "id": "instituicao",
+          "title": "A empresa aparece nos dados do Banco Central?",
+          "toolId": "consultar-instituicao",
+          "whyThisStep": "Registro não garante boa proposta, mas ausência de registro encerra a conversa.",
+          "optional": false
+        },
+        {
+          "id": "canais",
+          "title": "Onde registrar, se já aconteceu",
+          "linkPath": "/credito-seguro/deposito-antecipado-e-golpe/",
+          "linkLabel": "Ver o roteiro de quem já pagou",
+          "whyThisStep": "Boletim de ocorrência, banco, canais oficiais — a ordem importa e o tempo conta.",
+          "optional": true
+        }
+      ],
+      "relatedContent": [
+        {
+          "label": "Como identificar golpes de empréstimo",
+          "path": "/credito-seguro/como-identificar-golpes-de-emprestimo/"
+        },
+        {
+          "label": "Golpe da falsa central",
+          "path": "/credito-seguro/golpe-da-falsa-central/"
+        }
+      ],
+      "homeOrder": 6
+    },
+    {
+      "id": "vou-comprar",
+      "family": "compras",
+      "moment": "Vou fazer uma compra",
+      "momentCopy": "Compare pagar à vista com parcelar e veja quanto cada opção realmente custa.",
+      "momentCta": "Comparar pagamentos",
+      "title": "Vou fazer uma compra: à vista ou parcelado?",
+      "shortTitle": "Vou comprar",
+      "entryQuestion": "Pago agora ou parcelo?",
+      "openingCopy": "Não existe resposta única. Existe um trade-off: pagar à vista com desconto sai mais barato em dinheiro; parcelar sem juros mantém o dinheiro com você por mais tempo. A conta mostra os dois lados.",
+      "completionMessage": "Você já viu quanto cada forma de pagamento custa. A escolha depende do que o dinheiro parado vale para você — e disso só você sabe.",
+      "analyticsId": "vou_comprar",
+      "steps": [
+        {
+          "id": "comparar-pagamento",
+          "title": "Quanto custa cada forma de pagamento?",
+          "toolId": "a-vista-ou-parcelado",
+          "whyThisStep": "Coloca desconto à vista, parcelamento e prazo na mesma régua.",
+          "optional": false
+        },
+        {
+          "id": "cabe",
+          "title": "Se for parcelar, a parcela cabe no mês?",
+          "toolId": "parcela-no-orcamento",
+          "whyThisStep": "Parcela sem juros continua sendo compromisso mensal — e ela some do limite de uma vez.",
+          "optional": true
+        }
+      ],
+      "relatedContent": [
+        {
+          "label": "Fatura do cartão: como funciona",
+          "path": "/organizacao-financeira/fatura-do-cartao-como-funciona/"
+        },
+        {
+          "label": "Como fazer um orçamento pessoal",
+          "path": "/organizacao-financeira/como-fazer-orcamento-pessoal/"
+        }
+      ],
+      "homeOrder": 7
+    },
+    {
+      "id": "entender-juros",
+      "family": "referencia",
+      "moment": "Quero entender como estão os juros",
+      "momentCopy": "Acompanhe os últimos dados oficiais das principais modalidades de crédito.",
+      "momentCta": "Ver o radar",
+      "title": "Quero entender como estão os juros",
+      "shortTitle": "Entender os juros",
+      "entryQuestion": "Quanto está custando o crédito hoje?",
+      "openingCopy": "Os dados são do Banco Central e falam de médias de mercado, não da sua proposta. Servem de régua — e uma régua vale mais que uma opinião.",
+      "completionMessage": "Você já tem a referência oficial. Ela não diz o que contratar: diz com o que comparar.",
+      "analyticsId": "entender_juros",
+      "steps": [
+        {
+          "id": "radar",
+          "title": "Como estão as médias por modalidade?",
+          "toolId": "radar-de-taxas",
+          "whyThisStep": "Séries oficiais do Banco Central, com histórico e mês de referência.",
+          "optional": false
+        },
+        {
+          "id": "minha-taxa",
+          "title": "Como a sua taxa se compara?",
+          "toolId": "minha-taxa-esta-cara",
+          "whyThisStep": "Coloca o número da sua proposta ao lado da média da mesma modalidade.",
+          "optional": true
+        },
+        {
+          "id": "conversor",
+          "title": "A taxa está ao mês e você quer ao ano (ou o contrário)?",
+          "toolId": "conversor-de-taxas",
+          "whyThisStep": "Multiplicar por 12 dá o número errado. A conversão é composta.",
+          "optional": true
+        }
+      ],
+      "relatedContent": [
+        {
+          "label": "Taxa mensal e taxa anual",
+          "path": "/juros-e-cet/taxa-mensal-e-taxa-anual/"
+        },
+        {
+          "label": "Como consultar a taxa média do BC",
+          "path": "/juros-e-cet/como-consultar-taxa-media-do-bc/"
+        }
+      ]
+    },
+    {
+      "id": "ajuda-local",
+      "family": "ajuda",
+      "moment": "Preciso de ajuda na minha cidade",
+      "momentCopy": "Encontre Procon, serviços públicos e canais oficiais que conseguimos verificar.",
+      "momentCta": "Buscar minha cidade",
+      "title": "Preciso de ajuda na minha cidade",
+      "shortTitle": "Ajuda na minha cidade",
+      "entryQuestion": "Onde pedir ajuda perto de mim?",
+      "openingCopy": "Cada guia de cidade traz o Mapa Financeiro: os atendimentos públicos e gratuitos verificados ali, com fonte oficial e data. Não há empresa nem ranking — o Procon competente é o da sua moradia, não o da cidade da agência.",
+      "completionMessage": "Você já sabe quais canais atendem na sua cidade. Se a sua cidade ainda não tem guia, o consumidor.gov.br atende qualquer endereço.",
+      "analyticsId": "ajuda_local",
+      "steps": [
+        {
+          "id": "mapa",
+          "title": "Quais canais oficiais atendem na sua cidade?",
+          "linkPath": "/emprestimos/guias-locais/",
+          "linkLabel": "Ver os guias por cidade",
+          "whyThisStep": "Procon municipal, microcrédito público e canais federais, com fonte oficial e data de verificação.",
+          "optional": false
+        },
+        {
+          "id": "dividas",
+          "title": "O problema é dívida acumulada?",
+          "toolId": "plano-para-sair-das-dividas",
+          "whyThisStep": "Chegar ao atendimento com a lista pronta encurta a conversa.",
+          "optional": true
+        },
+        {
+          "id": "golpe",
+          "title": "O problema é uma oferta suspeita?",
+          "toolId": "sinais-de-golpe",
+          "whyThisStep": "Antes de registrar, vale organizar quais sinais apareceram.",
+          "optional": true
+        },
+        {
+          "id": "instituicao",
+          "title": "Quer confirmar se a empresa é autorizada?",
+          "toolId": "consultar-instituicao",
+          "whyThisStep": "A consulta é gratuita e usa os dados oficiais do Banco Central.",
+          "optional": true
+        }
+      ],
+      "relatedContent": [
+        {
+          "label": "Guias de crédito por cidade",
+          "path": "/emprestimos/guias-locais/"
+        },
+        {
+          "label": "Como consultar dívidas no Registrato",
+          "path": "/credito-seguro/como-consultar-dividas-no-registrato/"
+        }
+      ]
+    }
+  ]
+}

@@ -5,6 +5,7 @@ import { webPageJsonLd } from "@/lib/schema/jsonld";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { Breadcrumbs } from "@/components/layout/Breadcrumbs";
 import { ProposalComparator } from "@/components/calculators/ProposalComparator";
+import { ToolNextSteps } from "@/components/journeys/ToolNextSteps";
 
 export const metadata: Metadata = buildMetadata({
   title: "Comparador de propostas de crédito: parcela, prazo, CET e total",
@@ -51,6 +52,8 @@ export default function ComparadorDePropostasPage() {
       </div>
 
       {/* Conteúdo editorial indexável */}
+      <ToolNextSteps toolId="comparador-de-propostas" />
+
       <section aria-labelledby="como-comparar" className="article-body mt-12">
         <h2 id="como-comparar">Como comparar duas propostas de crédito?</h2>
         <p>

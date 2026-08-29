@@ -42,7 +42,11 @@
         "empresa é confiável",
         "checar o cnpj"
       ],
-      "inFooter": true
+      "inFooter": true,
+      "defaultNextSteps": [
+        "sinais-de-golpe",
+        "comparador-de-propostas"
+      ]
     },
     {
       "id": "sinais-de-golpe",
@@ -61,6 +65,9 @@
         "falsa central",
         "pagar para receber",
         "liberar o dinheiro"
+      ],
+      "defaultNextSteps": [
+        "consultar-instituicao"
       ]
     },
     {
@@ -80,7 +87,11 @@
         "cet",
         "custo efetivo total"
       ],
-      "inFooter": true
+      "inFooter": true,
+      "defaultNextSteps": [
+        "parcela-no-orcamento",
+        "minha-taxa-esta-cara"
+      ]
     },
     {
       "id": "parcela-no-orcamento",
@@ -99,7 +110,11 @@
         "orçamento apertado",
         "renda mensal"
       ],
-      "inFooter": true
+      "inFooter": true,
+      "defaultNextSteps": [
+        "comparador-de-propostas",
+        "plano-para-sair-das-dividas"
+      ]
     },
     {
       "id": "margem-consignavel",
@@ -118,6 +133,10 @@
         "rmc",
         "rcc",
         "cartão consignado"
+      ],
+      "defaultNextSteps": [
+        "parcela-no-orcamento",
+        "comparador-de-propostas"
       ]
     },
     {
@@ -136,6 +155,10 @@
         "tabela price",
         "amortização",
         "total de juros"
+      ],
+      "defaultNextSteps": [
+        "parcela-no-orcamento",
+        "comparador-de-propostas"
       ]
     },
     {
@@ -156,7 +179,10 @@
         "forma de pagamento",
         "parcelar a compra"
       ],
-      "inFooter": true
+      "inFooter": true,
+      "defaultNextSteps": [
+        "parcela-no-orcamento"
+      ]
     },
     {
       "id": "conversor-de-taxas",
@@ -174,6 +200,10 @@
         "ao mês equivale",
         "juros compostos",
         "taxa equivalente"
+      ],
+      "defaultNextSteps": [
+        "minha-taxa-esta-cara",
+        "comparador-de-propostas"
       ]
     },
     {
@@ -192,6 +222,10 @@
         "taxa está cara",
         "acima da média",
         "média do banco central"
+      ],
+      "defaultNextSteps": [
+        "comparador-de-propostas",
+        "parcela-no-orcamento"
       ]
     },
     {
@@ -209,6 +243,10 @@
         "histórico de taxas",
         "selic",
         "juros do mercado"
+      ],
+      "defaultNextSteps": [
+        "minha-taxa-esta-cara",
+        "conversor-de-taxas"
       ]
     },
     {
@@ -229,7 +267,11 @@
         "à vista ou parcelado",
         "quitar com desconto"
       ],
-      "inFooter": true
+      "inFooter": true,
+      "defaultNextSteps": [
+        "parcela-no-orcamento",
+        "plano-para-sair-das-dividas"
+      ]
     },
     {
       "id": "plano-para-sair-das-dividas",
@@ -249,7 +291,11 @@
         "superendividamento",
         "sair das dívidas"
       ],
-      "inFooter": true
+      "inFooter": true,
+      "defaultNextSteps": [
+        "renegociacao-de-dividas",
+        "quitacao-antecipada"
+      ]
     },
     {
       "id": "trocar-divida",
@@ -267,6 +313,10 @@
         "refinanciamento",
         "quitar com outro empréstimo",
         "renegociar com novo contrato"
+      ],
+      "defaultNextSteps": [
+        "parcela-no-orcamento",
+        "plano-para-sair-das-dividas"
       ]
     },
     {
@@ -285,6 +335,10 @@
         "antecipar parcelas",
         "amortizar",
         "saldo devedor"
+      ],
+      "defaultNextSteps": [
+        "plano-para-sair-das-dividas",
+        "trocar-divida"
       ]
     }
   ]

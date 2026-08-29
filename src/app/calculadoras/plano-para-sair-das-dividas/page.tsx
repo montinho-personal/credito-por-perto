@@ -5,6 +5,7 @@ import { webPageJsonLd } from "@/lib/schema/jsonld";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { Breadcrumbs } from "@/components/layout/Breadcrumbs";
 import { DebtPlanBuilder } from "@/components/calculators/DebtPlanBuilder";
+import { ToolNextSteps } from "@/components/journeys/ToolNextSteps";
 
 export const metadata: Metadata = buildMetadata({
   title: "Plano para sair das dívidas: veja qual pagar primeiro",
@@ -45,6 +46,9 @@ export default function PlanoParaSairDasDividasPage() {
       <div className="mt-8">
         <DebtPlanBuilder />
       </div>
+
+      <ToolNextSteps toolId="plano-para-sair-das-dividas" />
+
 
       <section aria-labelledby="perguntas-plano" className="article-body mt-12">
         <h2 id="perguntas-plano">Qual dívida pagar primeiro?</h2>

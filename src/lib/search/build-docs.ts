@@ -118,6 +118,28 @@ export function buildSearchDocs(): SearchDoc[] {
 
   docs.push(
     {
+      /* A Central entra na busca com as palavras de quem NÃO sabe o nome da
+         ferramenta — que é exatamente o público dela. */
+      id: "/decisoes-financeiras/",
+      url: "/decisoes-financeiras/",
+      title: "Qual é o seu momento financeiro?",
+      description:
+        "Escolha o que está acontecendo — pegar crédito, recebi proposta, várias dívidas, acho que é golpe — e veja quais contas ajudam nessa decisão.",
+      section: "Ferramentas",
+      type: "calculadora",
+      tags: ["decisao", "jornada", "por-onde-comecar", "ferramentas"],
+      keywords: [
+        "nao sei por onde comecar",
+        "qual calculadora usar",
+        "preciso de ajuda com dinheiro",
+        "estou com dividas o que fazer",
+        "recebi proposta de emprestimo o que fazer",
+        "central de decisoes financeiras",
+      ],
+      headings: [],
+      content: "",
+    },
+    {
       id: "/taxas/",
       url: "/taxas/",
       title: "Radar de taxas de crédito",

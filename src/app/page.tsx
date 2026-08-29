@@ -7,6 +7,7 @@ import { getPublishedLocalGuides } from "@/lib/content/local";
 import { ArticleCard, CategoryCard, LocalGuideCard } from "@/components/ui/cards";
 import { SafetyAlert } from "@/components/content/boxes";
 import { SearchBox } from "@/components/search/SearchTrigger";
+import { HomeDecisionBlock } from "@/components/journeys/HomeDecisionBlock";
 
 export const metadata: Metadata = buildMetadata({
   title: `${SITE_NAME} | Guia de Empréstimos e Crédito`,
@@ -94,6 +95,9 @@ export default function HomePage() {
       </section>
 
       <div className="mx-auto max-w-6xl px-4">
+        {/* Central de decisões: a porta pela situação vem antes das listas */}
+        <HomeDecisionBlock />
+
         {/* Modalidades */}
         <section aria-labelledby="modalidades" className="mt-14">
           <h2 id="modalidades" className="font-serif text-2xl font-bold text-brand-navy">

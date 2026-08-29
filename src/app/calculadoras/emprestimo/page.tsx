@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import { buildMetadata } from "@/lib/metadata/build";
 import { Breadcrumbs } from "@/components/layout/Breadcrumbs";
 import { LoanCalculator } from "@/components/calculators/LoanCalculator";
+import { ToolNextSteps } from "@/components/journeys/ToolNextSteps";
 
 export const metadata: Metadata = buildMetadata({
   title: "Calculadora de empréstimo: parcelas, juros e total pago",
@@ -34,6 +35,9 @@ export default function CalculadoraEmprestimoPage() {
       <div className="mt-8">
         <LoanCalculator />
       </div>
+
+      <ToolNextSteps toolId="emprestimo" />
+
 
       <section aria-labelledby="como-funciona" className="article-body mt-12">
         <h2 id="como-funciona">Como o cálculo é feito</h2>

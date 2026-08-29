@@ -30,7 +30,18 @@ export const LEGAL_OWNER = {
   address: "Avenida Cauaxi, 258 — Alphaville, Barueri/SP, CEP 06454-020",
 } as const;
 
+/**
+ * Menu principal.
+ *
+ * "Comece aqui" abre a Central de Decisões e vem primeiro porque é a porta
+ * de quem não sabe o que procurar — a maioria. "Calculadoras" continua no
+ * menu, e continua apontando para o catálogo: quem já sabe o nome da conta
+ * que quer não deveria ter de passar por uma triagem para chegar nela. As
+ * duas portas convivem de propósito; trocar uma pela outra atenderia bem
+ * metade das pessoas e mal a outra metade.
+ */
 export const MAIN_NAV = [
+  { label: "Comece aqui", href: "/decisoes-financeiras/" },
   { label: "Empréstimos", href: "/emprestimos/" },
   { label: "Juros e CET", href: "/juros-e-cet/" },
   { label: "Calculadoras", href: "/calculadoras/" },

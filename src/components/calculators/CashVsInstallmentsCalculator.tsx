@@ -855,6 +855,23 @@ export function CashVsInstallmentsCalculator() {
             >
               Ver se a parcela cabe →
             </Link>
+            {/*
+              Bloco próprio em vez do <ToolNextSteps> da Central porque a copy
+              cita o valor da parcela analisada — contexto que o motor genérico
+              não tem. A contrapartida é não refinar por jornada; a saída para
+              a Central fica logo abaixo para que o caminho não termine aqui.
+            */}
+            <p className="mt-4 border-t border-brand-navy/10 pt-3 text-sm leading-relaxed text-brand-text">
+              <strong>Não precisa fazer todas as etapas.</strong> Para olhar
+              outra decisão,{" "}
+              <Link
+                href="/decisoes-financeiras/"
+                className="font-semibold text-brand-teal-dark"
+              >
+                veja os outros momentos
+              </Link>
+              .
+            </p>
           </div>
 
           <p className="mt-8 rounded-xl border border-brand-border bg-white p-4 text-xs leading-relaxed text-brand-muted">

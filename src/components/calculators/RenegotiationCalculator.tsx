@@ -859,6 +859,23 @@ function NextSteps({ result }: { result: ReturnType<typeof analyzeRenegotiation>
           .
         </li>
       </ul>
+
+      {/*
+        Esta ferramenta mantém o próprio bloco de próximo passo em vez de usar
+        o <ToolNextSteps> da Central: aqui a sugestão muda conforme o formato
+        da proposta analisada (à vista, com entrada, parcelada), e o motor
+        genérico só conhece a ferramenta, não o resultado. O custo dessa
+        escolha é não refinar por jornada — está registrado nas limitações da
+        V1. O que não pode faltar é a saída para a Central, abaixo.
+      */}
+      <p className="mt-5 border-t border-brand-navy/10 pt-4 text-sm leading-relaxed text-brand-text">
+        <strong>Você pode parar por aqui quando quiser.</strong> Se preferir
+        olhar outra decisão,{" "}
+        <Link href="/decisoes-financeiras/" className="font-semibold text-brand-teal-dark">
+          veja os outros momentos
+        </Link>
+        .
+      </p>
     </div>
   );
 }

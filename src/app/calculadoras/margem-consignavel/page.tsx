@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import { buildMetadata } from "@/lib/metadata/build";
 import { Breadcrumbs } from "@/components/layout/Breadcrumbs";
 import { MarginCalculator } from "@/components/calculators/MarginCalculator";
+import { ToolNextSteps } from "@/components/journeys/ToolNextSteps";
 
 export const metadata: Metadata = buildMetadata({
   title: "Calculadora de margem consignável: INSS e CLT",
@@ -33,6 +34,9 @@ export default function CalculadoraMargemPage() {
       <div className="mt-8">
         <MarginCalculator />
       </div>
+
+      <ToolNextSteps toolId="margem-consignavel" />
+
 
       <section aria-labelledby="entenda" className="article-body mt-12">
         <h2 id="entenda">Como interpretar o resultado</h2>

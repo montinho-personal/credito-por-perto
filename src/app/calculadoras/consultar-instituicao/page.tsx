@@ -5,6 +5,7 @@ import { webPageJsonLd } from "@/lib/schema/jsonld";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { Breadcrumbs } from "@/components/layout/Breadcrumbs";
 import { InstitutionChecker } from "@/components/calculators/InstitutionChecker";
+import { ToolNextSteps } from "@/components/journeys/ToolNextSteps";
 
 export const metadata: Metadata = buildMetadata({
   title: "Consultar instituição no Banco Central: pesquise por nome ou CNPJ",
@@ -44,6 +45,9 @@ export default function ConsultarInstituicaoPage() {
       <div className="mt-8">
         <InstitutionChecker />
       </div>
+
+      <ToolNextSteps toolId="consultar-instituicao" />
+
 
       <section aria-labelledby="perguntas-instituicao" className="article-body mt-12">
         <h2 id="perguntas-instituicao">Como saber se uma financeira é autorizada?</h2>

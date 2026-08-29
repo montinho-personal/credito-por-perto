@@ -5,6 +5,7 @@ import { webPageJsonLd } from "@/lib/schema/jsonld";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { Breadcrumbs } from "@/components/layout/Breadcrumbs";
 import { BudgetImpactSimulator } from "@/components/calculators/BudgetImpactSimulator";
+import { ToolNextSteps } from "@/components/journeys/ToolNextSteps";
 
 export const metadata: Metadata = buildMetadata({
   title: "Quanto de parcela cabe no meu orçamento? Faça a conta completa",
@@ -45,6 +46,9 @@ export default function ParcelaNoOrcamentoPage() {
       <div className="mt-8">
         <BudgetImpactSimulator />
       </div>
+
+      <ToolNextSteps toolId="parcela-no-orcamento" />
+
 
       <section aria-labelledby="perguntas-orcamento" className="article-body mt-12">
         <h2 id="perguntas-orcamento">Como saber se uma parcela cabe no orçamento?</h2>
