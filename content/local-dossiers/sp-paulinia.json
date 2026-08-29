@@ -44,7 +44,14 @@
       "checkedAt": "2026-08-25"
     }
   ],
-  "verifiedLocalPrograms": [],
+  "verifiedLocalPrograms": [
+    {
+      "program": "Banco do Povo Paulista — Paulínia",
+      "detail": "Atendimento no Paço Municipal, Avenida Prefeito José Lozano Araújo, 1.551 — Parque Brasil 500, de segunda a sexta das 8h às 17h; telefone geral da prefeitura (19) 3874-5600.",
+      "officialSource": "https://www.paulinia.sp.gov.br/portal/noticias/0/3/7441/prefeitura-amplia-locais-de-atendimento-de-tres-programas",
+      "checkedAt": "2026-08-29"
+    }
+  ],
   "verifiedServiceInformation": [],
   "uniqueLocalQuestions": [
     "Quais os horários reais de atendimento do Procon Paulínia (as janelas são curtas)?",
@@ -61,6 +68,6 @@
   ],
   "pendingVerification": [
     "Grade completa e vigente das janelas de atendimento presencial do Procon",
-    "Existência de programa municipal de microcrédito ou unidade do Banco do Povo (não confirmada em fonte oficial)"
+    "Endereço e horário do Banco do Povo vêm de notícia oficial da prefeitura — reconfirmar em página de serviço ou por telefone."
   ]
 }

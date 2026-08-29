@@ -44,7 +44,14 @@
       "checkedAt": "2026-08-16"
     }
   ],
-  "verifiedLocalPrograms": [],
+  "verifiedLocalPrograms": [
+    {
+      "program": "Banco do Povo Paulista — Salto",
+      "detail": "Atendimento no Atende Fácil, Rua Itapiru, 983 — Bela Vista, de segunda a quinta das 8h às 17h e sexta das 9h30 às 17h; telefone e WhatsApp (11) 95687-7244; e-mail salto@bancodopovo.sp.gov.br.",
+      "officialSource": "https://salto.sp.gov.br/servicos-para-o-cidadao/banco-do-povo/",
+      "checkedAt": "2026-08-29"
+    }
+  ],
   "verifiedServiceInformation": [],
   "uniqueLocalQuestions": [
     "Onde e em quais horários o morador de Salto consegue atendimento do Procon?",
@@ -59,8 +66,6 @@
     "A comparação digital amplia as opções para além do comércio do centro"
   ],
   "pendingVerification": [
-    "Horários vigentes e telefone do Procon municipal",
-    "Programas municipais/estaduais de crédito (ex.: Banco do Povo) ativos na cidade",
-    "Lista nominal de agências bancárias no município via dados abertos do BC (Informes_Agencias)"
+    "Horários vigentes e telefone do Procon municipal"
   ]
 }

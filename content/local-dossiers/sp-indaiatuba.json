@@ -44,7 +44,14 @@
       "checkedAt": "2026-08-16"
     }
   ],
-  "verifiedLocalPrograms": [],
+  "verifiedLocalPrograms": [
+    {
+      "program": "Banco do Povo Paulista — Indaiatuba",
+      "detail": "Atendimento no Ponto Cidadão, Rua Vinte e Quatro de Maio, 1.670, de segunda a sexta das 8h às 15h; telefone (19) 3816-9251; e-mail indaiatuba@bancodopovo.sp.gov.br.",
+      "officialSource": "https://www.indaiatuba.sp.gov.br/tecnologia-inovacao-e-desenvolvimento-economico/banco-do-povo/",
+      "checkedAt": "2026-08-29"
+    }
+  ],
   "verifiedServiceInformation": [],
   "uniqueLocalQuestions": [
     "Qual é o endereço vigente do Procon de Indaiatuba (histórico de mudanças de sede)?",
@@ -59,8 +66,6 @@
     "A concorrência bancária local forte melhora propostas para quem compara e usa portabilidade"
   ],
   "pendingVerification": [
-    "Endereço e horários vigentes do Procon (histórico de mudanças de sede)",
-    "Programas municipais/estaduais de crédito (ex.: Banco do Povo) ativos na cidade",
-    "Lista nominal de agências bancárias no município via dados abertos do BC (Informes_Agencias)"
+    "Endereço e horários vigentes do Procon (histórico de mudanças de sede)"
   ]
 }

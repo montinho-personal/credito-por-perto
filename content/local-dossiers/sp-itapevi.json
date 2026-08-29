@@ -36,7 +36,14 @@
       "checkedAt": "2026-08-16"
     }
   ],
-  "verifiedLocalPrograms": [],
+  "verifiedLocalPrograms": [
+    {
+      "program": "Banco do Povo Paulista — Itapevi",
+      "detail": "Atendimento dentro do Resolve Fácil, Rua José Michelotti, 347 — Cidade da Saúde, de segunda a sexta das 8h às 17h; telefone (11) 4143-9200, ramal 1938; e-mail itapevi@bancodopovo.sp.gov.br.",
+      "officialSource": "https://itapevidigital.itapevi.sp.gov.br/atendimento/servico-info/171",
+      "checkedAt": "2026-08-29"
+    }
+  ],
   "verifiedServiceInformation": [
     {
       "institution": "Prefeitura de Itapevi — Resolve Fácil",
@@ -58,8 +65,6 @@
     "O consignado CLT dá aos trabalhadores do polo local acesso a juros menores que o crédito pessoal comum"
   ],
   "pendingVerification": [
-    "Horários vigentes do Resolve Fácil e regras atuais de agendamento do Procon",
-    "Programas municipais/estaduais de crédito (ex.: Banco do Povo) ativos na cidade",
-    "Lista nominal de agências bancárias no município via dados abertos do BC (Informes_Agencias)"
+    "Horários vigentes do Resolve Fácil e regras atuais de agendamento do Procon"
   ]
 }

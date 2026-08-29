@@ -44,7 +44,14 @@
       "checkedAt": "2026-08-16"
     }
   ],
-  "verifiedLocalPrograms": [],
+  "verifiedLocalPrograms": [
+    {
+      "program": "Banco do Povo Paulista — Carapicuíba",
+      "detail": "Atendimento no Ganha Tempo, Estrada Ernestina Vieira, 149 — Vila Dirce, das 8h30 às 17h; telefone (11) 4167-6303. Microcrédito produtivo para pequenos negócios formais e informais do município.",
+      "officialSource": "https://www.carapicuiba.sp.gov.br/servico/view/45/banco-do-povo",
+      "checkedAt": "2026-08-29"
+    }
+  ],
   "verifiedServiceInformation": [
     {
       "institution": "Prefeitura de Carapicuíba — Ganha Tempo",
@@ -66,8 +73,6 @@
     "O consignado CLT independe da cidade do empregador — direito que muitos moradores desconhecem"
   ],
   "pendingVerification": [
-    "Horários vigentes e regras de senha do atendimento do Procon no Ganha Tempo",
-    "Programas municipais/estaduais de crédito (ex.: Banco do Povo) ativos na cidade",
-    "Lista nominal de agências bancárias no município via dados abertos do BC (Informes_Agencias)"
+    "Horários vigentes e regras de senha do atendimento do Procon no Ganha Tempo"
   ]
 }

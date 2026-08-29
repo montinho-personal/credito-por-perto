@@ -44,7 +44,14 @@
       "checkedAt": "2026-08-16"
     }
   ],
-  "verifiedLocalPrograms": [],
+  "verifiedLocalPrograms": [
+    {
+      "program": "Banco do Povo Paulista — na Casa do Empreendedor",
+      "detail": "Atendimento na Casa do Empreendedor, Rua General Osório, 38, sala 2 — Centro, de segunda a sexta das 8h às 17h; telefone (11) 4656-1654. No mesmo balcão ficam Via Rápida Empresa e Sebrae.",
+      "officialSource": "https://portal.santaisabel.sp.gov.br/com-apoio-ao-empreendedor-numero-de-empresas-cresce/",
+      "checkedAt": "2026-08-29"
+    }
+  ],
   "verifiedServiceInformation": [],
   "uniqueLocalQuestions": [
     "Onde o morador de Santa Isabel registra reclamação de consumo sem sair da cidade?",
@@ -61,7 +68,6 @@
   "pendingVerification": [
     "Horários e telefone atuais do Procon municipal (confirmar antes de publicar horário específico)",
     "Participação do município no Banco do Povo Paulista e endereço de atendimento, se houver",
-    "Quais instituições financeiras mantêm agência ou posto de atendimento na cidade",
-    "Lista nominal de agências bancárias no município via dados abertos do BC (Informes_Agencias) — popular a seção do guia quando os dados forem verificados (API indisponível no ambiente de redação)"
+    "Endereço e horário do Banco do Povo vêm de notícia oficial da prefeitura — reconfirmar em página de serviço ou por telefone."
   ]
 }

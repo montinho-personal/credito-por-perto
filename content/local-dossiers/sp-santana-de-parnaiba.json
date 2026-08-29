@@ -52,7 +52,14 @@
       "checkedAt": "2026-08-16"
     }
   ],
-  "verifiedLocalPrograms": [],
+  "verifiedLocalPrograms": [
+    {
+      "program": "Banco do Povo Paulista — Santana de Parnaíba",
+      "detail": "Duas portas de atendimento: PAT Centro, Rua 15 de Novembro, 625, e Espaço Empresário Empreendedor, Rua Netuno, 49. A prefeitura informa que o atendimento na unidade não exige agendamento.",
+      "officialSource": "https://prefeitura.santanadeparnaiba.sp.gov.br/Plataforma/semedes/banco-do-povo",
+      "checkedAt": "2026-08-29"
+    }
+  ],
   "verifiedServiceInformation": [
     {
       "institution": "Prefeitura de Santana de Parnaíba — PAT Centro",
@@ -75,9 +82,6 @@
   ],
   "pendingVerification": [
     "Horários de funcionamento e telefones atuais do Procon municipal (confirmar por telefone antes de publicar horário específico)",
-    "Condições vigentes (limites e taxas) do Banco do Povo Paulista no atendimento local",
-    "Cooperativas de crédito com atuação verificável no município",
-    "Lista nominal de agências bancárias no município via dados abertos do BC (Informes_Agencias) — popular a seção do guia quando os dados forem verificados (API indisponível no ambiente de redação)",
-    "Posto do Banco do Povo Paulista no município — a fonte consultada é a página estadual do programa e não confirma o atendimento em Santana de Parnaíba; confirmar na carta de serviços da prefeitura antes de publicar."
+    "Condições vigentes (limites e taxas) do Banco do Povo Paulista no atendimento local"
   ]
 }

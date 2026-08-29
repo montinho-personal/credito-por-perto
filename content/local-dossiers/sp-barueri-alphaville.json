@@ -4,7 +4,10 @@
   "localityType": "region",
   "stateCode": "sp",
   "officialAdministrativeStatus": "Região planejada SEM status de município, abrangendo áreas dos municípios de Barueri (3505708) e Santana de Parnaíba (3547304), SP",
-  "municipalitiesInvolved": ["sp-barueri", "sp-santana-de-parnaiba"],
+  "municipalitiesInvolved": [
+    "sp-barueri",
+    "sp-santana-de-parnaiba"
+  ],
   "officialSources": [
     {
       "organization": "IBGE",
@@ -60,7 +63,6 @@
     "Evita duplicação com os guias municipais de Barueri e Santana de Parnaíba"
   ],
   "pendingVerification": [
-    "Programas públicos de crédito acessíveis a moradores e MEIs da região, por município",
-    "Lista nominal de agências bancárias na região via dados abertos do BC (Informes_Agencias)"
+    "Programas públicos de crédito acessíveis a moradores e MEIs da região, por município"
   ]
 }

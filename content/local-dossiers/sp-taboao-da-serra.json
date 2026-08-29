@@ -44,7 +44,14 @@
       "checkedAt": "2026-08-16"
     }
   ],
-  "verifiedLocalPrograms": [],
+  "verifiedLocalPrograms": [
+    {
+      "program": "Casa do Empreendedor — Banco do Povo Paulista e Sebrae Aqui",
+      "detail": "Duas unidades: Maria Rosa, na Rua Cesário Dau, 535, telefone (11) 4788-7888; e Pirajuçara, na Estrada Kizaemon Takeuti, 1.987, telefone (11) 4138-2000. Atendimento de segunda a sexta, das 8h às 17h. Reúne microcrédito produtivo e orientação ao empreendedor no mesmo lugar.",
+      "officialSource": "https://prefeitura.ts.sp.gov.br/_noticias/casa-do-empreendedor-de-taboao-da-serra-e-sebrae-aqui-oferecem-oficinas-gratuitas-sobre-financas/",
+      "checkedAt": "2026-08-29"
+    }
+  ],
   "verifiedServiceInformation": [
     {
       "institution": "Prefeitura de Taboão da Serra — complexo Kizaemon Takeuti",
@@ -68,7 +75,6 @@
   "pendingVerification": [
     "Horários vigentes do Procon e da Casa do Empreendedor no complexo",
     "Condições vigentes (limites e taxas) do Banco do Povo no atendimento local",
-    "Lista nominal de agências bancárias no município via dados abertos do BC (Informes_Agencias)",
-    "Posto do Banco do Povo na Casa do Empreendedor — a fonte registrada é uma notícia sobre o Procon e não sustenta a informação do programa; confirmar na carta de serviços da prefeitura antes de publicar."
+    "Endereço e horário do Banco do Povo confirmados em notícia oficial da prefeitura — reconfirmar em página de serviço ou por telefone, porque notícia envelhece mal para dado de atendimento."
   ]
 }

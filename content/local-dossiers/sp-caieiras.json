@@ -36,7 +36,14 @@
       "checkedAt": "2026-08-16"
     }
   ],
-  "verifiedLocalPrograms": [],
+  "verifiedLocalPrograms": [
+    {
+      "program": "Banco do Povo Paulista — Caieiras",
+      "detail": "Atendimento na Avenida Professor Carvalho Pinto, 207, 1º andar — Centro, das 8h às 14h; telefone (11) 4445-9179. Fica no mesmo endereço do Procon municipal.",
+      "officialSource": "https://www.caieiras.sp.gov.br/?id=servicos-cidadao&pag=taxas",
+      "checkedAt": "2026-08-29"
+    }
+  ],
   "verifiedServiceInformation": [],
   "uniqueLocalQuestions": [
     "Onde o morador de Caieiras registra reclamação de consumo presencialmente?",
@@ -51,8 +58,6 @@
     "A contratação digital amplia a concorrência para além das opções do centro"
   ],
   "pendingVerification": [
-    "Horários vigentes por dia da semana e telefones do Procon municipal",
-    "Programas municipais/estaduais de crédito (ex.: Banco do Povo) ativos na cidade",
-    "Lista nominal de agências bancárias no município via dados abertos do BC (Informes_Agencias)"
+    "Horários vigentes por dia da semana e telefones do Procon municipal"
   ]
 }

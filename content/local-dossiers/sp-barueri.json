@@ -44,7 +44,14 @@
       "checkedAt": "2026-08-16"
     }
   ],
-  "verifiedLocalPrograms": [],
+  "verifiedLocalPrograms": [
+    {
+      "program": "Banco do Povo Paulista — Barueri",
+      "detail": "Atendimento no Ganha Tempo (Setor Amarelo), Avenida Henriqueta Mendes Guerra, 550 — Centro; telefones (11) 4199-1341 e (11) 4199-1333; e-mail barueri@bancodopovo.sp.gov.br. Microcrédito produtivo para quem tem negócio no município, formal ou informal.",
+      "officialSource": "https://portal.barueri.sp.gov.br/secretarias/secretaria-industria-comercio-trabalho/banco-povo",
+      "checkedAt": "2026-08-29"
+    }
+  ],
   "verifiedServiceInformation": [
     {
       "institution": "Prefeitura de Barueri — Ganha Tempo",
@@ -66,8 +73,6 @@
     "Trabalhadores CLT do polo local têm no desconto em folha a porta de crédito mais barata"
   ],
   "pendingVerification": [
-    "Horários vigentes do Procon no Ganha Tempo (confirmar no agendamento)",
-    "Programas municipais/estaduais de crédito (ex.: Banco do Povo) ativos na cidade",
-    "Lista nominal de agências bancárias no município via dados abertos do BC (Informes_Agencias)"
+    "Horários vigentes do Procon no Ganha Tempo (confirmar no agendamento)"
   ]
 }

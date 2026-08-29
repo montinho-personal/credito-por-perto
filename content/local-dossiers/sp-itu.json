@@ -44,7 +44,14 @@
       "checkedAt": "2026-08-16"
     }
   ],
-  "verifiedLocalPrograms": [],
+  "verifiedLocalPrograms": [
+    {
+      "program": "Banco do Povo Paulista — Itu",
+      "detail": "Duas unidades: a primeira no térreo da Prefeitura, dentro da Sala do Empreendedor, e a segunda na Subprefeitura Regional do Pirapitingui. Atendimento de segunda a sexta, das 8h às 16h.",
+      "officialSource": "https://itu.sp.gov.br/segunda-unidade-do-banco-do-povo-paulista-e-inaugurada-em-itu/",
+      "checkedAt": "2026-08-29"
+    }
+  ],
   "verifiedServiceInformation": [],
   "uniqueLocalQuestions": [
     "Onde e em qual janela de horário o Procon de Itu atende?",
@@ -60,7 +67,6 @@
   ],
   "pendingVerification": [
     "Horários e telefones vigentes do Procon municipal",
-    "Programas municipais/estaduais de crédito (ex.: Banco do Povo) ativos na cidade",
-    "Lista nominal de agências bancárias no município via dados abertos do BC (Informes_Agencias)"
+    "Endereço e horário do Banco do Povo confirmados em notícia oficial da prefeitura — reconfirmar em página de serviço ou por telefone, porque notícia envelhece mal para dado de atendimento."
   ]
 }
