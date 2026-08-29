@@ -1,0 +1,65 @@
+{
+  "articleSlug": "divida-de-pessoa-falecida",
+  "claims": [
+    {
+      "claimId": "forcas-da-heranca",
+      "claimText": "O herdeiro não responde por encargos superiores às forças da herança; incumbe-lhe, porém, a prova do excesso, salvo se houver inventário que a escuse, demonstrando o valor dos bens herdados (art. 1.792 do Código Civil).",
+      "sourceOrganization": "Presidência da República",
+      "sourceTitle": "Lei nº 10.406, de 10 de janeiro de 2002 — Código Civil (texto compilado)",
+      "sourceLocation": "https://www.planalto.gov.br/ccivil_03/leis/2002/l10406compilada.htm",
+      "sourceType": "official",
+      "accessedAt": "2026-08-29",
+      "notes": "Regra central do artigo: sem patrimônio, a dívida não se transfere para os familiares."
+    },
+    {
+      "claimId": "heranca-responde-e-proporcao",
+      "claimText": "A herança responde pelo pagamento das dívidas do falecido; mas, feita a partilha, só respondem os herdeiros, cada qual em proporção da parte que na herança lhe coube (art. 1.997 do Código Civil).",
+      "sourceOrganization": "Presidência da República",
+      "sourceTitle": "Lei nº 10.406, de 10 de janeiro de 2002 — Código Civil (texto compilado)",
+      "sourceLocation": "https://www.planalto.gov.br/ccivil_03/leis/2002/l10406compilada.htm",
+      "sourceType": "official",
+      "accessedAt": "2026-08-29",
+      "notes": "Base da divisão em três fases apresentada no artigo."
+    },
+    {
+      "claimId": "stj-antes-da-partilha",
+      "claimText": "Os herdeiros não respondem por dívida condominial antes da partilha dos bens — entendimento firmado pela Terceira Turma do STJ em 2024.",
+      "sourceOrganization": "Superior Tribunal de Justiça",
+      "sourceTitle": "Herdeiros não respondem por dívida condominial antes da partilha dos bens, decide Terceira Turma",
+      "sourceLocation": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2024/01082024-Herdeiros-nao-respondem-por-divida-condominial-antes-da-partilha-dos-bens--decide-Terceira-Turma.aspx",
+      "sourceType": "official",
+      "accessedAt": "2026-08-29",
+      "notes": "Sustenta a afirmação de que a cobrança dirigida pessoalmente ao familiar antes da partilha costuma estar fora de lugar."
+    },
+    {
+      "claimId": "stj-proporcao-quinhao",
+      "claimText": "Feita a partilha, cada herdeiro responde pelas dívidas do falecido dentro das forças da herança e na proporção da parte que lhe coube.",
+      "sourceOrganization": "Superior Tribunal de Justiça",
+      "sourceTitle": "Herdeiros respondem por dívida após a partilha na proporção do quinhão recebido",
+      "sourceLocation": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias-antigas/2015/2015-05-29_07-41_Herdeiros-respondem-por-divida-apos-a-partilha-na-proporcao-do-quinhao-recebido.aspx",
+      "sourceType": "official",
+      "accessedAt": "2026-08-29",
+      "notes": "Confirma a regra da terceira fase descrita no artigo."
+    },
+    {
+      "claimId": "stj-bem-de-familia",
+      "claimText": "A transmissão hereditária não desconfigura o bem de família: imóvel de espólio não perde essa proteção e não pode ser penhorado por dívidas do falecido apenas em razão do falecimento.",
+      "sourceOrganization": "Superior Tribunal de Justiça",
+      "sourceTitle": "Imóvel de espólio não perde proteção como bem de família e não pode ser penhorado por dívidas do falecido",
+      "sourceLocation": "https://www.stj.jus.br/sites/portalp/paginas/comunicacao/noticias/2025/11062025-imovel-de-espolio-nao-perde-protecao-como-bem-de-familia-e-nao-pode-ser-penhorado-por-dividas-do-falecido.aspx",
+      "sourceType": "official",
+      "accessedAt": "2026-08-29",
+      "notes": "Citado na seção de casos que confundem, sem generalizar para toda situação de espólio."
+    },
+    {
+      "claimId": "cdc-cobranca-sem-constrangimento",
+      "claimText": "Na cobrança de débitos, o consumidor inadimplente não será exposto a ridículo, nem submetido a qualquer tipo de constrangimento ou ameaça (art. 42 do Código de Defesa do Consumidor).",
+      "sourceOrganization": "Presidência da República",
+      "sourceTitle": "Lei nº 8.078, de 11 de setembro de 1990 — Código de Defesa do Consumidor",
+      "sourceLocation": "https://www.planalto.gov.br/ccivil_03/leis/l8078compilado.htm",
+      "sourceType": "official",
+      "accessedAt": "2026-08-29",
+      "notes": "Sustenta a orientação de registrar cobrança que insinue responsabilidade pessoal que a lei não impõe."
+    }
+  ]
+}

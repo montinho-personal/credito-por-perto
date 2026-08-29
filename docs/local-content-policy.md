@@ -54,7 +54,7 @@ crédito para resolver. O código vive em `src/lib/local/`.
 | Local | `IN_CITY`, `SERVES_CITY` | dossiê da cidade | verificado município a município |
 | Geral | `REGIONAL`, `STATEWIDE`, `NATIONAL` | `data/financial-map/registry.json` | definido **uma vez** e resolvido por escopo |
 
-Recurso nacional copiado dentro de 23 dossiês produz exatamente o que esta
+Recurso nacional copiado dentro de cada dossiê produz exatamente o que esta
 política proíbe: páginas que só trocam o nome da cidade. Por isso o registry
 existe, e por isso item de dossiê cuja fonte já está no registry é descartado
 da camada local (dedupe por host + primeiro segmento — nunca só por host, ou

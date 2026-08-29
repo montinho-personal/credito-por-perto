@@ -244,7 +244,8 @@
   "emprestar o nome para empréstimo é seguro quais os riscos": {
     "canonicalOwner": "/organizacao-financeira/emprestar-o-nome/",
     "supportingPages": [
-      "/organizacao-financeira/quando-vale-a-pena-fazer-emprestimo/"
+      "/organizacao-financeira/quando-vale-a-pena-fazer-emprestimo/",
+      "/organizacao-financeira/fiador-ou-avalista/"
     ]
   },
   "como saber se um app de empréstimo é confiável": {
@@ -470,6 +471,19 @@
       "/emprestimos/emprestimo-com-garantia/",
       "/emprestimos/consorcio-ou-emprestimo/",
       "/emprestimos/diferenca-entre-emprestimo-e-financiamento/"
+    ]
+  },
+  "diferença entre fiador e avalista e como sair da fiança": {
+    "canonicalOwner": "/organizacao-financeira/fiador-ou-avalista/",
+    "supportingPages": [
+      "/organizacao-financeira/emprestar-o-nome/"
+    ]
+  },
+  "quem paga a dívida de pessoa falecida herdeiros respondem": {
+    "canonicalOwner": "/organizacao-financeira/divida-de-pessoa-falecida/",
+    "supportingPages": [
+      "/credito-seguro/como-consultar-dividas-no-registrato/",
+      "/juros-e-cet/seguro-prestamista/"
     ]
   }
 }

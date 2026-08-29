@@ -1,0 +1,40 @@
+{
+  "proposedTitle": "Fiador ou avalista: a diferença que decide quanto você pode perder",
+  "primaryIntent": "diferença entre fiador e avalista e como sair da fiança",
+  "secondaryIntents": ["como se exonerar de fiança de aluguel", "fiador tem benefício de ordem", "riscos de ser avalista"],
+  "targetReader": "Quem foi convidado a assinar como fiador ou avalista, ou já assinou e descobriu que continua responsável depois do prazo do contrato",
+  "readerSituation": "O leitor trata as duas palavras como sinônimo, assina por vínculo pessoal e só descobre a diferença quando a cobrança chega",
+  "centralQuestion": "O que muda entre fiança e aval no risco real, e como alguém sai de uma fiança já assinada?",
+  "uniqueAngle": "Território em zero no site e SERP de captação jurídica. O eixo é o benefício de ordem — que o fiador tem em regra, o avalista nunca tem, e que a maioria dos contratos apaga por cláusula de renúncia — somado à armadilha de prazo da fiança locatícia",
+  "originalContribution": [
+    "A instrução de procurar no contrato as palavras 'renuncia ao benefício de ordem' e 'solidariamente' antes de assinar",
+    "A explicação de que a fiança de aluguel se estende até a devolução do imóvel, não até o fim do prazo do contrato",
+    "Os dois refinamentos do STJ que mudam o cálculo: notificar antes da hora não antecipa efeito, e cláusula de renúncia à exoneração perde eficácia após a prorrogação",
+    "O plano de dano para quem já assinou e o devedor parou de pagar"
+  ],
+  "primarySources": [
+    "Código Civil (Lei 10.406/2002) — fiança, benefício de ordem e aval",
+    "Lei nº 8.245/1991 (Lei do Inquilinato) — arts. 39 e 40, extensão e exoneração da garantia",
+    "STJ — aval não se equipara à fiança quanto ao benefício de ordem; efeitos da notificação de exoneração; ineficácia da renúncia ao direito de exoneração após prorrogação"
+  ],
+  "supportingSources": [],
+  "contentArchetype": "guide",
+  "proposedStructure": [
+    "Abertura: o pedido de assinatura",
+    "A diferença em uma frase — fiança × aval",
+    "Benefício de ordem e a cláusula que o apaga",
+    "A armadilha de prazo da fiança de aluguel",
+    "O que você assume de verdade",
+    "Existe alternativa a assinar?",
+    "Já assinei e o devedor parou de pagar",
+    "Perguntas frequentes"
+  ],
+  "internalLinks": ["/organizacao-financeira/emprestar-o-nome/"],
+  "toolIntegrations": ["parcela-no-orcamento", "plano-para-sair-das-dividas"],
+  "antiCannibalization": "emprestar-o-nome continua dono da intenção de contratar dívida no próprio nome para terceiro. Este artigo trata de GARANTIR dívida alheia — fiança e aval —, que é situação jurídica distinta.",
+  "risks": [
+    "Dar resposta fechada sobre penhora do imóvel único do fiador: a FAQ registra que o tema é controverso e remete a orientação jurídica, sem tomar partido",
+    "Tom de captação jurídica: evitado — o artigo explica mecanismo e não sugere ação nem indica advogado",
+    "Citar prazos de exoneração sem o contexto do regime aplicável: os prazos vêm da lei vigente e os refinamentos do STJ estão explicitados"
+  ]
+}

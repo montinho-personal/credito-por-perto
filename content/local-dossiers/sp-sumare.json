@@ -1,0 +1,73 @@
+{
+  "localityId": "sp-sumare",
+  "localityName": "Sumaré",
+  "localityType": "municipality",
+  "stateCode": "sp",
+  "officialAdministrativeStatus": "Município do estado de São Paulo, integrante da Região Metropolitana de Campinas",
+  "officialSources": [
+    {
+      "organization": "Procon-SP (página municipal)",
+      "documentTitle": "Sumaré — Procon municipal",
+      "sourceLocation": "https://www.procon.sp.gov.br/sumare/",
+      "checkedAt": "2026-08-29",
+      "extractedFact": "O Procon de Sumaré atende na Rua Pedro Consulin, 73 — Centro, CEP 13.170-030, telefone (19) 3399-5031 e e-mail procon.sumare@gmail.com, com atendimento por telefone, e-mail, presencial, agendamento e formulário on-line.",
+      "relevanceToReader": "Endereço, telefone e — o que mais muda o dia do morador — a lista de canais aceitos, que inclui agendamento e formulário on-line."
+    },
+    {
+      "organization": "Prefeitura de Sumaré — Secretaria de Desenvolvimento Econômico",
+      "documentTitle": "Secretaria de Desenvolvimento Econômico — atendimento 'É pra Já'",
+      "sourceLocation": "https://turismo.sumare.sp.gov.br/atrativo-historico/secretaria-de-desenvolvimento-economico",
+      "checkedAt": "2026-08-29",
+      "extractedFact": "O atendimento 'É pra Já' reúne num mesmo local o PAT, o atendimento ao MEI, o Banco do Povo Paulista, o balcão do SEBRAE-SP e serviços do Ministério do Trabalho, de segunda a sexta, das 8h às 17h.",
+      "relevanceToReader": "Concentra num só balcão o microcrédito público, o apoio ao MEI e a intermediação de emprego — as três portas de quem vive de renda variável."
+    },
+    {
+      "organization": "IBGE",
+      "documentTitle": "Cidades e Estados — Sumaré (SP), Censo 2022",
+      "sourceLocation": "https://www.ibge.gov.br/cidades-e-estados/sp/sumare.html",
+      "checkedAt": "2026-08-29",
+      "extractedFact": "Sumaré registrou 279.545 habitantes no Censo 2022, em 153,465 km², e integra a Região Metropolitana de Campinas.",
+      "relevanceToReader": "É a segunda maior população entre as cidades cobertas, com densidade alta e forte deslocamento diário para Campinas e Hortolândia."
+    }
+  ],
+  "consumerProtectionResources": [
+    {
+      "organization": "Procon Sumaré",
+      "service": "Atendimento na Rua Pedro Consulin, 73 — Centro (CEP 13.170-030); telefone (19) 3399-5031; e-mail procon.sumare@gmail.com; aceita atendimento presencial, por telefone, por e-mail, com agendamento e por formulário on-line",
+      "officialSource": "https://www.procon.sp.gov.br/sumare/",
+      "checkedAt": "2026-08-29"
+    },
+    {
+      "organization": "Consumidor.gov.br (plataforma federal)",
+      "service": "Reclamação on-line contra bancos e financeiras, com resposta monitorada — disponível a moradores de qualquer município",
+      "officialSource": "https://www.consumidor.gov.br",
+      "checkedAt": "2026-08-29"
+    }
+  ],
+  "verifiedLocalPrograms": [
+    {
+      "program": "Banco do Povo Paulista — Sumaré (atendimento 'É pra Já')",
+      "detail": "O microcrédito produtivo do Banco do Povo Paulista é atendido no balcão 'É pra Já' da Secretaria de Desenvolvimento Econômico, junto com PAT, MEI, SEBRAE-SP e Ministério do Trabalho, de segunda a sexta das 8h às 17h. Confirme o endereço do balcão pelo canal oficial da Prefeitura antes de ir.",
+      "officialSource": "https://turismo.sumare.sp.gov.br/atrativo-historico/secretaria-de-desenvolvimento-economico",
+      "checkedAt": "2026-08-29"
+    }
+  ],
+  "verifiedServiceInformation": [],
+  "uniqueLocalQuestions": [
+    "Preciso ir até o Procon de Sumaré ou dá para resolver por e-mail e formulário?",
+    "Onde fica o balcão que atende Banco do Povo, MEI e PAT juntos?",
+    "Moro em Sumaré e trabalho em Campinas ou Hortolândia: onde eu reclamo do meu banco?"
+  ],
+  "localRisksOrWarnings": [
+    "Cidade de quase 280 mil habitantes com forte deslocamento diário: é comum a conta ficar numa cidade e a moradia em outra, o que confunde na hora de escolher o canal de reclamação.",
+    "O microcrédito público de Sumaré é atendido dentro de um balcão da Prefeitura e não cobra intermediário — quem pedir pagamento para 'agilizar' o Banco do Povo está fora do programa."
+  ],
+  "decisionImpact": [
+    "O Procon local aceita e-mail, agendamento e formulário on-line: dá para abrir o caso sem perder um dia de trabalho",
+    "Balcão único reúne microcrédito, MEI e emprego — vale resolver renda antes de contratar crédito caro"
+  ],
+  "pendingVerification": [
+    "Endereço completo e telefone do balcão 'É pra Já' não constam da página oficial consultada — confirmar em página de serviço da Prefeitura ou por telefone antes de publicar o endereço.",
+    "Grade de horários do atendimento presencial do Procon Sumaré (a página estadual lista os canais, não os horários)."
+  ]
+}

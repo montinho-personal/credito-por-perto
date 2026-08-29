@@ -20,7 +20,7 @@
  * ARQUITETURA — POR QUE UM REGISTRY SEPARADO DO DOSSIÊ
  *
  * Recurso nacional (consumidor.gov.br) e estadual (PAS do Procon-SP) é o
- * mesmo para as 23 cidades. Copiá-lo 23 vezes dentro dos dossiês produziria
+ * mesmo para todas as cidades. Copiá-lo em cada dossiê produziria
  * exatamente o que a política local proíbe: páginas que só trocam o nome da
  * cidade. Por isso:
  *

@@ -106,7 +106,7 @@ export interface LocalDossier {
    * divergiu do formato real dos arquivos (`name`/`responsibleEntity` contra
    * `program`/`detail`) sem ninguém notar, porque este campo não era
    * renderizado em lugar nenhum. Agora ele alimenta o mapa financeiro, e o
-   * formato dos 23 dossiês foi unificado no que segue.
+   * formato de todos os dossiês foi unificado no que segue.
    */
   verifiedLocalPrograms: Array<{
     program: string;

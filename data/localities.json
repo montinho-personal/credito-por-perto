@@ -195,6 +195,14 @@
       "stateCode": "sp",
       "citySlug": "paulinia",
       "ibgeCode": "3536505"
+    },
+    {
+      "id": "sp-sumare",
+      "name": "Sumaré",
+      "localityType": "municipality",
+      "stateCode": "sp",
+      "citySlug": "sumare",
+      "ibgeCode": "3552403"
     }
   ]
 }

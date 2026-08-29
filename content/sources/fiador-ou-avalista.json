@@ -1,0 +1,55 @@
+{
+  "articleSlug": "fiador-ou-avalista",
+  "claims": [
+    {
+      "claimId": "beneficio-de-ordem",
+      "claimText": "O fiador demandado pelo pagamento da dívida tem direito a exigir, até a contestação da lide, que sejam primeiro executados os bens do devedor — o chamado benefício de ordem, previsto no art. 827 do Código Civil. Esse benefício pode ser afastado por cláusula expressa, hipótese em que fiador e afiançado passam a figurar em posição de solidariedade.",
+      "sourceOrganization": "Presidência da República",
+      "sourceTitle": "Lei nº 10.406, de 10 de janeiro de 2002 — Código Civil (texto compilado)",
+      "sourceLocation": "https://www.planalto.gov.br/ccivil_03/leis/2002/l10406compilada.htm",
+      "sourceType": "official",
+      "accessedAt": "2026-08-29",
+      "notes": "Base do eixo central do artigo. A renúncia por cláusula expressa é o que faz a proteção teórica do fiador desaparecer na maioria dos contratos reais."
+    },
+    {
+      "claimId": "aval-sem-beneficio-de-ordem",
+      "claimText": "O aval não se equipara à fiança quanto à possibilidade de usufruir do benefício de ordem: o avalista é responsável autônomo e solidário. A garantia do aval tem autonomia substancial, de modo que sua existência, validade e eficácia não dependem da obrigação principal, diferentemente do que ocorre na fiança, de natureza subsidiária.",
+      "sourceOrganization": "Superior Tribunal de Justiça",
+      "sourceTitle": "Distinção entre aval e fiança — avalista como responsável autônomo e solidário",
+      "sourceLocation": "https://processo.stj.jus.br/jurisprudencia/externo/informativo/?livre=@CNOT%3D020088",
+      "sourceType": "official",
+      "accessedAt": "2026-08-29",
+      "notes": "Sustenta a diferença prática mais importante entre os dois papéis."
+    },
+    {
+      "claimId": "extensao-garantia-locacao",
+      "claimText": "Salvo disposição contratual em contrário, qualquer das garantias da locação se estende até a efetiva devolução do imóvel, ainda que prorrogada a locação por prazo indeterminado (art. 39 da Lei nº 8.245/1991). O art. 40 prevê as hipóteses em que o locador pode exigir novo fiador ou substituição da garantia, e disciplina a exoneração após a prorrogação por prazo indeterminado.",
+      "sourceOrganization": "Presidência da República",
+      "sourceTitle": "Lei nº 8.245, de 18 de outubro de 1991 — Lei do Inquilinato",
+      "sourceLocation": "https://www.planalto.gov.br/ccivil_03/leis/l8245.htm",
+      "sourceType": "official",
+      "accessedAt": "2026-08-29",
+      "notes": "Base da armadilha de prazo. O artigo evita afirmar que a fiança acaba com o contrato, porque a lei diz o contrário."
+    },
+    {
+      "claimId": "efeitos-notificacao-exoneracao",
+      "claimText": "Quando o locador é notificado ainda durante o período determinado da locação sobre a pretensão de exoneração dos fiadores, os efeitos dessa exoneração somente se produzem após o prazo de 120 dias contado da data em que o contrato se tornou por prazo indeterminado, e não da data da notificação.",
+      "sourceOrganization": "Superior Tribunal de Justiça",
+      "sourceTitle": "Exoneração do fiador notificada no prazo do contrato só tem efeito 120 dias após locação se tornar indeterminada",
+      "sourceLocation": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2019/Exoneracao-do-fiador-notificada-no-prazo-do-contrato-so-tem-efeito-120-dias-apos-locacao-se-tornar-indeterminada.aspx",
+      "sourceType": "official",
+      "accessedAt": "2026-08-29",
+      "notes": "Refinamento prático: antecipar a notificação não antecipa a saída."
+    },
+    {
+      "claimId": "renuncia-exoneracao-ineficaz",
+      "claimText": "A cláusula contratual de renúncia ao direito de exoneração do fiador não tem eficácia após a prorrogação do contrato de fiança.",
+      "sourceOrganization": "Superior Tribunal de Justiça",
+      "sourceTitle": "Cláusula de renúncia do direito de exoneração do fiador não tem eficácia após a prorrogação do contrato de fiança",
+      "sourceLocation": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/Clausula-de-renuncia-do-direito-de-exoneracao-do-fiador-nao-tem-eficacia-apos-a-prorrogacao-do-contrato-de-fianca.aspx",
+      "sourceType": "official",
+      "accessedAt": "2026-08-29",
+      "notes": "Informação de valor direto para quem assinou contrato com cláusula desse tipo e o considera definitivo."
+    }
+  ]
+}

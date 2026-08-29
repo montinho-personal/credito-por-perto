@@ -1,0 +1,42 @@
+{
+  "proposedTitle": "Dívida de pessoa falecida: quem paga (e quem não é obrigado a pagar)",
+  "primaryIntent": "quem paga a dívida de pessoa falecida herdeiros respondem",
+  "secondaryIntents": ["cobrança de dívida de falecido é legal", "dívida maior que a herança", "inventário e dívidas"],
+  "targetReader": "Filho, cônjuge ou familiar que recebeu cobrança logo após o falecimento e não sabe se a dívida passou a ser dele",
+  "readerSituation": "O leitor está em luto, recebe ligação de cobrança com tom de responsabilidade pessoal, e não conhece a regra das forças da herança",
+  "centralQuestion": "A dívida de quem morreu se transfere para a família? Até onde vai a responsabilidade de quem herda?",
+  "uniqueAngle": "Território em zero no site e SERP majoritariamente de captação jurídica. O eixo é a regra dos arts. 1.792 e 1.997 do Código Civil — responde a herança, dentro das forças dela — organizada nas três fases (antes do inventário, durante, após a partilha), que é onde a jurisprudência do STJ realmente muda a resposta",
+  "originalContribution": [
+    "As três fases com quem responde em cada uma, e a decisão do STJ de 2024 sobre herdeiros não responderem antes da partilha",
+    "O checklist para a cobrança que chega antes da conta, com o direito do CDC contra constrangimento",
+    "A instrução de levantar dívidas e bens ANTES de negociar, para não pagar com dinheiro próprio o que a herança cobriria",
+    "Os casos que confundem: conta conjunta, dívida com fiador, seguro prestamista e bem de família"
+  ],
+  "primarySources": [
+    "Código Civil (Lei 10.406/2002) — arts. 1.792 e 1.997",
+    "Código de Defesa do Consumidor — vedação de constrangimento na cobrança",
+    "STJ — herdeiros respondem após a partilha na proporção do quinhão; não respondem por dívida condominial antes da partilha; transmissão hereditária não desconfigura bem de família"
+  ],
+  "supportingSources": [],
+  "contentArchetype": "guide",
+  "proposedStructure": [
+    "Abertura: a ligação depois do velório",
+    "A regra que quase ninguém conhece — arts. 1.792 e 1.997",
+    "As três fases: antes do inventário, durante, após a partilha",
+    "A cobrança que chega antes da conta — checklist",
+    "O primeiro passo prático: descobrir o que existe",
+    "Casos que confundem",
+    "Perguntas frequentes"
+  ],
+  "internalLinks": [
+    "/credito-seguro/como-consultar-dividas-no-registrato/",
+    "/organizacao-financeira/fiador-ou-avalista/",
+    "/juros-e-cet/seguro-prestamista/"
+  ],
+  "toolIntegrations": ["sinais-de-golpe"],
+  "risks": [
+    "Dar orientação jurídica sobre renúncia de herança: a FAQ registra que existe e tem forma própria, e remete a orientação no inventário",
+    "Afirmar que a consulta ao Registrato de falecido é livre: o texto diz que segue as regras de acesso do serviço, normalmente pela via do inventário",
+    "Tom de captação: evitado — o artigo explica direitos e procedimento, sem sugerir ação judicial"
+  ]
+}
