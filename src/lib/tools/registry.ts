@@ -57,6 +57,12 @@ export interface Tool {
    */
   defaultNextSteps: string[];
   /**
+   * Data da última alteração visível ao leitor, no formato ISO. Alimenta o
+   * `lastmod` do sitemap — ver src/lib/seo/static-page-dates.ts para o motivo
+   * de ela ser declarada em vez de gerada no build.
+   */
+  updatedAt: string;
+  /**
    * Aparece na seleção do rodapé. O rodapé não lista as doze: uma coluna com
    * doze itens é o que deixava o rodapé três vezes mais alto que as outras
    * colunas. Ele mostra uma seleção e aponta para o hub, que tem todas.

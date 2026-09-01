@@ -46,7 +46,8 @@
       "defaultNextSteps": [
         "sinais-de-golpe",
         "comparador-de-propostas"
-      ]
+      ],
+      "updatedAt": "2026-08-29"
     },
     {
       "id": "sinais-de-golpe",
@@ -68,7 +69,8 @@
       ],
       "defaultNextSteps": [
         "consultar-instituicao"
-      ]
+      ],
+      "updatedAt": "2026-08-29"
     },
     {
       "id": "comparador-de-propostas",
@@ -91,7 +93,8 @@
       "defaultNextSteps": [
         "parcela-no-orcamento",
         "minha-taxa-esta-cara"
-      ]
+      ],
+      "updatedAt": "2026-08-29"
     },
     {
       "id": "parcela-no-orcamento",
@@ -114,7 +117,8 @@
       "defaultNextSteps": [
         "comparador-de-propostas",
         "plano-para-sair-das-dividas"
-      ]
+      ],
+      "updatedAt": "2026-08-29"
     },
     {
       "id": "margem-consignavel",
@@ -137,7 +141,8 @@
       "defaultNextSteps": [
         "parcela-no-orcamento",
         "comparador-de-propostas"
-      ]
+      ],
+      "updatedAt": "2026-08-29"
     },
     {
       "id": "emprestimo",
@@ -159,7 +164,8 @@
       "defaultNextSteps": [
         "parcela-no-orcamento",
         "comparador-de-propostas"
-      ]
+      ],
+      "updatedAt": "2026-08-29"
     },
     {
       "id": "a-vista-ou-parcelado",
@@ -182,7 +188,8 @@
       "inFooter": true,
       "defaultNextSteps": [
         "parcela-no-orcamento"
-      ]
+      ],
+      "updatedAt": "2026-08-29"
     },
     {
       "id": "conversor-de-taxas",
@@ -204,7 +211,8 @@
       "defaultNextSteps": [
         "minha-taxa-esta-cara",
         "comparador-de-propostas"
-      ]
+      ],
+      "updatedAt": "2026-08-29"
     },
     {
       "id": "minha-taxa-esta-cara",
@@ -226,7 +234,8 @@
       "defaultNextSteps": [
         "comparador-de-propostas",
         "parcela-no-orcamento"
-      ]
+      ],
+      "updatedAt": "2026-08-29"
     },
     {
       "id": "radar-de-taxas",
@@ -247,7 +256,8 @@
       "defaultNextSteps": [
         "minha-taxa-esta-cara",
         "conversor-de-taxas"
-      ]
+      ],
+      "updatedAt": "2026-08-29"
     },
     {
       "id": "renegociacao-de-dividas",
@@ -271,7 +281,8 @@
       "defaultNextSteps": [
         "parcela-no-orcamento",
         "plano-para-sair-das-dividas"
-      ]
+      ],
+      "updatedAt": "2026-08-29"
     },
     {
       "id": "plano-para-sair-das-dividas",
@@ -295,7 +306,8 @@
       "defaultNextSteps": [
         "renegociacao-de-dividas",
         "quitacao-antecipada"
-      ]
+      ],
+      "updatedAt": "2026-08-29"
     },
     {
       "id": "trocar-divida",
@@ -317,7 +329,8 @@
       "defaultNextSteps": [
         "parcela-no-orcamento",
         "plano-para-sair-das-dividas"
-      ]
+      ],
+      "updatedAt": "2026-08-29"
     },
     {
       "id": "quitacao-antecipada",
@@ -339,7 +352,8 @@
       "defaultNextSteps": [
         "plano-para-sair-das-dividas",
         "trocar-divida"
-      ]
+      ],
+      "updatedAt": "2026-08-29"
     }
   ]
 }

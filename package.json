@@ -21,9 +21,10 @@
     "audit:metadata": "tsx scripts/audit-metadata.ts",
     "audit:sources": "tsx scripts/audit-sources.ts",
     "audit:readability": "tsx scripts/audit-readability.ts",
-    "audit:all": "pnpm audit:originality && pnpm audit:canonical && pnpm audit:cannibalization && pnpm audit:local && pnpm audit:mapa && pnpm audit:ferramentas && pnpm audit:jornadas && pnpm audit:links && pnpm audit:metadata && pnpm audit:sources && pnpm audit:readability",
+    "audit:all": "pnpm audit:originality && pnpm audit:canonical && pnpm audit:sitemap && pnpm audit:cannibalization && pnpm audit:local && pnpm audit:mapa && pnpm audit:ferramentas && pnpm audit:jornadas && pnpm audit:links && pnpm audit:metadata && pnpm audit:sources && pnpm audit:readability",
     "search:index": "tsx scripts/generate-search-index.ts",
-    "audit:jornadas": "tsx scripts/audit-journeys.ts"
+    "audit:jornadas": "tsx scripts/audit-journeys.ts",
+    "audit:sitemap": "tsx scripts/audit-sitemap.ts"
   },
   "dependencies": {
     "@vercel/analytics": "^2.0.1",
