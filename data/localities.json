@@ -203,6 +203,38 @@
       "stateCode": "sp",
       "citySlug": "sumare",
       "ibgeCode": "3552403"
+    },
+    {
+      "id": "sp-hortolandia",
+      "name": "Hortolândia",
+      "localityType": "municipality",
+      "stateCode": "sp",
+      "citySlug": "hortolandia",
+      "ibgeCode": "3519071"
+    },
+    {
+      "id": "sp-americana",
+      "name": "Americana",
+      "localityType": "municipality",
+      "stateCode": "sp",
+      "citySlug": "americana",
+      "ibgeCode": "3501608"
+    },
+    {
+      "id": "sp-santa-barbara-doeste",
+      "name": "Santa Bárbara d'Oeste",
+      "localityType": "municipality",
+      "stateCode": "sp",
+      "citySlug": "santa-barbara-doeste",
+      "ibgeCode": "3545803"
+    },
+    {
+      "id": "sp-nova-odessa",
+      "name": "Nova Odessa",
+      "localityType": "municipality",
+      "stateCode": "sp",
+      "citySlug": "nova-odessa",
+      "ibgeCode": "3533403"
     }
   ]
 }

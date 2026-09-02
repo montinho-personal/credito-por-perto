@@ -1,0 +1,73 @@
+{
+  "localityId": "sp-hortolandia",
+  "localityName": "Hortolândia",
+  "localityType": "municipality",
+  "stateCode": "sp",
+  "officialAdministrativeStatus": "Município do estado de São Paulo, integrante da Região Metropolitana de Campinas",
+  "officialSources": [
+    {
+      "organization": "Prefeitura de Hortolândia — Procon municipal",
+      "documentTitle": "Procon Hortolândia — portal do órgão",
+      "sourceLocation": "https://procon.hortolandia.sp.gov.br/",
+      "checkedAt": "2026-09-02",
+      "extractedFact": "O Procon de Hortolândia mantém portal próprio em domínio municipal e atende no Palácio dos Migrantes — Paço Municipal 'Angelo Augusto Perugini' (Av. Projetada 12, nº 100 — Jardim Metropolitan, CEP 13.184-792), das 8h30 às 16h de segunda a sexta, pelo telefone (19) 3965-1400 (ramais 7022 e 7034), por WhatsApp no (19) 99635-4208 e pelo e-mail procon@hortolandia.sp.gov.br.",
+      "relevanceToReader": "Reúne num só lugar endereço, horário e — o que muda o dia de quem trabalha fora — os canais que dispensam o deslocamento, incluindo WhatsApp oficial do órgão."
+    },
+    {
+      "organization": "Prefeitura de Hortolândia",
+      "documentTitle": "Banco do Povo — Prefeitura de Hortolândia",
+      "sourceLocation": "https://www.hortolandia.sp.gov.br/banco-do-povo/",
+      "checkedAt": "2026-09-02",
+      "extractedFact": "O município mantém guichês do Banco do Povo Paulista na praça de atendimento, com microcrédito produtivo orientado para pequenos empreendedores formais e informais.",
+      "relevanceToReader": "É a porta pública de crédito para quem tem negócio pequeno e não quer recorrer a empréstimo pessoal caro para capital de giro."
+    },
+    {
+      "organization": "Prefeitura de Hortolândia",
+      "documentTitle": "População de Hortolândia cresceu 22%, aponta IBGE",
+      "sourceLocation": "https://acervo.hortolandia.sp.gov.br/noticias/item/23073-populacao-de-hortolandia-cresceu-22-aponta-ibge/23073-populacao-de-hortolandia-cresceu-22-aponta-ibge",
+      "checkedAt": "2026-09-02",
+      "extractedFact": "O Censo 2022 registrou 236.641 habitantes em Hortolândia, quinta maior população da Região Metropolitana de Campinas, com crescimento de cerca de 43 mil pessoas em relação a 2010.",
+      "relevanceToReader": "Crescimento acelerado explica a estrutura de atendimento recém-instalada e o peso do deslocamento diário para Campinas e Sumaré."
+    }
+  ],
+  "consumerProtectionResources": [
+    {
+      "organization": "Procon Hortolândia",
+      "service": "Atendimento no Palácio dos Migrantes — Paço Municipal (Av. Projetada 12, nº 100 — Jardim Metropolitan), de segunda a sexta das 8h30 às 16h; telefone (19) 3965-1400 ramais 7022 e 7034; WhatsApp (19) 99635-4208; e-mail procon@hortolandia.sp.gov.br",
+      "officialSource": "https://procon.hortolandia.sp.gov.br/",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "organization": "Consumidor.gov.br (plataforma federal)",
+      "service": "Reclamação on-line contra bancos e financeiras, com resposta monitorada — disponível a moradores de qualquer município",
+      "officialSource": "https://www.consumidor.gov.br",
+      "checkedAt": "2026-09-02"
+    }
+  ],
+  "verifiedLocalPrograms": [
+    {
+      "program": "Banco do Povo Paulista — Hortolândia",
+      "detail": "Guichês do Banco do Povo Paulista na praça de atendimento do município, com microcrédito produtivo orientado a pequenos empreendedores formais e informais. Confirme endereço e horário vigentes pelo canal oficial antes de ir.",
+      "officialSource": "https://www.hortolandia.sp.gov.br/banco-do-povo/",
+      "checkedAt": "2026-09-02"
+    }
+  ],
+  "verifiedServiceInformation": [],
+  "uniqueLocalQuestions": [
+    "O Procon de Hortolândia atende por WhatsApp ou preciso ir até o Paço Municipal?",
+    "Onde fica o guichê do Banco do Povo em Hortolândia?",
+    "Moro em Hortolândia e trabalho em Campinas: em qual Procon eu reclamo do meu banco?"
+  ],
+  "localRisksOrWarnings": [
+    "Cidade que cresceu 22% em uma década e concentra os serviços num Paço Municipal recente: informação de endereço antigo ainda circula em sites de terceiros, e vale conferir no portal do próprio Procon antes de sair de casa.",
+    "O microcrédito do Banco do Povo é atendido em guichê da Prefeitura e não cobra intermediário — quem pedir pagamento para 'agilizar' está fora do programa."
+  ],
+  "decisionImpact": [
+    "O Procon municipal tem portal próprio e WhatsApp oficial: dá para abrir o caso sem perder um dia de trabalho",
+    "Guichê do Banco do Povo na praça de atendimento resolve capital de giro sem recorrer a empréstimo pessoal caro"
+  ],
+  "pendingVerification": [
+    "Endereço exato e horário dos guichês do Banco do Povo na praça de atendimento — a página oficial descreve o serviço sem detalhar a grade.",
+    "Calendário e pontos de parada do Procon Móvel, citado em comunicados da Prefeitura mas sem página fixa de agenda."
+  ]
+}

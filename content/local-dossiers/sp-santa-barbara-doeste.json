@@ -1,0 +1,73 @@
+{
+  "localityId": "sp-santa-barbara-doeste",
+  "localityName": "Santa Bárbara d'Oeste",
+  "localityType": "municipality",
+  "stateCode": "sp",
+  "officialAdministrativeStatus": "Município do estado de São Paulo, integrante da Região Metropolitana de Campinas",
+  "officialSources": [
+    {
+      "organization": "Prefeitura de Santa Bárbara d'Oeste",
+      "documentTitle": "Procon atende em novo endereço e horário",
+      "sourceLocation": "https://www.santabarbara.sp.gov.br/portal/noticias/0/3/6639/procon-atende-em-novo-endereco-e-horario-a-partir-de-segunda-feira",
+      "checkedAt": "2026-09-02",
+      "extractedFact": "O Procon de Santa Bárbara d'Oeste atende na Rua Graça Martins, nº 436 — Centro, com entrada lateral pela Rua Santa Bárbara, de segunda a sexta das 9h às 16h, pelos telefones (19) 3455-5779 e (19) 3455-7345 e pelo e-mail procon@santabarbara.sp.gov.br.",
+      "relevanceToReader": "Endereço, entrada e horário vigentes, anunciados pela Prefeitura — a sede mudou e o endereço anterior ainda aparece em listas de terceiros."
+    },
+    {
+      "organization": "Prefeitura de Santa Bárbara d'Oeste",
+      "documentTitle": "Banco do Povo oferece microcrédito a empreendedores de S.Bárbara",
+      "sourceLocation": "https://www.santabarbara.sp.gov.br/portal/noticias/0/3/66870/banco-do-povo-oferece-microcredito-a-empreendedores-de-sbarbara",
+      "checkedAt": "2026-09-02",
+      "extractedFact": "O Banco do Povo Paulista integra o Desenvolve S.Bárbara, no Villa Multimall — Rua do Ósmio, 975, no Mollon, paralela à Avenida Santa Bárbara.",
+      "relevanceToReader": "O microcrédito público do município fica num endereço que ninguém adivinha: dentro de um complexo comercial, não no Paço."
+    },
+    {
+      "organization": "Prefeitura de Santa Bárbara d'Oeste",
+      "documentTitle": "Atendimento do Procon Móvel acontece aos sábados",
+      "sourceLocation": "https://www.santabarbara.sp.gov.br/portal/noticias/0/3/71361/atendimento-do-procon-movel-acontece-neste-sabado-8-em-santa-barbara",
+      "checkedAt": "2026-09-02",
+      "extractedFact": "O município realiza atendimentos do Procon Móvel em sábados, em pontos divulgados pela Prefeitura.",
+      "relevanceToReader": "Quem trabalha de segunda a sexta em outra cidade tem no sábado a única janela presencial possível."
+    }
+  ],
+  "consumerProtectionResources": [
+    {
+      "organization": "Procon Santa Bárbara d'Oeste",
+      "service": "Atendimento na Rua Graça Martins, 436 — Centro (entrada lateral pela Rua Santa Bárbara), de segunda a sexta das 9h às 16h; telefones (19) 3455-5779 e (19) 3455-7345; e-mail procon@santabarbara.sp.gov.br; e atendimentos do Procon Móvel em sábados divulgados pela Prefeitura",
+      "officialSource": "https://www.santabarbara.sp.gov.br/portal/noticias/0/3/6639/procon-atende-em-novo-endereco-e-horario-a-partir-de-segunda-feira",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "organization": "Consumidor.gov.br (plataforma federal)",
+      "service": "Reclamação on-line contra bancos e financeiras, com resposta monitorada — disponível a moradores de qualquer município",
+      "officialSource": "https://www.consumidor.gov.br",
+      "checkedAt": "2026-09-02"
+    }
+  ],
+  "verifiedLocalPrograms": [
+    {
+      "program": "Banco do Povo Paulista — Desenvolve S.Bárbara",
+      "detail": "O microcrédito produtivo do Banco do Povo Paulista é atendido dentro do Desenvolve S.Bárbara, no Villa Multimall (Rua do Ósmio, 975 — Mollon). Confirme horário vigente pelos canais da Prefeitura antes de ir.",
+      "officialSource": "https://www.santabarbara.sp.gov.br/portal/noticias/0/3/66870/banco-do-povo-oferece-microcredito-a-empreendedores-de-sbarbara",
+      "checkedAt": "2026-09-02"
+    }
+  ],
+  "verifiedServiceInformation": [],
+  "uniqueLocalQuestions": [
+    "Onde fica o Procon de Santa Bárbara depois da mudança de sede?",
+    "O Procon Móvel atende aos sábados? Como saber onde ele vai estar?",
+    "Onde fica o Banco do Povo em Santa Bárbara d'Oeste?"
+  ],
+  "localRisksOrWarnings": [
+    "Duas mudanças de endereço no atendimento ao consumidor deixaram referências antigas circulando: sempre confira o endereço vigente no portal da Prefeitura.",
+    "O microcrédito público funciona dentro de um complexo comercial, o que confunde com oferta privada — o Banco do Povo é programa estadual, não cobra taxa para liberar e não trabalha com intermediário."
+  ],
+  "decisionImpact": [
+    "O Procon Móvel aos sábados é a única janela presencial de quem trabalha fora durante a semana",
+    "O microcrédito público fica no Villa Multimall, e não no Paço — saber isso evita a viagem errada"
+  ],
+  "pendingVerification": [
+    "População do município pelo Censo 2022: os números divulgados vêm de imprensa regional; não localizamos comunicado oficial da Prefeitura ou página do IBGE consultada diretamente.",
+    "Calendário fixo e pontos de parada do Procon Móvel — a Prefeitura divulga edição a edição, sem agenda permanente publicada."
+  ]
+}
