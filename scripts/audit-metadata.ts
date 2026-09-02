@@ -172,6 +172,46 @@ for (const doc of mediaDocs) {
   }
 }
 
+/* ------------------------------------------------------------------ */
+/* Nome do arquivo da capa × slug da página                            */
+/* ------------------------------------------------------------------ */
+
+/**
+ * O Google diz que o nome do arquivo "dá pistas sobre o assunto da imagem" e
+ * pede nome curto e descritivo. É sinal FRACO — pista, não fator de peso —,
+ * e é exatamente por isso que a regra mora aqui como AVISO e não como crítico:
+ * quebrar o build por um sinal fraco seria desproporcional.
+ *
+ * O que justifica a regra mesmo assim é o histórico: 26 das 39 capas
+ * publicadas tinham nome abreviado à mão na hora de salvar
+ * (`quando-vale-a-pena-capa.webp` para `/quando-vale-a-pena-fazer-emprestimo/`),
+ * e ninguém percebeu por um mês porque nada olhava. Deriva silenciosa de novo.
+ *
+ * Renomear depois custa mais que nascer certo — a imagem publicada acumula
+ * histórico, e trocar a URL joga esse histórico fora. O aviso aparece na capa
+ * seguinte, que é quando corrigir ainda é de graça.
+ */
+for (const doc of [...getAllArticles(), ...getAllLocalGuides()]) {
+  const featured = doc.frontmatter.featuredImage;
+  if (!featured) continue;
+  const file = featured.split("/").pop() ?? "";
+  const base = file.replace(/-capa\.webp$/, "").replace(/\.webp$/, "");
+  const slug = doc.urlPath.replace(/\/$/, "").split("/").pop() ?? "";
+  /* Guia local escapa da comparação direta: o slug da URL é só a cidade
+     (`/emprestimos/sp/campinas/`), e o arquivo carrega cidade + intenção
+     (`emprestimo-em-campinas-sp.webp`) — mais descritivo que o slug, que é o
+     que a recomendação pede. Basta conter a cidade. */
+  const ok = base === slug || base.includes(slug);
+  if (!ok) {
+    findings.push({
+      severity: "warning",
+      rule: "capa-com-nome-fora-do-slug",
+      pages: [doc.urlPath],
+      detail: `A capa "${file}" não corresponde ao slug "${slug}". Nome de arquivo é pista de assunto para o buscador; renomear depois de publicada custa o histórico da imagem. O padrão é <slug>-capa.webp.`,
+    });
+  }
+}
+
 const report = buildReport("metadados", findings);
 writeJsonReport("metadata-report.json", report);
 finishAudit(report);

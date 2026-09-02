@@ -8,6 +8,10 @@ import {
 import { getAllAuthors, getAuthor } from "@/lib/content/authors";
 import { getBriefing, getSourceLedger } from "@/lib/content/ledgers";
 import { getSitemapEntries } from "@/lib/seo/sitemap-entries";
+import {
+  INTERNAL_ONLY_CHANGES,
+  isInternalOnlyChange,
+} from "@/lib/seo/static-page-dates";
 import { isValidCanonical } from "@/lib/seo/canonical";
 import { SITE_URL } from "@/lib/site";
 
@@ -72,6 +76,56 @@ describe("artigos", () => {
 });
 
 describe("sitemap", () => {
+  it("declara a capa de toda página que tem uma", () => {
+    /* O portal publicava 59 capas e o sitemap não anunciava nenhuma. O canal
+       de descoberta de imagem estava fechado num site cujo problema medido no
+       Search Console é justamente rastreamento. */
+    const comCapa = [
+      ...getPublishedArticles().filter((a) => a.frontmatter.featuredImage && !a.frontmatter.noindex),
+      ...getAllLocalGuides().filter(
+        (g) => g.frontmatter.featuredImage && isLocalGuideIndexable(g),
+      ),
+    ];
+    expect(comCapa.length).toBeGreaterThan(0);
+
+    const porUrl = new Map(getSitemapEntries().map((e) => [e.url, e]));
+    for (const doc of comCapa) {
+      const entry = porUrl.get(doc.canonical);
+      expect(entry, doc.canonical).toBeDefined();
+      expect(entry!.images, doc.canonical).toEqual([
+        `${SITE_URL}${doc.frontmatter.featuredImage}`,
+      ]);
+    }
+  });
+
+  it("não anuncia imagem em página que não tem capa", () => {
+    /* Entrada de imagem vazia é pior que ausência: anuncia o que não existe. */
+    const semCapa = getPublishedArticles().filter(
+      (a) => !a.frontmatter.featuredImage && !a.frontmatter.noindex,
+    );
+    const porUrl = new Map(getSitemapEntries().map((e) => [e.url, e]));
+    for (const article of semCapa) {
+      expect(porUrl.get(article.canonical)?.images, article.canonical).toBeUndefined();
+    }
+  });
+
+  it("exceção de mudança interna vale só para a data exata do commit", () => {
+    /* A exceção existe para os 19 arquivos que ganharam data-track-area sem
+       mudar nada visível. Se virasse licença permanente, qualquer alteração
+       futura naqueles arquivos passaria calada — que é o oposto do que a
+       auditoria de lastmod existe para fazer. */
+    for (const entry of INTERNAL_ONLY_CHANGES) {
+      expect(entry.reason.length).toBeGreaterThan(30);
+      expect(entry.at).toMatch(/^\d{4}-\d{2}-\d{2}$/);
+      for (const route of entry.routes) {
+        expect(isInternalOnlyChange(route, entry.at)).toBe(true);
+        /* Um dia depois já não vale. */
+        expect(isInternalOnlyChange(route, "2099-01-01")).toBe(false);
+      }
+    }
+    expect(isInternalOnlyChange("/rota-que-nao-existe/", "2026-09-02")).toBe(false);
+  });
+
   it("contém apenas URLs canônicas válidas", () => {
     for (const entry of getSitemapEntries()) {
       expect(isValidCanonical(entry.url), `inválida: ${entry.url}`).toBe(true);

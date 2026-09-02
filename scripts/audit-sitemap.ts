@@ -21,7 +21,11 @@ import { execFileSync } from "node:child_process";
 import fs from "node:fs";
 import path from "node:path";
 import { getSitemapEntries, STATIC_INDEXABLE_PATHS } from "../src/lib/seo/sitemap-entries";
-import { STATIC_PAGE_DATES, pageFileForRoute } from "../src/lib/seo/static-page-dates";
+import {
+  STATIC_PAGE_DATES,
+  pageFileForRoute,
+  isInternalOnlyChange,
+} from "../src/lib/seo/static-page-dates";
 import { getTools } from "../src/lib/tools/registry";
 import { SITE_URL } from "../src/lib/site";
 import {
@@ -108,7 +112,10 @@ for (const [route, declarada, file] of declaradas) {
   const commit = lastCommitDate(file);
   if (!commit) continue;
   conferidas += 1;
-  if (commit > declarada) {
+  /* Mudança registrada como interna não move a data: o arquivo mudou, o que o
+     leitor vê não. A exceção vale só para a data exata do commit interno — se
+     algo novo entrar depois, o aviso volta sozinho. */
+  if (commit > declarada && !isInternalOnlyChange(route, commit)) {
     findings.push({
       severity: "warning",
       rule: "lastmod-defasado",

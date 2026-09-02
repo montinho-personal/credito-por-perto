@@ -4,10 +4,23 @@ import { getToolRoutes, getTools } from "@/lib/tools/registry";
 import { STATIC_PAGE_DATES } from "@/lib/seo/static-page-dates";
 import { getIndexableLocalGuides } from "@/lib/local/guide-indexability";
 import { canonicalUrl } from "@/lib/seo/canonical";
+import { SITE_URL } from "@/lib/site";
 
 export interface SitemapEntry {
   url: string;
   lastModified?: string;
+  /**
+   * Capas da página, em URL absoluta. Viram `<image:image>` no sitemap.
+   *
+   * O portal publicava 39 capas e não declarava nenhuma. O JSON-LD do artigo
+   * já mandava `image`, o que ajuda — mas o sitemap de imagens é o canal
+   * DIRETO de descoberta, documentado pelo Google, e estava sobrando.
+   *
+   * Para um site cujo problema medido no Search Console é rastreamento
+   * ("detectada, mas não indexada"), deixar um canal de descoberta fechado
+   * custa mais que qualquer micro-otimização de nome de arquivo.
+   */
+  images?: string[];
 }
 
 /** Páginas estáticas indexáveis (a busca fica fora: é noindex). */
@@ -105,6 +118,14 @@ const CATEGORY_HUBS: Record<string, string> = {
   "/organizacao-financeira/": "organizacao-financeira",
 };
 
+/**
+ * Só entra imagem que existe. Página sem capa não ganha `<image:image>` vazio:
+ * anunciar imagem inexistente é pior que não anunciar nada.
+ */
+function imagesOf(featuredImage?: string): { images?: string[] } {
+  return featuredImage ? { images: [`${SITE_URL}${featuredImage}`] } : {};
+}
+
 export function getSitemapEntries(): SitemapEntry[] {
   const entries: SitemapEntry[] = STATIC_INDEXABLE_PATHS.map((path) => ({
     url: canonicalUrl(path),
@@ -117,6 +138,7 @@ export function getSitemapEntries(): SitemapEntry[] {
       url: article.canonical,
       lastModified:
         article.frontmatter.updatedAt ?? article.frontmatter.publishedAt,
+      ...imagesOf(article.frontmatter.featuredImage),
     });
   }
 
@@ -126,6 +148,7 @@ export function getSitemapEntries(): SitemapEntry[] {
     entries.push({
       url: guide.canonical,
       lastModified: guide.frontmatter.updatedAt ?? guide.frontmatter.publishedAt,
+      ...imagesOf(guide.frontmatter.featuredImage),
     });
   }
 

@@ -7,5 +7,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...(entry.lastModified
       ? { lastModified: new Date(entry.lastModified) }
       : {}),
+    ...(entry.images ? { images: entry.images } : {}),
   }));
 }
