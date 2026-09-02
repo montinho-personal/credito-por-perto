@@ -1,0 +1,80 @@
+{
+  "localityId": "sp-cajamar",
+  "localityName": "Cajamar",
+  "localityType": "municipality",
+  "stateCode": "sp",
+  "officialAdministrativeStatus": "Município do estado de São Paulo, integrante da Região Metropolitana de São Paulo",
+  "officialSources": [
+    {
+      "organization": "Prefeitura de Cajamar — Secretaria de Justiça",
+      "documentTitle": "Procon — Secretaria de Justiça de Cajamar",
+      "sourceLocation": "https://cajamar.sp.gov.br/justica/procon/",
+      "checkedAt": "2026-09-02",
+      "extractedFact": "O município mantém dois postos do Procon: o do Polvilho, na Avenida Bento da Silva Bueno, 351 — Bairro Paraíso (CEP 07793-665), telefone (11) 4446-0030 e e-mail atendimento.procon@cajamar.sp.gov.br, com atendimento de segunda a sexta das 9h às 11h30 e das 13h às 16h; e o de Jordanésia, na Rua Avelino Toledo de Lima, 208, telefone (11) 4446-0140 e e-mail procon.jordanesia@cajamar.sp.gov.br, com atendimento presencial mediante horário marcado.",
+      "relevanceToReader": "São dois postos com regras diferentes — um por senha, outro só com hora marcada. Ir ao errado custa o dia."
+    },
+    {
+      "organization": "Prefeitura de Cajamar — Secretaria de Desenvolvimento Econômico",
+      "documentTitle": "Banco do Povo disponibiliza crédito para empreendedores cajamarenses",
+      "sourceLocation": "https://cajamar.sp.gov.br/noticias/2023/06/12/banco-do-povo-disponibiliza-r-650-000-para-empreendedores-cajamarenses/",
+      "checkedAt": "2026-09-02",
+      "extractedFact": "O Banco do Povo Paulista em Cajamar oferece linhas como Empreenda Rápido e Empreenda Mulher, com crédito de até R$ 15 mil para pessoa física e R$ 21 mil para pessoa jurídica e juros de 0,35% a 1% ao mês, para empreendedores formais (MEI, ME, EPP, LTDA, EIRELI), informais e rurais.",
+      "relevanceToReader": "Define quem pode pedir, quanto e a que custo — a alternativa pública ao empréstimo pessoal caro para capital de giro."
+    },
+    {
+      "organization": "IBGE",
+      "documentTitle": "Cidades e Estados — Cajamar (SP), Censo 2022",
+      "sourceLocation": "https://www.ibge.gov.br/cidades-e-estados/sp/cajamar.html",
+      "checkedAt": "2026-09-02",
+      "extractedFact": "Cajamar registrou 92.689 habitantes no Censo 2022, com densidade demográfica de 705,47 hab/km².",
+      "relevanceToReader": "População média distribuída em núcleos urbanos separados por distâncias reais, o que explica a existência de dois postos de atendimento."
+    }
+  ],
+  "consumerProtectionResources": [
+    {
+      "organization": "Procon Cajamar — posto do Polvilho",
+      "service": "Atendimento na Avenida Bento da Silva Bueno, 351 — Bairro Paraíso, distrito do Polvilho (CEP 07793-665), de segunda a sexta das 9h às 11h30 e das 13h às 16h; telefone (11) 4446-0030; e-mail atendimento.procon@cajamar.sp.gov.br",
+      "officialSource": "https://cajamar.sp.gov.br/justica/procon/",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "organization": "Procon Cajamar — posto de Jordanésia",
+      "service": "Atendimento presencial com horário marcado na Rua Avelino Toledo de Lima, 208; telefone (11) 4446-0140; e-mail procon.jordanesia@cajamar.sp.gov.br",
+      "officialSource": "https://cajamar.sp.gov.br/justica/procon/",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "organization": "Consumidor.gov.br (plataforma federal)",
+      "service": "Reclamação on-line contra bancos e financeiras, com resposta monitorada — disponível a moradores de qualquer município",
+      "officialSource": "https://www.consumidor.gov.br",
+      "checkedAt": "2026-09-02"
+    }
+  ],
+  "verifiedLocalPrograms": [
+    {
+      "program": "Banco do Povo Paulista — Cajamar",
+      "detail": "Microcrédito produtivo orientado com linhas Empreenda Rápido e Empreenda Mulher, até R$ 15 mil para pessoa física e R$ 21 mil para pessoa jurídica, juros de 0,35% a 1% ao mês, aberto a empreendedores formais, informais e rurais. Confirme limites e taxa vigentes na Secretaria de Desenvolvimento Econômico antes de contratar.",
+      "officialSource": "https://cajamar.sp.gov.br/noticias/2023/06/12/banco-do-povo-disponibiliza-r-650-000-para-empreendedores-cajamarenses/",
+      "checkedAt": "2026-09-02"
+    }
+  ],
+  "verifiedServiceInformation": [],
+  "uniqueLocalQuestions": [
+    "Qual dos dois Procons de Cajamar eu procuro: Polvilho ou Jordanésia?",
+    "Preciso agendar para ser atendido no Procon de Jordanésia?",
+    "Moro em Cajamar e trabalho na capital ou em Jundiaí: onde eu reclamo do meu banco?"
+  ],
+  "localRisksOrWarnings": [
+    "Município de núcleos separados — sede, Polvilho e Jordanésia — com dois postos de Procon e regras de atendimento diferentes: um atende por ordem de chegada em janelas fixas, o outro só com hora marcada.",
+    "Cidade de forte polo logístico e muita gente com carteira assinada: onde há salário em folha, há oferta agressiva de consignado e refinanciamento. Nenhuma delas cobra taxa antecipada."
+  ],
+  "decisionImpact": [
+    "Escolher o posto certo do Procon — e saber qual exige agendamento — evita perder um dia de trabalho",
+    "O Banco do Povo empresta até R$ 21 mil para pessoa jurídica a taxa muito abaixo do empréstimo pessoal comum"
+  ],
+  "pendingVerification": [
+    "Vigência dos limites (R$ 15 mil e R$ 21 mil) e da faixa de juros do Banco do Povo em Cajamar — a fonte é comunicado datado, e condições de programa público mudam por resolução.",
+    "Grade de horários do posto de Jordanésia além da regra de agendamento, que a página oficial não detalha.",
+    "Existência de posto de atendimento do Procon no distrito-sede, além dos dois confirmados."
+  ]
+}

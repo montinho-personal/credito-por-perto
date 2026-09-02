@@ -1,0 +1,90 @@
+{
+  "localityId": "sp-itupeva",
+  "localityName": "Itupeva",
+  "localityType": "municipality",
+  "stateCode": "sp",
+  "officialAdministrativeStatus": "Município do estado de São Paulo, integrante da Aglomeração Urbana de Jundiaí",
+  "officialSources": [
+    {
+      "organization": "Prefeitura de Itupeva",
+      "documentTitle": "Procon — Prefeitura de Itupeva",
+      "sourceLocation": "https://www.itupeva.sp.gov.br/servicos/diversos/procon",
+      "checkedAt": "2026-09-02",
+      "extractedFact": "O Procon de Itupeva atende na Av. Itália, nº 661 — Jardim São Vicente, no prédio do CAC (Centro de Atendimento ao Cidadão), das 8h às 12h30 e das 13h30 às 16h, em livre demanda (sem necessidade de agendamento), com distribuição limitada de senhas.",
+      "relevanceToReader": "Atende sem hora marcada — mas por senha limitada, o que torna o horário de chegada a informação decisiva."
+    },
+    {
+      "organization": "Prefeitura de Itupeva",
+      "documentTitle": "Procon Itupeva passa a integrar Procon SP Digital e ganha mais agilidade",
+      "sourceLocation": "https://itupeva.sp.gov.br/procon-itupeva-passa-a-integrar-procon-sp-digital-e-ganha-mais-agilidade",
+      "checkedAt": "2026-09-02",
+      "extractedFact": "O Procon municipal integrou o programa ProconSP Digital, que permite ao consumidor interagir com o fornecedor por e-mail dentro do processo administrativo e participar de audiências de conciliação on-line pela ferramenta Microsoft Teams, com alcance sobre fornecedores de todo o Brasil.",
+      "relevanceToReader": "A audiência de conciliação com o banco pode acontecer por vídeo — quem trabalha fora não precisa tirar o dia para comparecer."
+    },
+    {
+      "organization": "Prefeitura de Itupeva",
+      "documentTitle": "Dia do Consumidor: Procon de Itupeva fortalece atendimento",
+      "sourceLocation": "https://itupeva.sp.gov.br/dia-do-consumidor-procon-de-itupeva-fortalece-atendimento-e-garante-mais-agilidade-aos-consumidores",
+      "checkedAt": "2026-09-02",
+      "extractedFact": "A Prefeitura informa que o atendimento do Procon municipal alcança índice de resolução de 90% das demandas dos consumidores.",
+      "relevanceToReader": "Índice publicado pelo próprio município — referência útil para quem hesita entre reclamar no órgão local ou só na plataforma federal."
+    },
+    {
+      "organization": "Prefeitura de Itupeva",
+      "documentTitle": "Sala do Empreendedor — Banco do Povo Paulista",
+      "sourceLocation": "https://www.itupeva.sp.gov.br/servicos/diversos/banco-do-povo-paulista",
+      "checkedAt": "2026-09-02",
+      "extractedFact": "A Sala do Empreendedor funciona de forma integrada com o Sebrae Aqui, o Balcão do Empreendedor e o Banco do Povo Paulista; microempreendedores formais e informais, incluindo produtores rurais, podem solicitar crédito para abertura e regularização de empresa, compra de mercadorias e matérias-primas e aquisição ou conserto de máquinas, equipamentos, veículos, animais e insumos agrícolas.",
+      "relevanceToReader": "Um balcão só reúne microcrédito público, apoio do Sebrae e regularização de empresa — inclusive para quem é informal ou produtor rural."
+    },
+    {
+      "organization": "IBGE",
+      "documentTitle": "Cidades e Estados — Itupeva (SP), Censo 2022",
+      "sourceLocation": "https://www.ibge.gov.br/cidades-e-estados/sp/itupeva.html",
+      "checkedAt": "2026-09-02",
+      "extractedFact": "Itupeva registrou 72.711 habitantes no Censo 2022.",
+      "relevanceToReader": "Município de porte médio no eixo Jundiaí–Indaiatuba, com forte deslocamento diário para as cidades vizinhas."
+    }
+  ],
+  "consumerProtectionResources": [
+    {
+      "organization": "Procon Itupeva",
+      "service": "Atendimento na Av. Itália, 661 — Jardim São Vicente, no prédio do CAC, das 8h às 12h30 e das 13h30 às 16h, em livre demanda com senhas limitadas; integrado ao ProconSP Digital, com tratativa por e-mail dentro do processo e audiência de conciliação on-line por Microsoft Teams",
+      "officialSource": "https://www.itupeva.sp.gov.br/servicos/diversos/procon",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "organization": "Consumidor.gov.br (plataforma federal)",
+      "service": "Reclamação on-line contra bancos e financeiras, com resposta monitorada — disponível a moradores de qualquer município",
+      "officialSource": "https://www.consumidor.gov.br",
+      "checkedAt": "2026-09-02"
+    }
+  ],
+  "verifiedLocalPrograms": [
+    {
+      "program": "Banco do Povo Paulista — Sala do Empreendedor de Itupeva",
+      "detail": "Microcrédito produtivo do programa estadual, atendido na Sala do Empreendedor junto com Sebrae Aqui e Balcão do Empreendedor. Aberto a microempreendedores formais, informais e produtores rurais, para abertura e regularização de empresa, compra de mercadorias e matérias-primas e aquisição ou conserto de máquinas, equipamentos, veículos, animais e insumos.",
+      "officialSource": "https://www.itupeva.sp.gov.br/servicos/diversos/banco-do-povo-paulista",
+      "checkedAt": "2026-09-02"
+    }
+  ],
+  "verifiedServiceInformation": [],
+  "uniqueLocalQuestions": [
+    "A audiência de conciliação com o banco pode ser on-line em Itupeva?",
+    "Preciso agendar no Procon de Itupeva ou é por senha?",
+    "Onde fica o Banco do Povo em Itupeva e quem pode pedir?"
+  ],
+  "localRisksOrWarnings": [
+    "O atendimento é por livre demanda com senhas limitadas: sem hora marcada, mas com fila — chegar tarde pode significar voltar no dia seguinte.",
+    "O microcrédito do Banco do Povo é atendido em balcão da Prefeitura e não cobra intermediário: qualquer pedido de pagamento para 'aprovar' o crédito está fora do programa."
+  ],
+  "decisionImpact": [
+    "Audiência de conciliação por vídeo evita tirar o dia de trabalho para resolver problema com banco",
+    "Um único balcão resolve microcrédito, regularização de empresa e apoio do Sebrae — inclusive para informal e produtor rural"
+  ],
+  "pendingVerification": [
+    "Quantidade de senhas distribuídas por período e horário de início da distribuição — a página informa o limite sem detalhar o número.",
+    "Horários de atendimento da Sala do Empreendedor, que a página descreve sem publicar a grade.",
+    "Data de apuração do índice de resolução de 90% informado pela Prefeitura."
+  ]
+}

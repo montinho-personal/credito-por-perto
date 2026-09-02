@@ -243,6 +243,30 @@
       "stateCode": "sp",
       "citySlug": "jundiai",
       "ibgeCode": "3525904"
+    },
+    {
+      "id": "sp-louveira",
+      "name": "Louveira",
+      "localityType": "municipality",
+      "stateCode": "sp",
+      "citySlug": "louveira",
+      "ibgeCode": "3527306"
+    },
+    {
+      "id": "sp-cajamar",
+      "name": "Cajamar",
+      "localityType": "municipality",
+      "stateCode": "sp",
+      "citySlug": "cajamar",
+      "ibgeCode": "3509205"
+    },
+    {
+      "id": "sp-itupeva",
+      "name": "Itupeva",
+      "localityType": "municipality",
+      "stateCode": "sp",
+      "citySlug": "itupeva",
+      "ibgeCode": "3524006"
     }
   ]
 }

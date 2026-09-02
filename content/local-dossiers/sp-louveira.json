@@ -1,0 +1,87 @@
+{
+  "localityId": "sp-louveira",
+  "localityName": "Louveira",
+  "localityType": "municipality",
+  "stateCode": "sp",
+  "officialAdministrativeStatus": "Município do estado de São Paulo, integrante da Aglomeração Urbana de Jundiaí",
+  "officialSources": [
+    {
+      "organization": "Prefeitura de Louveira",
+      "documentTitle": "Procon — Prefeitura de Louveira",
+      "sourceLocation": "https://www.louveira.sp.gov.br/servico/procon",
+      "checkedAt": "2026-09-02",
+      "extractedFact": "O Procon de Louveira atende na Rua Roberto Mazzali, 37, de segunda a sexta das 9h às 16h, pelo telefone 3878-1070 e pelo e-mail proconatendimento@louveira.sp.gov.br.",
+      "relevanceToReader": "Endereço, horário e canais vigentes do órgão que atende reclamação contra banco e financeira."
+    },
+    {
+      "organization": "Prefeitura de Louveira",
+      "documentTitle": "Justiça Gratuita — Prefeitura de Louveira",
+      "sourceLocation": "https://www.louveira.sp.gov.br/servico/justica-gratuita",
+      "checkedAt": "2026-09-02",
+      "extractedFact": "A Justiça Gratuita municipal funciona na Rua Roberto Mazzali, 37 — bairro Santo Antônio (CEP 13.290-971), às segundas, quartas e quintas das 9h às 12h, com média de 100 atendimentos por mês, destinada a moradores de baixa renda.",
+      "relevanceToReader": "As duas portas de defesa do consumidor ficam no mesmo endereço — e resolvem coisas diferentes: o Procon medeia a relação de consumo, a Justiça Gratuita orienta quem precisa de advogado."
+    },
+    {
+      "organization": "Prefeitura de Louveira — SEDEC",
+      "documentTitle": "Banco do Povo — Secretaria de Desenvolvimento Econômico",
+      "sourceLocation": "https://www.louveira.sp.gov.br/servico/banco-do-povo",
+      "checkedAt": "2026-09-02",
+      "extractedFact": "O Banco do Povo Paulista opera em Louveira por meio da SEDEC, com microcrédito para capital de giro (estoque) e investimento fixo (mobiliário, equipamentos, máquinas, ferramentas, veículo), com juros informados de 0,35% a 1% ao mês conforme a categoria.",
+      "relevanceToReader": "É a linha de crédito mais barata acessível a pequeno empreendedor da cidade, muito abaixo do empréstimo pessoal de mercado."
+    },
+    {
+      "organization": "Prefeitura de Louveira",
+      "documentTitle": "Censo 2022 do IBGE mostra avanços em Louveira",
+      "sourceLocation": "https://www.louveira.sp.gov.br/conteudo/com-crescimento-maior-que-as-cidades-da-regiao-censo-2022-do-ibge-mostra-avancos-em-louveira",
+      "checkedAt": "2026-09-02",
+      "extractedFact": "O Censo 2022 registrou 51.847 habitantes em Louveira, com crescimento maior que o das cidades da região.",
+      "relevanceToReader": "Município pequeno e em crescimento acelerado, encaixado entre quatro cidades maiores — o que explica por que boa parte da vida bancária acontece fora."
+    }
+  ],
+  "consumerProtectionResources": [
+    {
+      "organization": "Procon Louveira",
+      "service": "Atendimento na Rua Roberto Mazzali, 37 — Santo Antônio (CEP 13.290-971), de segunda a sexta das 9h às 16h; telefone 3878-1070; e-mail proconatendimento@louveira.sp.gov.br",
+      "officialSource": "https://www.louveira.sp.gov.br/servico/procon",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "organization": "Justiça Gratuita — Prefeitura de Louveira",
+      "service": "Orientação jurídica gratuita a moradores de baixa renda, no mesmo endereço do Procon (Rua Roberto Mazzali, 37), às segundas, quartas e quintas das 9h às 12h",
+      "officialSource": "https://www.louveira.sp.gov.br/servico/justica-gratuita",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "organization": "Consumidor.gov.br (plataforma federal)",
+      "service": "Reclamação on-line contra bancos e financeiras, com resposta monitorada — disponível a moradores de qualquer município",
+      "officialSource": "https://www.consumidor.gov.br",
+      "checkedAt": "2026-09-02"
+    }
+  ],
+  "verifiedLocalPrograms": [
+    {
+      "program": "Banco do Povo Paulista — Louveira (SEDEC)",
+      "detail": "Microcrédito produtivo para capital de giro e investimento fixo, operado pela Secretaria de Desenvolvimento Econômico em parceria com o governo estadual. A Prefeitura informa juros de 0,35% a 1% ao mês, conforme a categoria. Confirme condições e taxa vigentes na SEDEC antes de contratar.",
+      "officialSource": "https://www.louveira.sp.gov.br/servico/banco-do-povo",
+      "checkedAt": "2026-09-02"
+    }
+  ],
+  "verifiedServiceInformation": [],
+  "uniqueLocalQuestions": [
+    "Procon ou Justiça Gratuita: qual dos dois resolve o meu caso com o banco?",
+    "Onde fica o Banco do Povo em Louveira e qual a taxa?",
+    "Moro em Louveira e minha agência é em Jundiaí ou Vinhedo: onde eu reclamo?"
+  ],
+  "localRisksOrWarnings": [
+    "Cidade pequena entre quatro municípios maiores: é comum a conta bancária, o emprego e a moradia ficarem em cidades diferentes, o que confunde na hora de escolher o canal de reclamação.",
+    "O microcrédito do Banco do Povo é operado pela Prefeitura e não cobra intermediário — quem pedir pagamento para 'aprovar' ou 'agilizar' está fora do programa."
+  ],
+  "decisionImpact": [
+    "Procon e Justiça Gratuita no mesmo endereço: uma ida resolve a orientação de consumo e a jurídica",
+    "A taxa do Banco do Povo é muito menor que a do empréstimo pessoal comum — vale checar antes de contratar crédito caro para o negócio"
+  ],
+  "pendingVerification": [
+    "Vigência da faixa de juros de 0,35% a 1% ao mês informada pela Prefeitura — taxa de programa público muda por resolução, e a página não traz data de atualização.",
+    "Calendário dos plantões do Procon fora da sede (a Prefeitura já divulgou atendimento na Estação Ferroviária), sem agenda permanente publicada."
+  ]
+}
