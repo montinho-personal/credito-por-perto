@@ -42,7 +42,7 @@ export const STATIC_PAGE_DATES: Record<string, string> = {
 
   /* Institucionais e políticas. */
   "/sobre/": "2026-08-06",
-  "/quem-somos/": "2026-08-06",
+  "/quem-somos/": "2026-09-01",
   "/politica-editorial/": "2026-08-06",
   "/metodologia/": "2026-08-06",
   "/como-ganhamos-dinheiro/": "2026-08-06",

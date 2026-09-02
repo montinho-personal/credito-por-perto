@@ -60,6 +60,14 @@ export default function QuemSomosPage() {
         factuais, e a responsabilidade editorial é sempre nossa, nunca da
         ferramenta.
       </p>
+      <p>
+        <strong>As ilustrações também.</strong> As capas e os infográficos dos
+        artigos são gerados com apoio de IA a partir da nossa identidade visual.
+        Eles ilustram o assunto — não são fotografias, não retratam pessoas
+        reais e não representam telas, documentos ou instituições existentes.
+        Quando um número aparece numa imagem, ele é exemplo, e a fonte do dado
+        está sempre no texto.
+      </p>
       <h2>Responsabilidade editorial</h2>
       <p>
         O conteúdo do portal é educativo e não substitui orientação financeira
