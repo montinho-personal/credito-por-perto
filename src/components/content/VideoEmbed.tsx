@@ -1,6 +1,8 @@
 "use client";
 
 import { useState } from "react";
+import { track } from "@/lib/analytics/track";
+import { pageTypeFor } from "@/lib/analytics/click-model";
 
 /**
  * Vídeo do YouTube com clique-para-carregar. Antes do clique, nenhuma
@@ -34,7 +36,15 @@ export function VideoEmbed({
         ) : (
           <button
             type="button"
-            onClick={() => setLoaded(true)}
+            onClick={() => {
+              setLoaded(true);
+              track("media_interact", {
+                action: "play_video",
+                component: "video-embed",
+                label: title,
+                page_type: pageTypeFor(window.location.pathname),
+              });
+            }}
             aria-label={`Assistir vídeo: ${title}`}
             className="group absolute inset-0 flex h-full w-full flex-col items-center justify-center gap-4 px-6 text-center"
           >

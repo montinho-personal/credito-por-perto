@@ -30,6 +30,8 @@ export function JourneyCallout({ id, note }: { id: string; note?: string }) {
 
   return (
     <aside
+      data-track-area="chamada-jornada"
+      data-track={journey.id}
       className="not-prose my-6 rounded-xl border border-brand-navy/20 bg-brand-navy/5 p-4"
       aria-label={`Caminho: ${journey.title}`}
       data-no-ads="journey-callout"

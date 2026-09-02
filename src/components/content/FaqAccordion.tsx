@@ -42,6 +42,11 @@ export function FaqItem({
   return (
     <details
       id={id}
+      /* Lido pelo ouvinte de `toggle` em ClickTracking: só `<details>` com
+         esta marca vira `faq_open`. Sem ela, qualquer bloco recolhível do
+         site (explicação de fórmula, opções avançadas) entraria no mesmo
+         relatório e o número deixaria de significar "dúvida aberta". */
+      data-track-kind="faq"
       className="group border-b border-brand-border last:border-b-0 [&[open]]:bg-brand-surface-soft/40"
     >
       <summary

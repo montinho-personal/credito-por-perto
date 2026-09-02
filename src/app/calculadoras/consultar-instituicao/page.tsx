@@ -16,7 +16,10 @@ export const metadata: Metadata = buildMetadata({
 
 export default function ConsultarInstituicaoPage() {
   return (
-    <div className="mx-auto max-w-4xl px-4 py-8">
+    <div
+      data-track-area="ferramenta"
+      data-track="consultar-instituicao"
+      className="mx-auto max-w-4xl px-4 py-8">
       <JsonLd
         data={webPageJsonLd(
           "Essa instituição aparece no Banco Central?",

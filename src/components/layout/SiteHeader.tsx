@@ -6,7 +6,10 @@ import { SearchTrigger } from "@/components/search/SearchTrigger";
 
 export function SiteHeader() {
   return (
-    <header className="relative sticky top-0 z-40 border-b border-brand-border bg-brand-surface/95 backdrop-blur">
+    <header
+      data-track-area="cabecalho"
+      className="relative sticky top-0 z-40 border-b border-brand-border bg-brand-surface/95 backdrop-blur"
+    >
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between gap-4 px-4">
         <Logo />
         <nav aria-label="Menu principal" className="hidden md:block">

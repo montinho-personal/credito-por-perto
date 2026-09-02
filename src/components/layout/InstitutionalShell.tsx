@@ -30,7 +30,7 @@ export function InstitutionalShell({
       {intro ? (
         <p className="mt-3 text-lg leading-relaxed text-brand-muted">{intro}</p>
       ) : null}
-      <div className="article-body mt-8">{children}</div>
+      <div data-track-area="conteudo" className="article-body mt-8">{children}</div>
     </div>
   );
 }

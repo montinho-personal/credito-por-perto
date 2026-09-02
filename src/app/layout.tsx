@@ -6,6 +6,7 @@ import { SiteFooter } from "@/components/layout/SiteFooter";
 import { Analytics } from "@vercel/analytics/next";
 import { AdsenseScript } from "@/components/ads/AdsenseScript";
 import { AnalyticsGate } from "@/components/analytics/AnalyticsGate";
+import { ClickTracking } from "@/components/analytics/ClickTracking";
 import { SearchProvider } from "@/components/search/SearchProvider";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { organizationJsonLd, webSiteJsonLd } from "@/lib/schema/jsonld";
@@ -76,6 +77,7 @@ export default function RootLayout({
         </SearchProvider>
         <AdsenseScript />
         <AnalyticsGate />
+        <ClickTracking />
         <Analytics />
       </body>
     </html>

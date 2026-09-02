@@ -5,6 +5,7 @@ import { useMemo, useRef, useState } from "react";
 import type { BcbRatesResult, SeriesData } from "@/lib/bcb/rates-service";
 import { formatRefMonth } from "@/lib/bcb/rates-service";
 import { useRevealResult } from "./use-reveal-result";
+import { track } from "@/lib/analytics/track";
 import {
   compareRate,
   formatRateBR,
@@ -14,13 +15,6 @@ import {
 } from "@/lib/calculators/rate-comparison";
 
 /* Eventos de uso — nunca a taxa digitada, nunca modalidade+taxa combinadas. */
-interface GtagWindow extends Window {
-  gtag?: (...args: unknown[]) => void;
-}
-function gtag(...args: unknown[]) {
-  const w = window as GtagWindow;
-  if (typeof w.gtag === "function") w.gtag(...args);
-}
 
 /** Agrupamento amigável: primeiro a família, depois o subtipo. */
 const FAMILIES: Array<{ id: string; label: string; members: string[] }> = [
@@ -154,7 +148,7 @@ export function RateChecker({ rates }: { rates: BcbRatesResult }) {
   function start() {
     if (!startedRef.current) {
       startedRef.current = true;
-      gtag("event", "rate_compare_start");
+      track("rate_compare_start");
     }
   }
 
@@ -201,7 +195,7 @@ export function RateChecker({ rates }: { rates: BcbRatesResult }) {
       setResult(null);
       setError(null);
       // A UI mostra o bloco explicativo de CET; nada a calcular.
-      gtag("event", "rate_compare_cet_informed");
+      track("rate_compare_cet_informed");
       reveal();
       return;
     }
@@ -226,7 +220,7 @@ export function RateChecker({ rates }: { rates: BcbRatesResult }) {
         return;
       }
       setResult(comparison);
-      gtag("event", "rate_compare_complete", {
+      track("rate_compare_complete", {
         family: familyId,
         unit,
         outcome: comparison.classification,
@@ -538,7 +532,7 @@ export function RateChecker({ rates }: { rates: BcbRatesResult }) {
                 href={series.sourceUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                onClick={() => gtag("event", "rate_compare_bcb_source_click")}
+                onClick={() => track("rate_compare_bcb_source_click")}
                 className="mt-2 inline-block font-semibold text-brand-teal-dark underline"
               >
                 Ver no Banco Central →

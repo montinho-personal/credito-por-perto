@@ -23,6 +23,8 @@ export default function MapaDoSitePage() {
       description="Todas as páginas publicadas do portal."
       path="/mapa-do-site/"
     >
+      {/* A trilha inteira do mapa é navegação estrutural, não oferta. */}
+      <div data-track-area="mapa-do-site">
       <h2>Seções principais</h2>
       <ul>
         <li><Link href="/">Página inicial</Link></li>
@@ -85,6 +87,7 @@ export default function MapaDoSitePage() {
           </li>
         ))}
       </ul>
+      </div>
     </InstitutionalShell>
   );
 }

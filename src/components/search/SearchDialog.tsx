@@ -146,6 +146,8 @@ export function SearchDialog({
         role="dialog"
         aria-modal="true"
         aria-label="Busca no site"
+        data-track-area="busca"
+        data-track="modal-de-busca"
         className="w-full max-w-xl overflow-hidden rounded-2xl border border-brand-border bg-white shadow-2xl"
         onKeyDown={onKeyDown}
       >

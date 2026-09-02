@@ -9,11 +9,17 @@ export function MobileNavigation() {
   const menuId = useId();
 
   return (
-    <div className="md:hidden">
+    <div data-track-area="menu-celular" className="md:hidden">
       <button
         type="button"
         aria-expanded={open}
         aria-controls={menuId}
+        /* Botão sem href não vira clique por padrão — a regra existe para não
+           encher o relatório com "abrir acordeão" e "limpar campo". Este é a
+           exceção que vale: sem ele o funil do menu no celular começa no
+           meio, medindo o item escolhido sem saber quantas pessoas chegaram a
+           abrir o menu. O rótulo já alterna entre abrir e fechar. */
+        data-track-event="nav_click"
         onClick={() => setOpen((v) => !v)}
         className="flex h-11 w-11 items-center justify-center rounded-lg border border-brand-border text-brand-navy"
       >

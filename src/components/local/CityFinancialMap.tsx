@@ -121,7 +121,12 @@ export function CityFinancialMapSection({ map }: { map: CityMap }) {
   const localCount = map.resources.filter((r) => isLocalCoverage(r.coverage)).length;
 
   return (
-    <section aria-labelledby="mapa-financeiro" className="mt-12 scroll-mt-24">
+    <section
+      data-track-area="mapa-cidade"
+      data-track="mapa-financeiro"
+      aria-labelledby="mapa-financeiro"
+      className="mt-12 scroll-mt-24"
+    >
       <h2 id="mapa-financeiro" className="font-serif text-2xl font-bold text-brand-navy">
         Onde pedir ajuda em {map.city.localityName}
       </h2>

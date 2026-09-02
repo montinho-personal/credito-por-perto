@@ -16,7 +16,10 @@ export const metadata: Metadata = buildMetadata({
 
 export default function SinaisDeGolpePage() {
   return (
-    <div className="mx-auto max-w-4xl px-4 py-8">
+    <div
+      data-track-area="ferramenta"
+      data-track="sinais-de-golpe"
+      className="mx-auto max-w-4xl px-4 py-8">
       <JsonLd
         data={webPageJsonLd(
           "Essa proposta tem sinais de golpe?",

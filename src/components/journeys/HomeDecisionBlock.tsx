@@ -17,6 +17,8 @@ export function HomeDecisionBlock() {
 
   return (
     <section
+      data-track-area="home-blocos"
+      data-track="comece-pela-situacao"
       aria-labelledby="comece-pela-situacao"
       className="mt-14 rounded-2xl border border-brand-border bg-brand-surface-soft p-6 md:p-8"
       data-no-ads="decision-hub"

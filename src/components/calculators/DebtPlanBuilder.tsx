@@ -17,15 +17,9 @@ import {
 } from "@/lib/calculators/debt-plan";
 import { formatCentsBRL, parseBRLToCents, parsePercentBR } from "@/lib/calculators/proposal-comparison";
 import { useRevealResult } from "./use-reveal-result";
+import { track } from "@/lib/analytics/track";
 
 /* Eventos de uso — NUNCA saldo, taxa, atraso, pagamento ou apelido. */
-interface GtagWindow extends Window {
-  gtag?: (...args: unknown[]) => void;
-}
-function gtag(...args: unknown[]) {
-  const w = window as GtagWindow;
-  if (typeof w.gtag === "function") w.gtag(...args);
-}
 
 const MAX_DEBTS = 15;
 
@@ -194,7 +188,7 @@ export function DebtPlanBuilder() {
   function touch() {
     if (!started) {
       setStarted(true);
-      gtag("event", "debt_plan_start");
+      track("debt_plan_start");
     }
   }
 
@@ -283,7 +277,7 @@ export function DebtPlanBuilder() {
     setResult(r);
     setCopied(false);
     reveal();
-    gtag("event", "debt_plan_complete");
+    track("debt_plan_complete");
   }
 
   function clearAll() {
@@ -524,7 +518,7 @@ export function DebtPlanBuilder() {
       <p className="mt-2 text-sm">
         <Link
           href="/calculadoras/parcela-no-orcamento/"
-          onClick={() => gtag("event", "debt_plan_budget_tool_click")}
+          onClick={() => track("debt_plan_budget_tool_click")}
           className="font-medium text-brand-teal-dark underline"
         >
           Não sabe quanto consegue destinar? Calcule no seu orçamento →
@@ -653,7 +647,7 @@ export function DebtPlanBuilder() {
                       href="https://www.consumidor.gov.br"
                       rel="noopener noreferrer"
                       target="_blank"
-                      onClick={() => gtag("event", "debt_plan_official_help_click")}
+                      onClick={() => track("debt_plan_official_help_click")}
                       className="font-semibold underline"
                     >
                       Consumidor.gov.br
@@ -712,7 +706,7 @@ export function DebtPlanBuilder() {
                     onClick={() => {
                       setMethod(value);
                       setCopied(false);
-                      gtag("event", "debt_plan_method_view");
+                      track("debt_plan_method_view");
                     }}
                     className={`rounded-lg border px-4 py-2 text-sm ${
                       method === value
@@ -922,14 +916,14 @@ export function DebtPlanBuilder() {
                 </button>
                 <Link
                   href="/calculadoras/quitacao-antecipada/"
-                  onClick={() => gtag("event", "debt_plan_early_payoff_click")}
+                  onClick={() => track("debt_plan_early_payoff_click")}
                   className="font-semibold text-brand-teal-dark underline"
                 >
                   Tem dinheiro extra para a dívida priorizada? Simule a quitação →
                 </Link>
                 <Link
                   href="/calculadoras/trocar-divida/"
-                  onClick={() => gtag("event", "debt_plan_debt_switch_click")}
+                  onClick={() => track("debt_plan_debt_switch_click")}
                   className="font-semibold text-brand-teal-dark underline"
                 >
                   Recebeu uma renegociação para substituir uma dessas dívidas? Compare a troca →

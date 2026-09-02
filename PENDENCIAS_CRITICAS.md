@@ -58,6 +58,17 @@ Tudo o mais já está implementado ou automatizado.
 - [x] ID do Google Analytics 4 — propriedade criada pelo proprietário
       (16/08/2026), ID configurado no código com banner de consentimento;
       ver `docs/analytics.md`
+- [ ] **Dimensões personalizadas no GA4** (Administrador → Definições
+      personalizadas → Criar, escopo de *evento*): `area`, `component`,
+      `label`, `to_path`, `page_type`, `destination`, `domain`, `channel`,
+      `position`, `journey`, `target`, `question`, `source`. Os parâmetros já
+      chegam — **sem esse passo eles não aparecem em relatório nenhum**, que
+      é a pegadinha clássica do GA4. Lista completa e passo a passo em
+      `docs/analytics-eventos.md`
+- [ ] **Eventos principais** (Administrador → Eventos → marcar): 
+      `outbound_click`, `cta_click`, `contact_click`, `decision_tool_open`,
+      `decision_next_step_click`, `search_result_click` e os `*_complete` das
+      ferramentas
 - [ ] Ativar Vercel Web Analytics no painel (projeto → Analytics → Enable)
 - [ ] ID do Google Tag Manager (`NEXT_PUBLIC_GTM_ID`) — opcional
 - [ ] Código de verificação do Search Console (`NEXT_PUBLIC_GSC_VERIFICATION`)

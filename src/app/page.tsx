@@ -62,7 +62,7 @@ export default function HomePage() {
   return (
     <>
       {/* Hero */}
-      <section className="border-b border-brand-border bg-brand-navy">
+      <section data-track-area="home-blocos" className="border-b border-brand-border bg-brand-navy">
         <div className="mx-auto max-w-6xl px-4 py-16 md:py-20">
           <p className="text-sm font-semibold uppercase tracking-widest text-brand-gold">
             Portal editorial independente
@@ -94,7 +94,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <div className="mx-auto max-w-6xl px-4">
+      <div data-track-area="home-blocos" className="mx-auto max-w-6xl px-4">
         {/* Central de decisões: a porta pela situação vem antes das listas */}
         <HomeDecisionBlock />
 

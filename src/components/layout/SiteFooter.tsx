@@ -54,7 +54,7 @@ export function SiteFooter() {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="mt-16 bg-brand-navy text-brand-surface">
+    <footer data-track-area="rodape" className="mt-16 bg-brand-navy text-brand-surface">
       <div className="mx-auto max-w-6xl px-4 py-12 md:py-14">
         {/*
           No celular as quatro listas ficam em duas colunas, não empilhadas:

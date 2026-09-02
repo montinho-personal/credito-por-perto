@@ -142,7 +142,7 @@ export function LocalGuideView({ urlPath }: { urlPath: string }) {
         }
       />
 
-      <div className="article-body">
+      <div data-track-area="conteudo" className="article-body">
         <MDXRemote
           source={guide.content}
           components={mdxComponents}

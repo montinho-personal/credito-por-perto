@@ -20,7 +20,10 @@ const PAGE_DESCRIPTION =
 
 export default function ComparadorDePropostasPage() {
   return (
-    <div className="mx-auto max-w-4xl px-4 py-8">
+    <div
+      data-track-area="ferramenta"
+      data-track="comparador-de-propostas"
+      className="mx-auto max-w-4xl px-4 py-8">
       <JsonLd
         data={webPageJsonLd(
           PAGE_TITLE,

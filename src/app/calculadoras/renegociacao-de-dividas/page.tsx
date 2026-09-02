@@ -15,7 +15,10 @@ export const metadata: Metadata = buildMetadata({
 
 export default function RenegociacaoPage() {
   return (
-    <div className="mx-auto max-w-5xl px-4 py-8">
+    <div
+      data-track-area="ferramenta"
+      data-track="renegociacao-de-dividas"
+      className="mx-auto max-w-5xl px-4 py-8">
       <JsonLd
         data={webPageJsonLd(
           "Calculadora de Renegociação de Dívidas",

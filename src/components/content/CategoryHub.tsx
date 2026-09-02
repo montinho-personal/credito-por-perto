@@ -17,7 +17,7 @@ export function CategoryHub({
   const def = CATEGORIES[category];
   const articles = getPublishedByCategory(category);
   return (
-    <div className="mx-auto max-w-6xl px-4 py-8">
+    <div data-track-area="hub-categoria" className="mx-auto max-w-6xl px-4 py-8">
       <JsonLd data={webPageJsonLd(def.label, def.description, def.basePath)} />
       <Breadcrumbs
         items={[

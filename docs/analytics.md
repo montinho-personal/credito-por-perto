@@ -1,6 +1,6 @@
 # Analytics
 
-Três camadas, independentes entre si:
+Quatro camadas, independentes entre si:
 
 ## 1. Vercel Web Analytics (ativo primeiro)
 
@@ -34,7 +34,19 @@ Três camadas, independentes entre si:
 - Após verificar, enviar `https://www.creditoporperto.com/sitemap.xml`.
 - Métricas: consultas, impressões, cliques, posição média por página.
 
-## 4. Eventos da Central de Decisões
+## 4. Eventos de clique (rastreamento do site inteiro)
+
+Desde 02/09/2026 todo clique do site é medido por um ouvinte único, com
+dicionário declarado, redação de valores e auditoria. A explicação completa —
+o que marcar num componente novo, como conferir com `?cpp_debug=1`, e o que
+configurar no painel do GA4 — está em **`docs/analytics-eventos.md`**.
+
+Regra curta para quem for mexer no código: **nunca chame `gtag` direto**. Todo
+evento passa por `track()` de `src/lib/analytics/track.ts`, e todo nome de
+evento existe em `src/lib/analytics/event-registry.ts`. `pnpm audit:analytics`
+quebra o build se qualquer uma das duas coisas for desrespeitada.
+
+## 5. Eventos da Central de Decisões
 
 Definidos em `src/lib/journeys/analytics.ts`. Medem **navegação**, nunca
 situação financeira — a distinção está escrita no topo daquele arquivo e é

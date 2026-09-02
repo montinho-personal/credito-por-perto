@@ -73,6 +73,7 @@ export function NextStepPanel({
 
   return (
     <aside
+      data-track-area="proximos-passos"
       aria-labelledby="proximo-passo-titulo"
       /* data-no-ads: área protegida. Um anúncio aqui seria lido como o próximo
          passo recomendado pelo site — ver docs/adsense-protected-areas.md. */

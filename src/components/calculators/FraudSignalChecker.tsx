@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useRef, useState } from "react";
 import { useRevealResult } from "./use-reveal-result";
+import { track } from "@/lib/analytics/track";
 import {
   EMERGENCY_FLOW,
   FRAUD_QUESTIONS,
@@ -16,13 +17,6 @@ import {
 } from "@/lib/fraud/evaluate";
 
 /* Eventos de uso — nunca respostas, nunca a situação da pessoa. */
-interface GtagWindow extends Window {
-  gtag?: (...args: unknown[]) => void;
-}
-function gtag(...args: unknown[]) {
-  const w = window as GtagWindow;
-  if (typeof w.gtag === "function") w.gtag(...args);
-}
 
 const ANSWER_LABEL: Record<AnswerValue, string> = {
   yes: "Sim",
@@ -67,7 +61,7 @@ export function FraudSignalChecker() {
   function start() {
     if (!startedRef.current) {
       startedRef.current = true;
-      gtag("event", "fraud_check_start");
+      track("fraud_check_start");
     }
   }
 
@@ -77,7 +71,7 @@ export function FraudSignalChecker() {
       setStage({ kind: "quiz", index: index + 1 });
     } else {
       setStage({ kind: "result" });
-      gtag("event", "fraud_check_complete");
+      track("fraud_check_complete");
       reveal();
     }
   }
@@ -288,7 +282,7 @@ export function FraudSignalChecker() {
                           href={link.href}
                           target="_blank"
                           rel="noopener noreferrer"
-                          onClick={() => gtag("event", "fraud_check_bcb_click")}
+                          onClick={() => track("fraud_check_bcb_click")}
                           className="mr-4 font-semibold text-brand-teal-dark underline"
                         >
                           {link.label} →
@@ -329,7 +323,7 @@ export function FraudSignalChecker() {
                     href="https://www.bcb.gov.br/meubc/encontreinstituicao"
                     target="_blank"
                     rel="noopener noreferrer"
-                    onClick={() => gtag("event", "fraud_check_bcb_click")}
+                    onClick={() => track("fraud_check_bcb_click")}
                     className="font-semibold underline"
                   >
                     Encontre uma instituição

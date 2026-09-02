@@ -19,7 +19,7 @@ export function MomentGrid({ headingId }: { headingId: string }) {
   const families = getJourneyFamilies();
 
   return (
-    <div aria-labelledby={headingId}>
+    <div data-track-area="central-decisoes" aria-labelledby={headingId}>
       {families.map((family) => {
         const inFamily = journeys.filter((j) => j.family === family.id);
         if (inFamily.length === 0) return null;

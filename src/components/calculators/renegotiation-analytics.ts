@@ -12,17 +12,10 @@
  * abertas. Faixas em vez de valores, sempre.
  */
 
-interface GtagWindow extends Window {
-  gtag?: (...args: unknown[]) => void;
-}
-
-function gtag(...args: unknown[]) {
-  const w = window as GtagWindow;
-  if (typeof w.gtag === "function") w.gtag(...args);
-}
+import { track } from "@/lib/analytics/track";
 
 export function trackRenegotiationStart() {
-  gtag("event", "renegotiation_tool_start");
+  track("renegotiation_tool_start");
 }
 
 export function trackRenegotiationComplete(meta: {
@@ -32,7 +25,7 @@ export function trackRenegotiationComplete(meta: {
   hasReferenceBalance: boolean;
   usedVariableInstallments: boolean;
 }) {
-  gtag("event", "renegotiation_tool_complete", {
+  track("renegotiation_tool_complete", {
     offers: meta.offers,
     has_cash_offer: meta.hasCashOffer,
     has_entry: meta.hasEntry,
@@ -42,24 +35,29 @@ export function trackRenegotiationComplete(meta: {
 }
 
 export function trackRenegotiationAddOffer(total: 2 | 3) {
-  gtag("event", "renegotiation_offer_add", { offers: total });
+  track("renegotiation_offer_add", { offers: total });
 }
 
 export function trackRenegotiationDiscountCheck(matches: boolean) {
   /* Só o veredito booleano — nunca os percentuais envolvidos. */
-  gtag("event", "renegotiation_discount_check", { matches });
+  track("renegotiation_discount_check", { matches });
 }
 
 export function trackRenegotiationCopySummary() {
-  gtag("event", "renegotiation_copy_summary");
+  track("renegotiation_copy_summary");
 }
 
 export function trackRenegotiationClear() {
-  gtag("event", "renegotiation_clear");
+  track("renegotiation_clear");
 }
 
 type ToolTarget = "budget" | "debt_plan" | "debt_switch" | "fraud" | "early_payoff";
 
 export function trackRenegotiationToolClick(target: ToolTarget) {
-  gtag("event", `renegotiation_${target}_click`);
+  /* Era `renegotiation_${target}_click`: cinco nomes montados em tempo de
+     execução para medir uma ação só. O nome montado não aparecia em busca
+     nenhuma no código, e cada um gastava uma das 500 vagas de nome de evento
+     da propriedade. Um nome, o alvo como parâmetro — e o relatório passa a
+     somar e comparar as cinco saídas na mesma linha. */
+  track("renegotiation_tool_click", { target });
 }

@@ -166,7 +166,12 @@ export function AuthorBox({ author }: { author: Author }) {
 export function RelatedArticles({ articles }: { articles: Article[] }) {
   if (articles.length === 0) return null;
   return (
-    <section aria-labelledby="relacionados" className="mt-12">
+    <section
+      data-track-area="relacionados"
+      data-track="leia-tambem"
+      aria-labelledby="relacionados"
+      className="mt-12"
+    >
       <h2 id="relacionados" className="font-serif text-xl font-bold text-brand-navy">
         Leia também
       </h2>

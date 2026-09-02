@@ -83,7 +83,7 @@ export function SearchClient() {
   );
 
   return (
-    <div>
+    <div data-track-area="busca" data-track="pagina-de-busca">
       <label
         htmlFor="site-search"
         className="block text-sm font-semibold text-brand-navy"

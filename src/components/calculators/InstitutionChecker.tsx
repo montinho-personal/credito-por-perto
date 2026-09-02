@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useCallback, useEffect, useRef, useState } from "react";
 import { useRevealResult } from "./use-reveal-result";
+import { track } from "@/lib/analytics/track";
 import {
   isValidCnpj,
   looksLikeCnpj,
@@ -10,13 +11,6 @@ import {
 } from "@/lib/institutions/search";
 
 /* Eventos de uso — nunca o termo pesquisado, nunca a instituição escolhida. */
-interface GtagWindow extends Window {
-  gtag?: (...args: unknown[]) => void;
-}
-function gtag(...args: unknown[]) {
-  const w = window as GtagWindow;
-  if (typeof w.gtag === "function") w.gtag(...args);
-}
 
 const BCB_FIND_URL = "https://www.bcb.gov.br/meubc/encontreinstituicao";
 
@@ -91,7 +85,7 @@ function NextActions({ found }: { found: boolean }) {
             <p className="mt-1 text-brand-text">
               <Link
                 href="/calculadoras/sinais-de-golpe/"
-                onClick={() => gtag("event", "institution_check_fraud_click")}
+                onClick={() => track("institution_check_fraud_click")}
                 className="font-semibold text-brand-teal-dark underline"
               >
                 Verificar sinais de golpe
@@ -104,7 +98,7 @@ function NextActions({ found }: { found: boolean }) {
             <p className="mt-1 text-brand-text">
               <Link
                 href="/calculadoras/minha-taxa-esta-cara/"
-                onClick={() => gtag("event", "institution_check_rate_click")}
+                onClick={() => track("institution_check_rate_click")}
                 className="font-semibold text-brand-teal-dark underline"
               >
                 Compare a taxa com a média do BC
@@ -112,7 +106,7 @@ function NextActions({ found }: { found: boolean }) {
               ou{" "}
               <Link
                 href="/calculadoras/comparador-de-propostas/"
-                onClick={() => gtag("event", "institution_check_comparator_click")}
+                onClick={() => track("institution_check_comparator_click")}
                 className="font-semibold text-brand-teal-dark underline"
               >
                 compare propostas lado a lado
@@ -127,7 +121,7 @@ function NextActions({ found }: { found: boolean }) {
           <p className="mt-1 text-brand-text">
             <Link
               href="/calculadoras/sinais-de-golpe/"
-              onClick={() => gtag("event", "institution_check_fraud_click")}
+              onClick={() => track("institution_check_fraud_click")}
               className="font-semibold text-brand-teal-dark underline"
             >
               Verifique os sinais de golpe da proposta
@@ -190,7 +184,7 @@ function MatchCard({ match, fetchedAt }: { match: ApiMatch; fetchedAt: string })
           href={BCB_FIND_URL}
           target="_blank"
           rel="noopener noreferrer"
-          onClick={() => gtag("event", "institution_check_bcb_click")}
+          onClick={() => track("institution_check_bcb_click")}
           className="font-semibold text-brand-teal-dark underline"
         >
           Ver no Banco Central →
@@ -217,7 +211,7 @@ export function InstitutionChecker() {
     if (trimmed.length < 3) return;
     if (!startedRef.current) {
       startedRef.current = true;
-      gtag("event", "institution_check_start");
+      track("institution_check_start");
     }
     if (looksLikeCnpj(trimmed)) {
       const digits = normalizeCnpjInput(trimmed);
@@ -241,7 +235,7 @@ export function InstitutionChecker() {
       const response = await fetch(`/api/instituicoes?q=${encodeURIComponent(trimmed)}`);
       if (seq !== requestSeq.current) return;
       if (response.status === 503) {
-        gtag("event", "institution_check_unavailable");
+        track("institution_check_unavailable");
         setView({ kind: "unavailable" });
         reveal();
         return;
@@ -265,7 +259,7 @@ export function InstitutionChecker() {
       }
       const ok = data as ApiOk;
       if (ok.matches.length === 0) {
-        gtag("event", "institution_check_not_found");
+        track("institution_check_not_found");
         setView({
           kind: "not-found",
           partial: ok.partial,
@@ -274,8 +268,8 @@ export function InstitutionChecker() {
         });
         return;
       }
-      gtag("event", "institution_check_result");
-      if (ok.matches.length > 1) gtag("event", "institution_check_multiple_results");
+      track("institution_check_result");
+      if (ok.matches.length > 1) track("institution_check_multiple_results");
       setView({ kind: "results", data: ok });
       reveal();
       if (ok.matches.length === 1 && ok.matches[0] && ok.matches[0].quality === "exact") {
@@ -452,7 +446,7 @@ export function InstitutionChecker() {
                   href={BCB_FIND_URL}
                   target="_blank"
                   rel="noopener noreferrer"
-                  onClick={() => gtag("event", "institution_check_bcb_click")}
+                  onClick={() => track("institution_check_bcb_click")}
                   className="font-semibold underline"
                 >
                   Banco Central
@@ -484,7 +478,7 @@ export function InstitutionChecker() {
                 href={BCB_FIND_URL}
                 target="_blank"
                 rel="noopener noreferrer"
-                onClick={() => gtag("event", "institution_check_bcb_click")}
+                onClick={() => track("institution_check_bcb_click")}
                 className="font-semibold text-brand-teal-dark underline"
               >
                 Consultar no Banco Central →

@@ -24,7 +24,10 @@ export default function ConversorDeTaxasPage() {
   const annualTable = annualReferenceTable();
 
   return (
-    <div className="mx-auto max-w-4xl px-4 py-8">
+    <div
+      data-track-area="ferramenta"
+      data-track="conversor-de-taxas"
+      className="mx-auto max-w-4xl px-4 py-8">
       <JsonLd
         data={webPageJsonLd(
           "Conversor de taxa mensal para anual",

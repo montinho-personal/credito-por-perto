@@ -26,7 +26,10 @@ export default async function MinhaTaxaEstaCaraPage() {
   const sample = rates.series.find((s) => s.internalId === "pessoal-nao-consignado");
 
   return (
-    <div className="mx-auto max-w-4xl px-4 py-8">
+    <div
+      data-track-area="ferramenta"
+      data-track="minha-taxa-esta-cara"
+      className="mx-auto max-w-4xl px-4 py-8">
       <JsonLd
         data={webPageJsonLd(
           "Minha taxa está cara?",

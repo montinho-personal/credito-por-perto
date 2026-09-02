@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useRef, useState } from "react";
 import { useRevealResult } from "./use-reveal-result";
+import { track } from "@/lib/analytics/track";
 import {
   computeEarlyPayoff,
   type EarlyPayoffResult,
@@ -24,13 +25,6 @@ import {
 } from "@/lib/calculators/partial-amortization";
 
 /* Eventos de uso — NUNCA saldo, parcela, quantidade ou taxa. */
-interface GtagWindow extends Window {
-  gtag?: (...args: unknown[]) => void;
-}
-function gtag(...args: unknown[]) {
-  const w = window as GtagWindow;
-  if (typeof w.gtag === "function") w.gtag(...args);
-}
 
 type Modality =
   | ""
@@ -158,7 +152,7 @@ export function EarlyPayoffCalculator() {
   function started() {
     if (!startedRef.current) {
       startedRef.current = true;
-      gtag("event", "early_payoff_start");
+      track("early_payoff_start");
     }
   }
 
@@ -199,7 +193,7 @@ export function EarlyPayoffCalculator() {
     });
     setResult(r);
     reveal();
-    gtag("event", "early_payoff_complete");
+    track("early_payoff_complete");
   }
 
   function compareOfficial() {
@@ -210,7 +204,7 @@ export function EarlyPayoffCalculator() {
     );
     setComparison(c);
     reveal();
-    gtag("event", "early_payoff_scenario_compare");
+    track("early_payoff_scenario_compare");
   }
 
   function runPartial() {
@@ -224,7 +218,7 @@ export function EarlyPayoffCalculator() {
     });
     setPartial(r);
     reveal();
-    gtag("event", "early_payoff_partial_mode");
+    track("early_payoff_partial_mode");
   }
 
   function clearAll() {
@@ -515,7 +509,7 @@ export function EarlyPayoffCalculator() {
                           onChange={() => {
                             started();
                             setHasBalance(value);
-                            if (value === "no") gtag("event", "early_payoff_no_balance");
+                            if (value === "no") track("early_payoff_no_balance");
                           }}
                         />
                         {label}
@@ -879,14 +873,14 @@ export function EarlyPayoffCalculator() {
             <div className="mt-4 flex flex-wrap gap-4 text-sm">
               <Link
                 href="/calculadoras/plano-para-sair-das-dividas/"
-                onClick={() => gtag("event", "early_payoff_debt_plan_click")}
+                onClick={() => track("early_payoff_debt_plan_click")}
                 className="text-brand-teal-dark underline"
               >
                 Tem outras dívidas? Veja a ordem de ataque no seu plano
               </Link>
               <Link
                 href="/calculadoras/trocar-divida/"
-                onClick={() => gtag("event", "early_payoff_debt_switch_click")}
+                onClick={() => track("early_payoff_debt_switch_click")}
                 className="font-semibold text-brand-teal-dark underline"
               >
                 Vai pegar outro crédito para quitar esta dívida? Compare antes →
@@ -894,7 +888,7 @@ export function EarlyPayoffCalculator() {
               {rate.trim() !== "" ? (
                 <Link
                   href="/calculadoras/minha-taxa-esta-cara/"
-                  onClick={() => gtag("event", "early_payoff_rate_tool_click")}
+                  onClick={() => track("early_payoff_rate_tool_click")}
                   className="text-brand-teal-dark underline"
                 >
                   Sua taxa está cara? Compare com o BC

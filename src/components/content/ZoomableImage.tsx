@@ -2,6 +2,8 @@
 
 import { useEffect, useState } from "react";
 import Image from "next/image";
+import { track } from "@/lib/analytics/track";
+import { pageTypeFor } from "@/lib/analytics/click-model";
 
 /**
  * Imagem editorial ampliável: o clique abre a arte em tela cheia sobre um
@@ -46,7 +48,15 @@ export function ZoomableImage({
     <>
       <button
         type="button"
-        onClick={() => setOpen(true)}
+        onClick={() => {
+          setOpen(true);
+          track("media_interact", {
+            action: "ampliar_imagem",
+            component: "zoomable-image",
+            label: alt,
+            page_type: pageTypeFor(window.location.pathname),
+          });
+        }}
         aria-label={`Ampliar imagem: ${alt}`}
         className="block w-full cursor-zoom-in border-0 bg-transparent p-0"
       >

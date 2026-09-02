@@ -30,7 +30,7 @@ export default function ArtigosPage() {
   }));
 
   return (
-    <div className="mx-auto max-w-6xl px-4 py-8">
+    <div data-track-area="hub-categoria" className="mx-auto max-w-6xl px-4 py-8">
       <Breadcrumbs
         items={[
           { name: "Início", path: "/" },

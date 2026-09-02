@@ -63,7 +63,11 @@ export default function DecisoesFinanceirasPage() {
   }));
 
   return (
-    <div className="mx-auto max-w-5xl px-4 py-8" data-no-ads="decision-hub">
+    <div
+      className="mx-auto max-w-5xl px-4 py-8"
+      data-no-ads="decision-hub"
+      data-track-area="central-decisoes"
+    >
       <JsonLd
         data={webPageJsonLd(
           "Central de Decisões Financeiras",

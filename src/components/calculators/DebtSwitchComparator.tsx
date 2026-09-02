@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useRef, useState } from "react";
 import { useRevealResult } from "./use-reveal-result";
+import { track } from "@/lib/analytics/track";
 import {
   buildPlainSummary,
   compareDebtSwitch,
@@ -19,13 +20,6 @@ import {
 } from "@/lib/calculators/proposal-comparison";
 
 /* Eventos de uso — NUNCA valores, saldos, taxas ou instituições. */
-interface GtagWindow extends Window {
-  gtag?: (...args: unknown[]) => void;
-}
-function gtag(...args: unknown[]) {
-  const w = window as GtagWindow;
-  if (typeof w.gtag === "function") w.gtag(...args);
-}
 
 type TriState = "yes" | "no" | "unknown";
 
@@ -248,7 +242,7 @@ export function DebtSwitchComparator() {
   function set<K extends keyof FormState>(key: K, value: FormState[K]) {
     if (!startedRef.current) {
       startedRef.current = true;
-      gtag("event", "debt_switch_start");
+      track("debt_switch_start");
     }
     setForm((prev) => ({ ...prev, [key]: value }));
   }
@@ -310,9 +304,9 @@ export function DebtSwitchComparator() {
     const r = compareDebtSwitch(current, offer, SWITCH_TYPE_MAP[form.switchType] ?? "unknown");
     setResult(r);
     reveal();
-    gtag("event", "debt_switch_complete");
-    if (r.completeness === "partial") gtag("event", "debt_switch_partial_result");
-    if (r.warnings.includes("upfront-payment-alert")) gtag("event", "debt_switch_fraud_warning");
+    track("debt_switch_complete");
+    if (r.completeness === "partial") track("debt_switch_partial_result");
+    if (r.warnings.includes("upfront-payment-alert")) track("debt_switch_fraud_warning");
   }
 
   function clearAll() {
@@ -742,7 +736,7 @@ export function DebtSwitchComparator() {
                 <p className="mt-2 text-sm">
                   <Link
                     href="/calculadoras/sinais-de-golpe/"
-                    onClick={() => gtag("event", "debt_switch_fraud_click")}
+                    onClick={() => track("debt_switch_fraud_click")}
                     className="font-semibold text-brand-danger underline"
                   >
                     Verificar sinais da proposta →
@@ -801,7 +795,7 @@ export function DebtSwitchComparator() {
                 {newInstitution ? (
                   <Link
                     href="/calculadoras/consultar-instituicao/"
-                    onClick={() => gtag("event", "debt_switch_institution_click")}
+                    onClick={() => track("debt_switch_institution_click")}
                     className="font-semibold text-brand-teal-dark underline"
                   >
                     Verificar a nova instituição no Banco Central →
@@ -810,7 +804,7 @@ export function DebtSwitchComparator() {
                 {form.newRate.trim() !== "" ? (
                   <Link
                     href="/calculadoras/minha-taxa-esta-cara/"
-                    onClick={() => gtag("event", "debt_switch_rate_tool_click")}
+                    onClick={() => track("debt_switch_rate_tool_click")}
                     className="font-semibold text-brand-teal-dark underline"
                   >
                     Colocar a nova taxa em contexto (média do BC) →
@@ -818,7 +812,7 @@ export function DebtSwitchComparator() {
                 ) : !newInstitution ? (
                   <Link
                     href="/calculadoras/comparador-de-propostas/"
-                    onClick={() => gtag("event", "debt_switch_comparator_click")}
+                    onClick={() => track("debt_switch_comparator_click")}
                     className="font-semibold text-brand-teal-dark underline"
                   >
                     Tem mais de uma proposta nova? Compare lado a lado →

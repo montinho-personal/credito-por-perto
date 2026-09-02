@@ -23,34 +23,26 @@
  * As ferramentas mantêm os próprios eventos, com o mesmo contrato.
  */
 
-interface GtagWindow extends Window {
-  gtag?: (...args: unknown[]) => void;
-}
-
-function gtag(...args: unknown[]) {
-  if (typeof window === "undefined") return;
-  const w = window as GtagWindow;
-  if (typeof w.gtag === "function") w.gtag(...args);
-}
+import { track } from "@/lib/analytics/track";
 
 /** Alguém abriu a Central. */
 export function trackHubView() {
-  gtag("event", "decision_hub_view");
+  track("decision_hub_view");
 }
 
 /** Um momento foi escolhido — começo de caminho. */
 export function trackPathStart(journeyId: string) {
-  gtag("event", "decision_path_start", { journey: journeyId });
+  track("decision_path_start", { journey: journeyId });
 }
 
 /** Um passo entrou em tela dentro da Central. */
 export function trackStepView(journeyId: string, stepId: string) {
-  gtag("event", "decision_step_view", { journey: journeyId, step: stepId });
+  track("decision_step_view", { journey: journeyId, step: stepId });
 }
 
 /** A pessoa saiu da Central em direção a uma ferramenta ou conteúdo. */
 export function trackToolOpen(journeyId: string | null, targetId: string) {
-  gtag("event", "decision_tool_open", {
+  track("decision_tool_open", {
     journey: journeyId ?? "sem_jornada",
     target: targetId,
   });
@@ -58,22 +50,22 @@ export function trackToolOpen(journeyId: string | null, targetId: string) {
 
 /** Um passo foi explicitamente pulado. */
 export function trackStepSkip(journeyId: string, stepId: string) {
-  gtag("event", "decision_step_skip", { journey: journeyId, step: stepId });
+  track("decision_step_skip", { journey: journeyId, step: stepId });
 }
 
 /** A pessoa encerrou por conta própria — desfecho legítimo, não abandono. */
 export function trackPathComplete(journeyId: string, reason: "fim" | "encerrou") {
-  gtag("event", "decision_path_complete", { journey: journeyId, reason });
+  track("decision_path_complete", { journey: journeyId, reason });
 }
 
 /** Progresso apagado pela própria pessoa. */
 export function trackRestart(journeyId: string | null) {
-  gtag("event", "decision_restart", { journey: journeyId ?? "sem_jornada" });
+  track("decision_restart", { journey: journeyId ?? "sem_jornada" });
 }
 
 /** Porta 2: quem já sabe o que procura foi ao catálogo. */
 export function trackAllToolsOpen(source: "hub" | "home" | "menu") {
-  gtag("event", "all_tools_open", { source });
+  track("all_tools_open", { source });
 }
 
 /** Clique num próximo passo sugerido no fim de uma ferramenta. */
@@ -82,7 +74,7 @@ export function trackNextStepClick(
   targetId: string,
   rank: "primary" | "secondary",
 ) {
-  gtag("event", "decision_next_step_click", {
+  track("decision_next_step_click", {
     from_tool: fromToolId,
     target: targetId,
     rank,

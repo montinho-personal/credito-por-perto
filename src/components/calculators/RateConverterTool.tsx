@@ -13,15 +13,9 @@ import {
   type RateDirection,
 } from "@/lib/calculators/rate-converter";
 import { parsePercentBR } from "@/lib/calculators/proposal-comparison";
+import { track } from "@/lib/analytics/track";
 
 /* Eventos de uso — a taxa digitada NUNCA é enviada. */
-interface GtagWindow extends Window {
-  gtag?: (...args: unknown[]) => void;
-}
-function gtag(...args: unknown[]) {
-  const w = window as GtagWindow;
-  if (typeof w.gtag === "function") w.gtag(...args);
-}
 
 const ERROR_COPY: Record<string, string> = {
   empty: "Informe a taxa que você quer converter (ex.: 3 ou 2,5).",
@@ -57,7 +51,7 @@ export function RateConverterTool() {
     setResult(convertRate(value!, nextDirection));
     setCopied(false);
     if (!fromLive) {
-      gtag("event", "rate_converter_complete");
+      track("rate_converter_complete");
       liveRef.current = true;
     }
   }
@@ -65,7 +59,7 @@ export function RateConverterTool() {
   function onRawChange(next: string) {
     if (!startedRef.current) {
       startedRef.current = true;
-      gtag("event", "rate_converter_start");
+      track("rate_converter_start");
     }
     setRaw(next);
     // Depois da primeira conversão, recalcular instantaneamente.
@@ -74,7 +68,7 @@ export function RateConverterTool() {
 
   function onDirectionChange(next: RateDirection) {
     setDirection(next);
-    gtag("event", "rate_converter_direction_change");
+    track("rate_converter_direction_change");
     if (liveRef.current) compute(raw, next, true);
   }
 
@@ -90,7 +84,7 @@ export function RateConverterTool() {
         .replace(".", ",");
       setRaw(nextRaw);
       setDirection(next);
-      gtag("event", "rate_converter_direction_change");
+      track("rate_converter_direction_change");
       compute(nextRaw, next, true);
     } else {
       onDirectionChange(next);
@@ -229,7 +223,7 @@ export function RateConverterTool() {
               className="mt-4 rounded-xl border border-brand-border bg-white p-4"
               onToggle={(e) => {
                 if ((e.target as HTMLDetailsElement).open)
-                  gtag("event", "rate_converter_explanation_open");
+                  track("rate_converter_explanation_open");
               }}
             >
               <summary className="cursor-pointer text-sm font-semibold text-brand-teal-dark">
@@ -306,7 +300,7 @@ export function RateConverterTool() {
                 Quer saber como ela se compara ao mercado?{" "}
                 <Link
                   href="/calculadoras/minha-taxa-esta-cara/"
-                  onClick={() => gtag("event", "rate_converter_bcb_tool_click")}
+                  onClick={() => track("rate_converter_bcb_tool_click")}
                   className="font-semibold text-brand-teal-dark underline"
                 >
                   Comparar com a média do Banco Central →
@@ -316,7 +310,7 @@ export function RateConverterTool() {
                 Tem duas propostas? Taxa é só uma parte:{" "}
                 <Link
                   href="/calculadoras/comparador-de-propostas/"
-                  onClick={() => gtag("event", "rate_converter_comparator_click")}
+                  onClick={() => track("rate_converter_comparator_click")}
                   className="text-brand-teal-dark underline"
                 >
                   comparar propostas

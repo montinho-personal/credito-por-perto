@@ -16,7 +16,10 @@ export const metadata: Metadata = buildMetadata({
 
 export default function PlanoParaSairDasDividasPage() {
   return (
-    <div className="mx-auto max-w-5xl px-4 py-8">
+    <div
+      data-track-area="ferramenta"
+      data-track="plano-para-sair-das-dividas"
+      className="mx-auto max-w-5xl px-4 py-8">
       <JsonLd
         data={webPageJsonLd(
           "Plano para sair das dívidas",

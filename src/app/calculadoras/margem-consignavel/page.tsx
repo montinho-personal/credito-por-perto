@@ -14,7 +14,10 @@ export const metadata: Metadata = buildMetadata({
 
 export default function CalculadoraMargemPage() {
   return (
-    <div className="mx-auto max-w-3xl px-4 py-8">
+    <div
+      data-track-area="ferramenta"
+      data-track="margem-consignavel"
+      className="mx-auto max-w-3xl px-4 py-8">
       <Breadcrumbs
         items={[
           { name: "Início", path: "/" },

@@ -111,7 +111,7 @@ export function ArticleView({
       ) : null}
       <TableOfContents content={article.content} />
       <AdSlot placement="article-top" />
-      <div className="article-body">
+      <div data-track-area="conteudo" className="article-body">
         <MDXRemote
           source={article.content}
           components={mdxComponents}

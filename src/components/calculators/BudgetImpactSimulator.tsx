@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useRef, useState } from "react";
 import { useRevealResult } from "./use-reveal-result";
+import { track } from "@/lib/analytics/track";
 import {
   computeBudgetImpact,
   type BudgetImpactResult,
@@ -14,13 +15,6 @@ import {
 } from "@/lib/calculators/proposal-comparison";
 
 /* Eventos de uso — NUNCA renda, despesas, dívidas, reserva ou parcela. */
-interface GtagWindow extends Window {
-  gtag?: (...args: unknown[]) => void;
-}
-function gtag(...args: unknown[]) {
-  const w = window as GtagWindow;
-  if (typeof w.gtag === "function") w.gtag(...args);
-}
 
 interface FormState {
   scope: "individual" | "familiar";
@@ -133,7 +127,7 @@ export function BudgetImpactSimulator() {
   function set<K extends keyof FormState>(key: K, value: FormState[K]) {
     if (!startedRef.current) {
       startedRef.current = true;
-      gtag("event", "budget_tool_start");
+      track("budget_tool_start");
     }
     setForm((prev) => ({ ...prev, [key]: value }));
   }
@@ -188,7 +182,7 @@ export function BudgetImpactSimulator() {
     setComputed({ result, base, installmentLabel: formatCentsBRL(installment!) });
     setScenario("");
     reveal();
-    gtag("event", "budget_tool_complete");
+    track("budget_tool_complete");
   }
 
   function applyScenario(raw: string) {
@@ -201,7 +195,7 @@ export function BudgetImpactSimulator() {
       base,
       installmentLabel: formatCentsBRL(cents),
     });
-    gtag("event", "budget_tool_scenario_change");
+    track("budget_tool_scenario_change");
   }
 
   function clearAll() {
@@ -530,7 +524,7 @@ export function BudgetImpactSimulator() {
                 <>
                   <Link
                     href="/organizacao-financeira/renegociacao-ou-emprestimo/"
-                    onClick={() => gtag("event", "budget_tool_article_click")}
+                    onClick={() => track("budget_tool_article_click")}
                     className="font-semibold text-brand-teal-dark underline"
                   >
                     Veja o que fazer quando a conta não fecha →
@@ -538,7 +532,7 @@ export function BudgetImpactSimulator() {
                   {hasExistingDebts ? (
                     <Link
                       href="/calculadoras/trocar-divida/"
-                      onClick={() => gtag("event", "budget_tool_debt_switch_click")}
+                      onClick={() => track("budget_tool_debt_switch_click")}
                       className="font-semibold text-brand-teal-dark underline"
                     >
                       Vale trocar uma dívida atual? →
@@ -549,14 +543,14 @@ export function BudgetImpactSimulator() {
                 <>
                   <Link
                     href="/calculadoras/comparador-de-propostas/"
-                    onClick={() => gtag("event", "budget_tool_comparator_click")}
+                    onClick={() => track("budget_tool_comparator_click")}
                     className="font-semibold text-brand-teal-dark underline"
                   >
                     A parcela parece administrável? Ainda falta saber quanto o crédito custa →
                   </Link>
                   <Link
                     href="/calculadoras/minha-taxa-esta-cara/"
-                    onClick={() => gtag("event", "budget_tool_rate_tool_click")}
+                    onClick={() => track("budget_tool_rate_tool_click")}
                     className="font-semibold text-brand-teal-dark underline"
                   >
                     Colocar a taxa em contexto →

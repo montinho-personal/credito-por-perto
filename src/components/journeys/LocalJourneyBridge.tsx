@@ -38,6 +38,8 @@ export function LocalJourneyBridge({ localityName }: { localityName: string }) {
 
   return (
     <section
+      data-track-area="ponte-local"
+      data-track="ponte-decisoes"
       aria-labelledby="ponte-decisoes"
       className="mt-10 rounded-2xl border border-brand-border bg-brand-surface-soft p-5 md:p-6"
       data-no-ads="decision-hub"

@@ -25,6 +25,8 @@ export function ToolCallout({ id, note }: { id: string; note?: string }) {
 
   return (
     <aside
+      data-track-area="chamada-ferramenta"
+      data-track={tool.id}
       className="not-prose my-6 rounded-xl border border-brand-teal/30 bg-brand-teal-soft/40 p-4"
       aria-label={`Ferramenta: ${tool.name}`}
     >

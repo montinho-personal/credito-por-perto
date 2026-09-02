@@ -3,15 +3,9 @@
 import Link from "next/link";
 import { useState } from "react";
 import type { RatePoint } from "@/lib/bcb/rates-service";
+import { track } from "@/lib/analytics/track";
 
 /* Eventos de uso — navegação pública; nenhum dado pessoal. */
-interface GtagWindow extends Window {
-  gtag?: (...args: unknown[]) => void;
-}
-function gtag(...args: unknown[]) {
-  const w = window as GtagWindow;
-  if (typeof w.gtag === "function") w.gtag(...args);
-}
 
 const MONTH_SHORT = ["jan", "fev", "mar", "abr", "mai", "jun", "jul", "ago", "set", "out", "nov", "dez"];
 
@@ -66,7 +60,7 @@ export function RadarHistory({
             type="button"
             onClick={() => {
               setRange(r.months);
-              gtag("event", "rates_radar_period_change");
+              track("rates_radar_period_change");
             }}
             aria-pressed={range === r.months}
             className={`rounded-lg border px-3 py-1.5 text-sm ${
@@ -142,14 +136,14 @@ export function RadarHistory({
       <div className="mt-3 flex flex-wrap gap-4 text-sm">
         <Link
           href={`/calculadoras/minha-taxa-esta-cara/`}
-          onClick={() => gtag("event", "rates_radar_compare_rate_click")}
+          onClick={() => track("rates_radar_compare_rate_click")}
           className="font-semibold text-brand-teal-dark underline"
         >
           Comparar minha taxa com esta média →
         </Link>
         <Link
           href="/calculadoras/conversor-de-taxas/"
-          onClick={() => gtag("event", "rates_radar_converter_click")}
+          onClick={() => track("rates_radar_converter_click")}
           className="text-brand-teal-dark underline"
         >
           Quanto isso equivale ao ano?

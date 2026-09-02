@@ -6,17 +6,10 @@
  * depende do gate de consentimento existente).
  */
 
-interface GtagWindow extends Window {
-  gtag?: (...args: unknown[]) => void;
-}
-
-function gtag(...args: unknown[]) {
-  const w = window as GtagWindow;
-  if (typeof w.gtag === "function") w.gtag(...args);
-}
+import { track } from "@/lib/analytics/track";
 
 export function trackCompareStart() {
-  gtag("event", "credit_compare_start");
+  track("credit_compare_start");
 }
 
 export function trackCompareComplete(meta: {
@@ -25,7 +18,7 @@ export function trackCompareComplete(meta: {
   advancedUsed: boolean;
   exampleUsed: boolean;
 }) {
-  gtag("event", "credit_compare_complete", {
+  track("credit_compare_complete", {
     proposals: meta.proposals,
     cet_informed: meta.cetInformed,
     advanced_used: meta.advancedUsed,
@@ -34,13 +27,13 @@ export function trackCompareComplete(meta: {
 }
 
 export function trackCompareAddThird() {
-  gtag("event", "credit_compare_add_third");
+  track("credit_compare_add_third");
 }
 
 export function trackCompareCopySummary() {
-  gtag("event", "credit_compare_copy_summary");
+  track("credit_compare_copy_summary");
 }
 
 export function trackCompareScamWarningView() {
-  gtag("event", "credit_compare_scam_warning_view");
+  track("credit_compare_scam_warning_view");
 }

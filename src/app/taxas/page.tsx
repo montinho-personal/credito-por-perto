@@ -74,7 +74,7 @@ export default async function TaxasPage() {
   const sample = series[0];
 
   return (
-    <div className="mx-auto max-w-5xl px-4 py-8">
+    <div data-track-area="ferramenta" data-track="radar-de-taxas" className="mx-auto max-w-5xl px-4 py-8">
       <JsonLd
         data={webPageJsonLd(
           "Radar de taxas de crédito",

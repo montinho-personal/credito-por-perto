@@ -15,7 +15,10 @@ export const metadata: Metadata = buildMetadata({
 
 export default function AVistaOuParceladoPage() {
   return (
-    <div className="mx-auto max-w-5xl px-4 py-8">
+    <div
+      data-track-area="ferramenta"
+      data-track="a-vista-ou-parcelado"
+      className="mx-auto max-w-5xl px-4 py-8">
       <JsonLd
         data={webPageJsonLd(
           "À vista ou parcelado?",

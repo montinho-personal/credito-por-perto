@@ -3,6 +3,7 @@
 import { useSyncExternalStore } from "react";
 import Script from "next/script";
 import Link from "next/link";
+import { track } from "@/lib/analytics/track";
 
 /**
  * GA4 com consentimento explícito (LGPD): o script só é carregado depois que
@@ -46,6 +47,15 @@ export function GoogleAnalytics({ measurementId }: { measurementId: string }) {
       // Sem armazenamento disponível: trata como sessão sem consentimento.
     }
     window.dispatchEvent(new Event(CONSENT_EVENT));
+    /* O evento só chega ao GA4 quando a escolha foi "aceitar" — no "recusar"
+       o script nunca carrega e `track()` não encontra `window.gtag`, então
+       nada sai. É a ordem certa: quem recusou não é medido nem para dizer
+       que recusou. A taxa de aceite se calcula sobre sessões, não sobre
+       cliques no banner. O `setTimeout(0)` dá ao React a chance de montar o
+       script antes da chamada. */
+    if (choice === "granted") {
+      window.setTimeout(() => track("consent_choice", { choice }), 0);
+    }
   }
 
   if (consent === "granted") {
@@ -72,6 +82,10 @@ gtag('config', '${measurementId}', { anonymize_ip: true });`}
     <div
       role="dialog"
       aria-label="Preferências de cookies"
+      /* O banner tem evento próprio (`consent_choice`); sem esta marca os dois
+         botões também virariam clique genérico, e "Recusar" — cujo clique não
+         pode ser medido — apareceria no relatório pela porta dos fundos. */
+      data-track-ignore=""
       className="fixed inset-x-0 bottom-0 z-50 border-t border-neutral-200 bg-white p-4 shadow-lg"
     >
       <div className="mx-auto flex max-w-4xl flex-col gap-3 sm:flex-row sm:items-center">

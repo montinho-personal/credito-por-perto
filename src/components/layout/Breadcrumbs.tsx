@@ -4,7 +4,11 @@ import { JsonLd } from "@/components/seo/JsonLd";
 
 export function Breadcrumbs({ items }: { items: BreadcrumbItem[] }) {
   return (
-    <nav aria-label="Você está em" className="text-sm text-brand-muted">
+    <nav
+      data-track-area="migalhas"
+      aria-label="Você está em"
+      className="text-sm text-brand-muted"
+    >
       <JsonLd data={breadcrumbJsonLd(items)} />
       <ol className="flex flex-wrap items-center gap-1">
         {items.map((item, index) => {
