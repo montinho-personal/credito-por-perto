@@ -63,10 +63,12 @@ export default function QuemSomosPage() {
       <p>
         <strong>As ilustrações também.</strong> As capas e os infográficos dos
         artigos são gerados com apoio de IA a partir da nossa identidade visual.
-        Eles ilustram o assunto — não são fotografias, não retratam pessoas
-        reais e não representam telas, documentos ou instituições existentes.
-        Quando um número aparece numa imagem, ele é exemplo, e a fonte do dado
-        está sempre no texto.
+        A maioria é desenho e diagrama; algumas usam estilo fotográfico, e nos
+        guias locais isso inclui pontos conhecidos da cidade. Mesmo essas não
+        são fotografias: nenhuma foi tirada por alguém, ninguém que aparece
+        nelas é uma pessoa real, e nenhuma reproduz tela, documento ou
+        identidade visual de instituição existente. Quando um número aparece
+        numa imagem, ele é exemplo, e a fonte do dado está sempre no texto.
       </p>
       <h2>Responsabilidade editorial</h2>
       <p>
