@@ -84,5 +84,8 @@ Tudo o mais já está implementado ou automatizado.
 
 ## 6. Ativos e licenças
 
-- [ ] Se forem usadas fotos/ilustrações de terceiros no futuro, registrar
-      licenças conforme `docs/image-licensing-policy.md` (hoje só há SVGs próprios)
+- [x] Origem de todo ativo publicado declarada em `data/asset-origins.json` e
+      verificada por `pnpm audit:ativos` — 90 arquivos: 7 SVG de identidade em
+      vetor e 83 imagens geradas por IA sob direção do proprietário (02/09/2026)
+- [ ] Se forem usadas fotos ou ilustrações de terceiros no futuro, abrir lote
+      próprio com licença verificada, conforme `docs/image-licensing-policy.md`

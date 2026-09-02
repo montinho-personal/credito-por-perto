@@ -1,0 +1,38 @@
+{
+  "comment": "Origem declarada de todo ativo publicado em public/. A política de licenciamento afirmava que 'todo ativo tem linha na tabela', mas nada verificava isso — e 60 dos 83 arquivos estavam sem registro. Este arquivo declara a origem POR LOTE, e scripts/audit-assets.ts falha quando aparece arquivo fora de todos os lotes. Lista manual de 83 linhas envelheceria na primeira capa nova; regra + auditoria, não.",
+  "batches": [
+    {
+      "id": "marca",
+      "pattern": "public/brand/**/*.svg",
+      "origin": "Identidade visual oficial fornecida pelo proprietário, desenhada em vetor",
+      "rights": "© Crédito por Perto",
+      "evidence": "docs/brand/INSTRUCOES-PARA-O-CLAUDE.md",
+      "aiGenerated": false,
+      "declaredAt": "2026-08-06"
+    },
+    {
+      "id": "capas-e-infograficos-de-artigo",
+      "pattern": "public/images/articles/**/*.webp",
+      "origin": "Gerada por IA sob direção do proprietário, a partir da identidade visual do portal",
+      "rights": "© Crédito por Perto",
+      "evidence": "Confirmado pelo proprietário em 02/09/2026 para todo o diretório",
+      "aiGenerated": true,
+      "declaredAt": "2026-09-02"
+    },
+    {
+      "id": "imagens-de-guias-locais",
+      "pattern": "public/images/local/**/*.webp",
+      "origin": "Gerada por IA sob direção do proprietário, a partir da identidade visual do portal",
+      "rights": "© Crédito por Perto",
+      "evidence": "Confirmado pelo proprietário em 02/09/2026 para todo o diretório",
+      "aiGenerated": true,
+      "declaredAt": "2026-09-02"
+    }
+  ],
+  "ignored": [
+    {
+      "pattern": "public/search-index.json",
+      "reason": "Índice de busca gerado no build a partir do próprio conteúdo — dado, não ativo visual."
+    }
+  ]
+}
