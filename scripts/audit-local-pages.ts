@@ -124,6 +124,74 @@ for (const guide of getAllLocalGuides()) {
   }
 }
 
+/* ------------------------------------------------------------------ */
+/* Ponte regional: todo guia publicado aponta para os vizinhos         */
+/* ------------------------------------------------------------------ */
+
+/**
+ * A seção "Região: os guias vizinhos" nasceu no lote de Campinas, em 24/08, e
+ * nunca foi aplicada aos guias anteriores. Ninguém percebeu por dez dias
+ * porque nada olhava — e o efeito medido foi duro: 10 dos 24 guias não
+ * recebiam link editorial de lugar nenhum, contra ZERO artigos órfãos do lado
+ * nacional. A camada mais defensável do portal era a que recebia menos
+ * autoridade interna.
+ *
+ * O índice do estado lista todos os guias, então nenhum era invisível ao
+ * rastreamento. Mas listagem programática não é o mesmo que link editorial:
+ * é o segundo que diz ao buscador, e ao leitor, que aquela página vale a
+ * visita — e é o segundo que faltava.
+ *
+ * A regra é AVISO e não crítico porque existe um caso legítimo de guia sem
+ * vizinho: a primeira cidade de um estado novo. Por isso a checagem só fala
+ * quando há outro guia publicado no mesmo estado — aí a ausência é esquecimento,
+ * não geografia.
+ *
+ * POR QUE CONTAR LINK, E NÃO PROCURAR O TÍTULO DA SEÇÃO
+ *
+ * A primeira versão desta regra procurava o cabeçalho "Região: os guias
+ * vizinhos" e acusou Campinas e Valinhos, que TÊM a ponte — só que sob
+ * "Região metropolitana: os guias vizinhos" e "Vizinhos: Campinas e Vinhedo".
+ * Estava medindo a formatação em vez do efeito.
+ *
+ * O que importa é o link existir: é ele que leva o leitor à cidade vizinha e
+ * transfere autoridade. Contar links também fecha a brecha oposta — um
+ * cabeçalho certo com lista vazia passaria pela busca de texto e não passa
+ * por esta.
+ */
+const MIN_VIZINHOS = 2;
+
+const publicados = getAllLocalGuides().filter(
+  (g) => g.frontmatter.status === "published" && !g.frontmatter.noindex,
+);
+const porEstado = new Map<string, number>();
+for (const g of publicados) {
+  const uf = g.frontmatter.stateCode;
+  porEstado.set(uf, (porEstado.get(uf) ?? 0) + 1);
+}
+
+for (const guide of publicados) {
+  if ((porEstado.get(guide.frontmatter.stateCode) ?? 0) < 2) continue;
+
+  /* Casamento exato do link markdown: `/emprestimos/sp/barueri/` é prefixo de
+     `/emprestimos/sp/barueri/alphaville/`, e um `includes` solto contaria a
+     região como se fosse o município. */
+  const vizinhos = publicados.filter(
+    (outro) =>
+      outro.urlPath !== guide.urlPath &&
+      outro.frontmatter.stateCode === guide.frontmatter.stateCode &&
+      guide.content.includes(`](${outro.urlPath})`),
+  );
+
+  if (vizinhos.length >= MIN_VIZINHOS) continue;
+
+  findings.push({
+    severity: "warning",
+    rule: "guia-sem-ponte-regional",
+    pages: [guide.urlPath],
+    detail: `O guia aponta para ${vizinhos.length} guia(s) vizinho(s); o mínimo é ${MIN_VIZINHOS}. Sem essa ponte a cidade fica fora da malha de links do cluster local — o índice do estado ainda a lista, mas nenhum guia vizinho aponta para ela, e é o link editorial que transfere autoridade.`,
+  });
+}
+
 const report = buildReport("qualidade-local", findings);
 writeJsonReport("local-quality-report.json", report);
 finishAudit(report);
