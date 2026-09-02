@@ -1,0 +1,81 @@
+{
+  "localityId": "sp-jundiai",
+  "localityName": "Jundiaí",
+  "localityType": "municipality",
+  "stateCode": "sp",
+  "officialAdministrativeStatus": "Município do estado de São Paulo, sede da Aglomeração Urbana de Jundiaí",
+  "officialSources": [
+    {
+      "organization": "Prefeitura de Jundiaí — Procon municipal",
+      "documentTitle": "Formas de Atendimento — Procon Jundiaí",
+      "sourceLocation": "https://procon.jundiai.sp.gov.br/formas-de-atendimento/",
+      "checkedAt": "2026-09-02",
+      "extractedFact": "O Procon de Jundiaí oferece três formas de atendimento e as coloca em ordem: a plataforma consumidor.gov.br, um formulário on-line e, caso a empresa não esteja no consumidor.gov.br, o atendimento presencial com agendamento prévio.",
+      "relevanceToReader": "O próprio órgão indica o caminho digital como primeira via — quem segue essa ordem costuma resolver sem sair de casa, e chega ao presencial só quando ele é mesmo necessário."
+    },
+    {
+      "organization": "Prefeitura de Jundiaí",
+      "documentTitle": "Procon — Prefeitura de Jundiaí",
+      "sourceLocation": "https://jundiai.sp.gov.br/procon/",
+      "checkedAt": "2026-09-02",
+      "extractedFact": "O Procon municipal, vinculado à Unidade de Gestão de Negócios Jurídicos e Cidadania e conveniado à Fundação Procon-SP, atende na Rua Barão de Jundiaí, 153 — Centro (CEP 13201-010), de segunda a sexta das 8h às 16h, com horário agendado, pelos telefones (11) 4586-1320 e (11) 4586-0902.",
+      "relevanceToReader": "Endereço, horário e telefones do atendimento presencial, que só acontece com hora marcada."
+    },
+    {
+      "organization": "Prefeitura de Jundiaí — Jundiaí Empreendedora",
+      "documentTitle": "Banco do Povo Paulista — Jundiaí Empreendedora",
+      "sourceLocation": "https://negocios.jundiai.sp.gov.br/microempreendedor/quer-abrir-ou-ampliar-o-seu-negocio/",
+      "checkedAt": "2026-09-02",
+      "extractedFact": "O Banco do Povo Paulista é atendido no espaço Jundiaí Empreendedora, no Maxi Shopping, mediante agendamento pelo portal negocios.jundiai.sp.gov.br; no atendimento presencial o interessado recebe as orientações e a relação de documentos para solicitar o crédito.",
+      "relevanceToReader": "O microcrédito público da cidade fica num shopping e exige agendamento pelo portal — duas informações que evitam a ida errada."
+    },
+    {
+      "organization": "IBGE",
+      "documentTitle": "Cidades e Estados — Jundiaí (SP), Censo 2022",
+      "sourceLocation": "https://www.ibge.gov.br/cidades-e-estados/sp/jundiai.html",
+      "checkedAt": "2026-09-02",
+      "extractedFact": "Jundiaí registrou 443.221 habitantes no Censo 2022, com densidade demográfica de 1.027,87 hab/km².",
+      "relevanceToReader": "É a segunda maior cidade coberta pelo portal, atrás apenas de Campinas: há concorrência bancária real, o que só ajuda quem compara antes de assinar."
+    }
+  ],
+  "consumerProtectionResources": [
+    {
+      "organization": "Procon Jundiaí",
+      "service": "Três vias, nesta ordem: consumidor.gov.br, formulário on-line do órgão e atendimento presencial com agendamento prévio na Rua Barão de Jundiaí, 153 — Centro (CEP 13201-010), de segunda a sexta das 8h às 16h; telefones (11) 4586-1320 e (11) 4586-0902",
+      "officialSource": "https://procon.jundiai.sp.gov.br/formas-de-atendimento/",
+      "checkedAt": "2026-09-02"
+    },
+    {
+      "organization": "Consumidor.gov.br (plataforma federal)",
+      "service": "Reclamação on-line contra bancos e financeiras, com resposta monitorada — indicada pelo próprio Procon municipal como primeira via",
+      "officialSource": "https://www.consumidor.gov.br",
+      "checkedAt": "2026-09-02"
+    }
+  ],
+  "verifiedLocalPrograms": [
+    {
+      "program": "Banco do Povo Paulista — Espaço Jundiaí Empreendedora",
+      "detail": "Microcrédito produtivo orientado do programa estadual, atendido no espaço Jundiaí Empreendedora, no Maxi Shopping, com agendamento pelo portal negocios.jundiai.sp.gov.br. No atendimento presencial o empreendedor recebe as orientações e a relação de documentos.",
+      "officialSource": "https://negocios.jundiai.sp.gov.br/microempreendedor/quer-abrir-ou-ampliar-o-seu-negocio/",
+      "checkedAt": "2026-09-02"
+    }
+  ],
+  "verifiedServiceInformation": [],
+  "uniqueLocalQuestions": [
+    "O Procon de Jundiaí atende sem agendamento?",
+    "Por que o Procon manda tentar o consumidor.gov.br antes do presencial?",
+    "Onde fica o Banco do Povo em Jundiaí e como agendar?"
+  ],
+  "localRisksOrWarnings": [
+    "O atendimento presencial do Procon só acontece com hora marcada e é apresentado pelo próprio órgão como última via: quem aparece sem agendar e sem ter tentado o canal on-line costuma voltar para casa.",
+    "O microcrédito público funciona dentro de um shopping, o que confunde com oferta privada — o Banco do Povo Paulista é programa estadual, não cobra taxa para liberar e não trabalha com intermediário."
+  ],
+  "decisionImpact": [
+    "Seguir a ordem que o próprio Procon indica — on-line primeiro — costuma resolver sem deslocamento",
+    "O microcrédito público exige agendamento pelo portal: descobrir isso antes economiza uma ida ao shopping"
+  ],
+  "pendingVerification": [
+    "Horários vigentes do atendimento presencial do Banco do Povo no espaço Jundiaí Empreendedora — a página oficial descreve o agendamento sem publicar a grade.",
+    "Confirmação telefônica dos horários do Procon municipal, que a página informa como 8h às 16h com agendamento."
+  ]
+}

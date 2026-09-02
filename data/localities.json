@@ -235,6 +235,14 @@
       "stateCode": "sp",
       "citySlug": "nova-odessa",
       "ibgeCode": "3533403"
+    },
+    {
+      "id": "sp-jundiai",
+      "name": "Jundiaí",
+      "localityType": "municipality",
+      "stateCode": "sp",
+      "citySlug": "jundiai",
+      "ibgeCode": "3525904"
     }
   ]
 }
