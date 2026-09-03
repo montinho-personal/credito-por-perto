@@ -267,6 +267,30 @@
       "stateCode": "sp",
       "citySlug": "itupeva",
       "ibgeCode": "3524006"
+    },
+    {
+      "id": "sp-campo-limpo-paulista",
+      "name": "Campo Limpo Paulista",
+      "localityType": "municipality",
+      "stateCode": "sp",
+      "citySlug": "campo-limpo-paulista",
+      "ibgeCode": "3509601"
+    },
+    {
+      "id": "sp-varzea-paulista",
+      "name": "Várzea Paulista",
+      "localityType": "municipality",
+      "stateCode": "sp",
+      "citySlug": "varzea-paulista",
+      "ibgeCode": "3556503"
+    },
+    {
+      "id": "sp-francisco-morato",
+      "name": "Francisco Morato",
+      "localityType": "municipality",
+      "stateCode": "sp",
+      "citySlug": "francisco-morato",
+      "ibgeCode": "3516309"
     }
   ]
 }

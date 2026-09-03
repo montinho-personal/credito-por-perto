@@ -1,0 +1,92 @@
+{
+  "localityId": "sp-francisco-morato",
+  "localityName": "Francisco Morato",
+  "localityType": "municipality",
+  "stateCode": "sp",
+  "officialAdministrativeStatus": "Município do estado de São Paulo, integrante da Região Metropolitana de São Paulo (sub-região norte)",
+  "officialSources": [
+    {
+      "organization": "Fundação Procon-SP",
+      "documentTitle": "Francisco Morato — PROCON.SP (diretório de Procons municipais conveniados)",
+      "sourceLocation": "https://www.procon.sp.gov.br/francisco-morato/",
+      "checkedAt": "2026-09-03",
+      "extractedFact": "O Procon de Francisco Morato consta no diretório estadual na Rua Gerônimo Caetanos Garcia, s/n (ao lado do Poupatempo) — Centro, CEP 07901-000, telefone (11) 4488-2756, e-mail procon@franciscomorato.sp.gov.br, de segunda a sexta das 8h às 17h, com atendimento presencial das 8h15 às 15h30 — após esse horário, apenas orientações.",
+      "relevanceToReader": "Existem dois horários na mesma informação: o do órgão aberto (até 17h) e o do atendimento presencial (até 15h30). Quem chega às 16h recebe orientação, não abertura de reclamação."
+    },
+    {
+      "organization": "Secretaria da Justiça e Cidadania do Estado de São Paulo",
+      "documentTitle": "CIC Francisco Morato passa a funcionar em novo endereço com estrutura modernizada",
+      "sourceLocation": "https://www.justica.sp.gov.br/sec_justica/imprensa/noticias/cicfranciscomoratopassaafuncionaremnovoenderecocomestruturamodernizada",
+      "checkedAt": "2026-09-03",
+      "extractedFact": "O Centro de Integração da Cidadania (CIC) de Francisco Morato passou a funcionar na Rua Gerônimo Caetano Garcia, 511 — Centro, de segunda a sexta das 9h às 16h, em área próxima à estação de trem e ao terminal de ônibus, reunindo serviços como Procon, Defensoria Pública e INSS. A inauguração ocorreu numa segunda-feira, dia 15, com presença do secretário-executivo da Justiça e do prefeito.",
+      "relevanceToReader": "Procon e Defensoria Pública no mesmo prédio, perto do trem — a assistência jurídica gratuita fica na porta ao lado da reclamação administrativa."
+    },
+    {
+      "organization": "Prefeitura de Francisco Morato",
+      "documentTitle": "Facilidade: importantes serviços da prefeitura são unificados no CIC",
+      "sourceLocation": "http://www.franciscomorato.sp.gov.br/site/artigo/noticia/1199",
+      "checkedAt": "2026-09-03",
+      "extractedFact": "A Prefeitura unificou no CIC serviços como Procon, Sebrae, MEI, INSS Digital e Cadastro Único, então na Rua Tabatinguera, 45 — Centro (notícia anterior à mudança do CIC para a Rua Gerônimo Caetano Garcia, 511).",
+      "relevanceToReader": "Registro histórico: o endereço da Tabatinguera ainda circula em listas de terceiros, mas o CIC já mudou."
+    },
+    {
+      "organization": "Secretaria da Justiça e Cidadania do Estado de São Paulo",
+      "documentTitle": "Francisco Morato recebe palestra de orientação para endividados no Centro de Integração da Cidadania",
+      "sourceLocation": "https://justica.sp.gov.br/francisco-morato-recebe-palestra-de-orientacao-para-endividados-no-centro-de-integracao-da-cidadania/",
+      "checkedAt": "2026-09-03",
+      "extractedFact": "O CIC Francisco Morato sediou ação de orientação a pessoas endividadas, dentro da programação do centro estadual de cidadania.",
+      "relevanceToReader": "O CIC é usado como ponto de orientação financeira e jurídica gratuita — inclusive sobre dívidas."
+    },
+    {
+      "organization": "IBGE",
+      "documentTitle": "Malha do Censo 2022 — Francisco Morato (SP), código do município 3516309",
+      "sourceLocation": "https://www.ibge.gov.br/cidades-e-estados/sp/francisco-morato.html",
+      "checkedAt": "2026-09-03",
+      "extractedFact": "O código IBGE do município é 3516309, conforme a malha oficial do Censo 2022 publicada pelo IBGE.",
+      "relevanceToReader": "Identificação oficial do município para o registro de localidades do portal."
+    }
+  ],
+  "consumerProtectionResources": [
+    {
+      "organization": "Procon Francisco Morato (no CIC)",
+      "service": "Atendimento na Rua Gerônimo Caetano Garcia — Centro (CEP 07901-000), ao lado do Poupatempo, no prédio do CIC; telefone (11) 4488-2756; e-mail procon@franciscomorato.sp.gov.br; presencial das 8h15 às 15h30 e orientações até as 17h, conforme o diretório da Fundação Procon-SP",
+      "officialSource": "https://www.procon.sp.gov.br/francisco-morato/",
+      "checkedAt": "2026-09-03"
+    },
+    {
+      "organization": "Defensoria Pública no CIC Francisco Morato",
+      "service": "Assistência jurídica gratuita no mesmo prédio do Procon, Rua Gerônimo Caetano Garcia, 511 — Centro, de segunda a sexta das 9h às 16h",
+      "officialSource": "https://www.justica.sp.gov.br/sec_justica/imprensa/noticias/cicfranciscomoratopassaafuncionaremnovoenderecocomestruturamodernizada",
+      "checkedAt": "2026-09-03"
+    },
+    {
+      "organization": "Consumidor.gov.br (plataforma federal)",
+      "service": "Reclamação on-line contra bancos e financeiras, com resposta monitorada — disponível a moradores de qualquer município",
+      "officialSource": "https://www.consumidor.gov.br",
+      "checkedAt": "2026-09-03"
+    }
+  ],
+  "verifiedLocalPrograms": [],
+  "verifiedServiceInformation": [],
+  "uniqueLocalQuestions": [
+    "Até que horas o Procon de Francisco Morato abre reclamação presencial?",
+    "O CIC de Francisco Morato mudou de endereço?",
+    "Tem Defensoria Pública no mesmo prédio do Procon em Francisco Morato?"
+  ],
+  "localRisksOrWarnings": [
+    "O atendimento presencial do Procon encerra às 15h30, embora o órgão fique aberto até as 17h: quem chega depois recebe orientação, não protocolo de reclamação.",
+    "O endereço antigo do CIC (Rua Tabatinguera, 45) ainda aparece em listas de terceiros — o atual é a Rua Gerônimo Caetano Garcia, 511.",
+    "Não há, em fonte oficial consultada, posto municipal do Banco do Povo Paulista em Francisco Morato: oferta de 'Banco do Povo' na cidade mediante pagamento ou intermediário deve ser tratada como golpe."
+  ],
+  "decisionImpact": [
+    "O horário que vale para abrir reclamação é 15h30, não o de fechamento do prédio",
+    "Procon e Defensoria Pública no mesmo endereço, perto do trem, encurtam o caminho de quem precisa de assistência jurídica sobre dívida"
+  ],
+  "pendingVerification": [
+    "População do Censo 2022: as buscas em fonte oficial não devolveram o número recenseado de forma inequívoca (apareceu 171.476 como estimativa) — confirmar na página do IBGE antes de citar.",
+    "Numeração do Procon: o diretório da Fundação Procon-SP registra 's/n, ao lado do Poupatempo'; a notícia estadual do CIC registra nº 511 na mesma rua — confirmar por telefone (11) 4488-2756 que o Procon opera no prédio novo.",
+    "Data exata da mudança do CIC (a notícia estadual informa 'segunda-feira, dia 15') e o horário unificado: o CIC publica 9h–16h, o diretório do Procon-SP publica 8h–17h com presencial 8h15–15h30.",
+    "Existência de posto municipal do Banco do Povo Paulista — não localizado em fonte oficial; se houver, endereço e horário.",
+    "Serviços que permaneceram no CIC após a mudança (a notícia estadual cita Procon, Defensoria e INSS 'entre outros'; a notícia municipal de 2020 citava também Sebrae, MEI e Cadastro Único)."
+  ]
+}

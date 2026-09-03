@@ -1,0 +1,82 @@
+{
+  "localityId": "sp-campo-limpo-paulista",
+  "localityName": "Campo Limpo Paulista",
+  "localityType": "municipality",
+  "stateCode": "sp",
+  "officialAdministrativeStatus": "Município do estado de São Paulo, integrante da Aglomeração Urbana de Jundiaí",
+  "officialSources": [
+    {
+      "organization": "Prefeitura de Campo Limpo Paulista",
+      "documentTitle": "PROCON — Prefeitura de Campo Limpo Paulista",
+      "sourceLocation": "https://campolimpopaulista.sp.gov.br/procon",
+      "checkedAt": "2026-09-03",
+      "extractedFact": "O Procon municipal atende na Avenida Alfried Krupp, 1025 — Centro, CEP 13.230-060, de segunda a sexta, das 9h às 16h, e mantém atendimento por WhatsApp no número (11) 94451-6376.",
+      "relevanceToReader": "Endereço, horário e um canal de mensagens que evita deslocamento para dúvidas e envio de documentos."
+    },
+    {
+      "organization": "Prefeitura de Campo Limpo Paulista",
+      "documentTitle": "Banco do Povo Paulista — Prefeitura de Campo Limpo Paulista",
+      "sourceLocation": "https://campolimpopaulista.sp.gov.br/banco-do-povo",
+      "checkedAt": "2026-09-03",
+      "extractedFact": "O posto do Banco do Povo Paulista fica na Av. Alfried Krupp, 1025 — Centro, ao lado do Poupatempo, no mesmo endereço em que a Prefeitura reúne o PAT e o Sebrae. O PAT atende de segunda a sexta, das 8h às 12h e das 13h às 16h.",
+      "relevanceToReader": "Procon, PAT, Sebrae e Banco do Povo dividem o mesmo prédio, ao lado do Poupatempo — uma viagem resolve mais de uma coisa."
+    },
+    {
+      "organization": "Prefeitura de Campo Limpo Paulista",
+      "documentTitle": "Telefones Úteis — Prefeitura de Campo Limpo Paulista",
+      "sourceLocation": "https://www.campolimpopaulista.sp.gov.br/cidade/telefones-uteis",
+      "checkedAt": "2026-09-03",
+      "extractedFact": "O Poupatempo de Campo Limpo Paulista fica na Avenida Alfried Krupp, 995 — Centro, CEP 13.230-060, vizinho ao prédio do número 1025.",
+      "relevanceToReader": "Referência de localização: quem conhece o Poupatempo encontra o Procon e o Banco do Povo na porta ao lado."
+    },
+    {
+      "organization": "IBGE",
+      "documentTitle": "Cidades e Estados — Campo Limpo Paulista (SP), Censo 2022",
+      "sourceLocation": "https://www.ibge.gov.br/cidades-e-estados/sp/campo-limpo-paulista.html",
+      "checkedAt": "2026-09-03",
+      "extractedFact": "Campo Limpo Paulista registrou 77.632 habitantes no Censo 2022 (código do município 3509601).",
+      "relevanceToReader": "Município de porte médio entre Jundiaí e a faixa norte da Grande São Paulo, com forte deslocamento diário para trabalho."
+    }
+  ],
+  "consumerProtectionResources": [
+    {
+      "organization": "Procon Campo Limpo Paulista",
+      "service": "Atendimento na Av. Alfried Krupp, 1025 — Centro (CEP 13.230-060), de segunda a sexta das 9h às 16h, e por WhatsApp no (11) 94451-6376",
+      "officialSource": "https://campolimpopaulista.sp.gov.br/procon",
+      "checkedAt": "2026-09-03"
+    },
+    {
+      "organization": "Consumidor.gov.br (plataforma federal)",
+      "service": "Reclamação on-line contra bancos e financeiras, com resposta monitorada — disponível a moradores de qualquer município",
+      "officialSource": "https://www.consumidor.gov.br",
+      "checkedAt": "2026-09-03"
+    }
+  ],
+  "verifiedLocalPrograms": [
+    {
+      "program": "Banco do Povo Paulista — posto de Campo Limpo Paulista",
+      "detail": "Microcrédito produtivo do programa estadual, atendido na Av. Alfried Krupp, 1025 — Centro, ao lado do Poupatempo, no mesmo endereço do PAT e do Sebrae. Voltado a microempreendedores formais e informais e a quem quer abrir ou ampliar negócio próprio.",
+      "officialSource": "https://campolimpopaulista.sp.gov.br/banco-do-povo",
+      "checkedAt": "2026-09-03"
+    }
+  ],
+  "verifiedServiceInformation": [],
+  "uniqueLocalQuestions": [
+    "O Procon de Campo Limpo Paulista atende por WhatsApp?",
+    "Procon, PAT e Banco do Povo ficam no mesmo prédio em Campo Limpo Paulista?",
+    "Onde fica o Banco do Povo em Campo Limpo Paulista?"
+  ],
+  "localRisksOrWarnings": [
+    "O mesmo prédio reúne serviços de horários diferentes (Procon 9h–16h; PAT 8h–12h e 13h–16h): quem quer resolver mais de uma coisa na mesma viagem precisa olhar a janela de cada um.",
+    "O microcrédito do Banco do Povo é atendido em balcão da Prefeitura e não cobra intermediário: qualquer pedido de pagamento para 'aprovar' o crédito está fora do programa."
+  ],
+  "decisionImpact": [
+    "WhatsApp do Procon permite tirar dúvida e enviar documento sem ir ao Centro",
+    "Um só endereço concentra Procon, PAT, Sebrae e Banco do Povo, ao lado do Poupatempo"
+  ],
+  "pendingVerification": [
+    "Telefone fixo e e-mail do Procon municipal — a página publica o WhatsApp sem listar telefone convencional.",
+    "Se o atendimento presencial do Procon exige agendamento ou é por ordem de chegada — a página informa horário sem detalhar o fluxo.",
+    "Horário próprio do posto do Banco do Povo — a página descreve o serviço sem publicar a grade (o horário disponível é o do PAT, no mesmo endereço)."
+  ]
+}

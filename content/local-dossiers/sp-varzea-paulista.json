@@ -1,0 +1,99 @@
+{
+  "localityId": "sp-varzea-paulista",
+  "localityName": "Várzea Paulista",
+  "localityType": "municipality",
+  "stateCode": "sp",
+  "officialAdministrativeStatus": "Município do estado de São Paulo, integrante da Aglomeração Urbana de Jundiaí",
+  "officialSources": [
+    {
+      "organization": "Prefeitura de Várzea Paulista",
+      "documentTitle": "PROCON de Várzea Paulista reforça que telefone de WhatsApp é de uso exclusivo para moradores da cidade",
+      "sourceLocation": "https://portal.varzeapaulista.sp.gov.br/2023/09/01/procon-de-varzea-paulista-reforca-que-telefone-de-whatsapp-e-de-uso-exclusivo-para-moradores-da-cidade/",
+      "checkedAt": "2026-09-03",
+      "extractedFact": "A Prefeitura publicou aviso próprio reforçando que o número de WhatsApp do Procon municipal, (11) 94225-3845, é de uso exclusivo de moradores de Várzea Paulista.",
+      "relevanceToReader": "Quem mora em cidade vizinha e tenta usar o canal não é atendido — o Procon competente é o do município de residência."
+    },
+    {
+      "organization": "Prefeitura de Várzea Paulista",
+      "documentTitle": "Procon de Várzea Paulista disponibiliza atendimento por aplicativo de mensagem",
+      "sourceLocation": "https://portal.varzeapaulista.sp.gov.br/2021/03/12/procon-de-varzea-paulista-disponibiliza-atendimento-por-aplicativo-de-mensagem/",
+      "checkedAt": "2026-09-03",
+      "extractedFact": "O Procon atende por WhatsApp no (11) 94225-3845, por telefone no (11) 4595-0557 e presencialmente na Avenida Fernão Dias Paes Leme, 1355, 2º andar — Jardim Maria de Fátima, de segunda a sexta, das 9h às 16h. O canal de mensagens serve para tirar dúvidas e enviar documentos sem sair de casa.",
+      "relevanceToReader": "Endereço, telefone, horário e a finalidade declarada do WhatsApp: dúvidas e envio de documentos."
+    },
+    {
+      "organization": "Prefeitura de Várzea Paulista",
+      "documentTitle": "Parque Chico Mendes receberá o Procon Móvel dia 7 de março",
+      "sourceLocation": "https://portal.varzeapaulista.sp.gov.br/2025/02/25/parque-chico-mendes-recebera-o-procon-movel-dia-7-de-marco/",
+      "checkedAt": "2026-09-03",
+      "extractedFact": "A Prefeitura realiza ações itinerantes do Procon Móvel em pontos da cidade, anunciadas com data e local no portal oficial.",
+      "relevanceToReader": "O atendimento às vezes vai até o bairro — e a data verdadeira sai sempre no portal da Prefeitura, nunca só por mensagem."
+    },
+    {
+      "organization": "Prefeitura de Várzea Paulista",
+      "documentTitle": "Banco do Povo incentiva pequenos negócios com microcrédito acessível",
+      "sourceLocation": "https://portal.varzeapaulista.sp.gov.br/2026/02/19/banco-do-povo-incentiva-pequenos-negocios-com-microcredito-acessivel/",
+      "checkedAt": "2026-09-03",
+      "extractedFact": "O Banco do Povo Paulista em Várzea Paulista opera três linhas — Mulheres Empreendedoras, Empreenda Afro e Empreenda Rápido —, com valores de R$ 200 a R$ 21 mil conforme análise de crédito e prazos de 24 a 36 meses, para negócios formais e informais e produtores rurais. A sede fica no térreo do Facilita (Rua João Póvoa, 97 — Jardim do Lar), telefone (11) 4606-8654, e-mail bancodopovo@varzeapaulista.sp.gov.br.",
+      "relevanceToReader": "Três linhas nomeadas, faixa de valores, prazos e o endereço exato do balcão."
+    },
+    {
+      "organization": "Prefeitura de Várzea Paulista",
+      "documentTitle": "Banco do Povo — Empreenda Várzea Paulista",
+      "sourceLocation": "https://portal.varzeapaulista.sp.gov.br/governo/unidades-gestoras-municipais/desenvolvimento-economico/empreenda/banco-do-povo/",
+      "checkedAt": "2026-09-03",
+      "extractedFact": "A página do programa informa juros de 0,35% a 1% ao mês e limites de até R$ 15 mil para pessoa física e R$ 21 mil para pessoa jurídica, com crédito concedido mediante comprovação do uso (capital de giro ou investimento fixo, para uso exclusivo do negócio).",
+      "relevanceToReader": "Faixa de juros e tetos por tipo de tomador, e a exigência de comprovar em que o dinheiro foi usado."
+    },
+    {
+      "organization": "IBGE",
+      "documentTitle": "Cidades e Estados — Várzea Paulista (SP), Censo 2022",
+      "sourceLocation": "https://www.ibge.gov.br/cidades-e-estados/sp/varzea-paulista.html",
+      "checkedAt": "2026-09-03",
+      "extractedFact": "Várzea Paulista registrou 115.771 habitantes no Censo 2022 (código do município 3556503), com densidade de 3.296 hab/km² em 35 km² de área.",
+      "relevanceToReader": "Cidade densa e pequena em área, colada em Jundiaí — parte da vida bancária dos moradores acontece na vizinha."
+    }
+  ],
+  "consumerProtectionResources": [
+    {
+      "organization": "Procon Várzea Paulista",
+      "service": "Atendimento na Av. Fernão Dias Paes Leme, 1355, 2º andar — Jardim Maria de Fátima, de segunda a sexta das 9h às 16h; telefone (11) 4595-0557; WhatsApp (11) 94225-3845, exclusivo para moradores do município",
+      "officialSource": "https://portal.varzeapaulista.sp.gov.br/2023/09/01/procon-de-varzea-paulista-reforca-que-telefone-de-whatsapp-e-de-uso-exclusivo-para-moradores-da-cidade/",
+      "checkedAt": "2026-09-03"
+    },
+    {
+      "organization": "Consumidor.gov.br (plataforma federal)",
+      "service": "Reclamação on-line contra bancos e financeiras, com resposta monitorada — disponível a moradores de qualquer município",
+      "officialSource": "https://www.consumidor.gov.br",
+      "checkedAt": "2026-09-03"
+    }
+  ],
+  "verifiedLocalPrograms": [
+    {
+      "program": "Banco do Povo Paulista — Várzea Paulista",
+      "detail": "Três linhas (Mulheres Empreendedoras, Empreenda Afro e Empreenda Rápido), de R$ 200 a R$ 21 mil conforme análise, prazos de 24 a 36 meses, juros de 0,35% a 1% ao mês, para negócios formais e informais e produtores rurais. Atendimento no térreo do Facilita, Rua João Póvoa, 97 — Jardim do Lar, telefone (11) 4606-8654.",
+      "officialSource": "https://portal.varzeapaulista.sp.gov.br/2026/02/19/banco-do-povo-incentiva-pequenos-negocios-com-microcredito-acessivel/",
+      "checkedAt": "2026-09-03"
+    }
+  ],
+  "verifiedServiceInformation": [],
+  "uniqueLocalQuestions": [
+    "Moro em Jundiaí e posso usar o WhatsApp do Procon de Várzea Paulista?",
+    "Quais são as linhas do Banco do Povo em Várzea Paulista?",
+    "Onde fica o Facilita e o que se resolve lá?"
+  ],
+  "localRisksOrWarnings": [
+    "O WhatsApp do Procon é só para moradores: quem mora na cidade vizinha precisa do Procon da própria cidade ou do consumidor.gov.br.",
+    "Ações do Procon Móvel são anunciadas no portal da Prefeitura: 'mutirão' divulgado só por mensagem, sem página oficial, é sinal de golpe.",
+    "O microcrédito do Banco do Povo é atendido em balcão da Prefeitura e não cobra intermediário: qualquer pedido de pagamento para 'aprovar' o crédito está fora do programa."
+  ],
+  "decisionImpact": [
+    "WhatsApp exclusivo para moradores define quem pode usar o canal mais rápido do Procon",
+    "Três linhas nomeadas do Banco do Povo, com tetos e prazos publicados, permitem comparar com a proposta do banco antes de ir"
+  ],
+  "pendingVerification": [
+    "Se o atendimento presencial do Procon exige agendamento — as páginas informam horário sem detalhar o fluxo.",
+    "Horário de atendimento do balcão do Banco do Povo no Facilita — a notícia publica endereço e telefone sem a grade.",
+    "Data de apuração da faixa de juros: a página do programa informa 0,35% a 1% ao mês; a notícia de fevereiro de 2026 menciona juros 'de até 0,35% ao mês' — confirmar a taxa vigente no balcão."
+  ]
+}
