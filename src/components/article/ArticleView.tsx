@@ -110,7 +110,11 @@ export function ArticleView({
         </p>
       ) : null}
       <TableOfContents content={article.content} />
-      <AdSlot placement="article-top" />
+      {/* Nenhum slot antes do corpo do artigo: anúncio imediatamente acima do
+          conteúdo principal é a posição que mais compromete a leitura e a
+          confiança num portal financeiro. O placement "article-inline", em
+          ponto editorial natural, é a evolução planejada — deliberada, com
+          dados de uso reais, e nunca acima do conteúdo. */}
       <div data-track-area="conteudo" className="article-body">
         <MDXRemote
           source={article.content}

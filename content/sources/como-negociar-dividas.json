@@ -12,13 +12,13 @@
     },
     {
       "claimId": "novo-desenrola-mp-prazo",
-      "claimText": "O Novo Desenrola Brasil foi instituído pela Medida Provisória nº 1.355/2026, lançada em 4 de maio de 2026, com frentes distintas (famílias, Fies, rural e empresas) e adesão feita diretamente junto às instituições credoras. Em 1º de agosto de 2026 o prazo foi prorrogado para 31 de agosto de 2026, restrita a prorrogação às instituições financeiras com volume mínimo de operações com garantia do Fundo Garantidor de Operações. No Desenrola Fies, as solicitações correm entre 13 de maio e 31 de agosto de 2026 pelos canais do Banco do Brasil ou da Caixa.",
-      "sourceOrganization": "Ministério da Fazenda / Ministério da Educação / Casa Civil",
-      "sourceTitle": "Novo Desenrola Brasil — páginas oficiais do programa e comunicados de prorrogação",
-      "sourceLocation": "https://www.gov.br/fazenda/pt-br/acesso-a-informacao/acoes-e-programas/novo-desenrola-brasil",
+      "claimText": "O Novo Desenrola Brasil foi instituído pela Medida Provisória nº 1.355/2026, lançada em 4 de maio de 2026, com frentes distintas (famílias, Fies, rural e empresas) e adesão feita diretamente junto às instituições credoras. O Desenrola Famílias ficou disponível até 31 de agosto de 2026, prazo vinculado à vigência da Medida Provisória. O Desenrola Fies encerrou as solicitações na mesma data, 31 de agosto de 2026. O Desenrola Rural teve o prazo de adesão prorrogado até 20 de dezembro de 2026 pelo Decreto nº 12.956/2026, atendendo agricultores familiares, assentados da reforma agrária, pescadores artesanais, povos e comunidades tradicionais e cooperativas da agricultura familiar, com dívidas ligadas ao Pronaf.",
+      "sourceOrganization": "Ministério da Fazenda / FNDE-MEC / Presidência da República / Ministério do Desenvolvimento Agrário",
+      "sourceTitle": "Desenrola Brasil Famílias (FAQ do Ministério da Fazenda); 'Prazo para aderir ao Desenrola Fies termina hoje (31)' (FNDE); Decreto nº 12.956/2026 (Planalto); Desenrola Rural (MDA)",
+      "sourceLocation": "https://www.gov.br/fazenda/pt-br/acesso-a-informacao/acoes-e-programas/novo-desenrola-brasil/faq/desenrola-brasil-familias",
       "sourceType": "official",
-      "accessedAt": "2026-08-28",
-      "notes": "FATO COM PRAZO CURTO: a janela de adesão encerra em 31/08/2026 e pode ser novamente prorrogada. Revisar o bloco do artigo a partir de 01/09/2026 — a redação foi construída para envelhecer como fato datado, não como promessa. Critérios de elegibilidade e percentuais de desconto NÃO foram afirmados no artigo por não terem sido confirmados em fonte oficial primária."
+      "accessedAt": "2026-09-03",
+      "notes": "FATO COM PRAZO CURTO — reverificado em 03/09/2026. Famílias e Fies encerraram em 31/08/2026; Rural segue aberto até 20/12/2026 por decreto. PRÓXIMA REVISÃO: a partir de 21/12/2026, ou antes se houver nova medida do Governo Federal reabrindo alguma frente. Critérios de elegibilidade e percentuais de desconto NÃO são afirmados no artigo por não terem sido confirmados em fonte oficial primária."
     },
     {
       "claimId": "cdc-42-cobranca",
