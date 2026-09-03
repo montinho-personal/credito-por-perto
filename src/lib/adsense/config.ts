@@ -1,9 +1,17 @@
 /**
  * Configuração central do Google AdSense.
  *
- * Os anúncios ficam DESATIVADOS até que o proprietário forneça IDs reais
- * via variáveis de ambiente. Nunca invente um Publisher ID.
+ * O Publisher ID abaixo foi emitido pela conta do proprietário no AdSense e
+ * fornecido por ele. Publisher ID não é segredo: ele aparece no código-fonte
+ * de qualquer página que exibe AdSense. Nunca invente um.
+ *
+ * Estado atual: o SCRIPT da conta é carregado (é o que conecta o site à conta
+ * e permite a revisão do Google), mas NENHUMA unidade de anúncio renderiza —
+ * os slots continuam exigindo IDs próprios, que ainda não existem.
  */
+
+/** Emitido pelo AdSense do proprietário. */
+const PUBLISHER_ID = "ca-pub-1065686330826144";
 
 export type AdPlacement =
   | "article-top"
@@ -13,13 +21,16 @@ export type AdPlacement =
   | "category";
 
 export function adsenseClient(): string {
-  return process.env.NEXT_PUBLIC_ADSENSE_CLIENT ?? "";
+  return process.env.NEXT_PUBLIC_ADSENSE_CLIENT || PUBLISHER_ID;
 }
 
-/** Anúncios só são ativados com flag explícita + client ID real. */
+/**
+ * Interruptor de emergência: definir NEXT_PUBLIC_ADSENSE_ENABLED="false"
+ * desliga o AdSense por completo sem precisar de novo deploy de código.
+ */
 export function isAdsenseEnabled(): boolean {
   return (
-    process.env.NEXT_PUBLIC_ADSENSE_ENABLED === "true" &&
+    process.env.NEXT_PUBLIC_ADSENSE_ENABLED !== "false" &&
     adsenseClient().length > 0
   );
 }

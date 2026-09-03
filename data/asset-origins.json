@@ -27,6 +27,15 @@
       "evidence": "Confirmado pelo proprietário em 02/09/2026 para todo o diretório",
       "aiGenerated": true,
       "declaredAt": "2026-09-02"
+    },
+    {
+      "id": "ads-txt",
+      "pattern": "public/ads.txt",
+      "origin": "Arquivo de autorização de vendedores (IAB ads.txt), escrito a partir do Publisher ID emitido pela conta do proprietário no Google AdSense",
+      "rights": "Não é obra criativa: é um registro técnico de autorização, no formato definido pelo IAB Tech Lab e documentado pelo Google em support.google.com/adsense/answer/12171612",
+      "evidence": "Publisher ID ca-pub-1065686330826144 fornecido pelo proprietário em 03/09/2026, a partir do painel do AdSense",
+      "aiGenerated": false,
+      "declaredAt": "2026-09-03"
     }
   ],
   "ignored": [

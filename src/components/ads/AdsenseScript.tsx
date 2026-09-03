@@ -1,10 +1,20 @@
-import Script from "next/script";
 import { adsenseClient, isAdsenseEnabled } from "@/lib/adsense/config";
 
 /**
- * Script do AdSense — só entra na página quando os anúncios estão
- * explicitamente habilitados com um client ID real. Em previews do Vercel
- * nunca carrega (VERCEL_ENV !== production).
+ * Script da conta do AdSense.
+ *
+ * É este script — e não uma unidade de anúncio — que conecta o site à conta e
+ * permite que o Google revise o domínio. Nenhum bloco de anúncio depende dele
+ * para existir: os slots continuam exigindo IDs próprios.
+ *
+ * Por que uma tag `<script>` comum, e não `next/script`: o React 19 iça
+ * automaticamente para o `<head>` qualquer `<script async src>` renderizado
+ * numa árvore de componentes. O resultado no HTML servido é exatamente o
+ * snippet que o AdSense manda colar entre `<head>` e `</head>` — async,
+ * portanto sem bloquear a renderização e sem custo de LCP.
+ *
+ * Em previews do Vercel nunca carrega: ambiente de teste não deve gerar
+ * impressões nem confundir a revisão do Google.
  */
 export function AdsenseScript() {
   if (!isAdsenseEnabled()) return null;
@@ -12,9 +22,8 @@ export function AdsenseScript() {
     return null;
   }
   return (
-    <Script
-      id="adsense-loader"
-      strategy="lazyOnload"
+    <script
+      async
       src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${adsenseClient()}`}
       crossOrigin="anonymous"
     />
