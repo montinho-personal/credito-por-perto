@@ -291,6 +291,30 @@
       "stateCode": "sp",
       "citySlug": "francisco-morato",
       "ibgeCode": "3516309"
+    },
+    {
+      "id": "sp-jaguariuna",
+      "name": "Jaguariúna",
+      "localityType": "municipality",
+      "stateCode": "sp",
+      "citySlug": "jaguariuna",
+      "ibgeCode": "3524709"
+    },
+    {
+      "id": "sp-cosmopolis",
+      "name": "Cosmópolis",
+      "localityType": "municipality",
+      "stateCode": "sp",
+      "citySlug": "cosmopolis",
+      "ibgeCode": "3512803"
+    },
+    {
+      "id": "sp-itapecerica-da-serra",
+      "name": "Itapecerica da Serra",
+      "localityType": "municipality",
+      "stateCode": "sp",
+      "citySlug": "itapecerica-da-serra",
+      "ibgeCode": "3522208"
     }
   ]
 }

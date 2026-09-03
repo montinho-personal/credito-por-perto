@@ -1,0 +1,99 @@
+{
+  "localityId": "sp-cosmopolis",
+  "localityName": "Cosmópolis",
+  "localityType": "municipality",
+  "stateCode": "sp",
+  "officialAdministrativeStatus": "Município do estado de São Paulo, integrante da Região Metropolitana de Campinas",
+  "officialSources": [
+    {
+      "organization": "Fundação Procon-SP",
+      "documentTitle": "Cosmópolis — PROCON.SP (diretório de Procons municipais conveniados)",
+      "sourceLocation": "https://www.procon.sp.gov.br/cosmopolis/",
+      "checkedAt": "2026-09-03",
+      "extractedFact": "O Procon de Cosmópolis atende na Rua Otto Herbets, 116 — Chácara Novo Horizonte — Posto Mais Fácil, CEP 13.150-003, telefone (19) 3872-5566 ramal 5, de segunda a sexta, das 9h às 16h.",
+      "relevanceToReader": "Endereço, ramal e horário do Procon — dentro do posto municipal de serviços."
+    },
+    {
+      "organization": "Prefeitura de Cosmópolis",
+      "documentTitle": "Sebrae Aqui Cosmópolis",
+      "sourceLocation": "https://cosmopolis.sp.gov.br/sebrae-aqui/",
+      "checkedAt": "2026-09-03",
+      "extractedFact": "O Sebrae Aqui, vinculado à Secretaria Municipal de Indústria e Comércio, atende no Prédio do Poupa em Serviços Municipais (Posto de Atendimento Mais Fácil), Rua Otto Herbst, nº 116 — Centro, CEP 13.150-003, das 9h às 17h, telefone (19) 3872-5566 ramal 26.",
+      "relevanceToReader": "Sebrae e Procon dividem o mesmo prédio — o posto municipal de serviços — com ramais diferentes do mesmo telefone."
+    },
+    {
+      "organization": "Prefeitura de Cosmópolis",
+      "documentTitle": "Telefones Úteis — Prefeitura Municipal de Cosmópolis",
+      "sourceLocation": "https://cosmopolis.sp.gov.br/prefeitura/telefones-uteis/",
+      "checkedAt": "2026-09-03",
+      "extractedFact": "O Banco do Povo consta na Rua Otto Herbst, 65, telefone (19) 3882-2388 — o mesmo endereço do Centro de Referência do Trabalhador de Cosmópolis (CRTC), em frente ao Poupatempo.",
+      "relevanceToReader": "O microcrédito público fica na mesma rua do Procon, no número 65, junto do balcão de emprego."
+    },
+    {
+      "organization": "Prefeitura de Cosmópolis",
+      "documentTitle": "Cartão Banco do Povo",
+      "sourceLocation": "https://cosmopolis.sp.gov.br/cartao-banco-do-povo/",
+      "checkedAt": "2026-09-03",
+      "extractedFact": "A Prefeitura, pela Secretaria de Indústria e Comércio, em parceria com o Estado, oferece o Banco do Povo com empréstimo de até R$ 21.000,00 e juros de 0,35% a 1% ao mês. O cartão pré-pago do Banco do Povo facilita a movimentação do crédito para empreendedores dos municípios conveniados que não possuem conta corrente; para recebê-lo, o empreendedor solicita uma das linhas de crédito.",
+      "relevanceToReader": "Quem não tem conta em banco pode receber o microcrédito num cartão pré-pago — porta rara para o informal sem conta."
+    },
+    {
+      "organization": "Prefeitura de Cosmópolis",
+      "documentTitle": "Centro de Referência do Trabalhador de Cosmópolis (CRTC)",
+      "sourceLocation": "https://cosmopolis.sp.gov.br/prefeitura/crtc/",
+      "checkedAt": "2026-09-03",
+      "extractedFact": "O CRTC funciona na Rua Otto Herbst, 65 — Centro, em frente ao Poupatempo Cosmópolis, com vagas de emprego e serviços ao trabalhador.",
+      "relevanceToReader": "Referência de localização: o número 65 fica em frente ao Poupatempo."
+    },
+    {
+      "organization": "IBGE",
+      "documentTitle": "Cidades e Estados — Cosmópolis (SP), Censo 2022",
+      "sourceLocation": "https://www.ibge.gov.br/cidades-e-estados/sp/cosmopolis.html",
+      "checkedAt": "2026-09-03",
+      "extractedFact": "Cosmópolis registrou 59.773 habitantes no Censo 2022 (código do município 3512803), com densidade de 386 hab/km².",
+      "relevanceToReader": "Município de porte médio no norte da RMC, entre Paulínia e Americana."
+    }
+  ],
+  "consumerProtectionResources": [
+    {
+      "organization": "Procon Cosmópolis",
+      "service": "Atendimento no Posto Mais Fácil, Rua Otto Herbst, 116 — Centro (CEP 13.150-003), de segunda a sexta das 9h às 16h, telefone (19) 3872-5566 ramal 5",
+      "officialSource": "https://www.procon.sp.gov.br/cosmopolis/",
+      "checkedAt": "2026-09-03"
+    },
+    {
+      "organization": "Consumidor.gov.br (plataforma federal)",
+      "service": "Reclamação on-line contra bancos e financeiras, com resposta monitorada — disponível a moradores de qualquer município",
+      "officialSource": "https://www.consumidor.gov.br",
+      "checkedAt": "2026-09-03"
+    }
+  ],
+  "verifiedLocalPrograms": [
+    {
+      "program": "Banco do Povo Paulista — Cosmópolis",
+      "detail": "Microcrédito produtivo de até R$ 21 mil, juros de 0,35% a 1% ao mês, pela Secretaria de Indústria e Comércio. Atendimento na Rua Otto Herbst, 65 (prédio do CRTC, em frente ao Poupatempo), telefone (19) 3882-2388. Cartão pré-pago do programa para quem não tem conta corrente.",
+      "officialSource": "https://cosmopolis.sp.gov.br/cartao-banco-do-povo/",
+      "checkedAt": "2026-09-03"
+    }
+  ],
+  "verifiedServiceInformation": [],
+  "uniqueLocalQuestions": [
+    "Procon, Sebrae e Banco do Povo ficam na mesma rua em Cosmópolis?",
+    "Não tenho conta em banco. Consigo Banco do Povo em Cosmópolis?",
+    "Qual ramal do 3872-5566 é o do Procon?"
+  ],
+  "localRisksOrWarnings": [
+    "O telefone (19) 3872-5566 é o do posto municipal inteiro: o Procon é o ramal 5, o Sebrae Aqui é o ramal 26 — ligar sem o ramal é ficar na fila errada.",
+    "A grafia da rua varia entre fontes oficiais ('Otto Herbst' na Prefeitura, 'Otto Herbets' no diretório estadual): é o mesmo endereço.",
+    "O microcrédito do Banco do Povo é atendido em balcão da Prefeitura e não cobra intermediário: qualquer pedido de pagamento para 'aprovar' o crédito está fora do programa."
+  ],
+  "decisionImpact": [
+    "Uma rua concentra Procon, Sebrae, Banco do Povo e balcão de emprego — uma viagem resolve mais de uma coisa",
+    "O cartão pré-pago do Banco do Povo abre o microcrédito a quem não tem conta corrente"
+  ],
+  "pendingVerification": [
+    "Horário de atendimento do Banco do Povo no número 65 — a lista de telefones publica endereço e telefone sem a grade.",
+    "Se o cartão pré-pago do Banco do Povo segue em operação — a página da Prefeitura que o descreve não traz data de atualização; a notícia de lançamento é de 2021.",
+    "Se o atendimento presencial do Procon exige agendamento ou é por ordem de chegada — o diretório informa horário sem detalhar o fluxo."
+  ]
+}

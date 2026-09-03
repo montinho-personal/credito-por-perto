@@ -1,0 +1,114 @@
+{
+  "localityId": "sp-itapecerica-da-serra",
+  "localityName": "Itapecerica da Serra",
+  "localityType": "municipality",
+  "stateCode": "sp",
+  "officialAdministrativeStatus": "Município do estado de São Paulo, integrante da Região Metropolitana de São Paulo (sub-região sudoeste)",
+  "officialSources": [
+    {
+      "organization": "Prefeitura de Itapecerica da Serra",
+      "documentTitle": "Você conhece o PROCON de Itapecerica da Serra?",
+      "sourceLocation": "https://itapecerica.sp.gov.br/noticias/governo-ciencia-e-tecnologia/voce-conhece-o-procon-de-itapecerica-da-serra",
+      "checkedAt": "2026-09-03",
+      "extractedFact": "O Procon municipal atende na Rua Treze de Maio, 100 — Centro (CEP 06850-840), de segunda a quinta-feira das 9h às 16h; às sextas-feiras, somente audiências de conciliação, das 9h às 16h. Telefones (11) 4165-1059 e 4165-1060.",
+      "relevanceToReader": "Sexta-feira não é dia de abrir reclamação: é dia de audiência. Quem chega na sexta sem audiência marcada não é atendido."
+    },
+    {
+      "organization": "Prefeitura de Itapecerica da Serra",
+      "documentTitle": "Procon de Itapecerica da Serra anuncia novo número de WhatsApp para atendimento",
+      "sourceLocation": "https://itapecerica.sp.gov.br/noticias/assuntos-juridicos/procon-de-itapecerica-da-serra-anuncia-novo-numero-de-whatsapp-para-atendimento",
+      "checkedAt": "2026-09-03",
+      "extractedFact": "O Procon atualizou o WhatsApp de atendimento para (11) 4165-1289. Unidades: Centro (prédio do PAT), Rua Treze de Maio, 100; e Santa Júlia — Centro Integrado de Serviços, Rua Solimões, 1.814. Telefones fixos (11) 4165-1059 e 4165-1060.",
+      "relevanceToReader": "Número atual do WhatsApp e as duas unidades; a do Centro fica no prédio do PAT."
+    },
+    {
+      "organization": "Prefeitura de Itapecerica da Serra",
+      "documentTitle": "Jardim Santa Júlia tem Procon!",
+      "sourceLocation": "https://www.itapecerica.sp.gov.br/noticias/assuntos-juridicos/jardim-santa-julia-tem-procon",
+      "checkedAt": "2026-09-03",
+      "extractedFact": "A unidade do Procon no Jardim Santa Júlia funciona no Centro Integrado de Serviços, Rua Solimões, 1.814, de segunda a sexta das 9h às 17h, telefone 4779-1741, com atendimento de reclamações, cadastro e desbloqueio da Nota Fiscal Paulista e orientações.",
+      "relevanceToReader": "Segunda unidade, com horário mais longo (até 17h) e aberta também às sextas."
+    },
+    {
+      "organization": "Prefeitura de Itapecerica da Serra",
+      "documentTitle": "Atenção: os serviços do Procon são gratuitos",
+      "sourceLocation": "https://www.itapecerica.sp.gov.br/noticias/assuntos-juridicos/atencao-os-servicos-do-procon-sao-gratuitos",
+      "checkedAt": "2026-09-03",
+      "extractedFact": "A Prefeitura reitera que nenhuma unidade do Procon cobra qualquer valor por qualquer serviço; se houver cobrança, orienta o consumidor a registrar boletim de ocorrência.",
+      "relevanceToReader": "Aviso oficial contra quem cobra para 'atender no Procon' — a orientação é fazer B.O."
+    },
+    {
+      "organization": "Prefeitura de Itapecerica da Serra",
+      "documentTitle": "Dívida Zero: Procon de Itapecerica da Serra promove ação para negociação de débitos",
+      "sourceLocation": "http://itapecerica.sp.gov.br/noticias/assuntos-juridicos/divida-zero-procon-de-itapecerica-da-serra-promove-acao-para-negociacao-de-debitos",
+      "checkedAt": "2026-09-03",
+      "extractedFact": "O Procon municipal promove ações de negociação de débitos ('Dívida Zero'), anunciadas com data e local no portal da Prefeitura.",
+      "relevanceToReader": "Mutirão de renegociação existe e é oficial — a data verdadeira sai no portal, nunca só por mensagem."
+    },
+    {
+      "organization": "Prefeitura de Itapecerica da Serra",
+      "documentTitle": "Banco do Povo Paulista — Portal do Empreendedor",
+      "sourceLocation": "https://www.itapecerica.sp.gov.br/portal-do-empreendedor/banco-do-povo-paulista",
+      "checkedAt": "2026-09-03",
+      "extractedFact": "O Banco do Povo Paulista em Itapecerica da Serra é microcrédito produtivo, em parceria com a Secretaria de Desenvolvimento Econômico do Estado (CEMPEME), voltado a micro e pequenas empresas formais e informais do município que estejam produzindo há mais de 6 meses. Atendimento na Av. Eduardo Roberto Daher, 1.135 — Centro, das 8h às 16h.",
+      "relevanceToReader": "Endereço, horário e a exigência de 6 meses de atividade — quem está começando do zero não se enquadra."
+    },
+    {
+      "organization": "Prefeitura de Itapecerica da Serra",
+      "documentTitle": "Conheça Itapecerica da Serra — História",
+      "sourceLocation": "https://itapecerica.sp.gov.br/conheca-itapecerica",
+      "checkedAt": "2026-09-03",
+      "extractedFact": "A Prefeitura informa população de 152.614 habitantes em 151 km². Código IBGE do município: 3522208.",
+      "relevanceToReader": "Cidade de porte médio no sudoeste da Grande São Paulo, com muito deslocamento diário para a capital."
+    }
+  ],
+  "consumerProtectionResources": [
+    {
+      "organization": "Procon Itapecerica da Serra — unidade Centro",
+      "service": "Rua Treze de Maio, 100 — Centro (prédio do PAT), CEP 06850-840; segunda a quinta das 9h às 16h; sexta somente audiências de conciliação, das 9h às 16h; telefones (11) 4165-1059 e 4165-1060; WhatsApp (11) 4165-1289",
+      "officialSource": "https://itapecerica.sp.gov.br/noticias/governo-ciencia-e-tecnologia/voce-conhece-o-procon-de-itapecerica-da-serra",
+      "checkedAt": "2026-09-03"
+    },
+    {
+      "organization": "Procon Itapecerica da Serra — unidade Santa Júlia",
+      "service": "Centro Integrado de Serviços, Rua Solimões, 1.814 — Jardim Santa Júlia; segunda a sexta das 9h às 17h; telefone (11) 4779-1741",
+      "officialSource": "https://www.itapecerica.sp.gov.br/noticias/assuntos-juridicos/jardim-santa-julia-tem-procon",
+      "checkedAt": "2026-09-03"
+    },
+    {
+      "organization": "Consumidor.gov.br (plataforma federal)",
+      "service": "Reclamação on-line contra bancos e financeiras, com resposta monitorada — disponível a moradores de qualquer município",
+      "officialSource": "https://www.consumidor.gov.br",
+      "checkedAt": "2026-09-03"
+    }
+  ],
+  "verifiedLocalPrograms": [
+    {
+      "program": "Banco do Povo Paulista — Itapecerica da Serra",
+      "detail": "Microcrédito produtivo para micro e pequenas empresas formais e informais com mais de 6 meses de atividade. Atendimento na Av. Eduardo Roberto Daher, 1.135 — Centro, das 8h às 16h.",
+      "officialSource": "https://www.itapecerica.sp.gov.br/portal-do-empreendedor/banco-do-povo-paulista",
+      "checkedAt": "2026-09-03"
+    }
+  ],
+  "verifiedServiceInformation": [],
+  "uniqueLocalQuestions": [
+    "Posso abrir reclamação no Procon de Itapecerica na sexta-feira?",
+    "Qual das duas unidades do Procon escolher?",
+    "O Banco do Povo atende negócio que acabou de abrir?"
+  ],
+  "localRisksOrWarnings": [
+    "Sexta-feira, na unidade Centro, é dia só de audiência de conciliação: sem audiência marcada, não há atendimento — a unidade Santa Júlia abre de segunda a sexta.",
+    "A Prefeitura publicou aviso próprio: nenhuma unidade do Procon cobra por serviço; cobrança é caso de boletim de ocorrência.",
+    "O Banco do Povo exige mais de 6 meses de atividade: oferta de 'Banco do Povo para abrir negócio' na cidade não corresponde ao programa."
+  ],
+  "decisionImpact": [
+    "Escolher o dia e a unidade certos evita a viagem perdida na sexta",
+    "A audiência de conciliação é o momento em que o banco precisa responder formalmente — vale preparar contrato, extratos e protocolos"
+  ],
+  "pendingVerification": [
+    "População do Censo 2022 em página do IBGE — a Prefeitura publica 152.614 sem indicar a fonte e a data; outra página municipal menciona 'cerca de 180 mil'.",
+    "Se o WhatsApp anterior, (11) 91423-2932, foi desativado após a troca para o 4165-1289.",
+    "Se a unidade Santa Júlia também realiza audiências de conciliação ou apenas registra reclamações.",
+    "Telefone próprio do Banco do Povo — a página remete ao telefone geral da Prefeitura, (11) 4668-9000."
+  ]
+}

@@ -1,0 +1,99 @@
+{
+  "localityId": "sp-jaguariuna",
+  "localityName": "Jaguariúna",
+  "localityType": "municipality",
+  "stateCode": "sp",
+  "officialAdministrativeStatus": "Município do estado de São Paulo, integrante da Região Metropolitana de Campinas",
+  "officialSources": [
+    {
+      "organization": "Prefeitura de Jaguariúna",
+      "documentTitle": "Confira os locais de atendimento dos principais serviços públicos da Prefeitura de Jaguariúna",
+      "sourceLocation": "https://www.municipio.jaguariuna.sp.gov.br/noticias/governo/3315/confira-os-locais-de-atendimento-dos-principais-servicos-publicos-da-prefeitura-de-jaguariuna.html",
+      "checkedAt": "2026-09-03",
+      "extractedFact": "O Procon (Departamento de Defesa do Consumidor) atende na Rua Cândido Bueno, 1.299, sala 2, no Condomínio Jaguar Center Plaza, de segunda a sexta, das 9h às 16h, com orientação, encaminhamento para fiscalização, mediação e atendimento. No mesmo condomínio ficam a Ouvidoria (sala 12) e o Cartão Cidadão (sala 11).",
+      "relevanceToReader": "Endereço vigente, com número de sala — o Procon divide o condomínio comercial com outros balcões da Prefeitura."
+    },
+    {
+      "organization": "Prefeitura de Jaguariúna",
+      "documentTitle": "Inexigibilidade 006/2024 — Locação de imóvel para instalação da sede do Procon de Jaguariúna",
+      "sourceLocation": "https://www.jaguariuna.sp.gov.br/portais/licitacoes/?p=47195",
+      "checkedAt": "2026-09-03",
+      "extractedFact": "A Prefeitura contratou a locação do imóvel na Rua Cândido Bueno, nº 1299 — Condomínio Jaguar Center Plaza — sala nº 02 — piso superior — Centro — CEP 13.910-033 para instalação da sede do Procon.",
+      "relevanceToReader": "Documento administrativo que confirma o número do prédio, a sala e o piso — a sala fica no piso superior."
+    },
+    {
+      "organization": "Prefeitura de Jaguariúna",
+      "documentTitle": "Procon de Jaguariúna agora funciona em novo local",
+      "sourceLocation": "https://www.municipio.jaguariuna.sp.gov.br/noticias/governo/1221/procon-de-jaguariuna-agora-funciona-em-novo-local.html",
+      "checkedAt": "2026-09-03",
+      "extractedFact": "Em mudança anterior, o Procon passou a atender na Rua Cândido Bueno, 1.229, sala 17, no Condomínio Jaguar Center Plaza — endereço que ainda consta no diretório da Fundação Procon-SP, com o telefone (19) 3937-4807.",
+      "relevanceToReader": "O endereço antigo (1.229, sala 17) ainda circula em cadastros; o vigente é 1.299, sala 2."
+    },
+    {
+      "organization": "Prefeitura de Jaguariúna",
+      "documentTitle": "PAT de Jaguariúna tem novos telefones de atendimento",
+      "sourceLocation": "https://municipio.jaguariuna.sp.gov.br/noticias/desenvolvimento-economico-e-social/3317/pat-de-jaguariuna-tem-novos-telefones-de-atendimento.html",
+      "checkedAt": "2026-09-03",
+      "extractedFact": "O Banco do Povo, o Setor de Estágios e o programa Qualifica Jaguariúna atendem pelo telefone (19) 3837-4480, no prédio da Secretaria de Desenvolvimento Econômico e Social, na Rua Paraná, 192 — Centro, de segunda a sexta, das 8h às 17h.",
+      "relevanceToReader": "Endereço, telefone e horário do balcão do microcrédito público."
+    },
+    {
+      "organization": "Prefeitura de Jaguariúna",
+      "documentTitle": "Banco do Povo de Jaguariúna tem linhas de crédito para pessoas físicas e jurídicas",
+      "sourceLocation": "https://municipio.jaguariuna.sp.gov.br/noticias/desenvolvimento-economico-turismo-de-agronegocios/1385/banco-do-povo-de-jaguariuna-tem-linhas-de-credito-para-pessoas-fisicas-e-juridicas.html",
+      "checkedAt": "2026-09-03",
+      "extractedFact": "O Banco do Povo Paulista em Jaguariúna oferece linhas de microcrédito para empreendedores formais e informais, destinadas a capital de giro e investimento fixo.",
+      "relevanceToReader": "O programa atende também quem não tem CNPJ."
+    },
+    {
+      "organization": "Prefeitura de Jaguariúna (citando IBGE)",
+      "documentTitle": "Censo: Jaguariúna é uma das cidades com maior crescimento populacional da RMC",
+      "sourceLocation": "https://www.municipio.jaguariuna.sp.gov.br/noticias/governo/2254/censo-jaguariuna-e-uma-das-cidades-com-maior-crescimento-populacional-da-rmc.html",
+      "checkedAt": "2026-09-03",
+      "extractedFact": "Segundo o Censo 2022 do IBGE, Jaguariúna tem 59.347 habitantes — crescimento de 33,9% sobre os 44.311 de 2010, a segunda maior expansão da Região Metropolitana de Campinas, atrás só de Paulínia. Código IBGE do município: 3524709.",
+      "relevanceToReader": "Cidade que cresce rápido tem muito morador novo, que ainda não conhece os canais locais."
+    }
+  ],
+  "consumerProtectionResources": [
+    {
+      "organization": "Procon Jaguariúna",
+      "service": "Atendimento na Rua Cândido Bueno, 1.299, sala 2 (piso superior), Condomínio Jaguar Center Plaza — Centro, CEP 13.910-033, de segunda a sexta das 9h às 16h",
+      "officialSource": "https://www.municipio.jaguariuna.sp.gov.br/noticias/governo/3315/confira-os-locais-de-atendimento-dos-principais-servicos-publicos-da-prefeitura-de-jaguariuna.html",
+      "checkedAt": "2026-09-03"
+    },
+    {
+      "organization": "Consumidor.gov.br (plataforma federal)",
+      "service": "Reclamação on-line contra bancos e financeiras, com resposta monitorada — disponível a moradores de qualquer município",
+      "officialSource": "https://www.consumidor.gov.br",
+      "checkedAt": "2026-09-03"
+    }
+  ],
+  "verifiedLocalPrograms": [
+    {
+      "program": "Banco do Povo Paulista — Jaguariúna",
+      "detail": "Microcrédito produtivo do programa estadual, para empreendedores formais e informais, capital de giro e investimento fixo. Atendimento no prédio da Secretaria de Desenvolvimento Econômico e Social, Rua Paraná, 192 — Centro, telefone (19) 3837-4480, de segunda a sexta das 8h às 17h.",
+      "officialSource": "https://municipio.jaguariuna.sp.gov.br/noticias/desenvolvimento-economico-e-social/3317/pat-de-jaguariuna-tem-novos-telefones-de-atendimento.html",
+      "checkedAt": "2026-09-03"
+    }
+  ],
+  "verifiedServiceInformation": [],
+  "uniqueLocalQuestions": [
+    "Em qual sala do Jaguar Center Plaza fica o Procon de Jaguariúna?",
+    "Onde fica o Banco do Povo em Jaguariúna?",
+    "Cheguei há pouco na cidade. Onde reclamo do meu banco?"
+  ],
+  "localRisksOrWarnings": [
+    "O diretório estadual ainda lista o endereço antigo do Procon (1.229, sala 17); o vigente é 1.299, sala 2, piso superior — no mesmo condomínio, mas em prédio e sala diferentes.",
+    "Cidade em crescimento acelerado recebe muito morador novo, alvo preferido de oferta de crédito por mensagem 'de boas-vindas'.",
+    "O microcrédito do Banco do Povo é atendido em balcão da Prefeitura e não cobra intermediário: qualquer pedido de pagamento para 'aprovar' o crédito está fora do programa."
+  ],
+  "decisionImpact": [
+    "Saber a sala certa evita perder a manhã dentro de um condomínio comercial com vários balcões públicos",
+    "O Banco do Povo atende informais — quem trabalha por conta própria sem CNPJ tem porta pública antes do crédito de consumo"
+  ],
+  "pendingVerification": [
+    "Telefone do Procon após a mudança de sala — o (19) 3937-4807 consta no diretório da Fundação Procon-SP junto com o endereço antigo.",
+    "Se o atendimento presencial do Procon exige agendamento ou é por ordem de chegada — as páginas informam horário sem detalhar o fluxo.",
+    "Data da mudança para a sala 2 — a notícia com o endereço vigente não traz a data da transferência."
+  ]
+}
