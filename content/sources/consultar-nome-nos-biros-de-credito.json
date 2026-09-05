@@ -1,0 +1,35 @@
+{
+  "articleSlug": "consultar-nome-nos-biros-de-credito",
+  "claims": [
+    {
+      "claimId": "cdc-43-acesso-prazo-correcao",
+      "claimText": "O consumidor tem acesso às informações existentes em cadastros, fichas, registros e dados pessoais e de consumo arquivados sobre ele, e às suas respectivas fontes. Os cadastros não podem conter informações negativas referentes a período superior a cinco anos. A abertura de cadastro deve ser comunicada por escrito ao consumidor quando não solicitada por ele. Encontrada inexatidão, o consumidor pode exigir a correção imediata, e o arquivista tem cinco dias úteis para comunicar a alteração aos eventuais destinatários da informação incorreta.",
+      "sourceOrganization": "Presidência da República",
+      "sourceTitle": "Lei nº 8.078/1990 — Código de Defesa do Consumidor, art. 43 (texto compilado)",
+      "sourceLocation": "https://www.planalto.gov.br/ccivil_03/leis/l8078compilado.htm",
+      "sourceType": "official",
+      "accessedAt": "2026-09-03",
+      "notes": "Base legal estável. O prazo de cinco anos é do registro negativo, não da dívida — distinção tratada no artigo e no guia de dívida caducada."
+    },
+    {
+      "claimId": "lei-12414-acesso-gratuito",
+      "claimText": "O cadastrado tem direito de acessar gratuitamente, independentemente de justificativa, as informações sobre ele existentes no banco de dados, inclusive seu histórico e sua nota ou pontuação de crédito. Os gestores devem disponibilizar essas informações de maneira segura e gratuita, por meio eletrônico e por telefone. O cadastrado pode solicitar a impugnação de informação erroneamente anotada, com correção ou cancelamento, e o cancelamento e a reabertura do cadastro dependem de solicitação gratuita ao gestor.",
+      "sourceOrganization": "Presidência da República",
+      "sourceTitle": "Lei nº 12.414/2011 (Cadastro Positivo), com alterações da Lei Complementar nº 166/2019",
+      "sourceLocation": "https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2011/lei/l12414.htm",
+      "sourceType": "official",
+      "accessedAt": "2026-09-03",
+      "notes": "É a base da afirmação de gratuidade, incluindo a pontuação. Sustenta o alerta contra sites que cobram para mostrar o próprio cadastro."
+    },
+    {
+      "claimId": "gbd-autorizados",
+      "claimText": "Os Gestores de Banco de Dados atualmente autorizados pelo Banco Central no âmbito do Cadastro Positivo são Boa Vista Serviços, QUOD — Gestora de Inteligência de Crédito, Serasa Experian e SPC Brasil. O serviço federal de consulta ao Cadastro Positivo exige conta gov.br em nível prata ou ouro.",
+      "sourceOrganization": "Governo Federal",
+      "sourceTitle": "Consultar Meu Cadastro Positivo — Portal gov.br",
+      "sourceLocation": "https://www.gov.br/pt-br/servicos/consultar-cadastro-positivo",
+      "sourceType": "official",
+      "accessedAt": "2026-09-03",
+      "notes": "A lista de gestores autorizados pode mudar — registrada no bloco WhatCanChange do artigo. Revisar a cada 6 meses."
+    }
+  ]
+}

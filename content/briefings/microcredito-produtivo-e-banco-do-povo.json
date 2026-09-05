@@ -1,0 +1,51 @@
+{
+  "proposedTitle": "Microcrédito produtivo e Banco do Povo: o crédito público para quem tem um negócio",
+  "primaryIntent": "o que é microcrédito produtivo e quem pode pedir",
+  "secondaryIntents": [
+    "Banco do Povo Paulista como funciona",
+    "microcrédito sem CNPJ",
+    "juros do microcrédito",
+    "negativado consegue microcrédito?"
+  ],
+  "targetReader": "Quem toca um negócio pequeno, formal ou informal, e financia estoque no cartão ou no cheque especial por não conhecer a porta pública",
+  "readerSituation": "Assume que crédito público não é para ele por não ter CNPJ, ou não sabe que existe",
+  "centralQuestion": "Existe crédito mais barato para o meu negócio, e eu me enquadro?",
+  "uniqueAngle": "Maior assimetria medida entre as camadas do site: 34 dos 38 guias locais citam Banco do Povo e apenas 2 artigos tocavam no assunto — não havia pilar nacional para onde a camada local apontasse. O eixo é o destino vinculado do dinheiro, que explica ao mesmo tempo o juro baixo e a inadequação para dívida pessoal.",
+  "originalContribution": "Traz a base legal do PNMPO com o limite de porte, explica por que os juros são menores em três causas verificáveis, e destaca dois pré-requisitos que fazem o leitor perder a viagem — capacitação prévia e ausência de restrição cadastral.",
+  "primarySources": [
+    "Lei nº 13.636/2018 (PNMPO)",
+    "Banco do Povo Paulista — Secretaria de Desenvolvimento Econômico de SP",
+    "Ministério do Trabalho e Emprego — PNMPO"
+  ],
+  "supportingSources": [
+    "Dossiês locais do portal, com endereços verificados por município"
+  ],
+  "contentArchetype": "guia-modalidade",
+  "proposedStructure": [
+    "O que a lei federal define",
+    "O Banco do Povo na prática",
+    "Por que os juros são menores",
+    "Quando não é a resposta",
+    "Onde fica o balcão da sua cidade",
+    "FAQ"
+  ],
+  "internalLinks": [
+    "consultar-nome-nos-biros-de-credito",
+    "emprestimo-para-mei",
+    "emprestimo-para-autonomo",
+    "emprestimo-pessoal",
+    "juros-do-cheque-especial",
+    "como-sair-do-rotativo",
+    "como-negociar-dividas",
+    "lei-do-superendividamento",
+    "o-que-e-cet"
+  ],
+  "toolIntegrations": [
+    "comparador-de-propostas"
+  ],
+  "antiCannibalization": "emprestimo-para-mei continua dono da documentação e das linhas para quem tem CNPJ; emprestimo-para-autonomo continua dono da comprovação de renda sem holerite. Esta página é dona do microcrédito produtivo como política pública — base legal, requisitos e a ponte para a camada local.",
+  "risks": [
+    "Percentuais e tetos das linhas mudam por programa e período — declarados como ordem de grandeza, com WhatCanChange",
+    "Não afirmar valores de linha específica sem fonte oficial vigente"
+  ]
+}

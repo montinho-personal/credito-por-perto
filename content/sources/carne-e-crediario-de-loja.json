@@ -1,0 +1,35 @@
+{
+  "articleSlug": "carne-e-crediario-de-loja",
+  "claims": [
+    {
+      "claimId": "cdc-52-informacao-previa",
+      "claimText": "No fornecimento de produtos ou serviços que envolva outorga de crédito ou concessão de financiamento ao consumidor, o fornecedor deve informá-lo prévia e adequadamente sobre o preço do produto ou serviço em moeda corrente nacional, o montante dos juros de mora e a taxa efetiva anual de juros, os acréscimos legalmente previstos, o número e a periodicidade das prestações e a soma total a pagar, com e sem financiamento.",
+      "sourceOrganization": "Presidência da República",
+      "sourceTitle": "Lei nº 8.078/1990 — Código de Defesa do Consumidor, art. 52 (texto compilado)",
+      "sourceLocation": "https://www.planalto.gov.br/ccivil_03/leis/l8078compilado.htm",
+      "sourceType": "official",
+      "accessedAt": "2026-09-03",
+      "notes": "A obrigação de informar a soma total 'com e sem financiamento' é o fundamento do teste dos três números proposto no artigo."
+    },
+    {
+      "claimId": "cdc-52-multa-e-antecipacao",
+      "claimText": "As multas de mora decorrentes do inadimplemento de obrigação no seu termo não podem ser superiores a dois por cento do valor da prestação. É assegurado ao consumidor a liquidação antecipada do débito, total ou parcialmente, mediante redução proporcional dos juros e demais acréscimos.",
+      "sourceOrganization": "Presidência da República",
+      "sourceTitle": "Lei nº 8.078/1990 — Código de Defesa do Consumidor, art. 52, §§ 1º e 2º",
+      "sourceLocation": "https://www.planalto.gov.br/ccivil_03/leis/l8078compilado.htm",
+      "sourceType": "official",
+      "accessedAt": "2026-09-03",
+      "notes": "O § 2º é o direito menos exercido do crediário. Vincula-se ao guia de quitação antecipada, que detalha a conta."
+    },
+    {
+      "claimId": "cdc-49-arrependimento",
+      "claimText": "O consumidor pode desistir do contrato no prazo de 7 dias a contar de sua assinatura ou do ato de recebimento do produto ou serviço, sempre que a contratação de fornecimento de produtos e serviços ocorrer fora do estabelecimento comercial, especialmente por telefone ou a domicílio.",
+      "sourceOrganization": "Presidência da República",
+      "sourceTitle": "Lei nº 8.078/1990 — Código de Defesa do Consumidor, art. 49 (texto compilado)",
+      "sourceLocation": "https://www.planalto.gov.br/ccivil_03/leis/l8078compilado.htm",
+      "sourceType": "official",
+      "accessedAt": "2026-09-03",
+      "notes": "Aplicável ao crediário contratado fora da loja física."
+    }
+  ]
+}

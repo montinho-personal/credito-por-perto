@@ -1,0 +1,47 @@
+{
+  "proposedTitle": "Carnê e crediário de loja: o empréstimo que não se chama de empréstimo",
+  "primaryIntent": "como avaliar o custo do crediário e do carnê de loja",
+  "secondaryIntents": [
+    "parcelado sem juros tem juros?",
+    "posso quitar carnê antes e pagar menos",
+    "qual a multa por atraso no carnê",
+    "a loja é obrigada a informar juros"
+  ],
+  "targetReader": "Quem está diante de uma vitrine decidindo entre pagar à vista e parcelar no carnê, e quem já tem um carnê e quer quitar antes",
+  "readerSituation": "A conversa da loja acontece na linguagem da parcela; o leitor não sabe que existe obrigação legal de informar o total com e sem financiamento",
+  "centralQuestion": "Quanto o parcelamento da loja realmente custa, e o que a lei me garante nessa operação?",
+  "uniqueAngle": "Assimetria medida: 9 guias locais tratam de carnê e crediário (o de Americana é construído em torno disso) e nenhum artigo era dono da intenção. O eixo é o art. 52 do CDC — em especial a obrigação de informar a soma total com e sem financiamento, que é exatamente o número que a loja evita, e o direito à redução proporcional de juros na quitação antecipada.",
+  "originalContribution": "Transforma o art. 52 num teste de três perguntas aplicável no balcão, e explicita o direito de liquidação antecipada, que quase nunca é oferecido espontaneamente.",
+  "primarySources": [
+    "Lei nº 8.078/1990 (CDC), art. 52 e §§ 1º e 2º",
+    "Lei nº 8.078/1990 (CDC), art. 49"
+  ],
+  "supportingSources": [
+    "Procon-SP — edição anotada do CDC"
+  ],
+  "contentArchetype": "guia-decisao",
+  "proposedStructure": [
+    "O que a loja é obrigada a informar",
+    "O teste dos três números",
+    "O direito de pagar antes",
+    "Quando trocar carnê por empréstimo",
+    "Deu problema",
+    "FAQ"
+  ],
+  "internalLinks": [
+    "quitacao-antecipada-de-emprestimo",
+    "o-que-e-cet",
+    "como-sair-do-rotativo",
+    "o-que-acontece-ao-atrasar-parcela",
+    "quando-vale-a-pena-fazer-emprestimo",
+    "consultar-nome-nos-biros-de-credito"
+  ],
+  "toolIntegrations": [
+    "a-vista-ou-parcelado"
+  ],
+  "antiCannibalization": "como-sair-do-rotativo continua dono da dívida de cartão; quitacao-antecipada-de-emprestimo continua dono da mecânica de cálculo da antecipação; a-vista-ou-parcelado é a ferramenta, não a página de conteúdo. Esta página é dona da operação de crédito da loja e dos direitos específicos do art. 52.",
+  "risks": [
+    "Não afirmar taxa praticada por loja, que não é tabelada",
+    "Exemplo numérico marcado como hipotético e ilustrativo"
+  ]
+}

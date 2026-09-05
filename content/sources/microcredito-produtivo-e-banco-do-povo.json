@@ -1,0 +1,35 @@
+{
+  "articleSlug": "microcredito-produtivo-e-banco-do-povo",
+  "claims": [
+    {
+      "claimId": "pnmpo-lei-13636",
+      "claimText": "O Programa Nacional de Microcrédito Produtivo Orientado (PNMPO) é instituído no âmbito do Ministério do Trabalho e Emprego, com o objetivo de fomentar, apoiar e financiar atividades produtivas de empreendedores. São beneficiárias pessoas naturais e jurídicas empreendedoras de atividades produtivas urbanas e rurais, apresentadas de forma individual ou coletiva, com renda ou receita bruta anual de até R$ 360 mil, conforme o limite estabelecido para a microempresa. Considera-se microcrédito produtivo orientado o crédito concedido para financiamento das atividades produtivas, cuja metodologia é estabelecida em ato do Conselho Monetário Nacional, admitido o relacionamento direto com os empreendedores ou o uso de tecnologias digitais.",
+      "sourceOrganization": "Presidência da República",
+      "sourceTitle": "Lei nº 13.636, de 20 de março de 2018",
+      "sourceLocation": "https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13636.htm",
+      "sourceType": "official",
+      "accessedAt": "2026-09-03",
+      "notes": "A menção a 'pessoas naturais' é o que sustenta a afirmação de que não é preciso ter CNPJ."
+    },
+    {
+      "claimId": "banco-do-povo-requisitos",
+      "claimText": "O Banco do Povo Paulista é o programa de microcrédito produtivo orientado do Governo do Estado de São Paulo, operado em parceria com as prefeituras, e financia capital de giro (compra de mercadoria, matéria-prima, pequenos consertos) e investimento fixo (máquinas e equipamentos novos com nota fiscal, veículos utilitários), para empreendedores formais e informais. O programa exige capacitação empreendedora prévia, oferecida gratuitamente pelo Qualifica SP ou pelo Sebrae, e que o tomador não apresente restrição cadastral em birô de crédito e no Cadin Estadual.",
+      "sourceOrganization": "Governo do Estado de São Paulo — Secretaria de Desenvolvimento Econômico",
+      "sourceTitle": "Banco do Povo — página institucional do programa",
+      "sourceLocation": "https://www.desenvolvimentoeconomico.sp.gov.br/DesenvolvimentoEconomico/institucional/Programas/banco_do_povo",
+      "sourceType": "official",
+      "accessedAt": "2026-09-03",
+      "notes": "Os dois pré-requisitos (capacitação e ausência de restrição) são o achado mais acionável do artigo. Condições de linha específica NÃO foram afirmadas no texto por variarem por período."
+    },
+    {
+      "claimId": "faixa-de-juros-microcredito",
+      "claimText": "Os postos municipais do Banco do Povo Paulista informam juros na faixa de 0,35% a 1% ao mês, conforme a linha e o perfil do tomador.",
+      "sourceOrganization": "Prefeituras paulistas (páginas oficiais do programa)",
+      "sourceTitle": "Páginas municipais do Banco do Povo Paulista — dossiês locais do portal",
+      "sourceLocation": "https://www.desenvolvimentoeconomico.sp.gov.br/DesenvolvimentoEconomico/institucional/Programas/banco_do_povo",
+      "sourceType": "official",
+      "accessedAt": "2026-09-03",
+      "notes": "Faixa conferida de forma convergente em múltiplos dossiês municipais do portal (Louveira, Cajamar, Cosmópolis, Várzea Paulista). Apresentada no artigo como ordem de grandeza, não como taxa contratual garantida."
+    }
+  ]
+}

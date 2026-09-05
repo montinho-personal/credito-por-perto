@@ -493,5 +493,27 @@
       "/organizacao-financeira/como-sair-das-dividas/",
       "/organizacao-financeira/como-comparar-propostas-de-credito/"
     ]
+  },
+  "como consultar o próprio nome nos birôs de crédito de graça": {
+    "canonicalOwner": "/credito-seguro/consultar-nome-nos-biros-de-credito/",
+    "supportingPages": [
+      "/credito-seguro/como-consultar-dividas-no-registrato/",
+      "/organizacao-financeira/score-de-credito/",
+      "/organizacao-financeira/divida-caducada-nome-limpo/"
+    ]
+  },
+  "o que é microcrédito produtivo e quem pode pedir": {
+    "canonicalOwner": "/emprestimos/microcredito-produtivo-e-banco-do-povo/",
+    "supportingPages": [
+      "/emprestimos/emprestimo-para-mei/",
+      "/emprestimos/emprestimo-para-autonomo/"
+    ]
+  },
+  "como avaliar o custo do crediário e do carnê de loja": {
+    "canonicalOwner": "/organizacao-financeira/carne-e-crediario-de-loja/",
+    "supportingPages": [
+      "/calculadoras/a-vista-ou-parcelado/",
+      "/juros-e-cet/quitacao-antecipada-de-emprestimo/"
+    ]
   }
 }

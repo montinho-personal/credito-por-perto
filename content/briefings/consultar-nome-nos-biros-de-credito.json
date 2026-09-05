@@ -1,0 +1,51 @@
+{
+  "proposedTitle": "Como consultar seu nome no Serasa, SPC e Boa Vista (e o que fazer com o resultado)",
+  "primaryIntent": "como consultar o próprio nome nos birôs de crédito de graça",
+  "secondaryIntents": [
+    "como saber se estou negativado",
+    "como contestar registro indevido",
+    "diferença entre birô e Registrato",
+    "consulta de score é gratuita?"
+  ],
+  "targetReader": "Quem vai pedir crédito e quer saber o que aparece no próprio nome antes, e quem levou um 'não' sem entender o motivo",
+  "readerSituation": "Descobre o registro só depois da negativa no balcão, e supõe que ver o próprio cadastro é serviço pago",
+  "centralQuestion": "Onde e como consultar gratuitamente o que os birôs guardam sobre mim, e o que fazer com o que aparecer?",
+  "uniqueAngle": "Lacuna medida no corpus: 17 artigos citavam birôs de crédito e nenhuma página ensinava a consultar. O eixo é a gratuidade legal — direito previsto na Lei 12.414 e no CDC que quase ninguém exerce — e a fronteira explícita com o Registrato do Banco Central, que o próprio corpus já havia estabelecido sem entregar o outro lado.",
+  "originalContribution": "Nomeia os quatro Gestores de Banco de Dados autorizados pelo Banco Central, separa o que cada lei garante (CDC art. 43 x Lei 12.414) e traduz o resultado da consulta numa tabela de ação por tipo de registro.",
+  "primarySources": [
+    "Lei nº 8.078/1990 (CDC), art. 43",
+    "Lei nº 12.414/2011 e Lei Complementar nº 166/2019",
+    "Serviço 'Consultar Meu Cadastro Positivo' — gov.br"
+  ],
+  "supportingSources": [
+    "Registrato — Banco Central",
+    "Procon-SP — Cadastro Positivo"
+  ],
+  "contentArchetype": "guia-procedimento",
+  "proposedStructure": [
+    "Fronteira birô x Banco Central",
+    "Onde consultar, birô por birô",
+    "O que a lei garante",
+    "Como ler o resultado",
+    "Como contestar erro",
+    "Consultar antes de pedir crédito muda algo?",
+    "FAQ"
+  ],
+  "internalLinks": [
+    "como-consultar-dividas-no-registrato",
+    "score-de-credito",
+    "divida-caducada-nome-limpo",
+    "como-negociar-dividas",
+    "emprestimo-caiu-na-conta-sem-pedir",
+    "como-funciona-analise-de-credito",
+    "microcredito-produtivo-e-banco-do-povo"
+  ],
+  "toolIntegrations": [
+    "consultar-instituicao"
+  ],
+  "antiCannibalization": "como-consultar-dividas-no-registrato continua dono da consulta ao Banco Central (operações de crédito oficiais); score-de-credito continua dono do conceito de pontuação; divida-caducada-nome-limpo continua dono do prazo de 5 anos e seus efeitos. Esta página é dona apenas do procedimento de consulta e contestação nos birôs privados.",
+  "risks": [
+    "Canais e telas dos birôs mudam com frequência — o texto descreve o caminho sem prometer botão específico",
+    "Não afirmar regra de cálculo de score, que não é pública"
+  ]
+}
