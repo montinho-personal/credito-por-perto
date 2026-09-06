@@ -1,0 +1,45 @@
+{
+  "articleSlug": "leilao-extrajudicial-imovel-em-garantia",
+  "claims": [
+    {
+      "claimId": "lei-9514-conceito",
+      "claimText": "A alienação fiduciária regulada pela Lei nº 9.514/1997 é o negócio jurídico pelo qual o devedor, ou fiduciante, com o escopo de garantia, contrata a transferência ao credor, ou fiduciário, da propriedade resolúvel de coisa imóvel. A mesma lei instituiu o Sistema de Financiamento Imobiliário.",
+      "sourceOrganization": "Presidência da República",
+      "sourceTitle": "Lei nº 9.514, de 20 de novembro de 1997",
+      "sourceLocation": "https://www.planalto.gov.br/ccivil_03/leis/l9514.htm",
+      "sourceType": "official",
+      "accessedAt": "2026-09-03",
+      "notes": "O conceito de propriedade resolúvel é o que explica, no artigo, por que o imóvel fica em nome do credor durante o contrato."
+    },
+    {
+      "claimId": "lei-9514-purgacao-consolidacao",
+      "claimText": "O devedor fiduciante é intimado pelo oficial do Registro de Imóveis a satisfazer, no prazo de 15 dias, a prestação vencida e as que vencerem até a data do pagamento, os juros convencionais, as penalidades e os demais encargos contratuais, os encargos legais inclusive tributos, as contribuições condominiais imputáveis ao imóvel e as despesas de cobrança e de intimação. Não purgada a mora, a consolidação da propriedade em nome do credor fiduciário é averbada no registro do imóvel trinta dias após o vencimento desse prazo.",
+      "sourceOrganization": "Presidência da República",
+      "sourceTitle": "Lei nº 9.514/1997, art. 26, na redação vigente após a Lei nº 14.711/2023",
+      "sourceLocation": "https://www.planalto.gov.br/ccivil_03/leis/l9514.htm",
+      "sourceType": "official",
+      "accessedAt": "2026-09-03",
+      "notes": "Prazo de 15 dias é a informação mais acionável do artigo. A composição do valor exigido foi mantida na íntegra por ser o que surpreende o devedor."
+    },
+    {
+      "claimId": "lei-9514-leilao",
+      "claimText": "Consolidada a propriedade em seu nome, o fiduciário promove leilão público para alienação do imóvel no prazo de sessenta dias, contado da data do registro da consolidação. Se no primeiro leilão o maior lance oferecido for inferior ao valor do imóvel, realiza-se segundo leilão nos quinze dias seguintes.",
+      "sourceOrganization": "Presidência da República",
+      "sourceTitle": "Lei nº 9.514/1997, art. 27",
+      "sourceLocation": "https://www.planalto.gov.br/ccivil_03/leis/l9514.htm",
+      "sourceType": "official",
+      "accessedAt": "2026-09-03",
+      "notes": "O valor mínimo do segundo leilão NÃO foi afirmado no artigo por não ter sido verificado diretamente no texto vigente. A devolução do saldo ao devedor foi tratada de forma genérica, com encaminhamento para orientação jurídica."
+    },
+    {
+      "claimId": "lei-14711-marco-garantias",
+      "claimText": "A Lei nº 14.711/2023, conhecida como Marco Legal das Garantias, alterou dispositivos da Lei nº 9.514/1997 relativos ao procedimento de execução extrajudicial da alienação fiduciária de imóvel.",
+      "sourceOrganization": "Presidência da República",
+      "sourceTitle": "Lei nº 14.711, de 30 de outubro de 2023",
+      "sourceLocation": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/lei/l14711.htm",
+      "sourceType": "official",
+      "accessedAt": "2026-09-03",
+      "notes": "Registrada porque os prazos citados no artigo seguem a redação pós-alteração. Revisar se houver nova regulamentação."
+    }
+  ]
+}

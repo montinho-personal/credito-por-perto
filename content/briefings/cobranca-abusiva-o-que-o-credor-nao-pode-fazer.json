@@ -1,0 +1,48 @@
+{
+  "proposedTitle": "Cobrança abusiva: o que o cobrador não pode fazer, e o que fazer se ele fizer",
+  "primaryIntent": "o que é cobrança abusiva e quais os direitos do devedor",
+  "secondaryIntents": [
+    "cobrador pode ligar no meu trabalho",
+    "posso ser preso por dívida",
+    "cobrança vexatória é crime",
+    "devolução em dobro de cobrança indevida"
+  ],
+  "targetReader": "Quem está em atraso e vem sendo cobrado de forma que constrange, e não sabe se pode reclamar por estar devendo",
+  "readerSituation": "Acredita que, por dever, perdeu o direito de reclamar da forma da cobrança",
+  "centralQuestion": "Onde termina a cobrança legítima e começa a abusiva, e o que fazer quando esse limite é ultrapassado?",
+  "uniqueAngle": "Lacuna absoluta medida no corpus: a varredura por 'cobrança abusiva', 'assédio' e 'vexatória' nos 66 artigos não retornou nenhuma ocorrência, no cluster de proteção ao consumidor que é o mais forte do site. O eixo é a separação entre o que a dívida legítima autoriza e o que nenhuma dívida autoriza, com o art. 71 do CDC tratando a conduta como crime.",
+  "originalContribution": "Tabela pode/não pode derivada do texto legal; precisão sobre a devolução em dobro, que exige pagamento efetivo e admite engano justificável — nuance que a maioria das fontes erra; separação explícita entre resolver o abuso e resolver a dívida.",
+  "primarySources": [
+    "Lei nº 8.078/1990 (CDC), art. 42 e parágrafo único",
+    "Lei nº 8.078/1990 (CDC), art. 71"
+  ],
+  "supportingSources": [
+    "Procon-ES e Procon-PE — orientações sobre cobrança vexatória",
+    "Senacon — orientação ao consumidor inadimplente"
+  ],
+  "contentArchetype": "guia-direitos",
+  "proposedStructure": [
+    "A regra em uma frase",
+    "O que pode e o que não pode",
+    "Cobrança indevida já paga",
+    "O que fazer quando acontece",
+    "A dívida também precisa de plano",
+    "Se a dívida não é sua",
+    "FAQ"
+  ],
+  "internalLinks": [
+    "como-negociar-dividas",
+    "lei-do-superendividamento",
+    "divida-caducada-nome-limpo",
+    "consultar-nome-nos-biros-de-credito",
+    "emprestimo-caiu-na-conta-sem-pedir"
+  ],
+  "toolIntegrations": [
+    "renegociacao-de-dividas"
+  ],
+  "antiCannibalization": "o-que-acontece-ao-atrasar-parcela continua dono das consequências do atraso; como-negociar-dividas continua dono da preparação para negociar; lei-do-superendividamento continua dona da repactuação. Esta página é dona apenas dos limites da conduta de cobrança e da reação a eles.",
+  "risks": [
+    "Não afirmar horário nacional de cobrança, que o CDC não fixa em números",
+    "Precisar a devolução em dobro sem prometer resultado, por depender de pagamento efetivo e de engano justificável"
+  ]
+}

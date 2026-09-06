@@ -515,5 +515,27 @@
       "/calculadoras/a-vista-ou-parcelado/",
       "/juros-e-cet/quitacao-antecipada-de-emprestimo/"
     ]
+  },
+  "o que é cobrança abusiva e quais os direitos do devedor": {
+    "canonicalOwner": "/organizacao-financeira/cobranca-abusiva-o-que-o-credor-nao-pode-fazer/",
+    "supportingPages": [
+      "/organizacao-financeira/o-que-acontece-ao-atrasar-parcela/",
+      "/organizacao-financeira/como-negociar-dividas/"
+    ]
+  },
+  "o que fazer quando o empréstimo é negado": {
+    "canonicalOwner": "/emprestimos/emprestimo-negado-o-que-fazer/",
+    "supportingPages": [
+      "/emprestimos/como-funciona-analise-de-credito/",
+      "/credito-seguro/consultar-nome-nos-biros-de-credito/",
+      "/organizacao-financeira/score-de-credito/"
+    ]
+  },
+  "o que acontece com o imóvel dado em garantia se eu não pagar": {
+    "canonicalOwner": "/emprestimos/leilao-extrajudicial-imovel-em-garantia/",
+    "supportingPages": [
+      "/emprestimos/emprestimo-com-garantia/",
+      "/emprestimos/financiamento-de-veiculo/"
+    ]
   }
 }

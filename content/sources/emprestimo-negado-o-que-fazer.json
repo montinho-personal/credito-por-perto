@@ -1,0 +1,35 @@
+{
+  "articleSlug": "emprestimo-negado-o-que-fazer",
+  "claims": [
+    {
+      "claimId": "lgpd-20-revisao",
+      "claimText": "O titular dos dados tem direito a solicitar a revisão de decisões tomadas unicamente com base em tratamento automatizado de dados pessoais que afetem seus interesses, incluídas as decisões destinadas a definir o seu perfil pessoal, profissional, de consumo e de crédito ou os aspectos de sua personalidade. O controlador deverá fornecer, sempre que solicitadas, informações claras e adequadas a respeito dos critérios e dos procedimentos utilizados para a decisão automatizada, observados os segredos comercial e industrial.",
+      "sourceOrganization": "Presidência da República",
+      "sourceTitle": "Lei nº 13.709/2018 — Lei Geral de Proteção de Dados Pessoais, art. 20",
+      "sourceLocation": "https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm",
+      "sourceType": "official",
+      "accessedAt": "2026-09-03",
+      "notes": "O artigo declara ao leitor a limitação: o sigilo comercial pode restringir a resposta, e a lei não garante revisão por pessoa humana — o dispositivo que exigia isso foi vetado. Não prometer o que a lei não dá."
+    },
+    {
+      "claimId": "servico-revisao-automatizada",
+      "claimText": "O Governo Federal mantém página de serviço orientando o cidadão a solicitar a revisão de decisões tomadas com base em tratamento automatizado de dados pessoais.",
+      "sourceOrganization": "Governo Federal — Governo Digital",
+      "sourceTitle": "Solicitar a revisão de decisões tomadas com base em tratamento automatizado de dados pessoais",
+      "sourceLocation": "https://www.gov.br/governodigital/pt-br/lgpd-pagina-do-cidadao/solicitar-a-revisao-de-decisoes-tomadas-com-base-em-tratamento-automatizado-de-dados-pessoais",
+      "sourceType": "official",
+      "accessedAt": "2026-09-03",
+      "notes": "Canal oficial que dá caminho prático ao direito do art. 20."
+    },
+    {
+      "claimId": "cdc-43-acesso",
+      "claimText": "O consumidor tem acesso às informações existentes em cadastros, fichas, registros e dados pessoais e de consumo arquivados sobre ele, e às suas respectivas fontes, e os cadastros não podem conter informações negativas referentes a período superior a cinco anos.",
+      "sourceOrganization": "Presidência da República",
+      "sourceTitle": "Lei nº 8.078/1990 — CDC, art. 43",
+      "sourceLocation": "https://www.planalto.gov.br/ccivil_03/leis/l8078compilado.htm",
+      "sourceType": "official",
+      "accessedAt": "2026-09-03",
+      "notes": "Sustenta a etapa de consulta do roteiro e a orientação sobre registro com mais de cinco anos."
+    }
+  ]
+}

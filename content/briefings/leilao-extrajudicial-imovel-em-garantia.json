@@ -1,0 +1,48 @@
+{
+  "proposedTitle": "Imóvel dado em garantia: como funciona o leilão extrajudicial se você não pagar",
+  "primaryIntent": "o que acontece com o imóvel dado em garantia se eu não pagar",
+  "secondaryIntents": [
+    "prazo para purgar a mora alienação fiduciária",
+    "como funciona o leilão extrajudicial",
+    "alienação fiduciária e hipoteca diferença",
+    "recebo a diferença se o imóvel vender por mais"
+  ],
+  "targetReader": "Quem considera dar o imóvel em garantia e quem já deu e atrasou, com a intimação em mãos",
+  "readerSituation": "Conhece a vantagem do juro menor e não sabe que a retomada não passa pela Justiça, nem que a janela de reação dura quinze dias",
+  "centralQuestion": "O que exatamente acontece, e em quanto tempo, se eu não pagar um empréstimo com garantia de imóvel?",
+  "uniqueAngle": "Lacuna com peso editorial, não só de SEO: sete artigos mencionam alienação fiduciária ou leilão, e o único dono é o de financiamento de veículo, que cobre busca e apreensão. Para imóvel, emprestimo-com-garantia traz 'alienacao-fiduciaria' apenas como tag. O site recomenda a modalidade pelo juro menor e nunca explicou o motivo do juro ser menor.",
+  "originalContribution": "Explica que o barateamento vem da velocidade da retomada, e transforma isso em critério de decisão antes de assinar; localiza a janela real de reação (os 15 dias da intimação) em vez de tratar o processo como bloco único.",
+  "primarySources": [
+    "Lei nº 9.514/1997, arts. 26 e 27",
+    "Lei nº 14.711/2023 — Marco Legal das Garantias"
+  ],
+  "supportingSources": [
+    "Lei nº 8.078/1990 (CDC), para a relação de consumo"
+  ],
+  "contentArchetype": "guia-modalidade",
+  "proposedStructure": [
+    "O que você assina",
+    "O rito etapa por etapa",
+    "O que fazer se a intimação chegou",
+    "O que isso muda antes de assinar",
+    "FAQ"
+  ],
+  "internalLinks": [
+    "emprestimo-com-garantia",
+    "financiamento-de-veiculo",
+    "emprestimo-pessoal",
+    "o-que-e-cet",
+    "como-identificar-golpes-de-emprestimo",
+    "deposito-antecipado-e-golpe"
+  ],
+  "toolIntegrations": [
+    "comparador-de-propostas",
+    "parcela-no-orcamento"
+  ],
+  "antiCannibalization": "emprestimo-com-garantia continua dono da modalidade, dos documentos e da contratação; financiamento-de-veiculo continua dono da busca e apreensão de veículo, que é rito judicial e diferente. Esta página é dona apenas da execução extrajudicial da garantia imobiliária.",
+  "risks": [
+    "A Lei 14.711/2023 alterou o procedimento e há regulamentação em evolução — declarado em WhatCanChange",
+    "Não afirmar valor mínimo do segundo leilão sem verificação direta no texto vigente",
+    "Tema de alta angústia: nenhuma promessa de reverter o procedimento, e encaminhamento para Defensoria"
+  ]
+}

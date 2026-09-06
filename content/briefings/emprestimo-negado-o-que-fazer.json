@@ -1,0 +1,51 @@
+{
+  "proposedTitle": "Empréstimo negado: por que acontece e o que fazer depois do não",
+  "primaryIntent": "o que fazer quando o empréstimo é negado",
+  "secondaryIntents": [
+    "por que meu crédito foi negado",
+    "posso saber o motivo da recusa",
+    "quanto tempo esperar para tentar de novo",
+    "pedir em vários bancos piora?"
+  ],
+  "targetReader": "Quem acabou de receber uma recusa e está prestes a pedir em outro lugar",
+  "readerSituation": "Não recebeu explicação, sente que o problema é o score, e a reação imediata é repetir o pedido — o que piora o histórico",
+  "centralQuestion": "Por que fui recusado e qual é o próximo passo que não piora minha situação?",
+  "uniqueAngle": "Ponto cego do corpus: zero menções e zero páginas, num site que já explica a mecânica da análise. O eixo é o direito do art. 20 da LGPD de pedir revisão de decisão automatizada e informação sobre critérios — pouquíssimo usado — e a inversão do reflexo de pedir em série.",
+  "originalContribution": "Trata a recusa por comprometimento de renda como resposta possivelmente correta, e encaminha para renegociação em vez de novo crédito; explicita a limitação do direito da LGPD (sigilo comercial, revisão não necessariamente humana) em vez de prometer mais do que a lei dá.",
+  "primarySources": [
+    "Lei nº 13.709/2018 (LGPD), art. 20",
+    "Governo Digital — serviço de revisão de decisões automatizadas"
+  ],
+  "supportingSources": [
+    "Lei nº 8.078/1990 (CDC), art. 43"
+  ],
+  "contentArchetype": "guia-procedimento",
+  "proposedStructure": [
+    "Por que a recusa acontece",
+    "Roteiro dos primeiros passos",
+    "Revisão da decisão automatizada",
+    "Se encontrou erro",
+    "Quando o não foi a resposta certa",
+    "FAQ"
+  ],
+  "internalLinks": [
+    "como-funciona-analise-de-credito",
+    "consultar-nome-nos-biros-de-credito",
+    "como-consultar-dividas-no-registrato",
+    "divida-caducada-nome-limpo",
+    "renegociacao-ou-emprestimo",
+    "como-sair-do-rotativo",
+    "lei-do-superendividamento",
+    "quando-vale-a-pena-fazer-emprestimo",
+    "score-de-credito",
+    "cobranca-abusiva-o-que-o-credor-nao-pode-fazer"
+  ],
+  "toolIntegrations": [
+    "parcela-no-orcamento"
+  ],
+  "antiCannibalization": "como-funciona-analise-de-credito continua dono da mecânica da análise; score-de-credito continua dono do conceito de pontuação; emprestimo-para-negativado continua dono das opções de quem tem restrição. Esta página é dona do momento posterior à recusa e do procedimento de revisão.",
+  "risks": [
+    "Não prometer revisão humana: o dispositivo que a exigia foi vetado",
+    "Não afirmar prazo legal para nova tentativa, que não existe"
+  ]
+}

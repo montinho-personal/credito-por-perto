@@ -1,0 +1,35 @@
+{
+  "articleSlug": "cobranca-abusiva-o-que-o-credor-nao-pode-fazer",
+  "claims": [
+    {
+      "claimId": "cdc-42-caput",
+      "claimText": "Na cobrança de débitos, o consumidor inadimplente não será exposto a ridículo, nem será submetido a qualquer tipo de constrangimento ou ameaça.",
+      "sourceOrganization": "Presidência da República",
+      "sourceTitle": "Lei nº 8.078/1990 — Código de Defesa do Consumidor, art. 42, caput",
+      "sourceLocation": "https://www.planalto.gov.br/ccivil_03/leis/l8078compilado.htm",
+      "sourceType": "official",
+      "accessedAt": "2026-09-03",
+      "notes": "Citado no artigo como bloco de citação direta, sem paráfrase, por ser a regra inteira."
+    },
+    {
+      "claimId": "cdc-42-repeticao-indebito",
+      "claimText": "O consumidor cobrado em quantia indevida tem direito à repetição do indébito, por valor igual ao dobro do que pagou em excesso, acrescido de correção monetária e juros legais, salvo hipótese de engano justificável.",
+      "sourceOrganization": "Presidência da República",
+      "sourceTitle": "Lei nº 8.078/1990 — CDC, art. 42, parágrafo único",
+      "sourceLocation": "https://www.planalto.gov.br/ccivil_03/leis/l8078compilado.htm",
+      "sourceType": "official",
+      "accessedAt": "2026-09-03",
+      "notes": "Duas precisões que o artigo faz questão de manter: o dobro incide sobre o que foi PAGO em excesso, não sobre o cobrado; e o engano justificável afasta a penalidade."
+    },
+    {
+      "claimId": "cdc-71-crime",
+      "claimText": "Utilizar, na cobrança de dívidas, de ameaça, coação, constrangimento físico ou moral, afirmações falsas, incorretas ou enganosas, ou de qualquer outro procedimento que exponha o consumidor, injustificadamente, a ridículo ou interfira com seu trabalho, descanso ou lazer: pena de detenção de três meses a um ano e multa.",
+      "sourceOrganization": "Presidência da República",
+      "sourceTitle": "Lei nº 8.078/1990 — CDC, art. 71",
+      "sourceLocation": "https://www.planalto.gov.br/ccivil_03/leis/l8078compilado.htm",
+      "sourceType": "official",
+      "accessedAt": "2026-09-03",
+      "notes": "A menção a trabalho, descanso e lazer é o que sustenta a afirmação sobre ligação fora de hora e recado no emprego."
+    }
+  ]
+}
