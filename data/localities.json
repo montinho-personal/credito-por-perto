@@ -315,6 +315,22 @@
       "stateCode": "sp",
       "citySlug": "itapecerica-da-serra",
       "ibgeCode": "3522208"
+    },
+    {
+      "id": "sp-cabreuva",
+      "name": "Cabreúva",
+      "localityType": "municipality",
+      "stateCode": "sp",
+      "citySlug": "cabreuva",
+      "ibgeCode": "3508405"
+    },
+    {
+      "id": "sp-artur-nogueira",
+      "name": "Artur Nogueira",
+      "localityType": "municipality",
+      "stateCode": "sp",
+      "citySlug": "artur-nogueira",
+      "ibgeCode": "3503802"
     }
   ]
 }

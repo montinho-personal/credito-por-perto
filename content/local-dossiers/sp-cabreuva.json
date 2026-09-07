@@ -1,0 +1,132 @@
+{
+  "localityId": "sp-cabreuva",
+  "localityName": "Cabreúva",
+  "localityType": "municipality",
+  "stateCode": "sp",
+  "officialAdministrativeStatus": "Município do estado de São Paulo, na Região Metropolitana de Jundiaí (Aglomeração Urbana de Jundiaí)",
+  "officialSources": [
+    {
+      "organization": "IBGE — Cidades e Estados",
+      "documentTitle": "Cabreúva (SP)",
+      "sourceLocation": "https://www.ibge.gov.br/cidades-e-estados/sp/cabreuva.html",
+      "checkedAt": "2026-09-07",
+      "extractedFact": "População no Censo 2022: 47.011 pessoas. Área territorial: 260,234 km². Densidade demográfica: 180,65 hab/km² (2022). População estimada em 2026: 48.815 pessoas. Código do município: 3508405.",
+      "relevanceToReader": "Município pequeno em território grande — 47 mil pessoas espalhadas por 260 km². É a densidade baixa que explica a distância entre os bairros e os serviços."
+    },
+    {
+      "organization": "Fundação Procon-SP",
+      "documentTitle": "Cabreúva — Procon municipal",
+      "sourceLocation": "https://www.procon.sp.gov.br/cabreuva/",
+      "checkedAt": "2026-09-07",
+      "extractedFact": "O Procon municipal de Cabreúva consta com endereço na Rua Antonio Furquim, 220 — Condomínio Mel Ville — Bairro Jacaré, CEP 13.318-108; telefone (11) 4529-7614; atendimento de segunda a sexta, das 8h às 12h e das 13h às 16h; responsável Dalva de Oliveira.",
+      "relevanceToReader": "Registro estadual do Procon municipal, com endereço no distrito do Jacaré — não no Centro da cidade."
+    },
+    {
+      "organization": "Prefeitura de Cabreúva — Telefones Úteis",
+      "documentTitle": "Procon Cabreúva",
+      "sourceLocation": "https://telefonesuteis.cabreuva.sp.gov.br/setores/procon-cabreuva/",
+      "checkedAt": "2026-09-07",
+      "extractedFact": "O diretório municipal de telefones registra o Procon na Rua Antônio Furquim, 220 — Centro Administrativo, Galeria Melville (Sala 5), bairro Jacaré, telefone (11) 4529-6118.",
+      "relevanceToReader": "Segunda fonte oficial confirmando o endereço no Jacaré e indicando a sala. O telefone difere do que consta na Fundação Procon-SP."
+    },
+    {
+      "organization": "Prefeitura de Cabreúva",
+      "documentTitle": "Serviços da Prefeitura Distrital passam a ser realizados no Ganha Tempo",
+      "sourceLocation": "https://www.cabreuva.sp.gov.br/servicos+da+prefeitura+distrital+passam+a+ser+realizados+no+ganha+tempo.aspx",
+      "checkedAt": "2026-09-07",
+      "extractedFact": "O Ganha Tempo de Cabreúva fica na Rua Marajó, s/nº — Jacaré, atende de segunda a sexta das 8h às 17h, telefone (11) 4529-1780, e reúne PAT, emissão de RG, Junta Militar, Trânsito, Sebrae, Procon e Divisão de Protocolo. Os serviços de Protocolo, Fazenda e Procon foram transferidos do NAC para o Ganha Tempo.",
+      "relevanceToReader": "O balcão único do município fica no Jacaré e concentra PAT, Sebrae e Procon — quem precisa resolver crédito e trabalho faz uma viagem só."
+    },
+    {
+      "organization": "Prefeitura de Cabreúva",
+      "documentTitle": "Procon de Cabreúva fará atendimento aos superendividados",
+      "sourceLocation": "https://www.cabreuva.sp.gov.br/procon+de+cabreuva+fara+atendimento+aos+superendividados+no+proximo+dia+31.aspx",
+      "checkedAt": "2026-09-07",
+      "extractedFact": "O Procon municipal realiza atendimento a superendividados em trabalho conjunto com o Núcleo de Tratamento do Superendividamento da Fundação Procon-SP, que mantém o Programa de Apoio ao Superendividado (PAS). O atendimento inclui análise da situação econômica, curso de orientação financeira, planejamento de receitas e despesas, renegociação e, se necessário, audiência de conciliação com os credores. Exige comprovantes de renda individual, complementar e familiar; comprovantes de despesas básicas (luz, água, gás, telefone, aluguel, prestações, alimentação, transporte, saúde e educação); demonstrativos das dívidas (contratos, extratos, carnês, últimas cinco faturas de cartão) e preenchimento de planilha orçamentária. Requisitos: pessoa física, maior e capaz, de boa-fé, com disponibilidade financeira mínima e condição de superendividamento confirmada pelos especialistas do Núcleo.",
+      "relevanceToReader": "Existe atendimento público e gratuito para quem tem dívidas acima da renda — e a lista de documentos exigidos é conhecida de antemão."
+    },
+    {
+      "organization": "Portal de Serviços do Estado de São Paulo",
+      "documentTitle": "Atendimento do Banco do Povo Paulista de Cabreúva",
+      "sourceLocation": "https://servicos.sp.gov.br/fcarta/646B1D0A-EF40-443E-9EBD-CF82286A8EA2",
+      "checkedAt": "2026-09-07",
+      "extractedFact": "O Banco do Povo Paulista de Cabreúva atende na Rua Antônio Furquim, 220 — Sala 01, Centro Administrativo, Jacaré (Galeria Melville), presencialmente de segunda a sexta, das 8h às 15h30. O serviço é gratuito.",
+      "relevanceToReader": "O microcrédito público fica no mesmo prédio do Procon, com horário próprio que fecha mais cedo — 15h30."
+    },
+    {
+      "organization": "Portal de Serviços do Estado de São Paulo",
+      "documentTitle": "Banco do Povo Paulista — condições do financiamento",
+      "sourceLocation": "https://servicos.sp.gov.br/fcarta/7113B9A5-BF37-4CB9-A48F-4DD7CF4ED8F3",
+      "checkedAt": "2026-09-07",
+      "extractedFact": "A carta de serviços estadual informa crédito de R$ 200,00 a R$ 21.000,00, juros a partir de 0,35% ao mês e prazo de pagamento de até 36 meses. Requisitos mínimos: desenvolver atividade produtiva no município e não possuir restrições cadastrais no Serasa e/ou no ADIN Estadual.",
+      "relevanceToReader": "Faixa de valor, teto de prazo e a exigência de não ter restrição cadastral — o programa não é para quem está negativado."
+    },
+    {
+      "organization": "Prefeitura de Cabreúva",
+      "documentTitle": "Prefeito determina que Procon entre na justiça para evitar a saída da agência do Banco do Brasil, no Centro",
+      "sourceLocation": "https://www.cabreuva.sp.gov.br/prefeito+determina+que+procon+entre+na+justica+para+evitar+a+saida+da+agencia+do+banco+do+brasil+no+centro.aspx",
+      "checkedAt": "2026-09-07",
+      "extractedFact": "Diante do anúncio nacional de fechamento de agências pelo Banco do Brasil, o Procon de Cabreúva ajuizou ação civil pública para impedir o fechamento da agência do Centro. A peça registra que a agência mais próxima ficava na Rua Guaxinduva, nº 101, no distrito do Jacaré, a 16,1 km de distância — cerca de 17 minutos de carro —, e que nem todos os correntistas têm veículo próprio.",
+      "relevanceToReader": "A distância entre o Centro e o Jacaré está medida em documento oficial do próprio município: 16,1 km. É o dado que explica por que 'ir ao banco' em Cabreúva não é trivial."
+    }
+  ],
+  "consumerProtectionResources": [
+    {
+      "organization": "Procon Cabreúva",
+      "service": "Rua Antônio Furquim, 220 — Centro Administrativo, Galeria Melville, bairro Jacaré (CEP 13.318-108). A Fundação Procon-SP registra atendimento de segunda a sexta das 8h às 12h e das 13h às 16h e telefone (11) 4529-7614; o diretório da Prefeitura registra Sala 5 e telefone (11) 4529-6118. Confirme por telefone antes de ir.",
+      "officialSource": "https://www.procon.sp.gov.br/cabreuva/",
+      "checkedAt": "2026-09-07"
+    },
+    {
+      "organization": "Ganha Tempo de Cabreúva",
+      "service": "Rua Marajó, s/nº — Jacaré; segunda a sexta das 8h às 17h; telefone (11) 4529-1780. Reúne PAT, emissão de RG, Junta Militar, Trânsito, Sebrae, Procon e Protocolo",
+      "officialSource": "https://www.cabreuva.sp.gov.br/servicos+da+prefeitura+distrital+passam+a+ser+realizados+no+ganha+tempo.aspx",
+      "checkedAt": "2026-09-07"
+    },
+    {
+      "organization": "Consumidor.gov.br (plataforma federal)",
+      "service": "Reclamação on-line contra bancos e financeiras, com prazo de resposta monitorado — não depende de deslocamento nem de horário de balcão",
+      "officialSource": "https://www.consumidor.gov.br",
+      "checkedAt": "2026-09-07"
+    }
+  ],
+  "verifiedLocalPrograms": [
+    {
+      "program": "Banco do Povo Paulista — Cabreúva",
+      "detail": "Microcrédito produtivo com atendimento presencial na Rua Antônio Furquim, 220 — Sala 01, Centro Administrativo, Jacaré, de segunda a sexta das 8h às 15h30. Serviço gratuito. A carta de serviços estadual informa crédito de R$ 200 a R$ 21.000, juros a partir de 0,35% ao mês e prazo de até 36 meses, com exigência de atividade produtiva no município e ausência de restrição cadastral no Serasa e/ou ADIN Estadual.",
+      "officialSource": "https://servicos.sp.gov.br/fcarta/646B1D0A-EF40-443E-9EBD-CF82286A8EA2",
+      "checkedAt": "2026-09-07"
+    },
+    {
+      "program": "Atendimento ao superendividado — Procon Cabreúva com o Núcleo de Tratamento do Superendividamento da Fundação Procon-SP",
+      "detail": "Programa de Apoio ao Superendividado (PAS): análise da situação econômica, curso de orientação financeira, planejamento de receitas e despesas, renegociação e audiência de conciliação com credores. Exige comprovantes de renda, de despesas básicas, demonstrativos das dívidas e planilha orçamentária. Destinado a pessoa física, maior e capaz, de boa-fé, com disponibilidade financeira mínima.",
+      "officialSource": "https://www.cabreuva.sp.gov.br/procon+de+cabreuva+fara+atendimento+aos+superendividados+no+proximo+dia+31.aspx",
+      "checkedAt": "2026-09-07"
+    }
+  ],
+  "verifiedServiceInformation": [],
+  "uniqueLocalQuestions": [
+    "O Procon de Cabreúva fica no Centro ou no Jacaré?",
+    "Dá para resolver Procon e Banco do Povo na mesma viagem?",
+    "Existe atendimento público para quem tem mais dívida do que renda?"
+  ],
+  "localRisksOrWarnings": [
+    "O Procon e o Banco do Povo ficam no Jacaré, não no Centro: em documento oficial do município, a distância entre os dois pontos aparece medida em 16,1 km.",
+    "Duas fontes oficiais divergem no telefone e no horário do Procon municipal — ligar antes de ir evita a viagem perdida.",
+    "O Banco do Povo fecha às 15h30, mais cedo que o Ganha Tempo e que o expediente comum da Prefeitura.",
+    "O Banco do Povo exige ausência de restrição cadastral: quem está negativado não se enquadra, e oferta de 'Banco do Povo para negativado' não corresponde ao programa."
+  ],
+  "decisionImpact": [
+    "Saber que Procon e Banco do Povo dividem o mesmo prédio no Jacaré transforma duas viagens em uma",
+    "A lista de documentos do atendimento ao superendividado é conhecida de antemão — reuni-los antes muda o resultado do atendimento",
+    "A exigência de não ter restrição cadastral define, antes da viagem, quem se enquadra no microcrédito público"
+  ],
+  "pendingVerification": [
+    "Telefone atual do Procon municipal: a Fundação Procon-SP registra (11) 4529-7614 e o diretório da Prefeitura registra (11) 4529-6118; uma notícia municipal mais antiga trazia (11) 4529-3322.",
+    "Horário atual do Procon: a Fundação Procon-SP registra 8h-12h e 13h-16h; o diretório municipal registra 8h às 17h; a notícia do atendimento a superendividados registrava 8h às 16h.",
+    "Se o Procon atende no Centro Administrativo (Rua Antônio Furquim, 220) ou no prédio do Ganha Tempo (Rua Marajó, s/nº) — os dois endereços ficam no Jacaré e aparecem em fontes municipais diferentes.",
+    "Periodicidade atual do atendimento a superendividados e se é necessário agendamento prévio.",
+    "Situação atual da agência do Banco do Brasil no Centro: a ação civil pública é de episódio anterior e o desfecho não consta nas fontes consultadas.",
+    "Se o Banco do Povo de Cabreúva aplica exigência própria de tempo mínimo de atividade, como fazem outros municípios."
+  ]
+}
