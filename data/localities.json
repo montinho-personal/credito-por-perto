@@ -331,6 +331,22 @@
       "stateCode": "sp",
       "citySlug": "artur-nogueira",
       "ibgeCode": "3503802"
+    },
+    {
+      "id": "sp-vargem-grande-paulista",
+      "name": "Vargem Grande Paulista",
+      "localityType": "municipality",
+      "stateCode": "sp",
+      "citySlug": "vargem-grande-paulista",
+      "ibgeCode": "3556453"
+    },
+    {
+      "id": "sp-monte-mor",
+      "name": "Monte Mor",
+      "localityType": "municipality",
+      "stateCode": "sp",
+      "citySlug": "monte-mor",
+      "ibgeCode": "3531803"
     }
   ]
 }

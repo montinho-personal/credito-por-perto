@@ -1,0 +1,115 @@
+{
+  "localityId": "sp-vargem-grande-paulista",
+  "localityName": "Vargem Grande Paulista",
+  "localityType": "municipality",
+  "stateCode": "sp",
+  "officialAdministrativeStatus": "Município do estado de São Paulo, integrante da Região Metropolitana de São Paulo (sub-região oeste)",
+  "officialSources": [
+    {
+      "organization": "IBGE — Cidades e Estados",
+      "documentTitle": "Vargem Grande Paulista (SP)",
+      "sourceLocation": "https://www.ibge.gov.br/cidades-e-estados/sp/vargem-grande-paulista.html",
+      "checkedAt": "2026-09-08",
+      "extractedFact": "População no Censo 2022: 50.415 pessoas. Área territorial: 42,489 km². Densidade demográfica: 1.186,54 hab/km² (2022). População estimada em 2026: 52.574 pessoas. Código do município: 3556453.",
+      "relevanceToReader": "É o município mais compacto entre os cobertos por este portal: 50 mil pessoas em 42 km². Distância não é obstáculo aqui — o obstáculo é outro."
+    },
+    {
+      "organization": "Prefeitura de Vargem Grande Paulista",
+      "documentTitle": "Banco do Povo",
+      "sourceLocation": "https://www.vargemgrandepaulista.sp.gov.br/site/banco-do-povo/",
+      "checkedAt": "2026-09-08",
+      "extractedFact": "O Banco do Povo Paulista é executado em parceria com a Prefeitura e concede microcrédito produtivo com taxa de 0,35% ao mês. A unidade funciona na Secretaria de Indústria, Comércio e Emprego — Rua Benedita Maciel de Almeida, 85 — Centro, das 8h30 às 16h30, de segunda a sexta-feira. O primeiro crédito para pessoa física ou trabalhador informal vai de R$ 200 a R$ 15 mil; para pessoa jurídica, de R$ 200 a R$ 20 mil. Prazo de 36 meses para pagar, com carência de até 90 dias. Podem ser beneficiados empreendedores formais ou informais, cooperativas ou formas associativas de produção ou trabalho.",
+      "relevanceToReader": "Faixas de crédito, taxa, prazo e carência publicados pelo próprio município — e a informação de que trabalhador informal também se enquadra."
+    },
+    {
+      "organization": "Prefeitura de Vargem Grande Paulista",
+      "documentTitle": "Posto de Atendimento ao Trabalhador — PAT",
+      "sourceLocation": "https://www.vargemgrandepaulista.sp.gov.br/site/posto-de-atendimento-ao-trabalhador-pat/",
+      "checkedAt": "2026-09-08",
+      "extractedFact": "O PAT funciona na Secretaria de Indústria, Comércio e Emprego e oferece gratuitamente emissão de Carteira de Trabalho, requerimento de Seguro-Desemprego, inscrição em cursos de qualificação profissional e acesso a programas de geração de emprego e renda.",
+      "relevanceToReader": "O mesmo endereço do microcrédito trata de carteira de trabalho e seguro-desemprego — serviços que costumam vir junto quando a renda aperta."
+    },
+    {
+      "organization": "Prefeitura de Vargem Grande Paulista",
+      "documentTitle": "Vargem Grande Paulista inaugura Ganha Tempo VGP e marca nova era na modernização dos serviços públicos",
+      "sourceLocation": "https://www.vargemgrandepaulista.sp.gov.br/site/vargem-grande-paulista-inaugura-ganha-tempo-vgp-e-marca-nova-era-na-modernizacao-dos-servicos-publicos/",
+      "checkedAt": "2026-09-08",
+      "extractedFact": "A Prefeitura inaugurou em 16 de junho o Ganha Tempo VGP, centro de atendimento que reúne diversos serviços essenciais em um único endereço, na Rua José Pires da Silva, 01 — Novo Centro, CEP 06730-060, de segunda a sexta das 8h30 às 16h30. Entre os serviços citados estão o alistamento militar e a unidade auxiliar da Zona 286 do Cartório Eleitoral, com autoatendimento eleitoral.",
+      "relevanceToReader": "Balcão único municipal, no mesmo endereço da sede da Prefeitura. As fontes consultadas não listam Procon entre os serviços reunidos ali."
+    },
+    {
+      "organization": "Prefeitura de Vargem Grande Paulista",
+      "documentTitle": "Poupatempo Móvel em Vargem Grande Paulista",
+      "sourceLocation": "https://www.vargemgrandepaulista.sp.gov.br/site/poupatempo-movel-em-vargem-grande-paulista/",
+      "checkedAt": "2026-09-08",
+      "extractedFact": "O município recebe periodicamente o atendimento da unidade móvel do Poupatempo, divulgada com data e local pelo portal da Prefeitura.",
+      "relevanceToReader": "Serviços estaduais chegam por unidade móvel, em datas anunciadas oficialmente — 'mutirão' divulgado só por mensagem não é oficial."
+    },
+    {
+      "organization": "Fundação Procon-SP",
+      "documentTitle": "Procon-SP Digital",
+      "sourceLocation": "https://www.procon.sp.gov.br/procon-sp-digital/",
+      "checkedAt": "2026-09-08",
+      "extractedFact": "Pela plataforma Procon-SP Digital todo o processo de reclamação pode ser feito on-line — do primeiro contato à audiência de conciliação, com acompanhamento do andamento da demanda. O atendimento virtual está disponível sete dias por semana, 24 horas por dia. O telefone 151 é disponibilizado apenas para chamadas originadas no município de São Paulo, de segunda a sexta, das 8h às 18h.",
+      "relevanceToReader": "Para quem não tem Procon municipal localizado, este é o caminho verificado — inclusive com audiência de conciliação on-line. E o 151 não atende de fora da capital."
+    }
+  ],
+  "consumerProtectionResources": [
+    {
+      "organization": "Ganha Tempo VGP",
+      "service": "Rua José Pires da Silva, 01 — Novo Centro (CEP 06730-060); segunda a sexta das 8h30 às 16h30; telefone geral da Prefeitura (11) 4158-8800. Balcão único municipal, inaugurado em 16 de junho",
+      "officialSource": "https://www.vargemgrandepaulista.sp.gov.br/site/vargem-grande-paulista-inaugura-ganha-tempo-vgp-e-marca-nova-era-na-modernizacao-dos-servicos-publicos/",
+      "checkedAt": "2026-09-08"
+    },
+    {
+      "organization": "Procon-SP Digital (Fundação Procon-SP)",
+      "service": "Reclamação inteiramente on-line, do registro à audiência de conciliação, disponível 24 horas por dia, sete dias por semana. O telefone 151 atende apenas chamadas originadas no município de São Paulo",
+      "officialSource": "https://www.procon.sp.gov.br/procon-sp-digital/",
+      "checkedAt": "2026-09-08"
+    },
+    {
+      "organization": "Consumidor.gov.br (plataforma federal)",
+      "service": "Reclamação on-line contra bancos e financeiras, com prazo de resposta monitorado",
+      "officialSource": "https://www.consumidor.gov.br",
+      "checkedAt": "2026-09-08"
+    }
+  ],
+  "verifiedLocalPrograms": [
+    {
+      "program": "Banco do Povo Paulista — Vargem Grande Paulista",
+      "detail": "Microcrédito produtivo com taxa de 0,35% ao mês, atendimento na Secretaria de Indústria, Comércio e Emprego — Rua Benedita Maciel de Almeida, 85 — Centro, de segunda a sexta das 8h30 às 16h30. Primeiro crédito de R$ 200 a R$ 15 mil para pessoa física ou trabalhador informal e de R$ 200 a R$ 20 mil para pessoa jurídica, com 36 meses de prazo e carência de até 90 dias. Atende empreendedores formais ou informais, cooperativas e formas associativas de produção ou trabalho.",
+      "officialSource": "https://www.vargemgrandepaulista.sp.gov.br/site/banco-do-povo/",
+      "checkedAt": "2026-09-08"
+    },
+    {
+      "program": "Posto de Atendimento ao Trabalhador (PAT) — Vargem Grande Paulista",
+      "detail": "Emissão de Carteira de Trabalho, requerimento de Seguro-Desemprego, inscrição em cursos de qualificação e acesso a programas de geração de emprego e renda, na Secretaria de Indústria, Comércio e Emprego.",
+      "officialSource": "https://www.vargemgrandepaulista.sp.gov.br/site/posto-de-atendimento-ao-trabalhador-pat/",
+      "checkedAt": "2026-09-08"
+    }
+  ],
+  "verifiedServiceInformation": [],
+  "uniqueLocalQuestions": [
+    "Vargem Grande Paulista tem Procon municipal?",
+    "Onde reclamo de banco se não há posto do Procon na cidade?",
+    "Trabalhador informal consegue Banco do Povo aqui?"
+  ],
+  "localRisksOrWarnings": [
+    "Não localizamos Procon municipal em Vargem Grande Paulista nas fontes oficiais consultadas — nem no cadastro de Procons municipais da Fundação Procon-SP, nem no portal da Prefeitura. Sites agregadores anunciam um posto local com dados genéricos, sem respaldo oficial.",
+    "O telefone 151 da Fundação Procon-SP atende apenas chamadas originadas no município de São Paulo — não é o caminho para quem liga daqui.",
+    "A página municipal do Banco do Povo cita a 'Secretaria de Indústria, Comércio e Emprego', enquanto o organograma atual traz 'Secretaria de Desenvolvimento Econômico e Empreendedorismo': confirmar o endereço por telefone antes de ir.",
+    "Atendimento do Poupatempo Móvel tem data e local anunciados no portal da Prefeitura; convocação que circula só por mensagem não é oficial."
+  ],
+  "decisionImpact": [
+    "Sem posto municipal localizado, o caminho verificado da reclamação bancária é on-line — e ele inclui audiência de conciliação, não só registro",
+    "Saber que o 151 não atende de fora da capital evita a ligação que não resolve",
+    "As faixas de crédito publicadas separam o que o microcrédito público cobre do que ele não cobre, antes da viagem"
+  ],
+  "pendingVerification": [
+    "Se existe posto municipal do Procon em Vargem Grande Paulista: não consta no cadastro de Procons municipais da Fundação Procon-SP nem foi localizado no portal da Prefeitura, mas a ausência em fonte pública não é prova definitiva. Confirmar pelo telefone geral da Prefeitura, (11) 4158-8800.",
+    "Se o Ganha Tempo VGP passou a reunir atendimento de defesa do consumidor após a inauguração.",
+    "Endereço atual do Banco do Povo após a reorganização das secretarias municipais.",
+    "Se a unidade fixa do Poupatempo autorizada para o município foi efetivamente implantada, e em que endereço.",
+    "Telefone direto do Banco do Povo e do PAT — as páginas municipais remetem ao telefone geral da Prefeitura."
+  ]
+}

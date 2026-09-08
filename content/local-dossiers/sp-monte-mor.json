@@ -1,0 +1,117 @@
+{
+  "localityId": "sp-monte-mor",
+  "localityName": "Monte Mor",
+  "localityType": "municipality",
+  "stateCode": "sp",
+  "officialAdministrativeStatus": "Município do estado de São Paulo, integrante da Região Metropolitana de Campinas",
+  "officialSources": [
+    {
+      "organization": "IBGE — Cidades e Estados",
+      "documentTitle": "Monte Mor (SP)",
+      "sourceLocation": "https://www.ibge.gov.br/cidades-e-estados/sp/monte-mor.html",
+      "checkedAt": "2026-09-08",
+      "extractedFact": "População no Censo 2022: 64.662 pessoas. Área territorial: 240,566 km². Densidade demográfica: 268,79 hab/km² (2022). Código do município: 3531803.",
+      "relevanceToReader": "Cidade de 64 mil pessoas espalhadas por 240 km² — a dispersão explica a decisão municipal de descentralizar o atendimento."
+    },
+    {
+      "organization": "Prefeitura de Monte Mor",
+      "documentTitle": "Jardim Paulista recebe nova unidade do PAET e amplia acesso a serviços de emprego e empreendedorismo em Monte Mor",
+      "sourceLocation": "https://www.montemor.sp.gov.br/portal/noticias/0/3/9196/jardim-paulista-recebe-nova-unidade-do-paet-e-amplia-acesso-a-servicos-de-empregoe-empreendedorismo-em-monte-mor/",
+      "checkedAt": "2026-09-08",
+      "extractedFact": "A Prefeitura inaugurou em 25 de março de 2026 uma nova unidade do Posto de Atendimento ao Empreendedor e ao Trabalhador (PAET) no Jardim Paulista, na Avenida Luiz Gonzaga do Nascimento, 1597 (Galeria Paulista), com funcionamento de segunda a sexta das 8h às 17h. A unidade reúne os serviços do PAET, orientações do Sebrae para abertura e formalização de empresas, capacitação e consultoria, e os serviços do Banco do Povo Paulista. A iniciativa, coordenada pela Secretaria de Desenvolvimento Econômico e Social (SEDES), descentraliza o atendimento e dispensa o deslocamento ao centro.",
+      "relevanceToReader": "Existe um segundo endereço para microcrédito público e orientação a empreendedores, com horário mais longo que o da unidade central — quem mora na região do Jardim Paulista não precisa mais ir ao centro."
+    },
+    {
+      "organization": "Prefeitura de Monte Mor",
+      "documentTitle": "Procon — Atendimento",
+      "sourceLocation": "https://www.montemor.sp.gov.br/portal/noticias/0/3/6846/procon---atendimento",
+      "checkedAt": "2026-09-08",
+      "extractedFact": "O Procon de Monte Mor atende na Avenida Jânio Quadros, 1.597 — Jardim Santo Antônio, telefone (19) 3879-9883, e-mail procon1@montemor.sp.gov.br, de segunda a quinta-feira, das 8h às 12h e das 13h às 16h30.",
+      "relevanceToReader": "O Procon municipal não atende às sextas-feiras — o expediente vai de segunda a quinta."
+    },
+    {
+      "organization": "Prefeitura de Monte Mor",
+      "documentTitle": "Mudança de Telefones",
+      "sourceLocation": "https://www.montemor.sp.gov.br/portal/noticias/0/3/6942/mudanca-de-telefones",
+      "checkedAt": "2026-09-08",
+      "extractedFact": "A Secretaria de Administração, Trânsito e Mobilidade Urbana comunicou a mudança dos telefones de setores de atendimento à população. Novos números: RG (19) 3879-9882; Procon (19) 3879-9883; Junta Militar (19) 3879-9884; Demutran (19) 3879-9885; PAT (19) 3879-9886; Sebrae (19) 3879-9887; Banco do Povo (19) 3879-9889.",
+      "relevanceToReader": "Os números publicados em listas antigas e em sites de terceiros estão desatualizados. Procon, PAT, Sebrae e Banco do Povo estão em ramais sequenciais do mesmo bloco."
+    },
+    {
+      "organization": "Prefeitura de Monte Mor",
+      "documentTitle": "Banco do Povo — Novo Horário de Funcionamento",
+      "sourceLocation": "https://www.montemor.sp.gov.br/portal/noticias/0/3/6849/banco-do-povo---novo-horario-de-funcionamento",
+      "checkedAt": "2026-09-08",
+      "extractedFact": "O Banco do Povo de Monte Mor funciona de segunda a sexta-feira, das 8h às 15h, na Avenida Jânio Quadros, 1.597 — Jardim Santo Antônio.",
+      "relevanceToReader": "O microcrédito público fecha às 15h, mais cedo que o expediente comum da Prefeitura."
+    },
+    {
+      "organization": "Prefeitura de Monte Mor",
+      "documentTitle": "Telefones Úteis",
+      "sourceLocation": "https://www.montemor.sp.gov.br/portal/telefones",
+      "checkedAt": "2026-09-08",
+      "extractedFact": "O diretório municipal reúne os telefones dos setores de atendimento. A sede da Prefeitura fica na Rua Francisco Glicério, 399 — Centro, CEP 13190-000.",
+      "relevanceToReader": "Diretório oficial para conferir número antes de ligar, em cidade onde os ramais mudaram."
+    },
+    {
+      "organization": "Portal de Serviços do Estado de São Paulo",
+      "documentTitle": "Banco do Povo Paulista — condições do financiamento",
+      "sourceLocation": "https://servicos.sp.gov.br/fcarta/7113B9A5-BF37-4CB9-A48F-4DD7CF4ED8F3",
+      "checkedAt": "2026-09-08",
+      "extractedFact": "A carta de serviços estadual informa crédito de R$ 200,00 a R$ 21.000,00, juros a partir de 0,35% ao mês e prazo de pagamento de até 36 meses. Requisitos mínimos: desenvolver atividade produtiva no município e não possuir restrições cadastrais no Serasa e/ou no ADIN Estadual.",
+      "relevanceToReader": "Faixa de valor, prazo e a exigência de não ter restrição cadastral, que define quem se enquadra antes da viagem."
+    }
+  ],
+  "consumerProtectionResources": [
+    {
+      "organization": "Procon Monte Mor",
+      "service": "Avenida Jânio Quadros, 1.597 — Jardim Santo Antônio; segunda a quinta das 8h às 12h e das 13h às 16h30 (não atende às sextas); telefone (19) 3879-9883; e-mail procon1@montemor.sp.gov.br",
+      "officialSource": "https://www.montemor.sp.gov.br/portal/noticias/0/3/6846/procon---atendimento",
+      "checkedAt": "2026-09-08"
+    },
+    {
+      "organization": "Consumidor.gov.br (plataforma federal)",
+      "service": "Reclamação on-line contra bancos e financeiras, com prazo de resposta monitorado — funciona na sexta-feira, quando o Procon municipal não atende",
+      "officialSource": "https://www.consumidor.gov.br",
+      "checkedAt": "2026-09-08"
+    }
+  ],
+  "verifiedLocalPrograms": [
+    {
+      "program": "Banco do Povo Paulista — Monte Mor (unidade central)",
+      "detail": "Microcrédito produtivo na Avenida Jânio Quadros, 1.597 — Jardim Santo Antônio, de segunda a sexta das 8h às 15h, telefone (19) 3879-9889. No mesmo endereço funcionam Procon, PAT e Sebrae Aqui.",
+      "officialSource": "https://www.montemor.sp.gov.br/portal/noticias/0/3/6849/banco-do-povo---novo-horario-de-funcionamento",
+      "checkedAt": "2026-09-08"
+    },
+    {
+      "program": "PAET Jardim Paulista — segunda unidade com Banco do Povo e Sebrae",
+      "detail": "Unidade do Posto de Atendimento ao Empreendedor e ao Trabalhador inaugurada em 25 de março de 2026 na Avenida Luiz Gonzaga do Nascimento, 1597 (Galeria Paulista), Jardim Paulista, de segunda a sexta das 8h às 17h. Reúne PAT, orientações do Sebrae para abertura e formalização de empresas, capacitação, consultoria e os serviços do Banco do Povo Paulista. Coordenada pela Secretaria de Desenvolvimento Econômico e Social (SEDES).",
+      "officialSource": "https://www.montemor.sp.gov.br/portal/noticias/0/3/9196/jardim-paulista-recebe-nova-unidade-do-paet-e-amplia-acesso-a-servicos-de-empregoe-empreendedorismo-em-monte-mor/",
+      "checkedAt": "2026-09-08"
+    }
+  ],
+  "verifiedServiceInformation": [],
+  "uniqueLocalQuestions": [
+    "O Procon de Monte Mor atende na sexta-feira?",
+    "Preciso ir ao centro para falar com o Banco do Povo?",
+    "Qual é o telefone atual do Procon, já que os números mudaram?"
+  ],
+  "localRisksOrWarnings": [
+    "O Procon municipal atende de segunda a quinta: quem aparece na sexta não é atendido.",
+    "Os telefones dos setores mudaram e listas antigas e sites de terceiros ainda publicam o número anterior do Procon — conferir no diretório da Prefeitura antes de ligar.",
+    "O Banco do Povo da unidade central fecha às 15h, mais cedo que o restante do expediente municipal.",
+    "O Banco do Povo exige ausência de restrição cadastral no Serasa e/ou no ADIN Estadual: oferta de microcrédito público 'para negativado' não corresponde ao programa."
+  ],
+  "decisionImpact": [
+    "Saber que a sexta-feira não tem Procon presencial redireciona a reclamação para o canal on-line, sem perder o dia",
+    "A segunda unidade do Jardim Paulista poupa o deslocamento ao centro para microcrédito e orientação do Sebrae",
+    "Ter o telefone atualizado evita a ligação que não completa e a informação desencontrada"
+  ],
+  "pendingVerification": [
+    "As duas unidades aparecem com o mesmo número predial (1597) em avenidas diferentes — Jânio Quadros, no Jardim Santo Antônio, e Luiz Gonzaga do Nascimento, na Galeria Paulista. A coincidência precisa ser confirmada por telefone.",
+    "Se o Procon municipal também atende no PAET do Jardim Paulista ou apenas na unidade da Avenida Jânio Quadros.",
+    "Se o Banco do Povo do Jardim Paulista tem horário próprio ou segue o da unidade central (8h às 15h).",
+    "Se o Procon de Monte Mor exige agendamento prévio.",
+    "Se o Banco do Povo de Monte Mor aplica exigência própria de tempo mínimo de residência ou de atividade, como fazem outros municípios da região."
+  ]
+}
