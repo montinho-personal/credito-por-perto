@@ -1,0 +1,125 @@
+{
+  "localityId": "sp-sao-roque",
+  "localityName": "São Roque",
+  "localityType": "municipality",
+  "stateCode": "sp",
+  "officialAdministrativeStatus": "Município e Estância Turística do estado de São Paulo, na Região Metropolitana de Sorocaba, na divisa com a Região Metropolitana de São Paulo",
+  "officialSources": [
+    {
+      "organization": "IBGE — Cidades e Estados",
+      "documentTitle": "São Roque (SP)",
+      "sourceLocation": "https://www.ibge.gov.br/cidades-e-estados/sp/sao-roque.html",
+      "checkedAt": "2026-09-08",
+      "extractedFact": "População no Censo 2022: 79.484 pessoas. Área territorial: 306,899 km². Densidade demográfica: 258,98 hab/km² (2022). Código do município: 3550605.",
+      "relevanceToReader": "Cidade de quase 80 mil habitantes em território extenso, na fronteira entre a Grande São Paulo e a região de Sorocaba."
+    },
+    {
+      "organization": "Prefeitura de São Roque",
+      "documentTitle": "PROCON SR — carta de serviços",
+      "sourceLocation": "https://www.saoroque.sp.gov.br/portal/servicos/419/procon-sr/",
+      "checkedAt": "2026-09-08",
+      "extractedFact": "O Procon municipal atende na Rua Pedro Vaz, 146 — Centro, CEP 18130-490, telefone (11) 4784-2912, de segunda a sexta-feira das 9h às 12h e das 13h às 16h. A página informa ainda atendimento por e-mail e a possibilidade de registrar reclamação pelo aplicativo Procon-SP ou pelo site da Fundação Procon-SP.",
+      "relevanceToReader": "Endereço e janelas de atendimento presencial do Procon municipal, no Centro."
+    },
+    {
+      "organization": "Prefeitura de São Roque",
+      "documentTitle": "O PROCON São Roque agora atende via WhatsApp",
+      "sourceLocation": "https://www.saoroque.sp.gov.br/portal/noticias/0/3/8086/o-procon-sao-roque-agora-atende-via-whatsapp",
+      "checkedAt": "2026-09-08",
+      "extractedFact": "O Procon municipal passou a atender por WhatsApp e por telefone no número (11) 4784-2912, das 8h às 17h.",
+      "relevanceToReader": "O canal digital usa o mesmo número do telefone e cobre das 8h às 17h — janela mais larga que a do balcão."
+    },
+    {
+      "organization": "Prefeitura de São Roque",
+      "documentTitle": "Procon de São Roque amplia horário de atendimento",
+      "sourceLocation": "https://www.saoroque.sp.gov.br/portal/noticias/0/3/8049/procon-de-sao-roque-amplia-horario-de-atendimento",
+      "checkedAt": "2026-09-08",
+      "extractedFact": "O Procon municipal ampliou o horário e passou a atender de segunda a sexta-feira, das 9h às 12h e das 13h às 16h, na Rua Pedro Vaz, 146 — Centro.",
+      "relevanceToReader": "Confirma a janela presencial atual e que ela é resultado de ampliação recente."
+    },
+    {
+      "organization": "Prefeitura de São Roque",
+      "documentTitle": "Banco do Povo — carta de serviços",
+      "sourceLocation": "https://www.saoroque.sp.gov.br/portal/servicos/103/banco-do-povo/",
+      "checkedAt": "2026-09-08",
+      "extractedFact": "O Banco do Povo Paulista de São Roque atende na Rua São Paulo, nº 966 — Taboão, CEP 18135-125, telefone (11) 4784-8500, de segunda a sexta das 9h às 15h. Também atende por telefone e WhatsApp no (11) 94505-7817 e pelo e-mail saoroque@bancodopovo.sp.gov.br. O programa é vinculado à Secretaria de Desenvolvimento Econômico do Estado.",
+      "relevanceToReader": "O microcrédito público fica em outro bairro, não no Centro — e tem canal de WhatsApp próprio, diferente do Procon."
+    },
+    {
+      "organization": "Prefeitura de São Roque",
+      "documentTitle": "Agente de Microcrédito — carta de serviços",
+      "sourceLocation": "https://www.saoroque.sp.gov.br/portal/servicos/118/agente-de-microcredito",
+      "checkedAt": "2026-09-08",
+      "extractedFact": "O município mantém a função de Agente de Microcrédito, que executa serviços de apoio na área de finanças e realiza a orientação e a concessão de microcrédito, atendendo clientes em campo e nas agências, além de prospectar clientes nas comunidades. Contato na Rua São Paulo, 966 — Taboão, telefone (11) 4784-8500, de segunda a sexta das 9h às 15h. A ação integra o Banco do Povo Paulista, programa estadual.",
+      "relevanceToReader": "Existe agente público que procura o empreendedor na comunidade — e ele nunca cobra. Saber disso é o que separa o serviço real da abordagem fraudulenta que o imita."
+    },
+    {
+      "organization": "Prefeitura de São Roque",
+      "documentTitle": "Banco do Povo Paulista e posto de atendimento do Sebrae atendem em novo endereço",
+      "sourceLocation": "http://www.saoroque.sp.gov.br/portal/noticias/0/3/3190/banco-do-povo-paulista-e-posto-de-atendimento-do-sebrae-atendem-em-novo-endereco",
+      "checkedAt": "2026-09-08",
+      "extractedFact": "O Banco do Povo Paulista e o posto de atendimento do Sebrae passaram a funcionar no mesmo endereço, no bairro do Taboão.",
+      "relevanceToReader": "Microcrédito e orientação do Sebrae ficam juntos — uma viagem resolve crédito e formalização."
+    },
+    {
+      "organization": "Portal de Serviços do Estado de São Paulo",
+      "documentTitle": "Banco do Povo Paulista — condições do financiamento",
+      "sourceLocation": "https://servicos.sp.gov.br/fcarta/7113B9A5-BF37-4CB9-A48F-4DD7CF4ED8F3",
+      "checkedAt": "2026-09-08",
+      "extractedFact": "A carta de serviços estadual informa crédito de R$ 200,00 a R$ 21.000,00, juros a partir de 0,35% ao mês e prazo de pagamento de até 36 meses. Requisitos mínimos: desenvolver atividade produtiva no município e não possuir restrições cadastrais no Serasa e/ou no ADIN Estadual.",
+      "relevanceToReader": "Faixa de valor, prazo e a exigência de não ter restrição cadastral, que define quem se enquadra antes da viagem."
+    }
+  ],
+  "consumerProtectionResources": [
+    {
+      "organization": "Procon São Roque",
+      "service": "Rua Pedro Vaz, 146 — Centro (CEP 18130-490); presencial de segunda a sexta das 9h às 12h e das 13h às 16h; telefone e WhatsApp (11) 4784-2912, das 8h às 17h; e-mail publicado na carta de serviços municipal",
+      "officialSource": "https://www.saoroque.sp.gov.br/portal/servicos/419/procon-sr/",
+      "checkedAt": "2026-09-08"
+    },
+    {
+      "organization": "Consumidor.gov.br (plataforma federal)",
+      "service": "Reclamação on-line contra bancos e financeiras, com prazo de resposta monitorado, a qualquer dia e hora",
+      "officialSource": "https://www.consumidor.gov.br",
+      "checkedAt": "2026-09-08"
+    }
+  ],
+  "verifiedLocalPrograms": [
+    {
+      "program": "Banco do Povo Paulista — São Roque",
+      "detail": "Microcrédito produtivo na Rua São Paulo, 966 — Taboão (CEP 18135-125), de segunda a sexta das 9h às 15h, telefone (11) 4784-8500, WhatsApp (11) 94505-7817 e e-mail saoroque@bancodopovo.sp.gov.br. Funciona no mesmo endereço do posto de atendimento do Sebrae.",
+      "officialSource": "https://www.saoroque.sp.gov.br/portal/servicos/103/banco-do-povo/",
+      "checkedAt": "2026-09-08"
+    },
+    {
+      "program": "Agente de Microcrédito — São Roque",
+      "detail": "Função pública de orientação e concessão de microcrédito, com atendimento em campo e nas agências e prospecção de clientes nas comunidades, vinculada ao Banco do Povo Paulista. Contato na Rua São Paulo, 966 — Taboão, telefone (11) 4784-8500, de segunda a sexta das 9h às 15h.",
+      "officialSource": "https://www.saoroque.sp.gov.br/portal/servicos/118/agente-de-microcredito",
+      "checkedAt": "2026-09-08"
+    }
+  ],
+  "verifiedServiceInformation": [],
+  "uniqueLocalQuestions": [
+    "O Procon de São Roque atende por WhatsApp fora do horário do balcão?",
+    "O Procon e o Banco do Povo ficam no mesmo lugar?",
+    "Apareceu alguém oferecendo microcrédito na minha rua. É o agente da Prefeitura?"
+  ],
+  "localRisksOrWarnings": [
+    "O Procon e o Banco do Povo ficam em bairros diferentes: Procon no Centro (Rua Pedro Vaz, 146) e microcrédito no Taboão (Rua São Paulo, 966). Uma viagem não resolve os dois.",
+    "Os dois serviços têm números de WhatsApp diferentes: Procon (11) 4784-2912 e Banco do Povo (11) 94505-7817. Número que chega por outro caminho não é oficial.",
+    "O Agente de Microcrédito atende em campo e prospecta nas comunidades — o serviço é gratuito e nenhum agente público cobra taxa para liberar crédito.",
+    "O Banco do Povo do estado exige ausência de restrição cadastral no Serasa e/ou no ADIN Estadual: oferta de microcrédito público 'para negativado' não corresponde ao programa."
+  ],
+  "decisionImpact": [
+    "Saber que o canal digital do Procon cobre das 8h às 17h evita a viagem ao Centro dentro das janelas curtas do balcão",
+    "Conhecer o funcionamento do Agente de Microcrédito permite reconhecer a abordagem legítima e recusar a fraudulenta que a imita",
+    "Os dois endereços em bairros diferentes mudam o planejamento de quem depende de transporte"
+  ],
+  "pendingVerification": [
+    "Endereço de e-mail do Procon municipal: a transcrição disponível traz um domínio com acento, provável artefato da fonte — confirmar na carta de serviços da Prefeitura.",
+    "Se o atendimento por WhatsApp do Procon (8h às 17h) inclui o horário de almoço, quando o balcão fecha.",
+    "Se o Agente de Microcrédito atende por agendamento ou apenas em rotas definidas pela Prefeitura.",
+    "Se o Banco do Povo de São Roque aplica exigência própria de tempo mínimo de residência ou de atividade, como fazem outros municípios da região.",
+    "Se o posto do Sebrae no Taboão mantém o mesmo horário do Banco do Povo (9h às 15h)."
+  ]
+}

@@ -1,0 +1,117 @@
+{
+  "localityId": "sp-ibiuna",
+  "localityName": "Ibiúna",
+  "localityType": "municipality",
+  "stateCode": "sp",
+  "officialAdministrativeStatus": "Município e Estância Turística do estado de São Paulo, na Região Metropolitana de Sorocaba, na divisa com a Região Metropolitana de São Paulo",
+  "officialSources": [
+    {
+      "organization": "IBGE — Cidades e Estados",
+      "documentTitle": "Ibiúna (SP)",
+      "sourceLocation": "https://www.ibge.gov.br/cidades-e-estados/sp/ibiuna.html",
+      "checkedAt": "2026-09-08",
+      "extractedFact": "População no Censo 2022: 75.605 pessoas. Área territorial: 1.058,01 km². Densidade demográfica: 71,45 hab/km² (2022). População estimada em 2025: 77.801 pessoas. Código do município: 3519709.",
+      "relevanceToReader": "É o município menos denso entre os cobertos por este portal: 75 mil pessoas espalhadas por mais de mil km². A vida econômica acontece na zona rural."
+    },
+    {
+      "organization": "Fundação Procon-SP",
+      "documentTitle": "Ibiúna — Procon municipal",
+      "sourceLocation": "https://www.procon.sp.gov.br/ibiuna/",
+      "checkedAt": "2026-09-08",
+      "extractedFact": "O Procon municipal de Ibiúna atende na Rua Raimundo Santiago, 30 — sala 1 — Centro, CEP 18150-000, telefones (15) 3248-2523 e (15) 3241-5738, de segunda a sexta-feira das 9h às 16h.",
+      "relevanceToReader": "Endereço, telefones e horário corrido do Procon municipal — e o DDD 15, que surpreende quem vem da faixa de DDD 11."
+    },
+    {
+      "organization": "Portal de Serviços do Estado de São Paulo",
+      "documentTitle": "Atendimento do Procon de Ibiúna",
+      "sourceLocation": "https://servicos.sp.gov.br/fcarta/5808D0A9-36FD-43B6-BA59-834D2AD37D0D",
+      "checkedAt": "2026-09-08",
+      "extractedFact": "A carta de serviços estadual registra o atendimento do Procon municipal de Ibiúna, com orientação ao consumidor e recebimento de reclamações.",
+      "relevanceToReader": "Confirmação estadual de que o posto municipal existe e está conveniado."
+    },
+    {
+      "organization": "Prefeitura da Estância Turística de Ibiúna",
+      "documentTitle": "Secretaria de Desenvolvimento Econômico / Indústria e Comércio",
+      "sourceLocation": "https://ibiuna.sp.gov.br/secretarias/industria-e-comercio",
+      "checkedAt": "2026-09-08",
+      "extractedFact": "O Banco do Povo Paulista em Ibiúna é coordenado pela Secretaria de Desenvolvimento Econômico (Indústria e Comércio), com atendimento na Rua Raimundo Santiago, 30 — Centro, CEP 18150-000, telefones (15) 3248-1834 e (15) 3248-2008.",
+      "relevanceToReader": "O microcrédito público fica no mesmo endereço do Procon, no Centro — uma viagem resolve os dois assuntos."
+    },
+    {
+      "organization": "Portal de Serviços do Estado de São Paulo",
+      "documentTitle": "Banco do Povo Paulista — condições do financiamento",
+      "sourceLocation": "https://servicos.sp.gov.br/fcarta/7113B9A5-BF37-4CB9-A48F-4DD7CF4ED8F3",
+      "checkedAt": "2026-09-08",
+      "extractedFact": "A carta de serviços estadual informa crédito de R$ 200,00 a R$ 21.000,00, juros a partir de 0,35% ao mês e prazo de pagamento de até 36 meses. Requisitos mínimos: desenvolver atividade produtiva no município e não possuir restrições cadastrais no Serasa e/ou no ADIN Estadual.",
+      "relevanceToReader": "Faixa de valor, prazo e a exigência de não ter restrição cadastral, que define quem se enquadra antes da viagem."
+    },
+    {
+      "organization": "Secretaria de Agricultura e Abastecimento do Estado de São Paulo — CATI",
+      "documentTitle": "CAF — Emissão do Cadastro Nacional da Agricultura Familiar",
+      "sourceLocation": "https://agricultura.sp.gov.br/cati/caf-emissao-do-cadastro-nacional-da-agricultura-familiar/",
+      "checkedAt": "2026-09-08",
+      "extractedFact": "O Cadastro Nacional da Agricultura Familiar (CAF) substituiu a Declaração de Aptidão ao Pronaf (DAP) como documento de acesso a programas e políticas públicas da agricultura familiar. A inscrição é gratuita e os servidores da CATI estão habilitados a emitir o documento; o produtor deve procurar a Casa da Agricultura mais próxima. Para acessar o Pronaf é necessário registrar a Unidade Familiar de Produção Agrária no sistema do CAF e concluir a qualificação CAF-Pronaf, que tem teto de renda bruta anual definido nas regras do programa.",
+      "relevanceToReader": "Quem procura crédito rural precisa do CAF antes do banco — e ele é gratuito. Quem cobra para emitir está cobrando por serviço público."
+    },
+    {
+      "organization": "Secretaria de Agricultura e Abastecimento do Estado de São Paulo — CATI",
+      "documentTitle": "Endereços das unidades da CATI e Casas da Agricultura",
+      "sourceLocation": "https://www.cati.sp.gov.br/portal/institucional/enderecos",
+      "checkedAt": "2026-09-08",
+      "extractedFact": "A CATI mantém diretório oficial com os endereços de suas unidades e das Casas da Agricultura no estado de São Paulo.",
+      "relevanceToReader": "Caminho oficial para localizar a Casa da Agricultura do município antes de procurar crédito rural."
+    }
+  ],
+  "consumerProtectionResources": [
+    {
+      "organization": "Procon Ibiúna",
+      "service": "Rua Raimundo Santiago, 30 — sala 1 — Centro (CEP 18150-000); segunda a sexta das 9h às 16h; telefones (15) 3248-2523 e (15) 3241-5738",
+      "officialSource": "https://www.procon.sp.gov.br/ibiuna/",
+      "checkedAt": "2026-09-08"
+    },
+    {
+      "organization": "Consumidor.gov.br (plataforma federal)",
+      "service": "Reclamação on-line contra bancos e financeiras, com prazo de resposta monitorado — não depende de deslocamento, o que pesa em município de mil km²",
+      "officialSource": "https://www.consumidor.gov.br",
+      "checkedAt": "2026-09-08"
+    }
+  ],
+  "verifiedLocalPrograms": [
+    {
+      "program": "Banco do Povo Paulista — Ibiúna",
+      "detail": "Microcrédito produtivo coordenado pela Secretaria de Desenvolvimento Econômico (Indústria e Comércio), na Rua Raimundo Santiago, 30 — Centro, telefones (15) 3248-1834 e (15) 3248-2008. Mesmo endereço do Procon municipal.",
+      "officialSource": "https://ibiuna.sp.gov.br/secretarias/industria-e-comercio",
+      "checkedAt": "2026-09-08"
+    },
+    {
+      "program": "CAF — Cadastro Nacional da Agricultura Familiar (porta de entrada do Pronaf)",
+      "detail": "Documento que substituiu a DAP e dá acesso às políticas públicas da agricultura familiar, inclusive às linhas de crédito do Pronaf. Emissão gratuita por servidores da CATI, na Casa da Agricultura. Exige registro da Unidade Familiar de Produção Agrária e, para crédito, a qualificação CAF-Pronaf.",
+      "officialSource": "https://agricultura.sp.gov.br/cati/caf-emissao-do-cadastro-nacional-da-agricultura-familiar/",
+      "checkedAt": "2026-09-08"
+    }
+  ],
+  "verifiedServiceInformation": [],
+  "uniqueLocalQuestions": [
+    "Sou produtor rural em Ibiúna. Que crédito existe para mim?",
+    "Preciso da DAP ou do CAF para pedir Pronaf?",
+    "O Procon de Ibiúna é DDD 11 ou 15?"
+  ],
+  "localRisksOrWarnings": [
+    "Ibiúna é DDD 15, não 11, apesar de fazer divisa com Cotia e Vargem Grande Paulista: quem liga da faixa vizinha paga interurbano e quem recebe ligação de 'banco local' com DDD 11 deve desconfiar.",
+    "O CAF é gratuito e emitido pela Casa da Agricultura: quem cobra para emitir ou para 'liberar o Pronaf' está cobrando por serviço público.",
+    "O Banco do Povo exige ausência de restrição cadastral no Serasa e/ou no ADIN Estadual — e é crédito produtivo, não crédito de consumo.",
+    "Município de 1.058 km²: a distância até o Centro é obstáculo real, e o canal on-line de reclamação evita a viagem."
+  ],
+  "decisionImpact": [
+    "Saber que o CAF vem antes do banco muda a ordem dos passos de quem busca crédito rural",
+    "Procon e Banco do Povo no mesmo endereço transformam duas viagens em uma, o que pesa muito em município rural extenso",
+    "Reconhecer o DDD próprio ajuda a filtrar ligação que se apresenta como instituição local"
+  ],
+  "pendingVerification": [
+    "Endereço e horário da Casa da Agricultura de Ibiúna: a orientação oficial da CATI é procurar a unidade do município, mas não localizamos a ficha específica de Ibiúna no diretório consultado.",
+    "Teto de renda bruta anual vigente para a qualificação CAF-Pronaf — o valor é definido nas regras do programa e muda.",
+    "Se o Banco do Povo de Ibiúna tem linha específica para produtor rural ou apenas as linhas gerais do programa estadual.",
+    "Se o Procon municipal e o Banco do Povo funcionam em salas diferentes do mesmo prédio na Rua Raimundo Santiago, 30.",
+    "Se há atendimento itinerante do Procon ou da Prefeitura nos bairros rurais mais distantes do Centro."
+  ]
+}

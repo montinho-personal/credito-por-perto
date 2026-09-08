@@ -347,6 +347,22 @@
       "stateCode": "sp",
       "citySlug": "monte-mor",
       "ibgeCode": "3531803"
+    },
+    {
+      "id": "sp-sao-roque",
+      "name": "São Roque",
+      "localityType": "municipality",
+      "stateCode": "sp",
+      "citySlug": "sao-roque",
+      "ibgeCode": "3550605"
+    },
+    {
+      "id": "sp-ibiuna",
+      "name": "Ibiúna",
+      "localityType": "municipality",
+      "stateCode": "sp",
+      "citySlug": "ibiuna",
+      "ibgeCode": "3519709"
     }
   ]
 }
