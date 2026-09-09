@@ -28,6 +28,14 @@
       "checkedAt": "2026-09-02",
       "extractedFact": "O Censo 2022 registrou 237.247 habitantes em Americana, crescimento de 12,63% sobre os 210.638 de 2010, com taxa de urbanização de 99,8%.",
       "relevanceToReader": "Município praticamente todo urbano e de porte médio-alto na RMC: há concorrência bancária real, o que só ajuda quem compara antes de assinar."
+    },
+    {
+      "organization": "Prefeitura de Americana — Secretaria de Desenvolvimento Econômico",
+      "documentTitle": "Banco do Povo",
+      "sourceLocation": "https://www.americana.sp.gov.br/portal_sde/sde-index.php?p=banco",
+      "checkedAt": "2026-09-09",
+      "extractedFact": "O Banco do Povo de Americana atende na Rua Anhanguera, nº 40 — Centro, telefones (19) 3475-3560 e (19) 3475-3561, de segunda a sexta das 9h às 16h. Oferece microcrédito a pequenos empreendedores, trabalhadores informais e MEIs.",
+      "relevanceToReader": "Porta pública de microcrédito na cidade, no mesmo horário do Procon e a poucas ruas dele."
     }
   ],
   "consumerProtectionResources": [
@@ -44,7 +52,14 @@
       "checkedAt": "2026-09-02"
     }
   ],
-  "verifiedLocalPrograms": [],
+  "verifiedLocalPrograms": [
+    {
+      "program": "Banco do Povo — Americana",
+      "detail": "Microcrédito para pequenos empreendedores, trabalhadores informais e MEIs, na Rua Anhanguera, nº 40 — Centro, de segunda a sexta das 9h às 16h, telefones (19) 3475-3560 e (19) 3475-3561.",
+      "officialSource": "https://www.americana.sp.gov.br/portal_sde/sde-index.php?p=banco",
+      "checkedAt": "2026-09-09"
+    }
+  ],
   "verifiedServiceInformation": [],
   "uniqueLocalQuestions": [
     "Onde fica o Procon de Americana agora que a sede mudou?",

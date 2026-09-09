@@ -36,6 +36,15 @@
       "evidence": "Publisher ID ca-pub-1065686330826144 fornecido pelo proprietário em 03/09/2026, a partir do painel do AdSense",
       "aiGenerated": false,
       "declaredAt": "2026-09-03"
+    },
+    {
+      "id": "capas-de-guias-locais-png",
+      "pattern": "public/images/local/**/*.png",
+      "origin": "Gerada por IA sob direção do proprietário, a partir da identidade visual do portal",
+      "rights": "© Crédito por Perto",
+      "evidence": "Lote de capas em PNG enviado pelo proprietário em 09/09/2026, em substituição às versões anteriores com dado desatualizado",
+      "aiGenerated": true,
+      "declaredAt": "2026-09-09"
     }
   ],
   "ignored": [
