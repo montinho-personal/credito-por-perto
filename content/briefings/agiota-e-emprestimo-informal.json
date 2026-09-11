@@ -1,0 +1,58 @@
+{
+  "proposedTitle": "Agiota: o que a lei diz sobre o empréstimo por fora (e o que fazer se você já pegou)",
+  "primaryIntent": "emprestar dinheiro de agiota é crime quais os meus direitos",
+  "secondaryIntents": [
+    "juros de agiota são legais",
+    "agiota pode ficar com meu cartão ou meu documento",
+    "o que fazer se o agiota ameaça",
+    "dívida com agiota precisa ser paga",
+    "qual o limite legal de juros para quem não é banco"
+  ],
+  "targetReader": "Quem pegou ou está prestes a pegar dinheiro emprestado fora do sistema financeiro — com vizinho, conhecido, dono de comércio ou alguém do grupo do bairro — e não sabe que existe uma regra diferente para esse caso",
+  "readerSituation": "Foi recusado pelo banco, precisa do dinheiro rápido e recebeu oferta sem consulta, sem contrato e sem burocracia. Ou já pegou, a dívida cresceu e começou a cobrança pesada.",
+  "centralQuestion": "Que regra se aplica a quem empresta dinheiro sem ser instituição financeira — e o que fazer quando essa regra é violada?",
+  "uniqueAngle": "Lacuna absoluta medida no corpus: varredura por 'agiota', 'usura' e 'empréstimo informal' nos 69 artigos não retornou nenhuma ocorrência, apesar de o cluster de crédito seguro ter 10 páginas. Todas tratam de fraude em que o dinheiro NÃO sai — depósito antecipado, falsa central, app falso. Esta trata do oposto: o dinheiro sai de verdade, e o problema é o preço e a cobrança.",
+  "originalContribution": "A precisão que quase todo conteúdo do tema erra: o teto da Lei da Usura não é 12% ao ano fixo, e não vale para banco. São duas correções separadas — a Súmula 596 do STF afasta o Decreto 22.626/1933 das instituições do Sistema Financeiro Nacional, e a Lei 14.905/2024 mudou a taxa legal do art. 406 do Código Civil para Selic menos o índice de atualização, o que torna o teto um número móvel. O artigo explica por que o banco cobra mais que o agiota e mesmo assim é o agiota que comete crime.",
+  "primarySources": [
+    "Decreto nº 22.626/1933 (Lei da Usura), art. 1º e art. 11",
+    "Lei nº 1.521/1951, art. 4º — crimes contra a economia popular",
+    "Súmula 596 do STF",
+    "Lei nº 14.905/2024 — nova redação do art. 406 do Código Civil",
+    "Lei nº 8.078/1990 (CDC), art. 71"
+  ],
+  "supportingSources": [
+    "Súmula Vinculante 7 do STF",
+    "Decreto-Lei nº 2.848/1940 (Código Penal), arts. 147 e 158"
+  ],
+  "contentArchetype": "guia-direitos",
+  "proposedStructure": [
+    "Por que este caso é diferente dos golpes que já cobrimos",
+    "A regra que vale para quem não é banco",
+    "Por que o banco cobra mais e não é crime",
+    "O que a lei declara nulo",
+    "Os sinais de que aquilo é agiotagem",
+    "O que fazer se você já está dentro",
+    "As portas que existem antes",
+    "FAQ"
+  ],
+  "internalLinks": [
+    "cobranca-abusiva-o-que-o-credor-nao-pode-fazer",
+    "lei-do-superendividamento",
+    "microcredito-produtivo-e-banco-do-povo",
+    "emprestimo-para-negativado",
+    "dinheiro-urgente",
+    "como-consultar-se-instituicao-e-autorizada",
+    "emprestimo-sem-consulta",
+    "juros-abusivos-como-saber"
+  ],
+  "toolIntegrations": [
+    "consultar-instituicao"
+  ],
+  "antiCannibalization": "deposito-antecipado-e-golpe continua dono da fraude em que se paga antes e nada é liberado; emprestimo-sem-consulta continua dono da promessa publicitária de crédito sem análise; juros-abusivos-como-saber continua dono da comparação de taxa dentro do sistema financeiro; cobranca-abusiva continua dono dos limites da conduta de cobrança. Esta página é dona apenas do empréstimo efetivamente concedido fora do sistema financeiro e do regime jurídico próprio dele.",
+  "risks": [
+    "Não afirmar teto fixo de 12% ao ano: a taxa legal mudou com a Lei 14.905/2024 e a metodologia é definida pelo CMN e divulgada pelo Banco Central",
+    "Não prometer que a dívida some: a nulidade recai sobre os juros usurários, com ajuste ao padrão legal ou restituição do excesso, e não sobre o valor emprestado",
+    "Não transcrever penas do Código Penal sem conferência direta do texto atualizado",
+    "Não sugerir confronto com quem cobra: a orientação é registrar e procurar autoridade, nunca reagir"
+  ]
+}

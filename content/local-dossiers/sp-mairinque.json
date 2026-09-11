@@ -1,0 +1,123 @@
+{
+  "localityId": "sp-mairinque",
+  "localityName": "Mairinque",
+  "localityType": "municipality",
+  "stateCode": "sp",
+  "officialAdministrativeStatus": "Município do estado de São Paulo, na Região Metropolitana de Sorocaba",
+  "officialSources": [
+    {
+      "organization": "IBGE — Cidades e Estados",
+      "documentTitle": "Mairinque (SP)",
+      "sourceLocation": "https://www.ibge.gov.br/cidades-e-estados/sp/mairinque.html",
+      "checkedAt": "2026-09-11",
+      "extractedFact": "População no Censo 2022: 50.027 pessoas. Área territorial: 210,149 km². Densidade demográfica: 238,05 hab/km². Código do município: 3528403.",
+      "relevanceToReader": "Cidade de 50 mil habitantes na Região Metropolitana de Sorocaba, vizinha de São Roque."
+    },
+    {
+      "organization": "Prefeitura de Mairinque",
+      "documentTitle": "Procon de Mairinque passa a atender no Paço Municipal",
+      "sourceLocation": "https://www.mairinque.sp.gov.br/portal/noticias/0/3/3432/procon-de-mairinque-passa-a-atender-no-paco-municipal",
+      "checkedAt": "2026-09-11",
+      "extractedFact": "O Procon de Mairinque passou a atender no Paço Municipal, na Avenida Dr. Lamartine Navarro, nº 514 — sala Procon, Centro. O atendimento vai de segunda a sexta-feira, das 9h às 12h e das 13h às 16h, sem necessidade de agendamento prévio.",
+      "relevanceToReader": "Endereço vigente e, sobretudo, a dispensa de agendamento — o oposto do que a maioria dos municípios vizinhos exige."
+    },
+    {
+      "organization": "Prefeitura de Mairinque",
+      "documentTitle": "Secretaria Municipal de Cidadania e Geração de Rendas",
+      "sourceLocation": "https://www.mairinque.sp.gov.br/portal/secretarias/6/secretaria-municipal-de-cidadania-e-geracao-de-rendas",
+      "checkedAt": "2026-09-11",
+      "extractedFact": "A Secretaria Municipal de Cidadania e Geração de Rendas funciona na Av. Lamartine Navarro, 514 — Centro, telefone (11) 4718-8644, e concentra a vinculação do Procon, do PAT e do Banco do Povo.",
+      "relevanceToReader": "Secretaria que responde pelos serviços de consumo, trabalho e microcrédito do município."
+    },
+    {
+      "organization": "Prefeitura de Mairinque",
+      "documentTitle": "Crédito acessível: Banco do Povo impulsiona empreendedores de Mairinque",
+      "sourceLocation": "https://www.mairinque.sp.gov.br/portal/noticias/0/3/3196/credito-acessivel-banco-do-povo-impulsiona-empreendedores-de-mairinque",
+      "checkedAt": "2026-09-11",
+      "extractedFact": "O Banco do Povo de Mairinque atende na Avenida 27 de Outubro, nº 371 — Vila Sorocabana, de segunda a sexta-feira, das 8h às 16h. O programa financia empreendedores formais ou informais, associações e cooperativas produtivas, para capital de giro e investimento fixo.",
+      "relevanceToReader": "O microcrédito público fica em outro bairro, não no Paço — e atende também quem é informal."
+    },
+    {
+      "organization": "Prefeitura de Mairinque",
+      "documentTitle": "Serviços — Casa do Cidadão",
+      "sourceLocation": "https://www.mairinque.sp.gov.br/servicos---casa-do-cidadao",
+      "checkedAt": "2026-09-11",
+      "extractedFact": "A Casa do Cidadão fica na Rua Doutor Jonas Zabrockis, nº 440 — Vila Sorocabana, com atendimento de segunda a sexta-feira das 8h às 16h, e abriga o Posto de Atendimento ao Trabalhador (PAT). Há canal de WhatsApp divulgado no (11) 4718-4622.",
+      "relevanceToReader": "Terceiro endereço da cidade, para carteira de trabalho e seguro-desemprego — serviços que costumam vir junto quando a renda aperta."
+    },
+    {
+      "organization": "Prefeitura de Mairinque",
+      "documentTitle": "Procon de Mairinque realiza mutirão de negociação de dívidas e orientação financeira",
+      "sourceLocation": "https://www.mairinque.sp.gov.br/portal/noticias/0/3/525/procon-de-mairinque-realiza-nesta-semana-mutirao-de-negociacao-de-dividas-e-orientacao-financeira",
+      "checkedAt": "2026-09-11",
+      "extractedFact": "O Procon municipal promove mutirões de negociação de dívidas e orientação financeira, anunciados com data no portal da Prefeitura.",
+      "relevanceToReader": "Mutirão de renegociação existe e é oficial — a data verdadeira sai no portal, nunca só por mensagem."
+    },
+    {
+      "organization": "Portal de Serviços do Estado de São Paulo",
+      "documentTitle": "Banco do Povo Paulista — condições do financiamento",
+      "sourceLocation": "https://servicos.sp.gov.br/fcarta/7113B9A5-BF37-4CB9-A48F-4DD7CF4ED8F3",
+      "checkedAt": "2026-09-11",
+      "extractedFact": "A carta de serviços estadual informa crédito de R$ 200,00 a R$ 21.000,00, juros a partir de 0,35% ao mês e prazo de pagamento de até 36 meses. Requisitos mínimos: desenvolver atividade produtiva no município e não possuir restrições cadastrais no Serasa e/ou no ADIN Estadual.",
+      "relevanceToReader": "Faixa de valor, prazo e a exigência de não ter restrição cadastral, que define quem se enquadra antes da viagem."
+    }
+  ],
+  "consumerProtectionResources": [
+    {
+      "organization": "Procon Mairinque",
+      "service": "Paço Municipal, Avenida Dr. Lamartine Navarro, nº 514 — sala Procon, Centro; segunda a sexta das 9h às 12h e das 13h às 16h, sem necessidade de agendamento prévio; telefone da secretaria (11) 4718-8644",
+      "officialSource": "https://www.mairinque.sp.gov.br/portal/noticias/0/3/3432/procon-de-mairinque-passa-a-atender-no-paco-municipal",
+      "checkedAt": "2026-09-11"
+    },
+    {
+      "organization": "Casa do Cidadão de Mairinque",
+      "service": "Rua Doutor Jonas Zabrockis, nº 440 — Vila Sorocabana; segunda a sexta das 8h às 16h; abriga o PAT; WhatsApp divulgado no (11) 4718-4622",
+      "officialSource": "https://www.mairinque.sp.gov.br/servicos---casa-do-cidadao",
+      "checkedAt": "2026-09-11"
+    },
+    {
+      "organization": "Consumidor.gov.br (plataforma federal)",
+      "service": "Reclamação on-line contra bancos e financeiras, com prazo de resposta monitorado, a qualquer dia e hora",
+      "officialSource": "https://www.consumidor.gov.br",
+      "checkedAt": "2026-09-11"
+    }
+  ],
+  "verifiedLocalPrograms": [
+    {
+      "program": "Banco do Povo Paulista — Mairinque",
+      "detail": "Microcrédito produtivo na Avenida 27 de Outubro, nº 371 — Vila Sorocabana, de segunda a sexta das 8h às 16h. Financia empreendedores formais ou informais, associações e cooperativas produtivas, para capital de giro e investimento fixo.",
+      "officialSource": "https://www.mairinque.sp.gov.br/portal/noticias/0/3/3196/credito-acessivel-banco-do-povo-impulsiona-empreendedores-de-mairinque",
+      "checkedAt": "2026-09-11"
+    },
+    {
+      "program": "Mutirão de negociação de dívidas — Procon Mairinque",
+      "detail": "Ações periódicas de negociação de dívidas e orientação financeira promovidas pelo Procon municipal, com data e local anunciados no portal da Prefeitura.",
+      "officialSource": "https://www.mairinque.sp.gov.br/portal/noticias/0/3/525/procon-de-mairinque-realiza-nesta-semana-mutirao-de-negociacao-de-dividas-e-orientacao-financeira",
+      "checkedAt": "2026-09-11"
+    }
+  ],
+  "verifiedServiceInformation": [],
+  "uniqueLocalQuestions": [
+    "Preciso agendar para ser atendido no Procon de Mairinque?",
+    "O Banco do Povo fica no mesmo lugar do Procon?",
+    "Sou informal. Consigo microcrédito público aqui?"
+  ],
+  "localRisksOrWarnings": [
+    "Procon, Banco do Povo e PAT ficam em três endereços diferentes: Paço Municipal, Avenida 27 de Outubro e Casa do Cidadão. Uma viagem não resolve os três.",
+    "O Procon atende das 9h às 12h e das 13h às 16h — fecha ao meio-dia e mais cedo que o Banco do Povo e a Casa do Cidadão, que vão até as 16h sem intervalo divulgado.",
+    "O Banco do Povo exige ausência de restrição cadastral no Serasa e/ou no ADIN Estadual: oferta de microcrédito público 'para negativado' não corresponde ao programa.",
+    "Mutirão de renegociação tem data anunciada no portal da Prefeitura; convocação que chega só por mensagem é isca."
+  ],
+  "decisionImpact": [
+    "Não precisar agendar muda o planejamento de quem não consegue marcar com antecedência",
+    "Saber que o microcrédito atende informal amplia quem se enquadra",
+    "Os três endereços distintos exigem escolher qual porta resolve o seu caso antes de sair de casa"
+  ],
+  "pendingVerification": [
+    "Telefone direto do Procon: o número (11) 4718-3524 aparece em registro anterior e a secretaria divulga (11) 4718-8644 — confirmar qual atende o Procon hoje.",
+    "Telefone direto do Banco do Povo na Avenida 27 de Outubro — a notícia traz endereço e horário, sem número próprio.",
+    "Se o WhatsApp (11) 4718-4622 atende o Banco do Povo, o PAT ou os dois.",
+    "Periodicidade atual dos mutirões de negociação de dívidas.",
+    "Se o Banco do Povo de Mairinque aplica exigência própria de tempo mínimo de residência ou de atividade, como fazem outros municípios da região."
+  ]
+}

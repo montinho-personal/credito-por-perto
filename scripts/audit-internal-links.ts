@@ -90,6 +90,9 @@ const OFFICIAL_DOMAINS = [
   "procon.sp.gov.br",
   "bancodopovo.sp.gov.br",
   "cfc.org.br",
+  // Tribunais superiores: súmulas e jurisprudência citadas como fonte primária.
+  "stf.jus.br",
+  "stj.jus.br",
 ];
 
 function externalLinks(text: string): string[] {

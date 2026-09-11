@@ -363,6 +363,22 @@
       "stateCode": "sp",
       "citySlug": "ibiuna",
       "ibgeCode": "3519709"
+    },
+    {
+      "id": "sp-jarinu",
+      "name": "Jarinu",
+      "localityType": "municipality",
+      "stateCode": "sp",
+      "citySlug": "jarinu",
+      "ibgeCode": "3525201"
+    },
+    {
+      "id": "sp-mairinque",
+      "name": "Mairinque",
+      "localityType": "municipality",
+      "stateCode": "sp",
+      "citySlug": "mairinque",
+      "ibgeCode": "3528403"
     }
   ]
 }

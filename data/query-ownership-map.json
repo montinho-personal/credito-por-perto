@@ -537,5 +537,17 @@
       "/emprestimos/emprestimo-com-garantia/",
       "/emprestimos/financiamento-de-veiculo/"
     ]
+  },
+  "emprestar dinheiro de agiota é crime quais os meus direitos": {
+    "canonicalOwner": "/credito-seguro/agiota-e-emprestimo-informal/",
+    "supportingPages": []
+  },
+  "empréstimos em jarinu": {
+    "canonicalOwner": "/emprestimos/sp/jarinu/",
+    "supportingPages": []
+  },
+  "empréstimos em mairinque": {
+    "canonicalOwner": "/emprestimos/sp/mairinque/",
+    "supportingPages": []
   }
 }

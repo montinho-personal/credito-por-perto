@@ -1,0 +1,85 @@
+{
+  "articleSlug": "agiota-e-emprestimo-informal",
+  "claims": [
+    {
+      "claimId": "usura-teto-dobro-taxa-legal",
+      "claimText": "É vedado estipular em quaisquer contratos taxas de juros superiores ao dobro da taxa legal.",
+      "sourceOrganization": "Presidência da República",
+      "sourceTitle": "Decreto nº 22.626/1933 — Lei da Usura, art. 1º",
+      "sourceLocation": "https://www.planalto.gov.br/ccivil_03/decreto/d22626.htm",
+      "sourceType": "official",
+      "accessedAt": "2026-09-11",
+      "notes": "O teto é expresso como o DOBRO DA TAXA LEGAL, não como um percentual fixo. O artigo faz questão de não reduzir isso a '12% ao ano', número que vem da antiga redação do Código Civil e do revogado §3º do art. 192 da Constituição."
+    },
+    {
+      "claimId": "usura-nulidade-e-recuperacao",
+      "claimText": "Os contratos celebrados com infração da Lei da Usura são nulos de pleno direito, ficando assegurada ao devedor a repetição do que houver pago a mais.",
+      "sourceOrganization": "Presidência da República",
+      "sourceTitle": "Decreto nº 22.626/1933 — Lei da Usura",
+      "sourceLocation": "https://www.planalto.gov.br/ccivil_03/decreto/d22626.htm",
+      "sourceType": "official",
+      "accessedAt": "2026-09-11",
+      "notes": "Base da afirmação de que o excesso pago pode ser recuperado. O artigo deixa claro que a nulidade atinge a cobrança usurária, e não transforma o valor emprestado em doação."
+    },
+    {
+      "claimId": "lei-1521-usura-crime",
+      "claimText": "Constitui crime contra a economia popular a usura pecuniária ou real: cobrar juros, comissões ou descontos percentuais sobre dívidas em dinheiro superiores à taxa permitida por lei, ou obter lucro abusivo superior a um quinto do valor corrente ou justo da prestação, em qualquer contrato, abusando da premente necessidade, inexperiência ou leviandade da outra parte. Pena: detenção de seis meses a dois anos e multa.",
+      "sourceOrganization": "Presidência da República",
+      "sourceTitle": "Lei nº 1.521/1951, art. 4º",
+      "sourceLocation": "https://www.planalto.gov.br/ccivil_03/leis/l1521.htm",
+      "sourceType": "official",
+      "accessedAt": "2026-09-11",
+      "notes": "A expressão 'premente necessidade' é o que liga a conduta ao contexto real do leitor: quem procura agiota costuma estar sem alternativa, e a lei trata essa exploração como elemento do crime."
+    },
+    {
+      "claimId": "lei-1521-nulidade-ajuste",
+      "claimText": "A estipulação de juros ou lucros usurários é nula, devendo o juiz ajustá-los à medida legal ou, caso já tenha sido cumprida, ordenar a restituição da quantia paga em excesso, com os juros legais a contar da data do pagamento indevido.",
+      "sourceOrganization": "Presidência da República",
+      "sourceTitle": "Lei nº 1.521/1951, art. 4º, § 3º",
+      "sourceLocation": "https://www.planalto.gov.br/ccivil_03/leis/l1521.htm",
+      "sourceType": "official",
+      "accessedAt": "2026-09-11",
+      "notes": "Sustenta a precisão central do artigo: o que é nulo é o juro usurário, que o juiz ajusta ao padrão legal — não o contrato inteiro nem o valor emprestado."
+    },
+    {
+      "claimId": "sumula-596-stf",
+      "claimText": "As disposições do Decreto nº 22.626/1933 não se aplicam às taxas de juros e aos outros encargos cobrados nas operações realizadas por instituições públicas ou privadas que integram o Sistema Financeiro Nacional.",
+      "sourceOrganization": "Supremo Tribunal Federal",
+      "sourceTitle": "Súmula 596 do STF",
+      "sourceLocation": "https://portal.stf.jus.br/jurisprudencia/sumariosumulas.asp?base=30&sumula=2017",
+      "sourceType": "official",
+      "accessedAt": "2026-09-11",
+      "notes": "É a peça que explica o paradoxo do artigo: o banco pode cobrar mais que o agiota sem cometer crime, porque o teto da Lei da Usura não alcança instituição autorizada. Sem isso, o leitor conclui que a lei é letra morta."
+    },
+    {
+      "claimId": "sumula-vinculante-7",
+      "claimText": "A norma do §3º do artigo 192 da Constituição, revogada pela Emenda Constitucional nº 40/2003, que limitava a taxa de juros reais a 12% ao ano, tinha sua aplicação condicionada à edição de lei complementar.",
+      "sourceOrganization": "Supremo Tribunal Federal",
+      "sourceTitle": "Súmula Vinculante 7",
+      "sourceLocation": "https://portal.stf.jus.br/jurisprudencia/menuSumario.asp?sumula=1156",
+      "sourceType": "official",
+      "accessedAt": "2026-09-11",
+      "notes": "Explica a origem do '12% ao ano' que circula como se fosse regra vigente. O artigo usa isso para desfazer a confusão, não para afirmar o teto."
+    },
+    {
+      "claimId": "lei-14905-taxa-legal",
+      "claimText": "A taxa legal corresponde à taxa referencial do Sistema Especial de Liquidação e de Custódia (Selic), deduzido o índice de atualização monetária. Não havendo índice convencionado ou previsto em lei específica, aplica-se a variação do IPCA. A metodologia de cálculo e a forma de aplicação da taxa legal serão definidas pelo Conselho Monetário Nacional e divulgadas pelo Banco Central. Resultado negativo é considerado igual a zero no período.",
+      "sourceOrganization": "Presidência da República",
+      "sourceTitle": "Lei nº 14.905/2024 — nova redação do art. 406 do Código Civil",
+      "sourceLocation": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2024/lei/l14905.htm",
+      "sourceType": "official",
+      "accessedAt": "2026-09-11",
+      "notes": "Razão pela qual o artigo não imprime um número como teto: a taxa legal passou a ser variável e divulgada pelo Banco Central. Lei publicada em 28/06/2024."
+    },
+    {
+      "claimId": "cdc-71-cobranca-vexatoria",
+      "claimText": "Utilizar, na cobrança de dívidas, de ameaça, coação, constrangimento físico ou moral, afirmações falsas, incorretas ou enganosas, ou de qualquer outro procedimento que exponha o consumidor, injustificadamente, a ridículo ou interfira com seu trabalho, descanso ou lazer, é crime, com pena de detenção de três meses a um ano e multa.",
+      "sourceOrganization": "Presidência da República",
+      "sourceTitle": "Lei nº 8.078/1990 — CDC, art. 71",
+      "sourceLocation": "https://www.planalto.gov.br/ccivil_03/leis/l8078compilado.htm",
+      "sourceType": "official",
+      "accessedAt": "2026-09-11",
+      "notes": "Usado para ligar esta página ao guia de cobrança abusiva, que é o dono do tema da conduta de cobrança."
+    }
+  ]
+}

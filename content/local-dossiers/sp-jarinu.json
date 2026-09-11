@@ -1,0 +1,107 @@
+{
+  "localityId": "sp-jarinu",
+  "localityName": "Jarinu",
+  "localityType": "municipality",
+  "stateCode": "sp",
+  "officialAdministrativeStatus": "Município do estado de São Paulo, na Região Metropolitana de Jundiaí (Aglomeração Urbana de Jundiaí)",
+  "officialSources": [
+    {
+      "organization": "Prefeitura de Jarinu",
+      "documentTitle": "Jarinu ultrapassa marca de 37 mil habitantes",
+      "sourceLocation": "https://www.jarinu.sp.gov.br/noticias/governo/jarinu-ultrapassa-marca-de-37-mil-habitantes",
+      "checkedAt": "2026-09-11",
+      "extractedFact": "O Censo 2022 registrou 37.535 moradores em Jarinu, alta de 57,4% sobre o levantamento de 2010. A estimativa de 2021 projetava apenas 31.173 pessoas. O município tem 18.338 domicílios. Área territorial: 207,549 km². Código do município: 3525201.",
+      "relevanceToReader": "Crescimento de 57,4% em uma década explica por que a estrutura de atendimento é recente e foi concentrada num prédio só."
+    },
+    {
+      "organization": "Prefeitura de Jarinu — Secretaria de Assuntos Jurídicos",
+      "documentTitle": "Procon Jarinu",
+      "sourceLocation": "https://www.jarinu.sp.gov.br/secretarias/assuntos-juridicos/procon-jarinu",
+      "checkedAt": "2026-09-11",
+      "extractedFact": "O Procon de Jarinu atende para formalização de reclamação de segunda a sexta-feira, das 9h às 16h, e para orientações gerais de segunda a sexta-feira, das 16h às 17h. O atendimento exige agendamento prévio. Telefone (11) 4887-1392. O órgão é conveniado à Fundação Procon-SP e, por meio do Programa de Apoio ao Superendividado (PAS), agenda consultas individuais para pessoas físicas em dificuldade financeira e superendividamento.",
+      "relevanceToReader": "A grade é dividida: até as 16h formaliza reclamação, depois disso só orienta. E existe atendimento agendado para quem tem mais dívida do que renda."
+    },
+    {
+      "organization": "Prefeitura de Jarinu",
+      "documentTitle": "Centro de Soluções",
+      "sourceLocation": "https://www.jarinu.sp.gov.br/centro-de-solucoes",
+      "checkedAt": "2026-09-11",
+      "extractedFact": "O Centro de Soluções fica na Praça Francisco Alves de Siqueira Jr, nº 111 — Jardim da Saúde, CEP 13240-187, e reúne mais de 65 serviços municipais em um único prédio, entre eles o Procon, o Banco do Povo e o Posto de Atendimento ao Trabalhador. O atendimento presencial vai de segunda a sexta-feira, das 8h às 12h e das 13h às 17h. Telefone da Prefeitura: (11) 4016-8200.",
+      "relevanceToReader": "Um endereço só concentra reclamação de consumo, microcrédito público e serviços de emprego — em cidade que cresceu rápido, isso poupa deslocamento."
+    },
+    {
+      "organization": "Prefeitura de Jarinu",
+      "documentTitle": "Prefeitura de Jarinu e Fundação Procon-SP trazem unidade móvel de atendimento à praça central",
+      "sourceLocation": "https://www.jarinu.sp.gov.br/noticias/assuntos-juridicos/prefeitura-de-jarinu-e-fundacao-procon-sp-trazem-unidade-movel-de-atendimento-a-praca-central",
+      "checkedAt": "2026-09-11",
+      "extractedFact": "A Prefeitura e a Fundação Procon-SP já levaram unidade móvel de atendimento ao consumidor à praça central do município, em ação divulgada no portal oficial.",
+      "relevanceToReader": "Ação itinerante do Procon estadual acontece na cidade e é anunciada no portal da Prefeitura — convocação que circula só por mensagem não é oficial."
+    },
+    {
+      "organization": "Portal de Serviços do Estado de São Paulo",
+      "documentTitle": "Banco do Povo Paulista — condições do financiamento",
+      "sourceLocation": "https://servicos.sp.gov.br/fcarta/7113B9A5-BF37-4CB9-A48F-4DD7CF4ED8F3",
+      "checkedAt": "2026-09-11",
+      "extractedFact": "A carta de serviços estadual informa crédito de R$ 200,00 a R$ 21.000,00, juros a partir de 0,35% ao mês e prazo de pagamento de até 36 meses. Requisitos mínimos: desenvolver atividade produtiva no município e não possuir restrições cadastrais no Serasa e/ou no ADIN Estadual.",
+      "relevanceToReader": "Faixa de valor, prazo e a exigência de não ter restrição cadastral, que define quem se enquadra antes da viagem."
+    }
+  ],
+  "consumerProtectionResources": [
+    {
+      "organization": "Procon Jarinu",
+      "service": "No Centro de Soluções, Praça Francisco Alves de Siqueira Jr, nº 111 — Jardim da Saúde (CEP 13240-187). Formalização de reclamação de segunda a sexta das 9h às 16h; orientações gerais de segunda a sexta das 16h às 17h; atendimento com agendamento prévio; telefone (11) 4887-1392",
+      "officialSource": "https://www.jarinu.sp.gov.br/secretarias/assuntos-juridicos/procon-jarinu",
+      "checkedAt": "2026-09-11"
+    },
+    {
+      "organization": "Centro de Soluções de Jarinu",
+      "service": "Praça Francisco Alves de Siqueira Jr, nº 111 — Jardim da Saúde; segunda a sexta das 8h às 12h e das 13h às 17h; telefone (11) 4016-8200. Reúne mais de 65 serviços municipais, entre eles Procon, Banco do Povo e Posto de Atendimento ao Trabalhador",
+      "officialSource": "https://www.jarinu.sp.gov.br/centro-de-solucoes",
+      "checkedAt": "2026-09-11"
+    },
+    {
+      "organization": "Consumidor.gov.br (plataforma federal)",
+      "service": "Reclamação on-line contra bancos e financeiras, com prazo de resposta monitorado — não exige agendamento, ao contrário do presencial",
+      "officialSource": "https://www.consumidor.gov.br",
+      "checkedAt": "2026-09-11"
+    }
+  ],
+  "verifiedLocalPrograms": [
+    {
+      "program": "Programa de Apoio ao Superendividado (PAS) — Procon Jarinu com a Fundação Procon-SP",
+      "detail": "O Procon municipal, conveniado à Fundação Procon-SP, agenda consultas individuais para pessoas físicas em dificuldade financeira e superendividamento. Agendamento pelo telefone (11) 4887-1392.",
+      "officialSource": "https://www.jarinu.sp.gov.br/secretarias/assuntos-juridicos/procon-jarinu",
+      "checkedAt": "2026-09-11"
+    },
+    {
+      "program": "Banco do Povo Paulista — Jarinu",
+      "detail": "Microcrédito produtivo orientado a pequenos empreendedores, atendido dentro do Centro de Soluções, na Praça Francisco Alves de Siqueira Jr, nº 111 — Jardim da Saúde, de segunda a sexta das 8h às 12h e das 13h às 17h.",
+      "officialSource": "https://www.jarinu.sp.gov.br/centro-de-solucoes",
+      "checkedAt": "2026-09-11"
+    }
+  ],
+  "verifiedServiceInformation": [],
+  "uniqueLocalQuestions": [
+    "Até que horas dá para abrir reclamação no Procon de Jarinu?",
+    "Preciso agendar para ser atendido?",
+    "Tenho mais dívida do que renda. Existe atendimento na cidade?"
+  ],
+  "localRisksOrWarnings": [
+    "A grade do Procon é dividida: das 9h às 16h formaliza reclamação, das 16h às 17h só orienta. Quem chega às 16h30 querendo abrir caso não consegue.",
+    "O atendimento presencial exige agendamento prévio — chegar sem marcar é viagem perdida.",
+    "O Banco do Povo exige ausência de restrição cadastral no Serasa e/ou no ADIN Estadual: oferta de microcrédito público 'para negativado' não corresponde ao programa.",
+    "Ações itinerantes do Procon são anunciadas no portal da Prefeitura; convocação que chega só por mensagem não é oficial."
+  ],
+  "decisionImpact": [
+    "Saber a divisão do horário define a que horas ir, conforme o objetivo seja abrir caso ou tirar dúvida",
+    "O PAS abre caminho de repactuação para quem já não consegue pagar, sem custo",
+    "Um endereço com mais de 65 serviços permite resolver consumo, crédito e emprego na mesma viagem"
+  ],
+  "pendingVerification": [
+    "Se o agendamento prévio vale para as duas janelas do Procon ou apenas para a formalização de reclamação.",
+    "Canal de agendamento além do telefone — a página não indica formulário nem WhatsApp.",
+    "Periodicidade das visitas da unidade móvel da Fundação Procon-SP ao município.",
+    "Telefone direto do Banco do Povo dentro do Centro de Soluções — a página remete ao telefone geral da Prefeitura.",
+    "Se o Banco do Povo de Jarinu aplica exigência própria de tempo mínimo de residência ou de atividade, como fazem outros municípios da região."
+  ]
+}
