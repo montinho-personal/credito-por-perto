@@ -379,6 +379,22 @@
       "stateCode": "sp",
       "citySlug": "mairinque",
       "ibgeCode": "3528403"
+    },
+    {
+      "id": "sp-votorantim",
+      "name": "Votorantim",
+      "localityType": "municipality",
+      "stateCode": "sp",
+      "citySlug": "votorantim",
+      "ibgeCode": "3557006"
+    },
+    {
+      "id": "sp-aracariguama",
+      "name": "Araçariguama",
+      "localityType": "municipality",
+      "stateCode": "sp",
+      "citySlug": "aracariguama",
+      "ibgeCode": "3502754"
     }
   ]
 }

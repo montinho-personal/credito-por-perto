@@ -549,5 +549,13 @@
   "empréstimos em mairinque": {
     "canonicalOwner": "/emprestimos/sp/mairinque/",
     "supportingPages": []
+  },
+  "empréstimos em votorantim": {
+    "canonicalOwner": "/emprestimos/sp/votorantim/",
+    "supportingPages": []
+  },
+  "empréstimos em araçariguama": {
+    "canonicalOwner": "/emprestimos/sp/aracariguama/",
+    "supportingPages": []
   }
 }

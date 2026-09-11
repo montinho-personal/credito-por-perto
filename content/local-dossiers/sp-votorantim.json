@@ -1,0 +1,111 @@
+{
+  "localityId": "sp-votorantim",
+  "localityName": "Votorantim",
+  "localityType": "municipality",
+  "stateCode": "sp",
+  "officialAdministrativeStatus": "Município do estado de São Paulo, na Região Metropolitana de Sorocaba, desmembrado de Sorocaba pela Lei Estadual nº 8.092, de 28 de fevereiro de 1964",
+  "officialSources": [
+    {
+      "organization": "IBGE — Cidades e Estados",
+      "documentTitle": "Votorantim (SP)",
+      "sourceLocation": "https://www.ibge.gov.br/cidades-e-estados/sp/votorantim.html",
+      "checkedAt": "2026-09-11",
+      "extractedFact": "População no Censo 2022: 127.923 pessoas. Densidade demográfica: 694,53 hab/km² (2022). Código do município: 3557006. O município foi elevado à condição de município pela Lei Estadual nº 8.092, de 28 de fevereiro de 1964, desmembrado de Sorocaba.",
+      "relevanceToReader": "Cidade de 128 mil habitantes, a maior da frente de Sorocaba coberta por este portal, e conurbada com a sede regional."
+    },
+    {
+      "organization": "Prefeitura de Votorantim — Departamento de Proteção ao Consumidor",
+      "documentTitle": "Procon Votorantim — contato",
+      "sourceLocation": "http://votorantim.sp.gov.br/procon/contato.html",
+      "checkedAt": "2026-09-11",
+      "extractedFact": "O Procon de Votorantim atende na Rua Albertina Nascimento, 225 — Centro, CEP 18110-090, de segunda a sexta-feira, das 12h15 às 17h45. Telefones (15) 3243-4201 e (15) 3243-1628. E-mail para dúvidas: duvidasprocon@votorantim.sp.gov.br.",
+      "relevanceToReader": "O atendimento presencial começa só depois do meio-dia: quem vai de manhã não é atendido."
+    },
+    {
+      "organization": "Prefeitura de Votorantim",
+      "documentTitle": "Banco do Povo e Sebrae de Votorantim têm novo endereço",
+      "sourceLocation": "https://www.votorantim.sp.gov.br/portal/noticias/0/3/13377/banco-do-povo-e-sebrae-de-votorantim-tem-novo-endereco",
+      "checkedAt": "2026-09-11",
+      "extractedFact": "O Banco do Povo Paulista e o Sebrae Aqui passaram a funcionar na Avenida São João, 719 — Jardim Icatu (CEP 18110-210), anexo ao prédio do Poupatempo, de segunda a sexta-feira das 12h15 às 17h45. O atendimento começou no novo local após o fechamento do endereço anterior, na Avenida 31 de Março. Contatos: Banco do Povo (15) 3243-2615; Sebrae Aqui (15) 3343-1015.",
+      "relevanceToReader": "Endereço mudou e o anterior ainda circula em listas de terceiros. O horário também é de tarde, igual ao do Procon."
+    },
+    {
+      "organization": "Prefeitura de Votorantim",
+      "documentTitle": "Sebrae Aqui e Banco do Povo Paulista",
+      "sourceLocation": "https://www.votorantim.sp.gov.br/portal/secretarias-paginas/49/sebrae-aqui-e-banco-do-povo-paulista/",
+      "checkedAt": "2026-09-11",
+      "extractedFact": "A Prefeitura mantém o Sebrae Aqui e o Banco do Povo Paulista no mesmo espaço de atendimento ao empreendedor, com orientação para abertura e formalização de negócio e acesso ao microcrédito produtivo.",
+      "relevanceToReader": "Orientação de negócio e microcrédito público ficam no mesmo balcão — uma viagem resolve as duas coisas."
+    },
+    {
+      "organization": "Prefeitura de Votorantim",
+      "documentTitle": "Banco do Povo Paulista — Linhas de Crédito Empreenda Rápido SEBRAE e Linha Básica Banco do Povo",
+      "sourceLocation": "https://www.votorantim.sp.gov.br/portal/carta-servicos/109/",
+      "checkedAt": "2026-09-11",
+      "extractedFact": "A carta de serviços municipal descreve duas frentes de crédito atendidas na unidade: as linhas do programa Empreenda Rápido, em parceria com o Sebrae, e a Linha Básica do Banco do Povo Paulista.",
+      "relevanceToReader": "Não é uma linha só: o mesmo balcão opera o Empreenda Rápido e a linha básica, com condições distintas a confirmar no atendimento."
+    },
+    {
+      "organization": "Prefeitura de Votorantim",
+      "documentTitle": "Procon Votorantim adere a sistema nacional para atender consumidores",
+      "sourceLocation": "https://www.votorantim.sp.gov.br/portal/noticias/0/3/9822/procon-votorantim-adere-a-avancado-sistema-nacional-para-atender-consumidores",
+      "checkedAt": "2026-09-11",
+      "extractedFact": "O Procon municipal aderiu a sistema nacional de atendimento ao consumidor, integrando o registro de reclamações do município à estrutura nacional.",
+      "relevanceToReader": "O caso registrado no balcão local passa a circular em base nacional, o que reforça o valor de formalizar em vez de só reclamar na empresa."
+    },
+    {
+      "organization": "Portal de Serviços do Estado de São Paulo",
+      "documentTitle": "Banco do Povo Paulista — condições do financiamento",
+      "sourceLocation": "https://servicos.sp.gov.br/fcarta/7113B9A5-BF37-4CB9-A48F-4DD7CF4ED8F3",
+      "checkedAt": "2026-09-11",
+      "extractedFact": "A carta de serviços estadual informa crédito de R$ 200,00 a R$ 21.000,00, juros a partir de 0,35% ao mês e prazo de pagamento de até 36 meses. Requisitos mínimos: desenvolver atividade produtiva no município e não possuir restrições cadastrais no Serasa e/ou no ADIN Estadual.",
+      "relevanceToReader": "Faixa de valor, prazo e a exigência de não ter restrição cadastral, que define quem se enquadra antes da viagem."
+    }
+  ],
+  "consumerProtectionResources": [
+    {
+      "organization": "Procon Votorantim",
+      "service": "Rua Albertina Nascimento, 225 — Centro (CEP 18110-090); segunda a sexta das 12h15 às 17h45; telefones (15) 3243-4201 e (15) 3243-1628; e-mail duvidasprocon@votorantim.sp.gov.br",
+      "officialSource": "http://votorantim.sp.gov.br/procon/contato.html",
+      "checkedAt": "2026-09-11"
+    },
+    {
+      "organization": "Consumidor.gov.br (plataforma federal)",
+      "service": "Reclamação on-line contra bancos e financeiras, com prazo de resposta monitorado — funciona de manhã, quando o Procon municipal ainda não abriu",
+      "officialSource": "https://www.consumidor.gov.br",
+      "checkedAt": "2026-09-11"
+    }
+  ],
+  "verifiedLocalPrograms": [
+    {
+      "program": "Banco do Povo Paulista e Sebrae Aqui — Votorantim",
+      "detail": "Microcrédito produtivo e orientação ao empreendedor no mesmo espaço, na Avenida São João, 719 — Jardim Icatu (CEP 18110-210), anexo ao prédio do Poupatempo, de segunda a sexta das 12h15 às 17h45. Banco do Povo (15) 3243-2615; Sebrae Aqui (15) 3343-1015. A unidade opera as linhas do Empreenda Rápido, em parceria com o Sebrae, e a Linha Básica do Banco do Povo.",
+      "officialSource": "https://www.votorantim.sp.gov.br/portal/noticias/0/3/13377/banco-do-povo-e-sebrae-de-votorantim-tem-novo-endereco",
+      "checkedAt": "2026-09-11"
+    }
+  ],
+  "verifiedServiceInformation": [],
+  "uniqueLocalQuestions": [
+    "O Procon de Votorantim abre de manhã?",
+    "Onde fica o Banco do Povo agora que mudou de endereço?",
+    "Qual a diferença entre o Empreenda Rápido e a linha básica?"
+  ],
+  "localRisksOrWarnings": [
+    "Procon e Banco do Povo só atendem à tarde, a partir das 12h15: quem vai de manhã encontra porta fechada nos dois.",
+    "O Banco do Povo e o Sebrae mudaram de endereço — o anterior, na Avenida 31 de Março, ainda circula em listas de terceiros.",
+    "O Banco do Povo exige ausência de restrição cadastral no Serasa e/ou no ADIN Estadual: oferta de microcrédito público 'para negativado' não corresponde ao programa.",
+    "A unidade opera mais de uma linha de crédito, com condições diferentes — confirmar qual se aplica ao seu caso antes de assinar."
+  ],
+  "decisionImpact": [
+    "Saber que os dois serviços só abrem à tarde evita a viagem perdida da manhã",
+    "O endereço novo, anexo ao Poupatempo, muda o ponto de referência de quem usava o anterior",
+    "Orientação do Sebrae e microcrédito no mesmo balcão permitem tratar formalização e crédito numa ida só"
+  ],
+  "pendingVerification": [
+    "Horário exato de abertura do Procon: uma fonte municipal registra 12h15 e outra 12h45 — confirmar por telefone antes de ir.",
+    "Telefone do Banco do Povo: aparece como (15) 3243-2615 e, em outra página, como (15) 3343-2615.",
+    "Se o WhatsApp Business (15) 3243-6518, citado em material do Procon, segue ativo e em qual horário.",
+    "Condições vigentes de cada linha operada na unidade — a carta de serviços descreve o Empreenda Rápido e a Linha Básica sem detalhar taxas e prazos atuais.",
+    "Área territorial do município: a página do IBGE não retornou o dado na consulta, e o guia usa apenas população e densidade."
+  ]
+}
