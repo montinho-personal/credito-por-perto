@@ -13,7 +13,7 @@ import { getAuthor } from "@/lib/content/authors";
 import { getStateByCode } from "@/lib/local-seo/states";
 import { buildMetadata } from "@/lib/metadata/build";
 import { SITE_URL } from "@/lib/site";
-import { webPageJsonLd } from "@/lib/schema/jsonld";
+import { localGuideJsonLd } from "@/lib/schema/jsonld";
 import { ZoomableImage } from "@/components/content/ZoomableImage";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { Breadcrumbs } from "@/components/layout/Breadcrumbs";
@@ -82,9 +82,7 @@ export function LocalGuideView({ urlPath }: { urlPath: string }) {
 
   return (
     <article className="mx-auto max-w-3xl px-4 py-8">
-      <JsonLd
-        data={webPageJsonLd(fm.title, fm.description, guide.urlPath, fm.featuredImage)}
-      />
+      <JsonLd data={localGuideJsonLd(guide, author, state?.name)} />
       <Breadcrumbs items={breadcrumbs} />
       <header className="mt-6 border-b border-brand-border pb-6">
         <p className="text-sm font-semibold uppercase tracking-wide text-brand-teal-dark">

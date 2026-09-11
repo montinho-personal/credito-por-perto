@@ -1,5 +1,6 @@
 import { SITE_NAME, SITE_URL, SITE_DESCRIPTION } from "@/lib/site";
 import type { Article } from "@/lib/content/articles";
+import type { LocalGuide } from "@/lib/content/local";
 import type { Author } from "@/lib/validation/frontmatter";
 
 /**
@@ -31,6 +32,20 @@ export function webSiteJsonLd() {
   };
 }
 
+function authorNode(author: Author) {
+  return author.isTeam
+    ? {
+        "@type": "Organization",
+        name: author.name,
+        url: `${SITE_URL}/quem-somos/`,
+      }
+    : {
+        "@type": "Person",
+        name: author.name,
+        url: `${SITE_URL}/autores/${author.id}/`,
+      };
+}
+
 export function articleJsonLd(article: Article, author: Author) {
   const fm = article.frontmatter;
   return {
@@ -43,18 +58,52 @@ export function articleJsonLd(article: Article, author: Author) {
     datePublished: fm.publishedAt,
     ...(fm.updatedAt ? { dateModified: fm.updatedAt } : {}),
     ...(fm.featuredImage ? { image: [`${SITE_URL}${fm.featuredImage}`] } : {}),
-    author: author.isTeam
-      ? {
-          "@type": "Organization",
-          name: author.name,
-          url: `${SITE_URL}/quem-somos/`,
-        }
-      : {
-          "@type": "Person",
-          name: author.name,
-          url: `${SITE_URL}/autores/${author.id}/`,
-        },
+    author: authorNode(author),
     publisher: { "@id": `${SITE_URL}/#organization` },
+  };
+}
+
+/**
+ * Guia local. Substitui o WebPage que estas páginas emitiam: o WebPage não
+ * carrega data nenhuma, e data é justamente o que diferencia este conteúdo —
+ * endereço e horário de repartição pública envelhecem, e as listas de terceiros
+ * que disputam as mesmas buscas não datam nada.
+ *
+ * `spatialCoverage` declara a cidade de que a página trata. É descrição do
+ * conteúdo, não de um estabelecimento: seguimos sem LocalBusiness e sem
+ * FinancialService, porque o portal é editorial e não atende no balcão.
+ */
+export function localGuideJsonLd(
+  guide: LocalGuide,
+  author: Author | undefined,
+  stateName?: string,
+) {
+  const fm = guide.frontmatter;
+  return {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: fm.title,
+    description: fm.description,
+    inLanguage: "pt-BR",
+    mainEntityOfPage: guide.canonical,
+    datePublished: fm.publishedAt,
+    ...(fm.updatedAt ? { dateModified: fm.updatedAt } : {}),
+    ...(fm.featuredImage ? { image: [`${SITE_URL}${fm.featuredImage}`] } : {}),
+    spatialCoverage: {
+      "@type": "Place",
+      name: fm.localityName,
+      ...(stateName
+        ? {
+            containedInPlace: {
+              "@type": "AdministrativeArea",
+              name: stateName,
+            },
+          }
+        : {}),
+    },
+    ...(author ? { author: authorNode(author) } : {}),
+    publisher: { "@id": `${SITE_URL}/#organization` },
+    isPartOf: { "@id": `${SITE_URL}/#website` },
   };
 }
 
