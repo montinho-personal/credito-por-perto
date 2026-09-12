@@ -557,5 +557,11 @@
   "empréstimos em araçariguama": {
     "canonicalOwner": "/emprestimos/sp/aracariguama/",
     "supportingPages": []
+  },
+  "como funciona o pronaf e quem tem direito ao crédito rural da agricultura familiar": {
+    "canonicalOwner": "/emprestimos/credito-rural-e-pronaf/",
+    "supportingPages": [
+      "/emprestimos/microcredito-produtivo-e-banco-do-povo/"
+    ]
   }
 }

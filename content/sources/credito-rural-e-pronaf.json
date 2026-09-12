@@ -1,0 +1,105 @@
+{
+  "articleSlug": "credito-rural-e-pronaf",
+  "claims": [
+    {
+      "claimId": "lei-agricultura-familiar",
+      "claimText": "A Lei nº 11.326/2006 estabelece as diretrizes para a formulação da Política Nacional da Agricultura Familiar e Empreendimentos Familiares Rurais, e define os critérios de enquadramento do agricultor familiar.",
+      "sourceOrganization": "Presidência da República",
+      "sourceTitle": "Lei nº 11.326, de 24 de julho de 2006",
+      "sourceLocation": "https://www.planalto.gov.br/ccivil_03/_ato2004-2006/2006/lei/l11326.htm",
+      "sourceType": "official",
+      "accessedAt": "2026-09-12",
+      "notes": "Base legal do enquadramento. O artigo não reduz o enquadramento ao tamanho da área: os quatro critérios valem em conjunto."
+    },
+    {
+      "claimId": "criterios-enquadramento-caf",
+      "claimText": "Para identificação e qualificação como Unidade Familiar de Produção Agrária observam-se: área de até quatro módulos fiscais; mão de obra familiar empregada na produção maior que a externa; gestão estritamente familiar; e renda originada do estabelecimento igual ou superior à obtida fora dele. Unidades familiares indígenas, quilombolas e de outras comunidades tradicionais não precisam observar o limite de até quatro módulos fiscais.",
+      "sourceOrganization": "Ministério do Desenvolvimento Agrário e Agricultura Familiar",
+      "sourceTitle": "O que é o CAF — Cadastro Nacional da Agricultura Familiar",
+      "sourceLocation": "https://www.gov.br/mda/pt-br/acesso-a-informacao/acoes-e-programas/programas-projetos-acoes-obras-e-atividades/cadastro-nacional-da-agricultura-familiar/o-que-e-o-caf",
+      "sourceType": "official",
+      "accessedAt": "2026-09-12",
+      "notes": "A dispensa do limite de módulos fiscais para comunidades tradicionais é frequentemente omitida em conteúdo de terceiros. O público alcançado inclui pescadores artesanais, aquicultores, silvicultores, extrativistas, quilombolas e assentados da reforma agrária."
+    },
+    {
+      "claimId": "caf-substitui-dap",
+      "claimText": "O Cadastro Nacional da Agricultura Familiar (CAF) substituiu a Declaração de Aptidão ao Pronaf (DAP) para fins de acesso às ações e políticas públicas voltadas à agricultura familiar.",
+      "sourceOrganization": "Incra — Instituto Nacional de Colonização e Reforma Agrária",
+      "sourceTitle": "Cadastro Nacional da Agricultura Familiar substitui DAP para facilitar acesso a políticas públicas",
+      "sourceLocation": "https://www.gov.br/incra/pt-br/assuntos/noticias/cadastro-nacional-da-agricultura-familiar-substitui-dap-para-facilitar-acesso-a-politicas-publicas",
+      "sourceType": "official",
+      "accessedAt": "2026-09-12",
+      "notes": "Houve período de transição com prorrogação da validade das DAPs. O artigo não fixa prazo de transição, que já se encerrou ou está por encerrar conforme portaria — orienta confirmar na entidade credenciada."
+    },
+    {
+      "claimId": "caf-gratuito",
+      "claimText": "A inscrição no CAF é gratuita, sendo vedada a cobrança de quaisquer valores pelo seu registro, na rede pública ou privada. A emissão é feita presencialmente por entidades credenciadas: sindicatos de trabalhadores rurais, associações, colônias de pescadores, entidades estaduais de assistência técnica e extensão rural e escritórios regionais do Incra.",
+      "sourceOrganization": "Ministério do Desenvolvimento Agrário e Agricultura Familiar",
+      "sourceTitle": "Realizar Cadastro Nacional da Agricultura Familiar (CAF)",
+      "sourceLocation": "https://www.gov.br/pt-br/servicos/cadastrar-se-no-caf-cadastro-nacional-da-agricultura-familiar",
+      "sourceType": "official",
+      "accessedAt": "2026-09-12",
+      "notes": "Afirmação central do alerta de segurança do artigo. A vedação alcança expressamente a rede privada, o que é o ponto que permite reconhecer a cobrança como irregular."
+    },
+    {
+      "claimId": "plano-safra-2026-2027-volume",
+      "claimText": "O Plano Safra da Agricultura Familiar 2026/2027 destina R$ 97,3 bilhões à agricultura familiar, dos quais R$ 85,2 bilhões ao Pronaf — alta de quase 9% em crédito sobre a safra anterior.",
+      "sourceOrganization": "Ministério do Desenvolvimento Agrário e Agricultura Familiar",
+      "sourceTitle": "Plano Safra da Agricultura Familiar 2026/2027 destina mais de R$ 97 bilhões para fortalecer a produção de alimentos no Brasil",
+      "sourceLocation": "https://www.gov.br/mda/pt-br/noticias/2026/06/plano-safra-da-agricultura-familiar-2026-2027-destina-mais-de-r-97-bilhoes-para-fortalecer-a-producao-de-alimentos-no-brasil",
+      "sourceType": "official",
+      "accessedAt": "2026-09-12",
+      "notes": "Número corroborado também pelo Ministério da Fazenda. As datas exatas de vigência do plano NÃO fecharam em fonte oficial e por isso não são publicadas."
+    },
+    {
+      "claimId": "taxas-pronaf-2026-2027",
+      "claimText": "No Plano Safra da Agricultura Familiar 2026/2027, a taxa é de 2% ao ano para operações de custeio destinadas à produção de alimentos e de 1% ao ano para sistemas agroecológicos, produção orgânica e produtos da sociobiodiversidade. O Pronaf Investimento para mulheres passou de 3% para 2% ao ano, com limite de até R$ 100 mil.",
+      "sourceOrganization": "Ministério da Fazenda — Conselho Monetário Nacional",
+      "sourceTitle": "CMN aprova resoluções para aprimorar as condições de financiamento rural para o ano agrícola 2026/2027",
+      "sourceLocation": "https://www.gov.br/fazenda/pt-br/canais_atendimento/imprensa/notas-do-cmn/2026/junho/cmn-aprova-resolucoes-para-aprimorar-as-condicoes-de-financiamento-rural-para-o-ano-agricola-2026-2027",
+      "sourceType": "official",
+      "accessedAt": "2026-09-12",
+      "notes": "As condições são fixadas por resolução do CMN a cada ano-safra e codificadas no Manual de Crédito Rural do Banco Central. O artigo amarra todos os números à safra 2026/2027 e avisa que mudam."
+    },
+    {
+      "claimId": "pronaf-b-condicoes",
+      "claimText": "No Pronaf Grupo B (microcrédito rural), o limite por unidade familiar passou de R$ 53 mil para R$ 74 mil e o limite de renda anual da família para acesso passou de R$ 50 mil para R$ 60 mil, com juros de 0,5% ao ano, prazo de três anos e bônus de até 40% para pagamento em dia. Foi autorizado financiamento de moradia no Grupo B com limite de R$ 10 mil e prazo de até 60 meses, e criada linha de custeio de R$ 8 mil que se soma aos R$ 20 mil de Quintais Produtivos, totalizando até R$ 28 mil de limite próprio para as agricultoras.",
+      "sourceOrganization": "Ministério do Desenvolvimento Agrário e Agricultura Familiar",
+      "sourceTitle": "Plano Safra da Agricultura Familiar 2026/2027",
+      "sourceLocation": "https://www.gov.br/mda/pt-br/noticias/2026/07/plano-safra-da-agricultura-familiar-2026-2027",
+      "sourceType": "official",
+      "accessedAt": "2026-09-12",
+      "notes": "O artigo deixa explícito que 0,5% ao ano é a condição do Grupo B — faixa de menor renda, com teto de enquadramento — e não uma taxa que o tomador escolhe."
+    },
+    {
+      "claimId": "pronaf-a-limite",
+      "claimText": "No Pronaf Grupo A, voltado a beneficiários de assentamentos, povos indígenas e comunidades quilombolas, o limite passou de R$ 50 mil para R$ 55 mil.",
+      "sourceOrganization": "Ministério do Desenvolvimento Agrário e Agricultura Familiar",
+      "sourceTitle": "Plano Safra da Agricultura Familiar 2026/2027",
+      "sourceLocation": "https://www.gov.br/mda/pt-br/noticias/2026/07/plano-safra-da-agricultura-familiar-2026-2027",
+      "sourceType": "official",
+      "accessedAt": "2026-09-12",
+      "notes": "Número amarrado à safra 2026/2027."
+    },
+    {
+      "claimId": "caf-emissao-sao-paulo",
+      "claimText": "No Estado de São Paulo, a emissão do Cadastro Nacional da Agricultura Familiar é feita pela CATI, da Secretaria de Agricultura e Abastecimento.",
+      "sourceOrganization": "Secretaria de Agricultura e Abastecimento do Estado de São Paulo — CATI",
+      "sourceTitle": "CAF — Emissão do Cadastro Nacional da Agricultura Familiar",
+      "sourceLocation": "https://agricultura.sp.gov.br/cati/caf-emissao-do-cadastro-nacional-da-agricultura-familiar/",
+      "sourceType": "official",
+      "accessedAt": "2026-09-12",
+      "notes": "Ponte com a camada local do portal, hoje inteiramente paulista. A lista nacional por município está no portal do CAF."
+    },
+    {
+      "claimId": "simulador-oficial-pronaf",
+      "claimText": "O Ministério do Desenvolvimento Agrário mantém simulador oficial de crédito do Pronaf para o Plano Safra vigente.",
+      "sourceOrganization": "Ministério do Desenvolvimento Agrário e Agricultura Familiar",
+      "sourceTitle": "Simulador de Crédito do Pronaf — Plano Safra 2026/2027",
+      "sourceLocation": "https://simuladorpronaf.mda.gov.br/",
+      "sourceType": "official",
+      "accessedAt": "2026-09-12",
+      "notes": "Referência para o leitor confirmar as condições vigentes, já que elas mudam a cada safra."
+    }
+  ]
+}

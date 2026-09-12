@@ -1,0 +1,61 @@
+{
+  "proposedTitle": "Crédito rural e Pronaf: o juro mais barato do país tem um portão, e ele é de graça",
+  "primaryIntent": "como funciona o pronaf e quem tem direito ao crédito rural da agricultura familiar",
+  "secondaryIntents": [
+    "o que é o CAF e como tirar",
+    "a DAP ainda vale ou foi substituída",
+    "qual a taxa de juros do Pronaf",
+    "quem se enquadra como agricultor familiar",
+    "Pronaf serve para pagar dívida"
+  ],
+  "targetReader": "Quem produz no campo — agricultor familiar, pescador artesanal, extrativista, assentado — e ou desconhece o Pronaf, ou já ouviu falar e não sabe que o acesso depende de um cadastro gratuito que precisa ser emitido antes de procurar o banco",
+  "readerSituation": "Precisa de dinheiro para custeio, máquina, insumo ou benfeitoria, e está prestes a aceitar crédito comercial caro por não saber que existe linha pública a uma fração da taxa. Ou recebeu oferta de alguém que cobra para 'liberar o Pronaf'.",
+  "centralQuestion": "Quem tem direito às linhas do Pronaf, o que é preciso ter em mãos antes de procurar o banco, e por que não existe uma taxa única do programa?",
+  "uniqueAngle": "Lacuna medida no corpus: varredura por 'Pronaf', 'agricultura familiar' e 'crédito rural' nos 70 artigos retornou 4 ocorrências isoladas, todas de passagem — duas em lei-do-superendividamento e duas em como-negociar-dividas. Nenhuma página trata do crédito rural como modalidade. Os guias locais de Ibiúna e Vargem Grande Paulista tocam no assunto sem ter para onde apontar.",
+  "originalContribution": "Três precisões que a maior parte do conteúdo do tema erra. (1) O portão do programa não é análise de crédito, é o CAF — que substituiu a DAP e cuja emissão é gratuita por norma, com cobrança vedada na rede pública E na privada; isso transforma qualquer cobrança por 'liberar o Pronaf' num caso reconhecível de depósito antecipado. (2) Não existe 'a taxa do Pronaf': são condições por linha e finalidade, fixadas a cada ano-safra por resolução do CMN e codificadas no Manual de Crédito Rural, o que torna qualquer número sem data inútil. (3) O enquadramento da agricultura familiar depende de quatro critérios conjuntos, não do tamanho da área sozinho, e dispensa o limite de módulos fiscais para comunidades indígenas, quilombolas e tradicionais.",
+  "primarySources": [
+    "Lei nº 11.326/2006 — Política Nacional da Agricultura Familiar",
+    "Ministério do Desenvolvimento Agrário — O que é o CAF",
+    "Incra — CAF substitui a DAP",
+    "Ministério do Desenvolvimento Agrário — Plano Safra da Agricultura Familiar 2026/2027",
+    "Ministério da Fazenda — Notas do CMN sobre o ano agrícola 2026/2027"
+  ],
+  "supportingSources": [
+    "Portal do CAF (caf.mda.gov.br)",
+    "Simulador de Crédito do Pronaf — Plano Safra 2026/2027",
+    "CATI — Secretaria de Agricultura e Abastecimento do Estado de São Paulo"
+  ],
+  "contentArchetype": "guia-modalidade",
+  "proposedStructure": [
+    "Por que a comparação de CET acaba antes de começar neste caso",
+    "Quem a lei considera agricultor familiar",
+    "O CAF substituiu a DAP — e a emissão é gratuita",
+    "Não existe 'a taxa do Pronaf'",
+    "As linhas, por quem você é",
+    "É crédito produtivo, e isso tem consequência",
+    "Onde se pede",
+    "O que muda a cada safra",
+    "FAQ"
+  ],
+  "internalLinks": [
+    "microcredito-produtivo-e-banco-do-povo",
+    "emprestimo-para-mei",
+    "emprestimo-para-autonomo",
+    "renegociacao-ou-emprestimo",
+    "lei-do-superendividamento",
+    "deposito-antecipado-e-golpe",
+    "como-consultar-se-instituicao-e-autorizada",
+    "o-que-e-cet"
+  ],
+  "toolIntegrations": [
+    "parcela-no-orcamento"
+  ],
+  "antiCannibalization": "microcredito-produtivo-e-banco-do-povo continua dono do microcrédito produtivo urbano como política pública e da ponte para a camada local; emprestimo-para-mei continua dono da documentação de quem tem CNPJ; emprestimo-para-autonomo continua dono da comprovação de renda sem holerite; renegociacao-ou-emprestimo continua dono da escolha entre renegociar e tomar crédito novo. Esta página é dona apenas do crédito rural da agricultura familiar — o regime da Lei 11.326/2006, o CAF e as linhas do Pronaf.",
+  "risks": [
+    "Não publicar taxa, limite ou teto de renda sem amarrar ao ano-safra: as condições mudam por resolução do CMN a cada safra",
+    "Não apresentar 0,5% ao ano como 'a taxa do Pronaf': é a condição do Grupo B, faixa de menor renda, e não uma opção que o tomador escolhe",
+    "Não afirmar datas de vigência do Plano Safra que não fecharam em fonte oficial",
+    "Não prometer aprovação: o enquadramento é condição de acesso, não garantia de crédito",
+    "Não tratar módulo fiscal como medida fixa: varia por município"
+  ]
+}
