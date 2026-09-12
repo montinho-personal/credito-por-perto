@@ -17,9 +17,9 @@
       "organization": "Procon-SP",
       "documentTitle": "Municípios conveniados — Santana de Parnaíba",
       "sourceLocation": "https://www.procon.sp.gov.br/santana-de-parnaiba/",
-      "checkedAt": "2026-08-16",
-      "extractedFact": "Santana de Parnaíba possui atendimento municipal de defesa do consumidor (Procon), com sede na Rua XV de Novembro, 625 — Centro.",
-      "relevanceToReader": "É o canal presencial da cidade para reclamar de contrato de crédito, cobrança indevida ou oferta enganosa."
+      "checkedAt": "2026-09-12",
+      "extractedFact": "Santana de Parnaíba possui atendimento municipal de defesa do consumidor (Procon). O endereço NÃO fecha entre fontes oficiais: o cadastro da Fundação Procon-SP registra Avenida Tenente Marques, 5297 — Jardim do Luar (Fazendinha), telefone (11) 4622-8250, seg a sex 9h-17h e sáb 9h-13h; a plataforma de serviços da Prefeitura aponta endereço diverso. A Rua XV de Novembro, 625, é o endereço do PAT e do Banco do Povo.",
+      "relevanceToReader": "Divergência declarada: o leitor precisa confirmar por telefone antes de se deslocar."
     },
     {
       "organization": "Prefeitura de Santana de Parnaíba",
@@ -41,9 +41,9 @@
   "consumerProtectionResources": [
     {
       "organization": "Procon Santana de Parnaíba",
-      "service": "Atendimento presencial ao consumidor na Rua XV de Novembro, 625 — Centro, e canal de WhatsApp divulgado pela prefeitura",
+      "service": "Atendimento presencial ao consumidor — endereço divergente entre fontes oficiais (Fundação Procon-SP registra Av. Tenente Marques, 5297 — Jardim do Luar/Fazendinha, tel. (11) 4622-8250; plataforma da Prefeitura aponta outro). Confirmar pelo (11) 4622-7500 antes de ir",
       "officialSource": "https://www.procon.sp.gov.br/santana-de-parnaiba/",
-      "checkedAt": "2026-08-16"
+      "checkedAt": "2026-09-12"
     },
     {
       "organization": "Consumidor.gov.br (plataforma federal)",
@@ -82,6 +82,7 @@
   ],
   "pendingVerification": [
     "Horários de funcionamento e telefones atuais do Procon municipal (confirmar por telefone antes de publicar horário específico)",
-    "Condições vigentes (limites e taxas) do Banco do Povo Paulista no atendimento local"
+    "Condições vigentes (limites e taxas) do Banco do Povo Paulista no atendimento local",
+    "Endereço vigente do Procon municipal: as fontes oficiais divergem (Fundação Procon-SP × plataforma da Prefeitura). Requer confirmação por telefone junto à Prefeitura."
   ]
 }

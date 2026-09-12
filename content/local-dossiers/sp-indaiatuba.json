@@ -14,12 +14,20 @@
       "relevanceToReader": "Confirma a classificação administrativa correta da página local."
     },
     {
+      "organization": "Prefeitura Municipal de Indaiatuba — Defesa do Consumidor",
+      "documentTitle": "Defesa do Consumidor (Procon Indaiatuba)",
+      "sourceLocation": "https://www.indaiatuba.sp.gov.br/gabinete-do-prefeito/defesa-do-consumidor/",
+      "checkedAt": "2026-09-12",
+      "extractedFact": "O Procon de Indaiatuba atende na Av. Francisco de Paula Leite, 2263 — Jardim Kioto II, de segunda a sexta das 10h às 15h, pelos telefones (19) 3835-6200 e (19) 3834-7601 e pelo e-mail juridico.procon@indaiatuba.sp.gov.br.",
+      "relevanceToReader": "Endereço e horário vigentes do atendimento municipal de defesa do consumidor — divergentes do cadastro estadual, que ainda registra a sede anterior."
+    },
+    {
       "organization": "Procon-SP",
       "documentTitle": "Municípios conveniados — Indaiatuba",
       "sourceLocation": "https://www.procon.sp.gov.br/indaiatuba/",
       "checkedAt": "2026-08-16",
-      "extractedFact": "O cadastro do Procon-SP registra o Procon de Indaiatuba na Rua 24 de Maio, 1670 — Vila Furlan (Ponto Cidadão).",
-      "relevanceToReader": "Endereço de referência do atendimento municipal de defesa do consumidor."
+      "extractedFact": "O cadastro do Procon-SP registra o Procon de Indaiatuba na Rua 24 de Maio, 1670 — Vila Furlan (Ponto Cidadão) — endereço anterior, superado pelo que a Prefeitura divulga.",
+      "relevanceToReader": "Cadastro estadual desatualizado: é a fonte que ainda circula em listas de terceiros e leva o leitor à porta errada."
     },
     {
       "organization": "Prefeitura de Indaiatuba",
@@ -33,9 +41,9 @@
   "consumerProtectionResources": [
     {
       "organization": "Procon Indaiatuba",
-      "service": "Atendimento presencial (endereço de referência no cadastro do Procon-SP: Rua 24 de Maio, 1670 — Vila Furlan, no Ponto Cidadão); a sede já mudou mais de uma vez — confirmar endereço e horário vigentes por telefone antes de ir",
-      "officialSource": "https://www.procon.sp.gov.br/indaiatuba/",
-      "checkedAt": "2026-08-16"
+      "service": "Av. Francisco de Paula Leite, 2263 — Jardim Kioto II; segunda a sexta das 10h às 15h; telefones (19) 3835-6200 e (19) 3834-7601; e-mail juridico.procon@indaiatuba.sp.gov.br",
+      "officialSource": "https://www.indaiatuba.sp.gov.br/gabinete-do-prefeito/defesa-do-consumidor/",
+      "checkedAt": "2026-09-12"
     },
     {
       "organization": "Consumidor.gov.br (plataforma federal)",
