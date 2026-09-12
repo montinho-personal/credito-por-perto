@@ -163,6 +163,51 @@ for (let i = 0; i < docs.length; i++) {
   }
 }
 
+/* Itens de lista repetidos entre páginas.
+ *
+ * POR QUE UMA REGRA SEPARADA. `paragraphsOf` descarta todo bloco que começa
+ * com "-", então a regra `paragrafo-exato-duplicado` nunca olhou uma lista.
+ * E era dentro de lista que a repetição morava: em 09/2026 havia 78
+ * ocorrências de texto idêntico espalhadas por 30 dos 48 guias locais, com a
+ * mesma frase abrindo a seção "Deu problema com banco" em 21 páginas — tudo
+ * isso passando com zero avisos. O Google reprovou o site por "conteúdo de
+ * baixo valor" antes de a nossa auditoria ver qualquer coisa.
+ *
+ * A EXCEÇÃO. Itens que são apenas um link para outro guia local — o padrão
+ * `- [Cidade](/emprestimos/uf/cidade/): descrição` da seção de vizinhos — são
+ * repetição deliberada: descrever a mesma cidade da mesma forma em todo guia
+ * que a cita é coerência editorial, não preguiça.
+ *
+ * OS LIMITES. Com o corpus limpo, o máximo fora das descrições de vizinho é 3.
+ * Avisa em 4 e bloqueia em 6, deixando folga para reuso legítimo e pegando
+ * a reincidência cedo.
+ */
+const LIST_ITEM = /^(?:-|\d+\.)\s+/;
+const NEIGHBOUR_LINK = /^- \[[^\]]+\]\(\/emprestimos\/[a-z]{2}\//;
+const listItemPages = new Map<string, Set<string>>();
+
+for (const doc of docs) {
+  for (const rawLine of doc.body.split("\n")) {
+    const line = rawLine.trim();
+    if (!LIST_ITEM.test(line) || line.length <= 60) continue;
+    if (NEIGHBOUR_LINK.test(line)) continue;
+    const pages = listItemPages.get(line) ?? new Set<string>();
+    pages.add(doc.url);
+    listItemPages.set(line, pages);
+  }
+}
+
+for (const [line, pages] of listItemPages) {
+  if (pages.size < 4) continue;
+  findings.push({
+    severity: pages.size >= 6 ? "critical" : "warning",
+    rule: "item-de-lista-repetido",
+    pages: [...pages].sort(),
+    detail: `Item de lista idêntico em ${pages.size} páginas. Ancore cada um no fato daquela localidade em vez de repetir o texto.`,
+    excerpt: `${line.slice(0, 120)}…`,
+  });
+}
+
 /* Similaridade geral do corpo: shingles + TF-IDF por cosseno */
 const corpus = docs.map((d) => editorialText(d.body));
 for (let i = 0; i < docs.length; i++) {
