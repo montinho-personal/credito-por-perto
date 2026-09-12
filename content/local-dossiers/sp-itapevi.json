@@ -25,9 +25,9 @@
   "consumerProtectionResources": [
     {
       "organization": "Procon Itapevi",
-      "service": "Atendimento presencial no Resolve Fácil (Rua José Michelotti, 347 — Cidade Saúde), com agendamento on-line, e recebimento de reclamações pelo e-mail procon@itapevi.sp.gov.br",
-      "officialSource": "https://noticias.itapevi.sp.gov.br/resolve-facil-reune-uma-serie-de-atendimentos-em-um-unico-local/",
-      "checkedAt": "2026-08-16"
+      "service": "Resolve Fácil, Rua José Michelotti, 347 — Cidade Saúde; segunda a sexta das 8h às 17h; telefone (11) 4143-9200; agendamento pelo portal do Resolve Fácil; e-mail procon@itapevi.sp.gov.br",
+      "officialSource": "https://www.procon.sp.gov.br/itapevi/",
+      "checkedAt": "2026-09-12"
     },
     {
       "organization": "Consumidor.gov.br (plataforma federal)",
