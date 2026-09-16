@@ -1,0 +1,55 @@
+{
+  "proposedTitle": "Price ou SAC: o que muda na sua dívida quando você escolhe o sistema de amortização",
+  "primaryIntent": "diferença entre price e sac qual escolher no financiamento",
+  "secondaryIntents": [
+    "por que a primeira parcela é quase toda juros",
+    "sac exige mais renda que price",
+    "qual sistema é melhor para quitar antes",
+    "meu consignado é price ou sac",
+    "a parcela do price muda alguma vez"
+  ],
+  "targetReader": "Quem está prestes a assinar um financiamento — imobiliário principalmente — e foi perguntado qual sistema quer, sem que ninguém explicasse o que a escolha significa. Também quem já tem crédito com parcela fixa e não entende por que o saldo devedor quase não cai.",
+  "readerSituation": "Comparou taxa e CET, escolheu a proposta, e na assinatura apareceu uma decisão nova. Ou quitou antecipadamente e se assustou com o tamanho do saldo devedor.",
+  "centralQuestion": "O que cada sistema de amortização faz com a dívida ao longo do contrato, e quais consequências a escolha traz além do total pago?",
+  "uniqueAngle": "Lacuna de cobertura medida: 'SAC' aparecia em 11 artigos e 'amortização' em alguns, sempre de passagem — nenhuma página tratava do sistema de amortização como assunto. O guia de financiamento imobiliário chega a dizer 'confirme como a sua parcela evolui antes de assinar' sem ter para onde mandar o leitor.",
+  "originalContribution": "Três pontos que a maior parte do conteúdo do tema não faz. (1) Inverte a pergunta: quase todo texto conclui que 'o SAC é melhor', mas a análise de crédito olha a PRIMEIRA parcela, que no SAC é a maior — então o SAC pode ser negado a quem o Price aprovaria, e a pergunta útil passa a ser o que cabe, não o que é mais barato. (2) Liga a escolha do sistema ao seguro embutido: como o prêmio do MIP é apurado sobre o saldo devedor e o SAC derruba o saldo mais rápido, o MIP também cai mais rápido no SAC — vantagem que não aparece em simulação que compare só juros, e que cresce com a faixa etária do devedor. (3) Tira o assunto do nicho imobiliário, mostrando que consignado, pessoal e veículo já usam o desenho de parcela constante do Price.",
+  "primarySources": [
+    "Caixa Econômica Federal — Perguntas Frequentes sobre Financiamento Habitacional (definições de SAC e SFA/Price)",
+    "Caixa Econômica Federal — Perguntas Frequentes para quem comprar um imóvel (composição do encargo mensal: amortização, juros, tarifa de administração, MIP e DFI)"
+  ],
+  "supportingSources": [
+    "Escola de Contas do Tribunal de Contas do Município de São Paulo — Sistemas de Amortização de Financiamentos: SAC, PRICE"
+  ],
+  "contentArchetype": "guia-conceito",
+  "proposedStructure": [
+    "A pergunta que aparece só na hora de assinar",
+    "O que cada sistema faz com a dívida",
+    "A consequência que quase ninguém conta: a renda exigida",
+    "A parcela não é só juros mais amortização",
+    "Se você pretende quitar antes, o sistema pesa mais",
+    "Fora do imóvel, você já usa Price sem saber",
+    "Como escolher sem chutar",
+    "O que pode mudar",
+    "FAQ"
+  ],
+  "internalLinks": [
+    "o-que-e-cet",
+    "quanto-da-renda-comprometer-financiamento-imovel",
+    "quitacao-antecipada-de-emprestimo",
+    "seguro-prestamista",
+    "como-calcular-juros-de-emprestimo",
+    "emprestimo-consignado",
+    "portabilidade-de-credito"
+  ],
+  "toolIntegrations": [
+    "quitacao-antecipada"
+  ],
+  "antiCannibalization": "quanto-da-renda-comprometer-financiamento-imovel continua dono de quanto da renda comprometer e do que a parcela não inclui; quitacao-antecipada-de-emprestimo continua dono do mecanismo da antecipação e da escolha entre reduzir prazo ou parcela; como-calcular-juros-de-emprestimo continua dono do cálculo dos juros; seguro-prestamista continua dono dos seguros embutidos em contrato de crédito; o-que-e-cet continua dono da comparação de custo entre propostas. Esta página é dona apenas do sistema de amortização — o que Price e SAC fazem com o saldo devedor e o que a escolha entre eles acarreta.",
+  "risks": [
+    "Não declarar vencedor: o portal não recomenda sistema, porque a escolha depende de renda e de horizonte que só o leitor tem",
+    "Não publicar a proporção amortizada na metade do prazo como número fixo: ela varia com taxa e prazo do contrato",
+    "Não afirmar que a parcela do Price é imutável: tarifa, MIP e índice de atualização podem alterar o valor cobrado",
+    "Não afirmar que a troca de sistema no meio do contrato é um direito: depende da instituição",
+    "Não generalizar a oferta dos dois sistemas para todo banco e toda linha — a verificação cobre o crédito habitacional da Caixa"
+  ]
+}

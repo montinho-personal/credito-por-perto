@@ -1,0 +1,65 @@
+{
+  "articleSlug": "price-ou-sac-sistemas-de-amortizacao",
+  "claims": [
+    {
+      "claimId": "definicao-sac",
+      "claimText": "No Sistema de Amortização Constante (SAC), o valor da parcela do encargo mensal destinada a amortizar o financiamento é constante e a parcela de juros é decrescente, de modo que o valor do encargo mensal diminui ao longo do tempo.",
+      "sourceOrganization": "Caixa Econômica Federal",
+      "sourceTitle": "Perguntas Frequentes sobre Financiamento Habitacional",
+      "sourceLocation": "https://www.caixa.gov.br/voce/habitacao/financiamento/perguntas-frequentes/Paginas/default.aspx",
+      "sourceType": "official",
+      "accessedAt": "2026-09-16",
+      "notes": "Definição textual do agente que opera a maior carteira habitacional do país. O artigo usa a formulação da fonte — amortização constante, juros decrescentes, encargo decrescente — sem acrescentar juízo sobre qual sistema é melhor."
+    },
+    {
+      "claimId": "definicao-price-sfa",
+      "claimText": "No Sistema Francês de Amortização (SFA, conhecido como Tabela Price), o valor da parcela destinada a amortizar o financiamento é crescente e a parcela de juros é decrescente, sendo o encargo mensal constante durante o prazo contratado.",
+      "sourceOrganization": "Caixa Econômica Federal",
+      "sourceTitle": "Perguntas Frequentes sobre Financiamento Habitacional",
+      "sourceLocation": "https://www.caixa.gov.br/voce/habitacao/financiamento/perguntas-frequentes/Paginas/default.aspx",
+      "sourceType": "official",
+      "accessedAt": "2026-09-16",
+      "notes": "É desta definição que sai a explicação de por que as primeiras parcelas do Price são quase todas juros: a parcela de amortização começa pequena e cresce."
+    },
+    {
+      "claimId": "caixa-oferece-os-dois",
+      "claimText": "É possível utilizar tanto o Sistema de Amortização Constante (SAC) quanto o Sistema Francês de Amortização (SFA — Tabela Price) nos financiamentos habitacionais da Caixa.",
+      "sourceOrganization": "Caixa Econômica Federal",
+      "sourceTitle": "Perguntas Frequentes sobre Financiamento Habitacional",
+      "sourceLocation": "https://www.caixa.gov.br/voce/habitacao/financiamento/perguntas-frequentes/Paginas/default.aspx",
+      "sourceType": "official",
+      "accessedAt": "2026-09-16",
+      "notes": "A verificação cobre o crédito habitacional da Caixa. O artigo não generaliza a oferta dos dois sistemas para todo banco e toda linha de crédito."
+    },
+    {
+      "claimId": "composicao-encargo-mensal",
+      "claimText": "O encargo mensal do financiamento habitacional é composto por parcela de amortização, parcela de juros à taxa prevista no contrato, tarifa de administração mensal (quando devida), seguro de Morte e Invalidez Permanente (MIP) e seguro de Danos Físicos no Imóvel (DFI).",
+      "sourceOrganization": "Caixa Econômica Federal",
+      "sourceTitle": "Perguntas Frequentes para quem comprar um imóvel, construir ou reformar",
+      "sourceLocation": "https://www.caixa.gov.br/voce/habitacao/perguntas-frequentes-novos-financiamentos/Paginas/default.aspx",
+      "sourceType": "official",
+      "accessedAt": "2026-09-16",
+      "notes": "Sustenta a ressalva de que 'encargo constante' no Price não significa valor cobrado imutável: tarifa e seguros também compõem a parcela."
+    },
+    {
+      "claimId": "mip-sobre-saldo-devedor",
+      "claimText": "O prêmio do seguro MIP é determinado com base na faixa etária dos devedores, proporcional à composição de renda do contrato, e aplicado sobre o saldo devedor apurado no dia do vencimento do encargo mensal. O prêmio do seguro DFI é calculado aplicando-se uma taxa sobre o valor de avaliação do imóvel.",
+      "sourceOrganization": "Caixa Econômica Federal",
+      "sourceTitle": "Perguntas Frequentes para quem comprar um imóvel, construir ou reformar",
+      "sourceLocation": "https://www.caixa.gov.br/voce/habitacao/perguntas-frequentes-novos-financiamentos/Paginas/default.aspx",
+      "sourceType": "official",
+      "accessedAt": "2026-09-16",
+      "notes": "Base da contribuição original do artigo: como o MIP incide sobre o saldo devedor e o SAC derruba o saldo mais rápido, o prêmio do MIP também cai mais rápido no SAC — efeito que não aparece em simulação que compare apenas juros. A dedução é aritmética direta das duas propriedades verificadas, e o artigo não quantifica a diferença."
+    },
+    {
+      "claimId": "ritmo-de-amortizacao",
+      "claimText": "O SAC amortiza a dívida de forma proporcional ao tempo — decorrido metade do prazo, cerca de metade da amortização foi realizada. No Price a amortização do principal é mais lenta no mesmo ponto do contrato.",
+      "sourceOrganization": "Escola de Contas do Tribunal de Contas do Município de São Paulo",
+      "sourceTitle": "Sistemas de Amortização de Financiamentos: SAC, PRICE",
+      "sourceLocation": "https://egcportalantigo.tcm.sp.gov.br/artigos/1705-sistemas-de-amortizacao-de-financiamentos-sac-price",
+      "sourceType": "official",
+      "accessedAt": "2026-09-16",
+      "notes": "A fonte traz um exemplo numérico para o Price no meio do prazo. O artigo NÃO publica esse percentual como número fixo, porque a proporção varia com a taxa e o prazo do contrato — declara a direção do efeito e diz que o tamanho depende do contrato."
+    }
+  ]
+}
