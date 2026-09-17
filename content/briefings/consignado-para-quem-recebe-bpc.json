@@ -1,0 +1,61 @@
+{
+  "proposedTitle": "Consignado para quem recebe BPC: o benefício já nasce bloqueado, e o INSS recomenda deixar assim",
+  "primaryIntent": "quem recebe bpc pode fazer emprestimo consignado e como se proteger",
+  "secondaryIntents": [
+    "como bloquear o benefício para empréstimo",
+    "qual a margem do consignado no BPC",
+    "por que meu benefício está bloqueado para empréstimo",
+    "ligaram oferecendo consignado do BPC é golpe",
+    "BPC pode ser cortado se eu fizer empréstimo"
+  ],
+  "targetReader": "Pessoa com deficiência ou idosa que recebe o BPC, e familiares que cuidam do benefício. Público de renda única, alvo preferencial de oferta agressiva e de contrato não autorizado.",
+  "readerSituation": "Teve o benefício concedido há pouco e começou a receber ligações oferecendo crédito. Ou descobriu um desconto que não reconhece. Ou precisa de dinheiro e não sabe se pode contratar.",
+  "centralQuestion": "Quem recebe BPC pode contratar consignado, sob quais limites — e que proteção existe contra contrato que o titular não fez?",
+  "uniqueAngle": "Lacuna absoluta medida no corpus: varredura por 'BPC' e 'LOAS' nos 72 artigos retornou zero ocorrências, apesar de o cluster de consignado ter 4 páginas e o de crédito seguro ter 11. O público de benefício assistencial — renda única de um salário mínimo, alta exposição a assédio — não tinha página nenhuma.",
+  "originalContribution": "Inverte o eixo do assunto. Quase todo conteúdo sobre BPC e consignado explica como contratar; esta página organiza em torno da trava de segurança que quase ninguém sabe que tem: o benefício nasce bloqueado por 90 dias a partir da concessão, o bloqueio pode ser mantido por escolha, e o próprio INSS recomenda deixá-lo ligado, desbloqueando só pelo tempo necessário. Também explica a assimetria proposital entre bloquear (fácil) e desbloquear (exige selo prata/ouro ou ida à agência) como proteção, não como burocracia — e por que nos 90 dias iniciais qualquer promessa de 'liberar o consignado agora' é impossível de cumprir.",
+  "primarySources": [
+    "INSS — Veja como bloquear ou desbloquear o benefício para empréstimo consignado",
+    "gov.br — Serviço: Bloquear ou Desbloquear Benefício para Empréstimo",
+    "INSS — Empréstimo consignado BPC",
+    "INSS — Benefício assistencial à pessoa com deficiência (BPC-Loas)"
+  ],
+  "supportingSources": [
+    "INSS — Consignação em benefícios do INSS: seus direitos e medidas de segurança",
+    "INSS — Passa a valer o desbloqueio do benefício por biometria para crédito consignado no Meu INSS"
+  ],
+  "contentArchetype": "guia-direitos",
+  "proposedStructure": [
+    "O que é o BPC e o que mudou em 2022",
+    "A trava que já está ligada",
+    "Como ligar e desligar a trava",
+    "A margem: 35%, mas de um salário mínimo",
+    "Os 5% do cartão consignado merecem atenção separada",
+    "Se apareceu desconto que você não reconhece",
+    "Antes de desbloquear, veja se o problema é outro",
+    "O que pode mudar",
+    "FAQ"
+  ],
+  "internalLinks": [
+    "emprestimo-para-aposentado-inss",
+    "cartao-de-credito-consignado",
+    "rmc-rcc-como-cancelar",
+    "desconto-nao-autorizado-inss",
+    "emprestimo-caiu-na-conta-sem-pedir",
+    "como-consultar-se-instituicao-e-autorizada",
+    "deposito-antecipado-e-golpe",
+    "renegociacao-ou-emprestimo",
+    "lei-do-superendividamento",
+    "dinheiro-urgente"
+  ],
+  "toolIntegrations": [
+    "margem-consignavel"
+  ],
+  "antiCannibalization": "emprestimo-para-aposentado-inss continua dono do consignado de aposentados e pensionistas do RGPS; cartao-de-credito-consignado continua dono do produto de cartão e rmc-rcc-como-cancelar do cancelamento da reserva de margem; desconto-nao-autorizado-inss continua dono da contestação de desconto no INSS; margem-consignavel continua dono do cálculo da margem. Esta página é dona apenas do benefício assistencial — BPC/LOAS — e do mecanismo de bloqueio e desbloqueio como proteção.",
+  "risks": [
+    "Não afirmar que o empréstimo consignado causa cessação do BPC: os requisitos de manutenção do benefício são próprios e independem de crédito",
+    "Não tratar o BPC como aposentadoria: é benefício assistencial, sem contribuição prévia",
+    "Não publicar percentuais de margem sem a ressalva de que já mudaram e podem mudar de novo",
+    "Não recomendar nem desaconselhar a contratação: o portal explica e o leitor decide",
+    "Não afirmar prazos de desbloqueio nem exigências de autenticação como imutáveis — o Meu INSS altera o fluxo periodicamente"
+  ]
+}

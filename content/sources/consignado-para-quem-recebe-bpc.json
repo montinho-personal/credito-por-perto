@@ -1,0 +1,65 @@
+{
+  "articleSlug": "consignado-para-quem-recebe-bpc",
+  "claims": [
+    {
+      "claimId": "o-que-e-o-bpc",
+      "claimText": "O Benefício de Prestação Continuada (BPC) garante um salário mínimo mensal à pessoa com deficiência e ao idoso que comprovem não possuir meios de prover a própria manutenção nem de tê-la provida por sua família. É benefício assistencial, não previdenciário.",
+      "sourceOrganization": "Instituto Nacional do Seguro Social — INSS",
+      "sourceTitle": "Benefício assistencial à pessoa com deficiência (BPC-Loas)",
+      "sourceLocation": "https://www.gov.br/inss/pt-br/direitos-e-deveres/beneficios-assistenciais/beneficio-assistencial-a-pessoa-com-deficiencia-bpc-loas",
+      "sourceType": "official",
+      "accessedAt": "2026-09-17",
+      "notes": "Sustenta a distinção que o artigo faz questão de manter: BPC não é aposentadoria, e o leitor de aposentadoria/pensão é mandado para outra página."
+    },
+    {
+      "claimId": "bpc-pode-consignar",
+      "claimText": "Beneficiários do BPC podem contratar empréstimo consignado, com desconto feito diretamente no pagamento do benefício.",
+      "sourceOrganization": "Instituto Nacional do Seguro Social — INSS",
+      "sourceTitle": "Empréstimo consignado BPC",
+      "sourceLocation": "https://www.gov.br/inss/pt-br/centrais-de-conteudo/audios/emprestimo-consignado-bpc",
+      "sourceType": "official",
+      "accessedAt": "2026-09-17",
+      "notes": "A possibilidade passou a existir em 2022. O artigo registra a permissão sem recomendar nem desaconselhar a contratação."
+    },
+    {
+      "claimId": "margem-35-bpc",
+      "claimText": "O beneficiário pode comprometer até 35% da renda: 30% para operações exclusivamente de empréstimo consignado e 5% para cartão de crédito consignado ou cartão consignado de benefício.",
+      "sourceOrganization": "Instituto Nacional do Seguro Social — INSS",
+      "sourceTitle": "Empréstimo consignado BPC",
+      "sourceLocation": "https://www.gov.br/inss/pt-br/centrais-de-conteudo/audios/emprestimo-consignado-bpc",
+      "sourceType": "official",
+      "accessedAt": "2026-09-17",
+      "notes": "Os percentuais já mudaram mais de uma vez nos últimos anos; o bloco 'o que pode mudar' avisa disso e o artigo não os apresenta como permanentes."
+    },
+    {
+      "claimId": "bloqueio-90-dias",
+      "claimText": "Todo benefício concedido fica bloqueado para empréstimo pelo prazo de 90 dias a partir da data de sua concessão. Somente após esse prazo o beneficiário pode solicitar o desbloqueio, se for de seu interesse.",
+      "sourceOrganization": "Instituto Nacional do Seguro Social — INSS",
+      "sourceTitle": "Veja como bloquear ou desbloquear o benefício para empréstimo consignado",
+      "sourceLocation": "https://www.gov.br/inss/pt-br/noticias/veja-como-bloquear-ou-desbloquear-o-beneficio-para-emprestimo-consignado",
+      "sourceType": "official",
+      "accessedAt": "2026-09-17",
+      "notes": "Base da afirmação de que, nos 90 dias iniciais, nenhuma promessa de 'liberar o consignado agora' pode ser cumprida — período que coincide com o pico de oferta após a concessão."
+    },
+    {
+      "claimId": "inss-recomenda-manter-bloqueado",
+      "claimText": "O INSS recomenda que os beneficiários mantenham seus benefícios sempre bloqueados para empréstimos, desbloqueando-os somente pelo período que for necessário.",
+      "sourceOrganization": "Instituto Nacional do Seguro Social — INSS",
+      "sourceTitle": "Veja como bloquear ou desbloquear o benefício para empréstimo consignado",
+      "sourceLocation": "https://www.gov.br/inss/pt-br/noticias/veja-como-bloquear-ou-desbloquear-o-beneficio-para-emprestimo-consignado",
+      "sourceType": "official",
+      "accessedAt": "2026-09-17",
+      "notes": "Contribuição central da página. É recomendação do próprio órgão, não conselho editorial do portal — o que permite destacá-la sem violar a regra de não dar veredito."
+    },
+    {
+      "claimId": "como-bloquear-desbloquear",
+      "claimText": "O bloqueio e o desbloqueio são feitos pelo Meu INSS, no serviço 'Bloquear/Desbloquear Benefício para Empréstimo Consignado'. O desbloqueio exige conta gov.br com selo prata ou ouro. Pela Central 135 também é possível pedir o desbloqueio, mas o titular deve comparecer a uma agência do INSS com documentos pessoais para concluí-lo.",
+      "sourceOrganization": "Governo Federal — gov.br",
+      "sourceTitle": "Bloquear ou Desbloquear Benefício para Empréstimo",
+      "sourceLocation": "https://www.gov.br/pt-br/servicos/bloquear-ou-desbloquear-beneficio-para-emprestimo",
+      "sourceType": "official",
+      "accessedAt": "2026-09-17",
+      "notes": "Sustenta a leitura de que a assimetria entre bloquear e desbloquear é proteção deliberada. O INSS também passou a permitir desbloqueio por biometria no Meu INSS."
+    }
+  ]
+}
