@@ -1,0 +1,55 @@
+{
+  "articleSlug": "o-que-pode-ser-penhorado",
+  "claims": [
+    {
+      "claimId": "cpc-833-excecoes",
+      "claimText": "O disposto nos incisos IV e X do caput do art. 833 do Código de Processo Civil não se aplica às hipóteses de penhora para pagamento de prestação alimentícia, independentemente de sua origem, e de importâncias excedentes a 50 salários-mínimos mensais.",
+      "sourceOrganization": "Presidência da República",
+      "sourceTitle": "Código de Processo Civil — Lei nº 13.105/2015, art. 833, § 2º",
+      "sourceLocation": "https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2015/lei/l13105.htm",
+      "sourceType": "official",
+      "accessedAt": "2026-09-17",
+      "notes": "O artigo faz questão de citar o § 2º junto com os incisos que ele excepciona. Também separa explicitamente os dois limites que o senso comum funde: 40 salários mínimos (reserva guardada, inciso X) e 50 salários mínimos mensais (teto da proteção de renda, § 2º)."
+    },
+    {
+      "claimId": "impenhorabilidade-nao-de-oficio",
+      "claimText": "A impenhorabilidade de depósitos ou aplicações bancárias no valor de até 40 salários mínimos não é matéria de ordem pública e não pode ser reconhecida de ofício pelo juiz. Cabe ao executado o ônus de alegar e comprovar a impenhorabilidade de forma tempestiva — no primeiro momento em que lhe couber falar nos autos, em embargos à execução ou na impugnação ao cumprimento de sentença, sob pena de preclusão.",
+      "sourceOrganization": "Superior Tribunal de Justiça",
+      "sourceTitle": "Impenhorabilidade de depósito de até 40 salários mínimos não pode ser reconhecida de ofício",
+      "sourceLocation": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2024/04102024-Impenhorabilidade-de-deposito-de-ate-40-salarios-minimos-nao-pode-ser-reconhecida-de-oficio.aspx",
+      "sourceType": "official",
+      "accessedAt": "2026-09-17",
+      "notes": "Contribuição central da página, e a razão de ela encaminhar para advogado e Defensoria com urgência: a proteção existe e não se aplica sozinha. É o ponto que quase nenhum conteúdo do tema traz."
+    },
+    {
+      "claimId": "tema-1285-suspenso",
+      "claimText": "O STJ afetou ao rito dos recursos repetitivos (Tema 1.285) a questão de definir se é impenhorável a quantia de até 40 salários mínimos poupada, mantida em papel-moeda, em conta corrente, em caderneta de poupança ou em fundo de investimentos. O julgamento na Corte Especial está suspenso por pedido de vista, tendo votado apenas a relatora, favoravelmente à impenhorabilidade.",
+      "sourceOrganization": "Superior Tribunal de Justiça",
+      "sourceTitle": "Repetitivo fixará tese sobre impenhorabilidade de aplicações financeiras até 40 salários mínimos",
+      "sourceLocation": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2024/18112024-Repetitivo-fixara-tese-sobre-impenhorabilidade-de-aplicacoes-financeiras-ate-40-salarios-minimos-.aspx",
+      "sourceType": "official",
+      "accessedAt": "2026-09-17",
+      "notes": "Motivo pelo qual o artigo RECUSA a afirmação corrente de que '40 salários mínimos são impenhoráveis, ponto'. A tese não está fixada, e isso é declarado ao leitor num bloco de metodologia e repetido no 'o que pode mudar'."
+    },
+    {
+      "claimId": "extensao-condicionada-a-prova",
+      "claimText": "No REsp 1.660.671, julgado no início de 2024, a Corte Especial do STJ definiu que a impenhorabilidade poderá ser estendida a valores de até 40 salários mínimos mantidos em conta corrente ou em outras aplicações financeiras que não a poupança, caso seja provado que se trata de reserva de patrimônio destinada a assegurar o mínimo existencial ou a proteger o indivíduo ou sua família contra adversidades.",
+      "sourceOrganization": "Superior Tribunal de Justiça",
+      "sourceTitle": "Repetitivo fixará tese sobre impenhorabilidade de aplicações financeiras até 40 salários mínimos",
+      "sourceLocation": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2024/18112024-Repetitivo-fixara-tese-sobre-impenhorabilidade-de-aplicacoes-financeiras-ate-40-salarios-minimos-.aspx",
+      "sourceType": "official",
+      "accessedAt": "2026-09-17",
+      "notes": "É o estado atual fora da poupança: extensão possível, porém CONDICIONADA À PROVA. O artigo apresenta a condição com o mesmo destaque que a possibilidade."
+    },
+    {
+      "claimId": "nao-se-aplica-a-pessoa-juridica",
+      "claimText": "A regra de impenhorabilidade do art. 833, X, do CPC se dirige à pessoa natural, por buscar a proteção da dignidade do devedor e de sua família, não podendo ser estendida indiscriminadamente a pessoas jurídicas, inclusive entidades sem fins lucrativos.",
+      "sourceOrganization": "Superior Tribunal de Justiça",
+      "sourceTitle": "Proteção contra penhora de até 40 salários mínimos não se aplica a entidades sem fins lucrativos",
+      "sourceLocation": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/03082026-Protecao-contra-penhora-de-ate-40-salarios-minimos-nao-se-aplica-a-entidades-sem-fins-lucrativos.aspx",
+      "sourceType": "official",
+      "accessedAt": "2026-09-17",
+      "notes": "Delimita o alcance da proteção e responde a uma dúvida frequente de quem tem MEI ou pequena empresa e supõe que a conta da empresa está coberta."
+    }
+  ]
+}

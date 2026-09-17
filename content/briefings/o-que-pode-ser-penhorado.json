@@ -1,0 +1,55 @@
+{
+  "proposedTitle": "O que pode ser penhorado: a proteção existe, mas ela não é automática",
+  "primaryIntent": "o que pode ser penhorado salário é impenhorável e como alegar",
+  "secondaryIntents": [
+    "40 salários mínimos são impenhoráveis mesmo",
+    "minha conta foi bloqueada o que fazer",
+    "salário pode ser penhorado por dívida de cartão",
+    "penhora de poupança e de conta corrente",
+    "o juiz reconhece a impenhorabilidade sozinho"
+  ],
+  "targetReader": "Quem teve a conta bloqueada por ordem judicial, ou quem tem dívida em cobrança avançada e quer saber o que está ao alcance do credor. Também quem vive a ameaça de penhora usada como pressão em cobrança.",
+  "readerSituation": "Amanheceu com a conta bloqueada e não sabe de qual processo veio, nem que existe prazo para se defender. Ou ouviu que 'salário é impenhorável' e supõe que isso o protege automaticamente.",
+  "centralQuestion": "O que a lei protege de penhora, quais são as exceções, e o que o devedor precisa fazer para que a proteção valha no caso dele?",
+  "uniqueAngle": "Lacuna medida no corpus: 'impenhorável' aparecia zero vezes nos 73 artigos e 'penhora' em apenas um, apesar de o cluster de dívidas ter sete páginas. Nenhuma tratava do desfecho judicial da cobrança.",
+  "originalContribution": "Corrige a informação mais repetida e mais perigosa do tema. A internet afirma que 40 salários mínimos são impenhoráveis, ponto. A regra real tem três camadas que quase nunca aparecem juntas: (1) o § 2º do art. 833 traz duas exceções à proteção do salário — prestação alimentícia de qualquer origem e importâncias acima de 50 salários mínimos mensais, dois limites distintos que o senso comum confunde com o de 40; (2) fora da caderneta de poupança, a extensão da proteção depende de prova de que o dinheiro é reserva do mínimo existencial, e a uniformização no STJ (Tema 1.285) está SUSPENSA por pedido de vista, com voto apenas da relatora — logo, não é regra fechada; (3) e o ponto decisivo: o STJ definiu que essa impenhorabilidade não é matéria de ordem pública e não pode ser reconhecida de ofício, cabendo ao executado alegá-la e prová-la tempestivamente, sob pena de preclusão. A proteção existe e não se aplica sozinha.",
+  "primarySources": [
+    "Código de Processo Civil, art. 833 e § 2º",
+    "STJ — Impenhorabilidade de depósito de até 40 salários mínimos não pode ser reconhecida de ofício",
+    "STJ — Repetitivo fixará tese sobre impenhorabilidade de aplicações financeiras até 40 salários mínimos (Tema 1.285)"
+  ],
+  "supportingSources": [
+    "STJ — REsp 1.660.671, Corte Especial: extensão condicionada à prova de reserva do mínimo existencial",
+    "STJ — Proteção contra penhora de até 40 salários mínimos não se aplica a entidades sem fins lucrativos"
+  ],
+  "contentArchetype": "guia-direitos",
+  "proposedStructure": [
+    "A pergunta que aparece com a conta bloqueada",
+    "A regra: o que a lei protege",
+    "As duas exceções do § 2º",
+    "O detalhe processual que decide o caso",
+    "A reserva fora da poupança: o ponto que ainda não fechou",
+    "Antes de chegar à penhora",
+    "O que fazer se a conta já foi bloqueada",
+    "O que pode mudar",
+    "FAQ"
+  ],
+  "internalLinks": [
+    "cobranca-abusiva-o-que-o-credor-nao-pode-fazer",
+    "como-negociar-dividas",
+    "lei-do-superendividamento",
+    "como-consultar-dividas-no-registrato",
+    "leilao-extrajudicial-imovel-em-garantia"
+  ],
+  "toolIntegrations": [
+    "plano-para-sair-das-dividas"
+  ],
+  "antiCannibalization": "cobranca-abusiva-o-que-o-credor-nao-pode-fazer continua dono dos limites de conduta na cobrança extrajudicial; como-negociar-dividas continua dono da negociação; lei-do-superendividamento continua dona da repactuação global; leilao-extrajudicial-imovel-em-garantia continua dono da execução de garantia imobiliária, que não passa por penhora; o-que-acontece-ao-atrasar-parcela continua dono da linha do tempo do atraso. Esta página é dona apenas da penhora e da impenhorabilidade — o que é alcançável, o que é protegido e como a proteção é exercida.",
+  "risks": [
+    "NÃO afirmar que 40 salários mínimos são impenhoráveis fora da poupança como regra fechada: o Tema 1.285 está suspenso por pedido de vista, com voto apenas da relatora",
+    "Não confundir o limite de 40 salários mínimos (reserva guardada) com o de 50 salários mínimos mensais (renda acima da qual a proteção cede)",
+    "Não prometer resultado: o desfecho depende do processo, da prova e do juiz",
+    "Não substituir orientação jurídica: a página encaminha para advogado e Defensoria, porque existe prazo e preclusão",
+    "Não tratar a exceção da prestação alimentícia como restrita a pensão de filhos: a lei diz independentemente de sua origem"
+  ]
+}

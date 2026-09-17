@@ -577,5 +577,12 @@
       "/credito-seguro/desconto-nao-autorizado-inss/",
       "/emprestimos/rmc-rcc-como-cancelar/"
     ]
+  },
+  "o que pode ser penhorado salário é impenhorável e como alegar": {
+    "canonicalOwner": "/organizacao-financeira/o-que-pode-ser-penhorado/",
+    "supportingPages": [
+      "/organizacao-financeira/cobranca-abusiva-o-que-o-credor-nao-pode-fazer/",
+      "/organizacao-financeira/lei-do-superendividamento/"
+    ]
   }
 }
