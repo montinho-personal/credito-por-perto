@@ -1,0 +1,58 @@
+{
+  "proposedTitle": "Open Finance e crédito: como seu histórico vira prova de renda — e o que o consentimento não autoriza",
+  "primaryIntent": "open finance é seguro e como ele ajuda a conseguir crédito",
+  "secondaryIntents": [
+    "compartilhar dados no open finance é pago",
+    "por quanto tempo vale o consentimento do open finance",
+    "como cancelar compartilhamento de dados",
+    "open finance pede senha é golpe",
+    "open finance ajuda autônomo a comprovar renda"
+  ],
+  "targetReader": "Quem não tem contracheque — autônomo, prestador de serviço, quem vive de comissão — e paga mais caro por não conseguir comprovar renda. E qualquer pessoa que recebeu uma abordagem usando o nome Open Finance e não sabe distinguir a legítima da fraudulenta.",
+  "readerSituation": "Recebeu no aplicativo um convite para compartilhar dados e não sabe o que está autorizando. Ou recebeu ligação usando o termo e pedindo senha. Ou procura jeito de provar renda sem holerite.",
+  "centralQuestion": "O que o compartilhamento de dados via Open Finance faz por quem busca crédito, sob quais limites — e como reconhecer a abordagem que só usa o nome?",
+  "uniqueAngle": "Lacuna medida no corpus: 'open finance' aparecia em 2 dos 74 artigos, ambas as vezes como nota de passagem — uma em emprestimo-para-autonomo, outra em documentos-para-emprestimo. Nenhuma página explicava o mecanismo, e nenhuma tratava do golpe que usa o nome.",
+  "originalContribution": "Escreve as duas metades que o conteúdo do tema costuma separar. A metade de acesso: para quem não tem holerite, o compartilhamento apresenta de uma vez o histórico que hoje se prova com extratos avulsos — com duas ressalvas que quase ninguém faz, a de que o peso varia por instituição e a de que histórico compartilhado também pode CONFIRMAR uma recusa quando a movimentação não sustenta a renda declarada. A metade de segurança: três marcadores objetivos e verificáveis do que Open Finance nunca é — nunca é pago, nunca pede senha, token ou código, e nunca começa por um link que chegou até o cliente, porque o consentimento é dado à instituição que vai RECEBER os dados, numa jornada que o próprio cliente inicia. Também explica o que quase ninguém sabe: o consentimento vence em no máximo 12 meses e é revogável pelo mesmo canal, com cancelamento imediato.",
+  "primarySources": [
+    "Banco Central e CMN — Resolução Conjunta nº 1, de 4 de maio de 2020",
+    "Open Finance Brasil — Perguntas frequentes (consentimento, prazo de 12 meses, gratuidade, revogação)",
+    "Open Finance Brasil — Open Finance é seguro? e Medidas de segurança"
+  ],
+  "supportingSources": [
+    "Open Finance Brasil — Entenda e Aprenda"
+  ],
+  "contentArchetype": "guia-seguranca",
+  "proposedStructure": [
+    "Quem não tem contracheque paga mais caro por não conseguir provar",
+    "O que é, sem jargão",
+    "Para quem não tem holerite, é alavanca",
+    "Consentimento: o que você está assinando",
+    "O filtro contra o golpe que usa o nome",
+    "O que compartilhar não resolve",
+    "O que pode mudar",
+    "FAQ"
+  ],
+  "internalLinks": [
+    "como-funciona-analise-de-credito",
+    "emprestimo-para-autonomo",
+    "deposito-antecipado-e-golpe",
+    "golpe-da-falsa-central",
+    "como-consultar-se-instituicao-e-autorizada",
+    "consultar-nome-nos-biros-de-credito",
+    "score-de-credito",
+    "o-que-e-cet",
+    "como-comparar-propostas-de-credito",
+    "renegociacao-ou-emprestimo"
+  ],
+  "toolIntegrations": [
+    "comparador-de-propostas"
+  ],
+  "antiCannibalization": "como-funciona-analise-de-credito continua dono de como a instituição decide; emprestimo-para-autonomo continua dono da comprovação de renda sem holerite em geral; score-de-credito continua dono do score e do Cadastro Positivo; consultar-nome-nos-biros-de-credito continua dono da consulta a birôs; golpe-da-falsa-central e deposito-antecipado-e-golpe continuam donos dos respectivos golpes; documentos-para-emprestimo continua dono da lista de documentos. Esta página é dona apenas do Open Finance — o mecanismo de consentimento, seus limites e os marcadores da abordagem fraudulenta que usa o nome.",
+  "risks": [
+    "Não prometer aprovação nem melhora de análise: o peso do compartilhamento varia por instituição e não há regra que o defina",
+    "Não omitir que o histórico compartilhado pode confirmar uma recusa, e não só derrubá-la",
+    "Não afirmar que Open Finance melhora score: nenhum serviço sério promete isso",
+    "Não confundir compartilhamento de dados com iniciação de pagamento: são consentimentos distintos, com finalidades distintas",
+    "Não apresentar as fases de implantação como concluídas: o ecossistema vem sendo implantado por etapas"
+  ]
+}

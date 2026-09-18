@@ -1,0 +1,65 @@
+{
+  "articleSlug": "open-finance-e-credito",
+  "claims": [
+    {
+      "claimId": "base-normativa",
+      "claimText": "O Open Finance é o sistema financeiro aberto regulado pelo Banco Central, que permite, mediante consentimento do cliente, o compartilhamento seguro de dados e a utilização de serviços financeiros entre instituições participantes. Sua implementação foi disposta pela Resolução Conjunta nº 1, de 4 de maio de 2020.",
+      "sourceOrganization": "Banco Central do Brasil e Conselho Monetário Nacional",
+      "sourceTitle": "Resolução Conjunta nº 1, de 4 de maio de 2020",
+      "sourceLocation": "https://normativos.bcb.gov.br/Lists/Normativos/Attachments/51028/Res_Conj_0001_v4_P.pdf",
+      "sourceType": "official",
+      "accessedAt": "2026-09-18",
+      "notes": "Âncora normativa. O artigo evita jargão e descreve o mecanismo como 'mandar suas informações de uma instituição para outra', que é o que o leitor precisa entender para decidir."
+    },
+    {
+      "claimId": "consentimento-ativo-e-finalidade",
+      "claimText": "Para compartilhar dados no Open Finance é necessária manifestação ativa do cliente, na forma de consentimento para finalidades determinadas, dado à instituição para a qual ele deseja enviar seus dados.",
+      "sourceOrganization": "Open Finance Brasil",
+      "sourceTitle": "Perguntas frequentes",
+      "sourceLocation": "https://openfinancebrasil.org.br/perguntas-frequentes/",
+      "sourceType": "official",
+      "accessedAt": "2026-09-18",
+      "notes": "Sustenta dois pontos do artigo: que o consentimento é por finalidade e não acesso geral, e que a jornada é iniciada pelo cliente junto à instituição receptora — o que permite dizer que compartilhamento legítimo nunca começa por link recebido."
+    },
+    {
+      "claimId": "prazo-12-meses",
+      "claimText": "O consentimento terá prazo de validade compatível com as finalidades autorizadas, limitado a 12 meses.",
+      "sourceOrganization": "Open Finance Brasil",
+      "sourceTitle": "Perguntas frequentes",
+      "sourceLocation": "https://openfinancebrasil.org.br/perguntas-frequentes/",
+      "sourceType": "official",
+      "accessedAt": "2026-09-18",
+      "notes": "Informação que quase nunca aparece no conteúdo do tema e que muda a percepção do leitor: não é porta aberta para sempre."
+    },
+    {
+      "claimId": "gratuidade",
+      "claimText": "Não é cobrado nenhum valor do cliente pelo compartilhamento de dados no Open Finance.",
+      "sourceOrganization": "Open Finance Brasil",
+      "sourceTitle": "Perguntas frequentes",
+      "sourceLocation": "https://openfinancebrasil.org.br/perguntas-frequentes/",
+      "sourceType": "official",
+      "accessedAt": "2026-09-18",
+      "notes": "Base do primeiro marcador de fraude do artigo: cobrança por 'liberar o Open Finance' é depósito antecipado com nome novo."
+    },
+    {
+      "claimId": "revogacao",
+      "claimText": "O cliente sempre pode pedir a retirada do consentimento pelo mesmo canal de atendimento em que ele foi concedido, se este ainda estiver disponível. Após a solicitação, o consentimento é cancelado de forma imediata ou, no caso da iniciação de pagamentos, em até um dia.",
+      "sourceOrganization": "Open Finance Brasil",
+      "sourceTitle": "Perguntas frequentes",
+      "sourceLocation": "https://openfinancebrasil.org.br/perguntas-frequentes/",
+      "sourceType": "official",
+      "accessedAt": "2026-09-18",
+      "notes": "Sustenta a recomendação prática de revisar consentimentos ativos periodicamente. A distinção do prazo para iniciação de pagamentos é reproduzida como está na fonte."
+    },
+    {
+      "claimId": "seguranca-nunca-senha",
+      "claimText": "Não se deve compartilhar senhas, códigos de segurança ou tokens em ligações ou mensagens recebidas, pois fraudadores podem se passar por alguém do banco de confiança do cliente. Ao receber oferta de crédito, o caminho é procurar a instituição pelos canais oficiais dela para confirmar.",
+      "sourceOrganization": "Open Finance Brasil",
+      "sourceTitle": "Open Finance: medidas de segurança",
+      "sourceLocation": "https://openfinancebrasil.org.br/2022/11/17/open-finance-medidas-de-seguranca/",
+      "sourceType": "official",
+      "accessedAt": "2026-09-18",
+      "notes": "Segundo marcador de fraude. O artigo o apresenta como regra objetiva e verificável, no mesmo desenho já usado no cluster de crédito seguro do portal."
+    }
+  ]
+}
