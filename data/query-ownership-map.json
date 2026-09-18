@@ -591,5 +591,11 @@
       "/emprestimos/emprestimo-para-autonomo/",
       "/emprestimos/como-funciona-analise-de-credito/"
     ]
+  },
+  "como funciona o fies requisitos e o que se assume ao financiar": {
+    "canonicalOwner": "/emprestimos/fies-financiamento-estudantil/",
+    "supportingPages": [
+      "/emprestimos/diferenca-entre-emprestimo-e-financiamento/"
+    ]
   }
 }

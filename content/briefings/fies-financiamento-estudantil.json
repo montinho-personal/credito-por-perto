@@ -1,0 +1,55 @@
+{
+  "proposedTitle": "FIES: o financiamento estudantil é dívida, e entender isso antes muda a decisão",
+  "primaryIntent": "como funciona o fies requisitos e o que se assume ao financiar",
+  "secondaryIntents": [
+    "qual nota do enem precisa para o fies",
+    "diferença entre fies e p-fies",
+    "o que é o fies social",
+    "fies tem juros mesmo",
+    "posso usar fies em universidade pública"
+  ],
+  "targetReader": "Estudante que vai prestar ou prestou o Enem e considera curso privado, e a família que vai assinar junto. Também quem já está no P-FIES e não percebeu que contratou crédito bancário.",
+  "readerSituation": "Está na janela de inscrição e leu apenas material de vestibular — prazos, nota de corte, passo a passo. Não viu nada sobre o contrato que vai assinar no banco na última etapa.",
+  "centralQuestion": "Quais são os requisitos do FIES, em que ele difere do P-FIES e do Fies Social — e o que exatamente se assume ao financiar?",
+  "uniqueAngle": "Lacuna medida no corpus: 'FIES' aparecia em 1 dos 75 artigos, de passagem. Nenhuma página tratava do financiamento estudantil, apesar de o cluster de modalidades ter 11 páginas.",
+  "originalContribution": "Trata o FIES pelo que ele é — um contrato de crédito — e não como processo seletivo, que é o enquadramento de praticamente todo o material disponível. Três consequências: (1) desfaz a leitura de que 'juro zero' é dinheiro de graça, deixando claro que taxa real zero significa ausência de juro real e não extinção da dívida, e mandando o leitor ler a regulamentação e o contrato, que são o que governa o saldo; (2) separa FIES de P-FIES como produtos distintos — 3 contra 5 salários mínimos per capita, e o P-FIES concedido diretamente por instituições financeiras que assumem integralmente o risco, portanto crédito bancário a ser avaliado pelo CET; (3) destaca o Fies Social, que reserva metade das vagas a quem tem até meio salário mínimo per capita com CadÚnico ativo e pode financiar até 100% dos encargos — informação que decide a estratégia de inscrição e que some no material de vestibular.",
+  "primarySources": [
+    "Ministério da Educação — Fies: o que é e como funciona",
+    "Ministério da Educação — Fies 2026: abertas as inscrições para o 1º semestre (Fies Social, reserva de 50%)",
+    "Ministério da Educação — Fies 2026: confira o passo a passo para se inscrever"
+  ],
+  "supportingSources": [
+    "Ministério da Educação — Perguntas frequentes do Fundo de Financiamento Estudantil",
+    "Portal Único de Acesso ao Ensino Superior"
+  ],
+  "contentArchetype": "guia-modalidade",
+  "proposedStructure": [
+    "O FIES não é processo seletivo, é contrato de crédito",
+    "O que o FIES financia",
+    "Os requisitos, em duas listas",
+    "FIES e P-FIES não são a mesma coisa",
+    "Taxa real zero não é dinheiro de graça",
+    "Fies Social: metade das vagas",
+    "O caminho da inscrição",
+    "O que pensar antes de assinar",
+    "O que pode mudar",
+    "FAQ"
+  ],
+  "internalLinks": [
+    "o-que-e-cet",
+    "diferenca-entre-emprestimo-e-financiamento",
+    "como-negociar-dividas",
+    "lei-do-superendividamento"
+  ],
+  "toolIntegrations": [
+    "parcela-no-orcamento"
+  ],
+  "antiCannibalization": "diferenca-entre-emprestimo-e-financiamento continua dono da distinção conceitual entre as duas operações; o-que-e-cet continua dono da medida de custo; como-negociar-dividas e lei-do-superendividamento continuam donos do que fazer quando a parcela não cabe; quanto-da-renda-comprometer-financiamento-imovel continua dono do financiamento imobiliário. Esta página é dona apenas do financiamento estudantil público — FIES, P-FIES e Fies Social.",
+  "risks": [
+    "NÃO detalhar regras de carência, amortização e atualização do saldo devedor: não foram verificadas em fonte primária nesta apuração, e o artigo remete o leitor à regulamentação e ao contrato",
+    "Não apresentar prazos de edital como permanentes: mudam a cada semestre",
+    "Não tratar 'taxa real zero' como ausência de dívida",
+    "Não afirmar consequências de trancamento ou desistência: a página levanta a pergunta e manda buscar a resposta na regulamentação, em vez de supor",
+    "Não recomendar nem desaconselhar financiar: a decisão depende de curso, custo e projeto do leitor"
+  ]
+}

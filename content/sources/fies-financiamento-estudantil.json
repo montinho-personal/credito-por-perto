@@ -1,0 +1,65 @@
+{
+  "articleSlug": "fies-financiamento-estudantil",
+  "claims": [
+    {
+      "claimId": "o-que-o-fies-financia",
+      "claimText": "O Fundo de Financiamento Estudantil (Fies) é um programa do Ministério da Educação que concede financiamento a estudantes em cursos superiores não gratuitos, com avaliação positiva no Sinaes, ofertados por instituições privadas.",
+      "sourceOrganization": "Ministério da Educação",
+      "sourceTitle": "Fies",
+      "sourceLocation": "https://www.gov.br/mec/pt-br/fies/fies",
+      "sourceType": "official",
+      "accessedAt": "2026-09-18",
+      "notes": "Delimita o alcance do programa e sustenta a resposta de que curso em instituição pública gratuita não entra."
+    },
+    {
+      "claimId": "requisitos-enem",
+      "claimText": "É preciso ter participado de qualquer edição do Enem a partir de 2010, obtido média aritmética das notas nas cinco provas igual ou superior a 450 pontos, não ter zerado a redação e não ter participado como treineiro.",
+      "sourceOrganization": "Ministério da Educação",
+      "sourceTitle": "Fies 2026: abertas as inscrições para o 1º semestre",
+      "sourceLocation": "https://www.gov.br/mec/pt-br/assuntos/noticias/2026/fevereiro/fies-2026-abertas-as-inscricoes-para-o-1o-semestre",
+      "sourceType": "official",
+      "accessedAt": "2026-09-18",
+      "notes": "O artigo registra que a nota é critério de elegibilidade e não de aprovação — a seleção é classificatória —, distinção que o material de vestibular costuma omitir."
+    },
+    {
+      "claimId": "renda-e-juro-zero-fies",
+      "claimText": "Para o Fies exige-se renda familiar bruta mensal per capita de até 3 salários mínimos. Os financiamentos concedidos com recursos do Fies para estudantes nessa faixa têm taxa real zero de juros.",
+      "sourceOrganization": "Ministério da Educação",
+      "sourceTitle": "Como Funciona — Fies",
+      "sourceLocation": "https://www.gov.br/mec/pt-br/fies/como-funciona",
+      "sourceType": "official",
+      "accessedAt": "2026-09-18",
+      "notes": "O artigo reproduz a expressão 'taxa real zero de juros' da fonte e explicita que isso não significa extinção da dívida. Deliberadamente NÃO detalha regras de atualização do saldo e amortização, que não foram verificadas nesta apuração — remete à regulamentação e ao contrato."
+    },
+    {
+      "claimId": "p-fies",
+      "claimText": "A modalidade P-FIES foi criada para atender estudantes com renda familiar bruta per capita de até 5 salários mínimos, sendo concedida diretamente por instituições financeiras, que assumem integralmente o risco do financiamento.",
+      "sourceOrganization": "Ministério da Educação",
+      "sourceTitle": "Como Funciona — Fies",
+      "sourceLocation": "https://www.gov.br/mec/pt-br/fies/como-funciona",
+      "sourceType": "official",
+      "accessedAt": "2026-09-18",
+      "notes": "Base da separação entre os dois produtos. Como o risco é assumido pela instituição financeira, o artigo trata o P-FIES como crédito bancário e manda avaliá-lo pelo CET, sem afirmar taxas que variam por operador."
+    },
+    {
+      "claimId": "fies-social",
+      "claimText": "O processo seletivo do Fies reserva 50% das vagas para estudantes com renda familiar por pessoa de até meio salário mínimo e com inscrição ativa no Cadastro Único para Programas Sociais do Governo Federal (CadÚnico). Pré-selecionados que atendam às regras do Fies Social podem financiar até 100% dos encargos educacionais.",
+      "sourceOrganization": "Ministério da Educação",
+      "sourceTitle": "Fies 2026: abertas as inscrições para o 1º semestre",
+      "sourceLocation": "https://www.gov.br/mec/pt-br/assuntos/noticias/2026/fevereiro/fies-2026-abertas-as-inscricoes-para-o-1o-semestre",
+      "sourceType": "official",
+      "accessedAt": "2026-09-18",
+      "notes": "Informação de maior impacto prático do artigo: define estratégia de inscrição para quem se enquadra, e depende de um CadÚnico ativo que precisa ser resolvido antes da janela."
+    },
+    {
+      "claimId": "caminho-da-inscricao",
+      "claimText": "As inscrições são feitas exclusivamente pela internet, pelo Portal Único de Acesso ao Ensino Superior. O pré-selecionado deve complementar a inscrição na página do Fies, validar as informações declaradas junto à instituição selecionada e, por último, comprovar junto ao banco que está apto a assinar o contrato.",
+      "sourceOrganization": "Ministério da Educação",
+      "sourceTitle": "Fies 2026: confira o passo a passo para se inscrever",
+      "sourceLocation": "https://www.gov.br/mec/pt-br/assuntos/noticias/2026/julho/fies-2026-confira-o-passo-a-passo-para-se-inscrever",
+      "sourceType": "official",
+      "accessedAt": "2026-09-18",
+      "notes": "Sustenta o argumento central da página: a última etapa é bancária, e é nela que o contrato de crédito aparece — momento que o material de vestibular não cobre."
+    }
+  ]
+}
