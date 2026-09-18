@@ -1,0 +1,50 @@
+{
+  "proposedTitle": "Portabilidade de salário: você escolhe onde o dinheiro cai, e agora isso é lei",
+  "primaryIntent": "portabilidade de salário como funciona e é um direito",
+  "secondaryIntents": [
+    "empregador pode obrigar a ter conta em banco específico",
+    "como transferir meu salário para outro banco automaticamente",
+    "portabilidade de salário é paga",
+    "diferença entre portabilidade de salário e de crédito",
+    "banco negou minha portabilidade salarial"
+  ],
+  "targetReader": "Quem recebe salário, aposentadoria ou pensão numa conta que não escolheu, paga tarifa num banco que usa pouco, ou transfere o dinheiro na mão todo mês.",
+  "readerSituation": "Trocou de emprego e ganhou uma conta nova que não queria. Ou percebeu que paga pacote de serviços num banco onde só recebe. Ou ouviu que existe portabilidade e confundiu com a de crédito.",
+  "centralQuestion": "Quem decide onde o salário fica, que direitos a lei assegura, e o que fazer quando a instituição dificulta?",
+  "uniqueAngle": "Lacuna absoluta medida no corpus: 'portabilidade de salário' e 'conta salário' apareciam zero vezes nos 76 artigos, apesar de existir uma página sobre portabilidade de CRÉDITO — os dois direitos têm nome quase igual e função oposta, e nada no site desfazia a confusão.",
+  "originalContribution": "Ancora o assunto numa lei recente e pouco coberta — a Lei nº 15.252/2025, de novembro de 2025 — e extrai dela as duas proteções que mudam o comportamento do banco e que o conteúdo do tema não menciona: (1) a oferta da adesão é OBRIGATÓRIA nos canais digitais de toda instituição autorizada pelo BC, logo não pode ficar escondida atrás do atendimento presencial; (2) é VEDADA a solicitação de informações adicionais para o compartilhamento, o que transforma exigência de documento extra em obstáculo sem previsão normativa. Soma a regra do Banco Central de que o canal de recepção não pode restringir o processo, inclusive quanto às instituições destinatárias. E declara honestamente o que quase nenhum material diz: o direito é de agora, mas a operação está em transição prevista até julho de 2027 — então ausência da opção no app hoje não é necessariamente descumprimento.",
+  "primarySources": [
+    "Lei nº 15.252, de 4 de novembro de 2025 — direitos da pessoa natural usuária de serviços financeiros",
+    "Ministério da Fazenda — Entenda as resoluções do CMN que regulamentam a lei de direitos do consumidor financeiro",
+    "Banco Central — Resolução nº 4.790, de 26 de março de 2020"
+  ],
+  "supportingSources": [],
+  "contentArchetype": "guia-direitos",
+  "proposedStructure": [
+    "Quem escolhe onde o salário cai e quem escolhe onde ele fica",
+    "O que a lei assegura",
+    "Duas proteções que quase ninguém conhece",
+    "O direito é de agora; a operação ainda está sendo montada",
+    "Por que isso é assunto de crédito",
+    "Se o banco dificultar",
+    "O que pode mudar",
+    "FAQ"
+  ],
+  "internalLinks": [
+    "tarifas-bancarias-gratuitas",
+    "o-que-e-cet",
+    "open-finance-e-credito",
+    "portabilidade-de-credito"
+  ],
+  "toolIntegrations": [
+    "comparador-de-propostas"
+  ],
+  "antiCannibalization": "portabilidade-de-credito continua dono da transferência de DÍVIDA entre instituições — esta página apenas contrasta as duas numa tabela e aponta para lá; tarifas-bancarias-gratuitas continua dono dos serviços gratuitos por norma; open-finance-e-credito continua dono do compartilhamento de dados, mecanismo distinto e também gratuito; como-comparar-propostas-de-credito continua dono do método de comparação. Esta página é dona apenas da portabilidade salarial.",
+  "risks": [
+    "NÃO afirmar que o banco onde o salário cai oferece melhores taxas de crédito: é percepção de mercado, não regra verificada, e o consignado CLT hoje é contratado pela Carteira de Trabalho Digital com disputa entre instituições",
+    "Não apresentar a portabilidade automática como plenamente disponível: há transição prevista até julho de 2027",
+    "Não afirmar gratuidade da portabilidade em termos que a apuração não confirmou — a página trata do direito e da vedação a exigências adicionais, e orienta pedir previsão por escrito diante de qualquer cobrança",
+    "Não confundir portabilidade salarial com portabilidade de crédito: nomes parecidos, funções opostas",
+    "Não sugerir que o salário possa ser direcionado a conta de terceiro: a regra fala em conta de titularidade do próprio beneficiário"
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "articleSlug": "portabilidade-de-salario",
+  "claims": [
+    {
+      "claimId": "direito-a-portabilidade-automatica",
+      "claimText": "É assegurado a toda pessoa natural o direito de optar pela portabilidade automática de salários, proventos, soldos, vencimentos, aposentadorias, pensões e similares.",
+      "sourceOrganization": "Presidência da República",
+      "sourceTitle": "Lei nº 15.252, de 4 de novembro de 2025 — direitos da pessoa natural usuária de serviços financeiros",
+      "sourceLocation": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/lei/l15252.htm",
+      "sourceType": "official",
+      "accessedAt": "2026-09-18",
+      "notes": "Âncora do artigo. A lei é de novembro de 2025 e tem pouca cobertura editorial — é a razão de o tema ter sido escolhido."
+    },
+    {
+      "claimId": "definicao-portabilidade-salarial",
+      "claimText": "A portabilidade salarial automática consiste na transferência, a pedido do beneficiário e mediante o compartilhamento de informações entre as instituições contratadas e as destinatárias, do valor creditado em uma ou mais contas-salário para outra conta de titularidade do próprio beneficiário.",
+      "sourceOrganization": "Presidência da República",
+      "sourceTitle": "Lei nº 15.252, de 4 de novembro de 2025",
+      "sourceLocation": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/lei/l15252.htm",
+      "sourceType": "official",
+      "accessedAt": "2026-09-18",
+      "notes": "A expressão 'de titularidade do próprio beneficiário' sustenta o alerta do artigo: pedido para direcionar salário à conta de terceiro está fora do desenho da regra."
+    },
+    {
+      "claimId": "oferta-obrigatoria-canais-digitais",
+      "claimText": "A oferta da opção de adesão à portabilidade salarial automática é obrigatória por meio dos canais digitais de todas as instituições financeiras ou instituições autorizadas a funcionar pelo Banco Central do Brasil.",
+      "sourceOrganization": "Presidência da República",
+      "sourceTitle": "Lei nº 15.252, de 4 de novembro de 2025",
+      "sourceLocation": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/lei/l15252.htm",
+      "sourceType": "official",
+      "accessedAt": "2026-09-18",
+      "notes": "Primeira das duas proteções destacadas: o serviço não pode ficar escondido atrás de atendimento presencial ou central telefônica."
+    },
+    {
+      "claimId": "vedada-informacao-adicional",
+      "claimText": "O compartilhamento das informações deverá ocorrer mediante prévia e expressa autorização do beneficiário, vedada a solicitação de informações adicionais.",
+      "sourceOrganization": "Presidência da República",
+      "sourceTitle": "Lei nº 15.252, de 4 de novembro de 2025",
+      "sourceLocation": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/lei/l15252.htm",
+      "sourceType": "official",
+      "accessedAt": "2026-09-18",
+      "notes": "Segunda proteção destacada. É o que permite ao leitor identificar exigência de documento extra como obstáculo sem previsão normativa."
+    },
+    {
+      "claimId": "transicao-julho-2027",
+      "claimText": "Considerando a necessidade de alteração de contratos, operacionalização de novos procedimentos e ajustes nos sistemas, a regulamentação prevê período de transição até julho de 2027.",
+      "sourceOrganization": "Ministério da Fazenda",
+      "sourceTitle": "Entenda as resoluções do CMN que regulamentam a lei de direitos do consumidor financeiro",
+      "sourceLocation": "https://www.gov.br/fazenda/pt-br/assuntos/noticias/2026/maio/entenda-as-resolucoes-do-cmn-que-regulamentam-a-lei-de-direitos-do-consumidor-financeiro",
+      "sourceType": "official",
+      "accessedAt": "2026-09-18",
+      "notes": "Ressalva que o artigo faz questão de publicar: o direito é de agora, a operação plena ainda não. Evita que o leitor conclua que a ausência da opção no aplicativo é, por si, descumprimento."
+    },
+    {
+      "claimId": "canal-nao-pode-restringir",
+      "claimText": "O canal de recepção não pode restringir o processo de portabilidade salarial, inclusive em termos de acessibilidade às instituições destinatárias. A comunicação de portabilidade deve ser mantida pela instituição destinatária à disposição do Banco Central pelo prazo mínimo de cinco anos após o seu envio.",
+      "sourceOrganization": "Banco Central do Brasil",
+      "sourceTitle": "Resolução nº 4.790, de 26 de março de 2020",
+      "sourceLocation": "https://normativos.bcb.gov.br/Lists/Normativos/Attachments/50957/Res_4790_v3_L.pdf",
+      "sourceType": "official",
+      "accessedAt": "2026-09-18",
+      "notes": "Reforça, pelo lado da regulamentação do BC, que a escolha da instituição destinatária é do beneficiário e não do banco de origem."
+    }
+  ]
+}
