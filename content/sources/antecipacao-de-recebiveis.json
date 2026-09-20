@@ -1,0 +1,55 @@
+{
+  "articleSlug": "antecipacao-de-recebiveis",
+  "claims": [
+    {
+      "claimId": "antecipacao-mediante-desconto",
+      "claimText": "As credenciadoras podem oferecer a antecipação de recebíveis aos estabelecimentos comerciais, normalmente mediante desconto. A taxa de desconto é negociada entre o credor e o estabelecimento por meio de contrato, considerando o custo do dinheiro para os credores e sua margem de lucro.",
+      "sourceOrganization": "Banco Central do Brasil",
+      "sourceTitle": "Relatório de Economia Bancária — boxe sobre antecipação de recebíveis",
+      "sourceLocation": "https://www.bcb.gov.br/content/publicacoes/boxe_relatorio_de_economia_bancaria/reb2023b3p.pdf",
+      "sourceType": "official",
+      "accessedAt": "2026-09-20",
+      "notes": "Base do argumento de que a taxa não é tabelada e, portanto, é negociável. O artigo deliberadamente NÃO publica percentuais, que variam por instituição, prazo e volume."
+    },
+    {
+      "claimId": "registro-obrigatorio-recebiveis",
+      "claimText": "Todos os valores decorrentes de vendas realizadas com cartões de pagamento devem ser registrados em sistemas de registro de ativos financeiros e valores mobiliários, que atestam a existência e a unicidade desses recebíveis e permitem a constituição de gravames e ônus sobre eles. As registradoras que operam esses sistemas são autorizadas e supervisionadas pelo Banco Central.",
+      "sourceOrganization": "Banco Central do Brasil",
+      "sourceTitle": "Resolução nº 4.734, de 27 de junho de 2019",
+      "sourceLocation": "https://normativos.bcb.gov.br/Lists/Normativos/Attachments/50795/Res_4734_v6_L.pdf",
+      "sourceType": "official",
+      "accessedAt": "2026-09-20",
+      "notes": "Contribuição central do artigo: é o registro que permite ao lojista levar o recebível ao mercado em vez de aceitar a taxa da própria credenciadora."
+    },
+    {
+      "claimId": "instituicoes-integradas-ao-registro",
+      "claimText": "As instituições financeiras que pretendam realizar operações de desconto de recebíveis de arranjo de pagamento, ou operações de crédito garantidas por esses recebíveis, devem participar de testes de homologação para integração com os sistemas de registro de recebíveis de arranjo de pagamento.",
+      "sourceOrganization": "Banco Central do Brasil",
+      "sourceTitle": "Resolução nº 4.734, de 27 de junho de 2019",
+      "sourceLocation": "https://normativos.bcb.gov.br/Lists/Normativos/Attachments/50795/Res_4734_v6_L.pdf",
+      "sourceType": "official",
+      "accessedAt": "2026-09-20",
+      "notes": "Confirma que a antecipação e o crédito garantido por recebíveis podem ser oferecidos por instituições diversas da credenciadora do estabelecimento."
+    },
+    {
+      "claimId": "direito-a-informacao-do-recebedor",
+      "claimText": "As instituições autorizadas a visualizar recebíveis de arranjo de pagamento devem prestar ao recebedor final informação sobre o valor dos recebíveis a serem liquidados a cada dia e sobre o valor dos recebíveis disponíveis para negociação.",
+      "sourceOrganization": "Banco Central do Brasil",
+      "sourceTitle": "Resolução nº 4.734, de 27 de junho de 2019",
+      "sourceLocation": "https://normativos.bcb.gov.br/Lists/Normativos/Attachments/50795/Res_4734_v6_L.pdf",
+      "sourceType": "official",
+      "accessedAt": "2026-09-20",
+      "notes": "Sustenta a orientação prática mais acionável da página: pedir esses dois números, sem os quais nenhuma comparação de proposta é possível."
+    },
+    {
+      "claimId": "definicao-recebiveis-arranjo",
+      "claimText": "Recebíveis de arranjo de pagamento são os direitos creditórios relativos às obrigações de pagamento das credenciadoras e subcredenciadoras aos recebedores finais, constituídos no âmbito de arranjos de pagamento integrantes do Sistema de Pagamentos Brasileiro.",
+      "sourceOrganization": "Banco Central do Brasil",
+      "sourceTitle": "Convenção entre Entidades Registradoras — Recebíveis de Arranjos de Pagamento",
+      "sourceLocation": "https://www.bcb.gov.br/content/estabilidadefinanceira/spb_docs/convencoes/Conven%C3%A7%C3%A3o%20entre%20Entidades%20Registradoras%20-%20Receb%C3%ADveis%20de%20Arranjos%20de%20Pagamento.pdf",
+      "sourceType": "official",
+      "accessedAt": "2026-09-20",
+      "notes": "Fundamenta a definição usada no artigo e a distinção, feita em tabela, entre ceder o recebível (antecipação) e dá-lo em garantia de um empréstimo."
+    }
+  ]
+}

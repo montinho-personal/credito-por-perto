@@ -610,5 +610,12 @@
       "/organizacao-financeira/divida-caducada-nome-limpo/",
       "/organizacao-financeira/como-negociar-dividas/"
     ]
+  },
+  "antecipação de recebíveis de cartão como funciona e quanto custa": {
+    "canonicalOwner": "/emprestimos/antecipacao-de-recebiveis/",
+    "supportingPages": [
+      "/emprestimos/emprestimo-para-mei/",
+      "/emprestimos/microcredito-produtivo-e-banco-do-povo/"
+    ]
   }
 }

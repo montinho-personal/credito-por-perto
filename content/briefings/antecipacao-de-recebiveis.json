@@ -1,0 +1,53 @@
+{
+  "proposedTitle": "Antecipação de recebíveis: não é empréstimo, mas custa como um",
+  "primaryIntent": "antecipação de recebíveis de cartão como funciona e quanto custa",
+  "secondaryIntents": [
+    "a taxa de antecipação da maquininha é negociável",
+    "posso antecipar recebíveis fora da minha credenciadora",
+    "como saber quanto tenho para antecipar",
+    "antecipação de recebíveis é empréstimo",
+    "diferença entre antecipar e crédito com garantia de recebíveis"
+  ],
+  "targetReader": "MEI, autônomo e pequeno lojista que vende no cartão e usa o botão de antecipação da maquininha — com frequência sem perceber que está tomando uma decisão de custo.",
+  "readerSituation": "Antecipa para fechar o mês, às vezes todo mês, e nunca comparou a taxa com nada. Ou precisa de capital de giro e só conhece a antecipação como saída.",
+  "centralQuestion": "O que é antecipar recebível, quanto isso custa de fato, e que alternativas existem para a mesma necessidade?",
+  "uniqueAngle": "Lacuna absoluta medida no corpus: 'antecipação de recebíveis', 'maquininha' e 'factoring' apareciam zero vezes nos 78 artigos, apesar de existirem três páginas voltadas a MEI, autônomo e microcrédito produtivo. Faltava justamente a operação que essa audiência mais usa no dia a dia.",
+  "originalContribution": "Três pontos. (1) Reenquadra a operação: não é empréstimo, é venda antecipada de direito creditório mediante desconto — mas o desconto é o preço, e deve ser comparado como qualquer custo de crédito, pelo acumulado do mês e não pela taxa da operação isolada. (2) Traz a consequência prática do registro obrigatório de recebíveis em registradoras autorizadas pelo BC: como o recebível é registrado e admite constituição de gravame, OUTRAS instituições podem oferecer antecipação ou crédito garantido por ele — ou seja, o lojista deixou de estar preso à taxa da própria credenciadora, e quase ninguém usa isso. (3) Lembra o direito à informação: as instituições autorizadas a visualizar recebíveis devem informar o valor a liquidar por dia e o valor disponível para negociação, que são os dois números sem os quais nenhuma comparação é possível. Acrescenta a distinção, comumente confundida, entre antecipar recebível e tomar crédito com recebível em garantia.",
+  "primarySources": [
+    "Banco Central — Resolução nº 4.734, de 27 de junho de 2019, e Circular nº 3.952/2019 (registro de recebíveis de arranjo de pagamento)",
+    "Banco Central — Relatório de Economia Bancária, boxe sobre antecipação de recebíveis"
+  ],
+  "supportingSources": [
+    "Banco Central — Convenção entre Entidades Registradoras: Recebíveis de Arranjos de Pagamento"
+  ],
+  "contentArchetype": "guia-modalidade",
+  "proposedStructure": [
+    "O descompasso entre a venda e o dinheiro",
+    "O que você está vendendo",
+    "A mudança que o lojista não está usando",
+    "Você tem direito de saber o que tem",
+    "Como comparar o custo",
+    "Antecipar recorrente cobra duas vezes",
+    "Antecipação e crédito com garantia não são a mesma coisa",
+    "O que pode mudar",
+    "FAQ"
+  ],
+  "internalLinks": [
+    "microcredito-produtivo-e-banco-do-povo",
+    "emprestimo-para-mei",
+    "o-que-e-cet",
+    "como-comparar-propostas-de-credito",
+    "emprestimo-com-garantia"
+  ],
+  "toolIntegrations": [
+    "comparador-de-propostas"
+  ],
+  "antiCannibalization": "emprestimo-para-mei continua dono das linhas e da documentação de quem tem CNPJ; microcredito-produtivo-e-banco-do-povo continua dono do microcrédito público; emprestimo-para-autonomo continua dono da comprovação de renda sem holerite; emprestimo-com-garantia continua dono das operações com bem em garantia em geral; o-que-e-cet continua dono da medida de custo. Esta página é dona apenas da antecipação de recebíveis de arranjo de pagamento.",
+  "risks": [
+    "NÃO publicar taxas de desconto: são negociadas em contrato e variam por instituição, prazo e volume",
+    "Não afirmar que antecipar é sempre ruim: a página distingue uso pontual de uso recorrente e não emite veredito",
+    "Não tratar antecipação como operação de crédito no sentido jurídico: é cessão de direito creditório, e o artigo faz essa distinção explícita numa tabela",
+    "Não afirmar disponibilidade de programas públicos de crédito com garantia de recebíveis: existem em janelas específicas e nem sempre estão abertos",
+    "Não detalhar regras de trava de domicílio, que não foram verificadas em fonte primária nesta apuração"
+  ]
+}
