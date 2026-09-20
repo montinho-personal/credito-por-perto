@@ -1,0 +1,56 @@
+{
+  "proposedTitle": "Protesto em cartório: por que pagar a dívida não limpa o seu nome sozinho",
+  "primaryIntent": "protesto em cartório o que é e como cancelar depois de pagar",
+  "secondaryIntents": [
+    "paguei a dívida e continuo protestado",
+    "quem paga as custas do cancelamento de protesto",
+    "como consultar protesto gratuitamente",
+    "o que é carta de anuência",
+    "protesto é a mesma coisa que nome sujo no serasa"
+  ],
+  "targetReader": "Quem negociou e pagou uma dívida e descobriu depois que continua com restrição. E quem está prestes a fechar acordo de uma dívida que foi protestada, sem saber que precisa pedir a anuência antes de pagar.",
+  "readerSituation": "Consultou o birô, viu o nome limpo e se considerou resolvido. Meses depois, ao assinar contrato ou pedir crédito, descobriu o protesto ativo. Ou está negociando agora e não sabe o que exigir.",
+  "centralQuestion": "O que é protesto, em que ele difere da negativação em birô, e o que exatamente é preciso fazer para cancelá-lo depois de pagar a dívida?",
+  "uniqueAngle": "Lacuna absoluta medida no corpus: 'protesto em cartório' e 'nome no cartório' apareciam zero vezes nos 77 artigos, apesar de o cluster de dívidas ter oito páginas e de já existirem guias sobre negativação em birô e sobre dívida caducada. Faltava justamente o registro que NÃO sai com o tempo.",
+  "originalContribution": "Corrige a suposição que produz o prejuízo mais comum do tema: a de que quitar a dívida encerra a restrição. No protesto não encerra — mesmo pago ou parcelado o débito, o cancelamento só ocorre após o pagamento dos emolumentos e das demais despesas cartorárias, e depende da anuência de quem protestou. Disso o artigo tira uma orientação que só funciona ANTES do pagamento: pedir a carta de anuência por escrito no próprio acordo, e negociar quem arca com as custas de saída. Também separa os dois registros numa tabela — birô e cartório, com regras de saída diferentes — e explica por que consultar apenas o birô dá uma foto incompleta. Por fim, distingue o fluxo automático da PGFN para dívida ativa da União (comunicação eletrônica em até 72 horas, sem pedido do contribuinte) do fluxo das dívidas privadas, em que não há automatismo algum.",
+  "primarySources": [
+    "Lei nº 9.492, de 10 de setembro de 1997 — serviços concernentes ao protesto de títulos",
+    "PGFN — Protesto de Certidão da Dívida Ativa da União: como proceder",
+    "gov.br — Solicitar autorização para cancelamento de protesto"
+  ],
+  "supportingSources": [
+    "CNJ — Provimento nº 87, de 11 de setembro de 2019",
+    "Central Nacional de Protesto (CENPROT)"
+  ],
+  "contentArchetype": "guia-direitos",
+  "proposedStructure": [
+    "A sequência que se repete: pagar, achar que resolveu, descobrir depois",
+    "O que é protesto, e o que ele não é",
+    "Como saber se você está protestado",
+    "O cancelamento: duas peças, não uma",
+    "Na hora de negociar, peça as duas coisas",
+    "O que o protesto significa para o seu crédito",
+    "O que pode mudar",
+    "FAQ"
+  ],
+  "internalLinks": [
+    "divida-caducada-nome-limpo",
+    "consultar-nome-nos-biros-de-credito",
+    "como-consultar-dividas-no-registrato",
+    "como-negociar-dividas",
+    "como-funciona-analise-de-credito",
+    "o-que-pode-ser-penhorado",
+    "deposito-antecipado-e-golpe"
+  ],
+  "toolIntegrations": [
+    "renegociacao-de-dividas"
+  ],
+  "antiCannibalization": "divida-caducada-nome-limpo continua dono do prazo de cinco anos nos cadastros de inadimplentes; consultar-nome-nos-biros-de-credito continua dono da consulta a birôs; como-consultar-dividas-no-registrato continua dono do Registrato; como-negociar-dividas continua dono do método de negociação; o-que-pode-ser-penhorado continua dono do desfecho judicial. Esta página é dona apenas do protesto em cartório — o registro, seus efeitos e o procedimento de cancelamento.",
+  "risks": [
+    "Não generalizar o fluxo da PGFN: a comunicação automática em até 72 horas é da dívida ativa da União, e não vale para credor privado",
+    "Não afirmar valores de emolumentos: são definidos por tabela estadual e variam",
+    "Não dizer que protesto caduca como a negativação em birô: o que faz a restrição cessar é o cancelamento do registro, que depende de providência",
+    "Não afirmar que o credor é obrigado a arcar com as custas: a página diz que o custo de saída recai sobre o devedor e que assumir é matéria de negociação",
+    "Não quantificar o impacto do protesto na análise de crédito: varia por instituição"
+  ]
+}

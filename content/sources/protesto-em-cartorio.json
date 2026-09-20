@@ -1,0 +1,65 @@
+{
+  "articleSlug": "protesto-em-cartorio",
+  "claims": [
+    {
+      "claimId": "base-legal-protesto",
+      "claimText": "O protesto é ato praticado pelo Cartório de Protesto de Títulos por falta de pagamento de obrigação, com base na Lei nº 9.492, de 10 de setembro de 1997, que define competência e regulamenta os serviços concernentes ao protesto de títulos e outros documentos de dívida.",
+      "sourceOrganization": "Presidência da República",
+      "sourceTitle": "Lei nº 9.492, de 10 de setembro de 1997",
+      "sourceLocation": "https://www.planalto.gov.br/ccivil_03/leis/l9492.htm",
+      "sourceType": "official",
+      "accessedAt": "2026-09-20",
+      "notes": "Âncora legal. Sustenta a separação, feita em tabela no artigo, entre protesto (cartório) e negativação (birô de crédito)."
+    },
+    {
+      "claimId": "restricao-enquanto-nao-cancelado",
+      "claimText": "Somente são prestadas informações restritivas de crédito oriundas de títulos ou documentos de dívida regularmente protestados cujos registros não foram cancelados.",
+      "sourceOrganization": "Presidência da República",
+      "sourceTitle": "Lei nº 9.492, de 10 de setembro de 1997",
+      "sourceLocation": "https://www.planalto.gov.br/ccivil_03/leis/l9492.htm",
+      "sourceType": "official",
+      "accessedAt": "2026-09-20",
+      "notes": "Base do argumento central: é o CANCELAMENTO do registro, e não o pagamento da dívida, que faz a restrição cessar."
+    },
+    {
+      "claimId": "custas-para-cancelar",
+      "claimText": "Após a lavratura do protesto, mesmo que o devedor recolha o débito ou efetue o parcelamento, é preciso ir ao cartório para pagamento dos emolumentos e das demais despesas cartorárias. Somente após esse pagamento o protesto é cancelado.",
+      "sourceOrganization": "Procuradoria-Geral da Fazenda Nacional",
+      "sourceTitle": "Protesto de Certidão da Dívida Ativa da União — Como proceder",
+      "sourceLocation": "https://www.gov.br/pgfn/pt-br/servicos/orientacoes-contribuintes/protesto-de-certidao-da-divida-ativa-da-uniao/como-proceder",
+      "sourceType": "official",
+      "accessedAt": "2026-09-20",
+      "notes": "Contribuição prática mais importante do artigo: existe um custo de saída, e ele recai sobre o devedor. O artigo transforma isso em orientação acionável — negociar as custas ANTES de pagar."
+    },
+    {
+      "claimId": "anuencia-automatica-pgfn",
+      "claimText": "Regularizada a dívida com a União, por pagamento ou negociação, a PGFN informa a regularização ao tabelionato em até 72 horas, eletronicamente e de modo automático, sem necessidade de pedido do contribuinte. Ainda assim, as custas do tabelionato precisam ser pagas para que haja o cancelamento.",
+      "sourceOrganization": "Procuradoria-Geral da Fazenda Nacional",
+      "sourceTitle": "Protesto de Certidão da Dívida Ativa da União — Como proceder",
+      "sourceLocation": "https://www.gov.br/pgfn/pt-br/servicos/orientacoes-contribuintes/protesto-de-certidao-da-divida-ativa-da-uniao/como-proceder",
+      "sourceType": "official",
+      "accessedAt": "2026-09-20",
+      "notes": "O artigo apresenta isso como fluxo ESPECÍFICO da dívida ativa da União e adverte expressamente que não existe automatismo equivalente quando o credor é banco, financeira ou loja."
+    },
+    {
+      "claimId": "pagamento-custas-canais",
+      "claimText": "As custas podem ser pagas diretamente no cartório responsável pelo protesto ou por boleto gerado on-line no site da Central Nacional de Protesto (CENPROT).",
+      "sourceOrganization": "Procuradoria-Geral da Fazenda Nacional",
+      "sourceTitle": "Protesto de Certidão da Dívida Ativa da União — Como proceder",
+      "sourceLocation": "https://www.gov.br/pgfn/pt-br/servicos/orientacoes-contribuintes/protesto-de-certidao-da-divida-ativa-da-uniao/como-proceder",
+      "sourceType": "official",
+      "accessedAt": "2026-09-20",
+      "notes": "Sustenta a afirmação de que não há atalho que dispense anuência e custas — base do alerta contra quem oferece 'limpar protesto' mediante pagamento antecipado."
+    },
+    {
+      "claimId": "consulta-gratuita-cenprot",
+      "claimText": "É possível consultar gratuitamente a existência de protesto em nome de pessoa física ou jurídica, por CPF ou CNPJ, na Central Nacional de Protesto (CENPROT), que também recebe pedidos de autorização para cancelamento.",
+      "sourceOrganization": "Governo Federal — gov.br",
+      "sourceTitle": "Solicitar autorização para cancelamento de protesto",
+      "sourceLocation": "https://www.gov.br/pt-br/servicos/solicitar-autorizacao-para-cancelamento-de-protesto",
+      "sourceType": "official",
+      "accessedAt": "2026-09-20",
+      "notes": "Fundamenta a recomendação de consultar os dois registros — cartório e birô —, já que checar apenas o birô produz a foto incompleta que gera a surpresa descrita na abertura."
+    }
+  ]
+}
