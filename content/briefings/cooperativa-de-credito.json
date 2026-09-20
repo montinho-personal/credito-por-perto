@@ -1,0 +1,56 @@
+{
+  "proposedTitle": "Cooperativa de crédito: você não é cliente, é dono — e isso muda a conta",
+  "primaryIntent": "cooperativa de crédito é segura e qual a diferença para banco",
+  "secondaryIntents": [
+    "cooperativa de crédito tem garantia como o FGC",
+    "preciso pagar cota para entrar em cooperativa",
+    "o que são sobras de cooperativa",
+    "taxa de cooperativa é menor que a do banco",
+    "posso vender minha cota de cooperativa"
+  ],
+  "targetReader": "Quem vai tomar crédito e tem uma cooperativa como alternativa ao banco — situação comum fora das capitais — mas não bate nessa porta por não saber o que é nem se o dinheiro está protegido.",
+  "readerSituation": "Está cotando um empréstimo e ouviu falar da cooperativa da cidade. Trava na dúvida sobre segurança e sobre o que significa 'ter que se associar'.",
+  "centralQuestion": "O que é uma cooperativa de crédito, o dinheiro está garantido, e o que muda na prática para quem opera nela em vez de num banco?",
+  "uniqueAngle": "Lacuna absoluta medida no corpus: 'cooperativa de crédito' aparecia zero vezes nos 81 artigos, embora o site instrua em toda página de crédito a pedir pelo menos duas cotações — e a cooperativa seja, em boa parte do país, uma das poucas portas alternativas ao banco.",
+  "originalContribution": "Ataca primeiro a objeção que realmente trava a decisão — 'é seguro?' — com a resposta verificada: os depósitos em cooperativas singulares captadoras e bancos cooperativos são garantidos pelo FGCoop até R$ 250 mil, de forma análoga ao FGC. Depois explica o que de fato muda, com três fatos contraintuitivos e verificados que quase nenhum conteúdo do tema reúne: (1) o voto é igual para todos, independentemente do tamanho da cota, de modo que aportar mais não dá mais poder; (2) as sobras são repartidas em proporção às OPERAÇÕES de cada associado, e a distribuição em proporção ao capital é expressamente vedada por lei — o oposto de um dividendo; (3) a cota-parte é dinheiro do associado, mas não é depósito: não pode ser vendida, e a devolução depende de demissão do quadro social e de não desenquadrar os limites operacionais da cooperativa. Daí a advertência prática de não tratar a cota como reserva de liquidez, e de somá-la na comparação do primeiro ano.",
+  "primarySources": [
+    "Banco Central — O que é cooperativa de crédito",
+    "Lei Complementar nº 130, de 17 de abril de 2009",
+    "Banco Central — Fundos garantidores e mecanismos de ressarcimento (FGCoop)"
+  ],
+  "supportingSources": [
+    "Lei nº 5.764, de 16 de dezembro de 1971, art. 24, § 3º",
+    "Banco Central — Panorama do Sistema Nacional de Crédito Cooperativo"
+  ],
+  "contentArchetype": "guia-decisao",
+  "proposedStructure": [
+    "A instrução de pedir duas cotações e a porta que ninguém abre",
+    "O que é, na definição do regulador",
+    "Meu dinheiro está garantido?",
+    "O que muda de verdade: seu papel",
+    "Como comparar com um banco",
+    "Onde isso costuma pesar mais",
+    "O que pode mudar",
+    "FAQ"
+  ],
+  "internalLinks": [
+    "como-consultar-se-instituicao-e-autorizada",
+    "o-que-e-cet",
+    "tarifas-bancarias-gratuitas",
+    "como-comparar-propostas-de-credito",
+    "microcredito-produtivo-e-banco-do-povo",
+    "emprestimo-para-mei",
+    "credito-rural-e-pronaf"
+  ],
+  "toolIntegrations": [
+    "comparador-de-propostas"
+  ],
+  "antiCannibalization": "como-comparar-propostas-de-credito continua dono do método de comparação; como-consultar-se-instituicao-e-autorizada continua dono da verificação de autorização; tarifas-bancarias-gratuitas continua dono dos serviços gratuitos por norma; microcredito-produtivo-e-banco-do-povo e credito-rural-e-pronaf continuam donos dos respectivos programas públicos. Esta página é dona apenas da cooperativa de crédito como tipo de instituição — o que é, como o associado se posiciona nela e como compará-la.",
+  "risks": [
+    "NÃO afirmar que a taxa da cooperativa é sempre menor: não há garantia, e a página diz isso explicitamente",
+    "Não tratar a cota-parte como depósito nem como reserva de liquidez: a devolução depende de demissão do quadro social e dos limites operacionais",
+    "Não apresentar o FGCoop como idêntico ao FGC: a fonte fala em garantia análoga, e o alcance é de cooperativas singulares captadoras e bancos cooperativos",
+    "Não afirmar presença geográfica de cooperativas por região sem dado verificado",
+    "Não dispensar a verificação de autorização da cooperativa específica no Banco Central"
+  ]
+}

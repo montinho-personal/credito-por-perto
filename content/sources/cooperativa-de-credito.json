@@ -1,0 +1,65 @@
+{
+  "articleSlug": "cooperativa-de-credito",
+  "claims": [
+    {
+      "claimId": "definicao-cooperativa",
+      "claimText": "Cooperativa de crédito é instituição financeira formada pela associação de pessoas para prestar serviços financeiros exclusivamente aos seus associados. Os cooperados são ao mesmo tempo donos e usuários da cooperativa, participando de sua gestão e usufruindo de seus produtos e serviços.",
+      "sourceOrganization": "Banco Central do Brasil",
+      "sourceTitle": "O que é cooperativa de crédito",
+      "sourceLocation": "https://www.bcb.gov.br/pre/composicao/coopcred.asp?frame=1",
+      "sourceType": "official",
+      "accessedAt": "2026-09-20",
+      "notes": "A expressão 'exclusivamente aos seus associados' é o que explica a exigência de associação e, portanto, a existência da cota-parte."
+    },
+    {
+      "claimId": "voto-igual",
+      "claimText": "Os associados têm poder igual de voto, independentemente da sua cota de participação no capital social da cooperativa.",
+      "sourceOrganization": "Banco Central do Brasil",
+      "sourceTitle": "O que é cooperativa de crédito",
+      "sourceLocation": "https://www.bcb.gov.br/pre/composicao/coopcred.asp?frame=1",
+      "sourceType": "official",
+      "accessedAt": "2026-09-20",
+      "notes": "Fato contraintuitivo para quem compara com sociedade por ações: aportar mais não dá mais poder de decisão."
+    },
+    {
+      "claimId": "cota-parte-nao-se-vende",
+      "claimText": "O associado não pode vender sua participação, mas tem o direito de pedir demissão e receber o valor contábil de sua cota-parte, desde que isso não implique desenquadramento dos limites operacionais da cooperativa, conforme o art. 10 da Lei Complementar nº 130, de 2009.",
+      "sourceOrganization": "Presidência da República",
+      "sourceTitle": "Lei Complementar nº 130, de 17 de abril de 2009",
+      "sourceLocation": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp130.htm",
+      "sourceType": "official",
+      "accessedAt": "2026-09-20",
+      "notes": "Base da advertência prática do artigo: a cota-parte é dinheiro do associado, mas NÃO é depósito nem reserva de liquidez, e a ressalva dos limites operacionais precisa ser lida antes de tratá-la como tal."
+    },
+    {
+      "claimId": "sobras-por-operacao",
+      "claimText": "O resultado positivo da cooperativa é conhecido como sobra e é repartido entre os cooperados em proporção às operações que cada associado realiza com a cooperativa. A distribuição de sobras e perdas em proporção ao capital é expressamente vedada pela Lei nº 5.764, de 1971, art. 24, § 3º, e pela Lei Complementar nº 130, de 2009.",
+      "sourceOrganization": "Banco Central do Brasil",
+      "sourceTitle": "O que é cooperativa de crédito",
+      "sourceLocation": "https://www.bcb.gov.br/pre/composicao/coopcred.asp?frame=1",
+      "sourceType": "official",
+      "accessedAt": "2026-09-20",
+      "notes": "O artigo descreve isso como o oposto de um dividendo: ganha-se por usar, não por aportar. É a diferença estrutural mais relevante para o leitor."
+    },
+    {
+      "claimId": "fgcoop-250-mil",
+      "claimText": "O Fundo Garantidor do Cooperativismo de Crédito (FGCoop) garante depósitos e créditos mantidos em cooperativas singulares captadoras de depósitos e em bancos cooperativos, em caso de intervenção ou liquidação extrajudicial, até o limite de R$ 250 mil — de forma análoga ao que o FGC faz no sistema bancário.",
+      "sourceOrganization": "Banco Central do Brasil",
+      "sourceTitle": "Fundos garantidores e mecanismos de ressarcimento",
+      "sourceLocation": "https://www3.bcb.gov.br/aplica/mliq_r/manual/0902177186706a12.htm",
+      "sourceType": "official",
+      "accessedAt": "2026-09-20",
+      "notes": "Resposta à objeção que mais trava a decisão. O artigo mantém a palavra 'análoga' da fonte e não equipara o FGCoop ao FGC, além de delimitar o alcance a cooperativas singulares captadoras e bancos cooperativos."
+    },
+    {
+      "claimId": "tres-niveis",
+      "claimText": "No Brasil, as cooperativas de crédito são organizadas em até três níveis: cooperativas de crédito singulares, cooperativas centrais de crédito e confederações de centrais. As singulares são as que realizam as operações diretamente com os associados.",
+      "sourceOrganization": "Banco Central do Brasil",
+      "sourceTitle": "O que é cooperativa de crédito",
+      "sourceLocation": "https://www.bcb.gov.br/pre/composicao/coopcred.asp?frame=1",
+      "sourceType": "official",
+      "accessedAt": "2026-09-20",
+      "notes": "Ajuda o leitor a entender com quem ele efetivamente opera, e casa com o alcance da garantia do FGCoop, que é das singulares captadoras e dos bancos cooperativos."
+    }
+  ]
+}
