@@ -1,0 +1,75 @@
+{
+  "articleSlug": "titulo-de-capitalizacao",
+  "claims": [
+    {
+      "claimId": "definicao-titulo",
+      "claimText": "O título de capitalização é representado por um contrato celebrado com sociedade de capitalização regularmente autorizada a operar pela Susep, em que parte dos pagamentos realizados pelo subscritor é usada para formar um capital, segundo cláusulas e regras aprovadas e mencionadas no próprio título.",
+      "sourceOrganization": "Susep — Superintendência de Seguros Privados",
+      "sourceTitle": "Perguntas Frequentes — Capitalização",
+      "sourceLocation": "https://www.gov.br/susep/pt-br/copy_of_planos-e-produtos/capitalizacao/perguntas-frequentes-1/capitalizacao",
+      "sourceType": "official",
+      "accessedAt": "2026-09-20",
+      "notes": "A expressão 'parte dos pagamentos' é o fio do artigo inteiro. O produto é regulado e legítimo — a página não o trata como fraude em momento algum."
+    },
+    {
+      "claimId": "nao-e-poupanca",
+      "claimText": "Título de capitalização não é a mesma coisa que caderneta de poupança. Seu capital de resgate será sempre inferior ao capital constituído por aplicações idênticas na caderneta de poupança, já que dos pagamentos efetuados num título desconta-se uma parte para custear as despesas administrativas das sociedades de capitalização e, quando há sorteios, uma parcela para custear as premiações.",
+      "sourceOrganization": "Susep — Superintendência de Seguros Privados",
+      "sourceTitle": "Perguntas Frequentes — Capitalização",
+      "sourceLocation": "https://www.gov.br/susep/pt-br/copy_of_planos-e-produtos/capitalizacao/perguntas-frequentes-1/capitalizacao",
+      "sourceType": "official",
+      "accessedAt": "2026-09-20",
+      "notes": "Citada textualmente e atribuída ao regulador. Resolve o problema editorial do tema: a afirmação desfavorável não é veredito do portal, é da Susep — o que permite publicá-la sem violar a regra de não recomendar nem desaconselhar."
+    },
+    {
+      "claimId": "composicao-das-cotas",
+      "claimText": "Cada pagamento apresenta, em geral, três componentes: cota de capitalização, cota de sorteio e cota de carregamento. A cota de carregamento é o montante deduzido para cobrir custos de corretagem, colocação e administração do título. A provisão matemática, que forma o valor de resgate, é constituída sobre a parte destinada à cota de capitalização, e é somente sobre essa provisão que incidem juros e atualização monetária.",
+      "sourceOrganization": "Susep — Superintendência de Seguros Privados",
+      "sourceTitle": "Manual Técnico de Títulos de Capitalização — normativos comentados",
+      "sourceLocation": "https://www.gov.br/susep/pt-br/arquivos/arquivos-planos-e-produtos/manual-tecnico-de-capitalizacao.pdf",
+      "sourceType": "official",
+      "accessedAt": "2026-09-20",
+      "notes": "Explica a mecânica que sustenta a frase do regulador: o que não vai para a cota de capitalização não rende para o titular porque já foi consumido em custeio e prêmios."
+    },
+    {
+      "claimId": "percentual-70-capitalizacao",
+      "claimText": "Os percentuais dos pagamentos destinados à cota de capitalização são de 70% nas modalidades tradicional e instrumento de garantia, qualquer que seja o prazo de vigência do título.",
+      "sourceOrganization": "Susep — Superintendência de Seguros Privados",
+      "sourceTitle": "Circular Susep nº 656, de 11 de março de 2022",
+      "sourceLocation": "https://www2.susep.gov.br/safe/scripts/bnweb/bnmapi.exe?router=upload%2F25810",
+      "sourceType": "official",
+      "accessedAt": "2026-09-20",
+      "notes": "O artigo restringe o número às duas modalidades verificadas e NÃO o generaliza para as demais."
+    },
+    {
+      "claimId": "sorteio-acessorio",
+      "claimText": "Conceitualmente, o principal objetivo de um título de capitalização é a própria capitalização, devendo o sorteio ter caráter acessório e secundário.",
+      "sourceOrganization": "Susep — Superintendência de Seguros Privados",
+      "sourceTitle": "Manual Técnico de Títulos de Capitalização — normativos comentados",
+      "sourceLocation": "https://www.gov.br/susep/pt-br/arquivos/arquivos-planos-e-produtos/manual-tecnico-de-capitalizacao.pdf",
+      "sourceType": "official",
+      "accessedAt": "2026-09-20",
+      "notes": "Transformado em régua prática na página: oferta centrada em prêmio está descrevendo o acessório, não o produto."
+    },
+    {
+      "claimId": "carencia-e-prazo-de-resgate",
+      "claimText": "Existe carência de 60 dias para o resgate do título de capitalização. O pagamento do resgate deve ser disponibilizado em até quinze dias corridos, contados da entrega da documentação completa, após o término da vigência, após o cancelamento do título ou após a solicitação do titular, no caso de resgate antecipado.",
+      "sourceOrganization": "Susep — Superintendência de Seguros Privados",
+      "sourceTitle": "Circular Susep nº 656, de 11 de março de 2022",
+      "sourceLocation": "https://www2.susep.gov.br/safe/scripts/bnweb/bnmapi.exe?router=upload%2F25810",
+      "sourceType": "official",
+      "accessedAt": "2026-09-20",
+      "notes": "O artigo distingue carência de resgate de prazo de vigência, que são confundidos com frequência."
+    },
+    {
+      "claimId": "modalidade-instrumento-de-garantia",
+      "claimText": "Na modalidade instrumento de garantia, o titular pode utilizar o saldo de capitalização do título para assegurar o cumprimento de obrigação assumida em contrato principal perante terceiro. O saldo capitalizado não pode ser utilizado para aquisição de bem ou serviço, e a ficha de cadastro deve conter o nome e o CPF ou CNPJ do terceiro a quem se destina a garantia.",
+      "sourceOrganization": "Susep — Superintendência de Seguros Privados",
+      "sourceTitle": "Circular Susep nº 656, de 11 de março de 2022",
+      "sourceLocation": "https://www2.susep.gov.br/safe/scripts/bnweb/bnmapi.exe?router=upload%2F25810",
+      "sourceType": "official",
+      "accessedAt": "2026-09-20",
+      "notes": "Base do uso como garantia locatícia, que é a porta pela qual o produto entra no escopo deste portal — alternativa ao fiador."
+    }
+  ]
+}

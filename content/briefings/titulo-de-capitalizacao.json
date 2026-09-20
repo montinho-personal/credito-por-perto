@@ -1,0 +1,52 @@
+{
+  "proposedTitle": "Título de capitalização: o que a Susep diz que ele não é",
+  "primaryIntent": "título de capitalização é investimento vale a pena",
+  "secondaryIntents": [
+    "quanto do pagamento do título vira saldo de resgate",
+    "título de capitalização tem carência para resgatar",
+    "título de capitalização como garantia de aluguel",
+    "banco condicionou empréstimo à compra de título",
+    "título de capitalização rende menos que a poupança"
+  ],
+  "targetReader": "Quem recebeu a oferta no balcão do banco como forma de guardar dinheiro, quem vai usar o título como garantia de aluguel no lugar de um fiador, e quem já contratou e não entende por que o resgate é menor do que pagou.",
+  "readerSituation": "Foi apresentado ao produto com ênfase nos sorteios, ou como alternativa à poupança. Ou precisa alugar um imóvel e a imobiliária ofereceu o título como garantia.",
+  "centralQuestion": "O que é um título de capitalização, para onde vai o dinheiro pago, e em que situações ele faz sentido?",
+  "uniqueAngle": "Lacuna medida no corpus: 'capitalização' aparecia em 1 dos 80 artigos — uma menção lateral em fiador-ou-avalista, sobre alternativas em locação. Nenhuma página tratava do produto.",
+  "originalContribution": "Resolve o problema editorial do tema sem que o portal precise emitir veredito: a afirmação decisiva é do próprio regulador. A Susep diz textualmente que título de capitalização não é o mesmo que caderneta de poupança e que o capital de resgate SERÁ SEMPRE INFERIOR ao de aplicações idênticas na poupança, porque parte dos pagamentos custeia despesas administrativas e premiações. A partir daí o artigo mostra a mecânica que explica a frase — a divisão de cada pagamento em cotas de capitalização, sorteio e carregamento, e o fato de que só a cota de capitalização forma a provisão sobre a qual incidem juros e atualização — e publica o percentual verificado: 70% para a cota de capitalização nas modalidades tradicional e instrumento de garantia, qualquer que seja o prazo. Acrescenta a régua de venda que a própria definição do produto oferece: o sorteio tem caráter acessório e secundário, então oferta centrada em prêmio está descrevendo o acessório. E detalha a modalidade instrumento de garantia, usada como garantia locatícia, com suas restrições próprias.",
+  "primarySources": [
+    "Susep — Perguntas Frequentes sobre Capitalização",
+    "Susep — Manual Técnico de Títulos de Capitalização",
+    "Circular Susep nº 656, de 11 de março de 2022"
+  ],
+  "supportingSources": [
+    "Susep — Modalidades de títulos de capitalização"
+  ],
+  "contentArchetype": "guia-decisao",
+  "proposedStructure": [
+    "As três situações em que o título aparece",
+    "O que é, juridicamente",
+    "A frase do regulador",
+    "Para onde vai o seu dinheiro",
+    "Sorteio é acessório, não é o produto",
+    "Onde ele encosta em crédito",
+    "O que perguntar antes de assinar",
+    "O que pode mudar",
+    "FAQ"
+  ],
+  "internalLinks": [
+    "fiador-ou-avalista",
+    "seguro-prestamista",
+    "reserva-de-emergencia"
+  ],
+  "toolIntegrations": [
+    "parcela-no-orcamento"
+  ],
+  "antiCannibalization": "seguro-prestamista continua dono da venda casada e dos produtos condicionados à aprovação de crédito — esta página aponta para lá em vez de repetir o tema; fiador-ou-avalista continua dono das garantias pessoais em locação; reserva-de-emergencia continua dona do desenho do colchão de liquidez. Esta página é dona apenas do título de capitalização como produto.",
+  "risks": [
+    "Não chamar o produto de golpe nem de fraude: é produto regulado, vendido por sociedades autorizadas pela Susep",
+    "Não dar veredito próprio sobre valer a pena: a afirmação desfavorável publicada é do regulador, citada como tal",
+    "Não generalizar o percentual de 70% para todas as modalidades: a verificação cobre tradicional e instrumento de garantia",
+    "Não afirmar valores de resgate nem rentabilidade: dependem do título, do prazo e do momento do resgate",
+    "Não confundir carência de resgate com prazo de vigência do título"
+  ]
+}

@@ -624,5 +624,11 @@
       "/organizacao-financeira/dinheiro-urgente/",
       "/emprestimos/saque-aniversario-vale-a-pena/"
     ]
+  },
+  "título de capitalização é investimento vale a pena": {
+    "canonicalOwner": "/organizacao-financeira/titulo-de-capitalizacao/",
+    "supportingPages": [
+      "/organizacao-financeira/fiador-ou-avalista/"
+    ]
   }
 }
