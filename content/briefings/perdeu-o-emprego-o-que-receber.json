@@ -1,0 +1,56 @@
+{
+  "proposedTitle": "Perdeu o emprego: o que você tem a receber antes de pensar em crédito",
+  "primaryIntent": "fui demitido o que tenho a receber antes de pegar emprestimo",
+  "secondaryIntents": [
+    "prazo para pedir seguro-desemprego",
+    "quantas parcelas de seguro-desemprego tenho direito",
+    "estou no saque-aniversário e fui demitido posso sacar",
+    "dei fgts em garantia de consignado e fui demitido",
+    "vale a pena pegar empréstimo desempregado"
+  ],
+  "targetReader": "Quem acabou de ser demitido sem justa causa e está a poucos dias de procurar crédito caro para atravessar o mês.",
+  "readerSituation": "A renda parou, as contas não. A reação imediata é buscar dinheiro novo — cartão, cheque especial, empréstimo pessoal — sem ter somado o que já tem a receber, e sem saber que parte disso pode estar retida ou comprometida.",
+  "centralQuestion": "O que entra de dinheiro depois de uma demissão sem justa causa, em que prazos, e o que pode já estar comprometido — antes de decidir tomar crédito?",
+  "uniqueAngle": "Lacuna medida no corpus: 'seguro-desemprego' aparecia em 2 dos 79 artigos, sempre de passagem, e nenhuma página tratava do momento da demissão. O site tem escada de dinheiro urgente, reserva de emergência e dois guias de FGTS, mas nada que fizesse o inventário do que se recebe ao perder o emprego.",
+  "originalContribution": "Inverte a ordem que a urgência impõe: soma primeiro o que já é seu, procura crédito depois. E reúne três informações que vivem separadas e que, juntas, mudam a conta. (1) A janela do seguro-desemprego é de 7 a 120 dias do desligamento — prazo fácil de perder justamente porque os primeiros dias após a demissão são desorganizados, e o artigo transforma isso em ação concreta: marcar a data ao assinar a rescisão. (2) A armadilha do FGTS: quem está no saque-aniversário e é dispensado saca APENAS a multa rescisória, e o saldo fica retido — é exatamente o vácuo em que entra o crédito caro. (3) O dinheiro que já tem dono: o Crédito do Trabalhador permite vincular até 10% do saldo do FGTS e a multa rescisória como garantia, de modo que quem usou essa opção encontra o valor comprometido quando mais precisa dele.",
+  "primarySources": [
+    "Ministério do Trabalho e Emprego — Seguro-Desemprego Formal (requisitos, tempo de trabalho por solicitação, número de parcelas, prazo de 7 a 120 dias)",
+    "Caixa Econômica Federal — Saque-Aniversário do FGTS (saque apenas da multa rescisória na dispensa)",
+    "Caixa Econômica Federal — Condições para receber o Seguro-Desemprego"
+  ],
+  "supportingSources": [
+    "FGTS — Saque Dispensa Sem Justa Causa"
+  ],
+  "contentArchetype": "guia-decisao",
+  "proposedStructure": [
+    "A reação previsível e a ordem inversa",
+    "Primeiro: o seguro-desemprego, e o relógio dele",
+    "Segundo: o FGTS, e a pegadinha que pega muita gente",
+    "Terceiro: o que você pode ter comprometido sem lembrar",
+    "A ordem que economiza dinheiro",
+    "Se as dívidas já não cabem",
+    "O que pode mudar",
+    "FAQ"
+  ],
+  "internalLinks": [
+    "saque-aniversario-vale-a-pena",
+    "antecipacao-saque-aniversario-fgts",
+    "credito-do-trabalhador",
+    "dinheiro-urgente",
+    "como-negociar-dividas",
+    "lei-do-superendividamento",
+    "cobranca-abusiva-o-que-o-credor-nao-pode-fazer",
+    "reserva-de-emergencia"
+  ],
+  "toolIntegrations": [
+    "parcela-no-orcamento"
+  ],
+  "antiCannibalization": "saque-aniversario-vale-a-pena continua dono da DECISÃO entre as duas sistemáticas do FGTS e do custo de voltar atrás — esta página apenas constata a consequência de quem já aderiu e aponta para lá; antecipacao-saque-aniversario-fgts continua dono da operação de antecipação; credito-do-trabalhador continua dono do consignado CLT e da cláusula de demissão; dinheiro-urgente continua dono da escada de opções quando falta dinheiro; reserva-de-emergencia continua dona da reconstrução do colchão. Esta página é dona apenas do inventário do que se recebe após a dispensa e dos prazos que o regem.",
+  "risks": [
+    "Não detalhar as regras recentes do saque-aniversário, alteradas em 2025 e ainda em ajuste: o artigo sinaliza a mudança e manda confirmar no aplicativo do FGTS",
+    "Não publicar faixas de valor do seguro-desemprego, que são revistas periodicamente",
+    "Não opinar sobre enquadramento de justa causa: é discussão trabalhista, e a página encaminha para orientação jurídica",
+    "Não dar veredito sobre contratar crédito desempregado: registra o padrão de custo, sem recomendar nem proibir",
+    "Não afirmar que o retorno ao saque-rescisão libera o saque da demissão em curso: ele vale para a frente"
+  ]
+}

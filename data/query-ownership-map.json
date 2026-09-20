@@ -617,5 +617,12 @@
       "/emprestimos/emprestimo-para-mei/",
       "/emprestimos/microcredito-produtivo-e-banco-do-povo/"
     ]
+  },
+  "fui demitido o que tenho a receber antes de pegar emprestimo": {
+    "canonicalOwner": "/organizacao-financeira/perdeu-o-emprego-o-que-receber/",
+    "supportingPages": [
+      "/organizacao-financeira/dinheiro-urgente/",
+      "/emprestimos/saque-aniversario-vale-a-pena/"
+    ]
   }
 }

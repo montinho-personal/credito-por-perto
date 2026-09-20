@@ -1,0 +1,65 @@
+{
+  "articleSlug": "perdeu-o-emprego-o-que-receber",
+  "claims": [
+    {
+      "claimId": "requisitos-seguro-desemprego",
+      "claimText": "Para receber o seguro-desemprego o trabalhador deve ter sido dispensado sem justa causa, ter sido empregado de pessoa jurídica ou física a ela equiparada, não possuir renda própria suficiente à sua manutenção — considerando-se renda própria valor igual ou superior ao salário mínimo — e não estar em gozo de benefício de prestação continuada da Previdência Social, excetuados o auxílio-acidente e a pensão por morte.",
+      "sourceOrganization": "Ministério do Trabalho e Emprego",
+      "sourceTitle": "Seguro-Desemprego Formal",
+      "sourceLocation": "https://www.gov.br/trabalho-e-emprego/pt-br/servicos/trabalhador/seguro-desemprego/seguro-desemprego-formal",
+      "sourceType": "official",
+      "accessedAt": "2026-09-20",
+      "notes": "Sustenta também a resposta sobre justa causa, em que o artigo se limita a apontar o requisito e encaminhar para orientação jurídica, sem opinar sobre enquadramento."
+    },
+    {
+      "claimId": "tempo-trabalhado-por-solicitacao",
+      "claimText": "O tempo de trabalho exigido varia conforme o número de solicitações: na primeira, ao menos 12 meses nos últimos 18 imediatamente anteriores à dispensa; na segunda, ao menos 9 meses nos últimos 12; da terceira em diante, cada um dos 6 meses imediatamente anteriores à dispensa.",
+      "sourceOrganization": "Ministério do Trabalho e Emprego",
+      "sourceTitle": "Seguro-Desemprego Formal",
+      "sourceLocation": "https://www.gov.br/trabalho-e-emprego/pt-br/servicos/trabalhador/seguro-desemprego/seguro-desemprego-formal",
+      "sourceType": "official",
+      "accessedAt": "2026-09-20",
+      "notes": "Publicado em tabela no artigo. É informação que muda o direito de quem já recorreu ao benefício antes e costuma ser tratada como regra única."
+    },
+    {
+      "claimId": "parcelas-seguro-desemprego",
+      "claimText": "O seguro-desemprego é pago em três a cinco parcelas, de forma contínua ou alternada, de acordo com o tempo trabalhado nos 36 meses anteriores à data da dispensa.",
+      "sourceOrganization": "Caixa Econômica Federal",
+      "sourceTitle": "Condições para receber o Seguro-Desemprego — Trabalhador Formal",
+      "sourceLocation": "https://www.caixa.gov.br/Downloads/seguro-desemprego/Condicoes_SDE.pdf",
+      "sourceType": "official",
+      "accessedAt": "2026-09-20",
+      "notes": "O artigo não publica faixas de valor das parcelas, que são revistas periodicamente."
+    },
+    {
+      "claimId": "prazo-7-a-120-dias",
+      "claimText": "O trabalhador formal tem prazo de 7 a 120 dias após a data do desligamento para requerer o seguro-desemprego.",
+      "sourceOrganization": "Ministério do Trabalho e Emprego",
+      "sourceTitle": "Seguro-Desemprego Formal",
+      "sourceLocation": "https://www.gov.br/trabalho-e-emprego/pt-br/servicos/trabalhador/seguro-desemprego/seguro-desemprego-formal",
+      "sourceType": "official",
+      "accessedAt": "2026-09-20",
+      "notes": "Transformado em ação concreta no artigo: marcar a data no dia em que a rescisão for assinada. Perder a janela significa perder o benefício inteiro."
+    },
+    {
+      "claimId": "saque-aniversario-na-demissao",
+      "claimText": "O trabalhador que optou pelo saque-aniversário e é dispensado sem justa causa pode sacar apenas o valor referente à multa rescisória; o saldo remanescente na conta do FGTS fica disponível nos saques-aniversário futuros ou nas demais hipóteses previstas em lei. Quem está no saque-rescisão tem direito ao saque integral da conta, incluindo a multa quando devida.",
+      "sourceOrganization": "Caixa Econômica Federal",
+      "sourceTitle": "Saque-Aniversário do FGTS",
+      "sourceLocation": "https://www.caixa.gov.br/beneficios-trabalhador/fgts/saque-FGTS/Paginas/default.aspx",
+      "sourceType": "official",
+      "accessedAt": "2026-09-20",
+      "notes": "Ponto central do artigo: é o vácuo entre o dinheiro esperado e o dinheiro disponível que empurra o recém-demitido para o crédito caro. A DECISÃO entre as sistemáticas segue sendo tratada em saque-aniversario-vale-a-pena."
+    },
+    {
+      "claimId": "retorno-ao-saque-rescisao",
+      "claimText": "O trabalhador que optou pelo saque-aniversário pode solicitar o retorno à sistemática do saque-rescisão pelo aplicativo do FGTS ou em agência da Caixa, desde que não haja operação de antecipação contratada.",
+      "sourceOrganization": "Caixa Econômica Federal",
+      "sourceTitle": "Saque-Aniversário do FGTS",
+      "sourceLocation": "https://www.caixa.gov.br/beneficios-trabalhador/fgts/saque-FGTS/Paginas/default.aspx",
+      "sourceType": "official",
+      "accessedAt": "2026-09-20",
+      "notes": "O artigo adverte que o retorno não libera o saque da demissão em curso — vale para a frente. As regras do saque-aniversário foram alteradas em 2025 e o artigo remete à conferência no aplicativo em vez de detalhá-las."
+    }
+  ]
+}
