@@ -1,0 +1,54 @@
+{
+  "proposedTitle": "Conta de luz atrasada: as regras do corte, e o desconto que você pode já ter",
+  "primaryIntent": "conta de luz atrasada quando podem cortar e como evitar",
+  "secondaryIntents": [
+    "com quantos dias de atraso cortam a luz",
+    "podem cortar energia no fim de semana",
+    "em quanto tempo religam depois que eu pago",
+    "como pedir tarifa social de energia",
+    "vale a pena pegar empréstimo para pagar a luz"
+  ],
+  "targetReader": "Quem está com a conta de luz atrasada e sob ameaça de corte — e, por causa do susto, está a um passo de tomar crédito caro para quitá-la.",
+  "readerSituation": "Recebeu aviso de corte, ou ligação dizendo que a energia será cortada, e não sabe o que a norma permite. Muitas vezes se enquadraria na Tarifa Social e não sabe.",
+  "centralQuestion": "Quando o corte pode legalmente acontecer, que prazos protegem o consumidor, e o que se pode deixar de dever antes de pensar em crédito?",
+  "uniqueAngle": "Lacuna absoluta medida no corpus: 'corte de energia' e 'corte de luz' apareciam zero vezes nos 82 artigos, apesar de o cluster de dívidas ter nove páginas. Faltava a única dívida doméstica cuja consequência não é juro, e sim a interrupção de um serviço essencial — que é justamente a que mais empurra gente para o crédito caro no susto.",
+  "originalContribution": "Enriquece a tese de qual-divida-pagar-primeiro em vez de repeti-la: aquela página ordena por custo, e esta mostra a classe de dívida que fura a fila por outro motivo — a consequência ser de outra natureza. Reúne três marcadores objetivos da Resolução Normativa nº 1.000/2021 da ANEEL que funcionam como filtro contra cobrança irregular: aviso mínimo de 15 dias por falta de pagamento, proibição de corte às sextas, sábados, domingos, feriados e vésperas de feriado, e religação em até 24 horas na área urbana e 48 na rural. E traz o achado que muda a conta de muita família e que praticamente nenhum conteúdo do tema destaca: a gratuidade da Tarifa Social é concedida AUTOMATICAMENTE, por cruzamento entre CadÚnico e cadastro da distribuidora — não existe pedido a fazer, e o que se perde é o CadÚnico desatualizado ou o CPF não vinculado à unidade consumidora.",
+  "primarySources": [
+    "ANEEL — Resolução Normativa nº 1.000/2021 (aviso prévio, dias vedados, prazos de religação)",
+    "ANEEL — Como resolver: principais dúvidas do consumidor",
+    "Ministério de Minas e Energia / MDS — Tarifa Social de Energia Elétrica e programa Luz do Povo"
+  ],
+  "supportingSources": [
+    "ANEEL — Tarifa Social"
+  ],
+  "contentArchetype": "guia-direitos",
+  "proposedStructure": [
+    "A dívida que foge da ordem por custo",
+    "As regras do corte",
+    "Ameaça de corte fora das regras é cobrança irregular",
+    "Antes de pegar dinheiro emprestado: você pode não dever nada",
+    "A ordem que evita o crédito caro",
+    "Quando a conta de luz entra na conta das dívidas",
+    "O que pode mudar",
+    "FAQ"
+  ],
+  "internalLinks": [
+    "qual-divida-pagar-primeiro",
+    "cobranca-abusiva-o-que-o-credor-nao-pode-fazer",
+    "consignado-para-quem-recebe-bpc",
+    "dinheiro-urgente",
+    "como-negociar-dividas",
+    "lei-do-superendividamento"
+  ],
+  "toolIntegrations": [
+    "plano-para-sair-das-dividas"
+  ],
+  "antiCannibalization": "qual-divida-pagar-primeiro continua dono da ordem de ataque por custo — esta página apenas acrescenta a exceção e aponta para lá; cobranca-abusiva continua dono dos limites de conduta na cobrança; como-negociar-dividas continua dono do método de negociação; dinheiro-urgente continua dono da escada de crédito de emergência; consignado-para-quem-recebe-bpc continua dono do BPC. Esta página é dona apenas da conta de energia — regras de suspensão, religação e Tarifa Social.",
+  "risks": [
+    "Não afirmar número de dias de atraso para o corte: a norma fixa o prazo do AVISO, não do atraso",
+    "Não apresentar os percentuais de desconto da segunda faixa como valor fixo: dependem da composição tarifária de cada distribuidora",
+    "Não tratar as faixas da Tarifa Social como permanentes: foram alteradas recentemente e seguem sujeitas a regulamentação",
+    "Não afirmar que a conta de luz é sempre prioridade sobre as demais dívidas: a página explica por que ela foge da ordem por custo, sem transformar isso em regra absoluta",
+    "Não sugerir religação por conta própria em nenhuma hipótese"
+  ]
+}

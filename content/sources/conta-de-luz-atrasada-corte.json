@@ -1,0 +1,65 @@
+{
+  "articleSlug": "conta-de-luz-atrasada-corte",
+  "claims": [
+    {
+      "claimId": "aviso-previo-15-dias",
+      "claimText": "A distribuidora precisa avisar o consumidor sobre a suspensão do fornecimento, por escrito ou impresso, com destaque na fatura, com antecedência mínima de três dias por razões técnicas ou de segurança, ou de quinze dias nos casos de falta de pagamento. Antes de cortar, deve informar por escrito o dia inicial da suspensão.",
+      "sourceOrganization": "ANEEL — Agência Nacional de Energia Elétrica",
+      "sourceTitle": "Como resolver: principais dúvidas (Resolução Normativa nº 1.000/2021)",
+      "sourceLocation": "https://www.gov.br/aneel/pt-br/consumidores/como-resolver",
+      "sourceType": "official",
+      "accessedAt": "2026-09-20",
+      "notes": "O artigo destaca que a norma fixa o prazo do AVISO, e não um número de dias de atraso — distinção que a pergunta mais comum do tema embaralha."
+    },
+    {
+      "claimId": "dias-vedados-para-corte",
+      "claimText": "As distribuidoras não podem suspender o fornecimento de energia às sextas-feiras, aos sábados, aos domingos, em feriados ou em véspera de feriado.",
+      "sourceOrganization": "ANEEL — Agência Nacional de Energia Elétrica",
+      "sourceTitle": "Como resolver: principais dúvidas (Resolução Normativa nº 1.000/2021)",
+      "sourceLocation": "https://www.gov.br/aneel/pt-br/consumidores/como-resolver",
+      "sourceType": "official",
+      "accessedAt": "2026-09-20",
+      "notes": "Usado no artigo como marcador objetivo de cobrança irregular: ameaça de corte para um sábado descreve algo que a norma não permite."
+    },
+    {
+      "claimId": "prazo-religacao",
+      "claimText": "Resolvido o motivo da suspensão, a distribuidora deve restabelecer o fornecimento em até 24 horas nas áreas urbanas e 48 horas nas áreas rurais.",
+      "sourceOrganization": "ANEEL — Agência Nacional de Energia Elétrica",
+      "sourceTitle": "Como resolver: principais dúvidas (Resolução Normativa nº 1.000/2021)",
+      "sourceLocation": "https://www.gov.br/aneel/pt-br/consumidores/como-resolver",
+      "sourceType": "official",
+      "accessedAt": "2026-09-20",
+      "notes": "Terceiro marcador do filtro proposto ao leitor, ao lado do aviso de 15 dias e dos dias vedados."
+    },
+    {
+      "claimId": "gratuidade-tarifa-social",
+      "claimText": "Famílias inscritas no CadÚnico com renda mensal de até meio salário mínimo por pessoa que consomem até 80 kWh por mês não pagam pela energia consumida, restando apenas a contribuição de iluminação pública e o ICMS, conforme a legislação municipal e estadual. O benefício alcança também idosos e pessoas com deficiência que recebem o BPC, famílias indígenas e quilombolas inscritas no CadÚnico e consumidores atendidos por sistemas isolados com geração por painel solar e bateria.",
+      "sourceOrganization": "Ministério do Desenvolvimento e Assistência Social, Família e Combate à Fome",
+      "sourceTitle": "Luz do Povo: gratuidade na tarifa de energia para quem consome até 80 kWh está vigente",
+      "sourceLocation": "https://www.gov.br/mds/pt-br/noticias-e-conteudos/desenvolvimento-social/noticias-desenvolvimento-social/luz-do-povo-gratuidade-na-tarifa-de-energia-para-quem-consome-ate-80-kwh-esta-vigente",
+      "sourceType": "official",
+      "accessedAt": "2026-09-20",
+      "notes": "Base da tese central da página: antes de tomar crédito para pagar a conta, verificar se há direito a não pagar pelo consumo."
+    },
+    {
+      "claimId": "segunda-faixa-desconto",
+      "claimText": "Desde 1º de janeiro de 2026, famílias do CadÚnico com renda mensal entre meio e um salário mínimo por pessoa têm isenção do pagamento da Conta de Desenvolvimento Energético (CDE) sobre o consumo mensal de até 120 kWh, o que corresponde a um desconto médio da ordem de 12% na conta.",
+      "sourceOrganization": "Ministério de Minas e Energia",
+      "sourceTitle": "Novo desconto social na conta de luz já beneficia famílias de baixa renda em todo o Brasil",
+      "sourceLocation": "https://www.gov.br/mme/pt-br/assuntos/noticias/novo-desconto-social-na-conta-de-luz-ja-beneficia-familias-de-baixa-renda-em-todo-o-brasil",
+      "sourceType": "official",
+      "accessedAt": "2026-09-20",
+      "notes": "O artigo apresenta o percentual como média, e o bloco 'o que pode mudar' registra que ele depende da composição tarifária de cada distribuidora."
+    },
+    {
+      "claimId": "concessao-automatica",
+      "claimText": "Os benefícios são concedidos automaticamente aos consumidores elegíveis, por meio da integração das informações do Cadastro Único com os cadastros das distribuidoras de energia. Não é necessário fazer solicitação à distribuidora; a identificação do beneficiário ocorre pelo cruzamento dessas informações.",
+      "sourceOrganization": "Ministério de Minas e Energia",
+      "sourceTitle": "Novo desconto social na conta de luz já beneficia famílias de baixa renda em todo o Brasil",
+      "sourceLocation": "https://www.gov.br/mme/pt-br/assuntos/noticias/novo-desconto-social-na-conta-de-luz-ja-beneficia-familias-de-baixa-renda-em-todo-o-brasil",
+      "sourceType": "official",
+      "accessedAt": "2026-09-20",
+      "notes": "Achado mais valioso do artigo, e invertido em ação prática: como não há pedido a fazer, o que se perde é o CadÚnico desatualizado ou o CPF não vinculado à unidade consumidora."
+    }
+  ]
+}
