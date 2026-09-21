@@ -112,6 +112,24 @@ export const INTERNAL_ONLY_CHANGES: Array<{
       "/calculadoras/trocar-divida/",
     ],
   },
+  {
+    reason:
+      "A marca passou a ser escrita na <title> destas páginas institucionais depois que o template `%s | Crédito por Perto` saiu do layout raiz. Só a meta tag mudou; texto, layout e comportamento da página são os mesmos.",
+    at: "2026-09-21",
+    routes: [
+      "/contato/",
+      "/aviso-legal/",
+      "/mapa-do-site/",
+      "/termos-de-uso/",
+      "/acessibilidade/",
+      "/politica-editorial/",
+      "/politica-de-cookies/",
+      "/politica-de-correcoes/",
+      "/como-ganhamos-dinheiro/",
+      "/politica-de-privacidade/",
+      "/politica-de-publicidade/",
+    ],
+  },
 ];
 
 /** A rota teve mudança apenas interna nesta data exata? */

@@ -23,9 +23,13 @@ const findings: Finding[] = [];
  * template voltar: basta preenchê-la de novo e a conta se ajusta sozinha.
  */
 const TITLE_SUFFIX = "";
-/** Borda aproximada do que o Google exibe (o corte real é por pixels). */
-const SERP_TITLE_LIMIT = 60;
-const SERP_DESC_LIMIT = 160;
+/**
+ * Régua interna do projeto (brief de meta tags, 21/09/2026): 55 e 150,
+ * abaixo do ponto em que o Google costuma cortar, porque o corte real é
+ * por largura em pixels e qualquer contagem de caracteres é aproximação.
+ */
+const SERP_TITLE_LIMIT = 55;
+const SERP_DESC_LIMIT = 150;
 
 interface PageMeta {
   page: string;
