@@ -237,6 +237,7 @@ for (const { rel, body } of files) {
 
 /** Áreas que o modelo de clique conhece. Espelha click-model.ts. */
 const KNOWN_AREAS = new Set([
+  "onde-conseguir-credito",
   "cards-ferramentas",
   "chamada-ferramenta",
   "chamada-jornada",

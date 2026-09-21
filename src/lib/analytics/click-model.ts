@@ -223,6 +223,7 @@ export function classifyLink(
  * apagaria o detalhe já acumulado no GA4 desde agosto.
  */
 const CTA_AREAS = new Set([
+  "onde-conseguir-credito",
   "cards-ferramentas",
   "chamada-ferramenta",
   "chamada-jornada",
