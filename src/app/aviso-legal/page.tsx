@@ -8,7 +8,7 @@ import {
 import { LEGAL_OWNER } from "@/lib/site";
 
 export const metadata: Metadata = buildMetadata({
-  title: "Aviso legal",
+  title: "Aviso legal | Crédito por Perto",
   description:
     "Aviso legal do Crédito por Perto: portal educativo que não concede crédito, não solicita depósitos e não garante condições de empréstimo.",
   path: "/aviso-legal/",

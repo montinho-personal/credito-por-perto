@@ -27,10 +27,23 @@ const sourceSerif = Source_Serif_4({
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
-  title: {
-    default: `${SITE_NAME} | Guia de Empréstimos e Crédito`,
-    template: `%s | ${SITE_NAME}`,
-  },
+  /**
+   * Sem `template`, de propósito (21/09/2026).
+   *
+   * O sufixo `%s | Crédito por Perto` somava 20 caracteres a toda página e
+   * nunca chegava a ser exibido: os títulos já estouravam o corte da busca
+   * sozinhos. Pior, gastava o espaço em que cabe a palavra que a pessoa
+   * realmente digita — "como funciona", "quanto custa", "existe?".
+   *
+   * A marca não se perde nisso. O Google monta o nome do site a partir do
+   * nó WebSite do JSON-LD (jsonld.ts) e do og:site_name, e o exibe em linha
+   * própria, acima do título. Repetir a marca dentro do título era duplicar
+   * o que a SERP já mostra.
+   *
+   * Páginas institucionais curtas ("Contato", "Aviso legal") trazem a marca
+   * escrita no próprio título, porque ali ela desambigua em vez de competir.
+   */
+  title: `${SITE_NAME} | Guia de Empréstimos e Crédito`,
   description: SITE_DESCRIPTION,
   applicationName: SITE_NAME,
   alternates: {

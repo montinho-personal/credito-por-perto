@@ -4,7 +4,7 @@ import { buildMetadata } from "@/lib/metadata/build";
 import { InstitutionalShell } from "@/components/layout/InstitutionalShell";
 
 export const metadata: Metadata = buildMetadata({
-  title: "Como ganhamos dinheiro",
+  title: "Como ganhamos dinheiro | Crédito por Perto",
   description:
     "Transparência sobre a monetização do Crédito por Perto: publicidade programática futura, o que ela influencia (nada no editorial) e como identificá-la.",
   path: "/como-ganhamos-dinheiro/",

@@ -4,7 +4,7 @@ import { buildMetadata } from "@/lib/metadata/build";
 import { InstitutionalShell } from "@/components/layout/InstitutionalShell";
 
 export const metadata: Metadata = buildMetadata({
-  title: "Acessibilidade",
+  title: "Acessibilidade | Crédito por Perto",
   description:
     "Compromissos de acessibilidade do Crédito por Perto: navegação por teclado, contraste, leitores de tela e como reportar barreiras de acesso.",
   path: "/acessibilidade/",

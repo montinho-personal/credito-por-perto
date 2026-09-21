@@ -40,12 +40,13 @@ const isoDate = z
  * `<h1>`; encurtá-lo para caber na busca custaria a manchete. Quando
  * `seoTitle` existe, ele substitui o `title` na meta tag — e só ali.
  *
- * O limite de 40 não é estético: o layout raiz aplica o template
- * `%s | Crédito por Perto`, que soma 20 caracteres. 40 + 20 = 60, que é a
- * borda do que o Google costuma exibir antes de cortar (o corte real é por
- * largura em pixels, ~600px no desktop, então 60 é aproximação).
+ * O limite de 60 é a borda do que o Google costuma exibir antes de cortar
+ * (o corte real é por largura em pixels, ~600px no desktop, então 60 é
+ * aproximação). O orçamento é integral desde 21/09/2026, quando o sufixo
+ * `%s | Crédito por Perto` saiu do layout raiz — os 20 caracteres que ele
+ * consumia passaram a caber a palavra que a pessoa digita de fato.
  */
-const seoTitle = z.string().min(10).max(40).optional();
+const seoTitle = z.string().min(10).max(60).optional();
 
 export const articleFrontmatterSchema = z
   .object({

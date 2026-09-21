@@ -18,11 +18,11 @@ import {
 const findings: Finding[] = [];
 
 /**
- * O layout raiz aplica o template `%s | Crédito por Perto`. Medir o título
- * sem esse sufixo é medir o que ninguém vê: são 20 caracteres que entram no
- * orçamento da SERP em toda página do site.
+ * O layout raiz não aplica mais sufixo de marca (21/09/2026), então o
+ * título medido aqui é o título inteiro. A constante fica para o caso de o
+ * template voltar: basta preenchê-la de novo e a conta se ajusta sozinha.
  */
-const TITLE_SUFFIX = " | Crédito por Perto";
+const TITLE_SUFFIX = "";
 /** Borda aproximada do que o Google exibe (o corte real é por pixels). */
 const SERP_TITLE_LIMIT = 60;
 const SERP_DESC_LIMIT = 160;

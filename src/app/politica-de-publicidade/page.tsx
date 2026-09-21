@@ -4,7 +4,7 @@ import { buildMetadata } from "@/lib/metadata/build";
 import { InstitutionalShell } from "@/components/layout/InstitutionalShell";
 
 export const metadata: Metadata = buildMetadata({
-  title: "Política de publicidade",
+  title: "Política de publicidade | Crédito por Perto",
   description:
     "Regras que a publicidade deve seguir no Crédito por Perto: identificação clara, separação do conteúdo editorial e páginas onde anúncios nunca aparecem.",
   path: "/politica-de-publicidade/",

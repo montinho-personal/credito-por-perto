@@ -4,7 +4,7 @@ import { buildMetadata } from "@/lib/metadata/build";
 import { InstitutionalShell } from "@/components/layout/InstitutionalShell";
 
 export const metadata: Metadata = buildMetadata({
-  title: "Política editorial",
+  title: "Política editorial | Crédito por Perto",
   description:
     "Os princípios que orientam o conteúdo do Crédito por Perto: independência, precisão, fontes oficiais, linguagem responsável e correção transparente de erros.",
   path: "/politica-editorial/",

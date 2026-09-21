@@ -5,7 +5,7 @@ import { InstitutionalShell } from "@/components/layout/InstitutionalShell";
 import { CONTACT_EMAIL } from "@/lib/site";
 
 export const metadata: Metadata = buildMetadata({
-  title: "Contato",
+  title: "Contato | Crédito por Perto",
   description:
     "Fale com a equipe do Crédito por Perto: correções, sugestões de pauta, dúvidas sobre o portal e solicitações relacionadas a dados pessoais.",
   path: "/contato/",

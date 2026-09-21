@@ -7,7 +7,7 @@ import {
 } from "@/components/layout/InstitutionalShell";
 
 export const metadata: Metadata = buildMetadata({
-  title: "Política de cookies",
+  title: "Política de cookies | Crédito por Perto",
   description:
     "Quais cookies o Crédito por Perto utiliza hoje, quais poderão ser utilizados com analytics e publicidade, e como gerenciar suas preferências.",
   path: "/politica-de-cookies/",

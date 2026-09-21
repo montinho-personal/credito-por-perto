@@ -8,7 +8,7 @@ import {
 import { LEGAL_OWNER } from "@/lib/site";
 
 export const metadata: Metadata = buildMetadata({
-  title: "Termos de uso",
+  title: "Termos de uso | Crédito por Perto",
   description:
     "Condições de uso do Crédito por Perto: natureza educativa do conteúdo, propriedade intelectual, limitações de responsabilidade e regras de utilização.",
   path: "/termos-de-uso/",

@@ -4,7 +4,7 @@ import { buildMetadata } from "@/lib/metadata/build";
 import { InstitutionalShell } from "@/components/layout/InstitutionalShell";
 
 export const metadata: Metadata = buildMetadata({
-  title: "Política de correções",
+  title: "Política de correções | Crédito por Perto",
   description:
     "Como o Crédito por Perto trata erros: como reportar, prazos de análise, o que é corrigido com registro público e o que conta como atualização relevante.",
   path: "/politica-de-correcoes/",

@@ -8,7 +8,7 @@ import {
 import { CONTACT_EMAIL, LEGAL_OWNER } from "@/lib/site";
 
 export const metadata: Metadata = buildMetadata({
-  title: "Política de privacidade",
+  title: "Política de privacidade | Crédito por Perto",
   description:
     "Como o Crédito por Perto trata dados pessoais: o que coletamos (muito pouco), para quê, com que base legal e como exercer seus direitos previstos na LGPD.",
   path: "/politica-de-privacidade/",
