@@ -42,7 +42,8 @@ export function articleMetadata(
   if (!article || !isArticleVisible(article.frontmatter.status)) return {};
   const fm = article.frontmatter;
   return buildMetadata({
-    title: fm.title,
+    // `seoTitle` só existe para a SERP; o <h1> continua usando `title`.
+    title: fm.seoTitle ?? fm.title,
     description: fm.description,
     path: article.urlPath,
     noindex: fm.noindex || fm.status !== "published",

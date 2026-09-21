@@ -35,9 +35,22 @@ const isoDate = z
   .string()
   .regex(/^\d{4}-\d{2}-\d{2}$/, "Use o formato YYYY-MM-DD");
 
+/**
+ * Título curto só para a SERP. O `title` é a manchete da página e vira o
+ * `<h1>`; encurtá-lo para caber na busca custaria a manchete. Quando
+ * `seoTitle` existe, ele substitui o `title` na meta tag — e só ali.
+ *
+ * O limite de 40 não é estético: o layout raiz aplica o template
+ * `%s | Crédito por Perto`, que soma 20 caracteres. 40 + 20 = 60, que é a
+ * borda do que o Google costuma exibir antes de cortar (o corte real é por
+ * largura em pixels, ~600px no desktop, então 60 é aproximação).
+ */
+const seoTitle = z.string().min(10).max(40).optional();
+
 export const articleFrontmatterSchema = z
   .object({
     title: z.string().min(10).max(110),
+    seoTitle,
     slug: z
       .string()
       .regex(
@@ -103,6 +116,7 @@ export const LOCALITY_TYPES = [
 export const localGuideFrontmatterSchema = z
   .object({
     title: z.string().min(10).max(110),
+    seoTitle,
     localityName: z.string().min(2),
     localityType: z.enum(LOCALITY_TYPES),
     /** UF em minúsculas, ex.: "sp" */

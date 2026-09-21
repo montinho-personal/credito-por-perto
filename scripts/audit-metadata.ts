@@ -17,21 +17,41 @@ import {
 
 const findings: Finding[] = [];
 
+/**
+ * O layout raiz aplica o template `%s | Crédito por Perto`. Medir o título
+ * sem esse sufixo é medir o que ninguém vê: são 20 caracteres que entram no
+ * orçamento da SERP em toda página do site.
+ */
+const TITLE_SUFFIX = " | Crédito por Perto";
+/** Borda aproximada do que o Google exibe (o corte real é por pixels). */
+const SERP_TITLE_LIMIT = 60;
+const SERP_DESC_LIMIT = 160;
+
 interface PageMeta {
   page: string;
+  /** Manchete da página, que também vira o <h1>. */
   title: string;
+  /** Título curto opcional, usado só na meta tag. */
+  seoTitle?: string;
   description: string;
+}
+
+/** O que efetivamente vai para a `<title>`, sufixo incluído. */
+function serpTitle(meta: PageMeta): string {
+  return (meta.seoTitle ?? meta.title) + TITLE_SUFFIX;
 }
 
 const metas: PageMeta[] = [
   ...getAllArticles().map((a) => ({
     page: a.urlPath,
     title: a.frontmatter.title,
+    seoTitle: a.frontmatter.seoTitle,
     description: a.frontmatter.description,
   })),
   ...getAllLocalGuides().map((g) => ({
     page: g.urlPath,
     title: g.frontmatter.title,
+    seoTitle: g.frontmatter.seoTitle,
     description: g.frontmatter.description,
   })),
 ];
@@ -63,7 +83,9 @@ for (const file of walk(path.join(process.cwd(), "src", "app"))) {
 const titleMap = new Map<string, string>();
 const descMap = new Map<string, string>();
 for (const meta of metas) {
-  const titleKey = normalizeForComparison(meta.title);
+  /* Compara o que vai para a meta tag: dois `title` distintos podem colapsar
+   * no mesmo `seoTitle` e criar duplicata invisível no frontmatter. */
+  const titleKey = normalizeForComparison(meta.seoTitle ?? meta.title);
   const descKey = normalizeForComparison(meta.description);
   const titleOwner = titleMap.get(titleKey);
   if (titleOwner && titleOwner !== meta.page) {
@@ -100,6 +122,34 @@ for (const meta of metas) {
       rule: "descricao-longa",
       pages: [meta.page],
       detail: `Descrição com ${meta.description.length} caracteres.`,
+    });
+  }
+
+  /* Corte na SERP.
+   *
+   * A severidade é deliberadamente assimétrica. Página que ainda não tem
+   * `seoTitle` é backlog conhecido — 131 páginas nasceram assim, e marcá-las
+   * como aviso travaria a cadeia de publicação sem que nada esteja quebrado.
+   * Já `seoTitle` que estoura é erro de quem escreveu: o campo existe
+   * justamente para caber, e passar do limite anula o propósito dele. */
+  const full = serpTitle(meta);
+  if (full.length > SERP_TITLE_LIMIT) {
+    const temSeoTitle = meta.seoTitle !== undefined;
+    findings.push({
+      severity: temSeoTitle ? "warning" : "info",
+      rule: temSeoTitle ? "seotitle-estourado" : "titulo-cortado-na-serp",
+      pages: [meta.page],
+      detail: temSeoTitle
+        ? `seoTitle + sufixo dá ${full.length} caracteres (limite ${SERP_TITLE_LIMIT}). Encurte o seoTitle.`
+        : `Título exibido teria ${full.length} caracteres e seria cortado. Sem seoTitle definido.`,
+    });
+  }
+  if (meta.description.length > SERP_DESC_LIMIT) {
+    findings.push({
+      severity: "info",
+      rule: "descricao-cortada-na-serp",
+      pages: [meta.page],
+      detail: `Descrição com ${meta.description.length} caracteres; o Google costuma cortar perto de ${SERP_DESC_LIMIT}.`,
     });
   }
 }

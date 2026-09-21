@@ -36,7 +36,8 @@ export function localGuideMetadata(urlPath: string): Metadata {
   if (!guide || !isGuideVisible(guide)) return {};
   const fm = guide.frontmatter;
   return buildMetadata({
-    title: fm.title,
+    // `seoTitle` só existe para a SERP; o <h1> continua usando `title`.
+    title: fm.seoTitle ?? fm.title,
     description: fm.description,
     path: guide.urlPath,
     noindex: !isGuideIndexable(guide),
