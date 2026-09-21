@@ -4,7 +4,9 @@
   "secondaryIntents": [
     "empréstimo para negativado existe",
     "como limpar o nome",
-    "alternativas ao empréstimo para negativado"
+    "alternativas ao empréstimo para negativado",
+    "negativaram meu nome sem avisar",
+    "notificação antes da negativação é obrigatória"
   ],
   "targetReader": "Pessoa com CPF negativado precisando de crédito",
   "readerSituation": "Vulnerabilidade financeira, exposta a promessas de aprovação garantida",
@@ -13,12 +15,15 @@
   "originalContribution": [
     "Classificação própria em três camadas (real, armadilha, golpe)",
     "Rota de alternativas antes do crédito novo (renegociação, Registrato, Lei do Superendividamento)",
-    "Checklist condicional 'se decidir contratar mesmo assim'"
+    "Checklist condicional 'se decidir contratar mesmo assim'",
+    "Bloco sobre o rito da própria negativação, ausente do resto do corpus: a notificação prévia cabe ao birô e não ao credor (Súmula 359 do STJ), o AR é dispensável (Súmula 404) mas e-mail ou SMS sozinhos não bastam, e o limite da Súmula 385 — inscrição legítima preexistente afasta o dano moral e deixa só o cancelamento."
   ],
   "primarySources": [
     "Banco Central do Brasil — Registrato",
     "Planalto — Lei nº 14.181/2021 (superendividamento)",
-    "Banco Central do Brasil — consulta de instituições autorizadas"
+    "Banco Central do Brasil — consulta de instituições autorizadas",
+    "STJ — Súmulas 359, 385 e 404 (notificação prévia e efeitos da anotação irregular)",
+    "Planalto — Lei nº 8.078/1990, art. 43, § 2º (comunicação por escrito da abertura de cadastro)"
   ],
   "supportingSources": [],
   "contentArchetype": "decision-guide",
@@ -27,19 +32,29 @@
     "O que existe de verdade",
     "Armadilhas legais",
     "Golpes puros",
+    "O rito da negativação: o direito de ser avisado antes",
     "Alternativas antes do crédito",
     "Checklist condicional",
     "FAQ"
   ],
-  "uniqueExamples": ["Três camadas de triagem aplicadas a ofertas típicas"],
-  "proposedVisuals": ["SafetyAlert", "ChecklistBox"],
+  "uniqueExamples": [
+    "Três camadas de triagem aplicadas a ofertas típicas"
+  ],
+  "proposedVisuals": [
+    "SafetyAlert",
+    "ChecklistBox"
+  ],
   "pagesThatMayCompete": [
     "/credito-seguro/como-identificar-golpes-de-emprestimo/",
-    "/organizacao-financeira/renegociacao-ou-emprestimo/"
+    "/organizacao-financeira/renegociacao-ou-emprestimo/",
+    "/credito-seguro/consultar-nome-nos-biros-de-credito/",
+    "/organizacao-financeira/divida-caducada-nome-limpo/"
   ],
   "informationThatMustNotBeRepeated": [
     "Detalhamento do golpe do depósito antecipado (fica no artigo dedicado)",
-    "Passo a passo de renegociação (fica em renegociacao-ou-emprestimo)"
+    "Passo a passo de renegociação (fica em renegociacao-ou-emprestimo)",
+    "Prazo de 5 anos e prescrição da dívida (fica em divida-caducada-nome-limpo)",
+    "Passo a passo de consulta gratuita nos birôs (fica em consultar-nome-nos-biros-de-credito)"
   ],
   "publicationDecision": "create"
 }

@@ -36,6 +36,56 @@
       "sourceLocation": "https://www.bcb.gov.br/estabilidadefinanceira/encontreinstituicao",
       "sourceType": "official",
       "accessedAt": "2026-08-05"
+    },
+    {
+      "claimId": "sumula-359-notificacao-previa",
+      "claimText": "Cabe ao órgão mantenedor do Cadastro de Proteção ao Crédito a notificação do devedor antes de proceder à inscrição.",
+      "sourceOrganization": "Superior Tribunal de Justiça",
+      "sourceTitle": "Súmula n. 359 (Segunda Seção, julgada em 13/08/2008, DJe 08/09/2008)",
+      "sourceLocation": "https://ww2.stj.jus.br/docs_internet/revista/eletronica/stj-revista-sumulas-2012_31_capSumula359.pdf",
+      "sourceType": "official",
+      "accessedAt": "2026-09-21",
+      "notes": "Ponto que o artigo destaca por ser contraintuitivo: a obrigação de avisar é do birô (Serasa, SPC, Boa Vista), não da empresa credora."
+    },
+    {
+      "claimId": "cdc-art-43-comunicacao-escrita",
+      "claimText": "A abertura de cadastro, ficha, registro e dados pessoais e de consumo deverá ser comunicada por escrito ao consumidor, quando não solicitada por ele (art. 43, § 2º).",
+      "sourceOrganization": "Planalto — Código de Defesa do Consumidor",
+      "sourceTitle": "Lei nº 8.078, de 11 de setembro de 1990 (texto compilado)",
+      "sourceLocation": "https://www.planalto.gov.br/ccivil_03/leis/l8078compilado.htm",
+      "sourceType": "official",
+      "accessedAt": "2026-09-21",
+      "notes": "Base legal da notificação prévia, citada junto da Súmula 359 que define de quem é a obrigação."
+    },
+    {
+      "claimId": "sumula-404-ar-dispensavel",
+      "claimText": "É dispensável o Aviso de Recebimento (AR) na carta de comunicação ao consumidor sobre a negativação de seu nome em bancos de dados e cadastros.",
+      "sourceOrganization": "Superior Tribunal de Justiça",
+      "sourceTitle": "Súmula n. 404",
+      "sourceLocation": "https://www.stj.jus.br/docs_internet/revista/eletronica/stj-revista-sumulas-2014_38_capSumula404.pdf",
+      "sourceType": "official",
+      "accessedAt": "2026-09-21",
+      "notes": "Incluído justamente para corrigir expectativa: 'nunca assinei nada' não prova irregularidade do registro."
+    },
+    {
+      "claimId": "notificacao-email-sms-insuficiente",
+      "claimText": "A notificação do consumidor sobre a inscrição em cadastro de inadimplentes não pode ser feita exclusivamente por e-mail ou por SMS.",
+      "sourceOrganization": "Superior Tribunal de Justiça",
+      "sourceTitle": "Notificação de inscrição em cadastro de inadimplentes não pode ser feita exclusivamente por e-mail ou por SMS (02/06/2023)",
+      "sourceLocation": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2023/02062023-Notificacao-de-inscricao-em-cadastro-de-inadimplentes-nao-pode-ser-feita--exclusivamente--por-e-mail-ou-por-SMS-.aspx",
+      "sourceType": "official",
+      "accessedAt": "2026-09-21",
+      "notes": "Fecha o outro lado da Súmula 404: o AR é dispensável, mas o meio puramente eletrônico não basta."
+    },
+    {
+      "claimId": "sumula-385-inscricao-preexistente",
+      "claimText": "Da anotação irregular em cadastro de proteção ao crédito, não cabe indenização por dano moral quando preexistente legítima inscrição, ressalvado o direito ao cancelamento.",
+      "sourceOrganization": "Superior Tribunal de Justiça",
+      "sourceTitle": "Súmula n. 385",
+      "sourceLocation": "https://www.stj.jus.br/docs_internet/revista/eletronica/stj-revista-sumulas-2013_35_capSumula385.pdf",
+      "sourceType": "official",
+      "accessedAt": "2026-09-21",
+      "notes": "Entra como limite explícito, para a página não induzir expectativa de indenização — coerente com a regra da casa de não prometer resultado."
     }
   ]
 }
