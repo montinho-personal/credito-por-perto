@@ -521,8 +521,8 @@ export function CreditCardInterestCalculator({
                 <summary className="min-h-11 cursor-pointer py-2 font-semibold text-brand-teal">Onde encontro a taxa?</summary>
                 <p className="leading-relaxed text-brand-text">
                   Na fatura, procure por “crédito rotativo”, “juros do rotativo”, “taxa efetiva mensal” ou
-                  “encargos de financiamento”. A fatura traz as taxas efetivas das formas de financiar o saldo e o
-                  CET de cada uma. Use a taxa ao mês do rotativo.
+                  “encargos de financiamento”, em geral perto das opções de pagamento. Use a taxa ao mês do
+                  rotativo. Se não encontrar, peça a taxa no aplicativo ou na central do cartão.
                 </p>
               </details>
             </div>
@@ -593,8 +593,8 @@ export function CreditCardInterestCalculator({
             <fieldset>
               <legend className="text-sm font-bold text-brand-navy">Limite de juros e encargos (teto)</legend>
               <p className="mt-0.5 text-xs leading-relaxed text-brand-muted">
-                A fatura deve mostrar o valor original da dívida e quanto já foi cobrado de juros e encargos. Com esses
-                números, a calculadora compara com o limite.
+                Se a fatura ou o aplicativo mostrar o valor original da dívida e quanto já foi cobrado de juros e
+                encargos, informe aqui para comparar com o limite.
               </p>
               <div className="mt-3">
                 <p id={id("inicio-label")} className="text-sm font-semibold text-brand-navy">

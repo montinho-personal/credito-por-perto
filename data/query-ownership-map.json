@@ -666,5 +666,12 @@
       "/calculadoras/sac-x-price/",
       "/organizacao-financeira/quanto-da-renda-comprometer-financiamento-imovel/"
     ]
+  },
+  "calculadora de juros do cartão rotativo quanto custa pagar parte da fatura": {
+    "canonicalOwner": "/calculadoras/juros-cartao-credito/",
+    "supportingPages": [
+      "/organizacao-financeira/como-sair-do-rotativo/",
+      "/organizacao-financeira/fatura-do-cartao-como-funciona/"
+    ]
   }
 }

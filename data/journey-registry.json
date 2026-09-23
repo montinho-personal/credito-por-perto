@@ -174,6 +174,13 @@
           "optional": false
         },
         {
+          "id": "juros-cartao",
+          "title": "É dívida de cartão? Quanto custa até a próxima fatura?",
+          "toolId": "juros-cartao-credito",
+          "whyThisStep": "Mostra em reais quanto o saldo em aberto da fatura custa em um ciclo, com juros e encargos separados e o limite de 100%.",
+          "optional": true
+        },
+        {
           "id": "antecipar",
           "title": "Tem dinheiro para antecipar parcelas?",
           "toolId": "quitacao-antecipada",

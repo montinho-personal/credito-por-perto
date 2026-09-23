@@ -396,6 +396,25 @@ export function buildSearchDocs(): SearchDoc[] {
       content: "",
     },
     {
+      id: "/calculadoras/juros-cartao-credito/",
+      url: "/calculadoras/juros-cartao-credito/",
+      title: "Calculadora de juros do cartão",
+      description:
+        "Fatura, valor pago e taxa: quanto do saldo entra no rotativo, os juros até a próxima fatura, encargos de atraso e o limite de 100%.",
+      section: "Calculadoras",
+      type: "calculadora",
+      tags: ["calculadora", "cartao", "fatura", "juros"],
+      keywords: [
+        "juros do cartao",
+        "calcular juros da fatura",
+        "pagar o minimo",
+        "fatura atrasada",
+        "calcular juros da fatura",
+      ],
+      headings: [],
+      content: "",
+    },
+    {
       id: "/calculadoras/financiamento-imobiliario/",
       url: "/calculadoras/financiamento-imobiliario/",
       title: "Simulador de financiamento imobiliário",

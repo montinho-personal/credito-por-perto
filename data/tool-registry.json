@@ -379,6 +379,29 @@
       "updatedAt": "2026-08-29"
     },
     {
+      "id": "juros-cartao-credito",
+      "name": "Calculadora de juros do cartão",
+      "shortName": "Juros do cartão",
+      "route": "/calculadoras/juros-cartao-credito/",
+      "cta": "Calcular juros do cartão",
+      "situation": "ja-tenho-divida",
+      "question": "Paguei só parte da fatura. Quanto vai custar?",
+      "whenItHelps": "Informe a fatura, quanto pagou e a taxa para estimar quanto do saldo entra no rotativo e o custo até a próxima fatura.",
+      "calloutLead": "Veja em reais quanto o saldo em aberto da fatura custa até a próxima, com juros e encargos separados.",
+      "triggerTerms": [
+        "rotativo",
+        "pagar o mínimo",
+        "fatura do cartão",
+        "juros do cartão",
+        "saldo da fatura"
+      ],
+      "defaultNextSteps": [
+        "trocar-divida",
+        "plano-para-sair-das-dividas"
+      ],
+      "updatedAt": "2026-09-23"
+    },
+    {
       "id": "trocar-divida",
       "name": "Vale a pena trocar esta dívida?",
       "shortName": "Trocar dívida",
