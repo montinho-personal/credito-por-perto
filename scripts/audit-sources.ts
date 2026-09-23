@@ -6,6 +6,7 @@
 import { getAllArticles } from "../src/lib/content/articles";
 import { getSourceLedger } from "../src/lib/content/ledgers";
 import { ADVANCE_RULES, SAQUE_TABLE, TERMINATION_RULES } from "../src/lib/calculators/fgts-rules";
+import { IOF_RULES_VERIFIED_AT } from "../src/lib/calculators/iof-credit-rules";
 import {
   buildReport,
   finishAudit,
@@ -87,10 +88,11 @@ for (const article of getAllArticles()) {
  * (DD/MM/AAAA). Velha demais vira aviso — e aviso segura a publicação, que é
  * o lembrete de reler a fonte oficial. Troca de regra próxima vira nota.
  */
-const RULE_MODULES = [
+const RULE_MODULES: Array<{ name: string; verifiedAt: string; page?: string }> = [
   { name: "FGTS — tabela do Saque-Aniversário", verifiedAt: SAQUE_TABLE.verifiedAt },
   { name: "FGTS — antecipação do Saque-Aniversário", verifiedAt: ADVANCE_RULES.verifiedAt },
   { name: "FGTS — rescisão e retorno", verifiedAt: TERMINATION_RULES.verifiedAt },
+  { name: "IOF-crédito — alíquotas, limite e decisão judicial", verifiedAt: IOF_RULES_VERIFIED_AT, page: "/calculadoras/iof-emprestimo/" },
 ];
 const RULE_STALE_DAYS = 120;
 for (const rule of RULE_MODULES) {
@@ -98,9 +100,9 @@ for (const rule of RULE_MODULES) {
   const verified = new Date(Date.UTC(y!, m! - 1, d!));
   const age = Math.floor((today.getTime() - verified.getTime()) / 86_400_000);
   if (Number.isNaN(age)) {
-    findings.push({ severity: "critical", rule: "regra-sem-data", pages: ["/calculadoras/antecipacao-fgts/"], detail: `${rule.name}: data de verificação inválida.` });
+    findings.push({ severity: "critical", rule: "regra-sem-data", pages: [rule.page ?? "/calculadoras/antecipacao-fgts/"], detail: `${rule.name}: data de verificação inválida.` });
   } else if (age > RULE_STALE_DAYS) {
-    findings.push({ severity: "warning", rule: "regra-precisa-reverificacao", pages: ["/calculadoras/antecipacao-fgts/"], detail: `${rule.name}: verificada há ${age} dias — reler a fonte oficial e atualizar verifiedAt.` });
+    findings.push({ severity: "warning", rule: "regra-precisa-reverificacao", pages: [rule.page ?? "/calculadoras/antecipacao-fgts/"], detail: `${rule.name}: verificada há ${age} dias — reler a fonte oficial e atualizar verifiedAt.` });
   }
 }
 for (const period of ADVANCE_RULES.periods) {

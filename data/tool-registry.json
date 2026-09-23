@@ -307,6 +307,28 @@
       "updatedAt": "2026-08-29"
     },
     {
+      "id": "iof-emprestimo",
+      "name": "Calculadora de IOF de empréstimo",
+      "shortName": "IOF do empréstimo",
+      "route": "/calculadoras/iof-emprestimo/",
+      "cta": "Calcular IOF",
+      "situation": "entender-numeros",
+      "question": "Quanto de IOF este empréstimo paga?",
+      "whenItHelps": "Estime o IOF de uma operação de crédito e veja separadamente a parcela diária e a adicional.",
+      "calloutLead": "Informe valor e prazo para estimar o IOF com as regras vigentes, separado em parte diária e adicional.",
+      "triggerTerms": [
+        "iof",
+        "imposto do empréstimo",
+        "iof do empréstimo",
+        "iof financiado"
+      ],
+      "defaultNextSteps": [
+        "comparador-de-propostas",
+        "emprestimo"
+      ],
+      "updatedAt": "2026-09-23"
+    },
+    {
       "id": "minha-taxa-esta-cara",
       "name": "Minha taxa está cara?",
       "shortName": "Minha taxa está cara?",

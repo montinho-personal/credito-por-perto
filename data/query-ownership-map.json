@@ -687,5 +687,12 @@
       "/emprestimos/antecipacao-saque-aniversario-fgts/",
       "/emprestimos/saque-aniversario-vale-a-pena/"
     ]
+  },
+  "calculadora de iof de empréstimo como calcular iof": {
+    "canonicalOwner": "/calculadoras/iof-emprestimo/",
+    "supportingPages": [
+      "/juros-e-cet/iof-no-emprestimo/",
+      "/juros-e-cet/o-que-e-cet/"
+    ]
   }
 }

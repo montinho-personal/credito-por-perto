@@ -35,8 +35,7 @@
  */
 
 import { ADVANCE_RULES, SAQUE_TABLE, advanceRulesAt, isIsoDate, type AdvancePeriod } from "./fgts-rules";
-
-const DAY_MS = 86_400_000;
+import { addDays, daysBetween } from "./civil-date";
 
 /* -------------------------------------------------------------------------- */
 /* Tabela                                                                     */
@@ -89,8 +88,8 @@ export function cedibleCents(saqueCents: number): number {
 /* -------------------------------------------------------------------------- */
 
 const utc = (y: number, m: number, d: number) => new Date(Date.UTC(y, m - 1, d));
-export const toIso = (d: Date) => d.toISOString().slice(0, 10);
-const fromIso = (s: string) => new Date(`${s}T00:00:00Z`);
+export { toIso, daysBetween, addDays } from "./civil-date";
+import { toIso } from "./civil-date";
 
 /** Feriados nacionais fixos (Leis 662/1949, 6.802/1980 e 14.759/2023). */
 function isFixedNationalHoliday(d: Date): boolean {
@@ -113,16 +112,6 @@ export function nthBusinessDay(year: number, month: number, n: number): Date {
     if (isBusinessDay(d) && ++count === n) return d;
   }
   throw new Error("mês sem dias úteis suficientes");
-}
-
-/** Dias corridos entre duas datas ISO. */
-export function daysBetween(fromIsoDate: string, toIsoDate: string): number {
-  return Math.round((fromIso(toIsoDate).getTime() - fromIso(fromIsoDate).getTime()) / DAY_MS);
-}
-
-/** Soma dias corridos a uma data ISO. */
-export function addDays(isoDate: string, days: number): string {
-  return toIso(new Date(fromIso(isoDate).getTime() + days * DAY_MS));
 }
 
 /** Ano da primeira competência que ainda pode ser cedida. */

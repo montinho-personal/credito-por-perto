@@ -415,6 +415,19 @@ export function buildSearchDocs(): SearchDoc[] {
       content: "",
     },
     {
+      id: "/calculadoras/iof-emprestimo/",
+      url: "/calculadoras/iof-emprestimo/",
+      title: "Calculadora de IOF de empréstimo",
+      description:
+        "Valor, prazo e tipo da operação: o IOF estimado, separado em parte diária e adicional, com o limite de 365 dias.",
+      section: "Calculadoras",
+      type: "calculadora",
+      tags: ["calculadora", "iof", "imposto", "emprestimo"],
+      keywords: ["calcular iof", "iof emprestimo", "iof financiamento", "iof pessoa fisica"],
+      headings: [],
+      content: "",
+    },
+    {
       id: "/calculadoras/antecipacao-fgts/",
       url: "/calculadoras/antecipacao-fgts/",
       title: "Simulador de antecipação do FGTS",

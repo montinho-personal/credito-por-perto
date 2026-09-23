@@ -314,6 +314,15 @@ const TOOL_EVENTS: EventSpec[] = [
   { name: "fgts_advance_example_select", group: "ferramenta", description: "Antecipação do FGTS: exemplo da página levado ao simulador.", params: ["context", "example"] },
   { name: "fgts_advance_copy", group: "ferramenta", description: "Antecipação do FGTS: resumo copiado (o texto fica no aparelho).", params: ["context"] },
 
+  /* Calculadora de IOF de empréstimo — nenhum valor sai, só categorias */
+  { name: "iof_calculator_view", group: "ferramenta", description: "IOF: calculadora exibida.", params: ["context"] },
+  { name: "iof_calculation_completed", group: "ferramenta", description: "IOF: cálculo feito (tomador, forma de pagar, operação e tipo de resultado, sem valores).", params: ["context", "borrower", "schedule", "operation", "payment", "outcome"], keyEvent: true },
+  { name: "iof_advanced_opened", group: "ferramenta", description: "IOF: opções avançadas abertas.", params: ["context"] },
+  { name: "iof_rule_details_opened", group: "ferramenta", description: "IOF: detalhes da regra utilizada abertos.", params: ["context"] },
+  { name: "iof_scenario_changed", group: "ferramenta", description: "IOF: cenário de prazo levado à calculadora.", params: ["context", "kind"] },
+  { name: "iof_internal_cta_clicked", group: "ferramenta", description: "IOF: próximo passo clicado (comparador, empréstimo ou guia).", params: ["context", "target"] },
+  { name: "iof_example_select", group: "ferramenta", description: "IOF: exemplo da página levado à calculadora.", params: ["context", "example"] },
+
   /* Comparador de propostas */
   { name: "credit_compare_start", group: "ferramenta", description: "Comparador de propostas: primeira interação.", params: [] },
   { name: "credit_compare_complete", group: "ferramenta", description: "Comparador de propostas: resultado calculado.", params: ["proposals", "cet_informed", "advanced_used", "example_used"], keyEvent: true },

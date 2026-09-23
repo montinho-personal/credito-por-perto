@@ -144,12 +144,7 @@ export const TERMINATION_RULES = {
 /* Consultas por data                                                         */
 /* -------------------------------------------------------------------------- */
 
-/** Data ISO (AAAA-MM-DD) válida? */
-export function isIsoDate(s: string): boolean {
-  if (!/^\d{4}-\d{2}-\d{2}$/.test(s)) return false;
-  const d = new Date(`${s}T00:00:00Z`);
-  return !Number.isNaN(d.getTime()) && d.toISOString().slice(0, 10) === s;
-}
+import { isIsoDate } from "./civil-date";
 
 /** Período da regra de antecipação vigente na data, ou null antes de 01/11/2025. */
 export function advanceRulesAt(isoDate: string): AdvancePeriod | null {
@@ -166,14 +161,4 @@ export function nextAdvanceChange(isoDate: string): { from: string; maxSaques: n
   return next ? { from: next.from, maxSaques: next.maxSaques } : null;
 }
 
-/** AAAA-MM-DD → DD/MM/AAAA. */
-export function formatIsoDate(iso: string): string {
-  const [y, m, d] = iso.split("-");
-  return `${d}/${m}/${y}`;
-}
-
-/** Hoje, no fuso de Brasília, em AAAA-MM-DD. */
-export function todayInBrazil(now: Date = new Date()): string {
-  // en-CA formata como AAAA-MM-DD.
-  return new Intl.DateTimeFormat("en-CA", { timeZone: "America/Sao_Paulo", year: "numeric", month: "2-digit", day: "2-digit" }).format(now);
-}
+export { formatIsoDate, isIsoDate, todayInBrazil } from "./civil-date";

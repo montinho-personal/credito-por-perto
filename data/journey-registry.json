@@ -126,6 +126,13 @@
           "optional": false
         },
         {
+          "id": "conferir-iof",
+          "title": "O IOF da proposta confere?",
+          "toolId": "iof-emprestimo",
+          "whyThisStep": "O IOF é imposto, não tarifa: a conta separa a parte diária da adicional e mostra quanto sai do valor liberado.",
+          "optional": true
+        },
+        {
           "id": "quanto-custa",
           "title": "Tem mais de uma proposta na mesa?",
           "toolId": "comparador-de-propostas",
