@@ -77,10 +77,10 @@ export const PORTABILITY = {
  * O teto não recomeça quando o saldo do rotativo vira parcelamento: o valor
  * original continua sendo o que entrou no rotativo.
  *
- * FONTE AINDA NÃO LIDA NA ÍNTEGRA: a pesquisa de 23/09/2026 só viu o trecho
- * de busca das instruções do Banco Central para o documento 3060 ("Juros
- * acumulados no cartão"). `verifiedAt` fica null até alguém abrir o PDF e
- * confirmar; a página mostra a fonte, mas não a data de verificação.
+ * Conferida pelo proprietário no PDF do Banco Central (instruções do
+ * documento 3060, "Juros acumulados no cartão") em 23/09/2026. O tipo aceita
+ * null de propósito: sem data de verificação, a página e o simulador escondem
+ * a regra em vez de publicá-la sem conferência.
  */
 export const CAP_CONTINUITY = {
   id: "teto-continua-no-parcelamento",
@@ -91,7 +91,7 @@ export const CAP_CONTINUITY = {
     title: "Instruções de preenchimento do documento 3060 — juros acumulados no cartão",
     url: "https://www.bcb.gov.br/content/estabilidadefinanceira/Leiaute_de_documentos/3060/Instrucoes-preenchimento-Juros-acumulados-cartao.pdf",
   },
-  verifiedAt: null as string | null,
+  verifiedAt: "23/09/2026" as string | null,
 } as const;
 
 /** Liquidação antecipada com redução proporcional dos juros (CDC). */

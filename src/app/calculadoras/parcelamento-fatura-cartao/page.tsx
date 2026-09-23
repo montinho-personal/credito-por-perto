@@ -33,7 +33,7 @@ import {
  *
  * REGRAS: só as do módulo `credit-card-rules.ts`. A continuidade do teto do
  * rotativo para o parcelamento (CAP_CONTINUITY) só aparece quando tiver data
- * de verificação — o documento do BC ainda não foi conferido na íntegra.
+ * de verificação; sem ela, a seção sai da página.
  */
 
 const PATH = "/calculadoras/parcelamento-fatura-cartao/";

@@ -1114,7 +1114,7 @@ function ExtraBlocks({ extra, items, Sub }: { extra: ExtraFields; items: Array<{
           ) : (
             <>
               <dl className="mt-3">
-                <Row label="Valor original considerado" value={brl(first.capOriginal)} note={extra.origin === "sim" ? "o valor original que você informou" : "o valor parcelado"} />
+                <Row label="Valor original considerado" value={brl(first.capOriginal)} note={extra.origin === "sim" ? (CAP_CONTINUITY.verifiedAt ? "o que entrou no rotativo, como você informou" : "o valor original que você informou") : "o valor parcelado"} />
                 <Row label="Máximo de juros e encargos pela regra" value={brl(first.cap.capCents)} />
                 {extra.origin === "sim" ? <Row label="Já cobrados antes do parcelamento" value={brl(charged ?? 0)} /> : null}
                 <Row label="Margem restante antes do parcelamento" value={brl(first.cap.roomCents)} strong />
@@ -1155,7 +1155,7 @@ function ExtraBlocks({ extra, items, Sub }: { extra: ExtraFields; items: Array<{
           {extra.origin === "sim" && CAP_CONTINUITY.verifiedAt ? (
             <>
               {" "}Continuidade do limite no parcelamento:{" "}
-              <a href={CAP_CONTINUITY.source.url} target="_blank" rel="noopener noreferrer" className="underline underline-offset-2">{CAP_CONTINUITY.source.organization}</a>.
+              <a href={CAP_CONTINUITY.source.url} target="_blank" rel="noopener noreferrer" className="underline underline-offset-2">{CAP_CONTINUITY.source.organization}</a>. Informações verificadas em {CAP_CONTINUITY.verifiedAt}.
             </>
           ) : null}
         </p>
