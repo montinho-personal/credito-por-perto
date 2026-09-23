@@ -274,6 +274,14 @@ const TOOL_EVENTS: EventSpec[] = [
   { name: "sac_price_copy", group: "ferramenta", description: "SAC x Price: resumo copiado (o texto fica no aparelho).", params: ["context"] },
   { name: "sac_price_share", group: "ferramenta", description: "SAC x Price: link da ferramenta compartilhado (sem valores).", params: ["context"] },
 
+  /* Simulador de financiamento imobiliário. Nenhum valor sai: nem imóvel,
+     nem entrada, nem parcela, nem taxa. O exemplo vai pelo id ("300-mil"). */
+  { name: "home_finance_start", group: "ferramenta", description: "Financiamento imobiliário: primeira interação.", params: ["context"] },
+  { name: "home_finance_complete", group: "ferramenta", description: "Financiamento imobiliário: simulação calculada.", params: ["context", "mode", "rate_unit", "example_used", "reference_used"], keyEvent: true },
+  { name: "home_finance_mode_select", group: "ferramenta", description: "Financiamento imobiliário: modo escolhido (parcela ou capacidade).", params: ["context", "mode"] },
+  { name: "home_finance_example_select", group: "ferramenta", description: "Financiamento imobiliário: exemplo da página levado ao simulador.", params: ["context", "example"] },
+  { name: "home_finance_reference_use", group: "ferramenta", description: "Financiamento imobiliário: taxa de referência usada (oficial ou ilustrativa).", params: ["context", "official"] },
+
   /* Comparador de propostas */
   { name: "credit_compare_start", group: "ferramenta", description: "Comparador de propostas: primeira interação.", params: [] },
   { name: "credit_compare_complete", group: "ferramenta", description: "Comparador de propostas: resultado calculado.", params: ["proposals", "cet_informed", "advanced_used", "example_used"], keyEvent: true },

@@ -1530,7 +1530,12 @@ export function SacPriceCalculator({ context = "ferramenta" }: { context?: Conte
                   Contratos de imóvel costumam ter seguros e tarifas mensais e podem atualizar o saldo
                   devedor por um índice previsto no contrato, como a TR ou o IPCA. Nada disso está nesta
                   conta, que usa taxa fixa e saldo sem correção. Com índice de correção, as parcelas dos
-                  dois sistemas mudam ao longo do tempo.
+                  dois sistemas mudam ao longo do tempo. Para partir do valor do imóvel e da entrada — ou da
+                  parcela que cabe no seu mês —, use o{" "}
+                  <Link href="/calculadoras/financiamento-imobiliario/" className="font-semibold text-brand-teal underline underline-offset-2">
+                    Simulador de financiamento imobiliário
+                  </Link>
+                  .
                 </p>
               </div>
               <div className="rounded-xl border border-brand-border p-4">

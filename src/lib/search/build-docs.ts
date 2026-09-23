@@ -396,6 +396,26 @@ export function buildSearchDocs(): SearchDoc[] {
       content: "",
     },
     {
+      id: "/calculadoras/financiamento-imobiliario/",
+      url: "/calculadoras/financiamento-imobiliario/",
+      title: "Simulador de financiamento imobiliário",
+      description:
+        "Valor do imóvel, entrada, taxa e prazo: parcela na SAC e na Price, juros e renda — ou quanto dá para financiar com a parcela que cabe no mês.",
+      section: "Calculadoras",
+      type: "calculadora",
+      tags: ["simulador", "financiamento", "imovel", "casa", "apartamento", "entrada", "renda"],
+      keywords: [
+        "financiamento imobiliario",
+        "simular financiamento de imovel",
+        "financiamento 300 mil",
+        "quanto consigo financiar",
+        "parcela do financiamento",
+        "entrada do imovel",
+      ],
+      headings: [],
+      content: "",
+    },
+    {
       id: "/calculadoras/sac-x-price/",
       url: "/calculadoras/sac-x-price/",
       title: "Calculadora SAC x Price",

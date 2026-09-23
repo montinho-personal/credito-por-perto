@@ -459,6 +459,13 @@
           "optional": true
         },
         {
+          "id": "financiar-imovel",
+          "title": "Vai financiar um imóvel? Quanto fica a parcela?",
+          "toolId": "financiamento-imobiliario",
+          "whyThisStep": "Mostra a parcela na SAC e na Price, os juros e a renda que ela representa — ou quanto uma parcela consegue financiar.",
+          "optional": true
+        },
+        {
           "id": "sac-ou-price",
           "title": "Vai financiar um imóvel? SAC ou Price?",
           "toolId": "sac-x-price",

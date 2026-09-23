@@ -433,7 +433,8 @@
     "supportingPages": [
       "/calculadoras/parcela-no-orcamento/",
       "/organizacao-financeira/como-fazer-orcamento-pessoal/",
-      "/emprestimos/diferenca-entre-emprestimo-e-financiamento/"
+      "/emprestimos/diferenca-entre-emprestimo-e-financiamento/",
+      "/calculadoras/financiamento-imobiliario/"
     ]
   },
   "calculadora de renegociação de dívida comparar proposta de acordo": {
@@ -657,6 +658,13 @@
     "supportingPages": [
       "/juros-e-cet/price-ou-sac-sistemas-de-amortizacao/",
       "/calculadoras/quitacao-antecipada/"
+    ]
+  },
+  "simulador de financiamento imobiliário quanto fica financiar valor parcela entrada": {
+    "canonicalOwner": "/calculadoras/financiamento-imobiliario/",
+    "supportingPages": [
+      "/calculadoras/sac-x-price/",
+      "/organizacao-financeira/quanto-da-renda-comprometer-financiamento-imovel/"
     ]
   }
 }

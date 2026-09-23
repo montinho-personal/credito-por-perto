@@ -168,6 +168,29 @@
       "updatedAt": "2026-09-23"
     },
     {
+      "id": "financiamento-imobiliario",
+      "name": "Simulador de financiamento imobiliário",
+      "shortName": "Financiamento imobiliário",
+      "route": "/calculadoras/financiamento-imobiliario/",
+      "cta": "Simular financiamento",
+      "situation": "antes-de-contratar",
+      "question": "Quanto fica a parcela do imóvel — ou quanto consigo financiar?",
+      "whenItHelps": "Informe valor do imóvel, entrada, taxa e prazo para ver a parcela na SAC e na Price, os juros e a renda que ela representa — ou comece pela parcela que cabe no mês.",
+      "calloutLead": "Veja quanto fica a parcela do imóvel na SAC e na Price, e quanto a entrada e o prazo mudam a conta.",
+      "triggerTerms": [
+        "financiamento imobiliário",
+        "financiar o imóvel",
+        "financiar um imóvel",
+        "entrada do imóvel",
+        "parcela do financiamento"
+      ],
+      "defaultNextSteps": [
+        "sac-x-price",
+        "parcela-no-orcamento"
+      ],
+      "updatedAt": "2026-09-23"
+    },
+    {
       "id": "sac-x-price",
       "name": "Calculadora SAC x Price",
       "shortName": "SAC x Price",
