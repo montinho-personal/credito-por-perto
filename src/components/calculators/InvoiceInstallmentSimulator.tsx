@@ -46,9 +46,9 @@ import {
 } from "@/lib/calculators/invoice-installment";
 import {
   applyRegulatoryCap,
+  CAP_CONTINUITY,
   formatIsoDate,
   INTEREST_CAP,
-  type CapResult,
   type DebtStart,
 } from "@/lib/calculators/credit-card-rules";
 import { useRevealResult } from "./use-reveal-result";
@@ -703,7 +703,11 @@ export function InvoiceInstallmentSimulator({ context = "ferramenta" }: { contex
               </>
             ) : null}
 
-            <ExtraBlocks extra={extra} analysis={shown.mode === "proposta" ? shown.analyses[0]! : shown.analysis} compared={shown.mode === "proposta" && shown.comparison !== null} Sub={Sub} />
+            <ExtraBlocks
+              extra={extra}
+              items={shown.mode === "proposta" ? shown.analyses.map((analysis, i) => ({ label: LABELS[i]!, analysis })) : [{ label: "Simulação", analysis: shown.analysis }]}
+              Sub={Sub}
+            />
 
             <div className="mt-6 space-y-3 text-sm">
               <p>
@@ -1057,32 +1061,45 @@ function SimulationWhatIfs({
 
 /* ---------- teto e quitação à vista ---------- */
 
-function ExtraBlocks({ extra, analysis: a, compared, Sub }: { extra: ExtraFields; analysis: ProposalAnalysis; compared: boolean; Sub: "h3" | "h4" }) {
+function ExtraBlocks({ extra, items, Sub }: { extra: ExtraFields; items: Array<{ label: string; analysis: ProposalAnalysis }>; Sub: "h3" | "h4" }) {
   const cash = optMoney(extra.cashPayoff);
   const original = optMoney(extra.original);
   const charged = optMoney(extra.charged);
-  let cap: CapResult | null = null;
-  let capOriginal: number | null = null;
-  if (extra.start !== "" && extra.origin !== "" && a.extraCostCents >= 0) {
-    capOriginal = extra.origin === "sim" ? (original !== undefined && original > 0 ? original : null) : a.financedCents;
-    if (capOriginal !== null) {
-      cap = applyRegulatoryCap({
-        originalCents: capOriginal,
-        alreadyChargedCents: extra.origin === "sim" ? (charged ?? 0) : 0,
-        newChargesCents: a.extraCostCents,
-        start: extra.start,
-      });
-    }
-  }
+  const many = items.length > 1;
+  // O teto é conferido proposta a proposta: cada uma tem o próprio custo adicional.
+  const caps = items.map(({ label, analysis: a }) => {
+    if (extra.start === "" || extra.origin === "" || a.extraCostCents < 0) return null;
+    const capOriginal = extra.origin === "sim" ? (original !== undefined && original > 0 ? original : null) : a.financedCents;
+    if (capOriginal === null) return null;
+    const cap = applyRegulatoryCap({
+      originalCents: capOriginal,
+      alreadyChargedCents: extra.origin === "sim" ? (charged ?? 0) : 0,
+      newChargesCents: a.extraCostCents,
+      start: extra.start,
+    });
+    return { label, a, cap, capOriginal };
+  });
+  const first = caps[0] ?? null;
+  const sameOriginal = caps.every((c) => c !== null && first !== null && c.capOriginal === first.capOriginal);
+  const exceeding = caps.flatMap((c) =>
+    c && (c.cap.status === "ultrapassaria" || (c.cap.status === "incerto" && c.cap.wouldExceed)) ? [{ label: c.label, excessCents: c.cap.excessCents }] : [],
+  );
   return (
     <>
-      {cash !== undefined && Number.isFinite(cash) && cash > 0 && !compared ? (
+      {cash !== undefined && Number.isFinite(cash) && cash > 0 ? (
         <div className="mt-6">
           <Sub className="font-serif text-lg font-bold text-brand-navy">Quitar hoje ou parcelar</Sub>
           <dl className="mt-2">
             <Row label="Quitar hoje, à vista" value={brl(cash)} />
-            <Row label="Parcelamento, no total" value={brl(a.disbursedCents)} />
-            <Row label="Diferença" value={brl(a.disbursedCents - cash)} strong note="o que o parcelamento soma a mais que a quitação agora" />
+            {items.map(({ label, analysis: a }) => (
+              <Row
+                key={label}
+                label={many ? `${label}, no total` : "Parcelamento, no total"}
+                value={brl(a.disbursedCents)}
+                strong={!many}
+                note={`${brl(Math.abs(a.disbursedCents - cash))} ${a.disbursedCents >= cash ? "a mais" : "a menos"} que a quitação agora`}
+              />
+            ))}
           </dl>
         </div>
       ) : null}
@@ -1090,36 +1107,57 @@ function ExtraBlocks({ extra, analysis: a, compared, Sub }: { extra: ExtraFields
       <div className="mt-6 rounded-xl border border-brand-border p-4 text-sm leading-relaxed text-brand-text">
         <Sub className="font-semibold text-brand-navy">Existe limite para os juros e encargos?</Sub>
         <p className="mt-1">{INTEREST_CAP.summary} O limite vale para o que foi acumulado — não é a taxa — e alcança o rotativo e o parcelamento da fatura.</p>
-        {cap && capOriginal !== null ? (
-          cap.status === "nao-se-aplica" ? (
+        {extra.origin === "sim" ? <p className="mt-2">{CAP_CONTINUITY.summary}</p> : null}
+        {first && sameOriginal ? (
+          first.cap.status === "nao-se-aplica" ? (
             <p className="mt-2">Pelo que você informou, a dívida começou antes da vigência do limite, e a regra pode não alcançá-la. Confira na fatura.</p>
           ) : (
             <>
               <dl className="mt-3">
-                <Row label="Valor original considerado" value={brl(capOriginal)} note={extra.origin === "sim" ? "o que entrou no rotativo, como você informou" : "o valor parcelado"} />
-                <Row label="Máximo de juros e encargos pela regra" value={brl(cap.capCents)} />
+                <Row label="Valor original considerado" value={brl(first.capOriginal)} note={extra.origin === "sim" ? "o que entrou no rotativo, como você informou" : "o valor parcelado"} />
+                <Row label="Máximo de juros e encargos pela regra" value={brl(first.cap.capCents)} />
                 {extra.origin === "sim" ? <Row label="Já cobrados antes do parcelamento" value={brl(charged ?? 0)} /> : null}
-                <Row label="Custo adicional deste parcelamento" value={brl(a.extraCostCents)} note="pode incluir IOF, que fica fora do limite" />
-                <Row label="Margem restante antes deste parcelamento" value={brl(cap.roomCents)} strong />
+                <Row label="Margem restante antes do parcelamento" value={brl(first.cap.roomCents)} strong />
+                {caps.map((c) =>
+                  c ? (
+                    <Row
+                      key={c.label}
+                      label={many ? `Custo adicional — ${c.label}` : "Custo adicional deste parcelamento"}
+                      value={brl(c.a.extraCostCents)}
+                      note="pode incluir IOF, que fica fora do limite"
+                    />
+                  ) : null,
+                )}
               </dl>
-              {cap.status === "ultrapassaria" || (cap.status === "incerto" && cap.wouldExceed) ? (
+              {exceeding.length > 0 ? (
                 <div role="note" className="mt-3 rounded-lg bg-brand-warning-soft p-3">
                   <p className="font-semibold text-brand-warning">Atenção à regra aplicável</p>
                   <p className="mt-1">
-                    Pelas informações fornecidas, o valor parece ultrapassar em {brl(cap.excessCents)} o limite aplicável às operações
-                    alcançadas pela regra. Confira os valores, a data de origem da dívida e a documentação da instituição — se o custo
-                    adicional incluir IOF, a conta do limite é menor.
+                    Pelas informações fornecidas,{" "}
+                    {many
+                      ? exceeding.map((e) => `${e.label} parece ultrapassar o limite em ${brl(e.excessCents)}`).join("; ")
+                      : `o valor parece ultrapassar em ${brl(exceeding[0]!.excessCents)} o limite`}{" "}
+                    aplicável às operações alcançadas pela regra. Confira os valores, a data de origem da dívida e a documentação da
+                    instituição — se o custo adicional incluir IOF, a conta do limite é menor.
                   </p>
                 </div>
               ) : null}
             </>
           )
+        ) : caps.some((c) => c !== null) ? (
+          <p className="mt-2 text-brand-muted">As propostas têm valores parcelados diferentes; confira o limite de cada uma separadamente.</p>
         ) : (
           <p className="mt-2 text-brand-muted">Para comparar com o limite, responda às perguntas sobre a origem da dívida no campo opcional acima.</p>
         )}
         <p className="mt-2 text-xs text-brand-muted">
           Fonte:{" "}
           <a href={INTEREST_CAP.source.url} target="_blank" rel="noopener noreferrer" className="underline underline-offset-2">{INTEREST_CAP.source.organization}</a>. Informações verificadas em {INTEREST_CAP.verifiedAt}.
+          {extra.origin === "sim" ? (
+            <>
+              {" "}Continuidade do limite no parcelamento:{" "}
+              <a href={CAP_CONTINUITY.source.url} target="_blank" rel="noopener noreferrer" className="underline underline-offset-2">{CAP_CONTINUITY.source.organization}</a>.
+            </>
+          ) : null}
         </p>
       </div>
     </>

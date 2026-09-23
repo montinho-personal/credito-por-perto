@@ -415,6 +415,24 @@ export function buildSearchDocs(): SearchDoc[] {
       content: "",
     },
     {
+      id: "/calculadoras/parcelamento-fatura-cartao/",
+      url: "/calculadoras/parcelamento-fatura-cartao/",
+      title: "Simulador de parcelamento da fatura do cartão",
+      description:
+        "Valor, parcelas e proposta da fatura: total pago, custo adicional, taxa aproximada e comparação de até 3 opções.",
+      section: "Calculadoras",
+      type: "calculadora",
+      tags: ["calculadora", "cartao", "fatura", "parcelamento"],
+      keywords: [
+        "parcelamento da fatura",
+        "parcelar fatura do cartao",
+        "simular parcelamento da fatura",
+        "juros do parcelamento da fatura",
+      ],
+      headings: [],
+      content: "",
+    },
+    {
       id: "/calculadoras/financiamento-imobiliario/",
       url: "/calculadoras/financiamento-imobiliario/",
       title: "Simulador de financiamento imobiliário",

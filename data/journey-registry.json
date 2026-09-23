@@ -181,6 +181,13 @@
           "optional": true
         },
         {
+          "id": "parcelar-fatura",
+          "title": "Recebeu uma proposta para parcelar a fatura?",
+          "toolId": "parcelamento-fatura-cartao",
+          "whyThisStep": "Mostra o total pago e o custo adicional de cada proposta e compara até três lado a lado, sem eleger uma vencedora.",
+          "optional": true
+        },
+        {
           "id": "antecipar",
           "title": "Tem dinheiro para antecipar parcelas?",
           "toolId": "quitacao-antecipada",

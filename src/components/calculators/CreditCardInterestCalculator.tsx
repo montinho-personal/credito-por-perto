@@ -969,8 +969,8 @@ function CardResult({
         </p>
         <p>
           <span className="text-brand-muted">Recebeu uma opção de parcelamento da fatura?</span>{" "}
-          <Link href="/calculadoras/comparador-de-propostas/" className="font-semibold text-brand-teal underline underline-offset-2">
-            Compare o CET das opções
+          <Link href="/calculadoras/parcelamento-fatura-cartao/" className="font-semibold text-brand-teal underline underline-offset-2">
+            Simule o total do parcelamento
           </Link>{" "}
           <span className="text-brand-muted">— parcelamento e rotativo têm custos diferentes.</span>
         </p>

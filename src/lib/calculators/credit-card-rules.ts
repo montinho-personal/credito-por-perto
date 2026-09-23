@@ -73,10 +73,44 @@ export const PORTABILITY = {
   verifiedAt: "16/08/2026",
 } as const satisfies RegulatoryRule;
 
+/**
+ * O teto não recomeça quando o saldo do rotativo vira parcelamento: o valor
+ * original continua sendo o que entrou no rotativo.
+ *
+ * FONTE AINDA NÃO LIDA NA ÍNTEGRA: a pesquisa de 23/09/2026 só viu o trecho
+ * de busca das instruções do Banco Central para o documento 3060 ("Juros
+ * acumulados no cartão"). `verifiedAt` fica null até alguém abrir o PDF e
+ * confirmar; a página mostra a fonte, mas não a data de verificação.
+ */
+export const CAP_CONTINUITY = {
+  id: "teto-continua-no-parcelamento",
+  summary:
+    "Quando o saldo do rotativo passa para o parcelamento da fatura, o limite de juros e encargos não recomeça: o valor original continua sendo o que entrou no rotativo.",
+  source: {
+    organization: "Banco Central do Brasil",
+    title: "Instruções de preenchimento do documento 3060 — juros acumulados no cartão",
+    url: "https://www.bcb.gov.br/content/estabilidadefinanceira/Leiaute_de_documentos/3060/Instrucoes-preenchimento-Juros-acumulados-cartao.pdf",
+  },
+  verifiedAt: null as string | null,
+} as const;
+
+/** Liquidação antecipada com redução proporcional dos juros (CDC). */
+export const EARLY_PAYOFF = {
+  id: "quitacao-reducao-proporcional",
+  summary:
+    "O Código de Defesa do Consumidor assegura a liquidação antecipada do débito, total ou parcial, com redução proporcional dos juros e demais acréscimos (art. 52, §2º).",
+  source: {
+    organization: "Presidência da República",
+    title: "Código de Defesa do Consumidor (Lei nº 8.078/1990), art. 52, §2º",
+    url: "https://www.planalto.gov.br/ccivil_03/leis/l8078compilado.htm",
+  },
+  verifiedAt: "28/08/2026",
+} as const satisfies RegulatoryRule;
+
 /** Taxas médias do rotativo por instituição, publicadas pelo BC. */
 export const BC_RATES_PAGE = "https://www.bcb.gov.br/estatisticas/txjuros";
 
-export const CARD_RULES: readonly RegulatoryRule[] = [INTEREST_CAP, ROTATIVO_DURATION, PORTABILITY];
+export const CARD_RULES: readonly RegulatoryRule[] = [INTEREST_CAP, ROTATIVO_DURATION, PORTABILITY, EARLY_PAYOFF];
 
 /* -------------------------------------------------------------------------- */
 /* Aplicação do teto                                                          */

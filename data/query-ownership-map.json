@@ -673,5 +673,12 @@
       "/organizacao-financeira/como-sair-do-rotativo/",
       "/organizacao-financeira/fatura-do-cartao-como-funciona/"
     ]
+  },
+  "simulador de parcelamento da fatura do cartão quanto vou pagar no total": {
+    "canonicalOwner": "/calculadoras/parcelamento-fatura-cartao/",
+    "supportingPages": [
+      "/organizacao-financeira/como-sair-do-rotativo/",
+      "/calculadoras/juros-cartao-credito/"
+    ]
   }
 }

@@ -368,6 +368,6 @@ export function buildInstallmentSummary(items: Array<{ label: string; analysis: 
     lines.push("");
   }
   lines.push("Simulação educativa. Confira as condições na sua fatura.");
-  lines.push("https://www.creditoporperto.com/calculadoras/parcelamento-fatura/");
+  lines.push("https://www.creditoporperto.com/calculadoras/parcelamento-fatura-cartao/");
   return lines.join("\n");
 }

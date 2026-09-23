@@ -212,8 +212,8 @@ export default async function JurosCartaoPage() {
           quitado ou ir para o parcelamento. O limite de juros e encargos alcança tanto o rotativo quanto o
           parcelamento da fatura. Compare as opções da sua fatura pelo{" "}
           <Link href="/juros-e-cet/o-que-e-cet/">CET</Link> — o{" "}
-          <Link href="/calculadoras/comparador-de-propostas/">comparador de propostas</Link> coloca duas lado a
-          lado.
+          <Link href="/calculadoras/parcelamento-fatura-cartao/">simulador de parcelamento da fatura</Link> mostra
+          o total de cada proposta e coloca até três lado a lado.
         </p>
 
         <h2 id="comparar">Como comparar as opções da própria fatura?</h2>
