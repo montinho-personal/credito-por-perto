@@ -396,6 +396,25 @@ export function buildSearchDocs(): SearchDoc[] {
       content: "",
     },
     {
+      id: "/calculadoras/financiamento-veiculo/",
+      url: "/calculadoras/financiamento-veiculo/",
+      title: "Simulador de financiamento de veículo",
+      description:
+        "Valor, entrada, taxa e prazo: parcela, juros e total desembolsado de um financiamento de carro ou moto, com a média do Banco Central ao lado.",
+      section: "Calculadoras",
+      type: "calculadora",
+      tags: ["simulador", "financiamento", "veiculo", "carro", "moto", "entrada"],
+      keywords: [
+        "simular financiamento de carro",
+        "financiamento de moto",
+        "calcular parcela do carro",
+        "entrada do carro",
+        "financiamento de veiculo",
+      ],
+      headings: [],
+      content: "",
+    },
+    {
       id: "/calculadoras/margem-consignavel/",
       url: "/calculadoras/margem-consignavel/",
       title: "Calculadora de margem consignável",

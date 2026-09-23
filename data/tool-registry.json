@@ -145,6 +145,29 @@
       "updatedAt": "2026-09-03"
     },
     {
+      "id": "financiamento-veiculo",
+      "name": "Simulador de financiamento de veículo",
+      "shortName": "Financiamento de veículo",
+      "route": "/calculadoras/financiamento-veiculo/",
+      "cta": "Simular financiamento",
+      "situation": "antes-de-contratar",
+      "question": "Quanto fica financiar este carro ou esta moto?",
+      "whenItHelps": "Informe valor, entrada, taxa e prazo para estimar parcela, juros e total pago — e veja quanto muda com mais entrada, menos parcelas ou uma taxa menor.",
+      "calloutLead": "Antes de olhar só a parcela, veja quanto a entrada, a taxa e o prazo mudam os juros e o total que sai do seu bolso.",
+      "triggerTerms": [
+        "financiamento de veículo",
+        "financiamento de carro",
+        "financiar um carro",
+        "financiar a moto",
+        "entrada do veículo"
+      ],
+      "defaultNextSteps": [
+        "comparador-de-propostas",
+        "parcela-no-orcamento"
+      ],
+      "updatedAt": "2026-09-23"
+    },
+    {
       "id": "emprestimo",
       "name": "Calculadora de empréstimo",
       "shortName": "Calculadora de empréstimo",
@@ -165,7 +188,7 @@
         "parcela-no-orcamento",
         "comparador-de-propostas"
       ],
-      "updatedAt": "2026-08-29"
+      "updatedAt": "2026-09-23"
     },
     {
       "id": "a-vista-ou-parcelado",

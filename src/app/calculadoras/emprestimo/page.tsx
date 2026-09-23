@@ -64,6 +64,12 @@ export default function CalculadoraEmprestimoPage() {
           <code>anual = (1 + mensal)¹² − 1</code>. É por isso que 3% ao mês
           equivale a bem mais que 36% ao ano.
         </p>
+        <p>
+          Vai financiar um carro ou uma moto? O{" "}
+          <Link href="/calculadoras/financiamento-veiculo/">simulador de financiamento de veículo</Link>{" "}
+          usa a mesma conta, mas parte do preço do veículo e da entrada, e mostra o total que sai
+          do seu bolso somando as duas coisas.
+        </p>
         <h2 id="por-que-o-valor-real-difere">Por que o valor real pode ser diferente</h2>
         <p>
           A proposta de uma instituição inclui custos que esta estimativa não

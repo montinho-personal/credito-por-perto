@@ -452,6 +452,13 @@
           "optional": false
         },
         {
+          "id": "financiar-veiculo",
+          "title": "Vai financiar um veículo? Quanto fica no total?",
+          "toolId": "financiamento-veiculo",
+          "whyThisStep": "Mostra parcela, juros e total desembolsado — e quanto cada um muda com mais entrada ou menos parcelas.",
+          "optional": true
+        },
+        {
           "id": "cabe",
           "title": "Se for parcelar, a parcela cabe no mês?",
           "toolId": "parcela-no-orcamento",

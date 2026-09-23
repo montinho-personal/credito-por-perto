@@ -470,7 +470,8 @@
     "supportingPages": [
       "/emprestimos/emprestimo-com-garantia/",
       "/emprestimos/consorcio-ou-emprestimo/",
-      "/emprestimos/diferenca-entre-emprestimo-e-financiamento/"
+      "/emprestimos/diferenca-entre-emprestimo-e-financiamento/",
+      "/calculadoras/financiamento-veiculo/"
     ]
   },
   "diferença entre fiador e avalista e como sair da fiança": {
@@ -641,6 +642,13 @@
     "canonicalOwner": "/organizacao-financeira/conta-de-luz-atrasada-corte/",
     "supportingPages": [
       "/organizacao-financeira/qual-divida-pagar-primeiro/"
+    ]
+  },
+  "simulador de financiamento de veículo carro e moto calcular parcela": {
+    "canonicalOwner": "/calculadoras/financiamento-veiculo/",
+    "supportingPages": [
+      "/emprestimos/financiamento-de-veiculo/",
+      "/calculadoras/emprestimo/"
     ]
   }
 }

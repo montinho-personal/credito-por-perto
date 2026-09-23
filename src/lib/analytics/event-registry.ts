@@ -251,6 +251,18 @@ const DECISION_EVENTS: EventSpec[] = [
  * A única exceção está anotada em `renegotiation_tool_click`.
  */
 const TOOL_EVENTS: EventSpec[] = [
+  /* Simulador de financiamento de veículo.
+     Nenhum parâmetro carrega valor: nem preço, nem entrada, nem taxa, nem
+     resultado. Só a FORMA como a pessoa usou a ferramenta — unidade da taxa,
+     modo da entrada, se abriu custos — e em que página ela estava. */
+  { name: "vehicle_finance_start", group: "ferramenta", description: "Simulador de financiamento de veículo: primeira interação.", params: ["context"] },
+  { name: "vehicle_finance_complete", group: "ferramenta", description: "Simulador de financiamento de veículo: simulação calculada.", params: ["context", "rate_unit", "down_mode", "advanced_used", "example_used", "reference_shown"], keyEvent: true },
+  { name: "vehicle_finance_advanced_open", group: "ferramenta", description: "Simulador de veículo: custos adicionais abertos.", params: ["context"] },
+  { name: "vehicle_finance_schedule_open", group: "ferramenta", description: "Simulador de veículo: evolução do financiamento aberta.", params: ["context", "view"] },
+  { name: "vehicle_finance_whatif_select", group: "ferramenta", description: "Simulador de veículo: cenário 'e se?' escolhido.", params: ["context", "scenario"] },
+  { name: "vehicle_finance_reference_use", group: "ferramenta", description: "Simulador de veículo: taxa média do Banco Central usada como ponto de partida.", params: ["context"] },
+  { name: "vehicle_finance_share", group: "ferramenta", description: "Simulador de veículo: link da ferramenta compartilhado (sem valores).", params: ["context"] },
+
   /* Comparador de propostas */
   { name: "credit_compare_start", group: "ferramenta", description: "Comparador de propostas: primeira interação.", params: [] },
   { name: "credit_compare_complete", group: "ferramenta", description: "Comparador de propostas: resultado calculado.", params: ["proposals", "cet_informed", "advanced_used", "example_used"], keyEvent: true },

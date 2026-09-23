@@ -18,6 +18,7 @@ import { ArticleImage } from "@/components/content/ArticleImage";
 import { VideoEmbed } from "@/components/content/VideoEmbed";
 import { ToolCallout } from "@/components/content/ToolCallout";
 import { OndeConseguirCredito } from "@/components/content/OndeConseguirCredito";
+import { VehicleFinancingSimulator } from "@/components/calculators/VehicleFinancingSimulator";
 import { JourneyCallout } from "@/components/content/JourneyCallout";
 import { FaqAccordion, FaqItem } from "@/components/content/FaqAccordion";
 
@@ -94,6 +95,9 @@ export const mdxComponents = {
   VideoEmbed,
   ToolCallout,
   OndeConseguirCredito,
+  /* Mesmo componente da página /calculadoras/financiamento-veiculo/, sem a
+     referência do Banco Central: o artigo é estático e congelaria a taxa. */
+  VehicleFinancingSimulator,
   JourneyCallout,
   FaqAccordion,
   FaqItem,
