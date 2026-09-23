@@ -32,8 +32,8 @@ import {
  * então a página não a usa.
  *
  * REGRAS: só as do módulo `credit-card-rules.ts`. A continuidade do teto do
- * rotativo para o parcelamento (CAP_CONTINUITY) aparece com a fonte, mas sem
- * data de verificação enquanto o documento do BC não for lido na íntegra.
+ * rotativo para o parcelamento (CAP_CONTINUITY) só aparece quando tiver data
+ * de verificação — o documento do BC ainda não foi conferido na íntegra.
  */
 
 const PATH = "/calculadoras/parcelamento-fatura-cartao/";
@@ -191,15 +191,19 @@ export default function ParcelamentoFaturaPage() {
           rotativo quanto o parcelamento da fatura.
         </p>
 
-        <h2 id="veio-do-rotativo">A dívida veio do rotativo: o limite começa de novo?</h2>
-        <p>
-          {CAP_CONTINUITY.summary} Por isso o simulador pergunta se a dívida veio do rotativo e, se veio, o valor
-          original que entrou nele e os encargos já cobrados antes do parcelamento. Fonte:{" "}
-          <a href={CAP_CONTINUITY.source.url} target="_blank" rel="noopener noreferrer">
-            {CAP_CONTINUITY.source.organization}, {CAP_CONTINUITY.source.title.toLowerCase()}
-          </a>
-          .
-        </p>
+        {CAP_CONTINUITY.verifiedAt ? (
+          <>
+            <h2 id="veio-do-rotativo">A dívida veio do rotativo: o limite começa de novo?</h2>
+            <p>
+              {CAP_CONTINUITY.summary} Por isso o simulador pergunta se a dívida veio do rotativo e, se veio, o valor
+              original que entrou nele e os encargos já cobrados antes do parcelamento. Fonte:{" "}
+              <a href={CAP_CONTINUITY.source.url} target="_blank" rel="noopener noreferrer">
+                {CAP_CONTINUITY.source.organization}, {CAP_CONTINUITY.source.title.toLowerCase()}
+              </a>
+              . Informações verificadas em {CAP_CONTINUITY.verifiedAt}.
+            </p>
+          </>
+        ) : null}
 
         <h2 id="portabilidade">É possível levar a dívida para outra instituição?</h2>
         <p>
@@ -290,11 +294,13 @@ export default function ParcelamentoFaturaPage() {
             <a href={EARLY_PAYOFF.source.url} target="_blank" rel="noopener noreferrer">{EARLY_PAYOFF.source.title}</a>.
             Informações verificadas em {EARLY_PAYOFF.verifiedAt}.
           </li>
-          <li>
-            {CAP_CONTINUITY.source.organization} —{" "}
-            <a href={CAP_CONTINUITY.source.url} target="_blank" rel="noopener noreferrer">{CAP_CONTINUITY.source.title}</a>
-            {CAP_CONTINUITY.verifiedAt ? `. Informações verificadas em ${CAP_CONTINUITY.verifiedAt}.` : "."}
-          </li>
+          {CAP_CONTINUITY.verifiedAt ? (
+            <li>
+              {CAP_CONTINUITY.source.organization} —{" "}
+              <a href={CAP_CONTINUITY.source.url} target="_blank" rel="noopener noreferrer">{CAP_CONTINUITY.source.title}</a>.
+              Informações verificadas em {CAP_CONTINUITY.verifiedAt}.
+            </li>
+          ) : null}
         </ul>
         <p>
           Conteúdo e ferramenta da Equipe Editorial do Crédito por Perto, que não concede crédito, não emite cartão, não

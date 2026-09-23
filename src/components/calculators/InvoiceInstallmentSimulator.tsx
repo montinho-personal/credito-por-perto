@@ -1107,14 +1107,14 @@ function ExtraBlocks({ extra, items, Sub }: { extra: ExtraFields; items: Array<{
       <div className="mt-6 rounded-xl border border-brand-border p-4 text-sm leading-relaxed text-brand-text">
         <Sub className="font-semibold text-brand-navy">Existe limite para os juros e encargos?</Sub>
         <p className="mt-1">{INTEREST_CAP.summary} O limite vale para o que foi acumulado — não é a taxa — e alcança o rotativo e o parcelamento da fatura.</p>
-        {extra.origin === "sim" ? <p className="mt-2">{CAP_CONTINUITY.summary}</p> : null}
+        {extra.origin === "sim" && CAP_CONTINUITY.verifiedAt ? <p className="mt-2">{CAP_CONTINUITY.summary}</p> : null}
         {first && sameOriginal ? (
           first.cap.status === "nao-se-aplica" ? (
             <p className="mt-2">Pelo que você informou, a dívida começou antes da vigência do limite, e a regra pode não alcançá-la. Confira na fatura.</p>
           ) : (
             <>
               <dl className="mt-3">
-                <Row label="Valor original considerado" value={brl(first.capOriginal)} note={extra.origin === "sim" ? "o que entrou no rotativo, como você informou" : "o valor parcelado"} />
+                <Row label="Valor original considerado" value={brl(first.capOriginal)} note={extra.origin === "sim" ? "o valor original que você informou" : "o valor parcelado"} />
                 <Row label="Máximo de juros e encargos pela regra" value={brl(first.cap.capCents)} />
                 {extra.origin === "sim" ? <Row label="Já cobrados antes do parcelamento" value={brl(charged ?? 0)} /> : null}
                 <Row label="Margem restante antes do parcelamento" value={brl(first.cap.roomCents)} strong />
@@ -1152,7 +1152,7 @@ function ExtraBlocks({ extra, items, Sub }: { extra: ExtraFields; items: Array<{
         <p className="mt-2 text-xs text-brand-muted">
           Fonte:{" "}
           <a href={INTEREST_CAP.source.url} target="_blank" rel="noopener noreferrer" className="underline underline-offset-2">{INTEREST_CAP.source.organization}</a>. Informações verificadas em {INTEREST_CAP.verifiedAt}.
-          {extra.origin === "sim" ? (
+          {extra.origin === "sim" && CAP_CONTINUITY.verifiedAt ? (
             <>
               {" "}Continuidade do limite no parcelamento:{" "}
               <a href={CAP_CONTINUITY.source.url} target="_blank" rel="noopener noreferrer" className="underline underline-offset-2">{CAP_CONTINUITY.source.organization}</a>.
