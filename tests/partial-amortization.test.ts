@@ -241,3 +241,59 @@ describe("caso H — validade do valor de quitação", () => {
     expect(isQuoteOutdated("28/08/2026", "2026-08-28")).toBe(false);
   });
 });
+
+/* ------------------------------------------------------------------ *
+ * Regressão: o prazo-base é exatamente o contratado (23/09/2026)
+ * ------------------------------------------------------------------ */
+
+describe("prazo contratado não ganha mês fantasma", () => {
+  /* Antes da correção, a parcela Price (ou a amortização SAC) arredondada
+     para baixo deixava saldo de centavos a reais no fim do prazo, e o
+     cronograma rodava um mês a mais: 55 de 125 cenários Price terminavam
+     em n+1 meses, com a "última parcela" de R$ 0,01 a R$ 0,43. */
+  const balances = [100_000, 1_000_000, 1_000_001, 10_000_100, 12_345_678, 30_000_000];
+  const terms = [3, 12, 60, 120, 360];
+  const rates = [0.005, 0.0089, 0.01, 0.0149, 0.02];
+
+  for (const system of ["price", "sac"] as const) {
+    it(`${system}: linha de base e 'reduzir parcela' terminam no prazo, sem parcela de centavos`, () => {
+      for (const balanceCents of balances) {
+        for (const remainingMonths of terms) {
+          for (const rateValue of rates.map((r) => r * 100)) {
+            const r = simulatePartialAmortization(
+              input({ balanceCents, remainingMonths, rateValue, system, extraPaymentCents: Math.round(balanceCents / 10) }),
+            );
+            expect(r.status).toBe("simulated");
+            // Nunca passa do prazo. Em saldo realista (R$ 10 mil ou mais) termina
+            // exatamente nele; com R$ 1.000 em 360 meses, o centavo arredondado
+            // da parcela, capitalizado por 30 anos, quita alguns meses antes.
+            expect(r.baseline!.months).toBeLessThanOrEqual(remainingMonths);
+            expect(r.reducePayment!.months).toBeLessThanOrEqual(remainingMonths);
+            if (balanceCents >= 1_000_000) {
+              expect(r.baseline!.months).toBe(remainingMonths);
+              expect(r.reducePayment!.months).toBe(remainingMonths);
+            }
+            // Última parcela positiva, e o ajuste dela não passa do que o
+            // arredondamento explica: até 1 centavo por mês (parcela e juros
+            // arredondados), capitalizado até o fim. Em 360 meses a 2% a.m. esse
+            // teto chega a R$ 624 — os centavos rendem juros por 30 anos.
+            expect(r.baseline!.lastPaymentCents).toBeGreaterThan(0);
+            if (system === "price") {
+              const rate = rateValue / 100;
+              const bound = (Math.pow(1 + rate, remainingMonths) - 1) / rate;
+              const fixed = r.baseline!.firstPaymentCents;
+              expect(Math.abs(r.baseline!.lastPaymentCents - fixed)).toBeLessThanOrEqual(bound);
+            }
+          }
+        }
+      }
+    });
+  }
+
+  it("reduzir prazo continua descobrindo o prazo: não recebe prazo fixo", () => {
+    const r = simulatePartialAmortization(
+      input({ balanceCents: 10_000_000, remainingMonths: 120, rateValue: 1, extraPaymentCents: 3_000_000 }),
+    );
+    expect(r.reduceTerm!.months).toBeLessThan(120);
+  });
+});

@@ -126,12 +126,22 @@ export function pricePaymentCents(
  * Roda o cronograma mês a mês até quitar.
  * - Price: parcela fixa informada; a última é ajustada ao saldo restante.
  * - SAC: amortização constante informada; parcela = amortização + juros.
+ *
+ * `termMonths`: prazo contratado. Quando informado, a parcela desse mês
+ * absorve o saldo que sobrar. Sem isso, o valor fixo arredondado ao centavo
+ * deixava resíduo — a parcela Price arredondada para baixo acumula, com
+ * juros, dezenas de centavos em 60 meses — e o cronograma ganhava um mês a
+ * mais, com parcela de centavos: um contrato de 60 meses aparecia com 61.
+ * Em 55 de 125 cenários de teste do Price isso acontecia (corrigido em
+ * 23/09/2026). O modo "reduzir prazo" não passa prazo, de propósito: ali o
+ * número de meses é justamente o que se quer descobrir.
  */
 export function runSchedule(
   system: "price" | "sac",
   balanceCents: number,
   monthlyRate: number,
   fixedCents: number,
+  termMonths?: number,
 ): ScheduleSummary | null {
   if (balanceCents <= 0 || fixedCents <= 0) return null;
   // Price só converge se a parcela cobrir os juros do primeiro mês.
@@ -148,7 +158,10 @@ export function runSchedule(
     months += 1;
     const interest = Math.round(balance * monthlyRate);
     let payment: number;
-    if (system === "price") {
+    if (termMonths !== undefined && months === termMonths) {
+      // Último mês do contrato: quita o que restou, para mais ou para menos.
+      payment = balance + interest;
+    } else if (system === "price") {
       payment = Math.min(fixedCents, balance + interest);
     } else {
       const amortization = Math.min(fixedCents, balance);
@@ -232,7 +245,7 @@ export function simulatePartialAmortization(
       ? pricePaymentCents(input.balanceCents, rate, n)
       : Math.round(input.balanceCents / n);
 
-  const baseline = runSchedule(system, input.balanceCents, rate, originalFixed);
+  const baseline = runSchedule(system, input.balanceCents, rate, originalFixed, n);
   if (!baseline) {
     return {
       status: "blocked",
@@ -253,7 +266,7 @@ export function simulatePartialAmortization(
     system === "price"
       ? pricePaymentCents(balanceAfter, rate, n)
       : Math.round(balanceAfter / n);
-  const reducePayment = runSchedule(system, balanceAfter, rate, newFixed);
+  const reducePayment = runSchedule(system, balanceAfter, rate, newFixed, n);
 
   return {
     status: "simulated",
