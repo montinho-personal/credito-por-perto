@@ -71,6 +71,14 @@ acima do conteúdo principal. Ver `docs/adsense-protected-areas.md`.
 pnpm audit:all && pnpm build`. As 14 auditorias precisam terminar sem críticos
 e sem avisos.
 
+**Publicação automática (decisão do proprietário, 23/09/2026).** Trabalho
+pronto e aprovado nas verificações acima vai direto para o `main`, sem
+esperar "pode publicar". Depois de publicar, mandar o link de produção e o
+relatório; o proprietário revisa no ar e pede ajustes. Continuam valendo a
+regra do AdSense (itens de "Pare e pergunte" exigem pergunta antes) e a
+regra de verificação: dado que não fecha com fonte oficial não entra, ou
+entra com a lacuna declarada.
+
 **Cadeia de publicação:**
 
 ```
