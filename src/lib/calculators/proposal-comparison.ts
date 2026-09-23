@@ -5,12 +5,17 @@
  * - Determinístico e client-side: nada é enviado ou armazenado.
  * - Dinheiro em CENTAVOS (inteiros) para evitar erros de ponto flutuante;
  *   arredondamento só na apresentação.
- * - O CET é sempre o INFORMADO pela instituição — este motor não calcula
- *   nem estima CET (uma parcela pode embutir IOF, seguros, tarifas e fluxos
- *   que uma estimativa simplificada não captura).
+ * - O CET é sempre o INFORMADO pela instituição. Ao lado dele, quando a data
+ *   da liberação é passada, vai a "taxa efetiva estimada do fluxo", pelo
+ *   motor único do CET (`cash-flow.ts`): parcelas mensais a partir de um mês
+ *   depois da liberação e custos fora das parcelas pagos na contratação. Não
+ *   é o CET: a proposta pode ter custos e datas que estes campos não captam.
  * - Nenhuma saída recomenda contratação. O motor descreve: menor parcela,
  *   menor prazo, menor CET informado, menor total pago e os trade-offs.
  */
+
+import { solveAnnualRate, type Flow } from "./cash-flow";
+import { addMonths } from "./civil-date";
 
 export interface ProposalInput {
   /** Rótulo exibido ("Proposta A"). Nunca armazenado fora do estado local. */
@@ -46,6 +51,8 @@ export interface ProposalComputed {
   totalPaidCents: number;
   /** total pago − valor líquido recebido */
   nominalCostCents: number;
+  /** Taxa efetiva anual estimada do fluxo, em % a.a. (≠ CET informado). */
+  estimatedAnnualPercent?: number;
 }
 
 export type CriterionKey =
@@ -148,7 +155,18 @@ export function monthlyToEquivalentAnnual(monthlyPercent: number): number {
   return (Math.pow(1 + monthlyPercent / 100, 12) - 1) * 100;
 }
 
-function computeProposal(p: ProposalInput): ProposalComputed {
+/** Taxa efetiva do fluxo pelo motor do CET: recebe na liberação, paga mensalmente. */
+function estimateAnnualPercent(p: ProposalInput, releaseDate: string): number | undefined {
+  const external = p.externalCostsCents ?? 0;
+  const flows: Flow[] = [
+    { date: releaseDate, amountCents: p.netAmountCents - external, description: "recebido" },
+    ...Array.from({ length: p.installments }, (_, k) => ({ date: addMonths(releaseDate, k + 1), amountCents: -p.installmentCents, description: `parcela ${k + 1}` })),
+  ];
+  const o = solveAnnualRate(flows, releaseDate);
+  return o.kind === "ok" ? o.annualRate * 100 : undefined;
+}
+
+function computeProposal(p: ProposalInput, releaseDate?: string): ProposalComputed {
   const externalCostsCents = p.externalCostsCents ?? 0;
   // Inteiros: multiplicação exata dentro do limite (600 × 10^11 < 2^53).
   const totalPaidCents = p.installments * p.installmentCents + externalCostsCents;
@@ -169,6 +187,7 @@ function computeProposal(p: ProposalInput): ProposalComputed {
     upfrontPaymentRequested: p.upfrontPaymentRequested ?? false,
     totalPaidCents,
     nominalCostCents: totalPaidCents - p.netAmountCents,
+    estimatedAnnualPercent: releaseDate ? estimateAnnualPercent(p, releaseDate) : undefined,
   };
 }
 
@@ -187,7 +206,7 @@ function winnersBy<T>(
   };
 }
 
-export function compareProposals(inputs: ProposalInput[]): ComparisonResult {
+export function compareProposals(inputs: ProposalInput[], options: { releaseDate?: string } = {}): ComparisonResult {
   if (inputs.length < 2 || inputs.length > 3) {
     throw new Error("Compare 2 ou 3 propostas.");
   }
@@ -196,7 +215,7 @@ export function compareProposals(inputs: ProposalInput[]): ComparisonResult {
     throw new Error(allErrors.join(" "));
   }
 
-  const proposals = inputs.map(computeProposal);
+  const proposals = inputs.map((p) => computeProposal(p, options.releaseDate));
 
   const criteria: CriterionResult[] = [
     { key: "lowestInstallment", ...winnersBy(proposals, (p) => p.installmentCents) },

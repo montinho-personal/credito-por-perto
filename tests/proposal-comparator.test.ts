@@ -211,3 +211,18 @@ describe("resumo copiável", () => {
     expect(text.toLowerCase()).not.toContain("melhor proposta");
   });
 });
+
+describe("taxa efetiva estimada pelo motor do CET", () => {
+  it("só aparece com data de liberação e bate com o motor único", async () => {
+    const { compareProposals } = await import("@/lib/calculators/proposal-comparison");
+    const { analyzeProposal } = await import("@/lib/calculators/cet");
+    const A = { label: "A", netAmountCents: 10_000_00, installments: 12, installmentCents: 945_60 };
+    const B = { label: "B", netAmountCents: 10_000_00, installments: 12, installmentCents: 945_60, externalCostsCents: 500_00 };
+    expect(compareProposals([A, B]).proposals[0]!.estimatedAnnualPercent).toBeUndefined();
+    const r = compareProposals([A, B], { releaseDate: "2026-09-23" });
+    const ref = analyzeProposal({ receivedCents: 10_000_00, installments: 12, installmentCents: 945_60, releaseDate: "2026-09-23", firstDueDate: "2026-10-23", costs: [{ kind: "outro", amountCents: 500_00, mode: "antecipado" }], allCostsInformed: false, indexer: "nenhum", operation: "definida" });
+    if (ref.kind !== "ok") throw new Error();
+    expect(r.proposals[0]!.estimatedAnnualPercent!).toBeCloseTo(26.895231, 5);
+    expect(r.proposals[1]!.estimatedAnnualPercent!).toBeCloseTo(ref.result.annualRate * 100, 8);
+  });
+});

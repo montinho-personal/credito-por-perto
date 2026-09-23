@@ -1,5 +1,6 @@
 "use client";
 
+import { todayInBrazil } from "@/lib/calculators/civil-date";
 import Link from "next/link";
 import { useId, useRef, useState } from "react";
 import { useRevealResult } from "./use-reveal-result";
@@ -414,6 +415,12 @@ function ComparisonResultView({
         : undefined,
     },
     {
+      label: "Taxa efetiva estimada do fluxo",
+      values: proposals.map((p) =>
+        p.estimatedAnnualPercent !== undefined ? `${formatPercentBR(p.estimatedAnnualPercent)} a.a.` : "—",
+      ),
+    },
+    {
       label: "Juros informados",
       values: proposals.map((p) =>
         p.interestRate
@@ -639,6 +646,12 @@ function ComparisonResultView({
         &ldquo;↓ menor&rdquo; marca o menor valor de cada critério. Menor nem sempre significa melhor
         para o seu caso: cada dimensão tem um trade-off.
       </p>
+      <p className="mt-2 text-xs leading-relaxed text-brand-muted">
+        &ldquo;Taxa efetiva estimada do fluxo&rdquo; sai do mesmo cálculo da{" "}
+        <Link href="/calculadoras/cet/" className="font-semibold text-brand-teal underline underline-offset-2">calculadora de CET</Link>, supondo
+        liberação hoje, parcelas mensais a partir de um mês e custos fora das parcelas pagos na contratação. Não é o CET da
+        proposta: para conferir com datas, IOF, tarifas e seguros, use a calculadora de CET.
+      </p>
 
       <div className="mt-5 flex flex-wrap gap-3">
         <button
@@ -716,7 +729,7 @@ export function ProposalComparator() {
       return;
     }
     try {
-      const comparison = compareProposals(parsed as ProposalInput[]);
+      const comparison = compareProposals(parsed as ProposalInput[], { releaseDate: todayInBrazil() });
       setErrors([]);
       setResult(comparison);
       const cetCount = comparison.proposals.filter((p) => p.cetAnnualPercent !== undefined).length;
