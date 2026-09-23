@@ -16,9 +16,10 @@
  * SGS 20772 — "Taxa média de juros das operações de crédito com recursos
  * direcionados - Pessoas físicas - Financiamento imobiliário com taxas de
  * mercado". Nome e código conferidos no título do conjunto no Portal de
- * Dados Abertos do BC. A unidade esperada é % a.a.; como não foi possível
- * baixar a série no ambiente de desenvolvimento, a FAIXA DE SANIDADE faz a
- * trava: um valor fora de 4%–25% ao ano (por exemplo, a mesma taxa
+ * Dados Abertos do BC. Unidade % a.a. confirmada em 23/09/2026: a página
+ * publicada mostrou 14,28% para julho de 2026, e o valor foi conferido no
+ * portal do BC. A FAIXA DE SANIDADE continua como trava contra mudança
+ * de formato: um valor fora de 4%–25% ao ano (por exemplo, a mesma taxa
  * expressa ao mês, perto de 1) é recusado, e a página usa a taxa
  * ilustrativa, dizendo que é ilustrativa. Número sem fonte nunca aparece
  * como dado oficial.
