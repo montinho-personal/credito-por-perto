@@ -36,6 +36,8 @@ import {
   COST_MODE_LABEL,
   analyzeProposal,
   compareCet,
+  installmentsOf,
+  DISPLAY,
   type Cost,
   type CostKind,
   type CostMode,
@@ -161,8 +163,9 @@ function toInput(f: Fields, mode: Mode): ProposalInput {
     announcedRate: rate === undefined ? undefined : { value: rate, unit: f.rateUnit },
     cetInformedPercent: mode === "proposta" ? optPct(f.cetInformed) : undefined,
     financedInformedCents: mode === "proposta" ? optMoney(f.financedInformed) : undefined,
-    indexer: f.indexer,
-    operation: f.operation,
+    // Operação e indexador só existem no modo proposta; na simulação, crédito comum prefixado.
+    indexer: mode === "proposta" ? f.indexer : "nenhum",
+    operation: mode === "proposta" ? f.operation : "definida",
   };
 }
 
@@ -338,16 +341,16 @@ export function CetCalculator({ today, context = "ferramenta" }: { today: string
     }
   }
 
-  function computeOffers(list: OfferFields[], { announce }: { announce: boolean }) {
+  function computeOffers(list: OfferFields[], { announce }: { announce: boolean }, fields: Fields = f) {
     const results: ProposalResult[] = [];
     for (const [i, o] of list.entries()) {
       const outcome = analyzeProposal({
         receivedCents: money(o.received),
         installments: intOf(o.installments),
         installmentCents: money(o.installment),
-        releaseDate: f.releaseDate,
-        firstDueDate: f.firstDueDate,
-        costs: optMoney(o.upfront) ? [{ kind: "outro", label: "Custos pagos à parte", amountCents: money(o.upfront), mode: "antecipado" }] : [],
+        releaseDate: fields.releaseDate,
+        firstDueDate: fields.firstDueDate,
+        costs: optMoney(o.upfront) !== undefined ? [{ kind: "outro", label: "Custos pagos à parte", amountCents: money(o.upfront), mode: "antecipado" }] : [],
         allCostsInformed: false,
         announcedRate: optPct(o.rate) === undefined ? undefined : { value: optPct(o.rate)!, unit: "am" },
         cetInformedPercent: optPct(o.cet),
@@ -370,7 +373,10 @@ export function CetCalculator({ today, context = "ferramenta" }: { today: string
     if (patch.releaseDate && !next.firstDueTouched) next.firstDueDate = addMonths(patch.releaseDate, 1);
     setF(next);
     setPremise(null);
-    if (submitted && mode !== "comparar") compute(next, mode, { announce: false });
+    if (submitted) {
+      if (mode === "comparar") computeOffers(offers, { announce: false }, next);
+      else compute(next, mode, { announce: false });
+    }
   }
 
   function updateCost(i: number, patch: Partial<CostFields>) {
@@ -408,6 +414,7 @@ export function CetCalculator({ today, context = "ferramenta" }: { today: string
   }
 
   function computeManual() {
+    const undated = manual.some((r) => !r.date && (r.receive.trim() !== "" || r.pay.trim() !== ""));
     const flows: Flow[] = manual.flatMap((r) => {
       const receive = optMoney(r.receive) ?? 0;
       const pay = optMoney(r.pay) ?? 0;
@@ -419,9 +426,10 @@ export function CetCalculator({ today, context = "ferramenta" }: { today: string
     setShown({
       mode: "manual",
       flows,
-      rate: o.kind === "ok" ? o.annualRate : null,
-      problem:
-        o.kind === "ok"
+      rate: o.kind === "ok" && !undated ? o.annualRate : null,
+      problem: undated
+        ? "Há linha com valor e sem data. Preencha a data de todas as linhas com valor."
+        : o.kind === "ok"
           ? null
           : "Este fluxo possui estrutura incomum e pode não permitir uma interpretação única por esta calculadora. Use recebimentos na primeira data e pagamentos depois, com datas e valores preenchidos.",
     });
@@ -443,6 +451,10 @@ export function CetCalculator({ today, context = "ferramenta" }: { today: string
       cetInformed: "",
       financedInformed: "",
       irregular: "",
+      firstDueDate: addMonths(f.releaseDate, 1),
+      firstDueTouched: false,
+      operation: "definida",
+      indexer: "nenhum",
     };
     setMode("proposta");
     setF(next);
@@ -503,7 +515,7 @@ export function CetCalculator({ today, context = "ferramenta" }: { today: string
           </button>
         ))}
       </div>
-      {errorOf("costs") ? <p className="text-sm font-medium text-brand-danger">{errorOf("costs")}</p> : null}
+      {errorOf("costs") ? <p role="alert" className="text-sm font-medium text-brand-danger">{errorOf("costs")}</p> : null}
       <label className="flex min-h-11 items-start gap-2 text-sm text-brand-text">
         <input type="checkbox" checked={f.allCosts} onChange={(e) => update({ allCosts: e.target.checked })} className="mt-1 h-5 w-5 shrink-0" />
         <span>Informei todos os custos da proposta (IOF, tarifas, seguros e outros cobrados na operação).</span>
@@ -542,11 +554,15 @@ export function CetCalculator({ today, context = "ferramenta" }: { today: string
                   {mode === "simular" ? "Taxa de juros" : "Taxa de juros anunciada (opcional)"}
                 </label>
                 <div className="mt-1.5 flex flex-wrap items-center gap-2">
-                  <input id={id("taxa")} type="text" inputMode="decimal" autoComplete="off" placeholder={mode === "simular" ? "ex.: 1,5" : "da proposta"} value={f.rate} onChange={(e) => update({ rate: e.target.value })} aria-invalid={Boolean(errorOf("announcedRate") || (mode === "simular" && errorOf("installmentCents")))} className={`${inputClass} max-w-[8rem]`} />
+                  <input id={id("taxa")} type="text" inputMode="decimal" autoComplete="off" placeholder={mode === "simular" ? "ex.: 1,5" : "da proposta"} value={f.rate} onChange={(e) => update({ rate: e.target.value })} aria-invalid={Boolean(errorOf("announcedRate") || (mode === "simular" && errorOf("installmentCents")))} aria-describedby={errorOf("announcedRate") || (mode === "simular" && errorOf("installmentCents")) ? `${id("taxa")}-erro` : undefined} className={`${inputClass} max-w-[8rem]`} />
                   <span className="text-sm text-brand-muted" aria-hidden="true">%</span>
                   <Segmented label="Unidade da taxa" value={f.rateUnit} onChange={(rateUnit) => update({ rateUnit })} options={[{ value: "am", label: "ao mês" }, { value: "aa", label: "ao ano" }]} />
                 </div>
-                {mode === "simular" && errorOf("installmentCents") ? <p className="mt-1.5 text-sm font-medium text-brand-danger">Informe a taxa de juros para simular as parcelas.</p> : null}
+                {mode === "simular" && errorOf("installmentCents") && !Number.isFinite(parsePercentBR(f.rate) ?? Number.NaN) ? (
+                  <p id={`${id("taxa")}-erro`} className="mt-1.5 text-sm font-medium text-brand-danger">Informe a taxa de juros para simular as parcelas.</p>
+                ) : errorOf("announcedRate") ? (
+                  <p id={`${id("taxa")}-erro`} className="mt-1.5 text-sm font-medium text-brand-danger">{errorOf("announcedRate")}</p>
+                ) : null}
               </div>
               <Field id={id("lib")} label="Quando recebeu (ou vai receber) o crédito?" type="date" value={f.releaseDate} error={errorOf("releaseDate")} onChange={(releaseDate) => releaseDate && update({ releaseDate })} />
               <Field id={id("venc")} label="Quando vence a primeira parcela?" type="date" value={f.firstDueDate} error={errorOf("firstDueDate")} onChange={(firstDueDate) => firstDueDate && update({ firstDueDate, firstDueTouched: true })} />
@@ -645,6 +661,11 @@ export function CetCalculator({ today, context = "ferramenta" }: { today: string
                 <Field id={id(`mt-${i}`)} label="Descrição" value={r.description} onChange={(description) => setManual(manual.map((x, k) => (k === i ? { ...x, description } : x)))} />
                 <Field id={id(`mr-${i}`)} label="Recebe" prefix="R$" value={r.receive} onChange={(receive) => setManual(manual.map((x, k) => (k === i ? { ...x, receive } : x)))} />
                 <Field id={id(`mp-${i}`)} label="Paga" prefix="R$" value={r.pay} onChange={(pay) => setManual(manual.map((x, k) => (k === i ? { ...x, pay } : x)))} />
+                {manual.length > 2 ? (
+                  <button type="button" onClick={() => setManual(manual.filter((_, k) => k !== i))} className="min-h-11 justify-self-start px-2 text-xs font-semibold text-brand-muted underline sm:col-span-4">
+                    remover linha
+                  </button>
+                ) : null}
               </fieldset>
             ))}
             <div className="flex flex-wrap gap-2">
@@ -715,7 +736,9 @@ function OutcomeView({ outcome, simulated, Title, Sub, context }: { outcome: Pro
       <div>
         {heading("Não foi possível calcular com estes valores")}
         <p className="mt-3 text-sm leading-relaxed">
-          O fluxo precisa começar com o dinheiro recebido e seguir só com pagamentos. Confira se os custos pagos à parte não são maiores que o valor recebido.
+          {outcome.validation.problems.includes("sem-recebimento") || outcome.validation.problems.includes("fluxo-nao-convencional")
+            ? "O fluxo precisa começar com o dinheiro recebido e seguir só com pagamentos. Confira se os custos pagos à parte não são maiores que o valor recebido."
+            : "Os valores levam a uma taxa fora da faixa que a calculadora consegue resolver com segurança. Confira valores, número de parcelas e datas."}
         </p>
       </div>
     );
@@ -730,8 +753,7 @@ function ResultView({ r, simulated, heading, Sub, context }: { r: ProposalResult
   const cta = (target: string) => () => track("cet_internal_cta_clicked", { context, target });
   const payments = r.flows.filter((x) => x.amountCents < 0 && x.date !== r.flows[0]!.date);
   const extraCosts = Object.values(r.costsByKind).reduce((s, v) => s + v, 0);
-  const n = r.flows.filter((x) => x.description.startsWith("Parcela ")).length;
-  const firstInstallment = -(r.flows.find((x) => x.description === "Parcela 1")?.amountCents ?? 0);
+  const { count: n, firstCents: firstInstallment } = installmentsOf(r);
   const allEqual = r.installmentsTotalCents === firstInstallment * n;
   const diff = r.cetDiffPp;
   const bigDiff = diff !== null && Math.abs(diff) > CET_DIFF_TOLERANCE_PP;
@@ -772,9 +794,11 @@ function ResultView({ r, simulated, heading, Sub, context }: { r: ProposalResult
             <Row label={name} value={annual(r.annualRate)} strong />
           </dl>
           <p className="mt-2 text-sm leading-relaxed">
-            {r.annualRate > r.announcedAnnual + 0.0005
-              ? `A diferença de ${pct((r.annualRate - r.announcedAnnual) * 100)} p.p. vem dos custos além dos juros${extraCosts > 0 ? ":" : " — e, se nenhum custo foi informado, das datas ou de valores diferentes dos anunciados."}`
-              : "Nesta simulação, o custo ficou próximo da taxa de juros: os custos informados pesam pouco ou não existem."}
+            {r.annualRate > r.announcedAnnual + DISPLAY.closeRate
+              ? `A diferença de ${pct((r.annualRate - r.announcedAnnual) * 100)} p.p. pode vir de custos além dos juros, das datas ou de valores diferentes dos anunciados${extraCosts > 0 ? ". Custos informados:" : "."}`
+              : r.annualRate < r.announcedAnnual - DISPLAY.closeRate
+                ? `A taxa calculada ficou ${pct((r.announcedAnnual - r.annualRate) * 100)} p.p. abaixo da anunciada. Confira a taxa, o valor das parcelas e as datas: com estes números, as parcelas não embutem os juros anunciados.`
+                : "A taxa calculada ficou próxima da taxa de juros: os custos informados pesam pouco ou não existem."}
           </p>
           {extraCosts > 0 ? (
             <ul className="mt-1 list-disc pl-5 text-sm">
@@ -815,13 +839,19 @@ function ResultView({ r, simulated, heading, Sub, context }: { r: ProposalResult
       ) : null}
 
       <p className="mt-4 text-sm leading-relaxed">
-        Em dinheiro: para cada R$ 1.000 disponíveis hoje, esta proposta soma cerca de {brl(r.paidPer1000Cents)} em pagamentos ao longo de{" "}
-        {r.termDays} dias. Esse total não é o CET — o CET considera também <em>quando</em> cada pagamento acontece.
+        Em dinheiro: você paga {brl(r.totalPaidCents)} por {brl(r.receivedCents)} recebidos — {brl(r.costInReaisCents)} a mais, ao longo de {r.termDays} dias.
+        {r.paidPer1000Cents !== null ? ` Para cada R$ 1.000 que ficam com você no dia da liberação, saem cerca de ${brl(r.paidPer1000Cents)} depois.` : ""} Esse total não é o{" "}
+        {isCet ? "CET" : "resultado"} — a taxa considera também <em>quando</em> cada pagamento acontece.
       </p>
-      {r.annualRate > 1 && r.termDays < 180 ? (
+      {r.annualRate > DISPLAY.shortTermRate && r.termDays < DISPLAY.shortTermDays ? (
         <p role="note" className="mt-2 rounded-lg bg-brand-teal-soft p-3 text-sm">
-          Como o CET é anualizado, operações curtas podem apresentar percentuais anuais elevados mesmo com poucos pagamentos. Aqui, o custo em reais é de{" "}
-          {brl(r.totalPaidCents - r.netInitialCents)}.
+          Como a taxa é anualizada, operações curtas podem apresentar percentuais anuais elevados mesmo com poucos pagamentos. Aqui, o custo em reais é de{" "}
+          {brl(r.costInReaisCents)}.
+        </p>
+      ) : null}
+      {r.annualRate < 0 ? (
+        <p role="note" className="mt-2 rounded-lg bg-brand-warning-soft p-3 text-sm text-brand-warning">
+          As parcelas somam menos do que o valor recebido, e a taxa ficou negativa. Confira os valores e o número de parcelas.
         </p>
       ) : null}
 
@@ -858,7 +888,13 @@ function ResultView({ r, simulated, heading, Sub, context }: { r: ProposalResult
         </div>
       ) : null}
 
-      {r.unexplainedFinancedCents !== null && r.unexplainedFinancedCents > 100 ? (
+      {r.unexplainedFinancedCents !== null && r.unexplainedFinancedCents < -DISPLAY.unexplainedMinCents ? (
+        <p role="note" className="mt-4 rounded-lg bg-brand-warning-soft p-3 text-sm text-brand-warning">
+          Os custos informados passam do valor financiado da proposta em {brl(-r.unexplainedFinancedCents)}. Confira se algum custo foi marcado como incluído no
+          financiamento sem estar nele, ou informado duas vezes.
+        </p>
+      ) : null}
+      {r.unexplainedFinancedCents !== null && r.unexplainedFinancedCents > DISPLAY.unexplainedMinCents ? (
         <p role="note" className="mt-4 rounded-lg bg-brand-warning-soft p-3 text-sm text-brand-warning">
           O valor financiado da proposta é {brl(r.unexplainedFinancedCents)} maior do que o liberado mais os custos informados. Pode existir IOF, tarifa ou outro
           custo não informado.
@@ -867,7 +903,7 @@ function ResultView({ r, simulated, heading, Sub, context }: { r: ProposalResult
 
       {r.indexer !== "nenhum" ? (
         <p role="note" className="mt-4 rounded-lg bg-brand-teal-soft p-3 text-sm leading-relaxed">
-          Indexador informado: {r.indexer === "tr" ? "TR" : r.indexer === "ipca" ? "IPCA" : "outro"}. Incluído na projeção do CET? Não. {CET_RULES.indexers} Se houver
+          Indexador informado: {r.indexer === "tr" ? "TR" : r.indexer === "ipca" ? "IPCA" : "outro"}. Incluído no cálculo? Não. {CET_RULES.indexers} Se houver
           indexadores ou taxas variáveis, o custo efetivo ao longo do contrato poderá mudar.
         </p>
       ) : null}
@@ -926,8 +962,8 @@ function ResultView({ r, simulated, heading, Sub, context }: { r: ProposalResult
 
 function CompareView({ results, Title }: { results: ProposalResult[]; Title: "h2" | "h3" }) {
   const criteria = compareCet(results);
-  const first = (r: ProposalResult) => -(r.flows.find((x) => x.description === "Parcela 1")?.amountCents ?? 0);
-  const n = (r: ProposalResult) => r.flows.filter((x) => x.description.startsWith("Parcela ")).length;
+  const first = (r: ProposalResult) => installmentsOf(r).firstCents;
+  const n = (r: ProposalResult) => installmentsOf(r).count;
   const metrics: Array<{ label: string; v: (r: ProposalResult) => string }> = [
     { label: "Valor recebido", v: (r) => brl(r.receivedCents) },
     { label: "Parcela", v: (r) => brl(first(r)) },

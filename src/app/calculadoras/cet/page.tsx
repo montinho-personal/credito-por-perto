@@ -74,7 +74,7 @@ export default function CetPage() {
   const lowerRateHigherCet = lowA && lowB && lowB.r.annualRate > lowA.r.annualRate ? { a: lowA, b: lowB } : null;
 
   // R$ 10 mil em 24x com o IOF da calculadora de IOF (financiado) e uma tarifa.
-  const iof = calculateIof({ amountCents: 10_000_00, term: 24, termUnit: "meses", schedule: "parcelas", monthlyRatePercent: 1.8, releaseDate: today, borrower: "pf", operation: "comum", payment: "descontado" });
+  const iof = calculateIof({ amountCents: 10_000_00, term: 24, termUnit: "meses", schedule: "parcelas", monthlyRatePercent: 1.8, releaseDate: today, borrower: "pf", operation: "comum", payment: "financiado" });
   const iofCents = iof.kind === "ok" ? iof.result.breakdown.totalCents : null;
   const full =
     iofCents !== null
@@ -180,8 +180,8 @@ export default function CetPage() {
         {full && iofCents !== null ? (
           <>
             <p>
-              Exemplo: R$ 10.000 em 24 parcelas a 1,80% ao mês, com IOF de {brl(iofCents)} (pessoa física, pela calculadora de IOF) e
-              tarifa de R$ 500, os dois incluídos no financiamento. O valor financiado vai a {brl(full.r.financedCents)}, as parcelas
+              Exemplo: R$ 10.000 em 24 parcelas a 1,80% ao mês, com IOF de {brl(iofCents)} (pessoa física, pela calculadora de IOF com o IOF
+              incluído no financiamento dos R$ 10.000) e tarifa de R$ 500, os dois incluídos no financiamento. O valor financiado vai a {brl(full.r.financedCents)}, as parcelas
               ficam em {brl(full.detail.installmentCents)} e o CET estimado é {annual(full.r.annualRate)}, contra{" "}
               {annual(monthlyToAnnual(0.018))} da taxa de juros.
             </p>
@@ -264,7 +264,7 @@ export default function CetPage() {
         <ul>
           <li>Montamos o fluxo: + valor liberado na data da liberação, − custos pagos à parte nessa data, − parcelas e custos nas datas em que acontecem.</li>
           <li>Datas reais, em dias corridos, com calendário civil (31/01 + 1 mês = 28 ou 29/02), sem fuso horário.</li>
-          <li>Resolvemos Σ FCj ÷ (1 + taxa)<sup>(dj − d0)/365</sup> = 0 por bisseção com intervalo que se expande — sem limite artificial de taxa e sem depender de chute inicial.</li>
+          <li>Resolvemos a mesma equação da norma ({CET_RULES.formula}) por bisseção com intervalo que se expande até taxas extremas, sem depender de chute inicial.</li>
           <li>Precisão interna alta; arredondamento só na tela, com duas casas.</li>
           <li>Fluxos com mais de uma troca de sinal são recusados, em vez de mostrar uma taxa arbitrária.</li>
           <li>“CET estimado” só quando você confirma que informou todos os custos; senão, “taxa efetiva estimada do fluxo informado”.</li>

@@ -22,7 +22,7 @@
  */
 
 import { addMonths, daysBetween, isIsoDate } from "./civil-date";
-import { annualToMonthly, monthlyToAnnual, solveAnnualRate, totalPaidCents, type Flow, type FlowValidation } from "./cash-flow";
+import { annualToMonthly, monthlyToAnnual, netDisbursementCents, solveAnnualRate, totalPaidCents, type Flow, type FlowValidation } from "./cash-flow";
 
 /* -------------------------------------------------------------------------- */
 /* Norma                                                                      */
@@ -43,7 +43,7 @@ export const CET_RULES = {
     "A Resolução vale para operações de crédito e arrendamento mercantil financeiro de instituições financeiras e sociedades de arrendamento com pessoas naturais, empresários individuais, microempresas e empresas de pequeno porte. Não se aplica a repasses de recursos externos nem a crédito rural.",
   definition:
     "O CET é uma taxa anual que consolida os encargos e as despesas da operação: amortizações, juros, tarifas, tributos, seguros e outras despesas vinculadas, inclusive as que não entram no valor financiado.",
-  formula: "Σ FCj ÷ (1 + CET)^((dj − d0) ÷ 365) − FC0 = 0, com datas em dias corridos.",
+  formula: "Σ (j = 1 a N) FCj ÷ (1 + CET)^((dj − d0) ÷ 365) − FC0 = 0, com FC0 recebido na liberação, FCj pagos depois e datas em dias corridos.",
   indexers:
     "Taxas flutuantes, índices de preços e outros referenciais que variam durante o contrato não entram no cálculo do CET; a instituição informa esses parâmetros junto com ele.",
   revolving:
@@ -146,8 +146,10 @@ export interface ProposalResult {
   costsByKind: Record<CostKind, number>;
   /** Parcelas − valor financiado: juros e outros encargos dentro das parcelas. */
   interestInInstallmentsCents: number;
-  /** Total pago por R$ 1.000 recebidos — não é o CET. */
-  paidPer1000Cents: number;
+  /** Pagamentos depois da liberação para cada R$ 1.000 do FC0 — não é o CET. null se o FC0 não for positivo. */
+  paidPer1000Cents: number | null;
+  /** Total pago − valor recebido: o custo em reais. */
+  costInReaisCents: number;
   announcedAnnual: number | null;
   announcedMonthly: number | null;
   cetInformed: number | null;
@@ -205,17 +207,17 @@ export function validateProposal(p: ProposalInput): ProposalIssue[] {
 /** Monta o fluxo: + recebido e − antecipados na liberação; − parcelas e custos depois. */
 export function buildFlows(p: ProposalInput): Flow[] {
   const amounts = p.irregularInstallmentsCents && p.irregularInstallmentsCents.length > 0 ? p.irregularInstallmentsCents : Array.from({ length: p.installments }, () => p.installmentCents);
-  const flows: Flow[] = [{ date: p.releaseDate, amountCents: p.receivedCents, description: "Valor recebido" }];
+  const flows: Flow[] = [{ date: p.releaseDate, amountCents: p.receivedCents, description: "Valor recebido", kind: "recebimento" }];
   for (const c of p.costs) {
     const name = c.label?.trim() || COST_KIND_LABEL[c.kind];
-    if (c.mode === "antecipado") flows.push({ date: p.releaseDate, amountCents: -c.amountCents, description: `${name} pago na contratação` });
-    if (c.mode === "data" && c.date) flows.push({ date: c.date, amountCents: -c.amountCents, description: name });
+    if (c.mode === "antecipado") flows.push({ date: p.releaseDate, amountCents: -c.amountCents, description: `${name} pago na contratação`, kind: "custo" });
+    if (c.mode === "data" && c.date) flows.push({ date: c.date, amountCents: -c.amountCents, description: name, kind: "custo" });
   }
   amounts.forEach((amount, k) => {
     const date = addMonths(p.firstDueDate, k);
-    flows.push({ date, amountCents: -amount, description: `Parcela ${k + 1}` });
+    flows.push({ date, amountCents: -amount, description: `Parcela ${k + 1}`, kind: "parcela" });
     for (const c of p.costs) {
-      if (c.mode === "por-parcela") flows.push({ date, amountCents: -c.amountCents, description: `${c.label?.trim() || COST_KIND_LABEL[c.kind]} (parcela ${k + 1})` });
+      if (c.mode === "por-parcela") flows.push({ date, amountCents: -c.amountCents, description: `${c.label?.trim() || COST_KIND_LABEL[c.kind]} (parcela ${k + 1})`, kind: "custo" });
     }
   });
   return flows;
@@ -242,7 +244,10 @@ export function analyzeProposal(p: ProposalInput): ProposalOutcome {
   const requested = p.receivedCents + costsByMode.descontado;
   const financed = requested + costsByMode.financiado;
   const totalPaid = totalPaidCents(flows);
-  const netInitial = p.receivedCents - costsByMode.antecipado;
+  // FC0: saldo do fluxo na data da liberação (inclui custo "em outra data" marcado no mesmo dia).
+  const netInitial = netDisbursementCents(flows, p.releaseDate);
+  const paidAfter = flows.filter((f) => f.date > p.releaseDate && f.amountCents < 0).reduce((s, f) => s - f.amountCents, 0);
+  const lastFlowDate = flows.reduce((m, f) => (f.date > m ? f.date : m), p.releaseDate);
 
   const announcedMonthly = p.announcedRate ? (p.announcedRate.unit === "am" ? p.announcedRate.value / 100 : annualToMonthly(p.announcedRate.value / 100)) : null;
   const announcedAnnual = p.announcedRate ? (p.announcedRate.unit === "aa" ? p.announcedRate.value / 100 : monthlyToAnnual(p.announcedRate.value / 100)) : null;
@@ -265,7 +270,8 @@ export function analyzeProposal(p: ProposalInput): ProposalOutcome {
       costsByMode,
       costsByKind,
       interestInInstallmentsCents: installmentsTotal - financed,
-      paidPer1000Cents: Math.round((totalPaid / netInitial) * 1_000_00),
+      paidPer1000Cents: netInitial > 0 ? Math.round((paidAfter / netInitial) * 1_000_00) : null,
+      costInReaisCents: totalPaid - p.receivedCents,
       announcedAnnual,
       announcedMonthly,
       cetInformed,
@@ -273,7 +279,7 @@ export function analyzeProposal(p: ProposalInput): ProposalOutcome {
       unexplainedFinancedCents: p.financedInformedCents !== undefined ? p.financedInformedCents - financed : null,
       indexer: p.indexer,
       lastDueDate: last,
-      termDays: daysBetween(p.releaseDate, last),
+      termDays: daysBetween(p.releaseDate, lastFlowDate > last ? lastFlowDate : last),
     },
   };
 }
@@ -297,14 +303,31 @@ export function compareCet(results: ProposalResult[]): Array<{ key: CetCriterion
     return { key, label, holders: holders.length === results.length ? [] : holders, available: true };
   };
   return [
-    pick("menorCetCalculado", "Menor CET estimado", (r) => r.annualRate),
+    pick("menorCetCalculado", results.every((r) => r.label === "cet") ? "Menor CET estimado" : "Menor taxa efetiva estimada", (r) => r.annualRate),
     pick("menorCetInformado", "Menor CET informado", (r) => r.cetInformed),
     pick("menorTotal", "Menor total desembolsado", (r) => r.totalPaidCents),
     pick("menorParcela", "Menor primeira parcela", (r) => {
-      const first = r.flows.find((f) => f.description === "Parcela 1");
+      const first = r.flows.find((f) => f.kind === "parcela");
       return first ? -first.amountCents : null;
     }),
     pick("menorPrazo", "Menor prazo", (r) => r.termDays),
     pick("maiorRecebido", "Maior valor recebido", (r) => r.receivedCents, true),
   ];
 }
+
+/** Primeira parcela e número de parcelas, pelo papel do fluxo (nunca pelo nome). */
+export function installmentsOf(r: ProposalResult): { count: number; firstCents: number } {
+  const parcels = r.flows.filter((f) => f.kind === "parcela");
+  return { count: parcels.length, firstCents: parcels[0] ? -parcels[0].amountCents : 0 };
+}
+
+/** Limiares de exibição, num lugar só. */
+export const DISPLAY = {
+  /** Diferença (centavos) a partir da qual o valor financiado informado não se explica. */
+  unexplainedMinCents: 100,
+  /** Diferença (fração anual) abaixo da qual taxa e CET são "próximos". */
+  closeRate: 0.0005,
+  /** Nota de anualização: taxa acima de 100% a.a. em menos de 180 dias. */
+  shortTermRate: 1,
+  shortTermDays: 180,
+} as const;

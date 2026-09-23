@@ -25,6 +25,8 @@ export interface Flow {
   /** Positivo: o cliente recebe. Negativo: o cliente paga. Centavos. */
   amountCents: number;
   description: string;
+  /** Papel do fluxo — a interface nunca deduz isso pela descrição. */
+  kind?: "recebimento" | "parcela" | "custo";
 }
 
 export type FlowProblem =
@@ -92,10 +94,12 @@ export function solveAnnualRate(flows: Flow[], d0: string): RateOutcome {
   const net = netByDate(flows);
   const f = (r: number) => presentValue(net, d0, r);
   // Recebe primeiro e paga depois: f cresce com a taxa (−∞ perto de −100%, → recebimento inicial quando r → ∞).
-  let lo = -0.999999;
+  // Limites: de −100% (exclusive) até ~1e300 — taxas anualizadas de prazos de
+  // um dia podem ser astronômicas, e isso é matemática, não erro.
+  let lo = -1 + 1e-12;
   let hi = 1;
   let guard = 0;
-  while (f(hi) < 0 && guard++ < 200) hi = hi * 2 + 1;
+  while (f(hi) < 0 && hi < 1e300 && guard++ < 2000) hi = hi * 2 + 1;
   if (f(hi) < 0 || f(lo) > 0) return { kind: "sem-raiz" };
   let iterations = 0;
   for (; iterations < 400; iterations++) {

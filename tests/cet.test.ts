@@ -215,3 +215,34 @@ describe("comparação", () => {
     expect(c.find((x) => x.key === "menorParcela")!.holders).toEqual([]); // empate
   });
 });
+
+describe("auditoria", () => {
+  it("custo pago à parte não é contado duas vezes no custo em reais e no 'por R$ 1.000'", () => {
+    const r = ok({ costs: [{ kind: "tarifa", amountCents: 1_000_00, mode: "antecipado" }] });
+    expect(r.costInReaisCents).toBe(12 * 945_60 + 1_000_00 - 10_000_00); // 2.347,20
+    expect(r.paidPer1000Cents).toBe(1_260_80); // 11.347,20 ÷ 9.000 × 1.000
+  });
+
+  it("custo 'em outra data' no dia da liberação entra no FC0", () => {
+    const a = ok({ costs: [{ kind: "tarifa", amountCents: 1_000_00, mode: "data", date: "2026-09-23" }] });
+    const b = ok({ costs: [{ kind: "tarifa", amountCents: 1_000_00, mode: "antecipado" }] });
+    expect(a.netInitialCents).toBe(9_000_00);
+    expect(a.annualRate).toBeCloseTo(b.annualRate, 12);
+  });
+
+  it("parcelas identificadas pelo papel, não pelo nome", () => {
+    const r = ok({ costs: [{ kind: "outro", label: "Parcela extra", amountCents: 10_00, mode: "por-parcela" }] });
+    expect(r.flows.filter((f) => f.kind === "parcela")).toHaveLength(12);
+  });
+
+  it("taxas astronômicas de prazo de um dia resolvem", () => {
+    const r = ok({ receivedCents: 1_000_00, installments: 1, installmentCents: 1_500_00, firstDueDate: "2026-09-24" });
+    expect(Number.isFinite(r.annualRate)).toBe(true);
+    expect(r.annualRate).toBeGreaterThan(1e60);
+  });
+
+  it("comparação só fala em CET quando todos confirmaram os custos", () => {
+    expect(compareCet([ok({}), ok({})])[0]!.label).toBe("Menor taxa efetiva estimada");
+    expect(compareCet([ok({ allCostsInformed: true }), ok({ allCostsInformed: true })])[0]!.label).toBe("Menor CET estimado");
+  });
+});
