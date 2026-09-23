@@ -145,6 +145,29 @@
       "updatedAt": "2026-09-03"
     },
     {
+      "id": "antecipacao-fgts",
+      "name": "Simulador de antecipação do FGTS",
+      "shortName": "Antecipação do FGTS",
+      "route": "/calculadoras/antecipacao-fgts/",
+      "cta": "Simular antecipação do FGTS",
+      "situation": "antes-de-contratar",
+      "question": "Quanto recebo antecipando o Saque-Aniversário, e o que cedo em troca?",
+      "whenItHelps": "Estime quantos Saques-Aniversário podem ser antecipados, quanto receberia hoje e como a taxa afeta o valor.",
+      "calloutLead": "Veja quanto do seu Saque-Aniversário pode ser antecipado pelas regras atuais, quanto você receberia hoje e quanto cede dos próximos anos.",
+      "triggerTerms": [
+        "antecipação do fgts",
+        "antecipar fgts",
+        "saque-aniversário",
+        "antecipação do saque-aniversário",
+        "empréstimo fgts"
+      ],
+      "defaultNextSteps": [
+        "conversor-de-taxas",
+        "parcela-no-orcamento"
+      ],
+      "updatedAt": "2026-09-23"
+    },
+    {
       "id": "financiamento-veiculo",
       "name": "Simulador de financiamento de veículo",
       "shortName": "Financiamento de veículo",

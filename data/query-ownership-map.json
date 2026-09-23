@@ -680,5 +680,12 @@
       "/organizacao-financeira/como-sair-do-rotativo/",
       "/calculadoras/juros-cartao-credito/"
     ]
+  },
+  "simulador de antecipação do fgts quanto consigo antecipar saque-aniversário": {
+    "canonicalOwner": "/calculadoras/antecipacao-fgts/",
+    "supportingPages": [
+      "/emprestimos/antecipacao-saque-aniversario-fgts/",
+      "/emprestimos/saque-aniversario-vale-a-pena/"
+    ]
   }
 }

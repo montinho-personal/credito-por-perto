@@ -415,6 +415,24 @@ export function buildSearchDocs(): SearchDoc[] {
       content: "",
     },
     {
+      id: "/calculadoras/antecipacao-fgts/",
+      url: "/calculadoras/antecipacao-fgts/",
+      title: "Simulador de antecipação do FGTS",
+      description:
+        "Saldo, mês de aniversário e taxa: quantos Saques-Aniversário podem ser antecipados, quanto receberia hoje e o que cede em troca.",
+      section: "Calculadoras",
+      type: "calculadora",
+      tags: ["calculadora", "fgts", "saque-aniversario", "antecipacao"],
+      keywords: [
+        "antecipacao do fgts",
+        "simulador saque aniversario",
+        "quanto consigo antecipar fgts",
+        "calcular saque aniversario",
+      ],
+      headings: [],
+      content: "",
+    },
+    {
       id: "/calculadoras/parcelamento-fatura-cartao/",
       url: "/calculadoras/parcelamento-fatura-cartao/",
       title: "Simulador de parcelamento da fatura do cartão",

@@ -5,6 +5,7 @@
  */
 import { getAllArticles } from "../src/lib/content/articles";
 import { getSourceLedger } from "../src/lib/content/ledgers";
+import { ADVANCE_RULES, SAQUE_TABLE, TERMINATION_RULES } from "../src/lib/calculators/fgts-rules";
 import {
   buildReport,
   finishAudit,
@@ -78,6 +79,34 @@ for (const article of getAllArticles()) {
       pages: [article.urlPath],
       detail: "Artigo publicado sem data de verificação de fontes no frontmatter.",
     });
+  }
+}
+
+/*
+ * Regras normativas das ferramentas: o módulo guarda a data de verificação
+ * (DD/MM/AAAA). Velha demais vira aviso — e aviso segura a publicação, que é
+ * o lembrete de reler a fonte oficial. Troca de regra próxima vira nota.
+ */
+const RULE_MODULES = [
+  { name: "FGTS — tabela do Saque-Aniversário", verifiedAt: SAQUE_TABLE.verifiedAt },
+  { name: "FGTS — antecipação do Saque-Aniversário", verifiedAt: ADVANCE_RULES.verifiedAt },
+  { name: "FGTS — rescisão e retorno", verifiedAt: TERMINATION_RULES.verifiedAt },
+];
+const RULE_STALE_DAYS = 120;
+for (const rule of RULE_MODULES) {
+  const [d, m, y] = rule.verifiedAt.split("/").map(Number);
+  const verified = new Date(Date.UTC(y!, m! - 1, d!));
+  const age = Math.floor((today.getTime() - verified.getTime()) / 86_400_000);
+  if (Number.isNaN(age)) {
+    findings.push({ severity: "critical", rule: "regra-sem-data", pages: ["/calculadoras/antecipacao-fgts/"], detail: `${rule.name}: data de verificação inválida.` });
+  } else if (age > RULE_STALE_DAYS) {
+    findings.push({ severity: "warning", rule: "regra-precisa-reverificacao", pages: ["/calculadoras/antecipacao-fgts/"], detail: `${rule.name}: verificada há ${age} dias — reler a fonte oficial e atualizar verifiedAt.` });
+  }
+}
+for (const period of ADVANCE_RULES.periods) {
+  const days = Math.ceil((new Date(`${period.from}T00:00:00Z`).getTime() - today.getTime()) / 86_400_000);
+  if (days > 0 && days <= 45) {
+    findings.push({ severity: "info", rule: "troca-de-regra-proxima", pages: ["/calculadoras/antecipacao-fgts/"], detail: `FGTS: a partir de ${period.from}, até ${period.maxSaques} saques (em ${days} dias). Conferir se a norma continua a mesma.` });
   }
 }
 

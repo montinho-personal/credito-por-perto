@@ -302,6 +302,18 @@ const TOOL_EVENTS: EventSpec[] = [
   { name: "invoice_installment_example_select", group: "ferramenta", description: "Parcelamento da fatura: exemplo da página levado ao simulador.", params: ["context", "example"] },
   { name: "invoice_installment_copy", group: "ferramenta", description: "Parcelamento da fatura: resumo copiado (o texto fica no aparelho).", params: ["context"] },
 
+  /* Antecipação do Saque-Aniversário (FGTS) — nenhum valor sai, só contagens */
+  { name: "fgts_advance_view", group: "ferramenta", description: "Antecipação do FGTS: simulador exibido.", params: ["context"] },
+  { name: "fgts_advance_calculated", group: "ferramenta", description: "Antecipação do FGTS: simulação calculada ou proposta analisada.", params: ["context", "mode", "count", "offers", "cet_informed", "rate_unit"], keyEvent: true },
+  { name: "fgts_advance_period_changed", group: "ferramenta", description: "Antecipação do FGTS: quantidade de saques alterada.", params: ["context", "count"] },
+  { name: "fgts_advance_rate_scenario", group: "ferramenta", description: "Antecipação do FGTS: cenário de taxa menor levado ao simulador.", params: ["context", "reduction"] },
+  { name: "fgts_advance_offer_compared", group: "ferramenta", description: "Antecipação do FGTS: duas ou três propostas comparadas.", params: ["context", "offers"] },
+  { name: "fgts_advance_rules_opened", group: "ferramenta", description: "Antecipação do FGTS: campos de carência, data e antecipação anterior abertos.", params: ["context"] },
+  { name: "fgts_advance_internal_cta_clicked", group: "ferramenta", description: "Antecipação do FGTS: próximo passo clicado (proposta, guia ou conversor).", params: ["context", "target"] },
+  { name: "fgts_advance_mode_select", group: "ferramenta", description: "Antecipação do FGTS: modo escolhido (simular ou proposta).", params: ["context", "mode"] },
+  { name: "fgts_advance_example_select", group: "ferramenta", description: "Antecipação do FGTS: exemplo da página levado ao simulador.", params: ["context", "example"] },
+  { name: "fgts_advance_copy", group: "ferramenta", description: "Antecipação do FGTS: resumo copiado (o texto fica no aparelho).", params: ["context"] },
+
   /* Comparador de propostas */
   { name: "credit_compare_start", group: "ferramenta", description: "Comparador de propostas: primeira interação.", params: [] },
   { name: "credit_compare_complete", group: "ferramenta", description: "Comparador de propostas: resultado calculado.", params: ["proposals", "cet_informed", "advanced_used", "example_used"], keyEvent: true },

@@ -63,6 +63,14 @@
           "optional": true
         },
         {
+          "id": "antecipar-fgts",
+          "title": "Pensando em antecipar o Saque-Aniversário?",
+          "toolId": "antecipacao-fgts",
+          "condition": "Vale só para quem está no Saque-Aniversário do FGTS",
+          "whyThisStep": "Mostra quanto dos próximos saques você cede, quanto receberia hoje e o que fica comprometido no FGTS.",
+          "optional": true
+        },
+        {
           "id": "mercado",
           "title": "Como estão as taxas hoje?",
           "toolId": "radar-de-taxas",
