@@ -105,3 +105,45 @@ describe("conversão de taxas", () => {
     expect(annualToMonthlyRate(0)).toBe(0);
   });
 });
+
+describe("taxa implícita nas parcelas", () => {
+  it("ida e volta: parcela gerada por uma taxa conhecida devolve a mesma taxa", async () => {
+    const { implicitMonthlyRate, pricePayment } = await import("@/lib/calculators/loan");
+    for (const [pv, rate, n] of [
+      [5_000, 0.0899, 12],
+      [3_000, 0.05, 6],
+      [10_000, 0.12, 24],
+      [1_000, 0.001, 18],
+      [48_000, 0.0199, 10],
+    ] as const) {
+      const pmt = pricePayment(pv, rate, n);
+      expect(implicitMonthlyRate(pv, pmt, n)!).toBeCloseTo(rate * 100, 8);
+    }
+  });
+
+  it("parcela arredondada ao centavo: a taxa volta com erro desprezível", async () => {
+    const { implicitMonthlyRate, pricePayment } = await import("@/lib/calculators/loan");
+    const pmt = Math.round(pricePayment(4_800, 0.0799, 12) * 100) / 100;
+    expect(implicitMonthlyRate(4_800, pmt, 12)!).toBeCloseTo(7.99, 2);
+  });
+
+  it("sem acréscimo, taxa zero; parcelas abaixo do valor, sem taxa possível", async () => {
+    const { implicitMonthlyRate } = await import("@/lib/calculators/loan");
+    expect(implicitMonthlyRate(6_000, 500, 12)).toBe(0);
+    expect(implicitMonthlyRate(6_000, 400, 12)).toBeNull();
+  });
+
+  it("uma parcela só: taxa = parcela ÷ valor − 1", async () => {
+    const { implicitMonthlyRate } = await import("@/lib/calculators/loan");
+    expect(implicitMonthlyRate(1_000, 1_150, 1)!).toBeCloseTo(15, 10);
+  });
+
+  it("entradas inválidas não travam nem devolvem NaN", async () => {
+    const { implicitMonthlyRate } = await import("@/lib/calculators/loan");
+    expect(implicitMonthlyRate(0, 500, 12)).toBeNull();
+    expect(implicitMonthlyRate(5_000, 0, 12)).toBeNull();
+    expect(implicitMonthlyRate(5_000, 500, 0)).toBeNull();
+    expect(implicitMonthlyRate(5_000, 500, 2.5)).toBeNull();
+    expect(implicitMonthlyRate(5_000, 1e15, 12)).toBeNull();
+  });
+});

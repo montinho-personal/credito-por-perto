@@ -135,3 +135,41 @@ export function formatBRL(value: number): string {
     currency: "BRL",
   }).format(value);
 }
+
+/**
+ * Taxa mensal implícita de uma série de parcelas iguais: o `i` que resolve
+ *   PV = PMT × [1 − (1 + i)^(−n)] ÷ i
+ * dados o valor financiado, a parcela e o número de parcelas.
+ *
+ * Bisseção: o valor da parcela cresce com a taxa, então existe no máximo
+ * uma raiz. Número de passos fixo — nunca trava — e precisão de 1e−12 na
+ * taxa decimal. Devolve a taxa em % ao mês, ou null quando não há taxa
+ * positiva que explique os números (parcelas somando menos que o valor
+ * financiado, ou taxa acima de 1.000% ao mês, que é erro de digitação).
+ *
+ * É a taxa IMPLÍCITA NAS PARCELAS: não é a taxa do contrato nem o CET — as
+ * parcelas podem embutir tributos e tarifas, e pode haver custos fora delas.
+ */
+export function implicitMonthlyRate(
+  principal: number,
+  installment: number,
+  installments: number,
+): number | null {
+  if (!(principal > 0) || !(installment > 0) || !Number.isInteger(installments) || installments < 1) {
+    return null;
+  }
+  const total = installment * installments;
+  if (total < principal) return null;
+  if (total === principal) return 0;
+  if (installments === 1) return (installment / principal - 1) * 100;
+
+  let lo = 0;
+  let hi = 10; // 1.000% ao mês
+  if (pricePayment(principal, hi, installments) < installment) return null;
+  for (let step = 0; step < 200 && hi - lo > 1e-12; step++) {
+    const mid = (lo + hi) / 2;
+    if (pricePayment(principal, mid, installments) < installment) lo = mid;
+    else hi = mid;
+  }
+  return ((lo + hi) / 2) * 100;
+}

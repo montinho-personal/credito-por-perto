@@ -292,6 +292,16 @@ const TOOL_EVENTS: EventSpec[] = [
   { name: "credit_card_reference_use", group: "ferramenta", description: "Juros do cartão: média do rotativo do Banco Central usada como taxa.", params: ["context"] },
   { name: "credit_card_example_select", group: "ferramenta", description: "Juros do cartão: exemplo da página levado à calculadora.", params: ["context", "example"] },
 
+  /* Simulador de parcelamento da fatura. Nenhum valor sai: nem dívida,
+     nem parcela, nem taxa, nem CET, nem instituição — só a forma de uso. */
+  { name: "invoice_installment_start", group: "ferramenta", description: "Parcelamento da fatura: primeira interação.", params: ["context"] },
+  { name: "invoice_installment_analyzed", group: "ferramenta", description: "Parcelamento da fatura: proposta analisada ou simulação calculada.", params: ["context", "mode", "proposals", "cet_informed", "rate_informed", "implicit_rate"], keyEvent: true },
+  { name: "invoice_installment_comparison_added", group: "ferramenta", description: "Parcelamento da fatura: outra proposta adicionada para comparar.", params: ["context", "proposals"] },
+  { name: "invoice_installment_mode_select", group: "ferramenta", description: "Parcelamento da fatura: modo escolhido (proposta ou simulação).", params: ["context", "mode"] },
+  { name: "invoice_installment_rules_opened", group: "ferramenta", description: "Parcelamento da fatura: campos de origem da dívida e limite de encargos abertos.", params: ["context"] },
+  { name: "invoice_installment_example_select", group: "ferramenta", description: "Parcelamento da fatura: exemplo da página levado ao simulador.", params: ["context", "example"] },
+  { name: "invoice_installment_copy", group: "ferramenta", description: "Parcelamento da fatura: resumo copiado (o texto fica no aparelho).", params: ["context"] },
+
   /* Comparador de propostas */
   { name: "credit_compare_start", group: "ferramenta", description: "Comparador de propostas: primeira interação.", params: [] },
   { name: "credit_compare_complete", group: "ferramenta", description: "Comparador de propostas: resultado calculado.", params: ["proposals", "cet_informed", "advanced_used", "example_used"], keyEvent: true },
