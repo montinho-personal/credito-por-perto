@@ -99,8 +99,9 @@ describe("IOF financiado", () => {
   it("F = L ÷ (1 − k): recebe R$ 10.000, financia R$ 10.349,07", () => {
     const r = ok({ term: 365, payment: "financiado" });
     expect(r.receivedCents).toBe(10_000_00);
-    expect(r.contractedCents).toBe(10_349_07);
-    expect(Math.abs(r.contractedCents - r.receivedCents - r.breakdown.totalCents)).toBeLessThanOrEqual(1);
+    // A forma fechada dá 10.349,07; o ajuste de centavo sobe para 10.349,08, o menor F que cobre o IOF.
+    expect(r.contractedCents).toBe(10_349_08);
+    expect(r.contractedCents - r.breakdown.totalCents).toBeGreaterThanOrEqual(10_000_00);
   });
 
   it("descontado: contrata R$ 10.000 e recebe R$ 10.000 − IOF", () => {
@@ -123,11 +124,22 @@ describe("pessoa jurídica e Simples/MEI", () => {
     expect(r.breakdown.totalCents).toBe(3_943_00);
   });
 
-  it("teste 78 — Simples/MEI até R$ 30 mil: 0,00274% ao dia + 0,38%", () => {
-    const r = ok({ amountCents: 20_000_00, term: 365, borrower: "simples" });
-    expect(r.breakdown.totalCents).toBe(276_02);
+  it("teste 78 — Simples/MEI: fontes divergentes, sem número até a conferência oficial", () => {
+    expect(calculateIof({ ...base, amountCents: 20_000_00, term: 365, borrower: "simples" }).kind).toBe("simples-pendente");
     expect(calculateIof({ ...base, amountCents: 30_000_01, borrower: "simples" }).kind).toBe("acima-do-limite-simples");
-    expect(calculateIof({ ...base, amountCents: 30_000_00, borrower: "simples" }).kind).toBe("ok");
+  });
+
+  it("financiado: sempre cobre o valor pedido, sem sobrar mais de um centavo", () => {
+    for (const p of [{ term: 60, termUnit: "meses" as const, schedule: "parcelas" as const, monthlyRatePercent: 3 }, { term: 480, termUnit: "meses" as const, schedule: "parcelas" as const, borrower: "pj" as const }]) {
+      const r = ok({ ...p, payment: "financiado" });
+      const net = r.contractedCents - r.breakdown.totalCents;
+      expect(net).toBeGreaterThanOrEqual(10_000_00);
+      expect(net).toBeLessThanOrEqual(10_000_01);
+    }
+  });
+
+  it("meio centavo não cai para baixo: R$ 250 em 30 dias → diária R$ 0,62", () => {
+    expect(ok({ amountCents: 250_00, term: 30 }).breakdown.dailyCents).toBe(62);
   });
 });
 
@@ -151,6 +163,7 @@ describe("tipo de operação", () => {
 describe("regra pela data", () => {
   it("teste 81 — data histórica fora da cobertura não usa a regra atual", () => {
     expect(calculateIof({ ...base, releaseDate: "2021-12-31" }).kind).toBe("fora-da-cobertura");
+    expect(calculateIof({ ...base, releaseDate: "2021-06-01", operation: "habitacional" }).kind).toBe("zero");
     expect(calculateIof({ ...base, releaseDate: "2022-01-01" }).kind).toBe("ok");
     expect(calculateIof({ ...base, releaseDate: "2025-07-15", borrower: "pj" }).kind).toBe("fora-da-cobertura");
     expect(calculateIof({ ...base, releaseDate: "2025-07-16", borrower: "pj" }).kind).toBe("ok");
@@ -162,6 +175,7 @@ describe("regra pela data", () => {
       expect(r.capDays).toBe(365);
       expect(r.dailyRate).toBeGreaterThan(0);
       expect(r.additionalRate).toBeGreaterThan(0);
+      expect(typeof r.verified).toBe("boolean");
     }
     expect(iofRegimeAt("2026-09-23", "pf", 1).kind).toBe("ok");
   });

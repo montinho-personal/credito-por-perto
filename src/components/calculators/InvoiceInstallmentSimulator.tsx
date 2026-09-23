@@ -711,6 +711,10 @@ export function InvoiceInstallmentSimulator({ context = "ferramenta" }: { contex
 
             <div className="mt-6 space-y-3 text-sm">
               <p>
+                <span className="text-brand-muted">A proposta traz tarifas ou seguro?</span>{" "}
+                <Link href="/calculadoras/cet/" className="font-semibold text-brand-teal underline underline-offset-2">Analisar o CET em detalhes</Link>
+              </p>
+              <p>
                 <span className="text-brand-muted">Ainda está no rotativo?</span>{" "}
                 <Link href="/calculadoras/juros-cartao-credito/" className="font-semibold text-brand-teal underline underline-offset-2">Calcular os juros até a próxima fatura</Link>
               </p>

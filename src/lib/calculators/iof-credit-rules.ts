@@ -17,10 +17,12 @@
  *   majorada foi afastada entre 26/06 e 16/07/2025 — período fora do
  *   simulador.
  *
- * VERIFICAÇÃO. O Planalto não abre no ambiente de desenvolvimento; os
- * números vieram de trechos oficiais e de alertas jurídicos de 2025 lidos
- * por busca em 23/09/2026, e o artigo do site já os registrava em
- * 29/08/2026. `audit:sources` avisa quando `verifiedAt` envelhece.
+ * VERIFICAÇÃO. Pessoa física: registrada no artigo do site a partir do
+ * Planalto em 29/08/2026. Pessoa jurídica: trechos oficiais e alertas
+ * jurídicos lidos por busca em 23/09/2026 — a leitura integral do Decreto
+ * 12.499 no Planalto está pendente e a página declara isso. Simples/MEI:
+ * fontes divergentes, regime marcado como não verificado.
+ * `audit:sources` avisa quando `verifiedAt` envelhece.
  */
 
 export interface IofSource {
@@ -46,6 +48,11 @@ export interface IofRegime {
   capDays: number;
   /** Teto do valor da operação para o regime (Simples/MEI), em centavos. */
   maxAmountCents?: number;
+  /**
+   * false: as alíquotas não fecharam em fonte oficial e o regime não gera
+   * número (a calculadora declara a lacuna em vez de estimar).
+   */
+  verified: boolean;
   label: string;
   source: IofSource;
 }
@@ -71,6 +78,7 @@ export const IOF_REGIMES: readonly IofRegime[] = [
     dailyRate: 0.000082,
     additionalRate: 0.0038,
     capDays: 365,
+    verified: true,
     label: "Pessoa física",
     source: DECRETO_6306,
   },
@@ -82,6 +90,7 @@ export const IOF_REGIMES: readonly IofRegime[] = [
     dailyRate: 0.000082,
     additionalRate: 0.0095,
     capDays: 365,
+    verified: true,
     label: "Pessoa jurídica",
     source: DECRETO_12499,
   },
@@ -94,6 +103,9 @@ export const IOF_REGIMES: readonly IofRegime[] = [
     additionalRate: 0.0038,
     capDays: 365,
     maxAmountCents: 30_000_00,
+    // As fontes consultadas divergem na alíquota adicional (0,38% ou 0,95%):
+    // sem leitura do texto oficial, o regime fica sem número.
+    verified: false,
     label: "Optante do Simples Nacional ou MEI, operação de até R$ 30.000",
     source: DECRETO_12499,
   },
@@ -170,7 +182,7 @@ export const OPERATION_RULES: readonly OperationRule[] = [
     label: "Portabilidade de crédito",
     treatment: "especifica",
     explanation:
-      "A portabilidade segue regra própria: o valor portado não é tratado como empréstimo novo nas condições previstas no regulamento, e um eventual dinheiro adicional tem base separada. Esta situação exige análise específica da operação.",
+      "A portabilidade tem tratamento próprio no regulamento, e um eventual dinheiro adicional pode ter base separada. Esta situação exige análise específica da operação.",
   },
   {
     kind: "renegociacao",
@@ -183,7 +195,7 @@ export const OPERATION_RULES: readonly OperationRule[] = [
     label: "Cheque especial, rotativo ou limite de crédito",
     treatment: "especifica",
     explanation:
-      "Sem principal definido, a base do IOF é o somatório dos saldos devedores diários, com outra metodologia. Esta calculadora trata só de crédito com principal definido.",
+      "Também paga IOF, mas sem principal definido a base é o somatório dos saldos devedores diários, com outra metodologia. Esta calculadora trata só de crédito com principal definido.",
   },
 ];
 

@@ -1109,8 +1109,12 @@ export function VehicleFinancingSimulator({
                 informá-lo na proposta. É por ele, e não pela parcela, que duas ofertas se comparam.
               </p>
               <p className="mt-2">
+                <Link href="/calculadoras/cet/" className="font-semibold text-brand-teal underline underline-offset-2">
+                  Tem a proposta completa? Calcule o CET com tarifas, IOF e seguros
+                </Link>{" "}
+                ·{" "}
                 <Link href="/calculadoras/comparador-de-propostas/" className="font-semibold text-brand-teal underline underline-offset-2">
-                  Já recebeu propostas? Compare o CET e o custo total lado a lado
+                  Compare propostas lado a lado
                 </Link>
               </p>
             </div>

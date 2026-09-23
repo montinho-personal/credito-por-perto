@@ -841,6 +841,12 @@ function ParcelaResult({
           Ver gráficos, saldo devedor e tabela completa na Calculadora SAC x Price
         </Link>
       </p>
+      <p className="mt-2 text-sm">
+        <Link href="/calculadoras/cet/" className="font-semibold text-brand-teal underline underline-offset-2">
+          Tem a proposta do banco? Calcule o CET com seguros e tarifas
+        </Link>{" "}
+        <span className="text-brand-muted">— TR e outros indexadores não entram no CET.</span>
+      </p>
     </>
   );
 }

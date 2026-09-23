@@ -93,7 +93,8 @@ function toInput(f: Fields): IofInput {
     term: /^\d+$/.test(f.term.trim()) ? Number(f.term.trim()) : Number.NaN,
     termUnit: f.schedule === "parcelas" ? "meses" : f.termUnit,
     schedule: f.schedule,
-    monthlyRatePercent: f.rate.trim() === "" ? undefined : (parsePercentBR(f.rate) ?? Number.NaN),
+    // A taxa só existe para parcelas mensais; escondida, não pode travar o cálculo.
+    monthlyRatePercent: f.schedule === "unico" || f.rate.trim() === "" ? undefined : (parsePercentBR(f.rate) ?? Number.NaN),
     releaseDate: f.releaseDate,
     borrower: f.borrower,
     operation: f.operation,
@@ -222,7 +223,11 @@ export function IofCalculator({ today, context = "ferramenta" }: { today: string
 
   function update(patch: Partial<Fields>) {
     const next = { ...f, ...patch };
-    if (patch.schedule === "parcelas") next.termUnit = "meses";
+    if (patch.schedule === "parcelas") {
+      // "90 dias" não pode virar 90 parcelas sem a pessoa ver.
+      if (f.schedule === "unico" && f.termUnit === "dias") next.term = "";
+      next.termUnit = "meses";
+    }
     setF(next);
     setPremise(null);
     if (submitted) compute(next, { announce: false });
@@ -239,12 +244,13 @@ export function IofCalculator({ today, context = "ferramenta" }: { today: string
     track("iof_scenario_changed", { context, kind });
     const next = { ...f, ...patch };
     setF(next);
+    setPremise(null);
     compute(next, { announce: false });
   }
 
   function prefill(d: IofPrefillDetail) {
     track("iof_example_select", { context, example: d.exampleId });
-    const next: Fields = { ...f, amount: moneyInput(d.amountCents), term: String(d.term), termUnit: d.termUnit, schedule: d.schedule, borrower: "pf", operation: "comum", payment: "descontado", rate: "" };
+    const next: Fields = { ...f, releaseDate: todayInBrazil(), amount: moneyInput(d.amountCents), term: String(d.term), termUnit: d.termUnit, schedule: d.schedule, borrower: "pf", operation: "comum", payment: "descontado", rate: "" };
     setF(next);
     setSubmitted(true);
     setPremise("Exemplo da página: pessoa física, empréstimo comum, IOF descontado do valor. Ajuste os campos para o seu caso.");
@@ -331,7 +337,9 @@ export function IofCalculator({ today, context = "ferramenta" }: { today: string
 
           <div>
             <label htmlFor={id("data")} className="block text-sm font-semibold text-brand-navy">Data da operação</label>
-            <input id={id("data")} type="date" value={f.releaseDate} onChange={(e) => e.target.value && update({ releaseDate: e.target.value })} aria-invalid={Boolean(errorOf("releaseDate"))} className={`${inputClass} mt-1.5`} />
+            <input id={id("data")} type="date" value={f.releaseDate} onChange={(e) => e.target.value && update({ releaseDate: e.target.value })} aria-invalid={Boolean(errorOf("releaseDate"))} aria-describedby={errorOf("releaseDate") ? `${id("data")}-erro` : undefined} className={`${inputClass} mt-1.5`} />
+            {errorOf("releaseDate") ? <p id={`${id("data")}-erro`} className="mt-1.5 text-sm font-medium text-brand-danger">{errorOf("releaseDate")}</p> : null}
+            {f.releaseDate > today ? <p className="mt-1 text-xs text-brand-warning">Data futura: a calculadora usa as regras vigentes hoje, que podem mudar até lá.</p> : null}
             <p className="mt-1 text-xs text-brand-muted">Hoje, por padrão. A regra aplicada é a da data.</p>
           </div>
         </div>
@@ -358,10 +366,10 @@ export function IofCalculator({ today, context = "ferramenta" }: { today: string
                 <label htmlFor={id("taxa")} className="block text-sm font-semibold text-brand-navy">Juros ao mês (opcional)</label>
                 <p id={id("taxa-hint")} className="mt-0.5 text-xs text-brand-muted">Com a taxa, as parcelas seguem a Price; sem ela, a amortização é igual em cada parcela.</p>
                 <div className="mt-1.5 flex items-center gap-2">
-                  <input id={id("taxa")} type="text" inputMode="decimal" autoComplete="off" placeholder="da proposta" value={f.rate} onChange={(e) => update({ rate: e.target.value })} aria-invalid={Boolean(errorOf("monthlyRatePercent"))} aria-describedby={id("taxa-hint")} className={`${inputClass} max-w-[8rem]`} />
+                  <input id={id("taxa")} type="text" inputMode="decimal" autoComplete="off" placeholder="da proposta" value={f.rate} onChange={(e) => update({ rate: e.target.value })} aria-invalid={Boolean(errorOf("monthlyRatePercent"))} aria-describedby={[id("taxa-hint"), errorOf("monthlyRatePercent") ? `${id("taxa")}-erro` : null].filter(Boolean).join(" ")} className={`${inputClass} max-w-[8rem]`} />
                   <span className="text-sm text-brand-muted" aria-hidden="true">% a.m.</span>
                 </div>
-                {errorOf("monthlyRatePercent") ? <p className="mt-1.5 text-sm font-medium text-brand-danger">{errorOf("monthlyRatePercent")}</p> : null}
+                {errorOf("monthlyRatePercent") ? <p id={`${id("taxa")}-erro`} className="mt-1.5 text-sm font-medium text-brand-danger">{errorOf("monthlyRatePercent")} Aceita de 0% a 30% ao mês.</p> : null}
               </div>
             ) : null}
             <div>
@@ -384,7 +392,15 @@ export function IofCalculator({ today, context = "ferramenta" }: { today: string
       </form>
 
       <p aria-live="polite" className="sr-only">
-        {shown && !stale && shown.outcome.kind === "ok" ? `IOF estimado: ${brl(shown.outcome.result.breakdown.totalCents)}.` : shown && !stale && shown.outcome.kind === "zero" ? "IOF estimado: R$ 0,00." : ""}
+        {!shown || stale
+          ? ""
+          : shown.outcome.kind === "ok"
+            ? `IOF estimado: ${brl(shown.outcome.result.breakdown.totalCents)}.`
+            : shown.outcome.kind === "zero"
+              ? "IOF estimado: R$ 0,00."
+              : shown.outcome.kind === "fora-da-cobertura"
+                ? "Data fora da cobertura desta calculadora."
+                : "Esta situação exige análise específica."}
       </p>
 
       <div ref={resultRef} className="scroll-mt-24">
@@ -456,6 +472,18 @@ function OutcomeView({
         <p className="mt-3 text-sm leading-relaxed text-brand-text">
           Para este tomador, as regras estão modeladas a partir de {formatIsoDate(outcome.coverageFrom)}. Antes disso houve alíquotas diferentes, e usar a regra de hoje
           daria um número errado. Para um contrato antigo, o valor do IOF está no demonstrativo da operação.
+        </p>
+      </div>
+    );
+  }
+  if (outcome.kind === "simples-pendente") {
+    return (
+      <div>
+        {heading("IOF do Simples e do MEI: regra em conferência")}
+        <p className="mt-3 text-sm leading-relaxed text-brand-text">
+          As fontes consultadas divergem sobre a alíquota adicional das operações de até R$ 30.000 de optantes do Simples Nacional e MEI. Enquanto o texto
+          oficial do Decreto nº 12.499/2025 não for conferido, a calculadora não estima esse caso — prefere declarar a lacuna a mostrar um número incerto.
+          Peça o demonstrativo do IOF à instituição.
         </p>
       </div>
     );
@@ -535,7 +563,7 @@ function ResultView({
       </dl>
       {b.capped ? (
         <p role="note" className="mt-3 rounded-lg bg-brand-teal-soft p-3 text-sm leading-relaxed text-brand-text">
-          Em determinadas operações, a parcela diária do IOF é limitada ao equivalente a 365 dias, mesmo quando o empréstimo tem prazo maior. Sem esse limite, a
+          Em determinadas operações, a parcela diária do IOF é limitada ao equivalente a {reg.capDays} dias, mesmo quando o empréstimo tem prazo maior. Sem esse limite, a
           parte diária desta simulação seria {brl(b.dailyWithoutCapCents)}; com ele, é {brl(b.dailyCents)}. ({CAP_RULE.reference})
         </p>
       ) : null}
@@ -607,7 +635,7 @@ function ResultView({
               <li key={t.term} className="flex flex-wrap items-center justify-between gap-2 p-3">
                 <span>
                   {termLabel(t.term, t.unit)}: <strong className="tabular-nums">{brl(t.totalCents)}</strong>
-                  {t.capped ? <span className="ml-1 text-xs text-brand-muted">(parte diária no limite de 365 dias)</span> : null}
+                  {t.capped ? <span className="ml-1 text-xs text-brand-muted">(parte diária no limite de {reg.capDays} dias)</span> : null}
                 </span>
                 <button type="button" onClick={() => onScenario({ term: String(t.term), termUnit: t.unit }, "prazo")} className="min-h-11 rounded-lg border border-brand-border px-3 text-sm font-semibold text-brand-navy">
                   Usar {termLabel(t.term, t.unit)}
@@ -662,14 +690,14 @@ function ResultView({
           <p>IOF adicional = valor da operação × {formatRate(reg.additionalRate)}</p>
           <p>IOF diário = Σ (principal de cada parcela × {formatRate(reg.dailyRate)} × dias até o vencimento dela, no máximo {reg.capDays})</p>
           <p>IOF total = IOF diário + IOF adicional</p>
-          {financed ? <p>IOF incluído no financiamento: valor financiado = valor recebido ÷ (1 − IOF ÷ valor), para que o próprio IOF esteja coberto.</p> : null}
+          {financed ? <p>IOF incluído no financiamento: valor financiado = valor pedido ÷ (1 − IOF do valor pedido ÷ valor pedido), ajustado ao centavo para que o próprio IOF esteja coberto.</p> : null}
         </div>
       </details>
 
       <div className="mt-6 space-y-3 text-sm">
         <p>
           <span className="text-brand-muted">IOF é apenas uma parte do custo.</span>{" "}
-          <Link href="/calculadoras/comparador-de-propostas/" onClick={cta("comparador")} className="font-semibold text-brand-teal underline underline-offset-2">Compare o CET e o custo total das propostas</Link>
+          <Link href="/calculadoras/cet/" onClick={cta("cet")} className="font-semibold text-brand-teal underline underline-offset-2">Calcular o CET da operação</Link>
         </p>
         <p>
           <span className="text-brand-muted">Quer ver parcela e juros?</span>{" "}

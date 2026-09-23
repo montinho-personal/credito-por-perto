@@ -694,5 +694,12 @@
       "/juros-e-cet/iof-no-emprestimo/",
       "/juros-e-cet/o-que-e-cet/"
     ]
+  },
+  "calculadora de cet como calcular custo efetivo total": {
+    "canonicalOwner": "/calculadoras/cet/",
+    "supportingPages": [
+      "/juros-e-cet/o-que-e-cet/",
+      "/calculadoras/iof-emprestimo/"
+    ]
   }
 }

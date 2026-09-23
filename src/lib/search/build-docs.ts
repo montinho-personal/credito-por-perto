@@ -415,6 +415,19 @@ export function buildSearchDocs(): SearchDoc[] {
       content: "",
     },
     {
+      id: "/calculadoras/cet/",
+      url: "/calculadoras/cet/",
+      title: "Calculadora de CET",
+      description:
+        "Valor recebido, parcelas, datas, IOF, tarifas e seguros: o Custo Efetivo Total anual estimado e a comparação de até 3 propostas.",
+      section: "Calculadoras",
+      type: "calculadora",
+      tags: ["calculadora", "custo total", "emprestimo"],
+      keywords: ["calcular o custo efetivo", "conferir a proposta", "taxa x custo"],
+      headings: [],
+      content: "",
+    },
+    {
       id: "/calculadoras/iof-emprestimo/",
       url: "/calculadoras/iof-emprestimo/",
       title: "Calculadora de IOF de empréstimo",

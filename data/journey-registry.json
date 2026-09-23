@@ -126,10 +126,10 @@
           "optional": false
         },
         {
-          "id": "conferir-iof",
-          "title": "O IOF da proposta confere?",
-          "toolId": "iof-emprestimo",
-          "whyThisStep": "O IOF é imposto, não tarifa: a conta separa a parte diária da adicional e mostra quanto sai do valor liberado.",
+          "id": "calcular-cet",
+          "title": "Qual é o custo completo da proposta?",
+          "toolId": "cet",
+          "whyThisStep": "O CET junta juros, IOF, tarifas e seguros num número anual, calculado pelo que você recebe e paga em cada data.",
           "optional": true
         },
         {
@@ -553,6 +553,13 @@
           "title": "A taxa está ao mês e você quer ao ano (ou o contrário)?",
           "toolId": "conversor-de-taxas",
           "whyThisStep": "Multiplicar por 12 dá o número errado. A conversão é composta.",
+          "optional": true
+        },
+        {
+          "id": "entender-iof",
+          "title": "E o IOF, de onde sai?",
+          "toolId": "iof-emprestimo",
+          "whyThisStep": "O IOF é imposto, não tarifa: a conta separa a parte diária da adicional e mostra quanto ele pesa no valor.",
           "optional": true
         }
       ],

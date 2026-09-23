@@ -132,12 +132,16 @@ export default function IofEmprestimoPage() {
           head={["Tomador", "Diária", "Adicional", "Desde"]}
           rows={[pf, pj, simples].map((r) => ({
             key: r.id,
-            cells: [r.label, formatRate(r.dailyRate), formatRate(r.additionalRate), formatIsoDate(r.from)],
+            cells: r.verified
+              ? [r.label, formatRate(r.dailyRate), formatRate(r.additionalRate), formatIsoDate(r.from)]
+              : [r.label, formatRate(r.dailyRate), "em conferência", formatIsoDate(r.from)],
           }))}
         />
         <p>
           Para empresas, as alíquotas vêm do Decreto nº 12.499/2025, restabelecido por decisão cautelar do STF em{" "}
-          {formatIsoDate(JUDICIAL_RECORD.decidedAt)}. {JUDICIAL_RECORD.effect}
+          {formatIsoDate(JUDICIAL_RECORD.decidedAt)}. {JUDICIAL_RECORD.effect} As alíquotas de pessoa jurídica foram conferidas em
+          trechos oficiais; a leitura integral do decreto no Planalto está pendente. Para optantes do Simples e MEI, as fontes
+          consultadas divergem sobre a alíquota adicional, e a calculadora não estima esse caso até a conferência no texto oficial.
         </p>
 
         <h2 id="diario-adicional">O que são IOF diário e adicional?</h2>
@@ -179,7 +183,7 @@ export default function IofEmprestimoPage() {
               O IOF não depende só do valor: prazo e modalidade também alteram o cálculo. Premissas de todos os exemplos:{" "}
               {premises}. Com juros em parcelas fixas (Price), o IOF fica um pouco maior, porque o principal se concentra no fim.
             </p>
-            <h3>Quanto é o IOF de R$ 5 mil, R$ 10 mil e R$ 20 mil em 12 parcelas?</h3>
+            <h3>Quanto é o IOF de R$ 1 mil, R$ 5 mil, R$ 10 mil e R$ 20 mil em 12 parcelas?</h3>
             <ScenarioTable
               caption="IOF em 12 parcelas mensais, por valor"
               head={["Valor", "IOF diário", "IOF adicional", "IOF total"]}
@@ -206,12 +210,20 @@ export default function IofEmprestimoPage() {
         ) : null}
 
         <h2 id="todo-emprestimo">Todo empréstimo paga IOF?</h2>
-        <p>Não. Há isenções e alíquotas zero com condições próprias; a calculadora reconhece duas, e trata outras como casos específicos:</p>
+        <p>Não. Há isenções e alíquotas zero com condições próprias. A calculadora reconhece duas:</p>
         <ul>
-          {OPERATION_RULES.filter((o) => o.kind !== "comum").map((o) => (
+          {OPERATION_RULES.filter((o) => o.treatment === "zero").map((o) => (
             <li key={o.kind}>
               <strong>{o.label}:</strong> {o.explanation}
               {o.reference ? ` (${o.reference}.)` : ""}
+            </li>
+          ))}
+        </ul>
+        <p>E há casos que pagam IOF com regra própria, que a calculadora não estima:</p>
+        <ul>
+          {OPERATION_RULES.filter((o) => o.treatment === "especifica").map((o) => (
+            <li key={o.kind}>
+              <strong>{o.label}:</strong> {o.explanation}
             </li>
           ))}
         </ul>
@@ -227,7 +239,7 @@ export default function IofEmprestimoPage() {
         <p>
           Pode, quando o contrato prevê. Aí o valor financiado precisa cobrir o que você recebe mais o próprio IOF, e os juros
           correm sobre o total. Como o IOF é proporcional ao principal para um mesmo cronograma, o valor financiado sai de uma
-          conta direta: valor recebido ÷ (1 − IOF ÷ valor).
+          conta direta: valor pedido ÷ (1 − IOF do valor pedido ÷ valor pedido), ajustada ao centavo.
           {ten12 && financed12
             ? ` Em 12 parcelas, com o IOF descontado você contrata R$ 10.000 e recebe ${brl(ten12.receivedCents)}; com o IOF incluído, recebe R$ 10.000 e financia ${brl(financed12.contractedCents)}.`
             : ""}{" "}
@@ -272,7 +284,7 @@ export default function IofEmprestimoPage() {
         </p>
         <p>
           <strong>Não cobertos:</strong> cheque especial, rotativo e limites sem principal definido; portabilidade; renegociação;
-          operações de câmbio, seguro e investimento; Simples/MEI acima de R$ 30.000; cronogramas fora do padrão mensal.
+          operações de câmbio, seguro e investimento; optantes do Simples e MEI (alíquota em conferência); cronogramas fora do padrão mensal.
         </p>
         <p>
           <strong>Privacidade:</strong> o cálculo acontece no seu navegador. Valor, prazo e resultado não são enviados, gravados

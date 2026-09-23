@@ -329,6 +329,28 @@
       "updatedAt": "2026-09-23"
     },
     {
+      "id": "cet",
+      "name": "Calculadora de CET",
+      "shortName": "CET",
+      "route": "/calculadoras/cet/",
+      "cta": "Calcular CET",
+      "situation": "entender-numeros",
+      "question": "Qual é o custo completo desta proposta?",
+      "whenItHelps": "Informe os fluxos da proposta para estimar o Custo Efetivo Total e entender juros, tarifas, IOF, seguros e outros custos.",
+      "calloutLead": "Informe quanto recebe, as parcelas e os custos para estimar o CET anual e ver por que ele difere da taxa de juros.",
+      "triggerTerms": [
+        "cet",
+        "custo efetivo total",
+        "custo total do empréstimo",
+        "taxa efetiva"
+      ],
+      "defaultNextSteps": [
+        "comparador-de-propostas",
+        "iof-emprestimo"
+      ],
+      "updatedAt": "2026-09-23"
+    },
+    {
       "id": "minha-taxa-esta-cara",
       "name": "Minha taxa está cara?",
       "shortName": "Minha taxa está cara?",

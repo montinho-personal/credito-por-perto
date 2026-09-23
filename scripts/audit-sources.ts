@@ -7,6 +7,7 @@ import { getAllArticles } from "../src/lib/content/articles";
 import { getSourceLedger } from "../src/lib/content/ledgers";
 import { ADVANCE_RULES, SAQUE_TABLE, TERMINATION_RULES } from "../src/lib/calculators/fgts-rules";
 import { IOF_RULES_VERIFIED_AT } from "../src/lib/calculators/iof-credit-rules";
+import { CET_RULES } from "../src/lib/calculators/cet";
 import {
   buildReport,
   finishAudit,
@@ -93,6 +94,7 @@ const RULE_MODULES: Array<{ name: string; verifiedAt: string; page?: string }> =
   { name: "FGTS — antecipação do Saque-Aniversário", verifiedAt: ADVANCE_RULES.verifiedAt },
   { name: "FGTS — rescisão e retorno", verifiedAt: TERMINATION_RULES.verifiedAt },
   { name: "IOF-crédito — alíquotas, limite e decisão judicial", verifiedAt: IOF_RULES_VERIFIED_AT, page: "/calculadoras/iof-emprestimo/" },
+  { name: "CET — Resolução CMN 4.881 e IN BCB 83", verifiedAt: CET_RULES.verifiedAt, page: "/calculadoras/cet/" },
 ];
 const RULE_STALE_DAYS = 120;
 for (const rule of RULE_MODULES) {

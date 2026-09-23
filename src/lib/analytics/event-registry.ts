@@ -314,6 +314,17 @@ const TOOL_EVENTS: EventSpec[] = [
   { name: "fgts_advance_example_select", group: "ferramenta", description: "Antecipação do FGTS: exemplo da página levado ao simulador.", params: ["context", "example"] },
   { name: "fgts_advance_copy", group: "ferramenta", description: "Antecipação do FGTS: resumo copiado (o texto fica no aparelho).", params: ["context"] },
 
+  /* Calculadora de CET — nenhum valor sai, só contagens e categorias */
+  { name: "cet_calculator_view", group: "ferramenta", description: "CET: calculadora exibida.", params: ["context"] },
+  { name: "cet_calculation_completed", group: "ferramenta", description: "CET: cálculo feito (modo, quantidade de custos, confirmação de custos, tipo de resultado).", params: ["context", "mode", "costs", "all_costs", "cet_informed", "outcome"], keyEvent: true },
+  { name: "cet_cost_added", group: "ferramenta", description: "CET: custo adicionado (tipo).", params: ["context", "kind"] },
+  { name: "cet_comparison_started", group: "ferramenta", description: "CET: modo de comparação aberto.", params: ["context"] },
+  { name: "cet_offer_added", group: "ferramenta", description: "CET: terceira proposta adicionada.", params: ["context"] },
+  { name: "cet_flow_opened", group: "ferramenta", description: "CET: fluxo manual aberto.", params: ["context"] },
+  { name: "cet_methodology_opened", group: "ferramenta", description: "CET: metodologia aberta.", params: ["context"] },
+  { name: "cet_internal_cta_clicked", group: "ferramenta", description: "CET: próximo passo clicado (IOF, taxa, guia).", params: ["context", "target"] },
+  { name: "cet_example_select", group: "ferramenta", description: "CET: exemplo da página levado à calculadora.", params: ["context", "example"] },
+
   /* Calculadora de IOF de empréstimo — nenhum valor sai, só categorias */
   { name: "iof_calculator_view", group: "ferramenta", description: "IOF: calculadora exibida.", params: ["context"] },
   { name: "iof_calculation_completed", group: "ferramenta", description: "IOF: cálculo feito (tomador, forma de pagar, operação e tipo de resultado, sem valores).", params: ["context", "borrower", "schedule", "operation", "payment", "outcome"], keyEvent: true },

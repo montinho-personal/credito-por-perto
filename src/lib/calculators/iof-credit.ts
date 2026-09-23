@@ -85,6 +85,7 @@ export type IofOutcome =
   | { kind: "especifica"; operation: OperationRule }
   | { kind: "fora-da-cobertura"; coverageFrom: string }
   | { kind: "acima-do-limite-simples"; limitCents: number }
+  | { kind: "simples-pendente" }
   | { kind: "invalid"; errors: IofIssue[] };
 
 export type IofField = "amountCents" | "term" | "releaseDate" | "monthlyRatePercent";
@@ -128,6 +129,14 @@ export function principalSchedule(
   return out;
 }
 
+/**
+ * Arredonda ao centavo sem o erro de ponto flutuante do meio centavo
+ * (61,5 calculado como 61,4999…): primeiro a 6 casas, depois ao inteiro.
+ */
+function roundCents(x: number): number {
+  return Math.round(Math.round(x * 1e6) / 1e6);
+}
+
 /** IOF de um valor, pelo regime e pelo formato de cronograma. */
 export function iofFor(amountCents: number, input: IofInput, regime: IofRegime): IofBreakdown {
   const schedule = principalSchedule(amountCents, input);
@@ -143,8 +152,8 @@ export function iofFor(amountCents: number, input: IofInput, regime: IofRegime):
     uncapped += s.principalCents * regime.dailyRate * days;
     return { index: i + 1, dueDate: s.dueDate, days, countedDays: counted, principalCents: s.principalCents, dailyCents: d };
   });
-  const dailyCents = Math.round(daily);
-  const additionalCents = Math.round(amountCents * regime.additionalRate);
+  const dailyCents = roundCents(daily);
+  const additionalCents = roundCents(amountCents * regime.additionalRate);
   return {
     baseCents: amountCents,
     rows,
@@ -152,7 +161,7 @@ export function iofFor(amountCents: number, input: IofInput, regime: IofRegime):
     additionalCents,
     totalCents: dailyCents + additionalCents,
     capped,
-    dailyWithoutCapCents: Math.round(uncapped),
+    dailyWithoutCapCents: roundCents(uncapped),
   };
 }
 
@@ -182,10 +191,12 @@ export function calculateIof(input: IofInput): IofOutcome {
 
   const operation = operationRule(input.operation);
   if (operation.treatment === "especifica") return { kind: "especifica", operation };
+  // Isenção e alíquota zero valem para qualquer tomador e não dependem do regime de alíquotas.
+  if (operation.treatment === "zero") return { kind: "zero", operation, amountCents: input.amountCents };
   const lookup = iofRegimeAt(input.releaseDate, input.borrower, input.amountCents);
   if (lookup.kind === "fora-da-cobertura") return lookup;
   if (lookup.kind === "acima-do-limite-simples") return lookup;
-  if (operation.treatment === "zero") return { kind: "zero", operation, amountCents: input.amountCents };
+  if (!lookup.regime.verified) return { kind: "simples-pendente" };
 
   const regime = lookup.regime;
   let breakdown = iofFor(input.amountCents, input, regime);
@@ -197,10 +208,13 @@ export function calculateIof(input: IofInput): IofOutcome {
     const k = iofFor(input.amountCents, input, regime);
     const exact = k.rows.reduce((s, r) => s + r.dailyCents, 0) + input.amountCents * regime.additionalRate;
     const share = exact / input.amountCents;
-    const financed = Math.round(input.amountCents / (1 - share));
+    let financed = Math.round(input.amountCents / (1 - share));
+    // Ajuste de centavo: o menor F em que F − IOF(F) cobre o valor pedido.
+    while (financed - iofFor(financed, input, regime).totalCents < input.amountCents) financed++;
+    while (financed - 1 - iofFor(financed - 1, input, regime).totalCents >= input.amountCents) financed--;
     breakdown = iofFor(financed, input, regime);
     contracted = financed;
-    received = input.amountCents;
+    received = financed - breakdown.totalCents;
   }
 
   const last = breakdown.rows.at(-1)!;
@@ -237,7 +251,7 @@ export function termScenarios(input: IofInput): TermScenario[] {
   const terms = input.schedule === "unico" ? [30, 90, 180, 365, 730] : [3, 6, 12, 24, 36, 48];
   const unit = input.schedule === "unico" ? ("dias" as const) : ("meses" as const);
   return terms.flatMap((term) => {
-    const o = calculateIof({ ...input, term, termUnit: unit, payment: "descontado" });
+    const o = calculateIof({ ...input, term, termUnit: unit });
     if (o.kind !== "ok") return [];
     const b = o.result.breakdown;
     return [{ term, unit, days: o.result.totalDays, totalCents: b.totalCents, dailyCents: b.dailyCents, capped: b.capped }];
@@ -247,7 +261,7 @@ export function termScenarios(input: IofInput): TermScenario[] {
 /** Valores diferentes no mesmo prazo. */
 export function amountScenarios(input: IofInput, amounts = [5_000_00, 10_000_00, 20_000_00]): Array<{ amountCents: number; totalCents: number }> {
   return amounts.flatMap((amountCents) => {
-    const o = calculateIof({ ...input, amountCents, payment: "descontado" });
+    const o = calculateIof({ ...input, amountCents });
     return o.kind === "ok" ? [{ amountCents, totalCents: o.result.breakdown.totalCents }] : [];
   });
 }
