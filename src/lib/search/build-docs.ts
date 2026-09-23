@@ -396,6 +396,26 @@ export function buildSearchDocs(): SearchDoc[] {
       content: "",
     },
     {
+      id: "/calculadoras/sac-x-price/",
+      url: "/calculadoras/sac-x-price/",
+      title: "Calculadora SAC x Price",
+      description:
+        "Valor, taxa e prazo: parcela mês a mês, juros totais e saldo devedor nos sistemas SAC e Price, lado a lado, com tabela de amortização.",
+      section: "Calculadoras",
+      type: "calculadora",
+      tags: ["calculadora", "sac", "price", "amortizacao", "financiamento", "imovel"],
+      keywords: [
+        "sac ou price",
+        "tabela price",
+        "tabela sac",
+        "simulador sac e price",
+        "sistema de amortizacao",
+        "financiamento imobiliario",
+      ],
+      headings: [],
+      content: "",
+    },
+    {
       id: "/calculadoras/financiamento-veiculo/",
       url: "/calculadoras/financiamento-veiculo/",
       title: "Simulador de financiamento de veículo",

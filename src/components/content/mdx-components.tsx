@@ -19,6 +19,7 @@ import { VideoEmbed } from "@/components/content/VideoEmbed";
 import { ToolCallout } from "@/components/content/ToolCallout";
 import { OndeConseguirCredito } from "@/components/content/OndeConseguirCredito";
 import { VehicleFinancingSimulator } from "@/components/calculators/VehicleFinancingSimulator";
+import { SacPriceCalculator } from "@/components/calculators/SacPriceCalculator";
 import { JourneyCallout } from "@/components/content/JourneyCallout";
 import { FaqAccordion, FaqItem } from "@/components/content/FaqAccordion";
 
@@ -98,6 +99,8 @@ export const mdxComponents = {
   /* Mesmo componente da página /calculadoras/financiamento-veiculo/, sem a
      referência do Banco Central: o artigo é estático e congelaria a taxa. */
   VehicleFinancingSimulator,
+  /* Mesmo componente da página /calculadoras/sac-x-price/. */
+  SacPriceCalculator,
   JourneyCallout,
   FaqAccordion,
   FaqItem,

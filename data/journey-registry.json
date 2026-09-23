@@ -459,6 +459,13 @@
           "optional": true
         },
         {
+          "id": "sac-ou-price",
+          "title": "Vai financiar um imóvel? SAC ou Price?",
+          "toolId": "sac-x-price",
+          "whyThisStep": "Compara a parcela mês a mês, os juros totais e o saldo devedor nos dois sistemas, com o mesmo valor, taxa e prazo.",
+          "optional": true
+        },
+        {
           "id": "cabe",
           "title": "Se for parcelar, a parcela cabe no mês?",
           "toolId": "parcela-no-orcamento",

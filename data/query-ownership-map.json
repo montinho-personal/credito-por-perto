@@ -569,7 +569,8 @@
     "canonicalOwner": "/juros-e-cet/price-ou-sac-sistemas-de-amortizacao/",
     "supportingPages": [
       "/organizacao-financeira/quanto-da-renda-comprometer-financiamento-imovel/",
-      "/juros-e-cet/quitacao-antecipada-de-emprestimo/"
+      "/juros-e-cet/quitacao-antecipada-de-emprestimo/",
+      "/calculadoras/sac-x-price/"
     ]
   },
   "quem recebe bpc pode fazer emprestimo consignado e como se proteger": {
@@ -649,6 +650,13 @@
     "supportingPages": [
       "/emprestimos/financiamento-de-veiculo/",
       "/calculadoras/emprestimo/"
+    ]
+  },
+  "calculadora sac x price simular parcelas juros e saldo devedor": {
+    "canonicalOwner": "/calculadoras/sac-x-price/",
+    "supportingPages": [
+      "/juros-e-cet/price-ou-sac-sistemas-de-amortizacao/",
+      "/calculadoras/quitacao-antecipada/"
     ]
   }
 }

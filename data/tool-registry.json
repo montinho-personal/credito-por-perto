@@ -168,6 +168,29 @@
       "updatedAt": "2026-09-23"
     },
     {
+      "id": "sac-x-price",
+      "name": "Calculadora SAC x Price",
+      "shortName": "SAC x Price",
+      "route": "/calculadoras/sac-x-price/",
+      "cta": "Comparar SAC e Price",
+      "situation": "antes-de-contratar",
+      "question": "Qual a diferença entre SAC e Price no meu financiamento?",
+      "whenItHelps": "Informe valor, taxa e prazo para comparar lado a lado a parcela mês a mês, os juros totais e o saldo devedor nos dois sistemas.",
+      "calloutLead": "Veja com os seus números quanto a SAC começa mais alta, em que parcela ela fica abaixo da Price e quanto de juros cada uma soma.",
+      "triggerTerms": [
+        "sistema de amortização",
+        "tabela price",
+        "amortização constante",
+        "sac ou price",
+        "price ou sac"
+      ],
+      "defaultNextSteps": [
+        "quitacao-antecipada",
+        "parcela-no-orcamento"
+      ],
+      "updatedAt": "2026-09-23"
+    },
+    {
       "id": "emprestimo",
       "name": "Calculadora de empréstimo",
       "shortName": "Calculadora de empréstimo",

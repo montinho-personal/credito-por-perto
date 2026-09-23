@@ -263,6 +263,17 @@ const TOOL_EVENTS: EventSpec[] = [
   { name: "vehicle_finance_reference_use", group: "ferramenta", description: "Simulador de veículo: taxa média do Banco Central usada como ponto de partida.", params: ["context"] },
   { name: "vehicle_finance_share", group: "ferramenta", description: "Simulador de veículo: link da ferramenta compartilhado (sem valores).", params: ["context"] },
 
+  /* Calculadora SAC x Price. Mesma regra: nenhum valor digitado ou calculado
+     sai daqui — nem valor financiado, nem taxa, nem prazo, nem parcela. */
+  { name: "sac_price_start", group: "ferramenta", description: "Calculadora SAC x Price: primeira interação.", params: ["context"] },
+  { name: "sac_price_complete", group: "ferramenta", description: "Calculadora SAC x Price: comparação calculada.", params: ["context", "rate_unit", "input_mode", "advanced_used", "example_used"], keyEvent: true },
+  { name: "sac_price_advanced_open", group: "ferramenta", description: "SAC x Price: custos adicionais abertos.", params: ["context"] },
+  { name: "sac_price_schedule_open", group: "ferramenta", description: "SAC x Price: tabela completa aberta.", params: ["context"] },
+  { name: "sac_price_whatif_select", group: "ferramenta", description: "SAC x Price: cenário 'e se?' escolhido.", params: ["context", "scenario"] },
+  { name: "sac_price_milestone_select", group: "ferramenta", description: "SAC x Price: marco do prazo escolhido (1 ano, 5 anos, metade...).", params: ["context", "milestone"] },
+  { name: "sac_price_copy", group: "ferramenta", description: "SAC x Price: resumo copiado (o texto fica no aparelho).", params: ["context"] },
+  { name: "sac_price_share", group: "ferramenta", description: "SAC x Price: link da ferramenta compartilhado (sem valores).", params: ["context"] },
+
   /* Comparador de propostas */
   { name: "credit_compare_start", group: "ferramenta", description: "Comparador de propostas: primeira interação.", params: [] },
   { name: "credit_compare_complete", group: "ferramenta", description: "Comparador de propostas: resultado calculado.", params: ["proposals", "cet_informed", "advanced_used", "example_used"], keyEvent: true },

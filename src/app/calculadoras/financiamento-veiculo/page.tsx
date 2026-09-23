@@ -214,8 +214,10 @@ export default async function FinanciamentoVeiculoPage() {
         <p>
           Nem todo contrato é feito assim — há financiamentos com amortização constante (SAC), com
           parcelas decrescentes. A diferença entre os dois está em{" "}
-          <Link href="/juros-e-cet/price-ou-sac-sistemas-de-amortizacao/">Price ou SAC</Link>. Se o
-          seu contrato não tiver parcelas fixas, esta simulação não o representa.
+          <Link href="/juros-e-cet/price-ou-sac-sistemas-de-amortizacao/">Price ou SAC</Link>, e a{" "}
+          <Link href="/calculadoras/sac-x-price/">calculadora SAC x Price</Link> compara os dois com
+          os mesmos números. Se o seu contrato não tiver parcelas fixas, esta simulação não o
+          representa.
         </p>
 
         <h2 id="entrada">Como a entrada muda o financiamento</h2>
