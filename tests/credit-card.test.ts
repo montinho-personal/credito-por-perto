@@ -132,3 +132,58 @@ describe("e se?", () => {
     expect(lowerRateScenarios(r)).toEqual([]);
   });
 });
+
+describe("atraso: encargos em linhas separadas", () => {
+  it("multa e mora só com o que foi informado; mora proporcional aos dias", async () => {
+    const { calculateLateCharges } = await import("@/lib/calculators/credit-card");
+    const r = calculateLateCharges({ baseCents: 3_000_00, finePercent: 2, moraMonthlyPercent: 1, daysLate: 15 });
+    expect(r.fineCents).toBe(60_00);
+    expect(r.moraCents).toBe(15_00);
+    expect(r.totalCents).toBe(75_00);
+  });
+
+  it("sem percentuais informados, nada é inventado", async () => {
+    const { calculateLateCharges } = await import("@/lib/calculators/credit-card");
+    const r = calculateLateCharges({ baseCents: 3_000_00 });
+    expect(r).toEqual({ fineCents: null, moraCents: null, otherCents: 0, iofCents: 0, totalCents: 0 });
+  });
+
+  it("IOF e outros encargos só entram como valor informado, em linha própria", async () => {
+    const { calculateLateCharges } = await import("@/lib/calculators/credit-card");
+    const r = calculateLateCharges({ baseCents: 1_000_00, iofCents: 12_34, otherCents: 5_00 });
+    expect(r.iofCents).toBe(12_34);
+    expect(r.totalCents).toBe(17_34);
+  });
+});
+
+describe("teto regulatório (módulo separado)", () => {
+  it("teste 7 — dentro e acima do teto", async () => {
+    const { applyRegulatoryCap } = await import("@/lib/calculators/credit-card-rules");
+    expect(applyRegulatoryCap({ originalCents: 1_000_00, alreadyChargedCents: 600_00, newChargesCents: 300_00, start: "depois" }))
+      .toEqual({ status: "dentro", capCents: 1_000_00, roomCents: 400_00 });
+    expect(applyRegulatoryCap({ originalCents: 1_000_00, alreadyChargedCents: 900_00, newChargesCents: 300_00, start: "depois" }))
+      .toEqual({ status: "ultrapassaria", capCents: 1_000_00, roomCents: 100_00, excessCents: 200_00 });
+  });
+
+  it("teste 8 — dívida anterior à vigência não é alcançada; data desconhecida fica incerta", async () => {
+    const { applyRegulatoryCap } = await import("@/lib/calculators/credit-card-rules");
+    expect(applyRegulatoryCap({ originalCents: 1_000_00, alreadyChargedCents: 2_000_00, newChargesCents: 100_00, start: "antes" }).status)
+      .toBe("nao-se-aplica");
+    const r = applyRegulatoryCap({ originalCents: 1_000_00, alreadyChargedCents: 950_00, newChargesCents: 100_00, start: "nao-sei" });
+    expect(r).toEqual({ status: "incerto", capCents: 1_000_00, roomCents: 50_00, wouldExceed: true, excessCents: 50_00 });
+  });
+
+  it("o teto limita encargos acumulados, não vira taxa: encargos já acima do teto deixam folga zero", async () => {
+    const { applyRegulatoryCap } = await import("@/lib/calculators/credit-card-rules");
+    const r = applyRegulatoryCap({ originalCents: 1_000_00, alreadyChargedCents: 1_200_00, newChargesCents: 0, start: "depois" });
+    expect(r).toEqual({ status: "dentro", capCents: 1_000_00, roomCents: 0 });
+  });
+
+  it("a regra é configuração com fonte e data", async () => {
+    const { INTEREST_CAP, formatIsoDate } = await import("@/lib/calculators/credit-card-rules");
+    expect(formatIsoDate(INTEREST_CAP.effectiveFrom)).toBe("03/01/2024");
+    expect(INTEREST_CAP.shareOfOriginal).toBe(1);
+    expect(INTEREST_CAP.excludesIof).toBe(true);
+    expect(INTEREST_CAP.source.url).toMatch(/^https:\/\//);
+  });
+});

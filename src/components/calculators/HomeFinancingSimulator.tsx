@@ -30,7 +30,7 @@ import { useEffect, useEffectEvent, useId, useRef, useState } from "react";
 import { track } from "@/lib/analytics/track";
 import { parseBRLToCents, parsePercentBR } from "@/lib/calculators/proposal-comparison";
 import {
-  downScenarios,
+  downScenariosWithCurrent,
   incomeForPayment,
   maxFinanceable,
   monthsInWords,
@@ -98,6 +98,10 @@ const brlRound = (cents: number) =>
   new Intl.NumberFormat("pt-BR", { style: "currency", currency: "BRL", maximumFractionDigits: 0 }).format(
     cents / 100,
   );
+/** Teto de valor ("até R$ X"): arredonda para BAIXO, para não prometer um real a mais. */
+const brlFloor = (cents: number) => brlRound(Math.floor(cents / 100) * 100);
+/** Renda mínima ("pelo menos R$ X"): arredonda para CIMA, para não prometer um real a menos. */
+const brlCeil = (cents: number) => brlRound(Math.ceil(cents / 100) * 100);
 const pct = (v: number, digits = 2) =>
   v.toLocaleString("pt-BR", { minimumFractionDigits: digits, maximumFractionDigits: digits });
 const moneyInput = (cents: number) =>
@@ -333,7 +337,7 @@ export function HomeFinancingSimulator({
         return;
       }
       setShown({ mode: "capacidade", result: outcome.result, downCents: down, rate, rateUnit: next.rateUnit });
-      setWarnings([]);
+      setWarnings(outcome.warnings);
     }
     setErrors([]);
     setStale(false);
@@ -354,13 +358,18 @@ export function HomeFinancingSimulator({
       track("home_finance_start", { context });
     }
     const next = { ...fields, ...patch };
+    // Taxa digitada à mão deixa de ser "a do Banco Central".
+    if (patch.rate !== undefined) referenceUsed.current = false;
     setFields(next);
     setExamplePremise(null);
     if (submitted) compute(next, { announce: false });
   }
 
   function setMode(mode: Mode) {
+    if (mode === fields.mode) return;
     track("home_finance_mode_select", { context, mode });
+    setWarnings([]);
+    setExamplePremise(null);
     // Trocar de modo não aproveita o resultado do outro: são perguntas diferentes.
     setShown(null);
     setErrors([]);
@@ -376,9 +385,30 @@ export function HomeFinancingSimulator({
   }
 
   function applyReference() {
-    referenceUsed.current = true;
     track("home_finance_reference_use", { context, official: rateOffer.official });
     update({ rate: pct(rateOffer.annualRatePercent), rateUnit: "aa" });
+    referenceUsed.current = true;
+  }
+
+  /**
+   * Do modo "quanto consigo" para "quanto fica", com a TAXA DA PESSOA — não
+   * a de referência. (Auditoria de 23/09/2026: antes, o botão reaproveitava o
+   * preenchimento dos exemplos e trocava a taxa pela do Banco Central.)
+   */
+  function showProperty(propertyCents: number) {
+    track("home_finance_mode_select", { context, mode: "parcela" });
+    const next: Fields = {
+      ...fields,
+      mode: "parcela",
+      property: moneyInput(propertyCents),
+      down: fields.down,
+    };
+    setFields(next);
+    setExamplePremise(null);
+    setSubmitted(true);
+    compute(next, { announce: false });
+    rootRef.current?.scrollIntoView({ block: "start" });
+    reveal();
   }
 
   /* Exemplos da página → simulador. */
@@ -437,15 +467,12 @@ export function HomeFinancingSimulator({
 
   /* Tabelas de cenário do resultado. */
   let termRows: ScenarioRow[] = [];
-  let downRows: ScenarioRow[] = [];
+  let downRows: Array<ScenarioRow & { current: boolean }> = [];
   if (shown?.mode === "parcela") {
     const r = shown.result;
     const terms = [...new Set([240, 300, 360, 420, r.financed.months])].sort((a, b) => a - b);
     termRows = termScenarios(r.financed.principalCents, shown.rate, shown.rateUnit, terms);
-    const shares = [...new Set([0.1, 0.2, 0.3, 0.4, Math.round(r.downShare * 1000) / 1000])]
-      .filter((s) => s >= 0 && s < 1)
-      .sort((a, b) => a - b);
-    downRows = downScenarios(r.propertyCents, shown.rate, shown.rateUnit, r.financed.months, shares);
+    downRows = downScenariosWithCurrent(r.propertyCents, r.downCents, shown.rate, shown.rateUnit, r.financed.months);
   }
 
   return (
@@ -600,7 +627,7 @@ export function HomeFinancingSimulator({
                       type="button"
                       aria-pressed={fields.months.trim() === String(m)}
                       onClick={() => update({ months: String(m) })}
-                      className="min-h-10 rounded-full border border-brand-border px-3 text-sm font-medium text-brand-navy aria-pressed:border-brand-navy aria-pressed:bg-brand-navy aria-pressed:text-white"
+                      className="min-h-11 rounded-full border border-brand-border px-3 text-sm font-medium text-brand-navy aria-pressed:border-brand-navy aria-pressed:bg-brand-navy aria-pressed:text-white"
                     >
                       {m / 12} anos
                     </button>
@@ -669,13 +696,7 @@ export function HomeFinancingSimulator({
             {shown.mode === "parcela" ? (
               <ParcelaResult shown={shown} termRows={termRows} downRows={downRows} Title={Title} Sub={Sub} />
             ) : (
-              <CapacityResultView shown={shown} Title={Title} onSimulate={(propertyCents) => prefill({
-                mode: "parcela",
-                exampleId: "capacidade-para-parcela",
-                propertyCents,
-                downCents: shown.downCents,
-                months: shown.result.months,
-              })} />
+              <CapacityResultView shown={shown} Title={Title} onSimulate={showProperty} />
             )}
           </div>
         ) : null}
@@ -701,7 +722,7 @@ function ParcelaResult({
 }: {
   shown: Extract<Shown, { mode: "parcela" }>;
   termRows: ScenarioRow[];
-  downRows: ScenarioRow[];
+  downRows: Array<ScenarioRow & { current: boolean }>;
   Title: "h2" | "h3";
   Sub: "h3" | "h4";
 }) {
@@ -762,8 +783,8 @@ function ParcelaResult({
         <p>
           <strong>E a renda?</strong> Se a instituição limitar a parcela a 30% da renda bruta — critério que a
           Caixa informa para o crédito habitacional —, a 1ª parcela da SAC pede renda familiar bruta de pelo
-          menos <strong className="tabular-nums">{brlRound(incomeForPayment(f.sac.firstPaymentCents, CAIXA_INCOME_SHARE))}</strong>; a
-          da Price, <strong className="tabular-nums">{brlRound(incomeForPayment(f.price.firstPaymentCents, CAIXA_INCOME_SHARE))}</strong>.
+          menos <strong className="tabular-nums">{brlCeil(incomeForPayment(f.sac.firstPaymentCents, CAIXA_INCOME_SHARE))}</strong>; a
+          da Price, <strong className="tabular-nums">{brlCeil(incomeForPayment(f.price.firstPaymentCents, CAIXA_INCOME_SHARE))}</strong>.
           Cada instituição tem o próprio critério, e ele não diz se a parcela cabe no seu mês.{" "}
           <Link href="/organizacao-financeira/quanto-da-renda-comprometer-financiamento-imovel/" className="font-semibold text-brand-teal underline underline-offset-2">
             Quanto da renda comprometer
@@ -802,9 +823,9 @@ function ParcelaResult({
             head={["Entrada", "Financiado", "SAC — 1ª parcela", "Price — parcela", "Juros Price"]}
             rows={downRows.map((row) => ({
               key: String(row.downCents),
-              current: row.downCents === r.downCents,
+              current: row.current,
               cells: [
-                `${brl(row.downCents ?? 0)} (${pct(((row.downCents ?? 0) / r.propertyCents) * 100, 0)}%)`,
+                `${brl(row.downCents ?? 0)} (${pct(((row.downCents ?? 0) / r.propertyCents) * 100, row.current ? 1 : 0)}%)`,
                 brl(row.principalCents),
                 brl(row.result.sac.firstPaymentCents),
                 brl(row.result.price.firstPaymentCents),
@@ -854,32 +875,42 @@ function CapacityResultView({
             <p className="text-sm font-bold text-brand-navy">
               {row.title} {brl(r.paymentCents)}
             </p>
-            <p className="mt-2 text-xs font-semibold uppercase tracking-wide text-brand-muted">Valor financiado de até</p>
-            <p className="font-serif text-2xl font-bold tabular-nums text-brand-navy sm:text-3xl">{brl(row.value)}</p>
-            {down > 0 ? (
-              <p className="mt-1 text-sm text-brand-text">
-                Com {brl(down)} de entrada: imóvel de até <strong className="tabular-nums">{brl(row.value + down)}</strong>
+            {row.value === 0 ? (
+              <p className="mt-2 text-sm text-brand-text">
+                Com essa parcela, o valor fica abaixo do mínimo do simulador (R$ 1.000).
               </p>
-            ) : null}
-            <button
-              type="button"
-              onClick={() => onSimulate(row.value + down)}
-              className="mt-3 min-h-11 text-sm font-semibold text-brand-teal underline underline-offset-2"
-            >
-              Ver a parcela desse imóvel mês a mês
-            </button>
+            ) : (
+              <>
+                <p className="mt-2 text-xs font-semibold uppercase tracking-wide text-brand-muted">Valor financiado de até</p>
+                <p className="font-serif text-2xl font-bold tabular-nums text-brand-navy sm:text-3xl">{brlFloor(row.value)}</p>
+                {r.capped ? <p className="mt-1 text-xs text-brand-muted">limite do simulador</p> : null}
+                {down > 0 ? (
+                  <p className="mt-1 text-sm text-brand-text">
+                    Com {brl(down)} de entrada: imóvel de até <strong className="tabular-nums">{brlFloor(row.value + down)}</strong>
+                  </p>
+                ) : null}
+                <button
+                  type="button"
+                  onClick={() => onSimulate(Math.floor(row.value / 100) * 100 + down)}
+                  className="mt-3 min-h-11 text-sm font-semibold text-brand-teal underline underline-offset-2"
+                >
+                  Ver a parcela desse imóvel
+                </button>
+              </>
+            )}
           </div>
         ))}
       </div>
       <div className="mt-5 space-y-2 rounded-xl bg-brand-teal-soft p-4 text-sm leading-relaxed text-brand-text">
         <p>
-          Com a mesma parcela, a Price alcança um valor maior porque a parcela dela fica igual até o fim; na
-          SAC, a 1ª parcela é a maior do contrato e as seguintes caem.
+          Com a mesma parcela, a Price alcança um valor maior porque a parcela dela fica fixa até o fim; na
+          SAC, a 1ª parcela é a maior do contrato e as seguintes caem. Na Price, a última parcela acerta o
+          arredondamento dos centavos e pode ficar alguns reais acima ou abaixo das outras.
         </p>
         <p>
           Se a instituição limitar a parcela a 30% da renda bruta — critério que a Caixa informa —, uma parcela
           de {brl(r.paymentCents)} corresponde a renda familiar bruta de pelo menos{" "}
-          <strong className="tabular-nums">{brlRound(income)}</strong>. A aprovação e o valor máximo dependem da
+          <strong className="tabular-nums">{brlCeil(income)}</strong>. A aprovação e o valor máximo dependem da
           análise de crédito, da cota de financiamento e das regras de cada instituição.
         </p>
       </div>

@@ -78,12 +78,16 @@ describe("modo inverso: parcela → quanto consigo financiar", () => {
         if (o.kind !== "ok") throw new Error("simulação falhou");
         return o.result;
       };
-      // Com o valor encontrado, a parcela cabe…
-      expect(run(r.priceMaxCents).price.firstPaymentCents).toBeLessThanOrEqual(payment);
+      // Com o valor encontrado, a parcela fixa da Price e a 1ª da SAC cabem…
+      expect(run(r.priceMaxCents).price.fixedCents).toBeLessThanOrEqual(payment);
       expect(run(r.sacMaxCents).sac.firstPaymentCents).toBeLessThanOrEqual(payment);
-      // …e com um real a mais, não cabe.
-      expect(run(r.priceMaxCents + 100).price.firstPaymentCents).toBeGreaterThan(payment);
+      // …e com um real a mais, não cabem.
+      expect(run(r.priceMaxCents + 100).price.fixedCents).toBeGreaterThan(payment);
       expect(run(r.sacMaxCents + 100).sac.firstPaymentCents).toBeGreaterThan(payment);
+      // A última parcela da Price acerta o arredondamento: fica a poucos
+      // reais da fixa, para cima ou para baixo — a interface avisa.
+      const last = run(r.priceMaxCents).price.lastPaymentCents;
+      expect(Math.abs(last - run(r.priceMaxCents).price.fixedCents)).toBeLessThan(payment * 0.02);
       // A mesma parcela financia mais na Price (a 1ª parcela da SAC é a maior).
       if (rate > 0) expect(r.priceMaxCents).toBeGreaterThan(r.sacMaxCents);
     });
@@ -91,8 +95,9 @@ describe("modo inverso: parcela → quanto consigo financiar", () => {
 
   it("taxa zero: parcela × prazo", () => {
     const r = capacity(300_000, 0, "am", 360);
-    // Parcela ao centavo: R$ 3.000,00 cobre até R$ 1.080.001,79 (1.080.001,79 ÷ 360
-    // = 3.000,004…, que arredonda para 3.000,00).
+    // Parcela ao centavo: R$ 3.000,00 cobre até R$ 1.080.001,79 (÷ 360 =
+    // 3.000,004…, que arredonda para 3.000,00); a última parcela acerta os
+    // R$ 1,79 — a interface avisa desse ajuste.
     expect(r.priceMaxCents).toBe(108_000_179);
     expect(r.sacMaxCents).toBe(108_000_179);
   });
@@ -104,6 +109,23 @@ describe("modo inverso: parcela → quanto consigo financiar", () => {
     const r = capacity(300_000, 1, "am", 360);
     expect(Math.abs(r.priceMaxCents - 29_165_499)).toBeLessThanOrEqual(100);
     expect(Math.abs(r.sacMaxCents - 23_478_261)).toBeLessThanOrEqual(100);
+  });
+
+  it("auditoria: parcela absurda não trava — é recusada; parcela minúscula dá zero", () => {
+    expect(maxFinanceable({ paymentCents: 9_999_999_999_999, ratePercent: 14.28, rateUnit: "aa", months: 360 }).kind).toBe("invalid");
+    expect(capacity(500, 14.28, "aa", 360).priceMaxCents).toBe(0);
+  });
+
+  it("auditoria: parcela enorme bate no limite da calculadora e avisa", () => {
+    const r = capacity(90_000_000, 1, "aa", 420);
+    expect(r.capped).toBe(true);
+    expect(r.priceMaxCents).toBeLessThanOrEqual(50_000_000_00);
+  });
+
+  it("taxa alta avisa no modo inverso", () => {
+    const o = maxFinanceable({ paymentCents: 300_000, ratePercent: 5, rateUnit: "am", months: 360 });
+    expect(o.kind).toBe("ok");
+    if (o.kind === "ok") expect(o.warnings[0]!.field).toBe("ratePercent");
   });
 
   it("recusa entrada inválida", () => {
@@ -139,6 +161,19 @@ describe("renda e cenários", () => {
       expect(rows[k]!.result.sac.firstPaymentCents).toBeLessThan(rows[k - 1]!.result.sac.firstPaymentCents);
       expect(rows[k]!.result.price.totalInterestCents).toBeLessThan(rows[k - 1]!.result.price.totalInterestCents);
     }
+  });
+
+  it("auditoria: a entrada exata da pessoa sempre tem linha própria, marcada", async () => {
+    const { downScenariosWithCurrent } = await import("@/lib/calculators/home-financing");
+    const rows = downScenariosWithCurrent(35_000_000, 7_777_700, 14.28, "aa", 360);
+    const mine = rows.filter((r) => r.current);
+    expect(mine).toHaveLength(1);
+    expect(mine[0]!.downCents).toBe(7_777_700);
+    expect(rows.map((r) => r.downCents)).toEqual([3_500_000, 7_000_000, 7_777_700, 10_500_000, 14_000_000]);
+    // Entrada igual a uma fração de referência não duplica a linha.
+    const same = downScenariosWithCurrent(50_000_000, 10_000_000, 12, "aa", 360);
+    expect(same.filter((r) => r.downCents === 10_000_000)).toHaveLength(1);
+    expect(same.find((r) => r.downCents === 10_000_000)!.current).toBe(true);
   });
 
   it("prazo em palavras", () => {

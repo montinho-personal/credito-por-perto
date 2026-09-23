@@ -194,6 +194,15 @@ describe("FinancialNextStepEngine", () => {
     expect(snapshot.impliedJourneyId).toBe("vou-comprar");
   });
 
+  it("não assume jornada quando a ferramenta é só passo opcional dela", () => {
+    for (const id of ["financiamento-imobiliario", "sac-x-price", "financiamento-veiculo"]) {
+      const snapshot = buildNextStepSnapshot(id);
+      expect(snapshot.impliedJourneyId).toBeUndefined();
+    }
+    // Sem jornada assumida, o primeiro próximo passo é o da própria ferramenta.
+    expect(computeNextStep("financiamento-imobiliario").primary?.trackingId).toBe("sac-x-price");
+  });
+
   it("não assume jornada quando a ferramenta pertence a várias", () => {
     const snapshot = buildNextStepSnapshot("parcela-no-orcamento");
     expect(Object.keys(snapshot.journeys).length).toBeGreaterThan(1);

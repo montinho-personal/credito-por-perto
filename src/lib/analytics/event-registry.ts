@@ -282,6 +282,16 @@ const TOOL_EVENTS: EventSpec[] = [
   { name: "home_finance_example_select", group: "ferramenta", description: "Financiamento imobiliário: exemplo da página levado ao simulador.", params: ["context", "example"] },
   { name: "home_finance_reference_use", group: "ferramenta", description: "Financiamento imobiliário: taxa de referência usada (oficial ou ilustrativa).", params: ["context", "official"] },
 
+  /* Calculadora de juros do cartão. Nenhum valor sai: nem fatura, nem valor
+     pago, nem taxa, nem saldo. Só a situação ("rotativo", "sem-pagamento"…). */
+  { name: "credit_card_interest_start", group: "ferramenta", description: "Juros do cartão: primeira interação.", params: ["context"] },
+  { name: "credit_card_interest_calculated", group: "ferramenta", description: "Juros do cartão: simulação calculada.", params: ["context", "situation", "rate_unit", "advanced_used", "reference_shown"], keyEvent: true },
+  { name: "credit_card_advanced_opened", group: "ferramenta", description: "Juros do cartão: campos avançados da fatura abertos.", params: ["context"] },
+  { name: "credit_card_late_payment_mode", group: "ferramenta", description: "Juros do cartão: situação de atraso (abaixo do mínimo ou sem pagamento).", params: ["context", "situation"] },
+  { name: "credit_card_scenario_changed", group: "ferramenta", description: "Juros do cartão: cenário 'e se?' escolhido.", params: ["context", "scenario"] },
+  { name: "credit_card_reference_use", group: "ferramenta", description: "Juros do cartão: média do rotativo do Banco Central usada como taxa.", params: ["context"] },
+  { name: "credit_card_example_select", group: "ferramenta", description: "Juros do cartão: exemplo da página levado à calculadora.", params: ["context", "example"] },
+
   /* Comparador de propostas */
   { name: "credit_compare_start", group: "ferramenta", description: "Comparador de propostas: primeira interação.", params: [] },
   { name: "credit_compare_complete", group: "ferramenta", description: "Comparador de propostas: resultado calculado.", params: ["proposals", "cet_informed", "advanced_used", "example_used"], keyEvent: true },

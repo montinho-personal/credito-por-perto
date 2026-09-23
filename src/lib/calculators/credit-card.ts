@@ -255,3 +255,65 @@ export function lowerRateScenarios(result: CycleResult, cuts: readonly number[] 
       return { cutPoints, monthlyRatePercent: rate, interestCents: interest, savedCents: result.interestCents - interest };
     });
 }
+
+/* -------------------------------------------------------------------------- */
+/* Atraso: encargos separados dos juros do rotativo                            */
+/* -------------------------------------------------------------------------- */
+
+export interface LateInput {
+  /** Base sobre a qual a pessoa quer estimar multa e mora (em geral, o valor em atraso). */
+  baseCents: number;
+  /** Multa prevista no contrato ou na fatura, em %. Vazio = não informada. */
+  finePercent?: number;
+  /** Juros de mora ao mês previstos no contrato ou na fatura, em %. */
+  moraMonthlyPercent?: number;
+  /** Dias de atraso considerados para a mora. */
+  daysLate?: number;
+  /** Outros encargos que a pessoa já sabe o valor (em centavos). */
+  otherCents?: number;
+  /** IOF informado na fatura (em centavos). Nunca calculado por aqui. */
+  iofCents?: number;
+}
+
+export interface LateCharges {
+  fineCents: number | null;
+  moraCents: number | null;
+  otherCents: number;
+  iofCents: number;
+  /** Soma só do que foi informado. */
+  totalCents: number;
+}
+
+/**
+ * Multa e juros de mora, cada um na sua linha, SÓ com os percentuais que a
+ * pessoa informar — o site não publica um percentual legal que não
+ * conseguiu conferir na fonte oficial. A mora é proporcional aos dias
+ * (percentual ao mês × dias ÷ 30), convenção usual para juros de mora; a
+ * interface diz isso e pede para conferir o contrato. Nada aqui se soma à
+ * taxa do rotativo como se fosse uma taxa única.
+ */
+export function calculateLateCharges(input: LateInput): LateCharges {
+  const base = Math.max(Math.round(input.baseCents), 0);
+  const fineCents =
+    input.finePercent !== undefined && Number.isFinite(input.finePercent) && input.finePercent >= 0
+      ? Math.round((base * input.finePercent) / 100)
+      : null;
+  const moraCents =
+    input.moraMonthlyPercent !== undefined &&
+    Number.isFinite(input.moraMonthlyPercent) &&
+    input.moraMonthlyPercent >= 0 &&
+    input.daysLate !== undefined &&
+    Number.isInteger(input.daysLate) &&
+    input.daysLate >= 0
+      ? Math.round((base * input.moraMonthlyPercent * input.daysLate) / 100 / 30)
+      : null;
+  const otherCents = Math.max(Math.round(input.otherCents ?? 0), 0);
+  const iofCents = Math.max(Math.round(input.iofCents ?? 0), 0);
+  return {
+    fineCents,
+    moraCents,
+    otherCents,
+    iofCents,
+    totalCents: (fineCents ?? 0) + (moraCents ?? 0) + otherCents + iofCents,
+  };
+}

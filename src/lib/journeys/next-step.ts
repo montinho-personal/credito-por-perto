@@ -102,8 +102,23 @@ export function buildNextStepSnapshot(toolId: string): NextStepSnapshot {
     tool: toolSnapshot(tool),
     tools,
     journeys,
-    impliedJourneyId: related.length === 1 ? related[0]?.id : undefined,
+    impliedJourneyId: impliedJourney(toolId, related),
   };
+}
+
+/**
+ * Jornada assumida quando a pessoa chega direto na ferramenta: só se a
+ * ferramenta pertence a UMA jornada e é passo OBRIGATÓRIO dela. Passo
+ * opcional é desvio da jornada, não o caminho: o simulador de imóvel, que é
+ * passo opcional de "Vou comprar", mostrava "Passo 2 de 5" e sugeria "à vista
+ * ou parcelado" (auditoria de 23/09/2026). Sem jornada assumida, valem os
+ * próximos passos da própria ferramenta.
+ */
+function impliedJourney(toolId: string, related: ReturnType<typeof journeysUsingTool>): string | undefined {
+  if (related.length !== 1) return undefined;
+  const journey = related[0]!;
+  const step = journey.steps.find((s) => s.toolId === toolId);
+  return step && !step.optional ? journey.id : undefined;
 }
 
 export function computeNextStep(

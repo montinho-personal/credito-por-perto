@@ -19,6 +19,7 @@
 import { pricePayment } from "@/lib/calculators/loan";
 import {
   MAX_MONTHS,
+  MAX_PRINCIPAL_CENTS,
   MIN_PRINCIPAL_CENTS,
   simulateSacPrice,
   toMonthlyRatePercent,
@@ -135,15 +136,28 @@ export interface CapacityResult {
   paymentCents: number;
   months: number;
   monthlyRatePercent: number;
-  /** Maior valor financiado cuja parcela Price não passa da informada. */
+  /**
+   * Maior valor financiado cuja parcela fixa da Price, arredondada ao
+   * centavo, não passa da informada. A ÚLTIMA parcela acerta o
+   * arredondamento e pode ficar alguns reais acima ou abaixo — como num
+   * contrato; a interface diz isso. 0 quando fica abaixo do mínimo da
+   * calculadora.
+   */
   priceMaxCents: number;
-  /** Maior valor financiado cuja 1ª parcela SAC não passa da informada. */
+  /** Maior valor financiado cuja 1ª parcela da SAC (a maior) não passa da informada. */
   sacMaxCents: number;
+  /** O valor bateu no limite da calculadora (R$ 50 milhões). */
+  capped: boolean;
 }
 
 export type CapacityOutcome =
-  | { kind: "ok"; result: CapacityResult }
+  | { kind: "ok"; result: CapacityResult; warnings: HomeIssue[] }
   | { kind: "invalid"; errors: HomeIssue[] };
+
+/** Parcela acima disso é erro de digitação, não orçamento. */
+export const MAX_PAYMENT_CENTS = 1_000_000_00;
+/** Acima disso ao mês, a interface pergunta se a taxa está na unidade certa. */
+const SUSPICIOUS_MONTHLY_RATE = 4;
 
 /** 1ª parcela da SAC, com o mesmo arredondamento da tabela. */
 function sacFirstPaymentCents(principal: number, i: number, n: number): number {
@@ -155,29 +169,55 @@ function pricePaymentCents(principal: number, i: number, n: number): number {
 }
 
 /**
- * Inverte a fórmula e confere com a própria regra de arredondamento: o valor
- * devolvido gera uma parcela MENOR OU IGUAL à informada, e um centavo a mais
- * já a ultrapassaria.
+ * Maior valor cuja parcela (função crescente do valor) não passa do alvo.
+ * Busca binária com número de passos limitado: nenhuma entrada trava a
+ * página — a versão anterior andava centavo a centavo e, com uma parcela
+ * absurda, nunca terminava (auditoria de 23/09/2026).
  *
- *   Price: PV = PMT × [1 − (1 + i)^(−n)] ÷ i        (i = 0: PMT × n)
- *   SAC:   PV = P1 ÷ (1/n + i)                      (1ª parcela)
+ *   Price: PV ≈ PMT × [1 − (1 + i)^(−n)] ÷ i        (i = 0: PMT × n)
+ *   SAC:   PV ≈ P1 ÷ (1/n + i)
  */
-function invert(target: number, estimate: number, payment: (pv: number) => number): number {
-  let pv = Math.max(0, Math.floor(estimate));
-  while (pv > 0 && payment(pv) > target) pv -= 1;
-  while (payment(pv + 1) <= target) pv += 1;
-  return pv;
+function largestFitting(target: number, estimate: number, payment: (pv: number) => number): number {
+  let lo = 0; // payment(0) = 0: cabe
+  let hi = Math.max(Math.ceil(estimate) + 100_00, 1);
+  for (let step = 0; step < 64 && payment(hi) <= target; step++) hi *= 2;
+  for (let step = 0; step < 80 && hi - lo > 1; step++) {
+    const mid = Math.floor((lo + hi) / 2);
+    if (payment(mid) <= target) lo = mid;
+    else hi = mid;
+  }
+  return lo;
+}
+
+function clampToLimits(value: number): { value: number; capped: boolean } {
+  if (value < MIN_PRINCIPAL_CENTS) return { value: 0, capped: false };
+  if (value > MAX_PRINCIPAL_CENTS) return { value: MAX_PRINCIPAL_CENTS, capped: true };
+  return { value, capped: false };
 }
 
 export function maxFinanceable(input: CapacityInput): CapacityOutcome {
   const errors: HomeIssue[] = [];
+  const warnings: HomeIssue[] = [];
   if (!isNumber(input.paymentCents) || input.paymentCents <= 0) {
     errors.push({ field: "paymentCents", message: "Informe a parcela que cabe no seu mês." });
+  } else if (input.paymentCents > MAX_PAYMENT_CENTS) {
+    errors.push({ field: "paymentCents", message: "Parcela acima do limite do simulador (R$ 1 milhão por mês)." });
   }
   if (!isNumber(input.ratePercent) || input.ratePercent < 0) {
     errors.push({ field: "ratePercent", message: "Informe a taxa de juros (zero ou mais)." });
-  } else if (toMonthlyRatePercent(input.ratePercent, input.rateUnit) > 10) {
-    errors.push({ field: "ratePercent", message: "Taxa alta demais para um financiamento imobiliário. Confira o número e a unidade." });
+  } else {
+    const monthly = toMonthlyRatePercent(input.ratePercent, input.rateUnit);
+    if (monthly > 10) {
+      errors.push({ field: "ratePercent", message: "Taxa alta demais para um financiamento imobiliário. Confira o número e a unidade." });
+    } else if (monthly > SUSPICIOUS_MONTHLY_RATE) {
+      warnings.push({
+        field: "ratePercent",
+        message:
+          input.rateUnit === "am"
+            ? "Taxa alta para um financiamento. Confira se a proposta informa a taxa ao mês ou ao ano."
+            : "Taxa alta para um financiamento. Confira o número digitado.",
+      });
+    }
   }
   if (!Number.isInteger(input.months) || input.months < 1 || input.months > MAX_MONTHS) {
     errors.push({ field: "months", message: `Informe um prazo entre 1 e ${MAX_MONTHS} meses.` });
@@ -191,15 +231,19 @@ export function maxFinanceable(input: CapacityInput): CapacityOutcome {
 
   const priceEstimate = i === 0 ? p * n : (p * (1 - Math.pow(1 + i, -n))) / i;
   const sacEstimate = p / (1 / n + i);
+  const price = clampToLimits(largestFitting(p, priceEstimate, (pv) => pricePaymentCents(pv, i, n)));
+  const sac = clampToLimits(largestFitting(p, sacEstimate, (pv) => sacFirstPaymentCents(pv, i, n)));
 
   return {
     kind: "ok",
+    warnings,
     result: {
       paymentCents: p,
       months: n,
       monthlyRatePercent,
-      priceMaxCents: invert(p, priceEstimate, (pv) => pricePaymentCents(pv, i, n)),
-      sacMaxCents: invert(p, sacEstimate, (pv) => sacFirstPaymentCents(pv, i, n)),
+      priceMaxCents: price.value,
+      sacMaxCents: sac.value,
+      capped: price.capped || sac.capped,
     },
   };
 }
@@ -255,6 +299,32 @@ export function downScenarios(
     });
     return outcome.kind === "ok"
       ? [{ months, principalCents: propertyCents - downCents, downCents, result: outcome.result }]
+      : [];
+  });
+}
+
+/**
+ * Tabela de entradas do resultado: as frações de referência MAIS a entrada
+ * exata da pessoa, que sempre aparece — com o valor que ela digitou, sem
+ * arredondar para a fração mais próxima. Frações que dariam a mesma entrada
+ * saem, para não repetir linha.
+ */
+export function downScenariosWithCurrent(
+  propertyCents: number,
+  currentDownCents: number,
+  ratePercent: number,
+  rateUnit: RateUnit,
+  months: number,
+  shares: readonly number[] = DOWN_SCENARIOS,
+): Array<ScenarioRow & { current: boolean }> {
+  const downs = [
+    ...shares.map((share) => Math.round(propertyCents * share)).filter((d) => d !== currentDownCents),
+    currentDownCents,
+  ].sort((a, b) => a - b);
+  return downs.flatMap((downCents) => {
+    const outcome = simulateSacPrice({ principalCents: propertyCents - downCents, ratePercent, rateUnit, months });
+    return outcome.kind === "ok"
+      ? [{ months, principalCents: propertyCents - downCents, downCents, result: outcome.result, current: downCents === currentDownCents }]
       : [];
   });
 }

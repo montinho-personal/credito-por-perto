@@ -591,7 +591,7 @@ export function VehicleFinancingSimulator({
                     type="button"
                     aria-pressed={fields.months.trim() === String(m)}
                     onClick={() => update({ months: String(m) })}
-                    className="min-h-10 rounded-full border border-brand-border px-3 text-sm font-medium text-brand-navy aria-pressed:border-brand-navy aria-pressed:bg-brand-navy aria-pressed:text-white"
+                    className="min-h-11 rounded-full border border-brand-border px-3 text-sm font-medium text-brand-navy aria-pressed:border-brand-navy aria-pressed:bg-brand-navy aria-pressed:text-white"
                   >
                     {m}x
                   </button>

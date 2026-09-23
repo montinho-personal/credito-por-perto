@@ -75,6 +75,10 @@ const brl = (cents: number) =>
   new Intl.NumberFormat("pt-BR", { style: "currency", currency: "BRL" }).format(cents / 100);
 const brlRound = (cents: number) =>
   new Intl.NumberFormat("pt-BR", { style: "currency", currency: "BRL", maximumFractionDigits: 0 }).format(cents / 100);
+/** "Até R$ X": para baixo, para não prometer um real a mais. */
+const brlFloor = (cents: number) => brlRound(Math.floor(cents / 100) * 100);
+/** "Pelo menos R$ X": para cima, para não prometer um real a menos. */
+const brlCeil = (cents: number) => brlRound(Math.ceil(cents / 100) * 100);
 const pct = (v: number, digits = 2) =>
   v.toLocaleString("pt-BR", { minimumFractionDigits: digits, maximumFractionDigits: digits });
 const mil = (reais: number) => (reais >= 1_000_000 ? `R$ ${reais / 1_000_000} milhão` : `R$ ${reais / 1000} mil`);
@@ -159,7 +163,7 @@ export default async function FinanciamentoImobiliarioPage() {
         <p>
           No modo <strong>Quanto fica a parcela</strong>, você informa o valor do imóvel, a entrada, a taxa e
           o prazo, e vê a parcela nos dois sistemas usados no crédito habitacional: a SAC, em que a parcela
-          começa mais alta e cai, e a Price, em que ela é a mesma do começo ao fim. No modo{" "}
+          começa mais alta e cai, e a Price, em que ela é fixa. No modo{" "}
           <strong>Quanto consigo financiar</strong>, o caminho é o inverso: você informa a parcela que cabe no
           seu mês e vê até quanto ela financia. A diferença entre os dois sistemas, com gráficos e tabela
           completa, está na <Link href="/calculadoras/sac-x-price/">Calculadora SAC x Price</Link>.
@@ -198,7 +202,7 @@ export default async function FinanciamentoImobiliarioPage() {
             <p>
               Depende da taxa, do prazo e do sistema. Com R$ 300 mil financiados em 30 anos, a 1ª parcela
               na SAC fica em {brl(main300.sac.firstPaymentCents)} e cai todo mês; na Price, a parcela é de{" "}
-              {brl(main300.price.firstPaymentCents)} do começo ao fim. Os juros do contrato inteiro somam{" "}
+              {brl(main300.price.firstPaymentCents)}, fixa (a última acerta os centavos). Os juros do contrato inteiro somam{" "}
               {brl(main300.sac.totalInterestCents)} na SAC e {brl(main300.price.totalInterestCents)} na
               Price. Em outros prazos:
             </p>
@@ -209,8 +213,8 @@ export default async function FinanciamentoImobiliarioPage() {
               fica em {brl(home300.sac.firstPaymentCents)} na SAC (1ª) e {brl(home300.price.firstPaymentCents)}{" "}
               na Price. Se a instituição limitar a parcela a 30% da renda bruta — critério que a Caixa
               informa —, financiar R$ 300 mil em 30 anos pede renda familiar bruta de pelo menos{" "}
-              {brlRound(incomeForPayment(main300.sac.firstPaymentCents, 0.3))} na SAC e{" "}
-              {brlRound(incomeForPayment(main300.price.firstPaymentCents, 0.3))} na Price.
+              {brlCeil(incomeForPayment(main300.sac.firstPaymentCents, 0.3))} na SAC e{" "}
+              {brlCeil(incomeForPayment(main300.price.firstPaymentCents, 0.3))} na Price.
             </p>
             <SimulateExampleButton
               label="Simular financiamento de R$ 300 mil"
@@ -268,8 +272,8 @@ export default async function FinanciamentoImobiliarioPage() {
                   mil(reais),
                   brl(r.sac.firstPaymentCents),
                   brl(r.price.firstPaymentCents),
-                  brlRound(incomeForPayment(r.sac.firstPaymentCents, 0.3)),
-                  brlRound(incomeForPayment(r.price.firstPaymentCents, 0.3)),
+                  brlCeil(incomeForPayment(r.sac.firstPaymentCents, 0.3)),
+                  brlCeil(incomeForPayment(r.price.firstPaymentCents, 0.3)),
                 ],
               }))}
             />
@@ -338,9 +342,9 @@ export default async function FinanciamentoImobiliarioPage() {
                 key: String(reais),
                 cells: [
                   brl(reais * 100),
-                  brlRound(r.priceMaxCents),
-                  brlRound(r.sacMaxCents),
-                  brlRound(incomeForPayment(reais * 100, 0.3)),
+                  brlFloor(r.priceMaxCents),
+                  brlFloor(r.sacMaxCents),
+                  brlCeil(incomeForPayment(reais * 100, 0.3)),
                 ],
               }))}
             />
@@ -436,7 +440,9 @@ export default async function FinanciamentoImobiliarioPage() {
         <p>
           <strong>Quanto consigo financiar:</strong> a fórmula é invertida — na Price, valor = parcela × [1 −
           (1 + i)<sup>−n</sup>] ÷ i; na SAC, valor = 1ª parcela ÷ (1/n + i) — e o resultado é conferido com
-          a própria tabela: é o maior valor cuja parcela não passa da informada.
+          o arredondamento ao centavo: é o maior valor cuja parcela fixa (Price) ou 1ª parcela (SAC) não passa
+          da informada. Na Price, a última parcela acerta o arredondamento e pode ficar alguns reais acima ou
+          abaixo das outras, como num contrato.
         </p>
         <p>
           <strong>Taxa:</strong> ao ano convertida para a mensal equivalente, (1 + anual)<sup>1/12</sup> − 1.
