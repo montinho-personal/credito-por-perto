@@ -662,7 +662,8 @@ function Result({ shown, altResult, comparison, marginal, premise, extra, choose
   const steps: JourneyStep[] = [
     { key: "hoje", label: "Hoje", title: `${brl(r.initialCents)} em dívidas`, detail: `${brl(r.monthlyPaymentCents)}/mês pelos pagamentos informados` },
   ];
-  if (first) steps.push({ key: "primeira", label: "Primeiro marco", when: cap(monthLabel(first.dateIso)), title: `${byId.get(first.debtId!)?.label ?? "Primeira dívida"} termina`, detail: `em ${formatMonths(first.month)}` });
+  // Com uma dívida só, o "primeiro marco" é o próprio fim: não repetir.
+  if (first && !(r.debts.length === 1 && first.month === r.months)) steps.push({ key: "primeira", label: "Primeiro marco", when: cap(monthLabel(first.dateIso)), title: `${byId.get(first.debtId!)?.label ?? "Primeira dívida"} termina`, detail: `em ${formatMonths(first.month)}` });
   if (half && (!first || half.month !== first.month)) steps.push({ key: "metade", label: "Metade do caminho", when: cap(monthLabel(half.dateIso)), title: "Metade do saldo inicial eliminada", detail: `restam ${brl(half.remainingCents)}` });
   if (last && last.debtId !== first?.debtId) steps.push({ key: "ultima", label: "Última dívida", when: cap(monthLabel(last.dateIso)), title: `${byId.get(last.debtId!)?.label ?? "Última dívida"} termina` });
   steps.push(
