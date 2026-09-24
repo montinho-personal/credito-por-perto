@@ -1,6 +1,6 @@
 {
-  "comment": "Fonte ÚNICA de verdade das ferramentas do site. Antes deste arquivo, os metadados viviam duplicados em src/lib/site.ts (rodapé), src/lib/search/build-docs.ts (busca) e src/app/calculadoras/page.tsx (hub) — e já tinham divergido: a margem consignável estava fora do rodapé. Hub, rodapé, busca, callouts nos artigos e auditoria de cobertura leem daqui. Ferramenta nova entra AQUI primeiro; o resto se atualiza sozinho. `inFooter` marca a seleção que aparece no rodapé — o rodapé não lista as doze (viraria entulho), lista uma seleção e aponta para o hub, que tem todas.",
-  "schemaVersion": 1,
+  "comment": "Fonte ÚNICA de verdade das ferramentas do site. Hub (/calculadoras/), rodapé, índice de busca do site, busca da própria central, callouts nos artigos, categorias, destaques, caminhos por situação e auditoria de cobertura leem daqui. Ferramenta nova entra AQUI primeiro (com categoria, tipo, sinônimos leigos e palavras-chave); o resto se atualiza sozinho. `featured` marca os destaques da central (seleção editorial, sem dado de uso até o Search Console ter volume); `inFooter` marca a seleção do rodapé.",
+  "schemaVersion": 2,
   "situations": [
     {
       "id": "antes-de-contratar",
@@ -23,17 +23,1173 @@
       "lead": "Proposta estranha, cobrança que não reconheço, alguém pedindo dinheiro adiantado."
     }
   ],
+  "categories": [
+    {
+      "id": "emprestimos-e-parcelas",
+      "label": "Empréstimos e parcelas",
+      "lead": "Quanto fica a parcela, quanto cabe no mês e como comparar propostas antes de assinar."
+    },
+    {
+      "id": "financiamentos",
+      "label": "Financiamentos",
+      "lead": "Imóvel, carro ou moto: parcela, entrada, SAC e Price, e quanto uma parcela consegue financiar."
+    },
+    {
+      "id": "juros-taxas-e-custos",
+      "label": "Juros, taxas e custos",
+      "lead": "CET, IOF, conversão de taxa e a média do Banco Central para saber se a sua está cara."
+    },
+    {
+      "id": "cartao-e-dividas",
+      "label": "Cartão e dívidas",
+      "lead": "Rotativo, parcelamento da fatura, acordo, quitação, troca de dívida e um plano para sair delas."
+    },
+    {
+      "id": "seguranca-e-verificacao",
+      "label": "Segurança e verificação",
+      "lead": "Antes de mandar dinheiro ou documento: a empresa existe no Banco Central? A proposta tem sinais de golpe?"
+    }
+  ],
+  "paths": [
+    {
+      "id": "contratar-credito",
+      "label": "Vou contratar um crédito",
+      "lead": "Primeiro quanto cabe no mês, depois quanto custa, e só então comparar quem oferece.",
+      "toolIds": [
+        "parcela-no-orcamento",
+        "emprestimo",
+        "comparador-de-propostas",
+        "radar-de-taxas"
+      ],
+      "journeyId": "quero-credito"
+    },
+    {
+      "id": "financiar-veiculo",
+      "label": "Vou financiar um veículo",
+      "lead": "Parcela, juros e total do carro ou da moto, e se a taxa oferecida está acima da média.",
+      "toolIds": [
+        "financiamento-veiculo",
+        "quanto-consigo-financiar",
+        "minha-taxa-esta-cara",
+        "comparador-de-propostas"
+      ],
+      "journeyId": "vou-comprar"
+    },
+    {
+      "id": "financiar-imovel",
+      "label": "Vou financiar um imóvel",
+      "lead": "Parcela na SAC e na Price, quanto uma parcela financia e se ela cabe no orçamento.",
+      "toolIds": [
+        "financiamento-imobiliario",
+        "quanto-consigo-financiar",
+        "sac-x-price",
+        "parcela-no-orcamento"
+      ],
+      "journeyId": "vou-comprar"
+    },
+    {
+      "id": "recebi-proposta",
+      "label": "Recebi uma proposta",
+      "lead": "Quem é a instituição, se a taxa está cara, qual é o custo completo e como ela se compara a outra.",
+      "toolIds": [
+        "consultar-instituicao",
+        "minha-taxa-esta-cara",
+        "cet",
+        "comparador-de-propostas"
+      ],
+      "journeyId": "recebi-proposta"
+    },
+    {
+      "id": "tenho-divida",
+      "label": "Já tenho uma dívida",
+      "lead": "Entender quanto ela custa, comparar um acordo, quitar antes ou trocar por outra.",
+      "toolIds": [
+        "juros-cartao-credito",
+        "renegociacao-de-dividas",
+        "quitacao-antecipada",
+        "plano-para-sair-das-dividas"
+      ],
+      "journeyId": "tenho-uma-divida"
+    },
+    {
+      "id": "entender-juros",
+      "label": "Quero entender juros e custos",
+      "lead": "Traduzir taxa, CET e IOF para uma conta que dá para conferir.",
+      "toolIds": [
+        "cet",
+        "conversor-de-taxas",
+        "iof-emprestimo",
+        "radar-de-taxas"
+      ],
+      "journeyId": "entender-juros"
+    },
+    {
+      "id": "desconfiei",
+      "label": "Desconfiei de uma oferta",
+      "lead": "Antes de mandar dinheiro ou documento: sinais de golpe e registro no Banco Central.",
+      "toolIds": [
+        "sinais-de-golpe",
+        "consultar-instituicao"
+      ],
+      "journeyId": "suspeita-de-golpe"
+    }
+  ],
   "tools": [
+    {
+      "id": "emprestimo",
+      "name": "Calculadora de empréstimo",
+      "shortName": "Calculadora de empréstimo",
+      "route": "/calculadoras/emprestimo/",
+      "cta": "Calcular parcelas",
+      "type": "calculadora",
+      "category": "emprestimos-e-parcelas",
+      "situation": "entender-numeros",
+      "question": "Quanto fica a parcela e quanto pago de juros?",
+      "whenItHelps": "Estime a parcela mensal, o total pago e o total de juros pelo sistema Price, com tabela de amortização mês a mês.",
+      "calloutLead": "Para ver a conta por trás da parcela — e quanto do total é juro — simule com os seus números.",
+      "badge": "Tabela Price",
+      "aliases": [
+        "empréstimo",
+        "empréstimo de 10 mil em 24 vezes",
+        "quanto fica a parcela",
+        "simular empréstimo",
+        "calcular parcela",
+        "juros do empréstimo",
+        "empréstimo pessoal",
+        "quanto vou pagar de juros"
+      ],
+      "keywords": [
+        "calcular emprestimo",
+        "simular emprestimo",
+        "price"
+      ],
+      "tags": [
+        "calculadora",
+        "simulador",
+        "parcela",
+        "juros"
+      ],
+      "triggerTerms": [
+        "valor da parcela",
+        "quanto vou pagar",
+        "tabela price",
+        "amortização",
+        "total de juros"
+      ],
+      "featured": true,
+      "defaultNextSteps": [
+        "parcela-no-orcamento",
+        "comparador-de-propostas"
+      ],
+      "updatedAt": "2026-09-23"
+    },
+    {
+      "id": "comparador-de-propostas",
+      "name": "Comparador de propostas de crédito",
+      "shortName": "Comparador de propostas",
+      "route": "/calculadoras/comparador-de-propostas/",
+      "cta": "Comparar propostas",
+      "type": "comparador",
+      "category": "emprestimos-e-parcelas",
+      "situation": "antes-de-contratar",
+      "question": "Qual dessas propostas custa menos no total?",
+      "whenItHelps": "Coloque até 3 propostas lado a lado e veja parcela, prazo, CET e total pago — parcela menor nem sempre é crédito mais barato.",
+      "calloutLead": "Tem mais de uma proposta na mão? Coloque lado a lado antes de escolher pela parcela.",
+      "badge": "Até 3 propostas",
+      "aliases": [
+        "qual empréstimo é mais barato",
+        "duas propostas",
+        "comparar bancos",
+        "comparar empréstimos",
+        "comparar propostas",
+        "cet"
+      ],
+      "keywords": [
+        "comparar emprestimos",
+        "comparar propostas de credito",
+        "qual emprestimo e mais barato",
+        "comparar cet"
+      ],
+      "tags": [
+        "comparador",
+        "propostas",
+        "cet",
+        "parcela",
+        "total pago"
+      ],
+      "triggerTerms": [
+        "comparar propostas",
+        "duas propostas",
+        "qual proposta",
+        "cet",
+        "custo efetivo total"
+      ],
+      "featured": true,
+      "inFooter": true,
+      "defaultNextSteps": [
+        "parcela-no-orcamento",
+        "minha-taxa-esta-cara"
+      ],
+      "updatedAt": "2026-08-29"
+    },
+    {
+      "id": "parcela-no-orcamento",
+      "name": "Quanto de parcela cabe no meu orçamento?",
+      "shortName": "Parcela no orçamento",
+      "route": "/calculadoras/parcela-no-orcamento/",
+      "cta": "Calcular impacto",
+      "type": "planejador",
+      "category": "emprestimos-e-parcelas",
+      "situation": "antes-de-contratar",
+      "question": "Essa parcela cabe no meu mês?",
+      "whenItHelps": "Informe renda, despesas e dívidas e veja quanto sobra antes e depois da nova parcela — a folga importa mais que o percentual da renda.",
+      "calloutLead": "Antes de aceitar o prazo que o vendedor sugerir, veja quanto sobra no seu mês com a parcela dentro.",
+      "badge": "Antes e depois da parcela",
+      "aliases": [
+        "essa parcela cabe",
+        "quanto sobra no mês",
+        "comprometer a renda",
+        "quanto posso pagar por mês",
+        "orçamento"
+      ],
+      "keywords": [
+        "quanto posso pagar de parcela",
+        "parcela cabe no orcamento",
+        "quanto posso comprometer da renda",
+        "quanto posso pagar de emprestimo por mes",
+        "calculadora comprometimento de renda",
+        "qual parcela cabe no meu salario"
+      ],
+      "tags": [
+        "orcamento",
+        "parcela",
+        "comprometimento-de-renda",
+        "planejamento"
+      ],
+      "triggerTerms": [
+        "cabe no orçamento",
+        "comprometer a renda",
+        "quanto sobra",
+        "orçamento apertado",
+        "renda mensal"
+      ],
+      "inFooter": true,
+      "defaultNextSteps": [
+        "comparador-de-propostas",
+        "plano-para-sair-das-dividas"
+      ],
+      "updatedAt": "2026-08-29"
+    },
+    {
+      "id": "margem-consignavel",
+      "name": "Calculadora de margem consignável",
+      "shortName": "Margem consignável",
+      "route": "/calculadoras/margem-consignavel/",
+      "cta": "Calcular margem",
+      "type": "calculadora",
+      "category": "emprestimos-e-parcelas",
+      "situation": "antes-de-contratar",
+      "question": "Quanto da minha margem ainda está livre?",
+      "whenItHelps": "Veja quanto da margem já está comprometido e quanto resta para um novo consignado — INSS e CLT.",
+      "calloutLead": "Consignado tem teto de desconto em folha. Veja quanto da sua margem já está ocupado.",
+      "badge": "INSS e CLT",
+      "aliases": [
+        "margem livre",
+        "consignado",
+        "desconto em folha",
+        "inss",
+        "aposentado",
+        "clt",
+        "servidor",
+        "quanto posso pegar de consignado"
+      ],
+      "keywords": [
+        "calcular margem",
+        "margem consignavel",
+        "simular margem"
+      ],
+      "tags": [
+        "calculadora",
+        "margem",
+        "consignado",
+        "inss",
+        "clt"
+      ],
+      "triggerTerms": [
+        "margem consignável",
+        "desconto em folha",
+        "consignado",
+        "rmc",
+        "rcc",
+        "cartão consignado"
+      ],
+      "defaultNextSteps": [
+        "parcela-no-orcamento",
+        "comparador-de-propostas"
+      ],
+      "updatedAt": "2026-09-03"
+    },
+    {
+      "id": "antecipacao-fgts",
+      "name": "Simulador de antecipação do FGTS",
+      "shortName": "Antecipação do FGTS",
+      "route": "/calculadoras/antecipacao-fgts/",
+      "cta": "Simular antecipação do FGTS",
+      "type": "simulador",
+      "category": "emprestimos-e-parcelas",
+      "situation": "antes-de-contratar",
+      "question": "Quanto recebo antecipando o Saque-Aniversário, e o que cedo em troca?",
+      "whenItHelps": "Estime quantos Saques-Aniversário podem ser antecipados, quanto receberia hoje e como a taxa afeta o valor.",
+      "calloutLead": "Veja quanto do seu Saque-Aniversário pode ser antecipado pelas regras atuais, quanto você receberia hoje e quanto cede dos próximos anos.",
+      "badge": "Regras do Saque-Aniversário",
+      "aliases": [
+        "saque aniversário",
+        "antecipar fgts",
+        "fgts",
+        "fundo de garantia",
+        "quanto recebo antecipando"
+      ],
+      "keywords": [
+        "antecipacao do fgts",
+        "simulador saque aniversario",
+        "quanto consigo antecipar fgts",
+        "calcular saque aniversario"
+      ],
+      "tags": [
+        "calculadora",
+        "fgts",
+        "saque-aniversario",
+        "antecipacao"
+      ],
+      "triggerTerms": [
+        "antecipação do fgts",
+        "antecipar fgts",
+        "saque-aniversário",
+        "antecipação do saque-aniversário",
+        "empréstimo fgts"
+      ],
+      "defaultNextSteps": [
+        "conversor-de-taxas",
+        "parcela-no-orcamento"
+      ],
+      "updatedAt": "2026-09-23"
+    },
+    {
+      "id": "a-vista-ou-parcelado",
+      "name": "À vista ou parcelado?",
+      "shortName": "À vista ou parcelado?",
+      "route": "/calculadoras/a-vista-ou-parcelado/",
+      "cta": "Comparar",
+      "type": "comparador",
+      "category": "emprestimos-e-parcelas",
+      "situation": "entender-numeros",
+      "question": "À vista ou parcelado: quanto muda?",
+      "whenItHelps": "Compare o preço à vista com as parcelas e veja o total até o fim de cada opção. A parcela pode diminuir enquanto o total aumenta.",
+      "calloutLead": "Antes de escolher a forma de pagamento, compare o preço até o fim das duas opções.",
+      "badge": "Compara o total pago",
+      "aliases": [
+        "à vista vs parcelado",
+        "pagamento à vista ou a prazo",
+        "desconto à vista",
+        "parcelar compra",
+        "sem juros vale a pena",
+        "pix ou cartão"
+      ],
+      "keywords": [
+        "a vista ou parcelado",
+        "vale a pena pagar a vista",
+        "comprar a vista ou parcelado",
+        "parcelado sem juros vale a pena",
+        "desconto a vista quanto compensa",
+        "quanto custa parcelar a compra",
+        "diferenca preco a vista e parcelado",
+        "pix ou cartao parcelado"
+      ],
+      "tags": [
+        "a-vista",
+        "parcelado",
+        "desconto",
+        "consumo",
+        "cartao"
+      ],
+      "triggerTerms": [
+        "à vista ou parcelado",
+        "pagar à vista",
+        "parcelado sem juros",
+        "desconto à vista",
+        "forma de pagamento",
+        "parcelar a compra"
+      ],
+      "inFooter": true,
+      "defaultNextSteps": [
+        "parcela-no-orcamento"
+      ],
+      "updatedAt": "2026-08-29"
+    },
+    {
+      "id": "financiamento-imobiliario",
+      "name": "Simulador de financiamento imobiliário",
+      "shortName": "Financiamento imobiliário",
+      "route": "/calculadoras/financiamento-imobiliario/",
+      "cta": "Simular financiamento",
+      "type": "simulador",
+      "category": "financiamentos",
+      "situation": "antes-de-contratar",
+      "question": "Quanto fica a parcela do imóvel — ou quanto consigo financiar?",
+      "whenItHelps": "Informe valor do imóvel, entrada, taxa e prazo para ver a parcela na SAC e na Price, os juros e a renda que ela representa — ou comece pela parcela que cabe no mês.",
+      "calloutLead": "Veja quanto fica a parcela do imóvel na SAC e na Price, e quanto a entrada e o prazo mudam a conta.",
+      "badge": "SAC e Price, média do BC",
+      "aliases": [
+        "casa 500 mil",
+        "apartamento",
+        "financiar imóvel",
+        "financiamento de 300 mil",
+        "parcela do imóvel",
+        "entrada do imóvel",
+        "caixa",
+        "imóvel",
+        "casa própria"
+      ],
+      "keywords": [
+        "financiamento imobiliario",
+        "simular financiamento de imovel",
+        "financiamento 300 mil",
+        "quanto consigo financiar",
+        "parcela do financiamento",
+        "entrada do imovel"
+      ],
+      "tags": [
+        "simulador",
+        "financiamento",
+        "imovel",
+        "casa",
+        "apartamento",
+        "entrada",
+        "renda"
+      ],
+      "triggerTerms": [
+        "financiamento imobiliário",
+        "financiar o imóvel",
+        "financiar um imóvel",
+        "entrada do imóvel",
+        "parcela do financiamento"
+      ],
+      "featured": true,
+      "defaultNextSteps": [
+        "sac-x-price",
+        "parcela-no-orcamento"
+      ],
+      "updatedAt": "2026-09-24"
+    },
+    {
+      "id": "financiamento-veiculo",
+      "name": "Simulador de financiamento de veículo",
+      "shortName": "Financiamento de veículo",
+      "route": "/calculadoras/financiamento-veiculo/",
+      "cta": "Simular financiamento",
+      "type": "simulador",
+      "category": "financiamentos",
+      "situation": "antes-de-contratar",
+      "question": "Quanto fica financiar este carro ou esta moto?",
+      "whenItHelps": "Informe valor, entrada, taxa e prazo para estimar parcela, juros e total pago — e veja quanto muda com mais entrada, menos parcelas ou uma taxa menor.",
+      "calloutLead": "Antes de olhar só a parcela, veja quanto a entrada, a taxa e o prazo mudam os juros e o total que sai do seu bolso.",
+      "badge": "Média do Banco Central ao lado",
+      "aliases": [
+        "parcela de carro",
+        "quanto fica um carro de 80 mil",
+        "carro",
+        "moto",
+        "financiar carro",
+        "financiamento de moto",
+        "entrada do carro",
+        "veículo"
+      ],
+      "keywords": [
+        "simular financiamento de carro",
+        "financiamento de moto",
+        "calcular parcela do carro",
+        "entrada do carro",
+        "financiamento de veiculo"
+      ],
+      "tags": [
+        "simulador",
+        "financiamento",
+        "veiculo",
+        "carro",
+        "moto",
+        "entrada"
+      ],
+      "triggerTerms": [
+        "financiamento de veículo",
+        "financiamento de carro",
+        "financiar um carro",
+        "financiar a moto",
+        "entrada do veículo"
+      ],
+      "featured": true,
+      "defaultNextSteps": [
+        "comparador-de-propostas",
+        "parcela-no-orcamento"
+      ],
+      "updatedAt": "2026-09-23"
+    },
+    {
+      "id": "quanto-consigo-financiar",
+      "name": "Quanto consigo financiar?",
+      "shortName": "Quanto consigo financiar",
+      "route": "/calculadoras/quanto-consigo-financiar/",
+      "cta": "Calcular pela parcela",
+      "type": "calculadora",
+      "category": "financiamentos",
+      "situation": "antes-de-contratar",
+      "question": "Quanto uma parcela que cabe no mês consegue financiar?",
+      "whenItHelps": "Informe quanto quer pagar por mês, a taxa e o prazo para estimar o valor financiável.",
+      "calloutLead": "Comece pela parcela que cabe no mês e veja quanto ela financia na Price e na SAC, e quanto se paga no total.",
+      "badge": "Price e SAC",
+      "aliases": [
+        "com parcela de 2000 quanto consigo financiar",
+        "quanto posso financiar",
+        "valor financiável",
+        "tenho x por mês",
+        "quanto financio pagando"
+      ],
+      "keywords": [
+        "quanto consigo financiar",
+        "quanto posso financiar",
+        "valor financiavel",
+        "calcular valor financiado pela parcela"
+      ],
+      "tags": [
+        "calculadora",
+        "financiamento",
+        "parcela"
+      ],
+      "triggerTerms": [
+        "quanto consigo financiar",
+        "quanto posso financiar",
+        "valor financiável"
+      ],
+      "defaultNextSteps": [
+        "parcela-no-orcamento",
+        "financiamento-imobiliario"
+      ],
+      "updatedAt": "2026-09-24"
+    },
+    {
+      "id": "sac-x-price",
+      "name": "Calculadora SAC x Price",
+      "shortName": "SAC x Price",
+      "route": "/calculadoras/sac-x-price/",
+      "cta": "Comparar SAC e Price",
+      "type": "comparador",
+      "category": "financiamentos",
+      "situation": "antes-de-contratar",
+      "question": "Qual a diferença entre SAC e Price no meu financiamento?",
+      "whenItHelps": "Informe valor, taxa e prazo para comparar lado a lado a parcela mês a mês, os juros totais e o saldo devedor nos dois sistemas.",
+      "calloutLead": "Veja com os seus números quanto a SAC começa mais alta, em que parcela ela fica abaixo da Price e quanto de juros cada uma soma.",
+      "badge": "Tabela mês a mês",
+      "aliases": [
+        "por que uma parcela diminui e a outra fica igual",
+        "sac ou price",
+        "tabela price",
+        "tabela sac",
+        "amortização",
+        "qual sistema escolher"
+      ],
+      "keywords": [
+        "sac ou price",
+        "tabela price",
+        "tabela sac",
+        "simulador sac e price",
+        "sistema de amortizacao",
+        "financiamento imobiliario"
+      ],
+      "tags": [
+        "calculadora",
+        "sac",
+        "price",
+        "amortizacao",
+        "financiamento",
+        "imovel"
+      ],
+      "triggerTerms": [
+        "sistema de amortização",
+        "tabela price",
+        "amortização constante",
+        "sac ou price",
+        "price ou sac"
+      ],
+      "defaultNextSteps": [
+        "quitacao-antecipada",
+        "parcela-no-orcamento"
+      ],
+      "updatedAt": "2026-09-23"
+    },
+    {
+      "id": "cet",
+      "name": "Calculadora de CET",
+      "shortName": "CET",
+      "route": "/calculadoras/cet/",
+      "cta": "Calcular CET",
+      "type": "calculadora",
+      "category": "juros-taxas-e-custos",
+      "situation": "entender-numeros",
+      "question": "Qual é o custo completo desta proposta?",
+      "whenItHelps": "Informe os fluxos da proposta para estimar o Custo Efetivo Total e entender juros, tarifas, IOF, seguros e outros custos.",
+      "calloutLead": "Informe quanto recebe, as parcelas e os custos para estimar o CET anual e ver por que ele difere da taxa de juros.",
+      "badge": "Fórmula do CMN",
+      "aliases": [
+        "quanto realmente estou pagando",
+        "custo efetivo total",
+        "quanto esse empréstimo custa de verdade",
+        "custo total",
+        "taxas e seguros"
+      ],
+      "keywords": [
+        "calcular o custo efetivo",
+        "conferir a proposta",
+        "taxa x custo"
+      ],
+      "tags": [
+        "calculadora",
+        "custo total",
+        "emprestimo"
+      ],
+      "triggerTerms": [
+        "cet",
+        "custo efetivo total",
+        "custo total do empréstimo",
+        "taxa efetiva"
+      ],
+      "featured": true,
+      "defaultNextSteps": [
+        "comparador-de-propostas",
+        "iof-emprestimo"
+      ],
+      "updatedAt": "2026-09-23"
+    },
+    {
+      "id": "minha-taxa-esta-cara",
+      "name": "Minha taxa está cara?",
+      "shortName": "Minha taxa está cara?",
+      "route": "/calculadoras/minha-taxa-esta-cara/",
+      "cta": "Comparar minha taxa",
+      "type": "comparador",
+      "category": "juros-taxas-e-custos",
+      "situation": "entender-numeros",
+      "question": "A taxa que me ofereceram está acima da média?",
+      "whenItHelps": "Informe a taxa da sua proposta e veja como ela se compara à média oficial do Banco Central para a mesma modalidade.",
+      "calloutLead": "Compare a taxa que te ofereceram com a média oficial do Banco Central para a mesma modalidade.",
+      "badge": "Média do Banco Central",
+      "aliases": [
+        "juros de 4 ao mês é muito",
+        "taxa está alta",
+        "taxa média",
+        "média do banco central",
+        "estou pagando juros demais",
+        "minha taxa está cara"
+      ],
+      "keywords": [
+        "minha taxa esta alta",
+        "juros de 4 ao mes e muito",
+        "taxa media banco central",
+        "comparar taxa de juros"
+      ],
+      "tags": [
+        "taxa",
+        "juros",
+        "banco central",
+        "media",
+        "comparar"
+      ],
+      "triggerTerms": [
+        "taxa média",
+        "juros abusivos",
+        "taxa está cara",
+        "acima da média",
+        "média do banco central"
+      ],
+      "featured": true,
+      "defaultNextSteps": [
+        "comparador-de-propostas",
+        "parcela-no-orcamento"
+      ],
+      "updatedAt": "2026-08-29"
+    },
+    {
+      "id": "conversor-de-taxas",
+      "name": "Conversor de taxas: mensal ↔ anual",
+      "shortName": "Conversor de taxas",
+      "route": "/calculadoras/conversor-de-taxas/",
+      "cta": "Converter taxa",
+      "type": "conversor",
+      "category": "juros-taxas-e-custos",
+      "situation": "entender-numeros",
+      "question": "3% ao mês dá quanto ao ano?",
+      "whenItHelps": "Converta taxas nos dois sentidos por equivalência composta — nunca multiplicando por 12.",
+      "calloutLead": "Taxa ao mês e taxa ao ano não se convertem multiplicando por 12. Faça a conversão correta em segundos.",
+      "badge": "Equivalência composta",
+      "aliases": [
+        "3% ao mês dá quanto ao ano",
+        "taxa aa para am",
+        "1 ao mês é quanto ao ano",
+        "anual para mensal",
+        "mensal para anual",
+        "converter juros",
+        "taxa equivalente",
+        "% ao mês"
+      ],
+      "keywords": [
+        "taxa mensal para anual",
+        "converter taxa mensal para anual",
+        "juros mensal para anual",
+        "3 ao mes quanto ao ano",
+        "4 ao mes quanto ao ano",
+        "taxa equivalente",
+        "taxa anual para mensal"
+      ],
+      "tags": [
+        "taxa-de-juros",
+        "juros-compostos",
+        "conversao"
+      ],
+      "triggerTerms": [
+        "taxa ao mês",
+        "taxa ao ano",
+        "ao mês equivale",
+        "juros compostos",
+        "taxa equivalente"
+      ],
+      "defaultNextSteps": [
+        "minha-taxa-esta-cara",
+        "comparador-de-propostas"
+      ],
+      "updatedAt": "2026-08-29"
+    },
+    {
+      "id": "iof-emprestimo",
+      "name": "Calculadora de IOF de empréstimo",
+      "shortName": "IOF do empréstimo",
+      "route": "/calculadoras/iof-emprestimo/",
+      "cta": "Calcular IOF",
+      "type": "calculadora",
+      "category": "juros-taxas-e-custos",
+      "situation": "entender-numeros",
+      "question": "Quanto de IOF este empréstimo paga?",
+      "whenItHelps": "Estime o IOF de uma operação de crédito e veja separadamente a parcela diária e a adicional.",
+      "calloutLead": "Informe valor e prazo para estimar o IOF com as regras vigentes, separado em parte diária e adicional.",
+      "badge": "Regras vigentes, com data",
+      "aliases": [
+        "iof",
+        "imposto do empréstimo",
+        "quanto de iof",
+        "iof financiamento",
+        "iof pessoa física"
+      ],
+      "keywords": [
+        "calcular iof",
+        "iof emprestimo",
+        "iof financiamento",
+        "iof pessoa fisica"
+      ],
+      "tags": [
+        "calculadora",
+        "iof",
+        "imposto",
+        "emprestimo"
+      ],
+      "triggerTerms": [
+        "iof",
+        "imposto do empréstimo",
+        "iof do empréstimo",
+        "iof financiado"
+      ],
+      "defaultNextSteps": [
+        "comparador-de-propostas",
+        "emprestimo"
+      ],
+      "updatedAt": "2026-09-23"
+    },
+    {
+      "id": "radar-de-taxas",
+      "name": "Radar de taxas de crédito",
+      "shortName": "Radar de taxas",
+      "route": "/taxas/",
+      "cta": "Acompanhar as taxas",
+      "type": "radar",
+      "category": "juros-taxas-e-custos",
+      "situation": "entender-numeros",
+      "question": "Os juros estão subindo ou caindo?",
+      "whenItHelps": "Acompanhe as taxas médias das principais modalidades com dados oficiais e histórico do Banco Central.",
+      "calloutLead": "Para ver como as taxas médias da modalidade vêm se comportando, com dados oficiais do Banco Central.",
+      "badge": "Histórico do Banco Central",
+      "aliases": [
+        "juros hoje",
+        "taxa média do banco central",
+        "juros estão subindo",
+        "taxa do consignado",
+        "juros do cartão hoje",
+        "referência de taxa"
+      ],
+      "keywords": [
+        "taxa media de juros banco central",
+        "juros emprestimo hoje",
+        "juros estao subindo ou caindo",
+        "taxa consignado inss",
+        "juros cartao rotativo",
+        "historico juros emprestimo"
+      ],
+      "tags": [
+        "taxa-de-juros",
+        "banco-central",
+        "radar",
+        "historico"
+      ],
+      "triggerTerms": [
+        "taxa média do mercado",
+        "histórico de taxas",
+        "selic",
+        "juros do mercado"
+      ],
+      "defaultNextSteps": [
+        "minha-taxa-esta-cara",
+        "conversor-de-taxas"
+      ],
+      "updatedAt": "2026-08-29"
+    },
+    {
+      "id": "plano-para-sair-das-dividas",
+      "name": "Plano para sair das dívidas",
+      "shortName": "Plano para sair das dívidas",
+      "route": "/calculadoras/plano-para-sair-das-dividas/",
+      "cta": "Montar meu plano",
+      "type": "planejador",
+      "category": "cartao-e-dividas",
+      "situation": "ja-tenho-divida",
+      "question": "Tenho várias dívidas — por onde começo?",
+      "whenItHelps": "Organize todas as dívidas, veja quais merecem atenção primeiro e compare avalanche com bola de neve.",
+      "calloutLead": "Com mais de uma dívida na mesa, organizar todas em um lugar só costuma valer mais que decidir de cabeça.",
+      "badge": "Avalanche e bola de neve",
+      "aliases": [
+        "tenho várias dívidas",
+        "por onde começo",
+        "qual dívida pagar primeiro",
+        "organizar dívidas",
+        "bola de neve",
+        "avalanche",
+        "sair das dívidas"
+      ],
+      "keywords": [
+        "plano para sair das dividas",
+        "calculadora para sair das dividas",
+        "qual divida pagar primeiro",
+        "metodo avalanche",
+        "metodo bola de neve",
+        "como organizar minhas dividas",
+        "como pagar varias dividas",
+        "organizador de dividas"
+      ],
+      "tags": [
+        "divida",
+        "avalanche",
+        "bola-de-neve",
+        "planejamento",
+        "organizacao"
+      ],
+      "triggerTerms": [
+        "várias dívidas",
+        "por onde começar",
+        "bola de neve",
+        "avalanche",
+        "superendividamento",
+        "sair das dívidas"
+      ],
+      "inFooter": true,
+      "defaultNextSteps": [
+        "renegociacao-de-dividas",
+        "quitacao-antecipada"
+      ],
+      "updatedAt": "2026-08-29"
+    },
+    {
+      "id": "renegociacao-de-dividas",
+      "name": "Calculadora de renegociação de dívidas",
+      "shortName": "Renegociação de dívidas",
+      "route": "/calculadoras/renegociacao-de-dividas/",
+      "cta": "Comparar acordo",
+      "type": "comparador",
+      "category": "cartao-e-dividas",
+      "situation": "ja-tenho-divida",
+      "question": "Quanto esse acordo custa no total?",
+      "whenItHelps": "Compare propostas de acordo — à vista, com entrada ou parceladas — e veja entrada, parcela, prazo e total de cada uma. Desconto anunciado não é o total pago.",
+      "calloutLead": "Recebeu uma proposta de acordo? Some entrada, parcelas e custos antes de decidir pelo desconto anunciado.",
+      "badge": "Total de cada acordo",
+      "aliases": [
+        "acordo",
+        "proposta de acordo",
+        "renegociar",
+        "desconto na dívida",
+        "feirão",
+        "serasa limpa nome",
+        "o acordo é bom"
+      ],
+      "keywords": [
+        "calculadora renegociacao de divida",
+        "calcular acordo de divida",
+        "acordo de divida vale a pena",
+        "divida a vista ou parcelada",
+        "calcular desconto de divida",
+        "proposta de acordo divida",
+        "renegociacao com entrada e parcelas",
+        "como saber se o acordo e bom"
+      ],
+      "tags": [
+        "renegociacao",
+        "acordo",
+        "divida",
+        "desconto",
+        "parcelamento"
+      ],
+      "triggerTerms": [
+        "renegocia",
+        "acordo de dívida",
+        "proposta de acordo",
+        "desconto para quitar",
+        "à vista ou parcelado",
+        "quitar com desconto"
+      ],
+      "inFooter": true,
+      "defaultNextSteps": [
+        "parcela-no-orcamento",
+        "plano-para-sair-das-dividas"
+      ],
+      "updatedAt": "2026-08-29"
+    },
+    {
+      "id": "quitacao-antecipada",
+      "name": "Calculadora de quitação antecipada",
+      "shortName": "Quitação antecipada",
+      "route": "/calculadoras/quitacao-antecipada/",
+      "cta": "Calcular diferença",
+      "type": "calculadora",
+      "category": "cartao-e-dividas",
+      "situation": "ja-tenho-divida",
+      "question": "Quitar agora sai mais barato que seguir pagando?",
+      "whenItHelps": "Compare o saldo para quitação com a soma das parcelas que ainda faltam e veja a diferença em reais.",
+      "calloutLead": "Sobrou um dinheiro? Compare o saldo de quitação com a soma das parcelas que ainda faltam.",
+      "badge": "Saldo x parcelas restantes",
+      "aliases": [
+        "quitar dívida",
+        "quitar a dívida",
+        "saldo devedor",
+        "quitar antes",
+        "antecipar parcelas",
+        "desconto para quitar",
+        "calculadora saldo devedor",
+        "quitar empréstimo hoje"
+      ],
+      "keywords": [
+        "calculadora quitacao antecipada",
+        "quitar emprestimo antecipado",
+        "desconto para quitar emprestimo",
+        "saldo para quitacao",
+        "quanto custa quitar emprestimo hoje",
+        "antecipar parcelas do emprestimo",
+        "saldo devedor para quitacao"
+      ],
+      "tags": [
+        "quitacao-antecipada",
+        "saldo-devedor",
+        "divida",
+        "juros"
+      ],
+      "triggerTerms": [
+        "quitar antecipado",
+        "quitação antecipada",
+        "antecipar parcelas",
+        "amortizar",
+        "saldo devedor"
+      ],
+      "defaultNextSteps": [
+        "plano-para-sair-das-dividas",
+        "trocar-divida"
+      ],
+      "updatedAt": "2026-08-29"
+    },
+    {
+      "id": "trocar-divida",
+      "name": "Vale a pena trocar esta dívida?",
+      "shortName": "Trocar dívida",
+      "route": "/calculadoras/trocar-divida/",
+      "cta": "Comparar dívidas",
+      "type": "comparador",
+      "category": "cartao-e-dividas",
+      "situation": "ja-tenho-divida",
+      "question": "Trocar esta dívida por outra melhora ou piora?",
+      "whenItHelps": "Compare a dívida atual com a nova proposta e veja o que muda na parcela, no prazo e no total.",
+      "calloutLead": "Antes de trocar uma dívida por outra, compare as duas inteiras — não só as parcelas.",
+      "badge": "Dívida atual x nova",
+      "aliases": [
+        "portabilidade",
+        "refinanciar",
+        "empréstimo para quitar dívida",
+        "trocar dívida cara",
+        "pagar cartão com empréstimo",
+        "vale a pena trocar"
+      ],
+      "keywords": [
+        "vale a pena trocar divida",
+        "emprestimo para quitar divida",
+        "emprestimo para pagar cartao",
+        "portabilidade de emprestimo vale a pena",
+        "refinanciar divida",
+        "trocar divida cara por barata"
+      ],
+      "tags": [
+        "portabilidade",
+        "renegociacao",
+        "quitacao",
+        "divida"
+      ],
+      "triggerTerms": [
+        "trocar dívida",
+        "portabilidade",
+        "refinanciamento",
+        "quitar com outro empréstimo",
+        "renegociar com novo contrato"
+      ],
+      "defaultNextSteps": [
+        "parcela-no-orcamento",
+        "plano-para-sair-das-dividas"
+      ],
+      "updatedAt": "2026-08-29"
+    },
+    {
+      "id": "juros-cartao-credito",
+      "name": "Calculadora de juros do cartão",
+      "shortName": "Juros do cartão",
+      "route": "/calculadoras/juros-cartao-credito/",
+      "cta": "Calcular juros do cartão",
+      "type": "calculadora",
+      "category": "cartao-e-dividas",
+      "situation": "ja-tenho-divida",
+      "question": "Paguei só parte da fatura. Quanto vai custar?",
+      "whenItHelps": "Informe a fatura, quanto pagou e a taxa para estimar quanto do saldo entra no rotativo e o custo até a próxima fatura.",
+      "calloutLead": "Veja em reais quanto o saldo em aberto da fatura custa até a próxima, com juros e encargos separados.",
+      "badge": "Até a próxima fatura",
+      "aliases": [
+        "rotativo",
+        "paguei o mínimo",
+        "juros da fatura",
+        "fatura atrasada",
+        "cartão de crédito",
+        "quanto vai custar o rotativo"
+      ],
+      "keywords": [
+        "juros do cartao",
+        "calcular juros da fatura",
+        "pagar o minimo",
+        "fatura atrasada",
+        "calcular juros da fatura"
+      ],
+      "tags": [
+        "calculadora",
+        "cartao",
+        "fatura",
+        "juros"
+      ],
+      "triggerTerms": [
+        "rotativo",
+        "pagar o mínimo",
+        "fatura do cartão",
+        "juros do cartão",
+        "saldo da fatura"
+      ],
+      "defaultNextSteps": [
+        "trocar-divida",
+        "plano-para-sair-das-dividas"
+      ],
+      "updatedAt": "2026-09-23"
+    },
+    {
+      "id": "parcelamento-fatura-cartao",
+      "name": "Simulador de parcelamento da fatura",
+      "shortName": "Parcelamento da fatura",
+      "route": "/calculadoras/parcelamento-fatura-cartao/",
+      "cta": "Simular parcelamento da fatura",
+      "type": "simulador",
+      "category": "cartao-e-dividas",
+      "situation": "ja-tenho-divida",
+      "question": "Recebi uma proposta para parcelar a fatura. Quanto vou pagar no total?",
+      "whenItHelps": "Informe o valor, o número de parcelas e o valor de cada uma para ver o total pago, o custo adicional e a taxa aproximada, e compare até 3 propostas.",
+      "calloutLead": "Veja quanto o parcelamento da fatura custa no total e compare as opções oferecidas lado a lado.",
+      "badge": "Até 3 propostas",
+      "aliases": [
+        "parcelar a fatura",
+        "parcelamento da fatura",
+        "proposta do banco para parcelar",
+        "fatura em 12 vezes"
+      ],
+      "keywords": [
+        "parcelamento da fatura",
+        "parcelar fatura do cartao",
+        "simular parcelamento da fatura",
+        "juros do parcelamento da fatura"
+      ],
+      "tags": [
+        "calculadora",
+        "cartao",
+        "fatura",
+        "parcelamento"
+      ],
+      "triggerTerms": [
+        "parcelamento da fatura",
+        "parcelar a fatura",
+        "parcelar fatura",
+        "proposta de parcelamento"
+      ],
+      "defaultNextSteps": [
+        "juros-cartao-credito",
+        "trocar-divida"
+      ],
+      "updatedAt": "2026-09-23"
+    },
     {
       "id": "consultar-instituicao",
       "name": "Consulta de instituição no Banco Central",
       "shortName": "Consultar instituição",
       "route": "/calculadoras/consultar-instituicao/",
       "cta": "Consultar instituição",
+      "type": "consulta",
+      "category": "seguranca-e-verificacao",
       "situation": "desconfiei",
       "question": "Essa empresa aparece no Banco Central?",
       "whenItHelps": "Pesquise por nome ou CNPJ nos dados oficiais do BC antes de continuar a conversa — registro é o primeiro passo, o contato é o segundo.",
       "calloutLead": "Antes de entregar documento ou dinheiro, confira o nome ou o CNPJ nos dados oficiais do Banco Central.",
+      "badge": "Dados oficiais do Banco Central",
+      "aliases": [
+        "banco é verdadeiro",
+        "essa financeira existe",
+        "empresa é confiável",
+        "consultar cnpj",
+        "instituição autorizada",
+        "essa empresa é do banco central",
+        "financeira autorizada"
+      ],
+      "keywords": [
+        "consultar financeira banco central",
+        "essa financeira existe",
+        "financeira autorizada banco central",
+        "consultar cnpj financeira",
+        "verificar instituicao financeira",
+        "banco e verdadeiro"
+      ],
+      "tags": [
+        "banco-central",
+        "instituicao-autorizada",
+        "seguranca",
+        "cnpj"
+      ],
       "triggerTerms": [
         "instituição autorizada",
         "autorizada pelo banco central",
@@ -55,10 +1211,36 @@
       "shortName": "Sinais de golpe",
       "route": "/calculadoras/sinais-de-golpe/",
       "cta": "Verificar sinais",
+      "type": "verificador",
+      "category": "seguranca-e-verificacao",
       "situation": "desconfiei",
       "question": "Essa proposta tem sinais de golpe?",
       "whenItHelps": "Pediram Pix para liberar o dinheiro? Responda perguntas rápidas e veja os sinais de alerta antes de enviar valores ou dados.",
       "calloutLead": "Se alguma parte da conversa te deixou desconfortável, passe a proposta pela verificação de sinais.",
+      "badge": "Perguntas rápidas",
+      "aliases": [
+        "pediram pix antes de liberar empréstimo",
+        "taxa antecipada",
+        "depósito para liberar",
+        "é golpe",
+        "empréstimo falso",
+        "whatsapp",
+        "falsa central"
+      ],
+      "keywords": [
+        "emprestimo e golpe",
+        "pediram pix para liberar emprestimo",
+        "taxa para liberar emprestimo",
+        "golpe emprestimo whatsapp",
+        "financeira falsa"
+      ],
+      "tags": [
+        "golpe",
+        "fraude",
+        "seguranca",
+        "pix",
+        "whatsapp"
+      ],
       "triggerTerms": [
         "pix adiantado",
         "taxa antecipada",
@@ -69,491 +1251,6 @@
       ],
       "defaultNextSteps": [
         "consultar-instituicao"
-      ],
-      "updatedAt": "2026-08-29"
-    },
-    {
-      "id": "comparador-de-propostas",
-      "name": "Comparador de propostas de crédito",
-      "shortName": "Comparador de propostas",
-      "route": "/calculadoras/comparador-de-propostas/",
-      "cta": "Comparar propostas",
-      "situation": "antes-de-contratar",
-      "question": "Qual dessas propostas custa menos no total?",
-      "whenItHelps": "Coloque até 3 propostas lado a lado e veja parcela, prazo, CET e total pago — parcela menor nem sempre é crédito mais barato.",
-      "calloutLead": "Tem mais de uma proposta na mão? Coloque lado a lado antes de escolher pela parcela.",
-      "triggerTerms": [
-        "comparar propostas",
-        "duas propostas",
-        "qual proposta",
-        "cet",
-        "custo efetivo total"
-      ],
-      "inFooter": true,
-      "defaultNextSteps": [
-        "parcela-no-orcamento",
-        "minha-taxa-esta-cara"
-      ],
-      "updatedAt": "2026-08-29"
-    },
-    {
-      "id": "parcela-no-orcamento",
-      "name": "Quanto de parcela cabe no meu orçamento?",
-      "shortName": "Parcela no orçamento",
-      "route": "/calculadoras/parcela-no-orcamento/",
-      "cta": "Calcular impacto",
-      "situation": "antes-de-contratar",
-      "question": "Essa parcela cabe no meu mês?",
-      "whenItHelps": "Informe renda, despesas e dívidas e veja quanto sobra antes e depois da nova parcela — a folga importa mais que o percentual da renda.",
-      "calloutLead": "Antes de aceitar o prazo que o vendedor sugerir, veja quanto sobra no seu mês com a parcela dentro.",
-      "triggerTerms": [
-        "cabe no orçamento",
-        "comprometer a renda",
-        "quanto sobra",
-        "orçamento apertado",
-        "renda mensal"
-      ],
-      "inFooter": true,
-      "defaultNextSteps": [
-        "comparador-de-propostas",
-        "plano-para-sair-das-dividas"
-      ],
-      "updatedAt": "2026-08-29"
-    },
-    {
-      "id": "margem-consignavel",
-      "name": "Calculadora de margem consignável",
-      "shortName": "Margem consignável",
-      "route": "/calculadoras/margem-consignavel/",
-      "cta": "Calcular margem",
-      "situation": "antes-de-contratar",
-      "question": "Quanto da minha margem ainda está livre?",
-      "whenItHelps": "Veja quanto da margem já está comprometido e quanto resta para um novo consignado — INSS e CLT.",
-      "calloutLead": "Consignado tem teto de desconto em folha. Veja quanto da sua margem já está ocupado.",
-      "triggerTerms": [
-        "margem consignável",
-        "desconto em folha",
-        "consignado",
-        "rmc",
-        "rcc",
-        "cartão consignado"
-      ],
-      "defaultNextSteps": [
-        "parcela-no-orcamento",
-        "comparador-de-propostas"
-      ],
-      "updatedAt": "2026-09-03"
-    },
-    {
-      "id": "antecipacao-fgts",
-      "name": "Simulador de antecipação do FGTS",
-      "shortName": "Antecipação do FGTS",
-      "route": "/calculadoras/antecipacao-fgts/",
-      "cta": "Simular antecipação do FGTS",
-      "situation": "antes-de-contratar",
-      "question": "Quanto recebo antecipando o Saque-Aniversário, e o que cedo em troca?",
-      "whenItHelps": "Estime quantos Saques-Aniversário podem ser antecipados, quanto receberia hoje e como a taxa afeta o valor.",
-      "calloutLead": "Veja quanto do seu Saque-Aniversário pode ser antecipado pelas regras atuais, quanto você receberia hoje e quanto cede dos próximos anos.",
-      "triggerTerms": [
-        "antecipação do fgts",
-        "antecipar fgts",
-        "saque-aniversário",
-        "antecipação do saque-aniversário",
-        "empréstimo fgts"
-      ],
-      "defaultNextSteps": [
-        "conversor-de-taxas",
-        "parcela-no-orcamento"
-      ],
-      "updatedAt": "2026-09-23"
-    },
-    {
-      "id": "financiamento-veiculo",
-      "name": "Simulador de financiamento de veículo",
-      "shortName": "Financiamento de veículo",
-      "route": "/calculadoras/financiamento-veiculo/",
-      "cta": "Simular financiamento",
-      "situation": "antes-de-contratar",
-      "question": "Quanto fica financiar este carro ou esta moto?",
-      "whenItHelps": "Informe valor, entrada, taxa e prazo para estimar parcela, juros e total pago — e veja quanto muda com mais entrada, menos parcelas ou uma taxa menor.",
-      "calloutLead": "Antes de olhar só a parcela, veja quanto a entrada, a taxa e o prazo mudam os juros e o total que sai do seu bolso.",
-      "triggerTerms": [
-        "financiamento de veículo",
-        "financiamento de carro",
-        "financiar um carro",
-        "financiar a moto",
-        "entrada do veículo"
-      ],
-      "defaultNextSteps": [
-        "comparador-de-propostas",
-        "parcela-no-orcamento"
-      ],
-      "updatedAt": "2026-09-23"
-    },
-    {
-      "id": "quanto-consigo-financiar",
-      "name": "Quanto consigo financiar?",
-      "shortName": "Quanto consigo financiar",
-      "route": "/calculadoras/quanto-consigo-financiar/",
-      "cta": "Calcular pela parcela",
-      "situation": "antes-de-contratar",
-      "question": "Quanto uma parcela que cabe no mês consegue financiar?",
-      "whenItHelps": "Informe quanto quer pagar por mês, a taxa e o prazo para estimar o valor financiável.",
-      "calloutLead": "Comece pela parcela que cabe no mês e veja quanto ela financia na Price e na SAC, e quanto se paga no total.",
-      "triggerTerms": [
-        "quanto consigo financiar",
-        "quanto posso financiar",
-        "valor financiável"
-      ],
-      "defaultNextSteps": [
-        "parcela-no-orcamento",
-        "financiamento-imobiliario"
-      ],
-      "updatedAt": "2026-09-24"
-    },
-    {
-      "id": "financiamento-imobiliario",
-      "name": "Simulador de financiamento imobiliário",
-      "shortName": "Financiamento imobiliário",
-      "route": "/calculadoras/financiamento-imobiliario/",
-      "cta": "Simular financiamento",
-      "situation": "antes-de-contratar",
-      "question": "Quanto fica a parcela do imóvel — ou quanto consigo financiar?",
-      "whenItHelps": "Informe valor do imóvel, entrada, taxa e prazo para ver a parcela na SAC e na Price, os juros e a renda que ela representa — ou comece pela parcela que cabe no mês.",
-      "calloutLead": "Veja quanto fica a parcela do imóvel na SAC e na Price, e quanto a entrada e o prazo mudam a conta.",
-      "triggerTerms": [
-        "financiamento imobiliário",
-        "financiar o imóvel",
-        "financiar um imóvel",
-        "entrada do imóvel",
-        "parcela do financiamento"
-      ],
-      "defaultNextSteps": [
-        "sac-x-price",
-        "parcela-no-orcamento"
-      ],
-      "updatedAt": "2026-09-24"
-    },
-    {
-      "id": "sac-x-price",
-      "name": "Calculadora SAC x Price",
-      "shortName": "SAC x Price",
-      "route": "/calculadoras/sac-x-price/",
-      "cta": "Comparar SAC e Price",
-      "situation": "antes-de-contratar",
-      "question": "Qual a diferença entre SAC e Price no meu financiamento?",
-      "whenItHelps": "Informe valor, taxa e prazo para comparar lado a lado a parcela mês a mês, os juros totais e o saldo devedor nos dois sistemas.",
-      "calloutLead": "Veja com os seus números quanto a SAC começa mais alta, em que parcela ela fica abaixo da Price e quanto de juros cada uma soma.",
-      "triggerTerms": [
-        "sistema de amortização",
-        "tabela price",
-        "amortização constante",
-        "sac ou price",
-        "price ou sac"
-      ],
-      "defaultNextSteps": [
-        "quitacao-antecipada",
-        "parcela-no-orcamento"
-      ],
-      "updatedAt": "2026-09-23"
-    },
-    {
-      "id": "emprestimo",
-      "name": "Calculadora de empréstimo",
-      "shortName": "Calculadora de empréstimo",
-      "route": "/calculadoras/emprestimo/",
-      "cta": "Calcular parcelas",
-      "situation": "entender-numeros",
-      "question": "Quanto fica a parcela e quanto pago de juros?",
-      "whenItHelps": "Estime a parcela mensal, o total pago e o total de juros pelo sistema Price, com tabela de amortização mês a mês.",
-      "calloutLead": "Para ver a conta por trás da parcela — e quanto do total é juro — simule com os seus números.",
-      "triggerTerms": [
-        "valor da parcela",
-        "quanto vou pagar",
-        "tabela price",
-        "amortização",
-        "total de juros"
-      ],
-      "defaultNextSteps": [
-        "parcela-no-orcamento",
-        "comparador-de-propostas"
-      ],
-      "updatedAt": "2026-09-23"
-    },
-    {
-      "id": "a-vista-ou-parcelado",
-      "name": "À vista ou parcelado?",
-      "shortName": "À vista ou parcelado?",
-      "route": "/calculadoras/a-vista-ou-parcelado/",
-      "cta": "Comparar",
-      "situation": "entender-numeros",
-      "question": "À vista ou parcelado: quanto muda?",
-      "whenItHelps": "Compare o preço à vista com as parcelas e veja o total até o fim de cada opção. A parcela pode diminuir enquanto o total aumenta.",
-      "calloutLead": "Antes de escolher a forma de pagamento, compare o preço até o fim das duas opções.",
-      "triggerTerms": [
-        "à vista ou parcelado",
-        "pagar à vista",
-        "parcelado sem juros",
-        "desconto à vista",
-        "forma de pagamento",
-        "parcelar a compra"
-      ],
-      "inFooter": true,
-      "defaultNextSteps": [
-        "parcela-no-orcamento"
-      ],
-      "updatedAt": "2026-08-29"
-    },
-    {
-      "id": "conversor-de-taxas",
-      "name": "Conversor de taxas: mensal ↔ anual",
-      "shortName": "Conversor de taxas",
-      "route": "/calculadoras/conversor-de-taxas/",
-      "cta": "Converter taxa",
-      "situation": "entender-numeros",
-      "question": "3% ao mês dá quanto ao ano?",
-      "whenItHelps": "Converta taxas nos dois sentidos por equivalência composta — nunca multiplicando por 12.",
-      "calloutLead": "Taxa ao mês e taxa ao ano não se convertem multiplicando por 12. Faça a conversão correta em segundos.",
-      "triggerTerms": [
-        "taxa ao mês",
-        "taxa ao ano",
-        "ao mês equivale",
-        "juros compostos",
-        "taxa equivalente"
-      ],
-      "defaultNextSteps": [
-        "minha-taxa-esta-cara",
-        "comparador-de-propostas"
-      ],
-      "updatedAt": "2026-08-29"
-    },
-    {
-      "id": "iof-emprestimo",
-      "name": "Calculadora de IOF de empréstimo",
-      "shortName": "IOF do empréstimo",
-      "route": "/calculadoras/iof-emprestimo/",
-      "cta": "Calcular IOF",
-      "situation": "entender-numeros",
-      "question": "Quanto de IOF este empréstimo paga?",
-      "whenItHelps": "Estime o IOF de uma operação de crédito e veja separadamente a parcela diária e a adicional.",
-      "calloutLead": "Informe valor e prazo para estimar o IOF com as regras vigentes, separado em parte diária e adicional.",
-      "triggerTerms": [
-        "iof",
-        "imposto do empréstimo",
-        "iof do empréstimo",
-        "iof financiado"
-      ],
-      "defaultNextSteps": [
-        "comparador-de-propostas",
-        "emprestimo"
-      ],
-      "updatedAt": "2026-09-23"
-    },
-    {
-      "id": "cet",
-      "name": "Calculadora de CET",
-      "shortName": "CET",
-      "route": "/calculadoras/cet/",
-      "cta": "Calcular CET",
-      "situation": "entender-numeros",
-      "question": "Qual é o custo completo desta proposta?",
-      "whenItHelps": "Informe os fluxos da proposta para estimar o Custo Efetivo Total e entender juros, tarifas, IOF, seguros e outros custos.",
-      "calloutLead": "Informe quanto recebe, as parcelas e os custos para estimar o CET anual e ver por que ele difere da taxa de juros.",
-      "triggerTerms": [
-        "cet",
-        "custo efetivo total",
-        "custo total do empréstimo",
-        "taxa efetiva"
-      ],
-      "defaultNextSteps": [
-        "comparador-de-propostas",
-        "iof-emprestimo"
-      ],
-      "updatedAt": "2026-09-23"
-    },
-    {
-      "id": "minha-taxa-esta-cara",
-      "name": "Minha taxa está cara?",
-      "shortName": "Minha taxa está cara?",
-      "route": "/calculadoras/minha-taxa-esta-cara/",
-      "cta": "Comparar minha taxa",
-      "situation": "entender-numeros",
-      "question": "A taxa que me ofereceram está acima da média?",
-      "whenItHelps": "Informe a taxa da sua proposta e veja como ela se compara à média oficial do Banco Central para a mesma modalidade.",
-      "calloutLead": "Compare a taxa que te ofereceram com a média oficial do Banco Central para a mesma modalidade.",
-      "triggerTerms": [
-        "taxa média",
-        "juros abusivos",
-        "taxa está cara",
-        "acima da média",
-        "média do banco central"
-      ],
-      "defaultNextSteps": [
-        "comparador-de-propostas",
-        "parcela-no-orcamento"
-      ],
-      "updatedAt": "2026-08-29"
-    },
-    {
-      "id": "radar-de-taxas",
-      "name": "Radar de taxas de crédito",
-      "shortName": "Radar de taxas",
-      "route": "/taxas/",
-      "cta": "Ver taxas",
-      "situation": "entender-numeros",
-      "question": "Os juros estão subindo ou caindo?",
-      "whenItHelps": "Acompanhe as taxas médias das principais modalidades com dados oficiais e histórico do Banco Central.",
-      "calloutLead": "Para ver como as taxas médias da modalidade vêm se comportando, com dados oficiais do Banco Central.",
-      "triggerTerms": [
-        "taxa média do mercado",
-        "histórico de taxas",
-        "selic",
-        "juros do mercado"
-      ],
-      "defaultNextSteps": [
-        "minha-taxa-esta-cara",
-        "conversor-de-taxas"
-      ],
-      "updatedAt": "2026-08-29"
-    },
-    {
-      "id": "renegociacao-de-dividas",
-      "name": "Calculadora de renegociação de dívidas",
-      "shortName": "Renegociação de dívidas",
-      "route": "/calculadoras/renegociacao-de-dividas/",
-      "cta": "Comparar acordo",
-      "situation": "ja-tenho-divida",
-      "question": "Quanto esse acordo custa no total?",
-      "whenItHelps": "Compare propostas de acordo — à vista, com entrada ou parceladas — e veja entrada, parcela, prazo e total de cada uma. Desconto anunciado não é o total pago.",
-      "calloutLead": "Recebeu uma proposta de acordo? Some entrada, parcelas e custos antes de decidir pelo desconto anunciado.",
-      "triggerTerms": [
-        "renegocia",
-        "acordo de dívida",
-        "proposta de acordo",
-        "desconto para quitar",
-        "à vista ou parcelado",
-        "quitar com desconto"
-      ],
-      "inFooter": true,
-      "defaultNextSteps": [
-        "parcela-no-orcamento",
-        "plano-para-sair-das-dividas"
-      ],
-      "updatedAt": "2026-08-29"
-    },
-    {
-      "id": "plano-para-sair-das-dividas",
-      "name": "Plano para sair das dívidas",
-      "shortName": "Plano para sair das dívidas",
-      "route": "/calculadoras/plano-para-sair-das-dividas/",
-      "cta": "Montar meu plano",
-      "situation": "ja-tenho-divida",
-      "question": "Tenho várias dívidas — por onde começo?",
-      "whenItHelps": "Organize todas as dívidas, veja quais merecem atenção primeiro e compare avalanche com bola de neve.",
-      "calloutLead": "Com mais de uma dívida na mesa, organizar todas em um lugar só costuma valer mais que decidir de cabeça.",
-      "triggerTerms": [
-        "várias dívidas",
-        "por onde começar",
-        "bola de neve",
-        "avalanche",
-        "superendividamento",
-        "sair das dívidas"
-      ],
-      "inFooter": true,
-      "defaultNextSteps": [
-        "renegociacao-de-dividas",
-        "quitacao-antecipada"
-      ],
-      "updatedAt": "2026-08-29"
-    },
-    {
-      "id": "juros-cartao-credito",
-      "name": "Calculadora de juros do cartão",
-      "shortName": "Juros do cartão",
-      "route": "/calculadoras/juros-cartao-credito/",
-      "cta": "Calcular juros do cartão",
-      "situation": "ja-tenho-divida",
-      "question": "Paguei só parte da fatura. Quanto vai custar?",
-      "whenItHelps": "Informe a fatura, quanto pagou e a taxa para estimar quanto do saldo entra no rotativo e o custo até a próxima fatura.",
-      "calloutLead": "Veja em reais quanto o saldo em aberto da fatura custa até a próxima, com juros e encargos separados.",
-      "triggerTerms": [
-        "rotativo",
-        "pagar o mínimo",
-        "fatura do cartão",
-        "juros do cartão",
-        "saldo da fatura"
-      ],
-      "defaultNextSteps": [
-        "trocar-divida",
-        "plano-para-sair-das-dividas"
-      ],
-      "updatedAt": "2026-09-23"
-    },
-    {
-      "id": "parcelamento-fatura-cartao",
-      "name": "Simulador de parcelamento da fatura",
-      "shortName": "Parcelamento da fatura",
-      "route": "/calculadoras/parcelamento-fatura-cartao/",
-      "cta": "Simular parcelamento da fatura",
-      "situation": "ja-tenho-divida",
-      "question": "Recebi uma proposta para parcelar a fatura. Quanto vou pagar no total?",
-      "whenItHelps": "Informe o valor, o número de parcelas e o valor de cada uma para ver o total pago, o custo adicional e a taxa aproximada, e compare até 3 propostas.",
-      "calloutLead": "Veja quanto o parcelamento da fatura custa no total e compare as opções oferecidas lado a lado.",
-      "triggerTerms": [
-        "parcelamento da fatura",
-        "parcelar a fatura",
-        "parcelar fatura",
-        "proposta de parcelamento"
-      ],
-      "defaultNextSteps": [
-        "juros-cartao-credito",
-        "trocar-divida"
-      ],
-      "updatedAt": "2026-09-23"
-    },
-    {
-      "id": "trocar-divida",
-      "name": "Vale a pena trocar esta dívida?",
-      "shortName": "Trocar dívida",
-      "route": "/calculadoras/trocar-divida/",
-      "cta": "Comparar dívidas",
-      "situation": "ja-tenho-divida",
-      "question": "Trocar esta dívida por outra melhora ou piora?",
-      "whenItHelps": "Compare a dívida atual com a nova proposta e veja o que muda na parcela, no prazo e no total.",
-      "calloutLead": "Antes de trocar uma dívida por outra, compare as duas inteiras — não só as parcelas.",
-      "triggerTerms": [
-        "trocar dívida",
-        "portabilidade",
-        "refinanciamento",
-        "quitar com outro empréstimo",
-        "renegociar com novo contrato"
-      ],
-      "defaultNextSteps": [
-        "parcela-no-orcamento",
-        "plano-para-sair-das-dividas"
-      ],
-      "updatedAt": "2026-08-29"
-    },
-    {
-      "id": "quitacao-antecipada",
-      "name": "Calculadora de quitação antecipada",
-      "shortName": "Quitação antecipada",
-      "route": "/calculadoras/quitacao-antecipada/",
-      "cta": "Calcular diferença",
-      "situation": "ja-tenho-divida",
-      "question": "Quitar agora sai mais barato que seguir pagando?",
-      "whenItHelps": "Compare o saldo para quitação com a soma das parcelas que ainda faltam e veja a diferença em reais.",
-      "calloutLead": "Sobrou um dinheiro? Compare o saldo de quitação com a soma das parcelas que ainda faltam.",
-      "triggerTerms": [
-        "quitar antecipado",
-        "quitação antecipada",
-        "antecipar parcelas",
-        "amortizar",
-        "saldo devedor"
-      ],
-      "defaultNextSteps": [
-        "plano-para-sair-das-dividas",
-        "trocar-divida"
       ],
       "updatedAt": "2026-08-29"
     }

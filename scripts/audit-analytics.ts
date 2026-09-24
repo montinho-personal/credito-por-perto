@@ -239,6 +239,9 @@ for (const { rel, body } of files) {
 const KNOWN_AREAS = new Set([
   "onde-conseguir-credito",
   "cards-ferramentas",
+  "destaques-ferramentas",
+  "caminhos-ferramentas",
+  "busca-ferramentas",
   "chamada-ferramenta",
   "chamada-jornada",
   "central-decisoes",

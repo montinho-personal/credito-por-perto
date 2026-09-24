@@ -143,6 +143,11 @@ export function webPageJsonLd(
   };
 }
 
+/** Página que reúne outras páginas (hub): o mesmo WebPage, com o tipo certo. */
+export function collectionPageJsonLd(title: string, description: string, path: string) {
+  return { ...webPageJsonLd(title, description, path), "@type": "CollectionPage" };
+}
+
 /**
  * Lista ordenada de páginas internas — usada no hub de ferramentas.
  * Descreve o que a página realmente mostra: uma lista, sem nota nem

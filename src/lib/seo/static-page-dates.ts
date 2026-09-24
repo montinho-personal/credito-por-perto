@@ -36,7 +36,7 @@ export const STATIC_PAGE_DATES: Record<string, string> = {
   /* Hubs de categoria e índices: a data vem do conteúdo que eles listam e é
      calculada em sitemap-entries.ts. Só entram aqui os que não têm lista. */
   "/decisoes-financeiras/": "2026-08-29",
-  "/calculadoras/": "2026-08-29",
+  "/calculadoras/": "2026-09-24",
   "/glossario/": "2026-08-16",
   "/mapa-do-site/": "2026-08-29",
 

@@ -29,7 +29,7 @@ export default function RenegociacaoPage() {
       <Breadcrumbs
         items={[
           { name: "Início", path: "/" },
-          { name: "Ferramentas", path: "/calculadoras/" },
+          { name: "Calculadoras", path: "/calculadoras/" },
           { name: "Renegociação de dívidas", path: "/calculadoras/renegociacao-de-dividas/" },
         ]}
       />

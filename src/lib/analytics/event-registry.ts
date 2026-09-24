@@ -235,6 +235,42 @@ const DECISION_EVENTS: EventSpec[] = [
       "A pessoa apagou o próprio progresso na Central. Registrado como escolha dela, e não como falha do caminho.",
     params: ["journey"],
   },
+  /* Central de calculadoras (/calculadoras/). A consulta da busca só viaja
+     normalizada e sem número: nenhum valor digitado sai do aparelho. */
+  {
+    name: "calculator_hub_search",
+    group: "central",
+    description:
+      "Busca na central de calculadoras: consulta normalizada (minúsculas, sem acento, sem número) e quantidade de resultados.",
+    params: ["query", "results_count"],
+  },
+  {
+    name: "calculator_zero_results",
+    group: "central",
+    description:
+      "Busca na central de calculadoras sem resultado: a consulta normalizada, para descobrir ferramentas e conteúdos que faltam.",
+    params: ["query"],
+  },
+  {
+    name: "calculator_category_select",
+    group: "central",
+    description: "Categoria escolhida na central de calculadoras.",
+    params: ["category"],
+  },
+  {
+    name: "calculator_card_click",
+    group: "central",
+    description:
+      "Card de ferramenta clicado na central de calculadoras: qual ferramenta (component), de que seção (area) e em que posição.",
+    params: CLICK_PARAMS,
+    keyEvent: true,
+  },
+  {
+    name: "decision_path_click",
+    group: "central",
+    description: "Caminho por situação escolhido na central de calculadoras.",
+    params: ["path"],
+  },
   {
     name: "all_tools_open",
     group: "central",

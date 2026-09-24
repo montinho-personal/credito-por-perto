@@ -2,12 +2,17 @@ import { readFileSync } from "node:fs";
 import { resolve as resolvePath } from "node:path";
 import { describe, expect, it } from "vitest";
 import {
+  getFeaturedTools,
   getTool,
+  getToolCategories,
+  getToolPaths,
   getToolRoutes,
   getTools,
+  getToolsByCategory,
   getToolSituations,
   getToolsBySituation,
 } from "@/lib/tools/registry";
+import { getJourney } from "@/lib/journeys/registry";
 import { FOOTER_NAV } from "@/lib/site";
 import { getAllArticles } from "@/lib/content/articles";
 import { getAllLocalGuides } from "@/lib/content/local";
@@ -110,11 +115,66 @@ describe("as superfícies obrigatórias listam todas as ferramentas", () => {
     }
   });
 
-  it("o índice de busca cita todas as ferramentas", () => {
+  it("o índice de busca é gerado do registro", () => {
     const docs = read("src/lib/search/build-docs.ts");
-    for (const tool of tools) {
-      expect(docs, tool.id).toContain(tool.route);
+    expect(docs).toContain("getTools()");
+    expect(docs).not.toMatch(/id: "\/calculadoras\//);
+  });
+});
+
+describe("central de calculadoras: categorias, caminhos e destaques", () => {
+  const tools = getTools();
+
+  it("toda ferramenta pertence a uma categoria declarada, e nenhuma categoria fica vazia", () => {
+    const ids = new Set(getToolCategories().map((c) => c.id));
+    for (const tool of tools) expect(ids.has(tool.category), `${tool.id} → ${tool.category}`).toBe(true);
+    expect(getToolsByCategory().flatMap((g) => g.tools)).toHaveLength(tools.length);
+    for (const group of getToolsByCategory()) expect(group.tools.length, group.category.id).toBeGreaterThanOrEqual(2);
+  });
+
+  it("categorias existem para reduzir complexidade: entre 4 e 8", () => {
+    expect(getToolCategories().length).toBeGreaterThanOrEqual(4);
+    expect(getToolCategories().length).toBeLessThanOrEqual(8);
+  });
+
+  it("entre 4 e 6 destaques, todos de categorias diferentes ou ao menos de três assuntos", () => {
+    const featured = getFeaturedTools();
+    expect(featured.length).toBeGreaterThanOrEqual(4);
+    expect(featured.length).toBeLessThanOrEqual(6);
+    expect(new Set(featured.map((t) => t.category)).size).toBeGreaterThanOrEqual(3);
+  });
+
+  it("cada caminho por situação tem de 2 a 4 ferramentas válidas, sem repetição, e uma jornada existente", () => {
+    const paths = getToolPaths();
+    expect(paths.length).toBeGreaterThanOrEqual(5);
+    expect(paths.length).toBeLessThanOrEqual(8);
+    for (const p of paths) {
+      expect(p.tools.length, p.id).toBe(p.toolIds.length);
+      expect(p.tools.length, p.id).toBeGreaterThanOrEqual(2);
+      expect(p.tools.length, p.id).toBeLessThanOrEqual(4);
+      expect(new Set(p.toolIds).size, p.id).toBe(p.toolIds.length);
+      expect(getJourney(p.journeyId), `${p.id} → ${p.journeyId}`).toBeDefined();
     }
+  });
+
+  it("toda ferramenta tem tipo, selo curto e sinônimos leigos", () => {
+    for (const tool of tools) {
+      expect(tool.type, tool.id).toBeTruthy();
+      expect(tool.badge.length, tool.id).toBeLessThanOrEqual(34);
+      expect(tool.aliases.length, tool.id).toBeGreaterThanOrEqual(3);
+      expect(tool.keywords.length, tool.id).toBeGreaterThanOrEqual(2);
+    }
+  });
+
+  it("o CTA de cada card é um verbo específico, nunca 'ver', 'acessar' ou 'saiba mais'", () => {
+    for (const tool of tools) {
+      expect(tool.cta.toLowerCase(), tool.id).not.toMatch(/^(ver|acessar|conhecer|saiba mais|clique)\b/);
+    }
+  });
+
+  it("o hub monta tudo do registro: categorias, destaques, caminhos e busca", () => {
+    const hub = read("src/app/calculadoras/page.tsx");
+    for (const fn of ["getToolsByCategory", "getFeaturedTools", "getToolPaths", "getToolSearchEntries"]) expect(hub).toContain(fn);
   });
 });
 

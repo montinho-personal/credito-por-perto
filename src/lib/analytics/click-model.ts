@@ -225,6 +225,9 @@ export function classifyLink(
 const CTA_AREAS = new Set([
   "onde-conseguir-credito",
   "cards-ferramentas",
+  "destaques-ferramentas",
+  "caminhos-ferramentas",
+  "busca-ferramentas",
   "chamada-ferramenta",
   "chamada-jornada",
   "central-decisoes",

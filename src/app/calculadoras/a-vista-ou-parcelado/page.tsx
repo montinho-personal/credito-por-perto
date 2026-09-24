@@ -29,7 +29,7 @@ export default function AVistaOuParceladoPage() {
       <Breadcrumbs
         items={[
           { name: "Início", path: "/" },
-          { name: "Ferramentas", path: "/calculadoras/" },
+          { name: "Calculadoras", path: "/calculadoras/" },
           { name: "À vista ou parcelado", path: "/calculadoras/a-vista-ou-parcelado/" },
         ]}
       />
