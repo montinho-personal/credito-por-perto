@@ -160,6 +160,19 @@ export default function CalculadorasPage() {
         ))}
       </div>
 
+      <section aria-labelledby="simuladores" data-track-area="chamada-jornada" className="mt-12 rounded-2xl border border-brand-border p-6">
+        <h2 id="simuladores" className="font-serif text-2xl font-bold text-brand-navy">
+          Quer ver o que acontece ao longo do tempo?
+        </h2>
+        <p className="mt-2 max-w-3xl leading-relaxed text-brand-text">
+          Calculadora responde “quanto é?”. Os simuladores respondem “e depois?”: quando cada dívida termina, quanto custa até lá e o
+          que muda se você pagar um pouco mais, mês a mês e com datas.
+        </p>
+        <Link href="/simuladores/" className="mt-4 inline-flex min-h-11 items-center gap-1 rounded-lg border border-brand-navy px-4 text-sm font-semibold text-brand-navy transition hover:bg-brand-teal-soft">
+          Ver os simuladores <span aria-hidden="true">→</span>
+        </Link>
+      </section>
+
       {/* ---------------------------------------------------------------- *
        * Não sabe qual usar? Central de Decisões
        * ---------------------------------------------------------------- */}

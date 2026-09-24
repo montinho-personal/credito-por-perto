@@ -350,6 +350,13 @@
           "condition": "Só se pediram pagamento fora dos canais oficiais do credor",
           "whyThisStep": "Falso acordo é um dos golpes mais comuns com quem está endividado, justamente porque a proposta chega quando ela é esperada.",
           "optional": true
+        },
+        {
+          "id": "rota",
+          "title": "Com o acordo, quando você fica livre?",
+          "toolId": "quando-fico-livre-das-dividas",
+          "whyThisStep": "Coloca o acordo ao lado das outras dívidas e mostra em que mês tudo termina.",
+          "optional": true
         }
       ],
       "relatedContent": [
@@ -383,6 +390,13 @@
           "toolId": "quitacao-antecipada",
           "whyThisStep": "Compara o que falta pagar em parcelas com o desembolso de quitar ou amortizar agora.",
           "optional": false
+        },
+        {
+          "id": "rota",
+          "title": "E se, em vez de quitar, você pagasse um pouco mais por mês?",
+          "toolId": "quando-fico-livre-das-dividas",
+          "whyThisStep": "Mostra a rota mês a mês de todas as dívidas e o que um aporte único ou um valor a mais por mês fazem com a data de quitação.",
+          "optional": true
         },
         {
           "id": "prioridade",

@@ -102,9 +102,9 @@
     {
       "id": "tenho-divida",
       "label": "Já tenho uma dívida",
-      "lead": "Entender quanto ela custa, comparar um acordo, quitar antes ou trocar por outra.",
+      "lead": "Quando cada dívida termina, quanto custa, e o que muda com um acordo, uma quitação ou um pagamento a mais.",
       "toolIds": [
-        "juros-cartao-credito",
+        "quando-fico-livre-das-dividas",
         "renegociacao-de-dividas",
         "quitacao-antecipada",
         "plano-para-sair-das-dividas"
@@ -856,6 +856,56 @@
         "conversor-de-taxas"
       ],
       "updatedAt": "2026-08-29"
+    },
+    {
+      "id": "quando-fico-livre-das-dividas",
+      "name": "Quando fico livre das dívidas?",
+      "shortName": "Livre das dívidas",
+      "route": "/simuladores/quando-fico-livre-das-dividas/",
+      "cta": "Simular minha rota",
+      "type": "simulador",
+      "category": "cartao-e-dividas",
+      "situation": "ja-tenho-divida",
+      "question": "Em que mês termino de pagar tudo, e o que muda se eu pagar mais?",
+      "whenItHelps": "Veja mês a mês quando suas dívidas terminam, quanto desembolsa até lá e como pagamentos extras mudam a trajetória.",
+      "calloutLead": "Adicione suas dívidas e veja em que mês cada uma termina, com data, e o que R$ 100 a mais por mês fazem com a rota.",
+      "badge": "Rota mês a mês, com datas",
+      "aliases": [
+        "quanto tempo para quitar",
+        "quando termino de pagar",
+        "quando vou sair das dívidas",
+        "dívida de 10 mil pagando 500",
+        "em quantos meses termino",
+        "quanto economizo pagando mais",
+        "pagar 100 a mais na dívida",
+        "data de quitação",
+        "livre das dívidas"
+      ],
+      "keywords": [
+        "simulador quitacao de dividas",
+        "quanto tempo para quitar divida",
+        "calculadora sair das dividas",
+        "quando fico livre das dividas",
+        "pagar divida mais rapido"
+      ],
+      "tags": [
+        "simulador",
+        "divida",
+        "quitacao",
+        "trajetoria"
+      ],
+      "triggerTerms": [
+        "quanto tempo para quitar",
+        "sair das dívidas",
+        "quitar as dívidas",
+        "pagar mais rápido",
+        "livre das dívidas"
+      ],
+      "defaultNextSteps": [
+        "renegociacao-de-dividas",
+        "trocar-divida"
+      ],
+      "updatedAt": "2026-09-24"
     },
     {
       "id": "plano-para-sair-das-dividas",

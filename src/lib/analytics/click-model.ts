@@ -110,6 +110,7 @@ export function pageTypeFor(pathname: string): string {
     return second ? "artigo" : "hub-categoria";
   }
   if (first === "calculadoras") return second ? "ferramenta" : "hub-ferramentas";
+  if (first === "simuladores") return second ? "simulador" : "hub-simuladores";
   if (first === "taxas") return second ? "radar-serie" : "radar";
   if (first === "decisoes-financeiras") return "central-decisoes";
   if (first === "glossario") return second ? "verbete" : "glossario";

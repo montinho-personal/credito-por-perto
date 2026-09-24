@@ -373,6 +373,20 @@ const TOOL_EVENTS: EventSpec[] = [
   { name: "affordability_example_select", group: "ferramenta", description: "Quanto consigo financiar: exemplo da página levado à calculadora.", params: ["context", "example"] },
   { name: "affordability_copy", group: "ferramenta", description: "Quanto consigo financiar: resumo copiado (o texto fica no aparelho).", params: ["context"] },
 
+  /* Simulador "Quando fico livre das dívidas?" — nenhum valor sai: nem saldo,
+     nem taxa, nem apelido, nem resultado. Só contagens e categorias. */
+  { name: "debt_journey_view", group: "ferramenta", description: "Livre das dívidas: simulador exibido.", params: ["context"] },
+  { name: "debt_added", group: "ferramenta", description: "Livre das dívidas: dívida guardada (tipo).", params: ["context", "kind"] },
+  { name: "debt_journey_calculated", group: "ferramenta", description: "Livre das dívidas: rota simulada (quantidade de dívidas, manter orçamento, estratégia, tipo de resultado).", params: ["context", "count", "keep_budget", "strategy", "outcome", "example_used"], keyEvent: true },
+  { name: "debt_extra_payment_scenario", group: "ferramenta", description: "Livre das dívidas: cenário de valor extra mensal (degrau).", params: ["context", "step"] },
+  { name: "debt_lump_sum_scenario", group: "ferramenta", description: "Livre das dívidas: cenário de aporte único (aberto, estratégia ou dívida).", params: ["context", "target"] },
+  { name: "debt_strategy_changed", group: "ferramenta", description: "Livre das dívidas: estratégia escolhida.", params: ["context", "strategy"] },
+  { name: "debt_timeline_viewed", group: "ferramenta", description: "Livre das dívidas: trajetória mês a mês aberta.", params: ["context"] },
+  { name: "debt_methodology_opened", group: "ferramenta", description: "Livre das dívidas: metodologia aberta.", params: ["context"] },
+  { name: "debt_internal_cta_clicked", group: "ferramenta", description: "Livre das dívidas: próximo passo clicado.", params: ["context", "target"] },
+  { name: "debt_example_select", group: "ferramenta", description: "Livre das dívidas: exemplo da página levado ao simulador.", params: ["context", "example"] },
+  { name: "debt_journey_copy", group: "ferramenta", description: "Livre das dívidas: cenário copiado (o texto fica no aparelho).", params: ["context"] },
+
   /* Calculadora de IOF de empréstimo — nenhum valor sai, só categorias */
   { name: "iof_calculator_view", group: "ferramenta", description: "IOF: calculadora exibida.", params: ["context"] },
   { name: "iof_calculation_completed", group: "ferramenta", description: "IOF: cálculo feito (tomador, forma de pagar, operação e tipo de resultado, sem valores).", params: ["context", "borrower", "schedule", "operation", "payment", "outcome"], keyEvent: true },

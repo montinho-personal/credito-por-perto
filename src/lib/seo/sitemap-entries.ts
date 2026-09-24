@@ -37,6 +37,7 @@ export const STATIC_INDEXABLE_PATHS = [
   "/organizacao-financeira/",
   "/decisoes-financeiras/",
   "/calculadoras/",
+  "/simuladores/",
   ...getToolRoutes(),
   "/emprestimos/guias-locais/",
   "/artigos/",

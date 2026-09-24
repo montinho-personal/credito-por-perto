@@ -118,6 +118,8 @@ describe("tipo de página", () => {
     ["/juros-e-cet/o-que-e-cet/", "artigo"],
     ["/calculadoras/", "hub-ferramentas"],
     ["/calculadoras/emprestimo/", "ferramenta"],
+    ["/simuladores/", "hub-simuladores"],
+    ["/simuladores/quando-fico-livre-das-dividas/", "simulador"],
     ["/taxas/", "radar"],
     ["/decisoes-financeiras/", "central-decisoes"],
     ["/glossario/", "glossario"],
