@@ -133,6 +133,13 @@
       "/emprestimos/margem-consignavel/"
     ]
   },
+  "calculadora de margem consignável INSS e CLT calcular margem disponível": {
+    "canonicalOwner": "/calculadoras/margem-consignavel/",
+    "supportingPages": [
+      "/emprestimos/margem-consignavel/",
+      "/calculadoras/quanto-consigo-financiar/"
+    ]
+  },
   "como consultar margem consignável": {
     "canonicalOwner": "/emprestimos/margem-consignavel/",
     "supportingPages": [

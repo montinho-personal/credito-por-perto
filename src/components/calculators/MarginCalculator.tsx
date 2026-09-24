@@ -84,10 +84,10 @@ export function MarginCalculator() {
               htmlFor={`${formId}-income`}
               className="block text-sm font-semibold text-brand-navy"
             >
-              Benefício ou salário líquido mensal
+              Benefício ou remuneração disponível (por mês)
             </label>
             <p className="mt-0.5 text-xs text-brand-muted">
-              Valor que efetivamente cai na conta, em reais
+              Antes do desconto dos consignados. No INSS, o valor do benefício; na CLT, o salário menos INSS e IR
             </p>
             <input
               id={`${formId}-income`}

@@ -305,19 +305,28 @@
       "calloutLead": "Consignado tem teto de desconto em folha. Veja quanto da sua margem já está ocupado.",
       "badge": "INSS e CLT",
       "aliases": [
-        "margem livre",
+        "qual minha margem consignável",
+        "quanto tenho de margem",
+        "margem disponível",
+        "margem zerada",
+        "margem comprometida",
         "consignado",
         "desconto em folha",
         "inss",
         "aposentado",
+        "pensionista",
         "clt",
-        "servidor",
-        "quanto posso pegar de consignado"
+        "crédito do trabalhador",
+        "margem bruto ou líquido"
       ],
       "keywords": [
-        "calcular margem",
-        "margem consignavel",
-        "simular margem"
+        "calculadora de margem consignavel",
+        "calcular margem consignavel",
+        "margem consignavel inss",
+        "margem consignavel clt",
+        "margem credito do trabalhador",
+        "margem disponivel",
+        "simulador de margem consignavel"
       ],
       "tags": [
         "calculadora",
@@ -338,7 +347,7 @@
         "parcela-no-orcamento",
         "comparador-de-propostas"
       ],
-      "updatedAt": "2026-09-03"
+      "updatedAt": "2026-09-24"
     },
     {
       "id": "antecipacao-fgts",
