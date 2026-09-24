@@ -18,9 +18,12 @@ import { pricePayment } from "@/lib/calculators/loan";
 const brl = (reais: number) =>
   new Intl.NumberFormat("pt-BR", { style: "currency", currency: "BRL" }).format(Math.round(reais * 100) / 100);
 
-/** Exemplos do texto: calculados pela mesma fórmula da calculadora, com taxas hipotéticas. */
+/**
+ * Exemplos do texto: a mesma fórmula e o mesmo arredondamento da calculadora
+ * (parcela exata × prazo, arredondado só na exibição), com taxas hipotéticas.
+ */
 function example(principal: number, monthlyRate: number, n: number) {
-  const installment = Math.round(pricePayment(principal, monthlyRate, n) * 100) / 100;
+  const installment = pricePayment(principal, monthlyRate, n);
   return { installment, total: installment * n, interest: installment * n - principal };
 }
 
