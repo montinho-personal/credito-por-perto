@@ -2,6 +2,8 @@ import Link from "next/link";
 import type { Metadata } from "next";
 import { buildMetadata } from "@/lib/metadata/build";
 import { Breadcrumbs } from "@/components/layout/Breadcrumbs";
+import { JsonLd } from "@/components/seo/JsonLd";
+import { webPageJsonLd } from "@/lib/schema/jsonld";
 import { LoanCalculator } from "@/components/calculators/LoanCalculator";
 import { ToolNextSteps } from "@/components/journeys/ToolNextSteps";
 import { pricePayment } from "@/lib/calculators/loan";
@@ -27,12 +29,12 @@ function example(principal: number, monthlyRate: number, n: number) {
   return { installment, total: installment * n, interest: installment * n - principal };
 }
 
-export const metadata: Metadata = buildMetadata({
-  title: "Calculadora de empréstimo: parcelas, juros e total pago",
-  description:
-    "Informe valor, taxa de juros e número de parcelas e simule o empréstimo: veja a parcela mensal, os juros e o total pago. Grátis e sem CPF.",
-  path: "/calculadoras/emprestimo/",
-});
+const PATH = "/calculadoras/emprestimo/";
+const TITLE = "Calculadora de empréstimo: parcelas, juros e total pago";
+const DESCRIPTION =
+  "Informe valor, taxa de juros e número de parcelas e simule o empréstimo: veja a parcela mensal, os juros e o total pago. Grátis e sem CPF.";
+
+export const metadata: Metadata = buildMetadata({ title: TITLE, description: DESCRIPTION, path: PATH });
 
 export default function CalculadoraEmprestimoPage() {
   const a = example(10_000, 0.02, 24);
@@ -43,6 +45,7 @@ export default function CalculadoraEmprestimoPage() {
       data-track-area="ferramenta"
       data-track="emprestimo"
       className="mx-auto max-w-3xl px-4 py-8">
+      <JsonLd data={webPageJsonLd(TITLE, DESCRIPTION, PATH)} />
       <Breadcrumbs
         items={[
           { name: "Início", path: "/" },
