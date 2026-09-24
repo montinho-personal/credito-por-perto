@@ -16,7 +16,7 @@
  * Função pura, centavos inteiros, sem rede.
  */
 
-import { pricePayment } from "@/lib/calculators/loan";
+import { MAX_PAYMENT_CENTS, priceFinanceableCents, sacFinanceableCents } from "@/lib/calculators/affordability";
 import {
   MAX_MONTHS,
   MAX_PRINCIPAL_CENTS,
@@ -137,14 +137,15 @@ export interface CapacityResult {
   months: number;
   monthlyRatePercent: number;
   /**
-   * Maior valor financiado cuja parcela fixa da Price, arredondada ao
-   * centavo, não passa da informada. A ÚLTIMA parcela acerta o
+   * Valor presente da parcela na Price (fórmula da Calculadora do Cidadão),
+   * ao centavo; a parcela fixa desse valor, arredondada, não passa da
+   * informada. A ÚLTIMA parcela acerta o
    * arredondamento e pode ficar alguns reais acima ou abaixo — como num
    * contrato; a interface diz isso. 0 quando fica abaixo do mínimo da
    * calculadora.
    */
   priceMaxCents: number;
-  /** Maior valor financiado cuja 1ª parcela da SAC (a maior) não passa da informada. */
+  /** PV = P1 ÷ (1/n + i): valor cuja 1ª parcela da SAC (a maior) não passa da informada. */
   sacMaxCents: number;
   /** O valor bateu no limite da calculadora (R$ 50 milhões). */
   capped: boolean;
@@ -154,40 +155,18 @@ export type CapacityOutcome =
   | { kind: "ok"; result: CapacityResult; warnings: HomeIssue[] }
   | { kind: "invalid"; errors: HomeIssue[] };
 
-/** Parcela acima disso é erro de digitação, não orçamento. */
-export const MAX_PAYMENT_CENTS = 1_000_000_00;
+export { MAX_PAYMENT_CENTS };
 /** Acima disso ao mês, a interface pergunta se a taxa está na unidade certa. */
 const SUSPICIOUS_MONTHLY_RATE = 4;
 
-/** 1ª parcela da SAC, com o mesmo arredondamento da tabela. */
-function sacFirstPaymentCents(principal: number, i: number, n: number): number {
-  return Math.round(principal / n) + Math.round(principal * i);
-}
-
-function pricePaymentCents(principal: number, i: number, n: number): number {
-  return Math.round(pricePayment(principal, i, n));
-}
-
-/**
- * Maior valor cuja parcela (função crescente do valor) não passa do alvo.
- * Busca binária com número de passos limitado: nenhuma entrada trava a
- * página — a versão anterior andava centavo a centavo e, com uma parcela
- * absurda, nunca terminava (auditoria de 23/09/2026).
+/*
+ * O núcleo "parcela → valor" é o de `affordability.ts` (Quanto consigo
+ * financiar?): fórmula fechada do valor presente, arredondada ao centavo e
+ * conferida contra a parcela contratual. Uma conta só no site inteiro.
  *
- *   Price: PV ≈ PMT × [1 − (1 + i)^(−n)] ÷ i        (i = 0: PMT × n)
- *   SAC:   PV ≈ P1 ÷ (1/n + i)
+ *   Price: PV = PMT × [1 − (1 + i)^(−n)] ÷ i        (i = 0: PMT × n)
+ *   SAC:   PV = P1 ÷ (1/n + i)
  */
-function largestFitting(target: number, estimate: number, payment: (pv: number) => number): number {
-  let lo = 0; // payment(0) = 0: cabe
-  let hi = Math.max(Math.ceil(estimate) + 100_00, 1);
-  for (let step = 0; step < 64 && payment(hi) <= target; step++) hi *= 2;
-  for (let step = 0; step < 80 && hi - lo > 1; step++) {
-    const mid = Math.floor((lo + hi) / 2);
-    if (payment(mid) <= target) lo = mid;
-    else hi = mid;
-  }
-  return lo;
-}
 
 function clampToLimits(value: number): { value: number; capped: boolean } {
   if (value < MIN_PRINCIPAL_CENTS) return { value: 0, capped: false };
@@ -229,10 +208,8 @@ export function maxFinanceable(input: CapacityInput): CapacityOutcome {
   const n = input.months;
   const p = Math.round(input.paymentCents);
 
-  const priceEstimate = i === 0 ? p * n : (p * (1 - Math.pow(1 + i, -n))) / i;
-  const sacEstimate = p / (1 / n + i);
-  const price = clampToLimits(largestFitting(p, priceEstimate, (pv) => pricePaymentCents(pv, i, n)));
-  const sac = clampToLimits(largestFitting(p, sacEstimate, (pv) => sacFirstPaymentCents(pv, i, n)));
+  const price = clampToLimits(priceFinanceableCents(p, i, n));
+  const sac = clampToLimits(sacFinanceableCents(p, i, n));
 
   return {
     kind: "ok",

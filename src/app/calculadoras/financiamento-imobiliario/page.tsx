@@ -354,6 +354,11 @@ export default async function FinanciamentoImobiliarioPage() {
               imóvel. Aprovação e valor máximo dependem da análise de crédito e das regras de cada
               instituição.
             </p>
+            <p>
+              Quer ver também o total pago, a entrada em percentual e o que muda com taxa, prazo ou parcela? A
+              calculadora <Link href="/calculadoras/quanto-consigo-financiar/">Quanto consigo financiar?</Link> faz
+              a mesma conta para imóvel, veículo ou outro bem.
+            </p>
             {cap3000 ? (
               <SimulateExampleButton
                 label="Simular com parcela de R$ 3.000"

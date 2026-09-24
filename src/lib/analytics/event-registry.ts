@@ -325,6 +325,17 @@ const TOOL_EVENTS: EventSpec[] = [
   { name: "cet_internal_cta_clicked", group: "ferramenta", description: "CET: próximo passo clicado (IOF, taxa, guia).", params: ["context", "target"] },
   { name: "cet_example_select", group: "ferramenta", description: "CET: exemplo da página levado à calculadora.", params: ["context", "example"] },
 
+  /* Quanto consigo financiar? — nenhum valor sai: nem parcela, nem taxa, nem renda, nem resultado */
+  { name: "affordability_financing_view", group: "ferramenta", description: "Quanto consigo financiar: calculadora exibida.", params: ["context"] },
+  { name: "affordability_financing_calculated", group: "ferramenta", description: "Quanto consigo financiar: valor calculado (sistema, unidades, tipo de bem, entrada e exemplo usados, sem valores).", params: ["context", "system", "rate_unit", "term_unit", "asset", "entry_kind", "example_used"], keyEvent: true },
+  { name: "affordability_system_changed", group: "ferramenta", description: "Quanto consigo financiar: sistema escolhido (Price ou SAC).", params: ["context", "system"] },
+  { name: "affordability_entry_added", group: "ferramenta", description: "Quanto consigo financiar: entrada informada (em reais ou em percentual).", params: ["context", "entry_kind"] },
+  { name: "affordability_scenario_changed", group: "ferramenta", description: "Quanto consigo financiar: cenário aberto (parcela, prazo, taxa, objetivo ou renda).", params: ["context", "kind"] },
+  { name: "affordability_asset_type_changed", group: "ferramenta", description: "Quanto consigo financiar: tipo de bem escolhido (imóvel, veículo ou outro).", params: ["context", "asset"] },
+  { name: "affordability_internal_cta_clicked", group: "ferramenta", description: "Quanto consigo financiar: próximo passo clicado (orçamento, imóvel, veículo, taxa, CET ou comparador).", params: ["context", "target"] },
+  { name: "affordability_example_select", group: "ferramenta", description: "Quanto consigo financiar: exemplo da página levado à calculadora.", params: ["context", "example"] },
+  { name: "affordability_copy", group: "ferramenta", description: "Quanto consigo financiar: resumo copiado (o texto fica no aparelho).", params: ["context"] },
+
   /* Calculadora de IOF de empréstimo — nenhum valor sai, só categorias */
   { name: "iof_calculator_view", group: "ferramenta", description: "IOF: calculadora exibida.", params: ["context"] },
   { name: "iof_calculation_completed", group: "ferramenta", description: "IOF: cálculo feito (tomador, forma de pagar, operação e tipo de resultado, sem valores).", params: ["context", "borrower", "schedule", "operation", "payment", "outcome"], keyEvent: true },

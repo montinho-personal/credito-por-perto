@@ -701,5 +701,13 @@
       "/juros-e-cet/o-que-e-cet/",
       "/calculadoras/iof-emprestimo/"
     ]
+  },
+  "quanto consigo financiar pela parcela valor financiável com parcela de x por mês": {
+    "canonicalOwner": "/calculadoras/quanto-consigo-financiar/",
+    "supportingPages": [
+      "/calculadoras/financiamento-imobiliario/",
+      "/calculadoras/financiamento-veiculo/",
+      "/organizacao-financeira/quanto-da-renda-comprometer-financiamento-imovel/"
+    ]
   }
 }

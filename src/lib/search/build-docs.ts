@@ -428,6 +428,19 @@ export function buildSearchDocs(): SearchDoc[] {
       content: "",
     },
     {
+      id: "/calculadoras/quanto-consigo-financiar/",
+      url: "/calculadoras/quanto-consigo-financiar/",
+      title: "Quanto consigo financiar?",
+      description:
+        "Parcela que cabe no mês, taxa e prazo: o valor financiável na Price e na SAC, o total pago e o que muda com entrada, taxa e prazo.",
+      section: "Calculadoras",
+      type: "calculadora",
+      tags: ["calculadora", "financiamento", "parcela"],
+      keywords: ["quanto consigo financiar", "quanto posso financiar", "valor financiavel", "calcular valor financiado pela parcela"],
+      headings: [],
+      content: "",
+    },
+    {
       id: "/calculadoras/iof-emprestimo/",
       url: "/calculadoras/iof-emprestimo/",
       title: "Calculadora de IOF de empréstimo",

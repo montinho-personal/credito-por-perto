@@ -481,6 +481,13 @@
           "optional": false
         },
         {
+          "id": "quanto-financia",
+          "title": "Sabe quanto quer pagar por mês? Veja quanto isso financia",
+          "toolId": "quanto-consigo-financiar",
+          "whyThisStep": "Parte da parcela que cabe no mês e mostra o valor que ela financia, junto com o total pago no prazo.",
+          "optional": true
+        },
+        {
           "id": "financiar-veiculo",
           "title": "Vai financiar um veículo? Quanto fica no total?",
           "toolId": "financiamento-veiculo",

@@ -81,9 +81,13 @@ describe("modo inverso: parcela → quanto consigo financiar", () => {
       // Com o valor encontrado, a parcela fixa da Price e a 1ª da SAC cabem…
       expect(run(r.priceMaxCents).price.fixedCents).toBeLessThanOrEqual(payment);
       expect(run(r.sacMaxCents).sac.firstPaymentCents).toBeLessThanOrEqual(payment);
-      // …e com um real a mais, não cabem.
-      expect(run(r.priceMaxCents + 100).price.fixedCents).toBeGreaterThan(payment);
-      expect(run(r.sacMaxCents + 100).sac.firstPaymentCents).toBeGreaterThan(payment);
+      // …e é o valor presente da parcela: com um centavo a mais de parcela
+      // (≈ fator de valor presente em centavos a mais de valor), já não cabem.
+      const i = r.monthlyRatePercent / 100;
+      const factor = i === 0 ? months : (1 - Math.pow(1 + i, -months)) / i;
+      const bump = Math.ceil(factor) + 1;
+      expect(run(r.priceMaxCents + bump).price.fixedCents).toBeGreaterThan(payment);
+      expect(run(r.sacMaxCents + months + 1).sac.firstPaymentCents).toBeGreaterThan(payment);
       // A última parcela da Price acerta o arredondamento: fica a poucos
       // reais da fixa, para cima ou para baixo — a interface avisa.
       const last = run(r.priceMaxCents).price.lastPaymentCents;
@@ -95,20 +99,18 @@ describe("modo inverso: parcela → quanto consigo financiar", () => {
 
   it("taxa zero: parcela × prazo", () => {
     const r = capacity(300_000, 0, "am", 360);
-    // Parcela ao centavo: R$ 3.000,00 cobre até R$ 1.080.001,79 (÷ 360 =
-    // 3.000,004…, que arredonda para 3.000,00); a última parcela acerta os
-    // R$ 1,79 — a interface avisa desse ajuste.
-    expect(r.priceMaxCents).toBe(108_000_179);
-    expect(r.sacMaxCents).toBe(108_000_179);
+    // PV = PMT × n, exatamente: R$ 3.000 × 360 = R$ 1.080.000.
+    expect(r.priceMaxCents).toBe(108_000_000);
+    expect(r.sacMaxCents).toBe(108_000_000);
   });
 
   it("referência independente: R$ 3.000 a 1% a.m. em 360 meses", () => {
     // Price: 3000 × (1 − 1,01^−360) / 0,01 = 291.654,99 (Python, decimal de 40 dígitos).
-    // SAC: 3000 / (1/360 + 0,01) = 234.782,61. A diferença tolerada é o
-    // arredondamento da parcela ao centavo.
+    // SAC: 3000 / (1/360 + 0,01) = 234.782,61. Os dois ao centavo, sem folga:
+    // o núcleo é a fórmula fechada de affordability.ts.
     const r = capacity(300_000, 1, "am", 360);
-    expect(Math.abs(r.priceMaxCents - 29_165_499)).toBeLessThanOrEqual(100);
-    expect(Math.abs(r.sacMaxCents - 23_478_261)).toBeLessThanOrEqual(100);
+    expect(r.priceMaxCents).toBe(29_165_499);
+    expect(r.sacMaxCents).toBe(23_478_261);
   });
 
   it("auditoria: parcela absurda não trava — é recusada; parcela minúscula dá zero", () => {

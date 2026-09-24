@@ -250,7 +250,7 @@ export function validateSacPrice(input: SacPriceInput): {
  * tornaria a tabela incoerente (saldo zerando antes do prazo, amortização
  * negativa, última parcela sem sentido).
  */
-function buildSchedule(
+export function buildSchedule(
   system: AmortizationSystem,
   principalCents: number,
   i: number,

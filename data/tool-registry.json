@@ -191,6 +191,27 @@
       "updatedAt": "2026-09-23"
     },
     {
+      "id": "quanto-consigo-financiar",
+      "name": "Quanto consigo financiar?",
+      "shortName": "Quanto consigo financiar",
+      "route": "/calculadoras/quanto-consigo-financiar/",
+      "cta": "Calcular pela parcela",
+      "situation": "antes-de-contratar",
+      "question": "Quanto uma parcela que cabe no mês consegue financiar?",
+      "whenItHelps": "Informe quanto quer pagar por mês, a taxa e o prazo para estimar o valor financiável.",
+      "calloutLead": "Comece pela parcela que cabe no mês e veja quanto ela financia na Price e na SAC, e quanto se paga no total.",
+      "triggerTerms": [
+        "quanto consigo financiar",
+        "quanto posso financiar",
+        "valor financiável"
+      ],
+      "defaultNextSteps": [
+        "parcela-no-orcamento",
+        "financiamento-imobiliario"
+      ],
+      "updatedAt": "2026-09-24"
+    },
+    {
       "id": "financiamento-imobiliario",
       "name": "Simulador de financiamento imobiliário",
       "shortName": "Financiamento imobiliário",
