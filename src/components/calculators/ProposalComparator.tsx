@@ -771,8 +771,8 @@ export function ProposalComparator() {
     >
       <div className="flex flex-wrap items-center justify-between gap-3">
         <p className="text-sm leading-relaxed text-brand-muted">
-          Não precisamos saber qual banco fez a proposta — compare apenas os números. Nada do que você
-          digita aqui é enviado ou salvo.
+          Use as propostas que você já recebeu: não precisamos saber qual banco fez cada uma, só os
+          números. Nada do que você digita aqui é enviado ou salvo.
         </p>
         <button
           type="button"

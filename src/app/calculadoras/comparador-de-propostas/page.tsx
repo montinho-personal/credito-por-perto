@@ -6,17 +6,26 @@ import { JsonLd } from "@/components/seo/JsonLd";
 import { Breadcrumbs } from "@/components/layout/Breadcrumbs";
 import { ProposalComparator } from "@/components/calculators/ProposalComparator";
 import { ToolNextSteps } from "@/components/journeys/ToolNextSteps";
+import { CET_RULES } from "@/lib/calculators/cet";
 
+/**
+ * INTENÇÃO: a pessoa JÁ RECEBEU duas ou três propostas e quer saber qual custa
+ * menos. Não é marketplace ("comparador de empréstimos" que busca ofertas com
+ * CPF) nem simulador de parcela (/calculadoras/emprestimo/). O método de
+ * comparar, em texto, é do artigo /organizacao-financeira/como-comparar-
+ * propostas-de-credito/; esta página executa a comparação e tira as dúvidas
+ * de quem está com as propostas na mão. Ver data/query-ownership-map.json.
+ */
 export const metadata: Metadata = buildMetadata({
-  title: "Comparador de propostas de crédito: parcela, prazo, CET e total",
+  title: "Comparar propostas de empréstimo: CET e total pago",
   description:
-    "Compare gratuitamente até 3 propostas de crédito lado a lado: parcela, prazo, CET e total pago. Sem cadastro, sem informar banco e sem indicação de contratação.",
+    "Já recebeu duas ou três propostas? Compare lado a lado parcela, prazo, CET, valor liberado e total pago. Grátis, sem CPF e sem buscar ofertas.",
   path: "/calculadoras/comparador-de-propostas/",
 });
 
-const PAGE_TITLE = "Compare propostas de crédito lado a lado";
+const PAGE_TITLE = "Compare as propostas de empréstimo que você já recebeu";
 const PAGE_DESCRIPTION =
-  "Veja parcela, prazo, CET e valor total antes de decidir — sem cadastro e sem indicar banco.";
+  "Coloque até 3 propostas lado a lado e veja parcela, prazo, CET, valor liberado e total pago antes de assinar. Sem cadastro, sem CPF e sem indicar banco.";
 
 export default function ComparadorDePropostasPage() {
   return (
@@ -44,9 +53,11 @@ export default function ComparadorDePropostasPage() {
           {PAGE_TITLE}
         </h1>
         <p className="mt-3 text-lg leading-relaxed text-brand-muted">
-          Qual proposta custa menos de verdade? <strong>Parcela menor não significa crédito mais
-          barato.</strong> Coloque até 3 propostas na mesma mesa e veja parcela, prazo, CET e total pago —
-          sem cadastro, sem informar o banco e sem ninguém decidindo por você.
+          Tem duas propostas e quer saber qual custa menos de verdade? Coloque lado a lado até 3 propostas
+          que você já recebeu, de bancos diferentes ou não, e veja parcela, prazo, CET, valor liberado e
+          total pago antes de assinar. <strong>Parcela menor não significa empréstimo mais barato.</strong>{" "}
+          Sem cadastro, sem CPF e sem informar o banco: aqui não buscamos ofertas, só colocamos os seus
+          números na mesma mesa.
         </p>
       </header>
 
@@ -58,69 +69,85 @@ export default function ComparadorDePropostasPage() {
       <ToolNextSteps toolId="comparador-de-propostas" />
 
       <section aria-labelledby="como-comparar" className="article-body mt-12">
-        <h2 id="como-comparar">Como comparar duas propostas de crédito?</h2>
+        <h2 id="como-comparar">Como comparar duas propostas de empréstimo aqui?</h2>
         <p>
-          Pegue as duas propostas e localize quatro números em cada uma: o <strong>valor líquido que cai
-          na conta</strong>, o <strong>número de parcelas</strong>, o <strong>valor de cada parcela</strong>{" "}
-          e o <strong>CET anual</strong>. Digite-os acima. A ferramenta mostra o total pago, o custo em
-          reais e onde exatamente as propostas diferem. O método completo, com os cinco números que
-          importam, está em{" "}
+          Com as propostas na mão, localize quatro números em cada uma: o <strong>valor líquido que cai na
+          conta</strong>, o <strong>número de parcelas</strong>, o <strong>valor de cada parcela</strong> e o{" "}
+          <strong>CET anual</strong>. Digite-os acima. A ferramenta mostra o total pago, o custo em reais e
+          onde exatamente as propostas diferem. Use o valor que cai na conta, não o valor solicitado: IOF,
+          tarifa ou seguro descontados na liberação fazem duas propostas de &ldquo;R$ 10 mil&rdquo; entregarem
+          valores diferentes. Se ainda está juntando propostas, o passo a passo para pedir os números certos
+          está no guia{" "}
           <Link href="/organizacao-financeira/como-comparar-propostas-de-credito/">
             como comparar propostas de crédito
           </Link>
           .
         </p>
 
-        <h2 id="parcela-menor">Por que a menor parcela pode custar mais?</h2>
+        <h2 id="parcela-menor">Parcela menor ou custo menor: por que a menor parcela pode custar mais?</h2>
         <p>
-          Porque distribuir a dívida por mais meses pode reduzir o valor mensal enquanto aumenta o total
-          desembolsado: os juros correm por mais tempo. Não é uma regra universal — depende dos termos de
-          cada proposta. É exatamente esse trade-off que o comparador coloca em uma frase: quanto a parcela
-          cai, quantos meses a mais a dívida dura e quanto isso custa ao final.
+          Porque distribuir a dívida por mais meses reduz o valor mensal e costuma aumentar o total
+          desembolsado: os juros correm por mais tempo. &ldquo;Uma tem parcela menor, mas prazo maior&rdquo;
+          é a situação mais comum, e não há resposta universal: depende dos termos de cada proposta. O
+          comparador coloca esse trade-off em uma frase: quanto a parcela cai, quantos meses a mais a dívida
+          dura e quanto isso custa no final.
         </p>
 
-        <h2 id="o-que-e-cet">O que é CET?</h2>
+        <h2 id="o-que-e-cet">O que é CET e onde encontrar na proposta?</h2>
         <p>
-          O <strong>Custo Efetivo Total</strong> é a taxa que resume o custo completo da operação: juros,
-          tarifas, tributos, seguros e demais encargos. As instituições são obrigadas a informá-lo antes da
-          contratação. <strong>Juros ≠ CET</strong>: duas propostas com a mesma taxa de juros podem ter
-          CETs bem diferentes. O guia completo está em{" "}
+          O <strong>Custo Efetivo Total</strong> é a taxa anual que resume o custo completo do empréstimo:
+          juros, tarifas, tributos como o IOF, seguros e demais encargos. Pela Resolução CMN nº 4.881/2020, a
+          instituição informa o CET antes da contratação e apresenta o demonstrativo, com o valor de cada
+          componente. Procure-o na proposta, na simulação formal ou nesse demonstrativo, e peça por escrito
+          se não estiver lá. O conceito completo está em{" "}
           <Link href="/juros-e-cet/o-que-e-cet/">o que é CET</Link>.
         </p>
 
         <h2 id="cet-ou-juros">CET ou taxa de juros: qual comparar?</h2>
         <p>
-          Entre propostas comparáveis, o CET ajuda a mostrar qual possui menor custo efetivo — é ele que
-          captura tarifas e seguros embutidos que a taxa de juros esconde. Mas prazo, valor da parcela e
-          adequação ao seu orçamento também importam. Por isso o comparador nunca reduz a resposta a um
-          número só. E cuidado com unidades: 3% ao mês não é 36% ao ano — a conversão composta está em{" "}
-          <Link href="/juros-e-cet/taxa-mensal-e-taxa-anual/">taxa mensal × taxa anual</Link>.
+          O CET. Menor taxa de juros não significa necessariamente empréstimo mais barato: uma proposta com
+          juros menores e seguro ou tarifa embutidos pode ter CET maior, e duas propostas com juros
+          diferentes podem chegar a CETs parecidos. É por isso que a proposta &ldquo;com juros menores&rdquo;
+          às vezes sai mais cara. Mesmo assim, o CET não decide sozinho: prazo, valor da parcela e o que cabe
+          no seu orçamento também contam, e o comparador mostra tudo junto. Cuidado com unidades: 3% ao mês
+          não é 36% ao ano, e a conversão composta está em{" "}
+          <Link href="/juros-e-cet/taxa-mensal-e-taxa-anual/">taxa mensal e taxa anual</Link>.
         </p>
 
-        <h2 id="total-pago">Como calcular o valor total de um empréstimo?</h2>
+        <h2 id="total-pago">Como calcular o total pago e o custo do empréstimo em reais?</h2>
         <p>
-          Multiplique o valor da parcela pelo número de parcelas e some custos pagos fora delas, se
-          houver. A diferença entre esse total e o valor que você recebe é o custo do crédito em reais.
-          Essa conta não substitui o CET oficial — ela mostra, em dinheiro, o que sai do seu bolso com base
-          nos valores informados.
+          Multiplique o valor da parcela pelo número de parcelas e some os custos pagos fora delas, se
+          houver: esse é o total pago. A diferença entre o total pago e o valor que caiu na sua conta é o
+          custo do empréstimo em reais, a resposta mais direta para &ldquo;qual vou pagar menos no
+          final?&rdquo;. Essa conta não substitui o CET oficial: ela mostra, em dinheiro, o que sai do seu
+          bolso com os valores informados.
         </p>
 
-        <h2 id="sem-cet">O que fazer se a proposta não informar CET?</h2>
+        <h2 id="sem-cet">O banco não informou o CET. E agora?</h2>
         <p>
-          Marque &ldquo;não sei&rdquo; e compare mesmo assim — parcela, prazo e total pago já revelam
-          muito. Mas procure o CET na proposta ou peça à instituição antes de assinar: sem ele, a
-          comparação do custo efetivo fica incompleta, e a informação é obrigatória.
+          Marque &ldquo;não sei&rdquo; e compare mesmo assim: parcela, prazo, valor liberado e total pago já
+          revelam muito. Antes de assinar, peça o CET por escrito, porque a informação é obrigatória antes
+          da contratação. Se você tem o valor recebido, as parcelas e os custos, a{" "}
+          <Link href="/calculadoras/cet/">calculadora de CET</Link> estima a taxa a partir desse fluxo.
         </p>
 
-        <h2 id="prazos-diferentes">Posso comparar empréstimos de prazos diferentes?</h2>
+        <h2 id="prazos-diferentes">Posso comparar empréstimos com prazos diferentes ou de bancos diferentes?</h2>
         <p>
-          Pode — e é aí que o comparador mais ajuda, porque mostra o trade-off: a proposta de prazo maior
-          costuma ter parcela menor e total maior. Só evite comparar pelo total quando os{" "}
-          <strong>valores recebidos</strong> são diferentes: nesse caso a ferramenta avisa e reduz as
-          conclusões, porque as propostas não são equivalentes.
+          Pode, e é aí que o comparador mais ajuda. Com prazos diferentes, olhe dois números: o CET, que é
+          uma taxa anual e por isso já leva o tempo em conta, e o total pago, que soma mais parcelas quando
+          o prazo é maior. A proposta mais longa costuma ter parcela menor e total maior. Bancos diferentes
+          não mudam nada: a ferramenta compara números, não instituições. Só evite comparar pelo total
+          quando os <strong>valores recebidos</strong> são diferentes: nesse caso a ferramenta avisa e reduz
+          as conclusões, porque as propostas não são equivalentes.
         </p>
 
-        <h2 id="antes-de-assinar">O que verificar antes de assinar?</h2>
+        <h2 id="antes-de-assinar">Qual proposta escolher? O que verificar antes de assinar</h2>
+        <p>
+          A ferramenta mostra qual proposta tem o menor custo nos critérios que você informou. Isso não é o
+          mesmo que dizer qual é a melhor para você: a proposta mais barata no total pode ter uma parcela que
+          não cabe no mês. Antes de decidir, veja{" "}
+          <Link href="/calculadoras/parcela-no-orcamento/">se a parcela cabe no seu orçamento</Link> e confira:
+        </p>
         <ul>
           <li>Confirme o CET e o valor total a pagar por escrito;</li>
           <li>Verifique tarifas e seguros embutidos — <Link href="/juros-e-cet/seguro-prestamista/">seguro é facultativo</Link>, e venda casada é vedada;</li>
@@ -156,11 +183,11 @@ export default function ComparadorDePropostasPage() {
           armazenado.
         </p>
         <p>
-          Conceitos e obrigações citados seguem fontes oficiais: a regulamentação do CET do{" "}
-          <a href="https://www.bcb.gov.br" rel="noopener noreferrer" target="_blank">
-            Banco Central do Brasil
+          Conceitos e obrigações citados seguem fontes oficiais: a regulamentação do CET (
+          <a href={CET_RULES.resolution.url} rel="noopener noreferrer" target="_blank">
+            {CET_RULES.resolution.title}
           </a>
-          , o direito à liquidação antecipada com redução proporcional dos juros do{" "}
+          , verificada em {CET_RULES.verifiedAt}), o direito à liquidação antecipada com redução proporcional dos juros do{" "}
           <a
             href="https://www.planalto.gov.br/ccivil_03/leis/l8078compilado.htm"
             rel="noopener noreferrer"
@@ -169,14 +196,14 @@ export default function ComparadorDePropostasPage() {
             Código de Defesa do Consumidor (art. 52)
           </a>{" "}
           e a vedação de tarifa por quitação antecipada da Resolução CMN nº 3.516/2007. Última revisão da
-          metodologia: 27/08/2026.
+          metodologia: 27/08/2026; textos revisados em 24/09/2026.
         </p>
 
         <h2 id="proximos-passos">Talvez você também precise</h2>
         <ul>
           <li>
-            <Link href="/calculadoras/emprestimo/">Calculadora de empréstimo</Link> — estime a parcela a
-            partir de valor, taxa e prazo;
+            <Link href="/calculadoras/emprestimo/">Calculadora de empréstimo</Link> — ainda não tem proposta?
+            Estime a parcela a partir de valor, taxa e prazo;
           </li>
           <li>
             <Link href="/calculadoras/minha-taxa-esta-cara/">Minha taxa está cara?</Link> — coloque

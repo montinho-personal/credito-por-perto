@@ -197,18 +197,22 @@
       "calloutLead": "Tem mais de uma proposta na mão? Coloque lado a lado antes de escolher pela parcela.",
       "badge": "Até 3 propostas",
       "aliases": [
+        "tenho duas propostas",
+        "qual proposta custa menos",
         "qual empréstimo é mais barato",
-        "duas propostas",
-        "comparar bancos",
-        "comparar empréstimos",
-        "comparar propostas",
-        "cet"
+        "parcela menor ou juros menor",
+        "comparar dois empréstimos",
+        "comparar empréstimos lado a lado",
+        "comparar cet",
+        "cet ou taxa de juros"
       ],
       "keywords": [
+        "comparar propostas de emprestimo",
         "comparar emprestimos",
         "comparar propostas de credito",
         "qual emprestimo e mais barato",
-        "comparar cet"
+        "comparar cet",
+        "comparar duas propostas"
       ],
       "tags": [
         "comparador",
@@ -230,7 +234,7 @@
         "parcela-no-orcamento",
         "minha-taxa-esta-cara"
       ],
-      "updatedAt": "2026-08-29"
+      "updatedAt": "2026-09-24"
     },
     {
       "id": "parcela-no-orcamento",

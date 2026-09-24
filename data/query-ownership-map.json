@@ -315,10 +315,12 @@
       "/credito-seguro/emprestimo-caiu-na-conta-sem-pedir/"
     ]
   },
-  "comparar propostas de empréstimo lado a lado qual é mais barata": {
+  "comparar propostas de empréstimo já recebidas lado a lado qual custa menos CET total pago": {
     "canonicalOwner": "/calculadoras/comparador-de-propostas/",
     "supportingPages": [
-      "/organizacao-financeira/como-comparar-propostas-de-credito/"
+      "/organizacao-financeira/como-comparar-propostas-de-credito/",
+      "/juros-e-cet/o-que-e-cet/",
+      "/calculadoras/cet/"
     ]
   },
   "minha taxa de juros está alta comparar com o Banco Central": {
