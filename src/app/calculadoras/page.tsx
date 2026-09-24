@@ -124,7 +124,7 @@ export default function CalculadorasPage() {
       {/* ---------------------------------------------------------------- *
        * Porta 3: catálogo por assunto
        * ---------------------------------------------------------------- */}
-      <nav aria-label="Categorias" className="mt-12 border-t border-brand-border pt-8">
+      <nav aria-label="Categorias" data-track-area="cards-ferramentas" className="mt-12 border-t border-brand-border pt-8">
         <p className="text-sm font-semibold text-brand-navy">Todas as ferramentas, por assunto</p>
         <ul className="mt-3 flex flex-wrap gap-2">
           {groups.map((group) => (

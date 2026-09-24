@@ -254,8 +254,9 @@ const DECISION_EVENTS: EventSpec[] = [
   {
     name: "calculator_category_select",
     group: "central",
-    description: "Categoria escolhida na central de calculadoras.",
-    params: ["category"],
+    description:
+      "Categoria escolhida na central de calculadoras (o id da categoria vai em component).",
+    params: CLICK_PARAMS,
   },
   {
     name: "calculator_card_click",

@@ -424,7 +424,7 @@
       "defaultNextSteps": [
         "parcela-no-orcamento"
       ],
-      "updatedAt": "2026-08-29"
+      "updatedAt": "2026-09-24"
     },
     {
       "id": "financiamento-imobiliario",
@@ -963,7 +963,7 @@
         "parcela-no-orcamento",
         "plano-para-sair-das-dividas"
       ],
-      "updatedAt": "2026-08-29"
+      "updatedAt": "2026-09-24"
     },
     {
       "id": "quitacao-antecipada",

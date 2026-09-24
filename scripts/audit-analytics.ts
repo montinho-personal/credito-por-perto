@@ -68,6 +68,12 @@ for (const { rel, body } of files) {
     const name = match[1]!;
     fired.set(name, [...(fired.get(name) ?? []), rel]);
   }
+  /* Clique delegado com nome próprio: `data-track-event="..."` no JSX. O
+     ouvinte de ClickTracking.tsx dispara com esse nome e os CLICK_PARAMS. */
+  for (const match of body.matchAll(/data-track-event="([a-z0-9_]+)"/g)) {
+    const name = match[1]!;
+    fired.set(name, [...(fired.get(name) ?? []), rel]);
+  }
 }
 
 /**
