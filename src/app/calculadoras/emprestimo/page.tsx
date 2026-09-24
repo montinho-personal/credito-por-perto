@@ -4,15 +4,37 @@ import { buildMetadata } from "@/lib/metadata/build";
 import { Breadcrumbs } from "@/components/layout/Breadcrumbs";
 import { LoanCalculator } from "@/components/calculators/LoanCalculator";
 import { ToolNextSteps } from "@/components/journeys/ToolNextSteps";
+import { pricePayment } from "@/lib/calculators/loan";
+
+/**
+ * INTENÇÃO: calcular agora quanto custaria um empréstimo a partir de valor,
+ * taxa e prazo (parcela, juros, total pago). "Simulador de empréstimo" entra
+ * como variação no texto, sem prometer oferta. Donos vizinhos: o artigo
+ * "como calcular juros de empréstimo" explica a conta; o comparador compara
+ * propostas já recebidas; a calculadora de CET calcula o custo efetivo; a
+ * margem consignável cuida do consignado. Ver data/query-ownership-map.json.
+ */
+
+const brl = (reais: number) =>
+  new Intl.NumberFormat("pt-BR", { style: "currency", currency: "BRL" }).format(Math.round(reais * 100) / 100);
+
+/** Exemplos do texto: calculados pela mesma fórmula da calculadora, com taxas hipotéticas. */
+function example(principal: number, monthlyRate: number, n: number) {
+  const installment = Math.round(pricePayment(principal, monthlyRate, n) * 100) / 100;
+  return { installment, total: installment * n, interest: installment * n - principal };
+}
 
 export const metadata: Metadata = buildMetadata({
   title: "Calculadora de empréstimo: parcelas, juros e total pago",
   description:
-    "Simule parcelas de empréstimo pelo sistema Price: valor da parcela, total pago, total de juros, taxa anual equivalente e tabela de amortização completa.",
+    "Informe valor, taxa de juros e número de parcelas e simule o empréstimo: veja a parcela mensal, os juros e o total pago. Grátis e sem CPF.",
   path: "/calculadoras/emprestimo/",
 });
 
 export default function CalculadoraEmprestimoPage() {
+  const a = example(10_000, 0.02, 24);
+  const b = example(10_000, 0.04, 24);
+  const c = example(10_000, 0.02, 36);
   return (
     <div
       data-track-area="ferramenta"
@@ -29,10 +51,11 @@ export default function CalculadoraEmprestimoPage() {
         Calculadora de empréstimo
       </h1>
       <p className="mt-3 text-lg leading-relaxed text-brand-muted">
-        Informe o valor, a taxa mensal e o número de parcelas para estimar
-        quanto o empréstimo custaria pelo sistema Price (parcelas fixas). O
-        resultado mostra a parcela, o total pago, o total de juros e a taxa
-        anual equivalente.
+        Simule um empréstimo de qualquer valor: informe quanto quer pegar, a taxa
+        de juros ao mês e o número de parcelas. A calculadora mostra quanto fica
+        a parcela mensal, quanto você paga de juros e quanto devolve no total,
+        além da taxa anual equivalente. Parcelas fixas, pela Tabela Price. Sem
+        cadastro e sem CPF.
       </p>
 
       <div className="mt-8">
@@ -43,7 +66,7 @@ export default function CalculadoraEmprestimoPage() {
 
 
       <section aria-labelledby="como-funciona" className="article-body mt-12">
-        <h2 id="como-funciona">Como o cálculo é feito</h2>
+        <h2 id="como-funciona">Como é calculada a parcela do empréstimo</h2>
         <p>
           A calculadora usa o <strong>sistema Price</strong>, o mais comum em
           empréstimos pessoais no Brasil: todas as parcelas têm o mesmo valor, e
@@ -65,21 +88,35 @@ export default function CalculadoraEmprestimoPage() {
           equivale a bem mais que 36% ao ano.
         </p>
         <p>
+          O valor sozinho não diz quanto fica a parcela: é preciso saber a taxa e
+          o prazo. Com taxas hipotéticas, só para mostrar o efeito, R$ 10 mil em
+          24 parcelas ficam em {brl(a.installment)} por mês a 2% ao mês e em{" "}
+          {brl(b.installment)} a 4% ao mês. Aumentar o prazo reduz a parcela e
+          aumenta os juros: os mesmos R$ 10 mil a 2% ao mês em 36 parcelas
+          custam {brl(c.installment)} por mês, mas os juros totais sobem de{" "}
+          {brl(a.interest)} para {brl(c.interest)}. Para testar o seu caso,
+          informe a taxa da sua proposta na calculadora acima.
+        </p>
+        <p>
           Vai financiar um carro ou uma moto? O{" "}
           <Link href="/calculadoras/financiamento-veiculo/">simulador de financiamento de veículo</Link>{" "}
           usa a mesma conta, mas parte do preço do veículo e da entrada, e mostra o total que sai
           do seu bolso somando as duas coisas.
         </p>
-        <h2 id="por-que-o-valor-real-difere">Por que o valor real pode ser diferente</h2>
+        <h2 id="por-que-o-valor-real-difere">Por que a simulação do banco pode ser diferente</h2>
         <p>
-          A proposta de uma instituição inclui custos que esta estimativa não
-          captura integralmente: IOF, tarifas, seguros e o efeito deles no{" "}
+          Esta calculadora é uma estimativa com a taxa de juros que você informa.
+          A proposta de uma instituição inclui custos que ela não captura
+          integralmente: IOF, tarifas, seguros e o efeito deles no{" "}
           <Link href="/juros-e-cet/o-que-e-cet/">Custo Efetivo Total (CET)</Link>
-          . Ao comparar propostas reais, peça sempre o CET e o valor total a
-          pagar — a taxa de juros sozinha não conta a história completa. Tem
-          duas propostas em mãos? Coloque os números lado a lado no{" "}
-          <Link href="/calculadoras/comparador-de-propostas/">comparador de propostas</Link>. Veja
-          também <Link href="/juros-e-cet/como-calcular-juros-de-emprestimo/">como calcular juros de empréstimo</Link>{" "}
+          , a taxa que resume o custo completo da operação. Por isso a parcela ou o
+          total do contrato podem sair maiores que a simulação, e o valor que cai
+          na conta pode ser menor que o valor pedido. Taxa de juros e CET não são a
+          mesma coisa: numa proposta real, peça sempre o CET e o valor total a
+          pagar. Já tem duas propostas em mãos? Coloque os números lado a lado no{" "}
+          <Link href="/calculadoras/comparador-de-propostas/">comparador de propostas de empréstimo</Link>. Para
+          entender a conta passo a passo, veja{" "}
+          <Link href="/juros-e-cet/como-calcular-juros-de-emprestimo/">como calcular juros de empréstimo</Link>{" "}
           e <Link href="/organizacao-financeira/como-comparar-propostas-de-credito/">como comparar propostas de crédito</Link>.
         </p>
       </section>

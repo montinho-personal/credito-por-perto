@@ -150,8 +150,10 @@
       "badge": "Tabela Price",
       "aliases": [
         "empréstimo",
-        "empréstimo de 10 mil em 24 vezes",
         "quanto fica a parcela",
+        "quanto vou pagar por mês",
+        "quanto vou pagar no final",
+        "empréstimo de 10 mil em 24 vezes",
         "simular empréstimo",
         "calcular parcela",
         "juros do empréstimo",
@@ -159,8 +161,13 @@
         "quanto vou pagar de juros"
       ],
       "keywords": [
+        "calculadora de emprestimo",
         "calcular emprestimo",
         "simular emprestimo",
+        "simulador de emprestimo",
+        "calcular parcela de emprestimo",
+        "quanto vou pagar de juros",
+        "total pago emprestimo",
         "price"
       ],
       "tags": [
@@ -181,7 +188,7 @@
         "parcela-no-orcamento",
         "comparador-de-propostas"
       ],
-      "updatedAt": "2026-09-23"
+      "updatedAt": "2026-09-24"
     },
     {
       "id": "comparador-de-propostas",

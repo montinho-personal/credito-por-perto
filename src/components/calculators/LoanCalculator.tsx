@@ -97,7 +97,7 @@ export function LoanCalculator() {
         <div className="grid gap-5 sm:grid-cols-2">
           <NumberField
             id={`${formId}-principal`}
-            label="Valor solicitado"
+            label="Valor do empréstimo"
             hint="Quanto você pretende pedir emprestado"
             value={principal}
             onChange={setPrincipal}
@@ -127,7 +127,7 @@ export function LoanCalculator() {
           <NumberField
             id={`${formId}-fees`}
             label="Taxas adicionais (opcional)"
-            hint="Tarifas fixas somadas ao valor financiado"
+            hint="Tarifas fixas somadas ao valor financiado (não é o CET)"
             value={fees}
             onChange={setFees}
             min={0}

@@ -72,10 +72,11 @@
     "canonicalOwner": "/organizacao-financeira/renegociacao-ou-emprestimo/",
     "supportingPages": []
   },
-  "simulador de parcelas de empréstimo": {
+  "calculadora de empréstimo simular parcela juros e total pago por valor taxa e prazo": {
     "canonicalOwner": "/calculadoras/emprestimo/",
     "supportingPages": [
-      "/juros-e-cet/como-calcular-juros-de-emprestimo/"
+      "/juros-e-cet/como-calcular-juros-de-emprestimo/",
+      "/juros-e-cet/o-que-e-cet/"
     ]
   },
   "portabilidade de crédito como funciona": {
