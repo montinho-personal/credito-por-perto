@@ -451,6 +451,18 @@ export const TERM_STEPS: Record<AssetType, readonly number[]> = {
   outro: [12, 24],
 };
 
+/**
+ * Sem tipo de bem escolhido, os prazos de referência seguem a ordem de
+ * grandeza do prazo digitado: 240 meses pede a régua de imóvel, 48 a de
+ * veículo. É só a escala do gráfico e dos cenários, não um palpite sobre o bem.
+ */
+export function termScaleFor(asset: AssetType | null, months: number): AssetType {
+  if (asset) return asset;
+  if (months > 72) return "imovel";
+  if (months > 24) return "veiculo";
+  return "outro";
+}
+
 export interface CurvePoint {
   months: number;
   ratePercent: number;

@@ -35,6 +35,7 @@ import {
   TERM_POINTS,
   TERM_STEPS,
   termCurve,
+  termScaleFor,
   type AffordabilityInput,
   type AffordabilityResult,
   type AffordField,
@@ -749,9 +750,10 @@ function Result({
   }
 
   const input = shown.input;
-  const termSteps = TERM_STEPS[assetKind].map((d) => r.months + d).filter((m) => m <= MAX_AFFORD_MONTHS);
+  const scale = termScaleFor(asset, r.months);
+  const termSteps = TERM_STEPS[scale].map((d) => r.months + d).filter((m) => m <= MAX_AFFORD_MONTHS);
   const scenarioOutcome = scenario ? applyScenario(input, scenario) : null;
-  const terms = termCurve(input, system, TERM_POINTS[assetKind]);
+  const terms = termCurve(input, system, TERM_POINTS[scale]);
   const rates = rateCurve(input, system, RATE_STEP_PP);
   const lower = input.ratePercent - RATE_STEP_PP >= 0 ? applyScenario(input, { kind: "taxa", deltaPp: -RATE_STEP_PP }) : null;
   const higher = applyScenario(input, { kind: "taxa", deltaPp: RATE_STEP_PP });

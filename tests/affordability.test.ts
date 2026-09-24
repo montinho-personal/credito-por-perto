@@ -15,6 +15,7 @@ import {
   sacFirstPaymentCents,
   termCurve,
   termNeeded,
+  termScaleFor,
   type AffordabilityInput,
   type AffordabilityResult,
 } from "@/lib/calculators/affordability";
@@ -305,6 +306,13 @@ describe("cenários: uma variável por vez", () => {
       expect(pts[k]!.financedCents).toBeGreaterThan(pts[k - 1]!.financedCents);
       expect(pts[k]!.totalInterestCents).toBeGreaterThan(pts[k - 1]!.totalInterestCents);
     }
+  });
+
+  it("sem tipo de bem, a régua de prazos segue o prazo digitado", () => {
+    expect(termScaleFor(null, 240)).toBe("imovel");
+    expect(termScaleFor(null, 48)).toBe("veiculo");
+    expect(termScaleFor(null, 12)).toBe("outro");
+    expect(termScaleFor("veiculo", 360)).toBe("veiculo");
   });
 
   it("curva de taxa cai conforme a taxa sobe e descarta taxas negativas", () => {
