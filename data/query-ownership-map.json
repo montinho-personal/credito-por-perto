@@ -335,7 +335,14 @@
     "canonicalOwner": "/calculadoras/minha-taxa-esta-cara/",
     "supportingPages": [
       "/juros-e-cet/como-consultar-taxa-media-do-bc/",
-      "/juros-e-cet/juros-abusivos-como-saber/"
+      "/juros-e-cet/juros-abusivos-como-saber/",
+      "/taxas/"
+    ]
+  },
+  "[x]% ao mês é muito taxa de juros alta depende da modalidade": {
+    "canonicalOwner": "/calculadoras/minha-taxa-esta-cara/",
+    "supportingPages": [
+      "/juros-e-cet/taxa-mensal-e-taxa-anual/"
     ]
   },
   "como saber se proposta de empréstimo é golpe verificar sinais": {

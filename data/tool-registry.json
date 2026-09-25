@@ -697,8 +697,8 @@
       "type": "comparador",
       "category": "juros-taxas-e-custos",
       "situation": "entender-numeros",
-      "question": "A taxa que me ofereceram está acima da média?",
-      "whenItHelps": "Informe a taxa da sua proposta e veja como ela se compara à média oficial do Banco Central para a mesma modalidade.",
+      "question": "A taxa que me ofereceram está alta?",
+      "whenItHelps": "Informe a taxa de juros da proposta e a modalidade e veja se ela está abaixo, próxima ou acima da média oficial do Banco Central.",
       "calloutLead": "Compare a taxa que te ofereceram com a média oficial do Banco Central para a mesma modalidade.",
       "badge": "Média do Banco Central",
       "aliases": [
@@ -707,13 +707,17 @@
         "taxa média",
         "média do banco central",
         "estou pagando juros demais",
-        "minha taxa está cara"
+        "minha taxa está cara",
+        "3% ao mês é muito",
+        "taxa acima da média",
+        "qual taxa de juros é normal"
       ],
       "keywords": [
         "minha taxa esta alta",
         "juros de 4 ao mes e muito",
         "taxa media banco central",
-        "comparar taxa de juros"
+        "comparar taxa de juros",
+        "taxa de juros acima da media"
       ],
       "tags": [
         "taxa",
@@ -734,7 +738,7 @@
         "comparador-de-propostas",
         "parcela-no-orcamento"
       ],
-      "updatedAt": "2026-08-29"
+      "updatedAt": "2026-09-24"
     },
     {
       "id": "conversor-de-taxas",
