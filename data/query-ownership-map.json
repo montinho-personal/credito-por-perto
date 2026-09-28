@@ -726,5 +726,12 @@
       "/calculadoras/financiamento-veiculo/",
       "/organizacao-financeira/quanto-da-renda-comprometer-financiamento-imovel/"
     ]
+  },
+  "simulador de amortização de financiamento reduzir prazo ou parcela quanto economizo": {
+    "canonicalOwner": "/simuladores/amortizacao-financiamento/",
+    "supportingPages": [
+      "/juros-e-cet/price-ou-sac-sistemas-de-amortizacao/",
+      "/calculadoras/sac-x-price/"
+    ]
   }
 }

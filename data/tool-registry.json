@@ -640,7 +640,7 @@
         "price ou sac"
       ],
       "defaultNextSteps": [
-        "quitacao-antecipada",
+        "amortizacao-financiamento",
         "parcela-no-orcamento"
       ],
       "updatedAt": "2026-09-23"
@@ -738,7 +738,7 @@
         "comparador-de-propostas",
         "parcela-no-orcamento"
       ],
-      "updatedAt": "2026-09-24"
+      "updatedAt": "2026-09-25"
     },
     {
       "id": "conversor-de-taxas",
@@ -932,6 +932,58 @@
       "updatedAt": "2026-09-24"
     },
     {
+      "id": "amortizacao-financiamento",
+      "name": "Simulador de amortização de financiamento",
+      "shortName": "Amortizar financiamento",
+      "route": "/simuladores/amortizacao-financiamento/",
+      "cta": "Simular amortização",
+      "type": "simulador",
+      "category": "financiamentos",
+      "situation": "ja-tenho-divida",
+      "question": "Se eu colocar dinheiro extra no financiamento, quanto tempo e juros deixo de pagar?",
+      "whenItHelps": "Veja quanto um pagamento extra pode reduzir o prazo, a prestação e os juros restantes do seu financiamento.",
+      "calloutLead": "Tem um financiamento e dinheiro extra? Veja a nova data de quitação, a nova prestação e os juros evitados, reduzindo o prazo ou a prestação.",
+      "badge": "Prazo × prestação, com datas",
+      "aliases": [
+        "amortizar financiamento",
+        "amortização extraordinária",
+        "reduzir prazo ou parcela",
+        "amortizar 10 mil",
+        "amortizar todo mês",
+        "usar FGTS para amortizar",
+        "quitar financiamento mais rápido",
+        "amortizar financiamento imobiliário",
+        "antecipar parcelas do financiamento"
+      ],
+      "keywords": [
+        "simulador amortizacao financiamento",
+        "calculadora amortizacao financiamento",
+        "amortizacao extraordinaria",
+        "amortizar reduzir prazo ou parcela",
+        "quanto economizo amortizando"
+      ],
+      "tags": [
+        "simulador",
+        "amortizacao",
+        "financiamento",
+        "sac",
+        "price"
+      ],
+      "triggerTerms": [
+        "amortizar",
+        "amortização extraordinária",
+        "reduzir o prazo",
+        "reduzir a parcela",
+        "amortizar o financiamento"
+      ],
+      "featured": false,
+      "defaultNextSteps": [
+        "quitacao-antecipada",
+        "sac-x-price"
+      ],
+      "updatedAt": "2026-09-28"
+    },
+    {
       "id": "plano-para-sair-das-dividas",
       "name": "Plano para sair das dívidas",
       "shortName": "Plano para sair das dívidas",
@@ -1081,7 +1133,6 @@
         "quitar antecipado",
         "quitação antecipada",
         "antecipar parcelas",
-        "amortizar",
         "saldo devedor"
       ],
       "defaultNextSteps": [

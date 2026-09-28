@@ -427,6 +427,13 @@ export function EarlyPayoffCalculator() {
                   </div>
                 ) : (
                   <div className="space-y-4">
+                    <p className="text-sm leading-relaxed text-brand-text">
+                      É um financiamento longo, de imóvel ou veículo? O{" "}
+                      <Link href="/simuladores/amortizacao-financiamento/" className="font-semibold underline">
+                        simulador de amortização de financiamento
+                      </Link>{" "}
+                      mostra a nova data de quitação, extras mensais ou anuais e quanto amortizar para uma meta.
+                    </p>
                     <div className="grid gap-3 sm:grid-cols-2">
                       <Field id="p-balance" label="Saldo devedor atual (R$)"
                         hint="Quanto ainda está em aberto, segundo a instituição."

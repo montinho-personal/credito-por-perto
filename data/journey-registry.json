@@ -392,6 +392,13 @@
           "optional": false
         },
         {
+          "id": "amortizar",
+          "title": "É um financiamento? Veja o que o valor extra faz com o prazo e a prestação",
+          "toolId": "amortizacao-financiamento",
+          "whyThisStep": "Mostra a nova data de quitação, a nova prestação e os juros evitados, reduzindo o prazo ou a prestação, com aporte único, mensal ou anual.",
+          "optional": true
+        },
+        {
           "id": "rota",
           "title": "E se, em vez de quitar, você pagasse um pouco mais por mês?",
           "toolId": "quando-fico-livre-das-dividas",

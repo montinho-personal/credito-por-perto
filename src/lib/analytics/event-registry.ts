@@ -386,6 +386,16 @@ const TOOL_EVENTS: EventSpec[] = [
   { name: "debt_internal_cta_clicked", group: "ferramenta", description: "Livre das dívidas: próximo passo clicado.", params: ["context", "target"] },
   { name: "debt_example_select", group: "ferramenta", description: "Livre das dívidas: exemplo da página levado ao simulador.", params: ["context", "example"] },
   { name: "debt_journey_copy", group: "ferramenta", description: "Livre das dívidas: cenário copiado (o texto fica no aparelho).", params: ["context"] },
+  { name: "amortization_simulator_view", group: "ferramenta", description: "Amortização: simulador exibido.", params: ["context"] },
+  { name: "amortization_calculated", group: "ferramenta", description: "Amortização: simulação feita (sistema, unidade da taxa, com data, prestação informada, origem do dinheiro, exemplo).", params: ["context", "system", "rate_unit", "has_date", "informed_payment", "origin", "example_used"], keyEvent: true },
+  { name: "amortization_term_scenario", group: "ferramenta", description: "Amortização: cronograma do caminho reduzir prazo aberto.", params: ["context"] },
+  { name: "amortization_payment_scenario", group: "ferramenta", description: "Amortização: cronograma do caminho reduzir prestação aberto.", params: ["context"] },
+  { name: "amortization_extra_monthly_added", group: "ferramenta", description: "Amortização: cenário com extra mensal (efeito escolhido).", params: ["context", "mode"] },
+  { name: "amortization_extra_annual_added", group: "ferramenta", description: "Amortização: cenário com extra anual ou em datas (efeito, tipo).", params: ["context", "mode", "kind"] },
+  { name: "amortization_reverse_goal_used", group: "ferramenta", description: "Amortização: meta reversa calculada (tipo de meta, tipo de resposta).", params: ["context", "goal", "outcome"] },
+  { name: "amortization_fgts_selected", group: "ferramenta", description: "Amortização: origem FGTS escolhida (mostra o aviso de regras).", params: ["context"] },
+  { name: "amortization_internal_cta_clicked", group: "ferramenta", description: "Amortização: próximo passo clicado.", params: ["context", "target"] },
+  { name: "amortization_example_select", group: "ferramenta", description: "Amortização: exemplo da página levado ao simulador.", params: ["context", "example"] },
 
   /* Calculadora de IOF de empréstimo — nenhum valor sai, só categorias */
   { name: "iof_calculator_view", group: "ferramenta", description: "IOF: calculadora exibida.", params: ["context"] },
