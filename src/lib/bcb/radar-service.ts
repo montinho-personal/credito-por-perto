@@ -21,6 +21,7 @@ import { BCB_SERIES_REGISTRY, type BcbSeries } from "./series-registry";
 import {
   fetchSgsRows,
   parseSgsRow,
+  sortRatePoints,
   type RatePoint,
 } from "./rates-service";
 import { computeRadarStats, type RadarStats } from "./radar-insights";
@@ -62,9 +63,9 @@ export function validateRadarPayload(
   rows: unknown,
 ): RatePoint[] | null {
   if (!Array.isArray(rows) || rows.length === 0) return null;
-  const points = rows
-    .map((r) => parseSgsRow(r as { data: string; valor: string }))
-    .filter((p): p is RatePoint => p !== null);
+  const points = sortRatePoints(
+    rows.map((r) => parseSgsRow(r as { data: string; valor: string })).filter((p): p is RatePoint => p !== null),
+  );
   if (points.length === 0) return null;
   const latest = points[points.length - 1]!;
   if (latest.value < series.sanity.min || latest.value > series.sanity.max) return null;

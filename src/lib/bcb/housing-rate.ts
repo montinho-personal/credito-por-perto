@@ -56,7 +56,12 @@ interface SgsRow {
 /** Valida o payload do SGS. Exportada para teste. */
 export function parseHousingRows(rows: unknown, now: Date = new Date()): HousingRateReference | null {
   if (!Array.isArray(rows) || rows.length === 0) return null;
-  const last = rows[rows.length - 1] as SgsRow;
+  // O SGS não garante a ordem das linhas: vale a de data mais recente.
+  const key = (r: SgsRow) => {
+    const m = /^(\d{2})\/(\d{2})\/(\d{4})$/.exec(r?.data ?? "");
+    return m ? `${m[3]}-${m[2]}-${m[1]}` : "";
+  };
+  const last = (rows as SgsRow[]).reduce((best, r) => (key(r) > key(best) ? r : best), rows[0] as SgsRow);
   const match = /^(\d{2})\/(\d{2})\/(\d{4})$/.exec(last?.data ?? "");
   if (!match) return null;
   const value = Number(String(last.valor ?? "").replace(",", "."));

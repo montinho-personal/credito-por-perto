@@ -127,14 +127,30 @@ function parseSgsRow(row: SgsRow): RatePoint | null {
   return { refMonth: `${year}-${month}`, value };
 }
 
+/**
+ * Pontos em ordem cronológica, um por mês de referência.
+ *
+ * O SGS não garante a ordem das linhas: em setembro de 2026 a consulta
+ * `ultimos/N` passou a chegar do mês mais recente para o mais antigo, e o
+ * código, que tomava a última linha como a mais nova, mostrou junho de 2025
+ * como "referência mais recente" enquanto julho de 2026 já estava publicado.
+ * Ordenar aqui torna toda a leitura independente da ordem da resposta. Mês
+ * repetido fica com a última ocorrência.
+ */
+export function sortRatePoints(points: RatePoint[]): RatePoint[] {
+  const byMonth = new Map<string, RatePoint>();
+  for (const p of points) byMonth.set(p.refMonth, p);
+  return [...byMonth.values()].sort((a, b) => a.refMonth.localeCompare(b.refMonth));
+}
+
 function validateSeriesPayload(
   series: BcbSeries,
   rows: unknown,
 ): RatePoint[] | null {
   if (!Array.isArray(rows) || rows.length === 0) return null;
-  const points = rows
-    .map((r) => parseSgsRow(r as SgsRow))
-    .filter((p): p is RatePoint => p !== null);
+  const points = sortRatePoints(
+    rows.map((r) => parseSgsRow(r as SgsRow)).filter((p): p is RatePoint => p !== null),
+  );
   if (points.length === 0) return null;
   const latest = points[points.length - 1]!;
   // Faixa de sanidade: taxa zerada ou absurda indica série errada/quebrada.
