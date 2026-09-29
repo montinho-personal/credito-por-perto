@@ -1288,7 +1288,7 @@
       "type": "consulta",
       "category": "seguranca-e-verificacao",
       "situation": "desconfiei",
-      "question": "Essa empresa aparece no Banco Central?",
+      "question": "Essa financeira é autorizada pelo Banco Central?",
       "whenItHelps": "Pesquise por nome ou CNPJ nos dados oficiais do BC antes de continuar a conversa — registro é o primeiro passo, o contato é o segundo.",
       "calloutLead": "Antes de entregar documento ou dinheiro, confira o nome ou o CNPJ nos dados oficiais do Banco Central.",
       "badge": "Dados oficiais do Banco Central",
@@ -1299,7 +1299,10 @@
         "consultar cnpj",
         "instituição autorizada",
         "essa empresa é do banco central",
-        "financeira autorizada"
+        "financeira autorizada",
+        "financeira autorizada pelo banco central",
+        "financeira é confiável",
+        "consultar cnpj de financeira"
       ],
       "keywords": [
         "consultar financeira banco central",
@@ -1307,7 +1310,8 @@
         "financeira autorizada banco central",
         "consultar cnpj financeira",
         "verificar instituicao financeira",
-        "banco e verdadeiro"
+        "banco e verdadeiro",
+        "como saber se financeira e autorizada"
       ],
       "tags": [
         "banco-central",
@@ -1328,7 +1332,7 @@
         "sinais-de-golpe",
         "comparador-de-propostas"
       ],
-      "updatedAt": "2026-08-29"
+      "updatedAt": "2026-09-29"
     },
     {
       "id": "sinais-de-golpe",

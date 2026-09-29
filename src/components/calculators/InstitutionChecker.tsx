@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useCallback, useEffect, useRef, useState } from "react";
 import { useRevealResult } from "./use-reveal-result";
 import { track } from "@/lib/analytics/track";
+import { formatIsoDate } from "@/lib/calculators/civil-date";
 import {
   isValidCnpj,
   looksLikeCnpj,
@@ -177,7 +178,7 @@ function MatchCard({ match, fetchedAt }: { match: ApiMatch; fetchedAt: string })
         </div>
       </dl>
       <p className="mt-2 text-xs text-brand-muted">
-        Fonte: Banco Central do Brasil. Dados obtidos em {fetchedAt}.
+        Fonte: Banco Central do Brasil. Dados obtidos em {formatIsoDate(fetchedAt)}.
       </p>
       <p className="mt-3 text-sm">
         <a
@@ -426,9 +427,11 @@ export function InstitutionChecker() {
             <p className="mt-2 text-sm leading-relaxed text-brand-text">
               Isso merece verificação adicional, mas <strong>não é suficiente por si só para
               concluir que existe fraude</strong>. O nome informado pode estar diferente da razão
-              social, pode haver erro de digitação — e nem toda empresa que intermedeia uma
-              operação (como um correspondente bancário) aparece nesta base. Nesse caso, confirme
-              quem é a instituição responsável pelo crédito.
+              social ou ser só a marca do aplicativo, pode haver erro de digitação, e nem toda
+              empresa aparece nesta base: correspondentes bancários, que intermedeiam o crédito de
+              uma instituição autorizada, e instituições de pagamento (muitas contas digitais e
+              carteiras) ficam fora dela. Nesse caso, confirme quem é a instituição responsável pelo
+              crédito.
             </p>
             {view.partial ? (
               <p className="mt-2 text-sm leading-relaxed text-brand-text">
@@ -457,7 +460,7 @@ export function InstitutionChecker() {
             </ul>
             <p className="mt-2 text-xs text-brand-muted">
               Base consultada: relação de instituições em funcionamento (Banco Central), obtida em{" "}
-              {view.fetchedAt}.
+              {formatIsoDate(view.fetchedAt)}.
             </p>
             <NextActions found={false} />
           </div>
