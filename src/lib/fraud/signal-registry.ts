@@ -42,7 +42,7 @@ export interface FraudQuestion {
   reviewedAt: string;
 }
 
-const REVIEWED = "2026-08-27";
+const REVIEWED = "2026-09-29";
 
 export const FRAUD_QUESTIONS: readonly FraudQuestion[] = [
   {
@@ -54,14 +54,15 @@ export const FRAUD_QUESTIONS: readonly FraudQuestion[] = [
     severity: "critical",
     signalTitle: "Pediram pagamento antes de liberar o crédito",
     explanation:
-      "Pedido de pagamento antes da liberação do crédito é um sinal importante de alerta e merece verificação antes de qualquer transferência. Instituições autorizadas descontam custos do valor liberado ou os incluem nas parcelas — não pedem depósito para 'soltar' o dinheiro.",
+      "É o roteiro clássico do golpe do empréstimo, e o Banco Central alerta que instituição financeira não pede pagamento antecipado para liberar crédito. Custos legítimos, como IOF, tarifas e seguros contratados, entram na própria operação: são descontados do valor liberado ou incluídos nas parcelas e aparecem no CET. Não saem por Pix ou boleto à parte.",
     recommendedAction:
       "Não transfira nada antes de confirmar a instituição e o canal por conta própria.",
     links: [
-      { label: "Por que o depósito antecipado é o golpe mais comum", href: "/credito-seguro/deposito-antecipado-e-golpe/" },
+      { label: "Depósito antecipado para liberar empréstimo é golpe?", href: "/credito-seguro/deposito-antecipado-e-golpe/" },
+      { label: "Alerta do Banco Central (gov.br)", href: "https://www.gov.br/pt-br/noticias/financas-impostos-e-gestao-publica/2022/04/banco-central-auxilia-cidadao-a-nao-cair-em-golpes-de-falsos-emprestimos-e-a-verificar-se-seu-nome-foi-utilizado-indevidamente-para-contratacao-de-credito-por-um-golpista", external: true },
     ],
     source:
-      "Orientações públicas de prevenção a fraudes (Banco Central e Procons), consolidadas no guia verificado do portal",
+      "Banco Central, alerta sobre falsos empréstimos publicado no gov.br, e guia verificado do portal",
     reviewedAt: REVIEWED,
   },
   {
@@ -266,13 +267,14 @@ export const FRAUD_QUESTIONS: readonly FraudQuestion[] = [
 /** Fluxo de quem JÁ PAGOU — dados centralizados (regras do MED mudam). */
 export const EMERGENCY_FLOW = {
   reviewedAt: REVIEWED,
-  reviewedLabel: "27/08/2026",
+  reviewedLabel: "29/09/2026",
   pixSteps: [
-    "Entre em contato imediatamente com o seu banco pelos canais oficiais — aplicativo, telefone no verso do cartão ou site que você mesmo digitou.",
-    "Informe que acredita ter sido vítima de golpe e peça o registro da contestação da transação.",
-    "Pergunte sobre o MED, o Mecanismo Especial de Devolução do Pix: ele pode ser utilizado nas situações previstas para tentativa de devolução, conforme análise das instituições. Quanto antes o pedido, maiores as chances — e a devolução não é garantida.",
+    "Entre em contato imediatamente com o seu banco pelos canais oficiais: aplicativo, telefone no verso do cartão ou site que você mesmo digitou.",
+    "Conteste o Pix como golpe. O aplicativo do banco deve ter uma opção para isso, sem precisar de atendente; se não achar, peça pelo atendimento oficial.",
+    "Essa contestação aciona o MED, o Mecanismo Especial de Devolução do Pix, que permite pedir a tentativa de devolução em casos de fraude, em até 80 dias da transação. A devolução não é garantida, e quanto antes o pedido, maiores as chances. Pix enviado por engano ou desacordo comercial não entram no MED.",
     "Registre boletim de ocorrência, na delegacia ou pela delegacia eletrônica do seu estado.",
     "Guarde tudo: comprovantes, conversas, números, links e nomes usados na abordagem.",
+    "Não envie novos valores e desconfie de quem aparecer oferecendo recuperar o dinheiro mediante pagamento: costuma ser a mesma quadrilha.",
   ],
   otherSteps: [
     "Entre em contato imediatamente com o seu banco pelos canais oficiais e conteste o pagamento (transferência, boleto ou cartão têm procedimentos próprios).",
@@ -280,6 +282,7 @@ export const EMERGENCY_FLOW = {
     "Registre a reclamação no consumidor.gov.br se houver empresa identificável.",
     "Guarde todos os comprovantes e conversas — são a base de qualquer contestação.",
     "Se você também informou senhas ou códigos, troque-as agora e avise o banco.",
+    "Não envie novos valores e desconfie de quem aparecer oferecendo recuperar o dinheiro mediante pagamento.",
   ],
   accountSteps: [
     "Avise agora o seu banco pelos canais que você já conhece (aplicativo oficial, telefone no verso do cartão ou site digitado por você) e peça o bloqueio preventivo do acesso.",

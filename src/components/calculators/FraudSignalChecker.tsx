@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useRef, useState } from "react";
 import { useRevealResult } from "./use-reveal-result";
 import { track } from "@/lib/analytics/track";
+import { formatIsoDate } from "@/lib/calculators/civil-date";
 import {
   EMERGENCY_FLOW,
   FRAUD_QUESTIONS,
@@ -346,7 +347,7 @@ export function FraudSignalChecker() {
                     )}
                   </p>
                   <p className="mt-2 text-xs text-brand-muted">
-                    Base: {signal.source}. Revisado em {signal.reviewedAt}.
+                    Base: {signal.source}. Revisado em {formatIsoDate(signal.reviewedAt)}.
                   </p>
                 </article>
               ))}

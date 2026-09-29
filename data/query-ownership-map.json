@@ -733,5 +733,18 @@
       "/juros-e-cet/price-ou-sac-sistemas-de-amortizacao/",
       "/calculadoras/sac-x-price/"
     ]
+  },
+  "empresa existe no banco central ou tem CNPJ mas o contato é golpe": {
+    "canonicalOwner": "/calculadoras/sinais-de-golpe/",
+    "supportingPages": [
+      "/calculadoras/consultar-instituicao/",
+      "/credito-seguro/como-consultar-se-instituicao-e-autorizada/"
+    ]
+  },
+  "pediram pix ou taxa para liberar empréstimo verificar a proposta agora": {
+    "canonicalOwner": "/calculadoras/sinais-de-golpe/",
+    "supportingPages": [
+      "/credito-seguro/deposito-antecipado-e-golpe/"
+    ]
   }
 }

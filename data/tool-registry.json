@@ -1339,8 +1339,8 @@
       "type": "verificador",
       "category": "seguranca-e-verificacao",
       "situation": "desconfiei",
-      "question": "Essa proposta tem sinais de golpe?",
-      "whenItHelps": "Pediram Pix para liberar o dinheiro? Responda perguntas rápidas e veja os sinais de alerta antes de enviar valores ou dados.",
+      "question": "Como saber se essa proposta de empréstimo é golpe?",
+      "whenItHelps": "Pediram Pix, taxa ou depósito para liberar o dinheiro? Responda perguntas rápidas e veja o que verificar antes de pagar ou passar dados.",
       "calloutLead": "Se alguma parte da conversa te deixou desconfortável, passe a proposta pela verificação de sinais.",
       "badge": "Perguntas rápidas",
       "aliases": [
@@ -1350,14 +1350,23 @@
         "é golpe",
         "empréstimo falso",
         "whatsapp",
-        "falsa central"
+        "falsa central",
+        "taxa para liberar empréstimo",
+        "IOF antecipado",
+        "seguro para liberar empréstimo",
+        "empresa tem CNPJ",
+        "eles sabem meu CPF",
+        "fiz Pix para golpista",
+        "MED Pix"
       ],
       "keywords": [
         "emprestimo e golpe",
         "pediram pix para liberar emprestimo",
         "taxa para liberar emprestimo",
         "golpe emprestimo whatsapp",
-        "financeira falsa"
+        "financeira falsa",
+        "como saber se emprestimo e golpe",
+        "golpe do emprestimo"
       ],
       "tags": [
         "golpe",
@@ -1377,7 +1386,7 @@
       "defaultNextSteps": [
         "consultar-instituicao"
       ],
-      "updatedAt": "2026-08-29"
+      "updatedAt": "2026-09-29"
     }
   ]
 }
