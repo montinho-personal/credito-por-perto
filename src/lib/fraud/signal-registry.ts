@@ -48,11 +48,11 @@ export const FRAUD_QUESTIONS: readonly FraudQuestion[] = [
   {
     id: "upfront-payment",
     question: "Pediram algum valor antes de liberar o empréstimo?",
-    hint: "Qualquer nome vale: taxa de liberação, cadastro, seguro, imposto, desbloqueio, caução.",
+    hint: "Qualquer nome vale: taxa de liberação, de cadastro ou de desbloqueio, IOF “antecipado”, seguro, caução, taxa de cartório, depósito de garantia. Por Pix, boleto ou transferência.",
     options: ["yes", "no", "unsure"],
     trigger: ["yes"],
     severity: "critical",
-    signalTitle: "Pagamento antecipado solicitado",
+    signalTitle: "Pediram pagamento antes de liberar o crédito",
     explanation:
       "Pedido de pagamento antes da liberação do crédito é um sinal importante de alerta e merece verificação antes de qualquer transferência. Instituições autorizadas descontam custos do valor liberado ou os incluem nas parcelas — não pedem depósito para 'soltar' o dinheiro.",
     recommendedAction:
@@ -135,16 +135,17 @@ export const FRAUD_QUESTIONS: readonly FraudQuestion[] = [
     reviewedAt: REVIEWED,
   },
   {
-    id: "personal-account",
-    question: "Pediram pagamento para uma conta em nome de pessoa física?",
+    id: "recipient-mismatch",
+    question: "O Pix, boleto ou conta indicada está em nome de outra pessoa ou empresa, diferente de quem ofereceu o crédito?",
+    hint: "Veja o nome do recebedor na tela de confirmação do Pix ou no boleto, sem concluir o pagamento.",
     options: ["yes", "no", "unsure"],
     trigger: ["yes"],
     severity: "high",
-    signalTitle: "Pagamento para conta de pessoa física",
+    signalTitle: "Recebedor diferente da instituição",
     explanation:
-      "Instituições financeiras recebem em contas da própria empresa. Boleto ou Pix em nome de uma pessoa física, num suposto empréstimo empresarial, merece verificação redobrada antes de qualquer envio.",
+      "Instituições financeiras recebem em contas da própria empresa. Pix, boleto ou conta em nome de uma pessoa física ou de outra empresa é um jeito comum de desviar o dinheiro para longe da marca que aparece na conversa.",
     recommendedAction:
-      "Confira o beneficiário com calma e não pague antes de confirmar a instituição pelos canais oficiais.",
+      "Não pague. Confirme a proposta direto com a instituição, pelo canal oficial que você mesmo encontrar.",
     links: [
       { label: "O roteiro completo do depósito antecipado", href: "/credito-seguro/deposito-antecipado-e-golpe/" },
     ],
@@ -169,6 +170,43 @@ export const FRAUD_QUESTIONS: readonly FraudQuestion[] = [
       { label: "Consultar no Banco Central", href: "https://www.bcb.gov.br/meubc/encontreinstituicao", external: true },
     ],
     source: "Banco Central — consulta pública 'Encontre uma instituição'",
+    reviewedAt: REVIEWED,
+  },
+  {
+    id: "official-channel",
+    question: "Você confirmou a proposta por um canal oficial que você mesmo encontrou?",
+    hint: "App da instituição baixado da loja oficial, site digitado por você ou telefone do cartão. Número ou link enviado pelo próprio contato não vale.",
+    options: ["yes", "no", "unsure"],
+    trigger: ["no", "unsure"],
+    severity: "medium",
+    signalTitle: "Contato ainda não confirmado",
+    explanation:
+      "A instituição existir não prova que a pessoa, o WhatsApp ou o site pertençam a ela. Golpistas usam nome, logotipo, CNPJ, contrato em PDF e até dados verdadeiros seus para parecer legítimos. Só o canal oficial encontrado por você confirma que a proposta é da instituição.",
+    recommendedAction:
+      "Procure o canal oficial por conta própria e pergunte se a proposta existe. Não ligue para um número passado pelo mesmo contato.",
+    links: [
+      { label: "Verificar a instituição por nome ou CNPJ", href: "/calculadoras/consultar-instituicao/" },
+      { label: "O golpe da falsa central do banco", href: "/credito-seguro/golpe-da-falsa-central/" },
+    ],
+    source: "Guia verificado do portal sobre golpes de empréstimo e falsa central",
+    reviewedAt: REVIEWED,
+  },
+  {
+    id: "public-body",
+    question: "Disseram falar em nome de governo, órgão público ou programa oficial?",
+    hint: "Ex.: renegociação “do governo”, INSS, Receita, programa de crédito ou de limpeza de nome.",
+    options: ["yes", "no", "unsure"],
+    trigger: ["yes"],
+    severity: "medium",
+    signalTitle: "Uso do nome de órgão ou programa público",
+    explanation:
+      "Nome de governo, órgão ou programa oficial dá aparência de seriedade e é usado com frequência para pedir dados ou pagamento. Programas públicos têm páginas próprias em domínios oficiais (gov.br), onde as regras e os canais podem ser conferidos.",
+    recommendedAction:
+      "Procure o programa no site oficial, digitando o endereço gov.br você mesmo, e confira se a oferta e o canal existem lá.",
+    links: [
+      { label: "Como identificar golpes de empréstimo", href: "/credito-seguro/como-identificar-golpes-de-emprestimo/" },
+    ],
+    source: "Guia verificado do portal sobre golpes de empréstimo",
     reviewedAt: REVIEWED,
   },
   {
@@ -228,6 +266,7 @@ export const FRAUD_QUESTIONS: readonly FraudQuestion[] = [
 /** Fluxo de quem JÁ PAGOU — dados centralizados (regras do MED mudam). */
 export const EMERGENCY_FLOW = {
   reviewedAt: REVIEWED,
+  reviewedLabel: "27/08/2026",
   pixSteps: [
     "Entre em contato imediatamente com o seu banco pelos canais oficiais — aplicativo, telefone no verso do cartão ou site que você mesmo digitou.",
     "Informe que acredita ter sido vítima de golpe e peça o registro da contestação da transação.",
@@ -241,6 +280,13 @@ export const EMERGENCY_FLOW = {
     "Registre a reclamação no consumidor.gov.br se houver empresa identificável.",
     "Guarde todos os comprovantes e conversas — são a base de qualquer contestação.",
     "Se você também informou senhas ou códigos, troque-as agora e avise o banco.",
+  ],
+  accountSteps: [
+    "Avise agora o seu banco pelos canais que você já conhece (aplicativo oficial, telefone no verso do cartão ou site digitado por você) e peça o bloqueio preventivo do acesso.",
+    "Se instalou um aplicativo a pedido do contato, desinstale-o e, se puder, desligue o aparelho da internet enquanto resolve.",
+    "Troque senhas do banco e do e-mail a partir de outro aparelho, e revise se há dispositivos ou chaves Pix novos na sua conta.",
+    "Não envie novos valores e não repasse outros códigos, mesmo que alguém ligue dizendo ser do banco ou da polícia.",
+    "Guarde conversas, números e links, registre boletim de ocorrência e acompanhe no Registrato do Banco Central se surgem contratos que você não fez.",
   ],
   medSource: {
     label: "Guia oficial do MED (Banco Central)",

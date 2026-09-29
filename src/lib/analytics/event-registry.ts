@@ -431,6 +431,8 @@ const TOOL_EVENTS: EventSpec[] = [
   { name: "fraud_check_start", group: "ferramenta", description: "Verificação de golpe: primeira resposta.", params: [] },
   { name: "fraud_check_complete", group: "ferramenta", description: "Verificação de golpe: veredito exibido.", params: ["level"], keyEvent: true },
   { name: "fraud_check_bcb_click", group: "ferramenta", description: "Verificação de golpe: ida à consulta do Banco Central.", params: [] },
+  { name: "fraud_check_paid_selected", group: "ferramenta", description: "Verificação de golpe: abriu o passo a passo de quem já pagou ou já passou código/acesso (sem dizer qual).", params: [] },
+  { name: "fraud_check_early_result", group: "ferramenta", description: "Verificação de golpe: resultado visto antes da última pergunta.", params: [] },
 
   /* Consulta de instituição */
   { name: "institution_check_start", group: "ferramenta", description: "Consulta de instituição: busca iniciada.", params: [] },

@@ -10,9 +10,9 @@ import {
 } from "../src/lib/fraud/signal-registry";
 
 describe("registro de sinais", () => {
-  it("tem entre 7 e 10 perguntas, todas com fonte, ação e revisão datada", () => {
+  it("tem entre 7 e 12 perguntas, todas com fonte, ação e revisão datada", () => {
     expect(FRAUD_QUESTIONS.length).toBeGreaterThanOrEqual(7);
-    expect(FRAUD_QUESTIONS.length).toBeLessThanOrEqual(10);
+    expect(FRAUD_QUESTIONS.length).toBeLessThanOrEqual(12);
     for (const q of FRAUD_QUESTIONS) {
       expect(q.source.length).toBeGreaterThan(10);
       expect(q.recommendedAction.length).toBeGreaterThan(10);
@@ -51,17 +51,19 @@ describe("casos A–J do escopo", () => {
     expect(HEADLINE_COPY[r.headline].body).toMatch(/Nenhum sinal isolado prova/);
   });
 
-  it("B: pediram Pix para liberar → sinal importante, manchete de parada", () => {
+  it("B: pediram Pix para liberar → sinal muito forte, manchete 'não pague ainda'", () => {
     const r = evaluateAnswers({ "upfront-payment": "yes" });
-    expect(r.headline).toBe("critical");
+    expect(r.headline).toBe("upfront");
     expect(r.signals[0]!.id).toBe("upfront-payment");
-    expect(HEADLINE_COPY.critical.title).toMatch(/Pare antes/);
+    expect(SEVERITY_LABEL[r.signals[0]!.severity]).toBe("Sinal muito forte");
+    expect(HEADLINE_COPY.upfront.title).toMatch(/Não pague ainda/);
   });
 
   it("C: pediram código SMS → prioridade máxima na ordenação", () => {
     const r = evaluateAnswers({ credentials: "yes", "whatsapp-only": "yes" });
     expect(r.signals[0]!.id).toBe("credentials");
-    expect(r.headline).toBe("critical");
+    expect(r.headline).toBe("credentials");
+    expect(HEADLINE_COPY.credentials.title).toMatch(/Não compartilhe/);
   });
 
   it("F: instituição existe no BC mas contato não confirmado → explica a diferença", () => {
@@ -78,8 +80,10 @@ describe("casos A–J do escopo", () => {
       "remote-access": "no",
       "guaranteed-approval": "no",
       pressure: "no",
-      "personal-account": "no",
+      "recipient-mismatch": "no",
       "institution-check": "yes",
+      "official-channel": "yes",
+      "public-body": "no",
       unsolicited: "no",
       "whatsapp-only": "no",
       "too-good": "no",
@@ -98,7 +102,7 @@ describe("casos A–J do escopo", () => {
       pressure: "yes",
       "whatsapp-only": "yes",
     });
-    expect(r.headline).toBe("critical");
+    expect(r.headline).toBe("upfront");
     expect(r.signals).toHaveLength(5);
     const text = HEADLINE_COPY[r.headline].title + HEADLINE_COPY[r.headline].body;
     expect(text).not.toMatch(/%|100|certeza/);
@@ -107,7 +111,7 @@ describe("casos A–J do escopo", () => {
   it("I: apenas WhatsApp → tom informativo, rótulo leve", () => {
     const r = evaluateAnswers({ "whatsapp-only": "yes" });
     expect(r.headline).toBe("some_signals");
-    expect(SEVERITY_LABEL[r.signals[0]!.severity]).toBe("Contexto");
+    expect(SEVERITY_LABEL[r.signals[0]!.severity]).toMatch(/^Contexto/);
     expect(r.signals[0]!.explanation).toMatch(/não significa fraude/);
   });
 
@@ -139,5 +143,33 @@ describe("casos D/E — fluxo de quem já pagou", () => {
     expect(text).not.toMatch(/MED/);
     expect(text).toMatch(/conteste o pagamento/);
     expect(text).toMatch(/consumidor\.gov\.br/);
+  });
+});
+
+describe("identidade: empresa real ≠ contato real", () => {
+  it("instituição confirmada mas contato não confirmado → sinal de verificação do contato", () => {
+    const r = evaluateAnswers({ "institution-check": "yes", "official-channel": "no" });
+    expect(r.signals.map((s) => s.id)).toEqual(["official-channel"]);
+    expect(r.signals[0]!.explanation).toMatch(/não prova que a pessoa/);
+    expect(r.signals[0]!.explanation).toMatch(/dados verdadeiros/);
+  });
+
+  it("recebedor diferente da instituição é sinal importante", () => {
+    const r = evaluateAnswers({ "recipient-mismatch": "yes" });
+    expect(r.signals[0]!.severity).toBe("high");
+  });
+
+  it("resultado parcial informa quantas perguntas foram respondidas", () => {
+    const r = evaluateAnswers({ "upfront-payment": "yes" });
+    expect(r.answered).toBe(1);
+  });
+});
+
+describe("fluxo de quem passou código ou acesso", () => {
+  it("manda proteger as contas pelo canal oficial, sem pedir mais respostas", () => {
+    const text = EMERGENCY_FLOW.accountSteps.join(" ");
+    expect(EMERGENCY_FLOW.accountSteps[0]).toMatch(/banco/);
+    expect(text).toMatch(/senha/i);
+    expect(text).not.toMatch(/MED/);
   });
 });

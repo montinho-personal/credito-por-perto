@@ -27,9 +27,9 @@ const ANSWER_LABEL: Record<AnswerValue, string> = {
 type Stage =
   | { kind: "triage" }
   | { kind: "paid-method" }
-  | { kind: "emergency"; method: "pix" | "other" }
+  | { kind: "emergency"; method: "pix" | "other" | "account" }
   | { kind: "quiz"; index: number }
-  | { kind: "result" };
+  | { kind: "result"; from: number };
 
 function BigOption({
   label,
@@ -70,10 +70,23 @@ export function FraudSignalChecker() {
     if (index + 1 < FRAUD_QUESTIONS.length) {
       setStage({ kind: "quiz", index: index + 1 });
     } else {
-      setStage({ kind: "result" });
+      setStage({ kind: "result", from: index });
       track("fraud_check_complete");
       reveal();
     }
+  }
+
+  /** Parar a qualquer momento e ver o que as respostas já mostram. */
+  function resultNow(index: number) {
+    setStage({ kind: "result", from: index });
+    track("fraud_check_early_result");
+    reveal();
+  }
+
+  function openEmergency(method: "pix" | "other" | "account") {
+    setStage({ kind: "emergency", method });
+    track("fraud_check_paid_selected");
+    reveal();
   }
 
   function back() {
@@ -83,9 +96,9 @@ export function FraudSignalChecker() {
     } else if (stage.kind === "paid-method") {
       setStage({ kind: "triage" });
     } else if (stage.kind === "emergency") {
-      setStage({ kind: "paid-method" });
+      setStage(stage.method === "account" ? { kind: "triage" } : { kind: "paid-method" });
     } else if (stage.kind === "result") {
-      setStage({ kind: "quiz", index: FRAUD_QUESTIONS.length - 1 });
+      setStage({ kind: "quiz", index: stage.from });
     }
   }
 
@@ -98,6 +111,8 @@ export function FraudSignalChecker() {
   const headline = evaluation ? HEADLINE_COPY[evaluation.headline] : null;
   const currentQuestion = stage.kind === "quiz" ? FRAUD_QUESTIONS[stage.index] : undefined;
   const currentIndex = stage.kind === "quiz" ? stage.index : 0;
+  const answeredSoFar = stage.kind === "quiz" ? FRAUD_QUESTIONS.slice(0, stage.index).filter((q) => answers[q.id] !== undefined) : [];
+  const criticalSoFar = answeredSoFar.filter((q) => q.severity === "critical" && q.trigger.includes(answers[q.id]!));
 
   return (
     <section
@@ -132,6 +147,14 @@ export function FraudSignalChecker() {
                   setStage({ kind: "paid-method" });
                 }}
               />
+              <BigOption
+                label="Não paguei, mas passei senha ou código, ou instalei um aplicativo"
+                hint="Informei senha, token, código por SMS ou deixei acessar meu celular."
+                onClick={() => {
+                  start();
+                  openEmergency("account");
+                }}
+              />
             </div>
           </fieldset>
         ) : null}
@@ -142,10 +165,10 @@ export function FraudSignalChecker() {
               O pagamento foi por Pix?
             </legend>
             <div className="mt-3 space-y-3">
-              <BigOption label="Sim, foi Pix" onClick={() => setStage({ kind: "emergency", method: "pix" })} />
+              <BigOption label="Sim, foi Pix" onClick={() => openEmergency("pix")} />
               <BigOption
-                label="Não — transferência, boleto, cartão ou outro"
-                onClick={() => setStage({ kind: "emergency", method: "other" })}
+                label="Não: transferência, boleto, cartão ou outro"
+                onClick={() => openEmergency("other")}
               />
             </div>
             <button type="button" onClick={back} className="mt-4 text-sm font-medium text-brand-muted underline">
@@ -156,14 +179,16 @@ export function FraudSignalChecker() {
 
         {stage.kind === "emergency" ? (
           <div>
-            <h3 tabIndex={-1} className="font-serif text-xl font-bold text-brand-navy">
-              Já enviou dinheiro? Aja o quanto antes.
+            <h3 data-result-heading tabIndex={-1} className="font-serif text-xl font-bold text-brand-navy">
+              {stage.method === "account" ? "Proteja suas contas agora" : "Já enviou dinheiro? Aja o quanto antes."}
             </h3>
             <p className="mt-2 text-sm leading-relaxed text-brand-text">
-              O momento de avaliar acabou — agora é hora de agir. Os passos, em ordem:
+              {stage.method === "account"
+                ? "Isso não é mais só avaliar a proposta: é proteger o acesso ao seu dinheiro. Os passos, em ordem:"
+                : "Agora não é hora de responder perguntas, e sim de agir. Os passos, em ordem:"}
             </p>
             <ol className="mt-3 list-decimal space-y-2.5 pl-5 text-sm leading-relaxed text-brand-text">
-              {(stage.method === "pix" ? EMERGENCY_FLOW.pixSteps : EMERGENCY_FLOW.otherSteps).map(
+              {(stage.method === "pix" ? EMERGENCY_FLOW.pixSteps : stage.method === "account" ? EMERGENCY_FLOW.accountSteps : EMERGENCY_FLOW.otherSteps).map(
                 (step) => (
                   <li key={step.slice(0, 40)}>{step}</li>
                 ),
@@ -185,7 +210,7 @@ export function FraudSignalChecker() {
                 >
                   {EMERGENCY_FLOW.medSource.label}
                 </a>
-                . Orientações revisadas em 27/08/2026.
+                . Informações verificadas em {EMERGENCY_FLOW.reviewedLabel}.
               </p>
             ) : null}
             <div className="mt-4 flex flex-wrap gap-3">
@@ -216,6 +241,18 @@ export function FraudSignalChecker() {
             {currentQuestion.hint ? (
               <p className="mt-1 text-sm text-brand-muted">{currentQuestion.hint}</p>
             ) : null}
+            {criticalSoFar.length > 0 ? (
+              <div role="note" className="mt-3 rounded-xl border border-brand-danger/40 bg-white p-4 text-sm leading-relaxed text-brand-text">
+                <p className="font-bold text-brand-navy">Antes de continuar: não pague nada e não informe códigos.</p>
+                <p className="mt-1">
+                  Uma das suas respostas já é um sinal muito forte ({criticalSoFar[0]!.signalTitle.toLowerCase()}). Você pode seguir
+                  respondendo ou ver agora o que fazer.
+                </p>
+                <button type="button" onClick={() => resultNow(currentIndex)} className="mt-2 min-h-11 font-semibold text-brand-teal-dark underline">
+                  Ver o que fazer agora
+                </button>
+              </div>
+            ) : null}
             <div className="mt-3 space-y-3">
               {currentQuestion.options.map((option) => (
                 <BigOption
@@ -225,9 +262,16 @@ export function FraudSignalChecker() {
                 />
               ))}
             </div>
-            <button type="button" onClick={back} className="mt-4 text-sm font-medium text-brand-muted underline">
-              ← Voltar
-            </button>
+            <div className="mt-4 flex flex-wrap gap-x-5 gap-y-2">
+              <button type="button" onClick={back} className="min-h-11 text-sm font-medium text-brand-muted underline">
+                ← Voltar
+              </button>
+              {currentIndex > 0 && criticalSoFar.length === 0 ? (
+                <button type="button" onClick={() => resultNow(currentIndex)} className="min-h-11 text-sm font-medium text-brand-teal-dark underline">
+                  Ver resultado com o que já respondi
+                </button>
+              ) : null}
+            </div>
           </fieldset>
         ) : null}
 
@@ -240,10 +284,11 @@ export function FraudSignalChecker() {
             <p className="mt-2 text-base leading-relaxed text-brand-text">{headline.body}</p>
             {evaluation.signals.length > 0 ? (
               <p className="mt-2 text-sm text-brand-muted">
-                {evaluation.signals.length === 1
-                  ? "Encontramos 1 ponto que merece atenção."
-                  : `Encontramos ${evaluation.signals.length} pontos que merecem atenção.`}
+                {evaluation.signals.length === 1 ? "O que encontramos: 1 ponto, explicado abaixo." : `O que encontramos: ${evaluation.signals.length} pontos, do mais sério para o mais leve.`}
+                {evaluation.answered < FRAUD_QUESTIONS.length ? ` Você respondeu ${evaluation.answered} de ${FRAUD_QUESTIONS.length} perguntas.` : ""}
               </p>
+            ) : evaluation.answered < FRAUD_QUESTIONS.length ? (
+              <p className="mt-2 text-sm text-brand-muted">Você respondeu {evaluation.answered} de {FRAUD_QUESTIONS.length} perguntas: as outras não foram avaliadas.</p>
             ) : null}
 
             <div className="mt-5 space-y-4">
@@ -270,9 +315,11 @@ export function FraudSignalChecker() {
                   <h3 className="mt-1 font-serif text-lg font-bold text-brand-navy">
                     {signal.signalTitle}
                   </h3>
-                  <p className="mt-2 text-sm leading-relaxed text-brand-text">{signal.explanation}</p>
                   <p className="mt-2 text-sm leading-relaxed text-brand-text">
-                    <strong>Antes de continuar:</strong> {signal.recommendedAction}
+                    <strong>Por que chama atenção:</strong> {signal.explanation}
+                  </p>
+                  <p className="mt-2 text-sm leading-relaxed text-brand-text">
+                    <strong>O que fazer agora:</strong> {signal.recommendedAction}
                   </p>
                   <p className="mt-2 text-sm">
                     {signal.links.map((link) =>
@@ -307,11 +354,11 @@ export function FraudSignalChecker() {
 
             <div className="mt-6 rounded-xl border border-brand-border bg-white p-5">
               <h3 className="font-serif text-lg font-bold text-brand-navy">
-                Antes de continuar qualquer conversa
+                A regra dos 2 testes, antes de qualquer pagamento
               </h3>
               <ul className="mt-2 list-disc space-y-1.5 pl-5 text-sm leading-relaxed text-brand-text">
                 <li>
-                  <strong>Verifique a instituição no Banco Central</strong> —{" "}
+                  <strong>Teste 1: a empresa existe e é autorizada?</strong>{" "}
                   <Link
                     href="/calculadoras/consultar-instituicao/"
                     className="font-semibold underline"
@@ -328,14 +375,14 @@ export function FraudSignalChecker() {
                   >
                     Encontre uma instituição
                   </a>
-                  . Lembre: encontrar a instituição no BC não confirma que quem falou com você a
-                  representa;
+                  . Isso confirma a empresa, não quem falou com você;
                 </li>
                 <li>
-                  Procure os canais oficiais por conta própria — nunca confirme a oferta pelo mesmo
-                  número que a enviou;
+                  <strong>Teste 2: esse contato é mesmo dela?</strong> Procure o app, o site ou o telefone
+                  oficial por conta própria e pergunte se a proposta existe. Nunca confirme pelo mesmo
+                  número que enviou a oferta;
                 </li>
-                <li>Não pague nada e não informe códigos antes dessas confirmações.</li>
+                <li>Até passar nos dois testes: não pague nada e não informe códigos.</li>
               </ul>
             </div>
 
