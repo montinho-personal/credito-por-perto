@@ -1124,7 +1124,11 @@
         "antecipar parcelas",
         "desconto para quitar",
         "calculadora saldo devedor",
-        "quitar empréstimo hoje"
+        "quitar empréstimo hoje",
+        "quitação antecipada consignado",
+        "quitar financiamento de carro",
+        "como calcular quitação antecipada",
+        "desconto por antecipação"
       ],
       "keywords": [
         "calculadora quitacao antecipada",
@@ -1133,7 +1137,9 @@
         "saldo para quitacao",
         "quanto custa quitar emprestimo hoje",
         "antecipar parcelas do emprestimo",
-        "saldo devedor para quitacao"
+        "saldo devedor para quitacao",
+        "calculadora de quitacao antecipada de emprestimo",
+        "como calcular quitacao antecipada"
       ],
       "tags": [
         "quitacao-antecipada",
@@ -1151,7 +1157,7 @@
         "plano-para-sair-das-dividas",
         "trocar-divida"
       ],
-      "updatedAt": "2026-08-29"
+      "updatedAt": "2026-09-30"
     },
     {
       "id": "trocar-divida",
