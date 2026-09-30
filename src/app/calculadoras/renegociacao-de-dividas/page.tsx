@@ -7,9 +7,9 @@ import { Breadcrumbs } from "@/components/layout/Breadcrumbs";
 import { RenegotiationCalculator } from "@/components/calculators/RenegotiationCalculator";
 
 export const metadata: Metadata = buildMetadata({
-  title: "Calculadora de Renegociação de Dívidas — compare acordos",
+  title: "Calculadora de renegociação de dívidas: compare acordos",
   description:
-    "Compare propostas de acordo: entrada, parcelas, prazo e valor total. Veja a diferença entre pagar à vista e parcelado e confira o desconto anunciado. Sem cadastro.",
+    "Recebeu proposta de acordo? Some entrada, parcelas e custos, compare à vista e parcelado e confira o desconto anunciado. Sem cadastro.",
   path: "/calculadoras/renegociacao-de-dividas/",
 });
 
@@ -21,8 +21,8 @@ export default function RenegociacaoPage() {
       className="mx-auto max-w-5xl px-4 py-8">
       <JsonLd
         data={webPageJsonLd(
-          "Calculadora de Renegociação de Dívidas",
-          "Compare propostas de acordo — à vista, com entrada ou parceladas — e veja quanto cada uma custa no total, sem recomendação de aceitar ou recusar.",
+          "Calculadora de renegociação de dívidas: compare acordos",
+          "Recebeu proposta de acordo? Some entrada, parcelas e custos, compare à vista e parcelado e confira o desconto anunciado. Sem cadastro.",
           "/calculadoras/renegociacao-de-dividas/",
         )}
       />
@@ -42,10 +42,11 @@ export default function RenegociacaoPage() {
           Compare propostas de acordo e veja quanto você realmente pagaria à vista ou
           parcelado.{" "}
           <strong>
-            O desconto anunciado não responde quanto sai do seu bolso até o fim
+            O desconto anunciado não responde quanto sai do seu bolso até o fim;
           </strong>{" "}
-          — entrada, parcela, prazo e total, sim. Coloque as condições lado a lado antes de
-          fechar.
+          entrada, parcela, prazo e total, sim. Coloque as condições lado a lado antes de
+          fechar, seja numa negociação direta com o credor, num feirão ou num programa de
+          renegociação.
         </p>
       </header>
 
@@ -61,14 +62,40 @@ export default function RenegociacaoPage() {
           </strong>{" "}
           É só isso, e é justamente o número que a proposta costuma não mostrar em destaque.
           O erro mais comum é olhar &ldquo;18 × R$ 340&rdquo;, chegar a R$ 6.120 e esquecer
-          a entrada de R$ 1.000 — o acordo custa R$ 7.120, não R$ 6.120.
+          a entrada de R$ 1.000: o acordo custa R$ 7.120, não R$ 6.120.
+        </p>
+
+        <h2 id="desenrola">Esta é a calculadora do Desenrola?</h2>
+        <p>
+          Não. Esta calculadora é independente e serve para qualquer proposta de acordo, inclusive
+          as feitas dentro de programas do governo: você informa o que a proposta diz e ela soma e
+          compara. Quem pode aderir a um programa, com que juros e por quanto tempo são regras do
+          próprio programa. A situação do Novo Desenrola que verificamos, com as datas e as fontes,
+          está em{" "}
+          <Link href="/calculadoras/plano-para-sair-das-dividas/#plano-do-governo">
+            qual é o plano do governo para quitar dívidas
+          </Link>
+          ; confira no gov.br se ele está aberto antes de contar com as condições.
+        </p>
+
+        <h2 id="juros-multa-atraso">Dá para calcular juros e multa por atraso aqui?</h2>
+        <p>
+          Não: esta ferramenta compara acordos, não atualiza a dívida atrasada. Os encargos de
+          atraso vêm do contrato: juros de mora, multa e atualização. Em contratos de consumo com
+          crédito, a multa de mora é limitada a 2% do valor da prestação pelo Código de Defesa do
+          Consumidor (art. 52, §1º). O que acontece a cada fase do atraso está em{" "}
+          <Link href="/organizacao-financeira/o-que-acontece-ao-atrasar-parcela/">
+            o que acontece ao atrasar uma parcela
+          </Link>
+          . Para correção monetária de valores por índice oficial, o Banco Central mantém a
+          Calculadora do Cidadão.
         </p>
 
         <h2 id="desconto-sobre-o-que">
           &ldquo;70% de desconto&rdquo; significa o quê?
         </h2>
         <p>
-          Significa uma redução <em>sobre alguma base</em> — e a base muda tudo. Um desconto
+          Significa uma redução <em>sobre alguma base</em>, e a base muda tudo. Um desconto
           anunciado pode estar calculado sobre o saldo atualizado com encargos, sobre o saldo
           contábil do credor ou sobre outro valor que você não vê. Por isso esta calculadora
           nunca diz &ldquo;desconto de X%&rdquo; sozinho: ela diz{" "}
@@ -96,14 +123,14 @@ export default function RenegociacaoPage() {
           Não existe resposta única, e a ferramenta não escolhe por você. O que ela mostra é
           o trade-off real: o pagamento à vista costuma somar menos no total, mas exige todo
           o dinheiro de uma vez; o parcelamento alivia o mês e quase sempre aumenta o total.
-          A pergunta que decide não é aritmética — é se o desembolso único cabe sem
-          desmontar sua reserva e sem criar uma dívida nova mais cara.
+          A pergunta que decide não é aritmética: é se o desembolso único cabe sem desmontar sua
+          reserva e sem criar uma dívida nova mais cara.
         </p>
 
         <h2 id="parcela-menor">Por que a parcela menor pode custar mais?</h2>
         <p>
           Porque parcela e total são números diferentes. Uma proposta de 36 × R$ 245 tem
-          parcela mais leve que 18 × R$ 340, mas soma R$ 8.820 contra R$ 7.120 — R$ 1.700 a
+          parcela mais leve que 18 × R$ 340, mas soma R$ 8.820 contra R$ 7.120: R$ 1.700 a
           mais. Comparar acordos pela parcela é o erro que mais custa caro em renegociação, e
           é exatamente o que esta calculadora existe para evitar. Se a dúvida é se a parcela
           cabe, use a{" "}
@@ -115,7 +142,7 @@ export default function RenegociacaoPage() {
 
         <h2 id="entrada">A entrada reduz o custo total?</h2>
         <p>
-          Ela reduz o valor financiado, o que costuma reduzir o total do acordo — mas isso
+          Ela reduz o valor financiado, o que costuma reduzir o total do acordo, mas isso
           só aparece quando você soma entrada e parcelas na mesma conta. Uma entrada alta com
           parcelas longas pode custar mais que uma entrada menor com prazo curto. Compare os
           totais, nunca as parcelas isoladas.
@@ -140,7 +167,7 @@ export default function RenegociacaoPage() {
 
         <h2 id="atrasar-acordo">O que acontece se eu atrasar uma parcela do acordo?</h2>
         <p>
-          Depende do que foi acordado — e essa não é uma resposta evasiva. Se houve{" "}
+          Depende do que foi acordado, e essa não é uma resposta evasiva. Se houve{" "}
           <strong>novação</strong>, a dívida anterior se extingue e é substituída pela nova (
           <a
             href="https://www.planalto.gov.br/ccivil_03/leis/2002/l10406compilada.htm"

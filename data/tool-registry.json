@@ -1072,7 +1072,10 @@
         "desconto na dívida",
         "feirão",
         "serasa limpa nome",
-        "o acordo é bom"
+        "o acordo é bom",
+        "calculadora de dívidas",
+        "simulador de acordo",
+        "desconto para quitar dívida atrasada"
       ],
       "keywords": [
         "calculadora renegociacao de divida",
@@ -1104,7 +1107,7 @@
         "parcela-no-orcamento",
         "plano-para-sair-das-dividas"
       ],
-      "updatedAt": "2026-09-24"
+      "updatedAt": "2026-09-30"
     },
     {
       "id": "quitacao-antecipada",
