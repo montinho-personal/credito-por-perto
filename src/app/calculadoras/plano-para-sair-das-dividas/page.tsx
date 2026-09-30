@@ -10,7 +10,7 @@ import { ToolNextSteps } from "@/components/journeys/ToolNextSteps";
 export const metadata: Metadata = buildMetadata({
   title: "Plano para sair das dívidas: veja qual pagar primeiro",
   description:
-    "Organize suas dívidas, compare os métodos avalanche e bola de neve e monte um plano mensal de pagamento. Grátis, sem cadastro e sem enviar seus valores.",
+    "Monte um plano para sair das dívidas: liste o que deve, veja qual pagar primeiro (avalanche ou bola de neve) e quanto sobra por mês. Sem cadastro.",
   path: "/calculadoras/plano-para-sair-das-dividas/",
 });
 
@@ -23,7 +23,7 @@ export default function PlanoParaSairDasDividasPage() {
       <JsonLd
         data={webPageJsonLd(
           "Plano para sair das dívidas",
-          "Organize várias dívidas, veja quais merecem revisão antes da ordem matemática e compare o que os métodos avalanche e bola de neve priorizariam.",
+          "Monte um plano para sair das dívidas: liste o que deve, veja qual pagar primeiro (avalanche ou bola de neve) e quanto sobra por mês. Sem cadastro.",
           "/calculadoras/plano-para-sair-das-dividas/",
         )}
       />
@@ -40,9 +40,9 @@ export default function PlanoParaSairDasDividasPage() {
           Plano para sair das dívidas
         </h1>
         <p className="mt-3 text-lg leading-relaxed text-brand-muted">
-          Organize o que deve, veja quais dívidas merecem atenção antes da conta e compare qual
-          delas cada método priorizaria primeiro.{" "}
-          <strong>Coloque todas as dívidas na mesa — depois decida qual atacar primeiro.</strong>
+          Monte o seu plano de ação: organize o que deve, veja quais dívidas merecem atenção antes
+          da conta e compare qual delas cada método priorizaria primeiro.{" "}
+          <strong>Coloque todas as dívidas na mesa e depois decida qual atacar primeiro.</strong>
         </p>
       </header>
 
@@ -68,15 +68,43 @@ export default function PlanoParaSairDasDividasPage() {
           .
         </p>
 
-        <h2 id="organizar">Como organizar todas as dívidas?</h2>
+        <h2 id="organizar">Como montar um plano para sair das dívidas?</h2>
+        <p>Em passos, que são os mesmos que a ferramenta acima segue:</p>
+        <ol>
+          <li>
+            <strong>Liste todas as dívidas:</strong> credor, saldo atualizado, pagamento mensal, taxa
+            (se souber), atraso e se existe garantia. O{" "}
+            <Link href="/credito-seguro/como-consultar-dividas-no-registrato/">
+              Registrato, do Banco Central
+            </Link>
+            , mostra as operações de crédito no seu CPF, mas não cobre dívidas de comércio,
+            serviços e contas de consumo, que entram pelos extratos. Dívida com agiota também entra
+            na lista; o que a lei diz sobre ela está em{" "}
+            <Link href="/credito-seguro/agiota-e-emprestimo-informal/">agiota e empréstimo informal</Link>.
+          </li>
+          <li>
+            <strong>Veja quanto sobra por mês</strong> depois das despesas que precisam continuar
+            existindo.
+          </li>
+          <li>
+            <strong>Separe o que é urgente:</strong> atraso, garantia, bem ou serviço essencial.
+          </li>
+          <li>
+            <strong>Escolha a ordem</strong> para o dinheiro extra: maior juros (avalanche) ou menor
+            saldo (bola de neve).
+          </li>
+          <li>
+            <strong>Negocie o que não cabe</strong>, com tudo por escrito.
+          </li>
+          <li>
+            <strong>Evite dívida nova</strong> enquanto o plano estiver em andamento.
+          </li>
+          <li>
+            <strong>Acompanhe todo mês</strong> e refaça a conta quando uma dívida terminar.
+          </li>
+        </ol>
         <p>
-          Comece pela lista completa: credor, saldo atualizado, pagamento mensal, taxa (se souber),
-          atraso e se existe garantia. O{" "}
-          <Link href="/credito-seguro/como-consultar-dividas-no-registrato/">
-            Registrato, do Banco Central
-          </Link>
-          , mostra as operações de crédito no seu CPF — mas não cobre dívidas de comércio, serviços
-          e contas de consumo, que precisam entrar pelos extratos. O plano completo está em{" "}
+          O plano completo, com cada passo explicado, está em{" "}
           <Link href="/organizacao-financeira/como-sair-das-dividas/">como sair das dívidas</Link>.
         </p>
 
@@ -107,7 +135,7 @@ export default function PlanoParaSairDasDividasPage() {
 
         <h2 id="juros-maiores">Vale pagar primeiro a dívida com juros maiores?</h2>
         <p>
-          Do ponto de vista aritmético, atacar a maior taxa tende a reduzir o total de juros — é a
+          Do ponto de vista aritmético, atacar a maior taxa tende a reduzir o total de juros: é a
           lógica da avalanche. Mas a resposta muda quando outra dívida traz consequência mais grave
           em caso de não pagamento, como a perda de um bem dado em garantia ou a interrupção de um
           serviço essencial. Por isso a ferramenta mostra essas condições <em>antes</em> da ordem.
@@ -117,10 +145,17 @@ export default function PlanoParaSairDasDividasPage() {
         <p>
           Nesse caso o primeiro problema não é escolher uma estratégia: é fazer os pagamentos
           caberem no orçamento. A ferramenta detecta quando o valor disponível não cobre a soma dos
-          pagamentos e muda de modo — mostra a diferença mensal, destaca as dívidas com condições
+          pagamentos e muda de modo: mostra a diferença mensal, destaca as dívidas com condições
           sensíveis e encaminha para negociação. Ela{" "}
           <strong>não indica qual parcela deixar de pagar</strong>, porque essa decisão tem
           consequências jurídicas e patrimoniais que dependem de cada contrato.
+        </p>
+        <p>
+          Ganhando pouco, regras de bolso como a 50/30/20 (metade da renda para necessidades, 30%
+          para o resto e 20% para dívidas e reserva) servem de ponto de partida, mas raramente
+          fecham com renda apertada. A conta que decide é a do seu mês: quanto entra, quanto precisa
+          sair e quanto sobra, como mostra{" "}
+          <Link href="/calculadoras/parcela-no-orcamento/">quanto de parcela cabe no meu orçamento</Link>.
         </p>
 
         <h2 id="dinheiro-extra">O que fazer com um dinheiro extra?</h2>
@@ -167,6 +202,32 @@ export default function PlanoParaSairDasDividasPage() {
           tem à vista. Os canais vão do credor à ouvidoria, ao Consumidor.gov.br e ao Procon. O
           roteiro completo, com o que exigir por escrito antes de pagar, está em{" "}
           <Link href="/organizacao-financeira/como-negociar-dividas/">como negociar dívidas</Link>.
+        </p>
+
+        <h2 id="plano-do-governo">Qual é o plano do governo para quitar dívidas?</h2>
+        <p>
+          Em 2026, o governo federal lançou o Novo Desenrola Brasil, pela Medida Provisória nº
+          1.355/2026, com frentes para famílias, Fies, rural e empresas. Segundo o Ministério da
+          Fazenda, a frente{" "}
+          <a href="https://www.gov.br/fazenda/pt-br/acesso-a-informacao/acoes-e-programas/novo-desenrola-brasil/faq/desenrola-brasil-familias" rel="noopener noreferrer" target="_blank">
+            Desenrola Famílias
+          </a>{" "}
+          ficou disponível até 31/08/2026; o Desenrola Rural teve o prazo prorrogado até
+          20/12/2026 pelo Decreto nº 12.956/2026. Situação verificada em 03/09/2026; como programas
+          mudam, confira no gov.br antes de contar com eles. A adesão era feita diretamente com a
+          instituição em que está a dívida, não por intermediário: site ou mensagem que cobra para
+          &ldquo;entrar no programa&rdquo; merece desconfiança. Os detalhes estão em{" "}
+          <Link href="/organizacao-financeira/como-negociar-dividas/">como negociar dívidas</Link>.
+        </p>
+
+        <h2 id="desconto">Como quitar dívida com desconto grande?</h2>
+        <p>
+          Descontos altos, às vezes anunciados como &ldquo;até 90%&rdquo;, aparecem principalmente em
+          dívidas antigas e em atraso, quando o próprio credor oferece em renegociação ou feirão.
+          Não há percentual garantido: depende do credor, do tempo de atraso e da dívida. Antes de
+          aceitar, some entrada, parcelas e custos do acordo na{" "}
+          <Link href="/calculadoras/renegociacao-de-dividas/">calculadora de renegociação de dívidas</Link>{" "}
+          e pague só por canal oficial do credor.
         </p>
 
         <h2 id="metodologia">Como montamos o plano?</h2>
