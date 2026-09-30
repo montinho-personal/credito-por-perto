@@ -8,9 +8,9 @@ import { DebtSwitchComparator } from "@/components/calculators/DebtSwitchCompara
 import { ToolNextSteps } from "@/components/journeys/ToolNextSteps";
 
 export const metadata: Metadata = buildMetadata({
-  title: "Vale a pena trocar esta dívida? Compare antes de decidir",
+  title: "Vale a pena trocar dívida por outra? Compare o total",
   description:
-    "Compare sua dívida atual com a nova proposta — portabilidade, renegociação ou novo empréstimo — e veja o que muda na parcela, no prazo e no total a pagar. Sem cadastro.",
+    "Pensando em pegar empréstimo para quitar dívida ou fazer portabilidade? Compare a dívida atual com a nova proposta: parcela, prazo e total pago.",
   path: "/calculadoras/trocar-divida/",
 });
 
@@ -22,8 +22,8 @@ export default function TrocarDividaPage() {
       className="mx-auto max-w-5xl px-4 py-8">
       <JsonLd
         data={webPageJsonLd(
-          "Vale a pena trocar esta dívida?",
-          "Compare a dívida atual com uma nova condição e veja o que muda na parcela, no prazo e no total a pagar — sem recomendação de contratação.",
+          "Vale a pena trocar dívida por outra? Compare o total",
+          "Pensando em pegar empréstimo para quitar dívida ou fazer portabilidade? Compare a dívida atual com a nova proposta: parcela, prazo e total pago.",
           "/calculadoras/trocar-divida/",
         )}
       />
@@ -40,10 +40,10 @@ export default function TrocarDividaPage() {
           Vale a pena trocar esta dívida?
         </h1>
         <p className="mt-3 text-lg leading-relaxed text-brand-muted">
-          Veja o que muda na parcela, no prazo e no total a pagar. Porque{" "}
-          <strong>parcela menor não é a mesma coisa que dívida mais barata</strong> — e a gente
-          não decide por você: coloca as duas condições lado a lado para você enxergar o que
-          realmente muda.
+          Recebeu uma proposta de portabilidade, de renegociação ou de empréstimo para quitar uma
+          dívida? Compare a dívida atual com a nova condição e veja o que muda na parcela, no prazo
+          e no total a pagar. <strong>Parcela menor não é a mesma coisa que dívida mais
+          barata</strong>, e a ferramenta não decide por você: coloca as duas lado a lado.
         </p>
       </header>
 
@@ -55,18 +55,18 @@ export default function TrocarDividaPage() {
 
 
       <section aria-labelledby="perguntas-troca" className="article-body mt-12">
-        <h2 id="perguntas-troca">Quando trocar uma dívida pode reduzir o custo?</h2>
+        <h2 id="perguntas-troca">Vale a pena fazer empréstimo para quitar dívidas?</h2>
         <p>
-          Quando a nova operação cobra juros efetivamente menores <em>sem</em> esticar o prazo a
-          ponto de anular a economia. Trocar uma dívida cara (rotativo, cheque especial) por uma
-          modalidade estruturalmente mais barata costuma ser o cenário mais favorável. Mas a única
-          forma de saber é comparar a dívida inteira: o que falta pagar hoje contra o que você
-          passará a pagar.
+          Pode valer quando a nova operação tem custo efetivo (CET) menor e não estica o prazo a
+          ponto de anular a diferença. Trocar uma dívida cara, como rotativo do cartão ou cheque
+          especial, por uma modalidade mais barata costuma ser o cenário mais favorável. Mas a única
+          forma de saber é comparar a dívida inteira: o que falta pagar hoje contra tudo o que você
+          passará a pagar, com custos e prazo. É essa conta que a ferramenta acima faz.
         </p>
 
         <h2 id="parcela-menor">Parcela menor significa dívida mais barata?</h2>
         <p>
-          Não necessariamente — e esse é o erro mais comum. A parcela pode cair simplesmente
+          Não necessariamente, e esse é o erro mais comum. A parcela pode cair simplesmente
           porque o prazo aumentou. Menos por mês pode significar mais meses pagando e um total
           maior no fim. Trocar uma dívida pode aliviar o mês e ainda assim aumentar o custo total.
           Por isso a ferramenta compara três eixos ao mesmo tempo: parcela, prazo e total.
@@ -75,7 +75,7 @@ export default function TrocarDividaPage() {
         <h2 id="saldo-quitacao">O que é saldo para quitação?</h2>
         <p>
           É quanto custa encerrar a dívida hoje, de uma vez. A instituição é obrigada a informar
-          esse valor — peça o &ldquo;saldo para quitação antecipada&rdquo; no aplicativo ou
+          esse valor: peça o &ldquo;saldo para quitação antecipada&rdquo; no aplicativo ou no
           atendimento, ou o documento descritivo do seu contrato, que reúne saldo devedor, taxa,
           prazo e parcelas. Com o saldo em mãos, a{" "}
           <Link href="/calculadoras/quitacao-antecipada/">
@@ -94,21 +94,23 @@ export default function TrocarDividaPage() {
           <a href="https://www.bcb.gov.br/pre/normativos/res/2007/pdf/res_3516_v2_l.pdf" rel="noopener noreferrer" target="_blank">
             Resolução CMN nº 3.516/2007
           </a>{" "}
-          proíbe tarifa de quitação nos contratos a partir de dezembro de 2007. Por isso, nunca
+          proíbe tarifa de quitação nos contratos com pessoas físicas e micro e pequenas empresas
+          assinados a partir de 10/12/2007. Por isso, nunca
           use &ldquo;parcela × parcelas restantes&rdquo; como se fosse o valor de quitar hoje: são
           números diferentes, e a ferramenta mostra os dois separados. O detalhe completo está em{" "}
           <Link href="/juros-e-cet/quitacao-antecipada-de-emprestimo/">quitação antecipada</Link>.
         </p>
 
-        <h2 id="o-que-e-portabilidade">O que é portabilidade de crédito?</h2>
+        <h2 id="o-que-e-portabilidade">Portabilidade de crédito vale a pena?</h2>
         <p>
-          É a transferência de uma operação de crédito para outra instituição, mantendo a dívida —
-          o que muda são as condições. É um direito{" "}
+          Pode valer quando a nova instituição oferece CET menor para a mesma dívida. Portabilidade
+          é a transferência de uma operação de crédito para outra instituição: a dívida continua a
+          mesma, e o que muda são as condições. É um direito{" "}
           <a href="https://www.bcb.gov.br" rel="noopener noreferrer" target="_blank">
             regulamentado pelo Banco Central
           </a>
           : a instituição original não pode impedir, a proponente deve apresentar taxa, CET, prazo
-          e valor das prestações, e — nas regras vigentes — o valor e o prazo da nova operação não
+          e valor das prestações e, nas regras vigentes, o valor e o prazo da nova operação não
           podem superar o saldo devedor e o prazo remanescente. O guia completo está em{" "}
           <Link href="/emprestimos/portabilidade-de-credito/">portabilidade de crédito</Link>.
         </p>
@@ -116,11 +118,27 @@ export default function TrocarDividaPage() {
         <h2 id="portabilidade-ou-novo">Portabilidade e empréstimo para quitar dívida são a mesma coisa?</h2>
         <p>
           Não. Na portabilidade formal, as instituições trocam informações e a nova quita a
-          antiga diretamente, sem dinheiro passando pela sua conta — e sem crédito extra. Num
+          antiga diretamente, sem dinheiro passando pela sua conta e sem crédito extra. Num
           empréstimo novo, você contrata uma operação independente (que pode incluir troco) e usa
           o dinheiro para quitar a anterior. Renegociação e reparcelamento, por sua vez, alteram o
-          contrato com a mesma instituição. As regras e as consequências são diferentes — por isso
+          contrato com a mesma instituição. As regras e as consequências são diferentes, por isso
           a ferramenta pergunta qual é o seu caso.
+        </p>
+
+        <h2 id="oferta-no-app">Apareceu uma oferta para &ldquo;trocar dívida&rdquo; no app do banco?</h2>
+        <p>
+          Bancos e carteiras digitais oferecem, no próprio aplicativo, crédito para quitar outras
+          dívidas ou para reorganizar as que você tem com eles. Na prática, costuma ser um
+          empréstimo novo ou um refinanciamento, não uma portabilidade. Antes de aceitar, peça o CET,
+          o prazo e o valor total, e confira se entra troco ou garantia nova. Com esses números,
+          a comparação acima mostra se o total cai ou sobe.
+        </p>
+        <p>
+          Se a proposta é quitar a dívida atual com desconto, e não trocá-la por outra, a conta
+          é outra: use a{" "}
+          <Link href="/calculadoras/renegociacao-de-dividas/">calculadora de renegociação de dívidas</Link>.
+          E se a oferta chegou por mensagem pedindo algum pagamento antes, veja o bloco sobre
+          pagamento antecipado abaixo.
         </p>
 
         <h2 id="o-que-comparar">O que comparar antes de trocar uma dívida?</h2>
@@ -133,7 +151,7 @@ export default function TrocarDividaPage() {
         <h2 id="cet-ou-taxa">CET ou taxa de juros: qual olhar?</h2>
         <p>
           O CET, sempre que disponível: ele inclui tarifas, seguros e demais custos, e é o único
-          número comparável entre propostas. Mas nem o CET decide sozinho — um CET menor com prazo
+          número comparável entre propostas. Mas nem o CET decide sozinho: um CET menor com prazo
           muito maior ainda pode custar mais no total. Entenda em{" "}
           <Link href="/juros-e-cet/o-que-e-cet/">o que é CET</Link>.
         </p>
@@ -141,7 +159,7 @@ export default function TrocarDividaPage() {
         <h2 id="alongar-prazo">Vale alongar o prazo para reduzir a parcela?</h2>
         <p>
           Depende do que você precisa. Se o orçamento do mês não fecha, alongar pode ser a
-          diferença entre pagar e atrasar — um alívio com preço conhecido. O problema é alongar
+          diferença entre pagar e atrasar: um alívio com preço conhecido. O problema é alongar
           <em> sem perceber</em> que o total aumentou. A ferramenta existe para esse número não
           passar despercebido: se a troca custa mais caro no total, você decide sabendo. E para
           ver o que a nova parcela faz com o seu mês, use{" "}
@@ -153,8 +171,9 @@ export default function TrocarDividaPage() {
 
         <h2 id="pagamento-antecipado">O que fazer se pedirem pagamento antecipado?</h2>
         <p>
-          Pare antes de pagar. Cobrança para &ldquo;liberar&rdquo; um crédito não é custo normal —
-          é o sinal mais comum de golpe, mesmo quando vem com contrato bonito. Rode a{" "}
+          Pare antes de pagar. Cobrança para &ldquo;liberar&rdquo; um crédito não é custo normal:
+          o Banco Central alerta que instituição financeira não pede pagamento antecipado para
+          liberar crédito, mesmo quando a proposta vem com contrato bonito. Rode a{" "}
           <Link href="/calculadoras/sinais-de-golpe/">verificação de sinais de golpe</Link> e leia{" "}
           <Link href="/credito-seguro/deposito-antecipado-e-golpe/">
             por que depósito antecipado é golpe
@@ -169,16 +188,16 @@ export default function TrocarDividaPage() {
           chamamos de &ldquo;juros&rdquo;); nova parcela × novo prazo + custos informados = total
           da nova condição; as diferenças aparecem em reais e em meses. O saldo para quitação é
           mostrado separado da soma das parcelas, porque são coisas diferentes. Taxas são
-          convertidas por juros compostos — anual = (1 + mensal)^12 − 1, nunca ×12 — e diferenças
+          convertidas por juros compostos, anual = (1 + mensal)^12 − 1, nunca ×12, e diferenças
           de taxa e CET aparecem em pontos percentuais. Quando a modalidade tem parcela variável
           (cartão, cheque especial), a ferramenta <strong>não</strong> inventa um total futuro:
           diz que não é possível estimar com os dados disponíveis. Se os valores financiados
           diferem (troco), os totais não são comparados como equivalentes. Tudo roda no seu
-          navegador — nenhum valor é enviado ou salvo. Fontes regulatórias: Banco Central
+          navegador: nenhum valor é enviado ou salvo. Fontes regulatórias: Banco Central
           (portabilidade de crédito), CDC art. 52, §2º e Resolução CMN nº 3.516/2007 (liquidação
           antecipada). Encontrou algo errado? Veja a{" "}
           <Link href="/politica-de-correcoes/">política de correções</Link>. Metodologia revisada
-          em 27/08/2026.
+          em 27/08/2026; textos revistos em 30/09/2026.
         </p>
       </section>
     </div>

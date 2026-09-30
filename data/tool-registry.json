@@ -1150,7 +1150,7 @@
       "type": "comparador",
       "category": "cartao-e-dividas",
       "situation": "ja-tenho-divida",
-      "question": "Trocar esta dívida por outra melhora ou piora?",
+      "question": "Vale a pena trocar esta dívida por outra?",
       "whenItHelps": "Compare a dívida atual com a nova proposta e veja o que muda na parcela, no prazo e no total.",
       "calloutLead": "Antes de trocar uma dívida por outra, compare as duas inteiras — não só as parcelas.",
       "badge": "Dívida atual x nova",
@@ -1160,7 +1160,10 @@
         "empréstimo para quitar dívida",
         "trocar dívida cara",
         "pagar cartão com empréstimo",
-        "vale a pena trocar"
+        "vale a pena trocar",
+        "trocar dívida por outra",
+        "trocar dívida no banco",
+        "vale a pena fazer portabilidade"
       ],
       "keywords": [
         "vale a pena trocar divida",
@@ -1168,7 +1171,9 @@
         "emprestimo para pagar cartao",
         "portabilidade de emprestimo vale a pena",
         "refinanciar divida",
-        "trocar divida cara por barata"
+        "trocar divida cara por barata",
+        "vale a pena trocar uma divida por outra",
+        "vale a pena fazer emprestimo para quitar dividas"
       ],
       "tags": [
         "portabilidade",
@@ -1187,7 +1192,7 @@
         "parcela-no-orcamento",
         "plano-para-sair-das-dividas"
       ],
-      "updatedAt": "2026-08-29"
+      "updatedAt": "2026-09-30"
     },
     {
       "id": "juros-cartao-credito",
