@@ -13,7 +13,7 @@ import {
 import { ToolNextSteps } from "@/components/journeys/ToolNextSteps";
 
 export const metadata: Metadata = buildMetadata({
-  title: "Conversor de taxa mensal para anual (e anual para mensal)",
+  title: "Converter taxa mensal para anual (e anual para mensal)",
   description:
     "Converta uma taxa de juros mensal em anual ou anual em mensal usando equivalência composta. Veja por que 3% ao mês não são 36% ao ano. Grátis, sem cadastro.",
   path: "/calculadoras/conversor-de-taxas/",
@@ -49,7 +49,7 @@ export default function ConversorDeTaxasPage() {
         </h1>
         <p className="mt-3 text-lg leading-relaxed text-brand-muted">
           3% ao mês são 36% ao ano? Não exatamente. Informe uma taxa ao mês ou ao ano e veja a
-          taxa efetiva equivalente — grátis, sem cadastro, em segundos.
+          taxa efetiva equivalente, por juros compostos. Grátis, sem cadastro, em segundos.
         </p>
       </header>
 
@@ -121,21 +121,47 @@ export default function ConversorDeTaxasPage() {
           aproximadamente 42,58% ao ano. O conversor acima faz essa conta nos dois sentidos.
         </p>
 
+        <h2 id="exemplos-rapidos">Quanto é 1% ou 2% ao mês ao ano?</h2>
+        <p>
+          1% ao mês equivale a cerca de 12,68% ao ano: (1,01)¹² − 1 = 0,1268. E 2% ao mês equivalem
+          a cerca de 26,82% ao ano: (1,02)¹² − 1 = 0,2682. Nos dois casos, o resultado passa da
+          multiplicação simples (12% e 24%), e a diferença cresce conforme a taxa aumenta. A tabela
+          acima traz outras taxas prontas.
+        </p>
+
         <h2 id="por-que-nao-x12">Por que não basta multiplicar por 12?</h2>
         <p>
-          Multiplicar por 12 produz a chamada <em>taxa nominal proporcional</em> — um conceito que
+          Multiplicar por 12 produz a chamada <em>taxa nominal proporcional</em>, um conceito que
           existe e aparece em alguns contextos. Mas, para encontrar a <strong>taxa efetiva anual
           equivalente</strong>, a conta é composta: cada mês incide sobre o saldo já acrescido dos
-          juros anteriores. Por isso 3% ao mês equivalem a 42,58% ao ano, e não a 36% — e a
+          juros anteriores. Por isso 3% ao mês equivalem a 42,58% ao ano, e não a 36%, e a
           diferença cresce rápido com a taxa: 5% ao mês são 79,59% ao ano, não 60%.
         </p>
 
         <h2 id="anual-para-mensal">Como converter taxa anual para mensal?</h2>
         <p>
           Pelo caminho inverso: taxa mensal = (1 + taxa anual)^(1/12) − 1. Uma taxa de 40% ao ano
-          equivale a aproximadamente 2,84% ao mês — e não a 40 ÷ 12 = 3,33%. O cuidado vale ao
+          equivale a aproximadamente 2,84% ao mês, e não a 40 ÷ 12 = 3,33%. O cuidado vale ao
           comparar um produto anunciado em base anual com outro em base mensal: converta os dois
           para a mesma base antes.
+        </p>
+
+        <h2 id="excel-hp12c">Como converter a taxa no Excel ou na HP12C?</h2>
+        <p>
+          No Excel ou no Google Planilhas, com a taxa em decimal na célula A1 (3% = 0,03), use{" "}
+          <code>=(1+A1)^12-1</code> para ir de mensal para anual e <code>=(1+A1)^(1/12)-1</code> para
+          ir de anual para mensal, e formate o resultado como porcentagem. Na HP12C, de mensal para
+          anual: digite 100, CHS, PV; 3, i; 12, n; e aperte FV. O visor mostra 142,58, ou seja,
+          42,58% ao ano. No caminho inverso, informe PV = −100, FV = 142,58 e n = 12 e aperte i para
+          obter a taxa mensal.
+        </p>
+
+        <h2 id="taxa-diaria">E para converter taxa mensal em diária?</h2>
+        <p>
+          A lógica composta é a mesma, mas é preciso saber a convenção de dias usada pelo contrato
+          ou pelo produto: dias corridos, <code>(1 + mensal)^(1/30) − 1</code>, ou dias úteis, comum
+          em investimentos, <code>(1 + anual)^(1/252) − 1</code>. Como a convenção muda de um produto
+          para outro, este conversor trabalha só com as bases mensal e anual.
         </p>
 
         <h2 id="taxas-equivalentes">O que são taxas equivalentes?</h2>
@@ -148,7 +174,7 @@ export default function ConversorDeTaxasPage() {
         <h2 id="nominal-efetiva">Taxa nominal e taxa efetiva são iguais?</h2>
         <p>
           Não. A taxa nominal é declarada em um período com capitalização em outro (ex.: &ldquo;36%
-          ao ano com capitalização mensal&rdquo; significa 3% ao mês — que efetivamente rendem
+          ao ano com capitalização mensal&rdquo; significa 3% ao mês, que efetivamente rendem
           42,58% no ano). A taxa efetiva é a que de fato incide no período. Se a proposta do seu
           banco mostra um número anual diferente do conversor, isso não significa automaticamente
           erro: confira se a taxa é efetiva ou nominal, se é juros ou CET, e qual periodicidade
@@ -157,7 +183,7 @@ export default function ConversorDeTaxasPage() {
 
         <h2 id="taxa-e-cet">Taxa de juros e CET são a mesma coisa?</h2>
         <p>
-          Não — e essa diferença custa dinheiro. O CET (Custo Efetivo Total) inclui, além dos
+          Não, e essa diferença custa dinheiro. O CET (Custo Efetivo Total) inclui, além dos
           juros, tarifas, seguros e demais encargos da operação. Taxa menor não garante menor
           CET. Para comparar propostas de crédito, o número certo é o CET:{" "}
           <Link href="/juros-e-cet/o-que-e-cet/">entenda o CET</Link> e use o{" "}
@@ -167,7 +193,7 @@ export default function ConversorDeTaxasPage() {
         <h2 id="taxa-alta">Como saber se a taxa do meu empréstimo está alta?</h2>
         <p>
           Convertida para a base certa, compare-a com a média oficial que o Banco Central publica
-          para a mesma modalidade — é exatamente o que a ferramenta{" "}
+          para a mesma modalidade. É exatamente o que a ferramenta{" "}
           <Link href="/calculadoras/minha-taxa-esta-cara/">minha taxa está cara?</Link> faz, com
           as séries oficiais e a diferença em pontos percentuais.
         </p>
@@ -175,10 +201,10 @@ export default function ConversorDeTaxasPage() {
         <h2 id="metodologia-conversor">Como fazemos a conversão?</h2>
         <p>
           1) Transformamos o percentual em decimal (3% → 0,03); 2) aplicamos a fórmula de
-          equivalência composta — (1 + iₘ)¹² − 1 ou (1 + iₐ)^(1/12) − 1; 3) transformamos de
+          equivalência composta, (1 + iₘ)¹² − 1 ou (1 + iₐ)^(1/12) − 1; 3) transformamos de
           volta em percentual; 4) arredondamos apenas na apresentação (duas casas, ou quatro para
           taxas muito pequenas). A conta assume 12 períodos mensais por ano; contratos específicos
-          podem usar convenções, indexadores ou metodologias próprias — e a conversão de taxa não
+          podem usar convenções, indexadores ou metodologias próprias, e a conversão de taxa não
           é o custo total de um contrato. O regime composto é o padrão das operações de crédito,
           como explica o material educativo do{" "}
           <a href="https://www.bcb.gov.br" rel="noopener noreferrer" target="_blank">
@@ -190,7 +216,7 @@ export default function ConversorDeTaxasPage() {
           </Link>
           . Encontrou algo errado? Veja a{" "}
           <Link href="/politica-de-correcoes/">política de correções</Link>. Metodologia revisada
-          em 27/08/2026.
+          em 27/08/2026; textos revistos em 30/09/2026.
         </p>
       </section>
     </div>
