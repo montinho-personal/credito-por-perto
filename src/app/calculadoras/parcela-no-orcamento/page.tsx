@@ -8,9 +8,9 @@ import { BudgetImpactSimulator } from "@/components/calculators/BudgetImpactSimu
 import { ToolNextSteps } from "@/components/journeys/ToolNextSteps";
 
 export const metadata: Metadata = buildMetadata({
-  title: "Quanto de parcela cabe no meu orçamento? Faça a conta completa",
+  title: "Quanto de parcela cabe no meu orçamento? Além dos 30%",
   description:
-    "Veja como uma nova parcela afetaria seu orçamento mensal: informe renda, despesas e dívidas e descubra quanto sobra antes e depois dela. Grátis, sem cadastro.",
+    "A regra dos 30% da renda é só o começo. Informe renda, despesas e parcelas e veja quanto sobra no mês antes e depois da nova parcela. Sem cadastro.",
   path: "/calculadoras/parcela-no-orcamento/",
 });
 
@@ -22,8 +22,8 @@ export default function ParcelaNoOrcamentoPage() {
       className="mx-auto max-w-4xl px-4 py-8">
       <JsonLd
         data={webPageJsonLd(
-          "Quanto de parcela cabe no meu orçamento?",
-          "Simule o impacto de uma nova parcela na sua renda, nos seus gastos e na folga que sobra no mês — sem recomendação de contratação.",
+          "Quanto de parcela cabe no meu orçamento? Além dos 30%",
+          "A regra dos 30% da renda é só o começo. Informe renda, despesas e parcelas e veja quanto sobra no mês antes e depois da nova parcela. Sem cadastro.",
           "/calculadoras/parcela-no-orcamento/",
         )}
       />
@@ -41,8 +41,8 @@ export default function ParcelaNoOrcamentoPage() {
         </h1>
         <p className="mt-3 text-lg leading-relaxed text-brand-muted">
           Veja como uma nova parcela afetaria sua renda, seus gastos e a folga que sobra no mês.
-          Porque uma parcela de R$ 800 não pesa igual para todo mundo — <strong>não pergunte
-          apenas se ela cabe na renda; veja se cabe na vida que essa renda precisa pagar</strong>.
+          Uma parcela de R$ 800 não pesa igual para todo mundo: <strong>não pergunte apenas se ela
+          cabe na renda; veja se cabe na vida que essa renda precisa pagar</strong>.
         </p>
       </header>
 
@@ -58,19 +58,42 @@ export default function ParcelaNoOrcamentoPage() {
         <p>
           Fazendo a conta inteira: renda líquida, menos as despesas que precisam existir, menos as
           parcelas que você já paga, menos o que separa para gastos não mensais. O que sobra é a
-          sua folga — e é nela, não na renda, que a nova parcela vai morder. A ferramenta acima
+          sua folga, e é nela, não na renda, que a nova parcela vai morder. A ferramenta acima
           mostra a folga antes e depois da parcela, pelos valores que você informar.
+        </p>
+
+        <h2 id="regra-30">É verdade que a parcela não pode passar de 30% da renda?</h2>
+        <p>
+          Não existe hoje uma regra geral que limite toda parcela a 30% da renda. O número tem
+          origem histórica em um plano do Sistema Financeiro da Habitação, cujos artigos foram
+          revogados, e sobrevive como critério de análise de muitas instituições: para quem ganha
+          R$ 4.000 líquidos, 30% dá R$ 1.200. Limites legais existem em casos específicos, como a{" "}
+          <Link href="/calculadoras/margem-consignavel/">margem consignável</Link>. A história
+          completa, com as fontes, está em{" "}
+          <Link href="/organizacao-financeira/quanto-da-renda-comprometer-financiamento-imovel/">
+            quanto da renda comprometer com financiamento
+          </Link>
+          .
         </p>
 
         <h2 id="percentual-renda">Por que não basta olhar o percentual da renda?</h2>
         <p>
           Porque renda é só metade da conta: o que você já precisa pagar também importa. Duas
-          pessoas com renda de R$ 5.000 podem viver realidades opostas — uma gasta R$ 2.500 por
+          pessoas com renda de R$ 5.000 podem viver realidades opostas: uma gasta R$ 2.500 por
           mês, a outra, R$ 4.700. Uma parcela de R$ 600 representa 12% da renda das duas, mas
           consome 24% da folga da primeira e o triplo do que sobra para a segunda. Regras como
           &ldquo;até 30% da renda&rdquo; vêm de políticas de concessão e de limites operacionais
-          (como a margem do consignado) — servem para o credor decidir quanto emprestar, não para
+          (como a margem do consignado): servem para o credor decidir quanto emprestar, não para
           dizer que a parcela é confortável para o seu mês.
+        </p>
+
+        <h2 id="quanto-financia">Sei a parcela que cabe. Quanto ela financia?</h2>
+        <p>
+          Depois de achar a parcela que o seu mês suporta, o passo seguinte é ver quanto crédito ela
+          compra com a taxa e o prazo da proposta. É a pergunta de quem busca &ldquo;quanto fica R$
+          200 mil financiado&rdquo; ou &ldquo;quem ganha R$ 1.500 pode financiar um imóvel&rdquo;: a
+          resposta depende da taxa, do prazo e do sistema de amortização, e a conta está no{" "}
+          <Link href="/calculadoras/quanto-consigo-financiar/">Quanto consigo financiar?</Link>
         </p>
 
         <h2 id="folga-mensal">Como calcular sua folga mensal?</h2>
