@@ -21,9 +21,9 @@ import { ToolNextSteps } from "@/components/journeys/ToolNextSteps";
 export const revalidate = 86400;
 
 export const metadata: Metadata = buildMetadata({
-  title: "Radar de taxas de crédito: acompanhe os dados do Banco Central",
+  title: "Taxa média de juros do Banco Central por modalidade",
   description:
-    "Acompanhe as taxas médias de empréstimo pessoal, consignado, cartão, cheque especial e financiamento de veículos com dados oficiais e histórico do Banco Central.",
+    "Veja a taxa média de juros de empréstimo pessoal, consignado, cartão, cheque especial e veículos, com o último dado e o histórico do Banco Central.",
   path: "/taxas/",
 });
 
@@ -77,8 +77,8 @@ export default async function TaxasPage() {
     <div data-track-area="ferramenta" data-track="radar-de-taxas" className="mx-auto max-w-5xl px-4 py-8">
       <JsonLd
         data={webPageJsonLd(
-          "Radar de taxas de crédito",
-          "Taxas médias das principais modalidades de crédito para pessoas físicas, com dados oficiais e histórico do Banco Central do Brasil.",
+          "Taxa média de juros do Banco Central por modalidade",
+          "Veja a taxa média de juros de empréstimo pessoal, consignado, cartão, cheque especial e veículos, com o último dado e o histórico do Banco Central.",
           "/taxas/",
         )}
       />
@@ -91,17 +91,18 @@ export default async function TaxasPage() {
 
       <header className="mt-6">
         <h1 className="font-serif text-3xl font-bold leading-tight text-brand-navy md:text-4xl">
-          Radar de taxas de crédito
+          Radar de taxas: a taxa média de juros de cada modalidade
         </h1>
         <p className="mt-3 text-lg leading-relaxed text-brand-muted">
-          Os juros estão subindo ou caindo? Acompanhe as principais taxas médias de crédito com
-          dados oficiais do Banco Central: o último dado disponível, o período de referência, a
-          variação e o histórico de cada modalidade.
+          Os juros estão subindo ou caindo? Veja a taxa média de juros do empréstimo pessoal, do
+          consignado, do cartão, do cheque especial e do financiamento de veículos, com dados
+          oficiais do Banco Central: o último dado disponível, o mês de referência, a variação e o
+          histórico de cada modalidade.
         </p>
         {sample ? (
           <p className="mt-2 text-sm text-brand-muted">
             Último dado oficial disponível: referência {formatRefMonth(sample.stats.latest.refMonth)}.
-            Dados atualizados automaticamente a partir do Banco Central — nosso sistema consultou o
+            Dados atualizados automaticamente a partir do Banco Central; nosso sistema consultou o
             BC em {radar.fetchedAt.split("-").reverse().join("/")}.
           </p>
         ) : null}
@@ -204,15 +205,38 @@ export default async function TaxasPage() {
         <p>
           São estatísticas oficiais que o BC publica mensalmente: a taxa média das{" "}
           <strong>novas operações</strong> de crédito contratadas no mês de referência, em cada
-          modalidade, ponderada pelo valor das concessões — aqui, sempre da família
+          modalidade, ponderada pelo valor das concessões. Aqui, sempre da família
           &ldquo;recursos livres, pessoas físicas&rdquo;, em % ao mês. Não é tabela de preços nem
           promessa de taxa.
+        </p>
+
+        <h2 id="selic-ou-media">Taxa de juros do Banco Central hoje: é a Selic?</h2>
+        <p>
+          Depende do que você procura. A Selic é a taxa básica da economia, definida pelo Copom, o
+          comitê de política monetária do Banco Central. Ela influencia o custo do crédito, mas não
+          é a taxa que você paga num empréstimo. As taxas deste Radar são outra coisa: a média que
+          as instituições efetivamente cobraram das pessoas em cada modalidade, como empréstimo
+          pessoal ou financiamento de veículo. É esse número que serve para comparar uma proposta.
+        </p>
+
+        <h2 id="por-banco">Tabela de taxas de juros por banco: onde ver?</h2>
+        <p>
+          O Radar mostra a média do mercado em cada modalidade, sem separar por banco e sem
+          ranking. A taxa média de cada instituição é publicada pelo próprio Banco Central na{" "}
+          <a href="https://www.bcb.gov.br/estatisticas/txjuros" rel="noopener noreferrer" target="_blank">
+            consulta de taxas de juros por instituição
+          </a>
+          ; o passo a passo está em{" "}
+          <Link href="/juros-e-cet/como-consultar-taxa-media-do-bc/">como consultar a taxa média no BC</Link>.
+          Para a pergunta &ldquo;qual banco tem a menor taxa&rdquo;, lembre que a taxa oferecida a
+          você depende do seu perfil, do prazo e da garantia: a lista do BC é um ponto de partida
+          para pedir propostas, e o CET de cada uma decide a comparação.
         </p>
 
         <h2 id="por-que-diferente">Por que a sua taxa pode ser diferente da média?</h2>
         <p>
           Porque a média junta perfis, prazos, garantias e instituições muito diferentes. A taxa
-          oferecida a você depende do seu caso — a média serve de referência para saber se a sua
+          oferecida a você depende do seu caso, e a média serve de referência para saber se a sua
           proposta está perto ou longe do mercado. É exatamente essa comparação que a ferramenta{" "}
           <Link href="/calculadoras/minha-taxa-esta-cara/">minha taxa está cara?</Link> faz.
         </p>
@@ -220,7 +244,7 @@ export default async function TaxasPage() {
         <h2 id="media-e-teto">Taxa média é teto?</h2>
         <p>
           Não. Média não é limite legal: existem operações acima e abaixo dela por construção.
-          Uma taxa acima da média não é automaticamente abusiva — e uma abaixo não é
+          Uma taxa acima da média não é automaticamente abusiva, e uma abaixo não é
           automaticamente boa. O contexto completo está em{" "}
           <Link href="/juros-e-cet/juros-abusivos-como-saber/">juros abusivos: como saber</Link>.
         </p>
@@ -228,7 +252,7 @@ export default async function TaxasPage() {
         <h2 id="taxa-e-cet-radar">Taxa de juros é igual ao CET?</h2>
         <p>
           Não. As séries do Radar medem a taxa de juros; o CET (Custo Efetivo Total) inclui também
-          tarifas, seguros e demais encargos. Para comparar propostas, o número decisivo é o CET —
+          tarifas, seguros e demais encargos. Para comparar propostas, o número decisivo é o CET:
           entenda em <Link href="/juros-e-cet/o-que-e-cet/">o que é CET</Link>.
         </p>
 
@@ -236,26 +260,26 @@ export default async function TaxasPage() {
         <p>
           Porque as séries são mensais e o BC publica cada mês algumas semanas depois de fechado.
           Por isso o Radar nunca fala em &ldquo;taxa de hoje&rdquo;: mostra sempre o{" "}
-          <strong>último dado oficial disponível</strong> com o mês de referência ao lado — e,
+          <strong>último dado oficial disponível</strong> com o mês de referência ao lado e,
           separadamente, a data em que nosso sistema consultou o BC.
         </p>
 
         <h2 id="metodologia-radar">Como funciona o Radar?</h2>
         <p>
           Usamos exclusivamente séries do SGS (Sistema Gerenciador de Séries Temporais) do Banco
-          Central, todas da mesma família metodológica, com o código exibido em cada modalidade —
-          nada de médias próprias. As variações são calculadas sobre os valores brutos e mostradas
+          Central, todas da mesma família metodológica, com o código exibido em cada modalidade,
+          sem médias próprias. As variações são calculadas sobre os valores brutos e mostradas
           em pontos percentuais; buracos na série não são preenchidos por interpolação; um dado
           fora da faixa de plausibilidade ou com anomalia extrema é retido para revisão em vez de
           publicado. A atualização é automática (consulta diária ao BC, dado novo quando o BC
-          publica) e, se a fonte estiver indisponível, mantemos o último dado oficial armazenado —
+          publica) e, se a fonte estiver indisponível, mantemos o último dado oficial armazenado:
           nunca inventamos número. Como consultar direto na fonte:{" "}
           <Link href="/juros-e-cet/como-consultar-taxa-media-do-bc/">
             passo a passo no site do BC
           </Link>
           . Encontrou algo divergente? Veja a{" "}
           <Link href="/politica-de-correcoes/">política de correções</Link>. Metodologia revisada
-          em 27/08/2026.
+          em 27/08/2026; textos revistos em 30/09/2026.
         </p>
       </section>
     </div>

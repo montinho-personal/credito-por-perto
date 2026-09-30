@@ -261,7 +261,10 @@
         "quanto sobra no mês",
         "comprometer a renda",
         "quanto posso pagar por mês",
-        "orçamento"
+        "orçamento",
+        "30% da renda",
+        "parcela ideal",
+        "quanto posso pagar de parcela"
       ],
       "keywords": [
         "quanto posso pagar de parcela",
@@ -269,7 +272,9 @@
         "quanto posso comprometer da renda",
         "quanto posso pagar de emprestimo por mes",
         "calculadora comprometimento de renda",
-        "qual parcela cabe no meu salario"
+        "qual parcela cabe no meu salario",
+        "parcela 30 da renda",
+        "quanto de parcela cabe no meu orcamento"
       ],
       "tags": [
         "orcamento",
@@ -289,7 +294,7 @@
         "comparador-de-propostas",
         "plano-para-sair-das-dividas"
       ],
-      "updatedAt": "2026-08-29"
+      "updatedAt": "2026-09-30"
     },
     {
       "id": "margem-consignavel",
@@ -761,7 +766,11 @@
         "mensal para anual",
         "converter juros",
         "taxa equivalente",
-        "% ao mês"
+        "% ao mês",
+        "converter taxa no excel",
+        "taxa na hp12c",
+        "1% ao mês ao ano",
+        "2% ao mês ao ano"
       ],
       "keywords": [
         "taxa mensal para anual",
@@ -788,7 +797,7 @@
         "minha-taxa-esta-cara",
         "comparador-de-propostas"
       ],
-      "updatedAt": "2026-08-29"
+      "updatedAt": "2026-09-30"
     },
     {
       "id": "iof-emprestimo",
@@ -853,7 +862,10 @@
         "juros estão subindo",
         "taxa do consignado",
         "juros do cartão hoje",
-        "referência de taxa"
+        "referência de taxa",
+        "taxa média de juros banco central",
+        "taxa de juros banco central hoje",
+        "tabela de juros dos bancos"
       ],
       "keywords": [
         "taxa media de juros banco central",
@@ -879,7 +891,7 @@
         "minha-taxa-esta-cara",
         "conversor-de-taxas"
       ],
-      "updatedAt": "2026-08-29"
+      "updatedAt": "2026-09-30"
     },
     {
       "id": "quando-fico-livre-das-dividas",
