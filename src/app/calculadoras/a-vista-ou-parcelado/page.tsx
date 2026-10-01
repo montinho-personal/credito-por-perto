@@ -5,13 +5,28 @@ import { webPageJsonLd } from "@/lib/schema/jsonld";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { Breadcrumbs } from "@/components/layout/Breadcrumbs";
 import { CashVsInstallmentsCalculator } from "@/components/calculators/CashVsInstallmentsCalculator";
+import { presentValueOfInstallments } from "@/lib/calculators/cash-vs-installments";
+import { formatPercentBR } from "@/lib/calculators/proposal-comparison";
+
+const DESCRIPTION =
+  "Compare à vista e parcelado pelo total e veja, com a taxa que você escolher, o desconto à vista que empata as duas opções. Sem cadastro.";
 
 export const metadata: Metadata = buildMetadata({
-  title: "À vista ou parcelado? Compare o preço até o fim",
+  title: "À vista ou parcelado? Calculadora do desconto mínimo",
   description:
-    "Compare preço à vista, entrada, parcelas e total. Veja quanto custa parcelar, qual é a diferença em reais e qual desconto à vista está sendo oferecido. Sem cadastro.",
+    "Compare à vista e parcelado pelo total e veja, com a taxa que você escolher, o desconto à vista que empata as duas opções. Sem cadastro.",
   path: "/calculadoras/a-vista-ou-parcelado/",
 });
+
+/*
+ * Tabela ilustrativa do desconto de equilíbrio, calculada pelo mesmo motor
+ * da ferramenta: parcelas iguais sem acréscimo, primeira em 30 dias.
+ * As taxas são hipotéticas e aparecem rotuladas assim na página.
+ */
+const EXAMPLE_RATES = [0.005, 0.01] as const;
+const EXAMPLE_COUNTS = [1, 3, 6, 10, 12] as const;
+const breakEvenDiscount = (count: number, monthlyRate: number) =>
+  (1 - presentValueOfInstallments(1, count, monthlyRate, "em-um-mes") / count) * 100;
 
 export default function AVistaOuParceladoPage() {
   return (
@@ -21,8 +36,8 @@ export default function AVistaOuParceladoPage() {
       className="mx-auto max-w-5xl px-4 py-8">
       <JsonLd
         data={webPageJsonLd(
-          "À vista ou parcelado?",
-          "Compare o preço à vista com o parcelado e veja quanto cada opção custa até o fim, sem recomendação de forma de pagamento.",
+          "À vista ou parcelado? Calculadora do desconto mínimo",
+          DESCRIPTION,
           "/calculadoras/a-vista-ou-parcelado/",
         )}
       />
@@ -39,9 +54,10 @@ export default function AVistaOuParceladoPage() {
           À vista ou parcelado?
         </h1>
         <p className="mt-3 text-lg leading-relaxed text-brand-muted">
-          Compare o preço à vista com as parcelas e veja quanto cada opção custa até o fim.{" "}
-          <strong>A parcela pode diminuir enquanto o total aumenta</strong> — e são duas
-          perguntas diferentes: qual opção custa menos, e qual preserva mais caixa agora.
+          Compare o preço à vista com as parcelas e veja quanto cada opção custa até o fim. Com
+          uma taxa de rendimento que você escolher, a ferramenta também mostra{" "}
+          <strong>o desconto à vista que empata as duas opções</strong>. Qual opção custa menos e
+          qual preserva mais caixa agora são perguntas diferentes, e a conta mostra as duas.
         </p>
       </header>
 
@@ -57,6 +73,88 @@ export default function AVistaOuParceladoPage() {
           quanto o parcelamento acrescenta. Um exemplo: R$ 4.500 à vista contra 12 × R$ 425
           dá R$ 5.100 — <strong>R$ 600 a mais</strong>, ou 13,33% sobre o preço à vista.
         </p>
+
+        <h2 id="desconto-minimo">Qual é o desconto mínimo para pagar à vista?</h2>
+        <p>
+          Depende de três coisas: <strong>quantas parcelas</strong>, <strong>quando vence a
+          primeira</strong> e <strong>quanto o dinheiro renderia</strong> se ficasse com você
+          enquanto as parcelas são pagas. Quanto mais longo o parcelamento e maior o rendimento,
+          maior o desconto necessário para as duas opções empatarem. A tabela mostra esse ponto
+          de equilíbrio para uma compra parcelada sem acréscimo, com a primeira parcela em 30
+          dias:
+        </p>
+        <div className="not-prose my-4 overflow-x-auto rounded-xl border border-brand-border bg-white">
+          <table className="w-full text-sm">
+            <caption className="px-4 pt-3 text-left text-xs text-brand-muted">
+              Desconto à vista que empata com o parcelado sem juros (taxas hipotéticas)
+            </caption>
+            <thead>
+              <tr className="border-b border-brand-border text-left text-xs uppercase tracking-wide text-brand-muted">
+                <th className="px-4 py-2">Parcelas</th>
+                {EXAMPLE_RATES.map((rate) => (
+                  <th key={rate} className="px-4 py-2">
+                    Rendendo {formatPercentBR(rate * 100, rate * 100 < 1 ? 1 : 0)} ao mês
+                  </th>
+                ))}
+              </tr>
+            </thead>
+            <tbody>
+              {EXAMPLE_COUNTS.map((count) => (
+                <tr key={count} className="border-t border-brand-border/60 text-brand-text">
+                  <td className="px-4 py-1.5 font-semibold">{count}x</td>
+                  {EXAMPLE_RATES.map((rate) => (
+                    <td key={rate} className="px-4 py-1.5">
+                      {formatPercentBR(breakEvenDiscount(count, rate))}
+                    </td>
+                  ))}
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+        <p>
+          As taxas de 0,5% e 1% ao mês são <strong>hipotéticas</strong>, escolhidas só para
+          mostrar a conta. Não são sugestão nem previsão de rendimento. Se a primeira parcela for
+          paga no ato, os percentuais ficam menores. Na ferramenta, abra &ldquo;E o valor do
+          dinheiro no tempo?&rdquo;, informe a taxa líquida que você considera realista e veja o
+          desconto de equilíbrio da sua compra, em reais e em percentual.
+        </p>
+
+        <h2 id="cinco-por-cento">Vale a pena pagar à vista com 5% de desconto?</h2>
+        <p>
+          Não existe resposta única para 5%. Pela tabela acima, em 10 parcelas sem juros, 5% de
+          desconto fica acima do equilíbrio se o dinheiro renderia 0,5% ao mês (2,70%) e um pouco
+          abaixo se renderia 1% ao mês (5,29%). Em 3 parcelas, 5% fica acima do equilíbrio nos
+          dois casos. O mesmo desconto pode ser grande para um parcelamento curto e pequeno para
+          um longo. Por isso a ferramenta pede o número de parcelas e a taxa, em vez de
+          responder com uma regra fixa.
+        </p>
+
+        <h2 id="parcelar-e-investir">Parcelar e investir o dinheiro: como entra na conta?</h2>
+        <p>
+          É a ideia por trás do valor presente: em vez de pagar tudo hoje, você deixa o dinheiro
+          aplicado e retira cada parcela no vencimento. Se o rendimento acumulado no período for
+          maior que o desconto oferecido, o parcelamento custa menos em valor de hoje. Se for
+          menor, pagar à vista custa menos. A conta só vale com algumas condições:
+        </p>
+        <ul>
+          <li>
+            <strong>Taxa líquida.</strong> Use o rendimento depois de imposto e custos, não a taxa
+            bruta anunciada;
+          </li>
+          <li>
+            <strong>Dinheiro realmente aplicado.</strong> Se o valor acabar gasto em outra coisa,
+            o rendimento da conta não existe;
+          </li>
+          <li>
+            <strong>Liquidez.</strong> A aplicação precisa permitir resgatar o valor de cada
+            parcela na data certa;
+          </li>
+          <li>
+            <strong>Rendimento não é garantido.</strong> A taxa é uma referência sua, e o
+            resultado é um cenário, não uma promessa.
+          </li>
+        </ul>
 
         <h2 id="parcelado-sem-juros">
           Parcelado sem juros é igual ao preço à vista?
@@ -123,23 +221,50 @@ export default function AVistaOuParceladoPage() {
           afirmar é quanto o parcelamento acrescenta ao preço, não a que título.
         </p>
 
-        <h2 id="alem-do-preco">O que considerar além do preço?</h2>
+        <h2 id="credito-a-vista">Crédito à vista ou parcelado: qual a diferença?</h2>
+        <p>
+          Pagamento à vista é o pagamento integral no momento da compra, em dinheiro, Pix,
+          débito ou no crédito em uma vez. Na maquininha, <strong>crédito à vista</strong> é a
+          compra lançada inteira na próxima fatura do cartão; <strong>crédito parcelado</strong>{" "}
+          divide o valor em várias faturas. Para quem compra, o crédito à vista funciona como
+          pagar em uma parcela daqui a alguns dias ou semanas, até o vencimento da fatura.
+        </p>
+        <p>
+          <strong>O crédito à vista tem juros?</strong> A compra em si não tem acréscimo. Os juros
+          aparecem quando a fatura não é paga inteira: o saldo vai para o rotativo ou para o
+          parcelamento da fatura, que têm juros próprios (a média de cada um está no{" "}
+          <Link href="/taxas/">Radar de taxas</Link>). Para ver quanto isso custa, use a{" "}
+          <Link href="/calculadoras/juros-cartao-credito/">calculadora de juros do cartão</Link>.
+          Já no parcelado com juros, cobrado pelo banco do cartão, o total sai maior que o preço;
+          some todas as parcelas e compare aqui antes de confirmar.
+        </p>
+
+        <h2 id="ipva-iptu">Serve para IPVA, IPTU e outras contas com cota única?</h2>
+        <p>
+          Serve. Informe a cota única com desconto como opção à vista e as parcelas como opção
+          parcelada, com o valor de cada uma. A ferramenta mostra a diferença em reais e, com uma
+          taxa que você escolher, o desconto de equilíbrio. Os percentuais de desconto, o número
+          de parcelas e as datas de vencimento são definidos por cada estado (IPVA) ou município
+          (IPTU) e mudam de ano para ano: confira os do seu caso no site da Secretaria da Fazenda
+          do estado ou da prefeitura.
+        </p>
+
+        <h2 id="desvantagens">Quais são as desvantagens de pagar à vista e de parcelar?</h2>
+        <p>Cada forma de pagamento tem um custo que não aparece no preço:</p>
         <ul>
           <li>
-            <strong>O que você faria com o dinheiro.</strong> Se ele ficaria parado, o custo
-            de usá-lo agora é menor. Se cobriria uma despesa que está chegando, é maior;
+            <strong>À vista, o caixa sai todo de uma vez.</strong> Pagar usando o que sobrou de
+            reserva troca um desconto pequeno por um risco grande no próximo imprevisto. E, se o
+            dinheiro ficaria aplicado, ele deixa de render;
           </li>
           <li>
-            <strong>Sua reserva.</strong> Pagar à vista usando o que sobrou de reserva troca um
-            desconto pequeno por um risco grande no próximo imprevisto;
+            <strong>Parcelado, o compromisso fica em aberto.</strong> Parcelar no cartão ocupa
+            limite por meses, o que pode faltar numa emergência, e soma parcelas às despesas dos
+            próximos meses. Uma parcela confortável hoje pode não ser confortável em janeiro;
           </li>
           <li>
-            <strong>O limite ocupado.</strong> Parcelar no cartão compromete limite por meses,
-            o que pode faltar numa emergência;
-          </li>
-          <li>
-            <strong>As despesas dos próximos meses.</strong> Uma parcela confortável hoje pode
-            não ser confortável em janeiro.
+            <strong>Nos dois casos, pesa o uso do dinheiro.</strong> Se ele ficaria parado, o custo
+            de usá-lo agora é menor. Se cobriria uma despesa que está chegando, é maior.
           </li>
         </ul>
 
@@ -169,6 +294,18 @@ export default function AVistaOuParceladoPage() {
           assumir uma das duas em silêncio seria errar sem avisar.
         </p>
 
+        <h2 id="excel">Como fazer essa conta no Excel?</h2>
+        <p>
+          A função é <strong>VP</strong> (valor presente). Para 10 parcelas de R$ 100 com
+          rendimento de 1% ao mês e a primeira em 30 dias, use{" "}
+          <code>=VP(1%;10;-100)</code>, que dá cerca de R$ 947,13. Com a primeira parcela no
+          ato, acrescente o tipo 1: <code>=VP(1%;10;-100;0;1)</code>. O desconto de equilíbrio é{" "}
+          <strong>1 − valor presente ÷ total parcelado</strong>: 1 − 947,13 ÷ 1.000 = 5,29%. A
+          taxa precisa estar no mesmo período das parcelas; para converter uma taxa anual em
+          mensal, use o{" "}
+          <Link href="/calculadoras/conversor-de-taxas/">conversor de taxas</Link>.
+        </p>
+
         <h2 id="metodologia-avista">Como fazemos a comparação?</h2>
         <p>
           Só aritmética verificável. <strong>Total = entrada + parcelas + custos obrigatórios
@@ -177,7 +314,9 @@ export default function AVistaOuParceladoPage() {
           variam, usamos o total divulgado — multiplicar a primeira parcela daria um número
           errado. No modo avançado, o valor presente usa equivalência composta para converter
           taxa anual em mensal (nunca dividindo por 12) e distingue anuidade antecipada de
-          postecipada.
+          postecipada. O desconto de equilíbrio é{" "}
+          <strong>(1 − valor presente ÷ total parcelado) × 100</strong>, sobre o total
+          parcelado nominal.
         </p>
         <p>
           O que a ferramenta <strong>não</strong> faz: não recomenda pagar à vista nem
@@ -190,7 +329,7 @@ export default function AVistaOuParceladoPage() {
         <p>
           Encontrou algo errado? Veja a{" "}
           <Link href="/politica-de-correcoes/">política de correções</Link>. Metodologia
-          revisada em 29/08/2026.
+          revisada em 01/10/2026.
         </p>
       </section>
     </div>

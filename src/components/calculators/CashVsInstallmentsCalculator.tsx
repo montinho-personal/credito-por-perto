@@ -808,6 +808,16 @@ export function CashVsInstallmentsCalculator() {
                       Nessa taxa, um preço à vista abaixo de{" "}
                       <strong>{formatCentsBRL(result.presentValue.breakEvenCashPriceCents)}</strong>{" "}
                       teria menor custo presente que o parcelamento informado.
+                      {result.presentValue.breakEvenDiscountPercent !== null &&
+                      result.presentValue.breakEvenDiscountPercent > 0 ? (
+                        <>
+                          {" "}
+                          Em percentual, é um desconto de{" "}
+                          <strong>{formatPercentBR(result.presentValue.breakEvenDiscountPercent)}</strong>{" "}
+                          sobre o total parcelado de{" "}
+                          {formatCentsBRL(result.presentValue.nominalTotalCents)}.
+                        </>
+                      ) : null}
                     </p>
                   </div>
                 ) : (

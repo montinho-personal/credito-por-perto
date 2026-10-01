@@ -172,6 +172,12 @@ export interface PresentValueResult {
   differenceCents: number;
   /** Preço à vista que igualaria as duas opções nesta taxa. */
   breakEvenCashPriceCents: number;
+  /**
+   * O mesmo ponto de equilíbrio como desconto sobre o total parcelado
+   * nominal, em %: (1 − VP ÷ total) × 100. É o "desconto mínimo" que a
+   * busca procura. Nulo quando o total nominal é zero.
+   */
+  breakEvenDiscountPercent: number | null;
   sentences: string[];
 }
 
@@ -516,6 +522,10 @@ export function computePresentValue(
     differenceCents,
     /* O preço à vista que igualaria as duas opções nesta taxa. */
     breakEvenCashPriceCents: presentValueCents,
+    breakEvenDiscountPercent:
+      installments.totalCents > 0
+        ? (1 - presentValueCents / installments.totalCents) * 100
+        : null,
     sentences,
   };
 }

@@ -418,7 +418,13 @@
         "desconto à vista",
         "parcelar compra",
         "sem juros vale a pena",
-        "pix ou cartão"
+        "pix ou cartão",
+        "simulador à vista ou parcelado",
+        "desconto mínimo à vista",
+        "parcelar e investir",
+        "crédito à vista ou parcelado",
+        "ipva à vista ou parcelado",
+        "à vista ou a prazo"
       ],
       "keywords": [
         "a vista ou parcelado",
@@ -428,7 +434,12 @@
         "desconto a vista quanto compensa",
         "quanto custa parcelar a compra",
         "diferenca preco a vista e parcelado",
-        "pix ou cartao parcelado"
+        "pix ou cartao parcelado",
+        "a vista ou parcelado calculadora",
+        "vale a pena pagar a vista com 5 de desconto",
+        "pagar a vista ou parcelado excel",
+        "comprar a vista ou parcelado sem juros",
+        "credito a vista tem juros"
       ],
       "tags": [
         "a-vista",
@@ -449,7 +460,7 @@
       "defaultNextSteps": [
         "parcela-no-orcamento"
       ],
-      "updatedAt": "2026-09-24"
+      "updatedAt": "2026-10-01"
     },
     {
       "id": "financiamento-imobiliario",

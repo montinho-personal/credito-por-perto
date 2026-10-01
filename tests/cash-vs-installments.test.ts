@@ -372,6 +372,39 @@ describe("valor do dinheiro no tempo", () => {
     const pv = out.presentValue!;
     expect(pv.breakEvenCashPriceCents).toBe(pv.presentValueCents);
   });
+
+  it("o desconto de equilíbrio confere com a tabela publicada na página", () => {
+    /* R$ 6.000 sem juros, taxa hipotética de 1% ao mês, 1ª parcela em 30 dias. */
+    const casos: Array<[number, number, number]> = [
+      [3, 200_000, 1.97],
+      [6, 100_000, 3.41],
+      [10, 60_000, 5.29],
+      [12, 50_000, 6.21],
+    ];
+    for (const [n, parcela, esperado] of casos) {
+      const out = comparePaymentOptions({
+        options: [aVista("a", 600_000), parcelado("b", n, parcela)],
+        opportunityRate: { value: 1, unit: "mensal", firstInstallment: "em-um-mes" },
+      });
+      expect(out.presentValue!.breakEvenDiscountPercent!.toFixed(2), `${n}x`).toBe(
+        esperado.toFixed(2),
+      );
+    }
+    /* A 0,5% ao mês, os mesmos 10x empatam com um desconto bem menor. */
+    const meio = comparePaymentOptions({
+      options: [aVista("a", 600_000), parcelado("b", 10, 60_000)],
+      opportunityRate: { value: 0.5, unit: "mensal", firstInstallment: "em-um-mes" },
+    });
+    expect(meio.presentValue!.breakEvenDiscountPercent!.toFixed(2)).toBe("2.70");
+  });
+
+  it("parcela única paga no ato não tem desconto de equilíbrio", () => {
+    const out = comparePaymentOptions({
+      options: [aVista("a", 600_000), parcelado("b", 1, 600_000)],
+      opportunityRate: { value: 1, unit: "mensal", firstInstallment: "hoje" },
+    });
+    expect(out.presentValue!.breakEvenDiscountPercent).toBeCloseTo(0, 10);
+  });
 });
 
 /* ------------------------------------------------------------------ *
