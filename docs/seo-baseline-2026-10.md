@@ -1,0 +1,233 @@
+# Linha de base de SEO: revisão por intenção de busca (out/2026)
+
+Registro para comparar, cerca de um mês depois, o efeito da revisão por intenção de busca
+(SERP real) feita entre 24/09/2026 e 01/10/2026.
+A série continua; cada nova página revisada entra nas duas tabelas com a sua data. Cada página revisada aparece abaixo com a data
+em que foi ao ar, o commit, e o title e a description de antes e de depois.
+
+## Como medir
+
+**Fonte das métricas:** Google Search Console, propriedade `https://www.creditoporperto.com/`,
+relatório Desempenho → Resultados da pesquisa, tipo "Web", filtrado por página (URL exata).
+
+**Janelas de comparação (28 dias cada, mesmos dias da semana):**
+
+| Janela | Período | Papel |
+| --- | --- | --- |
+| Antes | 03/09/2026 a 30/09/2026 | linha de base, antes da maioria das mudanças |
+| Depois | 02/10/2026 a 29/10/2026 | o mês seguinte à última leva (01/10); leitura em 01/11/2026 |
+| Depois (2ª leitura, opcional) | 02/11/2026 a 29/11/2026 | com mais tempo de reindexação; leitura em 01/12/2026 |
+
+Páginas mudadas em 24 e 25/09 já têm alguns dias de "depois" dentro da janela "Antes". Para elas,
+use também a janela 27/08 a 23/09 se houver dados.
+
+**Métricas por página:** cliques, impressões, CTR e posição média. Por consulta, para as páginas
+com mais impressões: as 10 principais consultas de cada janela.
+
+**Cuidados na leitura:**
+- o site é novo (primeiras páginas em 05/08/2026), então parte de qualquer alta vem só da
+  maturação natural do domínio. Compare com as páginas **não** revisadas no mesmo período
+  (grupo de controle: os outros 45 guias locais e os artigos);
+- posição média de página com poucas impressões oscila muito; abaixo de cerca de 100 impressões
+  na janela, trate a variação como ruído;
+- os prints da SERP servem como registro qualitativo, não como posição (ver o registro no fim).
+
+## Estado das métricas na data deste registro
+
+Ainda não preenchido. Em 01/10/2026 não foi possível ler o Search Console por aqui: o conector
+Supermetrics está com o teste gratuito expirado desde 25/09/2026 e o Vercel Web Analytics não está
+ativo no projeto. Os números da janela "Antes" entram aqui assim que forem exportados do Search
+Console (Desempenho → Exportar → CSV, aba Páginas e aba Consultas).
+
+| URL | Cliques antes | Impr. antes | CTR antes | Posição antes | Cliques depois | Impr. depois | CTR depois | Posição depois |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| `/calculadoras/comparador-de-propostas/` | | | | | | | | |
+| `/calculadoras/emprestimo/` | | | | | | | | |
+| `/calculadoras/margem-consignavel/` | | | | | | | | |
+| `/calculadoras/minha-taxa-esta-cara/` | | | | | | | | |
+| `/simuladores/amortizacao-financiamento/` | | | | | | | | |
+| `/calculadoras/consultar-instituicao/` | | | | | | | | |
+| `/calculadoras/sinais-de-golpe/` | | | | | | | | |
+| `/calculadoras/conversor-de-taxas/` | | | | | | | | |
+| `/calculadoras/parcela-no-orcamento/` | | | | | | | | |
+| `/calculadoras/plano-para-sair-das-dividas/` | | | | | | | | |
+| `/calculadoras/quitacao-antecipada/` | | | | | | | | |
+| `/calculadoras/renegociacao-de-dividas/` | | | | | | | | |
+| `/calculadoras/trocar-divida/` | | | | | | | | |
+| `/taxas/` | | | | | | | | |
+| `/calculadoras/a-vista-ou-parcelado/` | | | | | | | | |
+| `/emprestimos/sp/barueri/` | | | | | | | | |
+| `/emprestimos/sp/barueri/alphaville/` | | | | | | | | |
+| `/emprestimos/sp/campinas/` | | | | | | | | |
+| `/emprestimos/sp/jundiai/` | | | | | | | | |
+
+## O que mudou em cada página
+
+### `/calculadoras/comparador-de-propostas/`
+
+- **No ar em:** 24/09/2026 (commit `54aef33`)
+- **Title antes:** Comparador de propostas de crédito: parcela, prazo, CET e total
+- **Title depois:** Comparar propostas de empréstimo: CET e total pago
+- **Description antes:** Compare gratuitamente até 3 propostas de crédito lado a lado: parcela, prazo, CET e total pago. Sem cadastro, sem informar banco e sem indicação de contratação.
+- **Description depois:** Já recebeu duas ou três propostas? Compare lado a lado parcela, prazo, CET, valor liberado e total pago. Grátis, sem CPF e sem buscar ofertas.
+
+### `/calculadoras/emprestimo/`
+
+- **No ar em:** 24/09/2026 (commit `cc48bc6`)
+- **Title antes:** Calculadora de empréstimo: parcelas, juros e total pago
+- **Title depois:** Calculadora de empréstimo: parcelas, juros e total pago
+- **Description antes:** Simule parcelas de empréstimo pelo sistema Price: valor da parcela, total pago, total de juros, taxa anual equivalente e tabela de amortização completa.
+- **Description depois:** Informe valor, taxa de juros e número de parcelas e simule o empréstimo: veja a parcela mensal, os juros e o total pago. Grátis e sem CPF.
+
+### `/calculadoras/margem-consignavel/`
+
+- **No ar em:** 24/09/2026 (commit `b9d9899`)
+- **Title antes:** Calculadora de margem consignável: INSS e CLT
+- **Title depois:** Calculadora de margem consignável: INSS e CLT
+- **Description antes:** Calcule quanto da sua margem consignável está livre: limite para empréstimo, fatias dos cartões e o disponível após as parcelas atuais — sem cadastro nem CPF.
+- **Description depois:** Informe benefício ou salário e as parcelas de consignado que já paga e estime sua margem disponível. Para INSS e CLT, sem CPF e sem cadastro.
+
+### `/calculadoras/minha-taxa-esta-cara/`
+
+- **No ar em:** 25/09/2026 (commit `e38f9f1`)
+- **Title antes:** Minha taxa está cara? Compare com a média do Banco Central
+- **Title depois:** Minha taxa está cara? Compare à média do Banco Central
+- **Description antes:** Informe a taxa do seu empréstimo e veja como ela se compara à média oficial do Banco Central para a mesma modalidade. Grátis, sem cadastro e sem indicar banco.
+- **Description depois:** Recebeu uma proposta? Informe a taxa de juros e a modalidade e compare com a média oficial do Banco Central: abaixo, próxima ou acima. Sem cadastro.
+
+### `/simuladores/amortizacao-financiamento/`
+
+- **No ar em:** 28/09/2026 (commit `0db93bc`)
+- **Title antes:** (página nova)
+- **Title depois:** Simulador de amortização de financiamento
+- **Description antes:** (página nova)
+- **Description depois:** Veja quanto um pagamento extra reduz o prazo, a prestação e os juros do seu financiamento. SAC e Price, aporte único ou mensal. Sem cadastro.
+
+### `/calculadoras/consultar-instituicao/`
+
+- **No ar em:** 29/09/2026 (commit `7e4378d`)
+- **Title antes:** Consultar instituição no Banco Central: pesquise por nome ou CNPJ
+- **Title depois:** Financeira autorizada pelo Banco Central? Consulte aqui
+- **Description antes:** Consulte gratuitamente uma instituição financeira por nome ou CNPJ usando dados oficiais do Banco Central. Sem cadastro — e com o aviso: registro não confirma o contato.
+- **Description depois:** Veja se uma financeira, banco ou cooperativa aparece como autorizada no Banco Central. Pesquise por nome ou CNPJ, grátis e sem cadastro.
+
+### `/calculadoras/sinais-de-golpe/`
+
+- **No ar em:** 29/09/2026 (commit `6e5e86b`)
+- **Title antes:** Golpe de empréstimo: verifique os sinais antes de pagar
+- **Title depois:** Como saber se empréstimo é golpe: verifique os sinais
+- **Description antes:** Recebeu uma oferta de empréstimo? Responda perguntas rápidas e veja sinais de alerta antes de enviar dinheiro ou dados. Gratuito, sem cadastro e sem coleta de respostas.
+- **Description depois:** Pediram Pix, taxa, seguro ou depósito para liberar um empréstimo? Responda perguntas rápidas e veja o que verificar antes de pagar. Sem cadastro.
+
+### `/calculadoras/conversor-de-taxas/`
+
+- **No ar em:** 30/09/2026 (commit `2999354`)
+- **Title antes:** Conversor de taxa mensal para anual (e anual para mensal)
+- **Title depois:** Converter taxa mensal para anual (e anual para mensal)
+- **Description:** sem mudança
+
+### `/calculadoras/parcela-no-orcamento/`
+
+- **No ar em:** 30/09/2026 (commit `36d6c91`)
+- **Title antes:** Quanto de parcela cabe no meu orçamento? Faça a conta completa
+- **Title depois:** Quanto de parcela cabe no meu orçamento? Além dos 30%
+- **Description antes:** Veja como uma nova parcela afetaria seu orçamento mensal: informe renda, despesas e dívidas e descubra quanto sobra antes e depois dela. Grátis, sem cadastro.
+- **Description depois:** A regra dos 30% da renda é só o começo. Informe renda, despesas e parcelas e veja quanto sobra no mês antes e depois da nova parcela. Sem cadastro.
+
+### `/calculadoras/plano-para-sair-das-dividas/`
+
+- **No ar em:** 30/09/2026 (commit `211834e`)
+- **Title antes:** Plano para sair das dívidas: veja qual pagar primeiro
+- **Title depois:** Plano para sair das dívidas: veja qual pagar primeiro
+- **Description antes:** Organize suas dívidas, compare os métodos avalanche e bola de neve e monte um plano mensal de pagamento. Grátis, sem cadastro e sem enviar seus valores.
+- **Description depois:** Monte um plano para sair das dívidas: liste o que deve, veja qual pagar primeiro (avalanche ou bola de neve) e quanto sobra por mês. Sem cadastro.
+
+### `/calculadoras/quitacao-antecipada/`
+
+- **No ar em:** 30/09/2026 (commit `be58c50`)
+- **Title antes:** Calculadora de Quitação Antecipada — compare saldo e parcelas
+- **Title depois:** Calculadora de quitação antecipada de empréstimo
+- **Description antes:** Compare o saldo para quitação com a soma das parcelas que ainda faltam e veja a diferença em reais. Sem cadastro, sem CPF — nada sai do seu dispositivo.
+- **Description depois:** Vai quitar empréstimo, consignado ou financiamento antes? Compare o saldo para quitação com as parcelas que faltam e veja a diferença. Sem cadastro.
+
+### `/calculadoras/renegociacao-de-dividas/`
+
+- **No ar em:** 30/09/2026 (commit `33b87d2`)
+- **Title antes:** Calculadora de Renegociação de Dívidas — compare acordos
+- **Title depois:** Calculadora de renegociação de dívidas: compare acordos
+- **Description antes:** Compare propostas de acordo: entrada, parcelas, prazo e valor total. Veja a diferença entre pagar à vista e parcelado e confira o desconto anunciado. Sem cadastro.
+- **Description depois:** Recebeu proposta de acordo? Some entrada, parcelas e custos, compare à vista e parcelado e confira o desconto anunciado. Sem cadastro.
+
+### `/calculadoras/trocar-divida/`
+
+- **No ar em:** 30/09/2026 (commit `ad0ad0d`)
+- **Title antes:** Vale a pena trocar esta dívida? Compare antes de decidir
+- **Title depois:** Vale a pena trocar dívida por outra? Compare o total
+- **Description antes:** Compare sua dívida atual com a nova proposta — portabilidade, renegociação ou novo empréstimo — e veja o que muda na parcela, no prazo e no total a pagar. Sem cadastro.
+- **Description depois:** Pensando em pegar empréstimo para quitar dívida ou fazer portabilidade? Compare a dívida atual com a nova proposta: parcela, prazo e total pago.
+
+### `/taxas/`
+
+- **No ar em:** 30/09/2026 (commit `8d30695`)
+- **Title antes:** Radar de taxas de crédito: acompanhe os dados do Banco Central
+- **Title depois:** Taxa média de juros do Banco Central por modalidade
+- **Description antes:** Acompanhe as taxas médias de empréstimo pessoal, consignado, cartão, cheque especial e financiamento de veículos com dados oficiais e histórico do Banco Central.
+- **Description depois:** Veja a taxa média de juros de empréstimo pessoal, consignado, cartão, cheque especial e veículos, com o último dado e o histórico do Banco Central.
+
+### `/calculadoras/a-vista-ou-parcelado/`
+
+- **No ar em:** 01/10/2026 (commit `9705eac`)
+- **Title antes:** À vista ou parcelado? Compare o preço até o fim
+- **Title depois:** À vista ou parcelado? Calculadora do desconto mínimo
+- **Description antes:** Compare preço à vista, entrada, parcelas e total. Veja quanto custa parcelar, qual é a diferença em reais e qual desconto à vista está sendo oferecido. Sem cadastro.
+- **Description depois:** Compare à vista e parcelado pelo total e veja, com a taxa que você escolher, o desconto à vista que empata as duas opções. Sem cadastro.
+
+### `/emprestimos/sp/barueri/`
+
+- **No ar em:** 01/10/2026 (commit `c137920`)
+- **Title antes:** Empréstimos em Barueri (SP): guia de crédito e proteção ao consumidor
+- **Title depois:** Empréstimo em Barueri: Banco do Povo, Procon e golpes
+- **Description antes:** Guia de crédito para quem mora ou trabalha em Barueri: o consignado no polo de empregos, o Procon no Ganha Tempo com agendamento on-line e a comparação segura de propostas.
+- **Description depois:** Banco do Povo e Procon no Ganha Tempo, consignado CLT e dinheiro urgente sem cair em agiota ou no golpe do liberado na hora. Guia de Barueri (SP).
+
+### `/emprestimos/sp/barueri/alphaville/`
+
+- **No ar em:** 01/10/2026 (commit `e013783`)
+- **Title antes:** Empréstimos em Alphaville: a qual município (e Procon) você responde
+- **Title depois:** Empréstimo em Alphaville: onde pedir e onde reclamar
+- **Description antes:** Alphaville se divide entre Barueri e Santana de Parnaíba — e isso define a qual Procon recorrer num problema de crédito. O guia da região, com os canais dos dois lados.
+- **Description depois:** Escritório de crédito em Alphaville? Veja quem de fato empresta, como pedir com urgência sem cair em golpe e qual Procon atende o seu endereço.
+
+### `/emprestimos/sp/campinas/`
+
+- **No ar em:** 01/10/2026 (commit `7256e72`)
+- **Title antes:** Empréstimo em Campinas (SP): o 151 do Procon, os 5 postos e o Banco do Povo
+- **Title depois:** Empréstimo em Campinas: pessoal, consignado e Procon
+- **Description antes:** Guia de crédito para Campinas: o 151 do Procon com horário estendido, os cinco postos com agendamento, o Banco do Povo no CPAT e o filtro contra ofertas de rua.
+- **Description depois:** Empréstimo em Campinas: pessoal, consignado ou com restrição? Veja o que conferir na loja, o Banco do Povo no CPAT e o Procon 151 até as 20h.
+
+### `/emprestimos/sp/jundiai/`
+
+- **No ar em:** 01/10/2026
+- **Title antes:** Empréstimo em Jundiaí (SP): o Procon que começa pelo on-line e o Banco do Povo no shopping
+- **Title depois:** Empréstimo em Jundiaí: consignado, nome sujo e Procon
+- **Description antes:** Guia de crédito para Jundiaí: as três vias do Procon na ordem que o próprio órgão indica e o Banco do Povo no Maxi Shopping, com agendamento pelo portal.
+- **Description depois:** Empréstimo em Jundiaí: consignado, nome sujo e lojas de crédito. Veja o que conferir antes de assinar e o Procon que começa pelo on-line.
+
+## Registro qualitativo da SERP (prints de 01/10/2026)
+
+Prints feitos pelo proprietário: os do computador (Campinas e Jundiaí) em janela anônima, com
+localização por IP em Barueri (SP); os do celular sem indicação de modo anônimo. Em
+nenhum deles o Crédito por Perto aparece na parte capturada. Na comparação, refazer a mesma
+busca, do mesmo jeito, e anotar se o site aparece e em que posição.
+
+| Busca | O que dominava a página | Perguntas do "As pessoas também perguntam" |
+| --- | --- | --- |
+| à vista ou parcelado? | calculadora do "desconto mínimo" (1x, 3x, 6x, 10x), Investidor Sardinha, Mercado Pago; resumo por IA com regra genérica de 5% a 10% | o que é pagamento à vista; vale a pena com 5% de desconto; crédito à vista tem juros; desvantagens do pagamento à vista |
+| empréstimo em barueri sp | Banco do Povo (página da prefeitura, "Setor Laranja"), oHub (consignado), páginas de correspondentes | onde fazer empréstimo urgente; mais fácil de aprovar; R$ 2.000 e R$ 500 urgente |
+| empréstimo em alphaville | Daycoval (agências e correspondentes), escritórios locais de "apoio ao crédito", FinanZero | onde pegar empréstimo urgente; R$ 2.000; mais fácil de aprovar; R$ 10.000 |
+| Empréstimo em Campinas | mapa com lojas, Agibank (pessoal), Crefisa (negativado), Paraná Banco (consignado em loja física) | onde fazer empréstimo urgente; R$ 10.000; mais fácil de aprovar; R$ 2.000 |
+| Emprétimo em Jundiaí | Bom Pra Crédito (página "empréstimo em Jundiaí"), Vazoli e Finamax (lojas locais), agência Banco Mercantil | onde fazer empréstimo urgente; mais fácil de aprovar; R$ 2.000; qual banco libera com nome sujo |
+
+As revisões das calculadoras 3 a 13 usaram prints anteriores, resumidos nas mensagens de
+commit de cada página (`git log --grep "SERP real"`).
