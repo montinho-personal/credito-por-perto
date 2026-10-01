@@ -60,6 +60,9 @@ Console (Desempenho → Exportar → CSV, aba Páginas e aba Consultas).
 | `/emprestimos/sp/barueri/alphaville/` | | | | | | | | |
 | `/emprestimos/sp/campinas/` | | | | | | | | |
 | `/emprestimos/sp/jundiai/` | | | | | | | | |
+| `/emprestimos/sp/sumare/` | | | | | | | | |
+| `/emprestimos/sp/americana/` | | | | | | | | |
+| `/emprestimos/sp/hortolandia/` | | | | | | | | |
 
 ## O que mudou em cada página
 
@@ -214,9 +217,33 @@ Console (Desempenho → Exportar → CSV, aba Páginas e aba Consultas).
 - **Description antes:** Guia de crédito para Jundiaí: as três vias do Procon na ordem que o próprio órgão indica e o Banco do Povo no Maxi Shopping, com agendamento pelo portal.
 - **Description depois:** Empréstimo em Jundiaí: consignado, nome sujo e lojas de crédito. Veja o que conferir antes de assinar e o Procon que começa pelo on-line.
 
+### `/emprestimos/sp/sumare/`
+
+- **No ar em:** 01/10/2026
+- **Title antes:** Empréstimo em Sumaré (SP): resolver sem perder um dia de trabalho
+- **Title depois:** Empréstimo em Sumaré: lojas, conta de luz e Procon
+- **Description antes:** Guia de crédito para Sumaré: os cinco canais do Procon municipal, o balcão que junta Banco do Povo, MEI e PAT e a régua para comparar qualquer proposta.
+- **Description depois:** Empréstimo em Sumaré: loja de crédito, conta de luz, consignado ou cooperativa? Veja o que conferir antes de assinar e onde reclamar.
+
+### `/emprestimos/sp/americana/`
+
+- **No ar em:** 01/10/2026
+- **Title antes:** Empréstimo em Americana (SP): o Procon que mudou de sede e o carnê que é empréstimo
+- **Title depois:** Empréstimo em Americana: lojas, FGTS e Banco do Povo
+- **Description antes:** Guia de crédito para Americana: o endereço vigente do Procon na Sete de Setembro, o portal do consumidor com atendimento on-line e como comparar crediário de loja pelo custo total.
+- **Description depois:** Empréstimo em Americana: lojas de consignado, resgate do FGTS, nome sujo e o Banco do Povo. O que conferir antes de assinar e onde reclamar.
+
+### `/emprestimos/sp/hortolandia/`
+
+- **No ar em:** 01/10/2026
+- **Title antes:** Empréstimo em Hortolândia (SP): o Procon no Paço e o WhatsApp que evita a fila
+- **Title depois:** Empréstimo em Hortolândia: lojas, FGTS e Procon
+- **Description antes:** Guia de crédito para Hortolândia: o Procon no Palácio dos Migrantes com WhatsApp oficial, os guichês do Banco do Povo e o filtro que vale em qualquer balcão.
+- **Description depois:** Empréstimo em Hortolândia: lojas de crédito, antecipação do FGTS e urgência. O que conferir antes de assinar e o Procon por WhatsApp.
+
 ## Registro qualitativo da SERP (prints de 01/10/2026)
 
-Prints feitos pelo proprietário: os do computador (Campinas e Jundiaí) em janela anônima, com
+Prints feitos pelo proprietário: os do computador (Campinas, Jundiaí, Sumaré, Americana e Hortolândia) em janela anônima, com
 localização por IP em Barueri (SP); os do celular sem indicação de modo anônimo. Em
 nenhum deles o Crédito por Perto aparece na parte capturada. Na comparação, refazer a mesma
 busca, do mesmo jeito, e anotar se o site aparece e em que posição.
@@ -227,6 +254,9 @@ busca, do mesmo jeito, e anotar se o site aparece e em que posição.
 | empréstimo em barueri sp | Banco do Povo (página da prefeitura, "Setor Laranja"), oHub (consignado), páginas de correspondentes | onde fazer empréstimo urgente; mais fácil de aprovar; R$ 2.000 e R$ 500 urgente |
 | empréstimo em alphaville | Daycoval (agências e correspondentes), escritórios locais de "apoio ao crédito", FinanZero | onde pegar empréstimo urgente; R$ 2.000; mais fácil de aprovar; R$ 10.000 |
 | Empréstimo em Campinas | mapa com lojas, Agibank (pessoal), Crefisa (negativado), Paraná Banco (consignado em loja física) | onde fazer empréstimo urgente; R$ 10.000; mais fácil de aprovar; R$ 2.000 |
+| Empréstimo em Sumaré | mapa com lojas de crédito, Juros Baixos (simulador), Crefaz (loja), oHub, Ourocred e perfil de Instagram (consignado, FGTS, conta de energia, Bolsa Família); buscas por Sicoob e agiota | onde fazer empréstimo rápido; R$ 2.000; mais fácil de aprovar; R$ 500 |
+| Empréstimo em Americana | mapa com agências de empréstimo (consignado, "resgate de FGTS"), Juros Baixos, Crefaz, página do Banco do Povo da Prefeitura, site de loja local avisando que não manda mensagem nem boleto | onde conseguir empréstimo urgente; R$ 2.000; mais fácil de aprovar; qual banco libera com nome sujo |
+| empréstimo em Hortolândia | mapa com escritórios de crédito, Juros Baixos, página do Banco do Povo da Prefeitura, perfil de Instagram (antecipação do FGTS), notícia do Senado sobre financiamento do município; buscas por agiota, PAT, Sine e vagas | onde fazer empréstimo urgente; R$ 2.000; mais fácil de aprovar; R$ 500 |
 | Emprétimo em Jundiaí | Bom Pra Crédito (página "empréstimo em Jundiaí"), Vazoli e Finamax (lojas locais), agência Banco Mercantil | onde fazer empréstimo urgente; mais fácil de aprovar; R$ 2.000; qual banco libera com nome sujo |
 
 As revisões das calculadoras 3 a 13 usaram prints anteriores, resumidos nas mensagens de
