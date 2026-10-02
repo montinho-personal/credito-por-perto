@@ -63,6 +63,7 @@ Console (Desempenho → Exportar → CSV, aba Páginas e aba Consultas).
 | `/emprestimos/sp/sumare/` | | | | | | | | |
 | `/emprestimos/sp/americana/` | | | | | | | | |
 | `/emprestimos/sp/hortolandia/` | | | | | | | | |
+| `/emprestimos/sp/braganca-paulista/` | | | | | | | | |
 
 ## O que mudou em cada página
 
@@ -241,6 +242,14 @@ Console (Desempenho → Exportar → CSV, aba Páginas e aba Consultas).
 - **Description antes:** Guia de crédito para Hortolândia: o Procon no Palácio dos Migrantes com WhatsApp oficial, os guichês do Banco do Povo e o filtro que vale em qualquer balcão.
 - **Description depois:** Empréstimo em Hortolândia: lojas de crédito, antecipação do FGTS e urgência. O que conferir antes de assinar e o Procon por WhatsApp.
 
+### `/emprestimos/sp/braganca-paulista/`
+
+- **No ar em:** 02/10/2026
+- **Title antes:** Empréstimo em Bragança Paulista (SP): o polo bragantino e a sexta sem Procon
+- **Title depois:** Empréstimo em Bragança Paulista: nome sujo e Procon
+- **Description antes:** Guia de crédito para Bragança Paulista: os balcões do polo regional, o Procon da Teófilo Leme (que não atende ao público às sextas) e o posto do Banco do Povo.
+- **Description depois:** Empréstimo em Bragança Paulista: consignado, nome sujo e o WhatsApp da loja. O que conferir antes de assinar e o Procon que não abre às sextas.
+
 ## Registro qualitativo da SERP (prints de 01/10/2026)
 
 Prints feitos pelo proprietário: os do computador (Campinas, Jundiaí, Sumaré, Americana e Hortolândia) em janela anônima, com
@@ -257,6 +266,7 @@ busca, do mesmo jeito, e anotar se o site aparece e em que posição.
 | Empréstimo em Sumaré | mapa com lojas de crédito, Juros Baixos (simulador), Crefaz (loja), oHub, Ourocred e perfil de Instagram (consignado, FGTS, conta de energia, Bolsa Família); buscas por Sicoob e agiota | onde fazer empréstimo rápido; R$ 2.000; mais fácil de aprovar; R$ 500 |
 | Empréstimo em Americana | mapa com agências de empréstimo (consignado, "resgate de FGTS"), Juros Baixos, Crefaz, página do Banco do Povo da Prefeitura, site de loja local avisando que não manda mensagem nem boleto | onde conseguir empréstimo urgente; R$ 2.000; mais fácil de aprovar; qual banco libera com nome sujo |
 | empréstimo em Hortolândia | mapa com escritórios de crédito, Juros Baixos, página do Banco do Povo da Prefeitura, perfil de Instagram (antecipação do FGTS), notícia do Senado sobre financiamento do município; buscas por agiota, PAT, Sine e vagas | onde fazer empréstimo urgente; R$ 2.000; mais fácil de aprovar; R$ 500 |
+| empréstimo em bragança paulista (celular, 02/10) | anúncios patrocinados, agência do Banco Mercantil, Crefisa (negativado); autocomplete com nome sujo, telefone, agiota, Banco do Povo, WhatsApp e fotos de rede de lojas de consignado, e "agiota em Bragança Pará" | onde pegar empréstimo rapidamente; R$ 2.000; mais fácil de aprovar; R$ 10.000 |
 | Emprétimo em Jundiaí | Bom Pra Crédito (página "empréstimo em Jundiaí"), Vazoli e Finamax (lojas locais), agência Banco Mercantil | onde fazer empréstimo urgente; mais fácil de aprovar; R$ 2.000; qual banco libera com nome sujo |
 
 As revisões das calculadoras 3 a 13 usaram prints anteriores, resumidos nas mensagens de
