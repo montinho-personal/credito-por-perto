@@ -64,6 +64,7 @@ Console (Desempenho → Exportar → CSV, aba Páginas e aba Consultas).
 | `/emprestimos/sp/americana/` | | | | | | | | |
 | `/emprestimos/sp/hortolandia/` | | | | | | | | |
 | `/emprestimos/sp/braganca-paulista/` | | | | | | | | |
+| `/emprestimos/sp/atibaia/` | | | | | | | | |
 
 ## O que mudou em cada página
 
@@ -250,6 +251,14 @@ Console (Desempenho → Exportar → CSV, aba Páginas e aba Consultas).
 - **Description antes:** Guia de crédito para Bragança Paulista: os balcões do polo regional, o Procon da Teófilo Leme (que não atende ao público às sextas) e o posto do Banco do Povo.
 - **Description depois:** Empréstimo em Bragança Paulista: consignado, nome sujo e o WhatsApp da loja. O que conferir antes de assinar e o Procon que não abre às sextas.
 
+### `/emprestimos/sp/atibaia/`
+
+- **No ar em:** 03/10/2026
+- **Title antes:** Empréstimo em Atibaia (SP): renda sazonal, Procon e microcrédito no Facilita
+- **Title depois:** Empréstimo em Atibaia: na hora, negativado e Procon
+- **Description antes:** Guia de crédito para Atibaia: como dimensionar parcela com renda de turismo e eventos, o Procon da Rua Bruno Sargiani e o Banco do Povo dentro do Facilita, no Centro.
+- **Description depois:** Empréstimo em Atibaia: o que é real no “liberado na hora”, crédito para negativado e autônomo, garantia de imóvel e o Banco do Povo no Facilita.
+
 ## Registro qualitativo da SERP (prints de 01/10/2026)
 
 Prints feitos pelo proprietário: os do computador (Campinas, Jundiaí, Sumaré, Americana e Hortolândia) em janela anônima, com
@@ -267,6 +276,7 @@ busca, do mesmo jeito, e anotar se o site aparece e em que posição.
 | Empréstimo em Americana | mapa com agências de empréstimo (consignado, "resgate de FGTS"), Juros Baixos, Crefaz, página do Banco do Povo da Prefeitura, site de loja local avisando que não manda mensagem nem boleto | onde conseguir empréstimo urgente; R$ 2.000; mais fácil de aprovar; qual banco libera com nome sujo |
 | empréstimo em Hortolândia | mapa com escritórios de crédito, Juros Baixos, página do Banco do Povo da Prefeitura, perfil de Instagram (antecipação do FGTS), notícia do Senado sobre financiamento do município; buscas por agiota, PAT, Sine e vagas | onde fazer empréstimo urgente; R$ 2.000; mais fácil de aprovar; R$ 500 |
 | empréstimo em bragança paulista (celular, 02/10) | anúncios patrocinados, agência do Banco Mercantil, Crefisa (negativado); autocomplete com nome sujo, telefone, agiota, Banco do Povo, WhatsApp e fotos de rede de lojas de consignado, e "agiota em Bragança Pará" | onde pegar empréstimo rapidamente; R$ 2.000; mais fácil de aprovar; R$ 10.000 |
+| empréstimo em atibaia (celular, 03/10) | mapa com escritórios de crédito, correspondente bancário com marca de banco público, anúncio de home equity para empresa; autocomplete com "banco que libera na hora", negativado, agiota, app de empréstimo; buscas por autônomo, R$ 500 e "liberado na hora WhatsApp" | (não capturado) |
 | Emprétimo em Jundiaí | Bom Pra Crédito (página "empréstimo em Jundiaí"), Vazoli e Finamax (lojas locais), agência Banco Mercantil | onde fazer empréstimo urgente; mais fácil de aprovar; R$ 2.000; qual banco libera com nome sujo |
 
 As revisões das calculadoras 3 a 13 usaram prints anteriores, resumidos nas mensagens de
