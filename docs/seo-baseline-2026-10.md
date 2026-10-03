@@ -66,6 +66,7 @@ Console (Desempenho → Exportar → CSV, aba Páginas e aba Consultas).
 | `/emprestimos/sp/braganca-paulista/` | | | | | | | | |
 | `/emprestimos/sp/atibaia/` | | | | | | | | |
 | `/emprestimos/sp/itapecerica-da-serra/` | | | | | | | | |
+| `/emprestimos/sp/carapicuiba/` | | | | | | | | |
 
 ## O que mudou em cada página
 
@@ -268,6 +269,15 @@ Console (Desempenho → Exportar → CSV, aba Páginas e aba Consultas).
 - **Description antes:** Guia de crédito para Itapecerica da Serra: as duas unidades do Procon, a sexta-feira reservada a audiências de conciliação, o WhatsApp atual e o Banco do Povo da Eduardo Daher.
 - **Description depois:** Empréstimo em Itapecerica da Serra: Banco do Povo para MEI, como simular, quem não é atendido e o Procon, com a sexta reservada a audiências.
 
+### `/emprestimos/sp/carapicuiba/`
+
+- **No ar em:** 03/10/2026
+- **Title antes:** Empréstimo em Carapicuíba (SP): opções, Procon e contratação segura
+- **Title depois:** Empréstimo em Carapicuíba: lojas, negativado e Procon
+- **Description antes:** Guia de crédito para quem mora em Carapicuíba: o consignado de quem trabalha fora da cidade, o Procon no Ganha Tempo e como comparar propostas com segurança.
+- **Description depois:** Empréstimo em Carapicuíba: loja de crédito, WhatsApp, nome negativado e Bolsa Família. O que conferir antes de assinar e o Procon no Ganha Tempo.
+- **Correção junto:** endereço do Ganha Tempo unificado como Estrada Ernestina Vieira, 149 (uma passagem dizia "Rua").
+
 ## Registro qualitativo da SERP (prints de 01/10/2026)
 
 Prints feitos pelo proprietário: os do computador (Campinas, Jundiaí, Sumaré, Americana e Hortolândia) em janela anônima, com
@@ -287,6 +297,7 @@ busca, do mesmo jeito, e anotar se o site aparece e em que posição.
 | empréstimo em bragança paulista (celular, 02/10) | anúncios patrocinados, agência do Banco Mercantil, Crefisa (negativado); autocomplete com nome sujo, telefone, agiota, Banco do Povo, WhatsApp e fotos de rede de lojas de consignado, e "agiota em Bragança Pará" | onde pegar empréstimo rapidamente; R$ 2.000; mais fácil de aprovar; R$ 10.000 |
 | empréstimo em atibaia (celular, 03/10) | mapa com escritórios de crédito, correspondente bancário com marca de banco público, anúncio de home equity para empresa; autocomplete com "banco que libera na hora", negativado, agiota, app de empréstimo; buscas por autônomo, R$ 500 e "liberado na hora WhatsApp" | (não capturado) |
 | emprestimo itapecerica da serra (celular, 03/10) | páginas do Banco do Povo (Secretaria estadual e outra página do programa), Crefisa (negativado); autocomplete dominado por Banco do Povo (simulação, MEI, negativado); buscas por Banco do Povo de Embu das Artes, empréstimo para MEI, agiota e app de empréstimo | (não capturado) |
+| empréstimo em carapicuíba (celular, 03/10) | agência do Banco Mercantil, rede de lojas de crédito ligada a banco (site e imagens), financeira com empréstimo pessoal; autocomplete com negativado, "liberado na hora", WhatsApp da loja e "WhatsApp Bolsa Família" | onde conseguir empréstimo urgente; mais fácil de aprovar; R$ 2 mil; R$ 500 |
 | Emprétimo em Jundiaí | Bom Pra Crédito (página "empréstimo em Jundiaí"), Vazoli e Finamax (lojas locais), agência Banco Mercantil | onde fazer empréstimo urgente; mais fácil de aprovar; R$ 2.000; qual banco libera com nome sujo |
 
 As revisões das calculadoras 3 a 13 usaram prints anteriores, resumidos nas mensagens de
