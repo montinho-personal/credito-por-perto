@@ -18,7 +18,7 @@
       "documentTitle": "Procon — Defesa do Consumidor (carta de serviços)",
       "sourceLocation": "https://www.carapicuiba.sp.gov.br/servico/view/47/procon-defesa-do-consumidor",
       "checkedAt": "2026-08-16",
-      "extractedFact": "O Procon municipal atende no Ganha Tempo de Carapicuíba (Rua Ernestina Vieira, 149), em dias úteis em horário estendido.",
+      "extractedFact": "O Procon municipal atende no Ganha Tempo de Carapicuíba (Ernestina Vieira, 149), em dias úteis em horário estendido.",
       "relevanceToReader": "É o canal presencial da cidade para reclamações de crédito e consumo, dentro do polo de serviços municipal."
     },
     {
@@ -55,7 +55,7 @@
   "verifiedServiceInformation": [
     {
       "institution": "Prefeitura de Carapicuíba — Ganha Tempo",
-      "information": "O Ganha Tempo (Rua Ernestina Vieira, 149) concentra serviços públicos municipais, incluindo o atendimento do Procon.",
+      "information": "O Ganha Tempo (Ernestina Vieira, 149) concentra serviços públicos municipais, incluindo o atendimento do Procon.",
       "officialSource": "https://www.carapicuiba.sp.gov.br/servico/view/47/procon-defesa-do-consumidor",
       "checkedAt": "2026-08-16"
     }
@@ -73,6 +73,7 @@
     "O consignado CLT independe da cidade do empregador — direito que muitos moradores desconhecem"
   ],
   "pendingVerification": [
-    "Horários vigentes e regras de senha do atendimento do Procon no Ganha Tempo"
+    "Horários vigentes e regras de senha do atendimento do Procon no Ganha Tempo",
+    "Tipo de logradouro do Ganha Tempo: a página do Banco do Povo da Prefeitura usa 'Estrada Ernestina Vieira, 149'; registro anterior da página do Procon usava 'Rua'. O guia segue 'Estrada' (página do Banco do Povo) — conferir na próxima revisão."
   ]
 }
