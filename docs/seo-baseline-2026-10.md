@@ -71,6 +71,8 @@ Console (Desempenho → Exportar → CSV, aba Páginas e aba Consultas).
 | `/emprestimos/sp/taboao-da-serra/` | | | | | | | | |
 | `/emprestimos/sp/cotia/` | | | | | | | | |
 | `/emprestimos/sp/indaiatuba/` | | | | | | | | |
+| `/emprestimos/sp/jandira/` | | | | | | | | |
+| `/emprestimos/sp/santana-de-parnaiba/` | | | | | | | | |
 
 ## O que mudou em cada página
 
@@ -315,6 +317,22 @@ Console (Desempenho → Exportar → CSV, aba Páginas e aba Consultas).
 - **Description antes:** Guia de crédito para Indaiatuba: como transformar a forte concorrência bancária local em taxa menor, o consignado do polo industrial e o Procon no endereço novo, das 10h às 15h.
 - **Description depois:** Empréstimo em Indaiatuba: nome sujo, urgente e o número do agiota que circula no WhatsApp. O que conferir na financeira e onde fica o Procon.
 
+### `/emprestimos/sp/jandira/`
+
+- **No ar em:** 05/10/2026
+- **Title antes:** Empréstimo em Jandira (SP): onde comparar, contratar e reclamar
+- **Title depois:** Empréstimo em Jandira: nome sujo, lojas e Procon
+- **Description antes:** Guia de crédito para quem mora em Jandira: os dias certos do Procon municipal, como comparar o balcão do Centro com os canais digitais e os filtros contra golpe.
+- **Description depois:** Empréstimo em Jandira: nome sujo, loja de crédito e urgência. O que conferir antes de assinar, o Banco do Povo e os dias do Procon.
+
+### `/emprestimos/sp/santana-de-parnaiba/`
+
+- **No ar em:** 05/10/2026
+- **Title antes:** Empréstimo em Santana de Parnaíba (SP): onde buscar e como se proteger
+- **Title depois:** Empréstimo Santana de Parnaíba: servidor e consignado
+- **Description antes:** Guia de crédito para quem mora em Santana de Parnaíba: microcrédito do Banco do Povo Paulista, Procon da cidade, verificação de instituições e comparação segura.
+- **Description depois:** Empréstimo em Santana de Parnaíba: consignado do servidor municipal (margem, holerite e convênios), negativado, WhatsApp e o Procon.
+
 ## Registro qualitativo da SERP (prints de 01/10/2026)
 
 Prints feitos pelo proprietário: os do computador (Campinas, Jundiaí, Sumaré, Americana e Hortolândia) em janela anônima, com
@@ -339,6 +357,8 @@ busca, do mesmo jeito, e anotar se o site aparece e em que posição.
 | emprestimo taboao da serra (celular, 05/10) | anúncio patrocinado, pontos de atendimento de financeira, página estadual do Banco do Povo, rede de lojas de crédito de banco, vídeos de "convênio novo" de consignado; autocomplete com agiota, plataforma de consignado, rede de lojas (WhatsApp, telefone, avaliações), "corretor de empréstimos" e "franquia de empréstimos" | onde conseguir empréstimo urgente; mais fácil de aprovar; R$ 2 mil; R$ 500 |
 | empréstimo em cotia (celular, 05/10) | agente correspondente de financeira, página de convênios de consignado da Cotiaprev, financeira para negativado, anúncio de banco digital; autocomplete com consignado, negativado, nome de banco, "hoje"; buscas por agiota, Banco do Povo (Cotia, WhatsApp, MEI, Vargem Grande Paulista), PAT e emprego | onde fazer empréstimo urgente; mais fácil de aprovar; R$ 2.000; R$ 500 |
 | empréstimo em indaiatuba (celular, 05/10) | mapa com lojas, rede de lojas de crédito de banco, página "empréstimo em Indaiatuba" de comparador; autocomplete com pessoal, negativado, nome sujo, hoje, urgente; buscas por "agiota Indaiatuba WhatsApp", "número de agiota", financeira de loja (simulação, WhatsApp, "é confiável", CLT) | (não capturado) |
+| empréstimo em jandira (celular, 05/10) | página estadual do Banco do Povo, perfil de Instagram de loja de crédito local ("ficou sem grana?"); autocomplete com negativado, nome sujo, nome de banco, "Jandira e Itapevi" e vagas | onde fazer empréstimo urgente; mais fácil de aprovar; R$ 2.000; R$ 500 |
+| emprestimo santana de parnaiba (celular, 05/10) | página sobre consignado de servidor ("qualquer banco ou cooperativa conveniado com a prefeitura"), rede de lojas de crédito de banco; autocomplete com consignado, WhatsApp, negativado e nomes de banco; buscas relacionadas quase todas de servidor (sistema de consignação, RH, holerite, portal do servidor, espelho de ponto) | (não capturado) |
 | Emprétimo em Jundiaí | Bom Pra Crédito (página "empréstimo em Jundiaí"), Vazoli e Finamax (lojas locais), agência Banco Mercantil | onde fazer empréstimo urgente; mais fácil de aprovar; R$ 2.000; qual banco libera com nome sujo |
 
 As revisões das calculadoras 3 a 13 usaram prints anteriores, resumidos nas mensagens de
