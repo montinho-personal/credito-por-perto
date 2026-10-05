@@ -86,6 +86,7 @@ Console (Desempenho → Exportar → CSV, aba Páginas e aba Consultas).
 | `/emprestimos/sp/varzea-paulista/` | | | | | | | | |
 | `/emprestimos/sp/salto/` | | | | | | | | |
 | `/emprestimos/sp/francisco-morato/` | | | | | | | | |
+| `/emprestimos/sp/franco-da-rocha/` | | | | | | | | |
 
 ## O que mudou em cada página
 
@@ -451,6 +452,14 @@ Console (Desempenho → Exportar → CSV, aba Páginas e aba Consultas).
 - **Description antes:** Guia de crédito para Francisco Morato: o Procon dentro do CIC, perto do trem, com atendimento presencial até as 15h30, e a Defensoria Pública no mesmo prédio.
 - **Description depois:** Empréstimo em Francisco Morato: negativado na hora, consignado do INSS, FGTS e conta de luz. O que conferir, o Procon no CIC e o Banco do Povo.
 
+### `/emprestimos/sp/franco-da-rocha/`
+
+- **No ar em:** 05/10/2026
+- **Title antes:** Empréstimo em Franco da Rocha (SP): guia do polo da região norte
+- **Title depois:** Empréstimo em Franco da Rocha: consignado e negativado
+- **Description antes:** Guia de crédito para quem mora em Franco da Rocha: o Procon com senhas matinais perto do shopping, o consignado de quem trabalha no eixo da Linha 7 e a comparação segura.
+- **Description depois:** Empréstimo em Franco da Rocha: consignado, negativado, na hora via Pix e WhatsApp. O que conferir, o Banco do Povo e o Procon com senha de manhã.
+
 ## Registro qualitativo da SERP (prints de 01/10/2026)
 
 Prints feitos pelo proprietário: os do computador (Campinas, Jundiaí, Sumaré, Americana e Hortolândia) em janela anônima, com
@@ -490,6 +499,7 @@ busca, do mesmo jeito, e anotar se o site aparece e em que posição.
 | emprestimo varzea paulista (celular, 05/10) | página do Banco do Povo da Prefeitura (documentos e avalista), diretório local com Banco do Povo e outro telefone, financeira com empréstimo para negativado "até 45 dias para começar a pagar", relato de cobrança para liberar empréstimo, notícia da Prefeitura para empreendedor; autocomplete com negativado, contratando, empresa, emprego e vagas; buscas por Banco do Povo (MEI, negativado, simulação, Jundiaí, Sorocaba), MEI, Balcão do Empreendedor e Desenvolve SP | qual banco libera rápido e fácil; R$ 500; R$ 2 mil; mais fácil de aprovar |
 | emprestimo em salto (celular, 05/10) | trecho do Banco do Povo (seg–sex 8h–16h, diverge da página da Prefeitura), agências do Sicoob, mapa com financeira 5,0 (9 avaliações) e WhatsApp, loja da Crefaz, perfil de loja de crédito com conta de luz, consignado, FGTS e CLT; autocomplete com "sp", pessoal e Salto de Pirapora; buscas por Atende Fácil, Rua Itapiru 983, PAT, Sine, bicos, SAAE e ITBI | onde conseguir empréstimo urgente; R$ 2 mil; mais fácil de aprovar; R$ 500 |
 | empréstimo em francisco morato (celular, 05/10) | lojas de consignado (INSS, BPC/LOAS, servidores; uma com "sem precisar de agiota"), post antigo em rede social de antecipação do FGTS "sem consulta", página estadual do Banco do Povo; autocomplete com negativado, nomes de banco/financeira, empregos, endereço e hoje; buscas por negativado "liberado na hora" (online, WhatsApp, Pix), R$ 500 e R$ 1.500, Banco do Povo MEI/simulação, CNPJ, conta de luz | onde consigo empréstimo urgente; mais fácil de aprovar; R$ 2 mil; R$ 500 |
+| empréstimo em franco da rocha (celular, 05/10) | loja de crédito local (INSS, CLT, FGTS, conta de luz), post da Prefeitura de ~2020 sobre linha especial do Banco do Povo, página estadual do Banco do Povo, financeira "até 45 dias para começar a pagar", site privado com "Desenrola" no nome, anúncio "chame no WhatsApp"; autocomplete com consignado, negativado, nome de financeira, contratando, vagas e sp; buscas por agência de financeira mais próxima, "WhatsApp Bolsa Família", na hora, fácil aprovação, online | onde pegar empréstimo urgente; R$ 2 mil; empréstimo na hora de R$ 5.000 via Pix; R$ 500 |
 | Emprétimo em Jundiaí | Bom Pra Crédito (página "empréstimo em Jundiaí"), Vazoli e Finamax (lojas locais), agência Banco Mercantil | onde fazer empréstimo urgente; mais fácil de aprovar; R$ 2.000; qual banco libera com nome sujo |
 
 As revisões das calculadoras 3 a 13 usaram prints anteriores, resumidos nas mensagens de
