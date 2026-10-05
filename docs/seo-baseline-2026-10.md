@@ -88,6 +88,8 @@ Console (Desempenho → Exportar → CSV, aba Páginas e aba Consultas).
 | `/emprestimos/sp/francisco-morato/` | | | | | | | | |
 | `/emprestimos/sp/franco-da-rocha/` | | | | | | | | |
 | `/emprestimos/sp/caieiras/` | | | | | | | | |
+| `/emprestimos/sp/santa-isabel/` | | | | | | | | |
+| `/emprestimos/sp/cajamar/` | | | | | | | | |
 
 ## O que mudou em cada página
 
@@ -470,6 +472,22 @@ Console (Desempenho → Exportar → CSV, aba Páginas e aba Consultas).
 - **Description depois:** Empréstimo em Caieiras: nome sujo, na hora, lojas do mapa e o empréstimo “do governo”. O Banco do Povo e o Procon no mesmo prédio, e o que conferir.
 - **Observação:** no print de 05/10 (desktop, aba anônima, localização Barueri), o próprio guia aparecia na primeira página, com o title antigo, logo depois da notícia da Câmara e do post de rede social.
 
+### `/emprestimos/sp/santa-isabel/`
+
+- **No ar em:** 05/10/2026
+- **Title antes:** Empréstimo em Santa Isabel (SP): guia para contratar com segurança
+- **Title depois:** Empréstimo em Santa Isabel: lojas, CLT e Banco do Povo
+- **Description antes:** Como fazer empréstimo morando em Santa Isabel: canais disponíveis na cidade, Procon municipal no Centro, verificação de correspondentes e comparação de custo.
+- **Description depois:** Empréstimo em Santa Isabel: lojas de crédito, consultor financeiro, WhatsApp, consignado CLT e negativado. O Banco do Povo, o Procon e o que conferir.
+
+### `/emprestimos/sp/cajamar/`
+
+- **No ar em:** 05/10/2026
+- **Title antes:** Empréstimo em Cajamar (SP): dois Procons, e cada um atende de um jeito
+- **Title depois:** Empréstimo em Cajamar: lojas, urgente e Banco do Povo
+- **Description antes:** Guia de crédito para Cajamar: os dois postos do Procon — Polvilho por ordem de chegada e Jordanésia só com hora marcada — e as linhas do Banco do Povo no município.
+- **Description depois:** Empréstimo em Cajamar: lojas de empréstimo dos três núcleos, R$ 600 a R$ 10 mil urgente, o Banco do Povo e os dois Procons. O que conferir antes.
+
 ## Registro qualitativo da SERP (prints de 01/10/2026)
 
 Prints feitos pelo proprietário: os do computador (Campinas, Jundiaí, Sumaré, Americana e Hortolândia) em janela anônima, com
@@ -511,6 +529,8 @@ busca, do mesmo jeito, e anotar se o site aparece e em que posição.
 | empréstimo em francisco morato (celular, 05/10) | lojas de consignado (INSS, BPC/LOAS, servidores; uma com "sem precisar de agiota"), post antigo em rede social de antecipação do FGTS "sem consulta", página estadual do Banco do Povo; autocomplete com negativado, nomes de banco/financeira, empregos, endereço e hoje; buscas por negativado "liberado na hora" (online, WhatsApp, Pix), R$ 500 e R$ 1.500, Banco do Povo MEI/simulação, CNPJ, conta de luz | onde consigo empréstimo urgente; mais fácil de aprovar; R$ 2 mil; R$ 500 |
 | empréstimo em franco da rocha (celular, 05/10) | loja de crédito local (INSS, CLT, FGTS, conta de luz), post da Prefeitura de ~2020 sobre linha especial do Banco do Povo, página estadual do Banco do Povo, financeira "até 45 dias para começar a pagar", site privado com "Desenrola" no nome, anúncio "chame no WhatsApp"; autocomplete com consignado, negativado, nome de financeira, contratando, vagas e sp; buscas por agência de financeira mais próxima, "WhatsApp Bolsa Família", na hora, fácil aprovação, online | onde pegar empréstimo urgente; R$ 2 mil; empréstimo na hora de R$ 5.000 via Pix; R$ 500 |
 | empréstimo em caieiras (desktop anônimo, 05/10) | mapa com loja de crédito, "agência de empréstimos" aberta 24 horas e agência de banco com nota 1,0; notícia da Câmara sobre o Banco do Povo (Empreenda Rápido para MEI, ME, EPP); página de rede social "sem cobrança"; **o guia do Crédito por Perto na 1ª página**; Jusbrasil (advogados); autocomplete com negativado, nome sujo, sp, Laranjeiras, hoje, Caixa, empresas e agora; buscas por Banco do Povo (simulação, MEI, negativado), negativado liberado na hora, financeira, pessoal e na hora | onde pegar dinheiro emprestado urgente; onde achar pessoas que emprestam dinheiro; qual banco libera para nome sujo; qual é o empréstimo que o governo liberou |
+| empréstimo em santa isabel (desktop anônimo, 05/10) | mapa com "consultor financeiro" 5,0 (222), loja de crédito, financeira, agências de bancos; site do consultor com "taxas mais competitivas"; jornal local sobre o Crédito do Trabalhador; cooperativa de crédito; loja de crédito; páginas de rede social de crédito; autocomplete confunde com SBO, Santa Rita e Santa Cruz; buscas por Banco do Povo (simulação, MEI, negativado), agência de financeira, lojas de crédito pelo WhatsApp e "para Bolsa Família" | onde fazer empréstimo urgente; R$ 2 mil; onde achar pessoas que emprestam dinheiro; R$ 500 |
+| empréstimo em cajamar (desktop anônimo, 05/10) | mapa com agências de empréstimo nos núcleos (uma com "mais de 20 anos"), agência de banco e loja de crédito de Santana de Parnaíba; notícia da Prefeitura de abr/2020 sobre microcrédito (faixa de valores diferente da página atual); site de loja de empréstimo; autocomplete confunde com Cajazeiras, Carapicuíba e Caçapava | como conseguir R$ 2 mil urgente; mais fácil de aprovar; R$ 10 mil urgente; R$ 600 urgente |
 | Emprétimo em Jundiaí | Bom Pra Crédito (página "empréstimo em Jundiaí"), Vazoli e Finamax (lojas locais), agência Banco Mercantil | onde fazer empréstimo urgente; mais fácil de aprovar; R$ 2.000; qual banco libera com nome sujo |
 
 As revisões das calculadoras 3 a 13 usaram prints anteriores, resumidos nas mensagens de
