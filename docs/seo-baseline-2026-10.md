@@ -80,6 +80,8 @@ Console (Desempenho → Exportar → CSV, aba Páginas e aba Consultas).
 | `/emprestimos/sp/paulinia/` | | | | | | | | |
 | `/emprestimos/sp/itatiba/` | | | | | | | | |
 | `/emprestimos/sp/votorantim/` | | | | | | | | |
+| `/emprestimos/sp/varzea-paulista/` | | | | | | | | |
+| `/emprestimos/sp/salto/` | | | | | | | | |
 
 ## O que mudou em cada página
 
@@ -397,6 +399,22 @@ Console (Desempenho → Exportar → CSV, aba Páginas e aba Consultas).
 - **Description antes:** Guia de crédito para Votorantim: o Procon e o Banco do Povo que só atendem à tarde, o endereço novo ao lado do Poupatempo e as duas linhas de microcrédito.
 - **Description depois:** Empréstimo em Votorantim, a cidade, não o banco: negativado, “é confiável?”, WhatsApp, o Banco do Povo e o Procon que só abre à tarde.
 
+### `/emprestimos/sp/varzea-paulista/`
+
+- **No ar em:** 05/10/2026
+- **Title antes:** Empréstimo em Várzea Paulista (SP): o WhatsApp do Procon que só atende quem mora na cidade
+- **Title depois:** Empréstimo em Várzea Paulista: MEI, negativado e Procon
+- **Description antes:** Guia de crédito para Várzea Paulista: o Procon da Fernão Dias, com WhatsApp exclusivo para moradores, e as três linhas do Banco do Povo atendidas no Facilita.
+- **Description depois:** Empréstimo em Várzea Paulista: Banco do Povo para MEI, negativado, urgente e golpe da taxa. O que conferir e o Procon com WhatsApp.
+
+### `/emprestimos/sp/salto/`
+
+- **No ar em:** 05/10/2026
+- **Title antes:** Empréstimo em Salto (SP): guia para uma vida financeira entre cidades
+- **Title depois:** Empréstimo em Salto (SP): lojas, Banco do Povo e Procon
+- **Description antes:** Guia de crédito para quem mora em Salto: o Procon de horário amplo na Bela Vista, o consignado de quem trabalha na indústria da região e a comparação segura de propostas.
+- **Description depois:** Empréstimo em Salto (SP): loja de crédito, conta de luz, cooperativa e urgente. O que conferir, o Banco do Povo e o Procon no Atende Fácil.
+
 ## Registro qualitativo da SERP (prints de 01/10/2026)
 
 Prints feitos pelo proprietário: os do computador (Campinas, Jundiaí, Sumaré, Americana e Hortolândia) em janela anônima, com
@@ -430,6 +448,8 @@ busca, do mesmo jeito, e anotar se o site aparece e em que posição.
 | emprestimo em paulinia (celular, 05/10) | agente correspondente de financeira, perfil de loja de crédito local com endereço e telefones, outra loja de crédito; autocomplete com negativado, "sem juros", nome sujo, vagas e telefone; buscas por autônomo, "na hora via Pix", WhatsApp e R$ 500 a R$ 5 mil para negativado | (não capturado) |
 | empréstimo em itatiba (celular, 05/10) | loja de consignado do INSS, página do Banco do Povo da Prefeitura, diretório local com "empréstimo pessoal sem consulta ao SPC/Serasa" e WhatsApp; autocomplete com pessoal, negativado, nome sujo e nomes de banco; buscas por vagas, bicos, PAT e serviços da Prefeitura | (não capturado) |
 | empréstimo em votorantim (celular, 05/10) | página de empréstimos da Funsejem (linha para participantes), página de empréstimos do banco BV, resultado patrocinado; autocomplete com negativado, nome sujo, "é confiável", finanças e Reclame Aqui; buscas relacionadas quase todas da marca do banco (consignado, CLT, garantia de veículo, WhatsApp, simulador, negativados) | (não capturado) |
+| emprestimo varzea paulista (celular, 05/10) | página do Banco do Povo da Prefeitura (documentos e avalista), diretório local com Banco do Povo e outro telefone, financeira com empréstimo para negativado "até 45 dias para começar a pagar", relato de cobrança para liberar empréstimo, notícia da Prefeitura para empreendedor; autocomplete com negativado, contratando, empresa, emprego e vagas; buscas por Banco do Povo (MEI, negativado, simulação, Jundiaí, Sorocaba), MEI, Balcão do Empreendedor e Desenvolve SP | qual banco libera rápido e fácil; R$ 500; R$ 2 mil; mais fácil de aprovar |
+| emprestimo em salto (celular, 05/10) | trecho do Banco do Povo (seg–sex 8h–16h, diverge da página da Prefeitura), agências do Sicoob, mapa com financeira 5,0 (9 avaliações) e WhatsApp, loja da Crefaz, perfil de loja de crédito com conta de luz, consignado, FGTS e CLT; autocomplete com "sp", pessoal e Salto de Pirapora; buscas por Atende Fácil, Rua Itapiru 983, PAT, Sine, bicos, SAAE e ITBI | onde conseguir empréstimo urgente; R$ 2 mil; mais fácil de aprovar; R$ 500 |
 | Emprétimo em Jundiaí | Bom Pra Crédito (página "empréstimo em Jundiaí"), Vazoli e Finamax (lojas locais), agência Banco Mercantil | onde fazer empréstimo urgente; mais fácil de aprovar; R$ 2.000; qual banco libera com nome sujo |
 
 As revisões das calculadoras 3 a 13 usaram prints anteriores, resumidos nas mensagens de

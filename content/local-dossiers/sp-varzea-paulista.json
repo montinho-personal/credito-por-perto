@@ -94,6 +94,8 @@
   "pendingVerification": [
     "Se o atendimento presencial do Procon exige agendamento — as páginas informam horário sem detalhar o fluxo.",
     "Horário de atendimento do balcão do Banco do Povo no Facilita — a notícia publica endereço e telefone sem a grade.",
-    "Data de apuração da faixa de juros: a página do programa informa 0,35% a 1% ao mês; a notícia de fevereiro de 2026 menciona juros 'de até 0,35% ao mês' — confirmar a taxa vigente no balcão."
+    "Data de apuração da faixa de juros: a página do programa informa 0,35% a 1% ao mês; a notícia de fevereiro de 2026 menciona juros 'de até 0,35% ao mês' — confirmar a taxa vigente no balcão.",
+    "Banco do Povo — documentos: o trecho da página do programa exibido na busca (05/10/2026) cita documentos pessoais, da empresa e avalista; a página não pôde ser aberta (bloqueio de rede) — o guia atribui a menção ao trecho e orienta confirmar no balcão",
+    "Banco do Povo — telefone: diretório de terceiros (varzeafacil.com.br) publica número diferente do informado pela Prefeitura, (11) 4606-8654; o guia orienta usar o da Prefeitura e não repete o de terceiros"
   ]
 }
