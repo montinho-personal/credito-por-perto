@@ -21,6 +21,14 @@ import {
  * escolher" (renda exigida, seguros MIP e DFI, troca de sistema). Os dois
  * se apontam e não repetem conteúdo — ver data/query-ownership-map.json.
  *
+ * SERP REAL (05/10/2026): "sac ou price qual é melhor" (para amortizar,
+ * para quitar, Minha Casa Minha Vida), "como saber se meu financiamento é
+ * price ou sac", "price tr ou sac tr", "amortizar tabela price vale a pena"
+ * e as perguntas "desvantagem da Price", "a Price é abusiva?" e "a SAC
+ * diminui as parcelas?". A página responde com a conta e sem veredito; o
+ * artigo continua dono de "qual escolher", e a pergunta jurídica sobre a
+ * Price não é decidida aqui.
+ *
  * EXEMPLOS: todo número do texto sai do mesmo motor que a ferramenta usa,
  * no momento do build. Nenhum valor foi digitado à mão. A taxa dos exemplos
  * é ILUSTRATIVA, e o texto diz isso: o registro de séries do Banco Central
@@ -28,10 +36,10 @@ import {
  */
 
 const PATH = "/calculadoras/sac-x-price/";
-const TITLE = "Calculadora SAC x Price: compare parcelas e juros";
+const TITLE = "SAC ou Price? Calculadora compara parcelas e juros";
 const DESCRIPTION =
-  "Informe valor, taxa e prazo e compare SAC e Price: parcela mês a mês, juros totais, saldo devedor e tabela de amortização. Grátis e sem cadastro.";
-const REVIEWED = "23/09/2026";
+  "SAC ou Price, qual é melhor? Compare parcela mês a mês, juros totais e saldo devedor, e veja o efeito de amortizar ou quitar antes. Sem cadastro.";
+const REVIEWED = "05/10/2026";
 
 export const metadata: Metadata = buildMetadata({
   title: TITLE,
@@ -39,6 +47,7 @@ export const metadata: Metadata = buildMetadata({
   path: PATH,
 });
 
+const CDC = "https://www.planalto.gov.br/ccivil_03/leis/l8078compilado.htm";
 const CALC_CIDADAO_METODOLOGIA =
   "https://www3.bcb.gov.br/CALCIDADAO/publico/exibirMetodologiaFinanciamentoPrestacoesFixas.do?method=exibirMetodologiaFinanciamentoPrestacoesFixas";
 const CAIXA_FAQ_HABITACAO =
@@ -228,6 +237,64 @@ export default function SacPricePage() {
           </>
         ) : null}
 
+        <h2 id="qual-e-melhor">SAC ou Price: qual é melhor?</h2>
+        <p>
+          Depende de qual pergunta pesa mais no seu orçamento, e a calculadora mostra as duas em reais. Com o mesmo valor, a
+          mesma taxa e o mesmo prazo, a SAC soma menos juros e reduz o saldo mais depressa; a Price começa com a parcela
+          menor, o que pesa na aprovação e no primeiro ano de contrato. Essa é também a resposta para{" "}
+          <strong>qual a desvantagem da Tabela Price</strong>: no mesmo cenário, ela soma mais juros e o saldo devedor cai mais
+          devagar nos primeiros anos.
+          {main
+            ? ` No exemplo acima, são ${brl(main.price.totalInterestCents - main.sac.totalInterestCents)} de diferença de juros, contra uma primeira parcela ${brl(main.sac.firstPaymentCents - main.price.firstPaymentCents)} mais alta na SAC.`
+            : ""}{" "}
+          Os critérios para escolher, como a renda exigida e os seguros, estão em{" "}
+          <Link href="/juros-e-cet/price-ou-sac-sistemas-de-amortizacao/">Price ou SAC: o que muda na sua dívida</Link>.
+        </p>
+        <p>
+          <strong>Minha Casa, Minha Vida:</strong> os sistemas oferecidos dependem das regras do programa e da instituição.
+          Quando houver as duas opções, peça a simulação oficial nos dois sistemas e traga os números para cá.
+        </p>
+
+        <h2 id="amortizar">SAC ou Price para amortizar e quitar antes</h2>
+        <p>
+          Os dois sistemas aceitam amortização extraordinária e quitação antecipada: o{" "}
+          <a href={CDC} target="_blank" rel="noopener noreferrer">
+            Código de Defesa do Consumidor, art. 52, §2º
+          </a>
+          , assegura a liquidação antecipada, total ou parcial, com redução proporcional dos juros. A diferença está no saldo.
+          Como a SAC amortiza mais no começo, no mesmo mês o saldo dela é menor e quitar custa menos; na Price, o saldo cai
+          devagar nos primeiros anos, e por isso amortizar cedo costuma cortar bastante juros.
+          {fiveYears
+            ? ` No exemplo, depois de cinco anos o saldo é de ${brl(fiveYears.sac.balanceCents)} na SAC e de ${brl(fiveYears.price.balanceCents)} na Price.`
+            : ""}{" "}
+          Quanto uma amortização corta, reduzindo prazo ou parcela, é a conta do{" "}
+          <Link href="/simuladores/amortizacao-financiamento/">simulador de amortização</Link>; para quitar tudo, a{" "}
+          <Link href="/calculadoras/quitacao-antecipada/">calculadora de quitação antecipada</Link>.
+        </p>
+
+        <h2 id="como-saber">Como saber se meu financiamento é Price ou SAC?</h2>
+        <p>
+          O sistema de amortização vem escrito no contrato, e o extrato do financiamento costuma separar amortização e juros.
+          Um sinal prático: na SAC, a amortização é igual todo mês e a parcela cai; na Price, a parcela é igual e a amortização
+          cresce. Se o saldo é corrigido por um índice, como a TR, a parcela muda ao longo do tempo nos dois sistemas, e esse
+          sinal deixa de ser tão claro: na dúvida, pergunte à instituição por escrito.
+        </p>
+        <p>
+          <strong>Price com TR ou SAC com TR?</strong> A TR, quando prevista, corrige o saldo devedor nos dois sistemas; ela não
+          muda a lógica de cada um. Esta calculadora compara os dois sem índice de correção, o que mostra a diferença entre os
+          sistemas, não a parcela exata de um contrato corrigido.
+        </p>
+
+        <h2 id="price-abusiva">A Tabela Price é abusiva?</h2>
+        <p>
+          A Tabela Price é um método de cálculo de parcelas iguais, o mesmo que a Calculadora do Cidadão, do Banco Central,
+          usa para financiamento com prestações fixas. Se a forma de cobrança de um contrato específico é abusiva é uma
+          discussão jurídica, que depende do contrato e do caso, e não cabe a uma calculadora decidir. O que dá para conferir
+          por conta própria: se o sistema, a taxa e o CET informados no contrato batem com as parcelas cobradas. Esta
+          calculadora refaz a conta com esses números. Se não bater, o caminho começa pelo SAC e pela ouvidoria da
+          instituição, com o Procon e o consumidor.gov.br como próximos passos.
+        </p>
+
         <h2 id="por-que-juros">Por que a SAC soma menos juros</h2>
         <p>
           Porque juros incidem sobre o saldo devedor, e na SAC o saldo cai mais rápido desde o
@@ -327,6 +394,15 @@ export default function SacPricePage() {
           Com o mesmo valor, a mesma taxa e o mesmo prazo, sim: o saldo cai mais rápido e os juros
           incidem sobre um saldo menor. Se as propostas tiverem taxas, prazos ou custos diferentes, a
           comparação precisa ser feita com os números de cada uma — de preferência pelo CET.
+        </p>
+
+        <h3>A tabela SAC diminui as parcelas?</h3>
+        <p>
+          Sim. Sem índice de correção, a parcela da SAC cai todo mês, porque os juros incidem sobre um saldo cada vez menor.
+          {main
+            ? ` No exemplo desta página, ela começa em ${brl(main.sac.firstPaymentCents)} e termina em ${brl(main.sac.lastPaymentCents)}.`
+            : ""}{" "}
+          Com correção pela TR ou outro índice, a queda pode ser menor ou, em alguns meses, a parcela pode subir.
         </p>
 
         <h3>Por que a primeira parcela da SAC é maior?</h3>
