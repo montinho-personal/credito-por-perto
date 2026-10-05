@@ -28,6 +28,14 @@
       "checkedAt": "2026-08-16",
       "extractedFact": "Cotia integra a rede de Procons municipais conveniados ao Procon-SP.",
       "relevanceToReader": "Confirma o vínculo institucional do atendimento local."
+    },
+    {
+      "organization": "Cotiaprev (regime próprio de previdência de Cotia)",
+      "documentTitle": "Convênios de empréstimos consignados",
+      "sourceLocation": "https://cotiaprev.sp.gov.br",
+      "checkedAt": "2026-10-05",
+      "extractedFact": "A Cotiaprev mantém em seu site uma página de convênios de empréstimos consignados, modalidade com parcelas descontadas diretamente do benefício previdenciário. Observado no resultado de busca exibido para o domínio oficial; a lista de instituições conveniadas não foi conferida.",
+      "relevanceToReader": "Aposentados e pensionistas do regime próprio do município seguem os convênios da Cotiaprev, não as regras do INSS."
     }
   ],
   "consumerProtectionResources": [
@@ -66,6 +74,7 @@
   ],
   "pendingVerification": [
     "Horários vigentes e telefones dos dois postos do Procon",
-    "Programas municipais/estaduais de crédito (ex.: Banco do Povo) ativos na cidade"
+    "Programas municipais/estaduais de crédito (ex.: Banco do Povo) ativos na cidade",
+    "Lista vigente de instituições conveniadas da Cotiaprev para consignado (a página foi vista apenas no resultado de busca em 05/10/2026)"
   ]
 }

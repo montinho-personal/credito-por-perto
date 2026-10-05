@@ -68,6 +68,9 @@ Console (Desempenho → Exportar → CSV, aba Páginas e aba Consultas).
 | `/emprestimos/sp/itapecerica-da-serra/` | | | | | | | | |
 | `/emprestimos/sp/carapicuiba/` | | | | | | | | |
 | `/emprestimos/sp/itapevi/` | | | | | | | | |
+| `/emprestimos/sp/taboao-da-serra/` | | | | | | | | |
+| `/emprestimos/sp/cotia/` | | | | | | | | |
+| `/emprestimos/sp/indaiatuba/` | | | | | | | | |
 
 ## O que mudou em cada página
 
@@ -287,6 +290,31 @@ Console (Desempenho → Exportar → CSV, aba Páginas e aba Consultas).
 - **Description antes:** Guia de crédito para quem mora em Itapevi: consignado para os trabalhadores do polo industrial, o Procon no Resolve Fácil (com agendamento) e os filtros contra golpe.
 - **Description depois:** Empréstimo em Itapevi: consignado de quem trabalha registrado, lojas e correspondentes, crédito para negativado e o Procon no Resolve Fácil.
 
+### `/emprestimos/sp/taboao-da-serra/`
+
+- **No ar em:** 05/10/2026
+- **Title antes:** Empréstimo em Taboão da Serra (SP): o endereço que resolve quase tudo
+- **Title depois:** Empréstimo em Taboão da Serra: lojas, Procon e golpes
+- **Description antes:** Guia de crédito para Taboão da Serra: o complexo que reúne Procon, Banco do Povo e Sebrae num só endereço, o crédito de quem trabalha na capital e os filtros contra golpe.
+- **Description depois:** Empréstimo em Taboão da Serra: corretor e loja de crédito, convênio de consignado, urgência e o endereço do Procon e do Banco do Povo.
+
+### `/emprestimos/sp/cotia/`
+
+- **No ar em:** 05/10/2026
+- **Title antes:** Empréstimo em Cotia (SP): guia para toda a cidade — do centro a Caucaia
+- **Title depois:** Empréstimo em Cotia: consignado, negativado e Procon
+- **Description antes:** Guia de crédito para quem mora em Cotia: os dois postos do Procon (sede e Caucaia do Alto), como contratar bem morando longe do centro e os filtros contra golpe.
+- **Description depois:** Empréstimo em Cotia: consignado (CLT, INSS e Cotiaprev), correspondentes, negativado, Banco do Povo e os dois postos do Procon, centro e Caucaia.
+- **Correção junto:** o posto de Caucaia aparecia como "1º andar" num trecho e "térreo" no FAQ; unificado como térreo.
+
+### `/emprestimos/sp/indaiatuba/`
+
+- **No ar em:** 05/10/2026
+- **Title antes:** Empréstimo em Indaiatuba (SP): use a concorrência da cidade a seu favor
+- **Title depois:** Empréstimo em Indaiatuba: nome sujo, urgente e Procon
+- **Description antes:** Guia de crédito para Indaiatuba: como transformar a forte concorrência bancária local em taxa menor, o consignado do polo industrial e o Procon no endereço novo, das 10h às 15h.
+- **Description depois:** Empréstimo em Indaiatuba: nome sujo, urgente e o número do agiota que circula no WhatsApp. O que conferir na financeira e onde fica o Procon.
+
 ## Registro qualitativo da SERP (prints de 01/10/2026)
 
 Prints feitos pelo proprietário: os do computador (Campinas, Jundiaí, Sumaré, Americana e Hortolândia) em janela anônima, com
@@ -308,6 +336,9 @@ busca, do mesmo jeito, e anotar se o site aparece e em que posição.
 | emprestimo itapecerica da serra (celular, 03/10) | páginas do Banco do Povo (Secretaria estadual e outra página do programa), Crefisa (negativado); autocomplete dominado por Banco do Povo (simulação, MEI, negativado); buscas por Banco do Povo de Embu das Artes, empréstimo para MEI, agiota e app de empréstimo | (não capturado) |
 | empréstimo em carapicuíba (celular, 03/10) | agência do Banco Mercantil, rede de lojas de crédito ligada a banco (site e imagens), financeira com empréstimo pessoal; autocomplete com negativado, "liberado na hora", WhatsApp da loja e "WhatsApp Bolsa Família" | onde conseguir empréstimo urgente; mais fácil de aprovar; R$ 2 mil; R$ 500 |
 | empréstimo em itapevi (celular, 03/10) | imagens de posts no Facebook de correspondentes com marca de grandes bancos ("a melhor taxa"), loja de financeira, anúncio de banco digital; autocomplete com negativado, nome de banco, "contratando" (vagas), loja de financeira no Centro e agiota | (não capturado) |
+| emprestimo taboao da serra (celular, 05/10) | anúncio patrocinado, pontos de atendimento de financeira, página estadual do Banco do Povo, rede de lojas de crédito de banco, vídeos de "convênio novo" de consignado; autocomplete com agiota, plataforma de consignado, rede de lojas (WhatsApp, telefone, avaliações), "corretor de empréstimos" e "franquia de empréstimos" | onde conseguir empréstimo urgente; mais fácil de aprovar; R$ 2 mil; R$ 500 |
+| empréstimo em cotia (celular, 05/10) | agente correspondente de financeira, página de convênios de consignado da Cotiaprev, financeira para negativado, anúncio de banco digital; autocomplete com consignado, negativado, nome de banco, "hoje"; buscas por agiota, Banco do Povo (Cotia, WhatsApp, MEI, Vargem Grande Paulista), PAT e emprego | onde fazer empréstimo urgente; mais fácil de aprovar; R$ 2.000; R$ 500 |
+| empréstimo em indaiatuba (celular, 05/10) | mapa com lojas, rede de lojas de crédito de banco, página "empréstimo em Indaiatuba" de comparador; autocomplete com pessoal, negativado, nome sujo, hoje, urgente; buscas por "agiota Indaiatuba WhatsApp", "número de agiota", financeira de loja (simulação, WhatsApp, "é confiável", CLT) | (não capturado) |
 | Emprétimo em Jundiaí | Bom Pra Crédito (página "empréstimo em Jundiaí"), Vazoli e Finamax (lojas locais), agência Banco Mercantil | onde fazer empréstimo urgente; mais fácil de aprovar; R$ 2.000; qual banco libera com nome sujo |
 
 As revisões das calculadoras 3 a 13 usaram prints anteriores, resumidos nas mensagens de
