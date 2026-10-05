@@ -30,6 +30,13 @@ import {
  * revalidação diária. Sem dado válido, a página não inventa referência: o
  * simulador omite a comparação e aponta para o Radar.
  *
+ * SERP REAL (05/10/2026): autocomplete dominado por simuladores de banco
+ * (BV, Itaú, Santander, Bradesco, Caixa, Pan, Sicredi, C6), "grátis",
+ * "online", "todos os bancos", "sem CPF", "sem entrada", "qual a taxa" e
+ * "qual melhor banco". A página responde sem ranking de bancos: explica a
+ * diferença entre simulador de banco e simulador independente e aponta a
+ * consulta de taxas por instituição do próprio BC.
+ *
  * EXEMPLOS: todo número do texto sai do mesmo motor que a ferramenta usa,
  * no momento da renderização. Nenhum valor foi digitado à mão.
  */
@@ -38,10 +45,10 @@ import {
 export const revalidate = 86400;
 
 const PATH = "/calculadoras/financiamento-veiculo/";
-const TITLE = "Simulador de financiamento de veículo: parcela e juros";
+const TITLE = "Simulador de financiamento de veículo: grátis, sem CPF";
 const DESCRIPTION =
-  "Valor, entrada, taxa e prazo: veja parcela, juros e o total que sai do bolso, e compare com a média do Banco Central. Carro ou moto, sem cadastro.";
-const REVIEWED = "23/09/2026";
+  "Simule parcela, juros e total do carro ou moto, com ou sem entrada, e compare com a taxa média do Banco Central. Grátis, sem CPF e sem cadastro.";
+const REVIEWED = "05/10/2026";
 
 export const metadata: Metadata = buildMetadata({
   title: TITLE,
@@ -162,6 +169,7 @@ export default async function FinanciamentoVeiculoPage() {
   });
   const main = simulate({ ...car, downPayment: 20_000 });
   const annualOf18 = (Math.pow(1.018, 12) - 1) * 100;
+  const referenceAnnual = reference ? (Math.pow(1 + reference.monthlyRatePercent / 100, 12) - 1) * 100 : null;
 
   return (
     <div
@@ -201,6 +209,42 @@ export default async function FinanciamentoVeiculoPage() {
           fixas. Para entender o contrato em si — a alienação fiduciária, o que acontece se atrasar
           e por que o veículo fica em garantia —, veja o guia de{" "}
           <Link href="/emprestimos/financiamento-de-veiculo/">financiamento de veículo</Link>.
+        </p>
+
+        <h2 id="todos-os-bancos">Simulador do banco ou simulador de todos os bancos?</h2>
+        <p>
+          Quem busca o simulador de financiamento de veículos encontra, primeiro, os dos próprios bancos e financeiras. O
+          simulador de cada instituição mostra a oferta dela, e alguns pedem CPF e dados de contato antes do resultado. Este
+          simulador é independente e grátis: não pede CPF, nome nem telefone, não guarda os valores e aceita a taxa de
+          qualquer proposta. Por isso funciona como &ldquo;simulador de todos os bancos&rdquo; ao contrário: você traz a taxa
+          de cada banco e vê as propostas na mesma conta, e o{" "}
+          <Link href="/calculadoras/comparador-de-propostas/">comparador de propostas</Link> as coloca lado a lado. A
+          Calculadora do Cidadão, do Banco Central, usa a mesma fórmula de prestações fixas, e serve de conferência.
+        </p>
+        <p>
+          <strong>Qual o melhor banco para financiar carro?</strong> Não existe resposta única nem ranking neste site: a taxa
+          oferecida depende do seu perfil, da entrada, do prazo, do veículo e da política de cada instituição. A taxa média de
+          cada instituição é publicada pelo próprio Banco Central na{" "}
+          <a href="https://www.bcb.gov.br/estatisticas/txjuros" rel="noopener noreferrer" target="_blank">
+            consulta de taxas de juros por instituição
+          </a>
+          . É um ponto de partida para pedir duas ou três propostas; quem decide a comparação é o CET de cada uma.
+        </p>
+        <p>
+          <strong>Sem CPF?</strong> Para simular, sim, aqui. Para contratar, a instituição faz análise de crédito e pede seus
+          dados pelos canais oficiais dela. Desconfie de quem pede CPF, senha ou foto de documento por WhatsApp &ldquo;para
+          simular&rdquo;, ou cobra alguma taxa antes de liberar o financiamento: os sinais estão em{" "}
+          <Link href="/calculadoras/sinais-de-golpe/">sinais de golpe</Link>.
+        </p>
+
+        <h2 id="taxa-de-juros">Qual a taxa de juros para financiamento de veículos?</h2>
+        <p>
+          {reference && referenceAnnual !== null
+            ? `A taxa média que o Banco Central publica para aquisição de veículos por pessoa física foi de ${pct(reference.monthlyRatePercent)}% ao mês em ${reference.refMonthLabel}, o equivalente a ${pct(referenceAnnual)}% ao ano. `
+            : "A taxa média de aquisição de veículos por pessoa física é publicada mensalmente pelo Banco Central; o Radar de taxas mostra o dado mais recente. "}
+          É uma média de mercado: a sua taxa pode ficar acima ou abaixo dela, conforme perfil, entrada, prazo, veículo novo ou
+          usado e instituição. O simulador oferece essa média como atalho quando você ainda não tem proposta, e o{" "}
+          <Link href="/taxas/">Radar de taxas</Link> mostra como ela vem se movendo.
         </p>
 
         <h2 id="como-a-parcela-e-calculada">Como a parcela é calculada</h2>
@@ -322,6 +366,15 @@ export default async function FinanciamentoVeiculoPage() {
           conhece&rdquo;. O simulador não acrescenta nada por conta própria.
         </p>
 
+        <h2 id="ipva-seguro">IPVA, seguro e licenciamento entram na conta?</h2>
+        <p>
+          Não fazem parte do financiamento, mas saem do mesmo orçamento: o IPVA, o licenciamento, o seguro do carro, a
+          manutenção e o combustível chegam junto com as parcelas. Antes de fechar o prazo, teste se a parcela e esses custos
+          cabem no mês na <Link href="/calculadoras/parcela-no-orcamento/">parcela no orçamento</Link>. Se um custo for
+          financiado junto, como um seguro vinculado à operação, inclua em &ldquo;Incluir custos que você já conhece&rdquo;:
+          ele passa a pagar juros.
+        </p>
+
         <h2 id="comparar-propostas">Como comparar duas propostas de financiamento</h2>
         <p>
           Pelo CET e pelo total a pagar, no mesmo prazo — nunca pela parcela. Duas propostas com a
@@ -358,6 +411,19 @@ export default async function FinanciamentoVeiculoPage() {
             </p>
           </>
         ) : null}
+
+        <h3>O simulador é grátis e funciona sem CPF?</h3>
+        <p>
+          Sim. Não há cadastro e nenhum dado pessoal é pedido; o cálculo acontece no seu navegador. O CPF só entra quando você
+          pede uma proposta à instituição, pelos canais oficiais dela.
+        </p>
+
+        <h3>Qual o melhor banco para financiar carro?</h3>
+        <p>
+          O que oferecer o menor CET para o seu caso, no mesmo prazo e com a mesma entrada. Peça duas ou três propostas, coloque
+          a taxa de cada uma no simulador e compare o total. A lista de taxas médias por instituição, do Banco Central, ajuda a
+          escolher a quem pedir.
+        </p>
 
         <h3>Vale a pena dar uma entrada maior?</h3>
         <p>

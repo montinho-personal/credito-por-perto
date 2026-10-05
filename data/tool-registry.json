@@ -538,7 +538,10 @@
         "financiar carro",
         "financiamento de moto",
         "entrada do carro",
-        "veículo"
+        "veículo",
+        "simulador de financiamento de veiculos gratis",
+        "simulador de financiamento de veiculo sem cpf",
+        "simulador de financiamento de veiculos todos os bancos"
       ],
       "keywords": [
         "simular financiamento de carro",
@@ -567,7 +570,7 @@
         "comparador-de-propostas",
         "parcela-no-orcamento"
       ],
-      "updatedAt": "2026-09-29"
+      "updatedAt": "2026-10-05"
     },
     {
       "id": "quanto-consigo-financiar",
