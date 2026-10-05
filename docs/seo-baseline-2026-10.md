@@ -76,6 +76,9 @@ Console (Desempenho → Exportar → CSV, aba Páginas e aba Consultas).
 | `/emprestimos/sp/valinhos/` | | | | | | | | |
 | `/emprestimos/sp/embu-das-artes/` | | | | | | | | |
 | `/emprestimos/sp/itu/` | | | | | | | | |
+| `/emprestimos/sp/vinhedo/` | | | | | | | | |
+| `/emprestimos/sp/paulinia/` | | | | | | | | |
+| `/emprestimos/sp/itatiba/` | | | | | | | | |
 
 ## O que mudou em cada página
 
@@ -361,6 +364,30 @@ Console (Desempenho → Exportar → CSV, aba Páginas e aba Consultas).
 - **Description depois:** Empréstimo em Itu: “na hora”, sem garantia, Pix no cartão e negativado. O que conferir antes de assinar, o Banco do Povo e o Procon.
 - **Correção junto:** o Banco do Povo (duas unidades, já verificadas no dossiê) não aparecia no texto do guia; entrou como seção.
 
+### `/emprestimos/sp/vinhedo/`
+
+- **No ar em:** 05/10/2026
+- **Title antes:** Empréstimo em Vinhedo (SP): agendamento no Procon e golpes de alta renda
+- **Title depois:** Empréstimo em Vinhedo: nome sujo, sem FGTS e Procon
+- **Description antes:** Guia de crédito para Vinhedo: o Procon da Humberto Pescarini (que só atende com agendamento), os golpes que miram renda alta na RMC e o posto do Banco do Povo.
+- **Description depois:** Empréstimo em Vinhedo: nome sujo, sem FGTS, rápido e fácil? O que conferir antes de assinar, o Banco do Povo e o Procon com agendamento.
+
+### `/emprestimos/sp/paulinia/`
+
+- **No ar em:** 05/10/2026
+- **Title antes:** Empréstimo em Paulínia (SP): salário de polo industrial pede filtro maior
+- **Title depois:** Empréstimo em Paulínia: negativado, urgente e Procon
+- **Description antes:** Guia de crédito para Paulínia: as janelas curtas do Procon, o assédio de consignado sobre os salários do polo petroquímico e a régua para comparar qualquer proposta.
+- **Description depois:** Empréstimo em Paulínia: negativado, “sem juros”, autônomo e na hora via Pix. O que conferir antes de assinar, o Banco do Povo e o Procon.
+
+### `/emprestimos/sp/itatiba/`
+
+- **No ar em:** 05/10/2026
+- **Title antes:** Empréstimo em Itatiba (SP): uma viagem, dois balcões públicos
+- **Title depois:** Empréstimo em Itatiba: nome sujo, sem consulta e Procon
+- **Description antes:** Guia de crédito para Itatiba: Procon e Banco do Povo no mesmo endereço ao lado da rodoviária, o consignado do CLT industrial e o cuidado com o crediário de móveis.
+- **Description depois:** Empréstimo em Itatiba: “sem consulta ao SPC/Serasa”, nome sujo e consignado do INSS. O que conferir antes de assinar e o Banco do Povo.
+
 ## Registro qualitativo da SERP (prints de 01/10/2026)
 
 Prints feitos pelo proprietário: os do computador (Campinas, Jundiaí, Sumaré, Americana e Hortolândia) em janela anônima, com
@@ -390,6 +417,9 @@ busca, do mesmo jeito, e anotar se o site aparece e em que posição.
 | empréstimo em valinhos (celular, 05/10) | mapa com lojas de empréstimo, página do Banco do Povo da Prefeitura (faixa de valor por porte), loja de financeira, site de banco público (microcrédito, negocie sua dívida); autocomplete com negativado, urgente, hoje, "Valinhos e Vinhedo"; buscas de R$ 200 a R$ 5 mil "na hora via Pix" para negativado e autônomo | mais fácil de aprovar; dinheiro emprestado urgente; R$ 2.000; R$ 10.000 |
 | empréstimo em embu das artes (celular, 05/10) | página do Banco do Povo da Prefeitura (faixas de valor), sistema digital de consignações da Prefeitura, plataforma de consignado para servidor, EmbuPrev; autocomplete com consignado, negativado, nome de banco, "sem juros", e-consig e portal do consignado | onde conseguir empréstimo urgente; mais fácil de aprovar; R$ 2 mil; onde achar pessoas que emprestam dinheiro |
 | emprestimo em itu (celular, 05/10) | notícia da Prefeitura sobre o Banco do Povo (out/2024), banco com "cai na hora", site de "empréstimo Pix no cartão", lojas de financeiras; autocomplete com pessoal, consignado, negativado, sem garantia, telefone e vagas; buscas por "na hora via Pix", "fácil aprovação", "confiável" e "melhor banco" | qual banco libera rápido e fácil; R$ 2 mil; R$ 500; mais fácil de aprovar |
+| emprestimo em vinhedo (celular, 05/10) | financeira com "empréstimo negativado em Vinhedo" pelo WhatsApp, banco com "rápido e sem burocracia", duas páginas do Banco do Povo da Prefeitura; autocomplete com negativado, "sem FGTS", nome sujo, vagas, telefone e Facebook | qual banco libera rápido e fácil; R$ 2 mil; onde achar pessoas que emprestam dinheiro; qual banco libera com nome sujo |
+| emprestimo em paulinia (celular, 05/10) | agente correspondente de financeira, perfil de loja de crédito local com endereço e telefones, outra loja de crédito; autocomplete com negativado, "sem juros", nome sujo, vagas e telefone; buscas por autônomo, "na hora via Pix", WhatsApp e R$ 500 a R$ 5 mil para negativado | (não capturado) |
+| empréstimo em itatiba (celular, 05/10) | loja de consignado do INSS, página do Banco do Povo da Prefeitura, diretório local com "empréstimo pessoal sem consulta ao SPC/Serasa" e WhatsApp; autocomplete com pessoal, negativado, nome sujo e nomes de banco; buscas por vagas, bicos, PAT e serviços da Prefeitura | (não capturado) |
 | Emprétimo em Jundiaí | Bom Pra Crédito (página "empréstimo em Jundiaí"), Vazoli e Finamax (lojas locais), agência Banco Mercantil | onde fazer empréstimo urgente; mais fácil de aprovar; R$ 2.000; qual banco libera com nome sujo |
 
 As revisões das calculadoras 3 a 13 usaram prints anteriores, resumidos nas mensagens de
