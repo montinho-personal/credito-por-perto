@@ -56,6 +56,7 @@ Console (Desempenho → Exportar → CSV, aba Páginas e aba Consultas).
 | `/calculadoras/trocar-divida/` | | | | | | | | |
 | `/taxas/` | | | | | | | | |
 | `/calculadoras/a-vista-ou-parcelado/` | | | | | | | | |
+| `/calculadoras/quanto-consigo-financiar/` | | | | | | | | |
 | `/emprestimos/sp/barueri/` | | | | | | | | |
 | `/emprestimos/sp/barueri/alphaville/` | | | | | | | | |
 | `/emprestimos/sp/campinas/` | | | | | | | | |
@@ -204,6 +205,14 @@ Console (Desempenho → Exportar → CSV, aba Páginas e aba Consultas).
 - **Title depois:** À vista ou parcelado? Calculadora do desconto mínimo
 - **Description antes:** Compare preço à vista, entrada, parcelas e total. Veja quanto custa parcelar, qual é a diferença em reais e qual desconto à vista está sendo oferecido. Sem cadastro.
 - **Description depois:** Compare à vista e parcelado pelo total e veja, com a taxa que você escolher, o desconto à vista que empata as duas opções. Sem cadastro.
+
+### `/calculadoras/quanto-consigo-financiar/`
+
+- **No ar em:** 05/10/2026
+- **Title antes:** Quanto consigo financiar? Calcule pela parcela
+- **Title depois:** Quanto consigo financiar? Pela renda ou pela parcela
+- **Description antes:** Informe quanto pode pagar por mês, a taxa e o prazo para estimar quanto consegue financiar e como entrada, juros e prazo mudam o valor.
+- **Description depois:** Com renda de R$ 5 mil, quanto consigo financiar? Veja a parcela de 30% da renda, a taxa e o prazo, em Price e SAC, e o que muda na aprovação.
 
 ### `/emprestimos/sp/barueri/`
 
@@ -434,6 +443,7 @@ busca, do mesmo jeito, e anotar se o site aparece e em que posição.
 | Busca | O que dominava a página | Perguntas do "As pessoas também perguntam" |
 | --- | --- | --- |
 | à vista ou parcelado? | calculadora do "desconto mínimo" (1x, 3x, 6x, 10x), Investidor Sardinha, Mercado Pago; resumo por IA com regra genérica de 5% a 10% | o que é pagamento à vista; vale a pena com 5% de desconto; crédito à vista tem juros; desvantagens do pagamento à vista |
+| quanto consigo financiar (celular, 05/10) | resumo por IA com 30% da renda familiar bruta (Caixa), prazo e entrada; Serasa, MySide (taxa média declarada pelo site), calculadorabrasil, estudo de imóveis por renda; autocomplete quase todo "com renda de X mil" (3 a 20 mil) e Minha Casa Minha Vida; buscas por parcela de R$ 150 a 300 mil pela Caixa, "se eu financiar 170/450 mil quanto vou pagar", tabela de renda da Caixa | quanto fica R$ 50 mil em 48 vezes; se eu financiar 180 mil quanto por mês; com renda de R$ 20 mil quanto posso financiar; R$ 300 mil pela Caixa |
 | empréstimo em barueri sp | Banco do Povo (página da prefeitura, "Setor Laranja"), oHub (consignado), páginas de correspondentes | onde fazer empréstimo urgente; mais fácil de aprovar; R$ 2.000 e R$ 500 urgente |
 | empréstimo em alphaville | Daycoval (agências e correspondentes), escritórios locais de "apoio ao crédito", FinanZero | onde pegar empréstimo urgente; R$ 2.000; mais fácil de aprovar; R$ 10.000 |
 | Empréstimo em Campinas | mapa com lojas, Agibank (pessoal), Crefisa (negativado), Paraná Banco (consignado em loja física) | onde fazer empréstimo urgente; R$ 10.000; mais fácil de aprovar; R$ 2.000 |

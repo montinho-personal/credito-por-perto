@@ -28,19 +28,31 @@ import { calculateAffordability, type AffordabilityInput } from "@/lib/calculato
  * isso. Os números saem do motor na renderização: nenhum escrito à mão.
  *
  * SEM URL POR PARCELA: os exemplos preenchem a calculadora por botão.
+ *
+ * RENDA (SERP real, 05/10/2026): o autocomplete é dominado por "quanto
+ * consigo financiar com renda de X mil". A tabela por renda usa 30% da renda
+ * bruta como PREMISSA declarada: é o limite que a Caixa informa para
+ * habitação, não lei nem regra de todo banco (o guia "quanto da renda
+ * comprometer" é o dono dessa explicação). "Se eu financiar X, quanto vou
+ * pagar" (valor → parcela) pertence ao simulador imobiliário; aqui só aponta.
  */
 
 const PATH = "/calculadoras/quanto-consigo-financiar/";
-const TITLE = "Quanto consigo financiar? Calcule pela parcela";
+const TITLE = "Quanto consigo financiar? Pela renda ou pela parcela";
 const DESCRIPTION =
-  "Informe quanto pode pagar por mês, a taxa e o prazo para estimar quanto consegue financiar e como entrada, juros e prazo mudam o valor.";
-const REVIEWED = "24/09/2026";
+  "Com renda de R$ 5 mil, quanto consigo financiar? Veja a parcela de 30% da renda, a taxa e o prazo, em Price e SAC, e o que muda na aprovação.";
+const REVIEWED = "05/10/2026";
 
 export const metadata: Metadata = buildMetadata({ title: TITLE, description: DESCRIPTION, path: PATH });
 
 /** Taxa hipotética dos exemplos, sempre rotulada como tal. */
 const EXAMPLE_RATE = 1;
 const EXAMPLE_MONTHS = 240;
+/** Prazo dos exemplos por renda (30 anos), também hipotético. */
+const INCOME_MONTHS = 360;
+/** Percentual da renda bruta usado como premissa da tabela por renda. */
+const INCOME_SHARE = 0.3;
+const INCOMES = [3_000, 4_000, 5_000, 6_000, 8_000, 10_000, 12_000, 13_000, 20_000];
 
 const brl = (cents: number) =>
   new Intl.NumberFormat("pt-BR", { style: "currency", currency: "BRL" }).format(cents / 100);
@@ -73,6 +85,13 @@ export default function QuantoConsigoFinanciarPage() {
   const t360 = byTerm.find((x) => x.months === 360)?.r;
   const t240 = byTerm.find((x) => x.months === 240)?.r;
   const bc = calc({ paymentCents: 935_00, ratePercent: 1.99, rateUnit: "am", months: 24 });
+  const byIncome = INCOMES.flatMap((renda) => {
+    const paymentReais = Math.round(renda * INCOME_SHARE);
+    const r = example(paymentReais, INCOME_MONTHS);
+    return r ? [{ renda, paymentReais, r }] : [];
+  });
+  const income5 = byIncome.find((x) => x.renda === 5_000);
+  const income20 = byIncome.find((x) => x.renda === 20_000);
   const withEntry = calc({ paymentCents: 2_000_00, ratePercent: EXAMPLE_RATE, rateUnit: "am", months: EXAMPLE_MONTHS, entry: { kind: "reais", cents: 100_000_00 } });
 
   const prefill = (id: string, paymentReais: number, months: number, system: "price" | "sac" = "price"): AffordabilityPrefill => ({
@@ -98,7 +117,8 @@ export default function QuantoConsigoFinanciarPage() {
 
       <h1 className="mt-6 font-serif text-3xl font-bold leading-tight text-brand-navy md:text-4xl">Quanto Consigo Financiar?</h1>
       <p className="mt-3 text-lg leading-relaxed text-brand-muted">
-        Informe a parcela que cabe no seu mês, a taxa e o prazo para estimar o valor financiável.
+        Informe a parcela que cabe no seu mês, a taxa e o prazo para estimar o valor financiável. Partindo da renda, a parcela
+        é uma fatia dela: a tabela por renda, logo abaixo, mostra a conta.
       </p>
 
       <div className="mt-6">
@@ -118,6 +138,51 @@ export default function QuantoConsigoFinanciarPage() {
           Na tabela Price, com parcelas iguais, a conta é: valor financiável = parcela × [1 − (1 + taxa)<sup>−prazo</sup>] ÷
           taxa. Com taxa zero, é parcela × prazo. É a mesma fórmula da Calculadora do Cidadão, do Banco Central, no modo de
           financiamento com prestações fixas.
+        </p>
+
+        <h2 id="renda">Quanto consigo financiar com a minha renda?</h2>
+        <p>
+          A renda entra na conta pela parcela. No financiamento habitacional, a Caixa informa em seus canais que a parcela pode
+          comprometer até 30% da renda familiar bruta. Não é lei nem regra de todos os bancos: cada instituição tem a própria
+          política, e o guia{" "}
+          <Link href="/organizacao-financeira/quanto-da-renda-comprometer-financiamento-imovel/">quanto da renda comprometer com o financiamento</Link>{" "}
+          explica de onde vem o número. Usando 30% como premissa, a parcela de quem ganha R$ 5.000 brutos é de R$ 1.500, e o
+          valor que ela financia depende da taxa e do prazo.
+        </p>
+        <p>
+          Premissas da tabela: parcela de 30% da renda bruta, taxa hipotética de 1% ao mês (não é média de mercado nem
+          oferta), {INCOME_MONTHS} meses, sem entrada, sem seguros e sem TR. Na SAC, a parcela de 30% é a primeira, a maior.
+        </p>
+        {byIncome.length > 0 ? (
+          <ScenarioTable
+            caption={`Valor financiável por renda bruta, com parcela de 30% da renda, taxa hipotética de 1% ao mês e ${INCOME_MONTHS} meses`}
+            head={["Renda bruta", "Parcela (30%)", "Price financia", "SAC financia"]}
+            rows={byIncome.map(({ renda, paymentReais, r }) => ({
+              key: String(renda),
+              cells: [`R$ ${renda.toLocaleString("pt-BR")}`, `R$ ${paymentReais.toLocaleString("pt-BR")}`, brlRound(r.price.financedCents), brlRound(r.sac.financedCents)],
+            }))}
+          />
+        ) : null}
+        <SimulateAffordabilityButton label="Simular renda de R$ 5.000 (parcela de R$ 1.500)" detail={prefill("renda-5000", 1_500, INCOME_MONTHS)} />
+        <p>
+          Três cuidados antes de usar a tabela. Primeiro, 30% da renda bruta pesa mais na renda líquida, depois de INSS e
+          imposto. Teste na <Link href="/calculadoras/parcela-no-orcamento/">Parcela no orçamento</Link> se a parcela cabe no mês
+          real, com condomínio, IPTU e as dívidas que você já tem. Segundo, o banco não financia necessariamente todo o valor do
+          imóvel: cada instituição e cada modalidade definem quanto do valor financiam, e o restante é entrada, que pode vir de
+          recursos próprios ou do FGTS, conforme as regras do financiamento. Terceiro, no Minha Casa, Minha Vida, as faixas de
+          renda, os subsídios e as taxas são definidos pelo programa e mudam com o tempo. Esta calculadora não os inclui:
+          confira as condições vigentes nos canais oficiais do programa e, se houver subsídio, some-o à entrada.
+        </p>
+
+        <h2 id="valor-para-parcela">Se eu financiar R$ 170 mil, quanto vou pagar por mês?</h2>
+        <p>
+          É a pergunta inversa: parte do valor e chega à parcela. Quem responde é o{" "}
+          <Link href="/calculadoras/financiamento-imobiliario/">simulador de financiamento imobiliário</Link>, que inclui entrada,
+          seguros e a comparação entre Price e SAC. Para o carro ou para um valor como R$ 50 mil em 48 vezes, o{" "}
+          <Link href="/calculadoras/financiamento-veiculo/">simulador de financiamento de veículo</Link> e a{" "}
+          <Link href="/calculadoras/emprestimo/">calculadora de empréstimo</Link> fazem a mesma conta. Buscas como &ldquo;quanto
+          fica um financiamento de R$ 300 mil pela Caixa&rdquo; dependem da taxa da proposta, dos seguros e da TR. O número do
+          banco sai do simulador do próprio banco. Para comparar propostas, leve a taxa delas para estas calculadoras.
         </p>
 
         <h2 id="parcela-2000">Com parcela de R$ 2.000, quanto consigo financiar?</h2>
@@ -229,6 +294,21 @@ export default function QuantoConsigoFinanciarPage() {
         </p>
 
         <h2 id="perguntas-frequentes">Perguntas frequentes</h2>
+        <h3>Quanto consigo financiar com renda de 5 mil?</h3>
+        <p>
+          Depende da parte da renda que vai para a parcela, da taxa e do prazo.
+          {income5
+            ? ` Com parcela de 30% da renda bruta (R$ 1.500), taxa hipotética de 1% ao mês e ${INCOME_MONTHS} meses, são ${brlRound(income5.r.price.financedCents)} na Price e ${brlRound(income5.r.sac.financedCents)} na SAC.`
+            : ""}{" "}
+          Com a taxa da sua proposta, o número muda: informe-a na calculadora.
+        </p>
+        <h3>Com uma renda de R$ 20 mil, quanto posso financiar?</h3>
+        <p>
+          {income20
+            ? `Com as mesmas premissas (parcela de R$ 6.000, 1% ao mês hipotético, ${INCOME_MONTHS} meses), ${brlRound(income20.r.price.financedCents)} na Price e ${brlRound(income20.r.sac.financedCents)} na SAC.`
+            : "Depende da taxa e do prazo."}{" "}
+          A aprovação considera também histórico de crédito, outras dívidas, idade e a política da instituição.
+        </p>
         <h3>Quanto consigo financiar com R$ 3.000 por mês?</h3>
         <p>
           Depende da taxa e do prazo.

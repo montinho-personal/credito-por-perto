@@ -587,13 +587,18 @@
         "quanto posso financiar",
         "valor financiável",
         "tenho x por mês",
-        "quanto financio pagando"
+        "quanto financio pagando",
+        "quanto consigo financiar com renda de 5 mil",
+        "quanto posso financiar com minha renda",
+        "tabela de renda para financiamento"
       ],
       "keywords": [
         "quanto consigo financiar",
         "quanto posso financiar",
         "valor financiavel",
-        "calcular valor financiado pela parcela"
+        "calcular valor financiado pela parcela",
+        "quanto consigo financiar com renda de",
+        "quanto posso financiar com minha renda"
       ],
       "tags": [
         "calculadora",
@@ -609,7 +614,7 @@
         "parcela-no-orcamento",
         "financiamento-imobiliario"
       ],
-      "updatedAt": "2026-09-24"
+      "updatedAt": "2026-10-05"
     },
     {
       "id": "sac-x-price",
