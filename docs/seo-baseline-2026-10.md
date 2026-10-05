@@ -79,6 +79,7 @@ Console (Desempenho → Exportar → CSV, aba Páginas e aba Consultas).
 | `/emprestimos/sp/vinhedo/` | | | | | | | | |
 | `/emprestimos/sp/paulinia/` | | | | | | | | |
 | `/emprestimos/sp/itatiba/` | | | | | | | | |
+| `/emprestimos/sp/votorantim/` | | | | | | | | |
 
 ## O que mudou em cada página
 
@@ -388,6 +389,14 @@ Console (Desempenho → Exportar → CSV, aba Páginas e aba Consultas).
 - **Description antes:** Guia de crédito para Itatiba: Procon e Banco do Povo no mesmo endereço ao lado da rodoviária, o consignado do CLT industrial e o cuidado com o crediário de móveis.
 - **Description depois:** Empréstimo em Itatiba: “sem consulta ao SPC/Serasa”, nome sujo e consignado do INSS. O que conferir antes de assinar e o Banco do Povo.
 
+### `/emprestimos/sp/votorantim/`
+
+- **No ar em:** 05/10/2026
+- **Title antes:** Empréstimo em Votorantim (SP): nenhuma das portas públicas abre de manhã
+- **Title depois:** Empréstimo em Votorantim (SP): nome sujo e Procon
+- **Description antes:** Guia de crédito para Votorantim: o Procon e o Banco do Povo que só atendem à tarde, o endereço novo ao lado do Poupatempo e as duas linhas de microcrédito.
+- **Description depois:** Empréstimo em Votorantim, a cidade, não o banco: negativado, “é confiável?”, WhatsApp, o Banco do Povo e o Procon que só abre à tarde.
+
 ## Registro qualitativo da SERP (prints de 01/10/2026)
 
 Prints feitos pelo proprietário: os do computador (Campinas, Jundiaí, Sumaré, Americana e Hortolândia) em janela anônima, com
@@ -420,6 +429,7 @@ busca, do mesmo jeito, e anotar se o site aparece e em que posição.
 | emprestimo em vinhedo (celular, 05/10) | financeira com "empréstimo negativado em Vinhedo" pelo WhatsApp, banco com "rápido e sem burocracia", duas páginas do Banco do Povo da Prefeitura; autocomplete com negativado, "sem FGTS", nome sujo, vagas, telefone e Facebook | qual banco libera rápido e fácil; R$ 2 mil; onde achar pessoas que emprestam dinheiro; qual banco libera com nome sujo |
 | emprestimo em paulinia (celular, 05/10) | agente correspondente de financeira, perfil de loja de crédito local com endereço e telefones, outra loja de crédito; autocomplete com negativado, "sem juros", nome sujo, vagas e telefone; buscas por autônomo, "na hora via Pix", WhatsApp e R$ 500 a R$ 5 mil para negativado | (não capturado) |
 | empréstimo em itatiba (celular, 05/10) | loja de consignado do INSS, página do Banco do Povo da Prefeitura, diretório local com "empréstimo pessoal sem consulta ao SPC/Serasa" e WhatsApp; autocomplete com pessoal, negativado, nome sujo e nomes de banco; buscas por vagas, bicos, PAT e serviços da Prefeitura | (não capturado) |
+| empréstimo em votorantim (celular, 05/10) | página de empréstimos da Funsejem (linha para participantes), página de empréstimos do banco BV, resultado patrocinado; autocomplete com negativado, nome sujo, "é confiável", finanças e Reclame Aqui; buscas relacionadas quase todas da marca do banco (consignado, CLT, garantia de veículo, WhatsApp, simulador, negativados) | (não capturado) |
 | Emprétimo em Jundiaí | Bom Pra Crédito (página "empréstimo em Jundiaí"), Vazoli e Finamax (lojas locais), agência Banco Mercantil | onde fazer empréstimo urgente; mais fácil de aprovar; R$ 2.000; qual banco libera com nome sujo |
 
 As revisões das calculadoras 3 a 13 usaram prints anteriores, resumidos nas mensagens de
