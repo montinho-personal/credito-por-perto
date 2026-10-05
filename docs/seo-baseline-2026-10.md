@@ -73,6 +73,8 @@ Console (Desempenho → Exportar → CSV, aba Páginas e aba Consultas).
 | `/emprestimos/sp/indaiatuba/` | | | | | | | | |
 | `/emprestimos/sp/jandira/` | | | | | | | | |
 | `/emprestimos/sp/santana-de-parnaiba/` | | | | | | | | |
+| `/emprestimos/sp/valinhos/` | | | | | | | | |
+| `/emprestimos/sp/embu-das-artes/` | | | | | | | | |
 
 ## O que mudou em cada página
 
@@ -333,6 +335,22 @@ Console (Desempenho → Exportar → CSV, aba Páginas e aba Consultas).
 - **Description antes:** Guia de crédito para quem mora em Santana de Parnaíba: microcrédito do Banco do Povo Paulista, Procon da cidade, verificação de instituições e comparação segura.
 - **Description depois:** Empréstimo em Santana de Parnaíba: consignado do servidor municipal (margem, holerite e convênios), negativado, WhatsApp e o Procon.
 
+### `/emprestimos/sp/valinhos/`
+
+- **No ar em:** 05/10/2026
+- **Title antes:** Empréstimo em Valinhos (SP): o Procon do Largo e a casa que junta três portas
+- **Title depois:** Empréstimo em Valinhos: urgente, negativado e Procon
+- **Description antes:** Guia de crédito para Valinhos: o Procon no Largo São Sebastião, a Casa do Empreendedor que reúne Banco do Povo, Sebrae e PAT, e os cuidados de quem banca a vida em Campinas.
+- **Description depois:** Empréstimo em Valinhos: urgente, negativado ou autônomo? O que conferir no “na hora via Pix”, o Banco do Povo e o Procon do Largo.
+
+### `/emprestimos/sp/embu-das-artes/`
+
+- **No ar em:** 05/10/2026
+- **Title antes:** Empréstimo em Embu das Artes (SP): guia para quem vive da própria arte
+- **Title depois:** Empréstimo em Embu das Artes: Banco do Povo e servidor
+- **Description antes:** Guia de crédito para Embu das Artes: os dois endereços do Procon (Poupatempo e Centro), os caminhos de crédito de artesãos, MEIs e autônomos, e os filtros contra golpe.
+- **Description depois:** Empréstimo em Embu das Artes: Banco do Povo, consignado do servidor municipal, negativado, “sem juros” e os dois endereços do Procon.
+
 ## Registro qualitativo da SERP (prints de 01/10/2026)
 
 Prints feitos pelo proprietário: os do computador (Campinas, Jundiaí, Sumaré, Americana e Hortolândia) em janela anônima, com
@@ -359,6 +377,8 @@ busca, do mesmo jeito, e anotar se o site aparece e em que posição.
 | empréstimo em indaiatuba (celular, 05/10) | mapa com lojas, rede de lojas de crédito de banco, página "empréstimo em Indaiatuba" de comparador; autocomplete com pessoal, negativado, nome sujo, hoje, urgente; buscas por "agiota Indaiatuba WhatsApp", "número de agiota", financeira de loja (simulação, WhatsApp, "é confiável", CLT) | (não capturado) |
 | empréstimo em jandira (celular, 05/10) | página estadual do Banco do Povo, perfil de Instagram de loja de crédito local ("ficou sem grana?"); autocomplete com negativado, nome sujo, nome de banco, "Jandira e Itapevi" e vagas | onde fazer empréstimo urgente; mais fácil de aprovar; R$ 2.000; R$ 500 |
 | emprestimo santana de parnaiba (celular, 05/10) | página sobre consignado de servidor ("qualquer banco ou cooperativa conveniado com a prefeitura"), rede de lojas de crédito de banco; autocomplete com consignado, WhatsApp, negativado e nomes de banco; buscas relacionadas quase todas de servidor (sistema de consignação, RH, holerite, portal do servidor, espelho de ponto) | (não capturado) |
+| empréstimo em valinhos (celular, 05/10) | mapa com lojas de empréstimo, página do Banco do Povo da Prefeitura (faixa de valor por porte), loja de financeira, site de banco público (microcrédito, negocie sua dívida); autocomplete com negativado, urgente, hoje, "Valinhos e Vinhedo"; buscas de R$ 200 a R$ 5 mil "na hora via Pix" para negativado e autônomo | mais fácil de aprovar; dinheiro emprestado urgente; R$ 2.000; R$ 10.000 |
+| empréstimo em embu das artes (celular, 05/10) | página do Banco do Povo da Prefeitura (faixas de valor), sistema digital de consignações da Prefeitura, plataforma de consignado para servidor, EmbuPrev; autocomplete com consignado, negativado, nome de banco, "sem juros", e-consig e portal do consignado | onde conseguir empréstimo urgente; mais fácil de aprovar; R$ 2 mil; onde achar pessoas que emprestam dinheiro |
 | Emprétimo em Jundiaí | Bom Pra Crédito (página "empréstimo em Jundiaí"), Vazoli e Finamax (lojas locais), agência Banco Mercantil | onde fazer empréstimo urgente; mais fácil de aprovar; R$ 2.000; qual banco libera com nome sujo |
 
 As revisões das calculadoras 3 a 13 usaram prints anteriores, resumidos nas mensagens de
