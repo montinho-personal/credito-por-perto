@@ -75,6 +75,7 @@ Console (Desempenho → Exportar → CSV, aba Páginas e aba Consultas).
 | `/emprestimos/sp/santana-de-parnaiba/` | | | | | | | | |
 | `/emprestimos/sp/valinhos/` | | | | | | | | |
 | `/emprestimos/sp/embu-das-artes/` | | | | | | | | |
+| `/emprestimos/sp/itu/` | | | | | | | | |
 
 ## O que mudou em cada página
 
@@ -351,6 +352,15 @@ Console (Desempenho → Exportar → CSV, aba Páginas e aba Consultas).
 - **Description antes:** Guia de crédito para Embu das Artes: os dois endereços do Procon (Poupatempo e Centro), os caminhos de crédito de artesãos, MEIs e autônomos, e os filtros contra golpe.
 - **Description depois:** Empréstimo em Embu das Artes: Banco do Povo, consignado do servidor municipal, negativado, “sem juros” e os dois endereços do Procon.
 
+### `/emprestimos/sp/itu/`
+
+- **No ar em:** 05/10/2026
+- **Title antes:** Empréstimo em Itu (SP): guia do polo regional de comércio tradicional
+- **Title depois:** Empréstimo em Itu: na hora, negativado e Banco do Povo
+- **Description antes:** Guia de crédito para Itu: a janela 9h–15h do Procon na Cidade Nova, como conferir os balcões do comércio tradicional e o crédito de quem vive do turismo e do varejo.
+- **Description depois:** Empréstimo em Itu: “na hora”, sem garantia, Pix no cartão e negativado. O que conferir antes de assinar, o Banco do Povo e o Procon.
+- **Correção junto:** o Banco do Povo (duas unidades, já verificadas no dossiê) não aparecia no texto do guia; entrou como seção.
+
 ## Registro qualitativo da SERP (prints de 01/10/2026)
 
 Prints feitos pelo proprietário: os do computador (Campinas, Jundiaí, Sumaré, Americana e Hortolândia) em janela anônima, com
@@ -379,6 +389,7 @@ busca, do mesmo jeito, e anotar se o site aparece e em que posição.
 | emprestimo santana de parnaiba (celular, 05/10) | página sobre consignado de servidor ("qualquer banco ou cooperativa conveniado com a prefeitura"), rede de lojas de crédito de banco; autocomplete com consignado, WhatsApp, negativado e nomes de banco; buscas relacionadas quase todas de servidor (sistema de consignação, RH, holerite, portal do servidor, espelho de ponto) | (não capturado) |
 | empréstimo em valinhos (celular, 05/10) | mapa com lojas de empréstimo, página do Banco do Povo da Prefeitura (faixa de valor por porte), loja de financeira, site de banco público (microcrédito, negocie sua dívida); autocomplete com negativado, urgente, hoje, "Valinhos e Vinhedo"; buscas de R$ 200 a R$ 5 mil "na hora via Pix" para negativado e autônomo | mais fácil de aprovar; dinheiro emprestado urgente; R$ 2.000; R$ 10.000 |
 | empréstimo em embu das artes (celular, 05/10) | página do Banco do Povo da Prefeitura (faixas de valor), sistema digital de consignações da Prefeitura, plataforma de consignado para servidor, EmbuPrev; autocomplete com consignado, negativado, nome de banco, "sem juros", e-consig e portal do consignado | onde conseguir empréstimo urgente; mais fácil de aprovar; R$ 2 mil; onde achar pessoas que emprestam dinheiro |
+| emprestimo em itu (celular, 05/10) | notícia da Prefeitura sobre o Banco do Povo (out/2024), banco com "cai na hora", site de "empréstimo Pix no cartão", lojas de financeiras; autocomplete com pessoal, consignado, negativado, sem garantia, telefone e vagas; buscas por "na hora via Pix", "fácil aprovação", "confiável" e "melhor banco" | qual banco libera rápido e fácil; R$ 2 mil; R$ 500; mais fácil de aprovar |
 | Emprétimo em Jundiaí | Bom Pra Crédito (página "empréstimo em Jundiaí"), Vazoli e Finamax (lojas locais), agência Banco Mercantil | onde fazer empréstimo urgente; mais fácil de aprovar; R$ 2.000; qual banco libera com nome sujo |
 
 As revisões das calculadoras 3 a 13 usaram prints anteriores, resumidos nas mensagens de
