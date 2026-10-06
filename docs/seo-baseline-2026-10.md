@@ -59,6 +59,7 @@ Console (Desempenho → Exportar → CSV, aba Páginas e aba Consultas).
 | `/calculadoras/quanto-consigo-financiar/` | | | | | | | | |
 | `/calculadoras/financiamento-veiculo/` | | | | | | | | |
 | `/calculadoras/sac-x-price/` | | | | | | | | |
+| `/emprestimos/microcredito-produtivo-e-banco-do-povo/` | | | | | | | | |
 | `/emprestimos/sp/barueri/` | | | | | | | | |
 | `/emprestimos/sp/barueri/alphaville/` | | | | | | | | |
 | `/emprestimos/sp/campinas/` | | | | | | | | |
@@ -235,6 +236,15 @@ Console (Desempenho → Exportar → CSV, aba Páginas e aba Consultas).
 - **Title depois:** SAC ou Price? Calculadora compara parcelas e juros
 - **Description antes:** Informe valor, taxa e prazo e compare SAC e Price: parcela mês a mês, juros totais, saldo devedor e tabela de amortização. Grátis e sem cadastro.
 - **Description depois:** SAC ou Price, qual é melhor? Compare parcela mês a mês, juros totais e saldo devedor, e veja o efeito de amortizar ou quitar antes. Sem cadastro.
+
+### `/emprestimos/microcredito-produtivo-e-banco-do-povo/`
+
+- **No ar em:** 06/10/2026
+- **Title antes:** Microcrédito produtivo e Banco do Povo: o crédito público para quem tem um negócio
+- **Title depois:** Banco do Povo Paulista: como funciona, valor e MEI
+- **Description antes:** Existe crédito com juros bem abaixo do mercado para quem empreende, inclusive sem CNPJ. Como funciona o microcrédito produtivo orientado, quem pode pedir e quando ele não serve.
+- **Description depois:** Banco do Povo Paulista: quem tem direito, de R$ 200 a R$ 21 mil, juros a partir de 0,35% ao mês, simulação, MEI, negativado e onde fica o balcão.
+- **Contexto:** primeira página nacional revisada a partir das buscas que se repetiam nos guias locais ("Banco do Povo simulação / MEI / negativado").
 
 ### `/emprestimos/sp/barueri/`
 
@@ -501,6 +511,8 @@ busca, do mesmo jeito, e anotar se o site aparece e em que posição.
 | quanto consigo financiar (celular, 05/10) | resumo por IA com 30% da renda familiar bruta (Caixa), prazo e entrada; Serasa, MySide (taxa média declarada pelo site), calculadorabrasil, estudo de imóveis por renda; autocomplete quase todo "com renda de X mil" (3 a 20 mil) e Minha Casa Minha Vida; buscas por parcela de R$ 150 a 300 mil pela Caixa, "se eu financiar 170/450 mil quanto vou pagar", tabela de renda da Caixa | quanto fica R$ 50 mil em 48 vezes; se eu financiar 180 mil quanto por mês; com renda de R$ 20 mil quanto posso financiar; R$ 300 mil pela Caixa |
 | simulador de financiamento de veículo (celular, 05/10) | resumo por IA com Serasa, simuladores de BV, Itaú, Santander, Bradesco/Autoline e a Calculadora do Cidadão do BC; resultados de Itaú, banco BV e simulador independente com IPVA; autocomplete com bancos (Bradesco, Santander, Itaú, Caixa, Pan, Sicredi, BV, C6), idinheiro, Serasa, "online", "grátis", "todos os bancos" | (sem PAA no print); buscas por "sem CPF", "sem entrada", "qual a taxa de juros para financiamento de veículos", "qual melhor banco para financiar carro", "calculadora de juros financiamento" |
 | sac ou price qual é melhor (celular, 05/10) | resumo por IA dizendo que a SAC "é a melhor" no aspecto financeiro (Creditas e outros), Creditas, vídeo do YouTube, Reddit r/investimentos, calculadora SAC/Price de terceiro; autocomplete com "para amortizar", "tabela", "financiamento", "para quitar" e "modalidade"; buscas por reddit, quitar antecipado, simulador, Minha Casa Minha Vida, "price tr ou sac tr", "como saber se meu financiamento é price ou sac", amortizar Price/SAC | qual a desvantagem da Tabela Price; qual amortização é mais vantajosa; a Tabela Price é abusiva; a tabela SAC diminui as parcelas |
+| banco do povo paulista (desktop anônimo, 06/10) | resumo por IA (valores, juros, prazo, carência, requisitos); Secretaria de Desenvolvimento Econômico; Portal de Serviços SP; perfil "Banco do Povo" no Centro de SP marcado como permanentemente fechado (2,9, comentários sobre telefone); Facebook e Instagram do programa; Prefeitura de Barueri; Adesampa; Agência SP (19/08/2026, três linhas); autocomplete com MEI, portal de crédito, como funciona, telefone, Bauru, endereço, login, digital, Santos | o que é preciso para fazer empréstimo no Banco do Povo; qual o valor; quem tem direito; onde pegar empréstimo para MEI |
+| banco do povo simulação (desktop anônimo, 06/10) | resumo por IA dizendo que não há simulador no site estadual; Secretaria; Portal de Serviços SP; simulador da Prefeitura de Palmas (outro programa); Desenvolve SP; Prefeitura de Santo André com simulador de parcelas; buscas por entrar, WhatsApp, digital, telefone, negativado, MEI | como faço para conseguir empréstimo no Banco do Povo; qual o valor que libera; quanto fica R$ 10 mil em 48 vezes; qual o limite |
 | empréstimo em barueri sp | Banco do Povo (página da prefeitura, "Setor Laranja"), oHub (consignado), páginas de correspondentes | onde fazer empréstimo urgente; mais fácil de aprovar; R$ 2.000 e R$ 500 urgente |
 | empréstimo em alphaville | Daycoval (agências e correspondentes), escritórios locais de "apoio ao crédito", FinanZero | onde pegar empréstimo urgente; R$ 2.000; mais fácil de aprovar; R$ 10.000 |
 | Empréstimo em Campinas | mapa com lojas, Agibank (pessoal), Crefisa (negativado), Paraná Banco (consignado em loja física) | onde fazer empréstimo urgente; R$ 10.000; mais fácil de aprovar; R$ 2.000 |
