@@ -400,6 +400,49 @@
       "updatedAt": "2026-09-23"
     },
     {
+      "id": "simulador-banco-do-povo",
+      "name": "Simulador Banco do Povo Paulista",
+      "shortName": "Simulador Banco do Povo",
+      "route": "/calculadoras/simulador-banco-do-povo/",
+      "cta": "Simular o Banco do Povo",
+      "type": "simulador",
+      "category": "emprestimos-e-parcelas",
+      "situation": "antes-de-contratar",
+      "question": "Quanto ficaria a parcela de um crédito do Banco do Povo Paulista?",
+      "whenItHelps": "Estime parcela, juros e total pelas condições divulgadas do programa, com carência, e veja requisitos e onde pedir na sua cidade.",
+      "calloutLead": "Simulador independente: informe perfil, valor e prazo para estimar a parcela nas taxas divulgadas do Banco do Povo Paulista e ver os requisitos básicos.",
+      "badge": "Microcrédito produtivo",
+      "aliases": [
+        "banco do povo simulação",
+        "simular banco do povo",
+        "banco do povo simulador",
+        "quanto fica a parcela do banco do povo",
+        "microcrédito"
+      ],
+      "keywords": [
+        "simulador banco do povo",
+        "banco do povo paulista simulador",
+        "simulacao banco do povo",
+        "parcela banco do povo"
+      ],
+      "tags": [
+        "simulador",
+        "banco-do-povo",
+        "microcredito",
+        "mei"
+      ],
+      "triggerTerms": [
+        "banco do povo",
+        "microcrédito produtivo",
+        "empreenda rápido"
+      ],
+      "defaultNextSteps": [
+        "parcela-no-orcamento",
+        "comparador-de-propostas"
+      ],
+      "updatedAt": "2026-10-06"
+    },
+    {
       "id": "a-vista-ou-parcelado",
       "name": "À vista ou parcelado?",
       "shortName": "À vista ou parcelado?",

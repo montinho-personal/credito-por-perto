@@ -109,6 +109,13 @@ function BancoDoPovoRegras() {
         </Link>
         , não na fila do balcão.
       </p>
+      <p className="mt-2 text-sm leading-relaxed text-brand-text">
+        Para estimar a parcela antes de ir, use o{" "}
+        <Link href="/calculadoras/simulador-banco-do-povo/">
+          simulador independente do Banco do Povo
+        </Link>
+        . A simulação oficial é a do atendimento.
+      </p>
     </div>
   );
 }

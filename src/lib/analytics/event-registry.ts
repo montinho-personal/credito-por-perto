@@ -351,6 +351,16 @@ const TOOL_EVENTS: EventSpec[] = [
   { name: "fgts_advance_example_select", group: "ferramenta", description: "Antecipação do FGTS: exemplo da página levado ao simulador.", params: ["context", "example"] },
   { name: "fgts_advance_copy", group: "ferramenta", description: "Antecipação do FGTS: resumo copiado (o texto fica no aparelho).", params: ["context"] },
 
+  /* Simulador do Banco do Povo — nenhum valor, renda ou situação do nome sai; só categorias */
+  { name: "bpp_simulator_started", group: "ferramenta", description: "Banco do Povo: primeira interação com o simulador.", params: ["context"] },
+  { name: "bpp_simulator_completed", group: "ferramenta", description: "Banco do Povo: estimativa calculada.", params: ["context", "profile", "rate_scenario", "grace_months", "with_costs"], keyEvent: true },
+  { name: "bpp_eligibility_started", group: "ferramenta", description: "Banco do Povo: diagnóstico de requisitos aberto.", params: ["context"] },
+  { name: "bpp_eligibility_completed", group: "ferramenta", description: "Banco do Povo: diagnóstico de requisitos concluído (só a classificação).", params: ["context", "verdict"] },
+  { name: "bpp_city_selected", group: "ferramenta", description: "Banco do Povo: cidade escolhida no passo da unidade local.", params: ["context", "has_unit"] },
+  { name: "bpp_local_page_clicked", group: "ferramenta", description: "Banco do Povo: guia local aberto a partir do simulador.", params: ["context", "has_unit"] },
+  { name: "bpp_official_link_clicked", group: "ferramenta", description: "Banco do Povo: canal oficial do programa aberto a partir do simulador.", params: ["context", "target"] },
+  { name: "bpp_simulation_shared", group: "ferramenta", description: "Banco do Povo: link do simulador compartilhado (sem nenhum valor na URL).", params: ["context", "method"] },
+
   /* Calculadora de CET — nenhum valor sai, só contagens e categorias */
   { name: "cet_calculator_view", group: "ferramenta", description: "CET: calculadora exibida.", params: ["context"] },
   { name: "cet_calculation_completed", group: "ferramenta", description: "CET: cálculo feito (modo, quantidade de custos, confirmação de custos, tipo de resultado).", params: ["context", "mode", "costs", "all_costs", "cet_informed", "outcome"], keyEvent: true },

@@ -747,10 +747,17 @@
       "/credito-seguro/deposito-antecipado-e-golpe/"
     ]
   },
-  "banco do povo paulista como funciona valor simulação quem tem direito": {
+  "banco do povo paulista como funciona valor quem tem direito": {
     "canonicalOwner": "/emprestimos/microcredito-produtivo-e-banco-do-povo/",
     "supportingPages": [
       "/emprestimos/emprestimo-para-mei/",
+      "/emprestimos/guias-locais/"
+    ]
+  },
+  "simulador banco do povo simular parcela quanto fica": {
+    "canonicalOwner": "/calculadoras/simulador-banco-do-povo/",
+    "supportingPages": [
+      "/emprestimos/microcredito-produtivo-e-banco-do-povo/",
       "/emprestimos/guias-locais/"
     ]
   }

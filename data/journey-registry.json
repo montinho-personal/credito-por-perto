@@ -624,6 +624,14 @@
           "optional": false
         },
         {
+          "id": "banco-do-povo",
+          "title": "Tem um pequeno negócio em São Paulo?",
+          "toolId": "simulador-banco-do-povo",
+          "condition": "Vale para quem tem atividade produtiva em município paulista",
+          "whyThisStep": "O Banco do Povo Paulista é o crédito público para o negócio, atendido na prefeitura. O simulador estima a parcela pelas condições divulgadas e aponta o guia da sua cidade.",
+          "optional": true
+        },
+        {
           "id": "dividas",
           "title": "O problema é dívida acumulada?",
           "toolId": "plano-para-sair-das-dividas",

@@ -8,6 +8,7 @@ import { getSourceLedger } from "../src/lib/content/ledgers";
 import { ADVANCE_RULES, SAQUE_TABLE, TERMINATION_RULES } from "../src/lib/calculators/fgts-rules";
 import { IOF_RULES_VERIFIED_AT } from "../src/lib/calculators/iof-credit-rules";
 import { CET_RULES } from "../src/lib/calculators/cet";
+import { BPP_RULES } from "../src/lib/calculators/bpp-rules";
 import {
   buildReport,
   finishAudit,
@@ -95,6 +96,7 @@ const RULE_MODULES: Array<{ name: string; verifiedAt: string; page?: string }> =
   { name: "FGTS — rescisão e retorno", verifiedAt: TERMINATION_RULES.verifiedAt },
   { name: "IOF-crédito — alíquotas, limite e decisão judicial", verifiedAt: IOF_RULES_VERIFIED_AT, page: "/calculadoras/iof-emprestimo/" },
   { name: "CET — Resolução CMN 4.881 e IN BCB 83", verifiedAt: CET_RULES.verifiedAt, page: "/calculadoras/cet/" },
+  { name: "Banco do Povo Paulista — valores, juros, prazo e requisitos", verifiedAt: BPP_RULES.verifiedAt, page: "/calculadoras/simulador-banco-do-povo/" },
 ];
 const RULE_STALE_DAYS = 120;
 for (const rule of RULE_MODULES) {

@@ -60,6 +60,7 @@ Console (Desempenho → Exportar → CSV, aba Páginas e aba Consultas).
 | `/calculadoras/financiamento-veiculo/` | | | | | | | | |
 | `/calculadoras/sac-x-price/` | | | | | | | | |
 | `/emprestimos/microcredito-produtivo-e-banco-do-povo/` | | | | | | | | |
+| `/calculadoras/simulador-banco-do-povo/` (nova, 06/10) | | | | | | | | |
 | `/emprestimos/sp/barueri/` | | | | | | | | |
 | `/emprestimos/sp/barueri/alphaville/` | | | | | | | | |
 | `/emprestimos/sp/campinas/` | | | | | | | | |
@@ -243,8 +244,15 @@ Console (Desempenho → Exportar → CSV, aba Páginas e aba Consultas).
 - **Title antes:** Microcrédito produtivo e Banco do Povo: o crédito público para quem tem um negócio
 - **Title depois:** Banco do Povo Paulista: como funciona, valor e MEI
 - **Description antes:** Existe crédito com juros bem abaixo do mercado para quem empreende, inclusive sem CNPJ. Como funciona o microcrédito produtivo orientado, quem pode pedir e quando ele não serve.
-- **Description depois:** Banco do Povo Paulista: quem tem direito, de R$ 200 a R$ 21 mil, juros a partir de 0,35% ao mês, simulação, MEI, negativado e onde fica o balcão.
+- **Description depois:** Banco do Povo Paulista: quem tem direito, de R$ 200 a R$ 21 mil, juros a partir de 0,35% ao mês, requisitos, MEI, negativado e onde fica o balcão. (Na versão de 06/10 de manhã dizia "simulação"; trocado na criação do simulador, para não disputar a busca com ele.)
 - **Contexto:** primeira página nacional revisada a partir das buscas que se repetiam nos guias locais ("Banco do Povo simulação / MEI / negativado").
+
+### `/calculadoras/simulador-banco-do-povo/` (página nova)
+
+- **No ar em:** 06/10/2026
+- **Title:** Simulador Banco do Povo Paulista: parcela e juros
+- **Description:** Simulador independente do Banco do Povo Paulista: estime parcela, juros e total de R$ 200 a R$ 21 mil, com carência, e veja requisitos e onde pedir.
+- **Contexto:** sem "antes"; a comparação de novembro mede a entrada da página nas buscas "banco do povo simulação" e "simulador banco do povo", e se o artigo perdeu ou ganhou com a divisão de papéis.
 
 ### `/emprestimos/sp/barueri/`
 
