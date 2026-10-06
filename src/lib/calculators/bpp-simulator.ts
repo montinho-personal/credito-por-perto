@@ -90,6 +90,17 @@ const isFiniteNumber = (v: unknown): v is number => typeof v === "number" && Num
 
 const brl = (cents: number) =>
   new Intl.NumberFormat("pt-BR", { style: "currency", currency: "BRL", maximumFractionDigits: 0 }).format(cents / 100);
+const pctBR = (v: number) => `${v.toLocaleString("pt-BR", { maximumFractionDigits: 4 })}%`;
+
+/**
+ * Arredonda ao centavo sem herdar o erro do ponto flutuante: 0,35 ÷ 100 vale
+ * 0,0034999… em binário, e um juro de meio centavo exato (73,5) virava 73,4999…
+ * e arredondava para baixo. Doze dígitos significativos limpam o resíduo antes
+ * do arredondamento comercial.
+ */
+export function roundCents(x: number): number {
+  return Math.round(Number(x.toPrecision(12)));
+}
 
 /* -------------------------------------------------------------------------- */
 /* Validação                                                                   */
@@ -97,8 +108,8 @@ const brl = (cents: number) =>
 
 export function costsInCents(costs: CostInput | null | undefined, amountCents: number): number {
   if (!costs) return 0;
-  if (costs.kind === "reais") return Math.round(costs.cents);
-  return Math.round((amountCents * costs.percent) / 100);
+  if (costs.kind === "reais") return roundCents(costs.cents);
+  return roundCents((amountCents * costs.percent) / 100);
 }
 
 export function validateBpp(input: BppInput): { errors: BppIssue[]; warnings: BppIssue[] } {
@@ -145,19 +156,24 @@ export function validateBpp(input: BppInput): { errors: BppIssue[]; warnings: Bp
   }
 
   const rate = input.monthlyRatePercent;
-  if (!isFiniteNumber(rate) || rate <= 0) {
+  if (typeof rate === "number" && Number.isNaN(rate)) {
+    errors.push({ field: "rate", message: "Digite a taxa só com números, por exemplo 0,50." });
+  } else if (!isFiniteNumber(rate) || rate <= 0) {
     errors.push({ field: "rate", message: "Informe uma taxa de juros maior que zero." });
   } else if (rate > CUSTOM_RATE_MAX_PERCENT) {
     errors.push({ field: "rate", message: `Use uma taxa de até ${CUSTOM_RATE_MAX_PERCENT}% ao mês. Taxas assim estão muito acima das divulgadas pelo programa.` });
   } else if (rate < BPP_RULES.rate.fromMonthlyPercent) {
-    warnings.push({ field: "rate", message: "Taxa abaixo da mínima divulgada pelo Estado (0,35% ao mês)." });
+    warnings.push({ field: "rate", message: `Taxa abaixo da mínima divulgada pelo Estado (${pctBR(BPP_RULES.rate.fromMonthlyPercent)} ao mês).` });
   } else if (rate > BPP_RULES.rate.highestCitedMonthlyPercent) {
-    warnings.push({ field: "rate", message: "Taxa acima da maior citada em páginas oficiais de prefeituras (1% ao mês)." });
+    warnings.push({ field: "rate", message: `Taxa acima da maior citada em páginas oficiais de prefeituras (${pctBR(BPP_RULES.rate.highestCitedMonthlyPercent)} ao mês).` });
   }
 
   const costs = input.costs;
   if (costs) {
-    if (costs.kind === "reais") {
+    const unreadable = costs.kind === "reais" ? Number.isNaN(costs.cents) : Number.isNaN(costs.percent);
+    if (unreadable) {
+      errors.push({ field: "costs", message: "Digite os custos só com números, por exemplo 150 ou 1,5." });
+    } else if (costs.kind === "reais") {
       if (!isFiniteNumber(costs.cents) || costs.cents < 0) {
         errors.push({ field: "costs", message: "Os custos não podem ser negativos." });
       } else if (isFiniteNumber(amount) && amount > 0 && costs.cents >= amount) {
@@ -165,6 +181,8 @@ export function validateBpp(input: BppInput): { errors: BppIssue[]; warnings: Bp
       }
     } else if (!isFiniteNumber(costs.percent) || costs.percent < 0 || costs.percent >= 100) {
       errors.push({ field: "costs", message: "Informe um percentual de custos entre 0% e 100%." });
+    } else if (isFiniteNumber(amount) && amount > 0 && costsInCents(costs, amount) >= amount) {
+      errors.push({ field: "costs", message: "Os custos não podem ser iguais ou maiores que o valor pedido." });
     }
   }
 
@@ -181,21 +199,21 @@ export function annualFromMonthly(monthlyPercent: number): number {
 
 /** Parcela Price ao centavo. */
 export function pricePaymentCents(balanceCents: number, i: number, n: number): number {
-  if (i === 0) return Math.round(balanceCents / n);
-  return Math.round((balanceCents * i) / (1 - Math.pow(1 + i, -n)));
+  if (i === 0) return roundCents(balanceCents / n);
+  return roundCents((balanceCents * i) / (1 - Math.pow(1 + i, -n)));
 }
 
 export function buildSchedule(amountCents: number, i: number, graceMonths: number, n: number): ScheduleRow[] {
   const rows: ScheduleRow[] = [];
   let balance = amountCents;
   for (let m = 1; m <= graceMonths; m++) {
-    const interest = Math.round(balance * i);
+    const interest = roundCents(balance * i);
     balance += interest;
     rows.push({ month: m, phase: "carencia", paymentCents: 0, interestCents: interest, amortizationCents: 0, balanceCents: balance });
   }
   const payment = pricePaymentCents(balance, i, n);
   for (let k = 1; k <= n; k++) {
-    const interest = Math.round(balance * i);
+    const interest = roundCents(balance * i);
     const last = k === n;
     const amortization = last ? balance : payment - interest;
     const pay = last ? balance + interest : payment;
@@ -207,8 +225,10 @@ export function buildSchedule(amountCents: number, i: number, graceMonths: numbe
 
 /**
  * Taxa interna mensal (fração) do fluxo: recebe `netCents` no mês 0 e paga
- * `payments[t]` no mês t (1..N). Bisseção em [0, 1]: o valor presente das
- * parcelas cai com a taxa, então a raiz é única quando existe.
+ * `payments[t]` no mês t (1..N). O valor presente das parcelas cai com a
+ * taxa, então a raiz é única quando existe. O limite superior começa em 100%
+ * ao mês e dobra até cercar a raiz: custos altos com prazo curto podem levar o
+ * CET acima de 100% ao mês, e o resultado continua verdadeiro.
  */
 export function internalRate(netCents: number, payments: number[]): number | null {
   if (netCents <= 0) return null;
@@ -216,7 +236,10 @@ export function internalRate(netCents: number, payments: number[]): number | nul
   if (pv(0) < netCents) return null;
   let lo = 0;
   let hi = 1;
-  if (pv(hi) > netCents) return null;
+  while (pv(hi) > netCents) {
+    hi *= 2;
+    if (hi > 1e6) return null;
+  }
   for (let k = 0; k < 200; k++) {
     const mid = (lo + hi) / 2;
     if (pv(mid) > netCents) lo = mid;
@@ -233,7 +256,7 @@ export function simulateBpp(input: BppInput): BppOutcome {
   const months = input.months as number;
   const graceMonths = input.graceMonths;
   const ratePercent = input.monthlyRatePercent as number;
-  const i = ratePercent / 100;
+  const i = Number((ratePercent / 100).toPrecision(12));
 
   const schedule = buildSchedule(amountCents, i, graceMonths, months);
   const parcels = schedule.filter((r) => r.phase === "parcela");
@@ -372,7 +395,7 @@ export function diagnose(input: DiagnosisInput): { verdict: Verdict; items: Diag
 
   // Restrição cadastral
   if (input.nameRestricted === "sim") {
-    items.push({ id: "restricao", status: "impedimento", text: "O programa exige não ter restrição cadastral no Serasa nem no cadastro estadual de inadimplentes. Resolver a restrição vem antes do pedido." });
+    items.push({ id: "restricao", status: "impedimento", text: "A carta de serviços estadual exige não ter restrição cadastral no Serasa e/ou no ADIN Estadual, o cadastro estadual de inadimplentes. Com restrição, resolver vem antes do pedido." });
   } else if (unknown(input.nameRestricted)) {
     items.push({ id: "restricao", status: "verificar", text: "Consulte o seu nome antes de ir: a consulta é gratuita e restrição impede o pedido." });
   } else {

@@ -15,7 +15,11 @@ export interface BppCityOption {
   name: string;
   /** Caminho do guia local. */
   path: string;
-  /** O dossiê tem a unidade do Banco do Povo verificada em fonte oficial. */
+  /**
+   * O dossiê registra o Banco do Povo da cidade em fonte oficial. Não garante
+   * endereço e horário publicados: a interface fala em "o que encontramos",
+   * e o guia mostra o que a prefeitura publica.
+   */
   hasVerifiedUnit: boolean;
   /** Data da verificação mais recente da unidade (AAAA-MM-DD). */
   checkedAt: string | null;
@@ -23,7 +27,10 @@ export interface BppCityOption {
 
 export function getBppCityOptions(): BppCityOption[] {
   return getPublishedLocalGuides()
-    .filter((g) => g.frontmatter.localityType !== "state")
+    /* Só municípios: o pedido é feito na cidade onde o negócio funciona. Um
+       guia de bairro ou região (Alphaville) diria "não localizamos atendimento"
+       sobre um lugar que não é município — o atendimento é o da cidade. */
+    .filter((g) => g.frontmatter.localityType === "municipality")
     .map((g) => {
       const dossier = g.frontmatter.dossierId ? getLocalDossier(g.frontmatter.dossierId) : undefined;
       const programs = (dossier?.verifiedLocalPrograms ?? []).filter((p) => /banco do povo/i.test(p.program));

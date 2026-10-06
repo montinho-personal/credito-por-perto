@@ -30,9 +30,14 @@ import { getBppCityOptions } from "@/lib/local/bpp-cities";
  */
 
 const PATH = "/calculadoras/simulador-banco-do-povo/";
+
+/** "R$ 200" / "R$ 21 mil", a partir das regras: nenhum número digitado à mão na description. */
+function reaisCurtos(cents: number): string {
+  const reais = cents / 100;
+  return reais >= 1000 && reais % 1000 === 0 ? `R$ ${reais / 1000} mil` : `R$ ${reais.toLocaleString("pt-BR")}`;
+}
 const TITLE = "Simulador Banco do Povo Paulista: parcela e juros";
-const DESCRIPTION =
-  "Simulador independente do Banco do Povo Paulista: estime parcela, juros e total de R$ 200 a R$ 21 mil, com carência, e veja requisitos e onde pedir.";
+const DESCRIPTION = `Simulador independente para o Banco do Povo Paulista: estime parcela, juros e total de ${reaisCurtos(BPP_RULES.amount.minCents)} a ${reaisCurtos(BPP_RULES.amount.maxCents)}, com carência, e veja requisitos e onde pedir.`;
 const REVIEWED = "06/10/2026";
 
 export const metadata: Metadata = buildMetadata({ title: TITLE, description: DESCRIPTION, path: PATH });
@@ -91,7 +96,10 @@ export default function SimuladorBancoDoPovoPage() {
         ]}
       />
 
-      <h1 className="mt-6 font-serif text-3xl font-bold leading-tight text-brand-navy md:text-4xl">Simulador Banco do Povo Paulista</h1>
+      <p className="mt-6 inline-flex rounded-full border border-brand-border px-3 py-1 text-xs font-semibold uppercase tracking-wide text-brand-muted">
+        Ferramenta independente · não oficial
+      </p>
+      <h1 className="mt-3 font-serif text-3xl font-bold leading-tight text-brand-navy md:text-4xl">Simulador Banco do Povo Paulista</h1>
       <p className="mt-3 text-lg leading-relaxed text-brand-muted">
         Estime parcela, juros e total a pagar e entenda quais condições do Banco do Povo podem se aplicar ao seu perfil.
       </p>
@@ -157,7 +165,8 @@ export default function SimuladorBancoDoPovoPage() {
           ))}
         </ul>
         <p>
-          Quem está com o nome negativado não é atendido. O caminho, nesse caso, começa em{" "}
+          Com restrição cadastral no Serasa e/ou no ADIN Estadual, o pedido esbarra no requisito da carta de serviços. O
+          caminho, nesse caso, começa em{" "}
           <Link href="/credito-seguro/consultar-nome-nos-biros-de-credito/">consultar e resolver a restrição</Link>.
         </p>
 
@@ -219,14 +228,15 @@ export default function SimuladorBancoDoPovoPage() {
           <li>Peça a simulação oficial, com a taxa e os custos por escrito, e compare com a estimativa daqui.</li>
         </ol>
         <p>
-          O programa não cobra para liberar e não trabalha com intermediário. Perfil de &ldquo;Banco do Povo&rdquo; no WhatsApp que
-          pede taxa ou depósito aplica o <Link href="/credito-seguro/deposito-antecipado-e-golpe/">golpe do depósito antecipado</Link>.
+          Ninguém de fora do atendimento oficial pode cobrar para aprovar o seu pedido. Perfil de &ldquo;Banco do Povo&rdquo; no
+          WhatsApp que pede depósito antecipado ou pagamento a intermediário aplica o{" "}
+          <Link href="/credito-seguro/deposito-antecipado-e-golpe/">golpe do depósito antecipado</Link>.
         </p>
 
         <h2 id="na-sua-cidade">Banco do Povo na sua cidade</h2>
         <p>
-          Estes guias trazem o atendimento do Banco do Povo verificado em página oficial da prefeitura, com endereço, horário e a
-          data da verificação:
+          Estes guias trazem o que encontramos sobre o Banco do Povo da cidade em fonte oficial, com a data da verificação. Quando
+          a prefeitura publica endereço e horário, eles estão no guia; quando não publica, o guia diz isso:
         </p>
         <ul className="columns-2 sm:columns-3">
           {withUnit.map((c) => (
@@ -258,7 +268,10 @@ export default function SimuladorBancoDoPovoPage() {
         <h3>Dá para pagar em 48 vezes?</h3>
         <p>O prazo divulgado pelo Estado é de até {maxMonths} meses. Simulações de 48 parcelas não se aplicam ao programa.</p>
         <h3>Negativado consegue Banco do Povo?</h3>
-        <p>Não. O programa exige não ter restrição cadastral no Serasa nem no cadastro estadual de inadimplentes.</p>
+        <p>
+          A carta de serviços estadual exige não ter restrição cadastral no Serasa e/ou no ADIN Estadual. Com o nome negativado, o
+          pedido esbarra nesse requisito: consulte o seu nome antes de ir.
+        </p>
         <h3>O resultado inclui todos os custos?</h3>
         <p>
           Não, a menos que você informe os custos que o atendimento passar. Sem eles, o simulador mostra parcela, total e juros, e
@@ -283,8 +296,10 @@ export default function SimuladorBancoDoPovoPage() {
             por juros compostos. Só aparece quando você confirma que informou todos os custos.
           </li>
           <li>
-            <strong>Privacidade:</strong> o cálculo acontece no seu navegador. Valor, perfil, respostas do diagnóstico e cidade não
-            são enviados nem gravados; a medição de audiência recebe só categorias, como o cenário de taxa escolhido.
+            <strong>Privacidade:</strong> o cálculo acontece no seu navegador. Valor, taxa digitada, custos, respostas do
+            diagnóstico e o nome da cidade não são enviados nem gravados. A medição de audiência, quando você aceita os cookies,
+            recebe só categorias: o perfil escolhido (MEI, empresa, sem CNPJ), o cenário de taxa, os meses de carência, se houve
+            custos informados e se a cidade escolhida tem atendimento verificado.
           </li>
         </ul>
         <p>
