@@ -103,16 +103,21 @@ export default function SimuladorBancoDoPovoPage() {
       <p className="mt-3 text-lg leading-relaxed text-brand-muted">
         Estime parcela, juros e total a pagar e entenda quais condições do Banco do Povo podem se aplicar ao seu perfil.
       </p>
-      <p className="mt-4 rounded-lg border border-brand-warning/40 bg-brand-warning-soft p-4 text-sm leading-relaxed text-brand-text">
+      <p className="mt-4 rounded-lg border border-brand-warning/40 bg-brand-warning-soft px-4 py-3 text-sm leading-relaxed text-brand-text">
         <strong>Simulador independente e não oficial.</strong> O Crédito por Perto não representa o Banco do Povo Paulista nem o
-        Governo do Estado de São Paulo. Os resultados apresentados são estimativas baseadas nas condições públicas consultadas.
-        Taxas, limites, prazos, tarifas, aprovação e demais condições podem variar conforme perfil, linha, município e análise
-        realizada pelo programa. Condições consultadas até {BPP_RULES.verifiedAt}.
+        Governo do Estado de São Paulo.
       </p>
 
       <div className="mt-6">
         <BancoDoPovoSimulator cities={cities} context="ferramenta" showNotice={false} />
       </div>
+
+      <p className="mt-4 text-sm leading-relaxed text-brand-muted">
+        <strong className="text-brand-text">Simulador independente e não oficial.</strong> O Crédito por Perto não representa o
+        Banco do Povo Paulista nem o Governo do Estado de São Paulo. Os resultados apresentados são estimativas baseadas nas
+        condições públicas consultadas. Taxas, limites, prazos, tarifas, aprovação e demais condições podem variar conforme perfil,
+        linha, município e análise realizada pelo programa. Condições consultadas até {BPP_RULES.verifiedAt}.
+      </p>
 
       <ToolNextSteps toolId="simulador-banco-do-povo" />
 

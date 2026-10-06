@@ -119,7 +119,9 @@ export function validateBpp(input: BppInput): { errors: BppIssue[]; warnings: Bp
   const cap = capForProfile(input.profile);
 
   const amount = input.amountCents;
-  if (!isFiniteNumber(amount) || amount <= 0) {
+  if (typeof amount === "number" && Number.isNaN(amount)) {
+    errors.push({ field: "amount", message: "Digite o valor só com números, por exemplo 5.000." });
+  } else if (!isFiniteNumber(amount) || amount <= 0) {
     errors.push({ field: "amount", message: "Informe o valor que pretende pedir." });
   } else if (amount < minCents) {
     errors.push({ field: "amount", message: `O valor mínimo divulgado pelo Estado é ${brl(minCents)}.` });
@@ -180,7 +182,7 @@ export function validateBpp(input: BppInput): { errors: BppIssue[]; warnings: Bp
         errors.push({ field: "costs", message: "Os custos não podem ser iguais ou maiores que o valor pedido." });
       }
     } else if (!isFiniteNumber(costs.percent) || costs.percent < 0 || costs.percent >= 100) {
-      errors.push({ field: "costs", message: "Informe um percentual de custos entre 0% e 100%." });
+      errors.push({ field: "costs", message: "Informe um percentual de custos de 0% a menos de 100%." });
     } else if (isFiniteNumber(amount) && amount > 0 && costsInCents(costs, amount) >= amount) {
       errors.push({ field: "costs", message: "Os custos não podem ser iguais ou maiores que o valor pedido." });
     }
@@ -333,7 +335,8 @@ export interface DiagnosisInput {
   purpose: Purpose;
   hasActivity: Answer;
   activityInCity: Answer;
-  nameRestricted: Answer;
+  /** "sim" = o nome está SEM restrição (pergunta afirmativa: "sim" é sempre o lado bom). */
+  nameClear: Answer;
   training: Answer;
   sixMonths: Answer;
 }
@@ -394,9 +397,9 @@ export function diagnose(input: DiagnosisInput): { verdict: Verdict; items: Diag
   }
 
   // Restrição cadastral
-  if (input.nameRestricted === "sim") {
+  if (input.nameClear === "nao") {
     items.push({ id: "restricao", status: "impedimento", text: "A carta de serviços estadual exige não ter restrição cadastral no Serasa e/ou no ADIN Estadual, o cadastro estadual de inadimplentes. Com restrição, resolver vem antes do pedido." });
-  } else if (unknown(input.nameRestricted)) {
+  } else if (unknown(input.nameClear)) {
     items.push({ id: "restricao", status: "verificar", text: "Consulte o seu nome antes de ir: a consulta é gratuita e restrição impede o pedido." });
   } else {
     items.push({ id: "restricao", status: "ok", text: "Sem restrição cadastral informada." });

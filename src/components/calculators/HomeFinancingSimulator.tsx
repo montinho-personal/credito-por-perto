@@ -212,9 +212,9 @@ export function ScenarioTable({
 }) {
   return (
     <>
-      <ul aria-label={caption} className="mt-2 divide-y divide-brand-border rounded-xl border border-brand-border sm:hidden">
+      <ul aria-label={caption} className="mt-2 list-none divide-y divide-brand-border rounded-xl border border-brand-border pl-0 sm:hidden">
         {rows.map((row) => (
-          <li key={row.key} className={`px-3 py-2.5 ${row.current ? "bg-brand-teal-soft" : ""}`}>
+          <li key={row.key} className={`mt-0 px-3 py-2.5 ${row.current ? "bg-brand-teal-soft" : ""}`}>
             <p className="text-sm font-semibold text-brand-navy">
               {row.cells[0]}
               {row.current ? <span className="font-normal text-brand-teal-dark"> · a sua simulação</span> : null}

@@ -355,7 +355,6 @@ const TOOL_EVENTS: EventSpec[] = [
   { name: "bpp_simulator_started", group: "ferramenta", description: "Banco do Povo: primeira interação com o simulador.", params: ["context"] },
   { name: "bpp_simulator_completed", group: "ferramenta", description: "Banco do Povo: estimativa calculada.", params: ["context", "profile", "rate_scenario", "grace_months", "with_costs"], keyEvent: true },
   { name: "bpp_eligibility_started", group: "ferramenta", description: "Banco do Povo: diagnóstico de requisitos aberto.", params: ["context"] },
-  { name: "bpp_eligibility_completed", group: "ferramenta", description: "Banco do Povo: diagnóstico de requisitos concluído (só a classificação).", params: ["context", "verdict"] },
   { name: "bpp_city_selected", group: "ferramenta", description: "Banco do Povo: cidade escolhida no passo da unidade local.", params: ["context", "has_unit"] },
   { name: "bpp_local_page_clicked", group: "ferramenta", description: "Banco do Povo: guia local aberto a partir do simulador.", params: ["context", "has_unit"] },
   { name: "bpp_official_link_clicked", group: "ferramenta", description: "Banco do Povo: canal oficial do programa aberto a partir do simulador.", params: ["context", "target"] },

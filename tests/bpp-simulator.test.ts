@@ -227,7 +227,7 @@ describe("diagnóstico: nunca aprovação", () => {
     purpose: "capital-de-giro",
     hasActivity: "sim",
     activityInCity: "sim",
-    nameRestricted: "nao",
+    nameClear: "sim",
     training: "sim",
     sixMonths: "sim",
   };
@@ -235,7 +235,7 @@ describe("diagnóstico: nunca aprovação", () => {
     expect(diagnose(all).verdict).toBe("aparentemente-compativel");
   });
   it("nome com restrição → possível impedimento", () => {
-    expect(diagnose({ ...all, nameRestricted: "sim" }).verdict).toBe("possivel-impedimento");
+    expect(diagnose({ ...all, nameClear: "nao" }).verdict).toBe("possivel-impedimento");
   });
   it("dívida pessoal ou despesa da casa → possível impedimento", () => {
     expect(diagnose({ ...all, purpose: "divida-pessoal" }).verdict).toBe("possivel-impedimento");
@@ -243,14 +243,45 @@ describe("diagnóstico: nunca aprovação", () => {
   });
   it("sem capacitação ou sem saber → precisa verificar", () => {
     expect(diagnose({ ...all, training: "nao" }).verdict).toBe("precisa-verificar");
-    expect(diagnose({ ...all, nameRestricted: "nao-sei" }).verdict).toBe("precisa-verificar");
+    expect(diagnose({ ...all, nameClear: "nao-sei" }).verdict).toBe("precisa-verificar");
   });
   it("nenhum texto do diagnóstico promete aprovação", () => {
-    const answers: DiagnosisInput[] = [all, { ...all, nameRestricted: "sim" }, { ...all, training: "nao" }];
+    const answers: DiagnosisInput[] = [all, { ...all, nameClear: "nao" }, { ...all, training: "nao" }];
     for (const a of answers) {
       for (const item of diagnose(a).items) {
         expect(item.text).not.toMatch(/aprovad|pré-aprovad|garantid|liberad/i);
       }
     }
+  });
+});
+
+describe("correções da auditoria", () => {
+  it("meio centavo exato arredonda para cima mesmo a 0,35% (0,35 ÷ 100 em binário)", () => {
+    const { result } = ok({ ...base, amountCents: 210_00, months: 1, monthlyRatePercent: 0.35 });
+    expect(result.schedule[0]!.interestCents).toBe(74);
+    expect(result.paymentCents).toBe(210_74);
+  });
+  it("R$ 200, 0,35%, 2 meses de carência, 21 parcelas: última parcela de R$ 10,04", () => {
+    const { result } = ok({ ...base, amountCents: 200_00, months: 21, graceMonths: 2, monthlyRatePercent: 0.35 });
+    expect(result.lastPaymentCents).toBe(10_04);
+  });
+  it("CET acima de 100% ao mês é calculado, não some", () => {
+    const { result } = ok({ ...base, months: 1, monthlyRatePercent: 10, costs: { kind: "percent", percent: 46 }, costsComplete: true });
+    expect(result.cet).not.toBeNull();
+    expect(result.cet!.monthlyPercent).toBeGreaterThan(100);
+  });
+  it("custo percentual que arredonda para o valor inteiro é recusado", () => {
+    const { errors } = validateBpp({ ...base, amountCents: 200_00, costs: { kind: "percent", percent: 99.999 } });
+    expect(errors.map((e) => e.field)).toContain("costs");
+  });
+  it("entradas ilegíveis têm mensagem própria", () => {
+    const v = (p: Partial<BppInput>) => validateBpp({ ...base, ...p }).errors.map((e) => e.message).join(" ");
+    expect(v({ amountCents: Number.NaN })).toMatch(/só com números/);
+    expect(v({ monthlyRatePercent: Number.NaN })).toMatch(/só com números/);
+    expect(v({ costs: { kind: "reais", cents: Number.NaN } })).toMatch(/só com números/);
+  });
+  it("avisos de taxa citam os valores das regras", () => {
+    expect(validateBpp({ ...base, monthlyRatePercent: 0.2 }).warnings[0]!.message).toMatch(/0,35%/);
+    expect(validateBpp({ ...base, monthlyRatePercent: 2 }).warnings[0]!.message).toMatch(/1%/);
   });
 });
