@@ -12,7 +12,10 @@ export function SiteHeader() {
     >
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between gap-4 px-4">
         <Logo />
-        <nav aria-label="Menu principal" className="hidden md:block">
+        {/* Sete itens + busca não cabem numa linha abaixo de 1024px: no tablet
+            (768px) o menu quebrava em duas linhas dentro do cabeçalho fixo.
+            Até lá vale o menu do celular. */}
+        <nav aria-label="Menu principal" className="hidden lg:block">
           <ul className="flex items-center gap-1">
             {MAIN_NAV.map((item) => (
               <li key={item.href}>
@@ -29,7 +32,7 @@ export function SiteHeader() {
             </li>
           </ul>
         </nav>
-        <div className="flex items-center gap-2 md:hidden">
+        <div className="flex items-center gap-2 lg:hidden">
           <SearchTrigger
             source="header"
             className="flex h-11 w-11 items-center justify-center rounded-lg border border-brand-border text-brand-navy focus-visible:outline focus-visible:outline-2 focus-visible:outline-brand-navy"

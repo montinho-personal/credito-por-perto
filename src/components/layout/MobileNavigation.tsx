@@ -9,7 +9,7 @@ export function MobileNavigation() {
   const menuId = useId();
 
   return (
-    <div data-track-area="menu-celular" className="md:hidden">
+    <div data-track-area="menu-celular" className="lg:hidden">
       <button
         type="button"
         aria-expanded={open}

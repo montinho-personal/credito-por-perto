@@ -75,7 +75,7 @@ export function SiteFooter() {
               — e nenhuma instituição paga para aparecer aqui.{" "}
               <Link
                 href="/como-ganhamos-dinheiro/"
-                className="whitespace-nowrap font-medium text-brand-gold underline-offset-2 hover:underline"
+                className="whitespace-nowrap font-medium text-brand-gold-soft underline underline-offset-2 hover:text-white"
               >
                 Como nos sustentamos
               </Link>

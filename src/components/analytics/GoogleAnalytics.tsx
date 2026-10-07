@@ -1,6 +1,6 @@
 "use client";
 
-import { useSyncExternalStore } from "react";
+import { useEffect, useRef, useSyncExternalStore } from "react";
 import Script from "next/script";
 import Link from "next/link";
 import { track } from "@/lib/analytics/track";
@@ -78,8 +78,54 @@ gtag('config', '${measurementId}', { anonymize_ip: true });`}
 
   if (consent === "denied") return null;
 
+  return <ConsentBanner onDecide={decide} />;
+}
+
+/**
+ * O banner fica fixo na base da tela. Sem compensação, ele cobria o campo
+ * focado por quem navega pelo teclado no celular (o navegador não rola porque
+ * o campo está "dentro" da janela, só que atrás do banner) e escondia o fim
+ * da página. Enquanto ele está aberto, a altura dele vira `scroll-padding`
+ * da página e espaço extra no fim do conteúdo, e o foco que cai atrás dele
+ * faz a página subir; ao fechar, tudo volta.
+ */
+function ConsentBanner({ onDecide }: { onDecide: (choice: Exclude<Consent, null>) => void }) {
+  const ref = useRef<HTMLDivElement | null>(null);
+
+  useEffect(() => {
+    const el = ref.current;
+    if (!el) return;
+    const root = document.documentElement;
+    const apply = () => {
+      const h = `${Math.ceil(el.getBoundingClientRect().height)}px`;
+      root.style.scrollPaddingBottom = h;
+      document.body.style.paddingBottom = h;
+    };
+    apply();
+    const observer = new ResizeObserver(apply);
+    observer.observe(el);
+    /* O navegador não rola até um campo que já está "na janela", mesmo atrás
+       do banner — o scroll-padding só vale para rolagens que ele decide fazer.
+       Quando o foco cai atrás do banner, a página sobe o necessário. */
+    const onFocus = (event: FocusEvent) => {
+      const target = event.target;
+      if (!(target instanceof HTMLElement) || el.contains(target)) return;
+      const bannerTop = el.getBoundingClientRect().top;
+      const bottom = target.getBoundingClientRect().bottom;
+      if (bottom > bannerTop - 8) window.scrollBy({ top: bottom - bannerTop + 16 });
+    };
+    document.addEventListener("focusin", onFocus);
+    return () => {
+      document.removeEventListener("focusin", onFocus);
+      observer.disconnect();
+      root.style.scrollPaddingBottom = "";
+      document.body.style.paddingBottom = "";
+    };
+  }, []);
+
   return (
     <div
+      ref={ref}
       role="dialog"
       aria-label="Preferências de cookies"
       /* O banner tem evento próprio (`consent_choice`); sem esta marca os dois
@@ -100,14 +146,14 @@ gtag('config', '${measurementId}', { anonymize_ip: true });`}
         <div className="flex shrink-0 gap-2">
           <button
             type="button"
-            onClick={() => decide("denied")}
+            onClick={() => onDecide("denied")}
             className="rounded-lg border border-neutral-300 px-4 py-2 text-sm font-medium text-neutral-700 hover:bg-neutral-100"
           >
             Recusar
           </button>
           <button
             type="button"
-            onClick={() => decide("granted")}
+            onClick={() => onDecide("granted")}
             className="rounded-lg bg-brand-navy px-4 py-2 text-sm font-medium text-white hover:opacity-90"
           >
             Aceitar
