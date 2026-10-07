@@ -10,6 +10,7 @@ import { ScenarioTable } from "@/components/calculators/HomeFinancingSimulator";
 import { formatMonths } from "@/lib/calculators/debt-plan";
 import { addMonths, todayInBrazil } from "@/lib/calculators/civil-date";
 import { compareRuns, lumpLadder, NO_EXTRAS, runContract, sensitivity, type ContractInput } from "@/lib/simulators/amortization";
+import { FaqAccordion, FaqItem } from "@/components/content/FaqAccordion";
 
 /**
  * Página do Simulador de amortização de financiamento.
@@ -216,30 +217,36 @@ export default function AmortizacaoFinanciamentoPage() {
         </p>
 
         <h2 id="perguntas-frequentes">Perguntas frequentes</h2>
-        <h3>Meu banco é obrigado a reduzir o prazo?</h3>
-        <p>
-          Não encontramos norma geral que obrigue toda instituição a oferecer as duas opções. Na Caixa, o cliente escolhe entre reduzir prazo ou
-          prestação, segundo as{" "}
-          <a href="https://www.caixa.gov.br/voce/habitacao/perguntas-frequentes-contrato/Paginas/default.aspx" target="_blank" rel="noopener noreferrer">
-            perguntas frequentes da Caixa
-          </a>
-          . Em outros contratos, confira as cláusulas de amortização.
-        </p>
-        <h3>É melhor amortizar no começo ou no fim do contrato?</h3>
-        <p>
-          O mesmo valor evita mais juros quanto mais cedo entra, porque há mais saldo e mais meses pela frente. Isso não quer dizer que amortizar
-          seja sempre a melhor escolha: reserva de emergência, outras dívidas mais caras e outras necessidades ficam fora desta conta.
-        </p>
-        <h3>Qual a diferença entre amortizar e quitar?</h3>
-        <p>
-          Amortizar abate parte do saldo e o contrato continua. Quitar zera o saldo e encerra o contrato. Se o valor informado cobrir todo o saldo,
-          o simulador mostra a quitação nesta modelagem, mas o valor exato de liquidação vem da instituição.
-        </p>
-        <h3>Quanto preciso amortizar para terminar X anos antes?</h3>
-        <p>
-          Depois de simular, use &ldquo;Quanto preciso amortizar para…?&rdquo;: o simulador calcula o aporte único (ou o extra mensal) para
-          quitar alguns anos antes, terminar até uma data ou baixar a prestação a um valor.
-        </p>
+        <FaqAccordion>
+          <FaqItem question="Meu banco é obrigado a reduzir o prazo?" id="meu-banco-e-obrigado-a-reduzir-o-prazo">
+            <p>
+              Não encontramos norma geral que obrigue toda instituição a oferecer as duas opções. Na Caixa, o cliente escolhe entre reduzir prazo ou
+              prestação, segundo as{" "}
+              <a href="https://www.caixa.gov.br/voce/habitacao/perguntas-frequentes-contrato/Paginas/default.aspx" target="_blank" rel="noopener noreferrer">
+                perguntas frequentes da Caixa
+              </a>
+              . Em outros contratos, confira as cláusulas de amortização.
+            </p>
+          </FaqItem>
+          <FaqItem question="É melhor amortizar no começo ou no fim do contrato?" id="e-melhor-amortizar-no-comeco-ou-no-fim-do-contrato">
+            <p>
+              O mesmo valor evita mais juros quanto mais cedo entra, porque há mais saldo e mais meses pela frente. Isso não quer dizer que amortizar
+              seja sempre a melhor escolha: reserva de emergência, outras dívidas mais caras e outras necessidades ficam fora desta conta.
+            </p>
+          </FaqItem>
+          <FaqItem question="Qual a diferença entre amortizar e quitar?" id="qual-a-diferenca-entre-amortizar-e-quitar">
+            <p>
+              Amortizar abate parte do saldo e o contrato continua. Quitar zera o saldo e encerra o contrato. Se o valor informado cobrir todo o saldo,
+              o simulador mostra a quitação nesta modelagem, mas o valor exato de liquidação vem da instituição.
+            </p>
+          </FaqItem>
+          <FaqItem question="Quanto preciso amortizar para terminar X anos antes?" id="quanto-preciso-amortizar-para-terminar-x-anos-antes">
+            <p>
+              Depois de simular, use &ldquo;Quanto preciso amortizar para…?&rdquo;: o simulador calcula o aporte único (ou o extra mensal) para
+              quitar alguns anos antes, terminar até uma data ou baixar a prestação a um valor.
+            </p>
+          </FaqItem>
+        </FaqAccordion>
 
         <h2 id="como-simulamos">Como simulamos</h2>
         <ul>

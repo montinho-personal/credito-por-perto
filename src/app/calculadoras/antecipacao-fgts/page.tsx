@@ -27,6 +27,7 @@ import {
   todayInBrazil,
 } from "@/lib/calculators/fgts-rules";
 import { EARLY_PAYOFF } from "@/lib/calculators/credit-card-rules";
+import { FaqAccordion, FaqItem } from "@/components/content/FaqAccordion";
 
 /**
  * Página do simulador de antecipação do Saque-Aniversário.
@@ -263,42 +264,44 @@ export default function AntecipacaoFgtsPage() {
         </p>
 
         <h2 id="perguntas-frequentes">Perguntas frequentes</h2>
-
-        <h3>Tenho R$ 10 mil no FGTS. Quanto consigo antecipar?</h3>
-        {ten ? (
-          <p>
-            Depende do saque anual, dos limites vigentes, da quantidade cedida, da taxa e do mês de aniversário. Com R$ 10.000,
-            o Saque-Aniversário calculado é de {brl(ten.firstSaqueCents)}, e cada saque cedido fica em{" "}
-            {brl(ten.firstCedibleCents)}. Com {max} saques e as premissas do exemplo ({premises}), seriam{" "}
-            {brl(ten.priced.nominalCents)} em direitos futuros e cerca de {brl(ten.priced.presentCents)} hoje.
-          </p>
-        ) : null}
-        <SimulateFgtsButton
-          label="Simular R$ 10 mil de saldo"
-          detail={{ exampleId: "faq-10000", balanceCents: 10_000_00, birthMonth: EXAMPLE_MONTH, monthlyRatePercent: EXAMPLE_RATE, count: max }}
-        />
-
-        <h3>Posso antecipar de novo?</h3>
-        <p>
-          {ADVANCE_RULES.summaries.perCompetence} Saques já cedidos não entram numa nova operação.{" "}
-          {ADVANCE_RULES.summaries.newContract}
-        </p>
-
-        <h3>Posso quitar a antecipação antes?</h3>
-        <p>{EARLY_PAYOFF.summary}</p>
-
-        <h3>Existe CET na antecipação?</h3>
-        <p>
-          Existe. O <Link href="/juros-e-cet/o-que-e-cet/">CET</Link> reúne juros, IOF e tarifas e é informado pela instituição.
-          A taxa de juros sozinha não é o CET, e o simulador não calcula CET — no modo “Já tenho uma proposta”, ele mostra o que
-          você informar e estima a taxa implícita pelas datas dos repasses.
-        </p>
-
-        <h3>Qual instituição oferece a menor taxa?</h3>
-        <p>
-          O Crédito por Perto não faz ranking de instituições. Com duas ou três propostas em mãos, o modo “Já tenho uma
-          proposta” coloca lado a lado o valor recebido, os saques cedidos, a diferença, a taxa e o CET informados.
-        </p>
+        <FaqAccordion>
+          <FaqItem question="Tenho R$ 10 mil no FGTS. Quanto consigo antecipar?" id="tenho-r-10-mil-no-fgts-quanto-consigo-antecipar">
+            {ten ? (
+              <p>
+                Depende do saque anual, dos limites vigentes, da quantidade cedida, da taxa e do mês de aniversário. Com R$ 10.000,
+                o Saque-Aniversário calculado é de {brl(ten.firstSaqueCents)}, e cada saque cedido fica em{" "}
+                {brl(ten.firstCedibleCents)}. Com {max} saques e as premissas do exemplo ({premises}), seriam{" "}
+                {brl(ten.priced.nominalCents)} em direitos futuros e cerca de {brl(ten.priced.presentCents)} hoje.
+              </p>
+            ) : null}
+            <SimulateFgtsButton
+              label="Simular R$ 10 mil de saldo"
+              detail={{ exampleId: "faq-10000", balanceCents: 10_000_00, birthMonth: EXAMPLE_MONTH, monthlyRatePercent: EXAMPLE_RATE, count: max }}
+            />
+          </FaqItem>
+          <FaqItem question="Posso antecipar de novo?" id="posso-antecipar-de-novo">
+            <p>
+              {ADVANCE_RULES.summaries.perCompetence} Saques já cedidos não entram numa nova operação.{" "}
+              {ADVANCE_RULES.summaries.newContract}
+            </p>
+          </FaqItem>
+          <FaqItem question="Posso quitar a antecipação antes?" id="posso-quitar-a-antecipacao-antes">
+            <p>{EARLY_PAYOFF.summary}</p>
+          </FaqItem>
+          <FaqItem question="Existe CET na antecipação?" id="existe-cet-na-antecipacao">
+            <p>
+              Existe. O <Link href="/juros-e-cet/o-que-e-cet/">CET</Link> reúne juros, IOF e tarifas e é informado pela instituição.
+              A taxa de juros sozinha não é o CET, e o simulador não calcula CET — no modo “Já tenho uma proposta”, ele mostra o que
+              você informar e estima a taxa implícita pelas datas dos repasses.
+            </p>
+          </FaqItem>
+          <FaqItem question="Qual instituição oferece a menor taxa?" id="qual-instituicao-oferece-a-menor-taxa">
+            <p>
+              O Crédito por Perto não faz ranking de instituições. Com duas ou três propostas em mãos, o modo “Já tenho uma
+              proposta” coloca lado a lado o valor recebido, os saques cedidos, a diferença, a taxa e o CET informados.
+            </p>
+          </FaqItem>
+        </FaqAccordion>
 
         <h2 id="como-calculamos">Como calculamos</h2>
         <ul>

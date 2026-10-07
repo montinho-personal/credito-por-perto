@@ -20,6 +20,7 @@ import {
   termScenarios,
 } from "@/lib/calculators/home-financing";
 import { simulateSacPrice } from "@/lib/calculators/sac-price";
+import { FaqAccordion, FaqItem } from "@/components/content/FaqAccordion";
 
 /**
  * Página do simulador de financiamento imobiliário.
@@ -390,49 +391,51 @@ export default async function FinanciamentoImobiliarioPage() {
         </p>
 
         <h2 id="perguntas-frequentes">Perguntas frequentes</h2>
-
-        <h3>Qual renda é preciso para financiar um imóvel?</h3>
-        <p>
-          Não existe uma renda única: ela depende da parcela, e a parcela depende do valor financiado, da
-          taxa, do prazo e do sistema. A Caixa informa que a parcela pode comprometer até 30% da renda
-          familiar bruta; outras instituições têm critérios próprios. O simulador mostra a renda que cada
-          parcela representa nesse critério. Se ela cabe no seu mês é outra conta, explicada em{" "}
-          <Link href="/organizacao-financeira/quanto-da-renda-comprometer-financiamento-imovel/">
-            quanto da renda comprometer com o financiamento
-          </Link>
-          .
-        </p>
-
-        <h3>Quanto preciso dar de entrada?</h3>
-        <p>
-          A entrada é a diferença entre o valor do imóvel e o que a instituição aceita financiar, e esse
-          limite varia por instituição, linha e sistema. A tabela de entradas acima mostra o efeito na
-          parcela e nos juros; o percentual mínimo vale o da simulação oficial da instituição.
-        </p>
-
-        <h3>420 meses são quantos anos?</h3>
-        <p>35 anos. 360 meses são 30 anos; 300 meses, 25 anos; 240 meses, 20 anos.</p>
-
-        <h3>SAC ou Price no financiamento de imóvel?</h3>
-        <p>
-          Com o mesmo valor, a mesma taxa e o mesmo prazo, a SAC começa com parcela mais alta e soma menos
-          juros; a Price começa mais baixa e soma mais. O que pesa em cada caso — renda exigida, seguros,
-          intenção de quitar antes — está em{" "}
-          <Link href="/juros-e-cet/price-ou-sac-sistemas-de-amortizacao/">Price ou SAC</Link>.
-        </p>
-
-        <h3>A taxa do simulador inclui a TR?</h3>
-        <p>
-          Não. O simulador usa a taxa informada, sem correção do saldo. Em contrato com TR ou IPCA, o saldo
-          e as parcelas podem subir ou descer conforme o índice.
-        </p>
-
-        <h3>O resultado é igual ao do banco?</h3>
-        <p>
-          Não necessariamente. A proposta inclui seguros, tarifas e, quando houver, a correção do saldo, e
-          a taxa sai da análise de crédito. Use o simulador para entender a conta e comparar com a
-          simulação oficial — o número que vale é o do contrato.
-        </p>
+        <FaqAccordion>
+          <FaqItem question="Qual renda é preciso para financiar um imóvel?" id="qual-renda-e-preciso-para-financiar-um-imovel">
+            <p>
+              Não existe uma renda única: ela depende da parcela, e a parcela depende do valor financiado, da
+              taxa, do prazo e do sistema. A Caixa informa que a parcela pode comprometer até 30% da renda
+              familiar bruta; outras instituições têm critérios próprios. O simulador mostra a renda que cada
+              parcela representa nesse critério. Se ela cabe no seu mês é outra conta, explicada em{" "}
+              <Link href="/organizacao-financeira/quanto-da-renda-comprometer-financiamento-imovel/">
+                quanto da renda comprometer com o financiamento
+              </Link>
+              .
+            </p>
+          </FaqItem>
+          <FaqItem question="Quanto preciso dar de entrada?" id="quanto-preciso-dar-de-entrada">
+            <p>
+              A entrada é a diferença entre o valor do imóvel e o que a instituição aceita financiar, e esse
+              limite varia por instituição, linha e sistema. A tabela de entradas acima mostra o efeito na
+              parcela e nos juros; o percentual mínimo vale o da simulação oficial da instituição.
+            </p>
+          </FaqItem>
+          <FaqItem question="420 meses são quantos anos?" id="420-meses-sao-quantos-anos">
+            <p>35 anos. 360 meses são 30 anos; 300 meses, 25 anos; 240 meses, 20 anos.</p>
+          </FaqItem>
+          <FaqItem question="SAC ou Price no financiamento de imóvel?" id="sac-ou-price-no-financiamento-de-imovel">
+            <p>
+              Com o mesmo valor, a mesma taxa e o mesmo prazo, a SAC começa com parcela mais alta e soma menos
+              juros; a Price começa mais baixa e soma mais. O que pesa em cada caso — renda exigida, seguros,
+              intenção de quitar antes — está em{" "}
+              <Link href="/juros-e-cet/price-ou-sac-sistemas-de-amortizacao/">Price ou SAC</Link>.
+            </p>
+          </FaqItem>
+          <FaqItem question="A taxa do simulador inclui a TR?" id="a-taxa-do-simulador-inclui-a-tr">
+            <p>
+              Não. O simulador usa a taxa informada, sem correção do saldo. Em contrato com TR ou IPCA, o saldo
+              e as parcelas podem subir ou descer conforme o índice.
+            </p>
+          </FaqItem>
+          <FaqItem question="O resultado é igual ao do banco?" id="o-resultado-e-igual-ao-do-banco">
+            <p>
+              Não necessariamente. A proposta inclui seguros, tarifas e, quando houver, a correção do saldo, e
+              a taxa sai da análise de crédito. Use o simulador para entender a conta e comparar com a
+              simulação oficial — o número que vale é o do contrato.
+            </p>
+          </FaqItem>
+        </FaqAccordion>
 
         <h2 id="como-calculamos">Como calculamos</h2>
         <p>

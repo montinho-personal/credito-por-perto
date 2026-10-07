@@ -18,6 +18,7 @@ import {
   formatRate,
 } from "@/lib/calculators/iof-credit-rules";
 import { formatIsoDate, todayInBrazil } from "@/lib/calculators/civil-date";
+import { FaqAccordion, FaqItem } from "@/components/content/FaqAccordion";
 
 /**
  * Página da calculadora de IOF de empréstimo.
@@ -248,25 +249,30 @@ export default function IofEmprestimoPage() {
         </p>
 
         <h2 id="perguntas-frequentes">Perguntas frequentes</h2>
-        <h3>Quanto é o IOF de R$ 10 mil?</h3>
-        <p>
-          Depende do prazo e da forma de pagar.
-          {ten12 && d365
-            ? ` Com as premissas dos exemplos, R$ 10.000 em 12 parcelas pagam cerca de ${brl(ten12.breakdown.totalCents)}; pagos de uma vez em 365 dias, ${brl(d365.breakdown.totalCents)}.`
-            : ""}
-        </p>
-        <h3>O IOF é devolvido se eu quitar antes?</h3>
-        <p>
-          O que acontece com o IOF já recolhido depende do contrato e da regra aplicável; a quitação antecipada reduz os juros
-          ainda não incorridos. Peça o cálculo por escrito à instituição — e veja a{" "}
-          <Link href="/calculadoras/quitacao-antecipada/">calculadora de quitação antecipada</Link>.
-        </p>
-        <h3>Alguém pediu que eu pague o IOF antes de liberar o empréstimo. É normal?</h3>
-        <p>
-          O IOF é recolhido pela própria instituição, descontado do valor liberado ou incluído no financiamento. Pedido de
-          depósito antecipado para “liberar” crédito é um sinal clássico de golpe — veja os{" "}
-          <Link href="/calculadoras/sinais-de-golpe/">sinais de golpe</Link> antes de pagar qualquer coisa.
-        </p>
+        <FaqAccordion>
+          <FaqItem question="Quanto é o IOF de R$ 10 mil?" id="quanto-e-o-iof-de-r-10-mil">
+            <p>
+              Depende do prazo e da forma de pagar.
+              {ten12 && d365
+                ? ` Com as premissas dos exemplos, R$ 10.000 em 12 parcelas pagam cerca de ${brl(ten12.breakdown.totalCents)}; pagos de uma vez em 365 dias, ${brl(d365.breakdown.totalCents)}.`
+                : ""}
+            </p>
+          </FaqItem>
+          <FaqItem question="O IOF é devolvido se eu quitar antes?" id="o-iof-e-devolvido-se-eu-quitar-antes">
+            <p>
+              O que acontece com o IOF já recolhido depende do contrato e da regra aplicável; a quitação antecipada reduz os juros
+              ainda não incorridos. Peça o cálculo por escrito à instituição — e veja a{" "}
+              <Link href="/calculadoras/quitacao-antecipada/">calculadora de quitação antecipada</Link>.
+            </p>
+          </FaqItem>
+          <FaqItem question="Alguém pediu que eu pague o IOF antes de liberar o empréstimo. É normal?" id="alguem-pediu-que-eu-pague-o-iof-antes-de-liberar-o-emprestimo-e-normal">
+            <p>
+              O IOF é recolhido pela própria instituição, descontado do valor liberado ou incluído no financiamento. Pedido de
+              depósito antecipado para “liberar” crédito é um sinal clássico de golpe — veja os{" "}
+              <Link href="/calculadoras/sinais-de-golpe/">sinais de golpe</Link> antes de pagar qualquer coisa.
+            </p>
+          </FaqItem>
+        </FaqAccordion>
 
         <h2 id="como-calculamos">Como calculamos</h2>
         <ol>

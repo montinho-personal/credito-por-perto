@@ -131,6 +131,24 @@ export const INTERNAL_ONLY_CHANGES: Array<{
       "/politica-de-publicidade/",
     ],
   },
+  {
+    reason:
+      "As perguntas frequentes destas ferramentas passaram a abrir em acordeão (só a pergunta aparece; a resposta abre ao clicar), o mesmo formato dos artigos. Perguntas e respostas são as mesmas, palavra por palavra, e continuam no HTML servido.",
+    at: "2026-10-07",
+    routes: [
+      "/simuladores/amortizacao-financiamento/",
+      "/simuladores/quando-fico-livre-das-dividas/",
+      "/calculadoras/financiamento-veiculo/",
+      "/calculadoras/juros-cartao-credito/",
+      "/calculadoras/parcelamento-fatura-cartao/",
+      "/calculadoras/cet/",
+      "/calculadoras/antecipacao-fgts/",
+      "/calculadoras/financiamento-imobiliario/",
+      "/calculadoras/sac-x-price/",
+      "/calculadoras/quanto-consigo-financiar/",
+      "/calculadoras/iof-emprestimo/",
+    ],
+  },
 ];
 
 /** A rota teve mudança apenas interna nesta data exata? */

@@ -10,6 +10,7 @@ import { ScenarioTable } from "@/components/calculators/HomeFinancingSimulator";
 import { BPP_RULES, SOURCES, type BppSource } from "@/lib/calculators/bpp-rules";
 import { simulateBpp, type BppResult } from "@/lib/calculators/bpp-simulator";
 import { getBppCityOptions } from "@/lib/local/bpp-cities";
+import { FaqAccordion, FaqItem } from "@/components/content/FaqAccordion";
 
 /**
  * Simulador do Banco do Povo Paulista — independente e não oficial.
@@ -276,35 +277,43 @@ export default function SimuladorBancoDoPovoPage() {
         <p>Cidade fora da lista? O site da prefeitura publica o endereço e o telefone do atendimento, quando o município opera o programa.</p>
 
         <h2 id="perguntas-frequentes">Perguntas frequentes</h2>
-        <h3>Este simulador é do Banco do Povo?</h3>
-        <p>
-          Não. É uma ferramenta independente do Crédito por Perto, que não representa o programa nem o Governo do Estado. A
-          simulação que vale é a do atendimento.
-        </p>
-        <h3>Qual o valor máximo do Banco do Povo Paulista?</h3>
-        <p>
-          {brl0(BPP_RULES.amount.maxCents)}, pela carta de serviços estadual. Para quem não tem CNPJ, prefeituras citam até{" "}
-          {brl0(BPP_RULES.profileCap.pessoaFisicaCents)}.
-        </p>
-        <h3>Quanto fica a parcela de R$ 10 mil no Banco do Povo?</h3>
-        <p>
-          {table.find((x) => x.a === 10_000)
-            ? `Em ${maxMonths} parcelas, sem carência, a estimativa vai de ${brl(table.find((x) => x.a === 10_000)!.l.paymentCents)} a ${pct(low)}% ao mês até ${brl(table.find((x) => x.a === 10_000)!.h.paymentCents)} a ${pct(high)}% ao mês.`
-            : "Depende da taxa e do prazo."}{" "}
-          A taxa do seu pedido só sai na análise.
-        </p>
-        <h3>Dá para pagar em 48 vezes?</h3>
-        <p>O prazo divulgado pelo Estado é de até {maxMonths} meses. Simulações de 48 parcelas não se aplicam ao programa.</p>
-        <h3>Negativado consegue Banco do Povo?</h3>
-        <p>
-          Páginas oficiais de prefeituras que operam o programa exigem não ter restrição cadastral; Araçariguama cita SCPC,
-          Serasa e Cadin. Com o nome negativado, o pedido esbarra nessa exigência: consulte o seu nome antes de ir.
-        </p>
-        <h3>O resultado inclui todos os custos?</h3>
-        <p>
-          Não, a menos que você informe os custos que o atendimento passar. Sem eles, o simulador mostra parcela, total e juros, e
-          avisa que não é possível estimar o CET com precisão.
-        </p>
+        <FaqAccordion>
+          <FaqItem question="Este simulador é do Banco do Povo?" id="este-simulador-e-do-banco-do-povo">
+            <p>
+              Não. É uma ferramenta independente do Crédito por Perto, que não representa o programa nem o Governo do Estado. A
+              simulação que vale é a do atendimento.
+            </p>
+          </FaqItem>
+          <FaqItem question="Qual o valor máximo do Banco do Povo Paulista?" id="qual-o-valor-maximo-do-banco-do-povo-paulista">
+            <p>
+              {brl0(BPP_RULES.amount.maxCents)}, pela carta de serviços estadual. Para quem não tem CNPJ, prefeituras citam até{" "}
+              {brl0(BPP_RULES.profileCap.pessoaFisicaCents)}.
+            </p>
+          </FaqItem>
+          <FaqItem question="Quanto fica a parcela de R$ 10 mil no Banco do Povo?" id="quanto-fica-a-parcela-de-r-10-mil-no-banco-do-povo">
+            <p>
+              {table.find((x) => x.a === 10_000)
+                ? `Em ${maxMonths} parcelas, sem carência, a estimativa vai de ${brl(table.find((x) => x.a === 10_000)!.l.paymentCents)} a ${pct(low)}% ao mês até ${brl(table.find((x) => x.a === 10_000)!.h.paymentCents)} a ${pct(high)}% ao mês.`
+                : "Depende da taxa e do prazo."}{" "}
+              A taxa do seu pedido só sai na análise.
+            </p>
+          </FaqItem>
+          <FaqItem question="Dá para pagar em 48 vezes?" id="da-para-pagar-em-48-vezes">
+            <p>O prazo divulgado pelo Estado é de até {maxMonths} meses. Simulações de 48 parcelas não se aplicam ao programa.</p>
+          </FaqItem>
+          <FaqItem question="Negativado consegue Banco do Povo?" id="negativado-consegue-banco-do-povo">
+            <p>
+              Páginas oficiais de prefeituras que operam o programa exigem não ter restrição cadastral; Araçariguama cita SCPC,
+              Serasa e Cadin. Com o nome negativado, o pedido esbarra nessa exigência: consulte o seu nome antes de ir.
+            </p>
+          </FaqItem>
+          <FaqItem question="O resultado inclui todos os custos?" id="o-resultado-inclui-todos-os-custos">
+            <p>
+              Não, a menos que você informe os custos que o atendimento passar. Sem eles, o simulador mostra parcela, total e juros, e
+              avisa que não é possível estimar o CET com precisão.
+            </p>
+          </FaqItem>
+        </FaqAccordion>
 
         <h2 id="como-calculamos">Fontes e metodologia</h2>
         <ul>

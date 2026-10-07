@@ -12,6 +12,7 @@ import {
   type SacPriceInput,
   type SacPriceResult,
 } from "@/lib/calculators/sac-price";
+import { FaqAccordion, FaqItem } from "@/components/content/FaqAccordion";
 
 /**
  * Página da calculadora SAC x Price.
@@ -379,62 +380,64 @@ export default function SacPricePage() {
         </p>
 
         <h2 id="perguntas-frequentes">Perguntas frequentes</h2>
-
-        <h3>Como calcular a parcela na Price e na SAC?</h3>
-        <p>
-          Na Price, a parcela é valor financiado × i ÷ [1 − (1 + i)<sup>−n</sup>], em que i é a taxa
-          mensal em decimal e n o número de parcelas. Na SAC, a amortização é o valor financiado
-          dividido por n, e a parcela de cada mês é essa amortização mais os juros do mês — o saldo
-          devedor anterior × i. Com taxa zero, os dois dão parcelas iguais: o valor dividido pelo
-          prazo.
-        </p>
-
-        <h3>A SAC sempre paga menos juros?</h3>
-        <p>
-          Com o mesmo valor, a mesma taxa e o mesmo prazo, sim: o saldo cai mais rápido e os juros
-          incidem sobre um saldo menor. Se as propostas tiverem taxas, prazos ou custos diferentes, a
-          comparação precisa ser feita com os números de cada uma — de preferência pelo CET.
-        </p>
-
-        <h3>A tabela SAC diminui as parcelas?</h3>
-        <p>
-          Sim. Sem índice de correção, a parcela da SAC cai todo mês, porque os juros incidem sobre um saldo cada vez menor.
-          {main
-            ? ` No exemplo desta página, ela começa em ${brl(main.sac.firstPaymentCents)} e termina em ${brl(main.sac.lastPaymentCents)}.`
-            : ""}{" "}
-          Com correção pela TR ou outro índice, a queda pode ser menor ou, em alguns meses, a parcela pode subir.
-        </p>
-
-        <h3>Por que a primeira parcela da SAC é maior?</h3>
-        <p>
-          Porque ela já amortiza a mesma fatia da dívida que vai amortizar no último mês, e soma os
-          juros sobre o saldo inteiro. Na Price, a primeira parcela amortiza pouco — a maior parte
-          dela é juro — e por isso fica menor.
-        </p>
-
-        <h3>Em que momento a parcela da SAC fica menor que a da Price?</h3>
-        <p>
-          Depende da taxa e do prazo. A calculadora mostra o número exato da parcela da virada e a
-          marca no gráfico.
-          {main?.crossoverMonth
-            ? ` No exemplo desta página, é a parcela nº ${main.crossoverMonth}.`
-            : ""}
-        </p>
-
-        <h3>Qual é melhor para quem vai quitar antes?</h3>
-        <p>
-          A calculadora não responde &ldquo;qual é melhor&rdquo;, mas mostra o dado que pesa nessa
-          conta: o saldo devedor em cada momento, que na SAC é menor. Para ver quanto de juros uma
-          antecipação corta, use a{" "}
-          <Link href="/calculadoras/quitacao-antecipada/">calculadora de quitação antecipada</Link>.
-        </p>
-
-        <h3>O resultado é igual ao do banco?</h3>
-        <p>
-          Não necessariamente. A simulação usa só a taxa, o prazo e os custos que você informar; o
-          contrato pode ter seguros, tarifas e correção do saldo. Use o resultado para entender a conta
-          e comparar com as simulações que a instituição fornecer — o número que vale é o do contrato.
-        </p>
+        <FaqAccordion>
+          <FaqItem question="Como calcular a parcela na Price e na SAC?" id="como-calcular-a-parcela-na-price-e-na-sac">
+            <p>
+              Na Price, a parcela é valor financiado × i ÷ [1 − (1 + i)<sup>−n</sup>], em que i é a taxa
+              mensal em decimal e n o número de parcelas. Na SAC, a amortização é o valor financiado
+              dividido por n, e a parcela de cada mês é essa amortização mais os juros do mês — o saldo
+              devedor anterior × i. Com taxa zero, os dois dão parcelas iguais: o valor dividido pelo
+              prazo.
+            </p>
+          </FaqItem>
+          <FaqItem question="A SAC sempre paga menos juros?" id="a-sac-sempre-paga-menos-juros">
+            <p>
+              Com o mesmo valor, a mesma taxa e o mesmo prazo, sim: o saldo cai mais rápido e os juros
+              incidem sobre um saldo menor. Se as propostas tiverem taxas, prazos ou custos diferentes, a
+              comparação precisa ser feita com os números de cada uma — de preferência pelo CET.
+            </p>
+          </FaqItem>
+          <FaqItem question="A tabela SAC diminui as parcelas?" id="a-tabela-sac-diminui-as-parcelas">
+            <p>
+              Sim. Sem índice de correção, a parcela da SAC cai todo mês, porque os juros incidem sobre um saldo cada vez menor.
+              {main
+                ? ` No exemplo desta página, ela começa em ${brl(main.sac.firstPaymentCents)} e termina em ${brl(main.sac.lastPaymentCents)}.`
+                : ""}{" "}
+              Com correção pela TR ou outro índice, a queda pode ser menor ou, em alguns meses, a parcela pode subir.
+            </p>
+          </FaqItem>
+          <FaqItem question="Por que a primeira parcela da SAC é maior?" id="por-que-a-primeira-parcela-da-sac-e-maior">
+            <p>
+              Porque ela já amortiza a mesma fatia da dívida que vai amortizar no último mês, e soma os
+              juros sobre o saldo inteiro. Na Price, a primeira parcela amortiza pouco — a maior parte
+              dela é juro — e por isso fica menor.
+            </p>
+          </FaqItem>
+          <FaqItem question="Em que momento a parcela da SAC fica menor que a da Price?" id="em-que-momento-a-parcela-da-sac-fica-menor-que-a-da-price">
+            <p>
+              Depende da taxa e do prazo. A calculadora mostra o número exato da parcela da virada e a
+              marca no gráfico.
+              {main?.crossoverMonth
+                ? ` No exemplo desta página, é a parcela nº ${main.crossoverMonth}.`
+                : ""}
+            </p>
+          </FaqItem>
+          <FaqItem question="Qual é melhor para quem vai quitar antes?" id="qual-e-melhor-para-quem-vai-quitar-antes">
+            <p>
+              A calculadora não responde &ldquo;qual é melhor&rdquo;, mas mostra o dado que pesa nessa
+              conta: o saldo devedor em cada momento, que na SAC é menor. Para ver quanto de juros uma
+              antecipação corta, use a{" "}
+              <Link href="/calculadoras/quitacao-antecipada/">calculadora de quitação antecipada</Link>.
+            </p>
+          </FaqItem>
+          <FaqItem question="O resultado é igual ao do banco?" id="o-resultado-e-igual-ao-do-banco">
+            <p>
+              Não necessariamente. A simulação usa só a taxa, o prazo e os custos que você informar; o
+              contrato pode ter seguros, tarifas e correção do saldo. Use o resultado para entender a conta
+              e comparar com as simulações que a instituição fornecer — o número que vale é o do contrato.
+            </p>
+          </FaqItem>
+        </FaqAccordion>
 
         <h2 id="como-calculamos">Como calculamos</h2>
         <p>

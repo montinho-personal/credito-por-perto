@@ -17,6 +17,7 @@ import {
   type VehicleFinancingInput,
   type VehicleFinancingResult,
 } from "@/lib/calculators/vehicle-financing";
+import { FaqAccordion, FaqItem } from "@/components/content/FaqAccordion";
 
 /**
  * Página do simulador de financiamento de veículo.
@@ -391,94 +392,94 @@ export default async function FinanciamentoVeiculoPage() {
         </p>
 
         <h2 id="perguntas-frequentes">Perguntas frequentes</h2>
-
-        <h3>Como calcular o financiamento de um veículo?</h3>
-        <p>
-          Subtraia a entrada do valor do veículo para chegar ao valor financiado. A parcela fixa é
-          valor financiado × i ÷ [1 − (1 + i)<sup>−n</sup>], em que i é a taxa mensal em decimal e n
-          o número de parcelas. O total das parcelas menos o valor financiado dá os juros. O
-          simulador faz essa conta e mostra também a tabela mês a mês.
-        </p>
-
-        {main ? (
-          <>
-            <h3>Quanto fica a parcela de um carro de R$ 80 mil?</h3>
+        <FaqAccordion>
+          <FaqItem question="Como calcular o financiamento de um veículo?" id="como-calcular-o-financiamento-de-um-veiculo">
             <p>
-              Depende da entrada, da taxa e do prazo. Com R$ 20 mil de entrada, em 48 meses, a{" "}
-              {rateLabel}, a parcela estimada fica em {formatBRL(main.payment)}, com{" "}
-              {formatBRL(main.totalInterest)} de juros e {formatBRL(main.totalOutlay)} desembolsados
-              no total, somando a entrada. Com a sua proposta, a conta muda — use o simulador acima.
+              Subtraia a entrada do valor do veículo para chegar ao valor financiado. A parcela fixa é
+              valor financiado × i ÷ [1 − (1 + i)<sup>−n</sup>], em que i é a taxa mensal em decimal e n
+              o número de parcelas. O total das parcelas menos o valor financiado dá os juros. O
+              simulador faz essa conta e mostra também a tabela mês a mês.
             </p>
-          </>
-        ) : null}
-
-        <h3>O simulador é grátis e funciona sem CPF?</h3>
-        <p>
-          Sim. Não há cadastro e nenhum dado pessoal é pedido; o cálculo acontece no seu navegador. O CPF só entra quando você
-          pede uma proposta à instituição, pelos canais oficiais dela.
-        </p>
-
-        <h3>Qual o melhor banco para financiar carro?</h3>
-        <p>
-          O que oferecer o menor CET para o seu caso, no mesmo prazo e com a mesma entrada. Peça duas ou três propostas, coloque
-          a taxa de cada uma no simulador e compare o total. A lista de taxas médias por instituição, do Banco Central, ajuda a
-          escolher a quem pedir.
-        </p>
-
-        <h3>Vale a pena dar uma entrada maior?</h3>
-        <p>
-          Matematicamente, mais entrada significa menos juros, como mostra a tabela acima. Se vale a
-          pena depende do que esse dinheiro faria no seu caso — sobretudo se ele é a sua reserva
-          para imprevistos. O simulador mostra a consequência em reais; a decisão é sua.
-        </p>
-
-        <h3>É melhor financiar em 48 ou 60 meses?</h3>
-        <p>
-          Em 60 meses a parcela é menor e os juros totais são maiores; em 48, o contrário. Não
-          existe resposta única: a parcela precisa caber no mês com folga, e a diferença de juros
-          precisa valer o alívio mensal. A tabela &ldquo;Mesmo veículo, prazos diferentes&rdquo;,
-          no resultado, mostra os dois lados com os seus números. Para testar a parcela no seu
-          orçamento, use{" "}
-          <Link href="/calculadoras/parcela-no-orcamento/">parcela no orçamento</Link>.
-        </p>
-
-        <h3>Financiamento sem entrada existe?</h3>
-        <p>
-          O simulador aceita entrada zero: basta deixar o campo vazio. Se a instituição financia
-          100% do valor, e em que condições, depende da política dela e da análise de crédito.
-          Financiar tudo significa pagar juros sobre o valor inteiro do veículo.
-        </p>
-
-        <h3>O simulador funciona para moto?</h3>
-        <p>
-          Sim. A conta de prestações fixas é a mesma para carro, moto ou outro veículo. O que muda
-          de um para outro são a taxa e os prazos que cada instituição oferece — informe os da sua
-          proposta.
-        </p>
-
-        <h3>O resultado é igual ao do banco?</h3>
-        <p>
-          Não necessariamente. A simulação usa a taxa e os custos que você informar; a proposta
-          inclui encargos que só a instituição conhece e que aparecem no CET. Use o resultado para
-          entender a conta e fazer perguntas — o número que vale é o do contrato.
-        </p>
-
-        <h3>Qual taxa usar no simulador?</h3>
-        <p>
-          A da sua proposta, na unidade em que ela aparece (ao mês ou ao ano). Sem proposta ainda,
-          dá para partir da taxa média do Banco Central para aquisição de veículos — o simulador
-          oferece esse atalho quando o dado está disponível —, sabendo que a média não é a taxa
-          que você vai receber.
-        </p>
-
-        <h3>Como saber se a taxa está alta?</h3>
-        <p>
-          Comparando com a referência certa: a média do Banco Central para a mesma modalidade, no
-          mesmo período. Depois de calcular, o simulador mostra essa comparação; o{" "}
-          <Link href="/calculadoras/minha-taxa-esta-cara/">Minha taxa está cara?</Link> faz a
-          análise completa. A média é referência para perguntar, não veredito: a taxa de cada
-          pessoa depende de perfil, entrada, prazo, veículo e instituição.
-        </p>
+          </FaqItem>
+          {main ? (
+            <FaqItem question="Quanto fica a parcela de um carro de R$ 80 mil?" id="quanto-fica-a-parcela-de-um-carro-de-r-80-mil">
+                <p>
+                  Depende da entrada, da taxa e do prazo. Com R$ 20 mil de entrada, em 48 meses, a{" "}
+                  {rateLabel}, a parcela estimada fica em {formatBRL(main.payment)}, com{" "}
+                  {formatBRL(main.totalInterest)} de juros e {formatBRL(main.totalOutlay)} desembolsados
+                  no total, somando a entrada. Com a sua proposta, a conta muda — use o simulador acima.
+                </p>
+            </FaqItem>
+          ) : null}
+          <FaqItem question="O simulador é grátis e funciona sem CPF?" id="o-simulador-e-gratis-e-funciona-sem-cpf">
+            <p>
+              Sim. Não há cadastro e nenhum dado pessoal é pedido; o cálculo acontece no seu navegador. O CPF só entra quando você
+              pede uma proposta à instituição, pelos canais oficiais dela.
+            </p>
+          </FaqItem>
+          <FaqItem question="Qual o melhor banco para financiar carro?" id="qual-o-melhor-banco-para-financiar-carro">
+            <p>
+              O que oferecer o menor CET para o seu caso, no mesmo prazo e com a mesma entrada. Peça duas ou três propostas, coloque
+              a taxa de cada uma no simulador e compare o total. A lista de taxas médias por instituição, do Banco Central, ajuda a
+              escolher a quem pedir.
+            </p>
+          </FaqItem>
+          <FaqItem question="Vale a pena dar uma entrada maior?" id="vale-a-pena-dar-uma-entrada-maior">
+            <p>
+              Matematicamente, mais entrada significa menos juros, como mostra a tabela acima. Se vale a
+              pena depende do que esse dinheiro faria no seu caso — sobretudo se ele é a sua reserva
+              para imprevistos. O simulador mostra a consequência em reais; a decisão é sua.
+            </p>
+          </FaqItem>
+          <FaqItem question="É melhor financiar em 48 ou 60 meses?" id="e-melhor-financiar-em-48-ou-60-meses">
+            <p>
+              Em 60 meses a parcela é menor e os juros totais são maiores; em 48, o contrário. Não
+              existe resposta única: a parcela precisa caber no mês com folga, e a diferença de juros
+              precisa valer o alívio mensal. A tabela &ldquo;Mesmo veículo, prazos diferentes&rdquo;,
+              no resultado, mostra os dois lados com os seus números. Para testar a parcela no seu
+              orçamento, use{" "}
+              <Link href="/calculadoras/parcela-no-orcamento/">parcela no orçamento</Link>.
+            </p>
+          </FaqItem>
+          <FaqItem question="Financiamento sem entrada existe?" id="financiamento-sem-entrada-existe">
+            <p>
+              O simulador aceita entrada zero: basta deixar o campo vazio. Se a instituição financia
+              100% do valor, e em que condições, depende da política dela e da análise de crédito.
+              Financiar tudo significa pagar juros sobre o valor inteiro do veículo.
+            </p>
+          </FaqItem>
+          <FaqItem question="O simulador funciona para moto?" id="o-simulador-funciona-para-moto">
+            <p>
+              Sim. A conta de prestações fixas é a mesma para carro, moto ou outro veículo. O que muda
+              de um para outro são a taxa e os prazos que cada instituição oferece — informe os da sua
+              proposta.
+            </p>
+          </FaqItem>
+          <FaqItem question="O resultado é igual ao do banco?" id="o-resultado-e-igual-ao-do-banco">
+            <p>
+              Não necessariamente. A simulação usa a taxa e os custos que você informar; a proposta
+              inclui encargos que só a instituição conhece e que aparecem no CET. Use o resultado para
+              entender a conta e fazer perguntas — o número que vale é o do contrato.
+            </p>
+          </FaqItem>
+          <FaqItem question="Qual taxa usar no simulador?" id="qual-taxa-usar-no-simulador">
+            <p>
+              A da sua proposta, na unidade em que ela aparece (ao mês ou ao ano). Sem proposta ainda,
+              dá para partir da taxa média do Banco Central para aquisição de veículos — o simulador
+              oferece esse atalho quando o dado está disponível —, sabendo que a média não é a taxa
+              que você vai receber.
+            </p>
+          </FaqItem>
+          <FaqItem question="Como saber se a taxa está alta?" id="como-saber-se-a-taxa-esta-alta">
+            <p>
+              Comparando com a referência certa: a média do Banco Central para a mesma modalidade, no
+              mesmo período. Depois de calcular, o simulador mostra essa comparação; o{" "}
+              <Link href="/calculadoras/minha-taxa-esta-cara/">Minha taxa está cara?</Link> faz a
+              análise completa. A média é referência para perguntar, não veredito: a taxa de cada
+              pessoa depende de perfil, entrada, prazo, veículo e instituição.
+            </p>
+          </FaqItem>
+        </FaqAccordion>
 
         <h2 id="como-calculamos">Como calculamos</h2>
         <p>

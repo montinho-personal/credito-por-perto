@@ -12,6 +12,7 @@ import { monthlyToAnnual } from "@/lib/calculators/cash-flow";
 import { pricePayment } from "@/lib/calculators/loan";
 import { calculateIof } from "@/lib/calculators/iof-credit";
 import { addDays, addMonths, formatIsoDate, todayInBrazil } from "@/lib/calculators/civil-date";
+import { FaqAccordion, FaqItem } from "@/components/content/FaqAccordion";
 
 /**
  * Página da calculadora de CET.
@@ -242,23 +243,30 @@ export default function CetPage() {
         </p>
 
         <h2 id="perguntas-frequentes">Perguntas frequentes</h2>
-        <h3>O banco é obrigado a informar o CET?</h3>
-        <p>{CET_RULES.disclosure} {CET_RULES.scope}</p>
-        <h3>Posso calcular o CET pelas parcelas?</h3>
-        <p>
-          Pode. Com o valor que chegou, as parcelas e as datas, a calculadora encontra a taxa do fluxo — sem precisar da taxa de
-          juros nem do CET. Se houver custos pagos fora das parcelas, informe-os para chegar ao CET.
-        </p>
-        <h3>Qual CET é considerado bom?</h3>
-        <p>
-          Não há um número único: depende da modalidade, do prazo, da garantia e do momento do mercado. Para ter referência, compare
-          a taxa com a média oficial da mesma modalidade em{" "}
-          <Link href="/calculadoras/minha-taxa-esta-cara/">minha taxa está cara?</Link> e as propostas entre si, pelo CET e pelo total.
-        </p>
-        <h3>Cheque especial e rotativo têm CET?</h3>
-        <p>{CET_RULES.revolving} Por isso a calculadora de parcelas não se aplica a eles.</p>
-        <h3>Como transformar CET anual em mensal?</h3>
-        <p>Por equivalência composta: (1 + CET anual)<sup>1/12</sup> − 1. Dividir por 12 dá um número errado.</p>
+        <FaqAccordion>
+          <FaqItem question="O banco é obrigado a informar o CET?" id="o-banco-e-obrigado-a-informar-o-cet">
+            <p>{CET_RULES.disclosure} {CET_RULES.scope}</p>
+          </FaqItem>
+          <FaqItem question="Posso calcular o CET pelas parcelas?" id="posso-calcular-o-cet-pelas-parcelas">
+            <p>
+              Pode. Com o valor que chegou, as parcelas e as datas, a calculadora encontra a taxa do fluxo — sem precisar da taxa de
+              juros nem do CET. Se houver custos pagos fora das parcelas, informe-os para chegar ao CET.
+            </p>
+          </FaqItem>
+          <FaqItem question="Qual CET é considerado bom?" id="qual-cet-e-considerado-bom">
+            <p>
+              Não há um número único: depende da modalidade, do prazo, da garantia e do momento do mercado. Para ter referência, compare
+              a taxa com a média oficial da mesma modalidade em{" "}
+              <Link href="/calculadoras/minha-taxa-esta-cara/">minha taxa está cara?</Link> e as propostas entre si, pelo CET e pelo total.
+            </p>
+          </FaqItem>
+          <FaqItem question="Cheque especial e rotativo têm CET?" id="cheque-especial-e-rotativo-tem-cet">
+            <p>{CET_RULES.revolving} Por isso a calculadora de parcelas não se aplica a eles.</p>
+          </FaqItem>
+          <FaqItem question="Como transformar CET anual em mensal?" id="como-transformar-cet-anual-em-mensal">
+            <p>Por equivalência composta: (1 + CET anual)<sup>1/12</sup> − 1. Dividir por 12 dá um número errado.</p>
+          </FaqItem>
+        </FaqAccordion>
 
         <h2 id="como-calculamos">Como calculamos</h2>
         <ul>

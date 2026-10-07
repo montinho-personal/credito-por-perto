@@ -11,6 +11,7 @@ import { formatMonths } from "@/lib/calculators/debt-plan";
 import { todayInBrazil } from "@/lib/calculators/civil-date";
 import { EARLY_PAYOFF, ROTATIVO_DURATION } from "@/lib/calculators/credit-card-rules";
 import { compareJourneys, monthLabel, simulateJourney, withMonthlyExtra, type JourneyDebt, type JourneyInput } from "@/lib/simulators/debt-journey";
+import { FaqAccordion, FaqItem } from "@/components/content/FaqAccordion";
 
 /**
  * Página do simulador "Quando fico livre das dívidas?".
@@ -214,22 +215,32 @@ export default function QuandoFicoLivreDasDividasPage() {
         </p>
 
         <h2 id="perguntas-frequentes">Perguntas frequentes</h2>
-        <h3>Quanto tempo demora para quitar uma dívida?</h3>
-        <p>Depende do saldo, da taxa e do pagamento. Com os três, o simulador mostra o mês. Sem a taxa, mostra só o cronograma das parcelas.</p>
-        <h3>Quanto preciso pagar por mês?</h3>
-        <p>Pelo menos mais que os juros do mês, senão o saldo não cai. Teste valores no simulador: cada um mostra a data e o custo.</p>
-        <h3>Pagar mais reduz os juros?</h3>
-        <p>Sim, porque reduz o saldo sobre o qual os juros dos meses seguintes incidem. O Código de Defesa do Consumidor assegura a liquidação antecipada, total ou parcial, com redução proporcional dos juros (art. 52, §2º).</p>
-        <h3>Qual dívida deve ser paga primeiro?</h3>
-        <p>O simulador mostra o efeito de cada ordem; a decisão é sua. O guia <Link href="/organizacao-financeira/qual-divida-pagar-primeiro/">qual dívida pagar primeiro</Link> compara os métodos.</p>
-        <h3>Posso usar com cartão de crédito?</h3>
-        <p>Com a fatura já parcelada, sim. No rotativo, não: {ROTATIVO_DURATION.summary} Use a <Link href="/calculadoras/juros-cartao-credito/">Calculadora de Juros do Cartão</Link> para a próxima fatura.</p>
-        <h3>Posso usar com financiamento?</h3>
-        <p>Sim, na Price ou na SAC. O simulador não inclui seguros e tarifas do financiamento a menos que você informe o valor mensal em “mais detalhes”.</p>
-        <h3>O resultado é exato?</h3>
-        <p>Não. É uma simulação com taxa constante, pagamentos em dia e sem novas compras. O saldo oficial é sempre o da instituição.</p>
-        <h3>E se a taxa mudar ou eu renegociar?</h3>
-        <p>A rota muda. Refaça a simulação com os novos números; para uma proposta de acordo, a <Link href="/calculadoras/renegociacao-de-dividas/">calculadora de renegociação</Link> soma o que ela custa.</p>
+        <FaqAccordion>
+          <FaqItem question="Quanto tempo demora para quitar uma dívida?" id="quanto-tempo-demora-para-quitar-uma-divida">
+            <p>Depende do saldo, da taxa e do pagamento. Com os três, o simulador mostra o mês. Sem a taxa, mostra só o cronograma das parcelas.</p>
+          </FaqItem>
+          <FaqItem question="Quanto preciso pagar por mês?" id="quanto-preciso-pagar-por-mes">
+            <p>Pelo menos mais que os juros do mês, senão o saldo não cai. Teste valores no simulador: cada um mostra a data e o custo.</p>
+          </FaqItem>
+          <FaqItem question="Pagar mais reduz os juros?" id="pagar-mais-reduz-os-juros">
+            <p>Sim, porque reduz o saldo sobre o qual os juros dos meses seguintes incidem. O Código de Defesa do Consumidor assegura a liquidação antecipada, total ou parcial, com redução proporcional dos juros (art. 52, §2º).</p>
+          </FaqItem>
+          <FaqItem question="Qual dívida deve ser paga primeiro?" id="qual-divida-deve-ser-paga-primeiro">
+            <p>O simulador mostra o efeito de cada ordem; a decisão é sua. O guia <Link href="/organizacao-financeira/qual-divida-pagar-primeiro/">qual dívida pagar primeiro</Link> compara os métodos.</p>
+          </FaqItem>
+          <FaqItem question="Posso usar com cartão de crédito?" id="posso-usar-com-cartao-de-credito">
+            <p>Com a fatura já parcelada, sim. No rotativo, não: {ROTATIVO_DURATION.summary} Use a <Link href="/calculadoras/juros-cartao-credito/">Calculadora de Juros do Cartão</Link> para a próxima fatura.</p>
+          </FaqItem>
+          <FaqItem question="Posso usar com financiamento?" id="posso-usar-com-financiamento">
+            <p>Sim, na Price ou na SAC. O simulador não inclui seguros e tarifas do financiamento a menos que você informe o valor mensal em “mais detalhes”.</p>
+          </FaqItem>
+          <FaqItem question="O resultado é exato?" id="o-resultado-e-exato">
+            <p>Não. É uma simulação com taxa constante, pagamentos em dia e sem novas compras. O saldo oficial é sempre o da instituição.</p>
+          </FaqItem>
+          <FaqItem question="E se a taxa mudar ou eu renegociar?" id="e-se-a-taxa-mudar-ou-eu-renegociar">
+            <p>A rota muda. Refaça a simulação com os novos números; para uma proposta de acordo, a <Link href="/calculadoras/renegociacao-de-dividas/">calculadora de renegociação</Link> soma o que ela custa.</p>
+          </FaqItem>
+        </FaqAccordion>
 
         <h2 id="como-simulamos">Como simulamos</h2>
         <ul>

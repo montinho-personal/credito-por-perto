@@ -20,6 +20,7 @@ import {
   ROTATIVO_DURATION,
   formatIsoDate,
 } from "@/lib/calculators/credit-card-rules";
+import { FaqAccordion, FaqItem } from "@/components/content/FaqAccordion";
 
 /**
  * Página da calculadora de juros do cartão.
@@ -229,31 +230,33 @@ export default async function JurosCartaoPage() {
         </p>
 
         <h2 id="perguntas-frequentes">Perguntas frequentes</h2>
-
-        <h3>Pagar o mínimo é entrar no rotativo?</h3>
-        <p>
-          Sim: o saldo que sobra entre o mínimo e o total é financiado pelo rotativo até a próxima fatura. Pagar
-          abaixo do mínimo já é outra situação, com encargos de atraso.
-        </p>
-
-        <h3>A taxa anual que a calculadora mostra é o CET?</h3>
-        <p>
-          Não. É a taxa mensal convertida para anual por juros compostos — (1 + mensal)<sup>12</sup> − 1 —, só
-          para dar a dimensão. O CET inclui tributos, tarifas e outros encargos e é informado pela instituição.
-        </p>
-
-        <h3>A calculadora mostra o valor da próxima fatura?</h3>
-        <p>
-          Não. Ela estima o saldo relacionado ao valor que ficou em aberto. A próxima fatura também traz compras
-          novas, parcelas de compras anteriores, anuidade, tarifas e IOF, que a calculadora não conhece.
-        </p>
-
-        <h3>A dívida do cartão pode dobrar?</h3>
-        <p>
-          Nas dívidas alcançadas pela regra, os juros e encargos financeiros não podem passar de 100% do valor
-          original — ou seja, somados ao valor original, chegam no máximo ao dobro. O IOF e as compras novas
-          ficam fora dessa conta, e a regra vale desde {formatIsoDate(INTEREST_CAP.effectiveFrom)}.
-        </p>
+        <FaqAccordion>
+          <FaqItem question="Pagar o mínimo é entrar no rotativo?" id="pagar-o-minimo-e-entrar-no-rotativo">
+            <p>
+              Sim: o saldo que sobra entre o mínimo e o total é financiado pelo rotativo até a próxima fatura. Pagar
+              abaixo do mínimo já é outra situação, com encargos de atraso.
+            </p>
+          </FaqItem>
+          <FaqItem question="A taxa anual que a calculadora mostra é o CET?" id="a-taxa-anual-que-a-calculadora-mostra-e-o-cet">
+            <p>
+              Não. É a taxa mensal convertida para anual por juros compostos — (1 + mensal)<sup>12</sup> − 1 —, só
+              para dar a dimensão. O CET inclui tributos, tarifas e outros encargos e é informado pela instituição.
+            </p>
+          </FaqItem>
+          <FaqItem question="A calculadora mostra o valor da próxima fatura?" id="a-calculadora-mostra-o-valor-da-proxima-fatura">
+            <p>
+              Não. Ela estima o saldo relacionado ao valor que ficou em aberto. A próxima fatura também traz compras
+              novas, parcelas de compras anteriores, anuidade, tarifas e IOF, que a calculadora não conhece.
+            </p>
+          </FaqItem>
+          <FaqItem question="A dívida do cartão pode dobrar?" id="a-divida-do-cartao-pode-dobrar">
+            <p>
+              Nas dívidas alcançadas pela regra, os juros e encargos financeiros não podem passar de 100% do valor
+              original — ou seja, somados ao valor original, chegam no máximo ao dobro. O IOF e as compras novas
+              ficam fora dessa conta, e a regra vale desde {formatIsoDate(INTEREST_CAP.effectiveFrom)}.
+            </p>
+          </FaqItem>
+        </FaqAccordion>
 
         <h2 id="como-calculamos">Como calculamos</h2>
         <ol>

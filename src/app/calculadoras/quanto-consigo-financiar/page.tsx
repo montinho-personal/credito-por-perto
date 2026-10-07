@@ -12,6 +12,7 @@ import {
 } from "@/components/calculators/AffordabilityCalculator";
 import { ScenarioTable } from "@/components/calculators/HomeFinancingSimulator";
 import { calculateAffordability, type AffordabilityInput } from "@/lib/calculators/affordability";
+import { FaqAccordion, FaqItem } from "@/components/content/FaqAccordion";
 
 /**
  * Página "Quanto consigo financiar?".
@@ -294,64 +295,75 @@ export default function QuantoConsigoFinanciarPage() {
         </p>
 
         <h2 id="perguntas-frequentes">Perguntas frequentes</h2>
-        <h3>Quanto consigo financiar com renda de 5 mil?</h3>
-        <p>
-          Depende da parte da renda que vai para a parcela, da taxa e do prazo.
-          {income5
-            ? ` Com parcela de 30% da renda bruta (R$ 1.500), taxa hipotética de 1% ao mês e ${INCOME_MONTHS} meses, são ${brlRound(income5.r.price.financedCents)} na Price e ${brlRound(income5.r.sac.financedCents)} na SAC.`
-            : ""}{" "}
-          Com a taxa da sua proposta, o número muda: informe-a na calculadora.
-        </p>
-        <h3>Com uma renda de R$ 20 mil, quanto posso financiar?</h3>
-        <p>
-          {income20
-            ? `Com as mesmas premissas (parcela de R$ 6.000, 1% ao mês hipotético, ${INCOME_MONTHS} meses), ${brlRound(income20.r.price.financedCents)} na Price e ${brlRound(income20.r.sac.financedCents)} na SAC.`
-            : "Depende da taxa e do prazo."}{" "}
-          A aprovação considera também histórico de crédito, outras dívidas, idade e a política da instituição.
-        </p>
-        <h3>Quanto consigo financiar com R$ 3.000 por mês?</h3>
-        <p>
-          Depende da taxa e do prazo.
-          {three12 && three08
-            ? ` Em 360 meses na Price, fica entre ${brlRound(three12.price.financedCents)} (a 1,2% ao mês) e ${brlRound(three08.price.financedCents)} (a 0,8% ao mês), com taxas hipotéticas.`
-            : ""}{" "}
-          Informe a sua taxa na calculadora para ver o seu número.
-        </p>
-        <h3>Quanto consigo financiar em 30 anos?</h3>
-        <p>
-          Trinta anos são 360 meses.
-          {t360 ? ` Com R$ 2.000 por mês e taxa hipotética de 1% ao mês, na Price, são ${brl(t360.price.financedCents)} financiados e ${brl(t360.price.totalPaidCents)} pagos no total.` : ""}{" "}
-          Prazo longo aumenta o valor e, mais ainda, os juros.
-        </p>
-        <h3>Como calcular valor financiado pela parcela?</h3>
-        <p>
-          Some o valor presente de todas as parcelas, cada uma descontada pela taxa até o mês em que vence. A fórmula da Price
-          faz essa soma de uma vez. Pela fórmula da metodologia do Banco Central,
-          {bc ? ` 24 prestações de R$ 935 a 1,99% ao mês correspondem a ${brl(bc.price.financedCents)} financiados` : " o resultado sai ao centavo"}
-          ; a calculadora reproduz esse número.
-        </p>
-        <h3>Quanto consigo financiar com minha renda?</h3>
-        <p>
-          Esta calculadora começa pela parcela, não pela renda. Informando a renda, ela mostra quanto da renda a parcela
-          representa, como relação matemática. Cada instituição usa a própria política de comprometimento de renda. O guia{" "}
-          <Link href="/organizacao-financeira/quanto-da-renda-comprometer-financiamento-imovel/">quanto da renda comprometer com o financiamento</Link>{" "}
-          explica os critérios, e a ferramenta <Link href="/calculadoras/parcela-no-orcamento/">Parcela no orçamento</Link> testa se a
-          parcela cabe no seu mês.
-        </p>
-        <h3>A entrada conta no valor financiado?</h3>
-        <p>
-          Não. O valor financiado é só o que as parcelas pagam. A entrada é paga à parte e soma ao valor do bem.
-        </p>
-        <h3>O banco aprova exatamente esse valor?</h3>
-        <p>
-          Não necessariamente. O resultado é uma estimativa matemática. O valor efetivamente aprovado depende da análise e das
-          condições da instituição financeira, que também podem incluir IOF, seguros e tarifas.
-        </p>
-        <h3>Prazo maior significa pagar mais juros?</h3>
-        <p>
-          Com a mesma parcela e a mesma taxa, sim. Cada mês a mais é mais uma parcela, e o total pago sobe junto com o valor
-          financiável.
-        </p>
+        <FaqAccordion>
+          <FaqItem question="Quanto consigo financiar com renda de 5 mil?" id="quanto-consigo-financiar-com-renda-de-5-mil">
+            <p>
+              Depende da parte da renda que vai para a parcela, da taxa e do prazo.
+              {income5
+                ? ` Com parcela de 30% da renda bruta (R$ 1.500), taxa hipotética de 1% ao mês e ${INCOME_MONTHS} meses, são ${brlRound(income5.r.price.financedCents)} na Price e ${brlRound(income5.r.sac.financedCents)} na SAC.`
+                : ""}{" "}
+              Com a taxa da sua proposta, o número muda: informe-a na calculadora.
+            </p>
+          </FaqItem>
+          <FaqItem question="Com uma renda de R$ 20 mil, quanto posso financiar?" id="com-uma-renda-de-r-20-mil-quanto-posso-financiar">
+            <p>
+              {income20
+                ? `Com as mesmas premissas (parcela de R$ 6.000, 1% ao mês hipotético, ${INCOME_MONTHS} meses), ${brlRound(income20.r.price.financedCents)} na Price e ${brlRound(income20.r.sac.financedCents)} na SAC.`
+                : "Depende da taxa e do prazo."}{" "}
+              A aprovação considera também histórico de crédito, outras dívidas, idade e a política da instituição.
+            </p>
+          </FaqItem>
+          <FaqItem question="Quanto consigo financiar com R$ 3.000 por mês?" id="quanto-consigo-financiar-com-r-3000-por-mes">
+            <p>
+              Depende da taxa e do prazo.
+              {three12 && three08
+                ? ` Em 360 meses na Price, fica entre ${brlRound(three12.price.financedCents)} (a 1,2% ao mês) e ${brlRound(three08.price.financedCents)} (a 0,8% ao mês), com taxas hipotéticas.`
+                : ""}{" "}
+              Informe a sua taxa na calculadora para ver o seu número.
+            </p>
+          </FaqItem>
+          <FaqItem question="Quanto consigo financiar em 30 anos?" id="quanto-consigo-financiar-em-30-anos">
+            <p>
+              Trinta anos são 360 meses.
+              {t360 ? ` Com R$ 2.000 por mês e taxa hipotética de 1% ao mês, na Price, são ${brl(t360.price.financedCents)} financiados e ${brl(t360.price.totalPaidCents)} pagos no total.` : ""}{" "}
+              Prazo longo aumenta o valor e, mais ainda, os juros.
+            </p>
+          </FaqItem>
+          <FaqItem question="Como calcular valor financiado pela parcela?" id="como-calcular-valor-financiado-pela-parcela">
+            <p>
+              Some o valor presente de todas as parcelas, cada uma descontada pela taxa até o mês em que vence. A fórmula da Price
+              faz essa soma de uma vez. Pela fórmula da metodologia do Banco Central,
+              {bc ? ` 24 prestações de R$ 935 a 1,99% ao mês correspondem a ${brl(bc.price.financedCents)} financiados` : " o resultado sai ao centavo"}
+              ; a calculadora reproduz esse número.
+            </p>
+          </FaqItem>
+          <FaqItem question="Quanto consigo financiar com minha renda?" id="quanto-consigo-financiar-com-minha-renda">
+            <p>
+              Esta calculadora começa pela parcela, não pela renda. Informando a renda, ela mostra quanto da renda a parcela
+              representa, como relação matemática. Cada instituição usa a própria política de comprometimento de renda. O guia{" "}
+              <Link href="/organizacao-financeira/quanto-da-renda-comprometer-financiamento-imovel/">quanto da renda comprometer com o financiamento</Link>{" "}
+              explica os critérios, e a ferramenta <Link href="/calculadoras/parcela-no-orcamento/">Parcela no orçamento</Link> testa se a
+              parcela cabe no seu mês.
+            </p>
+          </FaqItem>
+          <FaqItem question="A entrada conta no valor financiado?" id="a-entrada-conta-no-valor-financiado">
+            <p>
+              Não. O valor financiado é só o que as parcelas pagam. A entrada é paga à parte e soma ao valor do bem.
+            </p>
+          </FaqItem>
+          <FaqItem question="O banco aprova exatamente esse valor?" id="o-banco-aprova-exatamente-esse-valor">
+            <p>
+              Não necessariamente. O resultado é uma estimativa matemática. O valor efetivamente aprovado depende da análise e das
+              condições da instituição financeira, que também podem incluir IOF, seguros e tarifas.
+            </p>
+          </FaqItem>
+          <FaqItem question="Prazo maior significa pagar mais juros?" id="prazo-maior-significa-pagar-mais-juros">
+            <p>
+              Com a mesma parcela e a mesma taxa, sim. Cada mês a mais é mais uma parcela, e o total pago sobe junto com o valor
+              financiável.
+            </p>
+          </FaqItem>
+        </FaqAccordion>
 
         <h2 id="como-calculamos">Como calculamos</h2>
         <ul>

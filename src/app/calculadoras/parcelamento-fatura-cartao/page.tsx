@@ -18,6 +18,7 @@ import {
   PORTABILITY,
   ROTATIVO_DURATION,
 } from "@/lib/calculators/credit-card-rules";
+import { FaqAccordion, FaqItem } from "@/components/content/FaqAccordion";
 
 /**
  * Página do simulador de parcelamento da fatura do cartão.
@@ -230,25 +231,27 @@ export default function ParcelamentoFaturaPage() {
         </p>
 
         <h2 id="perguntas-frequentes">Perguntas frequentes</h2>
-
-        <h3>Como calcular o parcelamento da fatura?</h3>
-        <p>
-          Total = parcela × número de parcelas (+ entrada). Custo adicional = total − valor da dívida. Com parcelas
-          iguais e uma taxa mensal i, a parcela é valor × i ÷ [1 − (1 + i)<sup>−n</sup>]; com taxa zero, valor ÷ n.
-        </p>
-
-        <h3>Como descobrir os juros pelas parcelas?</h3>
-        <p>
-          Informe o valor parcelado, o número de parcelas e o valor de cada uma: o simulador calcula a taxa mensal
-          implícita nas parcelas. Se a proposta tiver IOF ou tarifas embutidos, essa taxa sai maior que a taxa de juros
-          do contrato — por isso ela é chamada de aproximada.
-        </p>
-
-        <h3>A taxa implícita é o CET?</h3>
-        <p>
-          Não. O CET é informado pela instituição e considera todos os fluxos da operação. O simulador nunca calcula nem
-          estima CET: mostra o que você informar.
-        </p>
+        <FaqAccordion>
+          <FaqItem question="Como calcular o parcelamento da fatura?" id="como-calcular-o-parcelamento-da-fatura">
+            <p>
+              Total = parcela × número de parcelas (+ entrada). Custo adicional = total − valor da dívida. Com parcelas
+              iguais e uma taxa mensal i, a parcela é valor × i ÷ [1 − (1 + i)<sup>−n</sup>]; com taxa zero, valor ÷ n.
+            </p>
+          </FaqItem>
+          <FaqItem question="Como descobrir os juros pelas parcelas?" id="como-descobrir-os-juros-pelas-parcelas">
+            <p>
+              Informe o valor parcelado, o número de parcelas e o valor de cada uma: o simulador calcula a taxa mensal
+              implícita nas parcelas. Se a proposta tiver IOF ou tarifas embutidos, essa taxa sai maior que a taxa de juros
+              do contrato — por isso ela é chamada de aproximada.
+            </p>
+          </FaqItem>
+          <FaqItem question="A taxa implícita é o CET?" id="a-taxa-implicita-e-o-cet">
+            <p>
+              Não. O CET é informado pela instituição e considera todos os fluxos da operação. O simulador nunca calcula nem
+              estima CET: mostra o que você informar.
+            </p>
+          </FaqItem>
+        </FaqAccordion>
 
         <h2 id="como-calculamos">Como calculamos</h2>
         <ul>
