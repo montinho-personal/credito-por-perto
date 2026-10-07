@@ -24,9 +24,9 @@
     {
       "organization": "Prefeitura de Araçariguama",
       "documentTitle": "Banco do Povo Paulista",
-      "sourceLocation": "https://www.aracariguama.sp.gov.br/banco-do-povo-paulista-",
-      "checkedAt": "2026-09-11",
-      "extractedFact": "O Banco do Povo Paulista de Araçariguama é atendido no prédio da Prefeitura, na Rua São João, 228 — Centro, de segunda a sexta-feira das 9h às 16h. O programa concede crédito de até R$ 15 mil para pessoa física e até R$ 21 mil para pessoa jurídica.",
+      "sourceLocation": "https://www.aracariguama.sp.gov.br/portal/noticias/0/3/4614/unidade-aracariguama-do-banco-do-povo-paulista-bpp-esta-com-novo-numero-de-whatsapp-para-atendimento-ao-publico/",
+      "checkedAt": "2026-10-07",
+      "extractedFact": "O Banco do Povo Paulista de Araçariguama é atendido no prédio da Prefeitura, na Rua São João, 228 — Centro, de segunda a sexta-feira das 9h às 16h. O programa concede crédito de até R$ 15 mil para pessoa física e até R$ 21 mil para pessoa jurídica. (Fonte: notícia da Prefeitura sobre o novo WhatsApp da unidade; a página de serviço do Banco do Povo, atualizada em 05/05/2026, traz juros de 0,35% ao mês, prazos de 12, 24 ou 36 meses, avalista, ausência de restrição no SCPC, Serasa e Cadin e pedido no município onde está o negócio.)",
       "relevanceToReader": "O microcrédito público funciona dentro da Prefeitura, com faixas distintas para pessoa física e jurídica."
     },
     {
@@ -57,8 +57,8 @@
       "organization": "Portal de Serviços do Estado de São Paulo",
       "documentTitle": "Banco do Povo Paulista — condições do financiamento",
       "sourceLocation": "https://servicos.sp.gov.br/fcarta/7113B9A5-BF37-4CB9-A48F-4DD7CF4ED8F3",
-      "checkedAt": "2026-09-11",
-      "extractedFact": "A carta de serviços estadual informa juros a partir de 0,35% ao mês e prazo de pagamento de até 36 meses. Requisitos mínimos: desenvolver atividade produtiva no município e não possuir restrições cadastrais no Serasa e/ou no ADIN Estadual.",
+      "checkedAt": "2026-10-07",
+      "extractedFact": "A carta de serviços estadual (atualizada pelo Estado em 31/07/2026) informa crédito de R$ 200,00 a R$ 21.000,00, juros a partir de 0,35% ao mês, prazo de até 36 meses e carência de até 3 meses conforme análise; exige qualificação empreendedora gratuita e garantia (avalista para o informal, Fundo de Aval do Estado para o formal). A versão consultada em 07/10/2026 não traz o requisito de ausência de restrição no Serasa/ADIN nem o de atividade no município, registrados na leitura anterior; os dois aparecem em páginas de prefeituras (Araçariguama, Itapecerica da Serra).",
       "relevanceToReader": "Prazo e a exigência de não ter restrição cadastral, que define quem se enquadra antes da viagem."
     }
   ],
@@ -100,7 +100,7 @@
     "O WhatsApp do Banco do Povo mudou para (11) 5332-2195. O número anterior segue circulando, e canal público desatualizado é justamente o que facilita quem se passa pelo serviço.",
     "Procon e Banco do Povo ficam em endereços diferentes: o Procon na Rua Santa Cruz, 217, e o Banco do Povo dentro da Prefeitura, na Rua São João, 228.",
     "O prédio da Prefeitura fecha das 12h às 13h, e o Banco do Povo atende das 9h às 16h — janela mais curta que o expediente municipal.",
-    "O Banco do Povo exige ausência de restrição cadastral no Serasa e/ou no ADIN Estadual: oferta de microcrédito público 'para negativado' não corresponde ao programa."
+    "Prefeituras que operam o Banco do Povo exigem nome sem restrição cadastral (Araçariguama cita SCPC, Serasa e Cadin): oferta de microcrédito público 'para negativado' não corresponde ao programa."
   ],
   "decisionImpact": [
     "Confirmar o número oficial antes de mandar documento evita entregar dados a quem se passa pelo programa",

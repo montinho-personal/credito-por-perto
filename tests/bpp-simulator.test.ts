@@ -50,6 +50,17 @@ describe("regras: cada número tem fonte e data", () => {
     expect(BPP_RULES.amount.level).toBe("estadual");
   });
 
+  it("releitura de 07/10/2026: carência estadual, garantia e capacitação estaduais, restrição só por prefeitura", () => {
+    expect(BPP_RULES.grace.maxMonths).toBe(3);
+    expect(BPP_RULES.grace.level).toBe("estadual");
+    const req = Object.fromEntries(BPP_RULES.requirements.map((r) => [r.id, r]));
+    expect(req["garantia"]!.level).toBe("estadual");
+    expect(req["capacitacao"]!.level).toBe("estadual");
+    expect(req["sem-restricao"]!.level).toBe("municipal");
+    expect(req["atividade-no-municipio"]!.level).toBe("municipal");
+    for (const r of BPP_RULES.requirements) expect(r.text).not.toMatch(/ADIN/);
+  });
+
   it("cenários de taxa só usam taxas com fonte oficial", () => {
     expect(RATE_SCENARIOS.map((s) => s.monthlyPercent)).toEqual([0.35, 1]);
   });
@@ -240,6 +251,9 @@ describe("diagnóstico: nunca aprovação", () => {
   it("dívida pessoal ou despesa da casa → possível impedimento", () => {
     expect(diagnose({ ...all, purpose: "divida-pessoal" }).verdict).toBe("possivel-impedimento");
     expect(diagnose({ ...all, purpose: "consumo" }).verdict).toBe("possivel-impedimento");
+  });
+  it("sem negócio em funcionamento → precisa verificar (a carta inclui quem quer iniciar)", () => {
+    expect(diagnose({ ...all, hasActivity: "nao" }).verdict).toBe("precisa-verificar");
   });
   it("sem capacitação ou sem saber → precisa verificar", () => {
     expect(diagnose({ ...all, training: "nao" }).verdict).toBe("precisa-verificar");

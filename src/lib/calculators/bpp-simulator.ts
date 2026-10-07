@@ -380,7 +380,7 @@ export function diagnose(input: DiagnosisInput): { verdict: Verdict; items: Diag
 
   // Atividade produtiva
   if (input.hasActivity === "nao") {
-    items.push({ id: "atividade", status: "impedimento", text: "O programa pede atividade produtiva, formal ou informal. Sem negócio em funcionamento, o caminho costuma começar pela formalização e pela capacitação." });
+    items.push({ id: "atividade", status: "verificar", text: "A carta estadual inclui quem quer iniciar um negócio, mas o crédito é para atividade produtiva. Sem negócio em funcionamento, confirme no atendimento se o seu projeto é aceito; a capacitação e o plano de negócio vêm antes." });
   } else if (unknown(input.hasActivity)) {
     items.push({ id: "atividade", status: "verificar", text: "Confirme se a sua atividade é considerada produtiva pelo programa." });
   } else {
@@ -398,7 +398,7 @@ export function diagnose(input: DiagnosisInput): { verdict: Verdict; items: Diag
 
   // Restrição cadastral
   if (input.nameClear === "nao") {
-    items.push({ id: "restricao", status: "impedimento", text: "A carta de serviços estadual exige não ter restrição cadastral no Serasa e/ou no ADIN Estadual, o cadastro estadual de inadimplentes. Com restrição, resolver vem antes do pedido." });
+    items.push({ id: "restricao", status: "impedimento", text: "Prefeituras que operam o programa exigem não ter restrição cadastral (Araçariguama cita SCPC, Serasa e Cadin). Com restrição, resolver vem antes do pedido." });
   } else if (unknown(input.nameClear)) {
     items.push({ id: "restricao", status: "verificar", text: "Consulte o seu nome antes de ir: a consulta é gratuita e restrição impede o pedido." });
   } else {
@@ -409,7 +409,7 @@ export function diagnose(input: DiagnosisInput): { verdict: Verdict; items: Diag
   if (input.training === "sim") {
     items.push({ id: "capacitacao", status: "ok", text: "Capacitação feita." });
   } else {
-    items.push({ id: "capacitacao", status: "verificar", text: "O programa pede uma capacitação gratuita antes do pedido. Pergunte no atendimento qual curso vale." });
+    items.push({ id: "capacitacao", status: "verificar", text: "A qualificação empreendedora gratuita é obrigatória antes do pedido, pelo Qualifica SP ou pelo Sebrae – Banco do Povo." });
   }
 
   // Tempo de atividade (exigência municipal)

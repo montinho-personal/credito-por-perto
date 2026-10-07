@@ -133,16 +133,16 @@ export default function SimuladorBancoDoPovoPage() {
         <h2 id="quanto-libera">Quanto o Banco do Povo pode liberar?</h2>
         <p>
           A carta de serviços do Governo do Estado informa crédito de <strong>{brl0(BPP_RULES.amount.minCents)}</strong> a{" "}
-          <strong>{brl0(BPP_RULES.amount.maxCents)}</strong>. Páginas oficiais de prefeituras que operam o programa detalham até{" "}
-          {brl0(BPP_RULES.profileCap.pessoaFisicaCents)} para pessoa física e até {brl0(BPP_RULES.profileCap.pessoaJuridicaCents)}{" "}
-          para pessoa jurídica. {BPP_RULES.profileCap.divergence} O valor de cada pedido depende da análise.
+          <strong>{brl0(BPP_RULES.amount.maxCents)}</strong>. {BPP_RULES.profileCap.text} {BPP_RULES.profileCap.divergence} O valor de
+          cada pedido depende da análise.
         </p>
 
         <h2 id="taxa">Qual é a taxa de juros do Banco do Povo?</h2>
         <p>
           A carta de serviços estadual informa juros <strong>a partir de {pct(low)}% ao mês</strong>. “A partir de” não é a taxa de
           todo pedido: páginas oficiais de prefeituras citam de {pct(low)}% a {pct(high)}% ao mês, conforme a categoria do
-          empreendedor. Por isso o simulador trabalha com os dois cenários e deixa você testar outra taxa.
+          empreendedor. {BPP_RULES.rate.divergence} Por isso o simulador trabalha com os dois cenários e deixa você testar outra
+          taxa.
         </p>
         {table.length > 0 ? (
           <ScenarioTable
@@ -170,15 +170,15 @@ export default function SimuladorBancoDoPovoPage() {
           ))}
         </ul>
         <p>
-          Com restrição cadastral no Serasa e/ou no ADIN Estadual, o pedido esbarra no requisito da carta de serviços. O
-          caminho, nesse caso, começa em{" "}
+          Com restrição cadastral, o pedido esbarra na exigência publicada pelas prefeituras. O caminho, nesse caso, começa
+          em{" "}
           <Link href="/credito-seguro/consultar-nome-nos-biros-de-credito/">consultar e resolver a restrição</Link>.
         </p>
 
         <h2 id="mei">Banco do Povo para MEI</h2>
         <p>
           MEI entra no grupo de quem tem CNPJ, com o teto de {brl0(BPP_RULES.profileCap.pessoaJuridicaCents)} citado pelas
-          prefeituras. A documentação que o pequeno negócio costuma reunir está no{" "}
+          prefeituras. Como empreendedor formal, a garantia pedida pela carta estadual é o Fundo de Aval do Estado. A documentação que o pequeno negócio costuma reunir está no{" "}
           <Link href="/emprestimos/emprestimo-para-mei/">guia do empréstimo para MEI</Link>, que também compara o Banco do Povo
           com o crédito de bancos e cooperativas.
         </p>
@@ -186,7 +186,8 @@ export default function SimuladorBancoDoPovoPage() {
         <h2 id="autonomo">Banco do Povo para autônomo</h2>
         <p>
           O programa atende também quem trabalha por conta própria sem CNPJ, desde que a atividade seja produtiva. Para esse
-          perfil, prefeituras citam até {brl0(BPP_RULES.profileCap.pessoaFisicaCents)}. Como comprovar a renda sem holerite está no{" "}
+          perfil, prefeituras citam até {brl0(BPP_RULES.profileCap.pessoaFisicaCents)}, e a garantia pedida pela carta
+          estadual é um avalista. Como comprovar a renda sem holerite está no{" "}
           <Link href="/emprestimos/emprestimo-para-autonomo/">guia do autônomo</Link>.
         </p>
 
@@ -203,8 +204,9 @@ export default function SimuladorBancoDoPovoPage() {
 
         <h2 id="custos">Quais custos podem existir?</h2>
         <p>
-          As fontes oficiais que conferimos informam juros, valores e prazo, mas não publicam a lista de tarifas, taxas ou
-          garantias do contrato. O simulador por isso não acrescenta custo nenhum por conta própria e só calcula o{" "}
+          {BPP_RULES.process.free} A carta exige garantia (avalista ou Fundo de Aval do Estado), mas não publica o custo do fundo
+          nem a lista de encargos do contrato. O simulador por isso não acrescenta custo nenhum por conta própria e só calcula
+          o{" "}
           <Link href="/juros-e-cet/o-que-e-cet/">CET</Link> quando você informa todos os custos que o atendimento passar. Pergunte
           por escrito, antes de assinar:
         </p>
@@ -216,22 +218,43 @@ export default function SimuladorBancoDoPovoPage() {
 
         <h2 id="documentos">Quais documentos podem ser necessários?</h2>
         <p>
-          A relação de documentos é passada no atendimento e pode mudar de cidade para cidade; não há uma lista estadual
-          publicada nas fontes que conferimos. Pergunte antes de ir e separe os documentos pessoais e, se houver CNPJ, os do
-          negócio. Algumas prefeituras citam outras exigências, como tempo mínimo de atividade: confirme a regra da sua cidade. O{" "}
-          <Link href="/emprestimos/emprestimo-para-mei/">guia do MEI</Link> ajuda a montar a pasta.
+          A carta de serviços estadual (<SourceLinks sources={BPP_RULES.documents.sources} />) lista, para todo pedido:
+        </p>
+        <ul>
+          {BPP_RULES.documents.everyone.map((d) => (
+            <li key={d}>{d}</li>
+          ))}
+        </ul>
+        <p>Para empreendedor formal, também:</p>
+        <ul>
+          {BPP_RULES.documents.formal.map((d) => (
+            <li key={d}>{d}</li>
+          ))}
+        </ul>
+        <p>
+          A unidade do seu município pode pedir mais, e algumas prefeituras citam outras exigências, como tempo mínimo de
+          atividade: confirme antes de ir. O <Link href="/emprestimos/emprestimo-para-mei/">guia do MEI</Link> ajuda a montar a
+          pasta.
         </p>
 
         <h2 id="como-solicitar">Como solicitar o Banco do Povo?</h2>
         <ol>
           <li>Confira se o seu nome está sem restrição.</li>
-          <li>Faça a capacitação gratuita indicada pelo programa.</li>
+          <li>Faça a qualificação empreendedora gratuita, pelo Qualifica SP ou pelo Sebrae – Banco do Povo.</li>
+          <li>Separe a garantia: avalista, para quem é informal, ou o Fundo de Aval do Estado, para quem tem CNPJ.</li>
           <li>
             Procure o atendimento do município onde o negócio funciona, com os documentos. O passo a passo está em{" "}
             <Link href="/emprestimos/microcredito-produtivo-e-banco-do-povo/">Banco do Povo Paulista: como funciona</Link>.
           </li>
           <li>Peça a simulação oficial, com a taxa e os custos por escrito, e compare com a estimativa daqui.</li>
         </ol>
+        <p>
+          {BPP_RULES.process.timing} O pedido também pode ser feito pela{" "}
+          <a href={BPP_RULES.process.digitalUrl} target="_blank" rel="noopener noreferrer">
+            plataforma digital do programa
+          </a>
+          .
+        </p>
         <p>
           Ninguém de fora do atendimento oficial pode cobrar para aprovar o seu pedido. Perfil de &ldquo;Banco do Povo&rdquo; no
           WhatsApp que pede depósito antecipado ou pagamento a intermediário aplica o{" "}
@@ -274,8 +297,8 @@ export default function SimuladorBancoDoPovoPage() {
         <p>O prazo divulgado pelo Estado é de até {maxMonths} meses. Simulações de 48 parcelas não se aplicam ao programa.</p>
         <h3>Negativado consegue Banco do Povo?</h3>
         <p>
-          A carta de serviços estadual exige não ter restrição cadastral no Serasa e/ou no ADIN Estadual. Com o nome negativado, o
-          pedido esbarra nesse requisito: consulte o seu nome antes de ir.
+          Páginas oficiais de prefeituras que operam o programa exigem não ter restrição cadastral; Araçariguama cita SCPC,
+          Serasa e Cadin. Com o nome negativado, o pedido esbarra nessa exigência: consulte o seu nome antes de ir.
         </p>
         <h3>O resultado inclui todos os custos?</h3>
         <p>

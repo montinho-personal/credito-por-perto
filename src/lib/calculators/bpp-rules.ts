@@ -16,10 +16,14 @@
  *   material de terceiros). NÃO entra em conta nenhuma; aparece só na lista de
  *   pendências da página, para a pessoa perguntar no balcão.
  *
- * VERIFICAÇÃO. Os sites do Governo do Estado (*.sp.gov.br) não abrem no
- * ambiente de desenvolvimento. As fontes abaixo foram lidas e datadas na
- * apuração dos guias locais (dossiês em content/local-dossiers/), entre
- * 19/08 e 11/09/2026. `audit:sources` avisa quando `BPP_RULES.verifiedAt`
+ * VERIFICAÇÃO. Releitura direta das fontes em 07/10/2026. A carta de
+ * serviços estadual (atualizada pelo Estado em 31/07/2026) confirmou valor,
+ * juros, prazo e carência, e passou a trazer garantia, documentos,
+ * capacitação e prazos de análise. Ela NÃO traz mais o requisito "sem
+ * restrição no Serasa/ADIN" nem o de atividade no município, registrados na
+ * leitura de 11/09/2026: os dois agora se apoiam em páginas de prefeituras.
+ * Fonte que não abriu na releitura (Cloudflare, página fora do ar) mantém a
+ * data da última leitura. `audit:sources` avisa quando `BPP_RULES.verifiedAt`
  * envelhece.
  *
  * MÉTODO DE CÁLCULO. Nenhuma fonte oficial consultada publica o sistema de
@@ -49,43 +53,43 @@ export const SOURCES = {
     organization: "Governo do Estado de São Paulo",
     title: "Carta de Serviços — Banco do Povo Paulista",
     url: "https://servicos.sp.gov.br/fcarta/7113B9A5-BF37-4CB9-A48F-4DD7CF4ED8F3",
-    checkedAt: "11/09/2026",
+    checkedAt: "07/10/2026",
   },
   secretaria: {
     organization: "Secretaria de Desenvolvimento Econômico do Estado de São Paulo",
     title: "Programa Banco do Povo",
     url: "https://www.desenvolvimentoeconomico.sp.gov.br/DesenvolvimentoEconomico/institucional/Programas/banco_do_povo",
-    checkedAt: "03/09/2026",
+    checkedAt: "07/10/2026",
   },
   varzeaPaulista: {
     organization: "Prefeitura de Várzea Paulista",
     title: "Banco do Povo incentiva pequenos negócios com microcrédito acessível",
     url: "https://portal.varzeapaulista.sp.gov.br/2026/02/19/banco-do-povo-incentiva-pequenos-negocios-com-microcredito-acessivel/",
-    checkedAt: "03/09/2026",
+    checkedAt: "07/10/2026",
   },
   cajamar: {
     organization: "Prefeitura de Cajamar",
     title: "Banco do Povo disponibiliza R$ 650.000 para empreendedores cajamarenses",
     url: "https://cajamar.sp.gov.br/noticias/2023/06/12/banco-do-povo-disponibiliza-r-650-000-para-empreendedores-cajamarenses/",
-    checkedAt: "02/09/2026",
+    checkedAt: "07/10/2026",
   },
   aracariguama: {
     organization: "Prefeitura de Araçariguama",
     title: "Banco do Povo Paulista",
     url: "https://www.aracariguama.sp.gov.br/banco-do-povo-paulista-",
-    checkedAt: "11/09/2026",
+    checkedAt: "07/10/2026",
+  },
+  aracariguamaNoticia: {
+    organization: "Prefeitura de Araçariguama",
+    title: "Unidade Araçariguama do Banco do Povo Paulista está com novo número de WhatsApp",
+    url: "https://www.aracariguama.sp.gov.br/portal/noticias/0/3/4614/unidade-aracariguama-do-banco-do-povo-paulista-bpp-esta-com-novo-numero-de-whatsapp-para-atendimento-ao-publico/",
+    checkedAt: "07/10/2026",
   },
   louveira: {
     organization: "Prefeitura de Louveira",
     title: "Banco do Povo",
     url: "https://www.louveira.sp.gov.br/servico/banco-do-povo",
     checkedAt: "02/09/2026",
-  },
-  cosmopolis: {
-    organization: "Prefeitura de Cosmópolis",
-    title: "Cartão Banco do Povo",
-    url: "https://cosmopolis.sp.gov.br/cartao-banco-do-povo/",
-    checkedAt: "03/09/2026",
   },
   vargemGrande: {
     organization: "Prefeitura de Vargem Grande Paulista",
@@ -97,25 +101,13 @@ export const SOURCES = {
     organization: "Prefeitura de Itapecerica da Serra",
     title: "Banco do Povo Paulista — Portal do Empreendedor",
     url: "https://www.itapecerica.sp.gov.br/portal-do-empreendedor/banco-do-povo-paulista",
-    checkedAt: "03/09/2026",
+    checkedAt: "07/10/2026",
   },
   arturNogueira: {
     organization: "Governo do Estado de São Paulo",
     title: "Carta de Serviços — Banco do Povo Paulista em Artur Nogueira",
     url: "https://servicos.sp.gov.br/fcarta/0EF72667-27D6-4B2A-8AE1-48F0B0558A24",
-    checkedAt: "07/09/2026",
-  },
-  itupeva: {
-    organization: "Prefeitura de Itupeva",
-    title: "Banco do Povo Paulista",
-    url: "https://www.itupeva.sp.gov.br/servicos/diversos/banco-do-povo-paulista",
-    checkedAt: "02/09/2026",
-  },
-  votorantim: {
-    organization: "Prefeitura de Votorantim",
-    title: "Banco do Povo e Sebrae de Votorantim têm novo endereço",
-    url: "https://www.votorantim.sp.gov.br/portal/noticias/0/3/13377/banco-do-povo-e-sebrae-de-votorantim-tem-novo-endereco",
-    checkedAt: "11/09/2026",
+    checkedAt: "07/10/2026",
   },
 } as const satisfies Record<string, BppSource>;
 
@@ -134,7 +126,7 @@ export const PROFILE_LABEL: Record<Profile, string> = {
 
 export const BPP_RULES = {
   /** Data da leitura mais recente da fonte estadual. A auditoria usa esta. */
-  verifiedAt: "11/09/2026",
+  verifiedAt: "07/10/2026",
 
   amount: {
     minCents: 200_00,
@@ -145,19 +137,21 @@ export const BPP_RULES = {
   },
 
   /**
-   * Teto por perfil. O estadual é um só (R$ 21 mil); prefeituras detalham
-   * R$ 15 mil para pessoa física. Vargem Grande Paulista publica R$ 20 mil para
-   * pessoa jurídica — divergência declarada na página.
+   * Teto por perfil. O estadual é um só (R$ 21 mil); as prefeituras de
+   * Cajamar e Araçariguama detalham R$ 15 mil para pessoa física e R$ 21 mil
+   * para pessoa jurídica.
+   * Vargem Grande Paulista publica R$ 20 mil para pessoa jurídica —
+   * divergência declarada na página.
    */
   profileCap: {
     pessoaFisicaCents: 15_000_00,
     pessoaJuridicaCents: 21_000_00,
     level: "municipal" as RuleLevel,
     text:
-      "Páginas oficiais de prefeituras que operam o programa detalham até R$ 15 mil para pessoa física e até R$ 21 mil para pessoa jurídica.",
+      "Páginas oficiais das prefeituras de Cajamar e Araçariguama publicam até R$ 15 mil para pessoa física e até R$ 21 mil para pessoa jurídica.",
     divergence:
       "A Prefeitura de Vargem Grande Paulista publica R$ 20 mil como teto do primeiro crédito para pessoa jurídica.",
-    sources: [SOURCES.aracariguama, SOURCES.cajamar, SOURCES.varzeaPaulista, SOURCES.vargemGrande],
+    sources: [SOURCES.cajamar, SOURCES.aracariguamaNoticia, SOURCES.vargemGrande],
   },
 
   rate: {
@@ -171,7 +165,9 @@ export const BPP_RULES = {
     highestLevel: "municipal" as RuleLevel,
     highestText:
       "Páginas oficiais de prefeituras citam juros de 0,35% a 1% ao mês, conforme a categoria do empreendedor.",
-    highestSources: [SOURCES.varzeaPaulista, SOURCES.cajamar, SOURCES.louveira, SOURCES.cosmopolis],
+    highestSources: [SOURCES.cajamar, SOURCES.louveira],
+    divergence:
+      "Notícia da Prefeitura de Várzea Paulista (fev/2026) fala em juros \"de até 0,35% ao mês\" nas três linhas; a carta estadual fala em \"a partir de 0,35%\".",
   },
 
   term: {
@@ -183,37 +179,42 @@ export const BPP_RULES = {
 
   grace: {
     maxMonths: 3,
-    level: "municipal" as RuleLevel,
-    text: "A Prefeitura de Vargem Grande Paulista informa carência de até 90 dias.",
-    sources: [SOURCES.vargemGrande],
+    level: "estadual" as RuleLevel,
+    text: "A carta de serviços estadual informa carência de até 3 meses, conforme a análise.",
+    sources: [SOURCES.cartaEstadual],
   },
 
   /** Requisitos, cada um com o nível de confiança. */
   requirements: [
     {
-      id: "atividade-no-municipio",
-      text: "Desenvolver atividade produtiva no município em que o crédito é pedido.",
+      id: "capacitacao",
+      text: "Concluir a qualificação empreendedora obrigatória e gratuita, pelo Qualifica SP ou pelo Sebrae – Banco do Povo (carga de 12h30), antes do pedido.",
+      level: "estadual" as RuleLevel,
+      sources: [SOURCES.cartaEstadual, SOURCES.secretaria],
+    },
+    {
+      id: "garantia",
+      text: "Apresentar garantia: um avalista (empreendedor informal e produtor rural com CNPJ) ou a contratação do Fundo de Aval do Estado de São Paulo, o FDA (empreendedor formal).",
       level: "estadual" as RuleLevel,
       sources: [SOURCES.cartaEstadual],
+    },
+    {
+      id: "atividade-no-municipio",
+      text: "Pedir o crédito no município onde o negócio funciona.",
+      level: "municipal" as RuleLevel,
+      sources: [SOURCES.aracariguama, SOURCES.itapecerica],
     },
     {
       id: "sem-restricao",
-      text: "Não ter restrição cadastral no Serasa e/ou no ADIN Estadual.",
-      level: "estadual" as RuleLevel,
-      sources: [SOURCES.cartaEstadual],
-    },
-    {
-      id: "capacitacao",
-      text: "Fazer a capacitação gratuita indicada pelo programa antes do pedido.",
-      level: "estadual" as RuleLevel,
-      sources: [SOURCES.secretaria],
+      text: "Não ter restrição cadastral (Araçariguama cita SCPC, Serasa e Cadin).",
+      level: "municipal" as RuleLevel,
+      sources: [SOURCES.aracariguama, SOURCES.itapecerica],
     },
     {
       id: "tempo-de-atividade",
-      text:
-        "Algumas prefeituras exigem tempo mínimo de atividade, como mais de seis meses, e há município que pede tempo de residência.",
+      text: "Algumas prefeituras exigem tempo mínimo de atividade, como mais de seis meses.",
       level: "municipal" as RuleLevel,
-      sources: [SOURCES.itapecerica, SOURCES.arturNogueira],
+      sources: [SOURCES.itapecerica],
     },
   ],
 
@@ -221,15 +222,47 @@ export const BPP_RULES = {
     text:
       "O crédito é produtivo: capital de giro (mercadorias, matéria-prima) e investimento fixo (máquinas, equipamentos, veículos de trabalho). Não serve para despesa pessoal nem para quitar dívida de consumo.",
     level: "estadual" as RuleLevel,
-    sources: [SOURCES.secretaria, SOURCES.itupeva],
+    sources: [SOURCES.cartaEstadual, SOURCES.arturNogueira],
   },
 
   lines: {
     names: ["Empreenda Rápido", "Empreenda Mulher", "Empreenda Afro"],
-    level: "municipal" as RuleLevel,
+    level: "estadual" as RuleLevel,
     text:
-      "Prefeituras que operam o programa citam linhas como Empreenda Rápido, Empreenda Mulher (ou Mulheres Empreendedoras) e Empreenda Afro, e Votorantim cita também a Linha Básica. As condições específicas de cada linha não estão publicadas nas fontes oficiais que pudemos conferir.",
-    sources: [SOURCES.varzeaPaulista, SOURCES.cajamar, SOURCES.votorantim],
+      "A Secretaria de Desenvolvimento Econômico lista as linhas Empreenda Rápido, Empreenda Mulher e Empreenda Afro; prefeituras chamam a segunda também de Mulheres Empreendedoras. A tabela de limites e taxas de cada linha não aparece em texto nas fontes oficiais que conferimos.",
+    sources: [SOURCES.secretaria, SOURCES.varzeaPaulista, SOURCES.cajamar],
+  },
+
+  /** Documentos listados pela carta estadual. A unidade pode pedir mais. */
+  documents: {
+    everyone: [
+      "Documento oficial com foto (CIN, RG, CNH, RNE ou passaporte) e CPF",
+      "Comprovante de endereço e comprovação de renda",
+      "Certidão de casamento, separação ou viuvez, ou comprovante de união estável, quando for o caso",
+      "Documento com foto dos sócios, do avalista e dos cônjuges, se houver",
+      "Certificado da capacitação",
+      "Plano de negócio e orçamento do que será financiado, com os dados do fornecedor",
+      "Extrato de conta corrente",
+    ],
+    formal: [
+      "Inscrição no CNPJ ou CCMEI",
+      "Inscrição Estadual e Municipal, quando houver",
+      "Certificado de regularidade do FGTS (CRF) e Certidão Negativa de Débitos (CND)",
+      "Contrato social ou estatuto registrado, para sociedade empresária",
+      "Declarações do Imposto de Renda dos 5 últimos exercícios, com os recibos",
+    ],
+    level: "estadual" as RuleLevel,
+    sources: [SOURCES.cartaEstadual],
+  },
+
+  /** Custo e prazos do atendimento, pela carta estadual. */
+  process: {
+    free: "O serviço é gratuito: não há cobrança para pedir, participar das etapas ou acessar as linhas. Paga-se só o que o contrato prevê, como os juros.",
+    timing:
+      "Com a documentação completa, a análise e a liberação costumam ocorrer em até 30 dias, conforme o município; pela plataforma digital do programa, em até 10 dias.",
+    digitalUrl: "https://www.bancodopovodigital.sp.gov.br",
+    level: "estadual" as RuleLevel,
+    sources: [SOURCES.cartaEstadual],
   },
 
   /**
@@ -237,13 +270,11 @@ export const BPP_RULES = {
    * a lista para a pessoa perguntar no atendimento.
    */
   toConfirm: [
-    "Taxa por perfil e por linha (fontes secundárias citam taxas diferentes para negócios formais e informais).",
-    "Se há alguma taxa ou tarifa cobrada na liberação ou nas parcelas, e de quanto.",
-    "Se existe Fundo de Aval ou outra garantia, e se ela tem custo.",
-    "Carência: o prazo máximo vigente e se os juros correm durante a carência.",
-    "Prazo máximo por perfil e se a carência conta dentro dele.",
+    "Taxa da sua linha e do seu perfil (a tabela por linha não aparece em texto nas fontes oficiais).",
+    "Se o contrato tem outros encargos além dos juros, como IOF ou seguro, e de quanto.",
+    "Quanto custa a contratação do Fundo de Aval do Estado (FDA), exigido do empreendedor formal.",
+    "Se os juros correm durante a carência e se ela conta dentro dos 36 meses.",
     "Sistema de amortização usado no contrato.",
-    "Lista de documentos e se é pedido avalista.",
   ],
 } as const;
 

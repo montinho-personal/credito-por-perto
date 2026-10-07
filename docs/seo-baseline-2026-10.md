@@ -255,6 +255,7 @@ Console (Desempenho → Exportar → CSV, aba Páginas e aba Consultas).
 - **Title:** Simulador Banco do Povo Paulista: parcela e juros
 - **Description:** Simulador independente do Banco do Povo Paulista: estime parcela, juros e total de R$ 200 a R$ 21 mil, com carência, e veja requisitos e onde pedir.
 - **Contexto:** sem "antes"; a comparação de novembro mede a entrada da página nas buscas "banco do povo simulação" e "simulador banco do povo", e se o artigo perdeu ou ganhou com a divisão de papéis.
+- **Reverificação em 07/10/2026:** fontes oficiais relidas depois da liberação de rede. Carência de até 3 meses passou a regra estadual; entraram garantia (avalista ou Fundo de Aval do Estado), documentos, capacitação obrigatória e prazo de análise; o requisito "sem restrição no Serasa/ADIN", que não consta mais da carta estadual, passou a ser atribuído às prefeituras (Araçariguama, Itapecerica). Mesma correção no artigo do Banco do Povo e em 8 guias locais.
 
 ### `/emprestimos/emprestimo-na-hora/` (página nova)
 

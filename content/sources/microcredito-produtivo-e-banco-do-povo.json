@@ -22,14 +22,40 @@
       "notes": "Os dois pré-requisitos (capacitação e ausência de restrição) são o achado mais acionável do artigo. Condições de linha específica NÃO foram afirmadas no texto por variarem por período."
     },
     {
-      "claimId": "faixa-de-juros-microcredito",
-      "claimText": "Os postos municipais do Banco do Povo Paulista informam juros na faixa de 0,35% a 1% ao mês, conforme a linha e o perfil do tomador.",
-      "sourceOrganization": "Prefeituras paulistas (páginas oficiais do programa)",
-      "sourceTitle": "Páginas municipais do Banco do Povo Paulista — dossiês locais do portal",
+      "claimId": "carta-estadual-condicoes",
+      "claimText": "A carta de serviços estadual do Banco do Povo Paulista (atualizada em 31/07/2026) informa crédito de R$ 200,00 a R$ 21.000,00, juros a partir de 0,35% ao mês, prazo de até 36 meses e carência de até 3 meses conforme análise; público de empreendedores formais (MEI, ME, EPP) e informais; qualificação empreendedora obrigatória e gratuita (Qualifica SP ou Sebrae), com 12h30; garantia mínima obrigatória de avalista (informal e produtor rural com CNPJ) ou contratação do Fundo de Aval do Estado de São Paulo – FDA (formal); serviço gratuito, pagando-se o previsto no contrato; análise e liberação em até 30 dias, ou até 10 dias pela plataforma digital.",
+      "sourceOrganization": "Governo do Estado de São Paulo",
+      "sourceTitle": "Carta de Serviços — Banco do Povo Paulista",
+      "sourceLocation": "https://servicos.sp.gov.br/fcarta/7113B9A5-BF37-4CB9-A48F-4DD7CF4ED8F3",
+      "sourceType": "official",
+      "accessedAt": "2026-10-07"
+    },
+    {
+      "claimId": "restricao-municipal",
+      "claimText": "Páginas oficiais de prefeituras que operam o programa exigem ausência de restrição cadastral: Araçariguama ('Não ter restrição no SCPC, SERASA e CADIN', página atualizada em 05/05/2026) e Itapecerica da Serra ('sem restrições cadastrais'). Araçariguama informa ainda que o crédito deve ser solicitado no município onde está localizado o negócio.",
+      "sourceOrganization": "Prefeituras de Araçariguama e de Itapecerica da Serra",
+      "sourceTitle": "Banco do Povo Paulista",
+      "sourceLocation": "https://www.aracariguama.sp.gov.br/banco-do-povo-paulista-",
+      "sourceType": "official",
+      "accessedAt": "2026-10-07"
+    },
+    {
+      "claimId": "cajamar-tetos-juros",
+      "claimText": "A Prefeitura de Cajamar informa empréstimos de até R$ 15.000 para pessoas físicas e R$ 21.000 para pessoas jurídicas, com juros entre 0,35% e 1% ao mês, e as linhas Empreenda Afro, Empreenda Mulher e Empreenda Rápido.",
+      "sourceOrganization": "Prefeitura de Cajamar",
+      "sourceTitle": "Banco do Povo disponibiliza R$ 650.000 para empreendedores cajamarenses",
+      "sourceLocation": "https://cajamar.sp.gov.br/noticias/2023/06/12/banco-do-povo-disponibiliza-r-650-000-para-empreendedores-cajamarenses/",
+      "sourceType": "official",
+      "accessedAt": "2026-10-07"
+    },
+    {
+      "claimId": "linhas-secretaria",
+      "claimText": "A Secretaria de Desenvolvimento Econômico lista as linhas Empreenda Rápido, Empreenda Mulher e Empreenda Afro na página do programa.",
+      "sourceOrganization": "Secretaria de Desenvolvimento Econômico do Estado de São Paulo",
+      "sourceTitle": "Programa Banco do Povo",
       "sourceLocation": "https://www.desenvolvimentoeconomico.sp.gov.br/DesenvolvimentoEconomico/institucional/Programas/banco_do_povo",
       "sourceType": "official",
-      "accessedAt": "2026-09-03",
-      "notes": "Faixa conferida de forma convergente em múltiplos dossiês municipais do portal (Louveira, Cajamar, Cosmópolis, Várzea Paulista). Apresentada no artigo como ordem de grandeza, não como taxa contratual garantida."
+      "accessedAt": "2026-10-07"
     }
   ]
 }
