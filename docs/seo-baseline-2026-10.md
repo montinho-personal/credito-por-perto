@@ -61,6 +61,7 @@ Console (Desempenho → Exportar → CSV, aba Páginas e aba Consultas).
 | `/calculadoras/sac-x-price/` | | | | | | | | |
 | `/emprestimos/microcredito-produtivo-e-banco-do-povo/` | | | | | | | | |
 | `/calculadoras/simulador-banco-do-povo/` (nova, 06/10) | | | | | | | | |
+| `/emprestimos/emprestimo-na-hora/` (nova, 07/10) | | | | | | | | |
 | `/emprestimos/sp/barueri/` | | | | | | | | |
 | `/emprestimos/sp/barueri/alphaville/` | | | | | | | | |
 | `/emprestimos/sp/campinas/` | | | | | | | | |
@@ -253,6 +254,13 @@ Console (Desempenho → Exportar → CSV, aba Páginas e aba Consultas).
 - **Title:** Simulador Banco do Povo Paulista: parcela e juros
 - **Description:** Simulador independente do Banco do Povo Paulista: estime parcela, juros e total de R$ 200 a R$ 21 mil, com carência, e veja requisitos e onde pedir.
 - **Contexto:** sem "antes"; a comparação de novembro mede a entrada da página nas buscas "banco do povo simulação" e "simulador banco do povo", e se o artigo perdeu ou ganhou com a divisão de papéis.
+
+### `/emprestimos/emprestimo-na-hora/` (página nova)
+
+- **No ar em:** 07/10/2026
+- **Title:** Empréstimo na hora via Pix: o que existe e os golpes
+- **Description:** O que pode cair no mesmo dia, por que pedir taxa antes de liberar é golpe e o que conferir em app, CET e oferta pelo WhatsApp antes de aceitar.
+- **Contexto:** sem "antes"; nenhuma página do site era dona de "empréstimo na hora". A comparação de novembro mede a entrada nas buscas "empréstimo na hora", "empréstimo na hora via pix" e nas variações por valor (R$ 50 a R$ 2 mil), e se dinheiro urgente e Pix parcelado perderam ou ganharam com a divisão de papéis. Recebe links de dinheiro urgente, Pix parcelado, empréstimo sem consulta e de 9 guias locais.
 
 ### `/emprestimos/sp/barueri/`
 
@@ -521,6 +529,8 @@ busca, do mesmo jeito, e anotar se o site aparece e em que posição.
 | sac ou price qual é melhor (celular, 05/10) | resumo por IA dizendo que a SAC "é a melhor" no aspecto financeiro (Creditas e outros), Creditas, vídeo do YouTube, Reddit r/investimentos, calculadora SAC/Price de terceiro; autocomplete com "para amortizar", "tabela", "financiamento", "para quitar" e "modalidade"; buscas por reddit, quitar antecipado, simulador, Minha Casa Minha Vida, "price tr ou sac tr", "como saber se meu financiamento é price ou sac", amortizar Price/SAC | qual a desvantagem da Tabela Price; qual amortização é mais vantajosa; a Tabela Price é abusiva; a tabela SAC diminui as parcelas |
 | banco do povo paulista (desktop anônimo, 06/10) | resumo por IA (valores, juros, prazo, carência, requisitos); Secretaria de Desenvolvimento Econômico; Portal de Serviços SP; perfil "Banco do Povo" no Centro de SP marcado como permanentemente fechado (2,9, comentários sobre telefone); Facebook e Instagram do programa; Prefeitura de Barueri; Adesampa; Agência SP (19/08/2026, três linhas); autocomplete com MEI, portal de crédito, como funciona, telefone, Bauru, endereço, login, digital, Santos | o que é preciso para fazer empréstimo no Banco do Povo; qual o valor; quem tem direito; onde pegar empréstimo para MEI |
 | banco do povo simulação (desktop anônimo, 06/10) | resumo por IA dizendo que não há simulador no site estadual; Secretaria; Portal de Serviços SP; simulador da Prefeitura de Palmas (outro programa); Desenvolve SP; Prefeitura de Santo André com simulador de parcelas; buscas por entrar, WhatsApp, digital, telefone, negativado, MEI | como faço para conseguir empréstimo no Banco do Povo; qual o valor que libera; quanto fica R$ 10 mil em 48 vezes; qual o limite |
+| empréstimo na hora (desktop anônimo, 07/10) | resumo por IA com apps (Open Finance, Pix em até 30 minutos), bancos com crédito pré-aprovado e alerta de golpe; resultados todos comerciais: fintech (R$ 500 a R$ 1.000 sem comprovar renda), banco público ("aprovado em poucos minutos"), operadora de telefonia, Serasa, app com aprovação "em até 24h", crédito para negócio via Pix, banco 100% online; autocomplete quase todo "via Pix" (negativado, autônomo, garantia de celular, R$ 50 e R$ 100, online, confiável) | como pedir R$ 500 emprestado; como conseguir 2 mil reais urgentemente; como conseguir 500 reais agora no Pix; qual aplicativo empresta R$ 100 na hora |
+| empréstimo na hora via pix (desktop anônimo, 07/10) | resumo por IA citando marcas e terminando com "me diga o valor e se está negativado para eu indicar as melhores opções"; Serasa (29/09/2026); app de Pix parcelado no cartão; banco regional ("Crédito 1 Minuto"); banco público ("Parcelar Pix"); buscas por R$ 50 a R$ 1.000, autônomo, WhatsApp, 24 horas, R$ 500 para negativado | qual banco libera empréstimo na hora via Pix; como conseguir 2.000 reais urgentemente; como conseguir 300 reais no Pix agora; como conseguir R$ 500 urgentemente |
 | empréstimo em barueri sp | Banco do Povo (página da prefeitura, "Setor Laranja"), oHub (consignado), páginas de correspondentes | onde fazer empréstimo urgente; mais fácil de aprovar; R$ 2.000 e R$ 500 urgente |
 | empréstimo em alphaville | Daycoval (agências e correspondentes), escritórios locais de "apoio ao crédito", FinanZero | onde pegar empréstimo urgente; R$ 2.000; mais fácil de aprovar; R$ 10.000 |
 | Empréstimo em Campinas | mapa com lojas, Agibank (pessoal), Crefisa (negativado), Paraná Banco (consignado em loja física) | onde fazer empréstimo urgente; R$ 10.000; mais fácil de aprovar; R$ 2.000 |

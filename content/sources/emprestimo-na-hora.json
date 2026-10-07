@@ -1,0 +1,136 @@
+{
+  "articleSlug": "emprestimo-na-hora",
+  "claims": [
+    {
+      "claimId": "instituicao-autorizada",
+      "claimText": "Somente instituições autorizadas pelo Banco Central (diretamente ou como correspondente identificado de uma) podem conceder empréstimos ao público; a autorização é consultável gratuitamente no Encontre uma instituição.",
+      "sourceOrganization": "Banco Central do Brasil",
+      "sourceTitle": "Encontre uma instituição",
+      "sourceLocation": "https://www.bcb.gov.br/meubc/encontreinstituicao",
+      "sourceType": "official",
+      "accessedAt": "2026-08-16",
+      "notes": "Mesma verificação registrada em app-de-emprestimo-e-confiavel e emprestimo-sem-consulta."
+    },
+    {
+      "claimId": "cet-previo",
+      "claimText": "O CET expressa o custo total da operação de crédito (juros, tributos, tarifas, seguros e demais encargos) e deve ser informado previamente à contratação por pessoas físicas.",
+      "sourceOrganization": "Banco Central do Brasil",
+      "sourceTitle": "O que é o Custo Efetivo Total (CET)?",
+      "sourceLocation": "https://www.bcb.gov.br/meubc/faqs/p/o-que-e-custo-efetivo-total-cet",
+      "sourceType": "official",
+      "accessedAt": "2026-08-29",
+      "notes": "Mesma verificação registrada em o-que-e-cet e iof-no-emprestimo."
+    },
+    {
+      "claimId": "scr-registrato",
+      "claimText": "As operações de crédito concedidas por instituições autorizadas são registradas no Sistema de Informações de Créditos (SCR) do Banco Central, consultável gratuitamente pelo cidadão no Registrato.",
+      "sourceOrganization": "Banco Central do Brasil",
+      "sourceTitle": "Registrato",
+      "sourceLocation": "https://registrato.bcb.gov.br",
+      "sourceType": "official",
+      "accessedAt": "2026-08-16"
+    },
+    {
+      "claimId": "cadastro-positivo",
+      "claimText": "O Cadastro Positivo (histórico positivo de pagamento) é disciplinado pela Lei nº 12.414/2011.",
+      "sourceOrganization": "Presidência da República — Planalto",
+      "sourceTitle": "Lei nº 12.414/2011",
+      "sourceLocation": "https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2011/lei/l12414.htm",
+      "sourceType": "official",
+      "accessedAt": "2026-08-06"
+    },
+    {
+      "claimId": "pix-parcelado-credito",
+      "claimText": "O Pix parcelado é uma operação de crédito ofertada pelas instituições sobre a infraestrutura do Pix: o destinatário recebe à vista e o pagador contrata financiamento com juros e IOF.",
+      "sourceOrganization": "Banco Central do Brasil",
+      "sourceTitle": "Pix",
+      "sourceLocation": "https://www.bcb.gov.br",
+      "sourceType": "official",
+      "accessedAt": "2026-08-06",
+      "notes": "Mesma verificação registrada em pix-parcelado."
+    },
+    {
+      "claimId": "venda-casada",
+      "claimText": "Condicionar o fornecimento de um produto (crédito) à contratação de outro (seguro) caracteriza venda casada, vedada pelo CDC (art. 39, I).",
+      "sourceOrganization": "Presidência da República — Planalto",
+      "sourceTitle": "Código de Defesa do Consumidor (Lei nº 8.078/1990)",
+      "sourceLocation": "https://www.planalto.gov.br/ccivil_03/leis/l8078compilado.htm",
+      "sourceType": "official",
+      "accessedAt": "2026-08-05"
+    },
+    {
+      "claimId": "taxas-medias-publicas",
+      "claimText": "O Banco Central publica as taxas de juros praticadas pelas instituições, por modalidade de crédito, na página pública 'Taxas de juros de operações de crédito'.",
+      "sourceOrganization": "Banco Central do Brasil",
+      "sourceTitle": "Taxas de juros de operações de crédito",
+      "sourceLocation": "https://www.bcb.gov.br/estatisticas/txjuros",
+      "sourceType": "official",
+      "accessedAt": "2026-08-16"
+    },
+    {
+      "claimId": "open-finance-consentimento",
+      "claimText": "No Open Finance, o compartilhamento de dados exige consentimento ativo do cliente para finalidades determinadas, com validade limitada a 12 meses; não há cobrança ao cliente e o consentimento pode ser retirado.",
+      "sourceOrganization": "Open Finance Brasil",
+      "sourceTitle": "Perguntas frequentes",
+      "sourceLocation": "https://openfinancebrasil.org.br/perguntas-frequentes/",
+      "sourceType": "official",
+      "accessedAt": "2026-09-18"
+    },
+    {
+      "claimId": "antecipado-fraude",
+      "claimText": "O Banco Central e órgãos de defesa do consumidor alertam que a exigência de depósito ou pagamento antecipado para liberação de empréstimo caracteriza fraude; custos legítimos integram o CET e são descontados do valor liberado ou diluídos nas parcelas.",
+      "sourceOrganization": "Banco Central do Brasil",
+      "sourceTitle": "Alertas sobre golpes",
+      "sourceLocation": "https://www.bcb.gov.br",
+      "sourceType": "official",
+      "accessedAt": "2026-08-05",
+      "notes": "Mesma verificação registrada em deposito-antecipado-e-golpe."
+    },
+    {
+      "claimId": "praticas-banco",
+      "claimText": "Instituições financeiras orientam publicamente que não solicitam senha, token nem transferência para 'conta segura' por telefone ou mensagem.",
+      "sourceOrganization": "Febraban",
+      "sourceTitle": "Campanhas antifraude",
+      "sourceLocation": "https://portal.febraban.org.br",
+      "sourceType": "journalistic",
+      "accessedAt": "2026-08-16",
+      "notes": "Mesma verificação registrada em golpe-da-falsa-central."
+    },
+    {
+      "claimId": "med-pix",
+      "claimText": "Vítimas de fraude via Pix podem acionar, pelo próprio banco, o Mecanismo Especial de Devolução (MED); a rapidez do registro influencia a chance de devolução.",
+      "sourceOrganization": "Banco Central do Brasil",
+      "sourceTitle": "Mecanismo Especial de Devolução (MED)",
+      "sourceLocation": "https://www.bcb.gov.br",
+      "sourceType": "official",
+      "accessedAt": "2026-08-16"
+    },
+    {
+      "claimId": "arrependimento-cdc",
+      "claimText": "Contratações realizadas fora do estabelecimento comercial (telefone, internet) têm prazo de arrependimento de 7 dias, previsto no art. 49 do CDC.",
+      "sourceOrganization": "Presidência da República — Planalto",
+      "sourceTitle": "Código de Defesa do Consumidor (Lei nº 8.078/1990), art. 49",
+      "sourceLocation": "https://www.planalto.gov.br/ccivil_03/leis/l8078compilado.htm",
+      "sourceType": "official",
+      "accessedAt": "2026-08-16"
+    },
+    {
+      "claimId": "quitacao-antecipada",
+      "claimText": "O art. 52, § 2º, do CDC assegura ao consumidor a liquidação antecipada do débito, total ou parcial, com redução proporcional dos juros e demais acréscimos.",
+      "sourceOrganization": "Presidência da República — Planalto",
+      "sourceTitle": "Código de Defesa do Consumidor (Lei nº 8.078/1990), art. 52",
+      "sourceLocation": "https://www.planalto.gov.br/ccivil_03/leis/l8078compilado.htm",
+      "sourceType": "official",
+      "accessedAt": "2026-08-25"
+    },
+    {
+      "claimId": "consumidor-gov",
+      "claimText": "Reclamações contra instituições de crédito podem ser registradas no consumidor.gov.br, e o histórico público de reclamações da empresa é consultável na plataforma.",
+      "sourceOrganization": "Secretaria Nacional do Consumidor",
+      "sourceTitle": "consumidor.gov.br",
+      "sourceLocation": "https://www.consumidor.gov.br",
+      "sourceType": "official",
+      "accessedAt": "2026-08-16"
+    }
+  ]
+}

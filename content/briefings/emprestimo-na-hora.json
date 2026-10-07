@@ -1,0 +1,58 @@
+{
+  "proposedTitle": "Empréstimo na hora via Pix: quando o dinheiro cai no mesmo dia, e quando é golpe",
+  "primaryIntent": "empréstimo na hora via pix",
+  "secondaryIntents": [
+    "qual banco libera empréstimo na hora via pix",
+    "empréstimo de 50, 100, 300, 500 reais na hora via pix",
+    "empréstimo na hora via pix para negativado",
+    "empréstimo na hora via pix whatsapp",
+    "empréstimo na hora via pix confiável / 24 horas"
+  ],
+  "targetReader": "Pessoa com prazo apertado procurando crédito que caia no mesmo dia, muitas vezes de valor baixo",
+  "readerSituation": "SERP de 07/10/2026 dominada por fintechs, bancos e uma página da Serasa; o resumo de IA cita marcas e termina oferecendo indicar 'as melhores opções'. Nenhum resultado neutro separa o que é real na promessa do que é golpe",
+  "centralQuestion": "Existe empréstimo que cai na hora via Pix? De onde vem essa rapidez, quanto custa em valor pequeno e como reconhecer o golpe que usa a mesma promessa?",
+  "uniqueAngle": "Explica a origem da rapidez legítima (análise já feita), mostra que 'via Pix' é só o meio de transferência e que Pix parcelado é outra coisa, e decompõe o roteiro do golpe pelo WhatsApp e as promessas de anúncio ('confiável', '24 horas', 'sem comprovar renda')",
+  "originalContribution": [
+    "De onde vem a rapidez legítima: pré-aprovado, análise automática, limites existentes",
+    "Distinção explícita entre empréstimo via Pix e Pix parcelado",
+    "Os três cuidados de custo em valores pequenos (R$ 50 a R$ 500)",
+    "O roteiro do golpe pelo WhatsApp em três passos",
+    "Tabela das promessas de anúncio e o que conferir em cada uma"
+  ],
+  "primarySources": [
+    "Banco Central — CET informado antes da contratação; alerta sobre pagamento antecipado; MED; Encontre uma instituição; taxas médias",
+    "Registrato / SCR — histórico de operações de crédito",
+    "Planalto — CDC (arts. 39, 49 e 52, § 2º) e Lei nº 12.414/2011",
+    "Open Finance Brasil — consentimento, prazo de 12 meses, gratuidade e revogação"
+  ],
+  "supportingSources": [],
+  "contentArchetype": "guide",
+  "proposedStructure": [
+    "Resposta direta",
+    "O que pode cair no mesmo dia",
+    "Como a análise funciona quando é 'na hora'",
+    "'Via Pix' é o caminho do dinheiro; não é Pix parcelado",
+    "Negativado e 'na hora'",
+    "Valores pequenos",
+    "Garantia de celular, autônomo e Open Finance",
+    "Oferta pelo WhatsApp",
+    "Promessas de anúncio: o que conferir",
+    "Checklist",
+    "FAQ"
+  ],
+  "uniqueExamples": [],
+  "proposedVisuals": ["QuickSummary", "Tabela de promessas", "WarningBox (MED)", "ChecklistBox"],
+  "pagesThatMayCompete": [
+    "/organizacao-financeira/dinheiro-urgente/",
+    "/juros-e-cet/pix-parcelado/",
+    "/credito-seguro/deposito-antecipado-e-golpe/",
+    "/credito-seguro/app-de-emprestimo-e-confiavel/"
+  ],
+  "informationThatMustNotBeRepeated": [
+    "Escada completa de prazos e alternativas sem crédito (link a dinheiro-urgente)",
+    "Modalidades do Pix parcelado e seu custo (link a pix-parcelado)",
+    "Teste dos 5 passos para apps (link)",
+    "Mapa completo para negativado (link)"
+  ],
+  "publicationDecision": "create"
+}

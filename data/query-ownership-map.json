@@ -760,5 +760,13 @@
       "/emprestimos/microcredito-produtivo-e-banco-do-povo/",
       "/emprestimos/guias-locais/"
     ]
+  },
+  "empréstimo na hora via pix": {
+    "canonicalOwner": "/emprestimos/emprestimo-na-hora/",
+    "supportingPages": [
+      "/organizacao-financeira/dinheiro-urgente/",
+      "/credito-seguro/deposito-antecipado-e-golpe/",
+      "/juros-e-cet/pix-parcelado/"
+    ]
   }
 }
