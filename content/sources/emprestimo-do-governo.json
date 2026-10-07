@@ -1,0 +1,134 @@
+{
+  "articleSlug": "emprestimo-do-governo",
+  "claims": [
+    {
+      "claimId": "acesso-sujeito-a-analise",
+      "claimText": "No Programa Acredita no Primeiro Passo, o acesso ao crédito está sujeito à análise e aprovação da instituição financeira responsável, de acordo com seus critérios e com a regulamentação aplicável; o microcrédito produtivo orientado é sujeito às condições, aos critérios, às taxas e aos prazos definidos pelas instituições financeiras responsáveis pela concessão.",
+      "sourceOrganization": "Ministério do Desenvolvimento e Assistência Social, Família e Combate à Fome (MDS)",
+      "sourceTitle": "Programa Acredita no Primeiro Passo — Quero Empreender",
+      "sourceLocation": "https://www.gov.br/mds/pt-br/acoes-e-programas/programa-acredita-no-primeiro-passo/quero-empreender",
+      "sourceType": "official",
+      "accessedAt": "2026-10-07"
+    },
+    {
+      "claimId": "acredita-primeiro-passo-lei",
+      "claimText": "A Lei nº 14.995, de 10 de outubro de 2024, institui o Programa Acredita no Primeiro Passo, no âmbito do MDS, com a finalidade de gerar oportunidades de inclusão produtiva para as famílias em situação de vulnerabilidade socioeconômica inscritas no CadÚnico, priorizando pessoas com deficiência, mulheres, jovens, negros e membros de populações tradicionais e ribeirinhas (arts. 1º e 2º).",
+      "sourceOrganization": "Presidência da República — Planalto",
+      "sourceTitle": "Lei nº 14.995/2024",
+      "sourceLocation": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2024/lei/l14995.htm",
+      "sourceType": "official",
+      "accessedAt": "2026-10-07"
+    },
+    {
+      "claimId": "acredita-primeiro-passo-publico",
+      "claimText": "Podem participar do Programa Acredita no Primeiro Passo pessoas entre 16 e 65 anos com dados atualizados no CadÚnico; o programa oferece cursos profissionalizantes, apoio para quem busca emprego e ações de empreendedorismo, incluindo acesso ao microcrédito orientado. O Banco do Nordeste e o Banco da Amazônia disponibilizam linhas de microcrédito no âmbito da iniciativa, e outras instituições poderão aderir. Interessados podem procurar a Sala do Empreendedor do Sebrae ou instituições que operam o PNMPO.",
+      "sourceOrganization": "Ministério do Desenvolvimento e Assistência Social, Família e Combate à Fome (MDS)",
+      "sourceTitle": "Programa Acredita no Primeiro Passo",
+      "sourceLocation": "https://www.gov.br/mds/pt-br/acoes-e-programas/programa-acredita-no-primeiro-passo/programa-acredita-no-primeiro-passo",
+      "sourceType": "official",
+      "accessedAt": "2026-10-07"
+    },
+    {
+      "claimId": "fgo-acredita-primeiro-passo",
+      "claimText": "O Fundo Garantidor Acredita no Primeiro Passo é vinculado ao Fundo Garantidor de Operações (FGO), administrado pelo Banco do Brasil, e destina-se à garantia de operações de crédito para pessoas inscritas no CadÚnico. Os contratantes das operações de crédito no âmbito do programa são isentos do pagamento de comissão pecuniária pela concessão da garantia do FGO (Lei nº 14.995/2024, art. 11).",
+      "sourceOrganization": "MDS e Presidência da República — Planalto",
+      "sourceTitle": "Quero Empreender; Lei nº 14.995/2024, art. 11",
+      "sourceLocation": "https://www.gov.br/mds/pt-br/acoes-e-programas/programa-acredita-no-primeiro-passo/quero-empreender",
+      "sourceType": "official",
+      "accessedAt": "2026-10-07"
+    },
+    {
+      "claimId": "bolsa-familia-cadunico",
+      "claimText": "São elegíveis ao Programa Bolsa Família as famílias inscritas no CadÚnico e com renda familiar per capita mensal dentro do limite legal (Lei nº 14.601/2023, art. 5º).",
+      "sourceOrganization": "Presidência da República — Planalto",
+      "sourceTitle": "Lei nº 14.601/2023",
+      "sourceLocation": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/lei/l14601.htm",
+      "sourceType": "official",
+      "accessedAt": "2026-10-07"
+    },
+    {
+      "claimId": "programa-acredita-memp",
+      "claimText": "O Programa Acredita, instituído pela Lei nº 14.995/2024, inclui o Desenrola Pequenos Negócios (renegociação de dívidas bancárias de MEIs, microempresas e empresas de pequeno porte com faturamento de até R$ 4,8 milhões), o ProCred 360 (MEIs e microempresas com faturamento de até R$ 360 mil), o microcrédito orientado a inscritos no CadÚnico e a possibilidade de renegociação de dívidas do Pronampe.",
+      "sourceOrganization": "Ministério do Empreendedorismo, da Microempresa e da Empresa de Pequeno Porte (MEMP)",
+      "sourceTitle": "Programa Acredita",
+      "sourceLocation": "https://www.gov.br/memp/pt-br/programa-acredita",
+      "sourceType": "official",
+      "accessedAt": "2026-10-07"
+    },
+    {
+      "claimId": "pronampe-teto-prazo",
+      "claimText": "O Pronampe é destinado a microempresas e empresas de pequeno porte (LC 123/2006, art. 3º, I e II). As operações observam prazo total máximo de 72 meses e taxa de juros anual máxima igual à Selic acrescida de 6% para operações concedidas a partir de 1º/01/2021; as condições de cada período e a taxa aplicável são definidas em ato do Ministro do Empreendedorismo. As operações podem contar com garantia do FGO.",
+      "sourceOrganization": "Presidência da República — Planalto",
+      "sourceTitle": "Lei nº 13.999/2020 (com redação da Lei nº 14.995/2024), arts. 2º e 3º",
+      "sourceLocation": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2020/lei/l13999.htm",
+      "sourceType": "official",
+      "accessedAt": "2026-10-07"
+    },
+    {
+      "claimId": "procred-360",
+      "claimText": "O Procred 360 é destinado às microempresas, aos MEIs (art. 18-A da LC 123/2006) e aos taxistas autônomos; as operações podem contar com garantia do FGO Procred 360, e a taxa de juros é definida em ato do Ministro do Empreendedorismo, observado o máximo previsto para o Pronampe (Lei nº 13.999/2020, art. 12-A).",
+      "sourceOrganization": "Presidência da República — Planalto",
+      "sourceTitle": "Lei nº 13.999/2020, art. 12-A",
+      "sourceLocation": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2020/lei/l13999.htm",
+      "sourceType": "official",
+      "accessedAt": "2026-10-07"
+    },
+    {
+      "claimId": "limites-me-epp",
+      "claimText": "Considera-se microempresa a que aufere receita bruta anual igual ou inferior a R$ 360.000,00, e empresa de pequeno porte a que aufere receita superior a R$ 360.000,00 e igual ou inferior a R$ 4.800.000,00 (LC 123/2006, art. 3º).",
+      "sourceOrganization": "Presidência da República — Planalto",
+      "sourceTitle": "Lei Complementar nº 123/2006, art. 3º",
+      "sourceLocation": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp123.htm",
+      "sourceType": "official",
+      "accessedAt": "2026-10-07"
+    },
+    {
+      "claimId": "desenrola-pequenos-negocios-prazo",
+      "claimText": "A Lei nº 14.995/2024 institui o Desenrola Pequenos Negócios, de renegociação de dívidas, e prevê crédito presumido para instituições que renegociarem, até 31 de dezembro de 2024, dívidas de empresas com faturamento igual ou inferior a R$ 4,8 milhões (art. 20).",
+      "sourceOrganization": "Presidência da República — Planalto",
+      "sourceTitle": "Lei nº 14.995/2024, arts. 19 e 20",
+      "sourceLocation": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2024/lei/l14995.htm",
+      "sourceType": "official",
+      "accessedAt": "2026-10-07"
+    },
+    {
+      "claimId": "fampe-gov",
+      "claimText": "O Fundo de Aval às Micro e Pequenas Empresas (FAMPE), do Sebrae, ajuda os pequenos negócios que não possuem garantias suficientes para solicitar crédito.",
+      "sourceOrganization": "Portal gov.br — Empresas & Negócios; MEMP",
+      "sourceTitle": "Crédito (Elas Empreendem); Mais ações do Programa Acredita",
+      "sourceLocation": "https://www.gov.br/empresas-e-negocios/pt-br/empreendedor/elas-empreendem/credito",
+      "sourceType": "official",
+      "accessedAt": "2026-10-07"
+    },
+    {
+      "claimId": "credito-do-trabalhador",
+      "claimText": "A Lei nº 15.179/2025 institui o Programa Crédito do Trabalhador (consignado de empregados CLT, domésticos e rurais), com margem de até 35% da remuneração disponível, garantia opcional de até 10% do saldo do FGTS e da multa rescisória, e contratação pela Carteira de Trabalho Digital.",
+      "sourceOrganization": "Presidência da República — Planalto",
+      "sourceTitle": "Lei nº 15.179/2025",
+      "sourceLocation": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/lei/l15179.htm",
+      "sourceType": "official",
+      "accessedAt": "2026-08-06",
+      "notes": "Mesma verificação registrada em credito-do-trabalhador."
+    },
+    {
+      "claimId": "consignado-inss-teto",
+      "claimText": "O consignado em benefícios do INSS é autorizado pela Lei nº 10.820/2003 e tem teto de juros definido periodicamente pelo Conselho Nacional de Previdência Social; o valor vigente deve ser consultado nos canais oficiais.",
+      "sourceOrganization": "Planalto; INSS",
+      "sourceTitle": "Lei nº 10.820/2003; INSS",
+      "sourceLocation": "https://www.planalto.gov.br/ccivil_03/leis/2003/l10.820.htm",
+      "sourceType": "official",
+      "accessedAt": "2026-08-16",
+      "notes": "Mesma verificação registrada em emprestimo-para-aposentado-inss."
+    },
+    {
+      "claimId": "antecipado-fraude",
+      "claimText": "O Banco Central e órgãos de defesa do consumidor alertam que a exigência de depósito ou pagamento antecipado para liberação de empréstimo caracteriza fraude.",
+      "sourceOrganization": "Banco Central do Brasil",
+      "sourceTitle": "Alertas sobre golpes",
+      "sourceLocation": "https://www.bcb.gov.br",
+      "sourceType": "official",
+      "accessedAt": "2026-08-05",
+      "notes": "Mesma verificação registrada em deposito-antecipado-e-golpe."
+    }
+  ]
+}

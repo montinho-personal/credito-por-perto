@@ -768,5 +768,13 @@
       "/credito-seguro/deposito-antecipado-e-golpe/",
       "/juros-e-cet/pix-parcelado/"
     ]
+  },
+  "qual empréstimo o governo liberou": {
+    "canonicalOwner": "/emprestimos/emprestimo-do-governo/",
+    "supportingPages": [
+      "/emprestimos/credito-do-trabalhador/",
+      "/emprestimos/emprestimo-para-mei/",
+      "/emprestimos/microcredito-produtivo-e-banco-do-povo/"
+    ]
   }
 }

@@ -1,0 +1,56 @@
+{
+  "proposedTitle": "Empréstimo do governo: quais programas existem, para quem, e o que o governo não faz",
+  "primaryIntent": "qual empréstimo o governo liberou",
+  "secondaryIntents": [
+    "empréstimo do governo como funciona",
+    "qual empréstimo para MEI o governo liberou",
+    "empréstimo Acredita Bolsa Família / Acredita no Primeiro Passo como solicitar",
+    "Pronampe empréstimo / empréstimo para CNPJ do governo",
+    "quando o governo vai liberar o consignado CLT"
+  ],
+  "targetReader": "Pessoa que ouviu falar de um 'empréstimo do governo' e quer saber qual é, se tem direito e como pedir",
+  "readerSituation": "SERP de 07/10/2026: resumo de IA responde só com o Crédito do Trabalhador; buscas relacionadas dominadas por 'Acredita' (Bolsa Família, Caixa, BB, 'já está liberado'), Pronampe e CNPJ/MEI; nenhuma página organiza os programas por perfil",
+  "centralQuestion": "Qual empréstimo o governo liberou, para quem é cada programa e o que conferir antes de pedir?",
+  "uniqueAngle": "Tabela por perfil (CLT, INSS, BPC, CadÚnico, MEI, pequena empresa, SP, rural, estudante), explicação de que o programa é público mas o crédito é do banco, e os fatos legais que desmontam o golpe do 'empréstimo do governo'",
+  "originalContribution": [
+    "Tabela 'qual programa serve para quem'",
+    "Acredita no Primeiro Passo explicado com a lei e a página do MDS, incluindo a isenção da comissão do FGO",
+    "Pronampe e Procred 360 pelo texto legal: teto Selic + 6% e prazo de 72 meses",
+    "Desenrola Pequenos Negócios como renegociação, não crédito novo"
+  ],
+  "primarySources": [
+    "Planalto — Leis nº 14.995/2024, 13.999/2020, 14.601/2023, 15.179/2025, 10.820/2003 e LC 123/2006",
+    "MDS — Programa Acredita no Primeiro Passo",
+    "MEMP — Programa Acredita",
+    "gov.br Empresas & Negócios — FAMPE"
+  ],
+  "supportingSources": [],
+  "contentArchetype": "guide",
+  "proposedStructure": [
+    "Resposta direta",
+    "O que 'empréstimo do governo' quer dizer",
+    "Tabela por perfil",
+    "Crédito do Trabalhador",
+    "INSS e BPC",
+    "Acredita no Primeiro Passo",
+    "MEI e pequenas empresas: Procred 360, Pronampe, Desenrola, FAMPE",
+    "Banco do Povo Paulista",
+    "Golpe do 'empréstimo do governo'",
+    "Quanto fica a parcela",
+    "FAQ"
+  ],
+  "uniqueExamples": [],
+  "proposedVisuals": ["QuickSummary", "Tabela por perfil", "ToolCallout"],
+  "pagesThatMayCompete": [
+    "/emprestimos/credito-do-trabalhador/",
+    "/emprestimos/emprestimo-para-mei/",
+    "/emprestimos/microcredito-produtivo-e-banco-do-povo/"
+  ],
+  "informationThatMustNotBeRepeated": [
+    "Funcionamento detalhado do Crédito do Trabalhador (link)",
+    "Regras do consignado INSS e BPC (links)",
+    "Regras do Banco do Povo Paulista (link e simulador)",
+    "PF ou CNPJ para o MEI (link)"
+  ],
+  "publicationDecision": "create"
+}
