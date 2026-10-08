@@ -40,12 +40,12 @@
     {
       "claimId": "sumula-359-notificacao-previa",
       "claimText": "Cabe ao órgão mantenedor do Cadastro de Proteção ao Crédito a notificação do devedor antes de proceder à inscrição.",
-      "sourceOrganization": "Superior Tribunal de Justiça",
-      "sourceTitle": "Súmula n. 359 (Segunda Seção, julgada em 13/08/2008, DJe 08/09/2008)",
-      "sourceLocation": "https://ww2.stj.jus.br/docs_internet/revista/eletronica/stj-revista-sumulas-2012_31_capSumula359.pdf",
+      "sourceOrganization": "Superior Tribunal de Justiça (transcrição oficial do TJDFT)",
+      "sourceTitle": "Súmula 359 do STJ",
+      "sourceLocation": "https://www.tjdft.jus.br/consultas/jurisprudencia/jurisprudencia-em-temas/cdc-na-visao-do-tjdft-1/inscricao-do-nome-do-devedor-em-cadastro-de-inadimplentes-1/responsabilidade-pela-notificacao-ao-consumidor-de-sua-inscricao-em-cadastro-de-inadimplentes",
       "sourceType": "official",
-      "accessedAt": "2026-09-21",
-      "notes": "Ponto que o artigo destaca por ser contraintuitivo: a obrigação de avisar é do birô (Serasa, SPC, Boa Vista), não da empresa credora."
+      "accessedAt": "2026-10-08",
+      "notes": "Texto da súmula reconferido em 08/10/2026 na página oficial do TJDFT que a transcreve (pesquisa atualizada em 11/4/2025); o portal do STJ recusa acesso automatizado (Cloudflare). Endereço da leitura anterior: https://ww2.stj.jus.br/docs_internet/revista/eletronica/stj-revista-sumulas-2012_31_capSumula359.pdf"
     },
     {
       "claimId": "cdc-art-43-comunicacao-escrita",
@@ -60,12 +60,12 @@
     {
       "claimId": "sumula-404-ar-dispensavel",
       "claimText": "É dispensável o Aviso de Recebimento (AR) na carta de comunicação ao consumidor sobre a negativação de seu nome em bancos de dados e cadastros.",
-      "sourceOrganization": "Superior Tribunal de Justiça",
-      "sourceTitle": "Súmula n. 404",
-      "sourceLocation": "https://www.stj.jus.br/docs_internet/revista/eletronica/stj-revista-sumulas-2014_38_capSumula404.pdf",
+      "sourceOrganization": "Superior Tribunal de Justiça (transcrição oficial do TJDFT)",
+      "sourceTitle": "Súmula 404 do STJ",
+      "sourceLocation": "https://www.tjdft.jus.br/consultas/jurisprudencia/jurisprudencia-em-temas/cdc-na-visao-do-tjdft-1/inscricao-do-nome-do-devedor-em-cadastro-de-inadimplentes-1/responsabilidade-pela-notificacao-ao-consumidor-de-sua-inscricao-em-cadastro-de-inadimplentes",
       "sourceType": "official",
-      "accessedAt": "2026-09-21",
-      "notes": "Incluído justamente para corrigir expectativa: 'nunca assinei nada' não prova irregularidade do registro."
+      "accessedAt": "2026-10-08",
+      "notes": "Texto da súmula reconferido em 08/10/2026 na página oficial do TJDFT que a transcreve (pesquisa atualizada em 11/4/2025); o portal do STJ recusa acesso automatizado (Cloudflare). Endereço da leitura anterior: https://www.stj.jus.br/docs_internet/revista/eletronica/stj-revista-sumulas-2014_38_capSumula404.pdf"
     },
     {
       "claimId": "notificacao-email-sms-insuficiente",
@@ -81,11 +81,11 @@
       "claimId": "sumula-385-inscricao-preexistente",
       "claimText": "Da anotação irregular em cadastro de proteção ao crédito, não cabe indenização por dano moral quando preexistente legítima inscrição, ressalvado o direito ao cancelamento.",
       "sourceOrganization": "Superior Tribunal de Justiça",
-      "sourceTitle": "Súmula n. 385",
-      "sourceLocation": "https://www.stj.jus.br/docs_internet/revista/eletronica/stj-revista-sumulas-2013_35_capSumula385.pdf",
+      "sourceTitle": "Arquivo Cidadão — Súmula 385",
+      "sourceLocation": "https://arquivocidadao.stj.jus.br/index.php/sumula-385",
       "sourceType": "official",
-      "accessedAt": "2026-09-21",
-      "notes": "Entra como limite explícito, para a página não induzir expectativa de indenização — coerente com a regra da casa de não prometer resultado."
+      "accessedAt": "2026-10-08",
+      "notes": "Texto reconferido em 08/10/2026 no Arquivo Cidadão do próprio STJ (dossiê da Súmula 385). Endereço da leitura anterior: https://www.stj.jus.br/docs_internet/revista/eletronica/stj-revista-sumulas-2013_35_capSumula385.pdf"
     }
   ]
 }
