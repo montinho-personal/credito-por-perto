@@ -783,5 +783,13 @@
       "/emprestimos/guia-completo-de-emprestimo/",
       "/emprestimos/diferenca-entre-emprestimo-e-financiamento/"
     ]
+  },
+  "golpes de empréstimo mais comuns": {
+    "canonicalOwner": "/credito-seguro/",
+    "supportingPages": [
+      "/credito-seguro/como-identificar-golpes-de-emprestimo/",
+      "/credito-seguro/deposito-antecipado-e-golpe/",
+      "/calculadoras/sinais-de-golpe/"
+    ]
   }
 }

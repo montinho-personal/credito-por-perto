@@ -87,7 +87,7 @@ export const HUB_GROUPS: Record<CategoryId, readonly HubGroup[]> = {
   "credito-seguro": [
     {
       id: "golpes",
-      title: "Golpes de empréstimo",
+      title: "Cada golpe em detalhe",
       slugs: [
         "como-identificar-golpes-de-emprestimo",
         "deposito-antecipado-e-golpe",
