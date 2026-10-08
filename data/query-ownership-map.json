@@ -776,5 +776,12 @@
       "/emprestimos/emprestimo-para-mei/",
       "/emprestimos/microcredito-produtivo-e-banco-do-povo/"
     ]
+  },
+  "tipos de empréstimo modalidades de empréstimo": {
+    "canonicalOwner": "/emprestimos/",
+    "supportingPages": [
+      "/emprestimos/guia-completo-de-emprestimo/",
+      "/emprestimos/diferenca-entre-emprestimo-e-financiamento/"
+    ]
   }
 }

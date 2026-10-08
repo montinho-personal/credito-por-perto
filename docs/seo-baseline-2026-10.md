@@ -63,6 +63,7 @@ Console (Desempenho → Exportar → CSV, aba Páginas e aba Consultas).
 | `/calculadoras/simulador-banco-do-povo/` (nova, 06/10) | | | | | | | | |
 | `/emprestimos/emprestimo-na-hora/` (nova, 07/10) | | | | | | | | |
 | `/emprestimos/emprestimo-do-governo/` (nova, 07/10) | | | | | | | | |
+| `/emprestimos/` (hub, 08/10) | | | | | | | | |
 | `/emprestimos/sp/barueri/` | | | | | | | | |
 | `/emprestimos/sp/barueri/alphaville/` | | | | | | | | |
 | `/emprestimos/sp/campinas/` | | | | | | | | |
@@ -270,6 +271,13 @@ Console (Desempenho → Exportar → CSV, aba Páginas e aba Consultas).
 - **Title:** Empréstimo do governo: o que existe e quem pode pedir
 - **Description:** Crédito do Trabalhador, consignado do INSS, Acredita, Pronampe, Banco do Povo e Pronaf: o que é cada programa, quem pode pedir e onde conferir.
 - **Contexto:** sem "antes"; nenhuma página era dona de "qual empréstimo o governo liberou" e o site não tinha Acredita, Pronampe nem Procred 360. Fontes oficiais conferidas em 07/10 (Planalto, MDS, MEMP, gov.br). A comparação de novembro mede a entrada em "empréstimo do governo", "qual empréstimo o governo liberou", "empréstimo Acredita" e "Pronampe", e se Crédito do Trabalhador e MEI perderam ou ganharam. Recebe links do Crédito do Trabalhador, do MEI e do guia de Caieiras.
+
+### `/emprestimos/` (hub reformulado)
+
+- **No ar em:** 08/10/2026
+- **Antes:** title "Empréstimos: guias por modalidade, custos e cuidados"; H1 "Empréstimos"; uma frase e grade única de ~36 cartões por data.
+- **Depois:** title "Tipos de empréstimo: modalidades, custos e cuidados"; H1 "Tipos de empréstimo"; tabela comparativa de 11 modalidades (como paga, garantia, quem pode pedir), atalhos por perfil, guias em 4 blocos e FAQ com 7 perguntas da SERP.
+- **Contexto:** dono de "tipos de empréstimo" e "modalidades de empréstimo" no mapa de intenções. Os outros três hubs ganharam só os blocos de guias (sem mudança de title nem de texto).
 
 ### `/emprestimos/sp/barueri/`
 
@@ -541,6 +549,7 @@ busca, do mesmo jeito, e anotar se o site aparece e em que posição.
 | empréstimo na hora (desktop anônimo, 07/10) | resumo por IA com apps (Open Finance, Pix em até 30 minutos), bancos com crédito pré-aprovado e alerta de golpe; resultados todos comerciais: fintech (R$ 500 a R$ 1.000 sem comprovar renda), banco público ("aprovado em poucos minutos"), operadora de telefonia, Serasa, app com aprovação "em até 24h", crédito para negócio via Pix, banco 100% online; autocomplete quase todo "via Pix" (negativado, autônomo, garantia de celular, R$ 50 e R$ 100, online, confiável) | como pedir R$ 500 emprestado; como conseguir 2 mil reais urgentemente; como conseguir 500 reais agora no Pix; qual aplicativo empresta R$ 100 na hora |
 | empréstimo na hora via pix (desktop anônimo, 07/10) | resumo por IA citando marcas e terminando com "me diga o valor e se está negativado para eu indicar as melhores opções"; Serasa (29/09/2026); app de Pix parcelado no cartão; banco regional ("Crédito 1 Minuto"); banco público ("Parcelar Pix"); buscas por R$ 50 a R$ 1.000, autônomo, WhatsApp, 24 horas, R$ 500 para negativado | qual banco libera empréstimo na hora via Pix; como conseguir 2.000 reais urgentemente; como conseguir 300 reais no Pix agora; como conseguir R$ 500 urgentemente |
 | qual empréstimo o governo liberou (celular, 07/10) | resumo por IA respondendo só com o Crédito do Trabalhador (Serasa, vídeo); guia do consignado do trabalhador (nov/2025); gov.br "Crédito" (FAMPE); autocomplete com para MEI, para as empresas, qual foi, qual o novo, nome e valor; buscas dominadas por Acredita (Primeiro Passo, Bolsa Família, BB, Caixa, "já está liberado"), Pronampe, CNPJ e MEI | quanto fica R$ 10.000 em 48 vezes; qual empréstimo para MEI liberado pelo governo em 2026; quando o governo vai liberar o consignado CLT; quais as novas regras do consignado em 2026 |
+| tipos de empréstimo / modalidades de empréstimo (celular, 08/10) | resumo por IA tipo a tipo (pessoal, consignado com 35%, com garantia); blog de banco digital (2019), Contabilizei, banco BV ("conheça 8 deles e escolha o melhor"), Caixa; autocomplete com pessoal, negativado, consignado, com garantia, MEI, rural, Caixa e Nubank; modalidades com consignado CLT e aposentados; buscas de marca (sumiu, WhatsApp, simulação) e "tipos de financiamento" | qual o empréstimo mais vantajoso; quais são as modalidades; qual a melhor modalidade; quais são 3 tipos de crédito; quanto fica R$ 10 mil em 48 vezes; como conseguir 2 mil urgente |
 | empréstimo em barueri sp | Banco do Povo (página da prefeitura, "Setor Laranja"), oHub (consignado), páginas de correspondentes | onde fazer empréstimo urgente; mais fácil de aprovar; R$ 2.000 e R$ 500 urgente |
 | empréstimo em alphaville | Daycoval (agências e correspondentes), escritórios locais de "apoio ao crédito", FinanZero | onde pegar empréstimo urgente; R$ 2.000; mais fácil de aprovar; R$ 10.000 |
 | Empréstimo em Campinas | mapa com lojas, Agibank (pessoal), Crefisa (negativado), Paraná Banco (consignado em loja física) | onde fazer empréstimo urgente; R$ 10.000; mais fácil de aprovar; R$ 2.000 |
