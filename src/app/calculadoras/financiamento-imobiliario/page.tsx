@@ -53,9 +53,9 @@ import { FaqAccordion, FaqItem } from "@/components/content/FaqAccordion";
 export const revalidate = 86400;
 
 const PATH = "/calculadoras/financiamento-imobiliario/";
-const TITLE = "Simulador de financiamento imobiliário: parcela e renda";
+const TITLE = "Simulador de financiamento imobiliário grátis, sem CPF";
 const DESCRIPTION =
-  "Quanto fica financiar R$ 300 mil, R$ 500 mil ou o valor do seu imóvel: parcela na SAC e na Price, juros, entrada e renda. Grátis e sem cadastro.";
+  "Simule grátis e sem CPF: parcela na SAC e na Price, renda necessária e entrada para financiar R$ 300 mil, R$ 400 mil ou o valor do seu imóvel.";
 const REVIEWED = "23/09/2026";
 
 /** Sem dado oficial válido, os exemplos usam esta taxa — sempre rotulada. */
@@ -67,6 +67,7 @@ const CAIXA_FINANCIAMENTO =
   "https://www.caixa.gov.br/voce/habitacao/financiamento-de-imoveis/Paginas/default.aspx";
 const CAIXA_FAQ_HABITACAO =
   "https://www.caixa.gov.br/voce/habitacao/financiamento/perguntas-frequentes/Paginas/default.aspx";
+const FGTS_AQUISICAO = "https://www.fgts.gov.br/Paginas/subpaginas/aquisicao_imovel_novo_usado.aspx";
 const CALC_CIDADAO_METODOLOGIA =
   "https://www3.bcb.gov.br/CALCIDADAO/publico/exibirMetodologiaFinanciamentoPrestacoesFixas.do?method=exibirMetodologiaFinanciamentoPrestacoesFixas";
 const RES_CMN_4881 =
@@ -120,6 +121,12 @@ export default async function FinanciamentoImobiliarioPage() {
     return o.kind === "ok" ? [{ reais, r: o.result }] : [];
   });
   const cap3000 = capacityRows.find((c) => c.reais === 3_000);
+  const r400 = otherValues.find((v) => v.reais === 400_000)?.r ?? null;
+  /* Salário de R$ 3 mil: parcela de até 30% da renda bruta (critério que a Caixa informa). */
+  const salary3k = (() => {
+    const o = maxFinanceable({ paymentCents: 900_00, ratePercent: rate, rateUnit: "aa", months: MONTHS });
+    return o.kind === "ok" ? o.result : null;
+  })();
 
   const termHead = ["Prazo", "SAC — 1ª parcela", "Price — parcela", "Juros SAC", "Juros Price"];
   const termRows = (rows: typeof terms300) =>
@@ -150,7 +157,7 @@ export default async function FinanciamentoImobiliarioPage() {
       </h1>
       <p className="mt-3 text-lg leading-relaxed text-brand-muted">
         Informe o valor do imóvel, a entrada, a taxa e o prazo para ver a parcela na SAC e na Price — ou
-        comece pela parcela que cabe no seu mês.
+        comece pela parcela que cabe no seu mês. Grátis, sem cadastro e sem CPF: a conta é feita no seu navegador.
       </p>
 
       <div className="mt-6">
@@ -409,6 +416,74 @@ export default async function FinanciamentoImobiliarioPage() {
               A entrada é a diferença entre o valor do imóvel e o que a instituição aceita financiar, e esse
               limite varia por instituição, linha e sistema. A tabela de entradas acima mostra o efeito na
               parcela e nos juros; o percentual mínimo vale o da simulação oficial da instituição.
+            </p>
+          </FaqItem>
+          {r400 ? (
+            <FaqItem question="Quanto fica R$ 400 mil financiado?" id="quanto-fica-r-400-mil-financiado">
+              <p>
+                Com a taxa e as premissas desta página, em 30 anos, a 1ª parcela na SAC fica em{" "}
+                {brl(r400.sac.firstPaymentCents)} e a parcela da Price em {brl(r400.price.firstPaymentCents)}. Os juros
+                somam {brl(r400.sac.totalInterestCents)} na SAC e {brl(r400.price.totalInterestCents)} na Price. A taxa
+                da sua proposta muda essa conta: troque-a no simulador acima.
+              </p>
+            </FaqItem>
+          ) : null}
+          {r400 ? (
+            <FaqItem
+              question="Quanto preciso ganhar para financiar um imóvel de R$ 500 mil?"
+              id="quanto-preciso-ganhar-para-financiar-um-imovel-de-r-500-mil"
+            >
+              <p>
+                Com 20% de entrada (R$ 100 mil), o financiado é R$ 400 mil. Se a parcela puder comprometer até 30% da
+                renda bruta, critério que a Caixa informa, a renda familiar precisa ser de pelo menos{" "}
+                {brlCeil(incomeForPayment(r400.sac.firstPaymentCents, 0.3))} na SAC e{" "}
+                {brlCeil(incomeForPayment(r400.price.firstPaymentCents, 0.3))} na Price, em 30 anos, com a taxa desta
+                página. Outras instituições têm critérios próprios, e a aprovação depende da análise de crédito.
+              </p>
+            </FaqItem>
+          ) : null}
+          {salary3k ? (
+            <FaqItem question="Com salário de R$ 3 mil, posso financiar um imóvel?" id="com-salario-de-r-3-mil-posso-financiar-um-imovel">
+              <p>
+                Pelo critério de até 30% da renda bruta, a parcela ficaria em até R$ 900. Em 30 anos, com a taxa desta
+                página, essa parcela financia até {brlFloor(salary3k.priceMaxCents)} na Price e até{" "}
+                {brlFloor(salary3k.sacMaxCents)} na SAC; somando a entrada que você tiver, chega-se ao valor do imóvel.
+                Se a parcela cabe de fato no seu mês é outra conta, feita em{" "}
+                <Link href="/calculadoras/parcela-no-orcamento/">parcela no orçamento</Link>.
+              </p>
+            </FaqItem>
+          ) : null}
+          <FaqItem question="Quanto é a entrada de uma casa de R$ 400 mil?" id="quanto-e-a-entrada-de-uma-casa-de-r-400-mil">
+            <p>
+              É a diferença entre o preço e o que a instituição aceita financiar. Com 20% de entrada, seriam R$ 80 mil;
+              com 30%, R$ 120 mil. O percentual mínimo varia por instituição, linha e sistema de amortização: vale o da
+              simulação oficial.
+            </p>
+          </FaqItem>
+          <FaqItem question="Posso usar o FGTS no financiamento?" id="posso-usar-o-fgts-no-financiamento">
+            <p>
+              O{" "}
+              <a href={FGTS_AQUISICAO} target="_blank" rel="noopener noreferrer">
+                portal do FGTS
+              </a>{" "}
+              lista a aquisição de imóvel residencial, concluído ou em construção, entre os usos do fundo, dentro das
+              regras dele. No simulador, some o valor do FGTS que pretende usar à entrada.
+            </p>
+          </FaqItem>
+          <FaqItem
+            question="O simulador serve para o Minha Casa Minha Vida?"
+            id="o-simulador-serve-para-o-minha-casa-minha-vida"
+          >
+            <p>
+              Serve para a conta da parcela com a taxa que você informar. Subsídio, faixa de renda e taxas do programa
+              só aparecem na simulação oficial do programa, que é a que vale para a proposta.
+            </p>
+          </FaqItem>
+          <FaqItem question="Como fazer a conta de um financiamento?" id="como-fazer-a-conta-de-um-financiamento">
+            <p>
+              Na Price, a parcela é valor financiado × i ÷ [1 − (1 + i)<sup>−n</sup>], com i a taxa mensal e n o
+              número de parcelas. Na SAC, a amortização é o valor financiado ÷ n, e cada parcela soma essa amortização
+              aos juros do mês sobre o saldo. O passo a passo está em <a href="#como-calculamos">como calculamos</a>.
             </p>
           </FaqItem>
           <FaqItem question="420 meses são quantos anos?" id="420-meses-sao-quantos-anos">

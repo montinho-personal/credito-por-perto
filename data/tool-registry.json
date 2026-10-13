@@ -535,7 +535,11 @@
         "financiamento 300 mil",
         "quanto consigo financiar",
         "parcela do financiamento",
-        "entrada do imovel"
+        "entrada do imovel",
+        "simulador de financiamento imobiliario gratis",
+        "simulador financiamento imobiliario sem cpf",
+        "quanto fica 400 mil financiado",
+        "quanto preciso ganhar para financiar imovel"
       ],
       "tags": [
         "simulador",
@@ -558,7 +562,7 @@
         "sac-x-price",
         "parcela-no-orcamento"
       ],
-      "updatedAt": "2026-09-24"
+      "updatedAt": "2026-10-13"
     },
     {
       "id": "financiamento-veiculo",
