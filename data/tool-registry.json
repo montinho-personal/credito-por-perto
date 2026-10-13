@@ -1317,7 +1317,11 @@
         "calcular juros da fatura",
         "pagar o minimo",
         "fatura atrasada",
-        "calcular juros da fatura"
+        "calcular juros da fatura",
+        "juros do cartao de credito hoje",
+        "qual o juros do cartao de credito",
+        "juros do cartao por dia",
+        "teto de juros do cartao de credito"
       ],
       "tags": [
         "calculadora",
@@ -1336,7 +1340,7 @@
         "trocar-divida",
         "plano-para-sair-das-dividas"
       ],
-      "updatedAt": "2026-09-29"
+      "updatedAt": "2026-10-13"
     },
     {
       "id": "parcelamento-fatura-cartao",

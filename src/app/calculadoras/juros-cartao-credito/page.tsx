@@ -13,6 +13,7 @@ import {
 import { ScenarioTable } from "@/components/calculators/HomeFinancingSimulator";
 import { getBcbRates, formatRefMonth } from "@/lib/bcb/rates-service";
 import { simulateCycle } from "@/lib/calculators/credit-card";
+import { simulateSacPrice } from "@/lib/calculators/sac-price";
 import {
   BC_RATES_PAGE,
   INTEREST_CAP,
@@ -46,9 +47,10 @@ import { FaqAccordion, FaqItem } from "@/components/content/FaqAccordion";
 export const revalidate = 86400;
 
 const PATH = "/calculadoras/juros-cartao-credito/";
-const TITLE = "Calculadora de juros do cartão: rotativo e fatura";
+const TITLE = "Juros do cartão de crédito: calculadora do rotativo";
+const CDC_URL = "https://www.planalto.gov.br/ccivil_03/leis/l8078compilado.htm";
 const DESCRIPTION =
-  "Informe a fatura, quanto pagou e a taxa para estimar o saldo no rotativo e os juros até a próxima fatura, com encargos separados. Sem cadastro.";
+  "Quanto está o juro do cartão, como ele é cobrado e o teto de 100%: calcule os juros do rotativo da sua fatura. Grátis, sem cadastro e sem CPF.";
 const REVIEWED = "23/09/2026";
 
 /** Sem a média oficial, os exemplos usam esta taxa — sempre rotulada como hipotética. */
@@ -90,6 +92,15 @@ export default async function JurosCartaoPage() {
     return r ? [{ reais, r }] : [];
   });
   const capExample = 1_000_00;
+  const parcSeries = rates.series.find((s) => s.internalId === "cartao-parcelado");
+  const parcRate = parcSeries ? Math.round(parcSeries.latest.value * 100) / 100 : null;
+  const parc20k = (() => {
+    if (parcRate === null) return null;
+    const o = simulateSacPrice({ principalCents: 20_000_00, ratePercent: parcRate, rateUnit: "am", months: 12 });
+    return o.kind === "ok" ? o.result.price : null;
+  })();
+  const annualOf = (m: number) => (Math.pow(1 + m / 100, 12) - 1) * 100;
+  const dailyOf = (m: number) => (Math.pow(1 + m / 100, 1 / 30) - 1) * 100;
 
   return (
     <div data-track-area="ferramenta" data-track="juros-cartao-credito" className="mx-auto max-w-3xl px-4 py-8">
@@ -231,6 +242,68 @@ export default async function JurosCartaoPage() {
 
         <h2 id="perguntas-frequentes">Perguntas frequentes</h2>
         <FaqAccordion>
+          {reference ? (
+            <FaqItem question="Quanto está o juro do cartão de crédito hoje?" id="quanto-esta-o-juro-do-cartao-de-credito-hoje">
+              <p>
+                A taxa média do rotativo para pessoas físicas, publicada pelo Banco Central, foi de {pct(rate)}% ao mês em{" "}
+                {reference.refMonthLabel}, cerca de {pct(annualOf(rate), 0)}% ao ano em juros compostos.
+                {parcRate !== null ? ` No cartão parcelado com juros, a média foi de ${pct(parcRate)}% ao mês.` : ""} É média de
+                mercado: a taxa do seu cartão está na fatura, e as médias por instituição estão em{" "}
+                <Link href="/taxas/">taxas médias por modalidade</Link>.
+              </p>
+            </FaqItem>
+          ) : null}
+          <FaqItem question="Qual o máximo de juros que pode ser cobrado no cartão de crédito?" id="qual-o-maximo-de-juros-que-pode-ser-cobrado-no-cartao-de-credito">
+            <p>
+              O limite vale para o que foi acumulado, não para a taxa. {INTEREST_CAP.summary} A seção{" "}
+              <a href="#limite">existe limite para os juros e encargos</a> mostra a conta com um exemplo.
+            </p>
+          </FaqItem>
+          <FaqItem question="O que acontece se atrasar 1 dia a fatura do cartão?" id="o-que-acontece-se-atrasar-1-dia-a-fatura-do-cartao">
+            <p>
+              Atraso não é rotativo: entram os encargos de atraso do contrato, como juros de mora e multa. A multa, pelo{" "}
+              <a href={CDC_URL} target="_blank" rel="noopener noreferrer">
+                Código de Defesa do Consumidor
+              </a>{" "}
+              (art. 52, § 1º), não pode passar de 2% do valor da prestação. A inscrição em cadastro de inadimplentes exige
+              comunicação prévia; como isso funciona está em{" "}
+              <Link href="/organizacao-financeira/o-que-acontece-ao-atrasar-parcela/">o que acontece ao atrasar uma parcela</Link>.
+            </p>
+          </FaqItem>
+          {reference ? (
+            <FaqItem question="Quais são os juros de um dia no cartão de crédito?" id="quais-sao-os-juros-de-um-dia-no-cartao-de-credito">
+              <p>
+                As taxas são informadas ao mês. Para ter a ordem de grandeza: a taxa média do rotativo, de {pct(rate)}% ao mês,
+                equivale a cerca de {pct(dailyOf(rate), 3)}% ao dia em juros compostos, considerando um mês de 30 dias. A forma
+                exata de contar os dias está no seu contrato.
+              </p>
+            </FaqItem>
+          ) : null}
+          {parc20k && parcRate !== null ? (
+            <FaqItem question="Quanto fica R$ 20 mil parcelados no cartão de crédito?" id="quanto-fica-r-20-mil-parcelados-no-cartao-de-credito">
+              <p>
+                Depende da taxa da oferta. Na taxa média do cartão parcelado com juros no Banco Central ({pct(parcRate)}% ao mês),
+                R$ 20 mil em 12 parcelas fixas dariam cerca de {brl(parc20k.firstPaymentCents)} por mês e{" "}
+                {brl(parc20k.totalPaidCents)} no total, antes de IOF. Com a proposta do seu banco, faça a conta no{" "}
+                <Link href="/calculadoras/parcelamento-fatura-cartao/">simulador de parcelamento da fatura</Link>.
+              </p>
+            </FaqItem>
+          ) : null}
+          <FaqItem question="Como diminuir ou tirar os juros do cartão?" id="como-diminuir-ou-tirar-os-juros-do-cartao">
+            <p>
+              Pagar a fatura inteira até o vencimento não gera juros de rotativo. Se não der, compare o custo de cada saída pelo
+              CET: parcelar a fatura, trocar a dívida por um crédito mais barato (a ferramenta{" "}
+              <Link href="/calculadoras/trocar-divida/">trocar dívida</Link> faz a conta) ou levar o saldo para outra
+              instituição. O passo a passo está em <Link href="/organizacao-financeira/como-sair-do-rotativo/">como sair do rotativo</Link>.
+            </p>
+          </FaqItem>
+          <FaqItem question="Juros do cartão abusivos: o que fazer?" id="juros-do-cartao-abusivos-o-que-fazer">
+            <p>
+              Compare a taxa da sua fatura com a média oficial da mesma modalidade e confira se o acumulado respeita o limite de
+              100%. O caminho de reclamação, do SAC ao Procon e ao consumidor.gov.br, está em{" "}
+              <Link href="/juros-e-cet/juros-abusivos-como-saber/">juros abusivos: como saber</Link>.
+            </p>
+          </FaqItem>
           <FaqItem question="Pagar o mínimo é entrar no rotativo?" id="pagar-o-minimo-e-entrar-no-rotativo">
             <p>
               Sim: o saldo que sobra entre o mínimo e o total é financiado pelo rotativo até a próxima fatura. Pagar
