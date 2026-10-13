@@ -5,7 +5,8 @@ import { webPageJsonLd } from "@/lib/schema/jsonld";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { Breadcrumbs } from "@/components/layout/Breadcrumbs";
 import { ToolNextSteps } from "@/components/journeys/ToolNextSteps";
-import { FgtsAdvanceSimulator, MONTHS, SimulateFgtsButton } from "@/components/calculators/FgtsAdvanceSimulator";
+import { FgtsAdvanceSimulator, SimulateFgtsButton } from "@/components/calculators/FgtsAdvanceSimulator";
+import { MONTHS } from "@/lib/calculators/fgts-advance";
 import { ScenarioTable } from "@/components/calculators/HomeFinancingSimulator";
 import {
   balanceForSaqueCents,
@@ -50,7 +51,7 @@ export const revalidate = 3600;
 const PATH = "/calculadoras/antecipacao-fgts/";
 const TITLE = "Simulador de antecipação do FGTS: quanto você recebe";
 const DESCRIPTION =
-  "Informe saldo do FGTS, mês de aniversário e taxa para estimar os saques antecipáveis, quanto receberia hoje e o custo. Grátis e sem cadastro.";
+  "Calculadora do saque-aniversário e da antecipação do FGTS: com saldo e mês de aniversário, veja quanto recebe hoje e o custo. Grátis, sem CPF.";
 const REVIEWED = "23/09/2026";
 
 /** Premissas dos exemplos — hipotéticas, e a página diz isso. */
@@ -279,6 +280,44 @@ export default function AntecipacaoFgtsPage() {
               detail={{ exampleId: "faq-10000", balanceCents: 10_000_00, birthMonth: EXAMPLE_MONTH, monthlyRatePercent: EXAMPLE_RATE, count: max }}
             />
           </FaqItem>
+          {twenty ? (
+            <FaqItem
+              question="Tenho R$ 20 mil de FGTS. Quanto posso sacar no saque-aniversário?"
+              id="tenho-r-20-mil-de-fgts-quanto-posso-sacar-no-saque-aniversario"
+            >
+              <p>
+                Pela tabela oficial, o Saque-Aniversário de quem tem R$ 20.000 de saldo é de {brl(twenty.firstSaqueCents)} por ano.
+                Na antecipação, cada saque cedido fica em {brl(twenty.firstCedibleCents)}, pelos limites vigentes. Com {max} saques e
+                as premissas do exemplo ({premises}), seriam {brl(twenty.priced.nominalCents)} em direitos futuros e cerca de{" "}
+                {brl(twenty.priced.presentCents)} hoje.
+              </p>
+              <SimulateFgtsButton
+                label="Simular R$ 20 mil de saldo"
+                detail={{ exampleId: "faq-20000", balanceCents: 20_000_00, birthMonth: EXAMPLE_MONTH, monthlyRatePercent: EXAMPLE_RATE, count: max }}
+              />
+            </FaqItem>
+          ) : null}
+          <FaqItem question="Quanto de juros é cobrado na antecipação do FGTS?" id="quanto-de-juros-e-cobrado-na-antecipacao-do-fgts">
+            <p>
+              A taxa é a da proposta de cada instituição, e é ela que decide quanto você recebe hoje: quanto maior a taxa e mais
+              distante o saque, menor o valor. A seção <a href="#taxa">como a taxa reduz o valor recebido hoje</a> mostra o efeito,
+              e o modo &ldquo;Já tenho uma proposta&rdquo; calcula a taxa implícita de uma oferta real. Compare sempre pelo CET.
+            </p>
+          </FaqItem>
+          <FaqItem question="Qual é a tabela do saque-aniversário?" id="qual-e-a-tabela-do-saque-aniversario">
+            <p>
+              O saque anual é o saldo multiplicado pela alíquota da faixa, mais uma parcela adicional. A tabela oficial, com a data
+              da verificação, está em <a href="#calculo-saque">como é calculado o Saque-Aniversário</a>.
+            </p>
+          </FaqItem>
+          <FaqItem question="Antecipar o FGTS pelo WhatsApp é seguro?" id="antecipar-o-fgts-pelo-whatsapp-e-seguro">
+            <p>
+              Desconfie. A antecipação é contratada com uma instituição autorizada, pelos canais oficiais dela, depois de você
+              autorizá-la a consultar o saldo. Quem oferece &ldquo;FGTS liberado&rdquo; por mensagem e pede taxa ou depósito antes
+              aplica o <Link href="/credito-seguro/deposito-antecipado-e-golpe/">golpe do depósito antecipado</Link>. Na dúvida,
+              passe a proposta pela <Link href="/calculadoras/sinais-de-golpe/">verificação de sinais de golpe</Link>.
+            </p>
+          </FaqItem>
           <FaqItem question="Posso antecipar de novo?" id="posso-antecipar-de-novo">
             <p>
               {ADVANCE_RULES.summaries.perCompetence} Saques já cedidos não entram numa nova operação.{" "}
@@ -295,7 +334,7 @@ export default function AntecipacaoFgtsPage() {
               você informar e estima a taxa implícita pelas datas dos repasses.
             </p>
           </FaqItem>
-          <FaqItem question="Qual instituição oferece a menor taxa?" id="qual-instituicao-oferece-a-menor-taxa">
+          <FaqItem question="Qual o melhor banco para antecipar o FGTS com menor taxa?" id="qual-instituicao-oferece-a-menor-taxa">
             <p>
               O Crédito por Perto não faz ranking de instituições. Com duas ou três propostas em mãos, o modo “Já tenho uma
               proposta” coloca lado a lado o valor recebido, os saques cedidos, a diferença, a taxa e o CET informados.

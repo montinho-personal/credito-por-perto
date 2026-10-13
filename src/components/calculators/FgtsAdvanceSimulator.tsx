@@ -90,20 +90,10 @@ interface OfferFields {
 
 const EMPTY_OFFER: OfferFields = { institution: "", received: "", count: "", ceded: "", rate: "", cet: "" };
 const LABELS = ["Proposta A", "Proposta B", "Proposta C"] as const;
-export const MONTHS = [
-  "janeiro",
-  "fevereiro",
-  "março",
-  "abril",
-  "maio",
-  "junho",
-  "julho",
-  "agosto",
-  "setembro",
-  "outubro",
-  "novembro",
-  "dezembro",
-] as const;
+/* A lista mora em lib (módulo sem "use client"): importada daqui por uma
+   página de servidor, ela chegaria como referência de cliente, não como array. */
+import { MONTHS } from "@/lib/calculators/fgts-advance";
+export { MONTHS };
 
 /* ---------- formatação ---------- */
 

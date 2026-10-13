@@ -488,3 +488,19 @@ export function compareOffers(list: OfferAnalysis[]): OfferCriterionResult[] {
     pick("menorTaxaImplicita", "Menor taxa implícita", (a) => a.implicitMonthlyPercent),
   ];
 }
+
+/** Nomes dos meses, para textos em servidor e cliente. */
+export const MONTHS = [
+  "janeiro",
+  "fevereiro",
+  "março",
+  "abril",
+  "maio",
+  "junho",
+  "julho",
+  "agosto",
+  "setembro",
+  "outubro",
+  "novembro",
+  "dezembro",
+] as const;
