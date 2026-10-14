@@ -9,7 +9,15 @@ import { AmortizationSimulator, SimulateAmortizationButton, type AmortizationPre
 import { ScenarioTable } from "@/components/calculators/HomeFinancingSimulator";
 import { formatMonths } from "@/lib/calculators/debt-plan";
 import { addMonths, todayInBrazil } from "@/lib/calculators/civil-date";
-import { compareRuns, lumpLadder, NO_EXTRAS, runContract, sensitivity, type ContractInput } from "@/lib/simulators/amortization";
+import {
+  compareRuns,
+  lumpLadder,
+  monthlyForMonthsEarlier,
+  NO_EXTRAS,
+  runContract,
+  sensitivity,
+  type ContractInput,
+} from "@/lib/simulators/amortization";
 import { FaqAccordion, FaqItem } from "@/components/content/FaqAccordion";
 
 /**
@@ -21,6 +29,11 @@ import { FaqAccordion, FaqItem } from "@/components/content/FaqAccordion";
  * - a quitação antecipada responde "quanto para quitar tudo hoje";
  * - aqui: aporte extra → prazo, prestação, juros e data de quitação.
  *
+ * Busca de 14/10: "simulador amortização financiamento" (720/mês) e "... caixa"
+ * (590/mês). A página explica como a Caixa descreve a amortização no próprio
+ * site (app, boleto, prazo de processamento), citando a fonte, sem simular
+ * "o resultado da Caixa": o número oficial é sempre o da instituição.
+ *
  * Buscas por valor ("amortizar 10 mil", "amortizar 50 mil") são atendidas
  * pelos exemplos calculados na renderização, com premissas declaradas, sem
  * URL por valor. A taxa dos exemplos é hipotética e dita como tal.
@@ -29,10 +42,11 @@ import { FaqAccordion, FaqItem } from "@/components/content/FaqAccordion";
 export const revalidate = 3600;
 
 const PATH = "/simuladores/amortizacao-financiamento/";
-const TITLE = "Simulador de amortização de financiamento";
+const TITLE = "Simulador de amortização de financiamento: SAC e Price";
 const DESCRIPTION =
-  "Veja quanto um pagamento extra reduz o prazo, a prestação e os juros do seu financiamento. SAC e Price, aporte único ou mensal. Sem cadastro.";
-const REVIEWED = "28/09/2026";
+  "Simule a amortização do financiamento imobiliário ou de veículo: quanto um extra reduz prazo, parcela e juros, no SAC ou Price. Grátis, sem CPF.";
+const REVIEWED = "14/10/2026";
+const CAIXA_CONTRATO_FAQ = "https://www.caixa.gov.br/voce/habitacao/perguntas-frequentes-contrato/Paginas/default.aspx";
 
 export const metadata: Metadata = buildMetadata({ title: TITLE, description: DESCRIPTION, path: PATH });
 
@@ -81,6 +95,10 @@ export default function AmortizacaoFinanciamentoPage() {
   const sac20 = runContract(sac, { ...NO_EXTRAS, lumpCents: 20_000_00 }, "prazo");
   const cPrice20 = compareRuns(priceBase, price20);
   const cSac20 = compareRuns(sacBase, sac20);
+  // "30 anos em 5": contrato de 360 meses, mesma taxa hipotética, Price.
+  const thirty: ContractInput = { ...price, remainingMonths: 360 };
+  const thirtyBase = runContract(thirty, NO_EXTRAS, "prazo");
+  const fiveYears = monthlyForMonthsEarlier(thirty, 360 - 60);
   const head = ["Aporte hoje", "Reduzir prazo: tempo a menos", "Reduzir prazo: juros evitados", "Reduzir prestação: nova prestação"];
 
   const prefill = (exampleId: string, system: "sac" | "price", lumpCents: number): AmortizationPrefill => ({
@@ -107,7 +125,8 @@ export default function AmortizacaoFinanciamentoPage() {
       <p className="mt-6 text-sm font-semibold uppercase tracking-widest text-brand-teal-dark">Tenho um financiamento</p>
       <h1 className="mt-2 font-serif text-3xl font-bold leading-tight text-brand-navy md:text-4xl">Simulador de amortização de financiamento</h1>
       <p className="mt-3 text-lg leading-relaxed text-brand-muted">
-        Veja quanto um pagamento extra pode reduzir o prazo, a prestação e os juros restantes do seu financiamento.
+        Veja quanto um pagamento extra pode reduzir o prazo, a prestação e os juros restantes do seu financiamento, imobiliário ou de
+        veículo. Grátis, sem cadastro e sem CPF: a conta roda no seu navegador.
       </p>
       <p className="mt-3 leading-relaxed text-brand-text">
         Amortizar um financiamento significa reduzir antecipadamente parte do saldo devedor. Com saldo menor, os juros futuros tendem a diminuir.
@@ -216,8 +235,75 @@ export default function AmortizacaoFinanciamentoPage() {
           tarifas. O número oficial é sempre o da instituição.
         </p>
 
+        <h2 id="caixa">Como amortizar o financiamento da Caixa?</h2>
+        <p>
+          Segundo as{" "}
+          <a href={CAIXA_CONTRATO_FAQ} target="_blank" rel="noopener noreferrer">
+            perguntas frequentes de contratos habitacionais da Caixa
+          </a>
+          , a simulação oficial é feita no App Habitação CAIXA, com a escolha entre reduzir o prazo ou reduzir a prestação, sem limite de
+          simulações. Contratos com prestações vencidas não podem ser amortizados. O boleto de amortização vale só para o dia em que foi
+          gerado, um novo boleto só pode ser emitido depois de 3 dias úteis, e o saldo devedor pode levar até 3 dias úteis para ser
+          atualizado depois do pagamento. Este simulador serve para fazer as contas antes, com qualquer contrato SAC ou Price; o valor que
+          vale é o do aplicativo do banco.
+        </p>
+
         <h2 id="perguntas-frequentes">Perguntas frequentes</h2>
         <FaqAccordion>
+          <FaqItem question="Como se faz o cálculo de amortização?" id="como-se-faz-o-calculo-de-amortizacao">
+            <p>
+              Cada prestação tem duas partes: juros (taxa do mês × saldo devedor) e amortização (o que abate o saldo). No{" "}
+              <strong>SAC</strong>, a amortização é fixa, saldo ÷ número de parcelas, e a prestação cai porque os juros caem. No{" "}
+              <strong>Price</strong>, a prestação é fixa, PMT = saldo × i ÷ [1 − (1 + i)<sup>−n</sup>], e a amortização é a prestação menos os
+              juros do mês. Uma amortização extra entra direto no saldo, e os juros do mês seguinte já são calculados sobre o saldo menor.
+            </p>
+          </FaqItem>
+          <FaqItem question="Qual é a tabela de amortização: SAC ou Price?" id="qual-e-a-tabela-de-amortizacao-sac-ou-price">
+            <p>
+              A tabela é a do sistema que está no seu contrato. As duas mais conhecidas são a SAC (prestações decrescentes) e a Price
+              (prestações fixas); existem outras, como o SAM, que mistura as duas. O simulador gera a tabela mês a mês de SAC e Price, e a{" "}
+              <Link href="/calculadoras/sac-x-price/">calculadora SAC x Price</Link> compara as duas para um contrato novo.
+            </p>
+          </FaqItem>
+          <FaqItem question="Quando amortizo, a parcela diminui?" id="quando-amortizo-a-parcela-diminui">
+            <p>
+              Depende da opção. Reduzindo a prestação, sim: o prazo fica e a parcela é recalculada sobre o saldo menor. Reduzindo o prazo, no
+              Price a parcela continua a mesma e o contrato acaba antes; no SAC a quota de amortização continua, mas os juros caem com o saldo,
+              então a prestação também fica um pouco menor.
+            </p>
+          </FaqItem>
+          <FaqItem question="Quantas vezes posso amortizar por mês?" id="quantas-vezes-posso-amortizar-por-mes">
+            <p>
+              Não encontramos regra geral que limite: quem define é o contrato. Na Caixa, um novo boleto de amortização só pode ser gerado depois
+              de 3 dias úteis do anterior. Com o FGTS, a lei exige intervalo mínimo de dois anos entre as movimentações para amortizar.
+            </p>
+          </FaqItem>
+          {fiveYears.kind === "valor" ? (
+            <FaqItem question="Como pagar um financiamento de 30 anos em 5?" id="como-pagar-um-financiamento-de-30-anos-em-5">
+              <p>
+                Pagando a mais todo mês, reduzindo o prazo. Exemplo educativo: R$ 300 mil em 360 parcelas Price, com a taxa hipotética de{" "}
+                {EXAMPLE_RATE}% ao ano, dão prestação de {brl(thirtyBase.firstPaymentCents)}. Para terminar em 60 meses, seria preciso pagar
+                cerca de {brl(fiveYears.cents)} a mais por mês, e os juros evitados chegam a cerca de{" "}
+                {brlRound(compareRuns(thirtyBase, fiveYears.run).interestAvoidedCents)}. Com os números do seu contrato, use &ldquo;Quanto
+                preciso amortizar para…?&rdquo; depois de simular.
+              </p>
+            </FaqItem>
+          ) : null}
+          <FaqItem question="Quanto fica R$ 300 mil financiados?" id="quanto-fica-r-300-mil-financiados">
+            <p>
+              Depende da taxa, do prazo e do sistema. Na taxa hipotética dos exemplos ({EXAMPLE_RATE}% ao ano) e 300 parcelas, a prestação Price
+              fica em {brl(priceBase.firstPaymentCents)} e a primeira do SAC em {brl(sacBase.firstPaymentCents)}, sem seguros e tarifas. A
+              taxa da Caixa ou de outro banco está na proposta; com ela, o{" "}
+              <Link href="/calculadoras/financiamento-imobiliario/">simulador de financiamento imobiliário</Link> calcula o contrato novo.
+            </p>
+          </FaqItem>
+          <FaqItem question="Qual a desvantagem de amortizar?" id="qual-a-desvantagem-de-amortizar">
+            <p>
+              O dinheiro usado deixa de estar disponível: se faltar para uma emergência ou ficar uma dívida mais cara em aberto, a conta pode não
+              compensar. E reduzir a prestação evita menos juros que reduzir o prazo. O simulador mostra quanto cada caminho economiza; o resto da
+              decisão está no seu orçamento.
+            </p>
+          </FaqItem>
           <FaqItem question="Meu banco é obrigado a reduzir o prazo?" id="meu-banco-e-obrigado-a-reduzir-o-prazo">
             <p>
               Não encontramos norma geral que obrigue toda instituição a oferecer as duas opções. Na Caixa, o cliente escolhe entre reduzir prazo ou
@@ -308,7 +394,7 @@ export default function AmortizacaoFinanciamentoPage() {
             <a href="https://www.caixa.gov.br/voce/habitacao/perguntas-frequentes-contrato/Paginas/default.aspx" target="_blank" rel="noopener noreferrer">
               Caixa: perguntas frequentes sobre contratos habitacionais
             </a>
-            .
+            : amortização pelo App Habitação CAIXA, boleto e prazo de processamento. Lida em 14/10/2026.
           </li>
         </ul>
         <p>
