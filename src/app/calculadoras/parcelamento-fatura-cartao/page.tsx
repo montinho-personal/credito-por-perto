@@ -12,10 +12,14 @@ import {
 import { ScenarioTable } from "@/components/calculators/HomeFinancingSimulator";
 import { simulateInstallments, type ProposalAnalysis } from "@/lib/calculators/invoice-installment";
 import {
+  BC_RATES_PAGE,
   CAP_CONTINUITY,
   EARLY_PAYOFF,
+  INSTALLMENT_IN_CONTRACT,
   INTEREST_CAP,
+  LIMIT_CONSIDERS_FINANCING,
   PORTABILITY,
+  RENEGOTIATION,
   ROTATIVO_DURATION,
 } from "@/lib/calculators/credit-card-rules";
 import { FaqAccordion, FaqItem } from "@/components/content/FaqAccordion";
@@ -23,7 +27,9 @@ import { FaqAccordion, FaqItem } from "@/components/content/FaqAccordion";
 /**
  * Página do simulador de parcelamento da fatura do cartão.
  *
- * INTENÇÃO: "quanto custa dividir a dívida em parcelas". A calculadora de
+ * INTENÇÃO: "parcelar a fatura vale a pena?" e "quanto custa dividir a dívida
+ * em parcelas". A página não responde sim ou não: põe lado a lado as saídas
+ * da fatura e o que cada uma custa, e o leitor decide com os próprios números. A calculadora de
  * juros do cartão é dona de "quanto custa não pagar a fatura"; o Comparador
  * de Propostas, de comparar créditos diferentes. As três se apontam.
  *
@@ -38,10 +44,21 @@ import { FaqAccordion, FaqItem } from "@/components/content/FaqAccordion";
  */
 
 const PATH = "/calculadoras/parcelamento-fatura-cartao/";
-const TITLE = "Simulador de parcelamento da fatura do cartão";
+const TITLE = "Parcelar fatura do cartão vale a pena? Simulador";
 const DESCRIPTION =
-  "Informe o valor, as parcelas e a proposta da fatura para ver o total pago, o custo adicional e a taxa aproximada, e compare até 3 opções. Sem cadastro.";
-const REVIEWED = "23/09/2026";
+  "Parcelar a fatura vale a pena? Veja o total pago e a taxa de cada proposta e compare até 3 opções. Limite, mínimo e rotativo. Grátis e sem CPF.";
+const REVIEWED = "14/10/2026";
+const CDC_URL = "https://www.planalto.gov.br/ccivil_03/leis/l8078compilado.htm";
+
+/**
+ * Exemplo de como um emissor descreve o parcelamento na prática. A Caixa é
+ * citada pelo nome, como exemplo dela — não como regra para todo cartão.
+ * Página lida em 14/10/2026.
+ */
+const CAIXA_FAQ = {
+  url: "https://www.caixa.gov.br/voce/cartoes/credito/rotativo/perguntas-frequentes/Paginas/default.aspx",
+  verifiedAt: "14/10/2026",
+};
 
 /** Taxa dos exemplos — hipotética, e a página diz isso. */
 const EXAMPLE_RATE = 9;
@@ -87,7 +104,8 @@ export default function ParcelamentoFaturaPage() {
         Simulador de parcelamento da fatura do cartão
       </h1>
       <p className="mt-3 text-lg leading-relaxed text-brand-muted">
-        Veja quanto o parcelamento custa no total e compare as opções oferecidas na sua fatura.
+        Veja quanto o parcelamento custa no total e compare as opções oferecidas na sua fatura. Grátis, sem
+        cadastro e sem CPF: a conta é feita no seu navegador.
       </p>
 
       <div className="mt-6">
@@ -96,12 +114,108 @@ export default function ParcelamentoFaturaPage() {
 
       <ToolNextSteps toolId="parcelamento-fatura-cartao" />
 
+      <section aria-labelledby="vale-a-pena" className="article-body mt-12">
+        <h2 id="vale-a-pena">Parcelar a fatura do cartão vale a pena?</h2>
+        <p>
+          Não existe resposta que sirva para todo mundo. O que decide é quanto cada saída custa em reais, com os números
+          da sua fatura, e se a parcela cabe no mês que vem. Quando a fatura não pode ser paga inteira, as saídas
+          costumam ser estas:
+        </p>
+        <ScenarioTable
+          caption="Saídas para uma fatura que não cabe no mês"
+          head={["Saída", "O que acontece", "Onde ver o custo"]}
+          rows={[
+            {
+              key: "total",
+              cells: ["Pagar o total", "Não há juros de rotativo nem de parcelamento.", "Na própria fatura"],
+            },
+            {
+              key: "parte",
+              cells: [
+                "Pagar entre o mínimo e o total",
+                "O que falta entra no rotativo, que só dura até a próxima fatura.",
+                "Calculadora de juros do cartão",
+              ],
+            },
+            {
+              key: "parcelar",
+              cells: [
+                "Parcelar a fatura",
+                "Prazo, parcela e taxa definidos na proposta; o valor ocupa limite do cartão.",
+                "Este simulador, pelo total e pelo CET",
+              ],
+            },
+            {
+              key: "outro-credito",
+              cells: [
+                "Quitar com outro crédito",
+                "Troca a dívida do cartão por outra, com taxa e prazo próprios.",
+                "Ferramenta trocar dívida, pelo CET",
+              ],
+            },
+            {
+              key: "atrasar",
+              cells: [
+                "Pagar menos que o mínimo ou atrasar",
+                "Há atraso: entram multa e juros de mora do contrato, além dos juros.",
+                "Contrato e fatura",
+              ],
+            },
+          ]}
+        />
+        <p>
+          Com essas contas lado a lado, a escolha é sua. As perguntas abaixo explicam o que a regra do Banco Central diz
+          sobre cada caso.
+        </p>
+
+        <h2 id="minimo-ou-parcelar">É melhor parcelar a fatura ou pagar o mínimo?</h2>
+        <p>
+          Pagar o mínimo não encerra a dívida: o que falta vai para o rotativo. {ROTATIVO_DURATION.summary} Ou seja,
+          pagar o mínimo adia a decisão por um mês, com os juros do rotativo nesse meio-tempo, que costumam ficar entre os
+          mais altos do crédito à pessoa física nas{" "}
+          <a href={BC_RATES_PAGE} target="_blank" rel="noopener noreferrer">
+            taxas médias publicadas pelo Banco Central
+          </a>
+          . Quanto esse mês custa, com a taxa da sua fatura, a{" "}
+          <Link href="/calculadoras/juros-cartao-credito/">calculadora de juros do cartão</Link> mostra; quanto custa o
+          parcelamento, o simulador acima. Compare os dois totais.
+        </p>
+
+        <h2 id="limite-volta">Quando parcelo a fatura, o limite volta?</h2>
+        <p>
+          Não de uma vez. {LIMIT_CONSIDERS_FINANCING.summary} Na prática, o valor parcelado continua ocupando o limite e
+          vai sendo liberado conforme as parcelas são pagas. A Caixa, por exemplo, informa nas{" "}
+          <a href={CAIXA_FAQ.url} target="_blank" rel="noopener noreferrer">
+            perguntas frequentes do cartão
+          </a>{" "}
+          que o valor financiado e os juros do parcelamento ocupam o limite, liberado à medida que as parcelas são pagas.
+          Como funciona no seu cartão está no contrato e no aplicativo.
+        </p>
+
+        <h2 id="automatico">O banco parcelou minha fatura automaticamente. Pode?</h2>
+        <p>
+          {INSTALLMENT_IN_CONTRACT.summary} Por isso alguns contratos fazem o parcelamento automaticamente quando o
+          pagamento não corresponde a nenhuma das opções da fatura. Na Caixa, por exemplo, um pagamento abaixo do mínimo e
+          acima da parcela do parcelamento em 24 vezes vira entrada, e o restante é parcelado em 12 vezes. Se você não
+          reconhece as condições aplicadas, peça o contrato e o demonstrativo à instituição; o caminho de reclamação está
+          em <Link href="/juros-e-cet/juros-abusivos-como-saber/">juros abusivos: como saber</Link>.
+        </p>
+
+        <h2 id="parcelar-ou-acordo">É melhor parcelar a fatura ou fazer um acordo?</h2>
+        <p>
+          Os dois são formas de financiar a mesma dívida, e a comparação se faz pelo total a pagar e pelo CET. {RENEGOTIATION.summary}{" "}
+          Se a proposta de acordo vier com parcelas e prazo, coloque-a no simulador ao lado do parcelamento da fatura. Como
+          preparar a negociação está em{" "}
+          <Link href="/organizacao-financeira/como-negociar-dividas/">como negociar dívidas</Link>.
+        </p>
+      </section>
+
       <section aria-labelledby="como-funciona" className="article-body mt-12">
         <h2 id="como-funciona">Como funciona o parcelamento da fatura?</h2>
         <p>
           A instituição divide o saldo da fatura em parcelas mensais, com os juros e os demais custos que a proposta
           informa. É uma forma de financiar a dívida diferente do rotativo: tem prazo, parcela e taxa definidos na
-          proposta. {ROTATIVO_DURATION.summary}{" "}
+          proposta, enquanto o rotativo só vai até a próxima fatura.{" "}
           Quanto o rotativo custa até a próxima fatura está na{" "}
           <Link href="/calculadoras/juros-cartao-credito/">calculadora de juros do cartão</Link>.
         </p>
@@ -245,6 +359,48 @@ export default function ParcelamentoFaturaPage() {
               do contrato — por isso ela é chamada de aproximada.
             </p>
           </FaqItem>
+          <FaqItem question="Quantas vezes posso parcelar a fatura do cartão?" id="quantas-vezes-posso-parcelar-a-fatura-do-cartao">
+            <p>
+              A regra do Banco Central não fixa número de parcelas nem de parcelamentos: o prazo e as opções são os que a
+              instituição oferece na fatura ou no aplicativo. Um novo parcelamento com outro ainda ativo depende da
+              instituição; na Caixa, por exemplo, fica a critério do banco, e cada parcelamento tem a taxa da data da
+              proposta. O valor já parcelado não pode voltar ao rotativo.
+            </p>
+          </FaqItem>
+          <FaqItem question="É melhor parcelar a fatura ou pegar um empréstimo?" id="e-melhor-parcelar-a-fatura-ou-pegar-um-emprestimo">
+            <p>
+              Depende do custo das duas ofertas para o mesmo valor. Compare o total a pagar e o CET de cada uma: a ferramenta{" "}
+              <Link href="/calculadoras/trocar-divida/">trocar dívida</Link> coloca a dívida do cartão e o novo crédito lado
+              a lado, e o <Link href="/calculadoras/comparador-de-propostas/">comparador de propostas</Link> faz o mesmo com
+              ofertas diferentes. Um empréstimo que quita a fatura só reduz o custo se o novo total for menor.
+            </p>
+          </FaqItem>
+          <FaqItem question="O que acontece se eu não pagar a fatura no dia?" id="o-que-acontece-se-eu-nao-pagar-a-fatura-no-dia">
+            <p>
+              Aí há atraso, e não só rotativo: entram os encargos de atraso do contrato, como juros de mora e multa. A
+              multa, pelo{" "}
+              <a href={CDC_URL} target="_blank" rel="noopener noreferrer">
+                Código de Defesa do Consumidor
+              </a>{" "}
+              (art. 52, § 1º), não pode passar de 2% do valor da prestação. O que vem depois está em{" "}
+              <Link href="/organizacao-financeira/o-que-acontece-ao-atrasar-parcela/">o que acontece ao atrasar uma parcela</Link>.
+            </p>
+          </FaqItem>
+          <FaqItem question="Parcelar a fatura diminui o score?" id="parcelar-a-fatura-diminui-o-score">
+            <p>
+              Não há fórmula pública: cada birô de crédito calcula o score com metodologia própria, a partir do histórico
+              registrado. Por isso ninguém de fora consegue dizer quanto um parcelamento muda a pontuação. Como o score
+              funciona e como consultar o seu de graça está em{" "}
+              <Link href="/organizacao-financeira/score-de-credito/">score de crédito</Link>.
+            </p>
+          </FaqItem>
+          <FaqItem question="Parcelar a fatura do Nubank ou de outro banco vale a pena?" id="parcelar-a-fatura-do-nubank-ou-de-outro-banco-vale-a-pena">
+            <p>
+              A conta é a mesma em qualquer instituição: as opções aparecem no aplicativo ou na fatura, com parcela, prazo,
+              taxa e CET. Leve esses números ao simulador e compare o total com as outras saídas da fatura. O portal não
+              avalia nem recomenda bancos.
+            </p>
+          </FaqItem>
           <FaqItem question="A taxa implícita é o CET?" id="a-taxa-implicita-e-o-cet">
             <p>
               Não. O CET é informado pela instituição e considera todos os fluxos da operação. O simulador nunca calcula nem
@@ -289,8 +445,20 @@ export default function ParcelamentoFaturaPage() {
             (limite de juros e encargos e portabilidade). Informações verificadas em {INTEREST_CAP.verifiedAt}.
           </li>
           <li>
-            {ROTATIVO_DURATION.source.organization} — {ROTATIVO_DURATION.source.title} (permanência no rotativo e
-            parcelamento). Informações verificadas em {ROTATIVO_DURATION.verifiedAt}.
+            {ROTATIVO_DURATION.source.organization} —{" "}
+            <a href={ROTATIVO_DURATION.source.url} target="_blank" rel="noopener noreferrer">{ROTATIVO_DURATION.source.title}</a>{" "}
+            (permanência no rotativo, parcelamento previsto no contrato, limite do cartão e renegociação). Informações
+            verificadas em {ROTATIVO_DURATION.verifiedAt}.
+          </li>
+          <li>
+            Presidência da República —{" "}
+            <a href={CDC_URL} target="_blank" rel="noopener noreferrer">Código de Defesa do Consumidor (Lei nº 8.078/1990)</a>,
+            art. 52, § 1º (multa de atraso).
+          </li>
+          <li>
+            Caixa Econômica Federal —{" "}
+            <a href={CAIXA_FAQ.url} target="_blank" rel="noopener noreferrer">perguntas frequentes do crédito rotativo</a>{" "}
+            (exemplo de como um emissor aplica o parcelamento e o limite). Página lida em {CAIXA_FAQ.verifiedAt}.
           </li>
           <li>
             {EARLY_PAYOFF.source.organization} —{" "}

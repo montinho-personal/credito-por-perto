@@ -12,12 +12,13 @@
     },
     {
       "claimId": "rotativo-30-dias",
-      "claimText": "Desde 2017 (Resolução CMN nº 4.549), o saldo devedor da fatura só pode permanecer no rotativo até o vencimento da fatura seguinte; a partir daí a instituição deve oferecer parcelamento em condições mais vantajosas que as do rotativo.",
+      "claimText": "Desde 2017 (Resolução CMN nº 4.549), o saldo devedor da fatura só pode permanecer no rotativo até o vencimento da fatura seguinte; depois disso, o saldo remanescente pode ser financiado por linha de crédito para pagamento parcelado, desde que em condições mais vantajosas que as do rotativo (art. 1º e art. 2º).",
       "sourceOrganization": "Banco Central do Brasil / CMN",
-      "sourceTitle": "Resolução CMN nº 4.549/2017 — crédito rotativo",
-      "sourceLocation": "https://www.bcb.gov.br",
+      "sourceTitle": "Resolução CMN nº 4.549/2017, com as alterações da Resolução CMN nº 5.112/2023 — texto consolidado",
+      "sourceLocation": "https://normativos.bcb.gov.br/Lists/Normativos/Attachments/50330/Res_4549_v2_L.pdf",
       "sourceType": "official",
-      "accessedAt": "2026-08-16"
+      "accessedAt": "2026-10-14",
+      "notes": "Reconferido em 14/10/2026 no texto consolidado: a norma diz que o saldo 'pode ser financiado' em parcelamento mais vantajoso; a redação anterior ('a instituição deve oferecer') foi corrigida."
     },
     {
       "claimId": "portabilidade-rotativo",

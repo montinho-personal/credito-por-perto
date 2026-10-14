@@ -47,17 +47,54 @@ export const INTEREST_CAP = {
   verifiedAt: "16/08/2026",
 } as const satisfies RegulatoryRule & Record<string, unknown>;
 
+/**
+ * Texto consolidado da Resolução CMN nº 4.549/2017 (com as inclusões da
+ * Resolução CMN nº 5.112/2023), lido no portal de normativos do BC em
+ * 14/10/2026. O texto diz que, depois do rotativo, o saldo "pode ser
+ * financiado" em parcelamento mais vantajoso — não que a instituição "deve
+ * oferecer". A frase antiga foi corrigida.
+ */
+const RES_4549_URL = "https://normativos.bcb.gov.br/Lists/Normativos/Attachments/50330/Res_4549_v2_L.pdf";
+const RES_4549_SOURCE = {
+  organization: "Conselho Monetário Nacional / Banco Central do Brasil",
+  title: "Resolução CMN nº 4.549/2017, com as alterações da Resolução CMN nº 5.112/2023",
+  url: RES_4549_URL,
+} as const;
+
 /** Quanto tempo o saldo pode ficar no rotativo. */
 export const ROTATIVO_DURATION = {
   id: "rotativo-ate-proxima-fatura",
   summary:
-    "O saldo não pago só pode permanecer no crédito rotativo até o vencimento da fatura seguinte; a partir daí, a instituição deve oferecer parcelamento em condições mais vantajosas que as do rotativo.",
-  source: {
-    organization: "Conselho Monetário Nacional / Banco Central do Brasil",
-    title: "Resolução CMN nº 4.549/2017",
-    url: "https://www.bcb.gov.br",
-  },
-  verifiedAt: "16/08/2026",
+    "O saldo não pago só pode ficar no crédito rotativo até o vencimento da fatura seguinte; depois disso, ele pode ser financiado por parcelamento, desde que em condições mais vantajosas que as do rotativo.",
+  source: RES_4549_SOURCE,
+  verifiedAt: "14/10/2026",
+} as const satisfies RegulatoryRule;
+
+/** Parcelamento previsto no contrato e proibição de voltar ao rotativo (art. 2º, §§ 1º e 2º). */
+export const INSTALLMENT_IN_CONTRACT = {
+  id: "parcelamento-previsto-no-contrato",
+  summary:
+    "A linha de parcelamento usada depois do rotativo pode estar prevista no próprio contrato do cartão, e o valor já parcelado não pode voltar a ser financiado no rotativo.",
+  source: RES_4549_SOURCE,
+  verifiedAt: "14/10/2026",
+} as const satisfies RegulatoryRule;
+
+/** O que foi financiado entra na definição do limite (art. 3º). */
+export const LIMIT_CONSIDERS_FINANCING = {
+  id: "financiamento-e-limite",
+  summary:
+    "Os valores financiados devem ser considerados pela instituição na avaliação de risco, inclusive na definição do limite do cartão.",
+  source: RES_4549_SOURCE,
+  verifiedAt: "14/10/2026",
+} as const satisfies RegulatoryRule;
+
+/** Renegociação assegurada a qualquer momento, dentro do limite de encargos (art. 2º-C). */
+export const RENEGOTIATION = {
+  id: "renegociacao-assegurada",
+  summary:
+    "A renegociação do rotativo e do parcelamento da fatura é assegurada a qualquer momento, desde que os juros e encargos de cada renegociação não passem do valor original da dívida renegociada, descontado o que já foi pago de juros e encargos.",
+  source: RES_4549_SOURCE,
+  verifiedAt: "14/10/2026",
 } as const satisfies RegulatoryRule;
 
 /** Portabilidade do saldo do rotativo e do parcelamento da fatura. */
@@ -110,7 +147,15 @@ export const EARLY_PAYOFF = {
 /** Taxas médias do rotativo por instituição, publicadas pelo BC. */
 export const BC_RATES_PAGE = "https://www.bcb.gov.br/estatisticas/txjuros";
 
-export const CARD_RULES: readonly RegulatoryRule[] = [INTEREST_CAP, ROTATIVO_DURATION, PORTABILITY, EARLY_PAYOFF];
+export const CARD_RULES: readonly RegulatoryRule[] = [
+  INTEREST_CAP,
+  ROTATIVO_DURATION,
+  INSTALLMENT_IN_CONTRACT,
+  LIMIT_CONSIDERS_FINANCING,
+  RENEGOTIATION,
+  PORTABILITY,
+  EARLY_PAYOFF,
+];
 
 /* -------------------------------------------------------------------------- */
 /* Aplicação do teto                                                          */

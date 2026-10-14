@@ -60,6 +60,7 @@ Console (Desempenho → Exportar → CSV, aba Páginas e aba Consultas).
 | `/calculadoras/financiamento-imobiliario/` (13/10) | | | | | | | | |
 | `/calculadoras/antecipacao-fgts/` (13/10) | | | | | | | | |
 | `/calculadoras/juros-cartao-credito/` (13/10) | | | | | | | | |
+| `/calculadoras/parcelamento-fatura-cartao/` (14/10) | | | | | | | | |
 | `/calculadoras/financiamento-veiculo/` | | | | | | | | |
 | `/calculadoras/sac-x-price/` | | | | | | | | |
 | `/emprestimos/microcredito-produtivo-e-banco-do-povo/` | | | | | | | | |
@@ -254,6 +255,15 @@ Console (Desempenho → Exportar → CSV, aba Páginas e aba Consultas).
 - **Description antes:** Informe a fatura, quanto pagou e a taxa para estimar o saldo no rotativo e os juros até a próxima fatura, com encargos separados. Sem cadastro.
 - **Description depois:** Quanto está o juro do cartão, como ele é cobrado e o teto de 100%: calcule os juros do rotativo da sua fatura. Grátis, sem cadastro e sem CPF.
 - **Contexto:** o export do AnswerThePublic veio configurado para EUA/inglês (volumes não servem; termos sim). Termos dominantes: "qual o juros", "hoje", "ao mês", "por dia", "por atraso", "teto/lei", "como tirar/diminuir", "abusivos", e marcas. FAQ ganhou 7 perguntas: juros de hoje (média do BC do rotativo e do parcelado, com mês), máximo permitido (teto da Lei 14.690), atraso de 1 dia (multa até 2%, CDC art. 52 §1º, lido em 13/10), juros de um dia (equivalência composta, 30 dias), R$ 20 mil parcelados (média do parcelado, 12x), como diminuir e juros abusivos.
+
+### `/calculadoras/parcelamento-fatura-cartao/`
+
+- **No ar em:** 14/10/2026
+- **Title antes:** Simulador de parcelamento da fatura do cartão
+- **Title depois:** Parcelar fatura do cartão vale a pena? Simulador
+- **Description antes:** Informe o valor, as parcelas e a proposta da fatura para ver o total pago, o custo adicional e a taxa aproximada, e compare até 3 opções. Sem cadastro.
+- **Description depois:** Parcelar a fatura vale a pena? Veja o total pago e a taxa de cada proposta e compare até 3 opções. Limite, mínimo e rotativo. Grátis e sem CPF.
+- **Contexto:** AnswerThePublic (14/10, pt-BR): "vale a pena parcelar a fatura do cartão de crédito" 70/mês; "parcelar fatura do cartão de crédito vale a pena" 40; variantes com Nubank. Página ganhou a tabela das saídas da fatura (pagar o total, pagar parte, parcelar, outro crédito, atrasar), sem veredito, e seções para mínimo × parcelar, limite volta, parcelamento automático e parcelar × acordo; FAQ ganhou quantas vezes posso parcelar, parcelar × empréstimo, não pagar no dia, score e Nubank. Fonte nova: texto consolidado da Resolução CMN 4.549 (com a 5.112), lido em 14/10 — corrigiu a frase "a instituição deve oferecer parcelamento" (o texto diz "pode ser financiado") no módulo de regras e no guia "Como sair do rotativo". Exemplo de emissor: perguntas frequentes da Caixa (limite e parcelamento automático).
 
 ### `/calculadoras/financiamento-veiculo/`
 
@@ -591,6 +601,7 @@ busca, do mesmo jeito, e anotar se o site aparece e em que posição.
 | qual empréstimo o governo liberou (celular, 07/10) | resumo por IA respondendo só com o Crédito do Trabalhador (Serasa, vídeo); guia do consignado do trabalhador (nov/2025); gov.br "Crédito" (FAMPE); autocomplete com para MEI, para as empresas, qual foi, qual o novo, nome e valor; buscas dominadas por Acredita (Primeiro Passo, Bolsa Família, BB, Caixa, "já está liberado"), Pronampe, CNPJ e MEI | quanto fica R$ 10.000 em 48 vezes; qual empréstimo para MEI liberado pelo governo em 2026; quando o governo vai liberar o consignado CLT; quais as novas regras do consignado em 2026 |
 | tipos de empréstimo / modalidades de empréstimo (celular, 08/10) | resumo por IA tipo a tipo (pessoal, consignado com 35%, com garantia); blog de banco digital (2019), Contabilizei, banco BV ("conheça 8 deles e escolha o melhor"), Caixa; autocomplete com pessoal, negativado, consignado, com garantia, MEI, rural, Caixa e Nubank; modalidades com consignado CLT e aposentados; buscas de marca (sumiu, WhatsApp, simulação) e "tipos de financiamento" | qual o empréstimo mais vantajoso; quais são as modalidades; qual a melhor modalidade; quais são 3 tipos de crédito; quanto fica R$ 10 mil em 48 vezes; como conseguir 2 mil urgente |
 | golpe de empréstimo (desktop anônimo, 08/10) | resumo por IA (taxa antecipada, falso consignado com dados vazados, falsa central, sinais de alerta, como agir); Serasa (29/09/2026), banco BV (2024, "7 tipos"), BMG, blog de banco digital; autocomplete com caí no golpe o que fazer, fui enganado e assinei contrato, consignado, consignado CLT, carteira de trabalho, jurisprudência e nomes de banco | como saber se o empréstimo é golpe; se eu cair, o que fazer; como funciona o golpe do falso consignado; quais são os golpes do momento |
+| parcelar fatura do cartão vale a pena (desktop anônimo, 14/10) | resumo por IA "na maioria das vezes, não vale a pena" (Ademicon, banco BV, blog de banco digital, Mercado Pago); banco BV, Serasa, Ademicon, vídeos (Nath Finanças, FGV IBRE), Reddit, BTG; autocomplete com Nubank e "de crédito"; buscas por limite volta, diminui score, pagar o mínimo, o que acontece, quantas vezes, simulador | é melhor parcelar a fatura ou deixar de pagar; parcelar ou fazer acordo; parcelar ou pegar empréstimo; quando parcelo, o limite volta |
 | empréstimo em barueri sp | Banco do Povo (página da prefeitura, "Setor Laranja"), oHub (consignado), páginas de correspondentes | onde fazer empréstimo urgente; mais fácil de aprovar; R$ 2.000 e R$ 500 urgente |
 | empréstimo em alphaville | Daycoval (agências e correspondentes), escritórios locais de "apoio ao crédito", FinanZero | onde pegar empréstimo urgente; R$ 2.000; mais fácil de aprovar; R$ 10.000 |
 | Empréstimo em Campinas | mapa com lojas, Agibank (pessoal), Crefisa (negativado), Paraná Banco (consignado em loja física) | onde fazer empréstimo urgente; R$ 10.000; mais fácil de aprovar; R$ 2.000 |
