@@ -1,0 +1,107 @@
+{
+  "articleSlug": "emprestimo-bolsa-familia",
+  "claims": [
+    {
+      "claimId": "lei-14601-revoga-6b",
+      "claimText": "A Lei nº 14.601/2023 (art. 33, II) revogou o art. 6º-B da Lei nº 10.820/2003, que permitia descontos em benefícios de programas federais de transferência de renda para pagamento de empréstimos. O texto compilado da Lei nº 10.820 registra o art. 6º-B como 'Revogado pela Lei nº 14.601, de 2023'.",
+      "sourceOrganization": "Presidência da República",
+      "sourceTitle": "Lei nº 14.601/2023 e Lei nº 10.820/2003 (texto compilado)",
+      "sourceLocation": "https://www.planalto.gov.br/ccivil_03/leis/2003/l10.820compilado.htm",
+      "sourceType": "official",
+      "accessedAt": "2026-10-15",
+      "notes": "Texto da Lei 14.601 lido em https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/lei/l14601.htm (art. 33, II)."
+    },
+    {
+      "claimId": "lei-14431-6b-original",
+      "claimText": "A Lei nº 14.431/2022 incluiu o art. 6º-B na Lei nº 10.820/2003, permitindo que beneficiários de programas federais de transferência de renda autorizassem descontos no benefício para pagamento de empréstimos, até 40% do valor do benefício.",
+      "sourceOrganization": "Presidência da República",
+      "sourceTitle": "Lei nº 14.431, de 3 de agosto de 2022",
+      "sourceLocation": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2022/lei/l14431.htm",
+      "sourceType": "official",
+      "accessedAt": "2026-10-15"
+    },
+    {
+      "claimId": "vedacao-desconto-beneficio",
+      "claimText": "É vedado ao agente operador e pagador do Bolsa Família (Caixa) efetuar descontos ou compensações que reduzam o valor dos benefícios a pretexto de recompor saldos negativos ou saldar dívidas preexistentes; a vedação alcança as instituições subcontratadas e não se aplica ao pagamento de empréstimos já contratados com base no art. 6º-B da Lei nº 10.820 (art. 15, §§ 1º e 6º).",
+      "sourceOrganization": "Presidência da República",
+      "sourceTitle": "Lei nº 14.601/2023, art. 15",
+      "sourceLocation": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/lei/l14601.htm",
+      "sourceType": "official",
+      "accessedAt": "2026-10-15"
+    },
+    {
+      "claimId": "valor-referencia-600",
+      "claimText": "O Benefício Complementar do Bolsa Família é calculado pela diferença entre R$ 600,00 e a soma dos Benefícios de Renda de Cidadania da família, quando essa soma for inferior a R$ 600,00; o valor de referência pode ser alterado por ato do Poder Executivo (art. 7º, § 1º, II, e § 3º, II).",
+      "sourceOrganization": "Presidência da República",
+      "sourceTitle": "Lei nº 14.601/2023, art. 7º",
+      "sourceLocation": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/lei/l14601.htm",
+      "sourceType": "official",
+      "accessedAt": "2026-10-15"
+    },
+    {
+      "claimId": "credito-caixa-tem-suspenso",
+      "claimText": "O Crédito CAIXA Tem está suspenso para novas contratações; as parcelas dos contratos anteriores continuam sendo debitadas automaticamente no dia do vencimento, na conta que recebeu o crédito.",
+      "sourceOrganization": "Caixa Econômica Federal",
+      "sourceTitle": "Perguntas frequentes sobre Crédito CAIXA Tem",
+      "sourceLocation": "https://www.caixa.gov.br/credito-caixa-tem/perguntas-frequentes/Paginas/default.aspx",
+      "sourceType": "official",
+      "accessedAt": "2026-10-15"
+    },
+    {
+      "claimId": "caixa-nao-faz",
+      "claimText": "A Caixa informa que não entra em contato solicitando senha, não pede depósitos em contas bancárias, não envia link por SMS, não envia links para atualização cadastral ou desbloqueio de contas e orienta, em caso de tentativa de golpe, contato com a agência ou com o SAC no 0800 726 0101.",
+      "sourceOrganization": "Caixa Econômica Federal",
+      "sourceTitle": "Segurança",
+      "sourceLocation": "https://www.caixa.gov.br/seguranca/paginas/default.aspx",
+      "sourceType": "official",
+      "accessedAt": "2026-10-15"
+    },
+    {
+      "claimId": "acredita-publico",
+      "claimText": "Podem participar do Programa Acredita no Primeiro Passo pessoas entre 16 e 65 anos com dados atualizados no CadÚnico; o programa oferece cursos, apoio a quem busca emprego e acesso ao microcrédito orientado.",
+      "sourceOrganization": "Ministério do Desenvolvimento e Assistência Social, Família e Combate à Fome",
+      "sourceTitle": "Programa Acredita no Primeiro Passo",
+      "sourceLocation": "https://www.gov.br/mds/pt-br/acoes-e-programas/programa-acredita-no-primeiro-passo/programa-acredita-no-primeiro-passo",
+      "sourceType": "official",
+      "accessedAt": "2026-10-15",
+      "notes": "Mesma página registrada no ledger de emprestimo-do-governo (07/10/2026), relida em 15/10/2026."
+    },
+    {
+      "claimId": "progredir",
+      "claimText": "O Plano Progredir, regulamentado pelo Decreto nº 9.160/2017, reúne para inscritos no CadÚnico cursos gratuitos de qualificação, vagas de emprego e possibilidade de acesso ao microcrédito produtivo orientado.",
+      "sourceOrganization": "Ministério do Desenvolvimento e Assistência Social, Família e Combate à Fome",
+      "sourceTitle": "Progredir — perguntas frequentes",
+      "sourceLocation": "https://www.gov.br/mds/pt-br/acoes-e-programas/outros/progredir/perguntas-frequentes",
+      "sourceType": "official",
+      "accessedAt": "2026-10-15"
+    },
+    {
+      "claimId": "disque-social-121",
+      "claimText": "O Disque Social 121 é o canal de atendimento do MDS indicado nas páginas do Programa Bolsa Família.",
+      "sourceOrganization": "Ministério do Desenvolvimento e Assistência Social, Família e Combate à Fome",
+      "sourceTitle": "Programa Bolsa Família",
+      "sourceLocation": "https://www.gov.br/mds/pt-br/acoes-e-programas/bolsa-familia",
+      "sourceType": "official",
+      "accessedAt": "2026-10-15"
+    },
+    {
+      "claimId": "bpc-limites-consignado",
+      "claimText": "Para titulares do BPC, os descontos não podem ultrapassar 35% do benefício, dos quais 30% para empréstimos, financiamentos e arrendamentos e 5% para cartão consignado; as operações devem ser feitas em dois momentos, com intervalo mínimo de 5 dias úteis entre a proposta e a celebração do contrato (Lei nº 10.820/2003, art. 6º, §§ 5º-A e 9º, incluídos pela Lei nº 14.601/2023).",
+      "sourceOrganization": "Presidência da República",
+      "sourceTitle": "Lei nº 10.820/2003 (texto compilado), art. 6º",
+      "sourceLocation": "https://www.planalto.gov.br/ccivil_03/leis/2003/l10.820compilado.htm",
+      "sourceType": "official",
+      "accessedAt": "2026-10-15"
+    },
+    {
+      "claimId": "instituicao-autorizada",
+      "claimText": "Somente instituições autorizadas pelo Banco Central (diretamente ou como correspondente identificado de uma) podem conceder empréstimos ao público; a autorização é consultável gratuitamente no Encontre uma instituição.",
+      "sourceOrganization": "Banco Central do Brasil",
+      "sourceTitle": "Encontre uma instituição",
+      "sourceLocation": "https://www.bcb.gov.br/meubc/encontreinstituicao",
+      "sourceType": "official",
+      "accessedAt": "2026-10-15",
+      "notes": "Mesma verificação registrada em emprestimo-na-hora e app-de-emprestimo-e-confiavel."
+    }
+  ]
+}

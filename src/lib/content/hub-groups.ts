@@ -62,6 +62,7 @@ export const HUB_GROUPS: Record<CategoryId, readonly HubGroup[]> = {
         "emprestimo-para-mei",
         "emprestimo-para-autonomo",
         "emprestimo-do-governo",
+        "emprestimo-bolsa-familia",
         "microcredito-produtivo-e-banco-do-povo",
         "antecipacao-de-recebiveis",
         "credito-rural-e-pronaf",

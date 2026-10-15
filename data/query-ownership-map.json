@@ -783,6 +783,14 @@
       "/juros-e-cet/pix-parcelado/"
     ]
   },
+  "empréstimo bolsa família": {
+    "canonicalOwner": "/emprestimos/emprestimo-bolsa-familia/",
+    "supportingPages": [
+      "/emprestimos/emprestimo-do-governo/",
+      "/emprestimos/consignado-para-quem-recebe-bpc/",
+      "/credito-seguro/deposito-antecipado-e-golpe/"
+    ]
+  },
   "qual empréstimo o governo liberou": {
     "canonicalOwner": "/emprestimos/emprestimo-do-governo/",
     "supportingPages": [

@@ -1,0 +1,60 @@
+{
+  "proposedTitle": "Empréstimo para quem recebe Bolsa Família: o que existe, o que a lei proíbe e o que é golpe",
+  "primaryIntent": "empréstimo bolsa família",
+  "secondaryIntents": [
+    "consignado bolsa família",
+    "qual banco faz empréstimo do bolsa família",
+    "empréstimo do bolsa família já foi liberado",
+    "quem recebe R$ 600 do bolsa família pode fazer empréstimo",
+    "qual aplicativo faz empréstimo do bolsa família",
+    "empréstimo bolsa família whatsapp / online / na hora",
+    "empréstimo caixa tem bolsa família"
+  ],
+  "targetReader": "Pessoa que recebe Bolsa Família e procura crédito, muitas vezes por anúncio ou mensagem",
+  "readerSituation": "SERP de 15/10/2026 (celular) com lojas de crédito e financeiras anunciando 'crédito para Bolsa Família', resumo por IA citando a Lei 14.601 e autocomplete com marcas, WhatsApp, online e 'qual banco faz'. Nenhum resultado neutro separa o que a lei proíbe do que é crédito comum",
+  "centralQuestion": "Existe empréstimo para quem recebe Bolsa Família? O que a lei permite, o que está suspenso e como reconhecer o golpe?",
+  "uniqueAngle": "Responde com o texto da lei (revogação do art. 6º-B e vedação de desconto no benefício) e com a página da Caixa (Crédito CAIXA Tem suspenso), separa crédito comum de microcrédito para negócio e decompõe as promessas de anúncio",
+  "originalContribution": [
+    "Linha do tempo legal: Lei 14.431/2022 cria o desconto, Lei 14.601/2023 revoga",
+    "Proteção do benefício contra descontos (art. 15) e a exceção dos contratos antigos",
+    "Crédito CAIXA Tem suspenso, pela página oficial",
+    "Tabela das promessas de anúncio",
+    "Diferença para o BPC"
+  ],
+  "primarySources": [
+    "Planalto — Leis 14.601/2023, 10.820/2003 (compilada) e 14.431/2022",
+    "Caixa — perguntas frequentes do Crédito CAIXA Tem e página de segurança",
+    "MDS — Acredita no Primeiro Passo, Progredir, Bolsa Família"
+  ],
+  "supportingSources": [],
+  "contentArchetype": "guide",
+  "proposedStructure": [
+    "Resposta direta",
+    "O que a lei diz",
+    "CAIXA Tem suspenso",
+    "Pode fazer empréstimo comum?",
+    "O que existe para o CadÚnico",
+    "O golpe",
+    "Promessas de anúncio",
+    "BPC",
+    "FAQ"
+  ],
+  "uniqueExamples": [],
+  "proposedVisuals": [
+    "QuickSummary",
+    "WarningBox",
+    "Tabela de promessas",
+    "ToolCallout"
+  ],
+  "pagesThatMayCompete": [
+    "/emprestimos/emprestimo-do-governo/",
+    "/emprestimos/consignado-para-quem-recebe-bpc/",
+    "/emprestimos/emprestimo-para-negativado/"
+  ],
+  "informationThatMustNotBeRepeated": [
+    "Detalhes do Acredita no Primeiro Passo (link a emprestimo-do-governo)",
+    "Regras completas do consignado do BPC (link)",
+    "Roteiro do golpe de depósito antecipado (link)"
+  ],
+  "publicationDecision": "create"
+}
