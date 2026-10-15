@@ -783,6 +783,13 @@
       "/juros-e-cet/pix-parcelado/"
     ]
   },
+  "empréstimo na conta de luz": {
+    "canonicalOwner": "/emprestimos/emprestimo-na-conta-de-luz/",
+    "supportingPages": [
+      "/organizacao-financeira/conta-de-luz-atrasada-corte/",
+      "/emprestimos/emprestimo-para-negativado/"
+    ]
+  },
   "empréstimo bolsa família": {
     "canonicalOwner": "/emprestimos/emprestimo-bolsa-familia/",
     "supportingPages": [

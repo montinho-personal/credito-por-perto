@@ -38,6 +38,7 @@ export const HUB_GROUPS: Record<CategoryId, readonly HubGroup[]> = {
         "cartao-de-credito-consignado",
         "financiamento-de-veiculo",
         "emprestimo-na-hora",
+        "emprestimo-na-conta-de-luz",
         "cooperativa-de-credito",
       ],
     },

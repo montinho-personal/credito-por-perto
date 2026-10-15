@@ -1,0 +1,94 @@
+{
+  "articleSlug": "emprestimo-na-conta-de-luz",
+  "claims": [
+    {
+      "claimId": "atividade-atipica",
+      "claimText": "A REN 1.000/2021 define atividade atípica como atividade econômica exclusiva de terceiros com interesse em incluir sua cobrança na fatura de energia; a distribuidora não pode prestar atividades atípicas, sendo permitida apenas a arrecadação dos valores por meio da fatura (arts. 628, II, e 631).",
+      "sourceOrganization": "Agência Nacional de Energia Elétrica (ANEEL)",
+      "sourceTitle": "Resolução Normativa nº 1.000/2021",
+      "sourceLocation": "https://www2.aneel.gov.br/cedoc/ren20211000.html",
+      "sourceType": "official",
+      "accessedAt": "2026-10-15",
+      "notes": "Texto lido em cópia em PDF da REN 1.000/2021 publicada pela Prefeitura de Paraí (RS), consolidada até a REN 1.098/2024 (o site da ANEEL bloqueia acesso automatizado), e conferido em 15/10/2026 com print do proprietário da página oficial da ANEEL (arts. 633 a 642): redação idêntica."
+    },
+    {
+      "claimId": "pedido-previo",
+      "claimText": "A prestação e a cobrança de atividades acessórias e atípicas dependem de prévia solicitação do consumidor, por escrito ou por outro meio que possibilite comprovação; a distribuidora é responsável pela comprovação, inclusive para produtos de terceiros com convênio de arrecadação; é vedado usar faturas separadas, boletos de oferta ou outros meios que impliquem aceitação automática; o cônjuge ou companheiro cadastrado pode solicitar (art. 633).",
+      "sourceOrganization": "Agência Nacional de Energia Elétrica (ANEEL)",
+      "sourceTitle": "Resolução Normativa nº 1.000/2021",
+      "sourceLocation": "https://www2.aneel.gov.br/cedoc/ren20211000.html",
+      "sourceType": "official",
+      "accessedAt": "2026-10-15",
+      "notes": "Texto lido em cópia em PDF da REN 1.000/2021 publicada pela Prefeitura de Paraí (RS), consolidada até a REN 1.098/2024 (o site da ANEEL bloqueia acesso automatizado), e conferido em 15/10/2026 com print do proprietário da página oficial da ANEEL (arts. 633 a 642): redação idêntica."
+    },
+    {
+      "claimId": "discriminacao-devolucao",
+      "claimText": "Os valores cobrados na fatura devem ser identificados e discriminados, com o telefone do terceiro responsável; cobranças indevidas ou sem comprovação do pedido dão direito à devolução em dobro, com IPCA e juros de 1% ao mês pro rata die (art. 634).",
+      "sourceOrganization": "Agência Nacional de Energia Elétrica (ANEEL)",
+      "sourceTitle": "Resolução Normativa nº 1.000/2021",
+      "sourceLocation": "https://www2.aneel.gov.br/cedoc/ren20211000.html",
+      "sourceType": "official",
+      "accessedAt": "2026-10-15",
+      "notes": "Texto lido em cópia em PDF da REN 1.000/2021 publicada pela Prefeitura de Paraí (RS), consolidada até a REN 1.098/2024 (o site da ANEEL bloqueia acesso automatizado), e conferido em 15/10/2026 com print do proprietário da página oficial da ANEEL (arts. 633 a 642): redação idêntica."
+    },
+    {
+      "claimId": "cancelamento",
+      "claimText": "O consumidor pode solicitar à distribuidora, a qualquer tempo, o cancelamento das cobranças na fatura, sem contato prévio ou aval da distribuidora ou do terceiro; cobrança mantida após o pedido gera devolução em dobro (art. 635, caput e § 1º).",
+      "sourceOrganization": "Agência Nacional de Energia Elétrica (ANEEL)",
+      "sourceTitle": "Resolução Normativa nº 1.000/2021",
+      "sourceLocation": "https://www2.aneel.gov.br/cedoc/ren20211000.html",
+      "sourceType": "official",
+      "accessedAt": "2026-10-15",
+      "notes": "Texto lido em cópia em PDF da REN 1.000/2021 publicada pela Prefeitura de Paraí (RS), consolidada até a REN 1.098/2024 (o site da ANEEL bloqueia acesso automatizado), e conferido em 15/10/2026 com print do proprietário da página oficial da ANEEL (arts. 633 a 642): redação idêntica."
+    },
+    {
+      "claimId": "sem-corte",
+      "claimText": "A distribuidora não pode suspender o fornecimento pelo inadimplemento das cobranças dessas atividades; a suspensão por falta de pagamento só pode ocorrer pelos valores do serviço de energia, e a notificação deve informar a possibilidade de nova fatura sem essas cobranças; os acréscimos moratórios da fatura incidem só sobre o serviço de energia (arts. 635, §§ 5º e 6º, e 636).",
+      "sourceOrganization": "Agência Nacional de Energia Elétrica (ANEEL)",
+      "sourceTitle": "Resolução Normativa nº 1.000/2021",
+      "sourceLocation": "https://www2.aneel.gov.br/cedoc/ren20211000.html",
+      "sourceType": "official",
+      "accessedAt": "2026-10-15",
+      "notes": "Texto lido em cópia em PDF da REN 1.000/2021 publicada pela Prefeitura de Paraí (RS), consolidada até a REN 1.098/2024 (o site da ANEEL bloqueia acesso automatizado), e conferido em 15/10/2026 com print do proprietário da página oficial da ANEEL (arts. 633 a 642): redação idêntica."
+    },
+    {
+      "claimId": "multa-contrato",
+      "claimText": "Multas e juros de mora relacionados aos serviços ou produtos de terceiros seguem as condições contratuais estabelecidas com o consumidor (art. 637).",
+      "sourceOrganization": "Agência Nacional de Energia Elétrica (ANEEL)",
+      "sourceTitle": "Resolução Normativa nº 1.000/2021",
+      "sourceLocation": "https://www2.aneel.gov.br/cedoc/ren20211000.html",
+      "sourceType": "official",
+      "accessedAt": "2026-10-15",
+      "notes": "Texto lido em cópia em PDF da REN 1.000/2021 publicada pela Prefeitura de Paraí (RS), consolidada até a REN 1.098/2024 (o site da ANEEL bloqueia acesso automatizado), e conferido em 15/10/2026 com print do proprietário da página oficial da ANEEL (arts. 633 a 642): redação idêntica."
+    },
+    {
+      "claimId": "canais-atendimento",
+      "claimText": "A distribuidora não pode usar os canais de atendimento para oferecer produto de terceiro, mas deve disponibilizá-los para a solicitação de cancelamento e para reclamações de cobranças indevidas; dúvidas sobre o produto são encaminhadas ao terceiro responsável (art. 641).",
+      "sourceOrganization": "Agência Nacional de Energia Elétrica (ANEEL)",
+      "sourceTitle": "Resolução Normativa nº 1.000/2021",
+      "sourceLocation": "https://www2.aneel.gov.br/cedoc/ren20211000.html",
+      "sourceType": "official",
+      "accessedAt": "2026-10-15",
+      "notes": "Texto lido em cópia em PDF da REN 1.000/2021 publicada pela Prefeitura de Paraí (RS), consolidada até a REN 1.098/2024 (o site da ANEEL bloqueia acesso automatizado), e conferido em 15/10/2026 com print do proprietário da página oficial da ANEEL (arts. 633 a 642): redação idêntica."
+    },
+    {
+      "claimId": "instituicao-autorizada",
+      "claimText": "Somente instituições autorizadas pelo Banco Central (diretamente ou como correspondente identificado de uma) podem conceder empréstimos ao público; a autorização é consultável gratuitamente no Encontre uma instituição.",
+      "sourceOrganization": "Banco Central do Brasil",
+      "sourceTitle": "Encontre uma instituição",
+      "sourceLocation": "https://www.bcb.gov.br/meubc/encontreinstituicao",
+      "sourceType": "official",
+      "accessedAt": "2026-08-16",
+      "notes": "Mesma verificação registrada em emprestimo-na-hora e app-de-emprestimo-e-confiavel."
+    },
+    {
+      "claimId": "cdc-49-52",
+      "claimText": "O CDC prevê 7 dias de arrependimento para contratação fora do estabelecimento comercial (art. 49) e a liquidação antecipada com redução proporcional dos juros (art. 52, § 2º).",
+      "sourceOrganization": "Presidência da República",
+      "sourceTitle": "Código de Defesa do Consumidor (Lei nº 8.078/1990)",
+      "sourceLocation": "https://www.planalto.gov.br/ccivil_03/leis/l8078compilado.htm",
+      "sourceType": "official",
+      "accessedAt": "2026-10-13"
+    }
+  ]
+}

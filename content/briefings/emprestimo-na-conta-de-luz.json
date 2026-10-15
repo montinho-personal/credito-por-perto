@@ -1,0 +1,56 @@
+{
+  "proposedTitle": "Empréstimo na conta de luz: como funciona, o que a ANEEL garante e o que conferir antes",
+  "primaryIntent": "empréstimo na conta de luz",
+  "secondaryIntents": [
+    "simulador de empréstimo na conta de luz (Cemig, CPFL, Enel, Equatorial, Energisa)",
+    "qual banco faz empréstimo na conta de luz",
+    "empréstimo na conta de luz negativado",
+    "empréstimo na conta de luz pelo whatsapp / online / na hora",
+    "empréstimo na conta de luz corta a luz",
+    "como cancelar empréstimo na conta de luz"
+  ],
+  "targetReader": "Pessoa, muitas vezes com renda apertada ou nome negativado, que recebeu ou procura oferta de empréstimo com parcela na fatura de energia",
+  "readerSituation": "SERP de 15/10/2026 (celular) só com financeiras e correspondentes ('sem comprovar renda', 'para negativado'); resumo por IA citando marcas; autocomplete com distribuidoras e financeiras. Nenhum resultado explica os direitos da REN 1.000/2021",
+  "centralQuestion": "Como funciona o empréstimo na conta de luz, o que acontece se a parcela atrasar e o que a regra da ANEEL garante?",
+  "uniqueAngle": "Explica a modalidade pelas regras da ANEEL (pedido prévio comprovado, devolução em dobro, cancelamento a qualquer tempo, proibição de corte pela parcela) e separa cancelar a cobrança de quitar a dívida",
+  "originalContribution": [
+    "Papéis de financeira, distribuidora e consumidor",
+    "Os direitos dos arts. 633 a 641 da REN 1.000/2021 em linguagem simples",
+    "Cancelar a cobrança não cancela a dívida",
+    "Tabela das promessas de anúncio"
+  ],
+  "primarySources": [
+    "ANEEL — REN 1.000/2021, arts. 628 a 641",
+    "Banco Central — Encontre uma instituição",
+    "Planalto — CDC, arts. 49 e 52"
+  ],
+  "supportingSources": [],
+  "contentArchetype": "guide",
+  "proposedStructure": [
+    "Resposta direta",
+    "Como funciona",
+    "O que a ANEEL garante",
+    "Peso no orçamento",
+    "O que conferir",
+    "Promessas de anúncio",
+    "FAQ"
+  ],
+  "uniqueExamples": [],
+  "proposedVisuals": [
+    "QuickSummary",
+    "WarningBox",
+    "Tabela de promessas",
+    "ToolCallout"
+  ],
+  "pagesThatMayCompete": [
+    "/organizacao-financeira/conta-de-luz-atrasada-corte/",
+    "/emprestimos/emprestimo-para-negativado/",
+    "/emprestimos/emprestimo-pessoal/"
+  ],
+  "informationThatMustNotBeRepeated": [
+    "Regras de corte por conta de energia atrasada e tarifa social (link a conta-de-luz-atrasada-corte)",
+    "Mapa do negativado (link)",
+    "Roteiro do golpe do depósito antecipado (link)"
+  ],
+  "publicationDecision": "create"
+}

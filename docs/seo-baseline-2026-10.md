@@ -69,6 +69,7 @@ Console (Desempenho → Exportar → CSV, aba Páginas e aba Consultas).
 | `/emprestimos/emprestimo-na-hora/` (nova, 07/10) | | | | | | | | |
 | `/emprestimos/emprestimo-do-governo/` (nova, 07/10) | | | | | | | | |
 | `/emprestimos/emprestimo-bolsa-familia/` (nova, 15/10) | | | | | | | | |
+| `/emprestimos/emprestimo-na-conta-de-luz/` (nova, 15/10) | | | | | | | | |
 | `/emprestimos/` (hub, 08/10) | | | | | | | | |
 | `/credito-seguro/` (hub, 08/10) | | | | | | | | |
 | `/emprestimos/sp/barueri/` | | | | | | | | |
@@ -329,6 +330,13 @@ Console (Desempenho → Exportar → CSV, aba Páginas e aba Consultas).
 - **Title:** Empréstimo Bolsa Família: o que existe e o que é golpe
 - **Description:** Não existe consignado do Bolsa Família e o Crédito CAIXA Tem está suspenso. Veja o que existe de verdade, o que a lei proíbe e como reconhecer o golpe.
 - **Contexto:** sem "antes"; nenhuma página era dona de "empréstimo bolsa família", que aparecia em 4 SERPs de cidades. Fontes conferidas em 15/10: Leis 14.601/2023 (art. 15 e art. 33, II), 10.820/2003 compilada e 14.431/2022 no Planalto; Caixa (Crédito CAIXA Tem suspenso; página de segurança); MDS (Acredita, Progredir, Disque Social 121). Lacuna declarada: microcrédito Caixa para CadÚnico (fev/2026) não lido na fonte oficial (Caixa Notícias 401, Secom com login). A comparação mede "empréstimo bolsa família", "qual banco faz empréstimo do bolsa família", "empréstimo bolsa família whatsapp" e "empréstimo caixa tem". Recebe links de empréstimo do governo, consignado BPC e dos guias de Carapicuíba, Santa Isabel e Franco da Rocha.
+
+### `/emprestimos/emprestimo-na-conta-de-luz/` (página nova)
+
+- **No ar em:** 15/10/2026
+- **Title:** Empréstimo na conta de luz: como funciona e direitos
+- **Description:** A parcela vem na fatura de energia, mas a luz não pode ser cortada por ela. Como funciona, o que a ANEEL garante, como cancelar a cobrança e o que conferir.
+- **Contexto:** sem "antes"; nenhuma página era dona de "empréstimo na conta de luz", que aparecia em 5 SERPs de cidades. Fonte: REN ANEEL 1.000/2021, arts. 628 a 641 (pedido prévio comprovado, devolução em dobro, cancelamento a qualquer tempo, proibição de corte pela parcela, canais de atendimento). Texto lido em cópia oficial em PDF e conferido com print do proprietário da página da ANEEL em 15/10 (site da ANEEL bloqueia acesso automatizado). A comparação mede "empréstimo na conta de luz", "simulador de empréstimo na conta de luz" (+ distribuidoras), "qual banco faz" e "negativado". Recebe links de Salto, Francisco Morato, Sumaré, Franco da Rocha, conta de luz atrasada e empréstimo para negativado.
 
 ### `/emprestimos/` (hub reformulado)
 
@@ -622,6 +630,7 @@ busca, do mesmo jeito, e anotar se o site aparece e em que posição.
 | parcelar fatura do cartão vale a pena (desktop anônimo, 14/10) | resumo por IA "na maioria das vezes, não vale a pena" (Ademicon, banco BV, blog de banco digital, Mercado Pago); banco BV, Serasa, Ademicon, vídeos (Nath Finanças, FGV IBRE), Reddit, BTG; autocomplete com Nubank e "de crédito"; buscas por limite volta, diminui score, pagar o mínimo, o que acontece, quantas vezes, simulador | é melhor parcelar a fatura ou deixar de pagar; parcelar ou fazer acordo; parcelar ou pegar empréstimo; quando parcelo, o limite volta |
 | simulador amortização financiamento (desktop anônimo, 14/10) | resumo por IA indicando o simulador de amortização SAC e Price de um site privado e a Calculadora do Cidadão do BC, com SAC e Price explicados; Caixa (PDF "Sistemas de amortização"), site de simulador de amortização, Sicoob, FazAConta, BC (Calculadora do Cidadão); autocomplete com imobiliário, Caixa, Price, veículo, habitacional, Bradesco, SAC; buscas por Caixa, antecipada, consignado, SAC, banco | como se faz o cálculo de amortização; qual é a tabela para calcular; quando amortizo a parcela diminui; é melhor amortizar ou antecipar parcelas |
 | empréstimo bolsa família (celular, 15/10) | resumo por IA dizendo que o consignado do Bolsa Família está proibido pela Lei 14.601 (iDinheiro) e listando Acredita e empréstimo pessoal; lojas de crédito e financeiras ("crédito pessoal para todos", "simule e contrate rápido"), app com "Programa Progredir", Serasa; autocomplete com WhatsApp, Crefisa ("sem ser pela Crefisa"), online, Banco Pan, "qual banco faz"; buscas por marcas (Daycoval, Help, BMG, Pericred, Sicredi), 2026, simular, na hora, pela Caixa | como solicitar um empréstimo com o Bolsa Família; qual aplicativo; o empréstimo do Bolsa Família já foi liberado; quem recebe R$ 600 pode fazer empréstimo |
+| empréstimo na conta de luz (celular, 15/10) | resumo por IA indicando financeiras e correspondentes por nome e "canais oficiais de distribuidoras", com valores de R$ 400 a R$ 4.000 e até 24 parcelas citados de uma financeira; resultados de financeiras e app ("sem comprovar renda, crédito para negativados", "simule online"); autocomplete de simulador com distribuidoras (Crefaz, Energisa, Enel, CPFL, EDP, Copel, Equatorial, Cemig); buscas por marcas, "qual banco faz", negativado, pelo WhatsApp, online, na hora | (não capturado) |
 | empréstimo em barueri sp | Banco do Povo (página da prefeitura, "Setor Laranja"), oHub (consignado), páginas de correspondentes | onde fazer empréstimo urgente; mais fácil de aprovar; R$ 2.000 e R$ 500 urgente |
 | empréstimo em alphaville | Daycoval (agências e correspondentes), escritórios locais de "apoio ao crédito", FinanZero | onde pegar empréstimo urgente; R$ 2.000; mais fácil de aprovar; R$ 10.000 |
 | Empréstimo em Campinas | mapa com lojas, Agibank (pessoal), Crefisa (negativado), Paraná Banco (consignado em loja física) | onde fazer empréstimo urgente; R$ 10.000; mais fácil de aprovar; R$ 2.000 |
