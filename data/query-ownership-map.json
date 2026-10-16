@@ -783,6 +783,20 @@
       "/juros-e-cet/pix-parcelado/"
     ]
   },
+  "minha casa minha vida 2026": {
+    "canonicalOwner": "/emprestimos/minha-casa-minha-vida/",
+    "supportingPages": [
+      "/calculadoras/financiamento-imobiliario/",
+      "/emprestimos/usar-fgts-para-comprar-imovel/"
+    ]
+  },
+  "usar fgts para comprar imóvel": {
+    "canonicalOwner": "/emprestimos/usar-fgts-para-comprar-imovel/",
+    "supportingPages": [
+      "/simuladores/amortizacao-financiamento/",
+      "/emprestimos/minha-casa-minha-vida/"
+    ]
+  },
   "empréstimo na conta de luz": {
     "canonicalOwner": "/emprestimos/emprestimo-na-conta-de-luz/",
     "supportingPages": [

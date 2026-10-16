@@ -102,6 +102,15 @@
       "sourceType": "official",
       "accessedAt": "2026-10-15",
       "notes": "Mesma verificação registrada em emprestimo-na-hora e app-de-emprestimo-e-confiavel."
+    },
+    {
+      "claimId": "mcmv-bf",
+      "claimText": "No Minha Casa, Minha Vida, o Bolsa Família não entra no cálculo da renda bruta familiar e, na linha subsidiada, as famílias participantes do Bolsa Família são dispensadas da participação financeira (prestações); a inscrição da linha subsidiada é no cadastro habitacional local.",
+      "sourceOrganization": "Ministério das Cidades",
+      "sourceTitle": "Perguntas frequentes — Habitação (Minha Casa, Minha Vida)",
+      "sourceLocation": "https://www.gov.br/cidades/pt-br/acesso-a-informacao/perguntas-frequentes/habitacao",
+      "sourceType": "official",
+      "accessedAt": "2026-10-16"
     }
   ]
 }

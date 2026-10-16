@@ -1,0 +1,106 @@
+{
+  "articleSlug": "minha-casa-minha-vida",
+  "claims": [
+    {
+      "claimId": "faixas-2026",
+      "claimText": "Faixas urbanas do MCMV pela Portaria MCID nº 333, de 30/03/2026: Faixa 1 até R$ 3.200,00; Faixa 2 até R$ 5.000,00; Faixa 3 de R$ 5.000,01 a R$ 9.600,00; Faixa 4 até R$ 13.000,00 de renda bruta familiar mensal.",
+      "sourceOrganization": "Ministério das Cidades",
+      "sourceTitle": "Perguntas frequentes — Habitação (Minha Casa, Minha Vida)",
+      "sourceLocation": "https://www.gov.br/cidades/pt-br/acesso-a-informacao/perguntas-frequentes/habitacao",
+      "sourceType": "official",
+      "accessedAt": "2026-10-16",
+      "notes": "A tabela oficial grafa o início da Faixa 2 como 'R$ 3.201,01'; o guia usa 'acima de R$ 3.200,00'. O PDF da Portaria 333 no gov.br retornou 404 em 16/10/2026. Limites rurais divergem entre páginas oficiais (R$ 162.500 na FAQ; R$ 134.000 na página 'Sobre'): número não publicado."
+    },
+    {
+      "claimId": "renda-exclui-beneficios",
+      "claimText": "Para enquadramento, a renda bruta familiar não considera auxílio-doença, auxílio-acidente, seguro-desemprego, BPC e Bolsa Família (Lei nº 14.620/2023, art. 5º, § 1º).",
+      "sourceOrganization": "Presidência da República",
+      "sourceTitle": "Lei nº 14.620/2023",
+      "sourceLocation": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/lei/l14620.htm",
+      "sourceType": "official",
+      "accessedAt": "2026-10-16"
+    },
+    {
+      "claimId": "atualizacao-anual",
+      "claimText": "Ato do Ministro das Cidades pode adicionar faixas e atualizar os valores de renda, e a atualização deve ser realizada anualmente (Lei nº 14.620/2023, art. 5º, §§ 1º-A e 2º, incluídos/redação pela Lei nº 15.164/2025); no texto original de 2023, a Faixa Urbano 1 ia até R$ 2.640,00.",
+      "sourceOrganization": "Presidência da República",
+      "sourceTitle": "Lei nº 14.620/2023 (texto atualizado)",
+      "sourceLocation": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/lei/l14620.htm",
+      "sourceType": "official",
+      "accessedAt": "2026-10-16"
+    },
+    {
+      "claimId": "duas-linhas",
+      "claimText": "A linha subsidiada atende, em regra, a Faixa 1, com cadastro no cadastro habitacional local do município, estado ou DF (Portaria MCID 738/2024); as linhas financiadas, com recursos do FGTS ou do Fundo Social, atendem todas as faixas até R$ 13 mil, não têm inscrição nem processo seletivo, e a família procura diretamente instituição financeira habilitada, sujeita à análise de crédito.",
+      "sourceOrganization": "Ministério das Cidades",
+      "sourceTitle": "Perguntas frequentes — Habitação",
+      "sourceLocation": "https://www.gov.br/cidades/pt-br/acesso-a-informacao/perguntas-frequentes/habitacao",
+      "sourceType": "official",
+      "accessedAt": "2026-10-16"
+    },
+    {
+      "claimId": "quem-nao-pode",
+      "claimText": "Não pode participar quem possui financiamento com recursos do FGTS ou nas condições do SFH, quem é proprietário ou tem direito de uso de imóvel residencial em qualquer parte do país, e quem recebeu benefício habitacional similar nos últimos 10 anos.",
+      "sourceOrganization": "Ministério das Cidades",
+      "sourceTitle": "Perguntas frequentes — Habitação",
+      "sourceLocation": "https://www.gov.br/cidades/pt-br/acesso-a-informacao/perguntas-frequentes/habitacao",
+      "sourceType": "official",
+      "accessedAt": "2026-10-16"
+    },
+    {
+      "claimId": "sem-taxa-sem-sorteio",
+      "claimText": "O MCMV proíbe a cobrança de taxa de cadastramento ou de priorização; o ente público não pode realizar sorteio para selecionar as famílias da linha subsidiada, que segue a Portaria MCID 738/2024.",
+      "sourceOrganization": "Ministério das Cidades",
+      "sourceTitle": "Perguntas frequentes — Habitação",
+      "sourceLocation": "https://www.gov.br/cidades/pt-br/acesso-a-informacao/perguntas-frequentes/habitacao",
+      "sourceType": "official",
+      "accessedAt": "2026-10-16"
+    },
+    {
+      "claimId": "gratuidade-bf-bpc",
+      "claimText": "Na linha subsidiada, as famílias com BPC ou participantes do Bolsa Família são dispensadas da participação financeira (Lei nº 14.620/2023); segundo o Ministério das Cidades, para elas o imóvel é 100% gratuito.",
+      "sourceOrganization": "Ministério das Cidades",
+      "sourceTitle": "Sobre o Minha Casa, Minha Vida",
+      "sourceLocation": "https://www.gov.br/cidades/pt-br/acesso-a-informacao/acoes-e-programas/habitacao/programa-minha-casa-minha-vida/sobre-o-minha-casa-minha-vida-1",
+      "sourceType": "official",
+      "accessedAt": "2026-10-16"
+    },
+    {
+      "claimId": "prioridades",
+      "claimText": "A Lei nº 14.620/2023 prioriza na provisão subsidiada famílias com mulher responsável, com pessoa com deficiência, idosa, criança ou adolescente, pessoa com câncer ou doença rara, em vulnerabilidade, que perderam moradia em desastre, em deslocamento involuntário, em situação de rua, com mulher vítima de violência doméstica, residentes em área de risco, e povos tradicionais e quilombolas.",
+      "sourceOrganization": "Ministério das Cidades",
+      "sourceTitle": "Sobre o Minha Casa, Minha Vida",
+      "sourceLocation": "https://www.gov.br/cidades/pt-br/acesso-a-informacao/acoes-e-programas/habitacao/programa-minha-casa-minha-vida/sobre-o-minha-casa-minha-vida-1",
+      "sourceType": "official",
+      "accessedAt": "2026-10-16"
+    },
+    {
+      "claimId": "inalienabilidade-60",
+      "claimText": "Os imóveis da linha subsidiada urbana (Faixa 1) não podem ser comercializados durante a vigência do contrato (60 meses).",
+      "sourceOrganization": "Ministério das Cidades",
+      "sourceTitle": "Perguntas frequentes — Habitação",
+      "sourceLocation": "https://www.gov.br/cidades/pt-br/acesso-a-informacao/perguntas-frequentes/habitacao",
+      "sourceType": "official",
+      "accessedAt": "2026-10-16"
+    },
+    {
+      "claimId": "estrangeiros",
+      "claimText": "Estrangeiros com situação migratória regular podem participar, atendendo aos mesmos critérios de elegibilidade.",
+      "sourceOrganization": "Ministério das Cidades",
+      "sourceTitle": "Perguntas frequentes — Habitação",
+      "sourceLocation": "https://www.gov.br/cidades/pt-br/acesso-a-informacao/perguntas-frequentes/habitacao",
+      "sourceType": "official",
+      "accessedAt": "2026-10-16"
+    },
+    {
+      "claimId": "taxa-caixa",
+      "claimText": "Na Caixa, o financiamento do programa aplica taxa nominal entre 4,00% a.a. e 10% a.a., conforme a renda familiar mensal bruta e o ano orçamentário da contratação, para aquisição de imóvel novo, usado ou construção em área urbana.",
+      "sourceOrganization": "Caixa Econômica Federal",
+      "sourceTitle": "Minha Casa, Minha Vida — urbana",
+      "sourceLocation": "https://www.caixa.gov.br/voce/habitacao/minha-casa-minha-vida/urbana/Paginas/default.aspx",
+      "sourceType": "official",
+      "accessedAt": "2026-10-16",
+      "notes": "Teto de valor do imóvel por faixa e taxa da Faixa 4 não publicados: só encontrados em notícias da Secom que exigem login em 16/10/2026."
+    }
+  ]
+}

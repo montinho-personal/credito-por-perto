@@ -467,7 +467,9 @@ export default async function FinanciamentoImobiliarioPage() {
                 portal do FGTS
               </a>{" "}
               lista a aquisição de imóvel residencial, concluído ou em construção, entre os usos do fundo, dentro das
-              regras dele. No simulador, some o valor do FGTS que pretende usar à entrada.
+              regras dele. No simulador, some o valor do FGTS que pretende usar à entrada. Quem pode usar, para qual imóvel e quando não
+              pode está em{" "}
+              <Link href="/emprestimos/usar-fgts-para-comprar-imovel/">como usar o FGTS para comprar imóvel</Link>.
             </p>
           </FaqItem>
           <FaqItem
@@ -476,7 +478,8 @@ export default async function FinanciamentoImobiliarioPage() {
           >
             <p>
               Serve para a conta da parcela com a taxa que você informar. Subsídio, faixa de renda e taxas do programa
-              só aparecem na simulação oficial do programa, que é a que vale para a proposta.
+              só aparecem na simulação oficial do programa, que é a que vale para a proposta. As faixas de renda e como participar
+              estão no guia <Link href="/emprestimos/minha-casa-minha-vida/">Minha Casa, Minha Vida</Link>.
             </p>
           </FaqItem>
           <FaqItem question="Como fazer a conta de um financiamento?" id="como-fazer-a-conta-de-um-financiamento">

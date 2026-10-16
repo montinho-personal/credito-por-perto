@@ -215,7 +215,8 @@ export default function AmortizacaoFinanciamentoPage() {
             página da Caixa sobre o uso do FGTS
           </a>
           . Usar o FGTS para pagar parte das prestações é outra modalidade: não abate o saldo do mesmo jeito e não é simulado aqui. Na conta da
-          amortização, o que importa é o valor que efetivamente abate o saldo, venha de onde vier.
+          amortização, o que importa é o valor que efetivamente abate o saldo, venha de onde vier. Quem pode usar o FGTS e as outras formas de uso na casa própria estão em{" "}
+          <Link href="/emprestimos/usar-fgts-para-comprar-imovel/">como usar o FGTS para comprar imóvel</Link>.
         </p>
 
         <h2 id="antecipar">Amortizar é igual a antecipar parcelas?</h2>

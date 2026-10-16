@@ -1,0 +1,56 @@
+{
+  "proposedTitle": "Usar o FGTS para comprar imóvel: as 4 formas, as regras e quando não pode",
+  "primaryIntent": "usar fgts para comprar imóvel",
+  "secondaryIntents": [
+    "posso usar o fgts como entrada",
+    "usar fgts para pagar parcelas de financiamento",
+    "usar fgts para comprar imóvel à vista / sem financiamento",
+    "usar fgts para comprar segundo imóvel",
+    "usar fgts para comprar imóvel em outra cidade / outro estado",
+    "quando não pode usar fgts para comprar imóvel",
+    "posso usar o fgts todo ano para amortizar"
+  ],
+  "targetReader": "Trabalhador com saldo de FGTS planejando comprar, financiar ou amortizar a casa própria",
+  "readerSituation": "SERP de 15/10/2026 (celular) com resumo por IA citando QuintoAndar e Caixa, Itaú, autocomplete com à vista, outra cidade, sem financiamento, outro estado, regras, segundo imóvel",
+  "centralQuestion": "Posso usar meu FGTS na casa própria, de que forma e quando não posso?",
+  "uniqueAngle": "Reúne as 4 formas de uso e as regras objetivas (comprador, imóvel, vedações) direto da Caixa e da Lei 8.036, com as lacunas declaradas",
+  "originalContribution": [
+    "Tabela das 4 formas de uso",
+    "Regra do segundo imóvel explicada",
+    "Lista do que não pode",
+    "Intervalo de 2 anos para amortizar"
+  ],
+  "primarySources": [
+    "Caixa — Utilização do FGTS na Casa Própria",
+    "Planalto — Lei 8.036/1990, art. 20"
+  ],
+  "supportingSources": [],
+  "contentArchetype": "guide",
+  "proposedStructure": [
+    "Resposta direta",
+    "4 formas",
+    "Regras do comprador",
+    "Imóvel",
+    "Quando não pode",
+    "À vista",
+    "Amortizar",
+    "Como pedir",
+    "MCMV",
+    "FAQ"
+  ],
+  "uniqueExamples": [],
+  "proposedVisuals": [
+    "QuickSummary",
+    "Tabela",
+    "ToolCallout"
+  ],
+  "pagesThatMayCompete": [
+    "/emprestimos/antecipacao-saque-aniversario-fgts/",
+    "/simuladores/amortizacao-financiamento/"
+  ],
+  "informationThatMustNotBeRepeated": [
+    "Antecipação do saque-aniversário (outra intenção)",
+    "Mecânica da amortização (link ao simulador)"
+  ],
+  "publicationDecision": "create"
+}

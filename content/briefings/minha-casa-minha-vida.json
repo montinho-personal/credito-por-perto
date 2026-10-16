@@ -1,0 +1,56 @@
+{
+  "proposedTitle": "Minha Casa, Minha Vida: faixas de renda, regras e como participar",
+  "primaryIntent": "minha casa minha vida 2026",
+  "secondaryIntents": [
+    "minha casa minha vida 2026 faixas",
+    "inscrição minha casa minha vida 2026 / quando começa",
+    "minha casa minha vida gratuito",
+    "minha casa minha vida sorteio / prefeitura",
+    "faixa 1, 2, 3, 4 minha casa minha vida 2026",
+    "lista dos contemplados",
+    "tabela de financiamento caixa 2026"
+  ],
+  "targetReader": "Família de renda baixa ou média que procura casa própria pelo programa",
+  "readerSituation": "SERP de 15/10/2026 (celular) com resumo por IA citando construtoras e imobiliárias, gov.br do Ministério das Cidades, autocomplete com inscrições, faixas, regras, prefeitura, sorteio, simulador",
+  "centralQuestion": "Em qual faixa a família está, onde se inscreve, quanto paga e o que é golpe?",
+  "uniqueAngle": "Separa a linha subsidiada (cadastro na prefeitura) da financiada (direto no banco, sem inscrição), com a regra legal de atualização anual das faixas",
+  "originalContribution": [
+    "Tabela de faixas 2026 com fonte",
+    "As duas portas do programa",
+    "Gratuidade para BF/BPC",
+    "Proibição de taxa e de sorteio",
+    "Atualização anual por lei (para 2027)"
+  ],
+  "primarySources": [
+    "Planalto — Lei 14.620/2023",
+    "Ministério das Cidades — FAQ e página Sobre o MCMV",
+    "Caixa — página do MCMV urbano"
+  ],
+  "supportingSources": [],
+  "contentArchetype": "guide",
+  "proposedStructure": [
+    "Resposta direta",
+    "Faixas 2026",
+    "Duas portas",
+    "Quem pode/não pode",
+    "Gratuito",
+    "Sem taxa e sem sorteio",
+    "FGTS",
+    "FAQ"
+  ],
+  "uniqueExamples": [],
+  "proposedVisuals": [
+    "QuickSummary",
+    "Tabela",
+    "ToolCallout"
+  ],
+  "pagesThatMayCompete": [
+    "/calculadoras/financiamento-imobiliario/",
+    "/organizacao-financeira/quanto-da-renda-comprometer-financiamento-imovel/"
+  ],
+  "informationThatMustNotBeRepeated": [
+    "Regras do FGTS na compra (link)",
+    "Conta da parcela (link ao simulador)"
+  ],
+  "publicationDecision": "create"
+}

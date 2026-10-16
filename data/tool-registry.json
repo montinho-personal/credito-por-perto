@@ -566,7 +566,7 @@
         "sac-x-price",
         "parcela-no-orcamento"
       ],
-      "updatedAt": "2026-10-13"
+      "updatedAt": "2026-10-16"
     },
     {
       "id": "financiamento-veiculo",
@@ -1066,7 +1066,7 @@
         "quitacao-antecipada",
         "sac-x-price"
       ],
-      "updatedAt": "2026-10-14"
+      "updatedAt": "2026-10-16"
     },
     {
       "id": "plano-para-sair-das-dividas",

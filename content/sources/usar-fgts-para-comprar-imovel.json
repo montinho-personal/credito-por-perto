@@ -1,0 +1,60 @@
+{
+  "articleSlug": "usar-fgts-para-comprar-imovel",
+  "claims": [
+    {
+      "claimId": "formas-de-uso",
+      "claimText": "O saldo do FGTS pode ser usado na compra ou construção (entrada ou parte do pagamento), na amortização ou liquidação do saldo devedor, no pagamento de até 80% das prestações por 12 meses consecutivos, e os créditos futuros podem pagar parte da prestação, com adesão na contratação; amortização e prestações valem para SFH e para SFI desde 12/06/2021 dentro do limite do SFH.",
+      "sourceOrganization": "Caixa Econômica Federal",
+      "sourceTitle": "Utilização do FGTS na Casa Própria",
+      "sourceLocation": "https://www.caixa.gov.br/voce/habitacao/paginas/utilizacao-fgts.aspx",
+      "sourceType": "official",
+      "accessedAt": "2026-10-16"
+    },
+    {
+      "claimId": "requisitos-comprador",
+      "claimText": "É preciso ter no mínimo 3 anos de trabalho sob o regime do FGTS (somando períodos), não ter financiamento ativo no SFH e não ser proprietário, possuidor, promitente comprador, usufrutuário ou cessionário de imóvel residencial urbano no município de residência ou de ocupação principal, nos limítrofes ou na mesma região metropolitana.",
+      "sourceOrganization": "Caixa Econômica Federal",
+      "sourceTitle": "Utilização do FGTS na Casa Própria",
+      "sourceLocation": "https://www.caixa.gov.br/voce/habitacao/paginas/utilizacao-fgts.aspx",
+      "sourceType": "official",
+      "accessedAt": "2026-10-16"
+    },
+    {
+      "claimId": "requisitos-imovel",
+      "claimText": "O imóvel deve ser residencial urbano, destinado à moradia do titular, com avaliação de até R$ 2.250.000,00 para uso do saldo na moradia, sem uso de FGTS em aquisição há menos de 3 anos do registro, regular e habitável.",
+      "sourceOrganization": "Caixa Econômica Federal",
+      "sourceTitle": "Utilização do FGTS na Casa Própria",
+      "sourceLocation": "https://www.caixa.gov.br/voce/habitacao/paginas/utilizacao-fgts.aspx",
+      "sourceType": "official",
+      "accessedAt": "2026-10-16"
+    },
+    {
+      "claimId": "nao-pode",
+      "claimText": "Não se pode usar o FGTS para imóvel comercial, imóvel rural, concluir/reformar/ampliar imóvel, comprar terreno sem construção, comprar material de construção ou imóvel para familiares, dependentes ou outras pessoas; na compra à vista há a Taxa de Intermediação do FGTS conforme tabela de tarifas da Caixa.",
+      "sourceOrganization": "Caixa Econômica Federal",
+      "sourceTitle": "Utilização do FGTS na Casa Própria",
+      "sourceLocation": "https://www.caixa.gov.br/voce/habitacao/paginas/utilizacao-fgts.aspx",
+      "sourceType": "official",
+      "accessedAt": "2026-10-16"
+    },
+    {
+      "claimId": "como-pedir",
+      "claimText": "O uso é pedido pelo App Habitação CAIXA ou pelo 0800 104 0104 / 4004 0104 (seg a sex, 8h às 20h), ou na agência/CAIXA Aqui para o primeiro uso; documentos básicos: identificação, extrato do FGTS, carteira de trabalho e DIRPF (de ambos, se casados ou em união estável).",
+      "sourceOrganization": "Caixa Econômica Federal",
+      "sourceTitle": "Utilização do FGTS na Casa Própria",
+      "sourceLocation": "https://www.caixa.gov.br/voce/habitacao/paginas/utilizacao-fgts.aspx",
+      "sourceType": "official",
+      "accessedAt": "2026-10-16",
+      "notes": "A página não informa prazo de liberação: lacuna declarada no guia."
+    },
+    {
+      "claimId": "lei-8036-art20",
+      "claimText": "A Lei nº 8.036/1990, art. 20, V, prevê o pagamento de parte das prestações (3 anos sob o FGTS, mínimo de 12 meses, até 80% da prestação); o inciso VI, a liquidação ou amortização extraordinária com interstício mínimo de 2 anos entre movimentações; o inciso VII, o pagamento total ou parcial do preço de moradia própria com 3 anos sob o FGTS.",
+      "sourceOrganization": "Presidência da República",
+      "sourceTitle": "Lei nº 8.036/1990 (texto consolidado)",
+      "sourceLocation": "https://www.planalto.gov.br/ccivil_03/leis/l8036consol.htm",
+      "sourceType": "official",
+      "accessedAt": "2026-10-16"
+    }
+  ]
+}

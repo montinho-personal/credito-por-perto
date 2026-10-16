@@ -70,6 +70,8 @@ Console (Desempenho → Exportar → CSV, aba Páginas e aba Consultas).
 | `/emprestimos/emprestimo-do-governo/` (nova, 07/10) | | | | | | | | |
 | `/emprestimos/emprestimo-bolsa-familia/` (nova, 15/10) | | | | | | | | |
 | `/emprestimos/emprestimo-na-conta-de-luz/` (nova, 15/10) | | | | | | | | |
+| `/emprestimos/minha-casa-minha-vida/` (nova, 16/10) | | | | | | | | |
+| `/emprestimos/usar-fgts-para-comprar-imovel/` (nova, 16/10) | | | | | | | | |
 | `/emprestimos/` (hub, 08/10) | | | | | | | | |
 | `/credito-seguro/` (hub, 08/10) | | | | | | | | |
 | `/emprestimos/sp/barueri/` | | | | | | | | |
@@ -337,6 +339,20 @@ Console (Desempenho → Exportar → CSV, aba Páginas e aba Consultas).
 - **Title:** Empréstimo na conta de luz: como funciona e direitos
 - **Description:** A parcela vem na fatura de energia, mas a luz não pode ser cortada por ela. Como funciona, o que a ANEEL garante, como cancelar a cobrança e o que conferir.
 - **Contexto:** sem "antes"; nenhuma página era dona de "empréstimo na conta de luz", que aparecia em 5 SERPs de cidades. Fonte: REN ANEEL 1.000/2021, arts. 628 a 641 (pedido prévio comprovado, devolução em dobro, cancelamento a qualquer tempo, proibição de corte pela parcela, canais de atendimento). Texto lido em cópia oficial em PDF e conferido com print do proprietário da página da ANEEL em 15/10 (site da ANEEL bloqueia acesso automatizado). A comparação mede "empréstimo na conta de luz", "simulador de empréstimo na conta de luz" (+ distribuidoras), "qual banco faz" e "negativado". Recebe links de Salto, Francisco Morato, Sumaré, Franco da Rocha, conta de luz atrasada e empréstimo para negativado.
+
+### `/emprestimos/minha-casa-minha-vida/` (página nova)
+
+- **No ar em:** 16/10/2026
+- **Title:** Minha Casa, Minha Vida 2026: faixas, regras e inscrição
+- **Description:** As 4 faixas de renda de 2026, quem pode participar, onde se inscrever, quem não paga prestação e por que não existe taxa de inscrição nem sorteio.
+- **Contexto:** sem "antes"; nenhuma página era dona do programa. URL sem ano de propósito: a Lei 14.620 (art. 5º, § 2º, Lei 15.164/2025) manda atualizar as faixas todo ano, e a página troca o ano do title e a tabela quando sair a portaria de 2027, mantendo URL e histórico. Fontes: Lei 14.620 no Planalto; FAQ e página "Sobre" do Ministério das Cidades (faixas da Portaria 333/2026, duas linhas, quem não pode, sem taxa e sem sorteio, gratuidade BF/BPC); página do MCMV da Caixa (taxa nominal 4% a 10% a.a.). Lacunas: teto do imóvel por faixa e taxa da Faixa 4 (só em notícias com login); limite rural diverge entre páginas oficiais. A comparação mede "minha casa minha vida 2026", "faixas", "inscrição", "gratuito" e "sorteio".
+
+### `/emprestimos/usar-fgts-para-comprar-imovel/` (página nova)
+
+- **No ar em:** 16/10/2026
+- **Title:** Usar FGTS para comprar imóvel: regras e quando não pode
+- **Description:** Entrada, compra à vista, amortização e até 80% da prestação: como usar o FGTS na casa própria, quem tem direito, o limite do imóvel e quando não pode.
+- **Contexto:** sem "antes"; nenhuma página era dona de "usar fgts para comprar imóvel". Fontes: página "Utilização do FGTS na Casa Própria" da Caixa (formas de uso, requisitos do comprador e do imóvel, R$ 2,25 milhões, vedações, como pedir) e Lei 8.036, art. 20, V a VII. Lacunas: prazo de liberação (não informado) e localização do imóvel comprado (Manual de Moradia Própria, não lido). A comparação mede "usar fgts para comprar imóvel", "à vista", "segundo imóvel", "outra cidade" e "pagar parcelas". Recebe links do simulador de financiamento imobiliário, do simulador de amortização e de "quanto da renda comprometer".
 
 ### `/emprestimos/` (hub reformulado)
 
@@ -631,6 +647,8 @@ busca, do mesmo jeito, e anotar se o site aparece e em que posição.
 | simulador amortização financiamento (desktop anônimo, 14/10) | resumo por IA indicando o simulador de amortização SAC e Price de um site privado e a Calculadora do Cidadão do BC, com SAC e Price explicados; Caixa (PDF "Sistemas de amortização"), site de simulador de amortização, Sicoob, FazAConta, BC (Calculadora do Cidadão); autocomplete com imobiliário, Caixa, Price, veículo, habitacional, Bradesco, SAC; buscas por Caixa, antecipada, consignado, SAC, banco | como se faz o cálculo de amortização; qual é a tabela para calcular; quando amortizo a parcela diminui; é melhor amortizar ou antecipar parcelas |
 | empréstimo bolsa família (celular, 15/10) | resumo por IA dizendo que o consignado do Bolsa Família está proibido pela Lei 14.601 (iDinheiro) e listando Acredita e empréstimo pessoal; lojas de crédito e financeiras ("crédito pessoal para todos", "simule e contrate rápido"), app com "Programa Progredir", Serasa; autocomplete com WhatsApp, Crefisa ("sem ser pela Crefisa"), online, Banco Pan, "qual banco faz"; buscas por marcas (Daycoval, Help, BMG, Pericred, Sicredi), 2026, simular, na hora, pela Caixa | como solicitar um empréstimo com o Bolsa Família; qual aplicativo; o empréstimo do Bolsa Família já foi liberado; quem recebe R$ 600 pode fazer empréstimo |
 | empréstimo na conta de luz (celular, 15/10) | resumo por IA indicando financeiras e correspondentes por nome e "canais oficiais de distribuidoras", com valores de R$ 400 a R$ 4.000 e até 24 parcelas citados de uma financeira; resultados de financeiras e app ("sem comprovar renda, crédito para negativados", "simule online"); autocomplete de simulador com distribuidoras (Crefaz, Energisa, Enel, CPFL, EDP, Copel, Equatorial, Cemig); buscas por marcas, "qual banco faz", negativado, pelo WhatsApp, online, na hora | (não capturado) |
+| minha casa minha vida 2026 (celular, 15/10) | resumo por IA com as 4 faixas citando construtora e imobiliária; página estadual de habitação popular (renda até R$ 8.600), gov.br do Ministério das Cidades, anúncio patrocinado de blog imobiliário; autocomplete com inscrições, faixas, regras, prefeitura, sorteio, simulador, como funciona, faixa 3; buscas por inscrição online, quando começa, faixa 2/3/4, novas regras, gratuito, subsídio, lista dos contemplados, simulação, tabela | como se inscrever; qual o valor em 2026; como serão as casas; qual a tabela de financiamento da Caixa para 2026 |
+| usar fgts para comprar imóvel (celular, 15/10) | resumo por IA (entrada, parte das prestações, liquidar; 3 anos de carteira; não ter imóvel na região; sem SFH ativo) citando QuintoAndar e Caixa; Caixa, Itaú (avaliação até R$ 2,25 milhões), QuintoAndar; autocomplete com à vista, outra cidade, sem financiamento, outro estado, regras, segundo imóvel; buscas por pagar parcelas, como entrada, quando não posso, todo ano para amortizar, outro município | quando não pode usar; qual a nova regra; quanto tempo a Caixa leva para liberar; quanto fica R$ 300 mil financiado pela Caixa |
 | empréstimo em barueri sp | Banco do Povo (página da prefeitura, "Setor Laranja"), oHub (consignado), páginas de correspondentes | onde fazer empréstimo urgente; mais fácil de aprovar; R$ 2.000 e R$ 500 urgente |
 | empréstimo em alphaville | Daycoval (agências e correspondentes), escritórios locais de "apoio ao crédito", FinanZero | onde pegar empréstimo urgente; R$ 2.000; mais fácil de aprovar; R$ 10.000 |
 | Empréstimo em Campinas | mapa com lojas, Agibank (pessoal), Crefisa (negativado), Paraná Banco (consignado em loja física) | onde fazer empréstimo urgente; R$ 10.000; mais fácil de aprovar; R$ 2.000 |
