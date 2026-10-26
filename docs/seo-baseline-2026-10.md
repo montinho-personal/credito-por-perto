@@ -72,6 +72,8 @@ Console (Desempenho → Exportar → CSV, aba Páginas e aba Consultas).
 | `/emprestimos/emprestimo-na-conta-de-luz/` (nova, 15/10) | | | | | | | | |
 | `/emprestimos/minha-casa-minha-vida/` (nova, 16/10) | | | | | | | | |
 | `/emprestimos/usar-fgts-para-comprar-imovel/` (nova, 16/10) | | | | | | | | |
+| `/organizacao-financeira/como-limpar-o-nome/` (nova, 26/10) | | | | | | | | |
+| `/organizacao-financeira/emprestar-dinheiro-para-amigo-ou-parente/` (nova, 26/10) | | | | | | | | |
 | `/emprestimos/` (hub, 08/10) | | | | | | | | |
 | `/credito-seguro/` (hub, 08/10) | | | | | | | | |
 | `/emprestimos/sp/barueri/` | | | | | | | | |
@@ -353,6 +355,18 @@ Console (Desempenho → Exportar → CSV, aba Páginas e aba Consultas).
 - **Title:** Usar FGTS para comprar imóvel: regras e quando não pode
 - **Description:** Entrada, compra à vista, amortização e até 80% da prestação: como usar o FGTS na casa própria, quem tem direito, o limite do imóvel e quando não pode.
 - **Contexto:** sem "antes"; nenhuma página era dona de "usar fgts para comprar imóvel". Fontes: página "Utilização do FGTS na Casa Própria" da Caixa (formas de uso, requisitos do comprador e do imóvel, R$ 2,25 milhões, vedações, como pedir) e Lei 8.036, art. 20, V a VII. Lacunas: prazo de liberação (não informado) e localização do imóvel comprado (Manual de Moradia Própria, não lido). A comparação mede "usar fgts para comprar imóvel", "à vista", "segundo imóvel", "outra cidade" e "pagar parcelas". Recebe links do simulador de financiamento imobiliário, do simulador de amortização e de "quanto da renda comprometer".
+
+### `/organizacao-financeira/como-limpar-o-nome/` (página nova)
+
+- **No ar em:** 26/10/2026
+- **Title:** Como limpar o nome: os caminhos e o prazo de cada um
+- **Contexto:** sem "antes"; nenhuma página era dona de "como limpar o nome". Guia-roteador para os 4 caminhos, com a Súmula 548 do STJ (5 dias úteis após o pagamento, lida no Arquivo Cidadão do STJ) e o CDC art. 43. Sem prints da SERP: escolhido pela análise de lacunas de 15/10. A comparação mede a entrada em "como limpar o nome" e se como-negociar-dividas, divida-caducada e consultar-nome perderam ou ganharam com a divisão de papéis.
+
+### `/organizacao-financeira/emprestar-dinheiro-para-amigo-ou-parente/` (página nova)
+
+- **No ar em:** 26/10/2026
+- **Title:** Emprestar dinheiro a amigo: contrato, juros e cobrança
+- **Contexto:** sem "antes". Código Civil (arts. 586 a 592 e 206), CPC (arts. 700 e 784, III), Lei 9.099 (arts. 3º e 9º) e Lei da Usura, todos no Planalto em 26/10. Sem prints da SERP. Recebe links de emprestar o nome e agiota.
 
 ### `/emprestimos/` (hub reformulado)
 

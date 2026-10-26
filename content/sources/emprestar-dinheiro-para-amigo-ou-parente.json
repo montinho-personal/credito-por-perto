@@ -1,0 +1,61 @@
+{
+  "articleSlug": "emprestar-dinheiro-para-amigo-ou-parente",
+  "claims": [
+    {
+      "claimId": "mutuo-586-592",
+      "claimText": "Mútuo é o empréstimo de coisas fungíveis; o mutuário restitui coisa do mesmo gênero, qualidade e quantidade (art. 586); mútuo a menor sem autorização não pode ser reavido, salvo as exceções do art. 589 (art. 588); destinando-se a fins econômicos, presumem-se devidos juros e, sem taxa pactuada, aplica-se a taxa legal do art. 406 (art. 591, redação da Lei 14.905/2024); sem prazo convencionado, o mútuo de dinheiro é de trinta dias, pelo menos (art. 592, II).",
+      "sourceOrganization": "Presidência da República",
+      "sourceTitle": "Código Civil, arts. 586 a 592",
+      "sourceLocation": "https://www.planalto.gov.br/ccivil_03/leis/2002/l10406compilada.htm",
+      "sourceType": "official",
+      "accessedAt": "2026-10-26"
+    },
+    {
+      "claimId": "prescricao-5-anos",
+      "claimText": "Prescreve em cinco anos a pretensão de cobrança de dívidas líquidas constantes de instrumento público ou particular (art. 206, § 5º, I).",
+      "sourceOrganization": "Presidência da República",
+      "sourceTitle": "Código Civil, art. 206",
+      "sourceLocation": "https://www.planalto.gov.br/ccivil_03/leis/2002/l10406compilada.htm",
+      "sourceType": "official",
+      "accessedAt": "2026-10-26"
+    },
+    {
+      "claimId": "titulo-executivo",
+      "claimText": "São títulos executivos extrajudiciais o documento particular assinado pelo devedor e por 2 testemunhas (CPC, art. 784, III); a ação monitória cabe a quem afirma, com base em prova escrita sem eficácia de título executivo, o direito de exigir pagamento de quantia (art. 700).",
+      "sourceOrganization": "Presidência da República",
+      "sourceTitle": "Código de Processo Civil (Lei nº 13.105/2015)",
+      "sourceLocation": "https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2015/lei/l13105.htm",
+      "sourceType": "official",
+      "accessedAt": "2026-10-26"
+    },
+    {
+      "claimId": "juizado-especial",
+      "claimText": "O Juizado Especial Cível julga causas de valor até quarenta salários mínimos (art. 3º, I); nas causas até vinte salários mínimos, as partes podem comparecer sem advogado (art. 9º).",
+      "sourceOrganization": "Presidência da República",
+      "sourceTitle": "Lei nº 9.099/1995",
+      "sourceLocation": "https://www.planalto.gov.br/ccivil_03/leis/l9099.htm",
+      "sourceType": "official",
+      "accessedAt": "2026-10-26"
+    },
+    {
+      "claimId": "usura-teto",
+      "claimText": "É vedado estipular juros superiores ao dobro da taxa legal; a estipulação de juros usurários é nula, com ajuste à medida legal e restituição do excesso, e a usura pecuniária é crime contra a economia popular.",
+      "sourceOrganization": "Presidência da República",
+      "sourceTitle": "Decreto nº 22.626/1933 e Lei nº 1.521/1951",
+      "sourceLocation": "https://www.planalto.gov.br/ccivil_03/decreto/d22626.htm",
+      "sourceType": "official",
+      "accessedAt": "2026-10-26",
+      "notes": "Mesmas leituras registradas em agiota-e-emprestimo-informal (11/09/2026)."
+    },
+    {
+      "claimId": "taxa-legal",
+      "claimText": "A taxa legal corresponde à Selic deduzido o índice de atualização monetária (Código Civil, art. 406, redação da Lei 14.905/2024).",
+      "sourceOrganization": "Presidência da República",
+      "sourceTitle": "Lei nº 14.905/2024",
+      "sourceLocation": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2024/lei/l14905.htm",
+      "sourceType": "official",
+      "accessedAt": "2026-10-26",
+      "notes": "Mesma leitura registrada em agiota-e-emprestimo-informal."
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "articleSlug": "como-limpar-o-nome",
+  "claims": [
+    {
+      "claimId": "sumula-548",
+      "claimText": "Incumbe ao credor a exclusão do registro da dívida em nome do devedor no cadastro de inadimplentes no prazo de cinco dias úteis, a partir do integral e efetivo pagamento do débito (Súmula 548, STJ, 14/10/2015).",
+      "sourceOrganization": "Superior Tribunal de Justiça",
+      "sourceTitle": "Súmula 548 (Arquivo Cidadão do STJ)",
+      "sourceLocation": "https://arquivocidadao.stj.jus.br/index.php/sumula-548",
+      "sourceType": "official",
+      "accessedAt": "2026-10-26",
+      "notes": "Mesmo caminho de leitura usado para a Súmula 385 (o portal principal do STJ recusa acesso automatizado)."
+    },
+    {
+      "claimId": "cdc-43-1-2-3",
+      "claimText": "O CDC proíbe informações negativas por período superior a cinco anos (art. 43, § 1º), exige comunicação por escrito da abertura de cadastro não solicitado (§ 2º) e garante a correção imediata de inexatidão, com cinco dias úteis para o arquivista comunicar a alteração aos destinatários (§ 3º).",
+      "sourceOrganization": "Presidência da República",
+      "sourceTitle": "Código de Defesa do Consumidor, art. 43",
+      "sourceLocation": "https://www.planalto.gov.br/ccivil_03/leis/l8078compilado.htm",
+      "sourceType": "official",
+      "accessedAt": "2026-10-26"
+    }
+  ]
+}

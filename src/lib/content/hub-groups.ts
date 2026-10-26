@@ -150,6 +150,7 @@ export const HUB_GROUPS: Record<CategoryId, readonly HubGroup[]> = {
         "renegociacao-ou-emprestimo",
         "quanto-da-renda-comprometer-financiamento-imovel",
         "emprestar-o-nome",
+        "emprestar-dinheiro-para-amigo-ou-parente",
         "fiador-ou-avalista",
       ],
     },
@@ -173,6 +174,7 @@ export const HUB_GROUPS: Record<CategoryId, readonly HubGroup[]> = {
       title: "Dívidas: sair, negociar e seus direitos",
       slugs: [
         "como-sair-das-dividas",
+        "como-limpar-o-nome",
         "qual-divida-pagar-primeiro",
         "como-negociar-dividas",
         "como-sair-do-rotativo",

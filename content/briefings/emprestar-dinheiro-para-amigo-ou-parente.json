@@ -1,0 +1,40 @@
+{
+  "proposedTitle": "Emprestar dinheiro para amigo ou parente: contrato, juros permitidos e como cobrar",
+  "primaryIntent": "emprestar dinheiro para amigo",
+  "secondaryIntents": [
+    "contrato de empréstimo entre pessoas físicas",
+    "posso cobrar juros de empréstimo para amigo",
+    "emprestei dinheiro e não me pagaram o que fazer",
+    "empréstimo de boca vale"
+  ],
+  "targetReader": "Pessoa física comum",
+  "readerSituation": "Busca recorrente sem página dona no site; definida na análise de lacunas de 15/10/2026",
+  "centralQuestion": "Como emprestar dinheiro a amigo ou parente com segurança, quanto de juros é permitido e como cobrar?",
+  "uniqueAngle": "Lado de quem empresta: regras supletivas do mútuo, teto da usura, título executivo com 2 testemunhas, Juizado e monitória",
+  "originalContribution": [
+    "Regras que valem sem nada combinado (30 dias, juros só com fins econômicos)",
+    "Checklist do acordo escrito",
+    "Caminho de cobrança por tipo de prova"
+  ],
+  "primarySources": [
+    "Planalto — Código Civil, CPC, Lei 9.099, Lei da Usura, Lei 1.521, Lei 14.905"
+  ],
+  "supportingSources": [],
+  "contentArchetype": "guide",
+  "proposedStructure": [],
+  "uniqueExamples": [],
+  "proposedVisuals": [
+    "QuickSummary",
+    "Tabela",
+    "ChecklistBox"
+  ],
+  "pagesThatMayCompete": [
+    "/credito-seguro/agiota-e-emprestimo-informal/",
+    "/organizacao-financeira/emprestar-o-nome/"
+  ],
+  "informationThatMustNotBeRepeated": [
+    "Teto da usura em detalhe e situação de quem pegou com agiota (link)",
+    "Risco de emprestar o nome (link)"
+  ],
+  "publicationDecision": "create"
+}

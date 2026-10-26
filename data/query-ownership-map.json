@@ -783,6 +783,21 @@
       "/juros-e-cet/pix-parcelado/"
     ]
   },
+  "como limpar o nome": {
+    "canonicalOwner": "/organizacao-financeira/como-limpar-o-nome/",
+    "supportingPages": [
+      "/organizacao-financeira/como-negociar-dividas/",
+      "/organizacao-financeira/divida-caducada-nome-limpo/",
+      "/credito-seguro/consultar-nome-nos-biros-de-credito/"
+    ]
+  },
+  "emprestar dinheiro para amigo": {
+    "canonicalOwner": "/organizacao-financeira/emprestar-dinheiro-para-amigo-ou-parente/",
+    "supportingPages": [
+      "/credito-seguro/agiota-e-emprestimo-informal/",
+      "/organizacao-financeira/emprestar-o-nome/"
+    ]
+  },
   "minha casa minha vida 2026": {
     "canonicalOwner": "/emprestimos/minha-casa-minha-vida/",
     "supportingPages": [

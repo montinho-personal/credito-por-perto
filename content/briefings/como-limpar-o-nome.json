@@ -1,0 +1,46 @@
+{
+  "proposedTitle": "Como limpar o nome: os caminhos que tiram a dívida do cadastro, e os prazos de cada um",
+  "primaryIntent": "como limpar o nome",
+  "secondaryIntents": [
+    "paguei a dívida quando meu nome fica limpo",
+    "como limpar o nome sem pagar",
+    "nome limpo em quantos dias",
+    "limpa nome é golpe"
+  ],
+  "targetReader": "Pessoa física comum",
+  "readerSituation": "Busca recorrente sem página dona no site; definida na análise de lacunas de 15/10/2026",
+  "centralQuestion": "Quais são os caminhos para tirar o nome do cadastro de inadimplentes e quanto tempo cada um leva?",
+  "uniqueAngle": "Guia-roteador: separa os 4 caminhos (pagar/negociar, registro errado, protesto, 5 anos) com o prazo legal de cada um e aponta para o guia que aprofunda",
+  "originalContribution": [
+    "Súmula 548 (5 dias úteis após pagamento)",
+    "Tabela situação → caminho → prazo"
+  ],
+  "primarySources": [
+    "STJ — Súmula 548",
+    "Planalto — CDC art. 43"
+  ],
+  "supportingSources": [],
+  "contentArchetype": "guide",
+  "proposedStructure": [],
+  "uniqueExamples": [],
+  "proposedVisuals": [
+    "QuickSummary",
+    "Tabela",
+    "ChecklistBox"
+  ],
+  "pagesThatMayCompete": [
+    "/organizacao-financeira/como-negociar-dividas/",
+    "/organizacao-financeira/divida-caducada-nome-limpo/",
+    "/credito-seguro/consultar-nome-nos-biros-de-credito/",
+    "/organizacao-financeira/protesto-em-cartorio/",
+    "/emprestimos/emprestimo-para-negativado/"
+  ],
+  "informationThatMustNotBeRepeated": [
+    "Canais e preparação da negociação (link)",
+    "Detalhe da prescrição (link)",
+    "Como consultar cada birô (link)",
+    "Cancelamento do protesto (link)",
+    "Súmulas 359/385/404 (link)"
+  ],
+  "publicationDecision": "create"
+}
