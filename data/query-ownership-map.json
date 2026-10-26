@@ -783,6 +783,20 @@
       "/juros-e-cet/pix-parcelado/"
     ]
   },
+  "calcular quando a dívida caduca data de vencimento": {
+    "canonicalOwner": "/calculadoras/quando-a-divida-sai-do-nome/",
+    "supportingPages": [
+      "/organizacao-financeira/divida-caducada-nome-limpo/",
+      "/organizacao-financeira/como-limpar-o-nome/"
+    ]
+  },
+  "posso usar meu fgts na casa própria verificar condições": {
+    "canonicalOwner": "/calculadoras/fgts-casa-propria/",
+    "supportingPages": [
+      "/emprestimos/usar-fgts-para-comprar-imovel/",
+      "/simuladores/amortizacao-financiamento/"
+    ]
+  },
   "como limpar o nome": {
     "canonicalOwner": "/organizacao-financeira/como-limpar-o-nome/",
     "supportingPages": [

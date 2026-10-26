@@ -357,6 +357,13 @@
           "toolId": "quando-fico-livre-das-dividas",
           "whyThisStep": "Coloca o acordo ao lado das outras dívidas e mostra em que mês tudo termina.",
           "optional": true
+        },
+        {
+          "id": "prazo-no-cadastro",
+          "title": "A dívida já está perto de sair do cadastro?",
+          "toolId": "quando-a-divida-sai-do-nome",
+          "whyThisStep": "Dívida antiga tem data para sair do cadastro de inadimplentes, e reconhecer a dívida num acordo reinicia a prescrição. Saber as datas ajuda a ler a proposta com calma.",
+          "optional": true
         }
       ],
       "relatedContent": [
@@ -417,6 +424,13 @@
           "title": "Estão oferecendo um crédito novo para quitar esta?",
           "toolId": "trocar-divida",
           "whyThisStep": "Quitar com dinheiro emprestado não é quitar: é trocar de credor. A conta é outra.",
+          "optional": true
+        },
+        {
+          "id": "fgts-no-financiamento",
+          "title": "Dá para usar o FGTS?",
+          "toolId": "fgts-casa-propria",
+          "whyThisStep": "No financiamento habitacional, o saldo do FGTS pode amortizar ou quitar a dívida, com intervalo mínimo de 2 anos entre os usos. Confira antes se o seu contrato atende às regras.",
           "optional": true
         }
       ],

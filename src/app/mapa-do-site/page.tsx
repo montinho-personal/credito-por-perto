@@ -46,6 +46,8 @@ export default function MapaDoSitePage() {
         <li><Link href="/calculadoras/minha-taxa-esta-cara/">Minha taxa está cara?</Link></li>
         <li><Link href="/calculadoras/sinais-de-golpe/">Essa proposta tem sinais de golpe?</Link></li>
         <li><Link href="/calculadoras/emprestimo/">Calculadora de empréstimo</Link></li>
+        <li><Link href="/calculadoras/quando-a-divida-sai-do-nome/">Quando a dívida sai do meu nome?</Link></li>
+        <li><Link href="/calculadoras/fgts-casa-propria/">Posso usar meu FGTS na casa própria?</Link></li>
         <li><Link href="/emprestimos/guias-locais/">Guias locais</Link></li>
         <li><Link href="/artigos/">Blog</Link></li>
         <li><Link href="/glossario/">Glossário de crédito</Link></li>

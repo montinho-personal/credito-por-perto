@@ -1069,6 +1069,51 @@
       "updatedAt": "2026-10-16"
     },
     {
+      "id": "fgts-casa-propria",
+      "name": "Posso usar meu FGTS na casa própria?",
+      "shortName": "FGTS na casa própria",
+      "route": "/calculadoras/fgts-casa-propria/",
+      "cta": "Verificar meu caso",
+      "type": "verificador",
+      "category": "financiamentos",
+      "situation": "antes-de-contratar",
+      "question": "Posso usar o meu FGTS para comprar, amortizar ou pagar a prestação do imóvel?",
+      "whenItHelps": "Responda perguntas rápidas e veja quais condições da Caixa você atende, quais não atende e o que falta confirmar, para cada forma de uso.",
+      "calloutLead": "Antes de contar com o FGTS no negócio, confira se o seu caso atende às condições publicadas pela Caixa.",
+      "badge": "Regras da Caixa e da lei",
+      "aliases": [
+        "posso usar fgts para comprar imóvel",
+        "fgts como entrada",
+        "fgts para pagar prestação",
+        "usar fgts segundo imóvel",
+        "fgts para amortizar financiamento",
+        "quando não posso usar o fgts"
+      ],
+      "keywords": [
+        "usar fgts imovel",
+        "fgts casa propria",
+        "fgts entrada financiamento",
+        "fgts amortizar"
+      ],
+      "tags": [
+        "fgts",
+        "financiamento-imobiliario",
+        "casa-propria"
+      ],
+      "triggerTerms": [
+        "usar o fgts",
+        "saldo do fgts",
+        "fgts na compra",
+        "fgts para amortizar",
+        "fgts como entrada"
+      ],
+      "defaultNextSteps": [
+        "amortizacao-financiamento",
+        "financiamento-imobiliario"
+      ],
+      "updatedAt": "2026-10-26"
+    },
+    {
       "id": "plano-para-sair-das-dividas",
       "name": "Plano para sair das dívidas",
       "shortName": "Plano para sair das dívidas",
@@ -1237,6 +1282,53 @@
         "trocar-divida"
       ],
       "updatedAt": "2026-09-30"
+    },
+    {
+      "id": "quando-a-divida-sai-do-nome",
+      "name": "Quando a dívida sai do meu nome?",
+      "shortName": "Prazo da dívida no nome",
+      "route": "/calculadoras/quando-a-divida-sai-do-nome/",
+      "cta": "Calcular a data",
+      "type": "calculadora",
+      "category": "cartao-e-dividas",
+      "situation": "ja-tenho-divida",
+      "question": "Minha dívida venceu faz tempo. Quando ela sai do cadastro de inadimplentes?",
+      "whenItHelps": "Informe a data de vencimento e veja quando se completam os 5 anos no cadastro e o prazo de referência da cobrança na Justiça.",
+      "calloutLead": "Quer saber a data exata em que o prazo de 5 anos se completa no seu caso? Informe o vencimento e veja.",
+      "badge": "Regra do CDC e do STJ",
+      "aliases": [
+        "quando minha dívida caduca",
+        "dívida caduca em quanto tempo",
+        "quanto tempo meu nome fica sujo",
+        "5 anos nome sujo",
+        "prescrição de dívida",
+        "quando meu nome fica limpo sozinho"
+      ],
+      "keywords": [
+        "divida caduca",
+        "quando a divida caduca",
+        "prazo nome sujo",
+        "prescricao de divida",
+        "5 anos serasa"
+      ],
+      "tags": [
+        "dividas",
+        "nome-limpo",
+        "prescricao",
+        "cadastro"
+      ],
+      "triggerTerms": [
+        "dívida caduca",
+        "caducar",
+        "prescrição da dívida",
+        "cinco anos no cadastro",
+        "5 anos no cadastro"
+      ],
+      "defaultNextSteps": [
+        "renegociacao-de-dividas",
+        "plano-para-sair-das-dividas"
+      ],
+      "updatedAt": "2026-10-26"
     },
     {
       "id": "trocar-divida",

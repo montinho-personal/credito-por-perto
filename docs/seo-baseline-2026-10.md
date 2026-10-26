@@ -74,6 +74,8 @@ Console (Desempenho → Exportar → CSV, aba Páginas e aba Consultas).
 | `/emprestimos/usar-fgts-para-comprar-imovel/` (nova, 16/10) | | | | | | | | |
 | `/organizacao-financeira/como-limpar-o-nome/` (nova, 26/10) | | | | | | | | |
 | `/organizacao-financeira/emprestar-dinheiro-para-amigo-ou-parente/` (nova, 26/10) | | | | | | | | |
+| `/calculadoras/quando-a-divida-sai-do-nome/` (nova, 26/10) | | | | | | | | |
+| `/calculadoras/fgts-casa-propria/` (nova, 26/10) | | | | | | | | |
 | `/emprestimos/` (hub, 08/10) | | | | | | | | |
 | `/credito-seguro/` (hub, 08/10) | | | | | | | | |
 | `/emprestimos/sp/barueri/` | | | | | | | | |
@@ -367,6 +369,18 @@ Console (Desempenho → Exportar → CSV, aba Páginas e aba Consultas).
 - **No ar em:** 26/10/2026
 - **Title:** Emprestar dinheiro a amigo: contrato, juros e cobrança
 - **Contexto:** sem "antes". Código Civil (arts. 586 a 592 e 206), CPC (arts. 700 e 784, III), Lei 9.099 (arts. 3º e 9º) e Lei da Usura, todos no Planalto em 26/10. Sem prints da SERP. Recebe links de emprestar o nome e agiota.
+
+### `/calculadoras/quando-a-divida-sai-do-nome/` (ferramenta nova)
+
+- **No ar em:** 26/10/2026
+- **Title:** Quando minha dívida caduca? Calcule a data
+- **Contexto:** sem "antes". Calcula, a partir do vencimento, o fim dos 5 anos no cadastro (CDC art. 43, § 1º; Súmula 323; REsp 2.095.414, Quarta Turma, 2024, por maioria: conta do dia seguinte ao vencimento, pela notícia oficial do STJ sobre o Informativo 817) e o prazo de referência da prescrição (CC art. 206, § 5º, I, com art. 189), com a contagem do art. 132, § 3º, e o aviso de interrupção do art. 202. Sem eventos de analytics próprios (camada de analytics exige pergunta antes de alterar). Callouts em dívida caducada, como limpar o nome, consulta aos birôs e negativado.
+
+### `/calculadoras/fgts-casa-propria/` (ferramenta nova)
+
+- **No ar em:** 26/10/2026
+- **Title:** Posso usar meu FGTS para comprar imóvel? Verifique
+- **Contexto:** sem "antes". Verificador por forma de uso (comprar, amortizar, prestação) com as condições da página da Caixa e da Lei 8.036, art. 20; resultado em "atende / não atende / falta confirmar", nunca "aprovado"; conta de até 80% da prestação por 12 meses. Sem eventos de analytics próprios. Callouts em usar FGTS, Minha Casa Minha Vida, quanto da renda comprometer e saque-aniversário.
 
 ### `/emprestimos/` (hub reformulado)
 
