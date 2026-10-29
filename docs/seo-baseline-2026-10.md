@@ -76,6 +76,8 @@ Console (Desempenho → Exportar → CSV, aba Páginas e aba Consultas).
 | `/organizacao-financeira/emprestar-dinheiro-para-amigo-ou-parente/` (nova, 26/10) | | | | | | | | |
 | `/calculadoras/quando-a-divida-sai-do-nome/` (nova, 26/10) | | | | | | | | |
 | `/calculadoras/fgts-casa-propria/` (nova, 26/10) | | | | | | | | |
+| `/emprestimos/cartao-de-credito-para-negativado/` (nova, 29/10) | | | | | | | | |
+| `/emprestimos/emprestimo-mais-facil-de-aprovar/` (nova, 29/10) | | | | | | | | |
 | `/emprestimos/` (hub, 08/10) | | | | | | | | |
 | `/credito-seguro/` (hub, 08/10) | | | | | | | | |
 | `/emprestimos/sp/barueri/` | | | | | | | | |
@@ -381,6 +383,18 @@ Console (Desempenho → Exportar → CSV, aba Páginas e aba Consultas).
 - **No ar em:** 26/10/2026
 - **Title:** Posso usar meu FGTS para comprar imóvel? Verifique
 - **Contexto:** sem "antes". Verificador por forma de uso (comprar, amortizar, prestação) com as condições da página da Caixa e da Lei 8.036, art. 20; resultado em "atende / não atende / falta confirmar", nunca "aprovado"; conta de até 80% da prestação por 12 meses. Sem eventos de analytics próprios. Callouts em usar FGTS, Minha Casa Minha Vida, quanto da renda comprometer e saque-aniversário.
+
+### `/emprestimos/cartao-de-credito-para-negativado/` (página nova)
+
+- **No ar em:** 29/10/2026
+- **Title:** Cartão de crédito para negativado: o que existe de fato
+- **Contexto:** sem "antes" e sem prints da SERP (análise de lacunas). Fontes: BC (pré-pago x pós-pago), Lei 10.820 (margem do cartão consignado). A comparação mede "cartão de crédito para negativado", "cartão pré-pago negativado" e "qual cartão aprova negativado".
+
+### `/emprestimos/emprestimo-mais-facil-de-aprovar/` (página nova)
+
+- **No ar em:** 29/10/2026
+- **Title:** Qual empréstimo é mais fácil de aprovar? O que muda
+- **Contexto:** sem "antes" e sem prints da SERP; a pergunta "mais fácil de aprovar" apareceu em ~25 SERPs locais. Fontes: Caixa (Penhor: sem análise cadastral nem avalista), Código Civil arts. 1.433 e 1.435, Lei 10.820, Crédito do Trabalhador. Medir se como-funciona-analise-de-credito perde ou ganha com a divisão de papéis.
 
 ### `/emprestimos/` (hub reformulado)
 

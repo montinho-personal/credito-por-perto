@@ -60,6 +60,7 @@ export const HUB_GROUPS: Record<CategoryId, readonly HubGroup[]> = {
       title: "Por perfil e programas públicos",
       slugs: [
         "emprestimo-para-negativado",
+        "cartao-de-credito-para-negativado",
         "emprestimo-para-mei",
         "emprestimo-para-autonomo",
         "emprestimo-do-governo",
@@ -78,6 +79,7 @@ export const HUB_GROUPS: Record<CategoryId, readonly HubGroup[]> = {
         "guia-completo-de-emprestimo",
         "diferenca-entre-emprestimo-e-financiamento",
         "como-funciona-analise-de-credito",
+        "emprestimo-mais-facil-de-aprovar",
         "documentos-para-emprestimo",
         "emprestimo-negado-o-que-fazer",
         "consorcio-ou-emprestimo",

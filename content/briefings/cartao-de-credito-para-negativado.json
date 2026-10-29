@@ -1,0 +1,41 @@
+{
+  "proposedTitle": "Cartão de crédito para negativado: o que existe, o que é pré-pago e o que é golpe",
+  "primaryIntent": "cartão de crédito para negativado",
+  "secondaryIntents": [
+    "qual cartão aprova negativado",
+    "cartão pré-pago para negativado",
+    "cartão consignado negativado",
+    "cartão aprovado na hora sem consulta"
+  ],
+  "targetReader": "Pessoa com nome negativado ou renda difícil de comprovar, procurando crédito",
+  "readerSituation": "Sem página dona no site; definida pela análise de lacunas e pelos ~25 SERPs locais de out/2026 com 'mais fácil de aprovar' e 'para negativado'. Sem prints da SERP do termo principal.",
+  "centralQuestion": "Quem está negativado consegue cartão de crédito, por qual caminho, e como evitar o golpe da taxa?",
+  "uniqueAngle": "Separa crédito (consignado, banco onde recebe) de pré-pago pela definição do BC, e mostra o golpe do cartão aprovado mediante taxa",
+  "originalContribution": [
+    "Definição oficial pré-pago x pós-pago",
+    "Tabela de caminhos",
+    "Margem do cartão consignado pela lei"
+  ],
+  "primarySources": [
+    "BC — tipos de instituição de pagamento",
+    "Planalto — Lei 10.820"
+  ],
+  "supportingSources": [],
+  "contentArchetype": "guide",
+  "proposedStructure": [],
+  "uniqueExamples": [],
+  "proposedVisuals": [
+    "QuickSummary",
+    "Tabela",
+    "ToolCallout"
+  ],
+  "pagesThatMayCompete": [
+    "/emprestimos/cartao-de-credito-consignado/",
+    "/emprestimos/emprestimo-para-negativado/"
+  ],
+  "informationThatMustNotBeRepeated": [
+    "Detalhes do cartão consignado e RMC (link)",
+    "Mapa do crédito para negativado (link)"
+  ],
+  "publicationDecision": "create"
+}

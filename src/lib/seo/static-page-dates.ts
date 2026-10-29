@@ -39,7 +39,7 @@ export const STATIC_PAGE_DATES: Record<string, string> = {
   "/calculadoras/": "2026-09-24",
   "/simuladores/": "2026-09-24",
   "/glossario/": "2026-08-16",
-  "/mapa-do-site/": "2026-08-29",
+  "/mapa-do-site/": "2026-10-26",
 
   /* Institucionais e políticas. */
   "/sobre/": "2026-08-06",

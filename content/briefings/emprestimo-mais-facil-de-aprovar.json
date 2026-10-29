@@ -1,0 +1,43 @@
+{
+  "proposedTitle": "Qual empréstimo é mais fácil de aprovar? O que muda a análise, modalidade por modalidade",
+  "primaryIntent": "empréstimo mais fácil de aprovar",
+  "secondaryIntents": [
+    "qual banco aprova empréstimo mais fácil",
+    "empréstimo fácil de aprovar para negativado",
+    "empréstimo sem análise de crédito",
+    "empréstimo urgente fácil de aprovar"
+  ],
+  "targetReader": "Pessoa com nome negativado ou renda difícil de comprovar, procurando crédito",
+  "readerSituation": "Sem página dona no site; definida pela análise de lacunas e pelos ~25 SERPs locais de out/2026 com 'mais fácil de aprovar' e 'para negativado'. Sem prints da SERP do termo principal.",
+  "centralQuestion": "Qual empréstimo costuma ser aprovado com mais facilidade, por quê, e qual é o custo de cada porta?",
+  "uniqueAngle": "Explica o mecanismo (risco menor com consignação ou garantia) e compara modalidades pelo que reduz o risco e pelo outro lado de cada garantia",
+  "originalContribution": [
+    "Tabela modalidade/risco/outro lado",
+    "Penhor Caixa sem análise cadastral (fonte oficial)",
+    "Regras do penhor no Código Civil"
+  ],
+  "primarySources": [
+    "Caixa — Penhor",
+    "Planalto — Lei 10.820 e Código Civil"
+  ],
+  "supportingSources": [],
+  "contentArchetype": "guide",
+  "proposedStructure": [],
+  "uniqueExamples": [],
+  "proposedVisuals": [
+    "QuickSummary",
+    "Tabela",
+    "ToolCallout"
+  ],
+  "pagesThatMayCompete": [
+    "/emprestimos/como-funciona-analise-de-credito/",
+    "/emprestimos/emprestimo-para-negativado/",
+    "/organizacao-financeira/dinheiro-urgente/"
+  ],
+  "informationThatMustNotBeRepeated": [
+    "Etapas da análise (link)",
+    "Mapa do negativado (link)",
+    "Escada de urgência (link)"
+  ],
+  "publicationDecision": "create"
+}

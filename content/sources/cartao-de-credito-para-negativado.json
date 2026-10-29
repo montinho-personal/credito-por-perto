@@ -1,0 +1,34 @@
+{
+  "articleSlug": "cartao-de-credito-para-negativado",
+  "claims": [
+    {
+      "claimId": "pre-pago-pos-pago",
+      "claimText": "O emissor de moeda eletrônica gerencia conta de pagamento pré-paga, em que os recursos devem ser depositados previamente (ex.: vale-refeição e cartões pré-pagos em moeda nacional); o emissor de instrumento pós-pago gerencia conta pós-paga, em que os recursos são depositados para pagamento de débitos já assumidos (ex.: cartão de crédito).",
+      "sourceOrganization": "Banco Central do Brasil",
+      "sourceTitle": "O que é instituição de pagamento? (tipos de instituição de pagamento)",
+      "sourceLocation": "https://www.bcb.gov.br/pre/composicao/instpagamento.asp?frame=1",
+      "sourceType": "official",
+      "accessedAt": "2026-10-29"
+    },
+    {
+      "claimId": "margem-cartao-consignado",
+      "claimText": "Para aposentados e pensionistas do RGPS, os descontos não podem ultrapassar 45% do benefício: 35% para empréstimos, 5% para cartão de crédito consignado e 5% para cartão consignado de benefício; para o BPC, 35%, sendo 30% para empréstimos e 5% para cartão.",
+      "sourceOrganization": "Presidência da República",
+      "sourceTitle": "Lei nº 10.820/2003 (texto compilado), art. 6º, §§ 5º e 5º-A",
+      "sourceLocation": "https://www.planalto.gov.br/ccivil_03/leis/2003/l10.820compilado.htm",
+      "sourceType": "official",
+      "accessedAt": "2026-10-15",
+      "notes": "Texto compilado lido no Planalto em 15/10/2026 (o Planalto bloqueou acesso automatizado em 29/10/2026)."
+    },
+    {
+      "claimId": "instituicao-autorizada",
+      "claimText": "Somente instituições autorizadas pelo Banco Central (diretamente ou como correspondente identificado de uma) podem conceder crédito ao público; a autorização é consultável no Encontre uma instituição.",
+      "sourceOrganization": "Banco Central do Brasil",
+      "sourceTitle": "Encontre uma instituição",
+      "sourceLocation": "https://www.bcb.gov.br/meubc/encontreinstituicao",
+      "sourceType": "official",
+      "accessedAt": "2026-08-16",
+      "notes": "Mesma verificação de emprestimo-na-hora."
+    }
+  ]
+}

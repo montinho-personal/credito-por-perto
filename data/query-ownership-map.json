@@ -783,6 +783,20 @@
       "/juros-e-cet/pix-parcelado/"
     ]
   },
+  "cartão de crédito para negativado": {
+    "canonicalOwner": "/emprestimos/cartao-de-credito-para-negativado/",
+    "supportingPages": [
+      "/emprestimos/cartao-de-credito-consignado/",
+      "/emprestimos/emprestimo-para-negativado/"
+    ]
+  },
+  "empréstimo mais fácil de aprovar": {
+    "canonicalOwner": "/emprestimos/emprestimo-mais-facil-de-aprovar/",
+    "supportingPages": [
+      "/emprestimos/como-funciona-analise-de-credito/",
+      "/emprestimos/emprestimo-para-negativado/"
+    ]
+  },
   "calcular quando a dívida caduca data de vencimento": {
     "canonicalOwner": "/calculadoras/quando-a-divida-sai-do-nome/",
     "supportingPages": [

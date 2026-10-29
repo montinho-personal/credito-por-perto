@@ -1,0 +1,53 @@
+{
+  "articleSlug": "emprestimo-mais-facil-de-aprovar",
+  "claims": [
+    {
+      "claimId": "penhor-caixa",
+      "claimText": "No Penhor CAIXA, o cliente sai com o dinheiro na hora, sem necessidade de análise cadastral ou avalista; são aceitas joias e, sujeitos à análise do avaliador, canetas, relógios e pratarias de valor; leva-se RG, CPF regular e comprovante de residência; o bem é avaliado na agência; o contrato pode ser renovado e, quitado, o bem é devolvido.",
+      "sourceOrganization": "Caixa Econômica Federal",
+      "sourceTitle": "Penhor CAIXA",
+      "sourceLocation": "https://www.caixa.gov.br/voce/credito-financiamento/penhor/Paginas/default.aspx",
+      "sourceType": "official",
+      "accessedAt": "2026-10-29",
+      "notes": "O texto promocional da página ('uma das menores taxas do mercado') não foi reproduzido."
+    },
+    {
+      "claimId": "penhor-codigo-civil",
+      "claimText": "O credor pignoratício pode promover a execução judicial ou a venda amigável, se o contrato permitir ou o devedor autorizar (art. 1.433, IV), e deve entregar ao devedor o que sobejar do preço (art. 1.435, V).",
+      "sourceOrganization": "Presidência da República",
+      "sourceTitle": "Código Civil, arts. 1.433 e 1.435",
+      "sourceLocation": "https://www.planalto.gov.br/ccivil_03/leis/2002/l10406compilada.htm",
+      "sourceType": "official",
+      "accessedAt": "2026-10-26"
+    },
+    {
+      "claimId": "margem-inss-bpc",
+      "claimText": "Para aposentados e pensionistas do RGPS, descontos limitados a 45% do benefício (35% empréstimos, 5% cartão consignado, 5% cartão consignado de benefício); para o BPC, 35% (30% empréstimos e 5% cartão).",
+      "sourceOrganization": "Presidência da República",
+      "sourceTitle": "Lei nº 10.820/2003 (texto compilado), art. 6º, §§ 5º e 5º-A",
+      "sourceLocation": "https://www.planalto.gov.br/ccivil_03/leis/2003/l10.820compilado.htm",
+      "sourceType": "official",
+      "accessedAt": "2026-10-15"
+    },
+    {
+      "claimId": "credito-trabalhador-35",
+      "claimText": "O comprometimento com parcelas do consignado do trabalhador é limitado a 35% da remuneração disponível, com possibilidade de vincular de forma opcional parte do saldo do FGTS como garantia.",
+      "sourceOrganization": "Planalto",
+      "sourceTitle": "Lei nº 10.820/2003 (com alterações da Lei nº 15.179/2025)",
+      "sourceLocation": "https://www.planalto.gov.br/ccivil_03/leis/2003/l10.820.htm",
+      "sourceType": "official",
+      "accessedAt": "2026-08-06",
+      "notes": "Mesma fonte registrada em credito-do-trabalhador (claim margem-35)."
+    },
+    {
+      "claimId": "antecipacao-bloqueio",
+      "claimText": "Na antecipação do saque-aniversário, as parcelas anuais futuras são cedidas à instituição e o valor correspondente do saldo fica bloqueado como garantia até a quitação.",
+      "sourceOrganization": "Caixa Econômica Federal",
+      "sourceTitle": "FGTS — operações de antecipação do saque-aniversário",
+      "sourceLocation": "https://www.caixa.gov.br",
+      "sourceType": "official",
+      "accessedAt": "2026-08-05",
+      "notes": "Mesma fonte registrada em antecipacao-saque-aniversario-fgts."
+    }
+  ]
+}
