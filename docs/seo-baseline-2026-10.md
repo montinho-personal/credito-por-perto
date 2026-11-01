@@ -78,6 +78,8 @@ Console (Desempenho → Exportar → CSV, aba Páginas e aba Consultas).
 | `/calculadoras/fgts-casa-propria/` (nova, 26/10) | | | | | | | | |
 | `/emprestimos/cartao-de-credito-para-negativado/` (nova, 29/10) | | | | | | | | |
 | `/emprestimos/emprestimo-mais-facil-de-aprovar/` (nova, 29/10) | | | | | | | | |
+| `/organizacao-financeira/13-salario-para-pagar-dividas/` (nova, 01/11) | | | | | | | | |
+| `/juros-e-cet/parcelado-sem-juros-vale-a-pena/` (nova, 01/11) | | | | | | | | |
 | `/emprestimos/` (hub, 08/10) | | | | | | | | |
 | `/credito-seguro/` (hub, 08/10) | | | | | | | | |
 | `/emprestimos/sp/barueri/` | | | | | | | | |
@@ -396,6 +398,18 @@ Console (Desempenho → Exportar → CSV, aba Páginas e aba Consultas).
 - **Title:** Qual empréstimo é mais fácil de aprovar? O que muda
 - **Contexto:** sem "antes" e sem prints da SERP; a pergunta "mais fácil de aprovar" apareceu em ~25 SERPs locais. Fontes: Caixa (Penhor: sem análise cadastral nem avalista), Código Civil arts. 1.433 e 1.435, Lei 10.820, Crédito do Trabalhador. Medir se como-funciona-analise-de-credito perde ou ganha com a divisão de papéis.
 
+### `/organizacao-financeira/13-salario-para-pagar-dividas/` (página nova, sazonal)
+
+- **No ar em:** 01/11/2026
+- **Title:** 13º salário para pagar dívidas: datas e o que priorizar
+- **Contexto:** sem "antes". A SERP de 01/11 mostrou intenção dominada por datas e parcelas do 13º (parcela única, fora do prazo, INSS 2026), por isso o guia abre pelas datas (MTE, eSocial, Previdência: INSS antecipado em abril/maio pelo Decreto 12.884) e depois a ordem de pagamento. Planalto bloqueado; Lei 4.749 lida via MTE e eSocial. Medir em dezembro (pico até 20/12).
+
+### `/juros-e-cet/parcelado-sem-juros-vale-a-pena/` (página nova, sazonal)
+
+- **No ar em:** 01/11/2026
+- **Title:** Parcelado sem juros vale a pena? Compare com o à vista
+- **Contexto:** sem "antes". Lei 13.455/2017 lida na Câmara; Procon-SC; CDC art. 49. Seção de Black Friday (27/11/2026). Lista de sites não recomendados do Procon-SP estava fora do ar (404) e não foi citada.
+
 ### `/emprestimos/` (hub reformulado)
 
 - **No ar em:** 08/10/2026
@@ -689,6 +703,8 @@ busca, do mesmo jeito, e anotar se o site aparece e em que posição.
 | simulador amortização financiamento (desktop anônimo, 14/10) | resumo por IA indicando o simulador de amortização SAC e Price de um site privado e a Calculadora do Cidadão do BC, com SAC e Price explicados; Caixa (PDF "Sistemas de amortização"), site de simulador de amortização, Sicoob, FazAConta, BC (Calculadora do Cidadão); autocomplete com imobiliário, Caixa, Price, veículo, habitacional, Bradesco, SAC; buscas por Caixa, antecipada, consignado, SAC, banco | como se faz o cálculo de amortização; qual é a tabela para calcular; quando amortizo a parcela diminui; é melhor amortizar ou antecipar parcelas |
 | empréstimo bolsa família (celular, 15/10) | resumo por IA dizendo que o consignado do Bolsa Família está proibido pela Lei 14.601 (iDinheiro) e listando Acredita e empréstimo pessoal; lojas de crédito e financeiras ("crédito pessoal para todos", "simule e contrate rápido"), app com "Programa Progredir", Serasa; autocomplete com WhatsApp, Crefisa ("sem ser pela Crefisa"), online, Banco Pan, "qual banco faz"; buscas por marcas (Daycoval, Help, BMG, Pericred, Sicredi), 2026, simular, na hora, pela Caixa | como solicitar um empréstimo com o Bolsa Família; qual aplicativo; o empréstimo do Bolsa Família já foi liberado; quem recebe R$ 600 pode fazer empréstimo |
 | empréstimo na conta de luz (celular, 15/10) | resumo por IA indicando financeiras e correspondentes por nome e "canais oficiais de distribuidoras", com valores de R$ 400 a R$ 4.000 e até 24 parcelas citados de uma financeira; resultados de financeiras e app ("sem comprovar renda, crédito para negativados", "simule online"); autocomplete de simulador com distribuidoras (Crefaz, Energisa, Enel, CPFL, EDP, Copel, Equatorial, Cemig); buscas por marcas, "qual banco faz", negativado, pelo WhatsApp, online, na hora | (não capturado) |
+| 13º salário pagar dívidas (celular, 01/11) | resumo por IA com passo a passo "recomendado por especialistas" citando InfoMoney e o Serasa Limpa Nome; Serasa (13/10/2026), Caixa; autocomplete com parcela única, parcelado, quando pagar, pago fora do prazo | o que acontece se o 13º for pago atrasado; quando o 13º de aposentados em 2026; como devem ser pagas as parcelas; posso pagar todo o 13º em dezembro |
+| parcelado sem juros vale a pena (celular, 01/11) | resumo por IA "sim, vale a pena se tiver o dinheiro guardado", citando seguradora e carteira digital; resultados de banco/marketplace e Consumidor Positivo; autocomplete com marketplaces, pagar à vista ou, vai acabar, o que é | é melhor parcelar sem juros ou pagar à vista; como funciona; é melhor parcelar ou pagar 70% da fatura; qual loja parcela em 24 vezes sem juros |
 | minha casa minha vida 2026 (celular, 15/10) | resumo por IA com as 4 faixas citando construtora e imobiliária; página estadual de habitação popular (renda até R$ 8.600), gov.br do Ministério das Cidades, anúncio patrocinado de blog imobiliário; autocomplete com inscrições, faixas, regras, prefeitura, sorteio, simulador, como funciona, faixa 3; buscas por inscrição online, quando começa, faixa 2/3/4, novas regras, gratuito, subsídio, lista dos contemplados, simulação, tabela | como se inscrever; qual o valor em 2026; como serão as casas; qual a tabela de financiamento da Caixa para 2026 |
 | usar fgts para comprar imóvel (celular, 15/10) | resumo por IA (entrada, parte das prestações, liquidar; 3 anos de carteira; não ter imóvel na região; sem SFH ativo) citando QuintoAndar e Caixa; Caixa, Itaú (avaliação até R$ 2,25 milhões), QuintoAndar; autocomplete com à vista, outra cidade, sem financiamento, outro estado, regras, segundo imóvel; buscas por pagar parcelas, como entrada, quando não posso, todo ano para amortizar, outro município | quando não pode usar; qual a nova regra; quanto tempo a Caixa leva para liberar; quanto fica R$ 300 mil financiado pela Caixa |
 | empréstimo em barueri sp | Banco do Povo (página da prefeitura, "Setor Laranja"), oHub (consignado), páginas de correspondentes | onde fazer empréstimo urgente; mais fácil de aprovar; R$ 2.000 e R$ 500 urgente |

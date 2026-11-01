@@ -1,0 +1,34 @@
+{
+  "articleSlug": "parcelado-sem-juros-vale-a-pena",
+  "claims": [
+    {
+      "claimId": "lei-13455",
+      "claimText": "Fica autorizada a diferenciação de preços de bens e serviços oferecidos ao público em função do prazo ou do instrumento de pagamento utilizado; o fornecedor deve informar, em local e formato visíveis, os descontos oferecidos em função do prazo ou do instrumento de pagamento, sob as sanções do CDC (art. 1º e art. 5º-A da Lei 10.962/2004, incluído pelo art. 2º).",
+      "sourceOrganization": "Câmara dos Deputados (Legislação)",
+      "sourceTitle": "Lei nº 13.455, de 26 de junho de 2017 — publicação original",
+      "sourceLocation": "https://www2.camara.leg.br/legin/fed/lei/2017/lei-13455-26-junho-2017-785093-publicacaooriginal-153193-pl.html",
+      "sourceType": "official",
+      "accessedAt": "2026-11-01",
+      "notes": "Lida na Câmara porque o Planalto bloqueou acesso automatizado em 01/11/2026."
+    },
+    {
+      "claimId": "procon-sc",
+      "claimText": "O Procon-SC orienta que a diferenciação por meio de pagamento só é permitida como desconto, nunca como acréscimo, e que o fornecedor não é obrigado a aceitar todos os meios de pagamento, mas, se aceitar, não pode exigir valor mínimo de compra.",
+      "sourceOrganization": "Procon de Santa Catarina",
+      "sourceTitle": "Diferenciação de preço por meio de pagamento: veja o que pode e o que é proibido",
+      "sourceLocation": "https://www.procon.sc.gov.br/diferenciacao-de-preco-por-meio-de-pagamento-veja-o-que-pode-e-o-que-e-proibido/",
+      "sourceType": "official",
+      "accessedAt": "2026-11-01",
+      "notes": "Orientação de órgão de defesa do consumidor; o texto da lei fala em descontos no dever de informar."
+    },
+    {
+      "claimId": "cdc-49",
+      "claimText": "O consumidor pode desistir do contrato no prazo de 7 dias a contar da assinatura ou do recebimento do produto ou serviço, sempre que a contratação ocorrer fora do estabelecimento comercial (CDC, art. 49).",
+      "sourceOrganization": "Presidência da República",
+      "sourceTitle": "Código de Defesa do Consumidor",
+      "sourceLocation": "https://www.planalto.gov.br/ccivil_03/leis/l8078compilado.htm",
+      "sourceType": "official",
+      "accessedAt": "2026-10-26"
+    }
+  ]
+}

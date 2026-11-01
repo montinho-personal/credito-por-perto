@@ -783,6 +783,20 @@
       "/juros-e-cet/pix-parcelado/"
     ]
   },
+  "13º salário para pagar dívidas": {
+    "canonicalOwner": "/organizacao-financeira/13-salario-para-pagar-dividas/",
+    "supportingPages": [
+      "/organizacao-financeira/qual-divida-pagar-primeiro/",
+      "/emprestimos/antecipacao-do-13-salario/"
+    ]
+  },
+  "parcelado sem juros vale a pena": {
+    "canonicalOwner": "/juros-e-cet/parcelado-sem-juros-vale-a-pena/",
+    "supportingPages": [
+      "/calculadoras/a-vista-ou-parcelado/",
+      "/juros-e-cet/pix-parcelado/"
+    ]
+  },
   "cartão de crédito para negativado": {
     "canonicalOwner": "/emprestimos/cartao-de-credito-para-negativado/",
     "supportingPages": [

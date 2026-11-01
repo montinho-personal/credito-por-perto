@@ -1,0 +1,39 @@
+{
+  "proposedTitle": "Parcelado sem juros vale a pena? Como comparar com o preço à vista",
+  "primaryIntent": "parcelado sem juros vale a pena",
+  "secondaryIntents": [
+    "é melhor parcelar sem juros ou pagar à vista",
+    "como funciona o parcelado sem juros",
+    "parcelado sem juros o que é",
+    "qual loja parcela em 24 vezes sem juros"
+  ],
+  "targetReader": "Trabalhador ou consumidor planejando o fim do ano",
+  "readerSituation": "SERP de 01/11/2026 (celular): resumo por IA dizendo que vale a pena 'se tiver o dinheiro guardado', citando banco e marketplace; autocomplete com marketplaces, 'vai acabar', 'o que é'; PAA com à vista x parcelado.",
+  "centralQuestion": "Parcelar sem juros vale a pena, e como comparar com o preço à vista?",
+  "uniqueAngle": "Usa a Lei 13.455/2017 (preço diferente por prazo) para mostrar quando o sem juros tem custo e manda a conta para a calculadora à vista ou parcelado",
+  "originalContribution": [],
+  "primarySources": [
+    "Câmara — Lei 13.455/2017",
+    "Procon-SC",
+    "CDC art. 49"
+  ],
+  "supportingSources": [],
+  "contentArchetype": "guide",
+  "proposedStructure": [],
+  "uniqueExamples": [],
+  "proposedVisuals": [
+    "QuickSummary",
+    "Tabela",
+    "ToolCallout"
+  ],
+  "pagesThatMayCompete": [
+    "/calculadoras/a-vista-ou-parcelado/",
+    "/juros-e-cet/pix-parcelado/",
+    "/organizacao-financeira/fatura-do-cartao-como-funciona/"
+  ],
+  "informationThatMustNotBeRepeated": [
+    "Mecânica do limite (link)",
+    "Pix parcelado (link)"
+  ],
+  "publicationDecision": "create"
+}

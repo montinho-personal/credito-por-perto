@@ -1,0 +1,39 @@
+{
+  "proposedTitle": "13º salário: as datas de pagamento e como usar o dinheiro para pagar dívidas",
+  "primaryIntent": "13º salário para pagar dívidas",
+  "secondaryIntents": [
+    "13º salário parcela única",
+    "quando pagar o 13º salário",
+    "13º salário pago fora do prazo",
+    "quando o INSS paga o 13º em 2026",
+    "posso pagar todo o 13º em dezembro"
+  ],
+  "targetReader": "Trabalhador ou consumidor planejando o fim do ano",
+  "readerSituation": "SERP de 01/11/2026 (celular): resumo por IA com passo a passo citando InfoMoney e Serasa Limpa Nome; Serasa e Caixa nos resultados; autocomplete e PAA dominados por datas e parcelas do 13º, atraso e INSS 2026.",
+  "centralQuestion": "Quando e quanto entra do 13º, e em que ordem usá-lo contra as dívidas?",
+  "uniqueAngle": "Responde primeiro as datas pela orientação oficial (MTE, eSocial, Previdência) e depois a ordem de pagamento com links às ferramentas",
+  "originalContribution": [],
+  "primarySources": [
+    "MTE",
+    "eSocial",
+    "Ministério da Previdência Social"
+  ],
+  "supportingSources": [],
+  "contentArchetype": "guide",
+  "proposedStructure": [],
+  "uniqueExamples": [],
+  "proposedVisuals": [
+    "QuickSummary",
+    "Tabela",
+    "ToolCallout"
+  ],
+  "pagesThatMayCompete": [
+    "/emprestimos/antecipacao-do-13-salario/",
+    "/organizacao-financeira/qual-divida-pagar-primeiro/"
+  ],
+  "informationThatMustNotBeRepeated": [
+    "Antecipação do 13º como empréstimo (link)",
+    "Critérios completos de prioridade (link)"
+  ],
+  "publicationDecision": "create"
+}

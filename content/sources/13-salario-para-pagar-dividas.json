@@ -1,0 +1,61 @@
+{
+  "articleSlug": "13-salario-para-pagar-dividas",
+  "claims": [
+    {
+      "claimId": "prazos-13",
+      "claimText": "O 13º deve ser pago em duas parcelas: a primeira entre fevereiro e novembro, até 30 de novembro, correspondente à metade da remuneração do mês anterior; a segunda até 20 de dezembro, complementando o total. Para remuneração variável, o ajuste final ocorre até 10 de janeiro do ano seguinte.",
+      "sourceOrganization": "Ministério do Trabalho e Emprego",
+      "sourceTitle": "Décimo terceiro salário: entenda o direito, regras e prazos de pagamento",
+      "sourceLocation": "https://www.gov.br/trabalho-e-emprego/pt-br/noticias-e-conteudo/2025/novembro/decimo-terceiro-salario-entenda-o-direito-regras-e-prazos-de-pagamento",
+      "sourceType": "official",
+      "accessedAt": "2026-11-01",
+      "notes": "O Planalto bloqueou acesso automatizado em 01/11/2026; a Lei 4.749/1965 foi lida pela orientação do MTE e pela nota do eSocial, que a transcrevem."
+    },
+    {
+      "claimId": "proporcional",
+      "claimText": "O 13º é integral para quem trabalhou o ano todo e proporcional aos meses trabalhados; frações iguais ou superiores a 15 dias contam como mês completo (exemplo do MTE: contratado em 10 de maio recebe 8/12).",
+      "sourceOrganization": "Ministério do Trabalho e Emprego",
+      "sourceTitle": "Décimo terceiro salário: entenda o direito, regras e prazos de pagamento",
+      "sourceLocation": "https://www.gov.br/trabalho-e-emprego/pt-br/noticias-e-conteudo/2025/novembro/decimo-terceiro-salario-entenda-o-direito-regras-e-prazos-de-pagamento",
+      "sourceType": "official",
+      "accessedAt": "2026-11-01"
+    },
+    {
+      "claimId": "fiscalizacao",
+      "claimText": "Em caso de dúvidas ou suspeita de irregularidades no 13º, o trabalhador pode procurar a Superintendência Regional do Trabalho e Emprego ou registrar denúncia nos canais oficiais do MTE.",
+      "sourceOrganization": "Ministério do Trabalho e Emprego",
+      "sourceTitle": "Décimo terceiro salário: entenda o direito, regras e prazos de pagamento",
+      "sourceLocation": "https://www.gov.br/trabalho-e-emprego/pt-br/noticias-e-conteudo/2025/novembro/decimo-terceiro-salario-entenda-o-direito-regras-e-prazos-de-pagamento",
+      "sourceType": "official",
+      "accessedAt": "2026-11-01"
+    },
+    {
+      "claimId": "integral-antes-dezembro",
+      "claimText": "O pagamento integral do 13º antes de dezembro, por liberalidade ou convenção/acordo coletivo, é tratado como adiantamento superior ao devido; o desconto da contribuição previdenciária ocorre no pagamento da segunda parcela, com vencimento em 20 de dezembro.",
+      "sourceOrganization": "eSocial",
+      "sourceTitle": "Nota Orientativa 2018.10 — adiantamento integral do 13º salário",
+      "sourceLocation": "https://www.gov.br/esocial/pt-br/documentacao-tecnica/manuais/nota-orientativa-010-2018-adiantamento-integral-13o.pdf",
+      "sourceType": "official",
+      "accessedAt": "2026-11-01"
+    },
+    {
+      "claimId": "inss-2026",
+      "claimText": "O Decreto nº 12.884 antecipou o 13º de 2026 de aposentados e pensionistas do INSS: primeira parcela de 24 de abril a 8 de maio e segunda de 25 de maio a 8 de junho, conforme o final do número do benefício; têm direito os que receberam aposentadoria, pensão por morte, benefício por incapacidade temporária, auxílio-acidente, salário-maternidade ou auxílio-reclusão; BPC e Renda Mensal Vitalícia não recebem 13º.",
+      "sourceOrganization": "Ministério da Previdência Social",
+      "sourceTitle": "Aposentados e pensionistas do INSS terão o 13º salário antecipado para os meses de abril e maio",
+      "sourceLocation": "https://www.gov.br/previdencia/pt-br/noticias/2026/marco/aposentados-e-pensionistas-do-inss-terao-o-13deg-salario-antecipado-para-os-meses-de-abril-e-maio",
+      "sourceType": "official",
+      "accessedAt": "2026-11-01"
+    },
+    {
+      "claimId": "cdc-52",
+      "claimText": "O CDC assegura a liquidação antecipada do débito, total ou parcial, com redução proporcional dos juros e demais acréscimos (art. 52, § 2º).",
+      "sourceOrganization": "Presidência da República",
+      "sourceTitle": "Código de Defesa do Consumidor",
+      "sourceLocation": "https://www.planalto.gov.br/ccivil_03/leis/l8078compilado.htm",
+      "sourceType": "official",
+      "accessedAt": "2026-10-26",
+      "notes": "Mesma leitura registrada em como-limpar-o-nome (26/10/2026)."
+    }
+  ]
+}
