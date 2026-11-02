@@ -29,6 +29,25 @@
       "sourceLocation": "https://www.planalto.gov.br/ccivil_03/leis/l8078compilado.htm",
       "sourceType": "official",
       "accessedAt": "2026-10-26"
+    },
+    {
+      "claimId": "teto-100-por-cento",
+      "claimText": "Desde 03/01/2024, por força da Lei nº 14.690/2023 regulamentada pelo CMN (Resolução nº 5.112/2023), os juros e encargos do rotativo e do parcelamento de fatura não podem exceder 100% do valor original da dívida (o IOF fica fora do limite).",
+      "sourceOrganization": "Agência Gov (EBC) / Banco Central do Brasil",
+      "sourceTitle": "BC e Conselho Monetário regulam medidas da Lei 14.690/2023, incluindo a portabilidade do crédito rotativo",
+      "sourceLocation": "https://agenciagov.ebc.com.br/noticias/202312/bc-regula-medidas-decorrentes-da-lei-14-690-2023-incluindo-a-portabilidade-do-credito-rotativo",
+      "sourceType": "official",
+      "accessedAt": "2026-08-16"
+    },
+    {
+      "claimId": "rotativo-30-dias",
+      "claimText": "Desde 2017 (Resolução CMN nº 4.549), o saldo devedor da fatura só pode permanecer no rotativo até o vencimento da fatura seguinte; depois disso, o saldo remanescente pode ser financiado por linha de crédito para pagamento parcelado, desde que em condições mais vantajosas que as do rotativo (art. 1º e art. 2º).",
+      "sourceOrganization": "Banco Central do Brasil / CMN",
+      "sourceTitle": "Resolução CMN nº 4.549/2017, com as alterações da Resolução CMN nº 5.112/2023 — texto consolidado",
+      "sourceLocation": "https://normativos.bcb.gov.br/Lists/Normativos/Attachments/50330/Res_4549_v2_L.pdf",
+      "sourceType": "official",
+      "accessedAt": "2026-10-14",
+      "notes": "Reconferido em 14/10/2026 no texto consolidado: a norma diz que o saldo 'pode ser financiado' em parcelamento mais vantajoso; a redação anterior ('a instituição deve oferecer') foi corrigida."
     }
   ]
 }
