@@ -46,6 +46,25 @@
       "sourceLocation": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2021/lei/l14181.htm",
       "sourceType": "official",
       "accessedAt": "2026-08-28"
+    },
+    {
+      "claimId": "novo-desenrola-caducou",
+      "claimText": "A Medida Provisória nº 1.355/2026 (Novo Desenrola) perdeu eficácia no fim de agosto de 2026 por não ter sido aprovada a tempo pelo Congresso; o encerramento foi publicado no DOU de 08/09/2026. As relações jurídicas constituídas durante a vigência continuam válidas e regidas pela MP, salvo decreto legislativo.",
+      "sourceOrganization": "Agência Senado",
+      "sourceTitle": "Cinco medidas provisórias perderam eficácia no final de agosto",
+      "sourceLocation": "https://www12.senado.leg.br/noticias/materias/2026/09/08/cinco-medidas-provisorias-perderam-eficacia-no-final-de-agosto",
+      "sourceType": "official",
+      "accessedAt": "2026-11-02"
+    },
+    {
+      "claimId": "desenrola-3",
+      "claimText": "A MP nº 1.393/2026, publicada em edição extra do DOU de 25/09/2026, criou o Desenrola Brasil 3.0: a União pode comprar carteiras de dívidas de pessoas físicas com desconto mínimo de 90%; regra geral: valor original inferior a R$ 10 mil e atraso, em 25/09/2026, de mais de 720 e menos de 1.645 dias; dívidas bancárias e débitos passíveis de registro em cadastros de inadimplentes (serviços públicos, varejo, prestadores de serviços). O devedor poderá pagar à vista ou parcelado; o desconto pode chegar ao percentual obtido pela União; no parcelamento haverá juros, com condições definidas pelo CMN. Cronograma: chamamento aos credores em novembro, propostas em dezembro, homologação em janeiro de 2027, contratos e início dos descontos aos devedores em fevereiro de 2027. Prazo de deliberação no Congresso até 23 de novembro.",
+      "sourceOrganization": "Agência Senado",
+      "sourceTitle": "Desenrola Brasil 3.0 já está em vigor; veja como funciona",
+      "sourceLocation": "https://www12.senado.leg.br/noticias/materias/2026/09/28/desenrola-brasil-3-0-ja-esta-em-vigor-veja-como-funciona",
+      "sourceType": "official",
+      "accessedAt": "2026-11-02",
+      "notes": "FATO COM PRAZO CURTO. Rever em 24/11/2026 (votação da MP) e em fevereiro de 2027 (início do atendimento). O texto da MP no Planalto não foi lido porque o Planalto bloqueia acesso automatizado; a fonte é a Agência Senado."
     }
   ]
 }

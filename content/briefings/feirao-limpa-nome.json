@@ -1,0 +1,43 @@
+{
+  "proposedTitle": "Feirão Limpa Nome: como funciona, o que conferir antes de aceitar e o que é do governo",
+  "primaryIntent": "feirão limpa nome",
+  "secondaryIntents": [
+    "feirão limpa nome 2026 vai até quando",
+    "feirão limpa nome é confiável",
+    "feirão limpa nome do governo federal",
+    "desenrola brasil limpar nome",
+    "próximo feirão limpa nome"
+  ],
+  "targetReader": "Pessoa negativada procurando campanha de negociação de dívidas",
+  "readerSituation": "SERP de 02/11/2026 (celular): resumo por IA com descontos e canais da Serasa (Facebook, g1); Serasa domina os resultados; gov.br com 'Solicitar renegociação de dívidas - Famílias'; autocomplete com 2026/2027, vai até quando, Serasa, governo federal, Caixa, SPC, presencial e WhatsApp.",
+  "centralQuestion": "O feirão é confiável, o que conferir antes de aceitar e o que existe de programa do governo agora?",
+  "uniqueAngle": "Separa campanha privada de programa federal com a situação oficial datada (Novo Desenrola encerrado, Desenrola 3.0 previsto para fevereiro de 2027) e dá a conferência antes de pagar, com links às calculadoras",
+  "originalContribution": [],
+  "primarySources": [
+    "Agência Senado",
+    "Ministério da Fazenda",
+    "STJ (Súmula 548)"
+  ],
+  "supportingSources": [
+    "consumidor.gov.br"
+  ],
+  "contentArchetype": "guide",
+  "proposedStructure": [],
+  "uniqueExamples": [],
+  "proposedVisuals": [
+    "QuickSummary",
+    "Tabela",
+    "ChecklistBox",
+    "ToolCallout"
+  ],
+  "pagesThatMayCompete": [
+    "/organizacao-financeira/como-negociar-dividas/",
+    "/organizacao-financeira/como-limpar-o-nome/"
+  ],
+  "informationThatMustNotBeRepeated": [
+    "Passo a passo completo de negociação (link)",
+    "Todos os caminhos para limpar o nome (link)"
+  ],
+  "publicationDecision": "create",
+  "notes": "Lacuna declarada: datas, descontos e canais da campanha privada não são publicados (site da organizadora bloqueia leitura automatizada e não é fonte oficial). Rever Desenrola 3.0 em 24/11/2026 e em fevereiro de 2027."
+}

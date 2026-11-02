@@ -891,5 +891,19 @@
       "/credito-seguro/deposito-antecipado-e-golpe/",
       "/calculadoras/sinais-de-golpe/"
     ]
+  },
+  "feirão limpa nome": {
+    "canonicalOwner": "/organizacao-financeira/feirao-limpa-nome/",
+    "supportingPages": [
+      "/organizacao-financeira/como-negociar-dividas/",
+      "/organizacao-financeira/como-limpar-o-nome/"
+    ]
+  },
+  "limite do cartão de crédito": {
+    "canonicalOwner": "/organizacao-financeira/limite-do-cartao-de-credito/",
+    "supportingPages": [
+      "/organizacao-financeira/fatura-do-cartao-como-funciona/",
+      "/emprestimos/cartao-de-credito-para-negativado/"
+    ]
   }
 }

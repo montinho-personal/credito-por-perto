@@ -1,0 +1,41 @@
+{
+  "proposedTitle": "Limite do cartão de crédito: como é definido, por que foi reduzido e como pedir aumento",
+  "primaryIntent": "limite do cartão de crédito",
+  "secondaryIntents": [
+    "limite do cartão de crédito como funciona",
+    "limite do cartão de crédito foi reduzido",
+    "como aumentar o limite do cartão",
+    "limite do cartão em compras parceladas",
+    "é possível ultrapassar o limite do cartão"
+  ],
+  "targetReader": "Usuário de cartão com dúvida sobre limite reduzido, aumento ou limite ocupado",
+  "readerSituation": "SERP de 02/11/2026 (celular): resumo por IA citando Banco Central (30 dias, 2 dias úteis), Bmg, Mercado Pago e Sicoob; página do BC 'Limite de cartão de crédito'; autocomplete por bancos (BB, Caixa, Nubank, PicPay, Bradesco, Neon), foi reduzido e como funciona; PAA sobre cartões com limite de R$ 1 mil, 3 mil e 10 mil.",
+  "centralQuestion": "Como o limite é definido e o que o emissor pode ou não fazer ao reduzir ou aumentar?",
+  "uniqueAngle": "Regras do art. 10 da Res. BCB 96/2021 na redação de 2024 (aceite a cada aumento, 30 dias, exceção de risco, 2 dias úteis), sem indicar cartão",
+  "originalContribution": [],
+  "primarySources": [
+    "Banco Central do Brasil (Res. BCB 96/2021, consolidada)"
+  ],
+  "supportingSources": [
+    "consumidor.gov.br"
+  ],
+  "contentArchetype": "guide",
+  "proposedStructure": [],
+  "uniqueExamples": [],
+  "proposedVisuals": [
+    "QuickSummary",
+    "Tabela",
+    "WarningBox",
+    "ToolCallout"
+  ],
+  "pagesThatMayCompete": [
+    "/organizacao-financeira/fatura-do-cartao-como-funciona/",
+    "/emprestimos/cartao-de-credito-para-negativado/"
+  ],
+  "informationThatMustNotBeRepeated": [
+    "Calendário de fechamento e vencimento (link)",
+    "Rotativo e parcelamento da fatura (link)"
+  ],
+  "publicationDecision": "create",
+  "notes": "Lacunas declaradas: a norma não trata de compra acima do limite; não há fonte oficial para a mecânica de ocupação do limite por parcelas (descrita como regra geral)."
+}

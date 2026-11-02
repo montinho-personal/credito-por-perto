@@ -164,6 +164,7 @@ export const HUB_GROUPS: Record<CategoryId, readonly HubGroup[]> = {
         "como-fazer-orcamento-pessoal",
         "reserva-de-emergencia",
         "fatura-do-cartao-como-funciona",
+        "limite-do-cartao-de-credito",
         "carne-e-crediario-de-loja",
         "tarifas-bancarias-gratuitas",
         "portabilidade-de-salario",
@@ -178,6 +179,7 @@ export const HUB_GROUPS: Record<CategoryId, readonly HubGroup[]> = {
       slugs: [
         "como-sair-das-dividas",
         "como-limpar-o-nome",
+        "feirao-limpa-nome",
         "qual-divida-pagar-primeiro",
         "13-salario-para-pagar-dividas",
         "como-negociar-dividas",
