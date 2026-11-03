@@ -66,7 +66,9 @@ Todo artigo publicado segue, e a auditoria `audit:links` verifica:
 - Nenhum link para URL não publicada; padrão canônico com trailing slash.
 
 **Externa (mínimo 1 link para fonte oficial, inline no ponto da afirmação):**
-- A afirmação linka a fonte exata: lei citada → Planalto; serviço do BC
+- A afirmação linka a fonte exata: lei citada → Planalto (ou o texto
+  atualizado da Câmara, camara.leg.br, quando o Planalto bloqueia acesso
+  automatizado; tramitação e medidas provisórias → Agência Senado); serviço do BC
   (Registrato, Encontre uma instituição, ranking) → página do serviço;
   reclamação → consumidor.gov.br; FGTS → Caixa; MEI → Portal do Empreendedor;
 - Sempre HTTPS; domínios fora da lista oficial catalogada geram apontamento

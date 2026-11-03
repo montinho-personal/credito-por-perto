@@ -50,6 +50,16 @@
       "sourceType": "official",
       "accessedAt": "2026-08-29",
       "notes": "Informação de valor direto para quem assinou contrato com cláusula desse tipo e o considera definitivo."
+    },
+    {
+      "claimId": "cc-1647",
+      "claimText": "Ressalvado o art. 1.648, nenhum dos cônjuges pode, sem autorização do outro, exceto no regime da separação absoluta: alienar ou gravar de ônus real bens imóveis; prestar fiança ou aval; entre outros atos (art. 1.647).",
+      "sourceOrganization": "Câmara dos Deputados (Legislação)",
+      "sourceTitle": "Lei nº 10.406/2002 (Código Civil) — norma atualizada",
+      "sourceLocation": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+      "sourceType": "official",
+      "accessedAt": "2026-11-03",
+      "notes": "Texto atualizado lido na Câmara (legin) porque o Planalto bloqueia acesso automatizado."
     }
   ]
 }

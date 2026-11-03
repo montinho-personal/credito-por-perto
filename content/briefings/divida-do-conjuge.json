@@ -1,0 +1,39 @@
+{
+  "proposedTitle": "Dívida do marido ou da esposa suja o meu nome? Quando o cônjuge responde, pela lei",
+  "primaryIntent": "dívida do marido suja meu nome",
+  "secondaryIntents": [
+    "posso ser cobrado pela dívida do meu cônjuge",
+    "quando a esposa responde pelas dívidas do marido",
+    "união estável responde por dívidas",
+    "dívidas contraídas antes do casamento comunhão parcial",
+    "cônjuge com nome sujo atrapalha financiamento"
+  ],
+  "targetReader": "Pessoa casada ou em união estável preocupada com dívida do parceiro",
+  "readerSituation": "SERP de 03/11/2026 (celular): resumo por IA (negativação individual, regime de bens, dívidas em benefício da família, fiador/avalista) citando IBDFAM e Serasa; Jusbrasil; PAA sobre cobrança, esposa, morte e separação.",
+  "centralQuestion": "A dívida do cônjuge passa para o meu nome ou para os bens do casal?",
+  "uniqueAngle": "Tabela por regime de bens com o artigo do Código Civil de cada regra, penhora da meação pelo CPC, sem análise de caso",
+  "originalContribution": [],
+  "primarySources": [
+    "Código Civil (Câmara, norma atualizada)",
+    "Código de Processo Civil (Câmara, norma atualizada)"
+  ],
+  "supportingSources": [],
+  "contentArchetype": "guide",
+  "proposedStructure": [],
+  "uniqueExamples": [],
+  "proposedVisuals": [
+    "QuickSummary",
+    "Tabela",
+    "ToolCallout"
+  ],
+  "pagesThatMayCompete": [
+    "/organizacao-financeira/fiador-ou-avalista/",
+    "/organizacao-financeira/divida-de-pessoa-falecida/"
+  ],
+  "informationThatMustNotBeRepeated": [
+    "Fiança e aval em detalhe (link)",
+    "Dívidas na herança (link)"
+  ],
+  "publicationDecision": "create",
+  "notes": "Sem jurisprudência: o guia fica na letra da lei e encaminha casos concretos à Defensoria ou a advogado."
+}

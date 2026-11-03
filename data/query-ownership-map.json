@@ -905,5 +905,19 @@
       "/organizacao-financeira/fatura-do-cartao-como-funciona/",
       "/emprestimos/cartao-de-credito-para-negativado/"
     ]
+  },
+  "golpe do pix como recuperar o dinheiro": {
+    "canonicalOwner": "/credito-seguro/golpe-do-pix-como-recuperar-o-dinheiro/",
+    "supportingPages": [
+      "/credito-seguro/golpe-da-falsa-central/",
+      "/calculadoras/sinais-de-golpe/"
+    ]
+  },
+  "dívida do marido suja meu nome": {
+    "canonicalOwner": "/organizacao-financeira/divida-do-conjuge/",
+    "supportingPages": [
+      "/organizacao-financeira/fiador-ou-avalista/",
+      "/organizacao-financeira/emprestar-o-nome/"
+    ]
   }
 }

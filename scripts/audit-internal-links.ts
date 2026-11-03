@@ -93,6 +93,10 @@ const OFFICIAL_DOMAINS = [
   // Tribunais superiores: súmulas e jurisprudência citadas como fonte primária.
   "stf.jus.br",
   "stj.jus.br",
+  // Legislativo federal: texto de lei atualizado (Câmara) e Agência Senado,
+  // usados quando o Planalto bloqueia acesso automatizado.
+  "camara.leg.br",
+  "senado.leg.br",
 ];
 
 function externalLinks(text: string): string[] {

@@ -1,0 +1,88 @@
+{
+  "articleSlug": "golpe-do-pix-como-recuperar-o-dinheiro",
+  "claims": [
+    {
+      "claimId": "med-prazo-pedido",
+      "claimText": "A Recuperação de Valores (MED) pode ser aberta para transações ocorridas há no máximo 80 dias; para contestar uma transação de devolução, o prazo é de 30 dias. O DICT gera notificações de infração para a transação raiz e para as transações subsequentes.",
+      "sourceOrganization": "Banco Central do Brasil",
+      "sourceTitle": "Guia de implementação dos procedimentos de devolução no Pix, com ênfase no Mecanismo Especial de Devolução — versão 4.3 (julho de 2026)",
+      "sourceLocation": "https://www.bcb.gov.br/content/estabilidadefinanceira/pix/Guia_MED.pdf",
+      "sourceType": "official",
+      "accessedAt": "2026-11-03",
+      "notes": "Versão 4.3 do guia; histórico de revisões mostra a v4.0 (30/09/2025) criando a seção de autoatendimento e a v4.1 (02/02/2026) com aprimoramentos do MED."
+    },
+    {
+      "claimId": "med-prazos-etapas",
+      "claimText": "Cada participante recebedor deve bloquear imediatamente o valor ao receber a notificação; sem saldo para tudo, bloqueia o disponível. Os recebedores têm 7 dias corridos para analisar; depois, o participante pagador tem até 72 horas para solicitar a devolução; cada PSP recebedor tem 6 horas para devolver, com solicitações sequenciais que podem somar até 24 horas.",
+      "sourceOrganization": "Banco Central do Brasil",
+      "sourceTitle": "Guia de implementação dos procedimentos de devolução no Pix, com ênfase no Mecanismo Especial de Devolução — versão 4.3 (julho de 2026)",
+      "sourceLocation": "https://www.bcb.gov.br/content/estabilidadefinanceira/pix/Guia_MED.pdf",
+      "sourceType": "official",
+      "accessedAt": "2026-11-03"
+    },
+    {
+      "claimId": "med-autoatendimento",
+      "claimText": "O participante deve disponibilizar aos usuários pessoa física funcionalidade no aplicativo para solicitar o MED de forma autônoma (autoatendimento do MED), a partir do extrato da conta ou do extrato Pix; transações fora do prazo devem ser informadas como fora do prazo para contestação.",
+      "sourceOrganization": "Banco Central do Brasil",
+      "sourceTitle": "Guia de implementação dos procedimentos de devolução no Pix, com ênfase no Mecanismo Especial de Devolução — versão 4.3 (julho de 2026)",
+      "sourceLocation": "https://www.bcb.gov.br/content/estabilidadefinanceira/pix/Guia_MED.pdf",
+      "sourceType": "official",
+      "accessedAt": "2026-11-03"
+    },
+    {
+      "claimId": "med-casos",
+      "claimText": "O pedido de devolução pode ser feito para qualquer caso de fraude envolvendo Pix, incluindo golpes e crimes, inclusive se o pagador autorizou a transação com senha ou biometria; o MED não se aplica a desacordos comerciais nem à transação enviada por engano.",
+      "sourceOrganization": "Banco Central do Brasil",
+      "sourceTitle": "Guia de implementação dos procedimentos de devolução no Pix, com ênfase no Mecanismo Especial de Devolução — versão 4.3 (julho de 2026)",
+      "sourceLocation": "https://www.bcb.gov.br/content/estabilidadefinanceira/pix/Guia_MED.pdf",
+      "sourceType": "official",
+      "accessedAt": "2026-11-03"
+    },
+    {
+      "claimId": "med-sem-recursos-proprios",
+      "claimText": "Caso o PSP do recebedor rejeite a solicitação de devolução por falta de fundos, encerramento de conta ou outro motivo, ele não tem obrigação de devolver recursos ao pagador usando recursos próprios.",
+      "sourceOrganization": "Banco Central do Brasil",
+      "sourceTitle": "Guia de implementação dos procedimentos de devolução no Pix, com ênfase no Mecanismo Especial de Devolução — versão 4.3 (julho de 2026)",
+      "sourceLocation": "https://www.bcb.gov.br/content/estabilidadefinanceira/pix/Guia_MED.pdf",
+      "sourceType": "official",
+      "accessedAt": "2026-11-03"
+    },
+    {
+      "claimId": "pix-devolucao-voluntaria",
+      "claimText": "Dentro de 90 dias da transação original, qualquer usuário pode devolver, por iniciativa própria e a seu critério, recursos recebidos via Pix, total ou parcialmente.",
+      "sourceOrganization": "Banco Central do Brasil",
+      "sourceTitle": "Guia de implementação dos procedimentos de devolução no Pix, com ênfase no Mecanismo Especial de Devolução — versão 4.3 (julho de 2026)",
+      "sourceLocation": "https://www.bcb.gov.br/content/estabilidadefinanceira/pix/Guia_MED.pdf",
+      "sourceType": "official",
+      "accessedAt": "2026-11-03"
+    },
+    {
+      "claimId": "bloqueio-cautelar",
+      "claimText": "Os participantes do Pix devem prever nos contratos com clientes que podem bloquear cautelarmente recursos na conta em caso de suspeita de fraude.",
+      "sourceOrganization": "Banco Central do Brasil",
+      "sourceTitle": "Guia de implementação dos procedimentos de devolução no Pix, com ênfase no Mecanismo Especial de Devolução — versão 4.3 (julho de 2026)",
+      "sourceLocation": "https://www.bcb.gov.br/content/estabilidadefinanceira/pix/Guia_MED.pdf",
+      "sourceType": "official",
+      "accessedAt": "2026-11-03"
+    },
+    {
+      "claimId": "senado-verifica-passos",
+      "claimText": "Orientações do Banco Central resumidas pelo Senado Verifica: contestar no app, SAC ou ouvidoria e guardar protocolo; o MED bloqueia preventivamente os valores e as instituições têm até sete dias para avaliar, sem saque pelo recebedor durante a análise; a recuperação depende de saldo; o MED não se aplica a desacordo comercial, fraude com conta de terceiro de boa-fé ou Pix errado; o BO é indispensável para formalizar a denúncia; reclamação ao BC pelo 145 ou Fale Conosco, sem resolução de casos individuais; MED 2.0 rastreia múltiplas camadas de contas; aparelhos não cadastrados têm limites restritos; limites diferenciados das 20h às 6h.",
+      "sourceOrganization": "Senado Federal — Senado Verifica",
+      "sourceTitle": "Pix: fui vítima de golpe. Como recuperar meu dinheiro?",
+      "sourceLocation": "https://www12.senado.leg.br/verifica/materias-especiais/2026/pix-fui-vitima-de-golpe-como-recuperar-meu-dinheiro",
+      "sourceType": "official",
+      "accessedAt": "2026-11-03"
+    },
+    {
+      "claimId": "canal-oficial-reclamacao",
+      "claimText": "A plataforma consumidor.gov.br é o serviço público federal de solução alternativa de conflitos de consumo, com resposta monitorada das empresas cadastradas, e funciona como escalonamento após o atendimento e a ouvidoria da própria instituição.",
+      "sourceOrganization": "Secretaria Nacional do Consumidor — Ministério da Justiça e Segurança Pública",
+      "sourceTitle": "Consumidor.gov.br",
+      "sourceLocation": "https://www.consumidor.gov.br",
+      "sourceType": "official",
+      "accessedAt": "2026-08-29",
+      "notes": "Citado como último degrau do roteiro de contestação, depois de SAC e ouvidoria."
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "proposedTitle": "Caí no golpe do Pix: como pedir a devolução pelo MED, prazos e o que fazer depois",
+  "primaryIntent": "golpe do pix como recuperar o dinheiro",
+  "secondaryIntents": [
+    "med pix devolução",
+    "quanto tempo demora para estornar um pix de golpe",
+    "é possível cancelar um pix golpe",
+    "o banco devolve o dinheiro em caso de golpe",
+    "recebi uma contestação de pix o que fazer",
+    "boletim de ocorrência golpe pix"
+  ],
+  "targetReader": "Vítima de golpe que pagou com Pix",
+  "readerSituation": "SERP de 03/11/2026 (celular): resumo por IA citando Banco Central (MED no app, 80 dias, BO, MED atualizado); BC 'Vítima fez um Pix e caiu em um golpe'; Senado Verifica; Mercado Pago; autocomplete por bancos (Nubank, Santander, Caixa) e 'tem como recuperar'.",
+  "centralQuestion": "Como pedir a devolução de um Pix de golpe e quais são os prazos?",
+  "uniqueAngle": "Passo a passo e tabela de prazos tirados do Guia do MED do Banco Central (v4.3), com o que o MED não cobre e o lado de quem recebeu a contestação",
+  "originalContribution": [],
+  "primarySources": [
+    "Banco Central do Brasil (Guia do MED v4.3)",
+    "Senado Verifica"
+  ],
+  "supportingSources": [
+    "consumidor.gov.br"
+  ],
+  "contentArchetype": "guide",
+  "proposedStructure": [],
+  "uniqueExamples": [],
+  "proposedVisuals": [
+    "QuickSummary",
+    "Tabela",
+    "WarningBox",
+    "ToolCallout"
+  ],
+  "pagesThatMayCompete": [
+    "/credito-seguro/golpe-da-falsa-central/",
+    "/credito-seguro/deposito-antecipado-e-golpe/"
+  ],
+  "informationThatMustNotBeRepeated": [
+    "Roteiro da falsa central (link)",
+    "Golpe do depósito antecipado (link)"
+  ],
+  "publicationDecision": "create",
+  "notes": "Lacuna declarada: responsabilidade civil do banco fora do MED não é afirmada (Súmula 479 do STJ não pôde ser lida na fonte oficial em 03/11/2026)."
+}
