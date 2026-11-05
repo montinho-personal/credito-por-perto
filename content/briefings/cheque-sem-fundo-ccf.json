@@ -1,0 +1,38 @@
+{
+  "proposedTitle": "Cheque sem fundo: quando o nome vai para o CCF, como sair e quanto tempo dura",
+  "primaryIntent": "cheque sem fundo CCF",
+  "secondaryIntents": [
+    "como sair do CCF",
+    "cheque sem fundo quanto tempo fica no nome",
+    "cheque devolvido duas vezes",
+    "exclusão do CCF documentos",
+    "cheque pré-datado depositado antes"
+  ],
+  "targetReader": "Emitente de cheque devolvido ou negativado no CCF",
+  "readerSituation": "Sem prints do usuário: intenções tiradas da Res. CMN 5.071/2023 e da Lei do Cheque.",
+  "centralQuestion": "Como o nome entra e sai do CCF?",
+  "uniqueAngle": "Regras da Res. CMN 5.071/2023 (que revogou as normas de 1989/1990 ainda citadas em muitos sites) e prazos da Lei do Cheque",
+  "originalContribution": [],
+  "primarySources": [
+    "Banco Central (Res. CMN 5.071/2023)",
+    "Lei 7.357/1985 (Câmara)"
+  ],
+  "supportingSources": [],
+  "contentArchetype": "guide",
+  "proposedStructure": [],
+  "uniqueExamples": [],
+  "proposedVisuals": [
+    "QuickSummary",
+    "Tabela",
+    "ToolCallout"
+  ],
+  "pagesThatMayCompete": [
+    "/organizacao-financeira/protesto-em-cartorio/",
+    "/organizacao-financeira/como-limpar-o-nome/"
+  ],
+  "informationThatMustNotBeRepeated": [
+    "Protesto em cartório (link)"
+  ],
+  "publicationDecision": "create",
+  "notes": "Proposto pelo portal sem prints."
+}

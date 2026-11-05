@@ -1,0 +1,52 @@
+{
+  "articleSlug": "cheque-sem-fundo-ccf",
+  "claims": [
+    {
+      "claimId": "r5071-inclusao",
+      "claimText": "Inclusão no CCF pelo banco sacado do emitente que tiver o mesmo cheque devolvido em duas datas diferentes por falta de fundos, emitir cheque de conta encerrada ou incidir em prática espúria (mais de três cheques sem fundos de até R$ 3,41 no mesmo dia da mesma conta, ou três ou mais desses pagos em datas diferentes pelo compromisso de pronto acolhimento) (art. 10); em conta conjunta, restrita ao emitente (art. 12); comunicação por escrito, anterior à inscrição, com os canais para cancelamento (art. 13).",
+      "sourceOrganization": "Banco Central do Brasil",
+      "sourceTitle": "Resolução CMN nº 5.071, de 26/4/2023",
+      "sourceLocation": "https://www.bcb.gov.br/estabilidadefinanceira/exibenormativo?tipo=Resolu%C3%A7%C3%A3o%20CMN&numero=5071",
+      "sourceType": "official",
+      "accessedAt": "2026-11-05",
+      "notes": "Vigente desde 2/10/2023 (art. 38); revogou as Resoluções 1.631/1989 e 1.682/1990, entre outras."
+    },
+    {
+      "claimId": "r5071-exclusao",
+      "claimText": "Exclusão do CCF: automática após cinco anos da inclusão; por erro comprovado, sem ônus; a qualquer tempo, a pedido do banco, se o cliente comprovar o pagamento; por determinação do BC; indeferimento comunicado formalmente (art. 14). Provas: o cheque, o extrato com o débito, ou declaração de quitação do beneficiário com firma reconhecida ou confirmada pelo banco endossante, com cópia do cheque e certidões negativas de protesto; o banco tem até cinco dias úteis da entrega do pedido para comandar a exclusão (art. 15).",
+      "sourceOrganization": "Banco Central do Brasil",
+      "sourceTitle": "Resolução CMN nº 5.071, de 26/4/2023",
+      "sourceLocation": "https://www.bcb.gov.br/estabilidadefinanceira/exibenormativo?tipo=Resolu%C3%A7%C3%A3o%20CMN&numero=5071",
+      "sourceType": "official",
+      "accessedAt": "2026-11-05"
+    },
+    {
+      "claimId": "r5071-outros",
+      "claimText": "Operador e gestor do CCF é o executante do serviço de compensação (art. 16); inclusão indevida e respectiva exclusão não geram cobrança (art. 17); acesso gratuito dos bancos ao banco de dados (art. 19); nenhuma cobrança ao interessado por consulta ou atualização, exceto exclusão por pagamento (art. 22); vedado fornecer folhas de cheque enquanto o titular estiver no CCF (art. 26); com cópia do cheque, o banco fornece nome e endereços do beneficiário-depositante, mediante autorização deste (art. 29).",
+      "sourceOrganization": "Banco Central do Brasil",
+      "sourceTitle": "Resolução CMN nº 5.071, de 26/4/2023",
+      "sourceLocation": "https://www.bcb.gov.br/estabilidadefinanceira/exibenormativo?tipo=Resolu%C3%A7%C3%A3o%20CMN&numero=5071",
+      "sourceType": "official",
+      "accessedAt": "2026-11-05"
+    },
+    {
+      "claimId": "tarifa-exclusao-ccf",
+      "claimText": "A Tabela I da Res. 3.919/2010 prevê a tarifa 'EXCLUSÃO CCF': exclusão de registro de cheque do CCF por solicitação do cliente, cobrada por unidade excluída.",
+      "sourceOrganization": "Banco Central do Brasil",
+      "sourceTitle": "Resolução CMN nº 3.919/2010 — texto consolidado (versão 7), com a Tabela I",
+      "sourceLocation": "https://normativos.bcb.gov.br/Lists/Normativos/Attachments/49514/Res_3919_v7_L.pdf",
+      "sourceType": "official",
+      "accessedAt": "2026-11-05"
+    },
+    {
+      "claimId": "lei-cheque",
+      "claimText": "Lei 7.357/1985: o cheque é pagável à vista, e o apresentado antes da data indicada como de emissão é pagável no dia da apresentação (art. 32); prazo de apresentação de 30 dias na mesma praça e 60 dias em outro lugar (art. 33); a execução prescreve em 6 meses contados do fim do prazo de apresentação (art. 59); a ação de enriquecimento prescreve em 2 anos contados da prescrição do art. 59 (art. 61); a emissão não exclui a ação fundada na relação causal (art. 62).",
+      "sourceOrganization": "Câmara dos Deputados (Legislação)",
+      "sourceTitle": "Lei nº 7.357/1985 — publicação original",
+      "sourceLocation": "https://www2.camara.leg.br/legin/fed/lei/1980-1987/lei-7357-2-setembro-1985-356973-publicacaooriginal-1-pl.html",
+      "sourceType": "official",
+      "accessedAt": "2026-11-05",
+      "notes": "Lida na publicação original da Câmara (o Planalto bloqueia acesso automatizado; a Câmara não oferece texto atualizado desta lei)."
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "proposedTitle": "Anuidade e tarifas do cartão de crédito: o que o banco pode cobrar, pela regra do Banco Central",
+  "primaryIntent": "anuidade do cartão de crédito",
+  "secondaryIntents": [
+    "tarifas do cartão de crédito",
+    "quais tarifas o cartão pode cobrar",
+    "cartão de crédito básico",
+    "aumento da anuidade aviso",
+    "avaliação emergencial de crédito"
+  ],
+  "targetReader": "Titular de cartão questionando anuidade ou tarifa na fatura",
+  "readerSituation": "Sem prints do usuário: intenções tiradas da Res. 3.919 (Tabela I) e da Res. BCB 96.",
+  "centralQuestion": "O que o emissor pode cobrar no cartão e com que aviso?",
+  "uniqueAngle": "Tabela das cinco tarifas do básico com os fatos geradores oficiais, básico x diferenciado, avisos e reajustes",
+  "originalContribution": [],
+  "primarySources": [
+    "Banco Central (Res. CMN 3.919 consolidada; Res. BCB 96)"
+  ],
+  "supportingSources": [],
+  "contentArchetype": "guide",
+  "proposedStructure": [],
+  "uniqueExamples": [],
+  "proposedVisuals": [
+    "QuickSummary",
+    "Tabela",
+    "ToolCallout"
+  ],
+  "pagesThatMayCompete": [
+    "/organizacao-financeira/fatura-do-cartao-como-funciona/",
+    "/organizacao-financeira/limite-do-cartao-de-credito/"
+  ],
+  "informationThatMustNotBeRepeated": [
+    "Leitura da fatura e contestação (link)",
+    "Regras de limite (link)"
+  ],
+  "publicationDecision": "create",
+  "notes": "Proposto pelo portal sem prints. Valores de tarifa não são publicados (variam por emissor)."
+}

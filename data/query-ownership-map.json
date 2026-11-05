@@ -919,5 +919,23 @@
       "/organizacao-financeira/fiador-ou-avalista/",
       "/organizacao-financeira/emprestar-o-nome/"
     ]
+  },
+  "valores a receber banco central": {
+    "canonicalOwner": "/credito-seguro/valores-a-receber-banco-central/",
+    "supportingPages": [
+      "/organizacao-financeira/divida-de-pessoa-falecida/"
+    ]
+  },
+  "anuidade do cartão de crédito": {
+    "canonicalOwner": "/organizacao-financeira/anuidade-e-tarifas-do-cartao/",
+    "supportingPages": [
+      "/organizacao-financeira/fatura-do-cartao-como-funciona/"
+    ]
+  },
+  "cheque sem fundo CCF": {
+    "canonicalOwner": "/organizacao-financeira/cheque-sem-fundo-ccf/",
+    "supportingPages": [
+      "/organizacao-financeira/protesto-em-cartorio/"
+    ]
   }
 }

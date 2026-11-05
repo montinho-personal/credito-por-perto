@@ -1,0 +1,51 @@
+{
+  "articleSlug": "anuidade-e-tarifas-do-cartao",
+  "claims": [
+    {
+      "claimId": "tabela-i-cartao",
+      "claimText": "Tabela I (serviços prioritários, pessoa natural), cartão de crédito básico: anuidade nacional e internacional (no máximo uma vez a cada doze meses, admitido o parcelamento); 2ª via de cartão com função crédito (restrita a pedidos de reposição do detentor por perda, roubo, furto, danificação e outros motivos não imputáveis à instituição); retirada em espécie no País e no exterior; pagamento de contas com a função crédito; avaliação emergencial de crédito (a pedido do cliente, por atendimento pessoal, para despesa acima do limite, no máximo uma vez nos últimos trinta dias).",
+      "sourceOrganization": "Banco Central do Brasil",
+      "sourceTitle": "Resolução CMN nº 3.919/2010 — texto consolidado (versão 7), com a Tabela I",
+      "sourceLocation": "https://normativos.bcb.gov.br/Lists/Normativos/Attachments/49514/Res_3919_v7_L.pdf",
+      "sourceType": "official",
+      "accessedAt": "2026-11-05"
+    },
+    {
+      "claimId": "res3919-art10-11",
+      "claimText": "Emissores de cartão devem ofertar a pessoas naturais cartão de crédito básico, nacional e/ou internacional; é vedado associar o básico a programas de benefícios ou recompensas; a anuidade do básico nacional deve ser inferior à do básico internacional (art. 10). No cartão diferenciado admite-se apenas anuidade diferenciada, com essa denominação, que não pode ser igual ou inferior à anuidade do básico internacional, sem impedir a cobrança por evento dos serviços prioritários da Tabela I (art. 11).",
+      "sourceOrganization": "Banco Central do Brasil",
+      "sourceTitle": "Resolução CMN nº 3.919/2010 — texto consolidado (versão 7), com a Tabela I",
+      "sourceLocation": "https://normativos.bcb.gov.br/Lists/Normativos/Attachments/49514/Res_3919_v7_L.pdf",
+      "sourceType": "official",
+      "accessedAt": "2026-11-05"
+    },
+    {
+      "claimId": "res3919-art15-18",
+      "claimText": "Obrigatória a divulgação da tabela de tarifas nas dependências e nos sítios eletrônicos (art. 15). Majoração ou tarifa nova para pessoas naturais: divulgação com no mínimo 45 dias de antecedência para serviços de cartão de crédito; preços dos serviços prioritários de cartão só podem ser majorados após 365 dias do último valor divulgado, admitida redução a qualquer tempo (art. 18).",
+      "sourceOrganization": "Banco Central do Brasil",
+      "sourceTitle": "Resolução CMN nº 3.919/2010 — texto consolidado (versão 7), com a Tabela I",
+      "sourceLocation": "https://normativos.bcb.gov.br/Lists/Normativos/Attachments/49514/Res_3919_v7_L.pdf",
+      "sourceType": "official",
+      "accessedAt": "2026-11-05"
+    },
+    {
+      "claimId": "res96-11c-9",
+      "claimText": "O emissor deve notificar gratuitamente, por canal eletrônico, o início da cobrança da anuidade após período de isenção, com pelo menos um mês de antecedência (Res. BCB 96/2021, art. 11-C, IV); a fatura deve identificar as tarifas cobradas, com o número da parcela em caso de cobrança parcelada (art. 9º).",
+      "sourceOrganization": "Banco Central do Brasil",
+      "sourceTitle": "Resolução BCB nº 96/2021 — texto consolidado",
+      "sourceLocation": "https://www.bcb.gov.br/estabilidadefinanceira/exibenormativo?tipo=Resolu%C3%A7%C3%A3o%20BCB&numero=96",
+      "sourceType": "official",
+      "accessedAt": "2026-11-05"
+    },
+    {
+      "claimId": "canal-oficial-reclamacao",
+      "claimText": "A plataforma consumidor.gov.br é o serviço público federal de solução alternativa de conflitos de consumo, com resposta monitorada das empresas cadastradas, e funciona como escalonamento após o atendimento e a ouvidoria da própria instituição.",
+      "sourceOrganization": "Secretaria Nacional do Consumidor — Ministério da Justiça e Segurança Pública",
+      "sourceTitle": "Consumidor.gov.br",
+      "sourceLocation": "https://www.consumidor.gov.br",
+      "sourceType": "official",
+      "accessedAt": "2026-08-29",
+      "notes": "Citado como último degrau do roteiro de contestação, depois de SAC e ouvidoria."
+    }
+  ]
+}

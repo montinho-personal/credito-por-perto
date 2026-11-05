@@ -1,0 +1,37 @@
+{
+  "proposedTitle": "Valores a Receber do Banco Central: como consultar, pedir a devolução e evitar golpes",
+  "primaryIntent": "valores a receber banco central",
+  "secondaryIntents": [
+    "como consultar valores a receber",
+    "dinheiro esquecido no banco",
+    "valores a receber golpe",
+    "valores a receber pessoa falecida",
+    "quanto tempo demora valores a receber"
+  ],
+  "targetReader": "Pessoa que ouviu falar de dinheiro esquecido ou recebeu mensagem sobre o tema",
+  "readerSituation": "Sem prints do usuário: intenções tiradas do serviço oficial no gov.br (consulta, pedido, falecido, empresa encerrada, golpes).",
+  "centralQuestion": "Como consultar e resgatar dinheiro esquecido sem cair em golpe?",
+  "uniqueAngle": "Passo a passo e regras de segurança do serviço oficial, com lacuna declarada sobre saldos não reclamados",
+  "originalContribution": [],
+  "primarySources": [
+    "gov.br (serviço Valores a Receber)"
+  ],
+  "supportingSources": [],
+  "contentArchetype": "guide",
+  "proposedStructure": [],
+  "uniqueExamples": [],
+  "proposedVisuals": [
+    "QuickSummary",
+    "Tabela",
+    "ToolCallout"
+  ],
+  "pagesThatMayCompete": [
+    "/organizacao-financeira/divida-de-pessoa-falecida/",
+    "/credito-seguro/golpe-do-pix-como-recuperar-o-dinheiro/"
+  ],
+  "informationThatMustNotBeRepeated": [
+    "Herança e dívidas do falecido (link)"
+  ],
+  "publicationDecision": "create",
+  "notes": "Proposto pelo portal sem prints (pedido do proprietário: 'criar próximos 3 artigos')."
+}

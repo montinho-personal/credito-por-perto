@@ -1,0 +1,51 @@
+{
+  "articleSlug": "valores-a-receber-banco-central",
+  "claims": [
+    {
+      "claimId": "svr-servico",
+      "claimText": "O Valores a Receber permite consultar se há dinheiro esquecido ou inesperado em banco, consórcio ou outra instituição financeira; a consulta usa CPF e data de nascimento (PJ: CNPJ e data de abertura) sem login; o pedido exige conta gov.br prata ou ouro com verificação em duas etapas (PJ: certificado digital vinculado); o usuário seleciona uma chave Pix e guarda o protocolo; tempo para recebimento: 12 dias úteis; a instituição pode devolver por TED e pode contatar para confirmar identidade; sem chave Pix, a devolução é combinada com a instituição, que não fica obrigada aos 12 dias úteis.",
+      "sourceOrganization": "Governo Federal (gov.br) / Banco Central",
+      "sourceTitle": "Consultar e solicitar a devolução de Valores a Receber",
+      "sourceLocation": "https://www.gov.br/pt-br/servicos/consultar-e-solicitar-a-devolucao-de-valores-a-receber",
+      "sourceType": "official",
+      "accessedAt": "2026-11-05"
+    },
+    {
+      "claimId": "svr-falecido-empresa",
+      "claimText": "Valores de pessoa falecida: acesso por herdeiro, testamentário, inventariante ou representante legal, mediante termo, com devolução combinada com a instituição e sem prazo; valores de empresa encerrada: acesso pelo representante legal, com devolução combinada e sem prazo.",
+      "sourceOrganization": "Governo Federal (gov.br) / Banco Central",
+      "sourceTitle": "Consultar e solicitar a devolução de Valores a Receber",
+      "sourceLocation": "https://www.gov.br/pt-br/servicos/consultar-e-solicitar-a-devolucao-de-valores-a-receber",
+      "sourceType": "official",
+      "accessedAt": "2026-11-05"
+    },
+    {
+      "claimId": "svr-seguranca",
+      "claimText": "O único site para consultar é valoresareceber.bcb.gov.br; todos os serviços são gratuitos; o Banco Central não envia links nem entra em contato sobre valores a receber; só a instituição que aparece no sistema pode contatar e nunca pede senha; não clicar em links recebidos por e-mail, SMS, WhatsApp ou Telegram.",
+      "sourceOrganization": "Governo Federal (gov.br) / Banco Central",
+      "sourceTitle": "Consultar e solicitar a devolução de Valores a Receber",
+      "sourceLocation": "https://www.gov.br/pt-br/servicos/consultar-e-solicitar-a-devolucao-de-valores-a-receber",
+      "sourceType": "official",
+      "accessedAt": "2026-11-05"
+    },
+    {
+      "claimId": "lei-14973-art45",
+      "claimText": "A Lei nº 14.973/2024, art. 45, tratou dos recursos em contas de depósitos sem atualização cadastral, com prazo para reclamação e apropriação dos saldos não reclamados pelo Tesouro Nacional, mediante edital e prazo de contestação.",
+      "sourceOrganization": "Câmara dos Deputados (Legislação)",
+      "sourceTitle": "Lei nº 14.973/2024 — norma atualizada",
+      "sourceLocation": "https://www2.camara.leg.br/legin/fed/lei/2024/lei-14973-16-setembro-2024-796242-normaatualizada-pl.html",
+      "sourceType": "official",
+      "accessedAt": "2026-11-05",
+      "notes": "Lacuna declarada no artigo: a MP 1.355/2026 alterou o tratamento desses saldos e perdeu eficácia em agosto de 2026; a situação consolidada não foi confirmada em fonte oficial em 05/11/2026."
+    },
+    {
+      "claimId": "novo-desenrola-caducou",
+      "claimText": "A Medida Provisória nº 1.355/2026 (Novo Desenrola) perdeu eficácia no fim de agosto de 2026 por não ter sido aprovada a tempo pelo Congresso; o encerramento foi publicado no DOU de 08/09/2026. As relações jurídicas constituídas durante a vigência continuam válidas e regidas pela MP, salvo decreto legislativo.",
+      "sourceOrganization": "Agência Senado",
+      "sourceTitle": "Cinco medidas provisórias perderam eficácia no final de agosto",
+      "sourceLocation": "https://www12.senado.leg.br/noticias/materias/2026/09/08/cinco-medidas-provisorias-perderam-eficacia-no-final-de-agosto",
+      "sourceType": "official",
+      "accessedAt": "2026-11-02"
+    }
+  ]
+}
