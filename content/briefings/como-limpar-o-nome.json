@@ -5,10 +5,18 @@
     "paguei a dívida quando meu nome fica limpo",
     "como limpar o nome sem pagar",
     "nome limpo em quantos dias",
-    "limpa nome é golpe"
+    "limpa nome é golpe",
+    "como limpar o nome no banco central",
+    "como limpar o nome no registrato",
+    "como limpar o nome sem pagar a dívida",
+    "como limpar o nome no spc e serasa",
+    "como limpar o nome de graça pela internet",
+    "como limpar o nome na receita federal",
+    "como limpar o nome pelo desenrola brasil",
+    "como limpar o nome com fgts"
   ],
   "targetReader": "Pessoa física comum",
-  "readerSituation": "Busca recorrente sem página dona no site; definida na análise de lacunas de 15/10/2026",
+  "readerSituation": "Busca recorrente sem página dona no site; definida na análise de lacunas de 15/10/2026 Revisão de 06/11/2026: prints (autocomplete, IA citando Serasa/SPC/Correios, PAA sobre 5 anos e feirão) e AnswerThePublic com 'no banco central' (720), 'sem pagar a dívida' (720+480), 'sujo' (480), 'spc' (390), 'de graça pela internet' (320), 'bacen' (210), 'registrato' (170), 'desenrola' (170).",
   "centralQuestion": "Quais são os caminhos para tirar o nome do cadastro de inadimplentes e quanto tempo cada um leva?",
   "uniqueAngle": "Guia-roteador: separa os 4 caminhos (pagar/negociar, registro errado, protesto, 5 anos) com o prazo legal de cada um e aponta para o guia que aprofunda",
   "originalContribution": [

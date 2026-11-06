@@ -19,6 +19,62 @@
       "sourceLocation": "https://www.planalto.gov.br/ccivil_03/leis/l8078compilado.htm",
       "sourceType": "official",
       "accessedAt": "2026-10-26"
+    },
+    {
+      "claimId": "scr-relatorio",
+      "claimText": "O Relatório de Empréstimos e Financiamentos (SCR) mostra todas as dívidas da pessoa com bancos e financeiras, com saldo devedor, tipo de operação e se a dívida está em dia ou em atraso; acesso pelo Registrato com conta gov.br prata ou ouro e verificação em duas etapas.",
+      "sourceOrganization": "Governo Federal (gov.br) / Banco Central",
+      "sourceTitle": "Emitir Relatório de Empréstimos e Financiamentos (SCR)",
+      "sourceLocation": "https://www.gov.br/pt-br/servicos/obter-relatorio-do-sistema-de-informacoes-de-credito-scr",
+      "sourceType": "official",
+      "accessedAt": "2026-11-06"
+    },
+    {
+      "claimId": "cpf-situacao",
+      "claimText": "Situação 'Suspensa': cadastro incorreto ou incompleto, sem pendência de declarações; resolve-se atualizando os dados do CPF. Situação 'Pendente de Regularização': falta de entrega de alguma DIRPF nos últimos cinco anos; resolve-se entregando as declarações em falta.",
+      "sourceOrganization": "Receita Federal (gov.br)",
+      "sourceTitle": "Atualizar CPF",
+      "sourceLocation": "https://www.gov.br/pt-br/servicos/atualizar-cadastro-de-pessoas-fisicas",
+      "sourceType": "official",
+      "accessedAt": "2026-11-06"
+    },
+    {
+      "claimId": "desenrola-fgts",
+      "claimText": "No Novo Desenrola Brasil, o trabalhador podia usar 20% do saldo do FGTS ou até R$ 1 mil, o que fosse maior, para pagar dívidas; o programa encerrou a adesão em 31/08/2026.",
+      "sourceOrganization": "Ministério da Fazenda",
+      "sourceTitle": "Desenrola Brasil Famílias — perguntas frequentes",
+      "sourceLocation": "https://www.gov.br/fazenda/pt-br/acesso-a-informacao/acoes-e-programas/novo-desenrola-brasil/faq/desenrola-brasil-familias",
+      "sourceType": "official",
+      "accessedAt": "2026-11-02"
+    },
+    {
+      "claimId": "novo-desenrola-caducou",
+      "claimText": "A Medida Provisória nº 1.355/2026 (Novo Desenrola) perdeu eficácia no fim de agosto de 2026 por não ter sido aprovada a tempo pelo Congresso; o encerramento foi publicado no DOU de 08/09/2026. As relações jurídicas constituídas durante a vigência continuam válidas e regidas pela MP, salvo decreto legislativo.",
+      "sourceOrganization": "Agência Senado",
+      "sourceTitle": "Cinco medidas provisórias perderam eficácia no final de agosto",
+      "sourceLocation": "https://www12.senado.leg.br/noticias/materias/2026/09/08/cinco-medidas-provisorias-perderam-eficacia-no-final-de-agosto",
+      "sourceType": "official",
+      "accessedAt": "2026-11-02"
+    },
+    {
+      "claimId": "desenrola-3",
+      "claimText": "A MP nº 1.393/2026, publicada em edição extra do DOU de 25/09/2026, criou o Desenrola Brasil 3.0: a União pode comprar carteiras de dívidas de pessoas físicas com desconto mínimo de 90%; regra geral: valor original inferior a R$ 10 mil e atraso, em 25/09/2026, de mais de 720 e menos de 1.645 dias; dívidas bancárias e débitos passíveis de registro em cadastros de inadimplentes (serviços públicos, varejo, prestadores de serviços). O devedor poderá pagar à vista ou parcelado; o desconto pode chegar ao percentual obtido pela União; no parcelamento haverá juros, com condições definidas pelo CMN. Cronograma: chamamento aos credores em novembro, propostas em dezembro, homologação em janeiro de 2027, contratos e início dos descontos aos devedores em fevereiro de 2027. Prazo de deliberação no Congresso até 23 de novembro.",
+      "sourceOrganization": "Agência Senado",
+      "sourceTitle": "Desenrola Brasil 3.0 já está em vigor; veja como funciona",
+      "sourceLocation": "https://www12.senado.leg.br/noticias/materias/2026/09/28/desenrola-brasil-3-0-ja-esta-em-vigor-veja-como-funciona",
+      "sourceType": "official",
+      "accessedAt": "2026-11-02",
+      "notes": "FATO COM PRAZO CURTO. Rever em 24/11/2026 (votação da MP) e em fevereiro de 2027 (início do atendimento). O texto da MP no Planalto não foi lido porque o Planalto bloqueia acesso automatizado; a fonte é a Agência Senado."
+    },
+    {
+      "claimId": "novo-desenrola-mp-prazo",
+      "claimText": "O Novo Desenrola Brasil foi instituído pela Medida Provisória nº 1.355/2026, lançada em 4 de maio de 2026, com frentes distintas (famílias, Fies, rural e empresas) e adesão feita diretamente junto às instituições credoras. O Desenrola Famílias ficou disponível até 31 de agosto de 2026, prazo vinculado à vigência da Medida Provisória. O Desenrola Fies encerrou as solicitações na mesma data, 31 de agosto de 2026. O Desenrola Rural teve o prazo de adesão prorrogado até 20 de dezembro de 2026 pelo Decreto nº 12.956/2026, atendendo agricultores familiares, assentados da reforma agrária, pescadores artesanais, povos e comunidades tradicionais e cooperativas da agricultura familiar, com dívidas ligadas ao Pronaf.",
+      "sourceOrganization": "Ministério da Fazenda / FNDE-MEC / Presidência da República / Ministério do Desenvolvimento Agrário",
+      "sourceTitle": "Desenrola Brasil Famílias (FAQ do Ministério da Fazenda); 'Prazo para aderir ao Desenrola Fies termina hoje (31)' (FNDE); Decreto nº 12.956/2026 (Planalto); Desenrola Rural (MDA)",
+      "sourceLocation": "https://www.gov.br/fazenda/pt-br/acesso-a-informacao/acoes-e-programas/novo-desenrola-brasil/faq/desenrola-brasil-familias",
+      "sourceType": "official",
+      "accessedAt": "2026-09-03",
+      "notes": "FATO COM PRAZO CURTO — reverificado em 03/09/2026. Famílias e Fies encerraram em 31/08/2026; Rural segue aberto até 20/12/2026 por decreto. PRÓXIMA REVISÃO: a partir de 21/12/2026, ou antes se houver nova medida do Governo Federal reabrindo alguma frente. Critérios de elegibilidade e percentuais de desconto NÃO são afirmados no artigo por não terem sido confirmados em fonte oficial primária."
     }
   ]
 }
