@@ -937,5 +937,13 @@
     "supportingPages": [
       "/organizacao-financeira/protesto-em-cartorio/"
     ]
+  },
+  "empréstimos em tietê": {
+    "canonicalOwner": "/emprestimos/sp/tiete/",
+    "supportingPages": []
+  },
+  "empréstimos em santo antônio de posse": {
+    "canonicalOwner": "/emprestimos/sp/santo-antonio-de-posse/",
+    "supportingPages": []
   }
 }

@@ -17,9 +17,9 @@
       "organization": "Fundação Procon-SP",
       "documentTitle": "Araçariguama — Procon municipal",
       "sourceLocation": "https://www.procon.sp.gov.br/aracariguama/",
-      "checkedAt": "2026-09-11",
-      "extractedFact": "O Procon municipal de Araçariguama atende na Rua Santa Cruz, nº 217 — Casa 03 — Centro, CEP 18147-000, telefone (11) 4136-4901.",
-      "relevanceToReader": "O Procon tem endereço próprio, fora do prédio da Prefeitura — detalhe que economiza a ida errada em cidade pequena."
+      "checkedAt": "2026-11-09",
+      "extractedFact": "Em 09/11/2026, o registro do Procon-SP traz o Procon municipal de Araçariguama na Rua Coronel Joaquim Augusto, 342 — Centro, CEP 18147-000, telefone (11) 4136-5057, atendimento de segunda a sexta das 08h às 17h. Na leitura de 11/09/2026, a mesma página foi registrada com Rua Santa Cruz, nº 217 — Casa 03, telefone (11) 4136-4901; a divergência fica declarada no guia.",
+      "relevanceToReader": "O Procon tem endereço próprio, fora do prédio da Prefeitura, mas o endereço publicado mudou entre verificações: ligar antes evita a ida errada."
     },
     {
       "organization": "Prefeitura de Araçariguama",
@@ -65,9 +65,9 @@
   "consumerProtectionResources": [
     {
       "organization": "Procon Araçariguama",
-      "service": "Rua Santa Cruz, nº 217 — Casa 03 — Centro (CEP 18147-000); telefone (11) 4136-4901",
+      "service": "Rua Coronel Joaquim Augusto, 342 — Centro (CEP 18147-000); telefone (11) 4136-5057; segunda a sexta, 8h–17h (registro do Procon-SP em 09/11/2026; endereço anterior registrado: Rua Santa Cruz, 217)",
       "officialSource": "https://www.procon.sp.gov.br/aracariguama/",
-      "checkedAt": "2026-09-11"
+      "checkedAt": "2026-11-09"
     },
     {
       "organization": "Consumidor.gov.br (plataforma federal)",
@@ -98,7 +98,7 @@
   ],
   "localRisksOrWarnings": [
     "O WhatsApp do Banco do Povo mudou para (11) 5332-2195. O número anterior segue circulando, e canal público desatualizado é justamente o que facilita quem se passa pelo serviço.",
-    "Procon e Banco do Povo ficam em endereços diferentes: o Procon na Rua Santa Cruz, 217, e o Banco do Povo dentro da Prefeitura, na Rua São João, 228.",
+    "Procon e Banco do Povo ficam em endereços diferentes: o Procon na Rua Coronel Joaquim Augusto, 342 (registro atual do Procon-SP), e o Banco do Povo dentro da Prefeitura, na Rua São João, 228.",
     "O prédio da Prefeitura fecha das 12h às 13h, e o Banco do Povo atende das 9h às 16h — janela mais curta que o expediente municipal.",
     "Prefeituras que operam o Banco do Povo exigem nome sem restrição cadastral (Araçariguama cita SCPC, Serasa e Cadin): oferta de microcrédito público 'para negativado' não corresponde ao programa."
   ],
@@ -108,10 +108,10 @@
     "A renegociação do próprio microcrédito existe e é feita no balcão, sem intermediário e sem taxa"
   ],
   "pendingVerification": [
-    "Horário de atendimento do Procon municipal: o registro estadual traz endereço e telefone, sem a grade.",
     "Se o Procon de Araçariguama exige agendamento prévio.",
     "Número anterior do WhatsApp do Banco do Povo, para orientar quem ainda o tem salvo.",
     "Periodicidade das campanhas de renegociação do Banco do Povo municipal.",
-    "Se o Banco do Povo de Araçariguama aplica exigência própria de tempo mínimo de residência ou de atividade, como fazem outros municípios da região."
+    "Se o Banco do Povo de Araçariguama aplica exigência própria de tempo mínimo de residência ou de atividade, como fazem outros municípios da região.",
+    "Endereço atual do Procon: o registro do Procon-SP mostrou Rua Santa Cruz, 217 em 11/09/2026 e Rua Coronel Joaquim Augusto, 342 em 09/11/2026; não localizamos o endereço no portal da Prefeitura. Confirmar por telefone."
   ]
 }

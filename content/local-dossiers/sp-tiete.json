@@ -1,0 +1,84 @@
+{
+  "localityId": "sp-tiete",
+  "localityName": "Tietê",
+  "localityType": "municipality",
+  "stateCode": "sp",
+  "officialAdministrativeStatus": "Município do estado de São Paulo, na Região Geográfica Imediata e Intermediária de Sorocaba (IBGE, DTB 2025)",
+  "officialSources": [
+    {
+      "organization": "IBGE — Divisão Territorial Brasileira 2025",
+      "documentTitle": "Relatório DTB Brasil 2025 — municípios",
+      "sourceLocation": "https://geoftp.ibge.gov.br/organizacao_do_territorio/estrutura_territorial/divisao_territorial/2025/DTB_2025.zip",
+      "checkedAt": "2026-11-09",
+      "extractedFact": "Tietê, código 3554508, Região Geográfica Intermediária 3502 Sorocaba, Região Geográfica Imediata 350003 Sorocaba.",
+      "relevanceToReader": "Confirma o município e a região de referência; o site Cidades do IBGE estava inacessível na verificação."
+    },
+    {
+      "organization": "Prefeitura de Tietê",
+      "documentTitle": "Comunicado — Recesso do Procon/PAV",
+      "sourceLocation": "https://www.tiete.sp.gov.br/noticia/5120/comunicado-recesso-do-proconpav/",
+      "checkedAt": "2026-11-09",
+      "extractedFact": "Comunicado de 09/11/2026: o Procon/PAV estará em recesso entre os dias 09 e 27 de novembro, sem atendimento presencial; nesse período, os consumidores poderão registrar denúncias e buscar orientações pelos canais digitais oficiais da Fundação Procon-SP e da Receita Federal.",
+      "relevanceToReader": "Quem precisa reclamar de banco ou financeira em novembro não encontra o balcão aberto e precisa do canal digital."
+    },
+    {
+      "organization": "Prefeitura de Tietê",
+      "documentTitle": "Procon — como reclamar (portal da Prefeitura)",
+      "sourceLocation": "https://www.tiete.sp.gov.br/prefeitura/detalhe-departamento/51/assuntos-juridicos/",
+      "checkedAt": "2026-11-09",
+      "extractedFact": "Procon de Tietê: Praça Dr. J. A. Correa, 127 — Centro; (15) 3282-1575; procontiete@tiete.sp.gov.br; atendimento das 08h às 12h e das 13h às 17h. Para assuntos financeiros (financiamentos, cartões de crédito, bancos, consórcios, leasing), documentos necessários: contrato, proposta, comprovantes de pagamento, faturas, extratos; juntar boletim de ocorrência no caso de saques indevidos e apólice no caso de seguro. Reclamações anônimas não são acolhidas.",
+      "relevanceToReader": "Saber o que levar evita a segunda viagem; e a lista mostra que BO é exigido em saque indevido."
+    },
+    {
+      "organization": "Fundação Procon-SP",
+      "documentTitle": "Tietê — Procon municipal",
+      "sourceLocation": "https://www.procon.sp.gov.br/tiete/",
+      "checkedAt": "2026-11-09",
+      "extractedFact": "Procon Tietê: Praça Dr. J. A. Correa, 127, Centro, CEP 18530-039; telefone (15) 3282-1575; atendimento de segunda a sexta das 8h às 12h e das 13h às 17h.",
+      "relevanceToReader": "Endereço, telefone e horário coincidem com a página da Prefeitura."
+    },
+    {
+      "organization": "Prefeitura de Tietê",
+      "documentTitle": "Desenvolvimento Econômico — Banco do Povo",
+      "sourceLocation": "https://www.tiete.sp.gov.br/prefeitura/detalhe-departamento/45/desenvolvimento-economico/",
+      "checkedAt": "2026-11-09",
+      "extractedFact": "A página de departamento descreve o Banco do Povo Paulista como parceria do Estado com a Prefeitura e indica a entrega de pedidos na Rua Presidente Kennedy, 23, Centro, mas traz condições antigas (juros de 1% ao mês, até R$ 5.000, contratação pelo Banco Nossa Caixa), incompatíveis com a carta de serviços estadual vigente.",
+      "relevanceToReader": "Mostra que a página municipal do programa está desatualizada; o endereço atual precisa ser confirmado por telefone."
+    }
+  ],
+  "consumerProtectionResources": [
+    {
+      "organization": "Procon Tietê",
+      "service": "Praça Dr. J. A. Correa, 127 — Centro; (15) 3282-1575; procontiete@tiete.sp.gov.br; segunda a sexta, 8h–12h e 13h–17h. Em recesso, sem atendimento presencial, de 09 a 27/11/2026",
+      "officialSource": "https://www.tiete.sp.gov.br/prefeitura/detalhe-departamento/51/assuntos-juridicos/",
+      "checkedAt": "2026-11-09"
+    },
+    {
+      "organization": "Consumidor.gov.br (plataforma federal)",
+      "service": "Reclamação on-line contra bancos e financeiras, com prazo de resposta monitorado — funciona durante o recesso do Procon",
+      "officialSource": "https://www.consumidor.gov.br",
+      "checkedAt": "2026-11-09"
+    }
+  ],
+  "verifiedLocalPrograms": [],
+  "verifiedServiceInformation": [],
+  "uniqueLocalQuestions": [
+    "O Procon de Tietê está atendendo em novembro?",
+    "Que documentos levar ao Procon para reclamar de banco ou cartão?",
+    "Onde fica o Banco do Povo de Tietê?"
+  ],
+  "localRisksOrWarnings": [
+    "Procon/PAV em recesso de 09 a 27/11/2026, sem atendimento presencial: quem foi cobrado indevidamente nesse período deve registrar pelo canal digital, sem esperar o balcão reabrir.",
+    "A página municipal do Banco do Povo traz condições antigas (1% ao mês, até R$ 5.000, Banco Nossa Caixa) e três endereços aparecem em páginas oficiais diferentes; quem usar o número ou o endereço errado perde a viagem."
+  ],
+  "decisionImpact": [
+    "Registrar a reclamação on-line durante o recesso preserva a data do protesto do consumidor",
+    "Levar contrato, faturas, extratos e, em saque indevido, o BO evita a segunda ida ao Procon",
+    "Confirmar por telefone o endereço do Banco do Povo antes de sair"
+  ],
+  "pendingVerification": [
+    "Endereço e telefone atuais do Banco do Povo Paulista em Tietê: páginas oficiais citam Rua Presidente Kennedy, 23; Rua São Benedito, 98 (ACET); e Casa do Empreendedor, Rua Domingos Aparecido Lazarin, 19. O site estadual do programa estava fora do ar em 09/11/2026.",
+    "Confirmação da reabertura do atendimento presencial do Procon após 27/11/2026.",
+    "Significado de 'PAV' no comunicado do recesso (a nota cita a Receita Federal como canal alternativo)."
+  ]
+}

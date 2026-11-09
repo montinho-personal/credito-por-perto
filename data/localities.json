@@ -395,6 +395,22 @@
       "stateCode": "sp",
       "citySlug": "aracariguama",
       "ibgeCode": "3502754"
+    },
+    {
+      "id": "sp-tiete",
+      "name": "Tietê",
+      "localityType": "municipality",
+      "stateCode": "sp",
+      "citySlug": "tiete",
+      "ibgeCode": "3554508"
+    },
+    {
+      "id": "sp-santo-antonio-de-posse",
+      "name": "Santo Antônio de Posse",
+      "localityType": "municipality",
+      "stateCode": "sp",
+      "citySlug": "santo-antonio-de-posse",
+      "ibgeCode": "3548005"
     }
   ]
 }
