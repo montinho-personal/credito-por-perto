@@ -1,0 +1,43 @@
+{
+  "articleSlug": "banco-pode-descontar-divida-da-conta",
+  "claims": [
+    {
+      "claimId": "r4790-autorizacao",
+      "claimText": "Débitos em conta de depósitos e em conta-salário dependem de prévia autorização do titular, com finalidade específica, conta discriminada, forma escrita ou eletrônica e prazo (art. 3º). Para operações de crédito, a autorização deve ser individualizada e vinculada a cada contrato e conter manifestação inequívoca do titular sobre débitos sobre limite de crédito em conta e de obrigação vencida, inclusive lançamentos parciais, com a solicitação destacada no contrato (art. 4º).",
+      "sourceOrganization": "Banco Central do Brasil / CMN",
+      "sourceTitle": "Resolução CMN nº 4.790, de 26/3/2020",
+      "sourceLocation": "https://www.bcb.gov.br/estabilidadefinanceira/exibenormativo?tipo=Resolu%C3%A7%C3%A3o&numero=4790",
+      "sourceType": "official",
+      "accessedAt": "2026-11-13"
+    },
+    {
+      "claimId": "r4790-cancelamento",
+      "claimText": "É assegurado ao titular cancelar a autorização (art. 6º). Pela instituição destinatária, a requisição é encaminhada à depositária em até 2 dias úteis (art. 7º); a depositária comunica o acatamento em até 2 dias úteis (art. 8º). Para operações de crédito, o cancelamento é solicitado por meio da instituição destinatária, podendo ser feito na depositária se o cliente declarar que não reconhece a autorização (art. 9º). O encerramento de todas as contas da autorização, sem indicação de substituta, equivale ao cancelamento (art. 10).",
+      "sourceOrganization": "Banco Central do Brasil / CMN",
+      "sourceTitle": "Resolução CMN nº 4.790, de 26/3/2020",
+      "sourceLocation": "https://www.bcb.gov.br/estabilidadefinanceira/exibenormativo?tipo=Resolu%C3%A7%C3%A3o&numero=4790",
+      "sourceType": "official",
+      "accessedAt": "2026-11-13"
+    },
+    {
+      "claimId": "stj-tema-1085",
+      "claimText": "A Segunda Seção do STJ, no Tema 1.085 (recursos repetitivos), fixou que são lícitos os descontos de parcelas de empréstimos bancários comuns em conta-corrente, ainda que usada para receber salário, desde que previamente autorizados pelo mutuário e enquanto a autorização durar, não se aplicando por analogia o limite do art. 1º, § 1º, da Lei 10.820/2003. O relator distinguiu o consignado (desconto em folha, sem revogação para mudar a forma de pagamento) do empréstimo comum (desconto sobre o saldo, com disposição do titular sobre a conta).",
+      "sourceOrganization": "Superior Tribunal de Justiça",
+      "sourceTitle": "Desconto de empréstimo comum em conta não segue limites do crédito consignado, decide Segunda Seção (29/04/2022)",
+      "sourceLocation": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/29042022-Desconto-de-emprestimo-comum-em-conta-nao-segue-limites-do-credito-consignado--decide-Segunda-Secao.aspx",
+      "sourceType": "official",
+      "accessedAt": "2026-11-13",
+      "notes": "REsp 1.863.973, julgado em 09/03/2022."
+    },
+    {
+      "claimId": "canal-oficial-reclamacao",
+      "claimText": "A plataforma consumidor.gov.br é o serviço público federal de solução alternativa de conflitos de consumo, com resposta monitorada das empresas cadastradas, e funciona como escalonamento após o atendimento e a ouvidoria da própria instituição.",
+      "sourceOrganization": "Secretaria Nacional do Consumidor — Ministério da Justiça e Segurança Pública",
+      "sourceTitle": "Consumidor.gov.br",
+      "sourceLocation": "https://www.consumidor.gov.br",
+      "sourceType": "official",
+      "accessedAt": "2026-08-29",
+      "notes": "Citado como último degrau do roteiro de contestação, depois de SAC e ouvidoria."
+    }
+  ]
+}

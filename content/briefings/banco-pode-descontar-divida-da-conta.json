@@ -1,0 +1,39 @@
+{
+  "proposedTitle": "O banco pode descontar dívida do meu salário na conta? A autorização, o limite e como cancelar",
+  "primaryIntent": "banco pode descontar dívida da conta salário",
+  "secondaryIntents": [
+    "desconto de empréstimo na conta salário limite 30%",
+    "cancelar débito automático de empréstimo",
+    "banco pode usar cheque especial para pagar parcela",
+    "banco pegou meu salário para pagar dívida"
+  ],
+  "targetReader": "Titular de conta ou cartão com dúvida prática",
+  "readerSituation": "Proposto pelo portal sem prints do usuário (pedido: 'criar próximos artigos'); intenções tiradas das normas oficiais.",
+  "centralQuestion": "O banco pode debitar parcela na conta onde cai o salário, e como cancelar?",
+  "uniqueAngle": "Res. CMN 4.790 (autorização por contrato, opções de cheque especial e de parcela vencida, cancelamento) e o Tema 1.085 do STJ",
+  "originalContribution": [],
+  "primarySources": [
+    "Banco Central / CMN (Res. 4.790/2020)",
+    "STJ (Tema 1.085)"
+  ],
+  "supportingSources": [
+    "consumidor.gov.br"
+  ],
+  "contentArchetype": "guide",
+  "proposedStructure": [],
+  "uniqueExamples": [],
+  "proposedVisuals": [
+    "QuickSummary",
+    "Tabela",
+    "ToolCallout"
+  ],
+  "pagesThatMayCompete": [
+    "/organizacao-financeira/o-que-pode-ser-penhorado/",
+    "/emprestimos/margem-consignavel/"
+  ],
+  "informationThatMustNotBeRepeated": [
+    "Penhora de salário (link)",
+    "Margem do consignado (link)"
+  ],
+  "publicationDecision": "create"
+}

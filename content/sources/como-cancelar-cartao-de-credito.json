@@ -1,0 +1,53 @@
+{
+  "articleSlug": "como-cancelar-cartao-de-credito",
+  "claims": [
+    {
+      "claimId": "r96-art12",
+      "claimText": "Encerramento de conta de pagamento: comunicação da intenção de rescindir; transferência de saldo remanescente para conta indicada ou disponibilização para retirada; informação ao titular sobre o prazo para as providências, limitado a 30 dias corridos, sobre os procedimentos para pagamento de saldo devedor e compromissos e sobre os produtos que permanecem ativos ou se encerram; comunicação da data de encerramento ou dos motivos que o impossibilitam após o prazo (art. 12, I a IV). A instituição deve assegurar o pedido de encerramento pelo mesmo canal usado para contratar a abertura, se ainda disponível (§ 1º). Na conta pós-paga, é vedado recusar o encerramento por saldo devedor vencido ou parcelas vincendas e alterar a forma de pagamento e os vencimentos, exceto a pedido do titular (§ 2º).",
+      "sourceOrganization": "Banco Central do Brasil",
+      "sourceTitle": "Resolução BCB nº 96/2021 — texto consolidado (com alterações até a Res. BCB 518/2025)",
+      "sourceLocation": "https://www.bcb.gov.br/estabilidadefinanceira/exibenormativo?tipo=Resolu%C3%A7%C3%A3o%20BCB&numero=96",
+      "sourceType": "official",
+      "accessedAt": "2026-11-13",
+      "notes": "Texto consolidado lido pela API de normativos do BC em 02/11/2026."
+    },
+    {
+      "claimId": "r96-art6-beneficios",
+      "claimText": "As instituições devem disponibilizar ao titular formas de consulta às regras sobre programas de benefícios e recompensas vinculados à conta de pagamento pós-paga (art. 6º, § 3º).",
+      "sourceOrganization": "Banco Central do Brasil",
+      "sourceTitle": "Resolução BCB nº 96/2021 — texto consolidado (com alterações até a Res. BCB 518/2025)",
+      "sourceLocation": "https://www.bcb.gov.br/estabilidadefinanceira/exibenormativo?tipo=Resolu%C3%A7%C3%A3o%20BCB&numero=96",
+      "sourceType": "official",
+      "accessedAt": "2026-11-13"
+    },
+    {
+      "claimId": "res3919-art10-11",
+      "claimText": "Emissores de cartão devem ofertar a pessoas naturais cartão de crédito básico, nacional e/ou internacional; é vedado associar o básico a programas de benefícios ou recompensas; a anuidade do básico nacional deve ser inferior à do básico internacional (art. 10). No cartão diferenciado admite-se apenas anuidade diferenciada, com essa denominação, que não pode ser igual ou inferior à anuidade do básico internacional, sem impedir a cobrança por evento dos serviços prioritários da Tabela I (art. 11).",
+      "sourceOrganization": "Banco Central do Brasil",
+      "sourceTitle": "Resolução CMN nº 3.919/2010 — texto consolidado (versão 7), com a Tabela I",
+      "sourceLocation": "https://normativos.bcb.gov.br/Lists/Normativos/Attachments/49514/Res_3919_v7_L.pdf",
+      "sourceType": "official",
+      "accessedAt": "2026-11-05"
+    },
+    {
+      "claimId": "rotativo-30-dias",
+      "claimText": "Desde 2017 (Resolução CMN nº 4.549), o saldo devedor da fatura só pode permanecer no rotativo até o vencimento da fatura seguinte; depois disso, o saldo remanescente pode ser financiado por linha de crédito para pagamento parcelado, desde que em condições mais vantajosas que as do rotativo (art. 1º e art. 2º).",
+      "sourceOrganization": "Banco Central do Brasil / CMN",
+      "sourceTitle": "Resolução CMN nº 4.549/2017, com as alterações da Resolução CMN nº 5.112/2023 — texto consolidado",
+      "sourceLocation": "https://normativos.bcb.gov.br/Lists/Normativos/Attachments/50330/Res_4549_v2_L.pdf",
+      "sourceType": "official",
+      "accessedAt": "2026-10-14",
+      "notes": "Reconferido em 14/10/2026 no texto consolidado: a norma diz que o saldo 'pode ser financiado' em parcelamento mais vantajoso; a redação anterior ('a instituição deve oferecer') foi corrigida."
+    },
+    {
+      "claimId": "canal-oficial-reclamacao",
+      "claimText": "A plataforma consumidor.gov.br é o serviço público federal de solução alternativa de conflitos de consumo, com resposta monitorada das empresas cadastradas, e funciona como escalonamento após o atendimento e a ouvidoria da própria instituição.",
+      "sourceOrganization": "Secretaria Nacional do Consumidor — Ministério da Justiça e Segurança Pública",
+      "sourceTitle": "Consumidor.gov.br",
+      "sourceLocation": "https://www.consumidor.gov.br",
+      "sourceType": "official",
+      "accessedAt": "2026-08-29",
+      "notes": "Citado como último degrau do roteiro de contestação, depois de SAC e ouvidoria."
+    }
+  ]
+}

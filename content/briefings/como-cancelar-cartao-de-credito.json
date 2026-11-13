@@ -1,0 +1,38 @@
+{
+  "proposedTitle": "Como cancelar o cartão de crédito: o banco não pode recusar, nem com fatura em aberto",
+  "primaryIntent": "como cancelar cartão de crédito",
+  "secondaryIntents": [
+    "cancelar cartão de crédito com dívida",
+    "quanto tempo demora para cancelar cartão",
+    "cancelar cartão perde pontos",
+    "banco pode recusar cancelamento do cartão"
+  ],
+  "targetReader": "Titular de conta ou cartão com dúvida prática",
+  "readerSituation": "Proposto pelo portal sem prints do usuário (pedido: 'criar próximos artigos'); intenções tiradas das normas oficiais.",
+  "centralQuestion": "Como cancelar o cartão e o que acontece com a dívida?",
+  "uniqueAngle": "Regras do art. 12 da Res. BCB 96 (canal, 30 dias, proibição de recusar por dívida e de mudar parcelas)",
+  "originalContribution": [],
+  "primarySources": [
+    "Banco Central (Res. BCB 96/2021)"
+  ],
+  "supportingSources": [
+    "consumidor.gov.br"
+  ],
+  "contentArchetype": "guide",
+  "proposedStructure": [],
+  "uniqueExamples": [],
+  "proposedVisuals": [
+    "QuickSummary",
+    "Tabela",
+    "ToolCallout"
+  ],
+  "pagesThatMayCompete": [
+    "/organizacao-financeira/fatura-do-cartao-como-funciona/",
+    "/organizacao-financeira/anuidade-e-tarifas-do-cartao/"
+  ],
+  "informationThatMustNotBeRepeated": [
+    "Tarifas do cartão (link)",
+    "Rotativo (link)"
+  ],
+  "publicationDecision": "create"
+}

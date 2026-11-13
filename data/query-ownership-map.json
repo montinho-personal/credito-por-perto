@@ -945,5 +945,17 @@
   "empréstimos em santo antônio de posse": {
     "canonicalOwner": "/emprestimos/sp/santo-antonio-de-posse/",
     "supportingPages": []
+  },
+  "como cancelar cartão de crédito": {
+    "canonicalOwner": "/organizacao-financeira/como-cancelar-cartao-de-credito/",
+    "supportingPages": [
+      "/organizacao-financeira/fatura-do-cartao-como-funciona/"
+    ]
+  },
+  "banco pode descontar dívida da conta salário": {
+    "canonicalOwner": "/organizacao-financeira/banco-pode-descontar-divida-da-conta/",
+    "supportingPages": [
+      "/organizacao-financeira/o-que-pode-ser-penhorado/"
+    ]
   }
 }
