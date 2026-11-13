@@ -1,0 +1,34 @@
+{
+  "articleSlug": "como-encerrar-conta-no-banco",
+  "claims": [
+    {
+      "claimId": "r4753-art5",
+      "claimText": "Encerramento de conta de depósitos: comunicação da intenção de rescindir; indicação pelo cliente do destino do saldo credor (transferência ou retirada em espécie); devolução ou cancelamento das folhas de cheque não utilizadas; informação pela instituição sobre o prazo para as providências, limitado a 30 dias corridos, os procedimentos para pagamento de compromissos e os produtos que permanecem ativos ou se encerram; comunicação da data de encerramento ou dos motivos que o impossibilitam (art. 5º, I a V). O encerramento pode ocorrer mesmo com cheques sustados, revogados ou cancelados (§ 1º). Deve ser assegurado o pedido pelo mesmo canal usado na abertura, se ainda disponível (§ 2º).",
+      "sourceOrganization": "Banco Central do Brasil / CMN",
+      "sourceTitle": "Resolução CMN nº 4.753, de 26/9/2019",
+      "sourceLocation": "https://www.bcb.gov.br/estabilidadefinanceira/exibenormativo?tipo=Resolu%C3%A7%C3%A3o&numero=4753",
+      "sourceType": "official",
+      "accessedAt": "2026-11-13",
+      "notes": "Texto lido pela API de normativos do BC em 13/11/2026."
+    },
+    {
+      "claimId": "r4790-cancelamento",
+      "claimText": "É assegurado ao titular cancelar a autorização (art. 6º). Pela instituição destinatária, a requisição é encaminhada à depositária em até 2 dias úteis (art. 7º); a depositária comunica o acatamento em até 2 dias úteis (art. 8º). Para operações de crédito, o cancelamento é solicitado por meio da instituição destinatária, podendo ser feito na depositária se o cliente declarar que não reconhece a autorização (art. 9º). O encerramento de todas as contas da autorização, sem indicação de substituta, equivale ao cancelamento (art. 10).",
+      "sourceOrganization": "Banco Central do Brasil / CMN",
+      "sourceTitle": "Resolução CMN nº 4.790, de 26/3/2020",
+      "sourceLocation": "https://www.bcb.gov.br/estabilidadefinanceira/exibenormativo?tipo=Resolu%C3%A7%C3%A3o&numero=4790",
+      "sourceType": "official",
+      "accessedAt": "2026-11-13"
+    },
+    {
+      "claimId": "canal-oficial-reclamacao",
+      "claimText": "A plataforma consumidor.gov.br é o serviço público federal de solução alternativa de conflitos de consumo, com resposta monitorada das empresas cadastradas, e funciona como escalonamento após o atendimento e a ouvidoria da própria instituição.",
+      "sourceOrganization": "Secretaria Nacional do Consumidor — Ministério da Justiça e Segurança Pública",
+      "sourceTitle": "Consumidor.gov.br",
+      "sourceLocation": "https://www.consumidor.gov.br",
+      "sourceType": "official",
+      "accessedAt": "2026-08-29",
+      "notes": "Citado como último degrau do roteiro de contestação, depois de SAC e ouvidoria."
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "articleSlug": "conta-conjunta-divida-de-um-titular",
+  "claims": [
+    {
+      "claimId": "stj-iac-12",
+      "claimText": "Corte Especial do STJ, REsp 1.610.844 (IAC 12, junho de 2022): 1) presume-se, em regra, o rateio em partes iguais do numerário em conta-corrente conjunta solidária quando inexistente previsão legal ou contratual de responsabilidade solidária pelo pagamento de dívida de um dos titulares; 2) não é possível penhorar a integralidade do saldo em execução movida por pessoa distinta da instituição financeira mantenedora, podendo cotitulares e exequente demonstrar os valores de cada um. Na conta solidária há solidariedade ativa e passiva entre os titulares apenas na relação com o banco. Em outubro de 2022, aplicando o precedente, a penhora foi limitada à metade do saldo encontrado.",
+      "sourceOrganization": "Superior Tribunal de Justiça",
+      "sourceTitle": "Penhora sobre conta conjunta só pode afetar a parte do saldo que cabe ao devedor (19/10/2022)",
+      "sourceLocation": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2022/19102022-Penhora-sobre-conta-conjunta-so-pode-afetar-a-parte-do-saldo-que-cabe-ao-devedor.aspx",
+      "sourceType": "official",
+      "accessedAt": "2026-11-13"
+    },
+    {
+      "claimId": "r5071-inclusao",
+      "claimText": "Inclusão no CCF pelo banco sacado do emitente que tiver o mesmo cheque devolvido em duas datas diferentes por falta de fundos, emitir cheque de conta encerrada ou incidir em prática espúria (mais de três cheques sem fundos de até R$ 3,41 no mesmo dia da mesma conta, ou três ou mais desses pagos em datas diferentes pelo compromisso de pronto acolhimento) (art. 10); em conta conjunta, restrita ao emitente (art. 12); comunicação por escrito, anterior à inscrição, com os canais para cancelamento (art. 13).",
+      "sourceOrganization": "Banco Central do Brasil",
+      "sourceTitle": "Resolução CMN nº 5.071, de 26/4/2023",
+      "sourceLocation": "https://www.bcb.gov.br/estabilidadefinanceira/exibenormativo?tipo=Resolu%C3%A7%C3%A3o%20CMN&numero=5071",
+      "sourceType": "official",
+      "accessedAt": "2026-11-05",
+      "notes": "Vigente desde 2/10/2023 (art. 38); revogou as Resoluções 1.631/1989 e 1.682/1990, entre outras."
+    },
+    {
+      "claimId": "cpc-790-843",
+      "claimText": "São sujeitos à execução os bens do cônjuge ou companheiro nos casos em que seus bens próprios ou de sua meação respondem pela dívida (CPC, art. 790, IV). Na penhora de bem indivisível, a quota-parte do cônjuge alheio à execução recai sobre o produto da alienação; ele tem preferência na arrematação em igualdade de condições; e não haverá expropriação por preço inferior à avaliação que não garanta a sua quota-parte (art. 843).",
+      "sourceOrganization": "Câmara dos Deputados (Legislação)",
+      "sourceTitle": "Lei nº 13.105/2015 (Código de Processo Civil) — norma atualizada",
+      "sourceLocation": "https://www2.camara.leg.br/legin/fed/lei/2015/lei-13105-16-marco-2015-780273-normaatualizada-pl.html",
+      "sourceType": "official",
+      "accessedAt": "2026-11-03",
+      "notes": "Texto atualizado lido na Câmara (legin) porque o Planalto bloqueia acesso automatizado."
+    },
+    {
+      "claimId": "canal-oficial-reclamacao",
+      "claimText": "A plataforma consumidor.gov.br é o serviço público federal de solução alternativa de conflitos de consumo, com resposta monitorada das empresas cadastradas, e funciona como escalonamento após o atendimento e a ouvidoria da própria instituição.",
+      "sourceOrganization": "Secretaria Nacional do Consumidor — Ministério da Justiça e Segurança Pública",
+      "sourceTitle": "Consumidor.gov.br",
+      "sourceLocation": "https://www.consumidor.gov.br",
+      "sourceType": "official",
+      "accessedAt": "2026-08-29",
+      "notes": "Citado como último degrau do roteiro de contestação, depois de SAC e ouvidoria."
+    }
+  ]
+}

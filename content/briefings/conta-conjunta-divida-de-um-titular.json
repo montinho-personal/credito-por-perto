@@ -1,0 +1,39 @@
+{
+  "proposedTitle": "Conta conjunta: a dívida de um titular pode bloquear o dinheiro do outro?",
+  "primaryIntent": "conta conjunta dívida de um titular",
+  "secondaryIntents": [
+    "penhora em conta conjunta",
+    "bloqueio judicial conta conjunta",
+    "conta conjunta solidária e fracionária",
+    "cheque sem fundo conta conjunta"
+  ],
+  "targetReader": "Correntista com dúvida prática sobre a conta",
+  "readerSituation": "Proposto pelo portal sem prints do usuário (pedido: 'criar próximos artigos'); intenções tiradas das fontes oficiais.",
+  "centralQuestion": "A dívida de um titular alcança o saldo do outro?",
+  "uniqueAngle": "Teses do IAC 12 do STJ, diferença solidária x fracionária, relação com o banco e CCF",
+  "originalContribution": [],
+  "primarySources": [
+    "STJ (IAC 12)",
+    "Banco Central / CMN (Res. 5.071/2023)"
+  ],
+  "supportingSources": [
+    "consumidor.gov.br"
+  ],
+  "contentArchetype": "guide",
+  "proposedStructure": [],
+  "uniqueExamples": [],
+  "proposedVisuals": [
+    "QuickSummary",
+    "Tabela",
+    "ToolCallout"
+  ],
+  "pagesThatMayCompete": [
+    "/organizacao-financeira/divida-do-conjuge/",
+    "/organizacao-financeira/o-que-pode-ser-penhorado/"
+  ],
+  "informationThatMustNotBeRepeated": [
+    "Regime de bens (link)",
+    "Impenhorabilidade (link)"
+  ],
+  "publicationDecision": "create"
+}

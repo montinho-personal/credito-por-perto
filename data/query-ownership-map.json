@@ -957,5 +957,17 @@
     "supportingPages": [
       "/organizacao-financeira/o-que-pode-ser-penhorado/"
     ]
+  },
+  "como encerrar conta no banco": {
+    "canonicalOwner": "/organizacao-financeira/como-encerrar-conta-no-banco/",
+    "supportingPages": [
+      "/organizacao-financeira/como-cancelar-cartao-de-credito/"
+    ]
+  },
+  "conta conjunta dívida de um titular": {
+    "canonicalOwner": "/organizacao-financeira/conta-conjunta-divida-de-um-titular/",
+    "supportingPages": [
+      "/organizacao-financeira/divida-do-conjuge/"
+    ]
   }
 }

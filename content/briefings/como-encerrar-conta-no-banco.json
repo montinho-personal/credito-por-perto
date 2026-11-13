@@ -1,0 +1,38 @@
+{
+  "proposedTitle": "Como encerrar a conta no banco: o pedido, o prazo de 30 dias e o que fazer com saldo, cheques e dívidas",
+  "primaryIntent": "como encerrar conta no banco",
+  "secondaryIntents": [
+    "encerrar conta pelo aplicativo",
+    "quanto tempo demora para encerrar conta",
+    "encerrar conta com dívida",
+    "encerrar conta com cheque sustado"
+  ],
+  "targetReader": "Correntista com dúvida prática sobre a conta",
+  "readerSituation": "Proposto pelo portal sem prints do usuário (pedido: 'criar próximos artigos'); intenções tiradas das fontes oficiais.",
+  "centralQuestion": "Como encerrar a conta e o que fica pendente?",
+  "uniqueAngle": "Roteiro do art. 5º da Res. CMN 4.753 com checklist de débitos e dívidas",
+  "originalContribution": [],
+  "primarySources": [
+    "Banco Central / CMN (Res. 4.753/2019)"
+  ],
+  "supportingSources": [
+    "consumidor.gov.br"
+  ],
+  "contentArchetype": "guide",
+  "proposedStructure": [],
+  "uniqueExamples": [],
+  "proposedVisuals": [
+    "QuickSummary",
+    "Tabela",
+    "ToolCallout"
+  ],
+  "pagesThatMayCompete": [
+    "/organizacao-financeira/como-cancelar-cartao-de-credito/",
+    "/organizacao-financeira/portabilidade-de-salario/"
+  ],
+  "informationThatMustNotBeRepeated": [
+    "Cancelamento do cartão (link)",
+    "Portabilidade de salário (link)"
+  ],
+  "publicationDecision": "create"
+}
