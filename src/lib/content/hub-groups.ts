@@ -195,6 +195,8 @@ export const HUB_GROUPS: Record<CategoryId, readonly HubGroup[]> = {
         "o-que-acontece-ao-atrasar-parcela",
         "banco-pode-descontar-divida-da-conta",
         "cobranca-abusiva-o-que-o-credor-nao-pode-fazer",
+        "divida-vendida-para-outra-empresa",
+        "carta-de-quitacao-de-divida",
         "protesto-em-cartorio",
         "cheque-sem-fundo-ccf",
         "divida-caducada-nome-limpo",

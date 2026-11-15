@@ -1,0 +1,40 @@
+{
+  "proposedTitle": "Carta de quitação de dívida: o direito de receber, o que ela deve ter e quanto tempo guardar",
+  "primaryIntent": "carta de quitação de dívida",
+  "secondaryIntents": [
+    "declaração de quitação",
+    "declaração anual de quitação de débitos",
+    "quanto tempo guardar comprovante",
+    "credor obrigado a dar quitação"
+  ],
+  "targetReader": "Devedor com dúvida prática sobre cobrança e pagamento",
+  "readerSituation": "Proposto pelo portal sem prints do usuário (pedido: 'criar próximos artigos'); intenções tiradas das normas oficiais.",
+  "centralQuestion": "Como garantir a prova de que a dívida foi paga?",
+  "uniqueAngle": "Arts. 319 a 325 do Código Civil e Lei 12.007/2009, com a Súmula 548",
+  "originalContribution": [],
+  "primarySources": [
+    "Código Civil",
+    "Lei 12.007/2009",
+    "STJ (Súmula 548)"
+  ],
+  "supportingSources": [
+    "consumidor.gov.br"
+  ],
+  "contentArchetype": "guide",
+  "proposedStructure": [],
+  "uniqueExamples": [],
+  "proposedVisuals": [
+    "QuickSummary",
+    "Tabela",
+    "ToolCallout"
+  ],
+  "pagesThatMayCompete": [
+    "/organizacao-financeira/como-limpar-o-nome/",
+    "/organizacao-financeira/divida-caducada-nome-limpo/"
+  ],
+  "informationThatMustNotBeRepeated": [
+    "Como limpar o nome (link)",
+    "Prescrição (link)"
+  ],
+  "publicationDecision": "create"
+}

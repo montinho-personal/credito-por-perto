@@ -1,0 +1,40 @@
+{
+  "proposedTitle": "Minha dívida foi vendida para outra empresa: é legal? O que muda na cobrança e no nome",
+  "primaryIntent": "dívida vendida para outra empresa",
+  "secondaryIntents": [
+    "cessão de crédito",
+    "empresa de cobrança comprou minha dívida",
+    "dívida vendida reinicia prazo",
+    "não fui avisado da cessão"
+  ],
+  "targetReader": "Devedor com dúvida prática sobre cobrança e pagamento",
+  "readerSituation": "Proposto pelo portal sem prints do usuário (pedido: 'criar próximos artigos'); intenções tiradas das normas oficiais.",
+  "centralQuestion": "A venda da dívida é legal e o que muda para o devedor?",
+  "uniqueAngle": "Arts. 286 a 298 do Código Civil (notificação, pagamento ao credor antigo, defesas) e regras do CDC para o cadastro",
+  "originalContribution": [],
+  "primarySources": [
+    "Código Civil",
+    "CDC",
+    "STJ (Súmulas 359 e 548)"
+  ],
+  "supportingSources": [
+    "consumidor.gov.br"
+  ],
+  "contentArchetype": "guide",
+  "proposedStructure": [],
+  "uniqueExamples": [],
+  "proposedVisuals": [
+    "QuickSummary",
+    "Tabela",
+    "ToolCallout"
+  ],
+  "pagesThatMayCompete": [
+    "/organizacao-financeira/cobranca-abusiva-o-que-o-credor-nao-pode-fazer/",
+    "/organizacao-financeira/como-negociar-dividas/"
+  ],
+  "informationThatMustNotBeRepeated": [
+    "Limites da cobrança (link)",
+    "Prescrição (link)"
+  ],
+  "publicationDecision": "create"
+}

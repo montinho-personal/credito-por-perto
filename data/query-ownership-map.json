@@ -981,5 +981,17 @@
     "supportingPages": [
       "/juros-e-cet/o-que-e-cet/"
     ]
+  },
+  "dívida vendida para outra empresa": {
+    "canonicalOwner": "/organizacao-financeira/divida-vendida-para-outra-empresa/",
+    "supportingPages": [
+      "/organizacao-financeira/cobranca-abusiva-o-que-o-credor-nao-pode-fazer/"
+    ]
+  },
+  "carta de quitação de dívida": {
+    "canonicalOwner": "/organizacao-financeira/carta-de-quitacao-de-divida/",
+    "supportingPages": [
+      "/organizacao-financeira/como-limpar-o-nome/"
+    ]
   }
 }

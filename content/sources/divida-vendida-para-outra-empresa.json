@@ -1,0 +1,68 @@
+{
+  "articleSlug": "divida-vendida-para-outra-empresa",
+  "claims": [
+    {
+      "claimId": "cc-286-287",
+      "claimText": "O credor pode ceder o crédito se não se opuser a natureza da obrigação, a lei ou a convenção com o devedor (art. 286); salvo disposição em contrário, a cessão abrange todos os acessórios (art. 287).",
+      "sourceOrganization": "Câmara dos Deputados",
+      "sourceTitle": "Código Civil (Lei nº 10.406/2002) — texto atualizado",
+      "sourceLocation": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+      "sourceType": "official",
+      "accessedAt": "2026-11-15"
+    },
+    {
+      "claimId": "cc-290-292",
+      "claimText": "A cessão não tem eficácia em relação ao devedor senão quando a este notificada; considera-se notificado quem se declarou ciente por escrito (art. 290). Fica desobrigado o devedor que, antes de ter conhecimento da cessão, paga ao credor primitivo (art. 292).",
+      "sourceOrganization": "Câmara dos Deputados",
+      "sourceTitle": "Código Civil (Lei nº 10.406/2002) — texto atualizado",
+      "sourceLocation": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+      "sourceType": "official",
+      "accessedAt": "2026-11-15"
+    },
+    {
+      "claimId": "cc-294-298",
+      "claimText": "O devedor pode opor ao cessionário as exceções que lhe competirem e as que tinha contra o cedente ao ter conhecimento da cessão (art. 294). O crédito penhorado não pode ser transferido pelo credor que tiver conhecimento da penhora (art. 298).",
+      "sourceOrganization": "Câmara dos Deputados",
+      "sourceTitle": "Código Civil (Lei nº 10.406/2002) — texto atualizado",
+      "sourceLocation": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+      "sourceType": "official",
+      "accessedAt": "2026-11-15"
+    },
+    {
+      "claimId": "cdc-42",
+      "claimText": "Na cobrança de débitos, o consumidor não será exposto a ridículo nem submetido a constrangimento ou ameaça; o cobrado em quantia indevida tem direito à repetição do indébito em dobro do que pagou em excesso, salvo engano justificável (art. 42 e parágrafo único).",
+      "sourceOrganization": "Planalto — Código de Defesa do Consumidor",
+      "sourceTitle": "Lei nº 8.078/1990",
+      "sourceLocation": "https://www.planalto.gov.br/ccivil_03/leis/l8078compilado.htm",
+      "sourceType": "official",
+      "accessedAt": "2026-11-15"
+    },
+    {
+      "claimId": "cdc-43",
+      "claimText": "Informações negativas não podem se referir a período superior a 5 anos (art. 43, § 1º); a abertura de cadastro não solicitada deve ser comunicada por escrito (§ 2º); inexatidões devem ser corrigidas (§ 3º).",
+      "sourceOrganization": "Planalto — Código de Defesa do Consumidor",
+      "sourceTitle": "Lei nº 8.078/1990",
+      "sourceLocation": "https://www.planalto.gov.br/ccivil_03/leis/l8078compilado.htm",
+      "sourceType": "official",
+      "accessedAt": "2026-11-15"
+    },
+    {
+      "claimId": "stj-sumula-359",
+      "claimText": "Cabe ao órgão mantenedor do Cadastro de Proteção ao Crédito a notificação do devedor antes de proceder à inscrição (Súmula 359, 13/08/2008).",
+      "sourceOrganization": "Superior Tribunal de Justiça",
+      "sourceTitle": "Súmula 359",
+      "sourceLocation": "https://arquivocidadao.stj.jus.br/index.php/sumula-359",
+      "sourceType": "official",
+      "accessedAt": "2026-11-15"
+    },
+    {
+      "claimId": "stj-sumula-548",
+      "claimText": "Incumbe ao credor a exclusão do registro da dívida em nome do devedor no cadastro de inadimplentes no prazo de cinco dias úteis, a partir do integral e efetivo pagamento do débito (Súmula 548).",
+      "sourceOrganization": "Superior Tribunal de Justiça",
+      "sourceTitle": "Súmula 548",
+      "sourceLocation": "https://arquivocidadao.stj.jus.br/index.php/sumula-548",
+      "sourceType": "official",
+      "accessedAt": "2026-11-15"
+    }
+  ]
+}

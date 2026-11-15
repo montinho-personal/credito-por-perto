@@ -1,0 +1,51 @@
+{
+  "articleSlug": "carta-de-quitacao-de-divida",
+  "claims": [
+    {
+      "claimId": "cc-319-321",
+      "claimText": "O devedor que paga tem direito a quitação regular e pode reter o pagamento enquanto não lhe seja dada (art. 319). A quitação, por instrumento particular, designará valor e espécie da dívida, nome do devedor ou de quem pagou, tempo e lugar do pagamento, com assinatura do credor; vale sem esses requisitos se dos termos ou circunstâncias resultar o pagamento (art. 320). Título perdido: o devedor pode exigir declaração que o inutilize, retendo o pagamento (art. 321).",
+      "sourceOrganization": "Câmara dos Deputados",
+      "sourceTitle": "Código Civil (Lei nº 10.406/2002) — texto atualizado",
+      "sourceLocation": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+      "sourceType": "official",
+      "accessedAt": "2026-11-15"
+    },
+    {
+      "claimId": "cc-322-325",
+      "claimText": "Quitação da última quota periódica presume pagas as anteriores, até prova em contrário (art. 322); quitação do capital sem reserva dos juros presume os juros pagos (art. 323); entrega do título presume o pagamento, sem efeito se o credor provar em 60 dias a falta de pagamento (art. 324); despesas com pagamento e quitação presumem-se a cargo do devedor, salvo aumento por fato do credor (art. 325).",
+      "sourceOrganization": "Câmara dos Deputados",
+      "sourceTitle": "Código Civil (Lei nº 10.406/2002) — texto atualizado",
+      "sourceLocation": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+      "sourceType": "official",
+      "accessedAt": "2026-11-15"
+    },
+    {
+      "claimId": "cc-206-5",
+      "claimText": "Prescreve em cinco anos a pretensão de cobrança de dívidas líquidas constantes de instrumento público ou particular (art. 206, § 5º, I).",
+      "sourceOrganization": "Câmara dos Deputados",
+      "sourceTitle": "Código Civil (Lei nº 10.406/2002) — texto atualizado",
+      "sourceLocation": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+      "sourceType": "official",
+      "accessedAt": "2026-11-15"
+    },
+    {
+      "claimId": "lei-12007",
+      "claimText": "Prestadoras de serviços públicos ou privados devem emitir e encaminhar declaração de quitação anual de débitos (art. 1º), de janeiro a dezembro pela data de vencimento (art. 2º), com direito para quem quitou todos os débitos do ano e, parcialmente, para meses faturados ou com débito questionado judicialmente (§§ 1º a 3º); envio com a fatura a vencer em maio do ano seguinte ou no mês subsequente à quitação, podendo constar da própria fatura (art. 3º); deve informar que substitui as quitações mensais (art. 4º); sanções da Lei 8.987/1995 e do CDC (art. 5º).",
+      "sourceOrganization": "Câmara dos Deputados",
+      "sourceTitle": "Lei nº 12.007/2009 — publicação original",
+      "sourceLocation": "https://www2.camara.leg.br/legin/fed/lei/2009/lei-12007-29-julho-2009-589957-publicacaooriginal-114882-pl.html",
+      "sourceType": "official",
+      "accessedAt": "2026-11-15",
+      "notes": "Texto integral lido em 15/11/2026 na reprodução oficial do Procon-MS (https://www.procon.ms.gov.br/wp-content/uploads/2015/03/Lei-12007.pdf); a página da Câmara não respondeu ao acesso automatizado."
+    },
+    {
+      "claimId": "stj-sumula-548",
+      "claimText": "Incumbe ao credor a exclusão do registro da dívida em nome do devedor no cadastro de inadimplentes no prazo de cinco dias úteis, a partir do integral e efetivo pagamento do débito (Súmula 548).",
+      "sourceOrganization": "Superior Tribunal de Justiça",
+      "sourceTitle": "Súmula 548",
+      "sourceLocation": "https://arquivocidadao.stj.jus.br/index.php/sumula-548",
+      "sourceType": "official",
+      "accessedAt": "2026-11-15"
+    }
+  ]
+}
