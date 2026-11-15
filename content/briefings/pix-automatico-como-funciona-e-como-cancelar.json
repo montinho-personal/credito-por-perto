@@ -1,0 +1,38 @@
+{
+  "proposedTitle": "Pix Automático: como funciona, como cancelar e o que fazer com cobrança indevida",
+  "primaryIntent": "pix automático como funciona e como cancelar",
+  "secondaryIntents": [
+    "como cancelar pix automático",
+    "pix automático usa cheque especial",
+    "pix automático tem tarifa",
+    "valor máximo pix automático"
+  ],
+  "targetReader": "Consumidor com dúvida prática sobre cobrança bancária",
+  "readerSituation": "Proposto pelo portal sem prints do usuário (pedido: 'criar próximos artigos'); intenções tiradas das normas oficiais.",
+  "centralQuestion": "Como o Pix Automático funciona e como cancelar a autorização ou uma cobrança?",
+  "uniqueAngle": "Regras do FAQ do BC: valor máximo, uso do limite de crédito como padrão, cancelamentos e o que não pode",
+  "originalContribution": [],
+  "primarySources": [
+    "Banco Central (FAQ Pix Automático; Resolução BCB 1/2020)"
+  ],
+  "supportingSources": [
+    "consumidor.gov.br"
+  ],
+  "contentArchetype": "guide",
+  "proposedStructure": [],
+  "uniqueExamples": [],
+  "proposedVisuals": [
+    "QuickSummary",
+    "Tabela",
+    "ToolCallout"
+  ],
+  "pagesThatMayCompete": [
+    "/organizacao-financeira/banco-pode-descontar-divida-da-conta/",
+    "/juros-e-cet/pix-parcelado/"
+  ],
+  "informationThatMustNotBeRepeated": [
+    "Débito em conta de empréstimo (link)",
+    "Devolução de Pix em golpe (link)"
+  ],
+  "publicationDecision": "create"
+}

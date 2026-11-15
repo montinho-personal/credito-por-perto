@@ -1,0 +1,59 @@
+{
+  "articleSlug": "tarifa-de-cadastro-no-financiamento",
+  "claims": [
+    {
+      "claimId": "r3919-cadastro",
+      "claimText": "Cadastro é serviço prioritário (art. 3º, I). Tabela I, sigla CADASTRO: 'Realização de pesquisa em serviços de proteção ao crédito, base de dados e informações cadastrais, e tratamento de dados e informações necessários ao início de relacionamento decorrente da abertura de conta de depósitos à vista ou de poupança ou contratação de operação de crédito ou de arrendamento mercantil, não podendo ser cobrada cumulativamente.'",
+      "sourceOrganization": "Banco Central do Brasil",
+      "sourceTitle": "Resolução CMN nº 3.919/2010 — texto consolidado (versão 7), com a Tabela I",
+      "sourceLocation": "https://normativos.bcb.gov.br/Lists/Normativos/Attachments/49514/Res_3919_v7_L.pdf",
+      "sourceType": "official",
+      "accessedAt": "2026-11-15"
+    },
+    {
+      "claimId": "r3919-art1",
+      "claimText": "A tarifa deve estar prevista no contrato ou o serviço ter sido previamente autorizado ou solicitado (art. 1º); é vedada cobrança do sacado pela emissão de boletos, faturas, carnês e assemelhados (art. 1º, § 2º, II).",
+      "sourceOrganization": "Banco Central do Brasil",
+      "sourceTitle": "Resolução CMN nº 3.919/2010 — texto consolidado (versão 7), com a Tabela I",
+      "sourceLocation": "https://normativos.bcb.gov.br/Lists/Normativos/Attachments/49514/Res_3919_v7_L.pdf",
+      "sourceType": "official",
+      "accessedAt": "2026-11-15"
+    },
+    {
+      "claimId": "r3919-art5",
+      "claimText": "Avaliação, reavaliação e substituição de bens recebidos em garantia é serviço diferenciado, cobrável desde que explicitadas as condições de utilização e pagamento (art. 5º, VI).",
+      "sourceOrganization": "Banco Central do Brasil",
+      "sourceTitle": "Resolução CMN nº 3.919/2010 — texto consolidado (versão 7), com a Tabela I",
+      "sourceLocation": "https://normativos.bcb.gov.br/Lists/Normativos/Attachments/49514/Res_3919_v7_L.pdf",
+      "sourceType": "official",
+      "accessedAt": "2026-11-15"
+    },
+    {
+      "claimId": "r3919-art15",
+      "claimText": "Divulgação obrigatória nas dependências e no site da tabela de serviços prioritários com lista, canais, sigla, fato gerador e valor da tarifa (art. 15, II).",
+      "sourceOrganization": "Banco Central do Brasil",
+      "sourceTitle": "Resolução CMN nº 3.919/2010 — texto consolidado (versão 7), com a Tabela I",
+      "sourceLocation": "https://normativos.bcb.gov.br/Lists/Normativos/Attachments/49514/Res_3919_v7_L.pdf",
+      "sourceType": "official",
+      "accessedAt": "2026-11-15"
+    },
+    {
+      "claimId": "stj-sumula-566",
+      "claimText": "Súmula 566: 'nos contratos bancários posteriores ao início da vigência da Resolução-CMN n. 3.518/2007, em 30/4/2008, pode ser cobrada a tarifa de cadastro no início do relacionamento entre o consumidor e a instituição financeira'. Súmulas não têm efeito vinculante, mas orientam a comunidade jurídica.",
+      "sourceOrganization": "Superior Tribunal de Justiça",
+      "sourceTitle": "Notícia STJ (03/03/2016): Segunda Seção aprova Súmula 566",
+      "sourceLocation": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias-antigas/2016/2016-03-03_15-38_Segunda-Secao-aprova-nova-sumula-sobre-tarifa-de-cadastro-de-cliente-em-banco.aspx",
+      "sourceType": "official",
+      "accessedAt": "2026-11-15"
+    },
+    {
+      "claimId": "stj-sumula-565",
+      "claimText": "Súmula 565: 'a pactuação das tarifas de abertura de crédito (TAC) e de emissão de carnê (TEC), ou outra denominação para o mesmo fato gerador, é válida apenas nos contratos bancários anteriores ao início da vigência da Resolução-CMN n. 3.518/2007, em 30/4/2008'.",
+      "sourceOrganization": "Superior Tribunal de Justiça",
+      "sourceTitle": "Notícia STJ (02/03/2016): Aprovada a Súmula 565",
+      "sourceLocation": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias-antigas/2016/2016-03-02_16-11_Aprovada-nova-sumula-que-trata-da-tarifa-de-contrato-bancario.aspx",
+      "sourceType": "official",
+      "accessedAt": "2026-11-15"
+    }
+  ]
+}

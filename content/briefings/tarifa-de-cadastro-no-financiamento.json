@@ -1,0 +1,39 @@
+{
+  "proposedTitle": "Tarifa de cadastro no financiamento e no empréstimo: quando pode ser cobrada",
+  "primaryIntent": "tarifa de cadastro no financiamento",
+  "secondaryIntents": [
+    "tarifa de cadastro é legal",
+    "tarifa de cadastro súmula 566",
+    "TAC e TEC",
+    "valor da tarifa de cadastro"
+  ],
+  "targetReader": "Consumidor com dúvida prática sobre cobrança bancária",
+  "readerSituation": "Proposto pelo portal sem prints do usuário (pedido: 'criar próximos artigos'); intenções tiradas das normas oficiais.",
+  "centralQuestion": "Quando a tarifa de cadastro pode ser cobrada e o que mudou com a TAC e a TEC?",
+  "uniqueAngle": "Tabela I da Res. 3.919 e Súmulas 565 e 566 do STJ, com o checklist do contrato",
+  "originalContribution": [],
+  "primarySources": [
+    "Banco Central (Res. CMN 3.919/2010)",
+    "STJ (Súmulas 565 e 566)"
+  ],
+  "supportingSources": [
+    "consumidor.gov.br"
+  ],
+  "contentArchetype": "guide",
+  "proposedStructure": [],
+  "uniqueExamples": [],
+  "proposedVisuals": [
+    "QuickSummary",
+    "Tabela",
+    "ToolCallout"
+  ],
+  "pagesThatMayCompete": [
+    "/juros-e-cet/o-que-e-cet/",
+    "/emprestimos/financiamento-de-veiculo/"
+  ],
+  "informationThatMustNotBeRepeated": [
+    "Cálculo do CET (link)",
+    "Seguro prestamista (link)"
+  ],
+  "publicationDecision": "create"
+}

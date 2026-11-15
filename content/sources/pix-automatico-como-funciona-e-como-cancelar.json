@@ -1,0 +1,96 @@
+{
+  "articleSlug": "pix-automatico-como-funciona-e-como-cancelar",
+  "claims": [
+    {
+      "claimId": "pa-definicao",
+      "claimText": "Pix Automático: o PSP do pagador inicia automaticamente um Pix a partir da conta transacional, com base em instruções enviadas pelo PSP do recebedor, observada autorização prévia e específica do pagador (itens 1.1 a 1.4: cobranças periódicas semanal a anual; não se aplica a pagamentos não periódicos nem a pessoas físicas; recebedor é pessoa jurídica com CNPJ ativo).",
+      "sourceOrganization": "Banco Central do Brasil",
+      "sourceTitle": "Pix Automático — Perguntas frequentes (FAQ para participantes)",
+      "sourceLocation": "https://www.bcb.gov.br/content/estabilidadefinanceira/pix/pix-automatico-FAQ-participantes.pdf",
+      "sourceType": "official",
+      "accessedAt": "2026-11-15",
+      "notes": "PDF lido em 15/11/2026."
+    },
+    {
+      "claimId": "pa-tarifa",
+      "claimText": "É vedada a cobrança de tarifa do usuário pagador; o PSP recebedor pode cobrar tarifa do recebedor (item 1.10).",
+      "sourceOrganization": "Banco Central do Brasil",
+      "sourceTitle": "Pix Automático — Perguntas frequentes (FAQ para participantes)",
+      "sourceLocation": "https://www.bcb.gov.br/content/estabilidadefinanceira/pix/pix-automatico-FAQ-participantes.pdf",
+      "sourceType": "official",
+      "accessedAt": "2026-11-15"
+    },
+    {
+      "claimId": "pa-oferta-menu",
+      "claimText": "Participantes que ofertam contas transacionais devem disponibilizar o Pix Automático como PSP pagador (item 1.8), com menu 'Pix Automático' e funcionalidades mínimas do Manual de UX (item 6.9).",
+      "sourceOrganization": "Banco Central do Brasil",
+      "sourceTitle": "Pix Automático — Perguntas frequentes (FAQ para participantes)",
+      "sourceLocation": "https://www.bcb.gov.br/content/estabilidadefinanceira/pix/pix-automatico-FAQ-participantes.pdf",
+      "sourceType": "official",
+      "accessedAt": "2026-11-15"
+    },
+    {
+      "claimId": "pa-antecedencia-data",
+      "claimText": "Antecedência de 2 a 10 dias do agendamento para o pagador conhecer o débito (item 2.7); a data da recorrência não pode ser alterada, exigindo nova recorrência confirmada pelo pagador (item 6.1).",
+      "sourceOrganization": "Banco Central do Brasil",
+      "sourceTitle": "Pix Automático — Perguntas frequentes (FAQ para participantes)",
+      "sourceLocation": "https://www.bcb.gov.br/content/estabilidadefinanceira/pix/pix-automatico-FAQ-participantes.pdf",
+      "sourceType": "official",
+      "accessedAt": "2026-11-15"
+    },
+    {
+      "claimId": "pa-valor-maximo",
+      "claimText": "Cobrança acima do valor máximo não é agendada; o pagador pode alterar o valor máximo (item 4.7). A oferta do campo é obrigatória na autorização de valor variável e o preenchimento é opcional (item 7.3).",
+      "sourceOrganization": "Banco Central do Brasil",
+      "sourceTitle": "Pix Automático — Perguntas frequentes (FAQ para participantes)",
+      "sourceLocation": "https://www.bcb.gov.br/content/estabilidadefinanceira/pix/pix-automatico-FAQ-participantes.pdf",
+      "sourceType": "official",
+      "accessedAt": "2026-11-15"
+    },
+    {
+      "claimId": "pa-limite-credito",
+      "claimText": "O uso do limite de crédito da conta em caso de saldo insuficiente é o comportamento padrão; o pagador pode cancelar o uso do limite a qualquer momento, por autorização, no menu Pix Automático (item 6.5).",
+      "sourceOrganization": "Banco Central do Brasil",
+      "sourceTitle": "Pix Automático — Perguntas frequentes (FAQ para participantes)",
+      "sourceLocation": "https://www.bcb.gov.br/content/estabilidadefinanceira/pix/pix-automatico-FAQ-participantes.pdf",
+      "sourceType": "official",
+      "accessedAt": "2026-11-15"
+    },
+    {
+      "claimId": "pa-cancelamentos",
+      "claimText": "Cancelamento da autorização é imediato e cancela a recorrência, mantidos agendamentos com liquidação no mesmo dia (item 5.1); cobrança específica pode ser cancelada sem cancelar a recorrência (itens 5.8 e 5.9); PSPs podem cancelar por fundada suspeita de fraude (item 5.6); retentativas previstas não podem ser canceladas pelo pagador (item 6.4); não é possível antecipar (6.3) nem suspender temporariamente (6.12); cobrança não paga pode ser acertada por outro meio e a recorrência segue ativa (6.13 e 5.3).",
+      "sourceOrganization": "Banco Central do Brasil",
+      "sourceTitle": "Pix Automático — Perguntas frequentes (FAQ para participantes)",
+      "sourceLocation": "https://www.bcb.gov.br/content/estabilidadefinanceira/pix/pix-automatico-FAQ-participantes.pdf",
+      "sourceType": "official",
+      "accessedAt": "2026-11-15"
+    },
+    {
+      "claimId": "pa-jornada3",
+      "claimText": "Na autorização combinada com pagamento imediato, o PSP deve apresentar caixa de confirmação de que o usuário autoriza pagamentos futuros e informar a possibilidade de cancelamento a qualquer momento (item 6.8).",
+      "sourceOrganization": "Banco Central do Brasil",
+      "sourceTitle": "Pix Automático — Perguntas frequentes (FAQ para participantes)",
+      "sourceLocation": "https://www.bcb.gov.br/content/estabilidadefinanceira/pix/pix-automatico-FAQ-participantes.pdf",
+      "sourceType": "official",
+      "accessedAt": "2026-11-15"
+    },
+    {
+      "claimId": "pa-chave-agendado",
+      "claimText": "O Pix Automático não usa chave Pix; para pagamentos periódicos a chaves Pix, o usuário deve programar Pix Agendado recorrente (item 6.6). Diferença para o débito automático tradicional, ofertado de forma mais restrita entre instituições bancárias (item 1.6).",
+      "sourceOrganization": "Banco Central do Brasil",
+      "sourceTitle": "Pix Automático — Perguntas frequentes (FAQ para participantes)",
+      "sourceLocation": "https://www.bcb.gov.br/content/estabilidadefinanceira/pix/pix-automatico-FAQ-participantes.pdf",
+      "sourceType": "official",
+      "accessedAt": "2026-11-15"
+    },
+    {
+      "claimId": "pa-regulamento",
+      "claimText": "Regulamento do Pix, anexo à Resolução BCB nº 1/2020, citado pelo FAQ como base das jornadas de autorização.",
+      "sourceOrganization": "Banco Central do Brasil",
+      "sourceTitle": "Resolução BCB nº 1/2020 — Regulamento do Pix",
+      "sourceLocation": "https://www.bcb.gov.br/estabilidadefinanceira/exibenormativo?tipo=Resolu%C3%A7%C3%A3o%20BCB&numero=1",
+      "sourceType": "official",
+      "accessedAt": "2026-11-15"
+    }
+  ]
+}

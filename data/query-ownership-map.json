@@ -969,5 +969,17 @@
     "supportingPages": [
       "/organizacao-financeira/divida-do-conjuge/"
     ]
+  },
+  "pix automático como funciona e como cancelar": {
+    "canonicalOwner": "/organizacao-financeira/pix-automatico-como-funciona-e-como-cancelar/",
+    "supportingPages": [
+      "/organizacao-financeira/banco-pode-descontar-divida-da-conta/"
+    ]
+  },
+  "tarifa de cadastro no financiamento": {
+    "canonicalOwner": "/juros-e-cet/tarifa-de-cadastro-no-financiamento/",
+    "supportingPages": [
+      "/juros-e-cet/o-que-e-cet/"
+    ]
   }
 }
