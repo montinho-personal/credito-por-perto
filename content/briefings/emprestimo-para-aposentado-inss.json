@@ -1,12 +1,16 @@
 {
-  "proposedTitle": "Empréstimo para aposentado e pensionista do INSS: guia completo",
+  "proposedTitle": "Empréstimo para aposentado e pensionista do INSS: margem, juros, prazo e como contratar",
   "primaryIntent": "empréstimo para aposentado e pensionista do INSS como funciona",
   "secondaryIntents": [
-    "consignado INSS margem quanto posso pegar",
-    "aposentado consegue empréstimo pessoal comum?"
+    "nova margem consignável aposentado 2026",
+    "juros consignado inss / teto",
+    "qual o melhor banco para consignado de aposentado",
+    "empréstimo para aposentado sem margem",
+    "como aposentado faz empréstimo consignado (novas regras)",
+    "quanto fica a parcela"
   ],
   "targetReader": "Aposentado/pensionista do INSS (ou familiar) avaliando crédito — segmento de altíssimo volume e SERP totalmente comercial",
-  "readerSituation": "SERP dominada por bancos e fintechs vendendo; nenhum guia neutro que organize modalidades, margem, teto e proteção contra assédio",
+  "readerSituation": "Revisão de 16/11/2026 pelo SerpApi (celular, São Paulo): visão de IA afirma margem de 40% (regra da MP 1.355, que perdeu eficácia), teto de 1,85%, 108 meses e confirmação no Meu INSS em 5 dias; orgânicos dominados por financeiras, vídeos do Facebook e notícias; mapa com correspondentes de consignado.",
   "centralQuestion": "Quais são minhas opções reais de crédito como beneficiário do INSS, quanto cabe na margem e como contratar sem cair em armadilha?",
   "uniqueAngle": "Guia do beneficiário, não do produto: organiza as opções por custo provável (consignado → pessoal → cartões), explica a margem 35/5/5 com exemplo e calculadora própria, e dedica seção inteira à defesa contra o assédio comercial — o problema número 1 do segmento",
   "originalContribution": [
@@ -31,8 +35,14 @@
     "Defesa contra o assédio",
     "FAQ"
   ],
-  "uniqueExamples": ["Benefício de R$ 2.000: margem de R$ 700 para empréstimo (exemplo alinhado ao artigo de margem)"],
-  "proposedVisuals": ["Tabela de modalidades", "ChecklistBox", "WhatCanChange"],
+  "uniqueExamples": [
+    "Benefício de R$ 2.000: margem de R$ 700 para empréstimo (exemplo alinhado ao artigo de margem)"
+  ],
+  "proposedVisuals": [
+    "Tabela de modalidades",
+    "ChecklistBox",
+    "WhatCanChange"
+  ],
   "pagesThatMayCompete": [
     "/emprestimos/emprestimo-consignado/",
     "/emprestimos/margem-consignavel/",
@@ -43,5 +53,387 @@
     "Passo a passo de consulta da margem (link ao dono da intenção)",
     "Contestação de desconto indevido (link)"
   ],
-  "publicationDecision": "create"
+  "publicationDecision": "update-existing",
+  "serpEvidence": [
+    {
+      "busca": "empréstimo para aposentado",
+      "data": "2026-11-16",
+      "aparelho": "mobile",
+      "local": "Sao Paulo,State of Sao Paulo,Brazil",
+      "autocompletar": [
+        "empréstimo para aposentado inss",
+        "empréstimo para aposentado simulação",
+        "empréstimo para aposentado sem margem",
+        "empréstimo para aposentado online",
+        "empréstimo para aposentado negativado",
+        "empréstimo para aposentado sem margem é negativado",
+        "empréstimo para aposentado e pensionista",
+        "empréstimo para aposentado inss simulação",
+        "empréstimo para aposentadoria",
+        "empréstimo para aposentado bradesco",
+        "empréstimo para aposentado caixa econômica federal",
+        "empréstimo para aposentado loas",
+        "empréstimo para aposentado e pensionista do inss",
+        "empréstimo para aposentado inss sem margem",
+        "empréstimo para aposentado banco do brasil"
+      ],
+      "pessoasTambemPerguntam": [
+        "Qual o melhor banco para fazer empréstimo consignado para aposentado?",
+        "Qual é a nova margem consignável para aposentados em 2026?",
+        "Como conseguir R$ 500 urgentemente?",
+        "Como funciona o empréstimo consignado do INSS?"
+      ],
+      "outrasPesquisas": [
+        "Tabela de empréstimo para aposentado do inss",
+        "O que e empréstimo consignado inss",
+        "Empréstimo para aposentado por invalidez",
+        "O que é emprestimo consignado clt",
+        "O que é empréstimo consignado privado",
+        "O que é empréstimo pessoal",
+        "Qual melhor banco para empréstimo consignado inss",
+        "O que é empréstimo consignado fgts",
+        "O que é empréstimo consignado do trabalhador",
+        "O que é emprestimo consignado nubank",
+        "O que e consignado carro",
+        "O que é crédito consignado bradesco"
+      ],
+      "visaoDeIA": {
+        "texto": [
+          "O empréstimo consignado é a modalidade mais indicada e vantajosa para aposentados e pensionistas do INSS, pois possui as menores taxas de juros do mercado e desconto direto em folha de pagamento.",
+          "Você pode simular e contratar diretamente através de instituições como a CAIXA, o Agibank ou o Banco Daycoval.",
+          "Principais Regras e Condiçoẽs Atuais",
+          "Taxa de Juros: Limitada a um teto máximo de 1,85% ao mês para o empréstimo consignado do INSS. ; Prazo de Pagamento: Pode ser parcelado em até 108 meses (9 anos). ; Margem Consignável: O limite máximo da aposentadoria ou pensão que pode ser comprometido com as parcelas é de 40% (no caso do Benefício de Prestação Continuada — BPC, o limite é de 35%). ; Carência: Possibilidade de começar a pagar a primeira parcela em até 3 meses após a contratação. ; Segurança e Biometria: Toda contratação exige confirmação por biometria facial no aplicativo ou site do Meu INSS em até 5 dias corridos após a solicitação; se não for validada, o contrato é cancelado automaticamente. A contratação por telefone ou por procuração de terceiros está proibida. ; Desbloqueio: Para contratar, é necessário que o benefício esteja desbloqueado para empréstimos no aplicativo Meu INSS.",
+          "Para eu te ajudar a encontrar a melhor opção, você pode me dizer:",
+          "Qual é o valor aproximado que você precisa? ; Onde você já recebe a sua aposentadoria (qual banco)? ; Você já tem margem consignável disponível ou deseja fazer uma portabilidade?"
+        ],
+        "fontes": [
+          {
+            "fonte": "Daycoval",
+            "link": "https://www.daycoval.com.br/credito-para-voce/credito-consignado/emprestimo-consignado/"
+          },
+          {
+            "fonte": "PB Consignado",
+            "link": "https://pbconsignado.com.br/consignado/"
+          },
+          {
+            "fonte": "Facebook",
+            "link": "https://www.facebook.com/g1/videos/mudan%C3%A7as-no-inss-novas-regras-para-contratos-de-empr%C3%A9stimo-consignado-de-aposent/1316803237217677/"
+          },
+          {
+            "fonte": "Facebook",
+            "link": "https://www.facebook.com/g1/videos/o-que-muda-novas-regras-para-contratos-de-empr%C3%A9stimo-consignado-de-aposentados-e/1337067388340134/"
+          },
+          {
+            "fonte": "Caixa",
+            "link": "https://www.caixa.gov.br/voce/credito-financiamento/emprestimo/consignado-inss/Paginas/default.aspx"
+          }
+        ]
+      },
+      "organicos": [
+        {
+          "posicao": 1,
+          "titulo": "Exclusivo",
+          "link": "https://joaofinanceira.com.br/exclusivo-aposentados-vencem-e-conquistam-novo-beneficio-no-inss-confira/"
+        },
+        {
+          "posicao": 2,
+          "titulo": "🏃Corra que é por tempo limitado!! Veja as simulações de crédito que separamos para você, ...",
+          "link": "https://www.facebook.com/teste2apar/videos/corra-que-%C3%A9-por-tempo-limitadoveja-as-simula%C3%A7%C3%B5es-de-cr%C3%A9dito-que-separamos-para-v/5049440991797990/"
+        },
+        {
+          "posicao": 3,
+          "titulo": "Empréstimo pessoal para aposentado INSS 2025: guia completo",
+          "link": "https://blog.bompracredito.com.br/emprestimo-pessoal-para-pensionista/"
+        },
+        {
+          "posicao": 4,
+          "titulo": "Loan for retirees: 5 payroll loan options",
+          "link": "https://consultacred.com.br/en/emprestimo-para-aposentado/"
+        },
+        {
+          "posicao": 5,
+          "titulo": "Empréstimo para aposentado: o que saber antes de contratar crédito",
+          "link": "https://www.uai.com.br/app/noticia/negocios/2025/06/23/noticia-negocios,363675/emprestimo-para-aposentado-o-que-saber-antes-de-contratar-credito.shtml"
+        },
+        {
+          "posicao": 6,
+          "titulo": "Empréstimo Consignado - Público e Privado - Empréstimos",
+          "link": "https://www.bandesp.com.br/voce/emprestimos/emprestimo-consignado-publico-e-privado/Paginas/default.aspx"
+        },
+        {
+          "posicao": 7,
+          "titulo": "Empréstimo Consignado INSS: Guia Completo para Aposentados",
+          "link": "https://blog.bompracredito.com.br/emprestimo-consignado-inss-guia-aposentados/"
+        },
+        {
+          "posicao": 8,
+          "titulo": "Você é aposentado ou pensionista do INSS? Então pode existir uma opção de crédito que faça sentido para o seu momento. Temos 3 possibilidades que podem estar disponíveis para o seu b",
+          "link": "https://www.facebook.com/marciane.lages/videos/voc%C3%AA-%C3%A9-aposentado-ou-pensionista-do-inss-ent%C3%A3o-pode-existir-uma-op%C3%A7%C3%A3o-de-cr%C3%A9dito/28957820660503708/"
+        },
+        {
+          "posicao": 9,
+          "titulo": "Crédito para você - Produtos e Serviços",
+          "link": "https://www.bandesp.com.br/voce/Paginas/default.aspx"
+        }
+      ],
+      "mapa": [
+        "Agência Consignados Oficial",
+        "Armazém do Crédito BMG, empréstimo consignado para servidor público, INSS e antecipação do FGTS",
+        "Juros Baixos"
+      ]
+    },
+    {
+      "busca": "consignado inss aposentado",
+      "data": "2026-11-16",
+      "aparelho": "mobile",
+      "local": "Sao Paulo,State of Sao Paulo,Brazil",
+      "autocompletar": [
+        "consignado inss aposentadoria",
+        "consignado aposentado inss taxa",
+        "consignado aposentado inss bradesco",
+        "consignado aposentado inss itau",
+        "emprestimo consignado inss aposentado",
+        "empréstimo consignado inss aposentadoria",
+        "cartao consignado aposentado inss",
+        "empréstimo consignado aposentados inss simulação",
+        "emprestimo consignado aposentado inss simulação caixa",
+        "margem consignado aposentado inss",
+        "portabilidade consignado aposentado inss",
+        "juros consignado aposentado inss",
+        "emprestimo consignado aposentado inss morte segurado",
+        "limite consignado aposentado inss"
+      ],
+      "pessoasTambemPerguntam": [
+        "Como um aposentado faz empréstimo consignado?",
+        "Quanto fica 10.000 financiado em 24 vezes?",
+        "Quais são as novas regras para o crédito consignado do INSS?",
+        "Qual é a nova margem consignável para aposentados em 2026?"
+      ],
+      "outrasPesquisas": [],
+      "visaoDeIA": {
+        "texto": [
+          "O Crédito Consignado INSS | CAIXA e outras instituições financeiras permitem que aposentados e pensionistas do INSS contratem empréstimos com desconto direto na folha de pagamento e taxas de juros reduzidas (a partir de 1,31% a.m. em bancos como o Empréstimo Consignado INSS: Taxa de 1,31% a.m. | PAN).",
+          "Principais Regras e Condições",
+          "Prazo máximo: Até 108 meses (9 anos) para aposentados e pensionistas. ; Margem consignável: O limite total é de 40% do benefício, sendo até 35% para empréstimo consignado convencional e 5% para cartões de crédito/benefício (RMC/RCC). ; Confirmação obrigatória: Após contratar o empréstimo, é obrigatório confirmar a operação no aplicativo ou site Meu INSS em até 5 dias corridos via biometria facial, sob pena de cancelamento. ; Desbloqueio: O benefício precisa estar desbloqueado para empréstimos no aplicativo Meu INSS antes da contratação.",
+          "Se você quiser, me diga:",
+          "Qual é o valor que você pretende solicitar? ; Já fez o desbloqueio do benefício no Meu INSS?",
+          "Eu posso te ajudar a comparar as melhores opções ou calcular as parcelas."
+        ],
+        "fontes": [
+          {
+            "fonte": "Caixa",
+            "link": "https://www.caixa.gov.br/voce/credito-financiamento/emprestimo/consignado-inss/Paginas/default.aspx"
+          },
+          {
+            "fonte": "Banco Pan",
+            "link": "https://www.bancopan.com.br/produtos/emprestimo/emprestimo-consignado/"
+          },
+          {
+            "fonte": "YouTube",
+            "link": "https://www.youtube.com/watch?v=qPI0pj9lOGU&t=23"
+          },
+          {
+            "fonte": "GOV.BR",
+            "link": "https://www.gov.br/pt-br/servicos/confirmar-emprestimo-consignado"
+          }
+        ]
+      },
+      "organicos": [
+        {
+          "posicao": 1,
+          "titulo": "Aposentado ou pensionista do INSS, seu benefício pode virar crédito! 💙 Com o Empréstimo Consignado, você tem acesso a um crédito com taxas especiais e desconto direto em folha, sem bu",
+          "link": "https://www.facebook.com/61577886044652/videos/aposentado-ou-pensionista-do-inss-seu-benef%C3%ADcio-pode-virar-cr%C3%A9dito-com-o-empr%C3%A9st/1619426129556043/"
+        },
+        {
+          "posicao": 2,
+          "titulo": "Exclusivo",
+          "link": "https://joaofinanceira.com.br/exclusivo-aposentados-vencem-e-conquistam-novo-beneficio-no-inss-confira/"
+        },
+        {
+          "posicao": 3,
+          "titulo": "Você é aposentado ou pensionista do INSS? Então pode existir uma opção de crédito que faça sentido para o seu momento. Temos 3 possibilidades que podem estar disponíveis para o seu b",
+          "link": "https://www.facebook.com/marciane.lages/videos/voc%C3%AA-%C3%A9-aposentado-ou-pensionista-do-inss-ent%C3%A3o-pode-existir-uma-op%C3%A7%C3%A3o-de-cr%C3%A9dito/28957820660503708/"
+        },
+        {
+          "posicao": 4,
+          "titulo": "Consignado INSS: como funciona e taxas em 2026 - Fingrana",
+          "link": "https://www.fingrana.com/credito/consignado-inss-como-funciona/"
+        },
+        {
+          "posicao": 5,
+          "titulo": "Empréstimo Consignado INSS: Confira dicas para contratar o empréstimo para Aposentados e Pensionistas",
+          "link": "http://jc.uol.com.br/dinheiro/2024/01/amp/15664688-emprestimo-consignado-inss-confira-dicas-para-contratar-o-emprestimo-para-aposentados-e-pensionistas.html"
+        },
+        {
+          "posicao": 6,
+          "titulo": "Empréstimo consignado para aposentado - Blog Grupo Ouro Cred",
+          "link": "https://blog.grupoourocred.com.br/credito-consignado/emprestimo-consignado-para-aposentado/"
+        },
+        {
+          "posicao": 7,
+          "titulo": "💙 Você é aposentado ou pensionista do INSS? Já conhece as vantagens da portabilidade ...",
+          "link": "https://www.facebook.com/100080199954543/videos/-voc%C3%AA-%C3%A9-aposentado-ou-pensionista-do-inssj%C3%A1-conhece-as-vantagens-da-portabilidad/1102299009222017/"
+        },
+        {
+          "posicao": 8,
+          "titulo": "http://www.previdencia.gov.br/informaes-2/emprstim...",
+          "link": "http://www.previdencia.gov.br/informaes-2/emprstimo-consignado/"
+        }
+      ],
+      "mapa": [
+        "Agência Consignados Oficial",
+        "Armazém do Crédito BMG, empréstimo consignado para servidor público, INSS e antecipação do FGTS",
+        "Rei Do Crédito Agência Consignados"
+      ]
+    },
+    {
+      "busca": "juros consignado inss",
+      "data": "2026-11-16",
+      "aparelho": "mobile",
+      "local": "Sao Paulo,State of Sao Paulo,Brazil",
+      "autocompletar": [
+        "juros consignado inss caixa",
+        "juros consignado inss banco do brasil",
+        "juros consignado inss agibank",
+        "juros consignado inss nubank",
+        "juros consignado inss bradesco",
+        "juros consignado inss itau",
+        "juros consignado inss bancos",
+        "juros consignado inss mercantil",
+        "juros consignado inss banco mercantil",
+        "juros consignado inss santander",
+        "juros consignado inss 2025",
+        "juros consignado inss sicoob",
+        "juros consignado inss 2026",
+        "juros consignado inss bb",
+        "juros consignado inss hoje"
+      ],
+      "pessoasTambemPerguntam": [
+        "Qual o melhor banco para fazer a portabilidade de crédito consignado?",
+        "O que o STF decidiu sobre os consignados?",
+        "Quem recebe BPC pode fazer empréstimo de R$ 20 mil?",
+        "Quanto fica um empréstimo de 30 mil para aposentados?"
+      ],
+      "outrasPesquisas": [],
+      "visaoDeIA": {
+        "texto": [
+          "O teto máximo de juros para o empréstimo consignado do INSS é de 1,85% ao mês.",
+          "Principais taxas praticadas por bancos (referência)",
+          "As instituições financeiras podem cobrar valores iguais ou inferiores ao teto regulamentado pelo Conselho Nacional de Previdência Social (CNPS):",
+          "Sicredi: 1,54% a.m. (20,09% a.a.) ; Banco Inter: a partir de 1,35% a.m. / tabela média 1,55% a.m. (20,26% a.a.) ; Nubank: 1,61% a.m. (21,07% a.a.) ; Caixa Econômica Federal: 1,65% a.m. (21,74% a.a.) (consulte o site oficial da CAIXA) ; C6 Bank: 1,66% a.m. (21,85% a.a.) ; PicPay / Agibank: 1,74% a.m. ; Itaú Unibanco: 1,78% a.m. (23,52% a.a.) ; Banco Bradesco: 1,82% a.m. (24,13% a.a.) ; Banco Santander: 1,83% a.m. (24,35% a.a.) ; Banco Pan: a partir de 1,31% a.m. (via portabilidade) ou taxa média de 1,92% a.m. (25,62% a.a.) ; Banco do Brasil: 1,94% a.m. (25,88% a.a.)",
+          "Nota: Você pode acompanhar o histórico completo de variações e as taxas praticadas por dezenas de instituições no relatório do Banco Central do Brasil.",
+          "Para te ajudar a escolher ou simular a melhor condição, me diga:",
+          "Qual é o valor que você deseja contratar e o prazo em número de parcelas? ; Você já possui um consignado ativo e busca fazer portabilidade para reduzir os juros?"
+        ],
+        "fontes": [
+          {
+            "fonte": "meutudo",
+            "link": "https://meutudo.com.br/blog/tabelas/taxa-de-juros-dos-bancos-consignado/"
+          },
+          {
+            "fonte": "Serasa",
+            "link": "https://www.serasa.com.br/credito/blog/qual-banco-tem-a-menor-taxa-de-juros-para-emprestimo-consignado/"
+          },
+          {
+            "fonte": "YouTube",
+            "link": "https://www.youtube.com/watch?v=7_GtBqie-ek&t=166"
+          },
+          {
+            "fonte": "Caixa",
+            "link": "https://www.caixa.gov.br/voce/credito-financiamento/emprestimo/consignado-inss/Paginas/default.aspx"
+          },
+          {
+            "fonte": "Blog do Inter",
+            "link": "https://blog.inter.co/taxa-de-juros-consignado/"
+          },
+          {
+            "fonte": "Banco Pan",
+            "link": "https://www.bancopan.com.br/produtos/emprestimo/emprestimo-consignado/"
+          },
+          {
+            "fonte": "Banco Central do Brasil",
+            "link": "https://www.bcb.gov.br/estatisticas/reporttxjuros/?codigoSegmento=1&codigoModalidade=218101"
+          }
+        ]
+      },
+      "organicos": [
+        {
+          "posicao": 1,
+          "titulo": "INSS reduz juros para empréstimos a aposentados e pensionistas",
+          "link": "https://www.youtube.com/watch?v=oRBTJ8Qg_Ng"
+        },
+        {
+          "posicao": 2,
+          "titulo": "Veja como conferir os juros do consignado para aposentados | Economia",
+          "link": "https://odia.ig.com.br/economia/2024/10/amp/6931175-veja-como-conferir-os-juros-do-consignado-para-aposentados.html"
+        },
+        {
+          "posicao": 3,
+          "titulo": "Empréstimos com juros reduzidos? Entenda as mudanças no crédito consignado do INSS!",
+          "link": "https://monitordomercado.com.br/noticias/71715-emprestimos-com-juros-reduzidos-entenda-as-mudancas-no-credito-consignado-do-inss/"
+        },
+        {
+          "posicao": 4,
+          "titulo": "Tudo que você precisa saber sobre o crédito consignado do INSS",
+          "link": "https://tribunademinas.com.br/colunas/maistendencias/tudo-que-voce-precisa-saber-sobre-o-credito-consignado-do-inss/"
+        },
+        {
+          "posicao": 5,
+          "titulo": "Compare os juros cobrados pelos bancos no emprÃ©stimo consignado",
+          "link": "https://www.terra.com.br/economia/infograficos/emprestimo-consignado/index.htm"
+        },
+        {
+          "posicao": 6,
+          "titulo": "Governo aumenta teto dos juros do empréstimo consignado do INSS; veja mudança | VGN",
+          "link": "https://www.vgnoticias.com.br/brasil/governo-aumenta-teto-dos-juros-do-emprestimo-consignado-do-inss-veja-mudanca/84464/"
+        },
+        {
+          "posicao": 7,
+          "titulo": "Consignado do INSS: Com queda nos juros, veja quanto Caixa, BB e Nu estão cobrando",
+          "link": "https://www.acheconcursos.com.br/financas/consignado-do-inss-com-queda-nos-juros-veja-quanto-caixa-bb-e-nu-estao-cobrando-65676"
+        },
+        {
+          "posicao": 8,
+          "titulo": "INSS passa a divulgar juros do crédito consignado; saiba como fazer a consulta",
+          "link": "https://www.otempo.com.br/mobile/economia/inss-passa-a-divulgar-juros-do-credito-consignado-saiba-como-fazer-a-consulta-1.3256506"
+        },
+        {
+          "posicao": 9,
+          "titulo": "Limite de Juros para Empréstimo Consignado de Aposentados do INSS - FalaAdv",
+          "link": "https://falaadv.com/direito/qual-o-limite-de-juros-para-emprestimo-consignado-para-aposentados"
+        }
+      ],
+      "mapa": []
+    }
+  ],
+  "serpImpact": [
+    {
+      "dado": "Visão de IA: margem de 40%",
+      "efeito": "Conferido: MP 1.355 sem eficácia desde 31/08/2026; Lei 10.820 consolidada mostra 45%. Entrou aviso com a divergência da página do INSS."
+    },
+    {
+      "dado": "Visão de IA: teto 1,85% e prazo de 108 meses",
+      "efeito": "Confirmados em fonte oficial (INSS/CNPS, Procon-SP, IN PRES/INSS 213/2026); entraram no resumo e no corpo."
+    },
+    {
+      "dado": "Visão de IA: confirmação no Meu INSS em 5 dias",
+      "efeito": "Confirmado no gov.br; entrou no passo a passo."
+    },
+    {
+      "dado": "Visão de IA: carência e taxas por banco",
+      "efeito": "Ficaram de fora: carência sem fonte oficial; taxas por banco mudam e o portal não indica instituição (aponta a lista do Meu INSS)."
+    },
+    {
+      "dado": "PAA: melhor banco, nova margem 2026, como funciona, novas regras, quanto fica 10.000 em 24x",
+      "efeito": "Entraram como seções e FAQ."
+    },
+    {
+      "dado": "PAA: R$ 500 urgente, STF sobre consignados, BPC R$ 20 mil, 30 mil para aposentado",
+      "efeito": "Urgente virou link; BPC aponta ao guia próprio; STF e valores específicos ficaram de fora (sem fonte oficial verificada ou fora do escopo)."
+    },
+    {
+      "dado": "Autocompletar: sem margem, negativado, online, pensionista, simulação, invalidez (outras pesquisas)",
+      "efeito": "Entraram como seção ou FAQ. Bancos nomeados (Bradesco, Caixa, BB, Itaú, Nubank etc.) ficaram de fora: o portal não compara marcas. 'Morte do segurado' ficou de fora: sem fonte oficial verificada nesta revisão."
+    }
+  ]
 }

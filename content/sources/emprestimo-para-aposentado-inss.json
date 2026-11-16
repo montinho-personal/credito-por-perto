@@ -2,42 +2,88 @@
   "articleSlug": "emprestimo-para-aposentado-inss",
   "claims": [
     {
-      "claimId": "base-legal-consignado",
-      "claimText": "O desconto de empréstimo em benefícios do INSS é autorizado pela Lei nº 10.820/2003, que disciplina a consignação em folha e os limites de comprometimento.",
-      "sourceOrganization": "Presidência da República — Planalto",
-      "sourceTitle": "Lei nº 10.820, de 17 de dezembro de 2003",
-      "sourceLocation": "https://www.planalto.gov.br/ccivil_03/leis/2003/l10.820.htm",
+      "claimId": "margem-lei-10820",
+      "claimText": "Para aposentados e pensionistas do RGPS, descontos e retenções não podem passar de 45% do benefício: 35% para empréstimos, financiamentos e arrendamentos, 5% para cartão de crédito consignado e 5% para cartão consignado de benefício (art. 6º, § 5º, redação da Lei 14.601/2023); BPC: 35%, sendo 30% + 5% (§ 5º-A); retenção acima do limite faz a instituição perder as garantias da lei (§ 6º).",
+      "sourceOrganization": "Câmara dos Deputados",
+      "sourceTitle": "Lei nº 10.820/2003 — texto atualizado",
+      "sourceLocation": "https://www2.camara.leg.br/legin/fed/lei/2003/lei-10820-17-dezembro-2003-497441-normaatualizada-pl.html",
       "sourceType": "official",
-      "accessedAt": "2026-08-16"
+      "accessedAt": "2026-11-16",
+      "notes": "Substitui o claim 'margem-vigente' de 16/08/2026."
     },
     {
-      "claimId": "margem-vigente",
-      "claimText": "A margem consignável do beneficiário do INSS na data de verificação é de 35% para empréstimo, 5% para cartão consignado e 5% para cartão benefício (45% no total), conforme regras vigentes registradas em MARGIN_RULES no código do site (verificadas em 06/08/2026).",
-      "sourceOrganization": "INSS / legislação do consignado",
-      "sourceTitle": "Percentuais vigentes do consignado INSS",
-      "sourceLocation": "https://www.gov.br/inss/pt-br",
+      "claimId": "mp-1355-sem-eficacia",
+      "claimText": "MP 1.355/2026 (que reduzia a margem a 40%) perdeu eficácia no fim de agosto de 2026; encerramento publicado no DOU de 08/09/2026; relações constituídas na vigência continuam regidas por ela salvo decreto legislativo. Câmara: situação 'Sem Eficácia', Ato Declaratório do Presidente da Mesa nº 89/2026.",
+      "sourceOrganization": "Agência Senado",
+      "sourceTitle": "Cinco medidas provisórias perderam eficácia no final de agosto (08/09/2026)",
+      "sourceLocation": "https://www12.senado.leg.br/noticias/materias/2026/09/08/cinco-medidas-provisorias-perderam-eficacia-no-final-de-agosto",
       "sourceType": "official",
-      "accessedAt": "2026-08-16",
-      "notes": "Percentuais voláteis: manter sincronizados com src/lib/calculators/margin.ts e revisar no ciclo trimestral."
+      "accessedAt": "2026-11-16",
+      "notes": "Ficha da Câmara: https://www2.camara.leg.br/legin/fed/medpro/2026/medidaprovisoria-1355-4-maio-2026-799034-norma-pe.html"
     },
     {
-      "claimId": "teto-juros-existe",
-      "claimText": "O consignado INSS possui teto de juros definido periodicamente pelo Conselho Nacional de Previdência Social (CNPS); o valor vigente deve ser consultado nos canais oficiais, pois muda ao longo do tempo.",
-      "sourceOrganization": "Governo Federal — INSS/CNPS",
-      "sourceTitle": "Teto de juros do consignado INSS",
-      "sourceLocation": "https://www.gov.br/inss/pt-br",
+      "claimId": "inss-pagina-40",
+      "claimText": "A página do INSS 'Consignação em benefícios do INSS: seus direitos e medidas de segurança' (atualizada em 28/10/2026) ainda informa limite global de 40% para RGPS e 35% para BPC, com redução gradual a partir de 2027; também informa: INSS não oferece nem intermedeia empréstimos; benefício recém-concedido bloqueado por 90 dias; bloqueio/desbloqueio no Meu INSS; biometria facial como primeira opção e validação bancária sem biometria; até 108 parcelas; comprovantes em até 7 dias úteis; INSS não pede senha, código ou pagamento.",
+      "sourceOrganization": "INSS",
+      "sourceTitle": "Consignação em benefícios do INSS: seus direitos e medidas de segurança",
+      "sourceLocation": "https://www.gov.br/inss/pt-br/direitos-e-deveres/pagamento-de-beneficios/consignacao-em-beneficios-do-inss-seus-direitos-e-medidas-de-seguranca",
       "sourceType": "official",
-      "accessedAt": "2026-08-16",
-      "notes": "Artigo não publica o número do teto — apenas informa a existência e onde conferir."
+      "accessedAt": "2026-11-16",
+      "notes": "Divergência declarada no artigo: o percentual de 40% reflete a MP 1.355, sem eficácia."
+    },
+    {
+      "claimId": "in-213-2026",
+      "claimText": "Instrução Normativa PRES/INSS nº 213, de 17/08/2026: validação de dados bancários para quem não tem biometria; benefício desbloqueado; 90 dias também na transferência de localidade; contrato com no máximo 108 parcelas; envio de documentos e comprovantes em até 7 dias úteis, sob pena de interrupção dos descontos.",
+      "sourceOrganization": "INSS",
+      "sourceTitle": "Beneficiários do INSS sem biometria poderão contratar consignado com validação de dados bancários (24/08/2026)",
+      "sourceLocation": "https://www.gov.br/inss/pt-br/assuntos/noticias/beneficiarios-do-inss-sem-biometria-poderao-contratar-consignado-com-validacao-de-dados-bancarios-veja-as-regras",
+      "sourceType": "official",
+      "accessedAt": "2026-11-16"
+    },
+    {
+      "claimId": "confirmacao-5-dias",
+      "claimText": "Após a contratação, a pessoa tem até 5 dias para confirmar a operação no Meu INSS; o empréstimo só é liberado depois da confirmação.",
+      "sourceOrganization": "gov.br / INSS",
+      "sourceTitle": "Confirmar Empréstimo Consignado",
+      "sourceLocation": "https://www.gov.br/pt-br/servicos/confirmar-emprestimo-consignado",
+      "sourceType": "official",
+      "accessedAt": "2026-11-16"
+    },
+    {
+      "claimId": "teto-juros-cnps",
+      "claimText": "O CNPS elevou o teto do consignado INSS para 1,85% ao mês (antes 1,80%); cartão consignado mantido em 2,46% ao mês; o novo teto vale cinco dias úteis após publicação no DOU; taxas por instituição disponíveis no Meu INSS.",
+      "sourceOrganization": "INSS",
+      "sourceTitle": "Conselho decide aumentar o teto da taxa de juros do empréstimo consignado do INSS (25/03/2025)",
+      "sourceLocation": "https://www.gov.br/inss/pt-br/noticias/conselho-decide-aumentar-o-teto-da-taxa-de-juros-do-emprestimo-consignado-do-inss",
+      "sourceType": "official",
+      "accessedAt": "2026-11-16"
+    },
+    {
+      "claimId": "procon-sp-fev-2026",
+      "claimText": "Pesquisa do Procon-SP com data-base de 10/02/2026 registra o limite de 1,85% ao mês para o consignado de aposentados do INSS.",
+      "sourceOrganization": "Procon-SP",
+      "sourceTitle": "Relatório da Pesquisa de Taxas de Juros do Empréstimo Consignado — fevereiro de 2026",
+      "sourceLocation": "https://www.procon.sp.gov.br/wp-content/uploads/2026/03/Relatorio-Emp-Consignado-Fevereiro-NP-2026.pdf",
+      "sourceType": "official",
+      "accessedAt": "2026-11-16"
+    },
+    {
+      "claimId": "meu-inss-taxas-telefone",
+      "claimText": "No Meu INSS, sem login, o ícone 'Taxas de empréstimo consignado' mostra bancos e juros de empréstimo, RMC e RCC; nenhuma instituição pode contratar consignado por telefone, com exigência de contrato escrito e assinatura; cobrança antecipada é proibida e deve ser denunciada ao Procon.",
+      "sourceOrganization": "INSS",
+      "sourceTitle": "Margem do empréstimo consignado está atualizada (publicada em 24/01/2024, atualizada em 26/10/2026)",
+      "sourceLocation": "https://www.gov.br/inss/pt-br/noticias/margem-do-emprestimo-consignado-esta-atualizada",
+      "sourceType": "official",
+      "accessedAt": "2026-11-16"
     },
     {
       "claimId": "taxas-medias-bc",
-      "claimText": "As taxas médias praticadas por instituição na modalidade 'crédito consignado INSS' são públicas na página de taxas de juros do Banco Central.",
+      "claimText": "As taxas médias praticadas por instituição na modalidade consignado INSS são públicas na página de taxas de juros do Banco Central.",
       "sourceOrganization": "Banco Central do Brasil",
-      "sourceTitle": "Taxas de juros de operações de crédito",
+      "sourceTitle": "Taxas de juros — por instituição financeira",
       "sourceLocation": "https://www.bcb.gov.br/estatisticas/txjuros",
       "sourceType": "official",
-      "accessedAt": "2026-08-16"
+      "accessedAt": "2026-11-16"
     }
   ]
 }
