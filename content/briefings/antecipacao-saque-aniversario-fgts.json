@@ -221,5 +221,10 @@
       ],
       "tituloDescricao": "sem mudança (proposta enviada ao proprietário)"
     }
-  ]
+  ],
+  "serpNotes": {
+    "formato": "Texto: os primeiros resultados são páginas de produto de bancos e a página oficial da Caixa; sem calculadora nem vídeo no topo, sem mapa. O simulador do site é complemento.",
+    "visaoDeIA": "Resposta em lista: requisitos (90 dias, R$ 100–500, 'até 5 parcelas') e passo a passo (ativar no app, autorizar o banco, simular o CET). Cita Caixa, Banco Bmg, Banco Mercantil, Up.p, Digio, Mercado Pago e YouTube. O artigo já abre explicando a mecânica; a seção de regras 2026 responde em tabela.",
+    "concorrentes": "Caixa (oficial), Up.p, Alfa, Bmg, Mercantil, Nubank, Sicoob, Inter: páginas de produto, nenhuma neutra; não são fracas por domínio, mas nenhuma traz a prorrogação até 31/03/2027."
+  }
 }

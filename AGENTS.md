@@ -99,13 +99,24 @@ Tarefa agendada nesta sessão, todo dia às **18h17 de Brasília** (o montinhope
 
 ## Cota do SerpApi
 
-Uma conta para todos os sites do Renato: 250 buscas por mês no plano grátis. O
-montinhopersonal usa cerca de 120 a 150 por mês.
+Uma conta para todos os sites do Renato. Desde 16/11/2026 o `CLAUDE.md` registra **plano
+pago**, com o limite do mês visível só no painel do SerpApi (a API avisa quando acaba). O
+cálculo abaixo foi feito com o plano grátis de 250 buscas, que era a referência do pedido
+da rotina; o montinhopersonal usa cerca de 120 a 150 por mês.
 
-| Revisões por dia | Por revisão | Por mês (30 dias) | Com o montinhopersonal |
+| Revisões por dia | Por revisão | Por mês (30 dias) | Com o montinhopersonal (250/mês) |
 | --- | --- | --- | --- |
 | 2 | 2 a 3 (até 5 a 6 com secundária) | 120 a 180 (até ~360) | 240 a 330: **não cabe** |
 | 1 | 2 a 3 (até 5 a 6 com secundária) | 60 a 90 (até ~180) | 180 a 240: cabe, apertado |
 
-Por isso N = 1. Pedidos avulsos ("cria o próximo artigo", "revisa o próximo") gastam da
-mesma conta: se a soma do mês passar de ~230, avisar antes de buscar.
+Por isso a rotina começou com N = 1. **Para passar a N = 2, o Renato informa o limite do
+plano pago** e a conta é refeita: 2 por dia somam 120 a 180 buscas por mês só neste site.
+Pedidos avulsos ("cria o próximo artigo", "revisa o próximo") gastam da mesma conta.
+
+## Estratégias do CLAUDE.md em cada revisão
+
+Seguir a seção "Estratégias de SEO com o SerpApi" do `CLAUDE.md` sem busca extra: anotar
+no briefing (`serpNotes`) o **formato** que a página de resultados pede, **como a visão de
+IA responde e quem ela cita**, e os **domínios que ocupam os primeiros lugares**, dizendo
+se são fracos. O lead e a primeira seção respondem do jeito direto da visão de IA, com
+fonte oficial.
