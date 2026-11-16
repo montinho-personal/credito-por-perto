@@ -71,6 +71,15 @@ Desde 16/11/2026, os dados do Google que o Renato mandava em print vêm do
 **SerpApi**, buscados pelo próprio Claude no começo da tarefa. Não pedir print
 ao Renato; só se o SerpApi falhar (sem cota ou fora do ar).
 
+**Pedido de "cria o próximo artigo" ou "revisa o próximo" (regra do Renato,
+16/11/2026):** começar já pela pesquisa, sem perguntar nada antes. Pegar a próxima
+peça da pauta (ou a que ele nomear), definir 2 ou 3 buscas (a principal e as
+secundárias do doc ou da pauta), buscar no SerpApi e seguir o fluxo inteiro deste
+arquivo: fontes, texto, checagens e publicação. Na resposta final, além do link,
+mandar as intenções de busca separadas por tipo (autocompletar, "As pessoas também
+perguntam", "Outras pessoas pesquisaram", visão de IA com o que diz e quem cita, e
+quem ranqueia), marcando o que entrou no texto e o que ficou de fora, com o motivo.
+
 **O que trazer de cada busca:** autocompletar, "As pessoas também perguntam",
 "Outras pessoas pesquisaram", visão geral de IA (texto e fontes), resultados
 orgânicos e, em busca local, o mapa (`local_results`). Google Brasil, São Paulo,
