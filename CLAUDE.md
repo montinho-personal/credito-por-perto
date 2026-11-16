@@ -82,8 +82,16 @@ quem ranqueia), marcando o que entrou no texto e o que ficou de fora, com o moti
 
 **O que trazer de cada busca:** autocompletar, "As pessoas também perguntam",
 "Outras pessoas pesquisaram", visão geral de IA (texto e fontes), resultados
-orgânicos e, em busca local, o mapa (`local_results`). Google Brasil, São Paulo,
-pt-BR, sem personalização.
+orgânicos e, em busca local, o mapa (`local_results`). Google Brasil, pt-BR, sem
+personalização, **como celular** e na **região do site** (abaixo).
+
+**Aparelho e região (pedido do Renato, 16/11/2026):** sempre `"device":"mobile"`, porque
+a maior parte do público chega pelo celular. Região padrão deste site: **São Paulo** (`Sao Paulo,State of Sao Paulo,Brazil`) para os artigos nacionais. Guia ou dossiê de uma cidade usa a cidade dele.
+O nome exato da cidade sai da lista de locais do SerpApi, que é grátis e não gasta cota:
+`curl -s "https://serpapi.com/locations.json?q=Barueri&limit=3"` (usar o `canonical_name`).
+Bairro quase nunca existe na lista: use a cidade. O autocompletar não aceita cidade nem
+aparelho; ele sai pelo Brasil (`gl=br`). Mesmo assim, o resultado não bate 100% com o
+celular do Renato: muda com o dia, com testes do Google e com a digitação letra a letra.
 
 **Como buscar** (bash; a chave está no cofre do ambiente e o proxy a envia sozinho,
 não passe chave nenhuma):
@@ -95,7 +103,7 @@ serp() { curl -s -m 120 -H 'content-type: application/json' \
   | python3 -c 'import sys,json; print(json.load(sys.stdin)["result"]["content"][0]["text"])'; }
 
 # Página de resultados: related_questions, related_searches, ai_overview, organic_results, local_results
-serp '{"engine":"google","q":"BUSCA","google_domain":"google.com.br","hl":"pt-br","gl":"br","location":"Sao Paulo,State of Sao Paulo,Brazil"}'
+serp '{"engine":"google","q":"BUSCA","google_domain":"google.com.br","hl":"pt-br","gl":"br","device":"mobile","location":"CIDADE,State of ESTADO,Brazil"}'
 # Autocompletar: suggestions[].value
 serp '{"engine":"google_autocomplete","q":"BUSCA","hl":"pt-br","gl":"br"}'
 # Visão de IA que veio só com "page_token" (sem text_blocks): um pedido a mais
