@@ -80,6 +80,16 @@ mandar as intenções de busca separadas por tipo (autocompletar, "As pessoas ta
 perguntam", "Outras pessoas pesquisaram", visão de IA com o que diz e quem cita, e
 quem ranqueia), marcando o que entrou no texto e o que ficou de fora, com o motivo.
 
+**Depois de cada artigo ou revisão: as buscas que ficaram de fora viram pauta (regra do
+Renato, 16/11/2026).** Sem esperar pedido, pegar tudo o que foi marcado como "ficou de
+fora" nas intenções de busca, conferir no site (artigos, páginas e docs) o que já existe
+e separar em três grupos: **vale um artigo** (assunto que o site ainda não cobre, com
+fonte possível e busca real; entra na pauta com as buscas e o motivo), **não recomendo**
+(com o motivo: nome de marca, fora do tema do site, sem fonte, canibaliza uma página que
+já existe) e **cabe em página existente** (anotar no doc dessa página, para a próxima
+revisão dela). Mandar ao Renato junto com a resposta final, em lista curta, na ordem em
+que faria os artigos. Só entra na pauta; criar o artigo continua sendo um pedido dele.
+
 **O que trazer de cada busca:** autocompletar, "As pessoas também perguntam",
 "Outras pessoas pesquisaram", visão geral de IA (texto e fontes), resultados
 orgânicos e, em busca local, o mapa (`local_results`). Google Brasil, pt-BR, sem
