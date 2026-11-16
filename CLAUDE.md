@@ -64,3 +64,49 @@ teste: `fuser -k 3777/tcp`.
 
 **Identidade de modelo** não entra em commit, PR, comentário de código nem em
 nenhum artefato versionado.
+
+## Pesquisa no Google pelo SerpApi (no lugar dos prints)
+
+Desde 16/11/2026, os dados do Google que o Renato mandava em print vêm do
+**SerpApi**, buscados pelo próprio Claude no começo da tarefa. Não pedir print
+ao Renato; só se o SerpApi falhar (sem cota ou fora do ar).
+
+**O que trazer de cada busca:** autocompletar, "As pessoas também perguntam",
+"Outras pessoas pesquisaram", visão geral de IA (texto e fontes), resultados
+orgânicos e, em busca local, o mapa (`local_results`). Google Brasil, São Paulo,
+pt-BR, sem personalização.
+
+**Como buscar** (bash; a chave está no cofre do ambiente e o proxy a envia sozinho,
+não passe chave nenhuma):
+
+```bash
+serp() { curl -s -m 120 -H 'content-type: application/json' \
+  -H 'accept: application/json, text/event-stream' -X POST https://mcp.serpapi.com/mcp \
+  -d "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"tools/call\",\"params\":{\"name\":\"search\",\"arguments\":{\"params\":$1,\"mode\":\"compact\"}}}" \
+  | python3 -c 'import sys,json; print(json.load(sys.stdin)["result"]["content"][0]["text"])'; }
+
+# Página de resultados: related_questions, related_searches, ai_overview, organic_results, local_results
+serp '{"engine":"google","q":"BUSCA","google_domain":"google.com.br","hl":"pt-br","gl":"br","location":"Sao Paulo,State of Sao Paulo,Brazil"}'
+# Autocompletar: suggestions[].value
+serp '{"engine":"google_autocomplete","q":"BUSCA","hl":"pt-br","gl":"br"}'
+# Visão de IA que veio só com "page_token" (sem text_blocks): um pedido a mais
+serp '{"engine":"google_ai_overview","page_token":"TOKEN"}'
+```
+
+**Cota:** uma conta só para todos os sites do Renato, 250 buscas por mês no plano
+grátis. Cada busca gasta 2 (página + autocompletar), 3 com a visão de IA em duas
+etapas. Buscar só o que a peça precisa (em geral 2 ou 3 buscas), nunca em massa, e
+não repetir busca já feita no mesmo dia.
+
+**Evidência:** guardar no doc da peça, no lugar dos prints, um JSON enxuto de cada
+busca (busca, data, autocompletar, perguntas, outras pesquisas, texto e fontes da
+visão de IA, orgânicos com posição, título e endereço), sem `page_token` nem links
+do serpapi.com, e preencher a tabela de prints dizendo o que cada dado mudou no texto.
+
+**Continua valendo:** o que o Google mostra, inclusive a visão de IA, diz o que as
+pessoas perguntam; não é fonte de fato.
+
+**Se der erro de chave** ("Invalid API key", 401 ou host bloqueado): a chave não está
+no ambiente desta sessão. Chamar a ferramenta `request_credential` para o host
+`mcp.serpapi.com` (tipo bearer) e pedir ao Renato que cole a chave do SerpApi (menu
+"API Key" em serpapi.com) no formulário. Nunca pedir a chave na conversa.
