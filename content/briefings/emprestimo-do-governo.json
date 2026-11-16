@@ -40,7 +40,11 @@
     "FAQ"
   ],
   "uniqueExamples": [],
-  "proposedVisuals": ["QuickSummary", "Tabela por perfil", "ToolCallout"],
+  "proposedVisuals": [
+    "QuickSummary",
+    "Tabela por perfil",
+    "ToolCallout"
+  ],
   "pagesThatMayCompete": [
     "/emprestimos/credito-do-trabalhador/",
     "/emprestimos/emprestimo-para-mei/",
@@ -52,5 +56,6 @@
     "Regras do Banco do Povo Paulista (link e simulador)",
     "PF ou CNPJ para o MEI (link)"
   ],
-  "publicationDecision": "create"
+  "publicationDecision": "create",
+  "notes": "Próxima revisão (SerpApi 16/11/2026, busca \"consignado servidor estadual sp\"): PAA \"Como posso obter um empréstimo do governo do estado de São Paulo?\"."
 }

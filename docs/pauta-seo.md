@@ -201,3 +201,14 @@ Buscas pelo SerpApi (celular, São Paulo) que ficaram de fora da revisão:
 | Não recomendo | Taxas por banco e "carência" (visão de IA) | Taxas mudam e apontam marca; carência sem fonte oficial |
 | Não recomendo | "Quanto fica um empréstimo de 30 mil para aposentados?" (PAA) | Valor específico; o exemplo de parcela e a calculadora cobrem |
 | Não recomendo | "O que e consignado carro" (outras pesquisas) | Intenção ambígua, fora do tema da página |
+
+## Sobras de busca — revisão de "consignado do servidor público" (16/11/2026)
+
+| Grupo | Busca | Motivo / destino |
+| --- | --- | --- |
+| Vale um artigo | "portal do consignado servidor estadual sp", "margem consignado servidor público estadual sp", "consultar margem consignado servidor público estadual sp", "Como liberar Consignado SPPrev?" (autocompletar e PAA) | Busca real e regional (SP é a região do site); fontes oficiais possíveis (SOU.SP, SPPrev, norma estadual). A página geral só traz a autorização no SOU.SP |
+| Cabe em página existente | CLT: "o que mudou", "número máximo de parcelas", "valor máximo de parcela" (outras pesquisas) | Nota no briefing de `credito-do-trabalhador` |
+| Cabe em página existente | "Como posso obter um empréstimo do governo do estado de São Paulo?" (PAA) | Nota no briefing de `emprestimo-do-governo` |
+| Cabe em página existente | "Como conseguir 10.000 reais urgentemente?" (PAA) | Nota no briefing de `dinheiro-urgente` |
+| Não recomendo | Bancos nomeados (Bradesco, Caixa, Santander, Itaú, Sicredi, Sicoob) e "Qual banco oferece empréstimo para servidores públicos?" | Marca |
+| Não recomendo | Outros estados (RJ, PR, MG, RS) e servidor municipal ("margem 2026", "lei do consignado municipal") | Uma regra por ente, sem fonte única; fora da região do site |

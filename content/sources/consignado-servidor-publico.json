@@ -3,40 +3,68 @@
   "claims": [
     {
       "claimId": "regras-por-ente",
-      "claimText": "As regras de consignação em folha do servidor público são definidas por cada ente federativo: a União disciplina o SIAPE (consulta via SouGov.br), e estados e municípios mantêm normas e sistemas próprios.",
-      "sourceOrganization": "Governo Federal — Portal do Servidor",
-      "sourceTitle": "FAQ SouGov.br — Consignações",
+      "claimText": "As regras de consignação do servidor são definidas por cada ente: a União (SIAPE, consulta pelo SouGov.br) e estados e municípios com normas e sistemas próprios.",
+      "sourceOrganization": "Ministério da Gestão — Portal do Servidor",
+      "sourceTitle": "FAQ SouGov: como consultar a margem consignável",
       "sourceLocation": "https://www.gov.br/servidor/pt-br/acesso-a-informacao/faq/sou-gov.br/consignacoes/1-como-consulto-minha-margem-consignavel-no-aplicativo-sou-gov-br",
       "sourceType": "official",
-      "accessedAt": "2026-08-16"
+      "accessedAt": "2026-11-16"
     },
     {
-      "claimId": "margem-federal-transicao",
-      "claimText": "Os limites de margem consignável do servidor federal estão em transição por força de alterações normativas recentes (MP nº 1.355/2026), com redução gradual dos percentuais globais; os valores vigentes por período são publicados no FAQ oficial do Portal do Servidor.",
-      "sourceOrganization": "Governo Federal — Portal do Servidor",
-      "sourceTitle": "Margem consignável: regras e limites a partir de 2026",
-      "sourceLocation": "https://www.gov.br/servidor/pt-br/acesso-a-informacao/faq/sou-gov.br/consignacoes/margem-consignavel-regras-e-limites-a-partir-de-2026",
+      "claimId": "lei-14509",
+      "claimText": "Consignações facultativas do servidor federal (Lei 8.112) limitadas a 45% da remuneração mensal, com 5% reservado ao cartão de crédito (art. 2º, par. único); limite aplicável a militares, inativos, empregados públicos federais e pensionistas quando não houver percentual maior (art. 3º); esclarecimento prévio do CET e do prazo de quitação (art. 4º); vedada nova consignação quando descontos + consignações alcançarem 70% da base (art. 5º).",
+      "sourceOrganization": "Câmara dos Deputados",
+      "sourceTitle": "Lei nº 14.509/2022 — publicação original",
+      "sourceLocation": "https://www2.camara.leg.br/legin/fed/lei/2022/lei-14509-27-dezembro-2022-793575-publicacaooriginal-166676-pl.html",
       "sourceType": "official",
-      "accessedAt": "2026-08-16",
-      "notes": "Números em transição — artigo remete à fonte oficial em vez de fixar percentuais que expiram."
+      "accessedAt": "2026-11-16",
+      "notes": "Reserva de 5% do cartão de benefício: veto derrubado em 2023; divisão 35/5/5 confirmada no FAQ do Portal do Servidor."
     },
     {
-      "claimId": "base-remuneracao-liquida",
-      "claimText": "A margem do servidor federal é calculada sobre a remuneração após os descontos obrigatórios, descontando-se as parcelas de consignações já ativas.",
-      "sourceOrganization": "Governo Federal — Portal do Servidor",
-      "sourceTitle": "FAQ SouGov.br — Consignações (base de cálculo)",
-      "sourceLocation": "https://www.gov.br/servidor/pt-br/acesso-a-informacao/faq/sou-gov.br/consignacoes",
+      "claimId": "margem-sougov",
+      "claimText": "Limites da margem previstos na Lei 14.509/2022: até 35% para empréstimos, 5% para cartão de crédito consignado e 5% para cartão consignado de benefício; consulta em Autoatendimento > Consignação, com escolha do vínculo; dúvidas com a Unidade de Gestão de Pessoas (página atualizada em 31/08/2026).",
+      "sourceOrganization": "Ministério da Gestão — Portal do Servidor",
+      "sourceTitle": "FAQ SouGov: como consultar a margem consignável",
+      "sourceLocation": "https://www.gov.br/servidor/pt-br/acesso-a-informacao/faq/sou-gov.br/consignacoes/1-como-consulto-minha-margem-consignavel-no-aplicativo-sou-gov-br",
       "sourceType": "official",
-      "accessedAt": "2026-08-16"
+      "accessedAt": "2026-11-16",
+      "notes": "Substitui o claim 'margem-federal-transicao' (MP 1.355, sem eficácia desde 31/08/2026)."
+    },
+    {
+      "claimId": "decreto-12957-120",
+      "claimText": "Decreto nº 12.957/2026 alterou o Decreto 8.690/2016: desde 20/05/2026 o prazo máximo do consignado federal passou de 96 para 120 parcelas; contratos anteriores mantêm as condições; oferta acima de 120 parcelas é irregular (registrar Termo de Reclamação); Portaria MGI 984/2026 exige informar parcela, taxas, prazo e CET antes da contratação; consulta de contratos em Consignação > Empréstimo Consignado > Consultar Contrato.",
+      "sourceOrganization": "Ministério da Gestão — Portal do Servidor",
+      "sourceTitle": "Limite de parcelas do empréstimo consignado: o que mudou? (atualizado 31/08/2026)",
+      "sourceLocation": "https://www.gov.br/servidor/pt-br/acesso-a-informacao/faq/sou-gov.br/consignacoes/limite-de-parcelas-do-emprestimo-consignado-o-que-mudou",
+      "sourceType": "official",
+      "accessedAt": "2026-11-16"
+    },
+    {
+      "claimId": "mp-1355-sem-eficacia",
+      "claimText": "MP 1.355/2026 perdeu eficácia no fim de agosto de 2026; encerramento publicado no DOU de 08/09/2026.",
+      "sourceOrganization": "Agência Senado",
+      "sourceTitle": "Cinco medidas provisórias perderam eficácia no final de agosto (08/09/2026)",
+      "sourceLocation": "https://www12.senado.leg.br/noticias/materias/2026/09/08/cinco-medidas-provisorias-perderam-eficacia-no-final-de-agosto",
+      "sourceType": "official",
+      "accessedAt": "2026-11-16"
+    },
+    {
+      "claimId": "sousp-aprovar",
+      "claimText": "Servidores ativos, inativos, reformados e pensionistas do Estado de SP autorizam a consignação no app SOU.SP (Consignação > Aprovar Consignação) com Prova de Vida no gov.br, que deve ser feita até as 23h do mesmo dia, sob pena de cancelamento do contrato.",
+      "sourceOrganization": "Governo do Estado de São Paulo — SOU.SP",
+      "sourceTitle": "Tutorial: Aprovar Consignação",
+      "sourceLocation": "https://www.sou.sp.gov.br/sou.sp/tutoriais/servidores-ativos/aprovar-consignacao",
+      "sourceType": "official",
+      "accessedAt": "2026-11-16"
     },
     {
       "claimId": "taxas-medias-bc-servidor",
-      "claimText": "As taxas médias praticadas por instituição na modalidade de consignado público são públicas na página de taxas de juros do Banco Central.",
+      "claimText": "As taxas médias por instituição do consignado público são públicas na página de taxas de juros do Banco Central.",
       "sourceOrganization": "Banco Central do Brasil",
-      "sourceTitle": "Taxas de juros de operações de crédito",
+      "sourceTitle": "Taxas de juros — por instituição financeira",
       "sourceLocation": "https://www.bcb.gov.br/estatisticas/txjuros",
       "sourceType": "official",
-      "accessedAt": "2026-08-16"
+      "accessedAt": "2026-11-16"
     }
   ]
 }
