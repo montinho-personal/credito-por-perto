@@ -120,10 +120,11 @@ serp '{"engine":"google_autocomplete","q":"BUSCA","hl":"pt-br","gl":"br"}'
 serp '{"engine":"google_ai_overview","page_token":"TOKEN"}'
 ```
 
-**Cota:** uma conta só para todos os sites do Renato, 250 buscas por mês no plano
-grátis. Cada busca gasta 2 (página + autocompletar), 3 com a visão de IA em duas
-etapas. Buscar só o que a peça precisa (em geral 2 ou 3 buscas), nunca em massa, e
-não repetir busca já feita no mesmo dia.
+**Cota:** uma conta só para todos os sites do Renato, em plano pago desde 16/11/2026
+(o limite do mês aparece no painel do SerpApi; se a API disser que acabou, parar e
+avisar). Cada busca gasta 2 (página + autocompletar), 3 com a visão de IA em duas
+etapas. Buscar só o que a peça precisa (em geral 3 buscas), nunca em massa, e não
+repetir busca já feita no mesmo dia.
 
 **Evidência:** guardar no doc da peça, no lugar dos prints, um JSON enxuto de cada
 busca (busca, data, autocompletar, perguntas, outras pesquisas, texto e fontes da
@@ -137,3 +138,27 @@ pessoas perguntam; não é fonte de fato.
 no ambiente desta sessão. Chamar a ferramenta `request_credential` para o host
 `mcp.serpapi.com` (tipo bearer) e pedir ao Renato que cole a chave do SerpApi (menu
 "API Key" em serpapi.com) no formulário. Nunca pedir a chave na conversa.
+
+## Estratégias de SEO com o SerpApi (decisão do Renato, 16/11/2026)
+
+Além da pesquisa de cada peça, o SerpApi serve para o seguinte. O Search Console continua
+sendo a fonte da posição e dos cliques do próprio site; o SerpApi não substitui isso.
+
+1. **Formato antes de escrever (sem busca extra).** Olhar os primeiros resultados da
+   pesquisa da peça: se são calculadoras ou ferramentas, a peça é ferramenta; se são
+   vídeos, registrar no doc que o texto sozinho dificilmente entra; se há mapa, é busca
+   local. Anotar a decisão no doc da peça.
+2. **Visão de IA.** Em toda pesquisa, registrar no doc quem a visão de IA cita e como é a
+   resposta (tamanho, lista, tabela, exemplo com número). Escrever o lead e a primeira
+   seção de modo que respondam do mesmo jeito direto, com fonte oficial. Uma vez por mês,
+   a rotina mensal repete as buscas principais do site e anota em
+   `docs/seo/visao-de-ia.md` se o site passou a ser citado.
+3. **Concorrentes.** No doc da peça, anotar os domínios que ocupam os primeiros lugares e
+   se são fracos (rede social, fórum, página antiga): essas buscas têm prioridade na pauta.
+4. **Sazonalidade.** Antes de pautar tema sazonal, consultar o Google Trends pelo SerpApi
+   (`{"engine":"google_trends","q":"TERMO","geo":"BR","date":"today 5-y"}`) e publicar
+   algumas semanas antes do pico. Uma busca por tema, não por artigo.
+5. **Alerta de mudança de regra.** Na rotina mensal, uma busca de notícias
+   (`{"engine":"google_news","q":"TERMO","gl":"br","hl":"pt-br"}`) para os temas que mudam
+   (Banco Central, CMN, consignado, Selic, Desenrola). Mudou: conferir na fonte oficial e
+   revisar a página; a notícia não é fonte.
