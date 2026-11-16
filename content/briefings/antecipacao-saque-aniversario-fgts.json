@@ -29,11 +29,197 @@
     "O que pode mudar",
     "FAQ"
   ],
-  "uniqueExamples": ["Pedido de dois números por escrito para revelar o custo"],
-  "proposedVisuals": ["ExampleBox", "WhatCanChange", "WarningBox"],
-  "pagesThatMayCompete": ["/emprestimos/emprestimo-com-garantia/"],
+  "uniqueExamples": [
+    "Pedido de dois números por escrito para revelar o custo"
+  ],
+  "proposedVisuals": [
+    "ExampleBox",
+    "WhatCanChange",
+    "WarningBox"
+  ],
+  "pagesThatMayCompete": [
+    "/emprestimos/emprestimo-com-garantia/"
+  ],
   "informationThatMustNotBeRepeated": [
     "Comparação genérica de modalidades (fica no hub de empréstimos)"
   ],
-  "publicationDecision": "create"
+  "publicationDecision": "create",
+  "serpEvidence": [
+    {
+      "busca": "antecipação saque aniversário fgts",
+      "data": "2026-11-16",
+      "aparelho": "mobile",
+      "local": "Sao Paulo,State of Sao Paulo,Brazil",
+      "autocompletar": [
+        "antecipação saque aniversário fgts 2026",
+        "antecipação saque aniversário fgts como funciona",
+        "antecipação saque aniversário fgts nubank",
+        "antecipação saque aniversário fgts novas regras",
+        "antecipação saque aniversário fgts bradesco",
+        "antecipação saque aniversário fgts cai na hora",
+        "antecipação saque aniversário fgts pan",
+        "antecipação saque aniversário fgts caixa",
+        "antecipação saque aniversário fgts banco do brasil",
+        "antecipação saque aniversário fgts regras",
+        "antecipação saque aniversário fgts calendário",
+        "antecipação saque aniversário fgts safra",
+        "antecipação saque aniversário fgts itau",
+        "antecipação saque aniversário fgts vale a pena",
+        "antecipação saque aniversário fgts acabou"
+      ],
+      "pessoasTambemPerguntam": [
+        "Como funciona a antecipação do FGTS do saque-aniversário?",
+        "Qual o melhor banco para antecipar o saque-aniversário do FGTS?",
+        "É ruim ficar antecipando o FGTS?",
+        "Como vai funcionar a nova liberação do FGTS em 2026?"
+      ],
+      "outrasPesquisas": [
+        "Antecipar fgts",
+        "Tenho saldo no fgts mas não consigo antecipar o saque aniversário",
+        "Melhor banco para antecipar fgts",
+        "Já antecipei o saque aniversário posso antecipar de novo",
+        "Antecipar fgts pelo whatsapp",
+        "Emprestimo saque aniversário fgts",
+        "Consigo antecipar o saque aniversário pelo caixa tem",
+        "Saque aniversário fgts liberado pelo governo",
+        "Simular empréstimo fgts saque aniversário",
+        "Emprestimo fgts",
+        "Como sacar fgts retido por saque aniversário",
+        "Saque aniversário fgts calendário"
+      ],
+      "visaoDeIA": {
+        "texto": [
+          "Para antecipar o saque-aniversário do FGTS, você deve contratar a modalidade de crédito em uma instituição financeira autorizada (como a Caixa Econômica Federal, o Banco Bmg ou o Banco Mercantil), usando o saldo de suas contas ativas ou inativas como garantia.",
+          "Regras e Requisitos Atuais",
+          "Adesão e Carência: É necessário ter optado pela modalidade de Saque-Aniversário no ** aplicativo FGTS** e aguardar um prazo de 90 dias para estar apto à primeira antecipação. ; Limites de Valor: Cada parcela antecipada deve ter o valor mínimo de R$ 100 e o teto de R$ 500 por parcela. ; Número de Parcelas: É permitido antecipar até 5 parcelas anuais (contratadas uma vez por ano). ; Perfil: Aberto para maiores de 18 anos ou emancipados, com CPF regular e sem cobrança de parcelas mensais (o desconto é feito diretamente no saldo do FGTS no mês do seu aniversário). (Nota: Ao aderir ao saque-aniversário, você perde o direito ao saque-rescisão integral em caso de demissão sem justa causa).",
+          "Passo a Passo para Contratar",
+          "Ative a modalidade: Abra o aplicativo do FGTS, clique em \"Saque-Aniversário\" e confirme a alteração. ; Autorize o banco: No mesmo aplicativo do FGTS, vá na opção de autorizar instituições financeiras a consultarem o seu saldo e selecione o banco de sua preferência. ; Simule e contrate: Acesse o site ou aplicativo da instituição financeira escolhida (como a Caixa Econômica Federal), faça a simulação das taxas e CET (Custo Efetivo Total), e finalize a contratação digitalmente.",
+          "Para eu te ajudar a escolher a melhor opção ou simular a melhor alternativa, me diga:",
+          "Qual é o valor aproximado do seu saldo no FGTS? ; Você já está na modalidade de saque-aniversário há mais de 90 dias?"
+        ],
+        "fontes": [
+          {
+            "fonte": "Caixa",
+            "link": "https://www.caixa.gov.br/voce/credito-financiamento/emprestimo/antecipacao-saque-aniversario-FGTS/Paginas/default.aspx"
+          },
+          {
+            "fonte": "Banco Bmg",
+            "link": "https://www.bancobmg.com.br/emprestimo/antecipacao-saque-aniversario-fgts/"
+          },
+          {
+            "fonte": "Banco Mercantil do Brasil",
+            "link": "https://bancomercantil.com.br/emprestimos/antecipacao-saque-aniversario-fgts"
+          },
+          {
+            "fonte": "Up.p",
+            "link": "https://upp.com.br/antecipacao-fgts/"
+          },
+          {
+            "fonte": "Digio",
+            "link": "https://www.digio.com.br/emprestimo/antecipar-saque-aniversario-fgts"
+          },
+          {
+            "fonte": "YouTube",
+            "link": "https://www.youtube.com/shorts/CudHW2aoFG4"
+          },
+          {
+            "fonte": "Mercado Pago",
+            "link": "https://www.mercadopago.com.br/blog/antecipacao-saque-aniversario-fgts-como-funciona"
+          },
+          {
+            "fonte": "YouTube",
+            "link": "https://www.youtube.com/watch?v=pL6JCkfrDzs"
+          },
+          {
+            "fonte": "YouTube",
+            "link": "https://www.youtube.com/watch?v=RCNBMJluLCk&t=29"
+          }
+        ]
+      },
+      "organicos": [
+        {
+          "posicao": 1,
+          "titulo": "Antecipação Saque Aniversário FGTS",
+          "link": "https://www.caixa.gov.br/voce/credito-financiamento/emprestimo/antecipacao-saque-aniversario-FGTS/Paginas/default.aspx"
+        },
+        {
+          "posicao": 2,
+          "titulo": "Conheça sobre a Antecipação Saque-Aniversário FGTS",
+          "link": "https://upp.com.br/antecipacao-fgts/"
+        },
+        {
+          "posicao": 3,
+          "titulo": "Empréstimo FGTS",
+          "link": "https://www.alfa.com.br/emprestimo-saque-aniversario-fgts/"
+        },
+        {
+          "posicao": 4,
+          "titulo": "Antecipação do Saque-Aniversário - Empréstimo FGTS",
+          "link": "https://www.bancobmg.com.br/emprestimo/antecipacao-saque-aniversario-fgts/"
+        },
+        {
+          "posicao": 5,
+          "titulo": "Empréstimo FGTS: antecipe seu saque-aniversário online",
+          "link": "https://bancomercantil.com.br/emprestimos/antecipacao-saque-aniversario-fgts"
+        },
+        {
+          "posicao": 6,
+          "titulo": "Antecipação do Saque-Aniversário FGTS",
+          "link": "https://nubank.com.br/nu/emprestimos/saque-aniversario-fgts"
+        },
+        {
+          "posicao": 7,
+          "titulo": "Antecipe seu Saque-Aniversário FGTS online com o Sicoob",
+          "link": "https://escolha.sicoobes.com.br/antecipa-fgts"
+        },
+        {
+          "posicao": 8,
+          "titulo": "Perguntas Frequentes - Antecipação Saque Aniversário FGTS",
+          "link": "https://www.caixa.gov.br/voce/credito-financiamento/emprestimo/antecipacao-saque-aniversario-FGTS/perguntas-frequentes/Paginas/default.aspx"
+        },
+        {
+          "posicao": 9,
+          "titulo": "Antecipação Saque-Aniversário FGTS | Empréstimo FGTS",
+          "link": "https://inter.co/pra-voce/emprestimos/antecipacao-fgts/"
+        }
+      ],
+      "mapa": []
+    }
+  ],
+  "serpImpact": [
+    {
+      "dado": "Visão de IA: 'até 5 parcelas', carência de 90 dias, R$ 100 a R$ 500, autorizar o banco no app FGTS",
+      "efeito": "Conferido: 90 dias e R$ 100–500 confirmados no FGTS; limite de 5 confirmado pela prorrogação até 31/03/2027 (MTE, 29/10/2026), com divergência da página do FGTS declarada. O artigo e o simulador diziam 3 desde 01/11/2026: corrigidos."
+    },
+    {
+      "dado": "Autocompletar: 2026, novas regras, regras, acabou",
+      "efeito": "Nova seção 'As regras em 2026' e FAQ 'acabou?'."
+    },
+    {
+      "dado": "Outras pesquisas: já antecipei posso antecipar de novo; tenho saldo mas não consigo antecipar; simular; como sacar FGTS retido",
+      "efeito": "Viraram FAQs (de novo; não consigo; simular sem aderir; volta ao saque-rescisão com 25º mês)."
+    },
+    {
+      "dado": "Autocompletar: calendário",
+      "efeito": "Entrou o repasse até o 5º dia útil do mês de aniversário."
+    },
+    {
+      "dado": "PAA: melhor banco; autocompletar com bancos; 'cai na hora'; 'pelo WhatsApp'; 'Caixa Tem'",
+      "efeito": "Ficaram de fora: marca, promessa ou canal sem fonte oficial."
+    }
+  ],
+  "revisionLog": [
+    {
+      "data": "2026-11-16",
+      "tipo": "revisão diária (rotina AGENTS.md)",
+      "mudancas": [
+        "Regra de 5 saques prorrogada até 31/03/2027 (texto, legenda e simulador)",
+        "Seção de regras 2026 com tabela",
+        "Volta ao saque-rescisão: 25º mês, sem antecipação",
+        "Repasse até o 5º dia útil",
+        "Seis FAQs novas"
+      ],
+      "tituloDescricao": "sem mudança (proposta enviada ao proprietário)"
+    }
+  ]
 }

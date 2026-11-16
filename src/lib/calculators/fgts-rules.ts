@@ -6,7 +6,8 @@
  * data, e os testes em `tests/fgts-advance.test.ts` apontam o que quebrou.
  *
  * TRANSIÇÃO AUTOMÁTICA. O limite de saques antecipáveis depende da DATA da
- * contratação (5 até 31/10/2026; 3 a partir de 01/11/2026). `advanceRulesAt`
+ * contratação (5 até 31/03/2027, pela prorrogação do Conselho Curador de
+ * 29/10/2026; 3 a partir de 01/04/2027). `advanceRulesAt`
  * escolhe o período pela data — ninguém precisa editar a interface no dia da
  * troca, e a página (revalidada diariamente) acompanha sozinha.
  *
@@ -76,8 +77,11 @@ export interface AdvancePeriod {
 export const ADVANCE_RULES = {
   id: "antecipacao-saque-aniversario",
   periods: [
-    { from: "2025-11-01", to: "2026-10-31", maxSaques: 5 },
-    { from: "2026-11-01", to: null, maxSaques: 3 },
+    // Transição de 5 saques prorrogada até 31/03/2027 pelo Conselho Curador em
+    // 29/10/2026 (notícia do MTE). A página do FGTS ainda mostrava 31/10/2026
+    // em 16/11/2026; o texto do artigo declara a divergência.
+    { from: "2025-11-01", to: "2027-03-31", maxSaques: 5 },
+    { from: "2027-04-01", to: null, maxSaques: 3 },
   ] as readonly AdvancePeriod[],
   /** Valor mínimo e máximo cedido de cada Saque-Aniversário anual. */
   minPerSaqueCents: 100_00,
@@ -89,7 +93,7 @@ export const ADVANCE_RULES = {
   summaries: {
     perCompetence: "Cada Saque-Aniversário anual pode estar vinculado a apenas uma operação de crédito.",
     newContract:
-      "A partir de 01/11/2026, uma nova contratação fica condicionada à quitação da antecipação vigente referente ao próximo Saque-Aniversário.",
+      "Quando o limite de três saques entrar em vigor, uma nova contratação fica condicionada à quitação da antecipação vigente referente ao próximo Saque-Aniversário.",
     waiting:
       "A autorização para a instituição consultar o saldo só pode ser dada depois de 90 dias do início da vigência da opção pelo Saque-Aniversário.",
     transfer: "O repasse à instituição ocorre até o 5º dia útil do mês de aniversário.",
@@ -103,6 +107,11 @@ export const ADVANCE_RULES = {
       organization: "FGTS",
       title: "Saque-Aniversário — regras da antecipação (Resolução CCFGTS nº 1.130/2025, que alterou a nº 958/2020)",
       url: "https://www.fgts.gov.br/Paginas/trabalhador/saque/saque-aniversario.aspx",
+    },
+    prorrogacao: {
+      organization: "Ministério do Trabalho e Emprego",
+      title: "Conselho Curador do FGTS aprova orçamento para 2027 e prorroga a regra de transição do saque-aniversário (29/10/2026)",
+      url: "https://www.gov.br/trabalho-e-emprego/pt-br/noticias-e-conteudo/2026/outubro/conselho-curador-do-fgts-aprova-orcamento-de-r-169-bilhoes-para-investimentos-em-2027",
     },
     mte: {
       organization: "Ministério do Trabalho e Emprego",
@@ -120,7 +129,7 @@ export const ADVANCE_RULES = {
       url: "https://www.caixa.gov.br/beneficios-trabalhador/fgts/saque-mp-1331-25/Paginas/default.aspx",
     },
   } satisfies Record<string, RuleSource>,
-  verifiedAt: "23/09/2026",
+  verifiedAt: "16/11/2026",
 } as const;
 
 /* -------------------------------------------------------------------------- */

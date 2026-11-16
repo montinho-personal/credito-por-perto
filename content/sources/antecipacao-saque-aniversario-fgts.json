@@ -47,6 +47,24 @@
       "sourceType": "official",
       "accessedAt": "2026-09-23",
       "notes": "Conferido por trechos oficiais de busca (o site não abre no ambiente de desenvolvimento) e pelo proprietário na página do FGTS em 23/09/2026."
+    },
+    {
+      "claimId": "prorrogacao-5-saques-2027",
+      "claimText": "Em 29/10/2026 o Conselho Curador do FGTS prorrogou até 31/03/2027 a regra de transição que permite alienar até cinco saques-aniversário anuais futuros como garantia; a resolução de 2025 previa três a partir de 01/11/2026 e valores de R$ 100 a R$ 500 por saque.",
+      "sourceOrganization": "Ministério do Trabalho e Emprego",
+      "sourceTitle": "Conselho Curador do FGTS aprova orçamento de R$ 169 bilhões para investimentos em 2027 (29/10/2026)",
+      "sourceLocation": "https://www.gov.br/trabalho-e-emprego/pt-br/noticias-e-conteudo/2026/outubro/conselho-curador-do-fgts-aprova-orcamento-de-r-169-bilhoes-para-investimentos-em-2027",
+      "sourceType": "official",
+      "accessedAt": "2026-11-16"
+    },
+    {
+      "claimId": "fgts-regras-res-1130",
+      "claimText": "Resolução CCFGTS 1.130/2025: autorização de consulta e bloqueio só após 90 dias da opção (exemplo: adesão 10/01/2026, a partir de 10/04/2026); cada saque anual vinculado a uma única operação; nova contratação condicionada à quitação da antecipação vigente referente ao próximo saque; R$ 100 a R$ 500 por saque (R$ 2.500 com 5, R$ 1.500 com 3); repasse até o 5º dia útil do mês de aniversário; operações anteriores a 01/11/2025 fora do enquadramento; simulação não exige opção prévia; mais de 120 instituições habilitadas; retorno ao Saque-Rescisão sem antecipação contratada e com efeito no 1º dia do 25º mês (Lei 8.036, art. 20-C, § 1º, I). A página ainda mostrava a transição até 31/10/2026 em 16/11/2026.",
+      "sourceOrganization": "FGTS (Caixa, agente operador)",
+      "sourceTitle": "Saque-Aniversário do FGTS",
+      "sourceLocation": "https://www.fgts.gov.br/Paginas/trabalhador/saque/saque-aniversario.aspx",
+      "sourceType": "official",
+      "accessedAt": "2026-11-16"
     }
   ]
 }

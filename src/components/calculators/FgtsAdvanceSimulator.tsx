@@ -12,7 +12,7 @@
  * DECISÕES QUE NÃO SÃO ÓBVIAS
  *
  * - Toda regra vem de `fgts-rules.ts`, pela DATA da simulação: a quantidade
- *   máxima de saques (5 até 31/10/2026, 3 depois) muda sozinha, nos botões,
+ *   máxima de saques (5 até 31/03/2027, 3 depois) muda sozinha, nos botões,
  *   nas tabelas e nos textos.
  * - A data inicial chega do servidor (`today`) e é conferida no navegador
  *   depois de montar: a página é revalidada, o relógio da pessoa não.

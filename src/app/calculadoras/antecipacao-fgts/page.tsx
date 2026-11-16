@@ -39,7 +39,7 @@ import { FaqAccordion, FaqItem } from "@/components/content/FaqAccordion";
  *
  * DATA: a página inteira — limite de saques, exemplos, textos — sai do módulo
  * de regras para a data de hoje, no fuso de Brasília. `revalidate` de uma
- * hora faz a troca de 31/10 para 01/11/2026 aparecer sem ninguém editar nada;
+ * hora faz a troca de 31/03 para 01/04/2027 aparecer sem ninguém editar nada;
  * o simulador ainda confere o relógio da pessoa ao montar.
  *
  * EXEMPLOS: sempre com premissas declaradas (data, mês de aniversário, taxa

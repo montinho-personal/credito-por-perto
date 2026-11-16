@@ -83,16 +83,18 @@ describe("limites da antecipação", () => {
     expect(p.belowMinimum).toBe(2);
   });
 
-  it("teste 98 — em 31/10/2026, até 5 saques", () => {
+  it("teste 98 — até 31/03/2027 (transição prorrogada), até 5 saques", () => {
     expect(advanceRulesAt("2026-10-31")?.maxSaques).toBe(5);
+    expect(advanceRulesAt("2026-11-01")?.maxSaques).toBe(5);
+    expect(advanceRulesAt("2027-03-31")?.maxSaques).toBe(5);
     expect(advanceRulesAt("2026-09-23")?.maxSaques).toBe(5);
   });
 
-  it("teste 99 — a partir de 01/11/2026, até 3 saques", () => {
-    expect(advanceRulesAt("2026-11-01")?.maxSaques).toBe(3);
+  it("teste 99 — a partir de 01/04/2027, até 3 saques", () => {
+    expect(advanceRulesAt("2027-04-01")?.maxSaques).toBe(3);
     expect(advanceRulesAt("2030-01-01")?.maxSaques).toBe(3);
-    expect(nextAdvanceChange("2026-09-23")).toEqual({ from: "2026-11-01", maxSaques: 3 });
-    expect(nextAdvanceChange("2026-11-01")).toBeNull();
+    expect(nextAdvanceChange("2026-09-23")).toEqual({ from: "2027-04-01", maxSaques: 3 });
+    expect(nextAdvanceChange("2027-04-01")).toBeNull();
   });
 
   it("antes de 01/11/2025 o simulador não tem regra modelada", () => {
@@ -101,13 +103,13 @@ describe("limites da antecipação", () => {
     expect(o.kind).toBe("invalid");
   });
 
-  it("a interface acompanha a data: 4 saques é recusado em 01/11/2026 e aceito em 31/10/2026", () => {
+  it("a interface acompanha a data: 4 saques é recusado em 01/04/2027 e aceito em 31/03/2027", () => {
     const at = (simDate: string) => simulateAdvance({ balanceCents: 10_000_00, birthMonth: 3, rate: 2, rateUnit: "am", count: 4, simDate });
-    expect(at("2026-10-31").kind).toBe("ok");
-    const after = at("2026-11-01");
+    expect(at("2027-03-31").kind).toBe("ok");
+    const after = at("2027-04-01");
     expect(after.kind).toBe("invalid");
     if (after.kind === "invalid") expect(after.errors[0]!.field).toBe("count");
-    const ok = simulateAdvance({ balanceCents: 10_000_00, birthMonth: 3, rate: 2, rateUnit: "am", count: 3, simDate: "2026-11-01" });
+    const ok = simulateAdvance({ balanceCents: 10_000_00, birthMonth: 3, rate: 2, rateUnit: "am", count: 3, simDate: "2027-04-01" });
     if (ok.kind !== "ok") throw new Error();
     expect(ok.result.byCount.map((c) => c.count)).toEqual([1, 2, 3]);
   });

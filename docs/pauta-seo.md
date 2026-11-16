@@ -1,5 +1,7 @@
 # Pauta SEO priorizada — análise de 06/08/2026
 
+> **Histórico.** Desde 16/11/2026 a lista viva de sugestões é `docs/seo/pauta.md`, e as regras de uso estão em `AGENTS.md`. Este arquivo guarda as ondas de agosto e setembro de 2026.
+
 Baseada em varredura real da SERP brasileira (queries e achados em
 `docs/analise-concorrentes.md`). Critérios de priorização para um site novo:
 
