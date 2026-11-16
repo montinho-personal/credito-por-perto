@@ -30,7 +30,11 @@
     "FAQ"
   ],
   "uniqueExamples": [],
-  "proposedVisuals": ["Tabela da escada", "WarningBox", "ChecklistBox"],
+  "proposedVisuals": [
+    "Tabela da escada",
+    "WarningBox",
+    "ChecklistBox"
+  ],
   "pagesThatMayCompete": [
     "/organizacao-financeira/quando-vale-a-pena-fazer-emprestimo/",
     "/credito-seguro/emprestimo-sem-consulta/"
@@ -39,5 +43,6 @@
     "Roteiro completo de decisão (link)",
     "Detalhe de cada modalidade (links)"
   ],
-  "publicationDecision": "create"
+  "publicationDecision": "create",
+  "notes": "Próxima revisão (SerpApi 16/11/2026, busca \"empréstimo para aposentado\"): PAA \"Como conseguir R$ 500 urgentemente?\" apareceu no público aposentado; avaliar FAQ."
 }

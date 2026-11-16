@@ -32,12 +32,22 @@
     "Checklist",
     "FAQ"
   ],
-  "uniqueExamples": ["Pergunta-teste ao vendedor: 'é portabilidade ou refinanciamento?'"],
-  "proposedVisuals": ["Tabela de públicos", "WhatCanChange", "SafetyAlert", "ChecklistBox"],
-  "pagesThatMayCompete": ["/emprestimos/emprestimo-pessoal/"],
+  "uniqueExamples": [
+    "Pergunta-teste ao vendedor: 'é portabilidade ou refinanciamento?'"
+  ],
+  "proposedVisuals": [
+    "Tabela de públicos",
+    "WhatCanChange",
+    "SafetyAlert",
+    "ChecklistBox"
+  ],
+  "pagesThatMayCompete": [
+    "/emprestimos/emprestimo-pessoal/"
+  ],
   "informationThatMustNotBeRepeated": [
     "Explicação geral de CET",
     "Golpes genéricos de empréstimo (ficam no guia de golpes)"
   ],
-  "publicationDecision": "create"
+  "publicationDecision": "create",
+  "notes": "Próxima revisão (SerpApi 16/11/2026, busca \"juros consignado inss\"): PAA \"O que o STF decidiu sobre os consignados?\" — só entra com a decisão localizada no portal do STF."
 }

@@ -57,5 +57,6 @@
     "Não publicar percentuais de margem sem a ressalva de que já mudaram e podem mudar de novo",
     "Não recomendar nem desaconselhar a contratação: o portal explica e o leitor decide",
     "Não afirmar prazos de desbloqueio nem exigências de autenticação como imutáveis — o Meu INSS altera o fluxo periodicamente"
-  ]
+  ],
+  "notes": "Próxima revisão (SerpApi 16/11/2026, busca \"juros consignado inss\"): PAA \"Quem recebe BPC pode fazer empréstimo de R$ 20 mil?\" — responder pela margem de 35% sobre um salário mínimo, sem prometer valor."
 }

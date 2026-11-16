@@ -186,3 +186,18 @@ Cada tema segue o fluxo padrão: intenção no query-ownership-map → briefing 
 fontes primárias (BC, Planalto, gov.br, Caixa) → redação com arquétipo
 próprio → auditorias → revisão. Temas 1, 3, 4 e 18 tocam regras que mudam:
 registrar `sourceCheckedAt` e revisitar no ciclo trimestral.
+
+## Sobras de busca — revisão de "empréstimo para aposentado do INSS" (16/11/2026)
+
+Buscas pelo SerpApi (celular, São Paulo) que ficaram de fora da revisão:
+
+| Grupo | Busca | Motivo / destino |
+| --- | --- | --- |
+| Vale um artigo | "empréstimo consignado aposentado inss morte segurado" (autocompletar) | O site não cobre o que acontece com o consignado quando o aposentado morre; `divida-de-pessoa-falecida` não trata de consignado. Só com fonte oficial (lei, INSS ou STJ) |
+| Cabe em página existente | "Quem recebe BPC pode fazer empréstimo de R$ 20 mil?" (PAA) | Nota no briefing de `consignado-para-quem-recebe-bpc` |
+| Cabe em página existente | "Como conseguir R$ 500 urgentemente?" (PAA) | Nota no briefing de `dinheiro-urgente` |
+| Cabe em página existente | "O que o STF decidiu sobre os consignados?" (PAA) | Nota no briefing de `emprestimo-consignado`; só com a decisão localizada no STF |
+| Não recomendo | Bancos nomeados no autocompletar (Bradesco, Caixa, BB, Itaú, Nubank, Agibank, Mercantil, Santander, Sicoob) | Nome de marca; o portal não compara instituições |
+| Não recomendo | Taxas por banco e "carência" (visão de IA) | Taxas mudam e apontam marca; carência sem fonte oficial |
+| Não recomendo | "Quanto fica um empréstimo de 30 mil para aposentados?" (PAA) | Valor específico; o exemplo de parcela e a calculadora cobrem |
+| Não recomendo | "O que e consignado carro" (outras pesquisas) | Intenção ambígua, fora do tema da página |
