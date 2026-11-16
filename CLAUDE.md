@@ -130,7 +130,7 @@ repetir busca já feita no mesmo dia.
 rotina diária do Direito de Verdade (2 revisões, 2 buscas cada) cerca de 300; rotinas
 do Personal por Perto (artigos e cidades, 2 + 2 por dia) cerca de 360; rotina do Site do
 Montinho cerca de 120 a 150; rotina do Crédito por Perto (1 revisão por dia) cerca de 60
-a 90; rotinas mensais cerca de 30. Total: 870 a 930, com pouca sobra para pedidos
+a 90; rotinas mensais (com o alerta do Crédito) cerca de 35. Total: 875 a 935, com pouca sobra para pedidos
 avulsos. Rotina nova, ou maior, só depois de refazer esta conta com o Renato; passou de
 850 no mês, só pesquisar o que ele pedir.
 
