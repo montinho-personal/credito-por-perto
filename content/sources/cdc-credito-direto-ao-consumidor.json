@@ -1,0 +1,41 @@
+{
+  "articleSlug": "cdc-credito-direto-ao-consumidor",
+  "claims": [
+    {
+      "claimId": "susep-cdc-leasing-consorcio",
+      "claimText": "Financiamento de carro: modalidade mais utilizada costuma ser o CDC, empréstimo com o próprio automóvel como garantia, com IOF e juros; é possível vender o bem sem estar quitado. Leasing: locação com direito de compra; bem da instituição até o fim, opção de compra pagando o VRG; juros geralmente mais baixos que no financiamento. Consórcio: poupança coletiva com sorteios e lances, sem juros, com taxa de administração, fundo de reserva e seguro.",
+      "sourceOrganization": "Susep",
+      "sourceTitle": "Compra do carro — Meu Futuro Seguro",
+      "sourceLocation": "https://www.gov.br/susep/pt-br/assuntos/meu-futuro-seguro/etapas-da-vida/compra-do-carro",
+      "sourceType": "official",
+      "accessedAt": "2026-11-17"
+    },
+    {
+      "claimId": "bc-glossario",
+      "claimText": "Aquisição de veículos (PF): empréstimos para compra de veículos automotores com o bem alienado fiduciariamente como garantia; aquisição de outros bens (PF): financiamentos vinculados à aquisição de bens e serviços, exceto veículos; arrendamento mercantil: uso do bem com opção de compra ao final.",
+      "sourceOrganization": "Banco Central do Brasil",
+      "sourceTitle": "Glossário — Estatísticas monetárias e de crédito",
+      "sourceLocation": "https://www.bcb.gov.br/content/estatisticas/Documents/Estatisticas_mensais/Monetaria_credito/glossariocredito.pdf",
+      "sourceType": "official",
+      "accessedAt": "2026-11-17"
+    },
+    {
+      "claimId": "cdc-art52",
+      "claimText": "Art. 52 do Código de Defesa do Consumidor: informação prévia de preço, juros de mora e taxa efetiva anual, acréscimos legais, número e periodicidade das prestações e soma total com e sem financiamento; § 2º: liquidação antecipada total ou parcial com redução proporcional dos juros e acréscimos.",
+      "sourceOrganization": "Planalto — Código de Defesa do Consumidor",
+      "sourceTitle": "Lei nº 8.078/1990, art. 52",
+      "sourceLocation": "https://www.planalto.gov.br/ccivil_03/leis/l8078compilado.htm",
+      "sourceType": "official",
+      "accessedAt": "2026-11-17"
+    },
+    {
+      "claimId": "stj-297",
+      "claimText": "Súmula 297: O Código de Defesa do Consumidor é aplicável às instituições financeiras.",
+      "sourceOrganization": "Superior Tribunal de Justiça",
+      "sourceTitle": "Súmula 297",
+      "sourceLocation": "https://arquivocidadao.stj.jus.br/index.php/sumula-297",
+      "sourceType": "official",
+      "accessedAt": "2026-11-17"
+    }
+  ]
+}

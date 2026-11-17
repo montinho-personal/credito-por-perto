@@ -993,5 +993,17 @@
     "supportingPages": [
       "/organizacao-financeira/como-limpar-o-nome/"
     ]
+  },
+  "portal do consignado sp servidor estadual": {
+    "canonicalOwner": "/emprestimos/consignado-servidor-estadual-sp/",
+    "supportingPages": [
+      "/emprestimos/consignado-servidor-publico/"
+    ]
+  },
+  "cdc financiamento o que é crédito direto ao consumidor": {
+    "canonicalOwner": "/emprestimos/cdc-credito-direto-ao-consumidor/",
+    "supportingPages": [
+      "/emprestimos/financiamento-de-veiculo/"
+    ]
   }
 }

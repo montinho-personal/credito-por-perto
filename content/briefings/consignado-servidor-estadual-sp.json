@@ -1,0 +1,277 @@
+{
+  "targetReader": "Servidor, aposentado ou pensionista do Estado de SP",
+  "readerSituation": "Pesquisa SerpApi de 17/11/2026 (celular, São Paulo); pedido do Renato (pauta, item 1).",
+  "originalContribution": [],
+  "supportingSources": [
+    "Procon"
+  ],
+  "contentArchetype": "guide",
+  "proposedStructure": [],
+  "uniqueExamples": [],
+  "proposedVisuals": [
+    "QuickSummary",
+    "Tabela",
+    "ToolCallout"
+  ],
+  "publicationDecision": "create",
+  "proposedTitle": "Consignado do servidor do Estado de São Paulo: Portal do Consignado, margem e SOU.SP",
+  "primaryIntent": "portal do consignado sp servidor estadual",
+  "secondaryIntents": [
+    "portal do consignado sp consultar margem",
+    "consignado spprev",
+    "margem consignado servidor público estadual sp",
+    "aprovar consignado sou.sp"
+  ],
+  "centralQuestion": "Onde consultar a margem e como contratar o consignado do servidor estadual de SP?",
+  "uniqueAngle": "Portal do Consignado (SCC) × SOU.SP com as regras do decreto estadual, exemplo oficial de cálculo",
+  "primarySources": [
+    "Folha de Pagamento SP",
+    "Decreto 60.435/2014 e alterações",
+    "SOU.SP",
+    "SPPrev"
+  ],
+  "pagesThatMayCompete": [
+    "/emprestimos/consignado-servidor-publico/"
+  ],
+  "informationThatMustNotBeRepeated": [
+    "Regras federais (link)"
+  ],
+  "serpEvidence": [
+    {
+      "busca": "portal do consignado sp",
+      "data": "2026-11-17",
+      "aparelho": "mobile",
+      "local": "Sao Paulo,State of Sao Paulo,Brazil",
+      "autocompletar": [
+        "portal do consignado sp login",
+        "portal do consignado spprev",
+        "portal do consignado sp gov br",
+        "portal do consignado sp consultar margem",
+        "portal do consignado spprev consulta margem",
+        "portal do consignado spprev login",
+        "portal do consignado sp telefone",
+        "portal do consignado sp recuperar senha",
+        "portal do consignado spprev telefone",
+        "portal do consignado spprev primeiro acesso",
+        "portal do consignado spprev margem",
+        "portal do consignado sp contato",
+        "portal do consignado spprev gov br",
+        "portal do consignado sp org br",
+        "portal do consignado sp entrar"
+      ],
+      "pessoasTambemPerguntam": [
+        "Como acessar o portal do consignado SP?",
+        "Como consultar margem consignado servidor público estadual SP?",
+        "Qual será a nova margem para empréstimo consignado em 2026?",
+        "Como resetar o cadastro do portal do consignado?"
+      ],
+      "outrasPesquisas": [
+        "Portal do consignado sp consultar margem",
+        "Portal do consignado sp login",
+        "Portal do consignado spprev",
+        "Scc consignado",
+        "Consultar margem consignado servidor público estadual",
+        "Portal do consignado sp telefone",
+        "Senha portal do consignado sp",
+        "Como recuperar a senha do portal do consignado",
+        "Não consigo acessar o portal do consignado sp",
+        "Meu consignado",
+        "Cef consignado",
+        "Empréstimo consignado gov"
+      ],
+      "visaoDeIA": {
+        "texto": [],
+        "fontes": [],
+        "nota": "visão de IA não retornada (erro do Google)"
+      },
+      "organicos": [
+        {
+          "posicao": 1,
+          "titulo": "Serviço de Controle Consignação",
+          "link": "https://www.saopauloconsig.org.br/naoAutorizado"
+        },
+        {
+          "posicao": 2,
+          "titulo": "Consignação",
+          "link": "https://nova.folhadepagamento.sp.gov.br/folha/nova_folha/consig_inf.asp"
+        },
+        {
+          "posicao": 3,
+          "titulo": "Consignatárias - Informações",
+          "link": "https://portal.fazenda.sp.gov.br/servicos/folha/Paginas/Consignatarias_Informacoes.aspx"
+        },
+        {
+          "posicao": 4,
+          "titulo": "Como fazer o primeiro acesso ao Portal do Consignado? | Tribunal de Contas do Estado ...",
+          "link": "https://www.tce.sp.gov.br/faq/como-fazer-primeiro-acesso-ao-portal-consignado"
+        },
+        {
+          "posicao": 5,
+          "titulo": "CONSIGNAÇÃO - CLIC",
+          "link": "https://clic.prefeitura.sp.gov.br/consignacao"
+        },
+        {
+          "posicao": 6,
+          "titulo": "Serviço de Controle de Consignação",
+          "link": "https://www.portaldoconsignado.com.br/servidor/ativar"
+        },
+        {
+          "posicao": 7,
+          "titulo": "consignacao",
+          "link": "https://www.sou.sp.gov.br/sou.sp/consignacao"
+        },
+        {
+          "posicao": 8,
+          "titulo": "Consignações",
+          "link": "https://www.spprev.sp.gov.br/spprev/parceiros/consignatarias/consigna%C3%A7%C3%B5es%20para%20consignatarias"
+        },
+        {
+          "posicao": 9,
+          "titulo": "passo 1 - identificando servidor",
+          "link": "https://www.portaldoconsignado.com.br/wicket/bookmarkable/br.org.cip.scc.portal.page.servidor.DesbloqueioSenhaPage"
+        }
+      ],
+      "mapa": []
+    },
+    {
+      "busca": "consignado spprev",
+      "data": "2026-11-17",
+      "aparelho": "mobile",
+      "local": "Sao Paulo,State of Sao Paulo,Brazil",
+      "autocompletar": [
+        "consignado spprev portal",
+        "consignado spprev sp",
+        "spprev consignado margem",
+        "spprev consignado telefone",
+        "extrato consignado spprev",
+        "autorizar consignado spprev",
+        "portal consignado spprev login",
+        "portabilidade consignado spprev",
+        "consulta consignado spprev",
+        "aprovar consignado spprev",
+        "site consignado spprev",
+        "liberar consignado spprev",
+        "cartão consignado spprev",
+        "confirmar consignado spprev",
+        "consignado aposentado spprev"
+      ],
+      "pessoasTambemPerguntam": [
+        "Como fazer consignado aposentado?",
+        "Quanto fica 10.000 financiado em 24 vezes?",
+        "Qual a taxa de juros para consignado servidor público?",
+        "Qual será a nova margem para empréstimo consignado em 2026?"
+      ],
+      "outrasPesquisas": [],
+      "visaoDeIA": {
+        "texto": [
+          "O empréstimo consignado para aposentados e pensionistas vinculados à SPPREV (São Paulo Previdência) e servidores do Governo de São Paulo segue regras digitais de segurança obrigatórias pelo aplicativo ou portal SOU.SP .",
+          "Principais Regras e Margem Consignável",
+          "Margem Consignável: Corresponde a 35% do valor líquido do benefício ou vencimento para empréstimos pessoais, com mais um limite de 5% dedicado a cartão de crédito/benefício consignado (totalizando até 40%–45% conforme o tipo de produto). ; Prazo máximo: Até 96 meses para pagamento, descontado diretamente em folha. ; Limite de contratos: Restrito a até 10 contratos por CPF.",
+          "Como funciona o Passo a Passo Digital no SOU.SP",
+          "Desde janeiro de 2026, para autorizar consultas e contratações, é obrigatório utilizar o SOU.SP _Fnv8aqP5JNe1gLQP_KWjiAY_39 :",
+          "Autorizar Consulta de Margem: ; Aprovar o Contrato: ; Validação Biométrica (Prova de Vida):",
+          "Canais Oficiais de Consulta",
+          "Para acompanhar seus contratos ativos ou margem: Portal SOU.SP",
+          "Para eu te ajudar melhor, você gostaria de saber:",
+          "Como consultar o valor exato da sua margem atual? ; Como evitar golpes ou cobranças de taxas abusivas de correspondentes bancários? ; Quais bancos estão com as melhores taxas credenciadas na SPPREV?"
+        ],
+        "fontes": [
+          {
+            "fonte": "SOU SP",
+            "link": "https://www.sou.sp.gov.br/sou.sp/consignacao"
+          },
+          {
+            "fonte": "Facebook",
+            "link": "https://www.facebook.com/spprev/videos/-mais-seguran%C3%A7a-para-voc%C3%AA-no-controle-das-consigna%C3%A7%C3%B5esa-spprev-adotou-um-novo-mo/1373910200857351/"
+          },
+          {
+            "fonte": "Blog Nubank",
+            "link": "https://blog.nubank.com.br/consignado-publico-do-estado-de-sao-paulo/"
+          },
+          {
+            "fonte": "SOU SP",
+            "link": "https://www.sou.sp.gov.br/sou.sp/tutoriais/servidores-ativos/autorizacao-a-consulta-e-margem-historico-de-margem-e-dados-funcionais-pelas-consignatarias"
+          },
+          {
+            "fonte": "SPPREV",
+            "link": "https://www.spprev.sp.gov.br/spprev/not%C3%ADcias/consignacoesspprev"
+          },
+          {
+            "fonte": "Instagram",
+            "link": "https://www.instagram.com/reel/DVv8rPFDmGB/"
+          },
+          {
+            "fonte": "SPPREV",
+            "link": "https://www.spprev.sp.gov.br/spprev/parceiros/consignatarias/consigna%C3%A7%C3%B5es%20para%20consignatarias"
+          },
+          {
+            "fonte": "SPPREV",
+            "link": "https://www.spprev.sp.gov.br/spprev/not%C3%ADcias/!ut/p/z1/jVFLc4IwEP4tPXCkSQEjHhFoi4MWFYrkkgkhPKwG5KGjv76g0yNOd_awO_u9ZhZgsANY0HOR0bYoBT30e4QRgTrSFPUDqjNPn0OEnPcF0tdwvVVA-ACMlAEB_hd_HICfy4cAP7NwdPgHGNeI-gzT0QyGBraDRhqzQ5GAyLngXQ7jbJXjEJpL3zaMDVpcys71r9rGOimeuJlWWQrP3VeGV-ld0HHf0Rn8iVySFrGoT7Z1u5o2ypNptSaUH4nlXj6deZBFQfUllG6Z4nqfZoOtaMjTcCQ0l8SjGX-dJVRFKocyVSearDGYyLM4QXLCdM7Qm8IQjUE0VQdV0-8_K8Gmqmp-JqwULRetBLeet7G_Jbgq24IVtJGgeEykaUkhkoLRhA78htOa5eTU8foKorSsj93hfrincUD0BqpjsIP7SXVeTfrOXn4BxZSj2Q!!/p0/IZ7_086423G039P8B066IFJ68Q0QA4=CZ6_086423G039P8B066IFJ68Q0QS2=MEsearch_query!formula=CTX!QCPspprev_contentQCPSPPREVQCPNoticiasQCPnoticia_st_indicada=ns_Z7_086423G039P8B066IFJ68QFB0QFBA4_WCM_PreviousPageSize.9da363e0-a354-4c0d-9bd6-dc8ec612c6ab!4=fbclid!IwZXh0bgNhZW0CMTEAAR6JwouLTy4RDq2PnzCDoonPLjpAPp8uUueTI8c0kYL_fibnrqEDzyCE6hd7pQFB_aem_DLwHIBUgYUpOn2uMfZrjfg=WCM_PI!1=ns_Z7_086423G039P8B066IFJ68QFB0QFBA4_WCM_Page.9da363e0-a354-4c0d-9bd6-dc8ec612c6ab!74==/"
+          }
+        ]
+      },
+      "organicos": [
+        {
+          "posicao": 1,
+          "titulo": "Empréstimos para Servidores do GOV. SP | PDF",
+          "link": "https://pt.scribd.com/document/689815568/RO-GOV-SPSEFAZ-Correspondente"
+        },
+        {
+          "posicao": 2,
+          "titulo": "GOV SP E SPPREV – Joao Mariano",
+          "link": "https://joaomariano.cnd01.com.br/gov-sp-e-spprev/"
+        },
+        {
+          "posicao": 3,
+          "titulo": "Empréstimo Consignado Servidores Públicos: Tudo Sobre o consigando! - Empréstimos",
+          "link": "https://www.banco.cash/aprender/emprestimos/emprestimo-consignado-servidores-publicos-tudo-o-consigando/"
+        },
+        {
+          "posicao": 4,
+          "titulo": "Empréstimo Consignado - Público e Privado - Empréstimos",
+          "link": "https://www.bandesp.com.br/voce/emprestimos/emprestimo-consignado-publico-e-privado/Paginas/default.aspx"
+        },
+        {
+          "posicao": 5,
+          "titulo": "DATAPREV and the NEW PRIVATE CONSIGNMENT LOAN: Understand Registration and Payment.",
+          "link": "https://www.youtube.com/watch?v=d387cN0hKGw"
+        },
+        {
+          "posicao": 6,
+          "titulo": "GOVERNO DE SÃO PAULO Atenção, servidores contratados e temporários do ...",
+          "link": "https://www.facebook.com/100078825961578/videos/governo-de-s%C3%A3o-paulo-aten%C3%A7%C3%A3o-servidores-contratados-e-tempor%C3%A1rios-do-governo-de-/2621889368246973/"
+        },
+        {
+          "posicao": 7,
+          "titulo": "Empréstimo Consignado GOV SP - VidaCredi",
+          "link": "https://vidacredi.com.br/gov-sp/"
+        },
+        {
+          "posicao": 8,
+          "titulo": "Notícias",
+          "link": "https://www.spprev.sp.gov.br/spprev/not%C3%ADcias/!ut/p/z1/jVFLc4IwEP4tPXCkSQEjHhFoi4MWFYrkkgkhPKwG5KGjv76g0yNOd_awO_u9ZhZgsANY0HOR0bYoBT30e4QRgTrSFPUDqjNPn0OEnPcF0tdwvVVA-ACMlAEB_hd_HICfy4cAP7NwdPgHGNeI-gzT0QyGBraDRhqzQ5GAyLngXQ7jbJXjEJpL3zaMDVpcys71r9rGOimeuJlWWQrP3VeGV-ld0HHf0Rn8iVySFrGoT7Z1u5o2ypNptSaUH4nlXj6deZBFQfUllG6Z4nqfZoOtaMjTcCQ0l8SjGX-dJVRFKocyVSearDGYyLM4QXLCdM7Qm8IQjUE0VQdV0-8_K8Gmqmp-JqwULRetBLeet7G_Jbgq24IVtJGgeEykaUkhkoLRhA78htOa5eTU8foKorSsj93hfrincUD0BqpjsIP7SXVeTfrOXn4BxZSj2Q!!/p0/IZ7_086423G039P8B066IFJ68Q0QA4=CZ6_086423G039P8B066IFJ68Q0QS2=MEsearch_query!formula=CTX!QCPspprev_contentQCPSPPREVQCPNoticiasQCPnoticia_st_indicada=ns_Z7_086423G039P8B066IFJ68QFB0QFBA4_WCM_PreviousPageSize.9da363e0-a354-4c0d-9bd6-dc8ec612c6ab!4=fbclid!IwZXh0bgNhZW0CMTEAAR6JwouLTy4RDq2PnzCDoonPLjpAPp8uUueTI8c0kYL_fibnrqEDzyCE6hd7pQFB_aem_DLwHIBUgYUpOn2uMfZrjfg=WCM_PI!1=ns_Z7_086423G039P8B066IFJ68QFB0QFBA4_WCM_Page.9da363e0-a354-4c0d-9bd6-dc8ec612c6ab!74==/"
+        }
+      ],
+      "mapa": []
+    }
+  ],
+  "serpNotes": {
+    "formato": "Busca de navegação: os primeiros resultados são o próprio portal (SCC) e páginas oficiais do Estado; sem calculadora nem vídeo no topo; sem mapa. A página entra como guia que explica qual site faz o quê.",
+    "visaoDeIA": "Busca 1: não retornada. Busca 2: lista com margem (35% + 5%, diz 40%–45%), 96 meses, 'até 10 contratos', passo a passo no SOU.SP desde janeiro de 2026; cita SOU.SP, SPPrev, Blog Nubank, Facebook e Instagram.",
+    "concorrentes": "Portal SCC e páginas oficiais (Fazenda, folha, SOU.SP, SPPrev, TCE) na busca 1; na busca 2, Scribd, correspondentes, Facebook e YouTube (fracos)."
+  },
+  "serpImpact": [
+    {
+      "dado": "Autocompletar: login, consultar margem, senha, primeiro acesso, telefone",
+      "efeito": "Seção do portal e FAQ de acesso; telefone ficou de fora (sem fonte oficial lida)."
+    },
+    {
+      "dado": "Visão de IA: 35% + 5%, 96 meses, SOU.SP",
+      "efeito": "Confirmados no decreto e no SOU.SP; 'até 10 contratos' ficou de fora (não está nas fontes lidas)."
+    },
+    {
+      "dado": "PAA: nova margem 2026",
+      "efeito": "FAQ: SP segue 35% + 5%; mudança noticiada era da MP federal."
+    }
+  ]
+}

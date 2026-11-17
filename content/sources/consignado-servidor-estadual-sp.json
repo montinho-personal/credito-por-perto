@@ -1,0 +1,68 @@
+{
+  "articleSlug": "consignado-servidor-estadual-sp",
+  "claims": [
+    {
+      "claimId": "scc-portal",
+      "claimText": "O Portal do Consignado (SCC, www.saopauloconsig.org.br) permite ao servidor consultar consignações contratadas, endereços das consignatárias, a taxa do CET praticada pelos bancos e consultar e imprimir a margem disponível; a folha recomenda consultar a margem antes de ir à consignatária. Cancelamento de desconto (servidores das Secretarias e beneficiários pagos pela Fazenda): requerimento em duas vias dirigido à entidade, com protocolo ou AR.",
+      "sourceOrganization": "Secretaria da Fazenda e Planejamento de SP — Folha de Pagamento",
+      "sourceTitle": "Consignação (informações ao servidor)",
+      "sourceLocation": "https://nova.folhadepagamento.sp.gov.br/folha/nova_folha/consig_inf.asp",
+      "sourceType": "official",
+      "accessedAt": "2026-11-17"
+    },
+    {
+      "claimId": "margem-35-5",
+      "claimText": "Margem consignável de 35% (Decreto 61.750/2015, art. 3º), majorável em até 5% para amortização de despesas ou saque por cartão de crédito (redação do Decreto 61.948/2016); base: vencimentos líquidos (bruto sem atrasados, eventuais, indenizações, auxílios, bonificações, férias e 13º, menos descontos obrigatórios); exemplo oficial: (10.010,08 − 2.875,69) × 35% = 2.497,04; empregados públicos celetistas seguem a Lei 10.820/2003.",
+      "sourceOrganization": "Secretaria da Fazenda e Planejamento de SP — Folha de Pagamento",
+      "sourceTitle": "Consignação — margem consignável",
+      "sourceLocation": "https://nova.folhadepagamento.sp.gov.br/folha/nova_folha/consig_inf.asp",
+      "sourceType": "official",
+      "accessedAt": "2026-11-17"
+    },
+    {
+      "claimId": "decreto-60435",
+      "claimText": "Decreto 60.435/2014: consignado = servidor civil e militar, ativo, inativo ou reformado e pensionista da administração direta e autárquica; descontos obrigatórios incluem IAMSPE, contribuição previdenciária e IR (art. 3º); empréstimos exigem informação prévia de valor financiado, CET mensal e anual, valor/número/periodicidade das prestações, total a pagar e saldo devedor (art. 9º); máximo de 96 parcelas (art. 9º, § 1º); vedadas TAC, outras taxas administrativas e encargos na liquidação antecipada (§ 2º); portabilidade permitida (§ 3º); bancos devem informar o CET, disponível em ambiente eletrônico (art. 10).",
+      "sourceOrganization": "Governo do Estado de São Paulo",
+      "sourceTitle": "Decreto nº 60.435/2014 (texto com alterações)",
+      "sourceLocation": "https://nova.folhadepagamento.sp.gov.br/folha/nova_folha/legislacao/decreto_60435_2014.asp",
+      "sourceType": "official",
+      "accessedAt": "2026-11-17"
+    },
+    {
+      "claimId": "decreto-69418",
+      "claimText": "Decreto 69.418/2025: descontos só com autorização expressa por escrito ou por meio eletrônico com senha pessoal; competências transferidas à Secretaria de Gestão e Governo Digital a partir de 01/05/2025.",
+      "sourceOrganization": "Assembleia Legislativa de SP",
+      "sourceTitle": "Decreto nº 69.418/2025",
+      "sourceLocation": "https://www.al.sp.gov.br/repositorio/legislacao/decreto/2025/decreto-69418-12.03.2025.html",
+      "sourceType": "official",
+      "accessedAt": "2026-11-17"
+    },
+    {
+      "claimId": "sousp-2026",
+      "claimText": "Desde 05/01/2026 o SOU.SP oferece: aprovar consignação (com Prova de Vida no app gov.br até as 23h do mesmo dia), autorizar a consulta da margem, histórico e dados funcionais pela consignatária, e consultar contratos; público: servidores civis ativos, inativos, reformados e pensionistas da administração direta e autárquica do Executivo.",
+      "sourceOrganization": "Governo do Estado de São Paulo — SOU.SP",
+      "sourceTitle": "Consignação no SOU.SP",
+      "sourceLocation": "https://www.sou.sp.gov.br/sou.sp/consignacao",
+      "sourceType": "official",
+      "accessedAt": "2026-11-17"
+    },
+    {
+      "claimId": "sousp-tutorial",
+      "claimText": "Tutorial: sem Prova de Vida até as 23h do mesmo dia, o contrato é cancelado; orientações de iluminação e posição; sem prova pendente ou biometria não reconhecida, atualizar a biometria no gov.br.",
+      "sourceOrganization": "Governo do Estado de São Paulo — SOU.SP",
+      "sourceTitle": "Tutorial: Aprovar Consignação",
+      "sourceLocation": "https://www.sou.sp.gov.br/sou.sp/tutoriais/servidores-ativos/aprovar-consignacao",
+      "sourceType": "official",
+      "accessedAt": "2026-11-17"
+    },
+    {
+      "claimId": "spprev-scc",
+      "claimText": "As consignatárias processam as consignações de inativos e pensionistas pelo SCC: consulta de margem com autorização, averbação, desaverbação, refinanciamento, registro do CET e bloqueios judiciais.",
+      "sourceOrganization": "SPPrev",
+      "sourceTitle": "Consignações para consignatárias",
+      "sourceLocation": "https://www.spprev.sp.gov.br/spprev/parceiros/consignatarias/consigna%C3%A7%C3%B5es%20para%20consignatarias",
+      "sourceType": "official",
+      "accessedAt": "2026-11-17"
+    }
+  ]
+}

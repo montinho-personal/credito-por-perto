@@ -1,0 +1,310 @@
+{
+  "targetReader": "Quem vai financiar carro ou bem e encontra a sigla no contrato",
+  "readerSituation": "Pesquisa SerpApi de 17/11/2026 (celular, São Paulo); pedido do Renato (pauta, item 2).",
+  "originalContribution": [],
+  "supportingSources": [
+    "Procon"
+  ],
+  "contentArchetype": "guide",
+  "proposedStructure": [],
+  "uniqueExamples": [],
+  "proposedVisuals": [
+    "QuickSummary",
+    "Tabela",
+    "ToolCallout"
+  ],
+  "publicationDecision": "create",
+  "proposedTitle": "CDC, crédito direto ao consumidor: o que é, como funciona no financiamento e o que conferir",
+  "primaryIntent": "cdc financiamento o que é crédito direto ao consumidor",
+  "secondaryIntents": [
+    "financiamento cdc ou leasing",
+    "cdc financiamento de veículos",
+    "antecipar parcelas financiamento cdc",
+    "o cdc se aplica às instituições financeiras"
+  ],
+  "centralQuestion": "O que é CDC e o que conferir antes de assinar?",
+  "uniqueAngle": "Definições oficiais (Susep, BC) e o que o Código de Defesa do Consumidor garante; as duas siglas CDC",
+  "primarySources": [
+    "Susep",
+    "Banco Central",
+    "Código de Defesa do Consumidor",
+    "STJ"
+  ],
+  "pagesThatMayCompete": [
+    "/emprestimos/financiamento-de-veiculo/",
+    "/emprestimos/diferenca-entre-emprestimo-e-financiamento/",
+    "/organizacao-financeira/carne-e-crediario-de-loja/"
+  ],
+  "informationThatMustNotBeRepeated": [
+    "Alienação fiduciária e busca e apreensão (link)",
+    "Crediário de loja (link)"
+  ],
+  "serpEvidence": [
+    {
+      "busca": "cdc financiamento",
+      "data": "2026-11-17",
+      "aparelho": "mobile",
+      "local": "Sao Paulo,State of Sao Paulo,Brazil",
+      "autocompletar": [
+        "cdc financiamento de veículos",
+        "cdc financiamento significado",
+        "cdc financiamento bradesco",
+        "cdc financiamento bb crediario",
+        "cdc financiamento santander",
+        "cdc financiamento imobiliário",
+        "cdc financiamento como funciona",
+        "cdc financiamento bradesco motos",
+        "cdc financiamento bradesco leves",
+        "financiamento cdc pagar as últimas parcelas",
+        "financiamento cdc o que significa",
+        "financiamento cdc amortização",
+        "financiamento cdc ou leasing",
+        "financiamento cdc volkswagen",
+        "financiamento cdc desconto na antecipação das parcelas"
+      ],
+      "pessoasTambemPerguntam": [
+        "Como é o financiamento CDC?",
+        "É possível fazer portabilidade de financiamento de veículo?",
+        "O que diz o art. 35 do CDC?",
+        "O CDC se aplica às instituições financeiras?"
+      ],
+      "outrasPesquisas": [],
+      "visaoDeIA": {
+        "texto": [
+          "O CDC (Crédito Direto ao Consumidor) é uma modalidade de crédito e financiamento concedida por bancos, financeiras ou lojas para a compra parcelada de bens e serviços, como veículos, eletrodomésticos ou móveis.",
+          "Como funciona",
+          "Propriedade do bem: O bem adquirido fica no nome do comprador desde o início (mesmo que alienado/vinculado como garantia da dívida até a quitação). ; Parcelas fixas: As prestações são prefixadas, o que ajuda no planejamento do orçamento. ; Destinação: Pode ser vinculado a uma compra específica (ex: financiar um carro diretamente com a concessionária ou banco) ou liberado como crédito na conta para uso geral (CDC Automático). ; Antecipação: É possível antecipar o pagamento das parcelas de trás para frente a qualquer momento, o que garante o desconto proporcional dos juros.",
+          "Principais Vantagens",
+          "Rapidez e menor burocracia: Costuma ser mais ágil de aprovar do que outras linhas de crédito. ; Controle: Taxas e parcelas fixas desde a assinatura do contrato. ; Quitação antecipada: Direito garantido por lei de reduzir os juros ao pagar antes do prazo.",
+          "Desvantagens e Cuidados",
+          "Incidência de juros e IOF: Diferente do leasing (arrendamento mercantil), o CDC possui cobrança de IOF (Imposto sobre Operações Financeiras) e as taxas de juros podem ser mais altas se não houver boa negociação. ; Risco de endividamento: A facilidade de contratação (especialmente via CDC automático na conta) exige atenção ao Custo Efetivo Total (CET).",
+          "Você está pensando em usar o CDC para qual tipo de compra (como um veículo ou empréstimo pessoal) ou deseja calcular/comparar taxas?"
+        ],
+        "fontes": [
+          {
+            "fonte": "YouTube",
+            "link": "https://www.youtube.com/shorts/CK5cB4ZodaI"
+          },
+          {
+            "fonte": "Grafeno Digital",
+            "link": "https://grafeno.digital/blog/cdc-o-que-e-vantagens-e-como-contratar/"
+          },
+          {
+            "fonte": "Yubb",
+            "link": "https://yubb.com.br/artigos/conceitos/o-que-e-credito-direto-ao-consumidor-cdc"
+          },
+          {
+            "fonte": "Crecerto",
+            "link": "https://crecerto.org.br/glossario/cdc-credito-direto-ao-consumidor/"
+          },
+          {
+            "fonte": "UOL Economia",
+            "link": "https://economia.uol.com.br/noticias/infomoney/2011/02/22/cdc-ou-leasing-qual-e-mais-vantajoso-na-hora-de-comprar-um-carro.htm"
+          },
+          {
+            "fonte": "Santander Brasil",
+            "link": "https://www.santander.com.br/blog/para-voce/credito-direto-ao-consumidor/"
+          },
+          {
+            "fonte": "ContabilizaiBank",
+            "link": "https://blog.contabilizaibank.com/credito-direto-ao-consumidor/"
+          },
+          {
+            "fonte": "Instagram",
+            "link": "https://www.instagram.com/reel/DXZeOQyDFwq/"
+          },
+          {
+            "fonte": "Instagram",
+            "link": "https://www.instagram.com/p/C_tNJgCRZNL/"
+          },
+          {
+            "fonte": "Facebook",
+            "link": "https://www.facebook.com/dinapratesfinancas/videos/oie-gente-voc%C3%AA-sabe-o-que-%C3%A9-um-cdc-cdc-significa-cr%C3%A9dito-direto-ao-consumidor-el/796583035388674/"
+          }
+        ]
+      },
+      "organicos": [
+        {
+          "posicao": 1,
+          "titulo": "CDC: o que é, vantagens e como contratar",
+          "link": "https://grafeno.digital/blog/cdc-o-que-e-vantagens-e-como-contratar/"
+        },
+        {
+          "posicao": 2,
+          "titulo": "CDC (Crédito Direto ao Consumidor)",
+          "link": "https://iure.digital/blog/cdc-credito-direto-ao-consumidor/?srsltid=AYCX9vIHHb-223_uNhpGoxa5FWLbUBykLl380uYd-ZWFQrz8MWZyQ6el"
+        },
+        {
+          "posicao": 3,
+          "titulo": "CDC ou leasing: qual é mais vantajoso na hora de comprar um carro? - 22/02/2011",
+          "link": "https://economia.uol.com.br/noticias/infomoney/2011/02/22/cdc-ou-leasing-qual-e-mais-vantajoso-na-hora-de-comprar-um-carro.amp.htm"
+        },
+        {
+          "posicao": 4,
+          "titulo": "CDC - Crecerto Microcrédito",
+          "link": "https://crecerto.org.br/glossario/cdc-credito-direto-ao-consumidor/"
+        },
+        {
+          "posicao": 5,
+          "titulo": "Tipos de financiamentos de veículos. . Crédito Direto ao Consumidor (CDC). . O CDC é um ...",
+          "link": "https://www.instagram.com/p/CFvBzBlAfDR/"
+        },
+        {
+          "posicao": 6,
+          "titulo": "O que é Crédito Direto ao Consumidor (CDC)? - Artigos",
+          "link": "https://yubb.com.br/artigos/conceitos/o-que-e-credito-direto-ao-consumidor-cdc"
+        },
+        {
+          "posicao": 7,
+          "titulo": "🚘Você sabe como funciona o financiamento CDC ? Esse termo significa, CRÉDITO DIRETO ...",
+          "link": "https://www.instagram.com/p/C_tNJgCRZNL/"
+        }
+      ],
+      "mapa": []
+    },
+    {
+      "busca": "crédito direto ao consumidor",
+      "data": "2026-11-17",
+      "aparelho": "mobile",
+      "local": "Sao Paulo,State of Sao Paulo,Brazil",
+      "autocompletar": [
+        "crédito direto ao consumidor (cdc)",
+        "crédito direto ao consumidor com interveniência",
+        "credito direto ao consumidor como declarar",
+        "credito direto ao consumidor banco do brasil",
+        "credito direto ao consumidor imposto de renda",
+        "crédito direto ao consumidor vantagens e desvantagens",
+        "crédito direto ao consumidor é um tipo de financiamento concedido",
+        "credito direto ao consumidor taxa de juros",
+        "crédito direto ao consumidor conceito",
+        "crédito direto ao consumidor - cdc (14757)",
+        "credito direto ao consumidor banco do brasil imposto de renda",
+        "crédito direto ao consumidor é um financiamento destinado",
+        "crédito direto ao consumidor como funciona",
+        "crédito direto ao consumidor bacen",
+        "credito direto ao consumidor santander"
+      ],
+      "pessoasTambemPerguntam": [
+        "O que significa crédito direto ao Consumidor?",
+        "O CDC é confiável?",
+        "Quanto tempo demora para o empréstimo CDC cair na conta?",
+        "O que é TDC no empréstimo?"
+      ],
+      "outrasPesquisas": [],
+      "visaoDeIA": {
+        "texto": [
+          "O Crédito Direto ao Consumidor (CDC) é uma modalidade de financiamento ou empréstimo oferecida por bancos, financeiras e lojas para a compra de bens (como carros, motos, eletrodomésticos e móveis) ou a contratação de serviços.",
+          "Características principais",
+          "Destinação: Pode ser vinculado a um bem específico (que serve como garantia, frequentemente por alienação fiduciária) ou contratado como crédito pessoal de uso livre (como o CDC Automático). ; Parcelas: Os pagamentos são divididos em parcelas mensais, geralmente prefixadas (com valor fixo conhecido no início) ou pós-fixadas (atreladas a indicadores como CDI ou Selic). ; Garantia: Em muitos casos, o próprio item adquirido fica alienado à instituição financeira até a quitação total da dívida. ; Antecipação: Por lei, o consumidor tem o direito de antecipar o pagamento de parcelas ou quitar o saldo devedor a qualquer momento, recebendo o desconto proporcional dos juros.",
+          "Vantagens e Pontos de Atenção",
+          "Vantagens: Contratação ágil com poucos documentos, parcelas fixas que facilitam o planejamento do orçamento e taxas de juros normalmente menores do que as do cartão de crédito rotativo ou do cheque especial. ; Cuidados: Por envolver juros e exigir análise de crédito, a facilidade de contratação pode levar ao endividamento se não houver planejamento.",
+          "Você pode simular ou verificar condições em instituições como o Santander, o Banrisul ou consultar o Serasa para mais orientações sobre crédito.",
+          "Se você quiser, me diga:",
+          "Qual é o objetivo (comprar um bem específico ou obter dinheiro livre)? ; Qual é o valor aproximado que você precisa?",
+          "Assim posso te ajudar a entender se essa é a melhor opção para o seu caso."
+        ],
+        "fontes": [
+          {
+            "fonte": "Serasa",
+            "link": "https://www.serasa.com.br/credito/blog/credito-direto-consumidor/"
+          },
+          {
+            "fonte": "dimensa.com",
+            "link": "https://dimensa.com/blog/credito-direto-ao-consumidor/"
+          },
+          {
+            "fonte": "Blog da Cresol",
+            "link": "https://blog.cresol.com.br/o-que-e-cdc-credito-direto-ao-cooperado/"
+          },
+          {
+            "fonte": "Santander Brasil",
+            "link": "https://www.santander.com.br/blog/para-voce/credito-direto-ao-consumidor/"
+          },
+          {
+            "fonte": "YouTube",
+            "link": "https://www.youtube.com/watch?v=AzR7OXxxBnY&t=1"
+          },
+          {
+            "fonte": "Instagram",
+            "link": "https://www.instagram.com/reel/Ct1l6KIMWVg/"
+          },
+          {
+            "fonte": "Banrisul",
+            "link": "https://www.banrisul.com.br/bob/site/link/cdc.html"
+          }
+        ]
+      },
+      "organicos": [
+        {
+          "posicao": 1,
+          "titulo": "Crédito pessoal ou crédito direto ao consumidor: qual é a melhor opção?",
+          "link": "https://pt.linkedin.com/pulse/cr%C3%A9dito-pessoal-ou-direto-ao-consumidor-qual-%C3%A9-melhor-andr%C3%A9"
+        },
+        {
+          "posicao": 2,
+          "titulo": "O crédito ao consumidor e o superendividamento",
+          "link": "https://www.jusbrasil.com.br/artigos/o-credito-ao-consumidor-e-o-superendividamento/2044435687"
+        },
+        {
+          "posicao": 3,
+          "titulo": "ARMADILHAS DO CRÉDITO",
+          "link": "https://idec.org.br/materia/armadilhas-do-credito"
+        },
+        {
+          "posicao": 4,
+          "titulo": "Você sabe o que é Crédito Direto ao Consumidor - CDC?",
+          "link": "https://www.linkedin.com/pulse/voc%C3%AA-sabe-o-que-%C3%A9-cr%C3%A9dito-direto-ao-consumidor-cdc-jo%C3%A3o-jorge?trk=public_profile_article_view"
+        },
+        {
+          "posicao": 5,
+          "titulo": "Qual é a principal diferença entre o CDC (Crédito Direto ao Consumidor) e outros tipos de ...",
+          "link": "https://brainly.com.br/tarefa/65000759"
+        },
+        {
+          "posicao": 6,
+          "titulo": "Crédito Direto ao Consumidor: o que é e como funciona",
+          "link": "https://andrebona.com.br/credito-direto-ao-consumidor-o-que-e-e-como-funciona/"
+        },
+        {
+          "posicao": 7,
+          "titulo": "CDC: o que é, vantagens e como contratar",
+          "link": "https://grafeno.digital/blog/cdc-o-que-e-vantagens-e-como-contratar/"
+        },
+        {
+          "posicao": 8,
+          "titulo": "CDC - Crecerto Microcrédito",
+          "link": "https://crecerto.org.br/glossario/cdc-credito-direto-ao-consumidor/"
+        },
+        {
+          "posicao": 9,
+          "titulo": "Oie gente! Você sabe o que é um CDC? CDC significa crédito direto ao consumidor, ele é uma modalidade de empréstimo que geralmente é pré-aprovado! No entanto, tem taxas maiore",
+          "link": "https://www.facebook.com/dinapratesfinancas/videos/oie-gente-voc%C3%AA-sabe-o-que-%C3%A9-um-cdc-cdc-significa-cr%C3%A9dito-direto-ao-consumidor-el/796583035388674/"
+        }
+      ],
+      "mapa": []
+    }
+  ],
+  "serpNotes": {
+    "formato": "Texto: os primeiros resultados são blogs e redes sociais; sem calculadora nem vídeo no topo; sem mapa.",
+    "visaoDeIA": "Lista com definição, como funciona (bem no nome do comprador, parcelas fixas, CDC automático, antecipação com redução de juros), vantagens e cuidados (IOF, CET). Cita Grafeno, Yubb, Crecerto, UOL (2011), Santander, Serasa, Banrisul, Cresol, YouTube e Instagram.",
+    "concorrentes": "Grafeno, Iure, UOL 2011, Crecerto, Instagram, Yubb, LinkedIn, Jusbrasil, Brainly, Facebook: fracos (redes sociais, fórum, página antiga). Busca com prioridade."
+  },
+  "serpImpact": [
+    {
+      "dado": "Autocompletar: veículos, significado, como funciona, ou leasing, imobiliário, pagar as últimas parcelas, desconto na antecipação, amortização",
+      "efeito": "Seções: como funciona, CDC × leasing × consórcio, antecipar parcelas; imobiliário ficou de fora (outra modalidade, com páginas próprias)."
+    },
+    {
+      "dado": "PAA: art. 35 do CDC; o CDC se aplica às instituições financeiras?",
+      "efeito": "Seção 'as duas siglas CDC' e FAQ com a Súmula 297; o art. 35 ficou de fora (outro assunto)."
+    },
+    {
+      "dado": "Visão de IA: CDC automático, prefixado/pós-fixado",
+      "efeito": "Ficaram de fora: sem fonte oficial lida."
+    },
+    {
+      "dado": "Autocompletar: imposto de renda, interveniência, bancos",
+      "efeito": "Ficaram de fora: sem fonte oficial lida ou marca."
+    }
+  ]
+}

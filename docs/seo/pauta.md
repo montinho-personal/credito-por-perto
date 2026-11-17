@@ -8,9 +8,9 @@ Montada em 16/11/2026 a partir de `docs/pauta-seo.md` (ondas 1 a 7, trilha local
 
 | # | Tema | Buscas e volume | Por que vale | Fontes possíveis |
 | --- | --- | --- | --- | --- |
-| 1 | Consignado do servidor do Estado de São Paulo: portal do consignado, margem, SOU.SP e SPPrev | "portal do consignado sp" 5.400; "consignado spprev" 320; "consignado servidor estadual sp" 40; autocompletar: "consultar margem consignado servidor público estadual sp", "margem consignado servidor público estadual sp"; PAA: "Qual é o site do portal do Consignado SP?", "Como liberar Consignado SPPrev?" | O site não tem página do servidor paulista; `consignado-servidor-publico` só cita a autorização no SOU.SP. Região do site | SOU.SP, SPPrev, Portal da Folha de Pagamento SP, norma estadual de consignação |
+| ~~1~~ | ~~Consignado do servidor do Estado de São Paulo: portal do consignado, margem, SOU.SP e SPPrev~~ — publicado em 17/11/2026: `consignado-servidor-estadual-sp` | "portal do consignado sp" 5.400; "consignado spprev" 320; "consignado servidor estadual sp" 40; autocompletar: "consultar margem consignado servidor público estadual sp", "margem consignado servidor público estadual sp"; PAA: "Qual é o site do portal do Consignado SP?", "Como liberar Consignado SPPrev?" | O site não tem página do servidor paulista; `consignado-servidor-publico` só cita a autorização no SOU.SP. Região do site | SOU.SP, SPPrev, Portal da Folha de Pagamento SP, norma estadual de consignação |
 
-| 2 | CDC — crédito direto ao consumidor: o que é, como funciona no financiamento e o que conferir | "cdc financiamento" 720; "credito direto ao consumidor" 260 | Nenhuma página explica a modalidade; ela aparece em contratos de veículo e de loja | Banco Central (modalidades e estatísticas de crédito), CDC |
+| ~~2~~ | ~~CDC — crédito direto ao consumidor: o que é, como funciona no financiamento e o que conferir~~ — publicado em 17/11/2026: `cdc-credito-direto-ao-consumidor` | "cdc financiamento" 720; "credito direto ao consumidor" 260 | Nenhuma página explica a modalidade; ela aparece em contratos de veículo e de loja | Banco Central (modalidades e estatísticas de crédito), CDC |
 | 3 | Como cancelar um empréstimo: arrependimento de 7 dias e o consignado não reconhecido | "como cancelar emprestimo" 140; "cancelar emprestimo" 110 | Hoje só há uma FAQ em `emprestimo-na-hora`; o INSS tem serviço próprio de exclusão de consignado | CDC (art. 49), gov.br/INSS ("Solicitar Exclusão de Empréstimo Consignado") |
 | 4 | Golpe do boleto falso: como conferir antes de pagar e o que fazer depois | "boleto falso" 390; "golpe do boleto" 210 | Cluster de golpes sem página de boleto; só uma menção em `portabilidade-de-credito` | Banco Central, Procon, gov.br (conferir na pesquisa) |
 | 5 | Compre agora, pague depois (BNPL): é crédito? | "compre agora pague depois" 480 | Modalidade sem página; risco de canibalizar `parcelado-sem-juros-vale-a-pena` e `carne-e-crediario-de-loja` (definir a fronteira antes) | Só se houver regra ou orientação oficial do BC; sem fonte, não entra |
@@ -203,3 +203,5 @@ Padrão do site: capa própria gerada por IA na identidade do portal, `public/im
 - `titulo-de-capitalizacao`
 - `usar-fgts-para-comprar-imovel`
 - `valores-a-receber-banco-central`
+- `consignado-servidor-estadual-sp` (publicado em 17/11/2026 sem capa)
+- `cdc-credito-direto-ao-consumidor` (publicado em 17/11/2026 sem capa)
