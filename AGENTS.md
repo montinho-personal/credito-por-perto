@@ -97,6 +97,22 @@ Tarefa agendada nesta sessão, todo dia às **18h17 de Brasília** (o montinhope
 - As propostas de título e descrição que esperam aprovação.
 - Créditos do SerpApi gastos no dia.
 
+## Rotina mensal (dia 16, 14h42 de Brasília)
+
+Tarefa agendada nesta conversa, primeira em 16/12/2026 (pedidos do Renato em 16 e
+17/11/2026):
+
+1. **Alerta de mudança de regra:** até 5 buscas no Google Notícias (Banco Central/CMN,
+   Selic, consignado, Desenrola, cartão), conferência na fonte oficial e registro em
+   `docs/seo/alertas-de-regra.md` com as páginas a revisar.
+2. **Visão de IA:** até 8 buscas principais do site, registradas em
+   `docs/seo/visao-de-ia.md` (se a visão de IA aparece, se cita o site, quem cita, como é a
+   página citada e a posição do site), comparando com o mês anterior.
+3. **Ideias de artigo:** o que essas buscas mostram e o site não cobre vai para
+   `docs/seo/pauta.md`, separado nos três grupos da regra do que fica de fora.
+
+Cota acabou: parar na hora e avisar o Renato.
+
 ## Cota do SerpApi
 
 Uma conta para todos os sites do Renato: **1.000 buscas por mês** no plano pago. A conta
