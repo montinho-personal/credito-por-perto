@@ -99,11 +99,13 @@ Tarefa agendada nesta sessão, todo dia às **18h17 de Brasília** (o montinhope
 
 ## Cota do SerpApi
 
-Uma conta para todos os sites do Renato: **1.000 buscas por mês** no plano pago, desde
-16/11/2026. O orçamento somado de todas as rotinas está no `CLAUDE.md` (875 a 935 por
-mês); a deste site entra com **1 revisão por dia, cerca de 60 a 90 buscas por mês**.
-Passar para 2 por dia não cabe sem refazer essa conta com o Renato. Passou de 850 no mês:
-só pesquisar o que ele pedir. Se a API disser que a cota acabou, parar e avisar.
+Uma conta para todos os sites do Renato: **1.000 buscas por mês** no plano pago. A conta
+de 17/11/2026 no `CLAUDE.md` soma 1.140 a 1.230 com todas as rotinas, **acima da cota**,
+por decisão do Renato ("segue tudo para todos"); a deste site entra com **1 revisão por
+dia, cerca de 60 a 90 buscas por mês**. Quando o SerpApi disser que a cota acabou: parar
+a tarefa na hora, não pesquisar às cegas nem pedir print, e avisar o Renato nesta
+conversa; ele decide se aumenta o plano ou espera a renovação. Rotina nova ou maior
+continua sendo pedido dele.
 
 ## Estratégias do CLAUDE.md em cada revisão
 
