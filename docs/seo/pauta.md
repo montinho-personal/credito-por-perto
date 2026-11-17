@@ -2,13 +2,21 @@
 
 Lista única de sugestões. **Pauta é sugestão: nada é escrito sem o Renato escolher.** Regras de uso e da rotina diária em `AGENTS.md`. Ao publicar ou revisar, risque a linha (`~~...~~`) e anote o slug e a data.
 
-Montada em 16/11/2026 a partir de `docs/pauta-seo.md` (ondas 1 a 7, trilha local e sobras de busca), das notas de briefing e do acervo publicado. Cada item foi conferido contra slugs, títulos e textos do acervo com hífen e acento normalizados. Volumes: Planejador de palavras-chave do Google Ads (média mensal, Brasil, pt), consultado em 16/11/2026 pelo Supermetrics.
+Montada em 16/11/2026 a partir de `docs/pauta-seo.md` (ondas 1 a 7, trilha local e sobras de busca), das notas de briefing e do acervo publicado. Cada item foi conferido contra slugs, títulos e textos do acervo com hífen e acento normalizados. Volumes: Planejador de palavras-chave do Google Ads (média mensal, Brasil, pt), consultado em 16 e 17/11/2026 pelo Supermetrics.
 
 ## 1. Artigos novos (na ordem em que eu faria)
 
 | # | Tema | Buscas e volume | Por que vale | Fontes possíveis |
 | --- | --- | --- | --- | --- |
 | 1 | Consignado do servidor do Estado de São Paulo: portal do consignado, margem, SOU.SP e SPPrev | "portal do consignado sp" 5.400; "consignado spprev" 320; "consignado servidor estadual sp" 40; autocompletar: "consultar margem consignado servidor público estadual sp", "margem consignado servidor público estadual sp"; PAA: "Qual é o site do portal do Consignado SP?", "Como liberar Consignado SPPrev?" | O site não tem página do servidor paulista; `consignado-servidor-publico` só cita a autorização no SOU.SP. Região do site | SOU.SP, SPPrev, Portal da Folha de Pagamento SP, norma estadual de consignação |
+
+| 2 | CDC — crédito direto ao consumidor: o que é, como funciona no financiamento e o que conferir | "cdc financiamento" 720; "credito direto ao consumidor" 260 | Nenhuma página explica a modalidade; ela aparece em contratos de veículo e de loja | Banco Central (modalidades e estatísticas de crédito), CDC |
+| 3 | Como cancelar um empréstimo: arrependimento de 7 dias e o consignado não reconhecido | "como cancelar emprestimo" 140; "cancelar emprestimo" 110 | Hoje só há uma FAQ em `emprestimo-na-hora`; o INSS tem serviço próprio de exclusão de consignado | CDC (art. 49), gov.br/INSS ("Solicitar Exclusão de Empréstimo Consignado") |
+| 4 | Golpe do boleto falso: como conferir antes de pagar e o que fazer depois | "boleto falso" 390; "golpe do boleto" 210 | Cluster de golpes sem página de boleto; só uma menção em `portabilidade-de-credito` | Banco Central, Procon, gov.br (conferir na pesquisa) |
+| 5 | Compre agora, pague depois (BNPL): é crédito? | "compre agora pague depois" 480 | Modalidade sem página; risco de canibalizar `parcelado-sem-juros-vale-a-pena` e `carne-e-crediario-de-loja` (definir a fronteira antes) | Só se houver regra ou orientação oficial do BC; sem fonte, não entra |
+| 6 | Cartão de crédito com limite garantido: como funciona o cartão com investimento como garantia | "cartao com limite garantido" 390; "cartao de credito com limite garantido" 70 | Sem página; conversa com `cartao-de-credito-para-negativado` (fronteira a definir) | Banco Central (Res. BCB 96), contrato da emissora |
+
+**Decisão de arquitetura pendente (não é artigo novo sem o Renato decidir):** "emprestimo com garantia de veiculo" tem 49.500 buscas/mês e "refinanciamento de veiculo" 8.100, mas `emprestimo-com-garantia` já cobre imóvel e veículo juntos. Separar uma página só de veículo pode ganhar essa busca ou canibalizar a atual; é mudança de grande impacto (apresentar antes de executar).
 
 Sem outros temas novos: os itens abertos das ondas 1 a 7 e da trilha local já viraram página (conferido em 16/11/2026: fiador e avalista, dívida de pessoa falecida, penhora, protesto, limite do cartão, portabilidade de salário; guias de Hortolândia, Americana, Jundiaí e Vargem Grande Paulista). A expansão local para outros estados (lote L4) segue em espera, pela regra da trilha local: só depois de SP consolidado.
 
@@ -22,6 +30,7 @@ Sem outros temas novos: os itens abertos das ondas 1 a 7 e da trilha local já v
 | "O que o STF decidiu sobre os consignados?" (só com a decisão localizada no STF) | `emprestimo-consignado` | Revisão do aposentado INSS, 16/11/2026 |
 | CLT: "o que mudou", "número máximo de parcelas", "valor máximo de parcela" | `credito-do-trabalhador` | Revisão do servidor público, 16/11/2026 |
 | "Como posso obter um empréstimo do governo do estado de São Paulo?" | `emprestimo-do-governo` | Revisão do servidor público, 16/11/2026 |
+| Multa e juros por atraso ("multa por atraso de pagamento" 390; "juros por atraso" 90) | `o-que-acontece-ao-atrasar-parcela` | Planejador, 17/11/2026 |
 | Taxas médias do mês (antiga "página viva", item 20 da pauta de agosto; "taxa media de juros emprestimo" 10/mês). Só com rotina mensal de atualização | `como-consultar-taxa-media-do-bc` | `docs/pauta-seo.md`, onda 3 |
 
 ### Atualizações com data marcada
