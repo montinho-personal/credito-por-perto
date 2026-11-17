@@ -9,8 +9,8 @@ tags: ["juros-compostos", "sistema-price", "calculo", "amortizacao"]
 authorId: "equipe-editorial"
 status: "published"
 publishedAt: "2026-08-05"
-updatedAt: "2026-08-27"
-sourceCheckedAt: "2026-08-06"
+updatedAt: "2026-11-17"
+sourceCheckedAt: "2026-11-17"
 featuredImage: "/images/articles/como-calcular-juros-de-emprestimo-capa.webp"
 imageAlt: "Como calcular juros de empréstimo: fórmulas, exemplo e passo a passo — calculadora e o fluxo dados, cálculo e resultado"
 contentType: "guide"
@@ -20,7 +20,9 @@ Este guia serve para uma coisa concreta: ao final dele, você vai conseguir **co
 
 ## O regime dos empréstimos: juros compostos
 
-Empréstimos usam **juros compostos** — o regime padrão das operações de crédito no Brasil, explicado também no [material de cidadania financeira do Banco Central](https://www.bcb.gov.br): a cada mês, os juros incidem sobre o saldo devedor atual, que inclui os juros dos meses anteriores ainda não pagos. Isso tem duas consequências práticas:
+Para calcular os juros de um empréstimo você precisa de três números: **o valor financiado, a taxa mensal e o número de parcelas**. Com eles, a fórmula do sistema Price (abaixo) dá a parcela, e a diferença entre o total pago e o valor emprestado são os juros. A conta vale para empréstimo pessoal, consignado ou bancário: o que muda de uma modalidade para outra é a taxa, não a matemática.
+
+Empréstimos usam **juros compostos** — o regime padrão das operações de crédito no Brasil: a cada mês, os juros incidem sobre o saldo devedor atual, que inclui os juros dos meses anteriores ainda não pagos. Isso tem duas consequências práticas:
 
 - Dobrar o prazo **não** dobra os juros: mais que dobra;
 - Uma taxa mensal "pequena" vira uma taxa anual grande — 3% ao mês equivale a 42,58% ao ano, não a 36%. Entenda essa conversão em [taxa mensal e taxa anual](/juros-e-cet/taxa-mensal-e-taxa-anual/) — ou converta qualquer taxa na hora no [conversor de taxas](/calculadoras/conversor-de-taxas/).
@@ -56,6 +58,14 @@ O mesmo cálculo, resumido num quadro para guardar:
   alt="Exemplo prático de cálculo de parcela pelo sistema Price: empréstimo de R$ 3.000 a 2% ao mês em 10 parcelas resulta em parcela de R$ 333,98; a fórmula é Parcela = PV × i ÷ (1 − (1 + i)⁻ⁿ), em que PV é o valor emprestado, i a taxa mensal e n o número de parcelas — simulação ilustrativa"
   caption="O exemplo completo do artigo em um quadro: R$ 3.000, 2% ao mês, 10 parcelas — parcela de R$ 333,98 (simulação ilustrativa)."
 />
+
+## Descobrir a taxa que está embutida
+
+Muitas ofertas mostram só a parcela. Para descobrir a taxa, use a [Calculadora do Cidadão do Banco Central](https://www3.bcb.gov.br/CALCIDADAO/publico/exibirFormFinanciamentoPrestacoesFixas.do?method=exibirFormFinanciamentoPrestacoesFixas), opção "Financiamento com prestações fixas". Você informa três dos quatro números (número de meses, taxa mensal, valor da prestação e valor financiado) e ela calcula o quarto. A calculadora considera que a primeira prestação não é paga no ato e que o valor financiado não inclui a entrada.
+
+O próprio Banco Central traz o exemplo: um bem de **R$ 750 à vista**, oferecido em **10 parcelas fixas de R$ 86** sem entrada. Informando 10 meses, R$ 86 de prestação e R$ 750 financiados, a calculadora devolve a taxa mensal embutida, de cerca de **2,57% ao mês**. Compare essa taxa com a média do mercado, como explicado em [como consultar a taxa média do Banco Central](/juros-e-cet/como-consultar-taxa-media-do-bc/).
+
+<ToolCallout id="minha-taxa-esta-cara" note="Já sabe a taxa? Compare com a média oficial do Banco Central para a modalidade." />
 
 ## Por que o começo do contrato paga mais juros
 
@@ -97,6 +107,18 @@ Diferenças pequenas (centavos ou poucos reais) costumam vir de arredondamento e
 ### E o sistema SAC, onde entra?
 
 No SAC (Sistema de Amortização Constante), a amortização mensal é fixa e as parcelas começam maiores e diminuem. É mais comum em financiamento imobiliário que em empréstimo pessoal. A lógica dos juros sobre o saldo é a mesma. Para comparar as duas tabelas com os mesmos números, use a [calculadora SAC x Price](/calculadoras/sac-x-price/).
+
+### Quanto fica um empréstimo de R$ 10.000 em 24 vezes?
+
+Depende da taxa. Só de juros, a 2% ao mês, a parcela pela fórmula Price fica em R$ 528,71, e o total pago, em R$ 12.689,04. A proposta real soma IOF, tarifas e seguros, que aparecem no CET.
+
+### Como calcular juros ao mês e ao ano?
+
+Pela equivalência composta: a taxa anual é (1 + taxa mensal)¹² − 1. Por isso 3% ao mês equivalem a 42,58% ao ano, e não a 36%. O [conversor de taxas](/calculadoras/conversor-de-taxas/) faz a conta.
+
+### E os juros de um empréstimo em atraso?
+
+A parcela atrasada tem encargos próprios, previstos no contrato. Pelo Código de Defesa do Consumidor (art. 52, § 1º), a multa de mora não pode passar de 2% do valor da prestação. O que acontece no atraso está em [o que acontece ao atrasar uma parcela](/organizacao-financeira/o-que-acontece-ao-atrasar-parcela/).
 
 ### Juros simples não valem para empréstimos?
 

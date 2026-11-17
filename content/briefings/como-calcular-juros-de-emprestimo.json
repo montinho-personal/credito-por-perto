@@ -28,12 +28,196 @@
     "Roteiro de conferência",
     "FAQ"
   ],
-  "uniqueExamples": ["R$ 3.000 a 2% a.m. em 10 parcelas, resolvido manualmente"],
-  "proposedVisuals": ["Bloco de código com fórmula", "tabela de amortização", "ChecklistBox"],
-  "pagesThatMayCompete": ["/calculadoras/emprestimo/", "/juros-e-cet/o-que-e-cet/"],
+  "uniqueExamples": [
+    "R$ 3.000 a 2% a.m. em 10 parcelas, resolvido manualmente"
+  ],
+  "proposedVisuals": [
+    "Bloco de código com fórmula",
+    "tabela de amortização",
+    "ChecklistBox"
+  ],
+  "pagesThatMayCompete": [
+    "/calculadoras/emprestimo/",
+    "/juros-e-cet/o-que-e-cet/"
+  ],
   "informationThatMustNotBeRepeated": [
     "Explicação do CET (link, não repetição)",
     "Conversão mensal-anual detalhada (fica em taxa-mensal-e-taxa-anual)"
   ],
-  "publicationDecision": "create"
+  "publicationDecision": "create",
+  "serpEvidence": [
+    {
+      "busca": "como calcular juros de empréstimo",
+      "data": "2026-11-17",
+      "aparelho": "mobile",
+      "local": "Sao Paulo,State of Sao Paulo,Brazil",
+      "autocompletar": [
+        "como calcular juros de empréstimo consignado",
+        "como calcular juros de empréstimo bancário",
+        "como calcular juros de empréstimo pessoal",
+        "como calcular juros de empréstimo nubank",
+        "como calcular juros de empréstimo ao mês",
+        "como calcular juros de empréstimo por dia",
+        "como calcular juros de empréstimo em atraso",
+        "como calcular juros de empréstimo com cdi",
+        "como calcular juros de empréstimos no excel",
+        "como calcular juros de empréstimo ao ano",
+        "como calcular juros de emprestimo na hp 12c",
+        "como calcular juros de emprestimo para aposentado",
+        "como calcular juros de emprestimo consignado caixa",
+        "como calcular juros de emprestimo com amortização",
+        "como calcular juros de emprestimo parcelado"
+      ],
+      "pessoasTambemPerguntam": [
+        "Como calcular juros compostos em matemática?",
+        "Como achar a taxa de juros de um financiamento na HP12C?",
+        "Quanto dá R$ 1000 de juros?",
+        "Quanto fica 10.000 financiado em 24 vezes?"
+      ],
+      "outrasPesquisas": [
+        "Como calcular juros compostos na calculadora",
+        "Fórmula juros compostos e simples",
+        "Como calcular o tempo em juros compostos",
+        "Juros compostos exemplos",
+        "Juros compostos exercícios",
+        "Juros simples"
+      ],
+      "visaoDeIA": {
+        "texto": [
+          "Para calcular os juros de um empréstimo, você pode utilizar a BCB - Calculadora do cidadão ou aplicar as fórmulas matemáticas de acordo com o tipo de juro cobrado pelo banco.",
+          "1. Juros Simples",
+          "Utilizados mais em empréstimos de curto prazo ou situações específicas.",
+          "Fórmula dos juros: J = C × i × t ; Fórmula do montante total: M = C + J ; Onde:",
+          "2. Juros Compostos (Mais comuns em bancos)",
+          "Os juros incidem sobre o montante do mês anterior (\"juros sobre juros\").",
+          "Fórmula do montante final: $M = C \\times (1 + i)^t$ ; Fórmula para descobrir apenas os juros: J = M - C",
+          "3. Principais Sistemas de Amortização",
+          "Tabela Price: As parcelas têm valor fixo do início ao fim do contrato (muito usada em empréstimo pessoal e financiamento de veículos). ; SAC (Sistema de Amortização Constante): As parcelas começam mais altas e vão diminuindo com o tempo (comum em financiamentos imobiliários). ; Custo Efetivo Total (CET): Lembre-se de que a taxa de juros nominal não é o único custo; o CET inclui tarifas, IOF, seguros e encargos administrativos.",
+          "Para que eu possa te ajudar com um cálculo mais preciso, me diga:",
+          "Qual é o valor do empréstimo? ; Quantas parcelas você pretende fazer? ; Qual é a taxa de juros mensal informada?"
+        ],
+        "fontes": [
+          {
+            "fonte": "Banco Central do Brasil",
+            "link": "https://www.google.com.br/goto?url=CAESwAEBxCJF17U-bM7OQEJkuDeFzJ6epyGAcwqIeCsxgUUpWf1HWUVVT9eG83zzbNUahrCodHqq_AvyOGa3fo7UIHrQI-CRXbPCNetob0P0DeTIQT6QEbf-ThezaWx0z-xEGlzJ1t3cdZMvDxU1jbzFktuYQE5NWok8lxqPujt8oC7zUvnwYPVqb2tKmdi4CJgHB8OYD5PfXAu2VBgkEX_WrK7h1nXelbEbWuVLCqf-1nH7HyHjhBwdz56etAcHfkYssw8"
+          },
+          {
+            "fonte": "meutudo",
+            "link": "https://www.google.com.br/goto?url=CAEScgHEIkXXelJqNtgZwtW78OTbIe_mxY0OGVTgEU55Ty9w_Av1s3Rf3QM3ykwdQKJ1trBr4SN9yGbXoNoq_4G57GIMrPRgqQDvuYzMC2sNmKN0D5ByVmXbItHweY9V6HmGRRJiXFHiynW3nuudqzwLZex5Hw"
+          },
+          {
+            "fonte": "Blog Ailos",
+            "link": "https://www.google.com.br/goto?url=CAESmwEBxCJF13KtZb4tLKNqpgVjBxB57Rf_xeMBuMYxXGohwDQ_ETI6FimTPM4bAzes-iR3bPtAfZlMkcgFOsysxLGWVbB7ZebSDAoVImyOxTDWyrf1zg4ztif4hu5l7fgMqvsaYf4xkrwTgjgKuFnAmJZF7oXz3FoxiErZv-SOrXasa7iMwMbp7JZWRqf7AKAjTnCICxe0DoLznTj5uQ"
+          },
+          {
+            "fonte": "YouTube",
+            "link": "https://www.google.com.br/goto?url=CAESbQHEIkXXLB2W6rCCKkPYi_5kfhaTmdP7PE9zgq9cbLks7700-1jxJCmXzWYbZyIB2fsy9bjLSOv_DYqtatoalvCc0l2lSniHRKzG1-2h9yvZnBcS6YbPF0waxrFMPiEdwP8byOZ92hBeNOI17fU"
+          },
+          {
+            "fonte": "Cálculo Jurídico",
+            "link": "https://www.google.com.br/goto?url=CAESbgHEIkXX8F90O8YER14ON7xe6y8N4DfCFSr-va2PYIhYM1ZuaB0Zng6605rmU6hTLHwxOY4wNPtK2KjcjrCafpws3McFbLF_WkS5LYJZuvTg_OE-mFv55lZ1VxnDjrbWkj9tWuyERL6KfdiYMCby"
+          },
+          {
+            "fonte": "fazAconta",
+            "link": "https://www.google.com.br/goto?url=CAESbgHEIkXXGFkG0aeQGjIb8_F-1H0SSDhd5HkgUtR-FtyEtD3xW_NvLZvB6J6AjA4uTjy0jcqEjWBQGgT05hiM3WiAzgGHezpQMhvTwa9SNZdPzKRH2vwSAHZvm1Bh_usLgDtZh5Q5JOMmz7gY0keh"
+          },
+          {
+            "fonte": "iDinheiro",
+            "link": "https://www.google.com.br/goto?url=CAESfwHEIkXXgx80WbXGalupQWdUnJzdA5j0C8wzn_AHfQVtAiaqLdsnkR8aTYVUPMDuCKQfatLSmhv3IFOu9lddafaam9I-q2igZzOAN6rNY4HNyzq3AI1KXqTkpHlQ1Y60SSf11MZpvYOHO9ofyA_wsE1AQ9i0lAajZh-55L3W0ik"
+          }
+        ]
+      },
+      "organicos": [
+        {
+          "posicao": 1,
+          "titulo": "Taxas de juros de empréstimos: como calcular e economizar - Blog do will",
+          "link": "https://www.google.com.br/goto?url=CAESkwEBxCJF19HO477UnVrCvuYrFMXly8UAhpAeyHrmrTFEgq4ei90qG_tgcBHye_JWp7V1jdN5spCAaXw8Q600DXOt7vuDxHHcfBMtrG8fTiHmAzUQBnC1YqAtq9puMk_sp-lb9gTAM6ABr2R0FQbPkebEZ3pF0OvG-pszH6xA8os-GU_BkwSxi4klKwxcXi2qzx1qyMc"
+        },
+        {
+          "posicao": 2,
+          "titulo": "Calculadora de juros: qual é a importância para empréstimos e investimentos?",
+          "link": "https://www.google.com.br/goto?url=CAESbwHEIkXXHjmoH3P2S8FXp9KmL8_a_KOQWWk7tmoZLqbx7HA0bzkgMNuUKRBJTU34NRFbsZlGPTWxbfNXIiuOc5ChdfAGC3IT4Tq5DgHQqKQJFKlalA4bL7dvXhAC0ymC1uo3We_GP206z1EV8__VUg"
+        },
+        {
+          "posicao": 3,
+          "titulo": "Especialista ensina a calcular juros de financiamentos",
+          "link": "https://www.google.com.br/goto?url=CAESogEBxCJF1z7tjyL49EpP_3WFVSrH4EtR6a9cbgiMg1ZT6girpyW3xUyd7da5CiuEbKkJQYb76tcCux6MpVEOs2EitST40XwfkxhvkHIHcjadUZmfnHiGBkDkgwZTL7GXqtMNgFd3BygqP9oVam-N-i4ZIz3dzghHS3FsbNZLrmWKc61I3t0AfGYpIf2loDFDBKeze_9OrnmTOKYxtvdI7AC_Z40"
+        },
+        {
+          "posicao": 4,
+          "titulo": "Juros de empréstimo: como calcular?",
+          "link": "https://www.google.com.br/goto?url=CAESbwHEIkXX21KAFjnqA2VMlbxYEyGnPaHXGl14oYvuO3uvCp6DikVm5ipwGRm-CcmIl9M1LY5fsZ59vse_Nn_y81U8BJnNb4c2OfUl9euiUe_Ge5XzRo4548reEU9MrJWhy25R0Hp0KJ8J-U5gTDr9qg"
+        },
+        {
+          "posicao": 5,
+          "titulo": "Juros Compostos: fórmula, como calcular e exercícios",
+          "link": "https://www.google.com.br/goto?url=CAESbAHEIkXXlAkmLxBhRtVbZHCgZlM5E3OE35rkHqvp2P8z8_vf3ziogFEfykwbLF5L1SZNUJysm0VkIm2MtySBdnokc1OHwj4QxfDkRPn-X19UINVPa2ob_ba-0GFW7NYR-77YF0valp9Ua6_RSw"
+        },
+        {
+          "posicao": 6,
+          "titulo": "Calculadora de financiamento de veículos: simule parcelas e entenda",
+          "link": "https://www.google.com.br/goto?url=CAESfAHEIkXXh0AHOyYwXF1PSBKf-jCJjUuUxiEgpv9HRJtzcnrKqYZZNnMuNF4rh131JDbdf-1vI_CsT3QPCm46Nl9OMPByGNBcJqb1tGaIkGaftYGsOtpOQ4zQvJ0EHZCTNfzmUBImr_JVhUy1Bvste_Df9gD-qsKqkl8udMM"
+        },
+        {
+          "posicao": 7,
+          "titulo": "Descubra como calcular juros do financiamento e não ser mais enganado",
+          "link": "https://www.google.com.br/goto?url=CAESfAHEIkXXLk8b0Kd-D4XtBefGxVzzngU-gg0TFUeT86HVR8WHVIyrHEbYZ0zJNx-YO0D5kvMMF2fptGW3rdjjUcAIoOPMPGM8xP_rRyOUNQVjVi0KLImuUpqcKkvJsaXcBu4vkRG817H4tArnzznCUUZ8UID43r5795K-o-M"
+        },
+        {
+          "posicao": 8,
+          "titulo": "Respostas do Flexi - Como calcular a taxa de juros de um empréstimo?",
+          "link": "https://www.google.com.br/goto?url=CAESsQEBxCJF14c3wYKJ_ETw48cS4yfXhnNE32qtouS6YTHj-yE9QvxJtOzFxcUt88KioE1Yw42EXXqcUCnQ5lefYs1ceD2MGKbRcRLquLHP1a-I_-RThU2Ot_OjIm2TTvqzVCEiUNRV7Ey_7OIvxjAU9fZhfnbt8e1Usa5m6zp_w2IfPE7jzDkNUfSesykV1y10CB1bsnjDxLdqO0Rh8fVp4NkYYfxo7ll8YIYCE3pCn6dxhes"
+        }
+      ],
+      "mapa": [],
+      "nota": "Os links vieram como redirecionamento do Google (google.com.br/goto), sem o endereço final."
+    }
+  ],
+  "serpNotes": {
+    "formato": "Texto com fórmula e calculadoras: blogs, um site de cálculo e páginas de calculadora; sem vídeo no topo nem mapa. O artigo mantém a calculadora do site como apoio.",
+    "visaoDeIA": "Resposta longa em seções: Calculadora do Cidadão do Banco Central, juros simples (J = C × i × t), juros compostos (M = C × (1 + i)^t), Price, SAC e CET. Cita Banco Central, meutudo, Blog Ailos, YouTube, Cálculo Jurídico, fazAconta e iDinheiro. O lead passou a responder os três números e a fórmula de forma direta.",
+    "concorrentes": "Blog do will, blogs de bancos e fintechs, site de juros compostos, Flexi: nenhum oficial; médios."
+  },
+  "serpImpact": [
+    {
+      "dado": "Visão de IA: Calculadora do Cidadão do BC",
+      "efeito": "Nova seção 'Descobrir a taxa que está embutida', com o exemplo oficial (R$ 750 em 10 × R$ 86 ≈ 2,57% a.m.)."
+    },
+    {
+      "dado": "PAA: como achar a taxa de um financiamento",
+      "efeito": "Respondido pela mesma seção."
+    },
+    {
+      "dado": "Autocompletar: consignado, bancário, pessoal, para aposentado",
+      "efeito": "Lead diz que a conta é a mesma e que muda a taxa."
+    },
+    {
+      "dado": "Autocompletar: ao mês, ao ano",
+      "efeito": "FAQ de equivalência composta."
+    },
+    {
+      "dado": "Autocompletar: em atraso",
+      "efeito": "FAQ com a multa de até 2% (CDC, art. 52, § 1º) e link para o artigo de atraso."
+    },
+    {
+      "dado": "PAA: 10.000 em 24 vezes",
+      "efeito": "FAQ com o exemplo a 2% ao mês."
+    },
+    {
+      "dado": "Autocompletar: por dia, com CDI, Excel, HP 12C, bancos; PAA 'R$ 1000 de juros'; outras pesquisas escolares (exercícios, tempo em juros compostos)",
+      "efeito": "Ficaram de fora: sem fonte oficial, marca, ferramenta de terceiros ou fora do tema."
+    }
+  ],
+  "revisionLog": [
+    {
+      "data": "2026-11-17",
+      "tipo": "revisão diária (rotina AGENTS.md)",
+      "mudancas": [
+        "Lead direto com os três números",
+        "Seção da Calculadora do Cidadão",
+        "Três FAQs novas"
+      ],
+      "tituloDescricao": "sem mudança (proposta enviada)"
+    }
+  ]
 }

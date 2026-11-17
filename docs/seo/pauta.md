@@ -57,7 +57,7 @@ Já revisadas com SerpApi (fora da contagem):
 | # | Publicado | Página | Tipo | Região da busca |
 | --- | --- | --- | --- | --- |
 | ~~1~~ | ~~05/08/2026~~ | ~~Antecipação do saque-aniversário do FGTS: como funciona e o que fica preso~~ — `antecipacao-saque-aniversario-fgts`, revisado em 16/11/2026 | artigo | São Paulo |
-| 2 | 05/08/2026 | Como calcular juros de empréstimo: fórmulas, exemplo e passo a passo — `como-calcular-juros-de-emprestimo` | artigo | São Paulo |
+| ~~2~~ | ~~05/08/2026~~ | ~~Como calcular juros de empréstimo: fórmulas, exemplo e passo a passo~~ — `como-calcular-juros-de-emprestimo`, revisado em 17/11/2026 | artigo | São Paulo |
 | 3 | 05/08/2026 | Como comparar propostas de crédito: o método dos cinco números — `como-comparar-propostas-de-credito` | artigo | São Paulo |
 | 4 | 05/08/2026 | Como consultar se uma instituição de empréstimo é autorizada — `como-consultar-se-instituicao-e-autorizada` | artigo | São Paulo |
 | 5 | 05/08/2026 | Como identificar golpes de empréstimo: sinais, roteiros e o que fazer — `como-identificar-golpes-de-emprestimo` | artigo | São Paulo |

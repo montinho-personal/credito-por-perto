@@ -19,6 +19,25 @@
       "sourceType": "official",
       "accessedAt": "2026-08-05",
       "notes": "Cálculos do exemplo verificados com a implementação testada em src/lib/calculators/loan.ts."
+    },
+    {
+      "claimId": "calculadora-do-cidadao",
+      "claimText": "A Calculadora do Cidadão do BC (Financiamento com prestações fixas) calcula nº de meses, taxa mensal, prestação ou valor financiado a partir dos outros três; considera a 1ª prestação fora do ato e o valor financiado sem entrada; exemplo oficial: bem de R$ 750 em 10 parcelas fixas de R$ 86, sem entrada, para obter a taxa embutida.",
+      "sourceOrganization": "Banco Central do Brasil",
+      "sourceTitle": "Calculadora do cidadão — Financiamento com prestações fixas",
+      "sourceLocation": "https://www3.bcb.gov.br/CALCIDADAO/publico/exibirFormFinanciamentoPrestacoesFixas.do?method=exibirFormFinanciamentoPrestacoesFixas",
+      "sourceType": "official",
+      "accessedAt": "2026-11-17",
+      "notes": "Taxa do exemplo (≈2,57% a.m.) calculada pelo método da própria calculadora (Price, sem entrada)."
+    },
+    {
+      "claimId": "cdc-multa-2",
+      "claimText": "As multas de mora decorrentes do inadimplemento de obrigação no seu termo não podem ser superiores a 2% do valor da prestação (CDC, art. 52, § 1º).",
+      "sourceOrganization": "Planalto — Código de Defesa do Consumidor",
+      "sourceTitle": "Lei nº 8.078/1990, art. 52",
+      "sourceLocation": "https://www.planalto.gov.br/ccivil_03/leis/l8078compilado.htm",
+      "sourceType": "official",
+      "accessedAt": "2026-11-17"
     }
   ]
 }
