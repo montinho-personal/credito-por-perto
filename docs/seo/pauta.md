@@ -15,6 +15,7 @@ Montada em 16/11/2026 a partir de `docs/pauta-seo.md` (ondas 1 a 7, trilha local
 | 4 | Golpe do boleto falso: como conferir antes de pagar e o que fazer depois | "boleto falso" 390; "golpe do boleto" 210 | Cluster de golpes sem página de boleto; só uma menção em `portabilidade-de-credito` | Banco Central, Procon, gov.br (conferir na pesquisa) |
 | 5 | Compre agora, pague depois (BNPL): é crédito? | "compre agora pague depois" 480 | Modalidade sem página; risco de canibalizar `parcelado-sem-juros-vale-a-pena` e `carne-e-crediario-de-loja` (definir a fronteira antes) | Só se houver regra ou orientação oficial do BC; sem fonte, não entra |
 | 6 | Cartão de crédito com limite garantido: como funciona o cartão com investimento como garantia | "cartao com limite garantido" 390; "cartao de credito com limite garantido" 70 | Sem página; conversa com `cartao-de-credito-para-negativado` (fronteira a definir) | Banco Central (Res. BCB 96), contrato da emissora |
+| 7 | Como declarar empréstimo e financiamento no imposto de renda | Autocompletar de 17/11/2026: "credito direto ao consumidor como declarar", "credito direto ao consumidor imposto de renda" (volume a medir no Planejador) | O site não cobre a declaração de dívidas no IR; tema sazonal (consultar o Google Trends antes, pela regra do CLAUDE.md) | Receita Federal (perguntas e respostas do IRPF) |
 
 **Decisão de arquitetura pendente (não é artigo novo sem o Renato decidir):** "emprestimo com garantia de veiculo" tem 49.500 buscas/mês e "refinanciamento de veiculo" 8.100, mas `emprestimo-com-garantia` já cobre imóvel e veículo juntos. Separar uma página só de veículo pode ganhar essa busca ou canibalizar a atual; é mudança de grande impacto (apresentar antes de executar).
 
@@ -31,6 +32,8 @@ Sem outros temas novos: os itens abertos das ondas 1 a 7 e da trilha local já v
 | CLT: "o que mudou", "número máximo de parcelas", "valor máximo de parcela" | `credito-do-trabalhador` | Revisão do servidor público, 16/11/2026 |
 | "Como posso obter um empréstimo do governo do estado de São Paulo?" | `emprestimo-do-governo` | Revisão do servidor público, 16/11/2026 |
 | Multa e juros por atraso ("multa por atraso de pagamento" 390; "juros por atraso" 90) | `o-que-acontece-ao-atrasar-parcela` | Planejador, 17/11/2026 |
+| "CDC com interveniência" e amortização no CDC (autocompletar) | `cdc-credito-direto-ao-consumidor` (só com fonte oficial) | Criação do artigo, 17/11/2026 |
+| Cartão de benefício do servidor estadual (Decreto 66.622/2022, alterado pelo 69.418/2025): limite de uso | `consignado-servidor-estadual-sp` (ler o texto do decreto antes) | Criação do artigo, 17/11/2026 |
 | Taxas médias do mês (antiga "página viva", item 20 da pauta de agosto; "taxa media de juros emprestimo" 10/mês). Só com rotina mensal de atualização | `como-consultar-taxa-media-do-bc` | `docs/pauta-seo.md`, onda 3 |
 
 ### Atualizações com data marcada
