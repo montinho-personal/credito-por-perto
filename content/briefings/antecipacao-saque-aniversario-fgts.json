@@ -1,5 +1,5 @@
 {
-  "proposedTitle": "Antecipação do saque-aniversário do FGTS: como funciona e o que fica preso",
+  "proposedTitle": "Antecipação do saque-aniversário do FGTS em 2026: regras, limite e o que fica preso",
   "primaryIntent": "antecipação saque-aniversário FGTS como funciona",
   "secondaryIntents": [
     "antecipar FGTS vale a pena",
@@ -220,6 +220,19 @@
         "Seis FAQs novas"
       ],
       "tituloDescricao": "sem mudança (proposta enviada ao proprietário)"
+    },
+    {
+      "data": "2026-11-16",
+      "tipo": "título e descrição aprovados pelo Renato",
+      "antes": {
+        "title": "Antecipação do saque-aniversário do FGTS: como funciona e o que fica preso",
+        "description": "Antecipar o saque-aniversário compromete parcelas anuais do seu FGTS por anos e bloqueia o saldo. Entenda a mecânica, os custos e quando (não) faz sentido."
+      },
+      "depois": {
+        "title": "Antecipação do saque-aniversário do FGTS em 2026: regras, limite e o que fica preso",
+        "description": "Até 5 saques de R$ 100 a R$ 500 até 31/03/2027, carência de 90 dias e saldo bloqueado: as regras do FGTS e quando antecipar faz (ou não) sentido."
+      },
+      "motivo": "Autocompletar puxa '2026' e 'novas regras'; a visão de IA responde com o limite de saques."
     }
   ],
   "serpNotes": {
