@@ -272,6 +272,20 @@
     {
       "dado": "PAA: nova margem 2026",
       "efeito": "FAQ: SP segue 35% + 5%; mudança noticiada era da MP federal."
+    },
+    {
+      "dado": "Pauta (criação do artigo, 17/11): cartão de benefício do servidor estadual",
+      "efeito": "Subseção 'Cartão de benefício: até 15% da margem' com o Decreto 66.622/2022 lido na ALESP, exemplo de R$ 374,56 sobre a margem da folha e FAQ. Sem busca nova: reaproveitadas as buscas de 17/11/2026."
+    }
+  ],
+  "revisionLog": [
+    {
+      "data": "2026-11-18",
+      "tipo": "seção da pauta (parte 2)",
+      "mudancas": [
+        "Cartão de benefício (Decreto 66.622/2022): limite de 15% da margem, subseção e FAQ. Sem busca nova (buscas de 17/11/2026)."
+      ],
+      "tituloDescricao": "sem mudança"
     }
   ]
 }

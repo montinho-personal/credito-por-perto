@@ -129,6 +129,15 @@
       "sourceType": "official",
       "accessedAt": "2026-08-05",
       "notes": "Mesma verificação registrada em deposito-antecipado-e-golpe."
+    },
+    {
+      "claimId": "banco-do-povo-carta-2026",
+      "claimText": "Carta de serviços do Banco do Povo Paulista (atualização 31/07/2026): empreendedores formais (MEI, ME, EPP) e informais; crédito de R$ 200,00 a R$ 21.000,00; juros a partir de 0,35% ao mês; até 36 meses; carência até 3 meses conforme análise; avalista (informal e produtor rural com CNPJ) ou Fundo de Aval do Estado (formal); serviço gratuito; qualificação empreendedora obrigatória (Qualifica SP ou Sebrae, 12h30); etapas: qualificação, plano de negócio, documentação, entrega na unidade ou plataforma digital, análise de crédito; liberação em até 30 dias, ou até 10 dias pela plataforma digital.",
+      "sourceOrganization": "Governo do Estado de São Paulo",
+      "sourceTitle": "Carta de Serviços — Banco do Povo Paulista",
+      "sourceLocation": "https://servicos.sp.gov.br/fcarta/7113B9A5-BF37-4CB9-A48F-4DD7CF4ED8F3",
+      "sourceType": "official",
+      "accessedAt": "2026-11-18"
     }
   ]
 }

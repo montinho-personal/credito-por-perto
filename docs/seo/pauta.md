@@ -29,12 +29,13 @@ Sem outros temas novos: os itens abertos das ondas 1 a 7 e da trilha local já v
 | ~~"Quem recebe BPC pode fazer empréstimo de R$ 20 mil?"~~ | ~~`consignado-para-quem-recebe-bpc`~~ — feito em 18/11/2026 | Revisão do aposentado INSS, 16/11/2026 |
 | ~~"Como conseguir R$ 500 urgentemente?" e "Como conseguir 10.000 reais urgentemente?"~~ | ~~`dinheiro-urgente`~~ — feito em 18/11/2026 | Revisões de 16/11/2026 |
 | BPC com representante legal ("empréstimo bpc loas representante legal"). Só com a regra do INSS lida (instrução normativa vigente) | `consignado-para-quem-recebe-bpc` | Revisão do BPC, 18/11/2026 |
+| "Empréstimo do governo reforma de casa" e "empréstimo do governo para motorista de aplicativo" (outras pesquisas). Só com página oficial do programa lida | `emprestimo-do-governo` | Rotina de 18/11/2026 |
 | "O que o STF decidiu sobre os consignados?" (só com a decisão localizada no STF) | `emprestimo-consignado` | Revisão do aposentado INSS, 16/11/2026 |
 | ~~CLT: "o que mudou", "número máximo de parcelas", "valor máximo de parcela"~~ | ~~`credito-do-trabalhador`~~ — feito em 18/11/2026 | Revisão do servidor público, 16/11/2026 |
-| "Como posso obter um empréstimo do governo do estado de São Paulo?" | `emprestimo-do-governo` | Revisão do servidor público, 16/11/2026 |
+| ~~"Como posso obter um empréstimo do governo do estado de São Paulo?"~~ | ~~`emprestimo-do-governo`~~ — feito em 18/11/2026 | Revisão do servidor público, 16/11/2026 |
 | ~~Multa e juros por atraso ("multa por atraso de pagamento" 390; "juros por atraso" 90)~~ | ~~`o-que-acontece-ao-atrasar-parcela`~~ — feito em 18/11/2026 | Planejador, 17/11/2026 |
 | "CDC com interveniência" e amortização no CDC (autocompletar) | `cdc-credito-direto-ao-consumidor` (só com fonte oficial) | Criação do artigo, 17/11/2026 |
-| Cartão de benefício do servidor estadual (Decreto 66.622/2022, alterado pelo 69.418/2025): limite de uso | `consignado-servidor-estadual-sp` (ler o texto do decreto antes) | Criação do artigo, 17/11/2026 |
+| ~~Cartão de benefício do servidor estadual (Decreto 66.622/2022, alterado pelo 69.418/2025): limite de uso~~ | ~~`consignado-servidor-estadual-sp`~~ — feito em 18/11/2026 | Criação do artigo, 17/11/2026 |
 | Taxas médias do mês (antiga "página viva", item 20 da pauta de agosto; "taxa media de juros emprestimo" 10/mês). Só com rotina mensal de atualização | `como-consultar-taxa-media-do-bc` | `docs/pauta-seo.md`, onda 3 |
 
 ### Atualizações com data marcada

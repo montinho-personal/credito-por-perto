@@ -57,5 +57,147 @@
     "PF ou CNPJ para o MEI (link)"
   ],
   "publicationDecision": "create",
-  "notes": "Próxima revisão (SerpApi 16/11/2026, busca \"consignado servidor estadual sp\"): PAA \"Como posso obter um empréstimo do governo do estado de São Paulo?\"."
+  "notes": "Próxima revisão (SerpApi 16/11/2026, busca \"consignado servidor estadual sp\"): PAA \"Como posso obter um empréstimo do governo do estado de São Paulo?\". | Atendido em 18/11/2026 (Banco do Povo Paulista pela carta de serviços; FAQ do governo de SP).",
+  "serpEvidence": [
+    {
+      "busca": "qual empréstimo o governo liberou",
+      "data": "2026-11-18",
+      "aparelho": "mobile",
+      "local": "Sao Paulo,State of Sao Paulo,Brazil",
+      "autocompletar": [
+        "qual empréstimo o governo liberou para mei",
+        "qual o empréstimo que o governo liberou para as empresas",
+        "qual foi o empréstimo que o governo liberou",
+        "qual o novo empréstimo que o governo liberou",
+        "qual o nome do empréstimo que o governo liberou",
+        "qual o valor do empréstimo que o governo liberou"
+      ],
+      "pessoasTambemPerguntam": [
+        "Qual empréstimo Lula liberou?",
+        "Quando o governo vai liberar o empréstimo consignado CLT?",
+        "Qual empréstimo para mei liberado pelo governo em 2026?",
+        "Quais são as novas regras para o empréstimo consignado em 2026?"
+      ],
+      "outrasPesquisas": [
+        "Empréstimo pelo governo federal",
+        "Empréstimo que o governo liberou para as empresas",
+        "Empréstimo do governo para clt",
+        "Empréstimo para mei liberado pelo governo",
+        "Empréstimo do governo para motorista de aplicativo",
+        "Empréstimo do governo como funciona",
+        "Empréstimo do governo para empresas",
+        "Como fazer empréstimo do governo",
+        "Empréstimo do governo reforma de casa",
+        "Novo empréstimo do governo",
+        "Empréstimo do governo pronampe",
+        "Tabela de empréstimo da caixa econômica federal"
+      ],
+      "visaoDeIA": {
+        "texto": [
+          "O governo federal brasileiro liberou recentemente novas iniciativas e linhas voltadas tanto para trabalhadores com carteira assinada quanto para pequenos empreendedores:",
+          "Crédito do Trabalhador: Uma modalidade de empréstimo consignado voltada a trabalhadores da iniciativa privada (CLT), empregados domésticos, rurais e MEIs. As taxas de juros são mais baixas, o desconto é feito diretamente em folha (com limite de até 35% da renda) e utiliza como garantia até 10% do saldo do FGTS mais 100% da multa rescisória. A contratação é feita pelo aplicativo da Carteira de Trabalho Digital. ; Programa Acredita e iniciativas para MEIs: O governo também possui o Programa Acredita (com linhas como o ProCred 360 e o Desenrola Pequenos Negócios) para facilitar o crédito e a renegociação de dívidas de microempreendedores e pequenas empresas, além de pacotes recentes de apoio e propostas de regularização de débitos (como o Prospera MEI).",
+          "Para eu te ajudar melhor, você procura:",
+          "Crédito consignado para trabalhador CLT? ; Ou financiamento/renegociação para MEI ou pequeno negócio?"
+        ],
+        "fontes": [
+          {
+            "fonte": "www.gov.br",
+            "link": "https://www.google.com.br/goto?url=CAESxQEBxCJF14gfsMMdKu08QHTFsW_WgC_S9UoAzVP9f_idDbrPYu0_B_kmMSobBNKbJ7z20zbsu8MxtYZAUhBMdctVi0H84wOV54qtplBDR2zUCp1QrGkKtva9E0cjVAmwY2F5XGfLkrYIpkdEG7ZRely_oqesSbn2ykHMKKB7eQ01DoYJb_CuGHEZI75c6nBxVd-XelK4Gss3FZ76y0C2Ks5H6gWI3-lBRS0suJVPpJIQXCtkBwuj7q8kOWazC-4NAW7gk5mUJg"
+          },
+          {
+            "fonte": "Agência Gov",
+            "link": "https://www.google.com.br/goto?url=CAESsAEBxCJF10B6bnGn6kMUeKchiR8cRfzPraMNn2Pc6eVnwuyQ4tMT3fEPNe4gUkJslVbhWci6IQLPXkmYv3nsQjRTB-isRXQJUydLfwb7S2yYcOtY1p4bPx_IhqF-nc4qZZUo9G581J9Ue4FgaY0nXJAX-tUnqbV9FACgniiddD8iGGiaX-DfnCSeyvpbrpEQg1-H7r3SFY2gq-zY1QcutLSrrt_9IXgTl8-S5JuYATyFYA"
+          },
+          {
+            "fonte": "www.gov.br",
+            "link": "https://www.google.com.br/goto?url=CAESbAHEIkXX4-VFubTelHfuNWcfPioTB-22glNmpgWTVVH_1hQiqViTkjekNQ31ejNJQYYNhZSIDkqKIuxBCq3aOVmvpii5opZNUJfr3Irxqxz1E1MmqVixvoslxXqDw8WdbKnakFEoKJt_TyAC-Q"
+          },
+          {
+            "fonte": "Facebook",
+            "link": "https://www.google.com.br/goto?url=CAESzgEBxCJF18nKTM-_kGI6g1tZfjr7JK7-qdTlNwQMqrTt42NpeA5r4Mt0z6pNCvMP8S5Zn0Nzq65iiohfJoPkgTV6-0Mwej57i5nb4052SAywyaLF2t02-eu1IYawserEafKe4ieCBBPwhW0W-zCO0HqLFBJMHrSqWXpUdY_6tr93duWtoLnyHO_hwJIPYx8iA94rA-Et4KoIG5Uv2HKkOcLzBw3NR0kVQJ4M8wMAhVfSGadrGmBvJ6EfoovaxDlz_g-rJhlbhKoAzQdCE0tsGw"
+          },
+          {
+            "fonte": "Facebook",
+            "link": "https://www.google.com.br/goto?url=CAES0AEBxCJF13DMpuY_UHzC5sPC9m5F0Ado8v9Wgv_DNIQsBu7vq1Rb6mQpTamuynNP-7qaOuyjSUJHyFKc7hJAT2vJywpo_QzYS2xGY750TW_WMPvEgZ4TYtMXBXZD1pWMRym9WKcrgSiSUXIxbs4nahTbUtcNgAaKn_SoQof-tKII1VngOvAguQUa67_jeUZDW7ID9f_92ewhl6TiKBNHcmoq48VjVKRr-XUF-MdSZU5AAtOFNnzayzcDkVBl88f3NngI0_UXvxyOLDsqQJcTZeN6"
+          }
+        ]
+      },
+      "organicos": [
+        {
+          "posicao": 1,
+          "titulo": "Governo Federal cria o Crédito do Trabalhador, linha de empréstimos com juros mais baixos",
+          "link": "https://www.gov.br/fazenda/pt-br/assuntos/noticias/2025/marco/governo-federal-cria-o-credito-do-trabalhador-linha-com-juros-mais-baixos"
+        },
+        {
+          "posicao": 2,
+          "titulo": "Empréstimos para você | Crédito CAIXA",
+          "link": "https://www.caixa.gov.br/voce/credito-financiamento/emprestimo/Paginas/default.aspx"
+        },
+        {
+          "posicao": 3,
+          "titulo": "Empréstimo do governo? Entenda programa que oferece consignado para trabalhadores CLT | Atualidade",
+          "link": "https://www.youtube.com/watch?v=n0ApW7JCqJc"
+        },
+        {
+          "posicao": 4,
+          "titulo": "Solicitar acesso a produtos e serviços financeiros para pequenos negócios( CRED+)",
+          "link": "https://www.google.com.br/goto?url=CAESqAEBxCJF17Mb8Drjtbnbat2RclFjJEGHLS-QLgH2QjCL3hzRPLMt8ZWq3kkT-vmPXGtYkbGkbc6FV_y0pApNdiRc-ILzgYY-_jJa961rR7CpkhKHqiRUwbMJdAAzAsyYrSSUm4-BWH4Cr6E87afzQjWUosdQQWcbaHxaTeeBtrYxyqNlyE4gibJzAPevFf75FHFF2q4MdYgm4Ap8gyZs74n47hQtQd3H45A"
+        },
+        {
+          "posicao": 5,
+          "titulo": "Lula lança Crédito do Trabalhador: consignado barato 'para sair do endividamento'",
+          "link": "https://www.google.com.br/goto?url=CAESsAEBxCJF10ac_LV6XclYt_FT8FwjJliD9zIILch_PbPAZS7xFEgiZ7ge-JSSGxDO3HwNbdTp2pi8uwdmTenTonNRopL4n5jUwjLCraFM9aEw2Kmv1ACy45wYVo8kS-C4Sv0p0_xSpwXYU_9iyx30axDc5a-ecdDdPpqvQrWHLOBADrSp78TQ17NcGdfwcDvdIPo6ZuWO6TQVZA_Fy7MGCJ6Fzlpgqa3f1NLVyH4lGIRAIg"
+        },
+        {
+          "posicao": 6,
+          "titulo": "Análise: Entenda o novo consignado privado para CLT | CNN NOVO DIA",
+          "link": "https://www.google.com.br/goto?url=CAESaAHEIkXXK02P5-mrgnKidAYlRYSwnxit-B0pPund-xnYHjaTPjMN6_L71pC3JF-Am7unqpKzoLPQpbwv2uFD_jJe_78BR_XBhidWOvZBvldAt6TK7Sx1ZYtos4TdKNnFVFs7GZX8Mqze&gsessionid=e_lEscJvlhiQuHOPe8Qq-jH4eX3Gi2L5_tDgxFsOZmyggNaZugPZ9A"
+        },
+        {
+          "posicao": 7,
+          "titulo": "Empréstimo do Governo: Entenda Sobre o Consignado CLT",
+          "link": "https://www.google.com.br/goto?url=CAESnAEBxCJF1_g29ey94GfriYI9pbx4JDgIbY9KjC9LZo9n1zj_c3iMKGI2VsD-amx91ZtNlSXtJm-BtRICpm92pxlVPVxHMC-1eUCoM8BqNlvpEdoFzEe3Kb4zyFWLLip7KO5YnDwq2SD7ttnRAjo-XbIe5Jpw9dz-Oo2EJNJALhFkNJgpuRFM90N-cSL1xKRQFFhLIVyn6iS4toT0NT4"
+        },
+        {
+          "posicao": 8,
+          "titulo": "Empréstimo Consignado",
+          "link": "https://www.google.com.br/goto?url=CAESmwEBxCJF1508k2UEpdzLGLDbqggi0XnGPWYe9aQ9nGYVo75FaLG-8YVCKieJbublit_vCU9Wx6VE8EgEvbL1i8OVcys0gysIi3EVDKAZMdzTknw7-0Yfl25kKC5K2OvPwdjXm3Io_5mOWQ_2tdf9pucgwd8Mkp-rCpEyRZbTdGWnIwaBDcDv1LizdLE8SaDUQhyoHs_vRndfKGWVRA"
+        }
+      ],
+      "mapa": []
+    }
+  ],
+  "serpNotes": {
+    "formato": "Texto, com notícias e vídeo; sem mapa.",
+    "visaoDeIA": "Resposta em lista: Crédito do Trabalhador (35% da renda, FGTS como garantia, Carteira de Trabalho Digital) e Acredita/linhas para pequenos negócios; termina perguntando se a pessoa é CLT ou MEI. Cita gov.br (2x), Agência Gov e Facebook (2x).",
+    "concorrentes": "gov.br (Fazenda), Caixa, YouTube, CNN e portais: fortes no topo; o restante é blog."
+  },
+  "serpImpact": [
+    {
+      "dado": "Pauta (PAA de 16/11): 'Como posso obter um empréstimo do governo do estado de São Paulo?'",
+      "efeito": "Seção do Banco do Povo Paulista ampliada com a carta de serviços do Estado (valores, juros, prazo, garantia, etapas, prazo de liberação) e FAQ nova."
+    },
+    {
+      "dado": "PAA 'Qual empréstimo Lula liberou?', 'Quando o governo vai liberar o consignado CLT?', 'MEI 2026', 'novas regras 2026'",
+      "efeito": "Já respondidos nas FAQs existentes."
+    },
+    {
+      "dado": "Outras pesquisas: 'reforma de casa', 'motorista de aplicativo'",
+      "efeito": "Fora por ora: viram seção só com fonte oficial lida (pauta, parte 2)."
+    },
+    {
+      "dado": "Visão de IA: lista por público",
+      "efeito": "O artigo já abre com a tabela 'qual programa serve para quem'."
+    }
+  ],
+  "revisionLog": [
+    {
+      "data": "2026-11-18",
+      "tipo": "seção da pauta (parte 2)",
+      "mudancas": [
+        "Banco do Povo Paulista pela carta de serviços do Estado (valores, juros, prazo, garantia, etapas, liberação) e FAQ do governo de SP."
+      ],
+      "tituloDescricao": "sem mudança"
+    }
+  ]
 }
