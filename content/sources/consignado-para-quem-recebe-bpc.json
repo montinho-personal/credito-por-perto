@@ -60,6 +60,33 @@
       "sourceType": "official",
       "accessedAt": "2026-09-17",
       "notes": "Sustenta a leitura de que a assimetria entre bloquear e desbloquear é proteção deliberada. O INSS também passou a permitir desbloqueio por biometria no Meu INSS."
+    },
+    {
+      "claimId": "sm-2026",
+      "claimText": "A partir de 1º/01/2026 o salário mínimo é de R$ 1.621,00 (Decreto nº 12.797/2025, art. 1º).",
+      "sourceOrganization": "Câmara dos Deputados",
+      "sourceTitle": "Decreto nº 12.797/2025",
+      "sourceLocation": "https://www2.camara.leg.br/legin/fed/decret/2025/decreto-12797-23-dezembro-2025-798569-publicacaooriginal-177587-pe.html",
+      "sourceType": "official",
+      "accessedAt": "2026-11-18"
+    },
+    {
+      "claimId": "lei-10820-bpc",
+      "claimText": "BPC: descontos até 35%, sendo 30% para empréstimos e 5% para cartão (art. 6º, § 5º-A); aposentadorias e pensões do RGPS até 45% (§ 5º); operações do BPC em dois momentos, com intervalo mínimo de 5 dias úteis entre a proposta e a celebração do contrato (§ 9º).",
+      "sourceOrganization": "Câmara dos Deputados",
+      "sourceTitle": "Lei nº 10.820/2003 — texto atualizado",
+      "sourceLocation": "https://www2.camara.leg.br/legin/fed/lei/2003/lei-10820-17-dezembro-2003-497441-normaatualizada-pl.html",
+      "sourceType": "official",
+      "accessedAt": "2026-11-18"
+    },
+    {
+      "claimId": "teto-108",
+      "claimText": "Teto de juros do consignado INSS de 1,85% ao mês (CNPS, março de 2025) e contrato com no máximo 108 parcelas (INSS, IN PRES/INSS 213/2026).",
+      "sourceOrganization": "INSS",
+      "sourceTitle": "Consignação em benefícios do INSS: seus direitos e medidas de segurança",
+      "sourceLocation": "https://www.gov.br/inss/pt-br/direitos-e-deveres/pagamento-de-beneficios/consignacao-em-beneficios-do-inss-seus-direitos-e-medidas-de-seguranca",
+      "sourceType": "official",
+      "accessedAt": "2026-11-18"
     }
   ]
 }

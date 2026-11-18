@@ -18,6 +18,25 @@
       "sourceLocation": "https://www.consumidor.gov.br",
       "sourceType": "official",
       "accessedAt": "2026-08-16"
+    },
+    {
+      "claimId": "teto-cheque-especial",
+      "claimText": "Desde 06/01/2020, a Resolução CMN nº 4.765/2019 limita a 8% ao mês os juros do cheque especial de pessoas físicas.",
+      "sourceOrganization": "Banco Central do Brasil / CMN",
+      "sourceTitle": "Resolução nº 4.765, de 27 de novembro de 2019",
+      "sourceLocation": "https://normativos.bcb.gov.br/Lists/Normativos/Attachments/50875/Res_4765_v2_P.pdf",
+      "sourceType": "official",
+      "accessedAt": "2026-11-18"
+    },
+    {
+      "claimId": "taxas-garantia-consignado",
+      "claimText": "As modalidades de crédito acionadas em emergências sem reserva — rotativo do cartão e cheque especial — estão entre as de maior taxa média de juros a pessoas físicas, muito acima das modalidades com garantia ou consignadas.",
+      "sourceOrganization": "Banco Central do Brasil",
+      "sourceTitle": "Séries temporais de taxas médias de juros por modalidade (SGS), apresentadas no radar de taxas do site",
+      "sourceLocation": "https://www.bcb.gov.br/estatisticas/txjuros",
+      "sourceType": "official",
+      "accessedAt": "2026-11-18",
+      "notes": "O artigo NÃO fixa percentuais: remete ao radar interno (/taxas/), que exibe o dado oficial com mês de referência."
     }
   ]
 }

@@ -58,5 +58,169 @@
     "Não recomendar nem desaconselhar a contratação: o portal explica e o leitor decide",
     "Não afirmar prazos de desbloqueio nem exigências de autenticação como imutáveis — o Meu INSS altera o fluxo periodicamente"
   ],
-  "notes": "Próxima revisão (SerpApi 16/11/2026, busca \"juros consignado inss\"): PAA \"Quem recebe BPC pode fazer empréstimo de R$ 20 mil?\" — responder pela margem de 35% sobre um salário mínimo, sem prometer valor."
+  "notes": "Próxima revisão (SerpApi 16/11/2026, busca \"juros consignado inss\"): PAA \"Quem recebe BPC pode fazer empréstimo de R$ 20 mil?\" — responder pela margem de 35% sobre um salário mínimo, sem prometer valor. | Atendido em 18/11/2026 (FAQ de R$ 20 mil).",
+  "serpEvidence": [
+    {
+      "busca": "empréstimo para quem recebe bpc",
+      "data": "2026-11-18",
+      "aparelho": "mobile",
+      "local": "Sao Paulo,State of Sao Paulo,Brazil",
+      "autocompletar": [
+        "empréstimo para quem recebe bpc loas",
+        "empréstimo pessoal para quem recebe bpc loas",
+        "empréstimo consignado para quem recebe bpc",
+        "empréstimo pessoal para quem recebe bpc",
+        "empréstimo consignado para quem recebe bpc loas",
+        "como fazer empréstimo para quem recebe bpc loas",
+        "qual banco faz empréstimo para quem recebe bpc loas",
+        "qual o valor de empréstimo para quem recebe bpc",
+        "foi liberado emprestimo consignado para quem recebe bpc",
+        "qual o valor do empréstimo para quem recebe bpc loas",
+        "qual banco faz empréstimo para quem recebe o bpc"
+      ],
+      "pessoasTambemPerguntam": [
+        "Quem recebe BPC tem direito a empréstimo?",
+        "Onde posso encontrar um simulador de empréstimo consignado da Caixa?",
+        "Como posso antecipar meu salário do INSS online?",
+        "Qual é a tabela de empréstimo para aposentados do INSS?"
+      ],
+      "outrasPesquisas": [
+        "Qual o valor de empréstimo para quem recebe bpc",
+        "Qual o banco que faz empréstimo para loas",
+        "Empréstimo bpc simulação",
+        "Empréstimo bpc loas voltou",
+        "Bpc loas pode fazer empréstimo de 20 mil",
+        "Empréstimo bpc loas representante legal",
+        "Bpc loas pode fazer empréstimo 2026",
+        "Empréstimo loas caixa",
+        "Qual o banco que faz empréstimo para loas 2026",
+        "Qual o valor do empréstimo do bpc loas 2026",
+        "Bpc loas pode fazer empréstimo de 30 mil",
+        "Como fazer empréstimo pelo bpc loas"
+      ],
+      "visaoDeIA": {
+        "texto": [
+          "Beneficiários do BPC (Benefício de Prestação Continuada) podem contratar empréstimo consignado, desde que sigam as regras e os limites estabelecidos pela legislação atual.",
+          "Principais Regras e Limites",
+          "Margem consignável: É possível comprometer até 40% da renda mensal do benefício, divididos da seguinte forma: ; Prazo de pagamento: As parcelas podem ser divididas em até 84 a 96 meses, dependendo da instituição financeira. ; Menores de idade e incapazes: Para beneficiários menores de idade ou pessoas sob curatela (representadas legalmente), a contratação de novos empréstimos consignados está bloqueada ou depende de autorização judicial específica. ; Desbloqueio do benefício: Novos benefícios do INSS ou BPCs precisam estar desbloqueados para a função de consignado. O procedimento pode ser conferido ou realizado através do aplicativo ou site Meu INSS ou pela Central 135. Você também pode conferir orientações oficiais no portal do Instituto Nacional do Seguro Social - INSS.",
+          "Cuidados Importantes",
+          "Desconto na folha: As parcelas são descontadas diretamente do valor do BPC antes de o beneficiário recebê-lo. ; Risco de endividamento: Como o BPC corresponde a um salário mínimo, comprometer parte da renda reduz o valor disponível para despesas essenciais do dia a dia. ; Golpes: Fique atento a promessas de \"desbloqueio fácil\" ou intermediários que cobram taxas para liberar crédito negado pelos bancos.",
+          "Se você quiser, me diga:",
+          "Quem é o titular do benefício (adulto, menor de idade ou pessoa sob curatela)? ; Você já tem algum empréstimo ativo descontado no BPC?"
+        ],
+        "fontes": [
+          {
+            "fonte": "GOV.BR",
+            "link": "https://www.google.com.br/goto?url=CAESkAEBxCJF1ydtyT4dtQDUZ88LNVyxvMlG2S0pozuNI5kQ-49MkkE8vcOV0HJkplMHR3_jI00gmHiZ3QkYR1Egw1DWHrmjaFenQvsseKmkWSgko7csPyWznbGQcCTvxdha_P5I9EG2Bsb0VxWU3cxdl6eRR13vWdJKbCPEU014bpOuEUpyVAVLV-xJvw8MX4M8jL8"
+          },
+          {
+            "fonte": "Prefeitura Municipal de AGUDOS",
+            "link": "https://www.google.com.br/goto?url=CAESqgEBxCJF1w3fJ0RrxS99wY0UVxFJMi9XEzp3rwVS4io_qySaJ51VFH9cPMs9KDdlx93-2f2F1fyK-lPOD9gp7AjZL6EPnqc8mHAGzFf2KkB1AAFRXdc2y7-aWOUNuBJYKVHZgqQ7CwZxiS41R9hndw6uUpkEfMVWWpCqMrqye0MBD55yL94lA5WLm0rUAa2ncjZA-Cd4J-EmRsEwJsGtvL9kKHTgXUbLbry7vA"
+          },
+          {
+            "fonte": "Instagram",
+            "link": "https://www.google.com.br/goto?url=CAESaAHEIkXXoyomLpAwHUY_RNJxwaoyk4DxbGX1PbpdBYkSi5r3EOuvk3GAJj38YXEGanCEudVBuiyEdlSwFFOmbTuvWnLZJmLljaxKZxmLrgnhjm13EQDS_xk_g9XfZZcMhWMMJyziqQoz"
+          },
+          {
+            "fonte": "Empresta Bem Melhor",
+            "link": "https://www.google.com.br/goto?url=CAESdAHEIkXXQOUs8aUAaz5wk3SnlzpbjrSdYnwv5nm_6jRo0dWT0gSV3fJ9s6_POitqM9Pbqf6waqPwQB4_k9UI4_teTjaAKJr2U1wP14G9A-O12n2ot8p9AixAWyHXLhtEzq2iFyb_xcgcUliBGNGvCa8jUdPA"
+          },
+          {
+            "fonte": "YouTube",
+            "link": "https://www.google.com.br/goto?url=CAESZwHEIkXXViaY2SFci0Uax4_0tSD36A21ncY2wnznLtd6CotNWQ4eeS6RObAJWfMxlknKE12QY8elZeTEny4Imp2YB4yuL6QLTUE2KTGhELwAhM46wMgwCe0qf6BhMM57XYmLn6oK4Gs"
+          },
+          {
+            "fonte": "Instagram",
+            "link": "https://www.google.com.br/goto?url=CAESaAHEIkXX4U_-snKfbaGBO7Mv0l7niHUGqHU5Hvu3VgUTw1RBXNtzfsg0qazx9Spw-r4i8BgqXAUbSsLT0TFRkY2XIeYXjFKuWJ7-StKNwuMTORM0n7bMBErkVGhN9pbWqJHOYLeNA9w2"
+          },
+          {
+            "fonte": "YouTube",
+            "link": "https://www.google.com.br/goto?url=CAESZwHEIkXX-eBSLl3mRQvxulO6Sb_gqJXoP_Cnd7H6benfWiSN1E2_qxo1vuIlVFssQxsb56lTjiakzs3y6V5tcKWzHi-0xQT4NMmfkoGCcCZpeHgO86yzJvd3Pors7u_EjDNV1yEfM28"
+          },
+          {
+            "fonte": "Instagram",
+            "link": "https://www.google.com.br/goto?url=CAESaAHEIkXXF-ILynStNEPNHK1gn2i2A9jqOIEg_2FWyWXkLmk9xTYy3HhDZ1w7wTq8wS5E1C42B7F2oDYYg2-VZtidcMX0CMd_oB0MctNhE_5680S5Llyh2nkfLavC8FWJCB7oaxQU8_Xu"
+          },
+          {
+            "fonte": "Facebook",
+            "link": "https://www.google.com.br/goto?url=CAES1AEBxCJF1930tYb-n2Yow7JtCUQtVltWsWJdSRfpAjJOkc0Gkf6z9izTBqOFV939UidldrPIXfdVFILbtfbLzAUB-9fd0t8bnE13gqGznBdIP_WLeennp2bUvd1krteMax72Rb6cQ4JCKbGkHYaHKG86_i1uV1DtuD4iGh-_Gd7s4JtBCV7o5MCe_lTnkrdRSVBaTpFIMqVS6sO5Wi3SsMlIbmt3FDOoFDhA2J90XOvnoGCJyJM_KzWr0gCUoewRPiz9aCXLM4RYIqHVQHUxuSGKo6rPJQ"
+          },
+          {
+            "fonte": "Instagram",
+            "link": "https://www.google.com.br/goto?url=CAESaAHEIkXXYYpxcdsNwgYBqOrkAdaFF1iMB5EdBDa4ZrlHkGZuYox35_FSPyuhz3_j6v8yP8wNy7gfuMXBccen7E6wKty6okcW1k4BCaVDB8Lhl7IXSA7gKzdtAH5eR72MeFjCeApC0XSO"
+          }
+        ]
+      },
+      "organicos": [
+        {
+          "posicao": 1,
+          "titulo": "Cartão de Crédito Consignado",
+          "link": "https://www.bandesp.com.br/voce/emprestimos/cartao-de-credito-consignado/Paginas/default.aspx"
+        },
+        {
+          "posicao": 2,
+          "titulo": "Empréstimo BPC LOAS LIBEROU! Você que é Bpc e Loas já pode solicitar o crédito consignado! Estamos liberando até 17 mil! 💰BPC",
+          "link": "https://www.facebook.com/emprestimoauxiliobrasil/videos/empr%C3%A9stimo-bpc-loas-liberouvoc%C3%AA-que-%C3%A9-bpc-e-loas-j%C3%A1-pode-solicitar-o-cr%C3%A9dito-con/1294711344511630/"
+        },
+        {
+          "posicao": 3,
+          "titulo": "Empréstimo BPC loas 2024: como pedir o consignado? - FDR",
+          "link": "https://fdr.com.br/artigos/emprestimo-bpc-loas-2024/"
+        },
+        {
+          "posicao": 4,
+          "titulo": "Quem Recebe Bpc Loas Pode Fazer Empréstimo Até Quanto",
+          "link": "https://www.google.com.br/goto?url=CAESnwEBxCJF16iDle4g2sqCgkv3v5yp3K4VE-R3o1BVL4CsR_dhJgaG8any0DOcC-PteWaGYwilGOfWGDiUoxumYs30s-KMYoMWy2Ury_64RTJ3GYh-j3YkqU5SxVPdV0csmQCs_LuWpusdRwt74HV4iQqBQzgZY6kACi5YTuqZf4Sf8JwuNlFqNzme2-25kYVGSKzxxjDnjWCvHBqxyjdJsdA"
+        },
+        {
+          "posicao": 5,
+          "titulo": "Quem recebe BPC/LOAS pode fazer empréstimo? Guia 2026",
+          "link": "https://www.google.com.br/goto?url=CAESlAEBxCJF14rvUaRZFAtPe8JAjmME7cWpBHZ5t9QSBg2JsrNhGkWy3LaySliKebgTcXXmzCi_vOLM7YYN8vSwbhCI2JyP2W__ikrrq9IUsqjoGzdy6KhR4Rz7LRsDdw-3UeYpZX-Fqwq0HiuIY1Qdt1q5OkKx5xSDQM-_OpVfzz4ueYQJW-8_BCkJpBYbe5zvenTwg1mx"
+        },
+        {
+          "posicao": 6,
+          "titulo": "Bancos já podem fazer empréstimo consignado do Auxílio Brasil e BPC",
+          "link": "https://www.google.com.br/goto?url=CAESnwEBxCJF19rAekFJ-nT8r2TRhtKPHVeVV69dZ9QrV2604EI4jQbiGh-DXxl1aludiTVQA61cjpoyZxxmtkamFFQLabfTl5nw_0M-O8lyRqcLPA9T-9_zDxeQevz-uIwEMJGIxTWrgvrKRWHMArV9QjKyL9zydg3G0JVr3SHaVS9RhJuMjuZNK3p7PYXZWw-zWUtobGMh9EOjYKUJm8bpNvM"
+        },
+        {
+          "posicao": 7,
+          "titulo": "Empréstimo para BPC LOAS: Descubra Como Conseguir Agora Mesmo!",
+          "link": "https://www.google.com.br/goto?url=CAESdwHEIkXXiwTgr6sUc9tsajBAZY_X7z2vMuQ4SiFCU2wNrjmM3TexFHjCjrq1zPcfKABXoznBuSLRdRJWotiBzt6cimG3gTKwOXL6PpC4AzDPG1MWP1KTabnwZB8Uywc1_j59ISqL_hQv592HX-pO1w1eY2vvDkdk"
+        },
+        {
+          "posicao": 8,
+          "titulo": "Guia INSS 2026: Como beneficiários do BPC podem fazer empréstimo consignado",
+          "link": "https://www.google.com.br/goto?url=CAESgwEBxCJF12JWG7juXM-QMkrqJ1m2MkGbmT0h6KvfqwBoRXHiyymesR9LysJc3MCjbcAXz0SP_Z0hsq8r0r1lf6sxqD5Y1X1Q5EQtDnPfqkcYz2ZVYLLPszZB3UX1MytJxNidq6HQAe-ynEL-a9o3BX5qBjGua02tGC3Z4KQZMn5oFTOlLw"
+        }
+      ],
+      "mapa": []
+    }
+  ],
+  "serpNotes": {
+    "formato": "Texto; muitos vídeos e posts do Facebook/Instagram e páginas de correspondentes; sem mapa.",
+    "visaoDeIA": "Lista de regras: 'até 40%' (incorreto; a lei dá 35%), prazo de 84 a 96 meses, representação legal, cuidados e golpes. Cita gov.br, Prefeitura de Agudos, Instagram, Empresta, YouTube.",
+    "concorrentes": "Facebook, FDR, correspondentes e blogs: fracos."
+  },
+  "serpImpact": [
+    {
+      "dado": "Anotação da pauta e outras pesquisas: 'pode fazer empréstimo de 20 mil / 30 mil', 'qual o valor do empréstimo 2026'",
+      "efeito": "Seção 'Quanto dá para pegar' com o salário mínimo de 2026 (Decreto 12.797/2025) e conta no teto de juros; FAQ de R$ 20 mil."
+    },
+    {
+      "dado": "Visão de IA: margem de 40%",
+      "efeito": "Não entrou (incorreto); corrigida também a frase do artigo que igualava o BPC aos demais benefícios."
+    },
+    {
+      "dado": "Lei 10.820, art. 6º, § 9º (achado na leitura da lei)",
+      "efeito": "Seção 'dois momentos' com 5 dias úteis."
+    },
+    {
+      "dado": "Outras pesquisas: representante legal; 'voltou'; 'liberado'",
+      "efeito": "Ficaram de fora: representante legal sem fonte oficial lida; 'voltou/liberado' é chamada de oferta."
+    },
+    {
+      "dado": "Bancos e 'Empréstimo loas caixa'",
+      "efeito": "Ficaram de fora: marca."
+    }
+  ]
 }

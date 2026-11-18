@@ -44,5 +44,140 @@
     "Detalhe de cada modalidade (links)"
   ],
   "publicationDecision": "create",
-  "notes": "Próxima revisão (SerpApi 16/11/2026, busca \"empréstimo para aposentado\"): PAA \"Como conseguir R$ 500 urgentemente?\" apareceu no público aposentado; avaliar FAQ. | Próxima revisão (SerpApi 16/11/2026, busca \"consignado servidor público\"): PAA \"Como conseguir 10.000 reais urgentemente?\"."
+  "notes": "Próxima revisão (SerpApi 16/11/2026, busca \"empréstimo para aposentado\"): PAA \"Como conseguir R$ 500 urgentemente?\" apareceu no público aposentado; avaliar FAQ. | Próxima revisão (SerpApi 16/11/2026, busca \"consignado servidor público\"): PAA \"Como conseguir 10.000 reais urgentemente?\". | Atendido em 18/11/2026 (seção por valor e FAQs de R$ 500 e R$ 10 mil).",
+  "serpEvidence": [
+    {
+      "busca": "preciso de dinheiro urgente",
+      "data": "2026-11-18",
+      "aparelho": "mobile",
+      "local": "Sao Paulo,State of Sao Paulo,Brazil",
+      "autocompletar": [
+        "preciso de dinheiro urgente para hoje",
+        "preciso de dinheiro urgente estou negativado",
+        "preciso de dinheiro urgente o que fazer",
+        "preciso de dinheiro urgente como conseguir",
+        "preciso de dinheiro urgente trabalho extra",
+        "preciso de dinheiro urgente para hoje negativado",
+        "preciso de dinheiro urgente sem empréstimo",
+        "preciso de dinheiro urgente nome sujo",
+        "preciso de dinheiro urgente negativado",
+        "preciso de dinheiro urgente para pagar agiota",
+        "preciso de dinheiro urgente estou negativado o que fazer",
+        "preciso de dinheiro urgente agora",
+        "preciso de dinheiro urgente mas meu nome nao libera emprestimo",
+        "preciso de dinheiro urgente o que eu faço",
+        "preciso de dinheiro urgente para pagar dívidas"
+      ],
+      "pessoasTambemPerguntam": [
+        "Como conseguir R$ 100 emprestado no Pix?",
+        "Como posso obter um empréstimo sem burocracia?",
+        "Como conseguir 2 mil reais urgentemente?",
+        "Como ganhar um Pix de 500 reais agora?"
+      ],
+      "outrasPesquisas": [
+        "Fácil empréstimo é confiável",
+        "Emprestimo pessoal",
+        "App emprestimofacil",
+        "Empréstimo para negativado",
+        "Emprestimo facil",
+        "1500 reais urgente",
+        "Emprestimo rapido",
+        "Empresta fácil é confiável",
+        "Uconecte empréstimo",
+        "Empréstimo na hora via pix agiota abertos agora",
+        "Empresta facil",
+        "Granafacil"
+      ],
+      "visaoDeIA": {
+        "texto": [
+          "Precisa de dinheiro rápido e com segurança? Várias opções digitais liberam recursos via Pix em poucos minutos ou no mesmo dia.",
+          "Opções de Empréstimo Rápido Online",
+          "Velotax: Oferece empréstimo pessoal 100% online de R$ 500 a R$ 1.000 via Pix na chave CPF em até 30 minutos, exigindo conta bancária conectada via Open Finance 0.6.1. ; NoVerde: Disponibiliza empréstimo pessoal 100% online de até R$ 8 mil, com depósito na conta bancária em até 1 dia útil após a aprovação 0.6.2. ; Banrisul: Conta com a modalidade Crédito 1 Minuto, permitindo contratação rápida pelo aplicativo e depósito imediato na conta corrente 0.6.6. ; Outras alternativas: Aplicativos e plataformas como RecargaPay 0.6.7, Caixa Econômica Federal 0.6.4, Banco do Brasil 0.6.9 e Vivo Pay 0.6.10 também oferecem simulação e contratação digital.",
+          "Cuidados Essenciais Contra Golpes",
+          "Nunca pague nada adiantado: Instituições sérias e regulamentadas pelo Banco Central jamais cobram taxa de liberação, depósito prévio ou \"seguro\" para aprovar um empréstimo. Se exigirem Pix antecipado, é golpe. ; Verifique a reputação: Confirme se a empresa é regulamentada e desconfie de propostas milagrosas de \"crédito garantido para negativados\" sem nenhuma análise. ; Atenção aos juros: Avalie o Custo Efetivo Total (CET) e as parcelas para que não comprometam mais de 30% da sua renda mensal."
+        ],
+        "fontes": [
+          {
+            "fonte": "velotax.com.br",
+            "link": "https://www.google.com.br/goto?url=CAEScAHEIkXX2a0VqqKwQ3oYWmnyN6RlZuUDwTlFJXEBb1gRAmGA3CHokMBBpQdS81TtRIWyqL4YhlhAXEGj26ZhFKX1fZOCoOCQKmGIkYT4-Z2iKqoaQrgC58fd1Juj8YkOlUCD6_4ikV31WsFpuRaeFsM"
+          },
+          {
+            "fonte": "Serasa",
+            "link": "https://www.google.com.br/goto?url=CAESfQHEIkXXYv30pLPASPiRSeFYoiK2rHaBaxlRWyo5lLbPj5nyXvhIkMCMUpEEOap2ugRKqJJCQcjOL9iP16ltpUEsT3w1yCYzr9_9z7uye02a61hC1_x9taY7hOPDcLFUE8GqjoBBUGhZo0M4rMz-xgn2MLYC8tt4oHSrDaNJ"
+          }
+        ]
+      },
+      "organicos": [
+        {
+          "posicao": 1,
+          "titulo": "Crédito Sempre -",
+          "link": "https://creditosempre.com/"
+        },
+        {
+          "posicao": 2,
+          "titulo": "Empréstimo Carnê - Quem pode pedir? | Blog Empréstimos",
+          "link": "https://www.bandesp.com.br/blog-emprestimos/emprestimo-carne"
+        },
+        {
+          "posicao": 3,
+          "titulo": "https://www.recife.pe.gov.br/Brasilia059/Empréstim...",
+          "link": "https://www.recife.pe.gov.br/Brasilia059/Empr%C3%A9stimo%20De%2050%20Reais%20Na%20Hora/"
+        },
+        {
+          "posicao": 4,
+          "titulo": "Financiamento de veículos",
+          "link": "https://www.google.com.br/goto?url=CAESYwHEIkXXtfflm1v2BIqdvyrHIR_B_WsL1qHsE5MU3IFTz9_g_uJjR9MZPA3s8v-CkkWlDBp2IWxIVqR6ez5ymTAC6gcz0MTv6bLr2KD5HURwbl--QohaJEv1-xZulZCY-_XO3Q"
+        },
+        {
+          "posicao": 5,
+          "titulo": "Empréstimo no Carnê | Empréstimos",
+          "link": "https://www.google.com.br/goto?url=CAESdAHEIkXXbPjaYO8Nj829eGfVv9k2kmGQBNaCZWjFDkoWBQLP9RjWYyd6ITqjmGsIawzddecpzSFimvjK9225jH6BDHQLuzsXEhqnOLRrw0acDaRuEtqCxbDA0cihk-zDLjdae7GuZUJZ5Aq9vd-PhqtOHe2w"
+        },
+        {
+          "posicao": 6,
+          "titulo": "Política Privacidade | Site",
+          "link": "https://www.google.com.br/goto?url=CAESgQEBxCJF1-bsKGSXksI00ludyVOi1Mv5btHvffXtvfDPsvWu-Uyj4DwdGtMKV7xglvpgKcB0_THxEeQEju0ULw_KT3NMVQbZnOZ0nLZIEU8xTCD69NiSkYYNZ_RizcsBh5wPCcaiplb8C_vEEjVTISSzhQ2pJ_mQItBDp2QEPcuoI9M"
+        },
+        {
+          "posicao": 7,
+          "titulo": "Empréstimo Fácil: dicas sobre empréstimo, consignado e INSS",
+          "link": "https://www.google.com.br/goto?url=CAESWQHEIkXXc0SDWjstYSgeTUu5-JvHo1XRLOLqoQXCTOoqUdzdJFUvZjgtjeABdDe0WRpRw-tWmxF04Zr5Wz5qZ5Pz4YJP4ZHxgk0PR_28ok7tsidILNQ9xRYs"
+        },
+        {
+          "posicao": 8,
+          "titulo": "Empréstimo Pessoal Online",
+          "link": "https://www.google.com.br/goto?url=CAESlwEBxCJF17wBuwQdn-ND41A8FH_hQGXJ6NdztgHYo5I1xkWPi9pwHxr32PXYpMMjE-NNyxRYfpGVkEEcRd6-ei8-awEz-VitlIGaYlqY75ZUESyuxwzuvvUzjNTXPlj80eW14vekiJbXxN1eFrrhFJugyBIvJVdn13vBFGZTCwDHdS5EWotVIKO3RypUc4NwsGmV5Fc0XtXF"
+        },
+        {
+          "posicao": 9,
+          "titulo": "Dicas práticas de como conseguir dinheiro emprestado",
+          "link": "https://www.google.com.br/goto?url=CAESiwEBxCJF1wfKSXhw1Q_K17V0Dln19H_MjtIS6K3FJqQvtEsEH-hp1MNU834BbNdS_CXqlWbq-78ECcdMgitukzElYb2OjItDeiyyRtN4Km9b4oHw9_-Cl7GFGLsfbKNIk2NJ-skyqwdZWUjAeU2eBaqWCCRFLga_cOWhBsI2oRqxZ4fGKd3Le2rclsy8"
+        }
+      ],
+      "mapa": []
+    }
+  ],
+  "serpNotes": {
+    "formato": "Texto; sem mapa. Orgânicos dominados por financeiras, blogs de empréstimo e uma página invadida em domínio de prefeitura (spam).",
+    "visaoDeIA": "Lista de marcas de empréstimo rápido via Pix (Velotax, NoVerde, Banrisul) e um bloco de cuidados contra golpe (nada pago adiantado, instituição regulada, CET). Cita velotax.com.br e Serasa.",
+    "concorrentes": "Financeiras e blogs comerciais; nenhum órgão oficial: busca com espaço para conteúdo neutro."
+  },
+  "serpImpact": [
+    {
+      "dado": "PAA 'Como conseguir 2 mil reais urgentemente?', 'Como conseguir R$ 100 emprestado no Pix?', 'Pix de 500 reais agora'; pauta: R$ 500 e R$ 10 mil (PAA de 16/11)",
+      "efeito": "Seção 'R$ 500, R$ 2 mil ou R$ 10 mil: o valor muda o caminho', com custo do cheque especial no teto de 8% a.m. (Res. CMN 4.765/2019), e duas FAQs."
+    },
+    {
+      "dado": "Visão de IA: cuidados contra golpe",
+      "efeito": "Já coberto pelo pacto anti-cilada; FAQ de R$ 500 ganhou o alerta do 'Pix de R$ 500' com depósito antecipado."
+    },
+    {
+      "dado": "Visão de IA e outras pesquisas: marcas de apps e financeiras",
+      "efeito": "Fora: marca."
+    },
+    {
+      "dado": "Autocompletar: negativado, nome sujo, pagar agiota, pagar dívidas, sem empréstimo, trabalho extra",
+      "efeito": "Já cobertos (FAQ de negativado, link de agiota, triagem, venda de algo parado); 'trabalho extra' fora do tema."
+    }
+  ]
 }
