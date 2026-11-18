@@ -29,9 +29,9 @@ Sem outros temas novos: os itens abertos das ondas 1 a 7 e da trilha local já v
 | "Quem recebe BPC pode fazer empréstimo de R$ 20 mil?" | `consignado-para-quem-recebe-bpc` | Revisão do aposentado INSS, 16/11/2026 |
 | "Como conseguir R$ 500 urgentemente?" e "Como conseguir 10.000 reais urgentemente?" | `dinheiro-urgente` | Revisões de 16/11/2026 |
 | "O que o STF decidiu sobre os consignados?" (só com a decisão localizada no STF) | `emprestimo-consignado` | Revisão do aposentado INSS, 16/11/2026 |
-| CLT: "o que mudou", "número máximo de parcelas", "valor máximo de parcela" | `credito-do-trabalhador` | Revisão do servidor público, 16/11/2026 |
+| ~~CLT: "o que mudou", "número máximo de parcelas", "valor máximo de parcela"~~ | ~~`credito-do-trabalhador`~~ — feito em 18/11/2026 | Revisão do servidor público, 16/11/2026 |
 | "Como posso obter um empréstimo do governo do estado de São Paulo?" | `emprestimo-do-governo` | Revisão do servidor público, 16/11/2026 |
-| Multa e juros por atraso ("multa por atraso de pagamento" 390; "juros por atraso" 90) | `o-que-acontece-ao-atrasar-parcela` | Planejador, 17/11/2026 |
+| ~~Multa e juros por atraso ("multa por atraso de pagamento" 390; "juros por atraso" 90)~~ | ~~`o-que-acontece-ao-atrasar-parcela`~~ — feito em 18/11/2026 | Planejador, 17/11/2026 |
 | "CDC com interveniência" e amortização no CDC (autocompletar) | `cdc-credito-direto-ao-consumidor` (só com fonte oficial) | Criação do artigo, 17/11/2026 |
 | Cartão de benefício do servidor estadual (Decreto 66.622/2022, alterado pelo 69.418/2025): limite de uso | `consignado-servidor-estadual-sp` (ler o texto do decreto antes) | Criação do artigo, 17/11/2026 |
 | Taxas médias do mês (antiga "página viva", item 20 da pauta de agosto; "taxa media de juros emprestimo" 10/mês). Só com rotina mensal de atualização | `como-consultar-taxa-media-do-bc` | `docs/pauta-seo.md`, onda 3 |
@@ -76,7 +76,7 @@ Já revisadas com SerpApi (fora da contagem):
 | 18 | 06/08/2026 | Documentos para empréstimo: o que podem pedir — e o que nunca entregue — `documentos-para-emprestimo` | artigo | São Paulo |
 | 19 | 06/08/2026 | Empréstimo para autônomo: como comprovar renda sem holerite — `emprestimo-para-autonomo` | artigo | São Paulo |
 | 20 | 06/08/2026 | Empréstimo para MEI: crédito como pessoa física ou pelo CNPJ? — `emprestimo-para-mei` | artigo | São Paulo |
-| 21 | 06/08/2026 | Atrasou a parcela do empréstimo? O que acontece e o que fazer agora — `o-que-acontece-ao-atrasar-parcela` | artigo | São Paulo |
+| ~~21~~ | ~~06/08/2026~~ | ~~Atrasou a parcela do empréstimo? O que acontece e o que fazer agora~~ — `o-que-acontece-ao-atrasar-parcela`, revisado em 18/11/2026 | artigo | São Paulo |
 | 22 | 06/08/2026 | Portabilidade de crédito: como levar sua dívida para juros menores — `portabilidade-de-credito` | artigo | São Paulo |
 | 23 | 16/08/2026 | Taxa média de juros: como consultar no Banco Central (passo a passo) — `como-consultar-taxa-media-do-bc` | artigo | São Paulo |
 | 24 | 16/08/2026 | Empréstimo em Santa Isabel (SP): guia para contratar com segurança — `sp-santa-isabel` | guia de cidade | Santa Isabel (cidade da página) |

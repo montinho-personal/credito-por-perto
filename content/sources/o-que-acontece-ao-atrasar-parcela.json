@@ -45,6 +45,51 @@
       "sourceLocation": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2021/lei/l14181.htm",
       "sourceType": "official",
       "accessedAt": "2026-08-06"
+    },
+    {
+      "claimId": "stj-379",
+      "claimText": "Súmula 379: nos contratos bancários não regidos por legislação específica, os juros moratórios poderão ser convencionados até o limite de 1% ao mês.",
+      "sourceOrganization": "Superior Tribunal de Justiça",
+      "sourceTitle": "Súmula 379",
+      "sourceLocation": "https://arquivocidadao.stj.jus.br/index.php/sumula-379",
+      "sourceType": "official",
+      "accessedAt": "2026-11-18"
+    },
+    {
+      "claimId": "stj-296",
+      "claimText": "Súmula 296: os juros remuneratórios, não cumuláveis com a comissão de permanência, são devidos no período de inadimplência, à taxa média de mercado estipulada pelo BC, limitada ao percentual contratado.",
+      "sourceOrganization": "Superior Tribunal de Justiça",
+      "sourceTitle": "Súmula 296",
+      "sourceLocation": "https://arquivocidadao.stj.jus.br/index.php/sumula-296",
+      "sourceType": "official",
+      "accessedAt": "2026-11-18"
+    },
+    {
+      "claimId": "stj-472",
+      "claimText": "Súmula 472: a comissão de permanência, cujo valor não pode ultrapassar a soma dos encargos remuneratórios e moratórios previstos no contrato, exclui a exigibilidade dos juros remuneratórios, moratórios e da multa contratual.",
+      "sourceOrganization": "Superior Tribunal de Justiça",
+      "sourceTitle": "Súmula 472",
+      "sourceLocation": "https://arquivocidadao.stj.jus.br/index.php/sumula-472",
+      "sourceType": "official",
+      "accessedAt": "2026-11-18"
+    },
+    {
+      "claimId": "stj-30",
+      "claimText": "Súmula 30: a comissão de permanência e a correção monetária são inacumuláveis.",
+      "sourceOrganization": "Superior Tribunal de Justiça",
+      "sourceTitle": "Súmula 30",
+      "sourceLocation": "https://arquivocidadao.stj.jus.br/index.php/sumula-30",
+      "sourceType": "official",
+      "accessedAt": "2026-11-18"
+    },
+    {
+      "claimId": "debito-em-conta",
+      "claimText": "Débito em conta depende de autorização prévia do titular, cancelável; para empréstimo, o contrato traz em destaque a opção por débito de obrigação vencida, inclusive parcial (Res. CMN 4.790/2020, arts. 3º, 4º e 6º).",
+      "sourceOrganization": "Banco Central do Brasil",
+      "sourceTitle": "Resolução CMN nº 4.790/2020",
+      "sourceLocation": "https://www.bcb.gov.br/estabilidadefinanceira/exibenormativo?tipo=Resolu%C3%A7%C3%A3o&numero=4790",
+      "sourceType": "official",
+      "accessedAt": "2026-11-18"
     }
   ]
 }

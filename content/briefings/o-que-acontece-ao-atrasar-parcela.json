@@ -27,8 +27,12 @@
     "Alerta: atraso atrai golpista",
     "FAQ"
   ],
-  "uniqueExamples": ["Distinção 'mês ruim' vs 'parcela não cabe mais' como bifurcação da estratégia"],
-  "proposedVisuals": ["WarningBox"],
+  "uniqueExamples": [
+    "Distinção 'mês ruim' vs 'parcela não cabe mais' como bifurcação da estratégia"
+  ],
+  "proposedVisuals": [
+    "WarningBox"
+  ],
   "pagesThatMayCompete": [
     "/organizacao-financeira/renegociacao-ou-emprestimo/",
     "/emprestimos/emprestimo-para-negativado/"
@@ -37,5 +41,173 @@
     "Rito completo da execução de garantia (fica no guia de garantia)",
     "Processo de renegociação (link)"
   ],
-  "publicationDecision": "create"
+  "publicationDecision": "create",
+  "serpEvidence": [
+    {
+      "busca": "multa por atraso de pagamento",
+      "data": "2026-11-18",
+      "aparelho": "mobile",
+      "local": "Sao Paulo,State of Sao Paulo,Brazil",
+      "autocompletar": [
+        "multa por atraso de pagamento de rescisão",
+        "multa por atraso de pagamento de aluguel",
+        "multa por atraso de pagamento de salário",
+        "multa por atraso de pagamento de aluguel lei do inquilinato",
+        "multa por atraso de pagamento de férias",
+        "multa por atraso de pagamento de rescisão pedido de demissão",
+        "multa por atraso de pagamento salarial",
+        "multa por atraso de pagamento salarial clt",
+        "multa por atraso de pagamento de boleto",
+        "multa por atraso de pagamento 5 dia util",
+        "multa por atraso de pagamento clt",
+        "multa por atraso de pagamento de fgts",
+        "multa por atraso de pagamento contrato de compra e venda",
+        "multa por atraso de pagamento de prestação de serviços",
+        "multa por atraso de pagamento de contrato"
+      ],
+      "pessoasTambemPerguntam": [
+        "Quanto posso cobrar de multa por atraso de pagamento?",
+        "Qual é a multa por atraso na entrega do PGDAS em 2026?",
+        "O que diz a CLT sobre atraso de salário?",
+        "É legal cobrar juros de 2% ao mês?"
+      ],
+      "outrasPesquisas": [],
+      "visaoDeIA": {
+        "texto": [
+          "A multa por atraso de pagamento depende do tipo de obrigação (relação de consumo, salário ou imposto):",
+          "1. Contas e boletos (Relações de consumo)",
+          "Multa: Limitada a 2% sobre o valor da dívida, conforme o Código de Defesa do Consumidor (CDC, Art. 52, § 1º). Vale para água, luz, telefone, gás, condomínio, mensalidades escolares e boletos em geral. ; Juros de mora: Podem ser cobrados de até 1% ao mês (proporcional aos dias de atraso, ou cerca de 0,033% ao dia). ; Veja mais detalhes sobre regras e cálculo no SPC Brasil.",
+          "2. Atraso de salário (Trabalhista)",
+          "O salário deve ser pago até o 5º dia útil do mês subsequente. ; Precedente Normativo nº 72 do TST: Multa de 10% sobre o saldo salarial para atrasos de até 20 dias, mais 5% por dia no período subsequente. ; Multa Administrativa (Lei nº 15.179/2025): Multa de 30% sobre o valor da remuneração não paga no prazo legal, aplicada pela Inspeção do Trabalho. ; Incidem também correção monetária e juros de mora de 1% ao mês.",
+          "3. Imposto de Renda (Receita Federal)",
+          "Multa por atraso na entrega/pagamento: De 1% ao mês sobre o imposto devido (com valor mínimo de R$ 165,74 e teto de 20%). ; Consulte os canais oficiais na Receita Federal.",
+          "Você gostaria de saber o cálculo específico para algum tipo de conta ou dívida em particular?"
+        ],
+        "fontes": [
+          {
+            "fonte": "GOV.BR",
+            "link": "https://www.google.com.br/goto?url=CAESiAEBxCJF16TYTefa3rVpW2RZmyJTd2ZQC1gogKS7kNjoQvsHsE6YfjL1UI2cHN8RJk0_zaNnL_jDHApScQcTeqN1c3out5c6dbLoDnIbw2JJSbr4GgK6mShk1rEWQH_rjmEXeo70BXqva2IvGwRS2FL9SsWGH3aA3yaYvrusYe2WdfdYHsCCuSeS"
+          },
+          {
+            "fonte": "SPC Brasil",
+            "link": "https://www.google.com.br/goto?url=CAESfAHEIkXXFv-iXuITRfnZ7g_i1Ht-2i0Gkc_Co7LEQD6AKnPidwfyfv-j_edZaCCrAn4RUKfDhQZIKgm65PphtEoIkLwPVycmHyLlECjuyl0TLjSb2mfvg2dLrLnshrV085jcKxRswfOWDVBXxlh-UUFUq0CI5SqAqaTd9tk"
+          },
+          {
+            "fonte": "Jusbrasil",
+            "link": "https://www.google.com.br/goto?url=CAEShwEBxCJF1_9lwhD0YlXueQCTM80MJ9JhjEFKqzqdKwj6T55_bVCizCRRTafuA2R7CuEVINAdY2EKeiRtH0KrOXT_BXcxtePQy66Ud89gH2QkFOr-LQeafM4M7rTCBqbIgYZHi5U0yxtNGU6fwfbRUtf0jP27sU0X0VuFaacR8OHNAFimyc6xXOo"
+          },
+          {
+            "fonte": "Neofin",
+            "link": "https://www.google.com.br/goto?url=CAESeQHEIkXXzq8AoKdQu0YHsY6Ma_ZA-wGzZCSox9OjhQllhYp3cmgEcwYTJ0BAxgwQ7mFpMLpt_kArXbMoBPkSDvpzwHygQ9ATaIdNREN1Feb9hTXPGmLPG-DOgtVSxGEP3yhMBYYid7HwhJuTCAsnqGS3xID1Gd6UO_E"
+          },
+          {
+            "fonte": "www.tjdft.jus.br",
+            "link": "https://www.google.com.br/goto?url=CAES7gEBxCJF18KJA-2cD9Adzv6WhNGttjP-Jmo1gGQ9SNA9BuK3muZB8JjReXIbPPCVfTO8IRHgEwfDQ-I21GJ9EIzvYVG_wA-Mex-4qD3l4VPFAnyBu1_NpVzBgrVyUn4Nso92HnvcnyNUYgZBgYZLGVzGZ-j6o7SX6OI8cITjIlroMimS2_2-ymxDw6mbFUKJ9pqYtcgeFIn2n5tIi4wwi9OUNPlKYEUV9u0twuVOAiGRT1r6vPRkNHmvQ-d898qHr5dMbNAeK0qbdJ8saOT7uy1J-aYb5F9hdX-RdWtG6nqgIvk_hvPANAq6eCth8e04"
+          },
+          {
+            "fonte": "www.santabarbara.sp.gov.br",
+            "link": "https://www.google.com.br/goto?url=CAESqgEBxCJF1zycFzfQ1D4evUbk2oicsIcDOh-78ato9fGqpgXAZNqUOEq8-dFCMPHH8qCCF188PB2UsYzO91oQiObsrwDbLG9TnjR9e3pnC5mxyTlEIWFyHePgrbMJujWlrJZG4glosB7lx90-y6DAuDhqv0SfzBLPA3OUj4WTOcHpdR9FuJWrSeTXsldCQY3X9rovWz6-spTsqgiMibwmwcHUodGG4xz_74jf1A"
+          },
+          {
+            "fonte": "Siscobra",
+            "link": "https://www.google.com.br/goto?url=CAESdwHEIkXXGJNwTYQuJCcRINj_1EC624PgvDVDuG6RwjfqC9pawoptz0nkYGoWSLLp06Hqdzm__m85kTvQinjYl9HKDARUIh6xqPxEX_x_nHtGrRT9TLoqpHtS9yur6DdqEDwtXHd6vijdTAh5VXteoeowl0_qESP3"
+          },
+          {
+            "fonte": "Feldmann Advocacia",
+            "link": "https://www.google.com.br/goto?url=CAESngEBxCJF1-u0vntLTz65DTMu4jE9puhjoaujYrjQo5B85uYbH8lXLLerZZ9eIrwEMLVe9GRo8qloDMnzB3-dX4Liij-eZRj2lpUyU66G2lF_clAjVvpYtuBfM6hyfDoZTMCPyecPvcY4PL1qbr23l3dLDkPFcHF6S-qxT3tX88TVZqHKQ2RBg_v2gpqegEopp71UWGJ8ZN9I-F2lKP5N2w"
+          },
+          {
+            "fonte": "YouTube",
+            "link": "https://www.google.com.br/goto?url=CAESbgHEIkXX15t1JXNw-1CV1v9xxj3Eg6ZOzC_nVV0rZcvjkRJlAKv3PDX2k576Ly-AsUsWxfnAvYBu13Si6gQKmCPuRyUoLybvHU8S1_4g8XRcxgdKE65Zy2zeutFPATtoksQbFCB32uj2RZcFlfVe"
+          },
+          {
+            "fonte": "YouTube",
+            "link": "https://www.google.com.br/goto?url=CAESbgHEIkXXBRTlLhfFQf5Mt_-EiwsLfAKjWWD2f87rlK0h-MUqO6Z4REVWT_B5Zpp6xHW5b_U4cMiIGE0y09IQy0PvAGSQYcWddrr8uEaQ0XfgWMNartn8tuf8_BmfXEt_L6iIRgkSBNQepvDvoSzs"
+          },
+          {
+            "fonte": "Instagram",
+            "link": "https://www.google.com.br/goto?url=CAESaAHEIkXXsb4MCd2UJaEHb9XhFO-7ZH37UVVNpXg1GsMRaGwcJAZUD9y5Ht6dxKO_CLDIAwJ96xT8IVBkuDnQuzKHe5Q_gHUzsrHQkYP6t-pAGb1OWGCIwzkKi9EOsaVKC1AYQLAhbSKq"
+          },
+          {
+            "fonte": "Instagram",
+            "link": "https://www.google.com.br/goto?url=CAESaAHEIkXXADnSTeJnKlAJ8lXS5qVgRuTqipchIytBOJNKayr9sCgkxKxRz8Omt8G3KVZ4kRYT0qtpFFJfzNAp17Hu1qAZnei6v4pMhSPdd3lTVzSUGnvjfVQS19W4hRvNI8LBIRJjLxBb"
+          }
+        ]
+      },
+      "organicos": [
+        {
+          "posicao": 1,
+          "titulo": "Como calcular juros e multa para cobrança de médias e grandes empresas",
+          "link": "https://www.google.com.br/goto?url=CAESfwHEIkXXHofH3AyZ_g6IoMlb-OKx7guiBZWj20Jhp8LB_C9YPOgXnIZXbvI5C5FDUvbzCXMH1UyhvhZ3AFyAuCxFqgRgsQ_i6PzAoZZIfMG6vv_DkA4_M6dNPl_32t-gXGGa_zC5XEcvgDiXUjKpoK6nUbVpChSk4MAXhfqjGWE"
+        },
+        {
+          "posicao": 2,
+          "titulo": "O que a lei diz? Na Semana da Folha, surgiu uma dúvida muito comum: já existe multa para a empresa que não faz o pagamento ou o repasse devido? A resposta é sim. E o proble",
+          "link": "https://www.google.com.br/goto?url=CAESaAHEIkXX0ELtNgr20O3yF57FcMRPoEGx92BsNgdpncY5w-DFGHL3-54Q5YisNEBz3NAfF3ZjiHKH2jIapsU1IRUc-2TPUwwgZaWkFDj--0lgBPD6eWBR8e2INH13dlaAxp6YOQrEMQld&gsessionid=0_IFWpbNFuv1mz7PmE-R_xbMIi06cWAmy8HWlgNhe2orkw7Ip0ZJOQ"
+        },
+        {
+          "posicao": 3,
+          "titulo": "Arquivo para multa por atraso de pagamento - Blog Televendas & Cobrança",
+          "link": "https://www.google.com.br/goto?url=CAEShgEBxCJF17VWWTHO2LvQGfmcpTxeR9lee_bWqpBYiwgbebksiRml4SKPx0AYH3XzlAusE0rTPfOzqZUosN9j5FfLjsLU9FaMVq2CLrjCV28FDQnk1nFibPrTBEHoY_EAPNGN_nhqaFFm4RfupPbVs4T96q0GY3Ri3ZkQXPg_Fp0pGVCDYIBTIQ"
+        },
+        {
+          "posicao": 4,
+          "titulo": "MULTA POR ATRASO NO PAGAMENTO DA RESCISÃO",
+          "link": "https://www.google.com.br/goto?url=CAESaAHEIkXX7TtqUJJmWyBBEaut1frnrycBA6ysYRJZKNdjvLs4N2XAckK5JSOMw2vuGfmaue9YJg-AD9urmRAwmBvQJdbOg1AMDzOqavgGTphzvyOsLhez1H4d-JRLoL_We5GCS4nVGFtY&gsessionid=0_IFWpbNFuv1mz7PmE-R_xbMIi06cWAmy8HWlgNhe2orkw7Ip0ZJOQ"
+        },
+        {
+          "posicao": 5,
+          "titulo": "Seus direitos: empresas não podem cobrar multa por atraso na entrega das faturas",
+          "link": "https://www.google.com.br/goto?url=CAESvwEBxCJF1290646O2PahthLmxCAw9ETGGT03tt8F5Hv3Nd8MTPNKE87Jj1_AYPSFmi6_PF2JEaApgfreKTC78dWdjqWL-hAn4q0HwIdh0wYJx5QFRSooPMwLrsky_u-vvSa5q6fnYjG_5TfBcWE9GEwT4d1Ura1rB69Almk3kuveb3tyEULno_Z5lfnVk-bX8BiXxWPaS9pPc9fFJ45DCyf56R0lbkVoWEd3m1TqYe-jUITRz581Xsf7jKVLiCyRcg"
+        },
+        {
+          "posicao": 6,
+          "titulo": "COMO CALCULAR OS JUROS E MULTAS DO BOLETO BANCÁRIO?",
+          "link": "https://www.google.com.br/goto?url=CAESiQEBxCJF16Id4WzXNBPYJV6MmW6v-TLoPaNgrnD4UE3a8fexvAGLjRyUxEyTLy2lxIWxT9Bj8CmUEjccjWMrVuwAKl4ok-1S5U39OWDsvz2A7s1WGODbRuHoXwHPZii8yidcclEUcquSgWSu26yGgb4gu5EkeBQaHLu0Mc2PkkMZz2Xh0lfg51WL9g"
+        },
+        {
+          "posicao": 7,
+          "titulo": "MULTA POR ATRASO NO PAGAMENTO DO SALARIO - Departamento Pessoal e RH",
+          "link": "https://www.google.com.br/goto?url=CAESqgEBxCJF1_byO6TVdKdxDH2o4Y3CBzdacqJKhc1P7Bp-z90CesHMY_AbRVjxu2SwaHtc_9rhfAgpcb41md7ZUtAyhBtyJhQn3ogN3mcdWXI5CByjK3n9sZ4AL-ydCzYYx31bQVOabKdmxnRV4k_EUOvbLPZWasVJQCopFstzUInMrIQ6suzRgCxBHaSIXgzRgp1i1PBMfnxjLyXwUkBZ6tRSsU_dS2ZpuSxEnQ"
+        },
+        {
+          "posicao": 8,
+          "titulo": "Qual é o limite permitido para a cobrança de multa por atraso e juros?",
+          "link": "https://www.google.com.br/goto?url=CAESowEBxCJF15olicaeyAYNdWgHp5cqsc1ZlUZfQcaY7XrM6rBs2VEqjnBnkygMyq4ThJC3RrTl2OZmzr9V9IfF-7IQcM-SiXJ-Zge5HTw7sk_qLQRoai_W1IucgMU_jZMB7nWdUxTVmXPFqBDvqnM8s1CJY5ivarPtN58mtlSrFkTUHvDI33tBDyG9w_AlUwJpWVLJueYbN0xmPyxtWBUOUhhei8hi"
+        }
+      ],
+      "mapa": []
+    }
+  ],
+  "serpNotes": {
+    "formato": "Texto; resultados misturam cobrança de empresas, trabalhista (rescisão, salário) e boleto; sem vídeo no topo nem mapa.",
+    "visaoDeIA": "Lista por tipo de obrigação: consumo (multa de 2% do CDC e juros de 1% ao mês), salário (PN 72 do TST, multa administrativa) e Receita. Cita gov.br, SPC Brasil, Jusbrasil, Neofin, TJDFT, Prefeitura de Santa Bárbara, Siscobra e Feldmann Advocacia.",
+    "concorrentes": "Blogs de cobrança, Facebook/Instagram e escritórios: fracos para a parte de crédito."
+  },
+  "serpImpact": [
+    {
+      "dado": "Visão de IA e PAA: multa de 2%, juros de 1% ao mês, 'é legal cobrar juros de 2% ao mês?'",
+      "efeito": "Nova seção 'Multa e juros por atraso' com CDC art. 52 § 1º e Súmulas 379, 296, 472 e 30 do STJ; duas FAQs."
+    },
+    {
+      "dado": "Autocompletar: rescisão, aluguel, salário, férias, FGTS, CLT, contrato de compra e venda, prestação de serviços; PAA PGDAS e CLT",
+      "efeito": "Ficaram de fora: outros serviços e fora do tema do site."
+    },
+    {
+      "dado": "Anotação da pauta (parte 2): 'multa por atraso de pagamento' 390/mês",
+      "efeito": "Atendida nesta revisão."
+    }
+  ],
+  "revisionLog": [
+    {
+      "data": "2026-11-18",
+      "tipo": "seção da pauta (parte 2) e revisão pendente",
+      "mudancas": [
+        "Seção de multa e juros por atraso",
+        "FAQ do desconto em conta trocada pela regra documentada",
+        "Duas FAQs novas"
+      ],
+      "tituloDescricao": "sem mudança"
+    }
+  ]
 }

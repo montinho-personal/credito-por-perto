@@ -36,6 +36,24 @@
       "sourceLocation": "https://www.gov.br/trabalho-e-emprego",
       "sourceType": "official",
       "accessedAt": "2026-08-06"
+    },
+    {
+      "claimId": "mte-faq",
+      "claimText": "FAQ do MTE: até 35% do salário para as prestações, excluídas rendas variáveis como hora extra; um empréstimo por vínculo (dois vínculos, dois empréstimos); garantias opcionais de até 10% do FGTS ou até 100% da multa; na demissão, as garantias quitam a dívida e o saldo pode ser pago com recursos próprios, renegociado ou cobrado no próximo vínculo; no pedido de demissão a dívida se mantém e o FGTS não pode ser usado; desistência em 7 dias corridos do recebimento, devolvendo o valor integral; nova simulação após 24 horas; negativado pode simular, sujeito à análise de risco do banco; portabilidade a qualquer tempo.",
+      "sourceOrganization": "Ministério do Trabalho e Emprego",
+      "sourceTitle": "Crédito do Trabalhador — Perguntas frequentes",
+      "sourceLocation": "https://www.gov.br/trabalho-e-emprego/pt-br/assuntos/credito-do-trabalhador/perguntas-frequentes",
+      "sourceType": "official",
+      "accessedAt": "2026-11-18"
+    },
+    {
+      "claimId": "lei-10820-clt",
+      "claimText": "Lei 10.820 (texto atualizado): desconto em verbas rescisórias até 40% (35% empréstimos, 5% cartão) (art. 1º, § 1º); limites de valor por regulamento (§ 2º); bloqueio de novos descontos a qualquer tempo, sem alcançar os já autorizados (§§ 3º e 4º); garantia de até 10% do FGTS e até 100% da multa, acionável só em despedida sem justa causa, culpa recíproca ou força maior (§§ 5º e 6º); redirecionamento automático para outros vínculos (§ 9º); soma dos descontos até 40% da remuneração disponível (art. 2º, § 2º); portabilidade com taxa menor (art. 2º-F); biometria e assinatura com prova de vida (art. 2º-I); Lei 15.367/2026 aplica a Lei 14.509 a empregados públicos federais (art. 1º-A, parágrafo único).",
+      "sourceOrganization": "Câmara dos Deputados",
+      "sourceTitle": "Lei nº 10.820/2003 — texto atualizado",
+      "sourceLocation": "https://www2.camara.leg.br/legin/fed/lei/2003/lei-10820-17-dezembro-2003-497441-normaatualizada-pl.html",
+      "sourceType": "official",
+      "accessedAt": "2026-11-18"
     }
   ]
 }
