@@ -18,6 +18,15 @@
       "sourceLocation": "https://www.bcb.gov.br/estabilidadefinanceira/rankingreclamacoes",
       "sourceType": "official",
       "accessedAt": "2026-08-05"
+    },
+    {
+      "claimId": "taxas-por-instituicao",
+      "claimText": "O Banco Central publica as taxas de juros praticadas pelas instituições, por modalidade de crédito, na página pública 'Taxas de juros de operações de crédito'.",
+      "sourceOrganization": "Banco Central do Brasil",
+      "sourceTitle": "Taxas de juros de operações de crédito",
+      "sourceLocation": "https://www.bcb.gov.br/estatisticas/txjuros",
+      "sourceType": "official",
+      "accessedAt": "2026-08-16"
     }
   ]
 }

@@ -27,6 +27,15 @@
       "sourceLocation": "https://www.bcb.gov.br/estabilidadefinanceira/rankingreclamacoes",
       "sourceType": "official",
       "accessedAt": "2026-08-05"
+    },
+    {
+      "claimId": "registrato",
+      "claimText": "O Registrato é o sistema gratuito do Banco Central que emite relatórios sobre o CPF/CNPJ do titular: empréstimos e financiamentos (SCR), contas e relacionamentos em bancos (CCS), chaves Pix, câmbio e transferências internacionais e cheques sem fundo.",
+      "sourceOrganization": "Banco Central do Brasil",
+      "sourceTitle": "Registrato — Extrato do Registro de Informações no Banco Central",
+      "sourceLocation": "https://registrato.bcb.gov.br",
+      "sourceType": "official",
+      "accessedAt": "2026-08-25"
     }
   ]
 }

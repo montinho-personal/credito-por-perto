@@ -28,8 +28,13 @@
     "Filtros finais",
     "FAQ"
   ],
-  "uniqueExamples": ["Tabela de comparação em branco como ferramenta"],
-  "proposedVisuals": ["Tabela para preencher", "MethodologyBox"],
+  "uniqueExamples": [
+    "Tabela de comparação em branco como ferramenta"
+  ],
+  "proposedVisuals": [
+    "Tabela para preencher",
+    "MethodologyBox"
+  ],
   "pagesThatMayCompete": [
     "/juros-e-cet/o-que-e-cet/",
     "/organizacao-financeira/quando-vale-a-pena-fazer-emprestimo/"
@@ -38,5 +43,132 @@
     "Definição de CET (link)",
     "Roteiro de decisão sobre contratar ou não (artigo próprio)"
   ],
-  "publicationDecision": "create"
+  "publicationDecision": "create",
+  "serpEvidence": [
+    {
+      "busca": "como comparar propostas de empréstimo",
+      "data": "2026-11-18",
+      "aparelho": "mobile",
+      "local": "Sao Paulo,State of Sao Paulo,Brazil",
+      "autocompletar": [],
+      "pessoasTambemPerguntam": [
+        "Quanto vou pagar por um empréstimo de R$ 20 mil?",
+        "Qual é o banco que tem a menor taxa de empréstimo?",
+        "Como conseguir 2.000 reais urgentemente?",
+        "Quanto fica um empréstimo de 10 mil na Nubank?"
+      ],
+      "outrasPesquisas": [],
+      "visaoDeIA": {
+        "texto": [
+          "Para comparar propostas de empréstimo com segurança, avalie sempre o Custo Efetivo Total (CET), o valor total pago ao final do contrato, o prazo, a parcela mensal e o tipo de garantia ou desconto exigido.",
+          "O que analisar em cada proposta",
+          "CET (Custo Efetivo Total): Mostra o custo real da operação porque reúne juros, tarifas, seguros e impostos (como o IOF), indo além da taxa de juros nominal divulgada.",
+          "Valor total a pagar vs. parcela: Uma parcela menor pode esconder um prazo mais longo com juros compostos maiores ou encargos extras, elevando o custo final.",
+          "Modalidade e taxas de referência: Linhas com desconto em folha (consignado) ou garantia costumam ter juros mensais menores que o crédito pessoal comum, cheque especial ou rotativo do cartão.",
+          "Condições e tarifas embutidas: Verifique se há cobrança de seguros obrigatórios, taxas de abertura/cadastro ou exigências de garantia antes de assinar.",
+          "Passo a passo para comparar",
+          "Padronize o valor e o prazo: Simule todas as opções para o mesmo valor solicitado e compare prazos equivalentes (ou veja quanto o total sobe ao esticar as parcelas).",
+          "Compare o CET e o montante final: Coloque lado a lado o CET anual/mensal e a soma de todas as parcelas de cada instituição.",
+          "Verifique o impacto no orçamento: Confirme se a prestação cabe com folga na sua renda mensal sem comprometer reservas essenciais.",
+          "Confira o contrato antes de fechar: Revise cláusulas de antecipação de parcelas, multas, encargos e eventuais serviços adicionais.",
+          "Você pode consultar guias e simuladores como os do Guardar Dinheiro , do Bom Pra Crédito e da para conferir referências de taxas e simular cenários.",
+          "Se você quiser, informe o valor desejado, o prazo aproximado e as taxas ou parcelas das propostas que recebeu para eu calcular o total estimado de cada uma."
+        ],
+        "fontes": [
+          "Creditas",
+          "du.ed2x.com.br",
+          "du.ed2x.com.br",
+          "Digio",
+          "du.ed2x.com.br",
+          "Economigo",
+          "Bom Pra Crédito",
+          "www.guardardinheiro.com.br"
+        ],
+        "nota": "visão de IA em duas etapas (page_token)"
+      },
+      "organicos": [
+        {
+          "posicao": 1,
+          "titulo": "Descubra qual empréstimo é o ideal: compare taxas, parcelas e encontre a melhor escolha.",
+          "link": "https://economigo.org/p1-comparacao-emprestimos/"
+        },
+        {
+          "posicao": 2,
+          "titulo": "https://www.acctsite.com/calcs/CompareLoan.html",
+          "link": "https://www.acctsite.com/calcs/CompareLoan.html"
+        },
+        {
+          "posicao": 3,
+          "titulo": "How about comparing your payroll loan options without having to check bank by bank?",
+          "link": "https://www.youtube.com/shorts/-0AYGSTmr14"
+        },
+        {
+          "posicao": 4,
+          "titulo": "Simulador de empréstimo: compare taxas e calcule parcelas",
+          "link": "https://www.google.com.br/goto?url=CAESlAEBxCJF12dukhEcHbl8zBpvH43p3qx2giNQdsyDJmeiLyIbfCidcNq4WCqVdFC29pMdSniWuH0vtt0-mFTgpYF_SqZfOJ8KZM6hS2bTewtglziaEjJnO46HoQ45iykRE3AeGV3XgejspiFf8zoHkwv7Lxx9D6jMeeK2mmyjx1-CosAWXjCnFUGyJ8bv8za50KoAQeaj"
+        },
+        {
+          "posicao": 5,
+          "titulo": "Empréstimo consignado INSS comparar ofertas e escolher melhor taxa - fra.caleine - ED2X",
+          "link": "https://www.google.com.br/goto?url=CAESlwEBxCJF1yZhA3TTLigvm5KQbb6JkIl4RSDM7oRWwHyV8B7pLvems9Pk3n-aRNWr049f_kOWrBAij7G0B5RVlKej3lFvsvE64OGj91HhG32BxjOWCBOQYk4Cd8052XFk7RKWKlkM-HDBHBj13uS-rOPB8kCBc3SYCb2XF_Yf6bbMmlJbN8V6gfdzwNpAAsRg1IVxqTq7swJd"
+        },
+        {
+          "posicao": 6,
+          "titulo": "Comparar empréstimos: encontre a melhor oferta em poucos passos - fra.caleine",
+          "link": "https://www.google.com.br/goto?url=CAESkwEBxCJF1zNzJQWA50QlClug9BztUZ-xqYNw_cIc5p5XBckoFQnjclOoYVhAfvDFOnvDkYsPtuYJHexfcLwFBW6o6lYJLb3Yo0C8kRfhbwNSOa_K-dpXewZ1XJoEHGgZY2_EFkOtLnwIcqlmjrIj3b1AWPv6HYftsFIrpw1cNKBytmEIEK1CCbX0kr49Xa63JKAHMeU"
+        },
+        {
+          "posicao": 7,
+          "titulo": "Rate Plan Comparison Tool",
+          "link": "https://www.google.com.br/goto?url=CAESiwEBxCJF14dJgUV2awl6PgbBHpVKXB_mbV6kKrojUYHOVQlk5JpCp8gPxGHoLXkfhxyXSs8Z8khznqtcxas5s5B3vvmfOTAayFYKd_jUkNyTZhSSP8-maNG36vxxLy4uuYnhpbCOE2N1fO0n1oDg-kjkSepljyiVSk0ROr4H9B3JgtCBXJ4527_iwZO3"
+        },
+        {
+          "posicao": 8,
+          "titulo": "Tudo o que você deseja em um só lugar! - CoteCompare",
+          "link": "https://www.google.com.br/goto?url=CAESYQHEIkXXgivSyb6oSSkvENAs7u-0CoVQgC7hNLQA56aTZVbkNdVRaiJ5iCYMqfDEXn2_GVtgw2rPztDdu3rveivDNT-dXLjpyLbeXP5tnJ8uxu-Kr3fL5QczYEtmuypy1fg"
+        },
+        {
+          "posicao": 9,
+          "titulo": "Empréstimo Mais Barato: Como Escolher a Melhor Opção? - Guardar Dinheiro",
+          "link": "https://www.google.com.br/goto?url=CAESewHEIkXXpE8alZl2IWRxpe5n7g1ljWqxfH4ajfPUURjYQT8-pfhD4y2ECUWdJT_nLAzQ_RModkIX3gTBK5GM14VIghSROtDSVVY4bHgvRgVvohDnnU-YXp9FkzD-fIeRbOMe11RH6VgNUe0n88TRO1emDnAxsMMAtCzPGA"
+        }
+      ],
+      "mapa": []
+    }
+  ],
+  "serpNotes": {
+    "formato": "Ferramentas e simuladores no topo (comparadores, calculadoras), vídeo curto; sem mapa. A página já tem ferramenta (comparador de propostas).",
+    "visaoDeIA": "Resposta em duas listas: o que analisar (CET, total x parcela, modalidade, tarifas embutidas) e passo a passo (padronizar valor e prazo, comparar CET e montante, orçamento, contrato). Cita Creditas, ED2X (3x), Digio, Economigo, Bom Pra Crédito, Guardar Dinheiro.",
+    "concorrentes": "Comparadores comerciais, páginas genéricas e fra.caleine (ED2X): fracos."
+  },
+  "serpImpact": [
+    {
+      "dado": "Visão de IA: 'avalie o CET, o total, o prazo' e 'padronize valor e prazo'",
+      "efeito": "Lead passou a responder direto: CET e total, mesmo valor e mesmo prazo."
+    },
+    {
+      "dado": "PAA 'Quanto vou pagar por um empréstimo de R$ 20 mil?'",
+      "efeito": "Seção com três propostas ilustrativas de R$ 20 mil (taxa x seguro embutido x prazo), números calculados."
+    },
+    {
+      "dado": "PAA 'Qual é o banco que tem a menor taxa de empréstimo?'",
+      "efeito": "FAQ neutra apontando as taxas médias por instituição do Banco Central, sem citar banco."
+    },
+    {
+      "dado": "PAA '2.000 urgente' e '10 mil na Nubank'",
+      "efeito": "Fora: outra página (dinheiro-urgente) e marca."
+    }
+  ],
+  "revisionLog": [
+    {
+      "data": "2026-11-18",
+      "tipo": "revisão pendente (parte 4)",
+      "mudancas": [
+        "Lead direto",
+        "Exemplo de três propostas de R$ 20 mil",
+        "FAQ da menor taxa"
+      ],
+      "tituloDescricao": "sem mudança"
+    }
+  ]
 }

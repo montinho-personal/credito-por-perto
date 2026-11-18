@@ -29,12 +29,154 @@
     "Aviso sobre correspondentes",
     "FAQ"
   ],
-  "uniqueExamples": ["Cenário 'nome parecido, CNPJ diferente' como alerta máximo"],
-  "proposedVisuals": ["Tabela de interpretação", "WarningBox"],
-  "pagesThatMayCompete": ["/credito-seguro/como-identificar-golpes-de-emprestimo/"],
+  "uniqueExamples": [
+    "Cenário 'nome parecido, CNPJ diferente' como alerta máximo"
+  ],
+  "proposedVisuals": [
+    "Tabela de interpretação",
+    "WarningBox"
+  ],
+  "pagesThatMayCompete": [
+    "/credito-seguro/como-identificar-golpes-de-emprestimo/"
+  ],
   "informationThatMustNotBeRepeated": [
     "Roteiros de golpe (ficam no guia geral)",
     "Método de comparação de propostas"
   ],
-  "publicationDecision": "create"
+  "publicationDecision": "create",
+  "serpEvidence": [
+    {
+      "busca": "como saber se financeira é autorizada pelo banco central",
+      "data": "2026-11-18",
+      "aparelho": "mobile",
+      "local": "Sao Paulo,State of Sao Paulo,Brazil",
+      "autocompletar": [
+        "como saber se uma financeira é autorizada pelo banco central",
+        "como saber se a instituição financeira e autorizada pelo banco central",
+        "como saber se a financeira é regulamentada pelo banco central",
+        "como saber se uma financeira está autorizada pelo banco central"
+      ],
+      "pessoasTambemPerguntam": [
+        "Como consultar minha situação financeira no Banco Central?",
+        "Quais bancos foram fechados pelo Banco Central?",
+        "Quais são as instituições financeiras classificadas como S1, S2, S3 e S4?",
+        "O Nubank é autorizado pelo Banco Central?"
+      ],
+      "outrasPesquisas": [],
+      "visaoDeIA": {
+        "texto": [
+          "Para verificar se uma financeira é autorizada pelo Banco Central do Brasil (BC), consulte o nome ou o CNPJ da empresa diretamente nas bases oficiais do regulador.",
+          "Como consultar no Banco Central",
+          "Tenha o CNPJ ou a razão social em mãos: muitas financeiras atuam com nome fantasia ou como correspondentes bancários de outras instituições.",
+          "Acesse o site oficial do BC (): vá até a área e procure os serviços de consulta de instituições autorizadas a funcionar no Sistema Financeiro Nacional (SFN).",
+          "Verifique o status: confirme se o CNPJ consta como ativo e autorizado para a atividade ofertada (como sociedade de crédito, financiamento e investimento).",
+          "Confira relacionamentos existentes: pelo Registrato _lSX-ataVMI3IkPIPs4Kk2Qc_42 (com conta nível prata ou ouro), você também pode ver instituições com as quais mantém ou manteve vínculo financeiro.",
+          "Sinais de alerta contra golpes",
+          "Cobrança antecipada: instituições sérias não exigem pagamento prévio de taxas, seguros ou depósitos para liberar empréstimos.",
+          "Uso indevido de marca: golpistas costumam usar o nome ou o CNPJ de financeiras reais em sites falsos ou mensagens de WhatsApp. Confirme sempre os canais oficiais da empresa.",
+          "Falta de transparência: desconfie de promessas de aprovação garantida sem análise de crédito ou contratos confusos.",
+          "Se você quiser, informe o nome ou o CNPJ da financeira e o tipo de operação (empréstimo, financiamento, investimento ou consórcio) para eu ajudar a avaliar os pontos de atenção."
+        ],
+        "fontes": [
+          "Instagram",
+          "Sindicato dos Bancários de Cascavel",
+          "Blog Ailos",
+          "VEJA",
+          "Banco Central do Brasil",
+          "YouTube",
+          "Instagram",
+          "Empresta Capital",
+          "Banco Central do Brasil"
+        ],
+        "nota": "visão de IA em duas etapas (page_token)"
+      },
+      "organicos": [
+        {
+          "posicao": 1,
+          "titulo": "https://www.bcb.gov.br/content/estabilidadefinance...",
+          "link": "https://www.bcb.gov.br/content/estabilidadefinanceira/Leiaute2062/Atual/informacoes_tecnicas"
+        },
+        {
+          "posicao": 2,
+          "titulo": "A Lei 4.595 descreve os tipos de instituição que pertencem ao SFN. O que não está no rol ...",
+          "link": "https://www.instagram.com/reel/DaVJwzqjGl5/"
+        },
+        {
+          "posicao": 3,
+          "titulo": "Como saber se um banco é seguro? Veja seis formas de checar",
+          "link": "https://bancarioscascavel.org.br/noticias/QxtZ-como-saber-se-um-banco-e-seguro-veja-seis-formas-de-checar"
+        },
+        {
+          "posicao": 4,
+          "titulo": "O que é o sistema de informação de crédito (SCR) e Bacen?",
+          "link": "https://www.google.com.br/goto?url=CAESaAHEIkXXKcUPzdUrrCHnO4yxqjQ-PDyFrBCQmQm0FuBI453vaw1wJSUUcAA0aWKTJ2PCFe-4J4kg_mF2QQJoIp9H9hQSHAH040VszxDBO48XNWXhTC6NEzm_rGSAAj7QE44EsoAFFWnL&gsessionid=bfg-wbNmtbx0Lg8qNIQk_Yj__KzN9XnqmbaCe1djDihgriM8PHVRMQ"
+        },
+        {
+          "posicao": 5,
+          "titulo": "How to Check Your Central Bank Registrato: Step-by-Step",
+          "link": "https://www.google.com.br/goto?url=CAESaAHEIkXXT6vOUj5PfaTsoVKbYvj0JqpZ2QYEhaxURIwfCKEkaKrsojfc2BvWHxdt8r2jBEtS9f-hKMB79_Iz5cu00r9SAR8E5m0P_7jybA0imbeZ-8r2KnZmhiwDhXmZN-VntHMUPmyR&gsessionid=bfg-wbNmtbx0Lg8qNIQk_Yj__KzN9XnqmbaCe1djDihgriM8PHVRMQ"
+        },
+        {
+          "posicao": 6,
+          "titulo": "SCR sem segredos: como consultar corretamente",
+          "link": "https://www.google.com.br/goto?url=CAEShwEBxCJF1xrn9l9f5u_byONvLmLC11bRBxM6IvN6A_3uPUJTZdrR3isb6FmK7ctNDZO2LlaP3oAw8_UehVges1VmXZC2F8d-V-Jj0okcWjohSZ3ELX-VoKinTxrYX6PBi8p2MzVxmGHtzAnHksfoyCSlhdZIivBjznD29wq-06mJ5nD1ISUD0j4"
+        },
+        {
+          "posicao": 7,
+          "titulo": "Site oficial para consulta: www.bcb.gov.br Neste vídeo, eu mostro o passo a ...",
+          "link": "https://www.google.com.br/goto?url=CAESaAHEIkXXSzn7OEeO_-wqPK7UiLTH84saLljWr5K9IYrlwhGAtOvP6-F86tdXuHE3hJrarFDVTYjP9xW0YBig2_lAAl0k23Lcuo4f_PDEGMWE7oNZz5To0CeJ-xa2SAsGG5eb5iJXl0jm&gsessionid=bfg-wbNmtbx0Lg8qNIQk_Yj__KzN9XnqmbaCe1djDihgriM8PHVRMQ"
+        },
+        {
+          "posicao": 8,
+          "titulo": "Como Verificar Se a Administradora é Autorizada Pelo Banco Central",
+          "link": "https://www.google.com.br/goto?url=CAESkQEBxCJF1-9X2_6LgKC83OfrIapkD7RV0zEAxcw3TrXTEEVyPL3Zi_e4xGtIrOyaRqqXUMousNbM0n7q9WJOyfEanwjK6jVUgsRWe-dqcszZ0cfIlaotNjbQEfApCd4JE2U_GaS1BXEzDdm0GJ9a-NDt1HTaxPloR_e8uLlh31YM4VkyBlKhTkSLu3duRxxp7In_"
+        },
+        {
+          "posicao": 9,
+          "titulo": "Quantidade de bancos autorizados a funcionar no Sistema Financeiro Nacional - BCB - Dados Abertos",
+          "link": "https://www.google.com.br/goto?url=CAESvgEBxCJF11sAnlPdjfF45vloHoRH94etjdBrls9EkrmYNPjU95ZyDzO7KO4lcid6FZHp3idVWYAsBW-uHd6TBqSdJ2ulWifQyeTWj0WLp9Twouk8WOcHKMk5qrMQs4LMeniUmBodP7z7pVfe8uXtAslfFKMGImHuXWrQNcmsialxDy1GKinpMOxVSDqwPGDVj7mr3lG4WdZ34I1YsRHQLIM2wxHKPwX9bObT2MASQftviXCpRQEy0tZZDac2jjoW"
+        }
+      ],
+      "mapa": []
+    }
+  ],
+  "serpNotes": {
+    "formato": "Texto e vídeo; página do BC aparece em 1º (técnica, não a consulta); Instagram e sindicato em seguida; sem mapa.",
+    "visaoDeIA": "Lista: ter CNPJ ou razão social (nome fantasia, correspondentes), acessar o site do BC, verificar status, Registrato; e sinais de golpe (cobrança antecipada, uso indevido de marca, aprovação garantida). Cita Instagram (2x), Sindicato dos Bancários de Cascavel, Blog Ailos, VEJA, Banco Central, YouTube, Empresta Capital.",
+    "concorrentes": "Instagram, sindicato, blogs de SCR e vídeos: fracos; a página do BC no topo não é a de consulta."
+  },
+  "serpImpact": [
+    {
+      "dado": "Visão de IA: 'consulte o nome ou o CNPJ nas bases oficiais'",
+      "efeito": "Lead passou a responder em uma frase com o serviço do BC."
+    },
+    {
+      "dado": "PAA 'Como consultar minha situação financeira no Banco Central?'",
+      "efeito": "FAQ do Registrato, com link para o guia."
+    },
+    {
+      "dado": "PAA 'O Nubank é autorizado?' e visão de IA (nome fantasia)",
+      "efeito": "FAQ genérica sobre banco digital e fintech, sem marca."
+    },
+    {
+      "dado": "PAA 'Quais bancos foram fechados pelo BC?'",
+      "efeito": "Fora por ora: precisa da página oficial de regimes especiais lida (pauta, parte 2)."
+    },
+    {
+      "dado": "PAA 'S1, S2, S3 e S4'",
+      "efeito": "Fora: segmentação prudencial, fora do tema do leitor de crédito."
+    }
+  ],
+  "revisionLog": [
+    {
+      "data": "2026-11-18",
+      "tipo": "revisão pendente (parte 4)",
+      "mudancas": [
+        "Lead direto",
+        "FAQ do Registrato",
+        "FAQ de banco digital e fintech"
+      ],
+      "tituloDescricao": "sem mudança"
+    }
+  ]
 }
