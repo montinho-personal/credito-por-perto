@@ -1,5 +1,5 @@
 {
-  "proposedTitle": "Como calcular juros de empréstimo: fórmulas, exemplo e passo a passo",
+  "proposedTitle": "Como calcular juros de empréstimo: fórmula, exemplo e como descobrir a taxa",
   "primaryIntent": "como calcular juros de empréstimo",
   "secondaryIntents": [
     "fórmula da parcela sistema Price",
@@ -218,6 +218,17 @@
         "Três FAQs novas"
       ],
       "tituloDescricao": "sem mudança (proposta enviada)"
+    },
+    {
+      "data": "2026-11-18",
+      "tipo": "título aprovado pelo Renato",
+      "antes": {
+        "title": "Como calcular juros de empréstimo: fórmulas, exemplo e passo a passo"
+      },
+      "depois": {
+        "title": "Como calcular juros de empréstimo: fórmula, exemplo e como descobrir a taxa"
+      },
+      "motivo": "'como achar a taxa' nas perguntas e na visão de IA; seção nova"
     }
   ]
 }
