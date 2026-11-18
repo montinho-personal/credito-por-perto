@@ -28,6 +28,7 @@ Sem outros temas novos: os itens abertos das ondas 1 a 7 e da trilha local já v
 | O que acontece com o consignado quando o aposentado morre ("consignado em caso de morte" 10/mês; "emprestimo consignado morte do titular" 10; "emprestimo consignado aposentado falecido" 10). Só com fonte oficial (lei, INSS ou STJ) | `divida-de-pessoa-falecida` (hoje não trata de consignado) | Revisão do aposentado INSS, 16/11/2026 |
 | ~~"Quem recebe BPC pode fazer empréstimo de R$ 20 mil?"~~ | ~~`consignado-para-quem-recebe-bpc`~~ — feito em 18/11/2026 | Revisão do aposentado INSS, 16/11/2026 |
 | ~~"Como conseguir R$ 500 urgentemente?" e "Como conseguir 10.000 reais urgentemente?"~~ | ~~`dinheiro-urgente`~~ — feito em 18/11/2026 | Revisões de 16/11/2026 |
+| BPC com representante legal ("empréstimo bpc loas representante legal"). Só com a regra do INSS lida (instrução normativa vigente) | `consignado-para-quem-recebe-bpc` | Revisão do BPC, 18/11/2026 |
 | "O que o STF decidiu sobre os consignados?" (só com a decisão localizada no STF) | `emprestimo-consignado` | Revisão do aposentado INSS, 16/11/2026 |
 | ~~CLT: "o que mudou", "número máximo de parcelas", "valor máximo de parcela"~~ | ~~`credito-do-trabalhador`~~ — feito em 18/11/2026 | Revisão do servidor público, 16/11/2026 |
 | "Como posso obter um empréstimo do governo do estado de São Paulo?" | `emprestimo-do-governo` | Revisão do servidor público, 16/11/2026 |
