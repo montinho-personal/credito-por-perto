@@ -18,6 +18,24 @@
       "sourceLocation": "https://www.bcb.gov.br",
       "sourceType": "official",
       "accessedAt": "2026-08-05"
+    },
+    {
+      "claimId": "iof-responsavel",
+      "claimText": "Decreto 6.306/2007: contribuintes do IOF são as pessoas físicas ou jurídicas tomadoras de crédito (art. 4º); são responsáveis pela cobrança do IOF e pelo recolhimento ao Tesouro Nacional as instituições financeiras que efetuarem operações de crédito (art. 5º, I).",
+      "sourceOrganization": "Presidência da República",
+      "sourceTitle": "Decreto nº 6.306/2007 (Regulamento do IOF)",
+      "sourceLocation": "https://www.planalto.gov.br/ccivil_03/_ato2007-2010/2007/decreto/d6306.htm",
+      "sourceType": "official",
+      "accessedAt": "2026-11-19"
+    },
+    {
+      "claimId": "codigo-civil-dolo",
+      "claimText": "Código Civil: são anuláveis por dolo os negócios jurídicos quando este for a sua causa (art. 145); é anulável o negócio por vício resultante de erro, dolo, coação (art. 171, II); prazo de decadência de quatro anos para pleitear a anulação, contado, no caso de dolo, do dia em que se realizou o negócio (art. 178, II).",
+      "sourceOrganization": "Presidência da República",
+      "sourceTitle": "Lei nº 10.406/2002 (Código Civil), texto compilado",
+      "sourceLocation": "https://www.planalto.gov.br/ccivil_03/leis/2002/l10406compilada.htm",
+      "sourceType": "official",
+      "accessedAt": "2026-11-19"
     }
   ]
 }

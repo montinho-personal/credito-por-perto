@@ -36,6 +36,15 @@
       "sourceLocation": "https://registrato.bcb.gov.br",
       "sourceType": "official",
       "accessedAt": "2026-08-05"
+    },
+    {
+      "claimId": "codigo-civil-dolo",
+      "claimText": "Código Civil: são anuláveis por dolo os negócios jurídicos quando este for a sua causa (art. 145); é anulável o negócio por vício resultante de erro, dolo, coação (art. 171, II); prazo de decadência de quatro anos para pleitear a anulação, contado, no caso de dolo, do dia em que se realizou o negócio (art. 178, II).",
+      "sourceOrganization": "Presidência da República",
+      "sourceTitle": "Lei nº 10.406/2002 (Código Civil), texto compilado",
+      "sourceLocation": "https://www.planalto.gov.br/ccivil_03/leis/2002/l10406compilada.htm",
+      "sourceType": "official",
+      "accessedAt": "2026-11-19"
     }
   ]
 }

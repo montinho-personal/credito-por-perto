@@ -29,12 +29,175 @@
     "Alerta golpe-sobre-golpe",
     "FAQ"
   ],
-  "uniqueExamples": ["Teste 'a oferta sobrevive à checagem?'"],
-  "proposedVisuals": ["ChecklistBox", "SafetyAlert"],
-  "pagesThatMayCompete": ["/credito-seguro/deposito-antecipado-e-golpe/"],
+  "uniqueExamples": [
+    "Teste 'a oferta sobrevive à checagem?'"
+  ],
+  "proposedVisuals": [
+    "ChecklistBox",
+    "SafetyAlert"
+  ],
+  "pagesThatMayCompete": [
+    "/credito-seguro/deposito-antecipado-e-golpe/"
+  ],
   "informationThatMustNotBeRepeated": [
     "Aprofundamento do depósito antecipado (artigo dedicado)",
     "Passo a passo de consulta de instituição (artigo dedicado)"
   ],
-  "publicationDecision": "create"
+  "publicationDecision": "create",
+  "serpEvidence": [
+    {
+      "busca": "como identificar golpe de empréstimo",
+      "data": "2026-11-19",
+      "aparelho": "mobile",
+      "local": "Sao Paulo,State of Sao Paulo,Brazil",
+      "autocompletar": [
+        "como identificar golpe de emprestimo",
+        "como identificar empréstimo falso",
+        "como identificar golpes financeiros",
+        "como identificar golpes",
+        "como identificar golpistas"
+      ],
+      "pessoasTambemPerguntam": [
+        "Como tirar juros abusivos de empréstimo?",
+        "Quais são os 7 golpes mais comuns da internet?",
+        "Como saber se o empréstimo é verdadeiro?",
+        "Qual banco libera empréstimo para quem está com nome sujo?"
+      ],
+      "outrasPesquisas": [
+        "Como saber se o empréstimo pelo whatsapp é verdadeiro",
+        "Paz crédito é confiável",
+        "Empréstimo para negativado",
+        "Emprestimo pessoal",
+        "O aplicativo pega crédito é confiável",
+        "Pay crédito empréstimo",
+        "Só empréstimo",
+        "Finara empréstimo é confiável",
+        "Empréstimo pessoal online",
+        "Fui enganado e assinei um contrato de empréstimo",
+        "Emprestimo pessoal juros",
+        "Finasa empréstimo"
+      ],
+      "visaoDeIA": {
+        "texto": [
+          "Para identificar um golpe de empréstimo, observe sinais como [Highlight start] pedido de dinheiro antecipado, promessas irreais e contatos fora dos canais oficiais da instituição [Highlight end] .",
+          "Principais sinais de alerta",
+          "Cobrança de taxa antecipada: Instituições sérias não pedem depósito, Pix ou boleto adiantado para liberar crédito, pagar seguro, \"IOF de desbloqueio\" ou \"taxa de cadastro\".",
+          "Ofertas boas demais para ser verdade: Desconfie de juros muito abaixo do mercado, aprovação garantida para negativados sem análise ou promessas de crédito sem burocracia.",
+          "Pagamento para pessoa física: Empréstimos legítimos não pedem transferências para contas de terceiros ou pessoas físicas.",
+          "Pressa e abordagem por WhatsApp ou redes sociais: Golpistas costumam criar senso de urgência e abordar por mensagens ou perfis falsos imitando bancos e financeiras.",
+          "Pedido de senha, token ou código de verificação: Nunca informe senhas bancárias, códigos de SMS ou tokens de segurança.",
+          "Empréstimo não solicitado ou \"depósito fantasma\": Fique atento a notificações de crédito que você não pediu, descontos desconhecidos no extrato ou dinheiro caindo na conta seguido de pedido de devolução para outra conta.",
+          "Como se proteger e verificar",
+          "Confira a instituição: Verifique se a empresa existe e tem autorização para operar junto aos canais oficiais e ao Banco Central.",
+          "Use apenas canais oficiais: Se receber uma oferta suspeita, encerre o contato e ligue ou acesse o site/aplicativo oficial do banco por conta própria.",
+          "Monitore seu CPF: Acompanhe seu extrato bancário e consulte relatórios de crédito (como o SCR no gov.br ou plataformas de bureau de crédito) para verificar empréstimos em seu nome.",
+          "Se já houve golpe: Não faça novos pagamentos, avise seu banco imediatamente, registre um Boletim de Ocorrência e guarde comprovantes e conversas.",
+          "Para aprofundar os sinais em contratações online, veja o artigo da Reis Advocacia e as orientações sobre condições e taxas no portal Sob Controle .",
+          "Se você recebeu uma proposta suspeita ou notou algo estranho na sua conta, me diga como foi o contato (WhatsApp, ligação, e-mail ou desconto no extrato) e se já enviou dinheiro ou dados para eu te orientar sobre os próximos passos."
+        ],
+        "fontes": [
+          "Instagram",
+          "veritacred.com.br",
+          "Antecipy",
+          "vcgassessoria.com.br",
+          "reis advocacia",
+          "www.sobcontrolecentrus.com.br",
+          "gcdradvocacia.com.br",
+          "Monitor do Mercado",
+          "www.oabsp.org.br",
+          "Serasa",
+          "Jusbrasil"
+        ],
+        "nota": "visão de IA em duas etapas (page_token)"
+      },
+      "organicos": [
+        {
+          "posicao": 1,
+          "titulo": "Golpes de Crédito Consignado: 12 Sinais de Alerta - Verita Cred",
+          "link": "https://veritacred.com.br/blog/golpes-de-credito-consignado-sinais-de-alerta/"
+        },
+        {
+          "posicao": 2,
+          "titulo": "🚨 Esse empréstimo é golpe? 3 sinais para você desconfiar: 1️⃣ Pede dinheiro antes de ...",
+          "link": "https://www.facebook.com/61577886044652/videos/-esse-empr%C3%A9stimo-%C3%A9-golpe-3-sinais-para-voc%C3%AA-desconfiar1%EF%B8%8F%E2%83%A3-pede-dinheiro-antes-de/2311737243016699/"
+        },
+        {
+          "posicao": 3,
+          "titulo": "Receita Federal alerta sobre golpe em empréstimo ou financiamento - VCG ASSESSORIA CONTÁBIL",
+          "link": "https://vcgassessoria.com.br/boletim/receita-federal-alerta-sobre-golpe-em-emprestimo-ou-financiamento-964"
+        },
+        {
+          "posicao": 4,
+          "titulo": "Sinais de fraude que você precisa conhecer",
+          "link": "https://www.google.com.br/goto?url=CAEShQEBxCJF19ezLz91zCl1khcZvehzihrvcFNZ3EuFeP0PAqEJNnRdzjOE4Gv2tXG7N6K8hLoWKDQToM5-hbG4UbEiSK4gKoBqyNTZrlVv7lau_VHg7q9pGuHMzvAuWbN1VYghWtW9vMYmlt85BubMGUghHzKdZFtbzpIgME75NvJf19RH9RNM"
+        },
+        {
+          "posicao": 5,
+          "titulo": "ATENÇÃO! Veja como você deve agir caso tenha sido vítima do Golpe do falso empréstimo: 1⃣ Registre um Boletim de Ocorrência. Junte todas as provas que você tem relacionadas aos",
+          "link": "https://www.google.com.br/goto?url=CAES5AEBxCJF10ZCujisRn5Nyu6nOshzHNimL-KREj8stk9hEelqzZzXZ05hcEUu6Hrv5jtz7ljVNJxtcivlk2PxDzbuXaCkIpNqkmB8fYgV1PC1cKdn8wAXiRzLxqmBr9adC53ERgpFzauSrNFmqz9aQFYXEsjSaSNWQjAee_ei5ASSou8qjXzFrU4l0BvBD8rIPoGsQRBiumTlsHl6hCE18FedYZAepuRx_ZuMotsq0dv7CFOWNPLbAPkJ53jdh79a_5DZWyWxlVrPBSE_vnP5TS9ovXKJHa5usbnUUUIFaZWqwMrmNUM&gsessionid=bT0i6epUrbSa9wFSIvFwzdBsmaBjnmPYVMrM8GtJEW4kgK855v0F5g"
+        },
+        {
+          "posicao": 6,
+          "titulo": "como identificar um golpe",
+          "link": "https://www.google.com.br/goto?url=CAESpQEBxCJF1_kAbNRrdJR6lcYeEheHNQa970jWFhJoe3ECSlE1Bf7R0oRSFL5TikpcY91CPmqlj3RQvipY0GGa_DJ0xEsiCNz652VLvkgYP7USa4MtFxb-joHjsrquRHSTIg46HXtDxsoemGZh06ods-jzVtPPV-EmPISkoQ9-HShYmfhpVHBH5yopPobX69_6udOt5042bqBDi05-bk_4YcjpI4DDhoY"
+        },
+        {
+          "posicao": 7,
+          "titulo": "Golpe: veja os 7 sinais que indicam um golpe de empréstimo",
+          "link": "https://www.google.com.br/goto?url=CAESpwEBxCJF1yP6-TUt9yNtu9SucK5mA009y08y_9hEJMWhSqJfIYQA5uJeoShbhIcUz-wozolkXaQ9dMMEhF14WsOKYSk5kH9-X-aeqMcnN7-LGhs9HnF_AAf4sgf1xV8UCymwVp2dPnStYiVDeyUnrC8dVg1zySoQiqQj_6tRbJVprkNhNGe5L9zbGIqoUUtQG-37BXe2Y_53mSGSdPpf6ma3-bjY7xCpzg"
+        },
+        {
+          "posicao": 8,
+          "titulo": "Como Identificar Golpes Financeiros: Dicas Essenciais para Proteger Seu Dinheiro e Evitar Fraudes",
+          "link": "https://www.google.com.br/goto?url=CAESzgEBxCJF13h3ctz1nT9MED4cGco9LbmRBFE4cL36WACELzqdu3XrkyGhZgIxuahQPK-NTbFCekNh-iXx1xjh3VHbKW6lrBVyEVz_hRICdDxpKVIN-4cNSe8sEak2YMaoCl_7Rw-DnfnmXRPy-2l9oWbkyT6GWBtaDxFsm0SeOVEVpiE2uKdRYmrNKBk72TA1moDphJz0g8mSZkuZoN3ChT9McN3a2cbLfADwLB2CGbcGGiipJh_stQZho_aKYWESP2wrgvG_E7qRoYuvX7XbcA"
+        },
+        {
+          "posicao": 9,
+          "titulo": "Empréstimo Fraudulento: O Que É, Como Identificar, Denunciar",
+          "link": "https://www.google.com.br/goto?url=CAESpAEBxCJF13YDRZYpwdCdRD6A-KeJCB4Eloe_nHZ2I8rGkeBT9DZW7OcXlYfikeArjXknSmfgz1zn53kScUznIFOCqz4JCjXsMklpMWao5ZfVHp7cGgDkeICMz0vsuAVSTQmguNhZFMgaSh3zpndaq1cUhIZTpnxrEGF25Iqx5ijKYTK1wFJjO0q7oXMU6iCqPNaUaFMU4vnXQNSdkS79iXkepUjqEg"
+        }
+      ],
+      "mapa": []
+    }
+  ],
+  "serpNotes": {
+    "formato": "Texto, posts de Facebook e Instagram; sem mapa.",
+    "visaoDeIA": "Lead com três sinais (dinheiro antecipado, promessa irreal, canal não oficial), lista de seis sinais (taxa antecipada, oferta boa demais, pagamento para pessoa física, pressa por WhatsApp, pedido de senha/código, empréstimo não solicitado) e lista de proteção (consultar a instituição, canais oficiais, monitorar CPF, o que fazer após o golpe). Cita Instagram, Verita Cred, Antecipy, VCG, Reis Advocacia, Sob Controle (Centrus), GCDR Advocacia, Monitor do Mercado, OAB SP, Serasa.",
+    "concorrentes": "Blogs de correspondentes, escritórios, contabilidade e Facebook: fracos."
+  },
+  "serpImpact": [
+    {
+      "dado": "Visão de IA: lista de sinais (pagamento para pessoa física, pedido de senha)",
+      "efeito": "Lead ganhou a lista curta de sinais; checklist ganhou pagamento para conta de terceiro."
+    },
+    {
+      "dado": "PAA 'Como saber se o empréstimo é verdadeiro?' e outras pesquisas 'pelo WhatsApp é verdadeiro'",
+      "efeito": "FAQ com as três checagens."
+    },
+    {
+      "dado": "Outras pesquisas: 'Fui enganado e assinei um contrato de empréstimo'",
+      "efeito": "FAQ com anulação por dolo (Código Civil, arts. 145, 171 e 178), lido no Planalto."
+    },
+    {
+      "dado": "Visão de IA: monitorar CPF / empréstimo não solicitado",
+      "efeito": "FAQ de como descobrir empréstimo no próprio nome, com link para o Registrato."
+    },
+    {
+      "dado": "PAA 'juros abusivos', '7 golpes mais comuns da internet', 'banco para nome sujo'; marcas de apps",
+      "efeito": "Fora: outra página existente, fora do tema, marca."
+    }
+  ],
+  "revisionLog": [
+    {
+      "data": "2026-11-19",
+      "tipo": "revisão pendente (parte 4)",
+      "mudancas": [
+        "Lead com sinais",
+        "Checklist: conta de terceiro",
+        "3 FAQs (verdadeiro, anular contrato, empréstimo no meu nome)",
+        "Link do MED para o guia interno"
+      ],
+      "tituloDescricao": "sem mudança"
+    }
+  ]
 }

@@ -28,11 +28,159 @@
     "Já paguei: encaminhamento",
     "FAQ"
   ],
-  "uniqueExamples": ["Frase-teste: 'só aceito custos descontados do valor liberado'"],
-  "proposedVisuals": ["SafetyAlert"],
-  "pagesThatMayCompete": ["/credito-seguro/como-identificar-golpes-de-emprestimo/"],
+  "uniqueExamples": [
+    "Frase-teste: 'só aceito custos descontados do valor liberado'"
+  ],
+  "proposedVisuals": [
+    "SafetyAlert"
+  ],
+  "pagesThatMayCompete": [
+    "/credito-seguro/como-identificar-golpes-de-emprestimo/"
+  ],
   "informationThatMustNotBeRepeated": [
     "Plano completo pós-golpe (fica no guia geral de golpes; aqui apenas resumo com link)"
   ],
-  "publicationDecision": "create"
+  "publicationDecision": "create",
+  "serpEvidence": [
+    {
+      "busca": "depósito antecipado para empréstimo é golpe",
+      "data": "2026-11-19",
+      "aparelho": "mobile",
+      "local": "Sao Paulo,State of Sao Paulo,Brazil",
+      "autocompletar": [
+        "depósito antecipado para empréstimo",
+        "depósito antecipado para empréstimo lei",
+        "depósito antecipado para empréstimo jurisprudência",
+        "depósito antecipado para liberação de empréstimos e financiamentos",
+        "depósito antecipado o que significa"
+      ],
+      "pessoasTambemPerguntam": [
+        "Quais são as novas regras para o empréstimo consignado em 2026?",
+        "Qual banco libera empréstimo para quem está com nome sujo?",
+        "Como funciona o golpe do telefone?",
+        "O que acontece se eu adiantar as parcelas do empréstimo?"
+      ],
+      "outrasPesquisas": [
+        "Fui enganado e assinei um contrato de empréstimo",
+        "Tem como descobrir quem fez empréstimo no meu nome",
+        "Como saber se o empréstimo pelo whatsapp é verdadeiro",
+        "Emprestimo para negativado",
+        "Emprestimo pessoal",
+        "Getcred empréstimo bolsa família e confiável",
+        "Banco central",
+        "Pronto financeira é confiável",
+        "Empréstimo para negativado liberado na hora",
+        "Paz crédito é confiável",
+        "Registrato",
+        "Empréstimo pessoal online"
+      ],
+      "visaoDeIA": {
+        "texto": [
+          "Sim, exigir qualquer depósito antecipado para liberar um empréstimo é golpe. Nenhuma instituição financeira autorizada pelo Banco Central do Brasil pode cobrar taxas, impostos ou parcelas antes de depositar o dinheiro na sua conta.",
+          "Como funciona e por que é ilegal",
+          "Proibição legal. Todas as tarifas, juros e o IOF (Imposto sobre Operações Financeiras) devem ser descontados do próprio valor aprovado ou embutidos nas parcelas mensais.",
+          "Desculpas usadas pelos golpistas. Os criminosos costumam pedir Pix ou transferências alegando custos de \"taxa de cartório\", \"seguro fiança\", \"liberação de score baixo\", \"taxa de cadastro\" ou \"primeira parcela\".",
+          "Contas de terceiros. Muitas vezes, o pagamento é pedido em nome de pessoas físicas ou empresas diferentes do banco que supostamente está oferecendo o crédito.",
+          "Principais sinais de alerta",
+          "Aprovação sem análise. Promessas de crédito imediato para negativados, sem consulta ao SPC/Serasa e sem comprovação de renda.",
+          "Abordagem informal. Ofertas enviadas diretamente por mensagens de WhatsApp, SMS ou redes sociais com senso de urgência.",
+          "Juros irreais. Condições muito abaixo das taxas praticadas pelo mercado.",
+          "Como se proteger e verificar",
+          "Consulte a instituição. Verifique se a empresa tem autorização para funcionar no site do Banco Central do Brasil.",
+          "Use canais oficiais. Nunca feche contratos por links enviados em mensagens; busque o aplicativo oficial ou o telefone do banco.",
+          "Se já transferiu dinheiro. Acione imediatamente o Mecanismo Especial de Devolução (MED) no seu banco caso tenha feito um Pix, e registre um Boletim de Ocorrência.",
+          "Você já recebeu alguma proposta ou chegou a fazer algum pagamento? Se quiser, me informe o que aconteceu (ou envie um print da conversa ocultando seus dados pessoais) para eu te orientar sobre os próximos passos."
+        ],
+        "fontes": [],
+        "nota": "visão de IA em duas etapas (page_token)"
+      },
+      "organicos": [
+        {
+          "posicao": 1,
+          "titulo": "Empréstimo com depósito antecipado é golpe. Não caia nessa cilada!",
+          "link": "https://blog.federalinvest.com.br/emprestimo-com-deposito-antecipado-e-golpe-nao-caia-nessa-cilada/"
+        },
+        {
+          "posicao": 2,
+          "titulo": "Ofereceram crédito a você e pediram um depósito antecipado para liberação do valor? ...",
+          "link": "https://www.facebook.com/sicooboficial/posts/ofereceram-cr%C3%A9dito-a-voc%C3%AA-e-pediram-um-dep%C3%B3sito-antecipado-para-libera%C3%A7%C3%A3o-do-val/4782136321802106/"
+        },
+        {
+          "posicao": 3,
+          "titulo": "Banco Central auxilia cidadão a não cair em golpes de falsos empréstimos e a verificar se seu nome foi utilizado indevidamente para contratação de crédito por um golpista",
+          "link": "https://www.gov.br/pt-br/noticias/financas-impostos-e-gestao-publica/2022/04/banco-central-auxilia-cidadao-a-nao-cair-em-golpes-de-falsos-emprestimos-e-a-verificar-se-seu-nome-foi-utilizado-indevidamente-para-contratacao-de-credito-por-um-golpista"
+        },
+        {
+          "posicao": 4,
+          "titulo": "Atenção, cooperado! Se alguém oferecer um empréstimo e pedir um pagamento antecipado para liberar o dinheiro, desconfie. Esse é um dos principais sinais de golpe. Lembre-se",
+          "link": "https://www.google.com.br/goto?url=CAESaAHEIkXXxnqJusQhTSGcUOF3FlKBxO4jGFs4-VP_KFoL-ttCMPE2JWL4Whox65IhYFo54Rbl3uGkcgAWtgnkVhqIzqOE8ON4ciQVWXOM_FVkZ1XrpDZsOA1JgK2Ho1k9-aANpEW-KNRH&gsessionid=PoMSU3Pvcdw0Fjtc-0AxDIjhJvpnvc1jI9L-pvkP8zCKmP4KOTr_mQ"
+        },
+        {
+          "posicao": 5,
+          "titulo": "Depósito antecipado é sinal de golpe, alerta Sicoob Crediacisc",
+          "link": "https://www.google.com.br/goto?url=CAES5AEBxCJF10YAotwgtFKWdwfF3ra_E3NlgL9ASz0cs7Zb7_ViFIBCzB03WIWM8fGRCRcIw8cK5WlG7J0ntG2WAhMab4m_ToyLQAw_BaTcG5AfRxs831oI7ikag6-nBderjzpHE2AxtQB8V2aM3aUfQYLnbK1Q-mkTUvxpkteWkixnbfw46f0MNkVYHjfwcoffUNZZom0enj68Et0UGER7XC-BHzP2whOl-Q82OuMSgDPIooN4uxp_lVe_81PvtYoJ0oz9oz7QNcdKWltaiWvUEu31kkvW6uQ0XFLl3tnq2_Bc49teNak"
+        },
+        {
+          "posicao": 6,
+          "titulo": "Golpe da antecipação do empréstimo",
+          "link": "https://www.google.com.br/goto?url=CAESaAHEIkXXALbpZbvfrnkiFHkAH0DrLBjBiVTUX224tOsgRiB-TOrB8rwOdXZvwREoeMB9nOFrWTIii2eYphi-vvEeryBvigta3w58N64xJqeksBBP6FnUZkLVLMI9I7RqkGsC1M6QQ-11&gsessionid=PoMSU3Pvcdw0Fjtc-0AxDIjhJvpnvc1jI9L-pvkP8zCKmP4KOTr_mQ"
+        },
+        {
+          "posicao": 7,
+          "titulo": "Golpe do empréstimo: sinais de alerta antes de enviar dinheiro ou documentos",
+          "link": "https://www.google.com.br/goto?url=CAESvgEBxCJF1wxqZ-Sk4CRTh5ZMh0XXzT-rk2BWy6NZ0s77NpSX1d4UwVbzExMvDJX_HOWakmUey8TnM-nbb5TIQ_SX_lKX1VYlNIoV4AKqT0cFCeK1ra5mTQP0DIKQPGXHK31LCLkx9vA1YDcaTOzAGFX_u3edM6NVcz0Y82o16O2pj8qV-YpGpgAB_IzVUELc8i4OUPhbJxClPfktE7l82eklWwpPbbRzFMinhr0SsodeU4UzUd7ycTB_MBEpPUxk"
+        },
+        {
+          "posicao": 8,
+          "titulo": "Consumidor, se você está à procura de empréstimo, cuidado: banco nunca pede qualquer depósito antecipado!",
+          "link": "https://www.google.com.br/goto?url=CAES0wEBxCJF1465-8sQAC2YvvSpwP17M5yjosvspVjgZru8X7fh7z2gKieb2B5zfx_8b-aGBzXUq_85q_X-bC_geSS0hC7twK1Jq-3dkgbzJtVW55y9TDD2E3stm6143PMPMBE3ur6YrL3npjDgJhM_tqiEaCa9aBPt2AuKOPiZAx4tbWu-txfOo7-tkYZ9IGLk8ePgK8ODz9Gq4g78f-OujmU4OY3cpRAkcMYm7dRyJX3_-SNEAQzRgeFqpbKzX7SQEsvpSl_tkSK5NvRDzSkrFeXj8SCX"
+        },
+        {
+          "posicao": 9,
+          "titulo": "Depósito antecipado para empréstimo é ilegal!",
+          "link": "https://www.google.com.br/goto?url=CAEStAEBxCJF13XHbizKlgRKCVa-nP0j3DpThjT5daOCf0zhr8or2s8i0v-8vK8-7Oma_0Fxqx2cWnn8eMbhVVX5CYsadNFUa_aWLpuNF9tuwTRPMWwB24K1grUa5PKibdswBe8QlkgxLVEkG6ux2j0g_SGIFIzSEdHWwKkoVsiRTiboCss5SJtkff2g3CTm1UUymdGbIJ6j1vAJe7p04C_dNm920j6cxgnajZzumu2_kweDngW_P0A"
+        }
+      ],
+      "mapa": []
+    }
+  ],
+  "serpNotes": {
+    "formato": "Texto e posts de cooperativas em redes sociais; página do gov.br (2022) em 3º; sem mapa.",
+    "visaoDeIA": "Abre com 'Sim, é golpe' e diz que é 'proibição legal' (não sustentado por norma citada); lista desculpas dos golpistas, contas de terceiros, sinais (aprovação sem análise, abordagem informal, juros irreais) e proteção (consultar o BC, canais oficiais, MED). Sem fontes listadas.",
+    "concorrentes": "Blog de financeira, Sicoob e cooperativas em redes sociais, gov.br de 2022: médios."
+  },
+  "serpImpact": [
+    {
+      "dado": "Visão de IA: pagamento para contas de terceiros",
+      "efeito": "Roteiro passo a passo ganhou o detalhe da conta de pessoa física ou de outro nome."
+    },
+    {
+      "dado": "Intenção secundária do briefing: 'IOF antecipado por Pix é normal' e visão de IA (IOF descontado do valor)",
+      "efeito": "FAQ do IOF com o Decreto 6.306/2007, arts. 4º e 5º (lido no Planalto)."
+    },
+    {
+      "dado": "Outras pesquisas: 'Fui enganado e assinei um contrato', 'descobrir quem fez empréstimo no meu nome'",
+      "efeito": "FAQ curta apontando para o guia de golpes (anulação e Registrato)."
+    },
+    {
+      "dado": "Autocompletar: 'lei', 'jurisprudência'",
+      "efeito": "Fora por ora: sem norma ou decisão oficial lida; a visão de IA fala em 'proibição legal' sem citar norma. Vira seção na pauta."
+    },
+    {
+      "dado": "PAA 'novas regras do consignado', 'adiantar parcelas', 'golpe do telefone'; marcas",
+      "efeito": "Fora: outras páginas existentes e marca."
+    }
+  ],
+  "revisionLog": [
+    {
+      "data": "2026-11-19",
+      "tipo": "revisão pendente (parte 4)",
+      "mudancas": [
+        "Conta de terceiro no roteiro",
+        "FAQ do IOF antecipado",
+        "FAQ de contrato assinado"
+      ],
+      "tituloDescricao": "sem mudança"
+    }
+  ]
 }
