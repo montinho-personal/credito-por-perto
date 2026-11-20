@@ -1005,5 +1005,19 @@
     "supportingPages": [
       "/emprestimos/financiamento-de-veiculo/"
     ]
+  },
+  "como cancelar empréstimo": {
+    "canonicalOwner": "/emprestimos/como-cancelar-emprestimo/",
+    "supportingPages": [
+      "/juros-e-cet/quitacao-antecipada-de-emprestimo/",
+      "/credito-seguro/desconto-nao-autorizado-inss/"
+    ]
+  },
+  "golpe do boleto falso": {
+    "canonicalOwner": "/credito-seguro/golpe-do-boleto-falso/",
+    "supportingPages": [
+      "/credito-seguro/golpe-do-pix-como-recuperar-o-dinheiro/",
+      "/credito-seguro/deposito-antecipado-e-golpe/"
+    ]
   }
 }

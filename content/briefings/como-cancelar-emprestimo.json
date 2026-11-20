@@ -1,0 +1,188 @@
+{
+  "targetReader": "Quem contratou um empréstimo e quer desfazer, ou encontrou um empréstimo que não fez",
+  "readerSituation": "Pesquisa SerpApi de 20/11/2026 (celular, São Paulo); pedido do Renato (pauta, item 3).",
+  "originalContribution": [],
+  "supportingSources": [
+    "Procon"
+  ],
+  "contentArchetype": "guide",
+  "proposedStructure": [],
+  "uniqueExamples": [],
+  "proposedVisuals": [
+    "QuickSummary",
+    "Tabela",
+    "ChecklistBox",
+    "ToolCallout",
+    "WarningBox"
+  ],
+  "publicationDecision": "create",
+  "proposedTitle": "Como cancelar um empréstimo: os 7 dias de arrependimento, a quitação e o contrato que você não fez",
+  "primaryIntent": "como cancelar empréstimo",
+  "secondaryIntents": [
+    "cancelar empréstimo consignado",
+    "cancelar empréstimo clt carteira digital",
+    "é possível cancelar um contrato já assinado",
+    "cancelar empréstimo consignado não autorizado"
+  ],
+  "centralQuestion": "Dá para cancelar um empréstimo, e como?",
+  "uniqueAngle": "Três caminhos por situação (arrependimento, quitação, contestação), com a lei e os canais oficiais; o golpe do cancelamento",
+  "primarySources": [
+    "Código de Defesa do Consumidor",
+    "Ministério do Trabalho",
+    "INSS",
+    "Procon"
+  ],
+  "pagesThatMayCompete": [
+    "/credito-seguro/desconto-nao-autorizado-inss/",
+    "/credito-seguro/emprestimo-caiu-na-conta-sem-pedir/",
+    "/emprestimos/rmc-rcc-como-cancelar/",
+    "/juros-e-cet/quitacao-antecipada-de-emprestimo/"
+  ],
+  "informationThatMustNotBeRepeated": [
+    "Roteiro do desconto não autorizado no INSS (link)",
+    "Empréstimo que caiu sem pedir (link)",
+    "RMC e RCC (link)",
+    "Conta da quitação (link e calculadora)"
+  ],
+  "serpEvidence": [
+    {
+      "busca": "como cancelar empréstimo",
+      "data": "2026-11-20",
+      "aparelho": "mobile",
+      "local": "Sao Paulo,State of Sao Paulo,Brazil",
+      "autocompletar": [
+        "como cancelar empréstimo consignado clt",
+        "como cancelar empréstimo clt",
+        "como cancelar empréstimo consignado",
+        "como cancelar empréstimo da shopee",
+        "como cancelar empréstimo nubank",
+        "como cancelar empréstimo clt pela carteira digital",
+        "como cancelar empréstimo na carteira de trabalho",
+        "como cancelar empréstimo consignado não autorizado",
+        "como cancelar empréstimo da crefisa",
+        "como cancelar empréstimo no picpay",
+        "como cancelar empréstimo consignado banco do brasil",
+        "como cancelar empréstimo mercado pago",
+        "como cancelar empréstimo 99pay",
+        "como cancelar empréstimo crefisa bolsa família",
+        "como cancelar empréstimo consignado do inss"
+      ],
+      "pessoasTambemPerguntam": [
+        "Como cancelar um empréstimo consignado?",
+        "É verdade que suspendeu os consignados?",
+        "É possível cancelar um contrato que já foi assinado?",
+        "Como cancelar o desconto do Credcesta?"
+      ],
+      "outrasPesquisas": [],
+      "visaoDeIA": {
+        "texto": [
+          "Para cancelar um empréstimo, entre em contato com a instituição financeira para formalizar o pedido dentro de 7 dias corridos (direito de arrependimento para contratações fora da agência, como app ou telefone) e devolva o valor integral recebido. Se o prazo já passou, o encerramento costuma exigir a quitação antecipada do saldo devedor.",
+          "1. Cancelamento por arrependimento (até 7 dias)",
+          "Prazo: até 7 dias corridos após a assinatura ou o recebimento do dinheiro (válido para contratos feitos por aplicativo, site, telefone ou fora do estabelecimento comercial). ; Devolução: você deve devolver o valor total contratado. ; Passo a passo: peça o cancelamento pelo app, SAC ou ouvidoria do banco, anote o protocolo e solicite a guia/dados para devolver o dinheiro.",
+          "2. Empréstimo não autorizado ou fraude",
+          "INSS: você pode consultar o benefício e pedir a exclusão de consignado indevido por meio do serviço Solicitar Exclusão de Empréstimo Consignado ou pelo Meu INSS / telefone 135. ; Outros contratos: registre boletim de ocorrência, conteste formalmente no banco e reúna provas (extratos, mensagens, gravações).",
+          "3. Após o prazo de 7 dias",
+          "Quitação antecipada: solicite o saldo devedor atualizado com desconto proporcional dos juros futuros e pague o valor total. ; Consignado: após a quitação ou cancelamento, acompanhe a desaverbação para liberar a margem consignável.",
+          "Onde reclamar se o banco recusar",
+          "Se houver negativa indevida ou demora na solução, registre reclamação formal no Consumidor.gov.br, no Banco Central ou no Procon.",
+          "Se você me informar o tipo de empréstimo (pessoal, consignado INSS/CLT, antecipação FGTS), há quantos dias ele foi contratado e se foi autorizado ou não, eu te mostro o passo a passo exato para o seu caso."
+        ],
+        "fontes": [
+          {
+            "fonte": "C6 Bank",
+            "link": "https://www.google.com.br/goto?url=CAESqQEBxCJF142EEDpGoBPFZO_9eC1r3rtqGAtorbTViBqwmco6WHpsT1cDkmOOJ4cN-y9RBwbaRUw24Rx1apj1t-R2djh3hXQZ13vCNjqN8s9_1vrmZ5bRnJo4UPFoVVvDwJ1-vNgWJABOGO4TdB0J0Fdn8XlzVRJQmqVw0JnTBOvHOGlcJSGCZWb0LXmIJFQW1s4C49UYFUxxoB_r5JNYLl9uvVrWhx975gjs"
+          },
+          {
+            "fonte": "Banco Bmg",
+            "link": "https://www.google.com.br/goto?url=CAESmgEBxCJF18FIEJWNyVhZDxRgvXvnwx4UFQLurfbE63rfwMkQhGOci1ZkfasxfS35gnMnDDID3HGdELkNwFh2M5he-ZG0LYkSBRIEfHXu70CDb0-LABHnTAk9nftXfV8ZGXokb5kiNJA39BXkZPwErEd0VIQYqKJOhvOuLbSdG6bFU9NE5Cyt6RaAvSnnnphcwDtvYTMyQ02cxh5u"
+          },
+          {
+            "fonte": "meutudo",
+            "link": "https://www.google.com.br/goto?url=CAESbQHEIkXXYciYzSSBZtBsJQzeHGhLBxABIZqMYtXHY077IrwreAHXdGBWlRsmymjLgRGW9PsOdBcNW1rWNiu0nz9QjD6WtUVry-PLsw50z9zKwI8HwuawqgMhGOzDAO7Ba7JBncGTs03UcMWI9Vg"
+          },
+          {
+            "fonte": "VLV Advogados",
+            "link": "https://www.google.com.br/goto?url=CAESggEBxCJF1-hKzRonu5VCqTsoxcjT30sSAiFGKI7QTOF1r7lv0954OD_aQI52ERc3zBueSooKiPi6oHloM7KAlU-RfAXXgCLd36Jlsb7mqVhF5jmWDcQxDhqVxudMtsz4xCcgtUA4q8Y2eHxLOBUETSqgH6QmUi4y8c0s9MbMB2xN1kAj"
+          },
+          {
+            "fonte": "Konsi",
+            "link": "https://www.google.com.br/goto?url=CAESlgEBxCJF12Fdct9lqoN6hJF2KoFBOeTGP33J2rV-tNdLOFcqB9EwBb2xNdKtTk-WNRgetFGAcfKZC3hN9tB2tBcngXzGUCOpionvGr1yFgFl8p8IVD0LM73fUVaOW2yK3iukCRbAvEA9YYdQuXcWZ0KlcR-GiDewMILlit8mAOmBbC61hLMFa8OOtFHv63-zluEls5b6uS4"
+          },
+          {
+            "fonte": "GOV.BR",
+            "link": "https://www.google.com.br/goto?url=CAESigEBxCJF140MU3I9Gff7o9XVWoQNZlJqzHr-GvUWk_Y4HfvJEYAZ3M7g52Z7I_0wACVq40FYTboAYSt8Fkb56QhT-AsrT13-8B5oX0U6jCm4p6NA8oLG3nii0YcJIMztF5atx2Lz6XEyw0QT75kvSQKLqR0KgkzDyf0IWdxAnyNZQwvj4R8mwt9P7HY"
+          }
+        ]
+      },
+      "organicos": [
+        {
+          "posicao": 1,
+          "titulo": "6 Ways to Stop Paying Your Loan #loan #socialsecurity",
+          "link": "https://www.youtube.com/watch?v=SRf-SwH2F1U"
+        },
+        {
+          "posicao": 2,
+          "titulo": "COMO FAZER O BANCO CANCELAR SUA DÍVIDA CONSIGNADA 😳💸",
+          "link": "https://www.instagram.com/reel/DVJIC5zDZQz/"
+        },
+        {
+          "posicao": 3,
+          "titulo": "Como cancelar um empréstimo CLT: prazo, devolução e alternativas",
+          "link": "https://toexceed.com.br/blog/2026/09/07/como-cancelar-um-emprestimo-clt-prazo-devolucao-e-alternativas/"
+        },
+        {
+          "posicao": 4,
+          "titulo": "Cancelar consignado: entenda como fazer isso com seu empréstimo",
+          "link": "https://www.google.com.br/goto?url=CAESfAHEIkXXddjPDq_LgFYKu1o4zZGBN8K5Czj3uZUZaL99JAhYUlAugUJlFMgnhVXSE6JtbMgKJ_yl20M66LJMyNJSRrc_jidvt5z6U6tPM9eH5krIEsC_JRPVN1Anbd_2XiFyOYeZsRpZkqidgnp1dN_wLArLbWnpCRG7L1o"
+        },
+        {
+          "posicao": 5,
+          "titulo": "Solicitação de cancelamento de empréstimo consignado CLT dentro do ...",
+          "link": "https://www.google.com.br/goto?url=CAESyAEBxCJF14Nu_9kxaUq0l7Rp3lBt9ANv6aJPML0WndM1WYnlf9cQB-YjLzw1MOrYEDvCfAUOBC3foyQSNn3N2nmjeZkyE8OYHmku_9zJDlKD2DLtQxRgx-iOin2uC_l_gv5U6bSPqEPap4qVuQF0L_ouC4XsSopNwJrRNaH3ZPocbkgzVjv2SRWp2Yns3P0hC9Zk715uKnODlQj-dNEHRWXPrrqHnjeBlAI0ZOV8FVERE6l_GkCEAU1EI3z_dfa_PD4namEaJEUJSw"
+        },
+        {
+          "posicao": 6,
+          "titulo": "HOW DO I CANCEL MY CONSIGNED LOANS?",
+          "link": "https://www.google.com.br/goto?url=CAEScQHEIkXXCSS7fD4_SwZP6z1lrNy6mwG1aS6ayTq0l1N7hgjQ2m7j3frPO7PZLHWEMrgJz3vY-aLIcgbYsTr21HuY0YSXJwPPSWp_lG4M1-XwSmiCOp689FfB7zETdS0COqNsnZ_FP9zkx2s1zVrMSU0-&gsessionid=NFKi1QdeOKiq8W3BDw4q5Aof4KAcGQgtYZwfkJoHwXTQQ0IG4JQivw"
+        },
+        {
+          "posicao": 7,
+          "titulo": "Dá para cancelar o empréstimo consignado depois de contratado? Prazo, regras e ...",
+          "link": "https://www.google.com.br/goto?url=CAESigEBxCJF15A0ewdRNvoT_HO6jXfdnsQIJxe7lX5M4BQBqUYd2V71Vtr_cXnYM61ho7ziZ_ztTkTZoFWKrrbWXCVYty6CV9YlnmdVbke7qeozO8Dq3Uu1SKc5QS7FFXjLbBH9d5GKusopxmDZXOj22nfzv5Yb5OJY6uhoZPjc4zZxcdIcgpeyaKKA2iQ"
+        }
+      ],
+      "mapa": []
+    }
+  ],
+  "serpNotes": {
+    "formato": "Texto, vídeos (YouTube, Instagram) e blogs; sem mapa. Sem ferramenta no topo; a página usa a calculadora de quitação.",
+    "visaoDeIA": "Resposta em blocos: arrependimento em 7 dias (devolver o valor), empréstimo não autorizado (serviço do INSS, 135, boletim), após 7 dias (quitação, desaverbação) e onde reclamar (consumidor.gov.br, BC, Procon). Cita C6 Bank, Banco Bmg, meutudo, VLV Advogados e outros.",
+    "concorrentes": "YouTube em inglês, Instagram, blogs de correspondentes: fracos."
+  },
+  "serpImpact": [
+    {
+      "dado": "Visão de IA: estrutura em três caminhos (7 dias, não autorizado, depois dos 7 dias)",
+      "efeito": "Lead e tabela 'Qual é o seu caso' com os três caminhos e a base de cada um."
+    },
+    {
+      "dado": "Autocompletar: 'consignado clt', 'clt pela carteira digital', 'na carteira de trabalho'",
+      "efeito": "Seção do Crédito do Trabalhador com a FAQ oficial do MTE (7 dias corridos do recebimento, devolução integral)."
+    },
+    {
+      "dado": "Autocompletar 'consignado não autorizado' e visão de IA (serviço do INSS)",
+      "efeito": "Seção do empréstimo não contratado, com o serviço 'Solicitar Exclusão' (consumidor.gov.br, 135) e links para as páginas que já cobrem cada caso."
+    },
+    {
+      "dado": "PAA 'É possível cancelar um contrato que já foi assinado?' e 'Como cancelar um empréstimo consignado?'",
+      "efeito": "FAQs."
+    },
+    {
+      "dado": "Autocompletar com marcas (Shopee, Nubank, Crefisa) e PAA 'Credcesta'",
+      "efeito": "Fora: marca."
+    },
+    {
+      "dado": "PAA 'É verdade que suspendeu os consignados?'",
+      "efeito": "Fora: notícia sem fonte oficial lida."
+    }
+  ]
+}

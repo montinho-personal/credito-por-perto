@@ -1,0 +1,59 @@
+{
+  "articleSlug": "golpe-do-boleto-falso",
+  "claims": [
+    {
+      "claimId": "procon-sjc",
+      "claimText": "Procon de São José dos Campos (atualizado em 20/08/2024): conferir nome e CNPJ da empresa emissora, valor e código de barras; o boleto falso ou clonado só é identificado antes de finalizar, quando o sistema do banco mostra o beneficiário na tela de confirmação; se for diferente, não pagar e contatar a empresa. Se pago: registrar junto ao fornecedor, ao seu banco e ao banco responsável (o que aparece no boleto); boletim de ocorrência na Polícia Civil (possível pela internet) e no Procon. Nunca pagar boletos ou transferências a título de liberação de empréstimo.",
+      "sourceOrganization": "Prefeitura de São José dos Campos — Procon",
+      "sourceTitle": "Procon alerta consumidor para pagamento de boletos falsos",
+      "sourceLocation": "https://www.sjc.sp.gov.br/noticias/2022/junho/07/procon-alerta-consumidor-para-pagamento-de-boletos-falsos/",
+      "sourceType": "official",
+      "accessedAt": "2026-11-20"
+    },
+    {
+      "claimId": "procon-ac",
+      "claimText": "Procon/AC (04/12/2020): boletos falsos costumam ter código de barras alterado, com rasuras ou falhas, para forçar a digitação; conferir na tela o valor e o beneficiário, que deve ser a empresa; beneficiário pessoa física quando se compra de empresa é forte indício de boleto falso; variação inesperada em faturas fixas é suspeita; baixar no site verdadeiro (https, cadeado); os primeiros dígitos do código coincidem com o código do banco emissor: Banco do Brasil 001, Bradesco 237, Caixa 104, Itaú 341, Santander 033.",
+      "sourceOrganization": "Governo do Acre — Procon/AC",
+      "sourceTitle": "Procon alerta consumidores sobre golpe do boleto falso",
+      "sourceLocation": "https://agencia.ac.gov.br/procon-alerta-consumidores-sobre-golpe-do-boleto-falso/",
+      "sourceType": "official",
+      "accessedAt": "2026-11-20"
+    },
+    {
+      "claimId": "procon-mogi",
+      "claimText": "Procon de Mogi das Cruzes (25/05/2023): reclamações de faturas de cartão recebidas pelos Correios com dados e logomarca idênticos, mas outro destinatário final; quem paga envia o valor a terceiro e a dívida fica pendente, cobrada com juros; conferir nome e CNPJ, comparar com boletos anteriores; se aparecer só o beneficiário intermediário (plataformas de pagamento), contatar a empresa pelos números oficiais; em lotéricas, pedir ao atendente que confira o beneficiário final, e a falta de conferência pode caracterizar má prestação de serviço; boletim de ocorrência e registro no Procon, inclusive para apurar acesso indevido aos dados.",
+      "sourceOrganization": "Prefeitura de Mogi das Cruzes — Procon",
+      "sourceTitle": "Procon alerta sobre golpe do falso boleto de cartão de crédito",
+      "sourceLocation": "https://www.mogidascruzes.sp.gov.br/pagina/procon/noticia/procon-alerta-sobre-golpe-do-falso-boleto-de-cartao-de-credito",
+      "sourceType": "official",
+      "accessedAt": "2026-11-20"
+    },
+    {
+      "claimId": "stj-479",
+      "claimText": "Súmula 479 do STJ: as instituições financeiras respondem objetivamente pelos danos gerados por fortuito interno relativo a fraudes e delitos praticados por terceiros no âmbito de operações bancárias (Segunda Seção, 27/06/2012, DJe 01/08/2012).",
+      "sourceOrganization": "Superior Tribunal de Justiça",
+      "sourceTitle": "Súmula 479",
+      "sourceLocation": "https://scon.stj.jus.br/SCON/sumstj/toc.jsp?livre=%27479%27.num.",
+      "sourceType": "official",
+      "accessedAt": "2026-11-20"
+    },
+    {
+      "claimId": "cp-171",
+      "claimText": "Código Penal, art. 171 (estelionato): obter, para si ou para outrem, vantagem ilícita, em prejuízo alheio, induzindo ou mantendo alguém em erro, mediante artifício, ardil ou qualquer outro meio fraudulento; pena de reclusão de 1 a 5 anos e multa (redação da Lei nº 15.397/2026).",
+      "sourceOrganization": "Câmara dos Deputados",
+      "sourceTitle": "Decreto-Lei nº 2.848/1940 (Código Penal) — texto atualizado",
+      "sourceLocation": "https://www2.camara.leg.br/legin/fed/declei/1940-1949/decreto-lei-2848-7-dezembro-1940-412868-normaatualizada-pe.html",
+      "sourceType": "official",
+      "accessedAt": "2026-11-20"
+    },
+    {
+      "claimId": "med-casos",
+      "claimText": "O pedido de devolução pode ser feito para qualquer caso de fraude envolvendo Pix, incluindo golpes e crimes, inclusive se o pagador autorizou a transação com senha ou biometria; o MED não se aplica a desacordos comerciais nem à transação enviada por engano.",
+      "sourceOrganization": "Banco Central do Brasil",
+      "sourceTitle": "Guia de implementação dos procedimentos de devolução no Pix, com ênfase no Mecanismo Especial de Devolução — versão 4.3 (julho de 2026)",
+      "sourceLocation": "https://www.bcb.gov.br/content/estabilidadefinanceira/pix/Guia_MED.pdf",
+      "sourceType": "official",
+      "accessedAt": "2026-11-03"
+    }
+  ]
+}

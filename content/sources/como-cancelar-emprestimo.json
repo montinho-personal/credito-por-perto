@@ -1,0 +1,59 @@
+{
+  "articleSlug": "como-cancelar-emprestimo",
+  "claims": [
+    {
+      "claimId": "cdc-49",
+      "claimText": "Art. 49: o consumidor pode desistir do contrato no prazo de 7 dias a contar de sua assinatura ou do ato de recebimento do produto ou serviço, sempre que a contratação ocorrer fora do estabelecimento comercial, especialmente por telefone ou a domicílio. Parágrafo único: exercido o arrependimento, os valores eventualmente pagos, a qualquer título, durante o prazo de reflexão, serão devolvidos de imediato, monetariamente atualizados.",
+      "sourceOrganization": "Câmara dos Deputados",
+      "sourceTitle": "Lei nº 8.078/1990 (CDC) — texto atualizado",
+      "sourceLocation": "https://www2.camara.leg.br/legin/fed/lei/1990/lei-8078-11-setembro-1990-365086-normaatualizada-pl.html",
+      "sourceType": "official",
+      "accessedAt": "2026-11-20"
+    },
+    {
+      "claimId": "cdc-52-2",
+      "claimText": "Art. 52, § 2º: é assegurada ao consumidor a liquidação antecipada do débito, total ou parcialmente, mediante redução proporcional dos juros e demais acréscimos.",
+      "sourceOrganization": "Câmara dos Deputados",
+      "sourceTitle": "Lei nº 8.078/1990 (CDC) — texto atualizado",
+      "sourceLocation": "https://www2.camara.leg.br/legin/fed/lei/1990/lei-8078-11-setembro-1990-365086-normaatualizada-pl.html",
+      "sourceType": "official",
+      "accessedAt": "2026-11-20"
+    },
+    {
+      "claimId": "mte-desistencia",
+      "claimText": "Crédito do Trabalhador: o trabalhador pode desistir do empréstimo, com prazo de sete dias corridos a partir do recebimento do crédito, para devolver o valor integral à instituição financeira.",
+      "sourceOrganization": "Ministério do Trabalho e Emprego",
+      "sourceTitle": "Crédito do Trabalhador — perguntas frequentes",
+      "sourceLocation": "https://www.gov.br/trabalho-e-emprego/pt-br/assuntos/credito-do-trabalhador/perguntas-frequentes",
+      "sourceType": "official",
+      "accessedAt": "2026-11-20"
+    },
+    {
+      "claimId": "inss-exclusao",
+      "claimText": "Serviço 'Solicitar Exclusão de Empréstimo Consignado': para o cidadão que alega não ter contratado o empréstimo; solicitação pelo Portal do Consumidor (consumidor.gov.br); documentos: identificação e CPF; serviço gratuito; dúvidas pelo telefone 135 ou Meu INSS; conta gov.br bronze, prata ou ouro.",
+      "sourceOrganization": "INSS",
+      "sourceTitle": "Solicitar Exclusão de Empréstimo Consignado",
+      "sourceLocation": "https://www.gov.br/pt-br/servicos/solicitar-exclusao-de-emprestimo-consignado",
+      "sourceType": "official",
+      "accessedAt": "2026-11-20"
+    },
+    {
+      "claimId": "inss-nao-reconhecido",
+      "claimText": "Empréstimo consignado não reconhecido: entrar em contato com a instituição financeira responsável; solicitar o cancelamento e a devolução dos valores, quando cabível; registrar reclamação nos canais oficiais de defesa do consumidor; guardar protocolos, contratos e mensagens (página atualizada em 28/10/2026).",
+      "sourceOrganization": "INSS",
+      "sourceTitle": "Consignação em benefícios do INSS: seus direitos e medidas de segurança",
+      "sourceLocation": "https://www.gov.br/inss/pt-br/direitos-e-deveres/pagamento-de-beneficios/consignacao-em-beneficios-do-inss-seus-direitos-e-medidas-de-seguranca",
+      "sourceType": "official",
+      "accessedAt": "2026-11-20"
+    },
+    {
+      "claimId": "procon-sjc-selfie",
+      "claimText": "Procon de São José dos Campos: não mandar fotos tipo selfie para fazer cancelamento de empréstimos ou produtos; nunca pagar boletos ou fazer transferência a título de liberação de empréstimo (notícia atualizada em 20/08/2024).",
+      "sourceOrganization": "Prefeitura de São José dos Campos — Procon",
+      "sourceTitle": "Procon alerta consumidor para pagamento de boletos falsos",
+      "sourceLocation": "https://www.sjc.sp.gov.br/noticias/2022/junho/07/procon-alerta-consumidor-para-pagamento-de-boletos-falsos/",
+      "sourceType": "official",
+      "accessedAt": "2026-11-20"
+    }
+  ]
+}

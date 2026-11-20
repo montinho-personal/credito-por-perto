@@ -1,0 +1,197 @@
+{
+  "targetReader": "Quem recebeu um boleto e quer conferir, ou pagou um boleto falso",
+  "readerSituation": "Pesquisa SerpApi de 20/11/2026 (celular, São Paulo); pedido do Renato (pauta, item 4).",
+  "originalContribution": [],
+  "supportingSources": [
+    "Procon"
+  ],
+  "contentArchetype": "safety",
+  "proposedStructure": [],
+  "uniqueExamples": [],
+  "proposedVisuals": [
+    "QuickSummary",
+    "ChecklistBox",
+    "SafetyAlert"
+  ],
+  "publicationDecision": "create",
+  "proposedTitle": "Golpe do boleto falso: como conferir antes de pagar e o que fazer se já pagou",
+  "primaryIntent": "golpe do boleto falso",
+  "secondaryIntents": [
+    "como saber se um boleto é falso",
+    "paguei boleto falso o que fazer",
+    "golpe do boleto falso responsabilidade do banco",
+    "é crime emitir boleto falso"
+  ],
+  "centralQuestion": "Como conferir um boleto e o que fazer depois de pagar um falso?",
+  "uniqueAngle": "Conferência pelo beneficiário na tela, com orientações de Procons; os dois roteiros no crédito (liberação e quitação); Súmula 479 sem promessa",
+  "primarySources": [
+    "Procon (São José dos Campos, Acre, Mogi das Cruzes)",
+    "STJ",
+    "Código Penal",
+    "Banco Central (MED)"
+  ],
+  "pagesThatMayCompete": [
+    "/credito-seguro/deposito-antecipado-e-golpe/",
+    "/credito-seguro/golpe-do-pix-como-recuperar-o-dinheiro/",
+    "/credito-seguro/como-identificar-golpes-de-emprestimo/"
+  ],
+  "informationThatMustNotBeRepeated": [
+    "MED passo a passo (link)",
+    "Golpe do depósito antecipado (link)"
+  ],
+  "serpEvidence": [
+    {
+      "busca": "golpe do boleto falso",
+      "data": "2026-11-20",
+      "aparelho": "mobile",
+      "local": "Sao Paulo,State of Sao Paulo,Brazil",
+      "autocompletar": [
+        "golpe do boleto falso o que fazer",
+        "golpe do boleto falso jurisprudencia",
+        "golpe do boleto falso responsabilidade do banco",
+        "golpe do boleto falso como recuperar o dinheiro",
+        "golpe do boleto falso responsabilidade",
+        "golpe do boleto falso bv financeira",
+        "golpe do boleto falso serasa",
+        "golpe do boleto falso jusbrasil",
+        "golpe do boleto falso de quem é a culpa",
+        "golpe do boleto falso light",
+        "golpe do boleto falso stj",
+        "golpe boleto falso nubank",
+        "golpe boleto falso detran",
+        "cai no golpe do boleto falso o que fazer",
+        "como denunciar golpe do boleto falso"
+      ],
+      "pessoasTambemPerguntam": [
+        "Como saber se um boleto é falso?",
+        "Paguei um boleto errado. O que devo fazer?",
+        "Qual a responsabilidade do banco em caso de conta falsa?",
+        "É crime emitir um boleto bancário falso?"
+      ],
+      "outrasPesquisas": [],
+      "visaoDeIA": {
+        "texto": [
+          "No golpe do boleto falso, criminosos enviam cobranças adulteradas ou clonadas — geralmente por e-mail, WhatsApp, SMS ou sites falsos — para desviar o pagamento para a conta de um golpista em vez do verdadeiro credor. Mesmo que o documento traga dados reais seus (nome, CPF/CNPJ, valor ou logo da empresa), o recebedor final pode ser fraudulento.",
+          "Como evitar antes de pagar",
+          "Confira o beneficiário na tela do banco: antes de confirmar, veja se o nome e o CPF/CNPJ exibidos pelo aplicativo bancário correspondem à empresa ou pessoa real que você esperava pagar. ; Valide o código do banco e o valor: os 3 primeiros dígitos do código de barras/linha digitável indicam o banco emissor (por exemplo, 001 para Banco do Brasil e 237 para Bradesco). Confira também se o valor na tela bate com o documento. ; Prefira canais oficiais: baixe boletos diretamente no site ou aplicativo oficial da empresa, em vez de clicar em links de mensagens ou e-mails inesperados. ; Desconfie de urgência e divergências: cobranças com pressão para pagamento imediato, descontos fora do comum ou erros de formatação/digitação exigem checagem extra.",
+          "O que fazer se você já pagou",
+          "Avise seu banco imediatamente: entre em contato pelos canais oficiais para tentar bloquear o repasse ou avaliar medidas cabíveis. Se o pagamento tiver sido via Pix (como boleto com QR Code Pix), peça a abertura do Mecanismo Especial de Devolução (MED). Você pode consultar as orientações oficiais na página do Banco Central. ; Guarde as provas: salve o boleto, comprovante de pagamento, e-mails, mensagens e prints da tela de confirmação. ; Registre um Boletim de Ocorrência (BO): faça o registro na delegacia virtual do seu estado ou presencialmente e leve o protocolo ao banco e ao credor original. Mais detalhes constam no portal do Ministério da Justiça e Segurança Pública. ; Comunique a empresa e o banco emissor: avise o credor real (para que a cobrança não siga em aberto ou gere negativação) e, se necessário, registre reclamação formal no Banco Central contra a instituição recebedora. Você também pode consultar as recomendações de prevenção no portal de segurança do Bradesco.",
+          "Você já pagou o boleto ou está verificando antes de pagar? Se quiser, conte qual tipo de cobrança é (compra, acordo, fatura, serviço) e o que apareceu na tela do banco para eu te ajudar a avaliar os próximos passos."
+        ],
+        "fontes": [
+          {
+            "fonte": "Instagram",
+            "link": "https://www.google.com.br/goto?url=CAESaAHEIkXXEcG-f3dr-g9somFA-FeL3PgzjdIge-wAViPIYk7MMqJXrxoCKwOTIhmcdlhZcV-7Nw6yc7E1yXyJzniBAfiZfXO1mVD4ayvNddtBQj8rv4Z9lRY32QK3NfBZRqIGQ6IoZfTR"
+          },
+          {
+            "fonte": "Mercado Pago",
+            "link": "https://www.google.com.br/goto?url=CAESdgHEIkXX1UQ9gFui6-sGqFXN61vtQnKKQzC7iZ4GO074Dk8VywfmVIcxYndDUaYZXmIKrVAf977AuPdQ3kKyR5S8f0-TE2idNANwZeJkYubtRfAJUqLYakLrVDavki3RyL8Pi_z0wGQ8tyQl2rxDLKODmzQcOVo"
+          },
+          {
+            "fonte": "Iugu",
+            "link": "https://www.google.com.br/goto?url=CAESdwHEIkXXGtKLbhX8U9opmEfTsBvr0_B86M1zpTPdqahH-OR8ma7IXUXLTgb9QAP5aAtHmRqBVc_q8SO67zLVwtGUBD0kbC1VYSBfh6xo6k8tb1hIXRE_bXTF3s39siba_kn42Oo9zhDDbbR_SXdcyoYgWz_VPRhI"
+          },
+          {
+            "fonte": "Bradesco Segurança",
+            "link": "https://www.google.com.br/goto?url=CAESgwEBxCJF12RuR_WM7onQBQ3auhH3oa2ZN2jLVIUyG9ai7VWCUTOOotKBGTjF1Q1vLWhZwykUzHuBar8A23RI887Wqw93RAdGOfmM0un34igX--ubImxbh1lQQRJ33VsiBmgvNmuVeIBVsSyte_JKRZ1RCGvN7tUjtwXxk_7E0VOqtGh2ew"
+          },
+          {
+            "fonte": "Banco Central do Brasil",
+            "link": "https://www.google.com.br/goto?url=CAESigEBxCJF183pUlPRv-PacPELoCtuG7_qQo9z7FsqWhL7KRYywE5wXbaPIXRTLc_lDM-sbh7OdLTrXPV-08NT0gSOON3ez08lVGgsWaOF97QxZ4biilcdIQo8AF3kuIG35oFaeFEoUMocVi8rTeMAiZB8TJ7dko7gN9-Vo26RPShvhCvCHLsfmClGlAc"
+          },
+          {
+            "fonte": "Blog do Banco do Brasil",
+            "link": "https://www.google.com.br/goto?url=CAESagHEIkXX9gUaIFZjpLvB_xs41F9KU1yGAjHZSkf4RMEWeG7PHkxf8ZH6DzaXSeIWtz5v6ec17SlgrEtJ4_Na5Bq5l8fwPM5zROGHDs7OiAF-H4y6x9O5Lh8-0SZLRDUMX2Q6elQUGLWXlxo"
+          },
+          {
+            "fonte": "www.zoop.com.br",
+            "link": "https://www.google.com.br/goto?url=CAESegHEIkXX4YUxcnweJo7xSy_aYCqgwupclPqP8XuV6pdFUnojespo-DHlsjv0iIYsxfgNku_926Y8g-QaCunsPzMedTClExd-jwuyc94OjznZ0k4vwFs2iTJRm01EuWE26lRU5w0mGsRY18rYWSGCQ9e-S5t1EQCrTyTK"
+          },
+          {
+            "fonte": "GOV.BR",
+            "link": "https://www.google.com.br/goto?url=CAESyAEBxCJF16D-Gi5RQQh5UVs_DTOu9IQ7HyL1I-0bniw7u4NmKdeS5hKYqXEKUNdUjc7v3vYWfTf8-n_uJ4hN2bojD4ZbtuUYmFEJwtTTA7qE3MuVOw3N7FPfmCZFGQKI_lgFRR1OF7sAidAd_PtqlX04MCPtfWlzi_hU31UioLF2v1ZgrBbAkj66p-vt8JBsNR3pGkoKW2SV1vIiDw6VTYZlvC511rb4zwGwb0J0eOEeTI2OFIB30GyIB0vIvv1YWLlZetV90jn1ZA"
+          }
+        ]
+      },
+      "organicos": [
+        {
+          "posicao": 1,
+          "titulo": "Boleto falso – como prevenir e proteger seu negócio",
+          "link": "https://www.acinh.com.br/noticia/boleto-falso-como-prevenir-e-proteger-seu-negocio"
+        },
+        {
+          "posicao": 2,
+          "titulo": "Conheça o novo golpe do boleto falso e saiba como identificar o documento",
+          "link": "https://pt.linkedin.com/pulse/conhe%C3%A7a-o-novo-golpe-do-boleto-falso-e-saiba-"
+        },
+        {
+          "posicao": 3,
+          "titulo": "Golpe do boleto falso dispara; veja como não cair na armadilha - FEEB-PR",
+          "link": "https://feebpr.org.br/noticias/4Hst-golpe-do-boleto-falso-dispara-veja-como-nao-cair-na-armadilha"
+        },
+        {
+          "posicao": 4,
+          "titulo": "Golpe do boleto falso: 6 dicas para não cair em armadilhas",
+          "link": "https://www.google.com.br/goto?url=CAESigEBxCJF13Y1NrvO8pSbLG3iVU3HOUP8aUWqjsBlPsH5MKeEkAioQ4iQeLZMt1nlCjkvlU8j9TSTKK4A-VBNhfd-Ozaput9u2uIVHBYiPPtt8PJKYxI5mwxVlahMsKFDP3OtEkW1buqMDXDHqHyPWRZyGMOCuJJWNhS54-3Pgt4hzzroIK1KkIolsnw"
+        },
+        {
+          "posicao": 5,
+          "titulo": "Golpe do Falso Boleto: Quem Deve Pagar o Prejuízo?",
+          "link": "https://www.google.com.br/goto?url=CAESkgEBxCJF1y65NCjpKyU39rqAPfOjIcVTO6a_adfIJ5-9gqzbbfV8s9T5vGaSeR4xh_MKpiqfeJ01Eo1bH382YwBCdSLox8w-0z4ydJ3SRhjnJSMxEXc1aENgWnsP3yRFUeljhDArLo9J6XUTVaTYDwoJWu7rAJNjqSFUydEsgNPlF0M-wX_VpelULJ8oUimWcVVbaw"
+        },
+        {
+          "posicao": 6,
+          "titulo": "Como Identificar um Boleto Falso: Dicas para se proteger de Golpes",
+          "link": "https://www.google.com.br/goto?url=CAESuQEBxCJF13fFHZ9TqNj-C3tPRMYET4j8LmDU-MIxtvFRcserxXCFNLKKYqbu4pDzI8WJDSeN4y3ypw8mypeJh3N1EiMwzqfnICgyMeh_Tk5tsWrfnUwDI8STBum_kGfREcCUAxn382Fe7D1p5Ub9zUCQio78TOE0QoswPwpktXXNN1-pQTIzh2P3S6kuwAkFmoaR9e_p5dpx4wSRrTbcozFc5A7jpK9QBFYZ2yw9MZR9nqR7UpxEV0fSfw"
+        },
+        {
+          "posicao": 7,
+          "titulo": "Assista ao vídeo e saiba como não cair no golpe do Boleto Falso",
+          "link": "https://www.google.com.br/goto?url=CAESaAHEIkXXCFTFwMjaEo3SF26e4RxMVeOGneHJ2tcULGRymMHm_lsTi5mnVbFZ6PF5OwV2no8T2ttadJ-l3hv-FLBu690iwRgAFaWVHNagEfAb9S7UMA8ViZbh3xaALJKXWA8ydfyHr9pe&gsessionid=TP-q6VJxe0oitzRwxMo6lW-Ri34W3crr_CJJ57gj5XisR2mO76IIjQ"
+        },
+        {
+          "posicao": 8,
+          "titulo": "Cuidado com o golpe do boleto falso: veja como eles agem",
+          "link": "https://www.google.com.br/goto?url=CAES9QEBxCJF16NjpHKlaViMjRLdV5xB_gHtoVVv3tSJLmYs-FXHZIT7dXaSje-kKtruUdtsqgswH_a4OH3KCW6bYE9XeHzussqHmzYYSigQQpQAdywFp4eVKnj6uxjvX6EdcyDvWjXXTB3gjJUWcEb8J5zLBOs0ybQu4vYuiuGM39y6whHF4ytipEQlbA2ZZ31oV75wBrvPo7cLBNUQycRkaNppnV4ZCh31Eqven0JD6wCrm22z7D4Egn1kVwa5wLnoQc48t_VZSx8a6DEy1ULOFrpaExxbVyCmm8SKWCfJb6PdnhETOE0KbYA3tArynKTNz89DZcF1Yw"
+        },
+        {
+          "posicao": 9,
+          "titulo": "Como evitar o golpe do boleto falso?",
+          "link": "https://www.google.com.br/goto?url=CAEScwHEIkXXDO7JshKNXmRFKELU-P12JeQXDlG3uCY60_UTHVaHcLmuGFMhn0vcmrA9sGuWz7hX99GNTjDfHr9JyVLzas6JCcGQzc97Yy-tUqrm7y7wSN5NwL1X-sRWdtaczDR_gCQ_L2i8G456Z7-FdCZOugM"
+        }
+      ],
+      "mapa": []
+    }
+  ],
+  "serpNotes": {
+    "formato": "Texto (associações, LinkedIn, federação de bancários, blogs), vídeo; sem mapa.",
+    "visaoDeIA": "Definição do golpe, como evitar (conferir beneficiário na tela, código do banco nos 3 primeiros dígitos, valor) e o que fazer se pagou (avisar o banco, MED se Pix, guardar provas). Cita Instagram, Mercado Pago, Iugu, Bradesco Segurança e outros.",
+    "concorrentes": "Associação comercial, LinkedIn, FEEB-PR e blogs: fracos."
+  },
+  "serpImpact": [
+    {
+      "dado": "Visão de IA: conferir o beneficiário na tela do banco",
+      "efeito": "Lead responde direto com a conferência do beneficiário, com fonte dos Procons."
+    },
+    {
+      "dado": "Visão de IA e Procon/AC: código do banco nos primeiros dígitos",
+      "efeito": "Item do checklist com os exemplos do Procon/AC."
+    },
+    {
+      "dado": "PAA 'Como saber se um boleto é falso?' e 'Paguei um boleto errado'",
+      "efeito": "Checklist, passos de 'Já paguei' e FAQs."
+    },
+    {
+      "dado": "PAA 'Qual a responsabilidade do banco?' e autocompletar 'responsabilidade do banco', 'de quem é a culpa', 'jurisprudência'",
+      "efeito": "Seção com a Súmula 479 do STJ, sem prometer resultado."
+    },
+    {
+      "dado": "PAA 'É crime emitir um boleto bancário falso?'",
+      "efeito": "Parágrafo e FAQ com o art. 171 do Código Penal (Câmara)."
+    },
+    {
+      "dado": "Autocompletar com marcas (BV, Serasa, Light) e 'Jusbrasil'",
+      "efeito": "Fora: marca e site."
+    }
+  ]
+}
