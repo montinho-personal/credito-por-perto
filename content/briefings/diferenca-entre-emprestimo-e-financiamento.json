@@ -27,11 +27,160 @@
     "Como decidir (4 cenários)",
     "FAQ"
   ],
-  "uniqueExamples": ["Cenários de decisão (comprar bem vs uso livre vs bem quitado)"],
-  "proposedVisuals": ["Tabela comparativa"],
-  "pagesThatMayCompete": ["/emprestimos/emprestimo-com-garantia/"],
+  "uniqueExamples": [
+    "Cenários de decisão (comprar bem vs uso livre vs bem quitado)"
+  ],
+  "proposedVisuals": [
+    "Tabela comparativa"
+  ],
+  "pagesThatMayCompete": [
+    "/emprestimos/emprestimo-com-garantia/"
+  ],
   "informationThatMustNotBeRepeated": [
     "Mecânica da alienação fiduciária (fica no guia de garantia)"
   ],
-  "publicationDecision": "create"
+  "publicationDecision": "create",
+  "serpEvidence": [
+    {
+      "busca": "diferença entre empréstimo e financiamento",
+      "data": "2026-11-20",
+      "aparelho": "mobile",
+      "local": "Sao Paulo,State of Sao Paulo,Brazil",
+      "autocompletar": [
+        "diferença entre empréstimo financiamento e consórcio",
+        "diferenca entre emprestimo financiamento e leasing",
+        "diferença entre emprestimo pessoal e financiamento",
+        "diferença entre emprestimo consignado e financiamento",
+        "principal diferença entre emprestimo e financiamento",
+        "qual a diferença entre empréstimo e financiamento bancário",
+        "diferença entre empréstimos e financiamento",
+        "diferença empréstimo financiamento"
+      ],
+      "pessoasTambemPerguntam": [
+        "Qual a melhor opção para mim: consignado ou financiamento?",
+        "Quanto fica R$ 30.000 financiado em 48 meses?",
+        "O que significa \"prestação de empréstimo financiamento\" no contexto do Santander?",
+        "Qual é o conceito de financiamento?"
+      ],
+      "outrasPesquisas": [],
+      "visaoDeIA": {
+        "texto": [
+          "A principal diferença entre empréstimo e financiamento está na finalidade do dinheiro e na existência de garantia: o empréstimo é de uso livre (geralmente sem bem vinculado), enquanto o financiamento é destinado a comprar um bem ou serviço específico (com o próprio bem servindo como garantia na maioria dos casos).",
+          "Principais diferenças",
+          "Destino do recurso: ; Garantia: ; Taxa de juros: ; Prazo e entrada: ; Burocracia e liberação:",
+          "Para consultar regras oficiais de crédito, veja o Banco Central do Brasil.",
+          "Se você estiver avaliando uma contratação agora, me diga:",
+          "Qual é o seu objetivo (comprar um bem, quitar dívidas ou ter dinheiro livre)? ; Qual valor aproximado e prazo de pagamento você imagina?",
+          "Assim posso te ajudar a comparar qual modalidade faz mais sentido para o seu caso."
+        ],
+        "fontes": [
+          {
+            "fonte": "www.santander.com.br",
+            "link": "https://www.google.com.br/goto?url=CAESjAEBxCJF1_OgUQwoGR2phEHd_x1xJ1TYtvHiVFl1M4RErjxtl_V41M036lKjIcLu98CufK04oJ21sKkva6HS7sga5fJJCi3IoYpHDe0kLhz0BQjHGihg8wM3e_LanzRHgXjnWk4XyG5D2wx39uzhZIbIkRfjKp12HWDvezIqyQsxD2bAH8vEXySBwhdZMA"
+          },
+          {
+            "fonte": "Serasa",
+            "link": "https://www.google.com.br/goto?url=CAESkAEBxCJF16DBLAwtm7WHoje8kHrFWXMsZBevMkuX_9DG2gRKS_DVVhZhNLorsEF2mxlQyeGPTKTJJVJ3cJidLH0ebLwzWBCWWJxHKx6Rniy3KalTUSRmKaxLpzSm1nV6f0rVrBPBDbDapkvQf1-wNF6JMsQNZ6_FjoTyqXMc5o88g_zZYVA4WIgbxf2QBOSAcVM"
+          },
+          {
+            "fonte": "Crefisa",
+            "link": "https://www.google.com.br/goto?url=CAESgwEBxCJF1-4W1nQTlVOQ6fD09-3v1sqYMKQVscL6KoLrAqjZvJmse4ZRzaBD5d-UBON96n__4SsKQO4S5JObmXnsBdGEdp9GV1B1ge-BBfxsM2CdEWAHrEOSnQm9dvTV8vPRHI0JAoe-QZRh-4wL4tN9B3ILuKlbicK9J30vr9rBV5ezYg"
+          },
+          {
+            "fonte": "Blog Nubank",
+            "link": "https://www.google.com.br/goto?url=CAEShAEBxCJF18ZJlSdxuQUiGiPcFTJNnEYagrlkEh6z5RmyJfjybU1kgca3saaAGx95LF5goo0MxBu8T7xI1fQfUBUxZaAAeyBfHsp7bsURgo2qeme4LMS6om-6LWHaWyeRzTxTd7IROW6xKIzborncxmymNMYWiEl0aszHI639H5oP13KQ2PQ"
+          },
+          {
+            "fonte": "C6 Bank",
+            "link": "https://www.google.com.br/goto?url=CAESdwHEIkXXPawovETYWw-XSj5qQI80PXTFJ4FI3lEhytI0v5VXuTCLLORMft2Jnh7fprMtC-1v5kXRPdVhHeGjQI2Yy72OnbVkyDsp6b6r4uTmzIES7Zl3kKDgQakVowU_cOKOKy6dG17fAQu5EOznABobCKfzP6-y"
+          },
+          {
+            "fonte": "Banco Central do Brasil",
+            "link": "https://www.google.com.br/goto?url=CAESqgEBxCJF12Gyep-tPQ7qZ4UZxJ5NNcdCLDJTxwsmY5SMw6k_ru35q29au3AfF_YsfTqvc0WanSuNtVYnc1yT0vGu9kHCZIIQH7xNVKBOHSEhfVh33Bgt8MdG8OP_kuRfdlWxPFLzgTyq936ZNfuvTlNBZNIB1NsrTPYYdro3dYKwSmN-oTzy8dzObwj2bpfBEbVhORIm5vk6cWUTL50FkhqWnZov-zPmTti93Q"
+          }
+        ]
+      },
+      "organicos": [
+        {
+          "posicao": 1,
+          "titulo": "Qual a diferença entre empréstimo e financiamento? Descubra agora!",
+          "link": "https://jeitto.com.br/blog/qual-a-diferenca-entre-emprestimo-e-financiamento"
+        },
+        {
+          "posicao": 2,
+          "titulo": "Você sabe realmente qual é a diferença entre empréstimo e financiamento? Muita ...",
+          "link": "https://www.instagram.com/reel/DYiux9Vx2UY/"
+        },
+        {
+          "posicao": 3,
+          "titulo": "Por qual linha de crédito optar: empréstimo ou financiamento?",
+          "link": "https://www.google.com.br/goto?url=CAEStAEBxCJF190NeiqXHfxf5jZcJREFEp7IX0W9pwP6isAiYIy7KzVNW42FrLLVgr3KE9Tz1gqJ9FHmPn3m_k1DnebUf1h0P74OV6FN0k4XByQy7ML-n5HdJ4FyPwNeeq9EO43Xn2hprnaqzjBwDOsVk1fh5ROq-1beVwNHWsr5wbKvzgQ0y5wIEsiRTi8h58N_bq0vUpScNBrDfBRuAgHEwtwS7-ji0pNvBqmxTIAdcFqAaFr9CqQ"
+        },
+        {
+          "posicao": 4,
+          "titulo": "Empréstimo ou financiamento: você conhece a diferença?",
+          "link": "https://www.google.com.br/goto?url=CAESkQEBxCJF175ZplSvrBtGLL5MCnlT34J890fEt0_LPYekAJCcQrxfZ-xBVxmiNemDez7LLNqXWJsfzMTAqcBGJYLO_ESt0qxXk3XDexlwYBiNW8SxLzrFVwDTQ_zoiqF3cBzY2WGprSnP0MJ0zqUMCoWxh-3jcIH0wKNg6A-FI4JknUbo0n4EzLWgH30EL0hIYJ4e"
+        },
+        {
+          "posicao": 5,
+          "titulo": "Empréstimo e Financiamento, Qual é a Diferença? - Insave Digital",
+          "link": "https://www.google.com.br/goto?url=CAEShgEBxCJF12pW2FOLu5WCU1iMiwM8IEsUCybytkixJ1EL9rNgeJESh3Mj6KoAK7mKNXQvN9-UK3fmAjZS5ZM1u4uhr3gO5kVMKXlzMsdA8jnlMJUdQohyOL8Mx3LdXxLkYRZJWvUwLt70WQSb_JqlB7JQFnLIMxG6qesxO1h3s9gfxETZBEFGZQ"
+        },
+        {
+          "posicao": 6,
+          "titulo": "Which is WORSE, a loan or financing?",
+          "link": "https://www.google.com.br/goto?url=CAESaAHEIkXXCCrrcGVORN8b58dKETVW7BXeRlc9MyOZuOrqDlJynhbX-6JH823y0YK7-vHBlxNb94i4fpI4N3PxOPs3qaAKh5jXgtFOGjhLA74lUNn-Ndf1t0LK2tqsBZ2O-l4kfzvxYpGF&gsessionid=kXMOO-MJL98LQ5-h-esXfz2xK3sSkttfoHe6am1WfBaNaFhRTYQYyw"
+        },
+        {
+          "posicao": 7,
+          "titulo": "[:pt]Empréstimo e financiamento: saiba qual é a diferença e quando contratar",
+          "link": "https://www.google.com.br/goto?url=CAESdAHEIkXXs5461BPnuG1I7-bJIQhDultMR2cnbuSPVjDlCEQyFKnU_l8sgrL1emTWlBapVsXgv17Y1wVrLcPkORwZiPYLKoxR3do7vbn-dWktE_s3QA2DS-fOgO25YNJZ-5B33A9Cx7TZRxwueTpL7YMYjDpB"
+        }
+      ],
+      "mapa": []
+    }
+  ],
+  "serpNotes": {
+    "formato": "Texto e vídeo curto; sem mapa nem ferramenta no topo.",
+    "visaoDeIA": "Uma frase (finalidade do dinheiro e garantia) e lista de diferenças (destino, garantia, juros, prazo e entrada, burocracia). Cita Santander, Serasa, Crefisa, Blog Nubank e outros.",
+    "concorrentes": "Blogs de fintech, Instagram e vídeo em inglês: fracos."
+  },
+  "serpImpact": [
+    {
+      "dado": "Visão de IA: finalidade e garantia",
+      "efeito": "O artigo já abria assim; ganhou a definição oficial das estatísticas do BC (glossário)."
+    },
+    {
+      "dado": "PAA 'Quanto fica R$ 30.000 financiado em 48 meses?'",
+      "efeito": "Seção com tabela calculada para três taxas ilustrativas."
+    },
+    {
+      "dado": "PAA 'Consignado ou financiamento?' e autocompletar 'consignado e financiamento'",
+      "efeito": "FAQ neutra de como comparar, sem recomendação."
+    },
+    {
+      "dado": "Autocompletar 'leasing' e 'consórcio'",
+      "efeito": "FAQ de leasing com link para o CDC; consórcio já tinha FAQ."
+    },
+    {
+      "dado": "PAA 'Qual é o conceito de financiamento?'",
+      "efeito": "Coberto pela distinção e pela definição do BC."
+    },
+    {
+      "dado": "PAA 'prestação de empréstimo financiamento no Santander'",
+      "efeito": "Fora: marca."
+    }
+  ],
+  "revisionLog": [
+    {
+      "data": "2026-11-20",
+      "tipo": "revisão pendente (parte 4)",
+      "mudancas": [
+        "Definição do BC",
+        "Exemplo de R$ 30 mil em 48 meses",
+        "FAQs de consignado x financiamento e leasing"
+      ],
+      "tituloDescricao": "sem mudança"
+    }
+  ]
 }

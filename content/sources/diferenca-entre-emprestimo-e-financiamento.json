@@ -18,6 +18,15 @@
       "sourceLocation": "https://www.bcb.gov.br",
       "sourceType": "official",
       "accessedAt": "2026-08-05"
+    },
+    {
+      "claimId": "bc-glossario",
+      "claimText": "Aquisição de veículos (PF): empréstimos para compra de veículos automotores com o bem alienado fiduciariamente como garantia; aquisição de outros bens (PF): financiamentos vinculados à aquisição de bens e serviços, exceto veículos; arrendamento mercantil: uso do bem com opção de compra ao final.",
+      "sourceOrganization": "Banco Central do Brasil",
+      "sourceTitle": "Glossário — Estatísticas monetárias e de crédito",
+      "sourceLocation": "https://www.bcb.gov.br/content/estatisticas/Documents/Estatisticas_mensais/Monetaria_credito/glossariocredito.pdf",
+      "sourceType": "official",
+      "accessedAt": "2026-11-17"
     }
   ]
 }

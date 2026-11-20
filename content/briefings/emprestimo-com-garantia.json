@@ -30,11 +30,214 @@
     "Checklist",
     "FAQ"
   ],
-  "uniqueExamples": ["Pergunta-filtro: 'você pode perder esse bem?'"],
-  "proposedVisuals": ["ProsCons", "ChecklistBox"],
-  "pagesThatMayCompete": ["/emprestimos/antecipacao-saque-aniversario-fgts/"],
+  "uniqueExamples": [
+    "Pergunta-filtro: 'você pode perder esse bem?'"
+  ],
+  "proposedVisuals": [
+    "ProsCons",
+    "ChecklistBox"
+  ],
+  "pagesThatMayCompete": [
+    "/emprestimos/antecipacao-saque-aniversario-fgts/"
+  ],
   "informationThatMustNotBeRepeated": [
     "Método de comparação pelo CET (fica em como-comparar-propostas-de-credito)"
   ],
-  "publicationDecision": "create"
+  "publicationDecision": "create",
+  "serpEvidence": [
+    {
+      "busca": "empréstimo com garantia de imóvel como funciona",
+      "data": "2026-11-20",
+      "aparelho": "mobile",
+      "local": "Sao Paulo,State of Sao Paulo,Brazil",
+      "autocompletar": [
+        "emprestimo com garantia de imovel caixa como funciona",
+        "emprestimo com garantia de imovel itau como funciona",
+        "empréstimo com garantia de imóvel banco do brasil como funciona",
+        "como funciona empréstimo com garantia de imóvel santander",
+        "como funciona empréstimo com garantia de imóvel financiado",
+        "como funciona empréstimo com garantia de imóvel bradesco",
+        "empréstimo com garantia de imóvel como fazer",
+        "empréstimo com garantia de imóvel é seguro",
+        "empréstimo com garantia de imóvel é bom",
+        "empréstimo com garantia de imóvel caixa como funciona"
+      ],
+      "pessoasTambemPerguntam": [
+        "Vale a pena pegar um empréstimo com garantia de imóvel?",
+        "Qual o melhor banco para pegar empréstimo com garantia de imóvel?",
+        "Quanto tempo demora para liberar empréstimo com garantia de imóvel?",
+        "O que acontece se eu não pagar um empréstimo com garantia de imóvel?"
+      ],
+      "outrasPesquisas": [
+        "Empréstimo com garantia de imóvel caixa",
+        "Qual banco faz empréstimo com garantia de imóvel financiado",
+        "Emprestimo para negativado",
+        "Emprestimo pessoal",
+        "Home equity"
+      ],
+      "visaoDeIA": {
+        "texto": [
+          "O empréstimo com garantia de imóvel (também chamado de home equity) permite usar um imóvel residencial ou comercial para conseguir crédito com juros menores e prazos maiores do que em empréstimos pessoais comuns. Durante o contrato, você pode continuar morando, usando ou alugando o imóvel, mas ele fica em alienação fiduciária em favor do banco até a quitação da dívida.",
+          "Principais características",
+          "Valor: Em geral, os bancos emprestam até 60% do valor de avaliação do imóvel (ou até menos, como 45% a 55% dependendo do tipo do bem, se é residencial ou comercial, e da instituição). Os valores mínimos costumam começar entre R$ 30 mil e R$ 70 mil. ; Prazo: Pode chegar a 240 meses (20 anos), com tabelas de amortização como Price (parcelas fixas) ou SAC (parcelas decrescentes). ; Uso do dinheiro: O crédito costuma ser de livre destinação (quitar dívidas, reformar, investir em negócio, etc.). ; Custos envolvidos: Além dos juros, há o Custo Efetivo Total (CET), seguros obrigatórios (como MIP e DFI), avaliação/vistoria do imóvel e custos de registro em cartório.",
+          "Passo a passo do processo",
+          "Simulação e análise de crédito: Você informa o valor desejado, o prazo e os dados do imóvel para avaliar sua renda e capacidade de pagamento. ; Avaliação do imóvel e análise jurídica: O banco vistoria e avalia o bem e confere documentação, matrícula e certidões para verificar se não há impedimentos. ; Assinatura e registro em cartório: O contrato de alienação fiduciária é assinado e registrado na matrícula do imóvel no Cartório de Registro de Imóveis. ; Liberação do recurso: Após o registro, o dinheiro é depositado na sua conta. Ao pagar todas as parcelas, a alienação é baixada e o imóvel fica livre novamente.",
+          "Riscos e pontos de atenção",
+          "Risco de perder o imóvel: Em caso de inadimplência prolongada, o banco pode executar a garantia conforme a lei e o contrato. ; Documentação: O imóvel precisa estar regularizado (com matrícula atualizada e sem pendências impeditivas). ; Comprometimento de longo prazo: Parcelas de vários anos exigem margem no orçamento e atenção ao CET total, não apenas à taxa de juros.",
+          "Você pode conferir condições e simulações diretamente em instituições como o Empréstimo com Garantia de Imóvel CAIXA ou o Crédito com Garantia de Imóvel do Itaú.",
+          "Se você quiser, me diga:",
+          "Qual é o objetivo do crédito (quitar dívidas, reforma, capital de giro, etc.) ; O valor aproximado do imóvel e se ele está quitado ou financiado ; O valor ou prazo que você pretende contratar",
+          "Assim posso te ajudar a avaliar se essa modalidade faz sentido para o seu caso e quais pontos comparar."
+        ],
+        "fontes": [
+          {
+            "fonte": "YouTube",
+            "link": "https://www.google.com.br/goto?url=CAESbQHEIkXX1LfOn89X_3eNIevEJkx8nKRvSLBcB4mms5VxjzLiBKcql-LD0POwJ9JbTzQfqcfz8y4e2XXBAB8rkvf_rahnperQKXQMrFV0Sgx0hK3mNv4ALpfsEIxe0yFj_h8wbWhPt_fqUypwrWs"
+          },
+          {
+            "fonte": "Santander Brasil",
+            "link": "https://www.google.com.br/goto?url=CAESigEBxCJF10mTG-ughPG9WK1j1FShMAU7cGjTOx0Hrz0hHItSs6sP8bzp12ifDjz9HOAiEW0BPfzn_ehz4uCAunxUaQbVJVyREf4iVLQLCFRgmM-JAJaNxY6xB3FwKpiN5sCdN-958DCy6hl8wvGcB8wEVDSTP70Jk2yQlPGblcn0KIRxVZ8K6XS3iPE"
+          },
+          {
+            "fonte": "Banco Inter",
+            "link": "https://www.google.com.br/goto?url=CAESbwHEIkXX9EXn5kEmxYxMkOMAm5YZtQe-Be-wsNqRdvemBPMAuppd2YXcLHlKvpyfDvftGchqza6PCrQ6sIrEoTwLWVqvJg10JS2Vb4IvS_5oH_VFlz-P8UB-jXvFou4zp0rf0g7yMoFxVP_mL5fJ8Q"
+          },
+          {
+            "fonte": "Instagram",
+            "link": "https://www.google.com.br/goto?url=CAESaAHEIkXX8GXkxhBU2lbkydu9mHvbA7FpEUVnPCYFilDrt8fh8oO4R6jYYeduxq9Y-WOwH7x77i-JWA1CkZAJeN1gPJP2SUUhhA41L_LQaWrbMQ9rOPzZt1WkO8vUM9UaqH285dPP2TcQ"
+          },
+          {
+            "fonte": "Caixa",
+            "link": "https://www.google.com.br/goto?url=CAESsgEBxCJF1_H7i3-F61igN0rgZcega0RLTJhnMWMEfCVA_gd20Yq8_dWKQW9_NdD2beQAWNuk9N_eTo0OgSBQ0bkrBTcCKFLGNm9vitYmpexpZF9qr8Ry-hx7Ojy2UaQWKzjY8oMDvNWqOwYgFRAPzwosHou4pBF-EmrnWeWoqb2TYNob-rjhlmCintMxKd_4SlMBf1u0nQOmDMT1fCnNKLht05lae8h2p1kT4_tL5Nj-dFRS"
+          },
+          {
+            "fonte": "Banco do Brasil",
+            "link": "https://www.google.com.br/goto?url=CAESuQEBxCJF1xO6dUh64V__94tAg7R0ouwhgftaKxJdxoPk7KZelWzOEx8G8xRP9YizF2xFbOor_J746clbZRoMDHDbU0fDN34ID7I_c6TfI7ur-KYLuuJRJa7wKWQube4bQsgCDnwR0rnOWp80n0beb4nvtyksKFCGe7p3EX9658nYzgcOJVrGAnuPsNNq_1oP4tMIpbbvR-1YuQa5V6jjosHtRtZsHnkgJ4ffWr5_mCuW_pnrbswoCHKCGA"
+          },
+          {
+            "fonte": "Itau",
+            "link": "https://www.google.com.br/goto?url=CAEShwEBxCJF15-PWsFNDzVXvCy1rjNZHU2NG8qrpkKQpzg5_kRD6aaupg2B5SgN9IGlAM_XuMecvJdor6-1QX3Em-U7drT2cnVv5es0L8UArPsT6Ey3R6CezWiixwAQFzT6IuqiN2ISxgeKnpo2NR6wwepjIhh07eJ_K4Lf88qUpXwATYOLqAJdrHQ"
+          },
+          {
+            "fonte": "YouTube",
+            "link": "https://www.google.com.br/goto?url=CAESZwHEIkXXXPplMiMv3jHHpn0BYSkcGdP312ZdEGcLsS0VpsGnCqbUj9NMz2mk5oM2fcsTK2fF_4JsEW7pyKc7Wyh_nP44UtVxpRhY67P_WEXGPXlY6GCn7L_Yb4S_o1GougjCFE1PUVc"
+          },
+          {
+            "fonte": "YouTube",
+            "link": "https://www.google.com.br/goto?url=CAESZwHEIkXXZIFHweRCRu_uJbCGSgE5DFKWv3pLL2V6XSl8GzH4kZ7ZHOftcaQjOhMdQMeVAUVfE74Vw2HpMm91Br_TJtFkddhV-4nKVpIdx_z9Lw97iDDwPL42dE2vQzV9muXTteY4Bpo"
+          },
+          {
+            "fonte": "YouTube",
+            "link": "https://www.google.com.br/goto?url=CAESbQHEIkXXKuPfpoVmkwkFSxh9EMv6_8LSpVB9NCVajdguhzI6MxQlLvQrwuirXyOzP6XKmlxLFIu1VYIGwT0O_CnbwTvM8iRbxiqxJYNoJz8l1NVPPUGHtwnwgpxiKaRw8-ty9FV_Z9Wh5CaU424"
+          },
+          {
+            "fonte": "Blog Nubank",
+            "link": "https://www.google.com.br/goto?url=CAESiAEBxCJF130Q-5FL14ZxbEX_VUIO97AggLe2CA74J4zkPvFNpXcSOrBGElYuzOxKc2-xGBFwtuHnoh-60a5nOaM96SCtKAmE61wzlJmwgT13TffyTYfcQIm-0ioBq0oMGJvarJM7jMMBw06AmT0jqheV71HqwE3vogodbzRAXSzjIEE9oMOCGMT4"
+          },
+          {
+            "fonte": "Financeira Alfa",
+            "link": "https://www.google.com.br/goto?url=CAESXgHEIkXXMGO2fwVQKp_NNBH77RujdKPoivS91uprW-WYKwG8Nt6gCxKx2Y6zqnD_SuAs41XsKzjg4JdRdn1_A0pWCKtWtxECmBCrBOhCYHapz0Rnls0HvPBolpqu2O4"
+          },
+          {
+            "fonte": "YouTube",
+            "link": "https://www.google.com.br/goto?url=CAESaAHEIkXXFU6WPZq5gF_LZ8hoKIAtiqfqlxzuJM713LuavY-nsmy1BS_u_PWf_KSnXJnLSnmFIVC4eZPPFnQl3NHSB0rtCBtIOtCJy8carPoHeITqoUpZtXbbC2RugSnqbXSaq-DkJSlu"
+          }
+        ]
+      },
+      "organicos": [
+        {
+          "posicao": 1,
+          "titulo": "O que é empréstimo com garantia de imóvel? 🏠 É uma forma de conseguir crédito usando o ...",
+          "link": "https://www.facebook.com/61596441592448/posts/o-que-%C3%A9-empr%C3%A9stimo-com-garantia-de-im%C3%B3vel-%C3%A9-uma-forma-de-conseguir-cr%C3%A9dito-usand/122098070613548053/"
+        },
+        {
+          "posicao": 2,
+          "titulo": "Crédito com garantia e Home Equity - Line HM",
+          "link": "https://www.google.com.br/goto?url=CAEScQHEIkXXHtdfWuHlCt-b7EnXXPqS0K4SEASFVdNy198PJhAOPq6qikXtD88bMBv3WFYqR4D2qu4bBn9GBObRDnjrcjOwtCx0UVYqHCofMLVBPqXvDiVWvhS7WaI2n7EnBRFsNZ5Xn2mJCVngQuJhmKQT"
+        },
+        {
+          "posicao": 3,
+          "titulo": "Você sabia que pode usar seu imóvel como garantia para conseguir crédito? O Empréstimo ...",
+          "link": "https://www.google.com.br/goto?url=CAES4wEBxCJF1wwzPNGdANc-0Lq91ytxtSwYQv8givG2DP6kVZ3HZ2pPPW12Qe06lekZ8nK_lO6IO2rs_QXUw_sXv8CddVDA8y7x-ZRMOEvgTYCqgUej9VgTSpccg0osgoyqsiJxO8qtrdwF3eb2BPCnFugky083kNGbbFWVccRnc2uzpckiL849ypzLy8eX9MRADto3CvQcAobQ8vdmTtoH9p9R6wT5zG8ZGr79PnpKsNE1HZFiSLtVt8xzD-oCf34DjmE9n8lIYbiRSuOHmOfG9qVE1hKI_f0hl0plfUPmiE-iK8PUkg&gsessionid=4_j85YD_7TvH9Dri8Et0Zw3EqE6zPxyDgx-vorDkKtBGdT7Lwu9Haw"
+        },
+        {
+          "posicao": 4,
+          "titulo": "Empréstimo com Garantia de Imóvel (Home Equity) em 2026 - Credited",
+          "link": "https://www.google.com.br/goto?url=CAEShAEBxCJF16nvXwPGwIPYPjQaUVkqc_UUGRGHBXKs1druG0FjhxfyueQMlfumOYATcPkyjQc4xC6HmciOXCnuwq7_mDmJzgAAS8G9l0EIh9YR1QOeZIGpAevdFohjqiVISW_cW-hFb9rXYLDxiSUoXPSeiBd7XZUGz8a0nh_hmYbGL_RVPQE"
+        },
+        {
+          "posicao": 5,
+          "titulo": "Dinheiro perigoso: imóvel dá garantia a empréstimo com juros baixos, mas risco alto",
+          "link": "https://www.google.com.br/goto?url=CAESxwEBxCJF11BOTtNkd8pJRAidiHz10HmUaSbI4veYR8_WV3s-qifHHtfQmjZTetHB2tvN0WCbCPA_yaA19kUpGvImMUZMWeB3FdynqdxDe71V7gW3gKVuqtn0m47XQphpiqlM7vFgU8UbJWKS6yIeh35dpJEs4VL9cmI_4POhNBIhCrb6pz3l7Z5B11lk_RfN0mvHeFCcWxZ1JkFRE8AGBYzQfMh3pm1dRTwwXbdV0V1L1z873Pz9lm1wVVkXNtsVZm-aG9Zh6c5i"
+        },
+        {
+          "posicao": 6,
+          "titulo": "Qual a diferença entre home equity e empréstimo com garantia de imóvel?",
+          "link": "https://www.google.com.br/goto?url=CAESkwEBxCJF13afH2khAMrNcO9B1GptUVSuSDC8XGGUcQLkpWl-oiwfibpgW9rl509w5CmqOVVBcVM06ZRvZ5HT91tBv_GDiw1MMh5H2eEGJyMjBAGPHpG1b8yZUB6sjctDtFScOE6uooMbHXUmI_kg0khuptzNDoqVtAoLM6op5cEI6EJnqnKUh_Y12PxEzcZt3iBImp4"
+        },
+        {
+          "posicao": 7,
+          "titulo": "Como funciona o empréstimo com garantia de imóvel e quando ele vale a pena",
+          "link": "https://www.google.com.br/goto?url=CAESpQEBxCJF1_rpiokS5dHWkBKYb2WE1GcKTtT_Z6A83rj2ohB3-4WnW01yNkKhDC2rihV8UGXR2LUi0gN7PRBOcc0zm-yJNnQIogpQ3i9IbZC0ExwRvBNh2bFd7CBGmckMSjGPR8Iq4dZSbFoh3PhVWNmlucGdD7_J8jtMG31d1Z3ecp7iXsmjXYm0WTJ1MzxhWPgPjMbB3QHJnj0FT-oX2pfQO0lgoXA"
+        },
+        {
+          "posicao": 8,
+          "titulo": "Crédito com garantia de imóvel: como funciona e quando vale a pena | Blog Credin",
+          "link": "https://www.google.com.br/goto?url=CAEShQEBxCJF1-yHomT0rE6wn5nbdjyblzVvEW00g1QFrAUR2Q8QbEudY9ZDkKePK-6Ey3OE75pr3N486uJegZ5ZXeQiuVlhp3Rz-8fIzegbiZhbDU0d8GjIqGlTWb3ZHR29e8AMJJzqPBkJgYwnE95i-NjE3GQZR6W81cOb2soewGWXvafNUWh3"
+        },
+        {
+          "posicao": 9,
+          "titulo": "Home equity no Brasil: como funciona o crédito com garantia de imóvel",
+          "link": "https://www.google.com.br/goto?url=CAEStwEBxCJF181FcRMQ0PXdYkYsAzFwz2RCy2JwQMfd6lcLZuj85nJ3TZPw5UypR0g3CDtBCSFY8diKWQNW1O9wNnvUwF2zolBko3jj89LlvOxB95Rm64u5m_GGeWngZXDJeitgcwmvc9SrR5C1W-bjVoXSLppB4ibpsObT3O9BhL_kDOapv_7Am94QDqixmyyFLz7t7UZd4tobOg7dA_OYOqb1EJs_oCllWM6k-Cpe8X6WxK3oiu98KlY"
+        }
+      ],
+      "mapa": []
+    }
+  ],
+  "serpNotes": {
+    "formato": "Texto, Facebook e vídeo; sem mapa. Imóvel domina a busca; veículo é decisão de arquitetura pendente (pauta).",
+    "visaoDeIA": "Definição (home equity, continua morando, alienação fiduciária), características com números de bancos (até 60% da avaliação, mínimos de R$ 30 a 70 mil, até 240 meses), passo a passo (simulação, avaliação e análise jurídica, assinatura e registro em cartório) e riscos. Cita YouTube, Santander, Banco Inter, Instagram e outros.",
+    "concorrentes": "Facebook, correspondentes e blogs; uma reportagem sobre risco. Fracos a médios."
+  },
+  "serpImpact": [
+    {
+      "dado": "Visão de IA: passo a passo e 'continua morando'",
+      "efeito": "Seção 'Como funciona, passo a passo' com o registro (Lei 9.514, art. 23) e a posse direta (§ 1º)."
+    },
+    {
+      "dado": "PAA 'O que acontece se eu não pagar?' e 'Vale a pena?'",
+      "efeito": "Duas FAQs neutras, com link para o guia do leilão."
+    },
+    {
+      "dado": "Lei 9.514, art. 23, § 2º (achado na leitura)",
+      "efeito": "FAQ de IPTU e condomínio."
+    },
+    {
+      "dado": "Visão de IA: 60% da avaliação, 240 meses, mínimos",
+      "efeito": "Fora: números de bancos, sem fonte oficial; o texto diz que o percentual é definido por cada instituição."
+    },
+    {
+      "dado": "PAA 'Quanto tempo demora para liberar?'",
+      "efeito": "Fora: sem fonte oficial."
+    },
+    {
+      "dado": "Autocompletar e outras pesquisas 'imóvel financiado'",
+      "efeito": "Fora por ora: depende da alienação fiduciária superveniente (Lei 9.514, art. 22, § 3º, Lei 14.711/2023), que pede leitura cuidadosa; vira seção na pauta."
+    },
+    {
+      "dado": "Autocompletar com bancos e PAA 'melhor banco'",
+      "efeito": "Fora: marca e promessa."
+    }
+  ],
+  "revisionLog": [
+    {
+      "data": "2026-11-20",
+      "tipo": "revisão pendente (parte 4)",
+      "mudancas": [
+        "Passo a passo com registro e posse (Lei 9.514, art. 23)",
+        "FAQs: vale a pena, não pagar, IPTU e condomínio"
+      ],
+      "tituloDescricao": "sem mudança"
+    }
+  ]
 }

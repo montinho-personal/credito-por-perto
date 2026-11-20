@@ -32,6 +32,7 @@ Sem outros temas novos: os itens abertos das ondas 1 a 7 e da trilha local já v
 | "Empréstimo do governo reforma de casa" e "empréstimo do governo para motorista de aplicativo" (outras pesquisas). Só com página oficial do programa lida | `emprestimo-do-governo` | Rotina de 18/11/2026 |
 | "Quais bancos foram fechados pelo Banco Central?" (instituição em liquidação: o que acontece com quem tem empréstimo). Só com a página oficial do BC sobre regimes especiais lida | `como-consultar-se-instituicao-e-autorizada` | Revisão de 18/11/2026 |
 | "Depósito antecipado para empréstimo: lei e jurisprudência" (autocompletar). Só com norma ou decisão oficial lida que trate da cobrança antecipada | `deposito-antecipado-e-golpe` | Revisão de 19/11/2026 |
+| "Empréstimo com garantia de imóvel financiado" (autocompletar e outras pesquisas). Só com a alienação fiduciária superveniente (Lei 9.514, art. 22, § 3º, incluído pela Lei 14.711/2023) lida com cuidado e, se possível, orientação oficial | `emprestimo-com-garantia` | Revisão de 20/11/2026 |
 | "O que o STF decidiu sobre os consignados?" (só com a decisão localizada no STF) | `emprestimo-consignado` | Revisão do aposentado INSS, 16/11/2026 |
 | ~~CLT: "o que mudou", "número máximo de parcelas", "valor máximo de parcela"~~ | ~~`credito-do-trabalhador`~~ — feito em 18/11/2026 | Revisão do servidor público, 16/11/2026 |
 | ~~"Como posso obter um empréstimo do governo do estado de São Paulo?"~~ | ~~`emprestimo-do-governo`~~ — feito em 18/11/2026 | Revisão do servidor público, 16/11/2026 |
@@ -66,8 +67,8 @@ Já revisadas com SerpApi (fora da contagem):
 | ~~4~~ | ~~05/08/2026~~ | ~~Como consultar se uma instituição de empréstimo é autorizada — `como-consultar-se-instituicao-e-autorizada`~~ — revisado em 18/11/2026 | artigo | São Paulo |
 | ~~5~~ | ~~05/08/2026~~ | ~~Como identificar golpes de empréstimo: sinais, roteiros e o que fazer — `como-identificar-golpes-de-emprestimo`~~ — revisado em 19/11/2026 | artigo | São Paulo |
 | ~~6~~ | ~~05/08/2026~~ | ~~Depósito antecipado para liberar empréstimo é golpe? Sim — entenda por quê — `deposito-antecipado-e-golpe`~~ — revisado em 19/11/2026 | artigo | São Paulo |
-| 7 | 05/08/2026 | Empréstimo ou financiamento: a diferença que muda juros e riscos — `diferenca-entre-emprestimo-e-financiamento` | artigo | São Paulo |
-| 8 | 05/08/2026 | Empréstimo com garantia de imóvel ou veículo: juros menores, risco maior — `emprestimo-com-garantia` | artigo | São Paulo |
+| ~~7~~ | ~~05/08/2026~~ | ~~Empréstimo ou financiamento: a diferença que muda juros e riscos — `diferenca-entre-emprestimo-e-financiamento`~~ — revisado em 20/11/2026 | artigo | São Paulo |
+| ~~8~~ | ~~05/08/2026~~ | ~~Empréstimo com garantia de imóvel ou veículo: juros menores, risco maior — `emprestimo-com-garantia`~~ — revisado em 20/11/2026 | artigo | São Paulo |
 | 9 | 05/08/2026 | Empréstimo para negativado: o que existe de verdade e o que é cilada — `emprestimo-para-negativado` | artigo | São Paulo |
 | 10 | 05/08/2026 | Empréstimo pessoal: como funciona, quanto custa e o que comparar — `emprestimo-pessoal` | artigo | São Paulo |
 | 11 | 05/08/2026 | O que é CET: o número que revela o custo real do empréstimo — `o-que-e-cet` | artigo | São Paulo |
