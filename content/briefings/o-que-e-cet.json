@@ -30,12 +30,198 @@
     "Limites",
     "FAQ"
   ],
-  "uniqueExamples": ["Propostas A e B com mesma taxa e R$ 800 embutidos"],
-  "proposedVisuals": ["DefinitionBox", "ExampleBox", "tabela comparativa"],
-  "pagesThatMayCompete": ["/organizacao-financeira/como-comparar-propostas-de-credito/"],
+  "uniqueExamples": [
+    "Propostas A e B com mesma taxa e R$ 800 embutidos"
+  ],
+  "proposedVisuals": [
+    "DefinitionBox",
+    "ExampleBox",
+    "tabela comparativa"
+  ],
+  "pagesThatMayCompete": [
+    "/organizacao-financeira/como-comparar-propostas-de-credito/"
+  ],
   "informationThatMustNotBeRepeated": [
     "Método completo de comparação de propostas",
     "Fórmulas de juros compostos (ficam em como-calcular-juros)"
   ],
-  "publicationDecision": "create"
+  "publicationDecision": "create",
+  "serpEvidence": [
+    {
+      "busca": "o que é cet",
+      "data": "2026-11-21",
+      "aparelho": "mobile",
+      "local": "Sao Paulo,State of Sao Paulo,Brazil",
+      "autocompletar": [
+        "o que é ceticismo",
+        "o que é cetoacidose",
+        "o que é cetamina",
+        "o que é cetoacidose diabética",
+        "o que é cetoprofeno",
+        "o que é cetose",
+        "o que é cetro",
+        "o que é cetoconazol",
+        "o que é cetogênica",
+        "o que é cetona",
+        "o que é cetesb",
+        "o que é cet no lattes",
+        "o que é cetoprofeno e para que serve",
+        "o que é ceticismo na filosofia",
+        "o que é cetonas na urina"
+      ],
+      "pessoasTambemPerguntam": [],
+      "outrasPesquisas": [
+        "O que é cet no lattes",
+        "O que é cet no empréstimo",
+        "O que é cet transito",
+        "O que é cet na educação",
+        "O que é cet no cartão de crédito",
+        "O que é cet anual",
+        "Cet empréstimo consignado",
+        "O que é cet mg",
+        "O que é cet do banco daycoval",
+        "O que é cet mensal",
+        "Calculadora cet bacen",
+        "Cet financiamento veículo"
+      ],
+      "visaoDeIA": {
+        "texto": [
+          "O CET significa Custo Efetivo Total. Ele é um indicador financeiro que expressa, em forma de taxa percentual (geralmente anual), o custo real de uma operação de crédito, como um empréstimo ou financiamento.",
+          "O que o CET inclui?",
+          "Diferente da taxa de juros nominal (que mostra apenas o custo básico do dinheiro emprestado), o CET engloba todas as despesas obrigatórias da operação, tais como:",
+          "Taxas de juros ; IOF (Imposto sobre Operações Financeiras) ; Tarifas administrativas e de cadastro ; Seguros obrigatórios (como o seguro prestamista) ; Outros encargos e custos de registro",
+          "Para que serve?",
+          "Comparar propostas: Permite que você compare ofertas de diferentes bancos de forma justa, pois uma instituição pode oferecer juros mais baixos, mas cobrar taxas e seguros que deixam o CET final mais alto. ; Evitar surpresas: Mostra exatamente o valor total que você vai pagar do início ao fim do contrato. ; Transparência obrigatória: No Brasil, segundo as regras do Banco Central do Brasil (por meio de resoluções como a do Conselho Monetário Nacional), as instituições financeiras são obrigadas a informar o CET de forma clara e destacada antes da assinatura de qualquer contrato de crédito para pessoas físicas.",
+          "Você pode consultar mais detalhes e ferramentas de simulação no Blog do Santander ou entender a proposta do Bora Investir da B3.",
+          "Se você quiser, me diga:",
+          "Qual é o tipo de crédito que você está avaliando (empréstimo pessoal, financiamento de carro, imobiliário, etc.)? ; Você já tem uma proposta em mãos e quer saber como analisar as taxas?"
+        ],
+        "fontes": [
+          {
+            "fonte": "Santander Brasil",
+            "link": "https://www.google.com.br/goto?url=CAEShQEBxCJF1753tAFC0Zed9rkjgMfLCcS2so4b9KtNxZ-XDuNO3HDtTANycL1gwGRqo140CSmy7zNbftUYmMRY_MDsYp6dDUcFFNZ4zD7S37TXuk5V2Ank6sS3lX71tbbD07vYfOhascdSwZoUCwgRKdOX2E1VHa0lTs0mdoT5adJvIyaz9zxW"
+          },
+          {
+            "fonte": "Bora Investir",
+            "link": "https://www.google.com.br/goto?url=CAESfgHEIkXXd8-Ch1BlJQjVvSLxK6zdwCHo3eSw3ZXicc7braflIafJoC1FrdYh_FquJbrk5EMjtLoGbFmS89tOXdHM5Ht5qPIP_9wa9GgpIiWUa73mowOHV3FSTwRIYt0yLhC7w-MTGy3UrKupUnKK9f1x0FTKUCqFJcLs4RKQTw"
+          },
+          {
+            "fonte": "Mercado Pago",
+            "link": "https://www.google.com.br/goto?url=CAESegHEIkXXHHOQW1jvTiiQdtNgv9bXwm2ylPF0YJaWLPa4nwmcVbtfYnsLFSaX14w4nx9boAhjCyVXi5ohs03brGSe53nYs81MeQBoCIljQ4zkZkXH7g8ykzb6Xb7-55t-hEh-JfX25Q6LWvLqHuG7mRomQd5C5YN2VPe-"
+          },
+          {
+            "fonte": "C6 Bank",
+            "link": "https://www.google.com.br/goto?url=CAEScwHEIkXXsaZJLlLD6AT17DM3j3SNDOdZGwsfpEQVUxsRmj_jiOmvJds2sws-JRW49_2WKN2ZgDbYY8CVS5SyjoDPMRXqF-C2E-s9zY-FxerrGz5Sen6M_jG1_epToTBvSWN12QG6ijf7r2hr5VkMwbN_fvg"
+          },
+          {
+            "fonte": "Blog Nubank",
+            "link": "https://www.google.com.br/goto?url=CAEScAHEIkXX2NoFXZ4wjP3BDTnOsEvNzoPz3rNsD3JQx3zouYEe4eUvIOhttqrHkAyI7fyWgNsY7palFXwJysqUA5pf8dKwXtS4eFS4V0GO3HvSPnO_72MRiRBKC1FnUzR3ZaG-HcaomDX90QUevIFdG3Q"
+          },
+          {
+            "fonte": "YouTube",
+            "link": "https://www.google.com.br/goto?url=CAESaAHEIkXXWvWLfttXzdtPFgX13fIpgKFcrM0pFpLQbW0MrNHDY8fpsbo8Sm-qlnBT82-ixXfufqmfaJAoLEgG2PYHdP1qBkj8pDS_6KJ_jri_q_r1t6I-z2FNMRAiOfB2Et3M_i3xFx6v"
+          },
+          {
+            "fonte": "Facebook",
+            "link": "https://www.google.com.br/goto?url=CAESnAEBxCJF1yFCp81kcdT--j85KqIc2sbQuVuRwKiErdxfw8tWYtSjnFjnbIwERcmud8BHDpwYWkT3CXGq2uyU4DCdp0lYTMIren0OGEe0RpCwBmp5wjqA8Wc1hD6ixIly3ScEFI7B2SpQblczeuU-FWKF3gN39356Fyj3WQ-IOY4daxtFh7CUpvq7Zxz0ehGdMaMrxyASRcSjb4B7iiw"
+          },
+          {
+            "fonte": "Instagram",
+            "link": "https://www.google.com.br/goto?url=CAESaAHEIkXXXBf0CGUtY0160GUwiPaCR1yQ5OhSc3jwQIn3x2Gj_4pCfJwcxFGMULq73IuaZH325Y_LIw_1Xvapj8umgdT5mRIEDIutNs8xnMM-kbM1xPtumdYKdNvr8h6HRuv3tpHp-1et"
+          },
+          {
+            "fonte": "99",
+            "link": "https://www.google.com.br/goto?url=CAESiwEBxCJF12KC5169rN-QjgUrSwCoZi4g7lKznWVeQGJsdqlX7kPhybND1I0J5Pe1rD-NwhrgRQ6yuHPoO1NeK8H9NDNeoZn1H_DK5vWmsiUefBFDr2MKGJxo5ZAE14JhgfiZxKMhJ4j1Z3gAo-ttING3m-aXmOl5CtIBEc1JKmR4Nf2MLEE5HrX7CVPk"
+          }
+        ]
+      },
+      "organicos": [
+        {
+          "posicao": 1,
+          "titulo": "O que é CET- Custo Efetivo Total? Veja agora! – Blog Santander",
+          "link": "https://www.santander.com.br/blog/para-voce/o-que-e-custo-efetivo-total/"
+        },
+        {
+          "posicao": 2,
+          "titulo": "O que é CET, o Custo Efetivo Total, e como ele afeta o seu empréstimo?",
+          "link": "https://blog.nubank.com.br/cet-custo-efetivo-total/"
+        },
+        {
+          "posicao": 3,
+          "titulo": "CUSTO EFETIVO TOTAL (CET)",
+          "link": "https://www.google.com.br/goto?url=CAESgAEBxCJF1yUP_Epe3g9cB7yb3DHol13AgdFAAZfqia2kfED7zlPFnZaQBdzvG2SIaj8y6vKHisAIXzRsvZ_2odde5iod6yW82mEtAqOGXUDQ4ID2-tKeN2JCkmLb41Dpma4ZPstUxYK-BV9EgBBEjdXsf2l3X8v1gfBuRM4RP0xUjA"
+        },
+        {
+          "posicao": 4,
+          "titulo": "BC Explains #5 - Understanding the CET: Total Effective Cost",
+          "link": "https://www.google.com.br/goto?url=CAESaAHEIkXXjwtZKjmAJIgQx2oCgYcIO75vuMUdrGWNbeO5rioOK9MuWPDvWaV41cFxEFuoSsYGQUKlyCfu7r651rupguQ8T5qDcBBoNxklth9tMm1PQXAmQ-IRC5sGdDlE8oOp7BZpLBvn&gsessionid=ZTmwQBcNguhaKip-DxopNZ16tTw2toPtoz9Gu9Wm9djJzJoWJwYOkg"
+        },
+        {
+          "posicao": 5,
+          "titulo": "O que é CET? - Dúvidas",
+          "link": "https://www.google.com.br/goto?url=CAESbgHEIkXX8-Ogk7SrjlCLGadJ4oEDIXAgSpuqA0ryloge82l01eABvxPaiPEyK62pNlyXgxj1hjveXe3hkxwLnfhg7z7NjcXLXS90fF2Z9Z5pPCkYWaMjEvzrXhMvREq4cJqC1qLiIW098LOr0hr7"
+        },
+        {
+          "posicao": 6,
+          "titulo": "Custo efetivo total (CET): o que é e como funciona",
+          "link": "https://www.google.com.br/goto?url=CAEScwHEIkXXFjeRqK4bOkxp2T0ENy8Bgjgso_1sd2Wzdd4owJKmo1j1eBHCw32zFCLgsw2tW5PDvsTKBlb6hPL9iXR6YPuowM-ubFj_v2vJGdDq64-xAP1mch_xbjm_0iDYvzLAp9SkN99wH6gmyb636OURsfc"
+        },
+        {
+          "posicao": 7,
+          "titulo": "Banco Central do Brasil",
+          "link": "https://www.google.com.br/goto?url=CAEScwHEIkXX3xLln0pajHfOEqEMoK3TTVvAsccyEeBlriwj3RftRiRaa0NOVwoPRyml8VhWFUuZNFPvnvp3Q8dEUb3GxUOGTt7mImhkR-yZtp-ItYfbwtP4Mhv0xtaatDQgmOKYZjdjGiE7dquxjzueR6KAkcE"
+        }
+      ],
+      "mapa": []
+    }
+  ],
+  "serpNotes": {
+    "formato": "Texto de bancos (Santander, Nubank) e vídeo do BC; sem mapa. Autocompletar dominado por outros sentidos de 'cet' (ceticismo, cetose, CET de trânsito).",
+    "visaoDeIA": "Definição (Custo Efetivo Total, taxa percentual geralmente anual), o que inclui (juros, IOF, tarifas, seguros, outros encargos) e para que serve (comparar, evitar surpresas, transparência obrigatória pelo BC). Cita Santander, Bora Investir (B3), Mercado Pago, C6 Bank.",
+    "concorrentes": "Bancos e fintechs; o vídeo do BC aparece entre os primeiros."
+  },
+  "serpImpact": [
+    {
+      "dado": "Visão de IA: definição direta",
+      "efeito": "Parágrafo de abertura em uma frase, com a regra oficial."
+    },
+    {
+      "dado": "Outras pesquisas: 'O que é CET anual', 'CET mensal'",
+      "efeito": "FAQ 'anual ou mensal' com a Resolução CMN 4.881/2020 (art. 4º) e correção do quadro de definição, que dizia 'também mensal'."
+    },
+    {
+      "dado": "Outras pesquisas: 'CET no cartão de crédito'",
+      "efeito": "FAQ de alcance com o art. 6º (rotativo e cheque especial: 30 dias sobre o limite)."
+    },
+    {
+      "dado": "Visão de IA: 'transparência obrigatória'",
+      "efeito": "Demonstrativo de cálculo (art. 7º) e CET na propaganda (art. 8º, nova FAQ)."
+    },
+    {
+      "dado": "Outras pesquisas: 'Calculadora cet bacen', 'CET consignado', 'CET financiamento veículo'",
+      "efeito": "Já atendidas pela calculadora de CET e pelas páginas de cada modalidade."
+    },
+    {
+      "dado": "Autocompletar: outros sentidos de 'cet' (saúde, trânsito, Lattes)",
+      "efeito": "Fora do tema."
+    },
+    {
+      "dado": "Outras pesquisas: 'CET do banco Daycoval'",
+      "efeito": "Fora: marca."
+    }
+  ],
+  "revisionLog": [
+    {
+      "data": "2026-11-21",
+      "tipo": "revisão pendente (parte 4)",
+      "mudancas": [
+        "Fonte específica: Resolução CMN 4.881/2020 (antes só bcb.gov.br)",
+        "Definição corrigida: CET é anual",
+        "Demonstrativo de cálculo e CET na propaganda",
+        "Exemplo com CET calculado",
+        "3 FAQs"
+      ],
+      "tituloDescricao": "sem mudança"
+    }
+  ]
 }

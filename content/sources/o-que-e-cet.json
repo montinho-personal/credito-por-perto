@@ -3,12 +3,12 @@
   "claims": [
     {
       "claimId": "cet-definicao-obrigacao",
-      "claimText": "O CET expressa o custo total da operação de crédito (juros, tributos, tarifas, seguros e demais encargos) e deve ser informado previamente à contratação por pessoas físicas.",
-      "sourceOrganization": "Banco Central do Brasil",
-      "sourceTitle": "Custo Efetivo Total — regulamentação e orientações ao cidadão",
-      "sourceLocation": "https://www.bcb.gov.br",
+      "claimText": "Resolução CMN 4.881/2020: o CET é uma taxa que representa, de forma consolidada, os encargos e as despesas da operação (art. 2º); abrange amortizações, juros, tarifas, tributos, seguros e outras despesas vinculadas, inclusive serviços de terceiros de responsabilidade do tomador, mesmo fora do valor do crédito (art. 3º); expresso em taxa percentual anual, com duas casas decimais (art. 4º, parágrafo único); deve ser informado previamente à contratação, com demonstrativo de cálculo em reais e percentuais e o somatório das parcelas, inserido de forma destacada no contrato (art. 7º); deve constar dos informes publicitários que apresentem taxa de juros (art. 8º); vale para pessoas naturais, empresários individuais, ME e EPP (art. 1º), exceto repasses externos e crédito rural (art. 9º); cheque especial e rotativo: prazo de 30 dias e valor do limite (art. 6º). Revogou a Resolução 3.517/2007; vigência desde 01/02/2021.",
+      "sourceOrganization": "Conselho Monetário Nacional / Banco Central do Brasil",
+      "sourceTitle": "Resolução CMN nº 4.881, de 23 de dezembro de 2020",
+      "sourceLocation": "https://www.bcb.gov.br/content/estabilidadefinanceira/especialnor/Resolu%C3%A7%C3%A3o4881.pdf",
       "sourceType": "official",
-      "accessedAt": "2026-08-05"
+      "accessedAt": "2026-11-21"
     },
     {
       "claimId": "venda-casada-vedada",

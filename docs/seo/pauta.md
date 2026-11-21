@@ -71,7 +71,7 @@ Já revisadas com SerpApi (fora da contagem):
 | ~~8~~ | ~~05/08/2026~~ | ~~Empréstimo com garantia de imóvel ou veículo: juros menores, risco maior — `emprestimo-com-garantia`~~ — revisado em 20/11/2026 | artigo | São Paulo |
 | ~~9~~ | ~~05/08/2026~~ | ~~Empréstimo para negativado: o que existe de verdade e o que é cilada — `emprestimo-para-negativado`~~ — revisado em 21/11/2026 | artigo | São Paulo |
 | ~~10~~ | ~~05/08/2026~~ | ~~Empréstimo pessoal: como funciona, quanto custa e o que comparar — `emprestimo-pessoal`~~ — revisado em 21/11/2026 | artigo | São Paulo |
-| 11 | 05/08/2026 | O que é CET: o número que revela o custo real do empréstimo — `o-que-e-cet` | artigo | São Paulo |
+| ~~11~~ | ~~05/08/2026~~ | ~~O que é CET: o número que revela o custo real do empréstimo — `o-que-e-cet`~~ — revisado em 21/11/2026 | artigo | São Paulo |
 | 12 | 05/08/2026 | Quando vale a pena fazer um empréstimo (e quando ele piora tudo) — `quando-vale-a-pena-fazer-emprestimo` | artigo | São Paulo |
 | 13 | 05/08/2026 | Renegociação ou novo empréstimo: qual caminho para sair da dívida? — `renegociacao-ou-emprestimo` | artigo | São Paulo |
 | 14 | 05/08/2026 | Taxa mensal e taxa anual: por que 3% ao mês não é 36% ao ano — `taxa-mensal-e-taxa-anual` | artigo | São Paulo |
