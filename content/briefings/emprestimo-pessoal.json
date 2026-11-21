@@ -31,8 +31,15 @@
     "Alerta de golpe",
     "FAQ"
   ],
-  "uniqueExamples": ["R$ 5.000 a 3% a.m. em 12 vs 24 parcelas (hipotético)"],
-  "proposedVisuals": ["QuickSummary", "ExampleBox", "ChecklistBox", "WhatCanChange"],
+  "uniqueExamples": [
+    "R$ 5.000 a 3% a.m. em 12 vs 24 parcelas (hipotético)"
+  ],
+  "proposedVisuals": [
+    "QuickSummary",
+    "ExampleBox",
+    "ChecklistBox",
+    "WhatCanChange"
+  ],
   "pagesThatMayCompete": [
     "/organizacao-financeira/como-comparar-propostas-de-credito/",
     "/juros-e-cet/o-que-e-cet/"
@@ -41,5 +48,193 @@
     "Explicação completa do CET (fica em /juros-e-cet/o-que-e-cet/)",
     "Método completo de comparação (fica em como-comparar-propostas-de-credito)"
   ],
-  "publicationDecision": "create"
+  "publicationDecision": "create",
+  "serpEvidence": [
+    {
+      "busca": "como funciona empréstimo pessoal",
+      "data": "2026-11-21",
+      "aparelho": "mobile",
+      "local": "Sao Paulo,State of Sao Paulo,Brazil",
+      "autocompletar": [
+        "como funciona empréstimo pessoal da caixa",
+        "como funciona empréstimo pessoal nubank",
+        "como funciona empréstimo pessoal do mercado pago",
+        "como funciona empréstimo pessoal itaú",
+        "como funciona empréstimo pessoal bmg",
+        "como funciona empréstimo pessoal bradesco",
+        "como funciona emprestimo pessoal agibank",
+        "como funciona emprestimo pessoal santander",
+        "como funciona empréstimo pessoal picpay",
+        "como funciona emprestimo pessoal crefisa",
+        "como funciona empréstimo pessoal no boleto",
+        "como funciona empréstimo pessoal do banco do brasil",
+        "como funciona emprestimo pessoal sicoob",
+        "como funciona emprestimo pessoal mercado livre"
+      ],
+      "pessoasTambemPerguntam": [
+        "Qual é o valor que a CAIXA libera de empréstimo?",
+        "Quem ganha R$ 1500 pode pegar quanto de empréstimo?",
+        "Quanto fica 10.000 financiado em 24 vezes?",
+        "Qual banco libera empréstimo na hora online?"
+      ],
+      "outrasPesquisas": [
+        "Cresol empréstimo simulação",
+        "Emprestimo pessoal cooperativa",
+        "Empréstimo pessoal negativado",
+        "Empréstimo para negativado liberado na hora",
+        "Serasa emprestimo para negativados",
+        "Empréstimo pessoal em marabá",
+        "Emprestimo na hora",
+        "Bancos que fazem empréstimo para negativados",
+        "Empréstimo para negativado liberado na hora online",
+        "Sicoob faz empréstimo para negativado",
+        "Super sim empréstimo para negativado",
+        "Empréstimo para negativado online"
+      ],
+      "visaoDeIA": {
+        "texto": [
+          "O empréstimo pessoal é uma linha de crédito em que o banco ou financeira libera um valor na sua conta e você paga de volta em parcelas fixas, com juros e encargos. Você pode usar o dinheiro livremente, sem precisar justificar o destino ou oferecer um bem como garantia.",
+          "Como funciona na prática",
+          "Pedido e análise: Você simula o valor e o prazo no aplicativo, site ou agência. A instituição avalia sua renda, histórico de crédito, score e relacionamento com o banco. ; Liberação do dinheiro: Se aprovado, o valor cai na sua conta (muitas vezes na hora ou em até 24 horas). ; Pagamento: Você quita em parcelas mensais, geralmente por débito automático ou boleto, dentro do prazo combinado.",
+          "O que observar antes de contratar",
+          "CET (Custo Efetivo Total): Mostra o custo real do empréstimo, somando juros, IOF, tarifas e seguros. ; Parcelas no orçamento: Avalie se a prestação cabe no seu mês sem apertar suas contas básicas. ; Comparação com outras opções: Costuma ter juros maiores que o empréstimo consignado (descontado em folha), mas costuma ser mais barato e previsível que o cheque especial ou o rotativo do cartão de crédito. ; Segurança: Nenhum banco sério exige depósito ou pagamento antecipado para liberar empréstimo.",
+          "Você pode simular e conferir condições diretamente em instituições como a CAIXA, o Itaú ou o Banco do Brasil.",
+          "Se você quiser, me diga:",
+          "Qual valor você precisa e em quantas parcelas pretende pagar ; Seu objetivo (quitar dívidas, emergência ou outro plano) ; Seu perfil (CLT, autônomo, servidor, aposentado ou pensionista)",
+          "Assim posso ajudar você a comparar opções e pontos de atenção para o seu caso."
+        ],
+        "fontes": [
+          {
+            "fonte": "YouTube",
+            "link": "https://www.google.com.br/goto?url=CAESaAHEIkXX_Hry4WTdh918ArzCGRugwiH0ZwI6LT04JXGIozwmSKPDgfyTSvvibZtEmu1V4IfHJmcEtmo1Lq8bnJ-S_ujnBnygqvgw_sK-suMmjQqg7yPqXado2Uj2VTqeEi70PX5YMVFv"
+          },
+          {
+            "fonte": "Serasa",
+            "link": "https://www.google.com.br/goto?url=CAEScAHEIkXXZFjaSI_pw1twMEHKBQ2Xc5mWat2gIffCg1L8N_R1jx9K9HpVAjunpQfjjDnWZFmibuKOdAA_U5X5izf4dbrsFHGYud_iqig2mo6r1L-NvQyIGkyZcdu24MP3DIjHzbA66GNawt427ePlMmc"
+          },
+          {
+            "fonte": "Mercado Pago",
+            "link": "https://www.google.com.br/goto?url=CAESewHEIkXXejYjGwwm8ev1SQPIYqiaOquCFjVamycDvEJ6_Hp62VH00er86G0jl4LfaAVOpIQHpQXD3UcFWMkfx3bSaNFqgmJz_8RLJam1LdBbXRb7kwV9ZE7vAPLfA_Yk1kGsXurNQ_97hVxFp6jivgilw3wKw4aYIBw9IQ"
+          },
+          {
+            "fonte": "Itau",
+            "link": "https://www.google.com.br/goto?url=CAESggEBxCJF18ofcWTihO9qcn0Voa12SjW7leBJlE5REFsuDaeTu-BoyL2i6f5-VdnXDvvxhuza3COJiOkmffcaQuDPN-NNzE3G_ZjIlK63eHx1z2D31CwtA3BzrGWSAXe-fUrorj3WR7ev4k5YQ4Vmu7Fgcek9sVfyYcnyOi3auIspxb5a"
+          },
+          {
+            "fonte": "Agibank",
+            "link": "https://www.google.com.br/goto?url=CAESZgHEIkXXPWBlt_92VfBvi8Nyg1AQ1dx86ulz0pxQK4IbG7Vngvtgf5j0STBRsE8o04o6r5K76JdrNkJaeWE843-m6bDDCyXskC7zWR-drSh2dDUeaA8YBiC-AaFrNky_yFoa-TRpdA"
+          },
+          {
+            "fonte": "Crefisa",
+            "link": "https://www.google.com.br/goto?url=CAESdQHEIkXXKY15UHjaNJ6A5OqpYrNZwd_NdPt9S6EzvgOJD2TqQKGe2Zi2UQqENYyLZCgOwm58gor9paQRf5wTYwzyvhWHQsk4xNiMX5GmmOtWa5DxCPU52WeU-v0ZwM9xkFfSwsV0Chpyrlvuuw9T5IMp2TDD8A"
+          },
+          {
+            "fonte": "YouTube",
+            "link": "https://www.google.com.br/goto?url=CAESaAHEIkXXd2sSxNyANYeS_k7Z79PijTOz0UVFH3tzcEyIy9t6MEWDS9UzxwDD8l9U9ca_dxpgy9Av5s0GTBOaA7icJ3kBDssa5iqMyfPeVwFPAoGm67PdETefi-XmONLybpTWuXqcE6YM"
+          },
+          {
+            "fonte": "Facebook",
+            "link": "https://www.google.com.br/goto?url=CAES3wEBxCJF19j_J2fIL5zL-SJn2WTlG0M8dJAkJ1i3tkL1tBfc6HCK2v2FUx7ie5GwWH4fXdCSFn-8A2PWwDzZ-SmhBeICKFCE8g_ic55XsmjYj8NJLef4NYGoD_P39c-eliNTpmI7H1VyIUQUtAkbgrLRMV0N90LE8c8nnyAHMwPzDBihF1zzyJ-de32tim0VYb8NQfXz25-cVSdqNGWroVyY3QRgN1Rb0PlcZrV7sUNIL-u-4_PFCbb0YXBx3fNrZgThoLRzmeeRvLzwm4qBrWPAqzwOpJVNzBBL4XY9VKy_"
+          },
+          {
+            "fonte": "www.santander.com.br",
+            "link": "https://www.google.com.br/goto?url=CAESfAHEIkXX_AZ5hy6g4emLf5FQRRor8V1DIBqpvTweS1DTpDidOra9bkhRjbDn--b8X2U948_v8N2YSz7k0esxVIC2FChrxNT6y8AVqdcCEhV_vVuvAo74PkK9sGgg4xkAPoLURGkyg70UscyWtN_0I13C52LccnXsWKjbUIk"
+          },
+          {
+            "fonte": "YouTube",
+            "link": "https://www.google.com.br/goto?url=CAESbQHEIkXXspgHxEcsy4fcN0oVs-dEzhiM96MC2hm8602HzOqhZg_DXHex3PnWY-_tmV8-YYvom9uZTf7GuBrXK7C_bCN7wgahMzYt71gloPKnRc0_79wf2qAhSuZX_YZnatV60n8iokqSmV6usfo"
+          },
+          {
+            "fonte": "Caixa",
+            "link": "https://www.google.com.br/goto?url=CAESowEBxCJF161xhCEUTd9tWC1nNUj6rCXuoVDDxx6yutB4XitSSL_ZkypktmY90csCv2IKI1oXyvff4h3lwrKTEIIqSOBdvM03iDSc3n-MXxj9Xt6NkNxJYxtsvkN8FODPrCs7i0lm6BTE9W07IR8UyxvDTV7-lct_OYlO238BRSJ7Q730sMprwccerYhmM4WkkackJl1HuQseQwr8rfC1bMCjWnJF"
+          },
+          {
+            "fonte": "Banco do Brasil",
+            "link": "https://www.google.com.br/goto?url=CAESfwHEIkXX4mLQdvNDtsLeF23R_PB8O_QMgbcQwSRVRAuRECOke59l5aLvan9AGuWdu2FaDpJ2mfA5uCdJetj5lAQllmdONVn4Zuh7v43VZHqjhIT1S6rW3lxTrkoRNt9qnrZLlxqIBlpFscj3bxV93hJfTu7an8-ZZGqB8CVc1_o"
+          }
+        ]
+      },
+      "organicos": [
+        {
+          "posicao": 1,
+          "titulo": "Empréstimo pessoal: quando recorrer a essa alternativa?",
+          "link": "https://blog.cresol.com.br/emprestimo-pessoal/"
+        },
+        {
+          "posicao": 2,
+          "titulo": "Como fazer crédito pessoal?",
+          "link": "https://finanzero.com.br/blog/como-fazer-credito-pessoal/"
+        },
+        {
+          "posicao": 3,
+          "titulo": "Empréstimo pessoal vs financiamento: guia de cálculo",
+          "link": "https://www.google.com.br/goto?url=CAESnAEBxCJF13VbASCdjVLJM60OnL44cTpCCqS5qWGT0NfTCqCXxO53EsGivYUA4zLg_RpxpsG5tmcxKNUViqt9CgePj0qut5Oa_RqVdM3mw_x9Gh5MlquBQCadebJviecKUMvKBmCgT3ZBZUO1fswvGfzDRGReKokxIFU2ddSa8pogKUcfQyIXfny7tndzqGzl5d_ZbnTkMy0X5jk-cAU"
+        },
+        {
+          "posicao": 4,
+          "titulo": "Empréstimo: como funciona, quais os tipos e cuidados antes de contratar",
+          "link": "https://www.google.com.br/goto?url=CAESdwHEIkXXho-DkecP9OM3BZ7y0FxmpgmfPuADP_jxoz0269KOKGZQgQrDofminf5kNHvBtYziwN2VXSBcNzXyfCphDY2Lx7imUc2tqOz6LISvsYW6uOkbWwXeRh23WXIQgEzCNYUniWt5sNwGlEHksipRVvBPrRVE"
+        },
+        {
+          "posicao": 5,
+          "titulo": "Afinal, o que é empréstimo? Saiba se vale a pena!",
+          "link": "https://www.google.com.br/goto?url=CAEShwEBxCJF1xhgDRMLI0nOVVANV1N5vJoH6ysatLc-PnI5wgqUtFD6bPj7PdewExrMsjYrd4iNxXmBKtB3ljWRGRvm_G_gnR-bTdxbx_hmPFuCWxq8lnZhpUJycMAkTcydp-zFR6eZyWRKdvKNQz8sJ-kDHcHtQKGg8ZLSp1RpNBsm6YecnX-MVK4"
+        },
+        {
+          "posicao": 6,
+          "titulo": "Crédito pessoal: saiba como usá-lo corretamente",
+          "link": "https://www.google.com.br/goto?url=CAESegHEIkXXAUzcaomIm7VWs_JkKRy0Z9oo5GPVbrvayqdmxFJA51T3j0V4c-pMeerU3YjNU-qikuPhnTR5p6-T8wCU6kdbWxHCC7T3ghT1XbRzm6xrhgaBY-OD3XK9f98OH-uFGTszEp_p8d3pP9-5IYrPq_lHmSt4LZ4u"
+        },
+        {
+          "posicao": 7,
+          "titulo": "Empréstimo: saiba o que é e como funciona",
+          "link": "https://www.google.com.br/goto?url=CAESbwHEIkXXq0JD82Bo2Tg-hX-xJmf1HuRfl5FhWtlAutjmLpyTwCPYko-AX2OpG_rbZYh62eHTUd5cX05recaCY9zj856rrzcV_sq0-UUKMnbNPa1gQlCfD1E7-9Ulh--6XIcGGFXpJxNT_yToduQ5NQ"
+        },
+        {
+          "posicao": 8,
+          "titulo": "Descubra 4 formas de pedir empréstimo e quais são as vantagens e desvantagens ...",
+          "link": "https://www.google.com.br/goto?url=CAESuAEBxCJF162acCIhWA6T60OBX5cZMnTzMAPJL4SpxYl_7AxsUMArUjUsV4JhNdfGpZgXxVtExgdjWJoRMHXKzOENSiF6tzm4t2WzQrUFui_faI7BtCt97-TROW9aPlNFoyEUNuQOKjUtlntyS0L3NIcuOd0pCSEjTzpA0z6bJz_b8ILdHfL1-NLNE-0JnT-iwuUpUN0f99jNCNbdxxXhozA6oWnku0vHPPX5g2DyEgh2W_vqPOVQmgW0"
+        }
+      ],
+      "mapa": []
+    }
+  ],
+  "serpNotes": {
+    "formato": "Blogs de cooperativa e comparadores, páginas de bancos; sem mapa.",
+    "visaoDeIA": "Definição (valor na conta, parcelas fixas, uso livre, sem garantia), como funciona (pedido e análise, liberação, pagamento) e o que observar (CET, orçamento, comparação com consignado e cheque especial). Cita YouTube, Serasa, Mercado Pago, Itaú.",
+    "concorrentes": "Cresol, FinanZero e blogs: fracos a médios."
+  },
+  "serpImpact": [
+    {
+      "dado": "Visão de IA: definição e passos",
+      "efeito": "Já cobertos pela seção 'Como funciona na prática'."
+    },
+    {
+      "dado": "PAA 'Quanto fica 10.000 financiado em 24 vezes?'",
+      "efeito": "Subseção com tabela calculada para três taxas ilustrativas."
+    },
+    {
+      "dado": "PAA 'Quem ganha R$ 1500 pode pegar quanto de empréstimo?'",
+      "efeito": "FAQ com a conta a partir da parcela, sem promessa, e link para a calculadora de parcela no orçamento."
+    },
+    {
+      "dado": "Autocompletar com bancos e PAA 'Qual o valor que a CAIXA libera', 'Qual banco libera na hora'",
+      "efeito": "Fora: marca."
+    },
+    {
+      "dado": "Outras pesquisas: cooperativa, negativado, na hora",
+      "efeito": "Já têm páginas próprias, linkadas no site."
+    }
+  ],
+  "revisionLog": [
+    {
+      "data": "2026-11-21",
+      "tipo": "revisão pendente (parte 4)",
+      "mudancas": [
+        "Tabela de R$ 10 mil em 24 vezes",
+        "FAQ de quanto pegar com R$ 1.500 de renda"
+      ],
+      "tituloDescricao": "sem mudança"
+    }
+  ]
 }
