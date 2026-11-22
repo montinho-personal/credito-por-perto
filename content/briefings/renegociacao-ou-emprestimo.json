@@ -29,8 +29,13 @@
     "Quando nenhuma basta (superendividamento)",
     "FAQ"
   ],
-  "uniqueExamples": ["Tabela de 5 itens acordo vs crédito novo"],
-  "proposedVisuals": ["WarningBox", "tabela comparativa"],
+  "uniqueExamples": [
+    "Tabela de 5 itens acordo vs crédito novo"
+  ],
+  "proposedVisuals": [
+    "WarningBox",
+    "tabela comparativa"
+  ],
   "pagesThatMayCompete": [
     "/organizacao-financeira/quando-vale-a-pena-fazer-emprestimo/",
     "/emprestimos/emprestimo-para-negativado/"
@@ -39,5 +44,147 @@
     "Método dos cinco números (link)",
     "Triagem de ofertas para negativados (artigo próprio)"
   ],
-  "publicationDecision": "create"
+  "publicationDecision": "create",
+  "serpEvidence": [
+    {
+      "busca": "renegociar dívida ou fazer empréstimo",
+      "data": "2026-11-22",
+      "aparelho": "mobile",
+      "local": "Sao Paulo,State of Sao Paulo,Brazil",
+      "autocompletar": [],
+      "pessoasTambemPerguntam": [
+        "É melhor pagar a dívida ou deixar caducar?",
+        "Como conseguir 2.000 reais urgentemente?",
+        "É vantagem pegar empréstimo para quitar dívidas?",
+        "O que vale mais a pena, empréstimo ou financiamento?"
+      ],
+      "outrasPesquisas": [
+        "Como quitar dívidas com bancos",
+        "Como pagar uma dívida negativada no spc",
+        "Pagar dividas pelo gov",
+        "Spc consumidor",
+        "Spc dívidas consulta",
+        "Como pagar uma divida negativada",
+        "Como pagar uma dívida negativada no serasa",
+        "Não consigo pagar dívida negativada no serasa",
+        "Quitar dívidas com desconto",
+        "Spc dividas negativadas",
+        "Quitar todas as dividas de uma vez",
+        "Juntar todas as dividas em uma só"
+      ],
+      "visaoDeIA": {
+        "texto": [
+          "Comece tentando renegociar direto com o credor antes de contratar um empréstimo, escolhendo o empréstimo apenas quando ele tiver CET menor do que a dívida atual ou quando você precisar juntar várias contas em uma parcela que caiba no orçamento.",
+          "Quando renegociar direto",
+          "Desconto real ou redução de juros: Quando o credor abate o valor total ou reduz os juros, sem criar uma nova linha de crédito.",
+          "Dívida concentrada: Quando você tem um ou poucos débitos e consegue ajustar prazo ou valor à sua renda.",
+          "Plataformas de negociação: Você pode consultar ofertas de acordo no SPC Brasil ou conferir orientações de negociação no .",
+          "Quando fazer empréstimo para quitar dívidas",
+          "Juros muito altos na dívida atual: Comum em rotativo/parcelamento de cartão de crédito e cheque especial, se você conseguir um crédito mais barato (como consignado ou empréstimo com juros menores).",
+          "Várias dívidas picadas: Reunir vários vencimentos em uma única parcela facilita o controle, desde que o custo total faça sentido.",
+          "Renegociação travada: Quando o credor não oferece condições viáveis e você precisa quitar o débito à vista com desconto.",
+          "O que comparar antes de decidir",
+          "CET (Custo Efetivo Total) e valor total: Não olhe só a parcela menor; um prazo longo pode encarecer muito o total pago.",
+          "Capacidade de pagamento: Veja se a parcela cabe no seu orçamento mensal sem comprometer itens essenciais nem gerar novos atrasos.",
+          "Disciplina após o acordo: Evite usar novamente o limite do cartão ou do cheque especial logo após quitar, e nunca pague taxa antecipada para liberar empréstimo.",
+          "Se quiser, me informe o valor total da dívida, a taxa de juros ou modalidade (cartão, cheque especial, carnê) e quanto sobra por mês no seu orçamento para compararmos os cenários."
+        ],
+        "fontes": [
+          "YouTube",
+          "Finamax",
+          "Blog do Agi",
+          "Idec - Instituto de Defesa de Consumidores",
+          "SPC Brasil",
+          "Quero Quitar",
+          "YouTube"
+        ],
+        "nota": "visão de IA em duas etapas (page_token)"
+      },
+      "organicos": [
+        {
+          "posicao": 1,
+          "titulo": "Quer negociar dívidas bancárias com boas condições de pagamento, de forma online ...",
+          "link": "https://www.facebook.com/meubolsoemdia/videos/quer-negociar-d%C3%ADvidas-banc%C3%A1rias-com-boas-condi%C3%A7%C3%B5es-de-pagamento-de-forma-online-/970951068504954/"
+        },
+        {
+          "posicao": 2,
+          "titulo": "Renegociação de dívidas. É um bom negócio?",
+          "link": "https://www.jusbrasil.com.br/artigos/renegociacao-de-dividas-e-um-bom-negocio/735560574"
+        },
+        {
+          "posicao": 3,
+          "titulo": "SPC Brasil | Negociar Dívida",
+          "link": "https://www.google.com.br/goto?url=CAESZQHEIkXX0VNlyMiwXVLLZnyTcuYpcIYEKZXOMz1yWufeucQXaD0QhjND1sAPO3hjmLniNpB_TxDSBg1Tts9FIifxxATUi3DqlpbZdHtyR2VNbG4DhvvmWx40iOFg6-QhbYb7BeJt"
+        },
+        {
+          "posicao": 4,
+          "titulo": "Empréstimo para Pagar Dívida: Vale a Pena?",
+          "link": "https://www.google.com.br/goto?url=CAESfgHEIkXXBgTWnmSUjsL-OgU41z4ORp2_l0q-8SXo7v2clMi5fxztWX6GVLrJ_fs_p5SzWwUwWJQNvrQ6s0HEqwyjCJwao6kWI9H6XrxYCmOSIw38Np5K6pv-xKO20P9PWpstIkg6lJYxh8EmzWMLaebGLhnkJyOLOxkxGdCNzA"
+        },
+        {
+          "posicao": 5,
+          "titulo": "Quando vale a pena fazer empréstimo para quitar dívidas - Blog do Agi",
+          "link": "https://www.google.com.br/goto?url=CAESeAHEIkXXT6wus9AOnZNUEqYKwxcPiK0cJXp6JWlk026YqirmL_tqIoWMuhJeM5R-YJ8x5ZilhZgJQw7JvKFASM_Sgal8UszOBgy9jOnBqnwvu7pGm02OM1N7YjRD3ttow18BR_8GLBd2PFDncmVL6jdoycoCSziIew"
+        },
+        {
+          "posicao": 6,
+          "titulo": "Economista dá dicas de quando solicitar empréstimos para quitar dívidas",
+          "link": "https://www.google.com.br/goto?url=CAESaAHEIkXXt3MY2K0c_xqV88yqPsiOIyjTCHioRJ3ANrgxVcnTYL0DU7atzf3NXpGqkax-er3Csb7fs7QR7CdV5E02pQ4zSdLQ-_N47Pl7x2y5BPL1N1uX_QZBpb6yFcDAcmaOq8msHga7&gsessionid=AM0zLLiGdM_KV5Hzk-upgRENW8gcmZptFBIaqbvLqM5pPwQ3XaHccQ"
+        },
+        {
+          "posicao": 7,
+          "titulo": "Vale a pena pegar um empréstimo para pagar dívidas?",
+          "link": "https://www.google.com.br/goto?url=CAESaAHEIkXXBTXUPr6OuoXuHS0rfbfRirxju0scBzweq9Rcoq73nDUh2AzOYIg0ELzmTKDfRxCIx3YRZvTdywvc2tl0ssJA3FekSyLDCrStTPdK4J6J6rPtE1rVGl7F4sHTI9FJ8wckPu2Q&gsessionid=AM0zLLiGdM_KV5Hzk-upgRENW8gcmZptFBIaqbvLqM5pPwQ3XaHccQ"
+        },
+        {
+          "posicao": 8,
+          "titulo": "Vale a pena fazer empréstimo para quitar dívidas?",
+          "link": "https://www.google.com.br/goto?url=CAESdwHEIkXXOxNoFLwU4Yg3H_FK1_a-38WVqchu8FDAByjr8gA6Sw9Hq966oR7ZFXlwECBEbcpodRDc_hVKxhQFHmNCY7Ffgomg7IJY26GJUuCVTrJHe6J3E4M6arn8CBeBD6dYaWNfl4Vkbwg46QyBR6FCWyJ-QlPY"
+        }
+      ],
+      "mapa": []
+    }
+  ],
+  "serpNotes": {
+    "formato": "Facebook (Meu Bolso em Dia), Jusbrasil, SPC e blogs de financeiras; sem mapa. Sem autocompletar.",
+    "visaoDeIA": "Abre com 'tente renegociar antes; empréstimo só com CET menor ou para juntar dívidas'; quando renegociar, quando trocar, o que comparar. Cita YouTube, Finamax, Blog do Agi, Idec, SPC Brasil, Quero Quitar.",
+    "concorrentes": "Redes sociais, Jusbrasil e blogs: fracos."
+  },
+  "serpImpact": [
+    {
+      "dado": "Visão de IA: resposta direta",
+      "efeito": "Resumo no início com a mesma ordem (renegociar antes, empréstimo só com CET menor)."
+    },
+    {
+      "dado": "PAA 'É melhor pagar a dívida ou deixar caducar?'",
+      "efeito": "FAQ com CDC art. 43 § 1º e Código Civil art. 206 § 5º I, com link para dívida caducada."
+    },
+    {
+      "dado": "Outras pesquisas: 'Juntar todas as dívidas em uma só', 'Quitar todas as dívidas de uma vez'",
+      "efeito": "FAQ com os dois caminhos (empréstimo de consolidação e repactuação da Lei 14.181)."
+    },
+    {
+      "dado": "PAA 'É vantagem pegar empréstimo para quitar dívidas?', 'Empréstimo ou financiamento?'",
+      "efeito": "Já cobertos pelo artigo e pela página de empréstimo ou financiamento."
+    },
+    {
+      "dado": "Outras pesquisas: 'Pagar dívidas pelo gov', 'quitar dívidas com desconto', 'pagar dívida negativada'",
+      "efeito": "Já cobertos por como negociar dívidas e feirão limpa nome."
+    },
+    {
+      "dado": "Outras pesquisas: SPC, Serasa; PAA '2.000 reais urgentemente'",
+      "efeito": "Fora: marca; urgência tem página própria."
+    }
+  ],
+  "revisionLog": [
+    {
+      "data": "2026-11-22",
+      "tipo": "revisão pendente (parte 4)",
+      "mudancas": [
+        "Resumo direto",
+        "FAQs: caducar, juntar dívidas"
+      ],
+      "tituloDescricao": "sem mudança"
+    }
+  ]
 }

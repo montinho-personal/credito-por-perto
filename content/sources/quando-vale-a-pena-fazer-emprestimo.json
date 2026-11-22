@@ -18,6 +18,33 @@
       "sourceLocation": "https://www.planalto.gov.br/ccivil_03/leis/2003/l10.820.htm",
       "sourceType": "official",
       "accessedAt": "2026-08-05"
+    },
+    {
+      "claimId": "mte-faq",
+      "claimText": "FAQ do MTE: até 35% do salário para as prestações, excluídas rendas variáveis como hora extra; um empréstimo por vínculo (dois vínculos, dois empréstimos); garantias opcionais de até 10% do FGTS ou até 100% da multa; na demissão, as garantias quitam a dívida e o saldo pode ser pago com recursos próprios, renegociado ou cobrado no próximo vínculo; no pedido de demissão a dívida se mantém e o FGTS não pode ser usado; desistência em 7 dias corridos do recebimento, devolvendo o valor integral; nova simulação após 24 horas; negativado pode simular, sujeito à análise de risco do banco; portabilidade a qualquer tempo.",
+      "sourceOrganization": "Ministério do Trabalho e Emprego",
+      "sourceTitle": "Crédito do Trabalhador — Perguntas frequentes",
+      "sourceLocation": "https://www.gov.br/trabalho-e-emprego/pt-br/assuntos/credito-do-trabalhador/perguntas-frequentes",
+      "sourceType": "official",
+      "accessedAt": "2026-11-18"
+    },
+    {
+      "claimId": "in-213-2026",
+      "claimText": "Instrução Normativa PRES/INSS nº 213, de 17/08/2026: validação de dados bancários para quem não tem biometria; benefício desbloqueado; 90 dias também na transferência de localidade; contrato com no máximo 108 parcelas; envio de documentos e comprovantes em até 7 dias úteis, sob pena de interrupção dos descontos.",
+      "sourceOrganization": "INSS",
+      "sourceTitle": "Beneficiários do INSS sem biometria poderão contratar consignado com validação de dados bancários (24/08/2026)",
+      "sourceLocation": "https://www.gov.br/inss/pt-br/assuntos/noticias/beneficiarios-do-inss-sem-biometria-poderao-contratar-consignado-com-validacao-de-dados-bancarios-veja-as-regras",
+      "sourceType": "official",
+      "accessedAt": "2026-11-16"
+    },
+    {
+      "claimId": "decreto-60435",
+      "claimText": "Decreto 60.435/2014: consignado = servidor civil e militar, ativo, inativo ou reformado e pensionista da administração direta e autárquica; descontos obrigatórios incluem IAMSPE, contribuição previdenciária e IR (art. 3º); empréstimos exigem informação prévia de valor financiado, CET mensal e anual, valor/número/periodicidade das prestações, total a pagar e saldo devedor (art. 9º); máximo de 96 parcelas (art. 9º, § 1º); vedadas TAC, outras taxas administrativas e encargos na liquidação antecipada (§ 2º); portabilidade permitida (§ 3º); bancos devem informar o CET, disponível em ambiente eletrônico (art. 10).",
+      "sourceOrganization": "Governo do Estado de São Paulo",
+      "sourceTitle": "Decreto nº 60.435/2014 (texto com alterações)",
+      "sourceLocation": "https://nova.folhadepagamento.sp.gov.br/folha/nova_folha/legislacao/decreto_60435_2014.asp",
+      "sourceType": "official",
+      "accessedAt": "2026-11-17"
     }
   ]
 }

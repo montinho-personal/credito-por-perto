@@ -28,12 +28,195 @@
     "Se decidir contratar",
     "FAQ"
   ],
-  "uniqueExamples": ["Ana e Bruno com o mesmo contrato de R$ 4.000"],
-  "proposedVisuals": ["ChecklistBox", "ExampleBox"],
-  "pagesThatMayCompete": ["/organizacao-financeira/renegociacao-ou-emprestimo/"],
+  "uniqueExamples": [
+    "Ana e Bruno com o mesmo contrato de R$ 4.000"
+  ],
+  "proposedVisuals": [
+    "ChecklistBox",
+    "ExampleBox"
+  ],
+  "pagesThatMayCompete": [
+    "/organizacao-financeira/renegociacao-ou-emprestimo/"
+  ],
   "informationThatMustNotBeRepeated": [
     "Passo a passo de renegociação",
     "Comparação de propostas (artigo próprio)"
   ],
-  "publicationDecision": "create"
+  "publicationDecision": "create",
+  "serpEvidence": [
+    {
+      "busca": "quando vale a pena fazer empréstimo",
+      "data": "2026-11-22",
+      "aparelho": "mobile",
+      "local": "Sao Paulo,State of Sao Paulo,Brazil",
+      "autocompletar": [
+        "vale a pena fazer empréstimo clt",
+        "vale a pena fazer empréstimo",
+        "vale a pena fazer empréstimo no nubank",
+        "vale a pena fazer empréstimo consignado clt",
+        "vale a pena fazer empréstimo pela carteira de trabalho",
+        "vale a pena fazer empréstimo consignado",
+        "vale a pena fazer empréstimo do fgts",
+        "vale a pena fazer empréstimo para investir",
+        "vale a pena fazer empréstimo no banco",
+        "vale a pena fazer empréstimo com garantia de veículo",
+        "vale a pena fazer empréstimo com garantia de imóvel",
+        "vale a pena fazer empréstimo na conta de luz",
+        "vale a pena fazer empréstimo para pagar dívidas",
+        "vale a pena fazer empréstimo para abrir um negócio",
+        "vale a pena fazer empréstimo para pagar cartão de crédito"
+      ],
+      "pessoasTambemPerguntam": [
+        "É vantagem pegar empréstimo?",
+        "Quantos anos leva para pagar um empréstimo?",
+        "Quanto fica 10.000 financiado em 24 vezes?",
+        "Quanto pode pegar de empréstimo?"
+      ],
+      "outrasPesquisas": [
+        "Empréstimo na conta de luz como fazer",
+        "Empréstimo do will bank é confiável",
+        "A light faz empréstimo na conta de luz",
+        "Bancos que fazem emprestimo na conta de luz",
+        "Will empréstimo",
+        "Emprestimo na conta de luz para negativado"
+      ],
+      "visaoDeIA": {
+        "texto": [
+          "Um empréstimo vale a pena quando o Custo Efetivo Total (CET) é baixo, a parcela cabe no seu orçamento (idealmente até 30% da renda líquida) e o dinheiro serve a um objetivo claro.",
+          "Quando costuma valer a pena",
+          "Trocar dívidas caras por mais baratas: Quitar rotativo do cartão ou cheque especial usando linhas com juros menores (como consignado ou crédito com garantia), reduzindo o custo total e unificando parcelas. ; Emergências reais: Resolver imprevistos urgentes (como saúde ou reparos essenciais) quando você não tem reserva de emergência. ; Investimentos com retorno: Financiar algo que aumente sua renda ou reduza custos no médio/longo prazo, como capacitação ou um negócio estruturado.",
+          "Quando geralmente NÃO vale a pena",
+          "Compras por impulso ou consumo não planejado: Antecipar desejos sem planejamento pesa na renda futura e costuma custar caro. ; Juros maiores que a dívida atual: Trocar uma dívida por outra com CET maior ou prazo longo demais apenas aumenta o valor final pago. ; Emprestar o nome a terceiros: Você assume o risco de crédito sem ficar com o benefício.",
+          "O que conferir antes de fechar",
+          "Compare o CET (juros, tarifas, impostos e seguros), não apenas a taxa de juros anunciada. ; Simule o impacto mensal no orçamento e garanta que a origem do endividamento foi ajustada para não acumular novas contas. Você pode consultar referências e simuladores no blog do Nubank e ferramentas oficiais do Banco Central.",
+          "Se você quiser avaliar um caso concreto, me diga:",
+          "Qual é o objetivo do empréstimo (quitar dívidas, emergência, investimento ou outro) ; O valor aproximado e sua renda mensal líquida ; As taxas ou parcelas simuladas, se já tiver alguma"
+        ],
+        "fontes": [
+          {
+            "fonte": "Blog Nubank",
+            "link": "https://www.google.com.br/goto?url=CAESbwHEIkXXMn6UrRyo1VAEggA8n9nYXVJqIakDarKVulUuhK4sk_3tikroBg6sYByE_nZcRYLILfy0208PYdS8CAJNAGdij651QMVbucI44VDJVFRq5zZSSgsspHtFrbbZwIKdFcGVi3YzFt1KpkmqAA"
+          },
+          {
+            "fonte": "Creditas",
+            "link": "https://www.google.com.br/goto?url=CAESkwEBxCJF1wDSzCS9VgVSpZngDnYRR5ECEqVUqYiZhrpebEb6WhBbcc11rLv8QIrdhf7BvOF7fCUzCcDZH8pFZt2WNiJB_jpKYe0w2uQVrGfW6NSLg6hI0FjIzbUrMp9ZdFcB41KZIeztNHrXS6xhp9s3Q5Hc5vak_-FWdYImxdZfcaFDiN8F_7v453UKFVt-Rseg9zA"
+          },
+          {
+            "fonte": "YouTube",
+            "link": "https://www.google.com.br/goto?url=CAESaAHEIkXXWK8lfUjY1oI7x0pCUR6z1OdclXJfnrJH29ztSqIAq7brjuisK41sj9n9FkWy3UuKX1yzkmHjfOYDMr1zOdoi3w5m100a-lv-_-waJZiUe5GOwGX91plmopGbM-MpUIsk4Nbz"
+          },
+          {
+            "fonte": "Serasa",
+            "link": "https://www.google.com.br/goto?url=CAESmAEBxCJF130X5WtiBLVRxWvRDwMNHYDF_QbQsE94KsuZ466ZVwJEqYvlv9LGncpLYDphkxmKrNwCdL_gn18n_PI9xnaPDJBESF_GihrZePpQYRKThk7k7YkUI2JyL2rJzilEK1IJ0m_K4_Z5PFUpdwrWf7K2wE91AInXghMrj1MYEgebMB7Q_PD4B2k6W9S3-d1e5oeCKtfTiw"
+          },
+          {
+            "fonte": "Tamo Junto",
+            "link": "https://www.google.com.br/goto?url=CAESpAEBxCJF11_ltxNYk0ZBYmw7wvCfDYmwTGAfVW-LqIx-x1mB9vt5WGUoT3VKCNWT5RrQNxmfeD6ireCi9bV-H8TWg0dHjwPhcrRjaGddUkucvcHGKjRh5fEHR5_E_LHnI5li2CKAHC1J9FB-5mh-XJoP2QgBSHmuxj_gx3Qnv9WHOFCTQenwAjTaVvTK86dJlb-SbKCdBJyQVKGz2a5YvsG02RQBMg"
+          },
+          {
+            "fonte": "YouTube",
+            "link": "https://www.google.com.br/goto?url=CAESZwHEIkXXgdpZy5SNLBb_kqM1mEoieDNN-RcXKIoTpEOhnq83mu8CJKtAAjAMj4xju_vjiEkrsui4Vh026vdia1IfTQiwWfdtY2K_--GJfOLXbDP36uFB3UZ9S0NvwiW931ZgXaLVSwg"
+          },
+          {
+            "fonte": "Instagram",
+            "link": "https://www.google.com.br/goto?url=CAESaAHEIkXXotnM6jI8MfvUelHedmHa7ENkelez6gzWY4vu2Sd1GOwCvjcTMAvw9IpB9kSk_Gjgoajr5-fjZdk1dHO1Ewj04Z2kU8V2TE-fGFrQbpi-aN12DCFii7_EM1ghIM44QlV6HqVL"
+          },
+          {
+            "fonte": "Instagram",
+            "link": "https://www.google.com.br/goto?url=CAESaAHEIkXXWr_leS3LfII1bF1s4aukt_1OjK5ffZWvXbYvQoR-_QUGVyxzQ5gJsXv5B5y_DUQwN-cG6b8Af6_eZqDTECsWkgx5fvNathcPai2irJMyxWO3ta4iFQROW30JTkfKP1FLPnmS"
+          }
+        ]
+      },
+      "organicos": [
+        {
+          "posicao": 1,
+          "titulo": "6 sinais de que é hora de pedir um empréstimo pessoal - Blog do will",
+          "link": "https://blog.willbank.com.br/6-sinais-de-que-e-hora-de-pedir-um-emprestimo-pessoal/"
+        },
+        {
+          "posicao": 2,
+          "titulo": "É 'perigoso' pegar empréstimo este ano? Analistas apontam os riscos",
+          "link": "https://www.google.com.br/goto?url=CAESdgHEIkXX7EHrOHXB70nvKkqCR3k3aDBYuYDM7Tp_5bpTgatW2OBggeELgytEdir7JFAXzoLfZECpainQ2QpLoAlWuiowj_bmJGfDYVLhE14jw0YeS6zegd7h7lnt8kxk9MxVRI-Y8tgvCKIJkAE2FT7LRFPMh4Q"
+        },
+        {
+          "posicao": 3,
+          "titulo": "Vale a pena pegar um empréstimo para pagar dívidas?",
+          "link": "https://www.google.com.br/goto?url=CAESaAHEIkXXhMDmfghDtUYRs9F1pn2AQa1-_wq8YXozzUnvccXsZeOOzCMIbOjEhinkv1icxYDDK_IUXkQGeJysMf-rtAmM-UbFcSesFwv5iznLWOQvx7vP2otwQVjlRMuzjHDf8edo27C0&gsessionid=EaEmIKOPFbMmsCi1Y-JbdatczmSDXmPPqa2VDesV3bqDnLPqAyHrAQ"
+        },
+        {
+          "posicao": 4,
+          "titulo": "Quando fazer um empréstimo? Planeje agora!",
+          "link": "https://www.google.com.br/goto?url=CAESdgHEIkXXvZdcMRguhODEGcNkgt-mqkPG2oE9bk-XWJ3VD9RGLi83z1EiZNl7PiuFTztn141msJDSg4y-MV4HtYJf1ysz50zGKV6WVm4iJNxSc9scux4s4M5J3K2ymNElKW8gbgLEiWmKxk5IYT8GjPYiTJavk50"
+        },
+        {
+          "posicao": 5,
+          "titulo": "Empréstimo para investimento: vale a pena? Como fazer?",
+          "link": "https://www.google.com.br/goto?url=CAESdQHEIkXXjtZ9QCkKyEdd6o_fg3tiCpuYjXP3-n1ESDST4sfqr3ACry0KFv4FULlCBt49oMafzBFCx_OiWBeoJ52M9kgriy5ggxvxZh85_L4CsqNgdZVdtllwNp8fXRkP3NmQIGDiLNBuC9XbGV_NcZ3QjCoa2w"
+        },
+        {
+          "posicao": 6,
+          "titulo": "Which is WORSE, a loan or financing?",
+          "link": "https://www.google.com.br/goto?url=CAESaAHEIkXXw8T4zVk-ddm74stu4xFpFhnqSryVcuztsI1evxS9YxGfi5zS0o3EjYJ_qnpBf_Pd4VOaUdVaVmaPT5nUkfyqkqZxi5LiFJr9wM4xbQJ4Xgn-vy5IydQ7oFTanRUVk9JBHEIX&gsessionid=EaEmIKOPFbMmsCi1Y-JbdatczmSDXmPPqa2VDesV3bqDnLPqAyHrAQ"
+        },
+        {
+          "posicao": 7,
+          "titulo": "Vale a pena pegar empréstimo consignado agora? FinanZero responde",
+          "link": "https://www.google.com.br/goto?url=CAESnAEBxCJF185N40_fMXocmYQVG7kHRPkZ91QdFjUid0Hpj-C4pJMMthAIhBol6o6bYmaXtqNEEzXo9oE7k2qyxHQ88Qi4-Mk2kjLVPXLiZlwYw7OiGJs85fOexhhB_Cw8Ci0LQLLjs46WgzOaK62p1e2L3LvhKZddyALL7p0zsJtTIiMBIKJfXE9DgCd3qvqGfGIyHkWkcMqeKxmyHbs"
+        },
+        {
+          "posicao": 8,
+          "titulo": "5 indícios de que um empréstimo pessoal é uma boa alternativa para você",
+          "link": "https://www.google.com.br/goto?url=CAESnwEBxCJF16sDe3Q_XGGhAckKUhw5ZNoZe_WERvqh5ZRPuCRR0sJoBi2XWo6Nn5KyvZWYpWrsjrqIx_5DXAfhWRU4sJmjmrwElcPOEsDMVOMp8iS0FgKueOD6ssEND8j6ZVla4UDTTd15x28KUlR0nD9Fyv0fF353jpEL0I3GCXXM7a27R4LF7Oni9yCqlM1Ux2hgwsnnNO2Hl1IEc3lQO_g"
+        },
+        {
+          "posicao": 9,
+          "titulo": "Compensa pegar empréstimo para abrir um negócio? : r/investimentos",
+          "link": "https://www.google.com.br/goto?url=CAESrgEBxCJF1-1xxaGJpytu-Ful8qVCKyHfK6e0ohQrNTRp5LtAjpMQyoZHwVNFmAeIPmmUUvP8-nbUFDGfffT7X8o0h69VXS6vX9cVpulHzIHcEtXMnPziLjQqq1X0A7TTRPBDSe0tkYJzkRhTlU3-NsM_Rof_t9-IGkw84QJhUmlsDNghbVEdzao9rKB8d6dILI81oMeVS_nFnwEIEB7CWTnY9KOJFvxMTSNFK8QQ_O0"
+        }
+      ],
+      "mapa": []
+    }
+  ],
+  "serpNotes": {
+    "formato": "Blogs de bancos e fintechs, notícia e vídeo; sem mapa.",
+    "visaoDeIA": "Abre com 'vale quando o CET é baixo, a parcela cabe (idealmente até 30% da renda) e há objetivo claro'; listas de quando vale (trocar dívida cara, emergência, investimento com retorno) e quando não vale (impulso, juros maiores, emprestar o nome); o que conferir (CET, orçamento). Cita Blog Nubank, Creditas, YouTube, Serasa.",
+    "concorrentes": "Will Bank, portais e blogs: fracos a médios."
+  },
+  "serpImpact": [
+    {
+      "dado": "Visão de IA: resposta direta em uma frase",
+      "efeito": "Resumo no início, sem o '30% da renda' (não é regra oficial; a FAQ do site já explica que não há percentual universal)."
+    },
+    {
+      "dado": "Autocompletar: 'CLT', 'consignado CLT', 'pela carteira de trabalho'",
+      "efeito": "FAQ do consignado CLT com a FAQ do MTE (35%, FGTS e multa como garantia)."
+    },
+    {
+      "dado": "PAA 'Quantos anos leva para pagar um empréstimo?'",
+      "efeito": "FAQ com os tetos oficiais (INSS 108 parcelas, servidor estadual SP 96)."
+    },
+    {
+      "dado": "PAA 'Quanto pode pegar de empréstimo?' e 'Quanto fica 10.000 em 24 vezes?'",
+      "efeito": "FAQ curta com links para margem consignável e empréstimo pessoal, que têm as contas."
+    },
+    {
+      "dado": "Autocompletar 'do FGTS', 'para investir'",
+      "efeito": "Já cobertos (FAQ de investir; página do FGTS)."
+    },
+    {
+      "dado": "Autocompletar 'Nubank' e outras pesquisas (Will, Light, conta de luz)",
+      "efeito": "Fora: marca; conta de luz tem página própria."
+    }
+  ],
+  "revisionLog": [
+    {
+      "data": "2026-11-22",
+      "tipo": "revisão pendente (parte 4)",
+      "mudancas": [
+        "Resumo direto",
+        "FAQs: consignado CLT, prazo, quanto pegar"
+      ],
+      "tituloDescricao": "sem mudança"
+    }
+  ]
 }
