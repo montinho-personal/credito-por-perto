@@ -27,11 +27,190 @@
     "Onde isso pega no dia a dia",
     "FAQ"
   ],
-  "uniqueExamples": ["Comparação 2,9% a.m. vs 41% a.a."],
-  "proposedVisuals": ["Tabela de equivalências", "blocos de fórmula"],
-  "pagesThatMayCompete": ["/juros-e-cet/como-calcular-juros-de-emprestimo/"],
+  "uniqueExamples": [
+    "Comparação 2,9% a.m. vs 41% a.a."
+  ],
+  "proposedVisuals": [
+    "Tabela de equivalências",
+    "blocos de fórmula"
+  ],
+  "pagesThatMayCompete": [
+    "/juros-e-cet/como-calcular-juros-de-emprestimo/"
+  ],
   "informationThatMustNotBeRepeated": [
     "Fórmula da parcela Price (fica em como-calcular-juros)"
   ],
-  "publicationDecision": "create"
+  "publicationDecision": "create",
+  "serpEvidence": [
+    {
+      "busca": "converter taxa mensal para anual",
+      "data": "2026-11-23",
+      "aparelho": "mobile",
+      "local": "Sao Paulo,State of Sao Paulo,Brazil",
+      "autocompletar": [
+        "converter taxa mensal para anual excel",
+        "converter taxa mensal para anual hp12c",
+        "converter taxa mensal para anual juros compostos",
+        "converter taxa mensal para anual na hp 12c",
+        "converter taxa mensal para anual formula",
+        "como converter taxa mensal para anual na hp",
+        "converter taxa juros mensal para anual",
+        "converter taxa mensal em anual juros compostos",
+        "converter taxa juros mensal anual",
+        "converter taxa mensal para anual online",
+        "converter taxa mensal em anual fórmula"
+      ],
+      "pessoasTambemPerguntam": [
+        "Quanto e 1% ao mês em 1 ano?",
+        "Como converter taxa mensal em anual no Excel?",
+        "Qual a taxa equivalente para 12% ao ano em mês?",
+        "Como converter taxa AA para AM?"
+      ],
+      "outrasPesquisas": [
+        "Converter taxa mensal para anual excel",
+        "Transformar taxa anual em mensal juros compostos",
+        "Converter taxa mensal para anual hp12c",
+        "Transformar taxa mensal em anual hp",
+        "Conversor de taxa de juros",
+        "Converter taxa mensal em diaria"
+      ],
+      "visaoDeIA": {
+        "texto": [
+          "Para converter uma taxa mensal em taxa anual equivalente (juros compostos), use a fórmula: (1 + i_m)^12 - 1, onde i_m é a taxa mensal em decimal (ex.: 1% = 0,01). Você também pode usar ferramentas online como o Clube dos Poupadores ou a Mobills.",
+          "Passo a passo",
+          "Divida a taxa mensal por 100 para deixá-la em decimal. ; Some 1 a esse valor. ; Eleve o resultado à potência 12 (12 meses no ano). ; Subtraia 1 e multiplique por 100 para voltar a porcentagem.",
+          "Exemplos práticos",
+          "0,5% ao mês: (1 + 0,005)^12 - 1 = 6,17% ao ano ; 1% ao mês: (1 + 0,01)^12 - 1 = 12,68% ao ano ; 2% ao mês: (1 + 0,02)^12 - 1 = 26,82% ao ano",
+          "No Excel ou planilhas",
+          "Se a taxa mensal (ex.: 1%) estiver na célula A1, digite:\n=(1+A1)^12-1 (e formate a célula como porcentagem).",
+          "Nota: Evite apenas multiplicar a taxa mensal por 12, pois isso ignora os juros sobre juros e subestima o resultado anual.",
+          "Se você informar a taxa mensal que quer converter e o tipo de operação (investimento, financiamento ou empréstimo), eu faço o cálculo exato para você."
+        ],
+        "fontes": [
+          {
+            "fonte": "meutudo",
+            "link": "https://meutudo.com.br/blog/calculadoras/conversor-de-taxa-de-juros-mensal-para-anual/"
+          },
+          {
+            "fonte": "YouTube",
+            "link": "https://www.youtube.com/watch?v=3BLPSgKbOYI"
+          },
+          {
+            "fonte": "YouTube",
+            "link": "https://www.youtube.com/watch?v=T8GjASPJpqo"
+          },
+          {
+            "fonte": "Atuar Cursos",
+            "link": "https://atuarcursos.com/taxa-mensal-para-anual/"
+          },
+          {
+            "fonte": "YouTube",
+            "link": "https://www.youtube.com/watch?v=D91vXaW9vfE"
+          },
+          {
+            "fonte": "Clube dos Poupadores",
+            "link": "https://clubedospoupadores.com/conversor-de-taxas-de-juros-mensal-para-anual"
+          },
+          {
+            "fonte": "Diário de Investimentos",
+            "link": "https://www.diariodeinvestimentos.com.br/conversor-taxa-de-juros-anual-mensal/"
+          },
+          {
+            "fonte": "Mobills",
+            "link": "https://www.mobills.com.br/calculadoras/conversor-de-taxas-de-juros-mensal-para-anual/"
+          },
+          {
+            "fonte": "YouTube",
+            "link": "https://www.youtube.com/watch?v=77E059huBhs"
+          },
+          {
+            "fonte": "fazAconta",
+            "link": "https://fazaconta.com/taxa-mensal-vs-anual.htm"
+          }
+        ]
+      },
+      "organicos": [
+        {
+          "posicao": 1,
+          "titulo": "Conversor de Taxas de Juros Mensal para Anual",
+          "link": "https://clubedospoupadores.com/conversor-de-taxas-de-juros-mensal-para-anual"
+        },
+        {
+          "posicao": 2,
+          "titulo": "Conversor de Taxa: Anual para Mensal e ...",
+          "link": "https://fazaconta.com/taxa-mensal-vs-anual.htm"
+        },
+        {
+          "posicao": 3,
+          "titulo": "Conversor de Taxas de Juros Mensal em Anual [Atualizado]",
+          "link": "https://www.mobills.com.br/calculadoras/conversor-de-taxas-de-juros-mensal-para-anual/"
+        },
+        {
+          "posicao": 4,
+          "titulo": "Calculadora de conversão de taxas: anual x mensal - Valor Investe",
+          "link": "https://valorinveste.globo.com/ferramentas/calculadoras/calculadora-de-juros-compostos/"
+        },
+        {
+          "posicao": 5,
+          "titulo": "Como converter taxa mensal para anual no Excel",
+          "link": "https://atuarcursos.com/taxa-mensal-para-anual/"
+        },
+        {
+          "posicao": 6,
+          "titulo": "Converter juros mensal para anual • finances - Insights - Ion",
+          "link": "https://insights.ionited.io/finances/converter-juros-mensal-para-anual"
+        },
+        {
+          "posicao": 7,
+          "titulo": "Conversor de Taxa de Juros (Anual e Mensal)",
+          "link": "https://www.diariodeinvestimentos.com.br/conversor-taxa-de-juros-anual-mensal/"
+        },
+        {
+          "posicao": 8,
+          "titulo": "Conversor de taxa de juros mensal para anual: como usar?",
+          "link": "https://meutudo.com.br/blog/calculadoras/conversor-de-taxa-de-juros-mensal-para-anual/"
+        }
+      ],
+      "mapa": []
+    }
+  ],
+  "serpNotes": {
+    "formato": "Ferramentas no topo (conversores do Clube dos Poupadores, Faz a Conta, Mobills, Valor Investe): a busca pede calculadora; a página já linka o conversor do site e agora tem o bloco da ferramenta.",
+    "visaoDeIA": "Fórmula (1 + i)^12 − 1, passo a passo, exemplos 0,5%, 1%, 2%, fórmula do Excel e o alerta de não multiplicar por 12. Cita meutudo, YouTube, Atuar Cursos, Clube dos Poupadores.",
+    "concorrentes": "Conversores comerciais e cursos: médios."
+  },
+  "serpImpact": [
+    {
+      "dado": "Visão de IA e autocompletar: 'excel', 'fórmula'; PAA 'converter no Excel'",
+      "efeito": "Seção 'No Excel ou na planilha' com as duas fórmulas e o bloco do conversor."
+    },
+    {
+      "dado": "Visão de IA: exemplo de 0,5% ao mês",
+      "efeito": "Linha de 0,5% na tabela."
+    },
+    {
+      "dado": "PAA 'Qual a taxa equivalente para 12% ao ano em mês?', 'Como converter taxa AA para AM?'",
+      "efeito": "FAQ com 0,9489% ao mês."
+    },
+    {
+      "dado": "Outras pesquisas: 'converter taxa mensal em diária'",
+      "efeito": "FAQ com a fórmula para 30 dias e o alerta da base do contrato."
+    },
+    {
+      "dado": "Autocompletar e outras pesquisas: HP 12C",
+      "efeito": "Fora por ora: passo a passo de teclas de calculadora específica, sem ganho para o leitor de crédito."
+    }
+  ],
+  "revisionLog": [
+    {
+      "data": "2026-11-23",
+      "tipo": "revisão pendente (parte 4)",
+      "mudancas": [
+        "Seção do Excel",
+        "Linha de 0,5% na tabela",
+        "FAQs: 12% ao ano em mês, taxa diária"
+      ],
+      "tituloDescricao": "sem mudança"
+    }
+  ]
 }

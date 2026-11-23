@@ -29,23 +29,23 @@
       "organization": "Procon-SP",
       "documentTitle": "Municípios conveniados — Santana de Parnaíba",
       "sourceLocation": "https://www.procon.sp.gov.br/santana-de-parnaiba/",
-      "checkedAt": "2026-08-16",
-      "extractedFact": "Endereços de Alphaville situados em Santana de Parnaíba são atendidos pelo Procon de Santana de Parnaíba (Rua XV de Novembro, 625 — Centro).",
+      "checkedAt": "2026-11-23",
+      "extractedFact": "Endereços de Alphaville situados em Santana de Parnaíba são atendidos pelo Procon de Santana de Parnaíba. O cadastro da Fundação Procon-SP registra Avenida Tenente Marques, 5297 — Jardim do Luar (Fazendinha), telefone (11) 4622-8250 (conferido em 23/11/2026); a plataforma da prefeitura aponta endereço diverso. A Rua XV de Novembro, 625, é do PAT e do Banco do Povo (dossiê sp-santana-de-parnaiba).",
       "relevanceToReader": "A outra metade da resposta de jurisdição do guia."
     }
   ],
   "consumerProtectionResources": [
     {
       "organization": "Procon Barueri (para endereços barueriences de Alphaville)",
-      "service": "Atendimento no Ganha Tempo de Barueri (Avenida Henriqueta Mendes Guerra, 550 — Centro), com agendamento on-line",
+      "service": "Atendimento no Ganha Tempo de Barueri (Avenida Henriqueta Mendes Guerra, 550 — Centro, CEP 06401-160), telefone (11) 4199-1324, e-mail procon1@barueri.sp.gov.br; o portal do cidadão informa segunda a sexta das 8h às 16h mediante agendamento prévio, e a página da Secretaria de Indústria, Comércio e Trabalho, das 8h às 17h.",
       "officialSource": "https://portal.barueri.sp.gov.br/cidadao/procon-barueri",
-      "checkedAt": "2026-08-16"
+      "checkedAt": "2026-11-23"
     },
     {
       "organization": "Procon Santana de Parnaíba (para endereços parnaibanos de Alphaville)",
-      "service": "Atendimento na Rua XV de Novembro, 625 — Centro, com canal de WhatsApp divulgado pela prefeitura",
+      "service": "Cadastro da Fundação Procon-SP: Avenida Tenente Marques, 5297 — Jardim do Luar (Fazendinha), telefone (11) 4622-8250, seg a sex 9h-17h e sáb 9h-13h; endereço divergente na plataforma da prefeitura; confirmar pelo (11) 4622-7500. Correção de 23/11/2026: a Rua XV de Novembro, 625, é do PAT e do Banco do Povo, não do Procon.",
       "officialSource": "https://www.procon.sp.gov.br/santana-de-parnaiba/",
-      "checkedAt": "2026-08-16"
+      "checkedAt": "2026-11-23"
     }
   ],
   "verifiedLocalPrograms": [],
@@ -64,5 +64,228 @@
   ],
   "pendingVerification": [
     "Programas públicos de crédito acessíveis a moradores e MEIs da região, por município"
+  ],
+  "serpEvidence": [
+    {
+      "busca": "empréstimo alphaville",
+      "data": "2026-11-23",
+      "aparelho": "mobile",
+      "local": "Barueri,State of Sao Paulo,Brazil",
+      "autocompletar": [
+        "emprestimo alphaville",
+        "empréstimo alpaprev",
+        "empréstimo alfa financeira",
+        "empréstimo alpargatas",
+        "empréstimo alfa",
+        "empréstimo banco alfa"
+      ],
+      "pessoasTambemPerguntam": [],
+      "outrasPesquisas": [],
+      "visaoDeIA": {
+        "texto": [],
+        "fontes": []
+      },
+      "organicos": [
+        {
+          "posicao": 1,
+          "titulo": "Aluguel, Venda e Administração - simule-seu-financiamento",
+          "link": "https://www.saimoveisalphaville.com.br/simule-seu-financiamento/imovel=12573868/valorimovel=4300000/corretor=20678411071"
+        },
+        {
+          "posicao": 2,
+          "titulo": "Imobiliária Alphaville - Apartamentos, Casas e Sobrados.",
+          "link": "https://bancodosimoveis.com.br/imobiliaria-alphaville"
+        },
+        {
+          "posicao": 3,
+          "titulo": "And is it possible to finance a property in Alphaville?",
+          "link": "https://m.youtube.com/shorts/qOZJBbZgbZU"
+        },
+        {
+          "posicao": 4,
+          "titulo": "Trabalhe conosco - Alpha Business - Casas em Alphaville a venda",
+          "link": "https://www.casasalphaville.com.br/trabalhe-conosco/"
+        },
+        {
+          "posicao": 5,
+          "titulo": "GESTÃO FINANCEIRA - Trino - Contabilidade em Alphaville",
+          "link": "https://trino.cnt.br/gestao-financeira/gestao-financeira-Nm2XQ"
+        },
+        {
+          "posicao": 6,
+          "titulo": "Aluguel, Venda e Administração - Financiamento - S.A Imóveis Alphaville",
+          "link": "https://soalugoimoveis.com.br/financiamento"
+        },
+        {
+          "posicao": 7,
+          "titulo": "Alphaville Invest | Barueri SP",
+          "link": "https://www.facebook.com/alphavilleinvest.com.br/?locale=pt_BR"
+        },
+        {
+          "posicao": 8,
+          "titulo": "SP marca um novo ciclo operacional para a Desencred. O início das atividades foi ...",
+          "link": "https://www.instagram.com/reel/DORf_mjAWfh/"
+        },
+        {
+          "posicao": 9,
+          "titulo": "Financiamento - Alpha Tamboré Negócios Imobiliários",
+          "link": "https://www.alphatambore.com.br/financiamento.php"
+        }
+      ],
+      "mapa": [
+        "Grupo Fesitá",
+        "Empréstimos para Negativados",
+        "Credfácil Alphaville"
+      ]
+    },
+    {
+      "busca": "procon alphaville",
+      "data": "2026-11-23",
+      "aparelho": "mobile",
+      "local": "Barueri,State of Sao Paulo,Brazil",
+      "autocompletar": [
+        "procon região alphaville santana de parnaíba",
+        "procon alpinopolis",
+        "procon altinópolis",
+        "procon altinopolis"
+      ],
+      "pessoasTambemPerguntam": [
+        "Como entrar em contato com o Procon sp?",
+        "Para que serve o número 151?",
+        "Como fazer agendamento no Viva Procon?",
+        "Como verificar o andamento de uma reclamação no Procon?"
+      ],
+      "outrasPesquisas": [
+        "Agendamento procon barueri",
+        "Procon jandira",
+        "Agendamento para procon",
+        "Pequenas causas barueri",
+        "Agendar ganha tempo barueri"
+      ],
+      "visaoDeIA": {
+        "texto": [
+          "A região de Alphaville é dividida entre Barueri e Santana de Parnaíba, então o atendimento do Procon [Início do texto destacado] depende do lado em que você está [Fim do texto destacado] .",
+          "Unidade Alphaville — Santana de Parnaíba",
+          "Endereço: Av. Netuno, 49 — Centro de Apoio I (Alphaville), Santana de Parnaíba - SP ; Rotas: Veja a localização no PROCON - Região Alphaville - Santana de Parnaíba. ; Outras unidades e contatos: Consulte a página de Santana de Parnaíba no Procon-SP ou o WhatsApp divulgado para a cidade (11) 99903-2480.",
+          "Procon Municipal de Barueri",
+          "Endereço: Ganha Tempo — Av. Henriqueta Mendes Guerra, 550, Jardim São Pedro/Centro, Barueri - SP ; Horário: Segunda a sexta-feira, das 8h às 16h (sujeito a agendamento prévio) ; Telefone: (11) 4199-1324 ; Informações oficiais: Acesse o portal do Procon da Prefeitura de Barueri.",
+          "Canais estaduais (Procon-SP)",
+          "Telefone: 151 ; Atendimento online: Disponível pelo site do PROCON.SP.",
+          "Se você me disser qual município corresponde ao seu endereço ou qual tipo de reclamação precisa fazer, posso ajudar a verificar o canal mais indicado ou os documentos necessários."
+        ],
+        "fontes": [
+          {
+            "fonte": "Waze",
+            "link": "https://www.waze.com/pt-BR/live-map/directions/br/sp/procon-regiao-alphaville-santana-de-parnaiba?to=place.ChIJx6154loDz5QR-3Dvj5Dccok"
+          },
+          {
+            "fonte": "Procon-SP",
+            "link": "https://www.procon.sp.gov.br/santana-de-parnaiba/"
+          },
+          {
+            "fonte": "Prefeitura de Barueri",
+            "link": "https://portal.barueri.sp.gov.br/secretarias/secretaria-industria-comercio-trabalho/procon"
+          },
+          {
+            "fonte": "Google",
+            "link": "https://www.google.com/searchviewer/10?svid=CCYSESoPCg0vZy8xMWNuYmhzOXl5GAo"
+          },
+          {
+            "fonte": "Folha de Alphaville",
+            "link": "https://folhadealphaville.com.br/cidades/2024/10/25/procon-de-santana-de-parnaiba-agora-conta-com-canal-de-atendimento-pelo-whatsapp.html"
+          },
+          {
+            "fonte": "Portal Barueri",
+            "link": "https://portal.barueri.sp.gov.br/cidadao/procon-barueri"
+          },
+          {
+            "fonte": "Procon-SP",
+            "link": "https://www.procon.sp.gov.br/espaco-consumidor/"
+          }
+        ]
+      },
+      "organicos": [
+        {
+          "posicao": 1,
+          "titulo": "Guia de Serviços / Setor AMARELO",
+          "link": "https://www.barueri.sp.gov.br/ganhatempo/servicos.aspx?setor=amarelo"
+        },
+        {
+          "posicao": 2,
+          "titulo": "https://www.procon.sp.gov.br/informativo-procon-sp-23/",
+          "link": "https://www.procon.sp.gov.br/informativo-procon-sp-23/"
+        },
+        {
+          "posicao": 3,
+          "titulo": "Procon Municipal Barueri",
+          "link": "https://www.baruerifacil.com.br/guia/utilidades/procon-municipal-barueri-439-5760"
+        },
+        {
+          "posicao": 4,
+          "titulo": "Procon Municipal Barueri - Direito do Consumidor",
+          "link": "https://m.baruerifacil.com.br/guia/procon-municipal-barueri-1295-5760"
+        },
+        {
+          "posicao": 5,
+          "titulo": "https://entrar.homemurbano.com.br/campaigns/gv200w...",
+          "link": "https://entrar.homemurbano.com.br/campaigns/gv200wwo1ea18/track-url/og0466xd7hf04/bd472c5b92d024f304d78ab2f60e53ff47f88382"
+        },
+        {
+          "posicao": 6,
+          "titulo": "Ganha Tempo",
+          "link": "https://solarbpm.barueri.sp.gov.br/atendimento/servicos-categoria/19"
+        },
+        {
+          "posicao": 7,
+          "titulo": "Procon Barueri",
+          "link": "https://www.portalbarueri.com/informacoes/procon-barueri/"
+        },
+        {
+          "posicao": 8,
+          "titulo": "PROCON Barueri → Telefone, Endereço e Informações - procons",
+          "link": "https://www.procons.com.br/procon-barueri-telefone-endereco-e-informacoes/"
+        }
+      ],
+      "mapa": []
+    }
+  ],
+  "serpNotes": {
+    "formato": "Busca local: 'empréstimo alphaville' traz mapa com 3 escritórios (sem verificação) e orgânicos de imobiliárias; 'procon alphaville' traz visão de IA e páginas da prefeitura de Barueri.",
+    "visaoDeIA": "Para 'procon alphaville': Alphaville dividida entre Barueri e Santana de Parnaíba; cita unidade 'Região Alphaville' na Av. Netuno, 49 (não confirmada como Procon em fonte oficial), Procon Barueri no Ganha Tempo (tel. 4199-1324, 8h-16h com agendamento) e 151 do Procon-SP. Cita Waze, Procon-SP, Prefeitura de Barueri.",
+    "concorrentes": "Guias comerciais (baruerifacil, portalbarueri, procons.com.br) e páginas da prefeitura: o guia do site responde a dúvida da divisa, que ninguém mais organiza."
+  },
+  "serpImpact": [
+    {
+      "dado": "Busca principal fraca (sem PAA, sem IA, orgânicos fora do tema)",
+      "efeito": "Busca secundária 'procon alphaville', pela regra da rotina."
+    },
+    {
+      "dado": "Visão de IA: Procon depende do lado da divisa",
+      "efeito": "Confirma o ângulo do guia; tabela de canais atualizada com telefone de Barueri e endereço do cadastro estadual de Santana de Parnaíba."
+    },
+    {
+      "dado": "Visão de IA e mapas: 'Procon Região Alphaville' na Av. Netuno, 49",
+      "efeito": "FAQ 'Existe Procon dentro de Alphaville?' declarando que as fontes oficiais não confirmam; o endereço é de outros serviços municipais."
+    },
+    {
+      "dado": "Visão de IA: horário de Barueri 8h-16h",
+      "efeito": "Divergência entre as duas páginas oficiais da prefeitura declarada (16h x 17h)."
+    },
+    {
+      "dado": "Autocompletar 'procon região alphaville santana de parnaíba'",
+      "efeito": "Coberto pela tabela e pela FAQ."
+    },
+    {
+      "dado": "PAA sobre Procon-SP (contato, 151, Viva Procon, andamento)",
+      "efeito": "Fora: tema do Procon estadual, sem fonte oficial lida nesta revisão; não muda a decisão do leitor de Alphaville."
+    },
+    {
+      "dado": "Mapa de 'empréstimo alphaville': 3 escritórios",
+      "efeito": "Fora: o site não indica empresa; o guia já ensina a consultar a autorização no BC."
+    },
+    {
+      "dado": "Outras pesquisas: 'Pequenas causas Barueri', 'Procon Jandira'",
+      "efeito": "Pequenas causas: vira seção no guia de Barueri, só com fonte oficial do TJSP; Jandira: outra cidade."
+    }
   ]
 }
