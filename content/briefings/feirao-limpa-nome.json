@@ -39,5 +39,151 @@
     "Todos os caminhos para limpar o nome (link)"
   ],
   "publicationDecision": "create",
-  "notes": "Lacuna declarada: datas, descontos e canais da campanha privada não são publicados (site da organizadora bloqueia leitura automatizada e não é fonte oficial). Rever Desenrola 3.0 em 24/11/2026 e em fevereiro de 2027."
+  "notes": "Lacuna declarada: datas, descontos e canais da campanha privada não são publicados (site da organizadora bloqueia leitura automatizada e não é fonte oficial). Rever Desenrola 3.0 em 24/11/2026 e em fevereiro de 2027.",
+  "serpEvidence": [
+    {
+      "busca": "feirão limpa nome",
+      "data": "2026-11-24",
+      "aparelho": "mobile",
+      "local": "Sao Paulo,State of Sao Paulo,Brazil",
+      "autocompletar": [
+        "feirão limpa nome serasa",
+        "feirão limpa nome 2026",
+        "feirão limpa nome 2026 vai até quando",
+        "feirão limpa nome serasa 2026",
+        "feirão limpa nome vai até quando",
+        "feirão limpa nome quando vai ser",
+        "feirão limpa nome 2027",
+        "feirão limpa nome 2026 final do ano",
+        "feirão limpa nome serasa quando começa",
+        "feirão limpa nome banco do brasil 2026",
+        "feirão limpa nome serasa 2027",
+        "feirão limpa nome serasa 2026 quando começa",
+        "feirão limpa nome governo",
+        "feirão limpa nome 2027 vai até quando",
+        "feirão limpa nome 2026 quando começa"
+      ],
+      "pessoasTambemPerguntam": [
+        "Quando vai ser o próximo feirão limpa nome 2026?",
+        "É verdade o feirão limpa nome do Serasa?",
+        "Quando começa o programa Desenrola Brasil 2026?",
+        "Como conseguir 90% de desconto no Serasa?"
+      ],
+      "outrasPesquisas": [
+        "Feirão limpa nome 2026",
+        "Feirão limpa nome online",
+        "Feirão limpa nome serasa",
+        "Feirão limpa nome governo",
+        "Feirão limpa nome vai até quando",
+        "Feirão limpa nome 2027",
+        "Feirão limpa nome whatsapp",
+        "Feirão limpa nome é confiável",
+        "Feirão limpa nome 2026 locais",
+        "Feirão limpa nome 2026 novembro",
+        "Feirão limpa nome presencial",
+        "Como participar do feirão limpa nome"
+      ],
+      "visaoDeIA": {
+        "texto": [
+          "O Feirão Serasa Limpa Nome 2026 acontece de 3 de novembro a 6 de dezembro de 2026, reunindo mais de 3.300 empresas parceiras com descontos de até 99% para renegociação de dívidas.",
+          "Onde e como participar",
+          "Site e aplicativo da Serasa: consulte as ofertas usando seu CPF e senha.",
+          "WhatsApp oficial: envie mensagem para (11) 99575-2096.",
+          "Agências dos Correios: atendimento presencial gratuito, sem cobrança de taxa durante o Feirão, levando documento oficial com foto e CPF.",
+          "Atendimento presencial em São Paulo: de 26 de novembro a 3 de dezembro de 2026, das 9h às 18h, na tenda física no Novo Anhangabaú (Vale do Anhangabaú, Centro), com documento com foto e CPF.",
+          "Dicas importantes antes de fechar",
+          "Compare opções: o teto de 99% vale para ofertas selecionadas. Avalie se compensa pagar à vista ou parcelar, considerando parcelas que caibam no seu orçamento mensal sem comprometer contas essenciais.",
+          "Prazo de regularização: pagamentos via Pix em dívidas elegíveis podem atualizar o registro rapidamente, enquanto o prazo legal para a retirada da negativação após o pagamento é de até 5 dias úteis.",
+          "Segurança: negocie apenas pelos canais oficiais da Serasa ou do credor, evite links enviados por SMS ou redes sociais e utilize o validador de boleto/chave Pix da Serasa antes de pagar.",
+          "Se você quiser, informe o valor aproximado das dívidas e quanto consegue pagar por mês (ou à vista) para avaliarmos qual formato de acordo faz mais sentido para o seu orçamento."
+        ],
+        "fontes": [
+          "Serasa",
+          "G1",
+          "fazcred.com.br",
+          "YouTube",
+          "Instagram"
+        ],
+        "nota": "visão de IA em duas etapas (page_token)"
+      },
+      "organicos": [
+        {
+          "posicao": 1,
+          "titulo": "Feirão Serasa Limpa Nome 2026: descontos de até 99%",
+          "link": "https://www.serasa.com.br/limpa-nome-online/feirao/"
+        },
+        {
+          "posicao": 2,
+          "titulo": "Feirão Limpa Nome da Serasa oferece descontos de até 99% para renegociar ...",
+          "link": "https://g1.globo.com/sp/sao-paulo/noticia/2026/11/04/feirao-limpa-nome-da-serasa-oferece-descontos-de-ate-99percent-para-renegociar-dividas-veja-como-participar.ghtml"
+        },
+        {
+          "posicao": 3,
+          "titulo": "Acesse Serasa Limpa Nome",
+          "link": "https://www.correios.com.br/atendimento/balcao-do-cidadao/acesse-serasa-limpa-nome"
+        },
+        {
+          "posicao": 4,
+          "titulo": "Serasa Limpa Nome: negocie suas dívidas com até 99% de desconto",
+          "link": "https://www.serasa.com.br/limpa-nome-online/"
+        },
+        {
+          "posicao": 5,
+          "titulo": "Feirão Serasa Limpa Nome começa com descontos de até 99%",
+          "link": "https://www.youtube.com/watch?v=ZZaooGohbp0"
+        },
+        {
+          "posicao": 6,
+          "titulo": "Feirão Limpa Nome: como funciona, quando acontece e por que sua empresa ...",
+          "link": "https://www.serasaexperian.com.br/conteudos/feirao-limpa-nome/"
+        },
+        {
+          "posicao": 7,
+          "titulo": "Feirão Limpa Nome 2026: até quando vai e como negociar - FAZ Cred",
+          "link": "https://fazcred.com.br/feirao-limpa-nome/"
+        }
+      ],
+      "mapa": []
+    }
+  ],
+  "serpNotes": {
+    "formato": "Página da Serasa no topo, notícia do G1, Correios, vídeo; sem mapa. Busca dominada pela marca organizadora.",
+    "visaoDeIA": "Datas da edição 2026 da Serasa (3/11 a 6/12), canais (site, app, WhatsApp, Correios, tenda no Anhangabaú) e dicas (comparar, prazo de baixa, segurança). Cita Serasa, G1, fazcred, YouTube, Instagram.",
+    "concorrentes": "Serasa e imprensa: fortes. O site não compete na data do evento privado; compete na explicação e no 'o que é do governo'."
+  },
+  "serpImpact": [
+    {
+      "dado": "Data marcada da pauta (24/11): MP 1.393",
+      "efeito": "Prazo no Congresso atualizado (prorrogado até 4/3/2027, comissão instalada em 17/11) com fonte do Congresso e da Agência Senado; quadro e 'o que pode mudar' atualizados."
+    },
+    {
+      "dado": "PAA 'Quando começa o programa Desenrola Brasil 2026?'",
+      "efeito": "FAQ 'Quando começa o Desenrola Brasil 3.0?'."
+    },
+    {
+      "dado": "PAA 'Como conseguir 90% de desconto no Serasa?'",
+      "efeito": "Não entrou como promessa; o texto explica que os 90% são o desconto mínimo na compra pela União, sem garantia de repasse ao devedor."
+    },
+    {
+      "dado": "Visão de IA e autocompletar: datas da edição 2026 da Serasa, 'vai até quando', 'locais', 'presencial', WhatsApp",
+      "efeito": "Fora: evento privado; o site não publica datas de campanha privada (regra do artigo)."
+    },
+    {
+      "dado": "Orgânico: Correios (Acesse Serasa Limpa Nome)",
+      "efeito": "Fora por ora: a página dos Correios não abriu na leitura; sem fonte lida."
+    }
+  ],
+  "revisionLog": [
+    {
+      "data": "2026-11-24",
+      "tipo": "atualização com data marcada (pauta, parte 2)",
+      "mudancas": [
+        "MP 1.393 prorrogada até 4/3/2027",
+        "Comissão mista instalada",
+        "Sem garantia de repasse integral do desconto",
+        "FAQ de quando começa o Desenrola 3.0"
+      ],
+      "tituloDescricao": "sem mudança"
+    }
+  ]
 }

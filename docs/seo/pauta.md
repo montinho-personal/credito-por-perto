@@ -44,7 +44,8 @@ Sem outros temas novos: os itens abertos das ondas 1 a 7 e da trilha local já v
 
 ### Atualizações com data marcada
 
-- **A partir de 24/11/2026:** conferir se a MP nº 1.393/2026 (Desenrola 3.0) foi votada até 23/11 e atualizar `feirao-limpa-nome` e `como-negociar-dividas`.
+- ~~**A partir de 24/11/2026:** conferir se a MP nº 1.393/2026 (Desenrola 3.0) foi votada até 23/11 e atualizar `feirao-limpa-nome` e `como-negociar-dividas`.~~ Feito em 24/11/2026: MP prorrogada até 4/3/2027.
+- **A partir de 05/03/2027:** conferir se a MP nº 1.393/2026 virou lei ou perdeu a eficácia (prazo final 4/3/2027) e atualizar `feirao-limpa-nome` e `como-negociar-dividas`. Antes disso, se a Agência Senado noticiar votação na comissão mista (relatório previsto para o início de dezembro de 2026), conferir o texto aprovado.
 - **A partir de 28/11/2026:** atualizar `sp-tiete` (título e abertura) depois do recesso do Procon de 9 a 27/11.
 
 ## 3. Materiais para baixar (PDF, imagem)

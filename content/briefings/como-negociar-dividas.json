@@ -37,7 +37,12 @@
   "uniqueExamples": [
     "Tabela dos cinco degraus de canais com o que esperar de cada um"
   ],
-  "proposedVisuals": ["WarningBox (acordo impagável)", "tabela de canais", "ChecklistBox (antes de pagar)", "WhatCanChange (prazos do programa)"],
+  "proposedVisuals": [
+    "WarningBox (acordo impagável)",
+    "tabela de canais",
+    "ChecklistBox (antes de pagar)",
+    "WhatCanChange (prazos do programa)"
+  ],
   "pagesThatMayCompete": [
     "/organizacao-financeira/renegociacao-ou-emprestimo/",
     "/organizacao-financeira/lei-do-superendividamento/",
@@ -49,5 +54,128 @@
     "Plano geral de saída das dívidas (link para como sair das dívidas)",
     "Regras de prescrição e cadastro (link para dívida caducada)"
   ],
-  "publicationDecision": "create"
+  "publicationDecision": "create",
+  "serpEvidence": [
+    {
+      "busca": "como negociar dívidas com desconto",
+      "data": "2026-11-24",
+      "aparelho": "mobile",
+      "local": "Sao Paulo,State of Sao Paulo,Brazil",
+      "autocompletar": [],
+      "pessoasTambemPerguntam": [
+        "Quando vai ser o próximo feirão limpa nome 2026?",
+        "É verdade que após 5 anos o nome fica limpo?",
+        "Como sair de uma dívida de 100 mil reais?",
+        "Como pagar dívida com 90% de desconto?"
+      ],
+      "outrasPesquisas": [],
+      "visaoDeIA": {
+        "texto": [
+          "Para negociar dívidas com desconto, levante o valor original e os encargos, defina quanto você consegue pagar e faça propostas — de preferência à vista — diretamente nos canais oficiais do credor ou em plataformas de acordo.",
+          "Passo a passo para negociar",
+          "Levante o histórico da dívida: Separe contratos, faturas e extratos para conferir o valor principal, juros e multas aplicadas.",
+          "Defina sua capacidade de pagamento: Calcule o quanto cabe no seu orçamento sem comprometer despesas essenciais ou gerar novos atrasos.",
+          "Priorize o pagamento à vista: Abatimentos maiores costumam sair quando você propõe quitação imediata ou entradas consistentes.",
+          "Não aceite a primeira oferta sem avaliar: Compare condições, juros de parcelamento e o custo total antes de fechar acordo.",
+          "Formalize tudo por escrito: Guarde o termo de acordo, o boleto ou comprovante de pagamento e acompanhe a baixa da restrição após a quitação.",
+          "Onde buscar propostas e atenção a golpes",
+          "Canais do próprio credor: Aplicativos, sites oficiais, atendimento telefônico ou agências da instituição financeira ou empresa credora.",
+          "Plataformas de negociação: Você pode consultar ofertas disponíveis online em plataformas como a QueroQuitar e acompanhar orientações de renegociação de empréstimos em conteúdos como o do BBTS Facilita .",
+          "Cuidado com fraudes: O Ministério da Fazenda alerta que não envia links, SMS ou mensagens digitais para renegociação e que fraudadores usam anúncios falsos sobre programas públicos.",
+          "Veja dicas práticas de estratégia e argumentação na hora de pedir desconto:",
+          "Se quiser, me informe o tipo de dívida (cartão, empréstimo, conta básica), o valor aproximado e se você pretende pagar à vista ou parcelado para montarmos uma estratégia de abordagem."
+        ],
+        "fontes": [
+          "www.gov.br",
+          "Facebook",
+          "Idec - Instituto de Defesa de Consumidores",
+          "Instagram",
+          "BBTS Facilita",
+          "www.gov.br",
+          "Facebook"
+        ],
+        "nota": "visão de IA em duas etapas (page_token)"
+      },
+      "organicos": [
+        {
+          "posicao": 1,
+          "titulo": "Mutirão em bancos abre canal para quitar dívidas com desconto a partir deste ...",
+          "link": "https://www.hojeemdia.com.br/economiaefinancas/mutir-o-em-bancos-abre-canal-para-quitar-dividas-com-desconto-a-partir-deste-sabado-1-1.1091099"
+        },
+        {
+          "posicao": 2,
+          "titulo": "Negociação cartão de crédito: como conseguir descontos antes da divida virar ...",
+          "link": "https://www.queroquitar.com.br/blog/porto-seguro/negociacao-cartao-de-credito-como-conseguir-descontos/"
+        },
+        {
+          "posicao": 3,
+          "titulo": "Desconto em dívida bancária: como conseguir e pagar menos",
+          "link": "https://www.creisconsultoria.com/post/desconto-divida-bancaria-1"
+        },
+        {
+          "posicao": 4,
+          "titulo": "Negociar Dívida Antiga: Como Conseguir até 99% de Desconto",
+          "link": "https://blog.cpfforte.com.br/artigos/negociar-divida-antiga-desconto-maximo.html"
+        },
+        {
+          "posicao": 5,
+          "titulo": "💸 Quer descobrir como negociar suas dívidas com desconto? 👀🧡 O Ricardo tem ...",
+          "link": "https://www.facebook.com/QueroQuitar/posts/-quer-descobrir-como-negociar-suas-d%C3%ADvidas-com-desconto-o-ricardo-tem-uma-dica-q/1575452171246322/"
+        },
+        {
+          "posicao": 6,
+          "titulo": "Oportunidade para negociar dívidas com desconto | Vídeo",
+          "link": "https://ndmais.com.br/video/oportunidade-para-negociar-dividas-com-desconto/"
+        },
+        {
+          "posicao": 7,
+          "titulo": "Saiba como renegociar empréstimo com desconto - BBTS Facilita",
+          "link": "https://facilita.bbts.com.br/saiba-como-renegociar-emprestimo-com-desconto/"
+        }
+      ],
+      "mapa": []
+    }
+  ],
+  "serpNotes": {
+    "formato": "Notícias de mutirão, plataformas de acordo, consultorias e redes sociais; sem mapa. Sem autocompletar.",
+    "visaoDeIA": "Passo a passo (levantar a dívida, capacidade de pagamento, priorizar à vista, não aceitar a primeira oferta, formalizar por escrito) e onde buscar (credor, plataformas) com alerta do Ministério da Fazenda contra golpes. Cita gov.br (2x), Facebook, Idec, Instagram, BBTS.",
+    "concorrentes": "Plataformas de acordo e blogs: fracos a médios."
+  },
+  "serpImpact": [
+    {
+      "dado": "Data marcada da pauta (24/11): MP 1.393",
+      "efeito": "Prazo no Congresso atualizado (4/3/2027) e aviso de que não há garantia de repasse integral do desconto."
+    },
+    {
+      "dado": "PAA 'É verdade que após 5 anos o nome fica limpo?'",
+      "efeito": "FAQ com CDC art. 43 § 1º e link para dívida caducada."
+    },
+    {
+      "dado": "PAA 'Como sair de uma dívida de 100 mil reais?'",
+      "efeito": "FAQ com negociação e repactuação da Lei 14.181."
+    },
+    {
+      "dado": "PAA 'Como pagar dívida com 90% de desconto?'",
+      "efeito": "Coberto pela explicação do Desenrola 3.0, sem promessa."
+    },
+    {
+      "dado": "Visão de IA: passo a passo",
+      "efeito": "Já coberto pelos 'quatro números' e pelo 'o que exigir por escrito'."
+    },
+    {
+      "dado": "PAA 'próximo feirão limpa nome'",
+      "efeito": "Já atendido pela página do feirão."
+    }
+  ],
+  "revisionLog": [
+    {
+      "data": "2026-11-24",
+      "tipo": "atualização com data marcada (pauta, parte 2)",
+      "mudancas": [
+        "MP 1.393 prorrogada até 4/3/2027",
+        "FAQs: 5 anos, dívida alta"
+      ],
+      "tituloDescricao": "sem mudança"
+    }
+  ]
 }

@@ -65,6 +65,42 @@
       "sourceType": "official",
       "accessedAt": "2026-11-02",
       "notes": "FATO COM PRAZO CURTO. Rever em 24/11/2026 (votação da MP) e em fevereiro de 2027 (início do atendimento). O texto da MP no Planalto não foi lido porque o Planalto bloqueia acesso automatizado; a fonte é a Agência Senado."
+    },
+    {
+      "claimId": "mp1393-prorrogacao",
+      "claimText": "MPV 1.393/2026: prazo de deliberação prorrogado por 60 dias pelo Ato do Presidente da Mesa do Congresso Nacional nº 117/2026 (11/11/2026); data final após prorrogação: 4/3/2027; situação em 24/11/2026: matéria com a relatoria (senador Cid Gomes).",
+      "sourceOrganization": "Congresso Nacional",
+      "sourceTitle": "MPV 1393/2026 — tramitação",
+      "sourceLocation": "https://www.congressonacional.leg.br/materias/medidas-provisorias/-/mpv/175870",
+      "sourceType": "official",
+      "accessedAt": "2026-11-24"
+    },
+    {
+      "claimId": "mp1393-comissao",
+      "claimText": "Comissão mista da MP 1.393/2026 instalada em 17/11/2026 (presidente: dep. Jonas Donizette; relator: sen. Cid Gomes, que prometeu relatório para o início de dezembro); a MP precisa ser aprovada até 4/3/2027, considerando a prorrogação e o recesso; 38 emendas; o desconto ao consumidor pode chegar ao percentual obtido pela União na aquisição, mas não há garantia de repasse integral.",
+      "sourceOrganization": "Agência Senado",
+      "sourceTitle": "Cid Gomes promete relatório do novo Desenrola para início de dezembro",
+      "sourceLocation": "https://www12.senado.leg.br/noticias/materias/2026/11/17/cid-gomes-promete-relatorio-do-novo-desenrola-para-inicio-de-dezembro",
+      "sourceType": "official",
+      "accessedAt": "2026-11-24"
+    },
+    {
+      "claimId": "mp1393-ato-prorrogacao",
+      "claimText": "Em 11/11/2026, o presidente do Congresso assinou ato que prorroga por 60 dias a MP 1.393/2026 (Desenrola Brasil 3.0); atos publicados no Diário Oficial na mesma data.",
+      "sourceOrganization": "Agência Senado",
+      "sourceTitle": "Prorrogadas medidas provisórias das bets e do Desenrola; cinco MPs perdem eficácia",
+      "sourceLocation": "https://www12.senado.leg.br/noticias/materias/2026/11/11/prorrogadas-medidas-provisorias-das-bets-e-do-desenrola-cinco-mps-perdem-eficacia",
+      "sourceType": "official",
+      "accessedAt": "2026-11-24"
+    },
+    {
+      "claimId": "registro-5-anos",
+      "claimText": "Cadastros negativos de consumo não podem conter informações negativas referentes a período superior a 5 anos (CDC, art. 43, §1º).",
+      "sourceOrganization": "Planalto — Código de Defesa do Consumidor",
+      "sourceTitle": "Lei nº 8.078/1990, art. 43, §1º",
+      "sourceLocation": "https://www.planalto.gov.br/ccivil_03/leis/l8078compilado.htm",
+      "sourceType": "official",
+      "accessedAt": "2026-08-06"
     }
   ]
 }
