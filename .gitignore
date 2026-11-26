@@ -44,3 +44,6 @@ yarn-error.log*
 
 # testes
 /coverage
+
+# checagem no navegador (scripts/browser-check.mjs)
+.browser-check/

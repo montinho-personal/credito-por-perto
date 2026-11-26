@@ -86,6 +86,9 @@ Tarefa agendada nesta sessão, todo dia às **18h17 de Brasília** (o montinhope
 - `pnpm lint && pnpm tsc --noEmit && pnpm test && pnpm audit:all && pnpm build`,
   comparando com o resultado anterior (hoje tudo verde: 995 testes e as 14 auditorias
   sem críticos nem avisos). Falha nova se corrige antes de publicar.
+- **Teste no navegador** (regra do `CLAUDE.md`, 26/11/2026): `pnpm check:browser --
+  /categoria/slug/ ...` com as páginas revisadas; corrigir o que aparecer e repetir até
+  sair "nenhum problema encontrado". Olhar a captura do celular de cada página revisada.
 - Publicar pela cadeia do `CLAUDE.md` (push do branch e merge `--ff-only` no `main`),
   que é o "merge" deste repositório; não se abre PR aqui.
 - Conferir no ar (deploy da Vercel READY, página com status 200 e o conteúdo novo).
@@ -98,6 +101,7 @@ Tarefa agendada nesta sessão, todo dia às **18h17 de Brasília** (o montinhope
   entrou e ❌ para o que ficou de fora, com o motivo.
 - A separação do que ficou de fora (vale um artigo / vira seção / não cabe).
 - As propostas de título e descrição que esperam aprovação.
+- O resultado do teste no navegador (páginas, computador e celular, links, correções).
 - Créditos do SerpApi gastos no dia.
 
 ## Rotina mensal (dia 16, 14h42 de Brasília)

@@ -43,6 +43,31 @@ acima do conteúdo principal. Ver `docs/adsense-protected-areas.md`.
 pnpm audit:all && pnpm build`. As 14 auditorias precisam terminar sem críticos
 e sem avisos.
 
+**Teste no navegador em toda ação no site (regra do Renato, 26/11/2026).** Vale para
+qualquer mudança: artigo novo, revisão, guia, ferramenta, layout ou configuração.
+Depois do build e antes de publicar, nesta ordem:
+
+1. **Abrir o site no navegador:** `pnpm check:browser` sobe o build local e abre, no
+   Chromium, a home, os hubs, todas as calculadoras e simuladores e as páginas
+   mexidas (passe cada uma: `pnpm check:browser -- /categoria/slug/`).
+2. **Testar botões e funcionalidades:** o script clica nos botões do conteúdo,
+   preenche e roda as calculadoras e confere links internos e imagens.
+3. **Verificar a versão mobile:** cada página abre também como iPhone 13; nada pode
+   passar da largura da tela, e o menu do celular tem de abrir e fechar. Olhar ao
+   menos uma captura de cada página mexida em `.browser-check/`.
+4. **Executar os testes automatizados:** a cadeia acima (lint, tipos, testes,
+   auditorias, build) mais o `pnpm check:browser`.
+5. **Identificar erros e corrigi-los:** qualquer problema do relatório
+   (`.browser-check/report.json`) é corrigido antes de publicar. O único item ignorado
+   é o script de estatísticas da Vercel (`/_vercel/insights`), que só existe no
+   servidor dela.
+6. **Repetir os testes após as correções:** rodar de novo a cadeia e o
+   `pnpm check:browser` até sair tudo verde.
+
+Depois de publicar, conferir no ar o deploy READY, o status 200 e o conteúdo novo de
+cada página mexida. Na resposta ao Renato, dizer o resultado do teste no navegador
+(páginas, telas, links conferidos e o que foi corrigido).
+
 **Publicação automática (decisão do proprietário, 23/09/2026).** Trabalho
 pronto e aprovado nas verificações acima vai direto para o `main`, sem
 esperar "pode publicar". Depois de publicar, mandar o link de produção e o

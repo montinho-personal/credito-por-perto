@@ -26,7 +26,8 @@
     "audit:jornadas": "tsx scripts/audit-journeys.ts",
     "audit:sitemap": "tsx scripts/audit-sitemap.ts",
     "audit:ativos": "tsx scripts/audit-assets.ts",
-    "audit:analytics": "tsx scripts/audit-analytics.ts"
+    "audit:analytics": "tsx scripts/audit-analytics.ts",
+    "check:browser": "node scripts/browser-check.mjs"
   },
   "dependencies": {
     "@vercel/analytics": "^2.0.1",
