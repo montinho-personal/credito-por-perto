@@ -33,7 +33,7 @@ Sem outros temas novos: os itens abertos das ondas 1 a 7 e da trilha local já v
 | "Quais bancos foram fechados pelo Banco Central?" (instituição em liquidação: o que acontece com quem tem empréstimo). Só com a página oficial do BC sobre regimes especiais lida | `como-consultar-se-instituicao-e-autorizada` | Revisão de 18/11/2026 |
 | "Depósito antecipado para empréstimo: lei e jurisprudência" (autocompletar). Só com norma ou decisão oficial lida que trate da cobrança antecipada | `deposito-antecipado-e-golpe` | Revisão de 19/11/2026 |
 | "Empréstimo com garantia de imóvel financiado" (autocompletar e outras pesquisas). Só com a alienação fiduciária superveniente (Lei 9.514, art. 22, § 3º, incluído pela Lei 14.711/2023) lida com cuidado e, se possível, orientação oficial | `emprestimo-com-garantia` | Revisão de 20/11/2026 |
-| "Pequenas causas Barueri" (outras pesquisas da busca "procon alphaville"): onde fica o Juizado Especial Cível e quando usar contra banco. Só com página oficial do TJSP lida | `sp-barueri` (guia de cidade) | Revisão de 23/11/2026 |
+| ~~"Pequenas causas Barueri" (outras pesquisas da busca "procon alphaville"): onde fica o Juizado Especial Cível e quando usar contra banco. Só com página oficial do TJSP lida~~ | ~~`sp-barueri` (guia de cidade)~~ — feito em 26/11/2026 | Revisão de 23/11/2026 |
 | "O que o STF decidiu sobre os consignados?" (só com a decisão localizada no STF) | `emprestimo-consignado` | Revisão do aposentado INSS, 16/11/2026 |
 | ~~CLT: "o que mudou", "número máximo de parcelas", "valor máximo de parcela"~~ | ~~`credito-do-trabalhador`~~ — feito em 18/11/2026 | Revisão do servidor público, 16/11/2026 |
 | ~~"Como posso obter um empréstimo do governo do estado de São Paulo?"~~ | ~~`emprestimo-do-governo`~~ — feito em 18/11/2026 | Revisão do servidor público, 16/11/2026 |
@@ -78,8 +78,8 @@ Já revisadas com SerpApi (fora da contagem):
 | ~~13~~ | ~~05/08/2026~~ | ~~Renegociação ou novo empréstimo: qual caminho para sair da dívida? — `renegociacao-ou-emprestimo`~~ — revisado em 22/11/2026 | artigo | São Paulo |
 | ~~14~~ | ~~05/08/2026~~ | ~~Taxa mensal e taxa anual: por que 3% ao mês não é 36% ao ano — `taxa-mensal-e-taxa-anual`~~ — revisado em 23/11/2026 | artigo | São Paulo |
 | ~~15~~ | ~~05/08/2026~~ | ~~Empréstimos em Alphaville: a qual município (e Procon) você responde — `sp-barueri-alphaville`~~ — revisado em 23/11/2026 | guia de cidade | Alphaville (cidade da página) |
-| 16 | 05/08/2026 | Empréstimos em Barueri (SP): guia de crédito e proteção ao consumidor — `sp-barueri` | guia de cidade | Barueri (cidade da página) |
-| 17 | 06/08/2026 | Análise de crédito: o que acontece depois que você pede um empréstimo — `como-funciona-analise-de-credito` | artigo | São Paulo |
+| ~~16~~ | ~~05/08/2026~~ | ~~Empréstimos em Barueri (SP): guia de crédito e proteção ao consumidor — `sp-barueri`~~ — revisado em 26/11/2026 | guia de cidade | Barueri (cidade da página) |
+| ~~17~~ | ~~06/08/2026~~ | ~~Análise de crédito: o que acontece depois que você pede um empréstimo — `como-funciona-analise-de-credito`~~ — revisado em 26/11/2026 | artigo | São Paulo |
 | 18 | 06/08/2026 | Documentos para empréstimo: o que podem pedir — e o que nunca entregue — `documentos-para-emprestimo` | artigo | São Paulo |
 | 19 | 06/08/2026 | Empréstimo para autônomo: como comprovar renda sem holerite — `emprestimo-para-autonomo` | artigo | São Paulo |
 | 20 | 06/08/2026 | Empréstimo para MEI: crédito como pessoa física ou pelo CNPJ? — `emprestimo-para-mei` | artigo | São Paulo |

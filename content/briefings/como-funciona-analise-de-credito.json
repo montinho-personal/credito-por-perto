@@ -32,12 +32,208 @@
     "Checklist pré-solicitação",
     "Se veio o não"
   ],
-  "uniqueExamples": ["'Sim caro' como resposta tão comum quanto o 'não'"],
-  "proposedVisuals": ["ChecklistBox"],
-  "pagesThatMayCompete": ["/emprestimos/emprestimo-pessoal/"],
+  "uniqueExamples": [
+    "'Sim caro' como resposta tão comum quanto o 'não'"
+  ],
+  "proposedVisuals": [
+    "ChecklistBox"
+  ],
+  "pagesThatMayCompete": [
+    "/emprestimos/emprestimo-pessoal/"
+  ],
   "informationThatMustNotBeRepeated": [
     "Comprovação de renda por perfil (links para autônomo/MEI)",
     "Decisão de contratar (link para quando-vale-a-pena)"
   ],
-  "publicationDecision": "create"
+  "publicationDecision": "create",
+  "serpEvidence": [
+    {
+      "busca": "como funciona a análise de crédito",
+      "data": "2026-11-26",
+      "aparelho": "mobile",
+      "local": "Sao Paulo,State of Sao Paulo,Brazil",
+      "autocompletar": [
+        "como funciona a análise de crédito do fgts",
+        "como funciona a análise de crédito imobiliário da caixa",
+        "como funciona a análise de crédito da honda",
+        "como funciona a análise de crédito da caixa",
+        "como funciona a análise de crédito do nubank",
+        "como funciona a análise de crédito do banco inter",
+        "como funciona a análise de crédito para financiamento",
+        "como funciona a análise de crédito do quinto andar",
+        "como funciona a análise de crédito da shopee",
+        "como funciona a análise de crédito do banco do brasil",
+        "como funciona a análise de crédito do inter",
+        "como funciona a analise de credito para financiamento imobiliario",
+        "como funciona a analise de credito do consorcio",
+        "como funciona a analise de credito do move brasil",
+        "como funciona a analise de credito da localiza"
+      ],
+      "pessoasTambemPerguntam": [
+        "Quanto tempo dura uma análise de crédito?",
+        "O que consigo com score de 600?",
+        "Quantas vezes pode fazer análise de crédito?",
+        "O que o banco analisa para liberar crédito?"
+      ],
+      "outrasPesquisas": [
+        "Análise de crédito online grátis",
+        "Como funciona a análise de crédito do fgts",
+        "Análise de crédito o que significa",
+        "Análise de crédito para financiamento imobiliário",
+        "Análise de crédito pessoa física",
+        "Análise de crédito caixa",
+        "Análise de crédito demora quanto tempo",
+        "Analise de credito serasa",
+        "Análise de crédito banco do brasil",
+        "Analise de credito pelo cpf",
+        "Análise de crédito curso",
+        "Em que situações é feita a análise de crédito"
+      ],
+      "visaoDeIA": {
+        "texto": [
+          "Para fazer uma análise de crédito eficiente, você deve coletar os dados do cliente, checar restrições e score, avaliar a capacidade de pagamento e definir o limite ou as condições com base no risco.",
+          "Passo a passo para pessoa física (PF)",
+          "Coletar dados cadastrais: peça nome completo, CPF, RG, telefone, endereço, estado civil e profissão. Valide as informações para prevenir fraudes. ; Consultar restrições e score: verifique pendências em órgãos de proteção ao crédito (como Serasa, SPC e Boa Vista) e avalie o score e o histórico de pagamentos. ; Calcular o comprometimento de renda: some as dívidas ativas e a nova parcela. Como referência de mercado, o comprometimento costuma ficar em até 30% da renda comprovada. ; Analisar o comportamento: observe a estabilidade da renda, o histórico com a sua empresa ou banco e a movimentação financeira.",
+          "Veja como estruturar cada etapa na prática com este vídeo sobre análise de crédito de pessoa física:",
+          "Passo a passo para pessoa jurídica (PJ)",
+          "Validar situação cadastral: confira se o CNPJ está ativo, regular e sem protestos, restrições ou ações judiciais. ; Avaliar saúde financeira: analise faturamento, fluxo de caixa, balancetes, balanço patrimonial, liquidez e nível de endividamento. ; Checar score e histórico de mercado: consulte o score empresarial e o comportamento de pagamento com fornecedores e bancos. ; Considerar o setor: compare os indicadores com a média do segmento da empresa antes de definir prazo, valor ou garantias.",
+          "Decisão e monitoramento",
+          "Definir a política: decida entre aprovar, negar, pedir mais documentos ou aprovar com condições (como limite menor, entrada maior ou prazo reduzido). ; Usar automação quando fizer sentido: aplique regras automáticas para valores baixos e deixe a análise manual para operações maiores ou casos com alertas. ; Acompanhar após a concessão: monitore pagamentos e revise limites periodicamente para manter o fluxo de caixa saudável.",
+          "Para aprofundar modelos e indicadores, consulte o guia da Serasa Experian ou o conteúdo de crédito B2B da CRIF.",
+          "Você quer montar uma análise de crédito para pessoa física ou pessoa jurídica (como vender a prazo ou liberar limite)? Se me disser o segmento do negócio e o ticket médio, posso ajudar a definir critérios e faixas de risco."
+        ],
+        "fontes": [
+          {
+            "fonte": "SPC Brasil",
+            "link": "https://www.spcbrasil.com.br/blog/analise-de-credito"
+          },
+          {
+            "fonte": "YouTube",
+            "link": "https://www.youtube.com/watch?v=2Vw3oxMU0TE"
+          },
+          {
+            "fonte": "Serasa",
+            "link": "https://www.serasa.com.br/credito/blog/analise-de-credito-o-que-e/"
+          },
+          {
+            "fonte": "Serasa Experian",
+            "link": "https://www.serasaexperian.com.br/conteudos/con1-analise-de-credito-precisa/"
+          },
+          {
+            "fonte": "YouTube",
+            "link": "https://www.youtube.com/watch?v=NtgNw-YO7Vw"
+          },
+          {
+            "fonte": "YouTube",
+            "link": "https://www.youtube.com/watch?t=6&v=HWT5m_AamtE"
+          },
+          {
+            "fonte": "YouTube",
+            "link": "https://www.youtube.com/watch?t=3&v=P0yP0M9st2s"
+          },
+          {
+            "fonte": "CIAL Dun & Bradstreet",
+            "link": "https://pt.cialdnb.com/blog/analise-de-credito-como-funciona-e-por-que-e-indispensavel"
+          },
+          {
+            "fonte": "YouTube",
+            "link": "https://www.youtube.com/watch?t=43&v=T2D5n8a3qMs"
+          },
+          {
+            "fonte": "Construtora Tenda",
+            "link": "https://www.tenda.com/blog/trilha-da-conquista/analise-credito"
+          },
+          {
+            "fonte": "YouTube",
+            "link": "https://www.youtube.com/watch?t=12&v=LsdFPPxasMY"
+          },
+          {
+            "fonte": "YouTube",
+            "link": "https://www.youtube.com/shorts/HTZz0FWHiiQ"
+          }
+        ]
+      },
+      "organicos": [
+        {
+          "posicao": 1,
+          "titulo": "Análise de crédito: como funciona, tipos e o que os bancos consultam",
+          "link": "https://www.serasa.com.br/credito/blog/analise-de-credito-o-que-e/"
+        },
+        {
+          "posicao": 2,
+          "titulo": "Análise de crédito: saiba como funciona e veja dicas de quem entende do assunto",
+          "link": "https://www.spcbrasil.com.br/blog/analise-de-credito"
+        },
+        {
+          "posicao": 3,
+          "titulo": "Análise de crédito: como torná-la mais eficiente com tecnologia? - Topaz",
+          "link": "https://www.topazevolution.com/blog/analise-de-credito"
+        },
+        {
+          "posicao": 4,
+          "titulo": "Análise de crédito: como funciona e melhores estratégias",
+          "link": "https://pt.cialdnb.com/blog/analise-de-credito-como-funciona-e-por-que-e-indispensavel"
+        },
+        {
+          "posicao": 5,
+          "titulo": "O que é análise de crédito e como funciona? | BV Inspira",
+          "link": "https://www.bv.com.br/bv-inspira/financiamento-de-veiculos/o-que-e-analise-de-credito-e-como-funciona"
+        },
+        {
+          "posicao": 6,
+          "titulo": "Análise de crédito: como funciona, o que é avaliado e como melhorar seu perfil",
+          "link": "https://www.mercadopago.com.br/blog/como-funciona-a-analise-de-credito"
+        },
+        {
+          "posicao": 7,
+          "titulo": "Como funciona e quanto tempo demora a análise de crédito do Santander?",
+          "link": "https://www.santander.com.br/blog/para-voce/analise-de-credito/"
+        },
+        {
+          "posicao": 8,
+          "titulo": "Análise de crédito: entenda o que é e como funciona",
+          "link": "https://www.quintoandar.com.br/guias/manual-imobiliario/analise-de-credito/"
+        }
+      ],
+      "mapa": []
+    }
+  ],
+  "serpNotes": {
+    "formato": "Serasa e SPC no topo, blogs de tecnologia de crédito (B2B) e BV; sem mapa.",
+    "visaoDeIA": "Responde para quem FAZ a análise (empresa): passo a passo PF e PJ, política e automação. Cita SPC Brasil, Serasa, Serasa Experian, YouTube, CRIF. Intenção diferente da do leitor do site (quem pede crédito).",
+    "concorrentes": "Birôs (Serasa, SPC) fortes; o restante é B2B."
+  },
+  "serpImpact": [
+    {
+      "dado": "Visão de IA (resposta em passos)",
+      "efeito": "Resumo direto no início, do ponto de vista de quem pede crédito."
+    },
+    {
+      "dado": "PAA 'O que consigo com score de 600?'",
+      "efeito": "FAQ neutra: não há tabela pública de score x aprovação."
+    },
+    {
+      "dado": "PAA 'Quanto tempo dura?', 'Quantas vezes pode fazer?', 'O que o banco analisa?'",
+      "efeito": "Já cobertos pelas FAQs e pelas etapas."
+    },
+    {
+      "dado": "Visão de IA: análise de crédito de empresa (PJ, B2B)",
+      "efeito": "Fora: outro público."
+    },
+    {
+      "dado": "Autocompletar com bancos e montadora, 'FGTS', 'imobiliário da Caixa'",
+      "efeito": "Fora: marca; crédito imobiliário fora do foco desta página."
+    }
+  ],
+  "revisionLog": [
+    {
+      "data": "2026-11-26",
+      "tipo": "revisão pendente (parte 4)",
+      "mudancas": [
+        "Resumo direto",
+        "FAQ do score de 600"
+      ],
+      "tituloDescricao": "sem mudança"
+    }
+  ]
 }

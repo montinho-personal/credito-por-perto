@@ -136,6 +136,12 @@ async function checkPage(context, label, urlPath, linkSet) {
     linkSet.add(u.pathname);
   }
 
+  // Captura do celular antes de qualquer clique (para a conferência visual).
+  if (label === "celular") {
+    const file = path.join(OUT, `celular${urlPath.replace(/\//g, "_") || "_home"}.png`);
+    await page.screenshot({ path: file, fullPage: false }).catch(() => {});
+  }
+
   // Menu do celular.
   if (label === "celular") {
     const toggle = page.locator('[data-track-area="menu-celular"] button[aria-controls]').first();
@@ -182,10 +188,6 @@ async function checkPage(context, label, urlPath, linkSet) {
   const stillThere = await page.locator("main").count();
   if (!stillThere) problem(where, "depois dos cliques, a página ficou sem conteúdo principal");
 
-  if (label === "celular") {
-    const file = path.join(OUT, `celular${urlPath.replace(/\//g, "_") || "_home"}.png`);
-    await page.screenshot({ path: file, fullPage: false }).catch(() => {});
-  }
   await page.close();
 }
 

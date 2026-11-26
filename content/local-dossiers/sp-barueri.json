@@ -28,6 +28,38 @@
       "checkedAt": "2026-08-16",
       "extractedFact": "Barueri integra a rede de Procons municipais conveniados ao Procon-SP.",
       "relevanceToReader": "Confirma o vínculo institucional do atendimento local."
+    },
+    {
+      "organization": "Presidência da República",
+      "documentTitle": "Lei nº 9.099/1995 (Juizados Especiais)",
+      "sourceLocation": "https://www.planalto.gov.br/ccivil_03/leis/l9099.htm",
+      "checkedAt": "2026-11-26",
+      "extractedFact": "Art. 3º, I: o Juizado Especial Cível julga causas de valor até 40 salários mínimos; art. 9º: até 20 salários mínimos as partes comparecem pessoalmente, podendo ser assistidas por advogado; acima disso, a assistência é obrigatória.",
+      "relevanceToReader": "Define quando o morador pode processar banco ou financeira no pequenas causas sem advogado."
+    },
+    {
+      "organization": "Tribunal de Justiça de São Paulo",
+      "documentTitle": "Peticionamento eletrônico JEC e Jefaz",
+      "sourceLocation": "https://www.tjsp.jus.br/peticionamentojec",
+      "checkedAt": "2026-11-26",
+      "extractedFact": "O JEC (antes Juizado de Pequenas Causas) dispensa advogado até 20 salários mínimos; atendimento no fórum ou nos anexos; desde 31/1/2023, peticionamento eletrônico com certificado digital para pessoas físicas sem advogado; sugere tentar antes Cejusc, Procon, agências reguladoras e consumidor.gov.br.",
+      "relevanceToReader": "Caminho para entrar com a ação e alternativas antes dela."
+    },
+    {
+      "organization": "Prefeitura de Barueri",
+      "documentTitle": "Poder Judiciário — Fórum da Comarca de Barueri",
+      "sourceLocation": "https://portal.barueri.sp.gov.br/cidadao/conheca-barueri/poder-judiciario-de-barueri",
+      "checkedAt": "2026-11-26",
+      "extractedFact": "Fórum com duas unidades: Unidade 1 – Jardim dos Camargos, Rua Ministro Raphael de Barros Monteiro, 110, CEP 06410-080, tel. (11) 4198-4844 (Cejusc e cartórios eleitorais); Unidade 2 – Barueri II, Rua Doutor Paulo Arruda Baccarat, sem número informado (cível, família, sucessões e criminal); pede para confirmar o local antes de ir. Não indica onde funciona o JEC.",
+      "relevanceToReader": "Endereços do fórum; lacuna declarada sobre a unidade do JEC."
+    },
+    {
+      "organization": "Câmara dos Deputados",
+      "documentTitle": "Decreto nº 12.797/2025",
+      "sourceLocation": "https://www2.camara.leg.br/legin/fed/decret/2025/decreto-12797-23-dezembro-2025-798569-publicacaooriginal-177587-pe.html",
+      "checkedAt": "2026-11-26",
+      "extractedFact": "Salário mínimo de R$ 1.621,00 a partir de 1º/01/2026 (base dos tetos do JEC: R$ 32.420 e R$ 64.840).",
+      "relevanceToReader": "Converte os tetos do JEC em reais."
     }
   ],
   "consumerProtectionResources": [
@@ -75,5 +107,263 @@
   "pendingVerification": [
     "Horários vigentes do Procon no Ganha Tempo (confirmar no agendamento)",
     "Setor do Banco do Povo dentro do Ganha Tempo: páginas da prefeitura citam Setor Amarelo e Setor Laranja (conferido por busca em 01/10/2026, sem acesso direto às páginas); o guia não afirma o setor e orienta confirmar pelo (11) 4199-1341"
+  ],
+  "serpEvidence": [
+    {
+      "busca": "empréstimo barueri",
+      "data": "2026-11-26",
+      "aparelho": "mobile",
+      "local": "Barueri,State of Sao Paulo,Brazil",
+      "autocompletar": [
+        "emprestimo pessoal barueri",
+        "emprestimo consignado barueri",
+        "emprestimo barueri",
+        "emprestimos barueri"
+      ],
+      "pessoasTambemPerguntam": [],
+      "outrasPesquisas": [],
+      "visaoDeIA": {
+        "texto": [],
+        "fontes": []
+      },
+      "organicos": [
+        {
+          "posicao": 1,
+          "titulo": "Empréstimo Barueri - Agi",
+          "link": "https://www.facebook.com/tatianecardosoemprestimos/"
+        },
+        {
+          "posicao": 2,
+          "titulo": "Credy Capitaly SP - Empréstimos e Créditos",
+          "link": "https://www.baruerifacil.com.br/guia/servicos/credy-capitaly-sp-1584-22126"
+        },
+        {
+          "posicao": 3,
+          "titulo": "Banco do Empreendedor: Homepage",
+          "link": "https://bancodoempreendedor.org.br/"
+        },
+        {
+          "posicao": 4,
+          "titulo": "Empréstimo Alternativo | Barueri SP",
+          "link": "https://www.facebook.com/emprestimoalternativo/"
+        },
+        {
+          "posicao": 5,
+          "titulo": "Empréstimos e Créditos em Barueri",
+          "link": "https://www.baruerifacil.com.br/guia/servicos/emprestimos-e-creditos-1584"
+        },
+        {
+          "posicao": 6,
+          "titulo": "Financiamento e Crédito em Barueri",
+          "link": "https://www.baruerifacil.com.br/guia/servicos/financiamento-e-credito-1490"
+        },
+        {
+          "posicao": 7,
+          "titulo": "https://portal.barueri.sp.gov.br/0kk-bet.shtml",
+          "link": "https://portal.barueri.sp.gov.br/0kk-bet.shtml"
+        },
+        {
+          "posicao": 8,
+          "titulo": "Chame Empréstimo - Empréstimos Pessoais | Barueri",
+          "link": "https://chame-emprestimo.ueniweb.com/"
+        },
+        {
+          "posicao": 9,
+          "titulo": "Up Now Crédito Alphaville | Barueri SP",
+          "link": "https://www.facebook.com/upnowcreditoalphaville/"
+        },
+        {
+          "posicao": 10,
+          "titulo": "Acreditti | Barueri SP",
+          "link": "https://www.facebook.com/grupoacreditti/"
+        }
+      ],
+      "mapa": [
+        "Grupo Fesitá",
+        "BMG Barueri",
+        "PB Consignado Barueri"
+      ]
+    },
+    {
+      "busca": "pequenas causas barueri",
+      "data": "2026-11-26",
+      "aparelho": "mobile",
+      "local": "Barueri,State of Sao Paulo,Brazil",
+      "autocompletar": [
+        "pequenas causas barueri endereço",
+        "pequenas causas barueri telefone",
+        "forum pequenas causas barueri",
+        "juizado pequenas causas barueri",
+        "tribunal pequenas causas barueri",
+        "advogado pequenas causas barueri",
+        "pequenas causas ganha tempo barueri",
+        "pequenas causas barueri sp",
+        "pequenas causas barueri gratuito"
+      ],
+      "pessoasTambemPerguntam": [
+        "Como faço para entrar com uma ação de pequenas causas?",
+        "Onde fica o Pequenas Causas em Barueri?",
+        "Tem pequenas causas no Poupatempo?",
+        "Qual o valor para entrar com ação de pequenas causas?"
+      ],
+      "outrasPesquisas": [
+        "Pequenas causas barueri endereço",
+        "Juizado de pequenas causas mais próximo",
+        "Pequenas causas online",
+        "Tjsp agendamento pequenas causas",
+        "Juizado de pequenas causas endereço",
+        "Pequenas causas online gratuito",
+        "Jec pequenas causas",
+        "Tjsp pequenas causas",
+        "Pequenas causas sp",
+        "Pequenas causas lapa",
+        "Abrir processo pequenas causas",
+        "Pequenas causas sjc"
+      ],
+      "visaoDeIA": {
+        "texto": [
+          "Em Barueri, as ações de \"pequenas causas\" (Juizado Especial Cível - JEC) tratam de conflitos de menor complexidade e valor de até 40 salários mínimos.",
+          "Onde ir em Barueri",
+          ";",
+          "Regras principais e como iniciar",
+          "Advogado: não é obrigatório para causas de até 20 salários mínimos. Acima desse valor (até 40 salários mínimos) ou em caso de recurso, é necessário advogado. ; Documentos necessários: RG, CPF, comprovante de residência atualizado, dados completos da parte contrária (nome/razão social, CPF/CNPJ e endereço) e provas do ocorrido (contratos, notas fiscais, prints, protocolos, fotos). ; Como dar entrada: presencialmente no fórum/unidade (por ordem de chegada ou com agendamento prévio pelo portal do TJSP) ou online pelo Peticionamento JEC.",
+          "Se quiser, me informe:",
+          "O tipo de problema (consumo, cobrança, vizinhança, trânsito, etc.) ; O valor aproximado da causa ; Se você já possui advogado",
+          "Assim posso orientar sobre os documentos mais importantes e o próximo passo."
+        ],
+        "fontes": [
+          {
+            "fonte": "Instagram",
+            "link": "https://www.instagram.com/p/DJB3JcwOM0U/"
+          },
+          {
+            "fonte": "TJSP",
+            "link": "https://www.tjsp.jus.br/JuizadosEspeciais"
+          },
+          {
+            "fonte": "TJSP",
+            "link": "https://www.tjsp.jus.br/peticionamentojec"
+          },
+          {
+            "fonte": "jsantosadvocacia.com.br",
+            "link": "https://jsantosadvocacia.com.br/advogado-pequenas-causas-barueri/"
+          },
+          {
+            "fonte": "YouTube",
+            "link": "https://www.youtube.com/watch?v=x4cFN0iNSu4"
+          },
+          {
+            "fonte": "Google",
+            "link": "https://www.google.com/searchviewer/10?svid=CCYSDyoNCgsvZy8xdGhkN3R0cRgK"
+          },
+          {
+            "fonte": "Google",
+            "link": "https://www.google.com/searchviewer/10?svid=CCYSESoPCg0vZy8xMWZzbXZmdDBoGAo"
+          },
+          {
+            "fonte": "Google",
+            "link": "https://www.google.com/searchviewer/10?svid=CCYSESoPCg0vZy8xMWMzazJ0cm5mGAo"
+          },
+          {
+            "fonte": "YouTube",
+            "link": "https://www.youtube.com/watch?v=b7PoR9X64Vg"
+          },
+          {
+            "fonte": "TJSP",
+            "link": "https://www.tjsp.jus.br/Agendamento/Agendamento/JuizadosEspeciais"
+          },
+          {
+            "fonte": "YouTube",
+            "link": "https://www.youtube.com/watch?v=ksHpIm7PEQ4"
+          }
+        ]
+      },
+      "organicos": [
+        {
+          "posicao": 1,
+          "titulo": "PETICIONAMENTO ELETRÔNICO JEC e JEFAZ",
+          "link": "https://www.tjsp.jus.br/peticionamentojec"
+        },
+        {
+          "posicao": 2,
+          "titulo": "Juizados Especiais",
+          "link": "https://www.tjsp.jus.br/JuizadosEspeciais"
+        },
+        {
+          "posicao": 3,
+          "titulo": "A partir desta segunda-feira (28), o Tribunal de Justiça de São Paulo (TJSP) amplia a ...",
+          "link": "https://www.instagram.com/p/DJB3JcwOM0U/"
+        },
+        {
+          "posicao": 4,
+          "titulo": "Juizado Especial Federal Cível de Barueri (44ª Subseção ...",
+          "link": "https://www.trf3.jus.br/scaj/foruns-e-juizados/foruns-federais-e-juizados/sjsp/barueri-juizado-especial-federal-civel-de-barueri-44a-subsecao?sword_list%5B0%5D=anex"
+        },
+        {
+          "posicao": 5,
+          "titulo": "Poder Judiciário - Prefeitura de Barueri",
+          "link": "https://portal.barueri.sp.gov.br/cidadao/conheca-barueri/poder-judiciario-de-barueri"
+        },
+        {
+          "posicao": 6,
+          "titulo": "Advogado Juizado Especial Barueri | Pequenas Causas",
+          "link": "https://advogadosbaruerialphaville.com.br/advogados-em-barueri-pequenas-causas/"
+        },
+        {
+          "posicao": 7,
+          "titulo": "Advogado para pequenas causas Barueri e Alphaville - JSantos Advocacia",
+          "link": "https://jsantosadvocacia.com.br/advogado-pequenas-causas-barueri/"
+        },
+        {
+          "posicao": 8,
+          "titulo": "Telefones Úteis - 117ª OAB/SP - Barueri",
+          "link": "https://oabbarueri.org.br/telefones-uteis"
+        },
+        {
+          "posicao": 9,
+          "titulo": "Advogado Pequenas Causas em Barueri",
+          "link": "https://www.alvares.adv.br/advogado-pequenas-causas-em-barueri"
+        }
+      ],
+      "mapa": [
+        "Tribunal de Justiça - Fórum da Comarca de Barueri",
+        "CEJUSC - Barueri"
+      ]
+    }
+  ],
+  "serpNotes": {
+    "formato": "'empréstimo barueri': mapa com 3 empresas, orgânicos de correspondentes, redes sociais e guias comerciais; uma página com spam de apostas dentro do portal da prefeitura (portal.barueri.sp.gov.br/0kk-bet.shtml). 'pequenas causas barueri': páginas do TJSP no topo, mapa com o Fórum e o Cejusc, escritórios de advocacia.",
+    "visaoDeIA": "Para 'pequenas causas barueri': JEC até 40 SM, sem advogado até 20 SM, documentos (RG, CPF, comprovante, dados da outra parte, provas). Cita Instagram, TJSP (2x), escritório de advocacia, YouTube.",
+    "concorrentes": "TJSP forte; escritórios de advocacia; o guia do site é o único que liga JEC a problema com banco em Barueri."
+  },
+  "serpImpact": [
+    {
+      "dado": "Busca principal fraca",
+      "efeito": "Secundária 'pequenas causas barueri', que também era item da pauta (parte 2)."
+    },
+    {
+      "dado": "PAA 'Onde fica o Pequenas Causas em Barueri?' e autocompletar 'endereço', 'telefone', 'fórum'",
+      "efeito": "Seção do JEC com a tabela das duas unidades do Fórum (prefeitura) e FAQ, com a lacuna declarada sobre qual unidade atende o JEC."
+    },
+    {
+      "dado": "Visão de IA e PAA 'Qual o valor para entrar com ação?', autocompletar 'gratuito', 'advogado'",
+      "efeito": "Tetos de 20 e 40 salários mínimos (Lei 9.099) em reais de 2026 e FAQ do advogado."
+    },
+    {
+      "dado": "PAA 'Como faço para entrar com uma ação?', outras pesquisas 'pequenas causas online', 'TJSP agendamento'",
+      "efeito": "Peticionamento eletrônico do TJSP e alternativas antes da ação."
+    },
+    {
+      "dado": "Autocompletar 'pequenas causas ganha tempo barueri', PAA 'Tem pequenas causas no Poupatempo?'",
+      "efeito": "Fora: nenhuma fonte oficial lida indica JEC no Ganha Tempo ou no Poupatempo."
+    },
+    {
+      "dado": "Mapa e orgânicos de 'empréstimo barueri' (empresas e correspondentes)",
+      "efeito": "Fora: o site não indica empresa."
+    },
+    {
+      "dado": "Outras pesquisas: 'Pequenas causas Lapa', Juizado Federal de Barueri",
+      "efeito": "Fora: outra cidade; Juizado Federal trata de causas contra a União (INSS, Caixa), tema que pede fonte própria."
+    }
   ]
 }
