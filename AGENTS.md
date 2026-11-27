@@ -34,7 +34,7 @@ revisão (abaixo) é a exceção que ele mesmo autorizou, e só revisa páginas 
 ## Rotina diária de revisão (16/11/2026)
 
 Tarefa agendada nesta sessão, todo dia às **18h17 de Brasília** (o montinhopersonal roda
-às 15h41). **N = 2 revisões por dia** (pedido do Renato, 18/11/2026).
+às 15h41). **N = 1 revisão por dia** (pedido do Renato, 26/11/2026; antes eram 2, desde 18/11/2026).
 
 ### 1. Escolher a página
 
@@ -123,11 +123,11 @@ Cota acabou: parar na hora e avisar o Renato.
 ## Cota do SerpApi
 
 Uma conta para todos os sites do Renato: **1.000 buscas por mês** no plano pago. A conta
-do `CLAUDE.md` soma as rotinas de todos os sites, **acima da cota** por decisão do Renato;
-a deste site passou a **2 revisões por dia** em 18/11/2026, cerca de 120 a 180 buscas por
-mês (2 a 3 por revisão). Quando o SerpApi disser que a cota acabou: parar a tarefa na
-hora, não pesquisar às cegas nem pedir print, e avisar o Renato nesta conversa; ele decide
-se aumenta o plano ou espera a renovação.
+do `CLAUDE.md` (revista em 26/11/2026) soma as rotinas de todos os sites e cabe na cota;
+a deste site passou a **1 revisão por dia** em 26/11/2026, cerca de 60 a 90 buscas por
+mês (2 a 3 por revisão). Quando o SerpApi disser que a cota acabou ou der limite de
+requisições: parar a tarefa na hora, não pesquisar às cegas nem pedir print, e avisar o
+Renato nesta conversa; ele decide se aumenta o plano ou espera a renovação.
 
 ## Estratégias do CLAUDE.md em cada revisão
 
